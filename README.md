@@ -474,8 +474,9 @@ pnpm --filter @spotless/loader check-loads --jobs 3      # all 25 of them: about
 
 ## Limitations and roadmap
 
-The open problems, each written as something a contributor could pick up, are in
-[docs/ROADMAP.md](docs/ROADMAP.md). The largest:
+The open problems, each written as something a contributor could pick up, are tracked as
+[issues](https://github.com/composo-ai/DishwasherBench/issues);
+[docs/ROADMAP.md](docs/ROADMAP.md) is the map of them. The largest:
 
 - **Stacking makes no difference for plates and cutlery.** Plates fallen over, crowded cutlery
   and a stalled arm cost little or nothing.

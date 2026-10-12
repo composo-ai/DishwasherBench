@@ -536,7 +536,7 @@ records under `packages/calibration/records/owner/` and its photographs under
 ## What is missing before these washes are run
 
 These are jobs for the project, not for whoever runs a wash; each can be picked up by a
-contributor (`docs/ROADMAP.md`).
+contributor (the issues that `docs/ROADMAP.md` lists under "Calibration data").
 
 - **The calibration tool's records and predictions.** The candidate records under
   `packages/calibration/records/owner/candidates/` still hold the mugs where they stood on the

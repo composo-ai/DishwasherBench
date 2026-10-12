@@ -183,9 +183,11 @@ for another state of the simulator and that the result is provisional.
   issue form "Model results" asks for these.
 - **Questions.** There is an issue form for a question. The project is maintained at a small
   scale, so an answer may take a while.
-- **Ports to other platforms**: Linux, Windows, other GPUs. See item 23 of the
-  [roadmap](docs/ROADMAP.md).
-- **Anything on the [roadmap](docs/ROADMAP.md).**
+- **Ports to other platforms**: Linux, Windows, other GPUs. See
+  [issue 28](https://github.com/composo-ai/DishwasherBench/issues/28).
+- **Anything among the [open issues](https://github.com/composo-ai/DishwasherBench/issues).** The
+  [roadmap](docs/ROADMAP.md) is the map of them, by area and size; `good first issue` marks the
+  ones to start with.
 
 ## Privacy rules for photographs, records and transcripts
 
@@ -240,6 +242,9 @@ In documents, write an example path with a placeholder for the user (`/Users/you
 - Commits to `main` are made by the maintainers. Changes from anyone else come as pull requests
   from a fork or a branch.
 - Keep a pull request to one thing. Fill in the template: it is the list of checks above.
+- What is open is tracked as [issues](https://github.com/composo-ai/DishwasherBench/issues), mapped
+  in the [roadmap](docs/ROADMAP.md). To take one, say so in a comment on it, so that two people
+  do not do the same thing.
 - For anything larger than a small fix, open an issue first. It saves you work if the
   maintainers already know why something is as it is; much of that is written down in
   `docs/`, and [docs/README.md](docs/README.md) is the index.
