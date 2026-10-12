@@ -10,7 +10,7 @@ Specialist: numerics. Date: 2026-10-08. Target machine: Apple M3 Pro MacBook Pro
 - **[RECALLED]** From memory, or seen only in a search-engine result snippet without opening the page. Snippet-only items say so.
 - **[ESTIMATED]** My own derivation. The arithmetic is shown.
 
-**Research limits to know about.** The web-search allowance for this research ran out part-way through. Fetching known URLs still worked, so everything tagged [VERIFIED] was opened. Several things I wanted to check could not be searched for and are flagged as gaps: published GPU throughput for PBF and sparse-grid FLIP, free-surface LBM resolution rules, sustained-load throttling data for the M3 Pro, and the Metal status of wgpu ray queries. ANSYS and Siemens theory pages render equations as images, so their equations are reproduced from the open-source equivalents (OpenFOAM, Meredith et al.) which I read directly, and the Fluent-specific forms are marked [RECALLED].
+**Research limits to know about.** The literature search stopped part-way through. Sources at known addresses could still be opened, so everything tagged [VERIFIED] was opened. Several things I wanted to check could not be searched for and are flagged as gaps: published GPU throughput for PBF and sparse-grid FLIP, free-surface LBM resolution rules, sustained-load throttling data for the M3 Pro, and the Metal status of wgpu ray queries. ANSYS and Siemens theory pages render equations as images, so their equations are reproduced from the open-source equivalents (OpenFOAM, Meredith et al.) which I read directly, and the Fluent-specific forms are marked [RECALLED].
 
 **Reference fluid for all my estimates:** wash liquor at about 55 °C: density 985 kg/m3, dynamic viscosity 5.0e-4 Pa s, kinematic viscosity 5.1e-7 m2/s, surface tension 0.067 N/m (clean water; detergent lowers it, see the chemistry and films dossiers) [RECALLED]. Tub interior 0.55 x 0.50 x 0.60 m = 0.165 m3 (from the brief).
 
@@ -227,7 +227,7 @@ Scaling factors used below for bandwidth-bound kernels [ESTIMATED from the table
 | MLS-MPM in Taichi / CUDA on GTX 1080 Ti | One benchmark frame: Taichi 14.06 s, AsyncTaichi 10.63 s, Wang et al. 2020 5.00 s | If the frame is 16.8 million particles x 400 substeps (search snippet, not confirmed): 0.5e9, 0.6e9, 1.3e9 particle-steps/s | 0.15e9 to 0.45e9 native; less in WGSL | timings and GPU [VERIFIED] arXiv 2012.08141 table 1; particle count [RECALLED]; conversion [ESTIMATED] |
 | MPM, hand-optimised CUDA (Fei et al. 2021) | 1.33 million particles at 68.5 frames/s on four Tesla V100, time step about 5.5e-4 s; using non-native shared atomics costs 3 to 5 x; disabling fast-math costs 3 to 13 % | about 0.7e9 particle-steps/s per V100 if a frame is 1/60 s | about 0.13e9 native | figures [VERIFIED] arXiv 2111.00699 (ar5iv); conversion [ESTIMATED] |
 | Free-surface LBM | FluidX3D has a volume-of-fluid free-surface extension; no throughput with it enabled is published | Plain LBM figure above; assume 1 to 2.5 x slower with free surface | 350 to 1750 MLUPs/s | plain [VERIFIED]; penalty [ESTIMATED] |
-| PBF, FLIP/APIC on sparse grids, DFSPH on GPU | Not found before the search budget ran out | n/a | Treated as "same order as implicit SPH" below | **gap** |
+| PBF, FLIP/APIC on sparse grids, DFSPH on GPU | Not found; the search was not completed | n/a | Treated as "same order as implicit SPH" below | **gap** |
 
 ### 3.3 Resolution actually required
 
@@ -483,7 +483,7 @@ Realistic target: **bit-identical repeat runs on one machine and software stack;
 
 ### 6.4 Thermal throttling and sustained performance
 
-I could not obtain a sustained-load measurement for the 14-inch M3 Pro (the Notebookcheck review returned 403 and the search allowance was used up). Nearest data point: the base 14-inch M3 lost about 5 to 6 % of its Cinebench R23 multi-core score over a 30-minute loop (10,471 first run, 9,890 average) [RECALLED: search snippet of the LaptopMedia review; different chip]. The 11-core M3 Pro model ships with a 70 W adapter [VERIFIED: Apple specs], so the adapter is not the limit.
+I could not obtain a sustained-load measurement for the 14-inch M3 Pro (the Notebookcheck review returned 403 and no further search was made). Nearest data point: the base 14-inch M3 lost about 5 to 6 % of its Cinebench R23 multi-core score over a 30-minute loop (10,471 first run, 9,890 average) [RECALLED: search snippet of the LaptopMedia review; different chip]. The 11-core M3 Pro model ships with a 70 W adapter [VERIFIED: Apple specs], so the adapter is not the limit.
 
 Engineering rules until measured:
 

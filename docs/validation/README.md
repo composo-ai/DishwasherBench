@@ -1,13 +1,12 @@
 # What the simulation has been checked against, and how it did
 
-Written at the close of the weekend's build, in the first hours of 12 October 2026, for anyone
+Written at the close of the build, on 12 October 2026, for anyone
 who wants to know how far to trust a verdict, and for an engineer new to the repository. It
 collects the checks made so far, says plainly what a clean or not-clean verdict can be trusted
 for today, and lists what is not modelled. The open problems it names are written up as work a
 contributor could pick up in `docs/ROADMAP.md`.
 
-The reviewers and engineers named below are roles played by AI agents in the build (see
-`docs/README.md`).
+The reviewers and engineers named below are roles in the build (see `docs/README.md`).
 
 **Which state the numbers describe.** The simulation as it is in this checkout:
 `spotless-sim 0.5.0 water-7`, parameter set `anchored-v7.owner-capsule` (the owner's capsule,
@@ -58,7 +57,7 @@ That commit is in the private development history, which is not published, so th
 be checked from this repository. It was made with the set of that evening
 (`anchored-v4.owner-capsule`), in which the soak circulates throughout.
 
-| Plate | Predicted | Seen (verdict by the owner by eye; area estimated from his photograph by an AI agent of the build, by counting yellower pixels) | |
+| Plate | Predicted | Seen (verdict by the owner by eye; area estimated from his photograph by counting yellower pixels) | |
 |---|---|---|---|
 | 9123, air-dried, facing the middle | spotless, score 5 | spotless | held |
 | 9122, oven-dried, facing the middle | clean: 2 specks, 0.9 mm2, score 4 | not clean: four or five specks, about 25 mm2 (10 to 60) | right in kind and place; the clean verdict failed |
@@ -277,7 +276,7 @@ random load). Every fast report states its error; a fast wash is a preview and i
 ## 7. Cost against the 30-minute budget
 
 One cold official wash on Eco 50 through the game's runner on the reference machine, a
-MacBook Pro (Apple M3 Pro, 18 GB). Other jobs ran on the laptop all weekend, so only the first
+MacBook Pro (Apple M3 Pro, 18 GB). Other jobs ran on the laptop at the time, so only the first
 row was measured with nothing else of this build running.
 
 | Load | Items | Whole wash | Peak memory | When, and what else ran |

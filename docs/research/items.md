@@ -14,14 +14,14 @@ Every quantitative value carries exactly one tag.
 
 | Tag | Short form in tables | Meaning |
 |---|---|---|
-| [VERIFIED] | V | Seen this session in source text. Two sub-cases, distinguished in the Sources list: "(page)" = I opened the page/PDF and read the text; "(se)" = seen as a quoted extract of the named page returned by the search tool (page itself not opened). Retailer listings are still retailer listings: a [VERIFIED] retailer mass means "the listing says so", not "a metrologist weighed it". |
+| [VERIFIED] | V | Seen this session in source text. Two sub-cases, distinguished in the Sources list: "(page)" = I opened the page/PDF and read the text; "(se)" = seen as a quoted extract of the named page in a search result (page itself not opened). Retailer listings are still retailer listings: a [VERIFIED] retailer mass means "the listing says so", not "a metrologist weighed it". |
 | [RECALLED] | R | From my own memory; source not opened this session. |
 | [ESTIMATED] | E | My own derivation; the derivation is shown or referenced (Section 2.4 thin-shell estimator, Section 4 force estimates). |
 
 ### 0.2 Research limitations (read before relying on the numbers)
 
 1. **IEC 60436 Annex A/B is not publicly readable.** I confirmed the table of contents of IEC 60436:2025 Ed.5 ("Annex A (normative) Place settings and serving pieces", "Annex B (informative) Tableware specifications", pp. 51-62) but the item table itself is paywalled. IEC load-item dimensions below are therefore [RECALLED] except where an open document (AHAM DW-2-2020, 10 CFR 430 App. C2, an Australian test-material factsheet) names the same physical article. Buying IEC 60436:2025 (about EUR 520) is recommended; it would turn roughly 15 rows of the catalogue from R to V and give official masses with tolerances.
-2. **The shared web-search budget ran out twice.** Two planned search batches (wet/soapy friction literature; several product spec sheets) could not be run. Affected values are flagged [RECALLED] or [ESTIMATED] and listed in "Calibration parameters".
+2. **Two planned search batches could not be run** (wet/soapy friction literature; several product spec sheets). Affected values are flagged [RECALLED] or [ESTIMATED] and listed in "Calibration parameters".
 3. **No source gives friction of tableware against nylon-coated rack wire, wet or dry.** The closest measured data are dry static friction of real tableware on household surfaces (Matheus and Dollar 2010, opened and read). Everything "wet/soapy" in this dossier is a reasoned estimate and is the single most important calibration gap in my topic.
 4. Product masses from retailers sometimes include packaging. Where I could tell, I say so.
 
@@ -1121,7 +1121,7 @@ Not a calibration item but a decision needed from the maintainers: whether "not 
 
 ## 15. Sources
 
-"(page)" = opened and read this session. "(se)" = values seen only as extracts quoted by the search tool; the page itself was not opened.
+"(page)" = opened and read this session. "(se)" = values seen only as extracts quoted in search results; the page itself was not opened.
 
 ### Standards, test loads, regulation
 
@@ -1174,7 +1174,7 @@ Not a calibration item but a decision needed from the maintainers: whether "not 
 - S32. Dishwasher (Beaver Games): https://www.crazygames.com/game/dishwasher (page); Tetris: Fully Loaded: https://www.marketing-beat.co.uk/?p=80313 ; Tetris article: https://tetris.com/article/73/organize-your-dishwasher-using-tetris ; Bosch game coverage: https://digitaltrends.com/?p=797694 ; Dishpig: https://ajunkalagames.itch.io/dishpig ; Neverwash: https://icutter.itch.io/neverwash ; Less Dishes is More: https://projectpaddy.itch.io/less-dishes-are-more-dishes ; Dishwashing Simulator: https://gg.deals/game/dishwashing-simulator/ (se)
 - S33. US 11,439,292: https://patents.google.com/patent/US11439292 ; US 11,120,594: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11120594 ; US 5,351,837: https://patents.google.com/patent/US5351837 ; US 8,540,085: https://patents.google.com/patent/US8540085 ; US 8,646,620: https://patents.google.com/patent/US8646620 ; US 11,612,300: https://patents.google.com/patent/US11612300 ; EP 3123918: https://data.epo.org/gpi/EP3123918A1 ; US 6,571,965: https://patents.google.com/patent/US6571965 ; US 10,694,921: https://patents.google.com/patent/US10694921 (se)
 
-### Product data (all se: retailer or manufacturer listings quoted by the search tool)
+### Product data (all se: retailer or manufacturer listings quoted in search results)
 
 - P1. IKEA 365+: plate https://www.ikea.com/cz/en/p/ikea-365-plate-white-70258949/ ; bowl https://www.ikea.com/cz/en/p/ikea-365-bowl-rounded-sides-white-20278351/ ; mug https://www.ikea.com/sg/en/p/ikea-365-mug-white-00282943/ ; glass mug https://www.ikea.com/ae/en/p/ikea-365-mug-clear-glass-10279723/ ; deep plate https://ikea.lv/en/products/eating/dining-and-serving/serving/ikea-365-deep-plate-bowl-art-90279700
 - P2. Corelle listings (domain looked like a reseller mirror; treat as retailer data): https://www.corelleus.it.com/products/corelle-winter-frost-white-10-25-dinner-plate ; https://www.corelleus.it.com/products/corelle-winter-frost-white-18-ounce-cereal-bowls-6-pack ; https://www.corelleus.it.com/products/corelle-city-block-18-ounce-cereal-bowl ; https://www.acehardware.com/departments/home-and-decor/kitchen-utensils-and-gadgets/tableware/61079

@@ -16,7 +16,7 @@ Every quantitative value carries exactly one tag.
 
 | Tag | Meaning |
 |---|---|
-| [VERIFIED] | I read the value in the fetched text of the cited source during this session. Where the text reached me through the fetch tool's extraction rather than a raw PDF dump, I say so in the source list. |
+| [VERIFIED] | I read the value in the fetched text of the cited source during this session. Where the text I read was an automatic extraction of a page rather than a raw PDF dump, I say so in the source list. |
 | [RECALLED] | From memory, or seen only in a search-result snippet without opening the source. Snippet-only values are marked "snippet". Treat as unverified. |
 | [ESTIMATED] | My own derivation. The derivation is shown or referenced. |
 

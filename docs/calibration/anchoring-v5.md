@@ -207,8 +207,7 @@ the angle the first build found, 148 degrees).
 
 The official tier gives the fast tier's verdict on every one of these but P13 (pass at the
 official tier, too small at the fast). Of the 17 resolution-sensitive phenomena, P10, P12, P35,
-P36 and P37 were not run at the official tier: a small official wash takes 4.5 to 6 minutes
-and the night ran out.
+P36 and P37 were not run at the official tier (a small official wash takes 4.5 to 6 minutes).
 
 | Pair | Fast, Eco 50 | Official, Eco 50 | Verdict |
 |---|---|---|---|
@@ -263,7 +262,7 @@ pnpm exec tsx src/phenomena/cli.ts --tier fast --params ../calibration/anchors/a
 
 Through the game's runner (`packages/wash-runner/scripts/wash-load.ts`, default set), one wash at
 a time, the careful load of each level as the loader had saved it at 04:30 on 11 October, load
-average 3.3 to 3.9. One run each: the night did not leave time for three.
+average 3.3 to 3.9. One run each, not three.
 
 | Load | Items | Blocks | scene | exposure | soil | replay | result | Total (s) | Peak RSS |
 |---|---|---|---|---|---|---|---|---|---|

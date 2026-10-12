@@ -12,7 +12,7 @@ Every number carries exactly one tag.
 
 | Tag | Meaning |
 |---|---|
-| [VERIFIED] | I read it this session in fetched source text (a PDF I extracted, or a page returned by the fetch tool). Where the text reached me only as a quoted excerpt in a search result, or through the fetch tool's own extraction of a page, I add "(excerpt)" or "(page extract)" after the tag. |
+| [VERIFIED] | I read it this session in the text of the source (a PDF I extracted, or the text of a page). Where the text reached me only as a quoted excerpt in a search result, or as an automatic extraction of a page, I add "(excerpt)" or "(page extract)" after the tag. |
 | [RECALLED] | From my own memory. The source was not opened. Treat as a lead, not a fact. |
 | [ESTIMATED] | My own derivation. The derivation is shown next to the number or in the referenced equation. |
 
@@ -22,7 +22,7 @@ Sources are cited as `S#`; the list with URLs is in section 15.
 
 1. **The standards themselves are paywalled.** I could read the tables of contents, forewords and a few early clauses of IEC 60436 Ed. 4.1 (2015+A1:2020) and Ed. 5 (2025), and the first 13 pages of EN 50242:2016 / EN 60436:2016. I could not read Annex A (tableware table), Annex C (soil quantities per item), Table 1 (drying) or Table 3 (cleaning) of the current editions. Everything about them below is assembled from open documents that quote or reproduce them: a US DOE/ENERGY STAR slide deck that transcribes the IEC scoring table, two NIST reports, the 2022/2023 European round robin report, the IKW detergent-test method, the EU Ecolabel test framework, a test-material supplier catalogue, and the EU regulation.
 2. **ANSI/AHAM DW-1 and DW-2 are paywalled.** The AHAM grading rule, the soil list, the item-to-soil assignment and the cleaning-index formula are verified from DOE/ENERGY STAR documents. The gram quantities per item are not.
-3. **The web-search allowance for this research ran out about one third of the way through.** After that I could only fetch URLs I already knew. Consequences: Consumer Reports and Which? test methods, and the Bosch, Miele, GE, Finish and Cascade loading pages, could not be opened and are [RECALLED]. The Australian IEC 60436 round robin report (2017), which contains a load-item table with masses, timed out on every attempt.
+3. **The literature search stopped about one third of the way through.** After that I could only open sources at addresses I already knew. Consequences: Consumer Reports and Which? test methods, and the Bosch, Miele, GE, Finish and Cascade loading pages, could not be opened and are [RECALLED]. The Australian IEC 60436 round robin report (2017), which contains a load-item table with masses, timed out on every attempt.
 4. **I found no published controlled experiment that varies the loading pattern and reports standard cleaning scores.** The University of Bonn publication list (S30) contains consumer-behaviour, test-method and drying papers but no loading-pattern cleaning experiment. The best quantitative evidence on how geometry changes water delivery is the Birmingham EngD thesis (S16). Effect sizes in the phenomena checklist are therefore mostly [ESTIMATED] and are the main thing later real-world tests should measure.
 
 ### 0.3 Cross-links

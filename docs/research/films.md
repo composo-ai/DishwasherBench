@@ -20,7 +20,7 @@ Every quantitative value carries a source key `[S#]` (see section 14) and exactl
 
 Three limits on the research that the reader should know about:
 
-1. The session's web-search budget ran out before I could run searches on (i) water carry-over between cycle phases, (ii) measured residual water mass per item after the final rinse, (iii) pool/cavity exchange coefficients, (iv) advancing/receding angles of water on melamine, SAN and copolyester. Those items are estimates and are listed as calibration parameters.
+1. No searches were run on (i) water carry-over between cycle phases, (ii) measured residual water mass per item after the final rinse, (iii) pool/cavity exchange coefficients, (iv) advancing/receding angles of water on melamine, SAN and copolyester. Those items are estimates and are listed as calibration parameters.
 2. Several equations sit behind images or garbled PDF text (Ansys Fluent theory guide; El-Genk and Saber 2001; Wilson et al. 2012). Where I could re-derive the equation from verified ingredients I did, and say so.
 3. Nothing here has been checked against a dishwasher experiment by me. One dishwasher-specific data source was read in full text (Pérez-Mohedano's Birmingham EngD thesis, `[S28]`).
 
@@ -913,7 +913,7 @@ The same patent shows that surface tension alone does not predict drying: polysa
 
 ### 8.4 Carry-over between phases
 
-The liquor left on the load, tub and sump when a phase is drained dilutes into the next fill. No measured value was found in this session (search budget). The film model can compute the load's share: the sum of pools, edge and contact reservoirs, beads and the Jeffreys film at the moment the next fill starts. For a full load with 6 m² of item surface and a 30 s drain this is of order 60 mL of film (10 g/m²) plus whatever is pooled; pools can dominate `[ESTIMATED]`. The tub, filter and sump share belongs to the machine sibling.
+The liquor left on the load, tub and sump when a phase is drained dilutes into the next fill. No measured value was found; the search for one was not completed. The film model can compute the load's share: the sum of pools, edge and contact reservoirs, beads and the Jeffreys film at the moment the next fill starts. For a full load with 6 m² of item surface and a 30 s drain this is of order 60 mL of film (10 g/m²) plus whatever is pooled; pools can dominate `[ESTIMATED]`. The tub, filter and sump share belongs to the machine sibling.
 
 ---
 

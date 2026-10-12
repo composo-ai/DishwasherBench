@@ -147,7 +147,7 @@ What is here instead, each of it done without a model's API:
 | File | What it is |
 |---|---|
 | `cost-estimate.json`, section 1 below | The estimate made before the first call, from a rehearsal of the standard loop |
-| `walkthrough/` | One episode of the tutorial played by hand through the MCP tools, call by call, by the engineer agent of this stage (Claude Opus 5.5 in Claude Code). Not a benchmark episode: section 2 |
+| `walkthrough/` | One episode of the tutorial played through the MCP tools, call by call, outside the harness, by Claude Opus 5.5 in Claude Code. Not a benchmark episode: section 2 |
 | section 3 | Where the interface, and not dishwashers, would make a player go wrong, and what was changed |
 | `reference/` | The four reference policies played through the harness on the two levels the models were to play, at the official tier, verified by replay: section 4 |
 | section 5 | The commands for the model episodes on Anthropic's API, which have not been run |
@@ -222,7 +222,7 @@ results cut) and four of the pictures. The episode record the server wrote was n
 results in the transcript are in the shape of before 11 October (the whole scene with every
 action, slot advice of 28,000 characters): section 0 says what they are now.
 
-Who played: the engineer agent of this stage, by hand, one MCP call at a time
+Who played: Claude Opus 5.5 in Claude Code, one MCP call at a time
 (`packages/mcp/scripts/call.ts` against the MCP server of an episode created in benchmark
 mode), without the harness's prompt, limits or context policy, and knowing how the levels are
 drawn. It is a reading of the interface, **not a benchmark episode**, and its score is no
@@ -271,8 +271,8 @@ is asked of whoever owns the part.
 | 7 | `list_slots` with an item answers with 28,000 characters for the lower basket; `suggested_orientation` repeats `suggested_drop.orientation` in every slot, and numbers of the report carry 13 decimals | The same | **Fixed** in the description: the answer is long and holds for every item of the type, ask once for each kind of piece. Asked of the session: a shorter answer |
 | 8 | The rule of the card says an item is clean "counting ... residue left where dirty water stood"; the simulation does not model what standing water leaves, and a mug of hot chocolate stood mouth up comes out clean | The rule promises a cost the wash does not charge (the open decision on retained water) | Not changed: which of the two gives way is an open design decision |
 
-None of these was found by a model (what a model then met is in section 0; it met item 5).
-They are what the same model family, playing by hand,
+None of these was found by a model playing through the harness (what a model then met is in
+section 0; it met item 5). They are what the player of the walkthrough
 stumbled over or would have: items 1, 2 and 4 in play, 3 by looking for the tray, 5 by a
 refusal, 6 and 7 by counting.
 

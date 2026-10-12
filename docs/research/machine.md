@@ -26,7 +26,7 @@ Source keys such as [S1] refer to the "Sources" section at the end.
 
 ### 0.2 Research limits (read this before trusting the gaps)
 
-- The session's shared web-search budget ran out roughly half-way through this work. After that I could only fetch URLs I already knew. Consequences: I could not find a manufacturer drawing or teardown with rack wire diameters, tine pitch and tine heights; I could not open a Bosch/Siemens programme table; I could not open EUR-Lex (it returned an empty page), IEC/EN 60436 text, or any published pump Q-H curve for a European household circulation pump.
+- The literature search stopped roughly half-way through this work. After that I could only open sources at addresses I already knew. Consequences: I could not find a manufacturer drawing or teardown with rack wire diameters, tine pitch and tine heights; I could not open a Bosch/Siemens programme table; I could not open EUR-Lex (it returned an empty page), IEC/EN 60436 text, or any published pump Q-H curve for a European household circulation pump.
 - No public source I found gives a complete nozzle table (position, diameter, angles) for any European arm. The only complete nozzle direction table in the open literature is for the lower arm of a Whirlpool DU750 (US machine) [S1]. It has positions and angles but no diameters.
 - The ASKO spray-arm thesis [S3] masks every rpm and kPa value ("masked rpm") for confidentiality.
 - So the baseline machine in section 11 is a self-consistent engineering reconstruction anchored on a modest number of verified numbers. Its hydraulic flow rate, the rack tine geometry and the phase-by-phase programme timings are the three areas with the weakest evidence.

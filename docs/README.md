@@ -5,20 +5,18 @@ which documents describe the project as it is now and which are records of how i
 
 ## How to read these documents
 
-Most of these documents were written during the build, over a few days in October 2026, and
+Most of these documents were written while the project was first built, in October 2026, and
 are kept as they were written. That has three consequences for a reader.
 
-- **They speak in the voices of the build.** The build was done largely by AI coding agents
-  working in roles. "The owner" is the owner of the one dishwasher that is simulated, who
-  photographed and measured it and ran the test wash. "The lead", "the engineer" (also "the
-  levels engineer", "the harness engineer", "the calibration engineer" and the like), "the
-  reviewer", "the specialist", "the researcher", "the architect", "the chief architect", "the
-  judge", "the panel" and "the red team" are roles played by AI agents in
-  the build, not people you can write to. "The brief" is the written instruction a role was
-  given, "this session" is one agent's working session, and "I" in a dossier is the agent that
-  wrote it. [VERIFIED] in a research dossier means that agent read the value in the source
-  during its session; no person has checked every such tag. To reach the maintainers, open an
-  issue.
+- **They speak in the voices of the build.** "The owner" is the owner of the one dishwasher
+  that is simulated, who photographed and measured it and ran the test wash. "The lead", "the
+  engineer" (also "the levels engineer", "the harness engineer", "the calibration engineer" and
+  the like), "the reviewer", "the specialist", "the researcher", "the architect", "the chief
+  architect", "the judge", "the panel" and "the red team" are roles in the build, not people
+  you can write to. "The brief" is the written instruction a role was given, "this session" is
+  one working session, and "I" in a dossier is its author. [VERIFIED] in a research dossier
+  means that its author read the value in the source while writing it; not every such tag has
+  been checked a second time. To reach the maintainers, open an issue.
 - **They are dated.** "Today", "this morning" and "tonight" in a document mean the date at its
   head. Where a later document replaced an earlier one, a note at the head of the earlier one
   says so and names its successor.

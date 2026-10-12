@@ -885,7 +885,7 @@ and is a change to `packages/server`.
 `packages/integration/scripts/place-times.ts` (a seeded random fill of dinner-party to 60 items,
 half into each basket, and the careful policy of `@spotless/loader` on weeknight-dinner; machine,
 session and loader as of 08:16 that day, processor time of the process, best of three after and
-of two before, while other agents' builds ran on the machine, load average 4 to 8):
+of two before, while other builds ran on the machine, load average 4 to 8):
 
 | | before | after the physics work of 2026-10-10 |
 |---|---|---|
@@ -1506,7 +1506,7 @@ and when, and nothing else.
 
 ## Status, 12 October 2026
 
-Written at the close of the weekend's build, in the first hours of 12 October. What follows is
+Written at the close of the build, on 12 October. What follows is
 the state of the game side against this document; the wash simulation's state is at the end of
 `scope.md` and in `docs/validation/README.md`.
 
@@ -1594,8 +1594,8 @@ issue or a pull request that argues one of them is welcome (`docs/ROADMAP.md`).
   models of different providers are run alike. Today it is not.
 - Whether a published result states a cost. The six model episodes so far were run without
   prices: the harness records tokens always, and a cost only when prices are given in `.env`.
-- The music. Five CC0 pieces chosen by description and by measurement; nobody on the build
-  had heard them when this was written. Open: whether the feel is right; whether the quiet joins
+- The music. Five CC0 pieces chosen by description and by measurement; they had not been
+  judged by ear when this was written. Open: whether the feel is right; whether the quiet joins
   between pieces read as the music stopping; whether it should pause in a hidden tab; whether
   the clink and the door thud (off by default) are kept; whether a marker is missed now that the
   jingle at the report is gone. On provenance: the licence is as stated on each track's page

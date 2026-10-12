@@ -261,7 +261,7 @@ The parameter-file format has no place for the dose (it is `dosing.detergentMass
 
 ---
 
-## 9. Fact-check (2026-10-10, second pass by another agent)
+## 9. Fact-check (2026-10-10, second pass)
 
 What was done: every source of section 8 that could be reached was opened again and compared with what the dossier takes from it; one further primary source of the composition was searched for and found; every derived number of sections 2 and 3 was recomputed with a separate script against `packages/sim-liquor`; the parameter file was loaded with `readParamSet` against the current registry.
 

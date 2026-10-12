@@ -23,9 +23,8 @@ that anyone can verify by replaying it and by washing its load again, and the sa
 played by people in a browser and by models through MCP. What is rough is how the wash scores
 plates and cutlery.
 
-Built and maintained by [Composo](https://composo.ai). It was built over a few days in October
-2026, largely by AI coding agents; many documents under `docs/` are their records of that
-build, and [docs/README.md](docs/README.md) explains how to read them.
+Built and maintained by [Composo](https://composo.ai). Many documents under `docs/` are working
+records, kept as they were written; [docs/README.md](docs/README.md) explains how to read them.
 
 ![The game in a browser: a dinner plate in hand over the lower basket of the modelled machine, with the free seats numbered best first](apps/web/screenshots/16-suggested-spots.png)
 

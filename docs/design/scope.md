@@ -82,7 +82,7 @@ below says how far each step got.)
 
 ## Status, 12 October 2026
 
-Written at the close of the weekend's build, in the first hours of 12 October.
+Written at the close of the build, on 12 October.
 `docs/validation/README.md` has the evidence; this is the state against the plan above.
 
 ### Built

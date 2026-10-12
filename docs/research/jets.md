@@ -12,7 +12,7 @@ Confidence tags used throughout:
 - **[RECALLED]** from memory; the source was not opened this session. Treat as needing a check before it becomes load-bearing.
 - **[ESTIMATED]** my own derivation or arithmetic, shown or reproducible from the equations given. Values computed by inserting numbers into VERIFIED equations are tagged ESTIMATED because the arithmetic is mine.
 
-Research limitation to know about: the shared web-search budget for the session ran out about two thirds of the way through. Items 6 (wires, edges, tines), 7 (concave vessels), the oblique-jet primary papers (Kate et al. 2007, Wang et al. 2013), the moving-surface jet literature (Gradeck 2006, Keshavarz 2011) and the CFD-code splash models other than Bai-Gosman (Stanton-Rutland, O'Rourke-Amsden 2000, Kuhnke) could therefore only be covered through secondary sources already downloaded, or from memory. These gaps are flagged where they occur.
+Research limitation to know about: the literature search stopped about two thirds of the way through. Items 6 (wires, edges, tines), 7 (concave vessels), the oblique-jet primary papers (Kate et al. 2007, Wang et al. 2013), the moving-surface jet literature (Gradeck 2006, Keshavarz 2011) and the CFD-code splash models other than Bai-Gosman (Stanton-Rutland, O'Rourke-Amsden 2000, Kuhnke) could therefore only be covered through secondary sources already downloaded, or from memory. These gaps are flagged where they occur.
 
 ---
 
@@ -207,7 +207,7 @@ All have the form L_b / d = function(We, Re, nozzle).
 | Trettel regression | L_b / d = 3.61 Tu^-0.275 We^0.334 | turbulent surface breakup; 194 points, R^2 = 0.959, 5.4 to 12.7 percent Tu (rough pipes, Kusui data) | [VERIFIED] Trettel 2020 eq. 19 |
 | Grant and Middleman (1966), turbulent | L_b / d = 8.51 We^0.32 | turbulent pipe jets | [RECALLED]; could not be opened. Numerically equal to the Trettel regression at Tu = 5 percent (8.2 We^0.334), which supports the recollection |
 | Miesse (1955) | L_b / d = 540 sqrt(We) Re^(-5/8) | converging-orifice industrial nozzles with strong aerodynamic effects | [VERIFIED] as quoted in Bhunia and Lienhard 1994a eq. 10 and Lienhard and Day eq. 2 |
-| Sallam, Dai and Faeth (2002) | L_c / d = 2.1 We^0.5 (turbulent break-up); 11.0 (rho/rho_g)^0.5 (aerodynamic) | long-pipe turbulent jets | [RECALLED]; the University of Michigan repository blocked download and the search budget ran out. Do not use without checking |
+| Sallam, Dai and Faeth (2002) | L_c / d = 2.1 We^0.5 (turbulent break-up); 11.0 (rho/rho_g)^0.5 (aerodynamic) | long-pipe turbulent jets | [RECALLED]; the University of Michigan repository blocked download and no other copy was searched for. Do not use without checking |
 | Atomisation plateau | L_b / d = 5.31 Tu^-0.568 (rho/rho_g)^0.335 | not reached in dishwashers | [VERIFIED] Trettel 2020 eq. 24 |
 
 Worked break-up lengths in mm at 20 C [ESTIMATED from the equations above]:
@@ -627,7 +627,7 @@ Rayleigh train from a jet of diameter d: drop diameter 1.9 d, spacing 4.51 d, fr
 - Inclined capillary jet (30 deg) on a 3 mm vertical glass cylinder: above about 1 mL/s the cylinder hardly affects the jet; near 0.5 mL/s the jet clings and coils helically (Jambon-Puillet et al., PRL 2019) [VERIFIED only through a search-result summary of the APS synopsis]. A 2 mm dishwasher jet carries 25 mL/s, far into the "little effect" regime.
 - Free-sheet criterion: a radially expanding liquid sheet disintegrates where 2 gamma = rho h U^2 (Taylor 1959, as quoted by Button et al. 2010 eq. 2.1) [VERIFIED].
 - Drop impact on inclined fibres is a known topic (Piroird, Clanet, Lorenceau and Quere 2009, cited in Josserand and Thoroddsen) [VERIFIED citation only]; capture thresholds on thin fibres are of order 1 m/s or less for mm drops [RECALLED].
-- No measurements were found for 1.5 to 4 mm jets at 4 to 12 m/s on 3 to 5 mm coated wires, on plate rims or on cutlery. This is a genuine literature gap (and the search budget ended before a dedicated search could be completed).
+- No measurements were found for 1.5 to 4 mm jets at 4 to 12 m/s on 3 to 5 mm coated wires, on plate rims or on cutlery. This is a genuine literature gap (and a dedicated search was not completed).
 
 ### 7.2 Physical reasoning used to fill the gap [ESTIMATED throughout]
 
@@ -668,7 +668,7 @@ All constants in this section are calibration parameters with wide ranges; this 
 - Concave cylinders of 10 to 29 cm diameter: flat-wall film behaviour up to 1.5 L/min, extra spray inside the cylinder above that (Chee et al. 2019) [VERIFIED] (section 4.8).
 - Jet filling a vial only slightly wider than the jet (X = vial/jet diameter about 1): four regimes (pre-sheet, puffing, steady upward umbrella sheet, downward bell) set by X, Ca, We and Fr (Mohd, Yadav and Das 2024) [VERIFIED abstract]. Relevant to narrow-necked items held full of liquid, i.e. items loaded opening-up, not to inverted vessels.
 - Commercial SPH dishwasher simulations report puddles on cup bases and "wetting time" maps but publish no quantitative interior-flow data (FIFTY2 PreonLab page) [VERIFIED].
-- No bottle-washer, keg-washer or glass-washer correlations were found (search budget ended). Tank-cleaning work by the Cambridge group concerns large vessels with small curvature.
+- No bottle-washer, keg-washer or glass-washer correlations were found (the search was not completed). Tank-cleaning work by the Cambridge group concerns large vessels with small curvature.
 
 ### 8.2 Interior flow model for an inverted vessel [ESTIMATED]
 

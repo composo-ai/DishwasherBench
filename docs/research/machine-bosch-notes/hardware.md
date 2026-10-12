@@ -601,8 +601,8 @@ BSH documents for SMV4HAX40G
 
 Service documentation for the GV640 platform
 - Küppersbusch service manual H7-71-07, "Einbau-Geschirrspülautomaten Baureihe 640", 13.10.2010, 125 pages: http://tds.kueppersbusch.de/kb-technik/service_manuals/Geschirr/DE/A7_018DE.pdf (the https address has a certificate fault). Pages 2, 8, 40-45, 66-74, 75-89, 90-110, 111-125.
-- BSH "Repair Instructions - Dishwashers", DIS 840_58300000176874_ara_en_c, 2016-03-02, 157 pages, as hosted for model SPS40C12GB: https://www.manualslib.com/manual/1337144/Bosch-Sps40c12gb.html (table of contents, pages 33, 48, 49; read through the fetch tool, which paraphrases).
-- BSH "Reparaturanleitung Geschirrspülen - GV640", draft of 2008-01-11, 36 pages: https://www.manualslib.de/manual/159387/Bosch-Gv640.html (table of contents, pages 6 and 12; paraphrased by the fetch tool).
+- BSH "Repair Instructions - Dishwashers", DIS 840_58300000176874_ara_en_c, 2016-03-02, 157 pages, as hosted for model SPS40C12GB: https://www.manualslib.com/manual/1337144/Bosch-Sps40c12gb.html (table of contents, pages 33, 48, 49; read as an automatic paraphrase of the pages, not their own text).
+- BSH "Reparaturanleitung Geschirrspülen - GV640", draft of 2008-01-11, 36 pages: https://www.manualslib.de/manual/159387/Bosch-Gv640.html (table of contents, pages 6 and 12; read as an automatic paraphrase of the pages, not their own text).
 - Listing only, not obtained: https://elektrotanya.com/bosch_gv640a_dishwasher_platform_training.pdf/download.html ; https://www.scribd.com/document/894541984/Bosch-GV640A-dishwasher (first three pages visible).
 - Community repair guide "Geschirrspüler Bosch/Siemens mit Heizpumpe und BLCD Laugenpumpe [GV640]", 30 pages: https://forum.teamhack.de/filebase/file/52-geschirrsp%C3%BCler-bosch-siemens-mit-heizpumpe-und-blcd-laugenpumpe-gv640/. Photographs of a teardown with qualitative text; no figures taken from it.
 

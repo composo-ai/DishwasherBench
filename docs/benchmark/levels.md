@@ -1,12 +1,12 @@
 # The levels of the game: a course, and how each level is held to measuring stacking
 
-Written on the evening of 11 October 2026 and brought up to date in the first hours of
+Written on 11 October 2026 and brought up to date on
 12 October, after the wash began to count what standing water leaves in an item (section 4).
 It follows the first play test of the page, after which the levels were put in order of
 difficulty and the remnants of the Auto cycle were taken out of the interface, and after the
 wash simulation had been calibrated on the owner's test wash and made current on the corrected
 upper basket (`spotless-sim 0.5.0 water-7`, parameter set `anchored-v7.owner-capsule`). It
-replaces the note of the night before, which described twelve levels in no order of difficulty
+replaces an earlier note, which described twelve levels in no order of difficulty
 (six hand-written, six drawn by the generator) and is not in this repository.
 
 The tables of results are generated, not typed:
@@ -46,8 +46,8 @@ rise".
 
 The six levels the generator draws from its three families (`generatedLevels()`) are **not in
 the course**. A level is listed only when its reference loads have been washed at the official
-tier on the calibrated wash and pass the gates; the families were designed for the wash of the
-night before (yoghurt, chocolate and fats on the table), on which a careless load now loses
+tier on the calibrated wash and pass the gates; the families were designed for an earlier
+state of the wash (yoghurt, chocolate and fats on the table), on which a careless load now loses
 almost nothing, and they have not been drawn again. The generator, its families and its tests
 stand as they were; their eighteen saved loads were removed with the levels.
 

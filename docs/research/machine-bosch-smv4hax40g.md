@@ -1191,7 +1191,7 @@ Service documentation for the platform:
 
 - [K1] Kueppersbusch service manual H7-71-05, "Einbau-Geschirrspuelautomaten Baureihen 634 mit Automatikprogrammen", 6 April 2008. http://tds.kueppersbusch.de/kb-technik/service_manuals/Geschirr/DE/A7_014DE.pdf . Pages 8, 9, 10, 19, 22, 26, 29-30, 35, 36, 42, 44, 46, 49, 63. (re-opened as extracted text)
 - [K2] Kueppersbusch service manual H7-71-07, "Einbau-Geschirrspuelautomaten Baureihe 640", 13 October 2010, 125 pages. http://tds.kueppersbusch.de/kb-technik/service_manuals/Geschirr/DE/A7_018DE.pdf . Pages 8, 66-69, 71-73, 75-84, 88-92, 99-110, 115-116, 120-123. (re-opened as extracted text)
-- [D1] BSH "Repair Instructions - Dishwashers" DIS 840 (58300000176874), 2016, as hosted at https://www.manualslib.com/manual/1337144/Bosch-Sps40c12gb.html (pages 48-49; read through a fetch tool that paraphrases)
+- [D1] BSH "Repair Instructions - Dishwashers" DIS 840 (58300000176874), 2016, as hosted at https://www.manualslib.com/manual/1337144/Bosch-Sps40c12gb.html (pages 48-49; read as an automatic paraphrase of the pages, not their own text)
 
 BSH patents:
 
