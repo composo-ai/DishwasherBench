@@ -1,8 +1,8 @@
 // The render query drawn for real: headless Chrome, the scene of @spotless/render, PNG out.
 // Skipped on a machine without Chrome.
-import { existsSync, readdirSync, rmSync } from 'node:fs';
+import { readdirSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
-import { DEFAULT_CHROME_PATH } from '@spotless/render/headless';
+import { findChrome } from '@spotless/render/headless';
 import type { GetItemResult, RenderResult, WashRunner } from '@spotless/session';
 import { placeholderWashRunner } from '@spotless/session';
 import { afterAll, describe, expect, it } from 'vitest';
@@ -19,7 +19,7 @@ import {
 } from './test-util.ts';
 import type { RestoreSummary, SessionSummary } from './types.ts';
 
-const chrome = process.env['SPOTLESS_CHROME'] ?? DEFAULT_CHROME_PATH;
+const chrome = findChrome();
 const servers = useServers();
 
 // One Chrome for the file. The servers get a view of it without `close`, so that closing a
@@ -60,7 +60,7 @@ function image(result: RenderResult): string {
   return result.image.data_base64;
 }
 
-describe.skipIf(!existsSync(chrome))('the render service', () => {
+describe.skipIf(chrome === null)('the render service', () => {
   it('draws every view as a PNG of the size asked for and charges one query each', async () => {
     const server = await servers.server({ renderer: renderer() });
     const id = await newSession(server);

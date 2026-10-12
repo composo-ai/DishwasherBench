@@ -5,22 +5,19 @@
  *   pnpm --filter @spotless/machine render-drawings [directory]
  *
  * The directory defaults to `docs/reference/machine-drawings/` at the repository root. The
- * browser is the program named by the environment variable `CHROME_PATH`, or Google Chrome at
- * its usual place on macOS. One SVG user unit (one millimetre) is one pixel.
+ * browser is the program named by `SPOTLESS_CHROME`, or the first Chrome or Chromium in the
+ * usual places of the system. One SVG user unit (one millimetre) is one pixel.
  */
 
 import { execFileSync } from 'node:child_process';
-import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { chromeFlags, resolveChrome } from '../../render/src/headless/chrome.ts';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const dir = resolve(process.argv[2] ?? resolve(here, '../../../docs/reference/machine-drawings'));
-const chrome =
-  process.env['CHROME_PATH'] ?? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
-if (!existsSync(chrome)) {
-  throw new Error(`no browser at "${chrome}": set CHROME_PATH to a Chrome or Chromium program`);
-}
+const chrome = resolveChrome();
 
 for (const file of readdirSync(dir)
   .filter((name) => name.endsWith('.svg'))
@@ -35,7 +32,7 @@ for (const file of readdirSync(dir)
     chrome,
     [
       '--headless=new',
-      '--disable-gpu',
+      ...chromeFlags(),
       '--hide-scrollbars',
       '--force-device-scale-factor=1',
       '--default-background-color=FFFFFFFF',
