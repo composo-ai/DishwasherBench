@@ -1,0 +1,187 @@
+{
+  "tier": "fast",
+  "loads": {
+    "bad": {
+      "points": 14,
+      "points_available": 64,
+      "result_hash": "sha256:ae35348b9d60e159e278db1ac6baf1798fdf8db8f9aa80f3807c03ccf3ff27d5",
+      "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+      "runtime_s": 54.3,
+      "items": [
+        {
+          "item_id": "bowl_01",
+          "clean": false,
+          "score_iec": 0,
+          "reason": "Soil left on the interior (5352 mm2 visibly soiled); 432 ml of water stood in it to the end of the cycle and left what it held where it stood (5352 mm2).",
+          "visible_area_mm2": 5351.879378318787,
+          "retained_water_ml": 431.95814942009747
+        },
+        {
+          "item_id": "fork_01",
+          "clean": true,
+          "score_iec": 5,
+          "reason": null,
+          "visible_area_mm2": 0,
+          "retained_water_ml": 0
+        },
+        {
+          "item_id": "glass_01",
+          "clean": false,
+          "score_iec": 3,
+          "reason": "Avocado left on the interior (7.3 mm2 visibly soiled).",
+          "visible_area_mm2": 7.349391186046944,
+          "retained_water_ml": 0
+        },
+        {
+          "item_id": "knife_01",
+          "clean": true,
+          "score_iec": 5,
+          "reason": null,
+          "visible_area_mm2": 0,
+          "retained_water_ml": 0
+        },
+        {
+          "item_id": "mug_01",
+          "clean": false,
+          "score_iec": 0,
+          "reason": "Tomato sauce or ketchup left on the interior (9276 mm2 visibly soiled); 319 ml of water stood in it to the end of the cycle and left what it held where it stood (3228 mm2).",
+          "visible_area_mm2": 9275.80702509854,
+          "retained_water_ml": 319.00376779958606
+        },
+        {
+          "item_id": "plate_01",
+          "clean": false,
+          "score_iec": 0,
+          "reason": "Tomato sauce or ketchup left on the well (200 mm2 visibly soiled).",
+          "visible_area_mm2": 200.46421670913696,
+          "retained_water_ml": 0
+        },
+        {
+          "item_id": "plate_02",
+          "clean": true,
+          "score_iec": 5,
+          "reason": null,
+          "visible_area_mm2": 0,
+          "retained_water_ml": 0
+        }
+      ],
+      "residue_painting": [
+        {
+          "item_id": "glass_01",
+          "clean": false,
+          "tiles": 2,
+          "max_distance_to_surface_mm": 0.12,
+          "simulated_visible_cells": 2,
+          "max_distance_to_simulated_cell_mm": 0.014
+        },
+        {
+          "item_id": "mug_01",
+          "clean": false,
+          "tiles": 1509,
+          "max_distance_to_surface_mm": 0.133,
+          "simulated_visible_cells": 1509,
+          "max_distance_to_simulated_cell_mm": 0.02
+        },
+        {
+          "item_id": "plate_01",
+          "clean": false,
+          "tiles": 50,
+          "max_distance_to_surface_mm": 0.125,
+          "simulated_visible_cells": 50,
+          "max_distance_to_simulated_cell_mm": 0.014
+        }
+      ]
+    },
+    "good": {
+      "points": 34,
+      "points_available": 64,
+      "result_hash": "sha256:69054a5692b9b43c5909a91e61d8a8d8a0e76da4b8a4522091b4ddfaadd870e6",
+      "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+      "runtime_s": 69.9,
+      "items": [
+        {
+          "item_id": "bowl_01",
+          "clean": true,
+          "score_iec": 5,
+          "reason": null,
+          "visible_area_mm2": 0,
+          "retained_water_ml": 0
+        },
+        {
+          "item_id": "fork_01",
+          "clean": true,
+          "score_iec": 5,
+          "reason": null,
+          "visible_area_mm2": 0,
+          "retained_water_ml": 0
+        },
+        {
+          "item_id": "glass_01",
+          "clean": true,
+          "score_iec": 5,
+          "reason": null,
+          "visible_area_mm2": 0,
+          "retained_water_ml": 0
+        },
+        {
+          "item_id": "knife_01",
+          "clean": true,
+          "score_iec": 5,
+          "reason": null,
+          "visible_area_mm2": 0,
+          "retained_water_ml": 0
+        },
+        {
+          "item_id": "mug_01",
+          "clean": true,
+          "score_iec": 5,
+          "reason": null,
+          "visible_area_mm2": 0,
+          "retained_water_ml": 0.5272437988423917
+        },
+        {
+          "item_id": "plate_01",
+          "clean": false,
+          "score_iec": 2,
+          "reason": "Tomato sauce or ketchup left on the well (20 mm2 visibly soiled).",
+          "visible_area_mm2": 20.02438735961914,
+          "retained_water_ml": 0
+        },
+        {
+          "item_id": "plate_02",
+          "clean": true,
+          "score_iec": 5,
+          "reason": null,
+          "visible_area_mm2": 0,
+          "retained_water_ml": 0
+        }
+      ],
+      "residue_painting": [
+        {
+          "item_id": "plate_01",
+          "clean": false,
+          "tiles": 5,
+          "max_distance_to_surface_mm": 0.125,
+          "simulated_visible_cells": 5,
+          "max_distance_to_simulated_cell_mm": 0.015
+        }
+      ]
+    }
+  },
+  "repeated_washes": [
+    {
+      "session": "0d49208d-26c5-41ee-a73b-fc8ad8b5a785",
+      "source": "wash-runner 2+src.f58d4ed8ab930946",
+      "server_result": "sha256:ae35348b9d60e159e278db1ac6baf1798fdf8db8f9aa80f3807c03ccf3ff27d5",
+      "repeated_result": "sha256:ae35348b9d60e159e278db1ac6baf1798fdf8db8f9aa80f3807c03ccf3ff27d5"
+    },
+    {
+      "session": "36876424-f80c-4545-b5d0-8b6ee6014ddf",
+      "source": "wash-runner 2+src.f58d4ed8ab930946",
+      "server_result": "sha256:69054a5692b9b43c5909a91e61d8a8d8a0e76da4b8a4522091b4ddfaadd870e6",
+      "repeated_result": "sha256:69054a5692b9b43c5909a91e61d8a8d8a0e76da4b8a4522091b4ddfaadd870e6"
+    }
+  ],
+  "notes": [],
+  "problems": []
+}

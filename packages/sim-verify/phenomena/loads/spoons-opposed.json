@@ -1,0 +1,132 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "spoons-opposed",
+ "description": "P15 A: two soup spoons standing handle down in one cell of the cutlery basket, bowls turned away from each other",
+ "recipe_hash": "sha256:1f91623e1061384c859009298f2f36c5fdf27b29579df7c22ca80c108cfa2029",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "spoon_1",
+   "item_type": "soup_spoon_190",
+   "pose": {
+    "p": [
+     -0.03213168921079063,
+     -0.16664845489818836,
+     0.07940761947128802
+    ],
+    "q": [
+     -0.024659354239702225,
+     -0.7371886372566223,
+     0.022569837048649788,
+     0.6748595833778381
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 8.2,
+    "rotation_deg": 5,
+    "contacts": [
+     "cutlery_basket.foot.1.floor",
+     "cutlery_basket.foot.1.left"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_2",
+   "item_type": "soup_spoon_190",
+   "pose": {
+    "p": [
+     -0.05444513495424452,
+     -0.11101303329091214,
+     0.07978960433839297
+    ],
+    "q": [
+     0.8326441645622253,
+     0.008455194532871246,
+     0.5537227988243103,
+     0.0048301671631634235
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 27,
+    "rotation_deg": 22.7,
+    "contacts": [
+     "cutlery_basket.foot.1.floor",
+     "cutlery_basket.foot.1.left",
+     "cutlery_basket.foot.1.mid"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:65c5ecded68fcd34abc3f67da855239cb0d4be996064c813aef786ef33cd051c"
+}

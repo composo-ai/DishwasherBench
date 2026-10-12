@@ -1,0 +1,103 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "pot-inverted",
+ "description": "P35 A, P39: a 17 cm steel saucepan mouth down on the rear rows of the lower basket",
+ "recipe_hash": "sha256:a6db4c8134fd81199c7c73d3183ceebe07b4b6fd17ca689ee9db7c2019b8490f",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "pot",
+   "item_type": "saucepan_steel_170",
+   "pose": {
+    "p": [
+     -0.17285932148432226,
+     0.11515423109700158,
+     0.19693586331951696
+    ],
+    "q": [
+     0.9948522448539734,
+     -0.06370588392019272,
+     0.07122534513473511,
+     -0.03372814133763313
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 2,
+    "stable": true,
+    "displacement_mm": 42.6,
+    "rotation_deg": 11.6,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:27ac9e648ff0ab3240282e5331237319ed0d3384e2946cf276f7b29e0b9cac3b"
+}

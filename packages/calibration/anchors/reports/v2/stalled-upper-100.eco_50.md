@@ -1,0 +1,123 @@
+water side: spotless-sim 0.3.2 water-3, sources 97aa4d392843 (176 files); exposure cache 97aa4d392843
+### iec-13-careful / eco_50 / run
+
+eco_50, tier official: 97 items (68 soiled); mean score 3.81; clean 68 of 97 (70 %); soiled items clean 39 of 68; dry soil left 0.41 of 20.05 g (2.0 %); detergent 20.0 of 20.0 g; water held 2 mL
+
+| Class | Items | Mean score | Clean | Scores 0,1,2,3,4,5 |
+|---|---|---|---|---|
+| crockery | 22 | 3.27 | 14 | 7, 0, 1, 0, 0, 14 |
+| cutlery | 65 | 4.32 | 51 | 0, 2, 5, 7, 7, 44 |
+| glass | 8 | 0.88 | 1 | 5, 2, 0, 0, 0, 1 |
+| melamine | 2 | 5.00 | 2 | 0, 0, 0, 0, 0, 2 |
+| pots | 0 | n/a | 0 | 0, 0, 0, 0, 0, 0 |
+| all | 97 | 3.81 | 68 | 12, 4, 6, 7, 7, 61 |
+
+| Soil | Class | Records | Left (mg of mg) | Left % | Mean score | Clean | Visible area median, max (mm2) |
+|---|---|---|---|---|---|---|---|
+| iec_egg_yolk | egg_yolk | 17 | 9.9 of 9139.0 | 0.1 | 3.47 | 9 of 17 | 0, 54 |
+| iec_margarine | fat | 12 | 4.9 of 3680.5 | 0.1 | 4.00 | 8 of 12 | 1, 20 |
+| iec_milk | egg_yolk | 7 | 386.6 of 3460.5 | 11.2 | 0.29 | 0 of 7 | 363, 4061 |
+| iec_minced_meat | egg_yolk | 3 | 0.0 of 1585.3 | 0.0 | 5.00 | 3 of 3 | 0, 0 |
+| iec_oat_flakes | starch | 19 | 0.5 of 1669.6 | 0.0 | 4.53 | 16 of 19 | 0, 22 |
+| iec_spinach | starch | 3 | 0.0 of 482.2 | 0.0 | 5.00 | 3 of 3 | 0, 0 |
+| iec_tea | tea | 7 | 5.4 of 28.0 | 19.3 | 0.00 | 0 of 7 | 6155, 10085 |
+
+| Type | Items | Mean score | Clean | Scores 0,1,2,3,4,5 |
+|---|---|---|---|---|
+| dessert_bowl_vitrelle_130 | 1 | 5.00 | 1 | 0, 0, 0, 0, 0, 1 |
+| dessert_plate_porcelain_190 | 5 | 4.40 | 4 | 0, 0, 1, 0, 0, 4 |
+| dessert_spoon_160 | 12 | 5.00 | 12 | 0, 0, 0, 0, 0, 12 |
+| dinner_fork_185 | 11 | 2.91 | 4 | 0, 2, 3, 2, 2, 2 |
+| dinner_knife_210 | 12 | 4.00 | 8 | 0, 0, 1, 3, 3, 5 |
+| dinner_plate_porcelain_iec | 5 | 5.00 | 5 | 0, 0, 0, 0, 0, 5 |
+| ladle_steel_311 | 1 | 5.00 | 1 | 0, 0, 0, 0, 0, 1 |
+| melamine_dessert_plate_iec_195 | 2 | 5.00 | 2 | 0, 0, 0, 0, 0, 2 |
+| mug_ceramic_300 | 3 | 0.00 | 0 | 3, 0, 0, 0, 0, 0 |
+| saucer_porcelain_140 | 2 | 0.00 | 0 | 2, 0, 0, 0, 0, 0 |
+| serving_fork_210 | 1 | 5.00 | 1 | 0, 0, 0, 0, 0, 1 |
+| serving_spoon_216 | 2 | 5.00 | 2 | 0, 0, 0, 0, 0, 2 |
+| soup_plate_porcelain_230 | 5 | 5.00 | 5 | 0, 0, 0, 0, 0, 5 |
+| soup_spoon_190 | 13 | 4.31 | 10 | 0, 0, 1, 2, 2, 8 |
+| tea_cup_porcelain_210 | 2 | 0.00 | 0 | 2, 0, 0, 0, 0, 0 |
+| teaspoon_130 | 13 | 5.00 | 13 | 0, 0, 0, 0, 0, 13 |
+| test_glass_borosilicate_250 | 7 | 0.29 | 0 | 5, 2, 0, 0, 0, 0 |
+
+| | crockery | cutlery | glass | melamine | all but pots | share clean |
+|---|---|---|---|---|---|---|
+| simulated, item types weighted as in the standard load | 2.46 | 4.29 | 1.94 | 5.00 | 3.44 | 63 % |
+| simulated, items of this load | 3.27 | 4.32 | 0.88 | 5.00 | 3.81 | 70 % |
+| published, Bosch eco, detergent D | 3.68 | 4.67 | 3.43 | 4.21 | 4.17 | about 70 % (estimated) |
+| published, Bosch eco, detergent E | 3.22 | 4.75 | 3.96 | 4.32 | 4.16 | about 70 % (estimated) |
+
+soiled items only, standard weights: crockery 2.46 (48 % clean), cutlery 3.74 (60 %), glass 1.94 (35 %), all 2.98 (53 %); milk glasses alone 0.29; tea items 0.00; crockery without tea 4.79
+run: 107 s (scene 11, hydraulics 0, exposure 83, soil 1, replay 11, result 2); exposure 2 cached, 2 computed; 540622 deposits; overrides {}
+
+cup_01                 score 0       left      0.71 of     3.3 mg  visible   5254 of   7206 mm2  specks   0  water 0.0 mL
+cup_02                 score 0       left      0.93 of     3.2 mg  visible   6155 of   7206 mm2  specks   1  water 0.0 mL
+dessert_bowl_01        score 5 clean left      0.00 of   165.9 mg  visible      0 of  16684 mm2  specks   0  water 0.0 mL
+dessert_plate_01       score 5 clean left      0.00 of  1046.4 mg  visible      0 of  15248 mm2  specks   0  water 0.0 mL
+dessert_plate_02       score 5 clean left      0.00 of   163.8 mg  visible      0 of  15248 mm2  specks   0  water 0.0 mL
+dessert_plate_03       score 5 clean left      0.00 of  1016.4 mg  visible      0 of  15248 mm2  specks   0  water 0.0 mL
+dessert_plate_04       score 5 clean left      0.00 of   159.1 mg  visible      0 of  15248 mm2  specks   0  water 0.0 mL
+dessert_plate_05       score 2       left      0.27 of  1031.1 mg  visible      6 of  15248 mm2  specks  21  water 0.0 mL
+dinner_plate_01        score 5 clean left      0.00 of  1449.8 mg  visible      0 of  26614 mm2  specks   0  water 0.0 mL
+dinner_plate_02        score 5 clean left      0.00 of   581.3 mg  visible      0 of  26614 mm2  specks   0  water 0.0 mL
+dinner_plate_03        score 5 clean left      0.00 of  1483.1 mg  visible      0 of  26614 mm2  specks   0  water 0.0 mL
+dinner_plate_04        score 5 clean left      0.00 of   552.0 mg  visible      0 of  26614 mm2  specks   0  water 0.0 mL
+dinner_plate_05        score 5 clean left      0.01 of  1425.2 mg  visible      0 of  26614 mm2  specks   0  water 0.0 mL
+fork_01                score 2       left      0.33 of   156.7 mg  visible      7 of   1824 mm2  specks  20  water 0.0 mL
+fork_02                score 3       left      0.50 of   146.9 mg  visible     12 of   1824 mm2  specks   0  water 0.0 mL
+fork_03                score 5 clean left      0.00 of   156.2 mg  visible      0 of   1824 mm2  specks   0  water 0.0 mL
+fork_04                score 1       left      3.70 of   128.7 mg  visible     54 of   1824 mm2  specks   3  water 0.0 mL
+fork_05                score 2       left      0.15 of   168.2 mg  visible      4 of   1824 mm2  specks  16  water 0.0 mL
+fork_06                score 4 clean left      0.02 of   151.4 mg  visible      0 of   1824 mm2  specks   2  water 0.0 mL
+fork_07                score 5 clean left      0.00 of   149.3 mg  visible      0 of   1824 mm2  specks   0  water 0.0 mL
+fork_08                score 1       left      3.60 of   167.5 mg  visible     52 of   1824 mm2  specks  56  water 0.0 mL
+fork_09                score 2       left      0.85 of   157.1 mg  visible     24 of   1824 mm2  specks  77  water 0.0 mL
+fork_11                score 3       left      0.47 of   147.8 mg  visible     14 of   1824 mm2  specks   0  water 0.0 mL
+fork_12                score 4 clean left      0.02 of   157.2 mg  visible      0 of   1824 mm2  specks   2  water 0.0 mL
+glass_01               score 0       left     16.76 of   498.2 mg  visible    363 of   5306 mm2  specks 413  water 0.0 mL
+glass_02               score 0       left     30.18 of   510.9 mg  visible    629 of   5306 mm2  specks 482  water 0.0 mL
+glass_03               score 0       left     19.34 of   480.6 mg  visible    455 of   5306 mm2  specks 504  water 0.0 mL
+glass_04               score 1       left      4.38 of   478.6 mg  visible     96 of   5305 mm2  specks 244  water 0.0 mL
+glass_05               score 0       left    298.11 of   460.1 mg  visible   4061 of   5305 mm2  specks 129  water 0.0 mL
+glass_06               score 1       left      4.29 of   509.6 mg  visible    101 of   5306 mm2  specks 262  water 0.0 mL
+glass_07               score 0       left     13.53 of   522.6 mg  visible    321 of   5306 mm2  specks 514  water 0.0 mL
+knife_01               score 5 clean left      0.00 of   300.1 mg  visible      0 of   1946 mm2  specks   0  water 0.0 mL
+knife_02               score 4 clean left      0.19 of   311.3 mg  visible      1 of   1945 mm2  specks   1  water 0.0 mL
+knife_03               score 2       left      1.86 of   294.7 mg  visible     20 of   1946 mm2  specks   2  water 0.0 mL
+knife_04               score 4 clean left      0.25 of   308.5 mg  visible      1 of   1946 mm2  specks   2  water 0.0 mL
+knife_06               score 5 clean left      0.00 of   292.8 mg  visible      0 of   1946 mm2  specks   0  water 0.0 mL
+knife_07               score 3       left      0.76 of   322.1 mg  visible      4 of   1945 mm2  specks   0  water 0.0 mL
+knife_08               score 5 clean left      0.00 of   303.8 mg  visible      0 of   1946 mm2  specks   0  water 0.0 mL
+knife_09               score 4 clean left      0.22 of   294.0 mg  visible      1 of   1946 mm2  specks   2  water 0.0 mL
+knife_10               score 3       left      1.55 of   329.1 mg  visible     10 of   1946 mm2  specks   0  water 0.0 mL
+knife_11               score 5 clean left      0.00 of   319.4 mg  visible      0 of   1946 mm2  specks   0  water 0.0 mL
+knife_12               score 5 clean left      0.00 of   291.5 mg  visible      0 of   1945 mm2  specks   0  water 0.0 mL
+knife_13               score 3       left      0.01 of   313.3 mg  visible      4 of   1945 mm2  specks   0  water 0.0 mL
+melamine_plate_01      score 5 clean left      0.00 of   159.3 mg  visible      0 of  18225 mm2  specks   0  water 0.0 mL
+melamine_plate_02      score 5 clean left      0.00 of   452.0 mg  visible      0 of  18225 mm2  specks   0  water 0.0 mL
+mug_01                 score 0       left      1.14 of     6.2 mg  visible   8561 of  12104 mm2  specks   0  water 1.6 mL
+mug_02                 score 0       left      1.56 of     6.4 mg  visible  10085 of  12104 mm2  specks   0  water 0.1 mL
+mug_03                 score 0       left      0.72 of     6.0 mg  visible   6943 of  12104 mm2  specks   0  water 0.5 mL
+saucer_01              score 0       left      0.16 of     1.4 mg  visible   1410 of   3001 mm2  specks   0  water 0.0 mL
+saucer_02              score 0       left      0.17 of     1.5 mg  visible   1614 of   3002 mm2  specks   0  water 0.0 mL
+soup_plate_01          score 5 clean left      0.00 of   220.2 mg  visible      0 of  24584 mm2  specks   0  water 0.0 mL
+soup_plate_02          score 5 clean left      0.00 of   244.0 mg  visible      0 of  24584 mm2  specks   0  water 0.0 mL
+soup_plate_03          score 5 clean left      0.00 of   246.7 mg  visible      0 of  24584 mm2  specks   0  water 0.0 mL
+soup_plate_04          score 5 clean left      0.00 of   257.5 mg  visible      0 of  24584 mm2  specks   0  water 0.0 mL
+soup_plate_05          score 5 clean left      0.00 of   225.8 mg  visible      0 of  24584 mm2  specks   0  water 0.0 mL
+soup_spoon_01          score 5 clean left      0.00 of    25.6 mg  visible      0 of   1933 mm2  specks   0  water 0.0 mL
+soup_spoon_02          score 4 clean left      0.01 of    22.3 mg  visible      1 of   1933 mm2  specks   3  water 0.0 mL
+soup_spoon_03          score 3       left      0.08 of    22.1 mg  visible      8 of   1933 mm2  specks   0  water 0.0 mL
+soup_spoon_04          score 5 clean left      0.00 of    23.3 mg  visible      0 of   1934 mm2  specks   0  water 0.0 mL
+soup_spoon_05          score 5 clean left      0.00 of    22.7 mg  visible      0 of   1934 mm2  specks   0  water 0.0 mL
+soup_spoon_06          score 5 clean left      0.00 of    25.4 mg  visible      0 of   1933 mm2  specks   0  water 0.0 mL
+soup_spoon_07          score 5 clean left      0.00 of    24.5 mg  visible      0 of   1934 mm2  specks   0  water 0.0 mL
+soup_spoon_08          score 3       left      0.16 of    23.7 mg  visible     15 of   1934 mm2  specks   0  water 0.0 mL
+soup_spoon_09          score 4 clean left      0.02 of    24.8 mg  visible      4 of   1933 mm2  specks   4  water 0.0 mL
+soup_spoon_10          score 2       left      0.27 of    24.0 mg  visible     22 of   1934 mm2  specks   0  water 0.0 mL
+soup_spoon_11          score 5 clean left      0.00 of    24.1 mg  visible      0 of   1934 mm2  specks   0  water 0.0 mL
+soup_spoon_12          score 5 clean left      0.00 of    24.3 mg  visible      0 of   1934 mm2  specks   0  water 0.0 mL
+soup_spoon_13          score 5 clean left      0.00 of    22.9 mg  visible      0 of   1934 mm2  specks   0  water 0.0 mL
+

@@ -1,0 +1,271 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "plates-alt-18",
+ "description": "P12 B: dinner plates (R1 slots 3, 5, 7, 9) alternating with dessert plates (slots 4, 6, 8) at the same 18.25 mm pitch",
+ "recipe_hash": "sha256:7f7040a562d940dc80bf500851dcb4de4508e98edaecdd72b9a099a90dd03183",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "plate_1",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.17068621509894522,
+     0.11151032549776127,
+     0.1991863442603746
+    ],
+    "q": [
+     0.4825884997844696,
+     0.480001300573349,
+     0.5192369818687439,
+     0.5168172717094421
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.7,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_2",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.13418632843412734,
+     0.11151016443868811,
+     0.19918834871191518
+    ],
+    "q": [
+     0.4828528165817261,
+     0.47976770997047424,
+     0.5194971561431885,
+     0.5165258049964905
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 6,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_3",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.0977008602594278,
+     0.11151140369908351,
+     0.19918040912578244
+    ],
+    "q": [
+     0.4824763834476471,
+     0.48001834750175476,
+     0.5191811919212341,
+     0.5169621706008911
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.7,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_4",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.061191967647838144,
+     0.11151000091222991,
+     0.19918456514960414
+    ],
+    "q": [
+     0.4827583134174347,
+     0.47979801893234253,
+     0.519463062286377,
+     0.5166201591491699
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 6.1,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "small_1",
+   "item_type": "dessert_plate_porcelain_190",
+   "pose": {
+    "p": [
+     -0.1520993137852679,
+     0.11152295554385856,
+     0.16337842577492442
+    ],
+    "q": [
+     0.45444923639297485,
+     0.45120543241500854,
+     0.5448361039161682,
+     0.5413347482681274
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 6.5,
+    "rotation_deg": 5.4,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "small_2",
+   "item_type": "dessert_plate_porcelain_190",
+   "pose": {
+    "p": [
+     -0.11558835549376675,
+     0.111510110744553,
+     0.16338727150552582
+    ],
+    "q": [
+     0.4552006423473358,
+     0.45049381256103516,
+     0.5457372665405273,
+     0.5403873920440674
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 6.7,
+    "rotation_deg": 5.3,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "small_3",
+   "item_type": "dessert_plate_porcelain_190",
+   "pose": {
+    "p": [
+     -0.07907498792410031,
+     0.1115118360557582,
+     0.16339261968669827
+    ],
+    "q": [
+     0.4563337564468384,
+     0.44942569732666016,
+     0.5469470024108887,
+     0.5390965938568115
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 6.1,
+    "rotation_deg": 3.4,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:10f3876553a5b3e98d2161f98ab8cbe217046748dbf16cbd8da241bd446a04fa"
+}

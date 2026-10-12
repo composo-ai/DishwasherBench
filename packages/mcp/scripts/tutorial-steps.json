@@ -1,0 +1,145 @@
+[
+  { "resource": "spotless://level/manual" },
+  { "resource": "spotless://guidance/loading" },
+  { "tool": "get_level" },
+  {
+    "tool": "render",
+    "args": { "view": "iso_lower", "options": { "labels": true, "grid": true } },
+    "note": "what is where: the lower basket is out, the cutlery basket stands in its front middle"
+  },
+  {
+    "tool": "render",
+    "args": { "view": "top_lower", "options": { "labels": true, "grid": true } },
+    "note": "the rows of tines and the free areas, in the coordinates place takes"
+  },
+  {
+    "tool": "list_slots",
+    "args": { "rack": "lower_rack", "item_id": "plate_01" },
+    "note": "where a dinner plate is dropped to stand in each slot"
+  },
+  {
+    "tool": "place",
+    "args": {
+      "item_id": "plate_01",
+      "frame": "lower_rack",
+      "position_mm": [106, 368, 227],
+      "orientation": { "preset": "on_edge", "yaw_deg": 90 }
+    },
+    "note": "the suggested place tine_row_r1+tine_row_r2.slot_04, on the left"
+  },
+  {
+    "tool": "preview",
+    "args": {
+      "item_id": "plate_02",
+      "frame": "lower_rack",
+      "position_mm": [216, 368, 227],
+      "orientation": { "preset": "on_edge", "yaw_deg": 90 }
+    },
+    "note": "six slots along: does it clear the first plate, which leans?"
+  },
+  {
+    "tool": "preview",
+    "args": {
+      "item_id": "plate_02",
+      "frame": "lower_rack",
+      "position_mm": [404, 368, 227],
+      "orientation": { "preset": "on_edge", "yaw_deg": -90 }
+    },
+    "note": "slot_17 on the right instead, clear of the cutlery basket"
+  },
+  {
+    "tool": "place",
+    "args": {
+      "item_id": "plate_02",
+      "frame": "lower_rack",
+      "position_mm": [404, 368, 227],
+      "orientation": { "preset": "on_edge", "yaw_deg": -90 }
+    }
+  },
+  {
+    "tool": "place",
+    "args": {
+      "item_id": "bowl_01",
+      "frame": "lower_rack",
+      "position_mm": [420, 130, 220],
+      "orientation": { "preset": "inclined" }
+    },
+    "note": "front right: opening down, at an angle"
+  },
+  {
+    "tool": "place",
+    "args": {
+      "item_id": "fork_01",
+      "frame": "cutlery_basket",
+      "position_mm": [32, 27, 150],
+      "orientation": { "preset": "handle_up" }
+    },
+    "note": "cell c00, points down"
+  },
+  {
+    "tool": "place",
+    "args": {
+      "item_id": "knife_01",
+      "frame": "cutlery_basket",
+      "position_mm": [96, 202, 160],
+      "orientation": { "preset": "handle_up" }
+    },
+    "note": "cell c12, away from the fork"
+  },
+  {
+    "tool": "render",
+    "args": { "view": "top_lower", "options": { "labels": true, "grid": true } },
+    "note": "check the lower basket"
+  },
+  {
+    "tool": "render",
+    "args": { "view": "front", "options": { "labels": true, "grid": true } },
+    "note": "heights: does anything stand above the basket's envelope?"
+  },
+  {
+    "tool": "set_rack",
+    "args": { "rack": "upper_rack", "option": { "name": "position", "value": "out" } }
+  },
+  {
+    "tool": "render",
+    "args": { "view": "top_upper", "options": { "labels": true, "grid": true } },
+    "note": "the upper basket's rows, shelves and free areas"
+  },
+  {
+    "tool": "place",
+    "args": {
+      "item_id": "mug_01",
+      "frame": "upper_rack",
+      "position_mm": [400, 150, 150],
+      "orientation": { "preset": "inverted" }
+    }
+  },
+  {
+    "tool": "place",
+    "args": {
+      "item_id": "glass_01",
+      "frame": "upper_rack",
+      "position_mm": [248, 345, 150],
+      "orientation": { "preset": "inverted" }
+    },
+    "note": "between two rows of tines"
+  },
+  {
+    "tool": "render",
+    "args": { "view": "top_upper", "options": { "labels": true, "grid": true } }
+  },
+  { "tool": "render", "args": { "view": "iso_upper", "options": { "labels": true } } },
+  {
+    "tool": "check_load",
+    "note": "do the baskets go in, do the arms turn, does the door close, can the detergent get out"
+  },
+  { "tool": "get_state" },
+  { "tool": "start_cycle" },
+  { "tool": "get_report", "args": { "wait_s": 120 } },
+  { "tool": "get_report", "args": { "wait_s": 120 } },
+  {
+    "tool": "render",
+    "args": { "view": "item", "options": { "item_id": "bowl_01", "after_wash": true } },
+    "note": "what is left on the bowl, and where"
+  }
+]

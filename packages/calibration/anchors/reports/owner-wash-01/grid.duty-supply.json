@@ -1,0 +1,1922 @@
+{
+ "name": "duty-supply",
+ "records": [
+  "owner-wash-01-egg-yolk-eco50",
+  "std-eu-13.round-robin-ta.detergent-d"
+ ],
+ "keys": [
+  "prog.soakDuty",
+  "soil.supplyExchange"
+ ],
+ "fixed": {},
+ "axes": {
+  "prog.soakDuty": [
+   0.6,
+   0.7,
+   0.75,
+   0.8,
+   0.85,
+   0.9,
+   1
+  ],
+  "soil.supplyExchange": [
+   0.005,
+   0.01,
+   0.02,
+   0.04,
+   0.08
+  ]
+ },
+ "points": [
+  {
+   "z": [
+    -0.5108256237659907,
+    -5.298317366548036
+   ],
+   "values": {
+    "prog.soakDuty": 0.6,
+    "soil.supplyExchange": 0.005000000000000002
+   },
+   "logPosterior": -7.833181977908553,
+   "ownerLogLikelihood": -7.2161827005399966,
+   "literatureLogLikelihood": -0.5570462173378775,
+   "logPrior": -0.0599530600306792,
+   "plates": {
+    "plate_9121": {
+     "nominal": 190.18832509508238,
+     "median": 190.18832509508238,
+     "low": 0,
+     "high": 11206.400631749264,
+     "cleanShare": 0.06118
+    },
+    "plate_9122": {
+     "nominal": 79.5053749590134,
+     "median": 79.5053749590134,
+     "low": 0,
+     "high": 9324.569714457455,
+     "cleanShare": 0.17841
+    },
+    "plate_9123": {
+     "nominal": 3.772670085645851,
+     "median": 3.772670085645851,
+     "low": 0,
+     "high": 3623.898092749833,
+     "cleanShare": 0.62042
+    },
+    "plate_9124": {
+     "nominal": 97.29106230721034,
+     "median": 97.29106230721034,
+     "low": 0,
+     "high": 8150.560897250563,
+     "cleanShare": 0.17841
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.5316176470588236,
+    "cutlery": 4.578063725490196,
+    "glass": 2.9549999999999996,
+    "all": 4.066276041666667,
+    "milkGlasses": 1.8538461538461535,
+    "teaItems": 1.5,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.5108256237659907,
+    -4.605170185988091
+   ],
+   "values": {
+    "prog.soakDuty": 0.6,
+    "soil.supplyExchange": 0.010000000000000005
+   },
+   "logPosterior": -7.88596384599427,
+   "ownerLogLikelihood": -7.289893972704267,
+   "literatureLogLikelihood": -0.5570462173378775,
+   "logPrior": -0.03902365595212604,
+   "plates": {
+    "plate_9121": {
+     "nominal": 429.48387862112236,
+     "median": 429.48387862112236,
+     "low": 0,
+     "high": 13488.211595690616,
+     "cleanShare": 0.06118
+    },
+    "plate_9122": {
+     "nominal": 107.72064746600056,
+     "median": 107.72064746600056,
+     "low": 0,
+     "high": 10064.1846560697,
+     "cleanShare": 0.17841
+    },
+    "plate_9123": {
+     "nominal": 6.627376703207611,
+     "median": 6.627376703207611,
+     "low": 0,
+     "high": 4242.481580135259,
+     "cleanShare": 0.37958
+    },
+    "plate_9124": {
+     "nominal": 118.33859077190169,
+     "median": 118.33859077190169,
+     "low": 0,
+     "high": 8332.697245243207,
+     "cleanShare": 0.17841
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.5316176470588236,
+    "cutlery": 4.578063725490196,
+    "glass": 2.9549999999999996,
+    "all": 4.066276041666667,
+    "milkGlasses": 1.8538461538461535,
+    "teaItems": 1.5,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.5108256237659907,
+    -3.912023005428146
+   ],
+   "values": {
+    "prog.soakDuty": 0.6,
+    "soil.supplyExchange": 0.020000000000000004
+   },
+   "logPosterior": -8.539345301910327,
+   "ownerLogLikelihood": -7.950251896646508,
+   "literatureLogLikelihood": -0.5570462173378775,
+   "logPrior": -0.03204718792594166,
+   "plates": {
+    "plate_9121": {
+     "nominal": 939.9931386504214,
+     "median": 939.9931386504214,
+     "low": 0.773899457599778,
+     "high": 16029.23378341141,
+     "cleanShare": 0.01352
+    },
+    "plate_9122": {
+     "nominal": 176.9215027932447,
+     "median": 176.9215027932447,
+     "low": 0,
+     "high": 11364.248485907416,
+     "cleanShare": 0.17841
+    },
+    "plate_9123": {
+     "nominal": 17.03699667909693,
+     "median": 17.03699667909693,
+     "low": 0,
+     "high": 5440.0061393386695,
+     "cleanShare": 0.37958
+    },
+    "plate_9124": {
+     "nominal": 169.27977977097365,
+     "median": 169.27977977097365,
+     "low": 0,
+     "high": 8637.252083234684,
+     "cleanShare": 0.17841
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.5316176470588236,
+    "cutlery": 4.578063725490196,
+    "glass": 2.9549999999999996,
+    "all": 4.066276041666667,
+    "milkGlasses": 1.8538461538461535,
+    "teaItems": 1.5,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.5108256237659907,
+    -3.2188758248682006
+   ],
+   "values": {
+    "prog.soakDuty": 0.6,
+    "soil.supplyExchange": 0.04000000000000001
+   },
+   "logPosterior": -9.496043258828074,
+   "ownerLogLikelihood": -8.89997338553807,
+   "literatureLogLikelihood": -0.5570462173378775,
+   "logPrior": -0.03902365595212605,
+   "plates": {
+    "plate_9121": {
+     "nominal": 1869.2303577259859,
+     "median": 1869.2303577259859,
+     "low": 2.4763595510110155,
+     "high": 18148.54297302378,
+     "cleanShare": 0.01352
+    },
+    "plate_9122": {
+     "nominal": 367.73151910324486,
+     "median": 367.73151910324486,
+     "low": 0,
+     "high": 13368.644847400572,
+     "cleanShare": 0.06118
+    },
+    "plate_9123": {
+     "nominal": 56.828306454869114,
+     "median": 56.828306454869114,
+     "low": 0,
+     "high": 7589.007033530132,
+     "cleanShare": 0.17841
+    },
+    "plate_9124": {
+     "nominal": 299.04116773836046,
+     "median": 299.04116773836046,
+     "low": 0,
+     "high": 9073.37346950468,
+     "cleanShare": 0.17841
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.5316176470588236,
+    "cutlery": 4.578063725490196,
+    "glass": 2.9549999999999996,
+    "all": 4.066276041666667,
+    "milkGlasses": 1.8538461538461535,
+    "teaItems": 1.5,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.5108256237659907,
+    -2.5257286443082556
+   ],
+   "values": {
+    "prog.soakDuty": 0.6,
+    "soil.supplyExchange": 0.07999999999999999
+   },
+   "logPosterior": -11.631928552536387,
+   "ownerLogLikelihood": -11.01492927516783,
+   "literatureLogLikelihood": -0.5570462173378775,
+   "logPrior": -0.0599530600306792,
+   "plates": {
+    "plate_9121": {
+     "nominal": 3305.1547732305676,
+     "median": 3305.1547732305676,
+     "low": 6.246714476201314,
+     "high": 19521.12846489379,
+     "cleanShare": 0
+    },
+    "plate_9122": {
+     "nominal": 932.8539582690478,
+     "median": 932.8539582690478,
+     "low": 0.20545240125591965,
+     "high": 15865.243913911492,
+     "cleanShare": 0.01352
+    },
+    "plate_9123": {
+     "nominal": 207.90070792922975,
+     "median": 207.90070792922975,
+     "low": 0,
+     "high": 10884.178868186129,
+     "cleanShare": 0.17841
+    },
+    "plate_9124": {
+     "nominal": 631.7256210892979,
+     "median": 631.7256210892979,
+     "low": 0,
+     "high": 9557.397103024186,
+     "cleanShare": 0.06118
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.5316176470588236,
+    "cutlery": 4.578063725490196,
+    "glass": 2.9549999999999996,
+    "all": 4.066276041666667,
+    "milkGlasses": 1.8538461538461535,
+    "teaItems": 1.5,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.35667494393873245,
+    -5.298317366548036
+   ],
+   "values": {
+    "prog.soakDuty": 0.7,
+    "soil.supplyExchange": 0.005000000000000002
+   },
+   "logPosterior": -7.022174665685109,
+   "ownerLogLikelihood": -6.300119160772418,
+   "literatureLogLikelihood": -0.5329728481620943,
+   "logPrior": -0.18908265675059677,
+   "plates": {
+    "plate_9121": {
+     "nominal": 39.06295197731527,
+     "median": 39.06295197731527,
+     "low": 0,
+     "high": 7126.808921912822,
+     "cleanShare": 0.17841
+    },
+    "plate_9122": {
+     "nominal": 15.884083689816167,
+     "median": 15.884083689816167,
+     "low": 0,
+     "high": 5556.1785026162925,
+     "cleanShare": 0.37958
+    },
+    "plate_9123": {
+     "nominal": 0.39867935267417137,
+     "median": 0.39867935267417137,
+     "low": 0,
+     "high": 1640.1432613947188,
+     "cleanShare": 0.62042
+    },
+    "plate_9124": {
+     "nominal": 23.86876463172764,
+     "median": 23.86876463172764,
+     "low": 0,
+     "high": 6538.491410220134,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.4558823529411766,
+    "cutlery": 4.624264705882353,
+    "glass": 3.4299999999999997,
+    "all": 4.144921875,
+    "milkGlasses": 2.5846153846153843,
+    "teaItems": 1.25,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.35667494393873245,
+    -4.605170185988091
+   ],
+   "values": {
+    "prog.soakDuty": 0.7,
+    "soil.supplyExchange": 0.010000000000000005
+   },
+   "logPosterior": -6.622942839447687,
+   "ownerLogLikelihood": -5.921816738613549,
+   "literatureLogLikelihood": -0.5329728481620943,
+   "logPrior": -0.1681532526720436,
+   "plates": {
+    "plate_9121": {
+     "nominal": 103.41472739761352,
+     "median": 103.41472739761352,
+     "low": 0,
+     "high": 9282.939492887133,
+     "cleanShare": 0.17841
+    },
+    "plate_9122": {
+     "nominal": 22.09628591578743,
+     "median": 22.09628591578743,
+     "low": 0,
+     "high": 6174.988977881328,
+     "cleanShare": 0.37958
+    },
+    "plate_9123": {
+     "nominal": 0.7671148138940065,
+     "median": 0.7671148138940065,
+     "low": 0,
+     "high": 2007.976821089154,
+     "cleanShare": 0.62042
+    },
+    "plate_9124": {
+     "nominal": 28.401212923263966,
+     "median": 28.401212923263966,
+     "low": 0,
+     "high": 6772.106647349533,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.4558823529411766,
+    "cutlery": 4.624264705882353,
+    "glass": 3.4299999999999997,
+    "all": 4.144921875,
+    "milkGlasses": 2.5846153846153843,
+    "teaItems": 1.25,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.35667494393873245,
+    -3.912023005428146
+   ],
+   "values": {
+    "prog.soakDuty": 0.7,
+    "soil.supplyExchange": 0.020000000000000004
+   },
+   "logPosterior": -7.304050198181092,
+   "ownerLogLikelihood": -6.609900565373138,
+   "literatureLogLikelihood": -0.5329728481620943,
+   "logPrior": -0.16117678464585922,
+   "plates": {
+    "plate_9121": {
+     "nominal": 286.59721933342473,
+     "median": 286.59721933342473,
+     "low": 0,
+     "high": 12087.903580456894,
+     "cleanShare": 0.06118
+    },
+    "plate_9122": {
+     "nominal": 39.934029349465995,
+     "median": 39.934029349465995,
+     "low": 0,
+     "high": 7332.730754572868,
+     "cleanShare": 0.17841
+    },
+    "plate_9123": {
+     "nominal": 2.0349326851109137,
+     "median": 2.0349326851109137,
+     "low": 0,
+     "high": 2775.680444015839,
+     "cleanShare": 0.62042
+    },
+    "plate_9124": {
+     "nominal": 40.25379886602838,
+     "median": 40.25379886602838,
+     "low": 0,
+     "high": 7184.448543768662,
+     "cleanShare": 0.17841
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.4558823529411766,
+    "cutlery": 4.624264705882353,
+    "glass": 3.4299999999999997,
+    "all": 4.144921875,
+    "milkGlasses": 2.5846153846153843,
+    "teaItems": 1.25,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.35667494393873245,
+    -3.2188758248682006
+   ],
+   "values": {
+    "prog.soakDuty": 0.7,
+    "soil.supplyExchange": 0.04000000000000001
+   },
+   "logPosterior": -7.930420892573096,
+   "ownerLogLikelihood": -7.229294791738958,
+   "literatureLogLikelihood": -0.5329728481620943,
+   "logPrior": -0.16815325267204362,
+   "plates": {
+    "plate_9121": {
+     "nominal": 655.8420308022105,
+     "median": 655.8420308022105,
+     "low": 0.12804361901649722,
+     "high": 14924.251173772425,
+     "cleanShare": 0.06118
+    },
+    "plate_9122": {
+     "nominal": 94.47212956915965,
+     "median": 94.47212956915965,
+     "low": 0,
+     "high": 9319.836001986023,
+     "cleanShare": 0.17841
+    },
+    "plate_9123": {
+     "nominal": 8.07437311152614,
+     "median": 8.07437311152614,
+     "low": 0,
+     "high": 4293.698499356491,
+     "cleanShare": 0.37958
+    },
+    "plate_9124": {
+     "nominal": 79.99663394270208,
+     "median": 79.99663394270208,
+     "low": 0,
+     "high": 7836.3169816360705,
+     "cleanShare": 0.17841
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.4558823529411766,
+    "cutlery": 4.624264705882353,
+    "glass": 3.4299999999999997,
+    "all": 4.144921875,
+    "milkGlasses": 2.5846153846153843,
+    "teaItems": 1.25,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.35667494393873245,
+    -2.5257286443082556
+   ],
+   "values": {
+    "prog.soakDuty": 0.7,
+    "soil.supplyExchange": 0.07999999999999999
+   },
+   "logPosterior": -9.312475468428774,
+   "ownerLogLikelihood": -8.590419963516084,
+   "literatureLogLikelihood": -0.5329728481620943,
+   "logPrior": -0.18908265675059677,
+   "plates": {
+    "plate_9121": {
+     "nominal": 1261.5820894479325,
+     "median": 1261.5820894479325,
+     "low": 0.7179913646279688,
+     "high": 17157.750937604007,
+     "cleanShare": 0.01352
+    },
+    "plate_9122": {
+     "nominal": 276.97062293701214,
+     "median": 276.97062293701214,
+     "low": 0,
+     "high": 12177.11863561576,
+     "cleanShare": 0.06118
+    },
+    "plate_9123": {
+     "nominal": 40.92354383993133,
+     "median": 40.92354383993133,
+     "low": 0,
+     "high": 6946.831473759408,
+     "cleanShare": 0.37958
+    },
+    "plate_9124": {
+     "nominal": 209.4577915157916,
+     "median": 209.4577915157916,
+     "low": 0,
+     "high": 8676.703737087044,
+     "cleanShare": 0.17841
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.4558823529411766,
+    "cutlery": 4.624264705882353,
+    "glass": 3.4299999999999997,
+    "all": 4.144921875,
+    "milkGlasses": 2.5846153846153843,
+    "teaItems": 1.25,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.2876820724517809,
+    -5.298317366548036
+   ],
+   "values": {
+    "prog.soakDuty": 0.75,
+    "soil.supplyExchange": 0.005000000000000002
+   },
+   "logPosterior": -6.82833641271216,
+   "ownerLogLikelihood": -6.003229210167648,
+   "literatureLogLikelihood": -0.5461700907824216,
+   "logPrior": -0.2789371117620901,
+   "plates": {
+    "plate_9121": {
+     "nominal": 19.350809949397664,
+     "median": 19.350809949397664,
+     "low": 0,
+     "high": 5579.616983340534,
+     "cleanShare": 0.37958
+    },
+    "plate_9122": {
+     "nominal": 8.355738814097657,
+     "median": 8.355738814097657,
+     "low": 0,
+     "high": 4168.268744722294,
+     "cleanShare": 0.37958
+    },
+    "plate_9123": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 1072.2805795553797,
+     "cleanShare": 0.82159
+    },
+    "plate_9124": {
+     "nominal": 12.886637948281653,
+     "median": 12.886637948281653,
+     "low": 0,
+     "high": 5724.009990992498,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.4264705882352944,
+    "cutlery": 4.643382352941176,
+    "glass": 3.6500000000000004,
+    "all": 4.181640625,
+    "milkGlasses": 2.9230769230769234,
+    "teaItems": 1.15,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.2876820724517809,
+    -4.605170185988091
+   ],
+   "values": {
+    "prog.soakDuty": 0.75,
+    "soil.supplyExchange": 0.010000000000000005
+   },
+   "logPosterior": -6.909487441472655,
+   "ownerLogLikelihood": -6.105309643006697,
+   "literatureLogLikelihood": -0.5461700907824216,
+   "logPrior": -0.2580077076835369,
+   "plates": {
+    "plate_9121": {
+     "nominal": 51.9787320130237,
+     "median": 51.9787320130237,
+     "low": 0,
+     "high": 7596.420915426358,
+     "cleanShare": 0.17841
+    },
+    "plate_9122": {
+     "nominal": 11.14580317339433,
+     "median": 11.14580317339433,
+     "low": 0,
+     "high": 4708.537349111076,
+     "cleanShare": 0.37958
+    },
+    "plate_9123": {
+     "nominal": 0.19909181948869759,
+     "median": 0.19909181948869759,
+     "low": 0,
+     "high": 1349.0121533045544,
+     "cleanShare": 0.82159
+    },
+    "plate_9124": {
+     "nominal": 15.568609088498459,
+     "median": 15.568609088498459,
+     "low": 0,
+     "high": 5970.376959634743,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.4264705882352944,
+    "cutlery": 4.643382352941176,
+    "glass": 3.6500000000000004,
+    "all": 4.181640625,
+    "milkGlasses": 2.9230769230769234,
+    "teaItems": 1.15,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.2876820724517809,
+    -3.912023005428146
+   ],
+   "values": {
+    "prog.soakDuty": 0.75,
+    "soil.supplyExchange": 0.020000000000000004
+   },
+   "logPosterior": -6.853507536668079,
+   "ownerLogLikelihood": -6.056306206228305,
+   "literatureLogLikelihood": -0.5461700907824216,
+   "logPrior": -0.2510312396573525,
+   "plates": {
+    "plate_9121": {
+     "nominal": 159.76471216548958,
+     "median": 159.76471216548958,
+     "low": 0,
+     "high": 10341.730905901297,
+     "cleanShare": 0.17841
+    },
+    "plate_9122": {
+     "nominal": 20.072677581724548,
+     "median": 20.072677581724548,
+     "low": 0,
+     "high": 5746.263663741205,
+     "cleanShare": 0.37958
+    },
+    "plate_9123": {
+     "nominal": 0.7115260358261567,
+     "median": 0.7115260358261567,
+     "low": 0,
+     "high": 1944.9062328645866,
+     "cleanShare": 0.62042
+    },
+    "plate_9124": {
+     "nominal": 21.876293634144155,
+     "median": 21.876293634144155,
+     "low": 0,
+     "high": 6414.212011629973,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.4264705882352944,
+    "cutlery": 4.643382352941176,
+    "glass": 3.6500000000000004,
+    "all": 4.181640625,
+    "milkGlasses": 2.9230769230769234,
+    "teaItems": 1.15,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.2876820724517809,
+    -3.2188758248682006
+   ],
+   "values": {
+    "prog.soakDuty": 0.75,
+    "soil.supplyExchange": 0.04000000000000001
+   },
+   "logPosterior": -7.418710295165383,
+   "ownerLogLikelihood": -6.614532496699424,
+   "literatureLogLikelihood": -0.5461700907824216,
+   "logPrior": -0.2580077076835369,
+   "plates": {
+    "plate_9121": {
+     "nominal": 410.29894151785925,
+     "median": 410.29894151785925,
+     "low": 0,
+     "high": 13342.65413198325,
+     "cleanShare": 0.06118
+    },
+    "plate_9122": {
+     "nominal": 50.74814353698468,
+     "median": 50.74814353698468,
+     "low": 0,
+     "high": 7616.850373160039,
+     "cleanShare": 0.17841
+    },
+    "plate_9123": {
+     "nominal": 3.1650570121944317,
+     "median": 3.1650570121944317,
+     "low": 0,
+     "high": 3188.10719276998,
+     "cleanShare": 0.62042
+    },
+    "plate_9124": {
+     "nominal": 41.521458557079974,
+     "median": 41.521458557079974,
+     "low": 0,
+     "high": 7137.707121685225,
+     "cleanShare": 0.17841
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.4264705882352944,
+    "cutlery": 4.643382352941176,
+    "glass": 3.6500000000000004,
+    "all": 4.181640625,
+    "milkGlasses": 2.9230769230769234,
+    "teaItems": 1.15,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.2876820724517809,
+    -2.5257286443082556
+   ],
+   "values": {
+    "prog.soakDuty": 0.75,
+    "soil.supplyExchange": 0.07999999999999999
+   },
+   "logPosterior": -8.54036083785181,
+   "ownerLogLikelihood": -7.7152536353073,
+   "literatureLogLikelihood": -0.5461700907824216,
+   "logPrior": -0.2789371117620901,
+   "plates": {
+    "plate_9121": {
+     "nominal": 843.860955863447,
+     "median": 843.860955863447,
+     "low": 0.1598491445262523,
+     "high": 15890.964426544728,
+     "cleanShare": 0.06118
+    },
+    "plate_9122": {
+     "nominal": 158.09945333538863,
+     "median": 158.09945333538863,
+     "low": 0,
+     "high": 10482.656723972166,
+     "cleanShare": 0.17841
+    },
+    "plate_9123": {
+     "nominal": 19.206178602454653,
+     "median": 19.206178602454653,
+     "low": 0,
+     "high": 5505.640957152109,
+     "cleanShare": 0.37958
+    },
+    "plate_9124": {
+     "nominal": 120.6104309931612,
+     "median": 120.6104309931612,
+     "low": 0,
+     "high": 8121.389059597083,
+     "cleanShare": 0.17841
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.4264705882352944,
+    "cutlery": 4.643382352941176,
+    "glass": 3.6500000000000004,
+    "all": 4.181640625,
+    "milkGlasses": 2.9230769230769234,
+    "teaItems": 1.15,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.2231435513142097,
+    -5.298317366548036
+   ],
+   "values": {
+    "prog.soakDuty": 0.8,
+    "soil.supplyExchange": 0.005000000000000002
+   },
+   "logPosterior": -6.546241358984978,
+   "ownerLogLikelihood": -5.619919609835993,
+   "literatureLogLikelihood": -0.5453848887535073,
+   "logPrior": -0.3809368603954775,
+   "plates": {
+    "plate_9121": {
+     "nominal": 10.89198610386233,
+     "median": 10.89198610386233,
+     "low": 0,
+     "high": 4382.58760696657,
+     "cleanShare": 0.37958
+    },
+    "plate_9122": {
+     "nominal": 4.875007092753768,
+     "median": 4.875007092753768,
+     "low": 0,
+     "high": 3082.574973783927,
+     "cleanShare": 0.37958
+    },
+    "plate_9123": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 692.0284856553749,
+     "cleanShare": 0.82159
+    },
+    "plate_9124": {
+     "nominal": 7.523688570747345,
+     "median": 7.523688570747345,
+     "low": 0,
+     "high": 4943.526400197427,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.411764705882353,
+    "cutlery": 4.627450980392156,
+    "glass": 3.15,
+    "all": 4.091145833333333,
+    "milkGlasses": 2.1538461538461537,
+    "teaItems": 1.15,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.2231435513142097,
+    -4.605170185988091
+   ],
+   "values": {
+    "prog.soakDuty": 0.8,
+    "soil.supplyExchange": 0.010000000000000005
+   },
+   "logPosterior": -6.888015031116297,
+   "ownerLogLikelihood": -5.982622686045866,
+   "literatureLogLikelihood": -0.5453848887535073,
+   "logPrior": -0.3600074563169243,
+   "plates": {
+    "plate_9121": {
+     "nominal": 30.309371165010784,
+     "median": 30.309371165010784,
+     "low": 0,
+     "high": 6285.083626033283,
+     "cleanShare": 0.17841
+    },
+    "plate_9122": {
+     "nominal": 6.346219969043789,
+     "median": 6.346219969043789,
+     "low": 0,
+     "high": 3548.9142719081674,
+     "cleanShare": 0.37958
+    },
+    "plate_9123": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 901.7166977492383,
+     "cleanShare": 0.82159
+    },
+    "plate_9124": {
+     "nominal": 9.136410218789571,
+     "median": 9.136410218789571,
+     "low": 0,
+     "high": 5195.241572873824,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.411764705882353,
+    "cutlery": 4.627450980392156,
+    "glass": 3.15,
+    "all": 4.091145833333333,
+    "milkGlasses": 2.1538461538461537,
+    "teaItems": 1.15,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.2231435513142097,
+    -3.912023005428146
+   ],
+   "values": {
+    "prog.soakDuty": 0.8,
+    "soil.supplyExchange": 0.020000000000000004
+   },
+   "logPosterior": -6.683702251538997,
+   "ownerLogLikelihood": -5.785286374494749,
+   "literatureLogLikelihood": -0.5453848887535073,
+   "logPrior": -0.3530309882907399,
+   "plates": {
+    "plate_9121": {
+     "nominal": 102.39783222524444,
+     "median": 102.39783222524444,
+     "low": 0,
+     "high": 8994.270002936491,
+     "cleanShare": 0.17841
+    },
+    "plate_9122": {
+     "nominal": 11.196559308214733,
+     "median": 11.196559308214733,
+     "low": 0,
+     "high": 4478.557913308357,
+     "cleanShare": 0.37958
+    },
+    "plate_9123": {
+     "nominal": 0.22755239778131417,
+     "median": 0.22755239778131417,
+     "low": 0,
+     "high": 1368.4490990739303,
+     "cleanShare": 0.62042
+    },
+    "plate_9124": {
+     "nominal": 12.794307194134609,
+     "median": 12.794307194134609,
+     "low": 0,
+     "high": 5659.300942331426,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.411764705882353,
+    "cutlery": 4.627450980392156,
+    "glass": 3.15,
+    "all": 4.091145833333333,
+    "milkGlasses": 2.1538461538461537,
+    "teaItems": 1.15,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.2231435513142097,
+    -3.2188758248682006
+   ],
+   "values": {
+    "prog.soakDuty": 0.8,
+    "soil.supplyExchange": 0.04000000000000001
+   },
+   "logPosterior": -7.2232532824755875,
+   "ownerLogLikelihood": -6.317860937405156,
+   "literatureLogLikelihood": -0.5453848887535073,
+   "logPrior": -0.3600074563169243,
+   "plates": {
+    "plate_9121": {
+     "nominal": 290.1257864295913,
+     "median": 290.1257864295913,
+     "low": 0,
+     "high": 12119.567128008906,
+     "cleanShare": 0.06118
+    },
+    "plate_9122": {
+     "nominal": 29.76592882748328,
+     "median": 29.76592882748328,
+     "low": 0,
+     "high": 6218.925924643072,
+     "cleanShare": 0.17841
+    },
+    "plate_9123": {
+     "nominal": 1.3873316282208228,
+     "median": 1.3873316282208228,
+     "low": 0,
+     "high": 2395.360635395668,
+     "cleanShare": 0.62042
+    },
+    "plate_9124": {
+     "nominal": 23.497915207535897,
+     "median": 23.497915207535897,
+     "low": 0,
+     "high": 6438.602680034764,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.411764705882353,
+    "cutlery": 4.627450980392156,
+    "glass": 3.15,
+    "all": 4.091145833333333,
+    "milkGlasses": 2.1538461538461537,
+    "teaItems": 1.15,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.2231435513142097,
+    -2.5257286443082556
+   ],
+   "values": {
+    "prog.soakDuty": 0.8,
+    "soil.supplyExchange": 0.07999999999999999
+   },
+   "logPosterior": -8.08497070037206,
+   "ownerLogLikelihood": -7.158648951223075,
+   "literatureLogLikelihood": -0.5453848887535073,
+   "logPrior": -0.3809368603954775,
+   "plates": {
+    "plate_9121": {
+     "nominal": 647.4739768700096,
+     "median": 647.4739768700096,
+     "low": 0.052944623072408915,
+     "high": 14926.904187879929,
+     "cleanShare": 0.06118
+    },
+    "plate_9122": {
+     "nominal": 101.46377939320934,
+     "median": 101.46377939320934,
+     "low": 0,
+     "high": 9054.783102738189,
+     "cleanShare": 0.17841
+    },
+    "plate_9123": {
+     "nominal": 10.259379275981154,
+     "median": 10.259379275981154,
+     "low": 0,
+     "high": 4438.155173024948,
+     "cleanShare": 0.37958
+    },
+    "plate_9124": {
+     "nominal": 71.51720244222086,
+     "median": 71.51720244222086,
+     "low": 0,
+     "high": 7542.57208814765,
+     "cleanShare": 0.17841
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.411764705882353,
+    "cutlery": 4.627450980392156,
+    "glass": 3.15,
+    "all": 4.091145833333333,
+    "milkGlasses": 2.1538461538461537,
+    "teaItems": 1.15,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.16251892949777494,
+    -5.298317366548036
+   ],
+   "values": {
+    "prog.soakDuty": 0.85,
+    "soil.supplyExchange": 0.005000000000000002
+   },
+   "logPosterior": -7.022945530468296,
+   "ownerLogLikelihood": -5.988339082234435,
+   "literatureLogLikelihood": -0.5420538687967555,
+   "logPrior": -0.4925525794371052,
+   "plates": {
+    "plate_9121": {
+     "nominal": 5.981710868056944,
+     "median": 5.981710868056944,
+     "low": 0,
+     "high": 3272.2668137532764,
+     "cleanShare": 0.37958
+    },
+    "plate_9122": {
+     "nominal": 2.486352336304379,
+     "median": 2.486352336304379,
+     "low": 0,
+     "high": 2238.0683796030607,
+     "cleanShare": 0.62042
+    },
+    "plate_9123": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 434.71112193178465,
+     "cleanShare": 0.82159
+    },
+    "plate_9124": {
+     "nominal": 4.089543681175936,
+     "median": 4.089543681175936,
+     "low": 0,
+     "high": 4210.491961918804,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.3725490196078427,
+    "cutlery": 4.584967320261438,
+    "glass": 3.283333333333333,
+    "all": 4.078993055555555,
+    "milkGlasses": 2.3589743589743586,
+    "teaItems": 1.05,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.16251892949777494,
+    -4.605170185988091
+   ],
+   "values": {
+    "prog.soakDuty": 0.85,
+    "soil.supplyExchange": 0.010000000000000005
+   },
+   "logPosterior": -6.521508677319905,
+   "ownerLogLikelihood": -5.507831633164598,
+   "literatureLogLikelihood": -0.5420538687967555,
+   "logPrior": -0.471623175358552,
+   "plates": {
+    "plate_9121": {
+     "nominal": 14.623439803069301,
+     "median": 14.623439803069301,
+     "low": 0,
+     "high": 4867.645221659081,
+     "cleanShare": 0.37958
+    },
+    "plate_9122": {
+     "nominal": 3.46940991811091,
+     "median": 3.46940991811091,
+     "low": 0,
+     "high": 2608.6566903172766,
+     "cleanShare": 0.62042
+    },
+    "plate_9123": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 578.1210117954614,
+     "cleanShare": 0.82159
+    },
+    "plate_9124": {
+     "nominal": 5.10724909183476,
+     "median": 5.10724909183476,
+     "low": 0,
+     "high": 4452.715971235738,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.3725490196078427,
+    "cutlery": 4.584967320261438,
+    "glass": 3.283333333333333,
+    "all": 4.078993055555555,
+    "milkGlasses": 2.3589743589743586,
+    "teaItems": 1.05,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.16251892949777494,
+    -3.912023005428146
+   ],
+   "values": {
+    "prog.soakDuty": 0.85,
+    "soil.supplyExchange": 0.020000000000000004
+   },
+   "logPosterior": -6.809498916892323,
+   "ownerLogLikelihood": -5.802798340763199,
+   "literatureLogLikelihood": -0.5420538687967555,
+   "logPrior": -0.4646467073323676,
+   "plates": {
+    "plate_9121": {
+     "nominal": 49.051949331821426,
+     "median": 49.051949331821426,
+     "low": 0,
+     "high": 7259.861081605777,
+     "cleanShare": 0.17841
+    },
+    "plate_9122": {
+     "nominal": 5.972188500791282,
+     "median": 5.972188500791282,
+     "low": 0,
+     "high": 3364.765078151949,
+     "cleanShare": 0.37958
+    },
+    "plate_9123": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 915.7763189823665,
+     "cleanShare": 0.82159
+    },
+    "plate_9124": {
+     "nominal": 7.513297345380666,
+     "median": 7.513297345380666,
+     "low": 0,
+     "high": 4905.44054254612,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.3725490196078427,
+    "cutlery": 4.584967320261438,
+    "glass": 3.283333333333333,
+    "all": 4.078993055555555,
+    "milkGlasses": 2.3589743589743586,
+    "teaItems": 1.05,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.16251892949777494,
+    -3.2188758248682006
+   ],
+   "values": {
+    "prog.soakDuty": 0.85,
+    "soil.supplyExchange": 0.04000000000000001
+   },
+   "logPosterior": -6.948538707830667,
+   "ownerLogLikelihood": -5.93486166367536,
+   "literatureLogLikelihood": -0.5420538687967555,
+   "logPrior": -0.471623175358552,
+   "plates": {
+    "plate_9121": {
+     "nominal": 149.46433887512418,
+     "median": 149.46433887512418,
+     "low": 0,
+     "high": 10159.244241590424,
+     "cleanShare": 0.17841
+    },
+    "plate_9122": {
+     "nominal": 15.663907061331349,
+     "median": 15.663907061331349,
+     "low": 0,
+     "high": 4843.628887520158,
+     "cleanShare": 0.37958
+    },
+    "plate_9123": {
+     "nominal": 0.46253940220798473,
+     "median": 0.46253940220798473,
+     "low": 0,
+     "high": 1688.3189430524549,
+     "cleanShare": 0.62042
+    },
+    "plate_9124": {
+     "nominal": 13.79309042673754,
+     "median": 13.79309042673754,
+     "low": 0,
+     "high": 5690.880332042761,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.3725490196078427,
+    "cutlery": 4.584967320261438,
+    "glass": 3.283333333333333,
+    "all": 4.078993055555555,
+    "milkGlasses": 2.3589743589743586,
+    "teaItems": 1.05,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.16251892949777494,
+    -2.5257286443082556
+   ],
+   "values": {
+    "prog.soakDuty": 0.85,
+    "soil.supplyExchange": 0.07999999999999999
+   },
+   "logPosterior": -7.722673276462245,
+   "ownerLogLikelihood": -6.688066828228385,
+   "literatureLogLikelihood": -0.5420538687967555,
+   "logPrior": -0.4925525794371052,
+   "plates": {
+    "plate_9121": {
+     "nominal": 362.3751059291383,
+     "median": 362.3751059291383,
+     "low": 0,
+     "high": 13023.075273401873,
+     "cleanShare": 0.06118
+    },
+    "plate_9122": {
+     "nominal": 55.61797592673658,
+     "median": 55.61797592673658,
+     "low": 0,
+     "high": 7412.760876873337,
+     "cleanShare": 0.17841
+    },
+    "plate_9123": {
+     "nominal": 3.708451124328979,
+     "median": 3.708451124328979,
+     "low": 0,
+     "high": 3318.0368177043356,
+     "cleanShare": 0.37958
+    },
+    "plate_9124": {
+     "nominal": 38.209869501278234,
+     "median": 38.209869501278234,
+     "low": 0,
+     "high": 6864.071798296488,
+     "cleanShare": 0.17841
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.3725490196078427,
+    "cutlery": 4.584967320261438,
+    "glass": 3.283333333333333,
+    "all": 4.078993055555555,
+    "milkGlasses": 2.3589743589743586,
+    "teaItems": 1.05,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.10536051565782628,
+    -5.298317366548036
+   ],
+   "values": {
+    "prog.soakDuty": 0.9,
+    "soil.supplyExchange": 0.005000000000000002
+   },
+   "logPosterior": -7.36067465504934,
+   "ownerLogLikelihood": -6.203799277210378,
+   "literatureLogLikelihood": -0.5450689335906234,
+   "logPrior": -0.611806444248338,
+   "plates": {
+    "plate_9121": {
+     "nominal": 3.9221438541270572,
+     "median": 3.9221438541270572,
+     "low": 0,
+     "high": 2465.1010800049653,
+     "cleanShare": 0.62042
+    },
+    "plate_9122": {
+     "nominal": 1.1256404978223031,
+     "median": 1.1256404978223031,
+     "low": 0,
+     "high": 1616.5237025521596,
+     "cleanShare": 0.62042
+    },
+    "plate_9123": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 272.0532607762241,
+     "cleanShare": 0.93882
+    },
+    "plate_9124": {
+     "nominal": 2.2667788670737896,
+     "median": 2.2667788670737896,
+     "low": 0,
+     "high": 3555.1915961706195,
+     "cleanShare": 0.62042
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.3382352941176467,
+    "cutlery": 4.548529411764707,
+    "glass": 3.41,
+    "all": 4.0703125,
+    "milkGlasses": 2.553846153846154,
+    "teaItems": 0.97,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.10536051565782628,
+    -4.605170185988091
+   ],
+   "values": {
+    "prog.soakDuty": 0.9,
+    "soil.supplyExchange": 0.010000000000000005
+   },
+   "logPosterior": -6.84104626415589,
+   "ownerLogLikelihood": -5.705100290395482,
+   "literatureLogLikelihood": -0.5450689335906234,
+   "logPrior": -0.5908770401697848,
+   "plates": {
+    "plate_9121": {
+     "nominal": 8.25867353278395,
+     "median": 8.25867353278395,
+     "low": 0,
+     "high": 3810.1375107793815,
+     "cleanShare": 0.37958
+    },
+    "plate_9122": {
+     "nominal": 1.6258393264659938,
+     "median": 1.6258393264659938,
+     "low": 0,
+     "high": 1911.018264792357,
+     "cleanShare": 0.62042
+    },
+    "plate_9123": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 368.5237224241641,
+     "cleanShare": 0.82159
+    },
+    "plate_9124": {
+     "nominal": 2.9870061792349625,
+     "median": 2.9870061792349625,
+     "low": 0,
+     "high": 3783.2320703926457,
+     "cleanShare": 0.62042
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.3382352941176467,
+    "cutlery": 4.548529411764707,
+    "glass": 3.41,
+    "all": 4.0703125,
+    "milkGlasses": 2.553846153846154,
+    "teaItems": 0.97,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.10536051565782628,
+    -3.912023005428146
+   ],
+   "values": {
+    "prog.soakDuty": 0.9,
+    "soil.supplyExchange": 0.020000000000000004
+   },
+   "logPosterior": -6.820773277125054,
+   "ownerLogLikelihood": -5.6918037713908305,
+   "literatureLogLikelihood": -0.5450689335906234,
+   "logPrior": -0.5839005721436005,
+   "plates": {
+    "plate_9121": {
+     "nominal": 26.416000185086233,
+     "median": 26.416000185086233,
+     "low": 0,
+     "high": 5954.121399752109,
+     "cleanShare": 0.17841
+    },
+    "plate_9122": {
+     "nominal": 3.21862888471385,
+     "median": 3.21862888471385,
+     "low": 0,
+     "high": 2529.635020062206,
+     "cleanShare": 0.62042
+    },
+    "plate_9123": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 609.2181222855169,
+     "cleanShare": 0.82159
+    },
+    "plate_9124": {
+     "nominal": 4.384946477674524,
+     "median": 4.384946477674524,
+     "low": 0,
+     "high": 4217.885557425365,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.3382352941176467,
+    "cutlery": 4.548529411764707,
+    "glass": 3.41,
+    "all": 4.0703125,
+    "milkGlasses": 2.553846153846154,
+    "teaItems": 0.97,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.10536051565782628,
+    -3.2188758248682006
+   ],
+   "values": {
+    "prog.soakDuty": 0.9,
+    "soil.supplyExchange": 0.04000000000000001
+   },
+   "logPosterior": -6.80970802572304,
+   "ownerLogLikelihood": -5.673762051962632,
+   "literatureLogLikelihood": -0.5450689335906234,
+   "logPrior": -0.5908770401697848,
+   "plates": {
+    "plate_9121": {
+     "nominal": 84.52056847526747,
+     "median": 84.52056847526747,
+     "low": 0,
+     "high": 8664.493320552394,
+     "cleanShare": 0.17841
+    },
+    "plate_9122": {
+     "nominal": 8.57386622675864,
+     "median": 8.57386622675864,
+     "low": 0,
+     "high": 3782.8498523586522,
+     "cleanShare": 0.37958
+    },
+    "plate_9123": {
+     "nominal": 0.13696086456205145,
+     "median": 0.13696086456205145,
+     "low": 0,
+     "high": 1201.5969074912932,
+     "cleanShare": 0.62042
+    },
+    "plate_9124": {
+     "nominal": 8.48731451318047,
+     "median": 8.48731451318047,
+     "low": 0,
+     "high": 4994.262020913633,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.3382352941176467,
+    "cutlery": 4.548529411764707,
+    "glass": 3.41,
+    "all": 4.0703125,
+    "milkGlasses": 2.553846153846154,
+    "teaItems": 0.97,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    -0.10536051565782628,
+    -2.5257286443082556
+   ],
+   "values": {
+    "prog.soakDuty": 0.9,
+    "soil.supplyExchange": 0.07999999999999999
+   },
+   "logPosterior": -7.499305490127421,
+   "ownerLogLikelihood": -6.34243011228846,
+   "literatureLogLikelihood": -0.5450689335906234,
+   "logPrior": -0.611806444248338,
+   "plates": {
+    "plate_9121": {
+     "nominal": 221.28815934531642,
+     "median": 221.28815934531642,
+     "low": 0,
+     "high": 11513.780457661327,
+     "cleanShare": 0.06118
+    },
+    "plate_9122": {
+     "nominal": 33.05022477835111,
+     "median": 33.05022477835111,
+     "low": 0,
+     "high": 6094.197946867533,
+     "cleanShare": 0.17841
+    },
+    "plate_9123": {
+     "nominal": 1.6067606972305803,
+     "median": 1.6067606972305803,
+     "low": 0,
+     "high": 2519.2072449793745,
+     "cleanShare": 0.62042
+    },
+    "plate_9124": {
+     "nominal": 21.92264845517475,
+     "median": 21.92264845517475,
+     "low": 0,
+     "high": 6209.167875235992,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.3382352941176467,
+    "cutlery": 4.548529411764707,
+    "glass": 3.41,
+    "all": 4.0703125,
+    "milkGlasses": 2.553846153846154,
+    "teaItems": 0.97,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    0,
+    -5.298317366548036
+   ],
+   "values": {
+    "prog.soakDuty": 1,
+    "soil.supplyExchange": 0.005000000000000002
+   },
+   "logPosterior": -7.467336281660625,
+   "ownerLogLikelihood": -6.034081990341048,
+   "literatureLogLikelihood": -0.5659681176503226,
+   "logPrior": -0.8672861736692546,
+   "plates": {
+    "plate_9121": {
+     "nominal": 1.7833596004172758,
+     "median": 1.7833596004172758,
+     "low": 0,
+     "high": 1584.6187277611605,
+     "cleanShare": 0.62042
+    },
+    "plate_9122": {
+     "nominal": 0.18118057930232062,
+     "median": 0.18118057930232062,
+     "low": 0,
+     "high": 943.4470115071815,
+     "cleanShare": 0.62042
+    },
+    "plate_9123": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 124.88693669999091,
+     "cleanShare": 0.93882
+    },
+    "plate_9124": {
+     "nominal": 0.7737233446908184,
+     "median": 0.7737233446908184,
+     "low": 0,
+     "high": 2615.3161032682838,
+     "cleanShare": 0.62042
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.2794117647058822,
+    "cutlery": 4.487745098039216,
+    "glass": 3.65,
+    "all": 4.059895833333334,
+    "milkGlasses": 2.923076923076923,
+    "teaItems": 0.8500000000000001,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    0,
+    -4.605170185988091
+   ],
+   "values": {
+    "prog.soakDuty": 1,
+    "soil.supplyExchange": 0.010000000000000005
+   },
+   "logPosterior": -7.548548522621574,
+   "ownerLogLikelihood": -6.136223635380549,
+   "literatureLogLikelihood": -0.5659681176503226,
+   "logPrior": -0.8463567695907015,
+   "plates": {
+    "plate_9121": {
+     "nominal": 4.278933351958032,
+     "median": 4.278933351958032,
+     "low": 0,
+     "high": 2568.6039181803776,
+     "cleanShare": 0.37958
+    },
+    "plate_9122": {
+     "nominal": 0.36176008590474956,
+     "median": 0.36176008590474956,
+     "low": 0,
+     "high": 1141.2601626238302,
+     "cleanShare": 0.62042
+    },
+    "plate_9123": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 173.01480126609553,
+     "cleanShare": 0.93882
+    },
+    "plate_9124": {
+     "nominal": 1.0570676701901511,
+     "median": 1.0570676701901511,
+     "low": 0,
+     "high": 2815.9444903048984,
+     "cleanShare": 0.62042
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.2794117647058822,
+    "cutlery": 4.487745098039216,
+    "glass": 3.65,
+    "all": 4.059895833333334,
+    "milkGlasses": 2.923076923076923,
+    "teaItems": 0.8500000000000001,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    0,
+    -3.912023005428146
+   ],
+   "values": {
+    "prog.soakDuty": 1,
+    "soil.supplyExchange": 0.020000000000000004
+   },
+   "logPosterior": -6.95420590469149,
+   "ownerLogLikelihood": -5.548857485476649,
+   "literatureLogLikelihood": -0.5659681176503226,
+   "logPrior": -0.8393803015645172,
+   "plates": {
+    "plate_9121": {
+     "nominal": 11.25921336727446,
+     "median": 11.25921336727446,
+     "low": 0,
+     "high": 4292.746495288895,
+     "cleanShare": 0.37958
+    },
+    "plate_9122": {
+     "nominal": 0.894316808279364,
+     "median": 0.894316808279364,
+     "low": 0,
+     "high": 1573.517599472794,
+     "cleanShare": 0.62042
+    },
+    "plate_9123": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 302.5964572866112,
+     "cleanShare": 0.82159
+    },
+    "plate_9124": {
+     "nominal": 1.9027854467296348,
+     "median": 1.9027854467296348,
+     "low": 0,
+     "high": 3203.4698979815694,
+     "cleanShare": 0.62042
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.2794117647058822,
+    "cutlery": 4.487745098039216,
+    "glass": 3.65,
+    "all": 4.059895833333334,
+    "milkGlasses": 2.923076923076923,
+    "teaItems": 0.8500000000000001,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    0,
+    -3.2188758248682006
+   ],
+   "values": {
+    "prog.soakDuty": 1,
+    "soil.supplyExchange": 0.04000000000000001
+   },
+   "logPosterior": -7.103646360426327,
+   "ownerLogLikelihood": -5.691321473185304,
+   "literatureLogLikelihood": -0.5659681176503226,
+   "logPrior": -0.8463567695907015,
+   "plates": {
+    "plate_9121": {
+     "nominal": 36.64214107807648,
+     "median": 36.64214107807648,
+     "low": 0,
+     "high": 6665.886822706837,
+     "cleanShare": 0.17841
+    },
+    "plate_9122": {
+     "nominal": 3.2068612949103565,
+     "median": 3.2068612949103565,
+     "low": 0,
+     "high": 2504.0859162206443,
+     "cleanShare": 0.62042
+    },
+    "plate_9123": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 668.2803786720121,
+     "cleanShare": 0.82159
+    },
+    "plate_9124": {
+     "nominal": 3.830413223576028,
+     "median": 3.830413223576028,
+     "low": 0,
+     "high": 3921.450243655563,
+     "cleanShare": 0.62042
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.2794117647058822,
+    "cutlery": 4.487745098039216,
+    "glass": 3.65,
+    "all": 4.059895833333334,
+    "milkGlasses": 2.923076923076923,
+    "teaItems": 0.8500000000000001,
+    "clamped": false
+   }
+  },
+  {
+   "z": [
+    0,
+    -2.5257286443082556
+   ],
+   "values": {
+    "prog.soakDuty": 1,
+    "soil.supplyExchange": 0.07999999999999999
+   },
+   "logPosterior": -7.153096071694842,
+   "ownerLogLikelihood": -5.719841780375264,
+   "literatureLogLikelihood": -0.5659681176503226,
+   "logPrior": -0.8672861736692546,
+   "plates": {
+    "plate_9121": {
+     "nominal": 102.86646804786015,
+     "median": 102.86646804786015,
+     "low": 0,
+     "high": 9344.21261219894,
+     "cleanShare": 0.17841
+    },
+    "plate_9122": {
+     "nominal": 14.632663901398928,
+     "median": 14.632663901398928,
+     "low": 0,
+     "high": 4362.797944043376,
+     "cleanShare": 0.37958
+    },
+    "plate_9123": {
+     "nominal": 0.34334947475101185,
+     "median": 0.34334947475101185,
+     "low": 0,
+     "high": 1581.348170725567,
+     "cleanShare": 0.62042
+    },
+    "plate_9124": {
+     "nominal": 10.443179541985822,
+     "median": 10.443179541985822,
+     "low": 0,
+     "high": 5124.316935294556,
+     "cleanShare": 0.37958
+    }
+   },
+   "literature": {
+    "protease": 0.016,
+    "crockery": 3.2794117647058822,
+    "cutlery": 4.487745098039216,
+    "glass": 3.65,
+    "all": 4.059895833333334,
+    "milkGlasses": 2.923076923076923,
+    "teaItems": 0.8500000000000001,
+    "clamped": false
+   }
+  }
+ ]
+}

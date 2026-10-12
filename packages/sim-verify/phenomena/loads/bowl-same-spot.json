@@ -1,0 +1,102 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "bowl-same-spot",
+ "description": "P10: a shallow dessert bowl mouth down at the spot of the glass of glass-between",
+ "recipe_hash": "sha256:206082148cb9bf1081259cdd80f6f544eaa05dd7b2f3291bee7d38cdb072bd6e",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "bowl",
+   "item_type": "dessert_bowl_vitrelle_130",
+   "pose": {
+    "p": [
+     0.0767956530805212,
+     0.02161986597699768,
+     0.5205747195715422
+    ],
+    "q": [
+     0.9980721473693848,
+     -0.002667843597009778,
+     -0.05371485650539398,
+     -0.03097972646355629
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 6,
+    "stable": true,
+    "displacement_mm": 3.5,
+    "rotation_deg": 6.9,
+    "contacts": [
+     "upper_rack.tine_row_c_rear"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:1a02e56498e45588ff24d04f26c4df340085d9267a07fa9e2aaafc14425ab303"
+}

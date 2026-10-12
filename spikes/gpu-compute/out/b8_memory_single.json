@@ -1,0 +1,106 @@
+{
+  "when": "2026-10-08T15:20:19.605Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 206,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "start": {
+    "rssMB": 52.890625,
+    "freeGB": 5.8451385498046875,
+    "inactiveGB": 2.29541015625,
+    "wiredGB": 3.0539093017578125,
+    "compressorGB": 2.620880126953125,
+    "availableGB": 9.323577880859375,
+    "swapUsedGB": 7.58306640625,
+    "freePct": 67
+  },
+  "stages": [],
+  "single": [
+    {
+      "sizeGB": 2,
+      "bytes": 2147483648,
+      "fillMs": 104.70874999999978,
+      "fillGBps": 19.100600475127475,
+      "refillMs": 21.25695900000005,
+      "refillGBps": 94.08683528062481,
+      "verified": true,
+      "mem": {
+        "rssMB": 108.828125,
+        "freeGB": 3.6575775146484375,
+        "inactiveGB": 2.35662841796875,
+        "wiredGB": 5.1392669677734375,
+        "compressorGB": 2.5947418212890625,
+        "availableGB": 7.21221923828125,
+        "swapUsedGB": 7.57525390625,
+        "freePct": 55
+      },
+      "deviceLost": null,
+      "uncapturedErrors": 0
+    },
+    {
+      "sizeGB": 4.5,
+      "bytes": 4831838208,
+      "fillMs": 185.97729200000003,
+      "fillGBps": 24.196502441814236,
+      "refillMs": 8.993333000000348,
+      "refillGBps": 500.37066346812975,
+      "firstBad": {
+        "index": 603979776,
+        "got": 0
+      },
+      "verified": false,
+      "mem": {
+        "rssMB": 113.0625,
+        "freeGB": 1.0100555419921875,
+        "inactiveGB": 2.40411376953125,
+        "wiredGB": 7.6493682861328125,
+        "compressorGB": 2.540618896484375,
+        "availableGB": 4.6576385498046875,
+        "swapUsedGB": 7.57525390625,
+        "freePct": 41
+      },
+      "deviceLost": null,
+      "uncapturedErrors": 0
+    },
+    {
+      "sizeGB": 8,
+      "bytes": 8589934592,
+      "fillMs": 558.8301250000004,
+      "fillGBps": 14.315620511689477,
+      "refillMs": 14.724166999999397,
+      "refillGBps": 543.3244542798467,
+      "firstBad": {
+        "index": 1,
+        "got": 0
+      },
+      "verified": false,
+      "mem": {
+        "rssMB": 96.28125,
+        "freeGB": 0.03466796875,
+        "inactiveGB": 1.4394378662109375,
+        "wiredGB": 11.075271606445312,
+        "compressorGB": 3.1250457763671875,
+        "availableGB": 1.5974578857421875,
+        "swapUsedGB": 7.57525390625,
+        "freePct": 18
+      },
+      "deviceLost": null,
+      "uncapturedErrors": 0
+    }
+  ],
+  "stoppedBecause": null,
+  "end": {
+    "rssMB": 105.9375,
+    "freeGB": 7.9408111572265625,
+    "inactiveGB": 1.4737548828125,
+    "wiredGB": 3.1434326171875,
+    "compressorGB": 3.0865936279296875,
+    "availableGB": 9.534576416015625,
+    "swapUsedGB": 7.57525390625,
+    "freePct": 63
+  },
+  "deviceLost": null,
+  "uncapturedErrors": []
+}

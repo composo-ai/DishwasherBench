@@ -1,0 +1,69 @@
+{
+  "when": "2026-10-08T15:24:47.692Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 253,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "cases": [
+    {
+      "cells": 2000000,
+      "ordering": "row-major",
+      "workgroup": 64,
+      "meanNeighbourIdDistance": 666.332,
+      "finite": true,
+      "steps": 288,
+      "stepsPerSec": {
+        "best": 601.7189216684626,
+        "median": 581.5539859543608,
+        "worst": 577.1495850122142,
+        "n": 3,
+        "spreadPct": 4.224773150841507
+      },
+      "cellUpdatesPerSec": {
+        "best": 1203437843.3369253,
+        "median": 1163107971.9087214
+      }
+    },
+    {
+      "cells": 2000000,
+      "ordering": "morton",
+      "workgroup": 64,
+      "meanNeighbourIdDistance": 645.78016,
+      "finite": true,
+      "steps": 336,
+      "stepsPerSec": {
+        "best": 692.0978873013707,
+        "median": 664.250739281419,
+        "worst": 662.477003052306,
+        "n": 3,
+        "spreadPct": 4.4592926281284
+      },
+      "cellUpdatesPerSec": {
+        "best": 1384195774.6027415,
+        "median": 1328501478.562838
+      }
+    },
+    {
+      "cells": 2000000,
+      "ordering": "shuffled",
+      "workgroup": 64,
+      "meanNeighbourIdDistance": 666650.7249183333,
+      "finite": true,
+      "steps": 112,
+      "stepsPerSec": {
+        "best": 226.56091269869475,
+        "median": 223.54934330204782,
+        "worst": 223.44977370203964,
+        "n": 3,
+        "spreadPct": 1.3917012462217395
+      },
+      "cellUpdatesPerSec": {
+        "best": 453121825.3973895,
+        "median": 447098686.60409564
+      }
+    }
+  ],
+  "foreignAtEnd": []
+}

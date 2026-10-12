@@ -1,0 +1,133 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "spoons-nested",
+ "description": "P15 B: the same two spoons, the second laid into the bowl of the first (spooning). The physics lets it slide off and rest across the first; the scenario sets it into its nest",
+ "recipe_hash": "sha256:2a5eed02a947b441ff2bb61f743095c24d9e4a6ce45b7071875676be1ea309e2",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "spoon_1",
+   "item_type": "soup_spoon_190",
+   "pose": {
+    "p": [
+     -0.024125492567267072,
+     -0.16727438410975579,
+     0.0793945351123205
+    ],
+    "q": [
+     -0.015212848782539368,
+     -0.7589672207832336,
+     0.013045219704508781,
+     0.6508204340934753
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 8.2,
+    "rotation_deg": 5,
+    "contacts": [
+     "cutlery_basket.foot.1.floor",
+     "cutlery_basket.foot.1.left"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_2",
+   "item_type": "soup_spoon_190",
+   "pose": {
+    "p": [
+     0.00434034466714938,
+     -0.15770879989362602,
+     0.08101340688474415
+    ],
+    "q": [
+     -0.07780174165964127,
+     -0.7692501544952393,
+     -0.2610976994037628,
+     0.5779525637626648
+    ]
+   },
+   "placed": {
+    "op": "nest_spoon",
+    "attempt": 5,
+    "stable": true,
+    "displacement_mm": 59.7,
+    "rotation_deg": 37,
+    "contacts": [
+     "cutlery_basket.foot.1.floor",
+     "cutlery_basket.tunnel.0.cross",
+     "cutlery_basket.tunnel.0.left",
+     "spoon_1"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:8ee17d57002e3409db874a1ece89026078cb544847486d89fcc1de67a1b025d6"
+}

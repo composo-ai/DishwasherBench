@@ -1,0 +1,34 @@
+{
+ "format": "spotless.tier-agreement",
+ "paramSet": "anchored-v7.owner-capsule",
+ "simVersion": "spotless-sim 0.5.0 water-7",
+ "createdAt": "2026-10-11T16:54:53.821Z",
+ "programmes": {
+  "eco_50": {
+   "basis": "the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4",
+   "washes": 8,
+   "all": {
+    "agree": 615,
+    "of": 688
+   },
+   "byClass": {
+    "crockery": {
+     "agree": 248,
+     "of": 248
+    },
+    "cutlery": {
+     "agree": 235,
+     "of": 304
+    },
+    "glass": {
+     "agree": 84,
+     "of": 88
+    },
+    "melamine": {
+     "agree": 48,
+     "of": 48
+    }
+   }
+  }
+ }
+}

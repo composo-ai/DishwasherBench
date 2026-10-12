@@ -1,0 +1,36 @@
+{
+  "name": "@spotless/loader",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Scripted loading policies (careful, careless, random) that play the game through the session layer, and the settled standard loads on the owner's machine",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "generate-loads": "tsx scripts/generate-loads.ts",
+    "check-loads": "tsx scripts/check-loads.ts",
+    "replay-load": "tsx scripts/replay-load.ts",
+    "render-loads": "tsx scripts/render-loads.ts",
+    "export-wash": "tsx scripts/export-wash.ts"
+  },
+  "dependencies": {
+    "@spotless/catalogue": "workspace:*",
+    "@spotless/core": "workspace:*",
+    "@spotless/geometry": "workspace:*",
+    "@spotless/levels": "workspace:*",
+    "@spotless/machine": "workspace:*",
+    "@spotless/physics": "workspace:*",
+    "@spotless/session": "workspace:*",
+    "pngjs": "7.0.0"
+  },
+  "devDependencies": {
+    "@types/pngjs": "6.0.5"
+  }
+}

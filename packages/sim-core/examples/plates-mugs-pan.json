@@ -1,0 +1,136 @@
+{
+  "machine": "bosch_smv4hax40g",
+  "programme": "auto_145",
+  "tier": "fast",
+  "levelSeed": 7,
+  "simSeed": 3,
+  "items": [
+    {
+      "id": "plate_facing",
+      "type": "dessert_plate_porcelain_190",
+      "position_mm": [-120, -130, 172],
+      "quat_wxyz": [0.5736, 0.8192, 0, 0],
+      "soils": [
+        {
+          "type": "tomato_sauce",
+          "regions": [
+            {
+              "region": "well",
+              "coverage": 0.6
+            }
+          ],
+          "amount_g": 2,
+          "age_h": 2,
+          "heat_history": "baked"
+        },
+        {
+          "type": "egg_yolk_dried",
+          "regions": [
+            {
+              "region": "rim",
+              "coverage": 0.3
+            }
+          ],
+          "amount_g": 0.5,
+          "age_h": 2
+        }
+      ]
+    },
+    {
+      "id": "plate_away",
+      "type": "dessert_plate_porcelain_190",
+      "position_mm": [120, -130, 172],
+      "quat_wxyz": [0.8192, 0.5736, 0, 0],
+      "soils": [
+        {
+          "type": "tomato_sauce",
+          "regions": [
+            {
+              "region": "well",
+              "coverage": 0.6
+            }
+          ],
+          "amount_g": 2,
+          "age_h": 2,
+          "heat_history": "baked"
+        },
+        {
+          "type": "egg_yolk_dried",
+          "regions": [
+            {
+              "region": "rim",
+              "coverage": 0.3
+            }
+          ],
+          "amount_g": 0.5,
+          "age_h": 2
+        }
+      ]
+    },
+    {
+      "id": "pan",
+      "type": "frying_pan_clad_254",
+      "position_mm": [-100, 120, 200],
+      "orientation": "inverted"
+    },
+    {
+      "id": "plate_shadowed",
+      "type": "dessert_plate_porcelain_190",
+      "position_mm": [-100, 120, 300],
+      "quat_wxyz": [0.5736, 0.8192, 0, 0],
+      "soils": [
+        {
+          "type": "tomato_sauce",
+          "regions": [
+            {
+              "region": "well",
+              "coverage": 0.6
+            }
+          ],
+          "amount_g": 2,
+          "age_h": 2,
+          "heat_history": "baked"
+        },
+        {
+          "type": "egg_yolk_dried",
+          "regions": [
+            {
+              "region": "rim",
+              "coverage": 0.3
+            }
+          ],
+          "amount_g": 0.5,
+          "age_h": 2
+        }
+      ]
+    },
+    {
+      "id": "mug_upright",
+      "type": "mug_ceramic_300",
+      "position_mm": [-120, 100, 423],
+      "orientation": "upright",
+      "soils": [
+        {
+          "type": "tea_tannin",
+          "regions": ["interior"],
+          "amount_g": 0.6,
+          "age_h": 12
+        }
+      ]
+    },
+    {
+      "id": "mug_inverted",
+      "type": "mug_ceramic_300",
+      "position_mm": [120, 100, 524],
+      "orientation": "inverted",
+      "soils": [
+        {
+          "type": "tea_tannin",
+          "regions": ["interior"],
+          "amount_g": 0.6,
+          "age_h": 12
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+ "format": "spotless.params",
+ "version": 1,
+ "provenance": {
+  "name": "anchored-v7.owner-capsule.stable",
+  "origin": "calibration",
+  "note": "The anchored set anchored-v7 (docs/calibration/anchoring.md) with the owner's capsule laid over it: the composition of detergents/finish-powerball-ultimate.json (Finish Powerball Ultimate, desk research, nothing measured: docs/research/detergent-finish-ultimate.md) and the protease level of a premium unit dose (liq.xProtease = 0.03; estimated from the active protease of a premium unit dose in its maker's patents, not this product's). Wash with a dose of 12.9 g (dosing.detergentMass, a machine value). Calibrated on the owner's own machine (docs/calibration/owner-wash-01-calibration.md; wash record owner-wash-01-egg-yolk-eco50, one wash of four plates): prog.soakDuty = 0.8, held in the anchored set this layer is laid over. ASSUMPTION, labelled as one: a heat-stable protease (liq.proteaseHalfLife = 7200). No source gives the number; the upper end of the bracket.",
+  "washRecords": [
+   "std-eu-13.round-robin-ta.detergent-d",
+   "owner-wash-01-egg-yolk-eco50"
+  ],
+  "createdAt": "2026-10-11T16:34:07.847Z"
+ },
+ "overrides": {
+  "liq.amylaseKox": 0.00006,
+  "liq.amylaseKoxHP": 0.000002,
+  "liq.proteaseHalfLife": 7200,
+  "liq.tabletTau": 300,
+  "liq.xAmylase": 0.012,
+  "liq.xCarbonate": 3.3,
+  "liq.xPeroxide": 0.955,
+  "liq.xProtease": 0.03,
+  "liq.xSilicate": 0,
+  "liq.xSurfactant": 0.1,
+  "liq.xTaed": 0.175,
+  "prog.soakDuty": 0.8,
+  "soil.amountCv": 0.05,
+  "soil.bleachRate": 0.0009,
+  "soil.egg_yolk.rateRef": 0.000034,
+  "soil.egg_yolk.tLag": 300,
+  "soil.milk.rateRef": 0.000034,
+  "soil.milk.tLag": 300,
+  "soil.subCellCv": 0.1
+ },
+ "definitions": {
+  "liq.amylaseKox": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "liq.amylaseKoxHP": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "liq.proteaseHalfLife": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "liq.tabletTau": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "liq.xAmylase": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xCarbonate": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "liq.xPeroxide": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "liq.xProtease": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xSilicate": {
+   "kind": "scalar",
+   "unit": "eq/kg"
+  },
+  "liq.xSurfactant": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xTaed": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "prog.soakDuty": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.amountCv": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.bleachRate": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "soil.egg_yolk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.egg_yolk.tLag": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "soil.milk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.milk.tLag": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "soil.subCellCv": {
+   "kind": "scalar",
+   "unit": "1"
+  }
+ },
+ "registryHash": "sha256:4dba7a5d3778fd7dda57a1cf57dd4ee0b3f75e37afb29adc742359ff26a02865",
+ "hydroHash": "sha256:7c3bd46790e76f4c422bd688a3cb34e400390bb00705cbbf3ada21f9f3fe13cb",
+ "soilHash": "sha256:b81d101140290bea40306900d809da9769adc009a8abe8739b7e9fb48c31d539",
+ "anchoredOn": {
+  "simVersion": "spotless-sim 0.5.0 water-7",
+  "exposureSource": "325c9602e38528c76d71eaf5fd2d7f1d187015b9b6ea948d2426c97bf07ed0e0",
+  "machineSource": "c887647cbad821957dcc624c39e2b6a2e81daa7a97452b41ccd350c7d039bc43",
+  "files": 136,
+  "reference": {
+   "load": "iec-13-careful",
+   "programme": "eco_50",
+   "tier": "fast",
+   "levelSeed": 1,
+   "simSeed": 1,
+   "digest": "0019a42ff39b1b791fd701b03922c7c3290780d463d107bf7db99aeed52cd02e",
+   "digestNote": "Digest recorded again on 2026-10-11 without a fit: since that day a wash lays what the water left standing in an item held onto the surface under it (residue left where dirty water stood), and the digest covers the residue of every item. In this reference wash four mugs hold 0.08 to 0.09 mL in a base recess and carry 0.017 to 0.020 mg of it, none of it visible; with that taken out again the digest is the one recorded at the fit (bf2fe323c9f02639a27b3fda5f84cb8cbc6ff6bd7eaef10b150e9049c1a09f78): every verdict, score, own residue and pooled volume is unchanged."
+  }
+ }
+}

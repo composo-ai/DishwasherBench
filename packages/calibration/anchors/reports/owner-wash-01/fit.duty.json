@@ -1,0 +1,421 @@
+{
+ "name": "duty",
+ "records": [
+  "owner-wash-01-egg-yolk-eco50",
+  "std-eu-13.round-robin-ta.detergent-d"
+ ],
+ "keys": [
+  "prog.soakDuty"
+ ],
+ "fixed": {},
+ "priors": {
+  "prog.soakDuty": {
+   "centre": 0.53,
+   "sd": 0.49
+  }
+ },
+ "parameters": [
+  {
+   "id": "prog.soakDuty",
+   "key": "prog.soakDuty",
+   "unit": "1",
+   "transform": "log",
+   "default": 0.5,
+   "min": 0.1,
+   "max": 1,
+   "tag": "ESTIMATED",
+   "priorCentre": 0.53,
+   "priorSd": 0.49,
+   "start": 0.5,
+   "estimate": 0.8012981487092017,
+   "z": -0.22152218055994533,
+   "sd": 0.1782972749618158,
+   "interval": [
+    0.5902909297586583,
+    1
+   ],
+   "normalInterval": [
+    0.564968761081718,
+    1
+   ],
+   "intervalFrom": "profile",
+   "movedSd": 0.843583860971478,
+   "movedRange": 0.1795182697628509,
+   "shrink": 0.3638719897179914,
+   "contraction": 0.86759717509867,
+   "verdict": "identified",
+   "status": "identified",
+   "returnedPrior": false,
+   "atBound": null,
+   "priorCentreDrop": 3.258210644049747,
+   "priorPull": 0.3511215486664917,
+   "recordsAlone": 0.8530661665672297,
+   "step": 0.1,
+   "curvatureSd": 0.12485386239042152,
+   "profileInterval": [
+    0.5902909297586583,
+    null
+   ],
+   "profileDisagrees": false,
+   "confoundedWith": []
+  }
+ ],
+ "estimate": {
+  "logPosterior": -6.681248750389148,
+  "logLikelihood": -6.3254318851433755,
+  "logPrior": -0.35581686524577294
+ },
+ "covariance": [
+  [
+   0.03178991825880934
+  ]
+ ],
+ "correlation": [
+  [
+   1
+  ]
+ ],
+ "profiles": [
+  {
+   "id": "prog.soakDuty",
+   "values": [
+    0.551040782038213,
+    0.5887639997115902,
+    0.593961289002732,
+    0.6242911920681178,
+    0.7072788533949276,
+    0.8012981487092017,
+    0.9078155243053372,
+    1
+   ],
+   "logPosterior": [
+    -9.389286759744635,
+    -8.619605381365083,
+    -8.560356388581909,
+    -8.017932352242944,
+    -7.245864295121056,
+    -6.681248750389148,
+    -6.822915472490508,
+    -6.954325611489155
+   ],
+   "interval": [
+    0.5902909297586583,
+    null
+   ]
+  }
+ ],
+ "observations": [
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9121.visible_area",
+   "kind": "visible_area",
+   "observed": 100,
+   "eta": 101.46679412609532,
+   "mean": 125.68552354316913,
+   "sd": 93.02564057241196,
+   "residual": -0.27611229963179124,
+   "logLikelihood": -1.851581439118106,
+   "outlierProbability": 0.005912379489294017
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9121.clean",
+   "kind": "clean",
+   "observed": false,
+   "eta": -19.140622556362285,
+   "mean": 0.02,
+   "sd": 0.13999999999999999,
+   "residual": -0.14285714285714288,
+   "logLikelihood": -0.20182714691788783,
+   "outlierProbability": 0
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9121.specks",
+   "kind": "specks",
+   "observed": 7,
+   "eta": 107,
+   "mean": 107.2,
+   "sd": 76.50568606319402,
+   "residual": -1.3097065741915495,
+   "logLikelihood": -4.552515072540751,
+   "outlierProbability": 0
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9122.visible_area",
+   "kind": "visible_area",
+   "observed": 25,
+   "eta": 11.052792950443338,
+   "mean": 15.089653611355338,
+   "sd": 15.116543490744204,
+   "residual": 0.6555960623348006,
+   "logLikelihood": -1.9771165233987968,
+   "outlierProbability": 0.009526548293708692
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9122.clean",
+   "kind": "clean",
+   "observed": false,
+   "eta": -13.914759977501328,
+   "mean": 0.02,
+   "sd": 0.13999999999999999,
+   "residual": -0.14285714285714288,
+   "logLikelihood": -0.43788465107936836,
+   "outlierProbability": 0
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9122.specks",
+   "kind": "specks",
+   "observed": 5,
+   "eta": 9,
+   "mean": 9.2,
+   "sd": 7.177743377970544,
+   "residual": -0.5851421232041204,
+   "logLikelihood": -3.5484692672483384,
+   "outlierProbability": 0
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9123.visible_area",
+   "kind": "visible_area",
+   "observed": 0,
+   "eta": 0.22026148210681937,
+   "mean": 1.0480817963954792,
+   "sd": 3.5385348157495287,
+   "residual": -0.2961908956584551,
+   "logLikelihood": -0.6604089667121158,
+   "outlierProbability": 0.005029530206363764
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9123.clean",
+   "kind": "clean",
+   "observed": true,
+   "eta": 1.4583333333333335,
+   "mean": 0.910520630430562,
+   "sd": 0.2854344267794163,
+   "residual": 0.31348485387359276,
+   "logLikelihood": -0.5164966628145926,
+   "outlierProbability": 0
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9123.specks",
+   "kind": "specks",
+   "observed": 0,
+   "eta": 1,
+   "mean": 1.2,
+   "sd": 1.3856406460551018,
+   "residual": -0.8660254037844386,
+   "logLikelihood": -0.859384605710774,
+   "outlierProbability": 0
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9124.visible_area",
+   "kind": "visible_area",
+   "observed": 0,
+   "eta": 12.62316959511176,
+   "mean": 15.417822285018772,
+   "sd": 11.945799916327918,
+   "residual": -1.2906479593673068,
+   "logLikelihood": -1.2911002551398607,
+   "outlierProbability": 0.07556143457631948
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9124.clean",
+   "kind": "clean",
+   "observed": true,
+   "eta": -15.903272192949059,
+   "mean": 0.02,
+   "sd": 0.13999999999999999,
+   "residual": 7.000000000000001,
+   "logLikelihood": -0.9959941043468358,
+   "outlierProbability": 0
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9124.specks",
+   "kind": "specks",
+   "observed": 0,
+   "eta": 12,
+   "mean": 12.2,
+   "sd": 9.306986622962343,
+   "residual": -1.3108431863327243,
+   "logLikelihood": -1.4184401209999118,
+   "outlierProbability": 0
+  }
+ ],
+ "identifiability": {
+  "parameters": [
+   {
+    "id": "prog.soakDuty",
+    "sensitivity": 0.7389581035250865,
+    "information": 6.552708945184708,
+    "marginal": 0.3638719897179914,
+    "conditional": 0.3638719897179914,
+    "contraction": 0.86759717509867,
+    "verdict": "identified",
+    "confoundedWith": []
+   }
+  ],
+  "combinations": [
+   {
+    "information": 6.552708945184708,
+    "loadings": [
+     {
+      "id": "prog.soakDuty",
+      "loading": 1
+     }
+    ]
+   }
+  ]
+ },
+ "bench": [
+  {
+   "temperature": 30,
+   "pH": 10.5,
+   "protease": 0.06,
+   "rate": 0.85,
+   "sd": 0.12,
+   "simulated": 0.8404244143292184,
+   "tolerance": 0.17,
+   "within": true,
+   "z": -0.1126539490680181
+  },
+  {
+   "temperature": 55,
+   "pH": 10.5,
+   "protease": 0.06,
+   "rate": 1.75,
+   "sd": 0.29,
+   "simulated": 1.7856345698852354,
+   "tolerance": 0.35000000000000003,
+   "within": true,
+   "z": 0.2036261136299165
+  },
+  {
+   "temperature": 55,
+   "pH": 10.5,
+   "protease": 0.02,
+   "rate": 0.17,
+   "sd": 0.05,
+   "simulated": 0.17434891576770947,
+   "tolerance": 0.05,
+   "within": true,
+   "z": 0.1739566307083784
+  },
+  {
+   "temperature": 55,
+   "pH": 10.5,
+   "protease": 0.1,
+   "rate": 2.59,
+   "sd": 0.22,
+   "simulated": 2.4709661477637237,
+   "tolerance": 0.518,
+   "within": true,
+   "z": -0.4595901630744253
+  },
+  {
+   "temperature": 55,
+   "pH": 9.5,
+   "protease": 0.06,
+   "rate": 0.69,
+   "sd": 0.16,
+   "simulated": 0.6833051469960052,
+   "tolerance": 0.16,
+   "within": true,
+   "z": -0.08368566254993437
+  },
+  {
+   "temperature": 55,
+   "pH": 11.5,
+   "protease": 0.06,
+   "rate": 4.66,
+   "sd": 0.38,
+   "simulated": 4.773839360305541,
+   "tolerance": 0.932,
+   "within": true,
+   "z": 0.24429047275867066
+  }
+ ],
+ "at": {
+  "z": [
+   -0.22152218055994533
+  ],
+  "values": {
+   "prog.soakDuty": 0.8012981487092017
+  },
+  "logPosterior": -6.681248750389148,
+  "ownerLogLikelihood": -5.780207184368879,
+  "literatureLogLikelihood": -0.5452247007744966,
+  "logPrior": -0.35581686524577294,
+  "plates": {
+   "plate_9121": {
+    "nominal": 101.46679412609532,
+    "median": 101.46679412609532,
+    "low": 0,
+    "high": 8967.758771136474,
+    "cleanShare": 0.17841
+   },
+   "plate_9122": {
+    "nominal": 11.052792950443338,
+    "median": 11.052792950443338,
+    "low": 0,
+    "high": 4450.09017770232,
+    "cleanShare": 0.37958
+   },
+   "plate_9123": {
+    "nominal": 0.22026148210681937,
+    "median": 0.22026148210681937,
+    "low": 0,
+    "high": 1356.5228309414715,
+    "cleanShare": 0.62042
+   },
+   "plate_9124": {
+    "nominal": 12.62316959511176,
+    "median": 12.62316959511176,
+    "low": 0,
+    "high": 5640.920042068081,
+    "cleanShare": 0.37958
+   }
+  },
+  "literature": {
+   "protease": 0.016,
+   "crockery": 3.4107465500319987,
+   "cutlery": 4.62634797822094,
+   "glass": 3.1534617298912044,
+   "all": 4.0908303110776245,
+   "milkGlasses": 2.1591718921403142,
+   "teaItems": 1.1474037025815969,
+   "clamped": false
+  }
+ },
+ "overrides": {
+  "liq.amylaseKox": 0.00006,
+  "liq.amylaseKoxHP": 0.000002,
+  "liq.tabletTau": 300,
+  "liq.xAmylase": 0.012,
+  "liq.xCarbonate": 3.3,
+  "liq.xPeroxide": 0.955,
+  "liq.xProtease": 0.03,
+  "liq.xSilicate": 0,
+  "liq.xSurfactant": 0.1,
+  "liq.xTaed": 0.175,
+  "prog.soakDuty": 0.8012981487092017,
+  "soil.amountCv": 0.05,
+  "soil.bleachRate": 0.0009,
+  "soil.egg_yolk.rateRef": 0.000034,
+  "soil.egg_yolk.tLag": 300,
+  "soil.milk.rateRef": 0.000034,
+  "soil.milk.tLag": 300,
+  "soil.subCellCv": 0.1
+ },
+ "evaluations": 78,
+ "computed": 49,
+ "elapsed_s": 1554.9214222910002
+}

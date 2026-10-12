@@ -1,0 +1,131 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "dplate-lower",
+ "description": "P11 A, P33, P38: a porcelain dessert plate (R1 slot 4) and a melamine dessert plate of the same shape (R1 slot 8) in the lower basket, faces to the arm axis",
+ "recipe_hash": "sha256:ad1b232f8c92c2d13a9e53af709f7e8a8b29f45e4b1703c9659876bea4dfb901",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "melamine",
+   "item_type": "melamine_dessert_plate_iec_195",
+   "pose": {
+    "p": [
+     -0.07869254969208342,
+     0.1115001641054646,
+     0.16607906369127678
+    ],
+    "q": [
+     0.4516020119190216,
+     0.44607940316200256,
+     0.5497305393218994,
+     0.5430147647857666
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 8.9,
+    "rotation_deg": 7.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate",
+   "item_type": "dessert_plate_porcelain_190",
+   "pose": {
+    "p": [
+     -0.15209873940824087,
+     0.11150563531841036,
+     0.16338388104318904
+    ],
+    "q": [
+     0.4559360444545746,
+     0.4496942162513733,
+     0.546708345413208,
+     0.5394510626792908
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 6.1,
+    "rotation_deg": 3.4,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:737515bf589d8bff945206aa71f4ceea847d62f309302ffa573b7e23d8e645a6"
+}

@@ -1,0 +1,68 @@
+{
+  "format": "spotless.params",
+  "version": 1,
+  "provenance": {
+    "name": "anchored-v1",
+    "origin": "calibration",
+    "note": "Provisional anchoring to the published results of another machine (round robin 2022/2023, Bosch SMV6ECX51E, eco programme, detergent D; docs/research/standards.md section 7.1), to be replaced by washes on the owner's machine. Mechanism corrections (not fitted): soil.subCellCv = 0.3, soil.amountCv = 0.05, soil.heatDryingFactor = 80, soil.egg_yolk.bakeReference = 0.2, soil.starch.bakeReference = 0.2, soil.tea.visibleFraction = 0, soil.tea.visibleMass = 0.00005. Fitted with packages/calibration/anchors/scripts/fit.ts to the class means of the record, with the in-machine egg-yolk rates (soils 6.1) as observations and the IKW residues (soils 6.4) as a constraint: soil.egg_yolk.rateRef = 0.0000358, liq.xProtease = 0.0257, soil.bleachRate = 0.00121. Searched and returned to its default because the record does not tell: soil.supplyRenewal. See docs/calibration/anchoring.md.",
+    "washRecords": ["std-eu-13.round-robin-ta.detergent-d"],
+    "createdAt": "2026-10-10T06:56:31.569Z"
+  },
+  "overrides": {
+    "liq.xProtease": 0.0257,
+    "soil.amountCv": 0.05,
+    "soil.bleachRate": 0.00121,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.egg_yolk.rateRef": 0.0000358,
+    "soil.heatDryingFactor": 80,
+    "soil.starch.bakeReference": 0.2,
+    "soil.subCellCv": 0.3,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005
+  },
+  "definitions": {
+    "liq.xProtease": {
+      "kind": "scalar",
+      "unit": "kg/kg"
+    },
+    "soil.amountCv": {
+      "kind": "scalar",
+      "unit": "1"
+    },
+    "soil.bleachRate": {
+      "kind": "scalar",
+      "unit": "m3/(mol s)"
+    },
+    "soil.egg_yolk.bakeReference": {
+      "kind": "scalar",
+      "unit": "1"
+    },
+    "soil.egg_yolk.rateRef": {
+      "kind": "scalar",
+      "unit": "kg/(m2 s)"
+    },
+    "soil.heatDryingFactor": {
+      "kind": "scalar",
+      "unit": "1"
+    },
+    "soil.starch.bakeReference": {
+      "kind": "scalar",
+      "unit": "1"
+    },
+    "soil.subCellCv": {
+      "kind": "scalar",
+      "unit": "1"
+    },
+    "soil.tea.visibleFraction": {
+      "kind": "scalar",
+      "unit": "1"
+    },
+    "soil.tea.visibleMass": {
+      "kind": "scalar",
+      "unit": "kg/m2"
+    }
+  },
+  "registryHash": "sha256:9bf55871554c74d8d83f1915a4b739bce6a5f9fa4b875783a3640f2fd4e9ae3f",
+  "hydroHash": "sha256:92b560b0af5c52a773d10884243c1573203c91ce66a2b7162e98f46e222daf28",
+  "soilHash": "sha256:c29f2fb32656c757a0689782fbf7aa1ebbff7b50456b708ed23d1c577730d6be"
+}

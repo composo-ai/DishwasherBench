@@ -1,0 +1,2285 @@
+{
+ "system": "You are playing Spotless, a game about loading a dishwasher. You play through the tools you are given; there is nobody to ask and nothing else to use.\n\n---\n\nThe game. You are shown a set of dirty items, each worth points, and a dishwasher. It is never possible to fit everything. You choose what goes in and where, each item is placed with real physics (it is lowered, let go, and comes to rest where gravity and friction leave it), and then one wash cycle is simulated: water jets, run-off, soil and detergent. Every item that comes out clean scores its points; an item that is not clean, or that was left out, scores nothing. Your aim is the highest score.\n\nWhat decides the score is your judgement of what to load and how to stand it so that it washes clean. Nothing in the game tells you beforehand how well an item will wash: the tools report positions, contacts and mechanical facts only.\n\n---\n\nHow an episode goes. The level card is at the end of this prompt (get_level returns the same); look at the machine (render; ask for labels and a grid when you need to read positions). Place items; after each placement read how the item came to rest and whether it is stable, and look again when in doubt. You can take items out and place them again. Actions and queries are limited (the result of every action says how many are used); a refused call costs nothing. When you are satisfied, call start_cycle: it pushes the baskets in, freezes the load and washes it. That ends the episode; there is one wash and no second try.\n\nWhat a result tells you. An action answers with what it changed, completely, and not with the whole scene: every item that is new or that moved with its new pose, what went back to the counter, the baskets and options that changed, then the load in a few numbers and the budgets. What is not named is as it was. get_state gives the whole scene, or a part, when you want it.\n\nA long episode. You may make several tool calls in one turn; they are run in the order you give them, on one scene. From time to time the harness takes the oldest calls and their results out of this conversation to keep it short, and puts in their place a note with the scene as it then stood (every item with its pose, as get_state gives it). Nothing of the load is lost by that. What goes is the detail of old results (how an old placement fell, old slot advice, old pictures): look again when you need it.\n\nWork on your own until you have called start_cycle. Do not stop to ask for confirmation.\n\n---\n\nThe rules of this level and the manual of the interface, as every player is shown them:\n\nLevel: First load\n\nLunch for two: pasta with a salad, a plate of tomato soup, yoghurt, a smoothie each and a mug of hot chocolate. Twelve things, all of which fit: find out how placing, leaning and the two baskets work, and what a glass left mouth up or lying on its side costs.\n\nScoring. Each item that comes out of the wash clean scores its points; an item that is not clean, or that was left out of the machine, scores nothing. The verdict of the standard inspection decides: the report names the items whose verdict was at the edge of clean, or is provisional, and they count by the verdict given. A graded score is reported beside the points and does not count.\n\nClean. An item is clean when an inspection of the whole item after the cycle finds at most 4 small specks and at most 4 square millimetres of visible soil on it, counting soil that was there before, soil carried onto it from other items, and residue left where dirty water stood. Whether the item is dry is reported and does not count.\n\nBudgets. 400 accepted actions, 300 charged queries, 1 wash. A refused call costs nothing.\n\nEnd. The episode ends when the cycle is started: the baskets are pushed in, the load is frozen and washed once. When the action budget is used up the cycle can still be started with whatever is loaded.\n\nHow the game is played.\n\nFrames. All frames are right-handed with z up. In the tub frame the origin is on the lower spray-arm axis at the tub floor, +x is to the right as you face the open machine and +y towards the back. Each basket has its own frame with the origin at its front-left corner on top of its base grid; the cutlery basket has one too. A position is that of the item's reference point (the centre of its bounding box), in millimetres.\n\nBaskets. A basket can be loaded only while it is pulled out (set_rack with option position); pushed in, it is closed to place. The upper basket, when pulled out, hangs over the lower one, so push it in before reaching the lower basket from above. Items travel with their basket and may shift when it moves.\n\nPlacing. place puts an item at a pose: the pose must not overlap anything, and the item must be able to reach it straight down from above (mode drop), or along insert_dir pushed with a limited force (mode insert, which can nudge neighbours aside). The item is lowered until it touches, let go, and then does whatever gravity and friction make it do. Orientation is a preset of the item plus yaw, pitch and roll in whole degrees, or a quaternion. remove takes an item out again; what leaned on it may fall. An item that ends on the kitchen floor goes back to the counter at once (the action is still charged); one that ends on the open door stays there, and is left out of the wash if it is still neither in a basket nor inside the tub when the cycle starts.\n\nLooking. list_slots gives the tine rows and slots of a basket and the cells of the cutlery basket; with an item_id it also gives, for every slot between tines, the position and orientation in which a hand seats that item there (its lower edge between the tines, laid back the way they lean) and whether that place is free now (drop_free; drop_seats is false where the item would only perch on the tine tips), and for every cell of the cutlery basket where to let a piece of cutlery down by its lower end. preview tests a pose without placing and costs no query, get_state gives every settled pose and contact, check_load pushes the baskets in, turns the spray arms by hand and tests the door and the detergent dispenser. None of these says anything about how well an item will wash.\n\nWashing. start_cycle pushes the baskets in and washes what is loaded, on the programme the level card names (programme: the one the level is scored on). The card may list secondary programmes; one of them can be named in start_cycle instead, and the wash is then reported as uncalibrated and is not a result on the scored programme. Rejected calls cost nothing.\n\n---\n\nLoading guidance, as every player is shown it:\n\nLoading the dishwasher: the manufacturer's advice\n\nThis is the loading advice of the manufacturer's manual for this dishwasher, in short.\n\nWhere things go. Arrange cups, glasses and small items of tableware in the top basket, and pans and plates in the bottom basket. Put heavily soiled tableware, such as pans, in the bottom basket: the spray jet is more powerful there.\n\nWhich way up. Position containers with their openings facing down. Position items with curves or recesses at an angle, so that water can run off; water collects in recesses that face up.\n\nSpace. The spray jets must reach the surfaces of the tableware. Do not place items too close together and do not overfill a basket; avoid points of contact between items.\n\nCutlery. Arrange cutlery in the cutlery basket, unsorted, with the sharp points downwards. Lay long and pointed items flat on the knife shelf of the top basket.\n\nTall, narrow receptacles are not rinsed adequately in the corner areas of a basket, or when they stand at too great an angle.\n\nSpray arms. Do not block the spray arms: make sure that they can turn freely and that nothing hangs or stands in their path. A spray arm that strikes tableware, or cannot turn, leaves remnants of food on the load.\n\nDetergent. The tablet falls from the dispenser in the door into the tablet collecting tray at the front of the top basket. Do not place anything in that tray, and do not block it or the lid of the dispenser with tableware: the lid must be able to open fully, or the detergent is not released.\n\nDoor. Load the baskets so that no item projects and interferes with the closing of the door.\n\nProgramme. The load is washed on Eco 50: a cold pre-rinse, a long wash at 50 degrees C, an intermediate rinse, a hot final rinse and drying, 4 hours 55 minutes in all, with one detergent tablet. The programme runs the same way whatever is loaded: it does not adjust itself to the load or to how dirty it is.\n\nLarge plates. With the top basket at its highest level, the bottom basket takes plates up to 30 cm in diameter and the top basket up to 22 cm; at the middle level 27.5 cm and 24.5 cm; at the lowest level 25 cm and 27 cm.\n\n---\n\nThe level card (the machine, the programme, every kind of item and every item with its soil and points), as get_level returns it:\n\n{\"benchmark_version\":\"spotless-0.2.0/levels-starter\",\"level_id\":\"tutorial\",\"title\":\"First load\",\"summary\":\"Lunch for two: pasta with a salad, a plate of tomato soup, yoghurt, a smoothie each and a mug of hot chocolate. Twelve things, all of which fit: find out how placing, leaning and the two baskets work, and what a glass left mouth up or lying on its side costs.\",\"machine\":{\"machine_id\":\"bosch_smv4hax40g\",\"display_name\":\"Bosch Serie 4 SMV4HAX40G/13\",\"tub_min_mm\":[-272,-235,0],\"tub_max_mm\":[273,265,640],\"racks\":[{\"rack\":\"lower_rack\",\"origin_in_mm\":[-262.5,-262,73],\"origin_out_mm\":[-262.5,-762,73],\"envelope_mm\":[525,512,340],\"low_spots\":[{\"under\":\"upper_arm.hub\",\"clear_height_mm\":292,\"centre_mm\":[262.5,232],\"radius_mm\":24.5},{\"under\":\"upper_arm.blades\",\"clear_height_mm\":313,\"centre_mm\":[262.5,232],\"radius_mm\":230.2}],\"options\":[{\"name\":\"position\",\"description\":\"Whether the basket is pushed into the tub or pulled out over the open door. A basket is loaded from above while it is pulled out; whatever is in it travels with it and may shift.\",\"values\":[\"in\",\"out\"]},{\"name\":\"tine_row_r1\",\"description\":\"Hinged tine row R1: standing up to hold plates, or folded flat to make room for pots and bowls.\",\"values\":[\"up\",\"folded\"]},{\"name\":\"tine_row_r2\",\"description\":\"Hinged tine row R2: standing up to hold plates, or folded flat to make room for pots and bowls.\",\"values\":[\"up\",\"folded\"]}]},{\"rack\":\"cutlery_basket\",\"origin_in_mm\":[-56,-254,73],\"origin_out_mm\":[-56,-754,73],\"envelope_mm\":[128,230,127],\"options\":[{\"name\":\"position\",\"description\":\"Where the loose cutlery basket stands in the lower basket: 'front_centre' (front centre, its centre at x 271 mm, y 123 mm of the rack frame), 'front_right' (front right, its centre at x 373 mm, y 123 mm of the rack frame), 'front_left' (front left, its centre at x 153 mm, y 123 mm of the rack frame), or 'out' when it is taken out of the machine. It can only be moved while it is empty and where nothing stands in its way; the tine slots it stands over cannot be used.\",\"values\":[\"front_centre\",\"front_right\",\"front_left\",\"out\"]}]},{\"rack\":\"upper_rack\",\"origin_in_mm\":[-244,-258,420],\"origin_out_mm\":[-244,-698,420],\"envelope_mm\":[500,498,220],\"low_spots\":[{\"under\":\"roof_sprayer\",\"clear_height_mm\":190,\"centre_mm\":[244,278],\"radius_mm\":26}],\"tablet_tray\":{\"min_mm\":[142.5,0,8],\"max_mm\":[357.5,52,55]},\"options\":[{\"name\":\"position\",\"description\":\"Whether the basket is pushed into the tub or pulled out over the open door. A basket is loaded from above while it is pulled out; whatever is in it travels with it and may shift.\",\"values\":[\"in\",\"out\"]},{\"name\":\"height\",\"description\":\"Height position of the basket. The top of its base grid is 420 mm above the tub floor at '1', 395 mm above the tub floor at '2', 370 mm above the tub floor at '3'. Whatever is in the basket travels with it.\",\"values\":[\"1\",\"2\",\"3\"]},{\"name\":\"tine_row_c_rear\",\"description\":\"Hinged tine row C (rear half, part 12033291): standing up to hold plates, or folded flat to make room for pots and bowls.\",\"values\":[\"up\",\"folded\"]},{\"name\":\"tine_row_c_front\",\"description\":\"Hinged tine row C (front half, part 12033302): standing up to hold plates, or folded flat to make room for pots and bowls.\",\"values\":[\"up\",\"folded\"]},{\"name\":\"shelf_cup_front\",\"description\":\"Folding cup shelf 'cup_front': up against the side of the basket, or down as a second level for cups and a rest for stemware.\",\"values\":[\"up\",\"down\"]},{\"name\":\"shelf_cup_rear\",\"description\":\"Folding cup shelf 'cup_rear': up against the side of the basket, or down as a second level for cups and a rest for stemware.\",\"values\":[\"up\",\"down\"]},{\"name\":\"shelf_knife_shelf\",\"description\":\"Folding holder 'knife_shelf' (knife shelf): folded up out of the way, or down for long knives and utensils laid flat.\",\"values\":[\"up\",\"down\"]}]}],\"spray_arms\":[{\"arm\":\"lower_arm\",\"hub_mm\":[0,0,52],\"radius_mm\":230.3,\"sweep_z_mm\":[0,52]},{\"arm\":\"upper_arm\",\"hub_mm\":[0,-30,399],\"radius_mm\":230.2,\"sweep_z_mm\":[365,399]}],\"dispenser\":{\"lid_sweep_min_mm\":[-47,-273,492.5],\"lid_sweep_max_mm\":[3,-271,562.5]}},\"programme\":{\"programme_id\":\"eco_50\",\"display_name\":\"Eco 50\",\"phases\":[{\"name\":\"pre_rinse\",\"temperature_c\":null,\"duration_s\":960},{\"name\":\"main_wash\",\"temperature_c\":50,\"duration_s\":9676},{\"name\":\"intermediate_rinse\",\"temperature_c\":null,\"duration_s\":660},{\"name\":\"final_rinse\",\"temperature_c\":61,\"duration_s\":963},{\"name\":\"drying\",\"temperature_c\":null,\"duration_s\":5400}],\"detergent\":{\"type\":\"finish_powerball_ultimate\",\"dose_g\":12.9,\"name\":\"Finish Powerball Ultimate\"},\"status\":\"scored\",\"note\":\"The programme the level is scored on: fixed and printed, no sensor decisions.\"},\"secondary_programmes\":[{\"programme_id\":\"auto_145\",\"display_name\":\"Auto 45-65 (2:25, normal branch)\",\"phases\":[{\"name\":\"pre_rinse\",\"temperature_c\":null,\"duration_s\":780},{\"name\":\"main_wash\",\"temperature_c\":65,\"duration_s\":4021},{\"name\":\"intermediate_rinse\",\"temperature_c\":null,\"duration_s\":540},{\"name\":\"final_rinse\",\"temperature_c\":69,\"duration_s\":924},{\"name\":\"drying\",\"temperature_c\":null,\"duration_s\":2400}],\"detergent\":{\"type\":\"finish_powerball_ultimate\",\"dose_g\":12.9,\"name\":\"Finish Powerball Ultimate\"},\"status\":\"uncalibrated\",\"note\":\"Uncalibrated. The wash simulation is anchored to published results of an Eco programme and to nothing on this one: its verdicts here, above all on egg, meat, cheese, heated milk, tea, coffee and wine, are provisional. A wash on this programme is reported and labelled, and is not a benchmark result.\"}],\"items_total\":12,\"points_total\":64,\"orientation_presets\":{\"upright\":{\"quat_wxyz\":[1,0,0,0],\"description\":\"standing as it would on a table\"},\"inverted\":{\"quat_wxyz\":[0,1,0,0],\"description\":\"upside down, resting on its rim\"},\"inclined\":{\"quat_wxyz\":[0.3827,0.9239,0,0],\"description\":\"leaning against the tines, opening facing down and to the front at 45 degrees\"},\"on_edge\":{\"quat_wxyz\":[0.7071,0.7071,0,0],\"description\":\"standing on its edge between tines, upper face towards the front\"},\"flat\":{\"quat_wxyz\":[1,0,0,0],\"description\":\"lying flat as on a table\"},\"flat_inverted\":{\"quat_wxyz\":[0,1,0,0],\"description\":\"lying flat, turned over\"},\"handle_down\":{\"quat_wxyz\":[0.7071,0,-0.7071,0],\"description\":\"standing in a basket cell with the handle down\"},\"handle_up\":{\"quat_wxyz\":[0.7071,0,0.7071,0],\"description\":\"standing in a basket cell with the handle up\"},\"inverted_tilted\":{\"quat_wxyz\":[0.1736,0.9848,0,0],\"description\":\"upside down and tilted 20 degrees so that water runs off the base\"},\"on_side\":{\"quat_wxyz\":[0.7071,0.7071,0,0],\"description\":\"lying on its side, opening to the front\"},\"on_edge_reversed\":{\"quat_wxyz\":[0.7071,-0.7071,0,0],\"description\":\"standing on its edge between tines, upper face towards the back\"},\"leaning\":{\"quat_wxyz\":[0.8192,0.5736,0,0],\"description\":\"on its edge and leaning back 20 degrees, upper face towards the front and slightly up\"}},\"item_types\":{\"cereal_bowl\":{\"class\":\"cereal_bowl\",\"display_name\":\"Cereal bowl, porcelain, 16 cm\",\"material\":\"porcelain_glazed\",\"mass_kg\":0.44,\"bbox_mm\":[160,160,70],\"reference_point_mm\":[0,0,35],\"dims\":{\"diameter\":160,\"height\":70},\"orientation_presets\":[\"upright\",\"inverted\",\"inclined\",\"on_edge\"]},\"dinner_fork\":{\"class\":\"dinner_fork\",\"display_name\":\"Dinner fork\",\"material\":\"stainless_steel\",\"mass_kg\":0.045,\"bbox_mm\":[185,24,7.1],\"reference_point_mm\":[92.5,0,3.5],\"dims\":{\"length\":185},\"orientation_presets\":[\"flat\",\"flat_inverted\",\"handle_down\",\"handle_up\",{\"name\":\"on_edge\",\"quat_wxyz\":[0.7071,0.7071,0,0],\"description\":\"lying on its edge in a slot of a cutlery tray\"}]},\"tumbler\":{\"class\":\"tumbler\",\"display_name\":\"Tumbler, tempered glass, 250 ml\",\"material\":\"glass_soda_lime\",\"mass_kg\":0.22,\"bbox_mm\":[87,87,90],\"reference_point_mm\":[0,0,45],\"dims\":{\"diameter\":87,\"height\":90},\"orientation_presets\":[\"upright\",\"inverted\",\"inverted_tilted\",\"on_side\"]},\"dinner_knife\":{\"class\":\"dinner_knife\",\"display_name\":\"Dinner knife, solid handle\",\"material\":\"stainless_steel\",\"mass_kg\":0.088,\"bbox_mm\":[210,19,7],\"reference_point_mm\":[105,0,3.5],\"dims\":{\"length\":210},\"orientation_presets\":[\"flat\",\"flat_inverted\",\"handle_down\",\"handle_up\",{\"name\":\"on_edge\",\"quat_wxyz\":[0.7071,0.7071,0,0],\"description\":\"lying on its edge in a slot of a cutlery tray\"}]},\"mug\":{\"class\":\"mug\",\"display_name\":\"Mug, ceramic, 300 ml\",\"material\":\"porcelain_glazed\",\"mass_kg\":0.351,\"bbox_mm\":[109.6,80,100],\"reference_point_mm\":[14.8,0,50],\"dims\":{\"diameter\":80,\"height\":100},\"orientation_presets\":[\"upright\",\"inverted\",\"inverted_tilted\",\"on_side\"]},\"dinner_plate\":{\"class\":\"dinner_plate\",\"display_name\":\"Dinner plate, heavy porcelain, 27 cm\",\"material\":\"porcelain_glazed\",\"mass_kg\":0.77,\"bbox_mm\":[270,270,30],\"reference_point_mm\":[0,0,15],\"dims\":{\"diameter\":270,\"height\":30},\"orientation_presets\":[\"upright\",\"inverted\",\"on_edge\",\"on_edge_reversed\",\"leaning\"]},\"deep_plate\":{\"class\":\"deep_plate\",\"display_name\":\"Deep plate, porcelain, 22 cm\",\"material\":\"porcelain_glazed\",\"mass_kg\":0.589,\"bbox_mm\":[220,220,60],\"reference_point_mm\":[0,0,30],\"dims\":{\"diameter\":220,\"height\":60},\"orientation_presets\":[\"upright\",\"inverted\",\"on_edge\",\"on_edge_reversed\",\"leaning\",\"inclined\"]},\"dessert_spoon\":{\"class\":\"dessert_spoon\",\"display_name\":\"Dessert spoon\",\"material\":\"stainless_steel\",\"mass_kg\":0.04,\"bbox_mm\":[160,37,9.6],\"reference_point_mm\":[80,0,4.8],\"dims\":{\"length\":160},\"orientation_presets\":[\"flat\",\"flat_inverted\",\"handle_down\",\"handle_up\",{\"name\":\"on_edge\",\"quat_wxyz\":[0.7071,0.7071,0,0],\"description\":\"lying on its edge in a slot of a cutlery tray\"}]}},\"items\":[{\"item_ids\":[\"bowl_01\"],\"type\":\"cereal_bowl\",\"points\":8,\"soils\":[{\"description\":\"Yoghurt left in the bottom and up one side, about 2 hours old\",\"type\":\"yoghurt\",\"regions\":{\"interior\":0.4},\"amount_g\":1.78,\"age_h\":2,\"heat_history\":\"none\"}]},{\"item_ids\":[\"fork_01\",\"fork_02\"],\"type\":\"dinner_fork\",\"points\":2,\"soils\":[{\"description\":\"Shreds of salad leaf caught between the tines, about 2 hours old\",\"type\":\"spinach_particles\",\"regions\":{\"tines\":0.5},\"amount_g\":0.09,\"age_h\":2,\"heat_history\":\"none\"}]},{\"item_ids\":[\"glass_01\",\"glass_02\"],\"type\":\"tumbler\",\"points\":6,\"soils\":[{\"description\":\"A thick smoothie of avocado and banana, dried in a band up the inside of the glass, about 2 hours old\",\"type\":\"avocado\",\"regions\":{\"interior\":0.3},\"amount_g\":0.78,\"age_h\":2,\"heat_history\":\"none\"}]},{\"item_ids\":[\"knife_01\"],\"type\":\"dinner_knife\",\"points\":2,\"soils\":[{\"description\":\"Butter on the blade\",\"type\":\"butter_margarine\",\"regions\":{\"blade\":0.4},\"amount_g\":0.02,\"age_h\":2,\"heat_history\":\"none\"}]},{\"item_ids\":[\"mug_01\"],\"type\":\"mug\",\"points\":6,\"soils\":[{\"description\":\"Hot chocolate, set in a ring inside\",\"type\":\"chocolate\",\"regions\":{\"interior\":0.3},\"amount_g\":0.6,\"age_h\":2,\"heat_history\":\"none\"},{\"description\":\"A skin of hot milk stuck near the top\",\"type\":\"milk_skin\",\"regions\":{\"interior\":0.2},\"amount_g\":0.12,\"age_h\":2,\"heat_history\":\"warm\"}]},{\"item_ids\":[\"plate_01\",\"plate_02\"],\"type\":\"dinner_plate\",\"points\":10,\"soils\":[{\"description\":\"Tomato sauce from a plate of pasta, smeared over the eating face about 2 hours ago\",\"type\":\"tomato_sauce\",\"regions\":{\"well\":0.5},\"amount_g\":2.36,\"age_h\":2,\"heat_history\":\"none\"}]},{\"item_ids\":[\"soup_plate_01\"],\"type\":\"deep_plate\",\"points\":8,\"soils\":[{\"description\":\"Tomato soup dried in a band inside the deep plate, about 2 hours old\",\"type\":\"tomato_sauce\",\"regions\":{\"interior\":0.4},\"amount_g\":2.59,\"age_h\":2,\"heat_history\":\"none\"}]},{\"item_ids\":[\"spoon_01\",\"spoon_02\"],\"type\":\"dessert_spoon\",\"points\":2,\"soils\":[{\"description\":\"Yoghurt in the bowl of the spoon, about 2 hours old\",\"type\":\"yoghurt\",\"regions\":{\"bowl\":0.5},\"amount_g\":0.13,\"age_h\":2,\"heat_history\":\"none\"}]}]}",
+ "system_digest": "sha256:02f2745061dc3f66b01b7fed759b9b86a040980ce3669a501ed96bc4cf6917f4",
+ "tools": [
+  "place",
+  "remove",
+  "reset",
+  "set_rack",
+  "start_cycle",
+  "get_level",
+  "get_item",
+  "get_state",
+  "render",
+  "preview",
+  "list_slots",
+  "check_load",
+  "get_report"
+ ],
+ "history": [
+  {
+   "role": "user",
+   "text": "The level is set up and the dishwasher is open. Load it and start the cycle."
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_97b6a9ec3f7071bc06132619",
+     "name": "render",
+     "arguments": {
+      "view": "top_upper",
+      "options": {
+       "labels": true,
+       "grid": true
+      }
+     }
+    },
+    {
+     "id": "call_afc09d60837e0823e9bff13a",
+     "name": "list_slots",
+     "arguments": {
+      "rack": "lower_rack",
+      "item_id": "plate_01",
+      "limit": 12
+     }
+    },
+    {
+     "id": "call_4a7ec5a1d467ec20ec0cd065",
+     "name": "get_state",
+     "arguments": {}
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_97b6a9ec3f7071bc06132619",
+     "name": "render",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"view\":\"top_upper\",\"image\":{\"mime_type\":\"image/png\",\"width_px\":768,\"height_px\":768},\"budget\":{\"queries\":\"1/300\"}}",
+     "images": [
+      "[png, 291555 bytes]"
+     ]
+    },
+    {
+     "call_id": "call_afc09d60837e0823e9bff13a",
+     "name": "list_slots",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"rack\":\"lower_rack\",\"item_id\":\"plate_01\",\"places_total\":34,\"free_seated\":20,\"free_above_tines\":4,\"not_free\":10,\"offset\":0,\"places\":{\"columns\":[\"slot\",\"position_mm\",\"orientation\",\"drop_free\",\"note\"],\"rows\":[[\"tine_row_r1+tine_row_r2.slot_00\",[63,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_01\",[81,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_02\",[99,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_03\",[117,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_04\",[136,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_05\",[154,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_06\",[172,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_17\",[375,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":-90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_18\",[393,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":-90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_19\",[411,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":-90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_20\",[430,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":-90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_21\",[467,368,141],{\"preset\":\"on_edge\",\"roll_deg\":-4,\"yaw_deg\":-90},true,\"\"]]},\"next_offset\":12,\"budget\":{\"queries\":\"2/300\"}}",
+     "images": []
+    },
+    {
+     "call_id": "call_4a7ec5a1d467ec20ec0cd065",
+     "name": "get_state",
+     "is_error": false,
+     "text": "{\"state_hash\":\"50c232fd217f\",\"phase\":\"loading\",\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"},\"rack_options\":{\"lower_rack.tine_row_r1\":\"up\",\"lower_rack.tine_row_r2\":\"up\",\"upper_rack.height\":\"1\",\"upper_rack.tine_row_c_rear\":\"up\",\"upper_rack.tine_row_c_front\":\"up\",\"upper_rack.shelf_cup_front\":\"up\",\"upper_rack.shelf_cup_rear\":\"up\",\"upper_rack.shelf_knife_shelf\":\"down\",\"cutlery_basket.position\":\"front_centre\"},\"placed\":{\"columns\":[\"item_id\",\"frame\",\"position_mm\",\"quat_wxyz\",\"stable\",\"touches\",\"location\"],\"rows\":[]},\"placed_total\":0,\"unplaced\":[\"bowl_01\",\"fork_01\",\"fork_02\",\"glass_01\",\"glass_02\",\"knife_01\",\"mug_01\",\"plate_01\",\"plate_02\",\"soup_plate_01\",\"spoon_01\",\"spoon_02\"],\"budget\":{\"actions\":\"0/400\",\"queries\":\"3/300\",\"washes\":\"0/1\"}}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_5acaabcf62fd453bd606637b",
+     "name": "place",
+     "arguments": {
+      "item_id": "plate_01",
+      "frame": "lower_rack",
+      "position_mm": [
+       154,
+       368,
+       143
+      ],
+      "orientation": {
+       "preset": "on_edge",
+       "roll_deg": 5,
+       "yaw_deg": 90
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_5acaabcf62fd453bd606637b",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"plate_01\",\"released_at\":{\"position_mm\":[154,368,141.4],\"quat_wxyz\":[0.4777,0.5213,0.5213,0.4777]},\"displacement_mm\":6.2,\"rotation_deg\":2.8,\"settle_time_s\":1,\"stable\":true,\"resting\":{\"lowest_point_mm\":3.9,\"on_base\":true,\"force_over_weight\":1.1},\"contact_forces_N\":{\"lower_rack.tine_row_r1\":4.57,\"lower_rack.tine_row_r2\":4},\"changes\":{\"items\":[{\"item_id\":\"plate_01\",\"frame\":\"lower_rack\",\"position_mm\":[151.9,373.5,139.4],\"quat_wxyz\":[0.4938,0.5046,0.5279,0.4721],\"stable\":true,\"touches\":[\"lower_rack.tine_row_r1\",\"lower_rack.tine_row_r2\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":1,\"unplaced\":11,\"by_location\":{\"lower_rack\":1},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"1/400\",\"queries\":\"3/300\",\"washes\":\"0/1\"},\"state_hash\":\"1175a923c79d\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_d6ad005907db14a6c43043af",
+     "name": "place",
+     "arguments": {
+      "item_id": "plate_02",
+      "frame": "lower_rack",
+      "position_mm": [
+       375,
+       368,
+       143
+      ],
+      "orientation": {
+       "preset": "on_edge",
+       "roll_deg": 5,
+       "yaw_deg": -90
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_d6ad005907db14a6c43043af",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"plate_02\",\"released_at\":{\"position_mm\":[375,368,142],\"quat_wxyz\":[0.4777,0.5213,-0.5213,-0.4777]},\"displacement_mm\":6.3,\"rotation_deg\":2.7,\"settle_time_s\":1,\"stable\":true,\"resting\":{\"lowest_point_mm\":3.9,\"on_base\":true,\"force_over_weight\":1.1},\"contact_forces_N\":{\"lower_rack.tine_row_r1\":4.47,\"lower_rack.tine_row_r2\":4.06},\"changes\":{\"items\":[{\"item_id\":\"plate_02\",\"frame\":\"lower_rack\",\"position_mm\":[376.7,373.5,139.5],\"quat_wxyz\":[0.493,0.5054,-0.5283,-0.4716],\"stable\":true,\"touches\":[\"lower_rack.tine_row_r1\",\"lower_rack.tine_row_r2\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":2,\"unplaced\":10,\"by_location\":{\"lower_rack\":2},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"2/400\",\"queries\":\"3/300\",\"washes\":\"0/1\"},\"state_hash\":\"d392008bb9b7\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_e80bb98fd50592113b2e5c35",
+     "name": "list_slots",
+     "arguments": {
+      "rack": "lower_rack",
+      "item_id": "soup_plate_01",
+      "limit": 12
+     }
+    },
+    {
+     "id": "call_c75826d3506cd4148999ada3",
+     "name": "list_slots",
+     "arguments": {
+      "rack": "cutlery_basket",
+      "item_id": "fork_01",
+      "limit": 8
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_e80bb98fd50592113b2e5c35",
+     "name": "list_slots",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"rack\":\"lower_rack\",\"item_id\":\"soup_plate_01\",\"places_total\":35,\"free_seated\":4,\"free_above_tines\":12,\"not_free\":19,\"offset\":0,\"places\":{\"columns\":[\"slot\",\"position_mm\",\"orientation\",\"drop_free\",\"note\"],\"rows\":[[\"tine_row_mr.slot_04\",[417,123,115],{\"preset\":\"on_edge\",\"roll_deg\":19,\"yaw_deg\":-90},true,\"\"],[\"tine_row_mr.slot_05+tine_row_fr.slot_04\",[438,123,117],{\"preset\":\"on_edge\",\"roll_deg\":23,\"yaw_deg\":-90},true,\"\"],[\"tine_row_fl.slot_01\",[109,123,115],{\"preset\":\"on_edge\",\"roll_deg\":20,\"yaw_deg\":90},true,\"\"],[\"tine_row_fr.slot_03\",[416,123,115],{\"preset\":\"on_edge\",\"roll_deg\":20,\"yaw_deg\":-90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_01\",[37,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"],[\"tine_row_r1+tine_row_r2.slot_02\",[55,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"],[\"tine_row_r1+tine_row_r2.slot_03\",[73,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"],[\"tine_row_r1+tine_row_r2.slot_04\",[91,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"],[\"tine_row_r1+tine_row_r2.slot_11\",[219,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"],[\"tine_row_r1+tine_row_r2.slot_12\",[237,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"],[\"tine_row_r1+tine_row_r2.slot_13\",[256,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"],[\"tine_row_r1+tine_row_r2.slot_14\",[292,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"]]},\"next_offset\":12,\"budget\":{\"queries\":\"4/300\"}}",
+     "images": []
+    },
+    {
+     "call_id": "call_c75826d3506cd4148999ada3",
+     "name": "list_slots",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"rack\":\"cutlery_basket\",\"item_id\":\"fork_01\",\"places_total\":8,\"free_seated\":8,\"free_above_tines\":0,\"not_free\":0,\"offset\":0,\"places\":{\"columns\":[\"slot\",\"position_mm\",\"orientation\",\"drop_free\",\"note\"],\"rows\":[[\"cell_c00\",[25,34,109],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c01\",[25,93,109],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c02\",[25,138,109],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c03\",[25,203,109],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c10\",[100,34,109],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c11\",[100,93,109],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c12\",[100,138,109],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c13\",[100,203,109],{\"preset\":\"handle_down\"},true,\"\"]]},\"budget\":{\"queries\":\"5/300\"}}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_d41fc3655c6a940a06b64b18",
+     "name": "place",
+     "arguments": {
+      "item_id": "soup_plate_01",
+      "frame": "lower_rack",
+      "position_mm": [
+       417,
+       123,
+       115
+      ],
+      "orientation": {
+       "preset": "on_edge",
+       "roll_deg": 19,
+       "yaw_deg": -90
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_d41fc3655c6a940a06b64b18",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"soup_plate_01\",\"released_at\":{\"position_mm\":[417,123,113.7],\"quat_wxyz\":[0.4106,0.5757,-0.5757,-0.4106]},\"displacement_mm\":6.5,\"rotation_deg\":3.9,\"settle_time_s\":2,\"stable\":true,\"resting\":{\"lowest_point_mm\":0.8,\"on_base\":true,\"force_over_weight\":1.2},\"contact_forces_N\":{\"lower_rack.tine_row_fr\":3.03,\"lower_rack.tine_row_mr\":3.9},\"changes\":{\"items\":[{\"item_id\":\"soup_plate_01\",\"frame\":\"lower_rack\",\"position_mm\":[410.5,123.1,113.1],\"quat_wxyz\":[0.3899,0.5875,-0.5908,-0.3921],\"stable\":true,\"touches\":[\"lower_rack.tine_row_fr\",\"lower_rack.tine_row_mr\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":3,\"unplaced\":9,\"by_location\":{\"lower_rack\":3},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"3/400\",\"queries\":\"5/300\",\"washes\":\"0/1\"},\"state_hash\":\"5159636d7b28\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_f97482146f5ca7584f44f443",
+     "name": "place",
+     "arguments": {
+      "item_id": "fork_01",
+      "frame": "cutlery_basket",
+      "position_mm": [
+       25,
+       34,
+       109
+      ],
+      "orientation": {
+       "preset": "handle_down"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_f97482146f5ca7584f44f443",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"fork_01\",\"released_at\":{\"position_mm\":[25,34,98.8],\"quat_wxyz\":[0.7071,0,-0.7071,0]},\"displacement_mm\":17.5,\"rotation_deg\":11.1,\"settle_time_s\":2.1,\"stable\":true,\"resting\":{\"lowest_point_mm\":6,\"on_base\":true,\"force_over_weight\":1.1},\"contact_forces_N\":{\"cutlery_basket.foot.0.floor\":0.43,\"cutlery_basket.foot.0.left\":0.07},\"changes\":{\"items\":[{\"item_id\":\"fork_01\",\"frame\":\"cutlery_basket\",\"position_mm\":[7.7,34,96.4],\"quat_wxyz\":[0.6356,0.0002,-0.772,0.0001],\"stable\":true,\"touches\":[\"cutlery_basket.foot.0.floor\",\"cutlery_basket.foot.0.left\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":4,\"unplaced\":8,\"by_location\":{\"lower_rack\":4},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"4/400\",\"queries\":\"5/300\",\"washes\":\"0/1\"},\"state_hash\":\"42b91aab20f3\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_da867b1c4bcb32fd7b09a057",
+     "name": "place",
+     "arguments": {
+      "item_id": "fork_02",
+      "frame": "cutlery_basket",
+      "position_mm": [
+       100,
+       203,
+       109
+      ],
+      "orientation": {
+       "preset": "handle_down"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_da867b1c4bcb32fd7b09a057",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"fork_02\",\"released_at\":{\"position_mm\":[100,203,98.8],\"quat_wxyz\":[0.7071,0,-0.7071,0]},\"displacement_mm\":16.3,\"rotation_deg\":91.3,\"settle_time_s\":2.3,\"stable\":true,\"resting\":{\"lowest_point_mm\":5.9,\"on_base\":true,\"force_over_weight\":1.1},\"contact_forces_N\":{\"cutlery_basket.foot.2.floor\":0.42,\"cutlery_basket.foot.2.mid\":0.05,\"cutlery_basket.handle.rear\":0.02},\"changes\":{\"items\":[{\"item_id\":\"fork_02\",\"frame\":\"cutlery_basket\",\"position_mm\":[83.9,204.2,96.7],\"quat_wxyz\":[0.4191,-0.4501,-0.5697,-0.5451],\"stable\":true,\"touches\":[\"cutlery_basket.foot.2.floor\",\"cutlery_basket.foot.2.mid\",\"cutlery_basket.handle.rear\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":5,\"unplaced\":7,\"by_location\":{\"lower_rack\":5},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"5/400\",\"queries\":\"5/300\",\"washes\":\"0/1\"},\"state_hash\":\"9205f78b0323\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_78c5798c41005882d7950336",
+     "name": "list_slots",
+     "arguments": {
+      "rack": "cutlery_basket",
+      "item_id": "knife_01"
+     }
+    },
+    {
+     "id": "call_3be76e7f50b04bc5f6aaa53e",
+     "name": "list_slots",
+     "arguments": {
+      "rack": "cutlery_basket",
+      "item_id": "spoon_01"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_78c5798c41005882d7950336",
+     "name": "list_slots",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"rack\":\"cutlery_basket\",\"item_id\":\"knife_01\",\"places_total\":8,\"free_seated\":8,\"free_above_tines\":0,\"not_free\":0,\"offset\":0,\"places\":{\"columns\":[\"slot\",\"position_mm\",\"orientation\",\"drop_free\",\"note\"],\"rows\":[[\"cell_c00\",[35,34,121],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c01\",[27,93,121],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c02\",[27,138,121],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c03\",[27,203,121],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c10\",[102,34,121],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c11\",[102,93,121],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c12\",[102,138,121],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c13\",[102,211,121],{\"preset\":\"handle_down\"},true,\"\"]]},\"budget\":{\"queries\":\"6/300\"}}",
+     "images": []
+    },
+    {
+     "call_id": "call_3be76e7f50b04bc5f6aaa53e",
+     "name": "list_slots",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"rack\":\"cutlery_basket\",\"item_id\":\"spoon_01\",\"places_total\":8,\"free_seated\":8,\"free_above_tines\":0,\"not_free\":0,\"offset\":0,\"places\":{\"columns\":[\"slot\",\"position_mm\",\"orientation\",\"drop_free\",\"note\"],\"rows\":[[\"cell_c00\",[31,34,96],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c01\",[23,93,96],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c02\",[23,138,96],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c03\",[23,203,96],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c10\",[98,34,96],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c11\",[98,93,96],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c12\",[98,138,96],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c13\",[98,211,96],{\"preset\":\"handle_down\"},true,\"\"]]},\"budget\":{\"queries\":\"7/300\"}}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_19645894c65aa6275253a634",
+     "name": "place",
+     "arguments": {
+      "item_id": "knife_01",
+      "frame": "cutlery_basket",
+      "position_mm": [
+       102,
+       34,
+       125
+      ],
+      "orientation": {
+       "preset": "handle_up"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_19645894c65aa6275253a634",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"knife_01\",\"released_at\":{\"position_mm\":[102,34,111.3],\"quat_wxyz\":[0.7071,0,0.7071,0]},\"displacement_mm\":12.2,\"rotation_deg\":90,\"settle_time_s\":1.5,\"stable\":true,\"resting\":{\"lowest_point_mm\":6,\"on_base\":true,\"force_over_weight\":1.2},\"contact_forces_N\":{\"cutlery_basket.foot.0.floor\":0.78,\"cutlery_basket.handle.front\":0.1,\"lower_rack_fittings.handle\":0.18},\"changes\":{\"items\":[{\"item_id\":\"knife_01\",\"frame\":\"cutlery_basket\",\"position_mm\":[93,26,109.6],\"quat_wxyz\":[0.5844,-0.4907,0.4156,0.4949],\"stable\":true,\"touches\":[\"cutlery_basket.foot.0.floor\",\"cutlery_basket.handle.front\",\"lower_rack_fittings.handle\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":6,\"unplaced\":6,\"by_location\":{\"lower_rack\":6},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"6/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"f06e8620bc97\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_30a4cb6fd1a7f1940d12d601",
+     "name": "place",
+     "arguments": {
+      "item_id": "spoon_01",
+      "frame": "cutlery_basket",
+      "position_mm": [
+       23,
+       93,
+       96
+      ],
+      "orientation": {
+       "preset": "handle_down"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_30a4cb6fd1a7f1940d12d601",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"spoon_01\",\"released_at\":{\"position_mm\":[23,93,86.3],\"quat_wxyz\":[0.7071,0,-0.7071,0]},\"displacement_mm\":11.2,\"rotation_deg\":8,\"settle_time_s\":1.2,\"stable\":true,\"resting\":{\"lowest_point_mm\":6,\"on_base\":true,\"force_over_weight\":1.1},\"contact_forces_N\":{\"cutlery_basket.foot.1.floor\":0.37,\"cutlery_basket.foot.1.left\":0.05},\"changes\":{\"items\":[{\"item_id\":\"spoon_01\",\"frame\":\"cutlery_basket\",\"position_mm\":[11.9,93,84.8],\"quat_wxyz\":[0.6563,-0.0001,-0.7545,-0.0001],\"stable\":true,\"touches\":[\"cutlery_basket.foot.1.floor\",\"cutlery_basket.foot.1.left\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":7,\"unplaced\":5,\"by_location\":{\"lower_rack\":7},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"7/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"7157b0411cf6\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_c3ccc00e4e8765e35e25e851",
+     "name": "place",
+     "arguments": {
+      "item_id": "spoon_02",
+      "frame": "cutlery_basket",
+      "position_mm": [
+       98,
+       138,
+       96
+      ],
+      "orientation": {
+       "preset": "handle_down",
+       "yaw_deg": 180
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_c3ccc00e4e8765e35e25e851",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"spoon_02\",\"released_at\":{\"position_mm\":[98,138,86.3],\"quat_wxyz\":[0,0.7071,0,0.7071]},\"displacement_mm\":15.6,\"rotation_deg\":11.2,\"settle_time_s\":1.3,\"stable\":true,\"resting\":{\"lowest_point_mm\":6,\"on_base\":true,\"force_over_weight\":1.1},\"contact_forces_N\":{\"cutlery_basket.foot.1.floor\":0.37,\"cutlery_basket.foot.1.right\":0.06},\"changes\":{\"items\":[{\"item_id\":\"spoon_02\",\"frame\":\"cutlery_basket\",\"position_mm\":[113.4,138,83.9],\"quat_wxyz\":[0.0001,-0.7726,-0.0001,-0.6349],\"stable\":true,\"touches\":[\"cutlery_basket.foot.1.floor\",\"cutlery_basket.foot.1.right\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":8,\"unplaced\":4,\"by_location\":{\"lower_rack\":8},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"8/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"971dd287abf0\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_ea42a152e2facc00edc48309",
+     "name": "set_rack",
+     "arguments": {
+      "rack": "lower_rack",
+      "option": {
+       "name": "position",
+       "value": "in"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_ea42a152e2facc00edc48309",
+     "name": "set_rack",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"changes\":{\"items\":[{\"item_id\":\"fork_01\",\"frame\":\"cutlery_basket\",\"position_mm\":[7.7,37.3,96.5],\"quat_wxyz\":[0.634,-0.0096,-0.7731,0.0117],\"stable\":true,\"touches\":[\"cutlery_basket.foot.0.floor\",\"cutlery_basket.foot.0.left\"],\"location\":\"lower_rack\",\"moved_mm\":0.7,\"turned_deg\":1.8},{\"item_id\":\"fork_02\",\"frame\":\"cutlery_basket\",\"position_mm\":[78.2,194.1,95.2],\"quat_wxyz\":[0.0135,0.5956,0.0088,0.8031],\"stable\":true,\"touches\":[\"cutlery_basket.foot.2.floor\",\"cutlery_basket.foot.2.mid\",\"cutlery_basket.handle.rear\"],\"location\":\"lower_rack\",\"moved_mm\":6.7,\"turned_deg\":90.3},{\"item_id\":\"knife_01\",\"frame\":\"cutlery_basket\",\"position_mm\":[92.9,26.1,109.6],\"quat_wxyz\":[0.585,-0.4906,0.415,0.4949],\"stable\":true,\"touches\":[\"cutlery_basket.foot.0.floor\",\"cutlery_basket.handle.front\",\"lower_rack_fittings.handle\"],\"location\":\"lower_rack\"},{\"item_id\":\"plate_01\",\"frame\":\"lower_rack\",\"position_mm\":[151.9,373.5,139.4],\"quat_wxyz\":[0.4939,0.5045,0.5276,0.4723],\"stable\":true,\"touches\":[\"lower_rack.tine_row_r1\",\"lower_rack.tine_row_r2\"],\"location\":\"lower_rack\"},{\"item_id\":\"plate_02\",\"frame\":\"lower_rack\",\"position_mm\":[376.9,373.5,139.4],\"quat_wxyz\":[0.4939,0.5046,-0.5274,-0.4725],\"stable\":true,\"touches\":[\"lower_rack.tine_row_r1\",\"lower_rack.tine_row_r2\"],\"location\":\"lower_rack\"},{\"item_id\":\"soup_plate_01\",\"frame\":\"lower_rack\",\"position_mm\":[410.3,123.1,113.1],\"quat_wxyz\":[0.3888,0.5869,-0.5921,-0.3922],\"stable\":true,\"touches\":[\"lower_rack.tine_row_fr\",\"lower_rack.tine_row_mr\"],\"location\":\"lower_rack\"},{\"item_id\":\"spoon_01\",\"frame\":\"cutlery_basket\",\"position_mm\":[12,95.6,84.9],\"quat_wxyz\":[0.6557,-0.0105,-0.7549,0.0091],\"stable\":true,\"touches\":[\"cutlery_basket.divider\",\"cutlery_basket.foot.1.floor\",\"cutlery_basket.foot.1.left\"],\"location\":\"lower_rack\",\"moved_mm\":0.5,\"turned_deg\":1.6},{\"item_id\":\"spoon_02\",\"frame\":\"cutlery_basket\",\"position_mm\":[113.4,140.8,83.9],\"quat_wxyz\":[0.0092,0.7733,0.0114,0.6339],\"stable\":true,\"touches\":[\"cutlery_basket.foot.1.floor\",\"cutlery_basket.foot.1.right\"],\"location\":\"lower_rack\",\"moved_mm\":0.6,\"turned_deg\":1.7}],\"racks\":{\"lower_rack\":\"in\"}},\"load\":{\"placed\":8,\"unplaced\":4,\"by_location\":{\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"9/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"d733d78bd8bb\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_061d1d041ec32805a6b4faa0",
+     "name": "set_rack",
+     "arguments": {
+      "rack": "upper_rack",
+      "option": {
+       "name": "position",
+       "value": "out"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_061d1d041ec32805a6b4faa0",
+     "name": "set_rack",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"changes\":{\"racks\":{\"upper_rack\":\"out\"}},\"load\":{\"placed\":8,\"unplaced\":4,\"by_location\":{\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"10/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"3ba0ad639824\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_c8f7becedb8652b2c12864f1",
+     "name": "set_rack",
+     "arguments": {
+      "rack": "upper_rack",
+      "option": {
+       "name": "tine_row_c_rear",
+       "value": "folded"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_c8f7becedb8652b2c12864f1",
+     "name": "set_rack",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"changes\":{\"rack_options\":{\"upper_rack.tine_row_c_rear\":\"folded\"}},\"load\":{\"placed\":8,\"unplaced\":4,\"by_location\":{\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"11/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"3b37f45a1f1f\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_6bc7113e04407932d49e0761",
+     "name": "place",
+     "arguments": {
+      "item_id": "bowl_01",
+      "frame": "upper_rack",
+      "position_mm": [
+       365,
+       370,
+       115
+      ],
+      "orientation": {
+       "preset": "inverted",
+       "roll_deg": 10
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_6bc7113e04407932d49e0761",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"bowl_01\",\"released_at\":{\"position_mm\":[365,370,71.7],\"quat_wxyz\":[0.0872,-0.9962,0,0]},\"displacement_mm\":24.4,\"rotation_deg\":10.2,\"settle_time_s\":1.1,\"stable\":true,\"resting\":{\"lowest_point_mm\":12.6,\"on_base\":false,\"force_over_weight\":1},\"contact_forces_N\":{\"upper_rack.floor.y\":2.63,\"upper_rack.tine_row_c_rear\":1.69},\"changes\":{\"items\":[{\"item_id\":\"bowl_01\",\"frame\":\"upper_rack\",\"position_mm\":[363.5,381.4,50.2],\"quat_wxyz\":[0.0001,-0.9998,-0.0065,0.0168],\"stable\":true,\"touches\":[\"upper_rack.floor.y\",\"upper_rack.tine_row_c_rear\"],\"location\":\"upper_rack\"}]},\"load\":{\"placed\":9,\"unplaced\":3,\"by_location\":{\"upper_rack\":1,\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"12/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"cfc80f65a1b9\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_e9010bc1fb8d79552446f06b",
+     "name": "place",
+     "arguments": {
+      "item_id": "glass_01",
+      "frame": "upper_rack",
+      "position_mm": [
+       250,
+       170,
+       110
+      ],
+      "orientation": {
+       "preset": "inverted_tilted"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_e9010bc1fb8d79552446f06b",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"glass_01\",\"released_at\":{\"position_mm\":[250,170,84.6],\"quat_wxyz\":[0.1736,0.9848,0,0]},\"displacement_mm\":20.5,\"rotation_deg\":26.8,\"settle_time_s\":1.2,\"stable\":true,\"resting\":{\"lowest_point_mm\":14,\"on_base\":false,\"force_over_weight\":1.1},\"contact_forces_N\":{\"upper_rack.floor.x\":0.92,\"upper_rack.floor.y\":1.53},\"changes\":{\"items\":[{\"item_id\":\"glass_01\",\"frame\":\"upper_rack\",\"position_mm\":[260.9,161.1,69.7],\"quat_wxyz\":[0.0011,-0.988,-0.0053,0.1541],\"stable\":true,\"touches\":[\"upper_rack.floor.x\",\"upper_rack.floor.y\"],\"location\":\"upper_rack\"}]},\"load\":{\"placed\":10,\"unplaced\":2,\"by_location\":{\"upper_rack\":2,\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"13/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"279b71b2faf9\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_377b4bb4ee00d968f82c9f7d",
+     "name": "place",
+     "arguments": {
+      "item_id": "glass_02",
+      "frame": "upper_rack",
+      "position_mm": [
+       390,
+       200,
+       110
+      ],
+      "orientation": {
+       "preset": "inverted_tilted"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_377b4bb4ee00d968f82c9f7d",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"glass_02\",\"released_at\":{\"position_mm\":[390,200,81.7],\"quat_wxyz\":[0.1736,0.9848,0,0]},\"displacement_mm\":46.2,\"rotation_deg\":20.5,\"settle_time_s\":1.2,\"stable\":true,\"resting\":{\"lowest_point_mm\":9.8,\"on_base\":true,\"force_over_weight\":1},\"contact_forces_N\":{\"upper_rack.floor.y\":2.15},\"changes\":{\"items\":[{\"item_id\":\"glass_02\",\"frame\":\"upper_rack\",\"position_mm\":[382.2,161.3,57.6],\"quat_wxyz\":[0.0007,0.9992,0.0206,0.0354],\"stable\":true,\"touches\":[\"upper_rack.floor.y\"],\"location\":\"upper_rack\"}]},\"load\":{\"placed\":11,\"unplaced\":1,\"by_location\":{\"upper_rack\":3,\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"14/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"25df4171cec0\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_fdb0a9eee1a67a4a5e0ee503",
+     "name": "place",
+     "arguments": {
+      "item_id": "mug_01",
+      "frame": "upper_rack",
+      "position_mm": [
+       250,
+       325,
+       120
+      ],
+      "orientation": {
+       "preset": "inverted_tilted",
+       "yaw_deg": 180
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_fdb0a9eee1a67a4a5e0ee503",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"mug_01\",\"released_at\":{\"position_mm\":[250,325,101.6],\"quat_wxyz\":[0,0,0.9848,0.1736]},\"displacement_mm\":74.4,\"rotation_deg\":73.9,\"settle_time_s\":1.9,\"stable\":false,\"resting\":{\"lowest_point_mm\":17,\"on_base\":false,\"force_over_weight\":1},\"contact_forces_N\":{\"upper_rack.floor.x\":1.09,\"upper_rack.floor.y\":0.03,\"upper_rack.tine_row_c_rear\":2.3},\"changes\":{\"items\":[{\"item_id\":\"bowl_01\",\"frame\":\"upper_rack\",\"position_mm\":[367.9,383.5,50.1],\"quat_wxyz\":[0.0001,-0.9998,-0.0056,0.0168],\"stable\":true,\"touches\":[\"upper_rack.floor.y\",\"upper_rack.tine_row_c_rear\"],\"location\":\"upper_rack\",\"moved_mm\":4.8,\"turned_deg\":0.1},{\"item_id\":\"mug_01\",\"frame\":\"upper_rack\",\"position_mm\":[270.6,265.1,62.5],\"quat_wxyz\":[0.2468,-0.0316,-0.6918,-0.6779],\"stable\":false,\"touches\":[\"upper_rack.floor.x\",\"upper_rack.floor.y\",\"upper_rack.tine_row_c_rear\"],\"location\":\"upper_rack\"}]},\"load\":{\"placed\":12,\"unplaced\":0,\"by_location\":{\"upper_rack\":4,\"lower_rack\":8},\"unstable\":[\"mug_01\"],\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"15/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"98f219ee956e\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_f2ccf35348187818c3d4e112",
+     "name": "remove",
+     "arguments": {
+      "item_id": "mug_01"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_f2ccf35348187818c3d4e112",
+     "name": "remove",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"mug_01\",\"changes\":{\"to_counter\":[\"mug_01\"]},\"load\":{\"placed\":11,\"unplaced\":1,\"by_location\":{\"upper_rack\":3,\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"16/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"db0ec692bcc0\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_a8ac88c999940f57a854f948",
+     "name": "place",
+     "arguments": {
+      "item_id": "mug_01",
+      "frame": "upper_rack",
+      "position_mm": [
+       245,
+       365,
+       125
+      ],
+      "orientation": {
+       "preset": "inverted",
+       "yaw_deg": 90
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_a8ac88c999940f57a854f948",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"mug_01\",\"released_at\":{\"position_mm\":[245,365,78.2],\"quat_wxyz\":[0,0.7071,0.7071,0]},\"displacement_mm\":16.3,\"rotation_deg\":16.2,\"settle_time_s\":1.5,\"stable\":true,\"resting\":{\"lowest_point_mm\":16.7,\"on_base\":false,\"force_over_weight\":1},\"contact_forces_N\":{\"upper_rack.floor.y\":1.79,\"upper_rack.tine_row_c_rear\":1.68},\"changes\":{\"items\":[{\"item_id\":\"mug_01\",\"frame\":\"upper_rack\",\"position_mm\":[260.3,360.2,75.3],\"quat_wxyz\":[0.0998,-0.6767,-0.7235,0.0933],\"stable\":true,\"touches\":[\"upper_rack.floor.y\",\"upper_rack.tine_row_c_rear\"],\"location\":\"upper_rack\"}]},\"load\":{\"placed\":12,\"unplaced\":0,\"by_location\":{\"upper_rack\":4,\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"17/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"c85bcf0552bc\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_afd47652244bc763c0d8cff8",
+     "name": "render",
+     "arguments": {
+      "view": "top_upper",
+      "options": {
+       "labels": true,
+       "grid": true
+      }
+     }
+    },
+    {
+     "id": "call_a64fd7e9b7bf0edae694532a",
+     "name": "render",
+     "arguments": {
+      "view": "front",
+      "options": {
+       "labels": true,
+       "racks": "in"
+      }
+     }
+    },
+    {
+     "id": "call_c91e8e3fafbb118cc32173c0",
+     "name": "check_load",
+     "arguments": {}
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_afd47652244bc763c0d8cff8",
+     "name": "render",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"view\":\"top_upper\",\"image\":{\"mime_type\":\"image/png\",\"width_px\":768,\"height_px\":768},\"budget\":{\"queries\":\"8/300\"}}",
+     "images": [
+      "[png, 247113 bytes]"
+     ]
+    },
+    {
+     "call_id": "call_a64fd7e9b7bf0edae694532a",
+     "name": "render",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"view\":\"front\",\"image\":{\"mime_type\":\"image/png\",\"width_px\":768,\"height_px\":768},\"budget\":{\"queries\":\"9/300\"}}",
+     "images": [
+      "[png, 269757 bytes]"
+     ]
+    },
+    {
+     "call_id": "call_c91e8e3fafbb118cc32173c0",
+     "name": "check_load",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"shifted\":{\"columns\":[\"item_id\",\"displacement_mm\",\"rotation_deg\"],\"rows\":[[\"bowl_01\",1.9,0],[\"glass_01\",2.3,1.5],[\"glass_02\",2.5,0],[\"mug_01\",1.8,0.6]]},\"fell_out\":[],\"on_tub_floor\":[],\"protruding\":[],\"racks\":[{\"rack\":\"lower_rack\",\"slides_in\":true},{\"rack\":\"upper_rack\",\"slides_in\":true}],\"spray_arms\":[{\"arm\":\"lower_arm\",\"full_rotation\":true},{\"arm\":\"upper_arm\",\"full_rotation\":true}],\"door_closes\":true,\"door_blocked_by\":[],\"dispenser_opens\":true,\"dispenser_blocked_by\":[],\"tablet_path_clear\":true,\"tablet_blocked_by\":[],\"budget\":{\"queries\":\"10/300\"}}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_86b0414c23523d93e36b23d6",
+     "name": "start_cycle",
+     "arguments": {}
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_86b0414c23523d93e36b23d6",
+     "name": "start_cycle",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"job_id\":\"tutorial-wash-1\",\"programme\":\"eco_50\",\"phase\":\"washing\",\"prechecks\":{\"shifted\":{\"columns\":[\"item_id\",\"displacement_mm\",\"rotation_deg\"],\"rows\":[[\"bowl_01\",1.9,0],[\"glass_01\",2.3,1.5],[\"glass_02\",2.5,0],[\"mug_01\",1.8,0.6]]},\"fell_out\":[],\"on_tub_floor\":[],\"protruding\":[],\"racks\":[{\"rack\":\"lower_rack\",\"slides_in\":true},{\"rack\":\"upper_rack\",\"slides_in\":true}],\"spray_arms\":[{\"arm\":\"lower_arm\",\"full_rotation\":true},{\"arm\":\"upper_arm\",\"full_rotation\":true}],\"door_closes\":true,\"door_blocked_by\":[],\"dispenser_opens\":true,\"dispenser_blocked_by\":[],\"tablet_path_clear\":true,\"tablet_blocked_by\":[]},\"changes\":{\"items\":[{\"item_id\":\"bowl_01\",\"frame\":\"upper_rack\",\"position_mm\":[368,385.4,50.1],\"quat_wxyz\":[0.0001,-0.9998,-0.0056,0.0168],\"stable\":true,\"touches\":[\"upper_rack.floor.y\",\"upper_rack.tine_row_c_rear\"],\"location\":\"upper_rack\",\"moved_mm\":1.9,\"turned_deg\":0},{\"item_id\":\"glass_01\",\"frame\":\"upper_rack\",\"position_mm\":[260.9,163.4,69.7],\"quat_wxyz\":[0.0009,0.988,-0.0079,-0.1545],\"stable\":true,\"touches\":[\"upper_rack.floor.x\",\"upper_rack.floor.y\"],\"location\":\"upper_rack\",\"moved_mm\":2.3,\"turned_deg\":1.5},{\"item_id\":\"glass_02\",\"frame\":\"upper_rack\",\"position_mm\":[381.6,163.8,57.6],\"quat_wxyz\":[0.0007,0.9992,0.0207,0.0354],\"stable\":true,\"touches\":[\"upper_rack.floor.y\"],\"location\":\"upper_rack\",\"moved_mm\":2.5,\"turned_deg\":0},{\"item_id\":\"mug_01\",\"frame\":\"upper_rack\",\"position_mm\":[260.7,362,75.2],\"quat_wxyz\":[0.0961,-0.6792,-0.722,0.0904],\"stable\":true,\"touches\":[\"upper_rack.floor.y\",\"upper_rack.tine_row_c_rear\"],\"location\":\"upper_rack\",\"moved_mm\":1.8,\"turned_deg\":0.6}],\"racks\":{\"upper_rack\":\"in\"},\"phase\":\"washing\"},\"load\":{\"placed\":12,\"unplaced\":0,\"by_location\":{\"upper_rack\":4,\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"17/400\",\"queries\":\"10/300\",\"washes\":\"1/1\"},\"state_hash\":\"9ae36b036fec\"}",
+     "images": []
+    }
+   ]
+  }
+ ],
+ "conversation_at_end": [
+  {
+   "role": "user",
+   "text": "The level is set up and the dishwasher is open. Load it and start the cycle."
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_97b6a9ec3f7071bc06132619",
+     "name": "render",
+     "arguments": {
+      "view": "top_upper",
+      "options": {
+       "labels": true,
+       "grid": true
+      }
+     }
+    },
+    {
+     "id": "call_afc09d60837e0823e9bff13a",
+     "name": "list_slots",
+     "arguments": {
+      "rack": "lower_rack",
+      "item_id": "plate_01",
+      "limit": 12
+     }
+    },
+    {
+     "id": "call_4a7ec5a1d467ec20ec0cd065",
+     "name": "get_state",
+     "arguments": {}
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_97b6a9ec3f7071bc06132619",
+     "name": "render",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"view\":\"top_upper\",\"image\":{\"mime_type\":\"image/png\",\"width_px\":768,\"height_px\":768},\"budget\":{\"queries\":\"1/300\"}}",
+     "images": [
+      "[png, 291555 bytes]"
+     ]
+    },
+    {
+     "call_id": "call_afc09d60837e0823e9bff13a",
+     "name": "list_slots",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"rack\":\"lower_rack\",\"item_id\":\"plate_01\",\"places_total\":34,\"free_seated\":20,\"free_above_tines\":4,\"not_free\":10,\"offset\":0,\"places\":{\"columns\":[\"slot\",\"position_mm\",\"orientation\",\"drop_free\",\"note\"],\"rows\":[[\"tine_row_r1+tine_row_r2.slot_00\",[63,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_01\",[81,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_02\",[99,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_03\",[117,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_04\",[136,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_05\",[154,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_06\",[172,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_17\",[375,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":-90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_18\",[393,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":-90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_19\",[411,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":-90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_20\",[430,368,143],{\"preset\":\"on_edge\",\"roll_deg\":5,\"yaw_deg\":-90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_21\",[467,368,141],{\"preset\":\"on_edge\",\"roll_deg\":-4,\"yaw_deg\":-90},true,\"\"]]},\"next_offset\":12,\"budget\":{\"queries\":\"2/300\"}}",
+     "images": []
+    },
+    {
+     "call_id": "call_4a7ec5a1d467ec20ec0cd065",
+     "name": "get_state",
+     "is_error": false,
+     "text": "{\"state_hash\":\"50c232fd217f\",\"phase\":\"loading\",\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"},\"rack_options\":{\"lower_rack.tine_row_r1\":\"up\",\"lower_rack.tine_row_r2\":\"up\",\"upper_rack.height\":\"1\",\"upper_rack.tine_row_c_rear\":\"up\",\"upper_rack.tine_row_c_front\":\"up\",\"upper_rack.shelf_cup_front\":\"up\",\"upper_rack.shelf_cup_rear\":\"up\",\"upper_rack.shelf_knife_shelf\":\"down\",\"cutlery_basket.position\":\"front_centre\"},\"placed\":{\"columns\":[\"item_id\",\"frame\",\"position_mm\",\"quat_wxyz\",\"stable\",\"touches\",\"location\"],\"rows\":[]},\"placed_total\":0,\"unplaced\":[\"bowl_01\",\"fork_01\",\"fork_02\",\"glass_01\",\"glass_02\",\"knife_01\",\"mug_01\",\"plate_01\",\"plate_02\",\"soup_plate_01\",\"spoon_01\",\"spoon_02\"],\"budget\":{\"actions\":\"0/400\",\"queries\":\"3/300\",\"washes\":\"0/1\"}}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_5acaabcf62fd453bd606637b",
+     "name": "place",
+     "arguments": {
+      "item_id": "plate_01",
+      "frame": "lower_rack",
+      "position_mm": [
+       154,
+       368,
+       143
+      ],
+      "orientation": {
+       "preset": "on_edge",
+       "roll_deg": 5,
+       "yaw_deg": 90
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_5acaabcf62fd453bd606637b",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"plate_01\",\"released_at\":{\"position_mm\":[154,368,141.4],\"quat_wxyz\":[0.4777,0.5213,0.5213,0.4777]},\"displacement_mm\":6.2,\"rotation_deg\":2.8,\"settle_time_s\":1,\"stable\":true,\"resting\":{\"lowest_point_mm\":3.9,\"on_base\":true,\"force_over_weight\":1.1},\"contact_forces_N\":{\"lower_rack.tine_row_r1\":4.57,\"lower_rack.tine_row_r2\":4},\"changes\":{\"items\":[{\"item_id\":\"plate_01\",\"frame\":\"lower_rack\",\"position_mm\":[151.9,373.5,139.4],\"quat_wxyz\":[0.4938,0.5046,0.5279,0.4721],\"stable\":true,\"touches\":[\"lower_rack.tine_row_r1\",\"lower_rack.tine_row_r2\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":1,\"unplaced\":11,\"by_location\":{\"lower_rack\":1},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"1/400\",\"queries\":\"3/300\",\"washes\":\"0/1\"},\"state_hash\":\"1175a923c79d\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_d6ad005907db14a6c43043af",
+     "name": "place",
+     "arguments": {
+      "item_id": "plate_02",
+      "frame": "lower_rack",
+      "position_mm": [
+       375,
+       368,
+       143
+      ],
+      "orientation": {
+       "preset": "on_edge",
+       "roll_deg": 5,
+       "yaw_deg": -90
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_d6ad005907db14a6c43043af",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"plate_02\",\"released_at\":{\"position_mm\":[375,368,142],\"quat_wxyz\":[0.4777,0.5213,-0.5213,-0.4777]},\"displacement_mm\":6.3,\"rotation_deg\":2.7,\"settle_time_s\":1,\"stable\":true,\"resting\":{\"lowest_point_mm\":3.9,\"on_base\":true,\"force_over_weight\":1.1},\"contact_forces_N\":{\"lower_rack.tine_row_r1\":4.47,\"lower_rack.tine_row_r2\":4.06},\"changes\":{\"items\":[{\"item_id\":\"plate_02\",\"frame\":\"lower_rack\",\"position_mm\":[376.7,373.5,139.5],\"quat_wxyz\":[0.493,0.5054,-0.5283,-0.4716],\"stable\":true,\"touches\":[\"lower_rack.tine_row_r1\",\"lower_rack.tine_row_r2\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":2,\"unplaced\":10,\"by_location\":{\"lower_rack\":2},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"2/400\",\"queries\":\"3/300\",\"washes\":\"0/1\"},\"state_hash\":\"d392008bb9b7\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_e80bb98fd50592113b2e5c35",
+     "name": "list_slots",
+     "arguments": {
+      "rack": "lower_rack",
+      "item_id": "soup_plate_01",
+      "limit": 12
+     }
+    },
+    {
+     "id": "call_c75826d3506cd4148999ada3",
+     "name": "list_slots",
+     "arguments": {
+      "rack": "cutlery_basket",
+      "item_id": "fork_01",
+      "limit": 8
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_e80bb98fd50592113b2e5c35",
+     "name": "list_slots",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"rack\":\"lower_rack\",\"item_id\":\"soup_plate_01\",\"places_total\":35,\"free_seated\":4,\"free_above_tines\":12,\"not_free\":19,\"offset\":0,\"places\":{\"columns\":[\"slot\",\"position_mm\",\"orientation\",\"drop_free\",\"note\"],\"rows\":[[\"tine_row_mr.slot_04\",[417,123,115],{\"preset\":\"on_edge\",\"roll_deg\":19,\"yaw_deg\":-90},true,\"\"],[\"tine_row_mr.slot_05+tine_row_fr.slot_04\",[438,123,117],{\"preset\":\"on_edge\",\"roll_deg\":23,\"yaw_deg\":-90},true,\"\"],[\"tine_row_fl.slot_01\",[109,123,115],{\"preset\":\"on_edge\",\"roll_deg\":20,\"yaw_deg\":90},true,\"\"],[\"tine_row_fr.slot_03\",[416,123,115],{\"preset\":\"on_edge\",\"roll_deg\":20,\"yaw_deg\":-90},true,\"\"],[\"tine_row_r1+tine_row_r2.slot_01\",[37,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"],[\"tine_row_r1+tine_row_r2.slot_02\",[55,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"],[\"tine_row_r1+tine_row_r2.slot_03\",[73,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"],[\"tine_row_r1+tine_row_r2.slot_04\",[91,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"],[\"tine_row_r1+tine_row_r2.slot_11\",[219,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"],[\"tine_row_r1+tine_row_r2.slot_12\",[237,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"],[\"tine_row_r1+tine_row_r2.slot_13\",[256,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"],[\"tine_row_r1+tine_row_r2.slot_14\",[292,374,202],{\"preset\":\"on_edge\",\"yaw_deg\":90},true,\"drop_perches: too deep for the gap, would sit on the tine tips\"]]},\"next_offset\":12,\"budget\":{\"queries\":\"4/300\"}}",
+     "images": []
+    },
+    {
+     "call_id": "call_c75826d3506cd4148999ada3",
+     "name": "list_slots",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"rack\":\"cutlery_basket\",\"item_id\":\"fork_01\",\"places_total\":8,\"free_seated\":8,\"free_above_tines\":0,\"not_free\":0,\"offset\":0,\"places\":{\"columns\":[\"slot\",\"position_mm\",\"orientation\",\"drop_free\",\"note\"],\"rows\":[[\"cell_c00\",[25,34,109],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c01\",[25,93,109],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c02\",[25,138,109],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c03\",[25,203,109],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c10\",[100,34,109],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c11\",[100,93,109],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c12\",[100,138,109],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c13\",[100,203,109],{\"preset\":\"handle_down\"},true,\"\"]]},\"budget\":{\"queries\":\"5/300\"}}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_d41fc3655c6a940a06b64b18",
+     "name": "place",
+     "arguments": {
+      "item_id": "soup_plate_01",
+      "frame": "lower_rack",
+      "position_mm": [
+       417,
+       123,
+       115
+      ],
+      "orientation": {
+       "preset": "on_edge",
+       "roll_deg": 19,
+       "yaw_deg": -90
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_d41fc3655c6a940a06b64b18",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"soup_plate_01\",\"released_at\":{\"position_mm\":[417,123,113.7],\"quat_wxyz\":[0.4106,0.5757,-0.5757,-0.4106]},\"displacement_mm\":6.5,\"rotation_deg\":3.9,\"settle_time_s\":2,\"stable\":true,\"resting\":{\"lowest_point_mm\":0.8,\"on_base\":true,\"force_over_weight\":1.2},\"contact_forces_N\":{\"lower_rack.tine_row_fr\":3.03,\"lower_rack.tine_row_mr\":3.9},\"changes\":{\"items\":[{\"item_id\":\"soup_plate_01\",\"frame\":\"lower_rack\",\"position_mm\":[410.5,123.1,113.1],\"quat_wxyz\":[0.3899,0.5875,-0.5908,-0.3921],\"stable\":true,\"touches\":[\"lower_rack.tine_row_fr\",\"lower_rack.tine_row_mr\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":3,\"unplaced\":9,\"by_location\":{\"lower_rack\":3},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"3/400\",\"queries\":\"5/300\",\"washes\":\"0/1\"},\"state_hash\":\"5159636d7b28\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_f97482146f5ca7584f44f443",
+     "name": "place",
+     "arguments": {
+      "item_id": "fork_01",
+      "frame": "cutlery_basket",
+      "position_mm": [
+       25,
+       34,
+       109
+      ],
+      "orientation": {
+       "preset": "handle_down"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_f97482146f5ca7584f44f443",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"fork_01\",\"released_at\":{\"position_mm\":[25,34,98.8],\"quat_wxyz\":[0.7071,0,-0.7071,0]},\"displacement_mm\":17.5,\"rotation_deg\":11.1,\"settle_time_s\":2.1,\"stable\":true,\"resting\":{\"lowest_point_mm\":6,\"on_base\":true,\"force_over_weight\":1.1},\"contact_forces_N\":{\"cutlery_basket.foot.0.floor\":0.43,\"cutlery_basket.foot.0.left\":0.07},\"changes\":{\"items\":[{\"item_id\":\"fork_01\",\"frame\":\"cutlery_basket\",\"position_mm\":[7.7,34,96.4],\"quat_wxyz\":[0.6356,0.0002,-0.772,0.0001],\"stable\":true,\"touches\":[\"cutlery_basket.foot.0.floor\",\"cutlery_basket.foot.0.left\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":4,\"unplaced\":8,\"by_location\":{\"lower_rack\":4},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"4/400\",\"queries\":\"5/300\",\"washes\":\"0/1\"},\"state_hash\":\"42b91aab20f3\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_da867b1c4bcb32fd7b09a057",
+     "name": "place",
+     "arguments": {
+      "item_id": "fork_02",
+      "frame": "cutlery_basket",
+      "position_mm": [
+       100,
+       203,
+       109
+      ],
+      "orientation": {
+       "preset": "handle_down"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_da867b1c4bcb32fd7b09a057",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"fork_02\",\"released_at\":{\"position_mm\":[100,203,98.8],\"quat_wxyz\":[0.7071,0,-0.7071,0]},\"displacement_mm\":16.3,\"rotation_deg\":91.3,\"settle_time_s\":2.3,\"stable\":true,\"resting\":{\"lowest_point_mm\":5.9,\"on_base\":true,\"force_over_weight\":1.1},\"contact_forces_N\":{\"cutlery_basket.foot.2.floor\":0.42,\"cutlery_basket.foot.2.mid\":0.05,\"cutlery_basket.handle.rear\":0.02},\"changes\":{\"items\":[{\"item_id\":\"fork_02\",\"frame\":\"cutlery_basket\",\"position_mm\":[83.9,204.2,96.7],\"quat_wxyz\":[0.4191,-0.4501,-0.5697,-0.5451],\"stable\":true,\"touches\":[\"cutlery_basket.foot.2.floor\",\"cutlery_basket.foot.2.mid\",\"cutlery_basket.handle.rear\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":5,\"unplaced\":7,\"by_location\":{\"lower_rack\":5},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"5/400\",\"queries\":\"5/300\",\"washes\":\"0/1\"},\"state_hash\":\"9205f78b0323\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_78c5798c41005882d7950336",
+     "name": "list_slots",
+     "arguments": {
+      "rack": "cutlery_basket",
+      "item_id": "knife_01"
+     }
+    },
+    {
+     "id": "call_3be76e7f50b04bc5f6aaa53e",
+     "name": "list_slots",
+     "arguments": {
+      "rack": "cutlery_basket",
+      "item_id": "spoon_01"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_78c5798c41005882d7950336",
+     "name": "list_slots",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"rack\":\"cutlery_basket\",\"item_id\":\"knife_01\",\"places_total\":8,\"free_seated\":8,\"free_above_tines\":0,\"not_free\":0,\"offset\":0,\"places\":{\"columns\":[\"slot\",\"position_mm\",\"orientation\",\"drop_free\",\"note\"],\"rows\":[[\"cell_c00\",[35,34,121],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c01\",[27,93,121],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c02\",[27,138,121],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c03\",[27,203,121],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c10\",[102,34,121],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c11\",[102,93,121],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c12\",[102,138,121],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c13\",[102,211,121],{\"preset\":\"handle_down\"},true,\"\"]]},\"budget\":{\"queries\":\"6/300\"}}",
+     "images": []
+    },
+    {
+     "call_id": "call_3be76e7f50b04bc5f6aaa53e",
+     "name": "list_slots",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"rack\":\"cutlery_basket\",\"item_id\":\"spoon_01\",\"places_total\":8,\"free_seated\":8,\"free_above_tines\":0,\"not_free\":0,\"offset\":0,\"places\":{\"columns\":[\"slot\",\"position_mm\",\"orientation\",\"drop_free\",\"note\"],\"rows\":[[\"cell_c00\",[31,34,96],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c01\",[23,93,96],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c02\",[23,138,96],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c03\",[23,203,96],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c10\",[98,34,96],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c11\",[98,93,96],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c12\",[98,138,96],{\"preset\":\"handle_down\"},true,\"\"],[\"cell_c13\",[98,211,96],{\"preset\":\"handle_down\"},true,\"\"]]},\"budget\":{\"queries\":\"7/300\"}}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_19645894c65aa6275253a634",
+     "name": "place",
+     "arguments": {
+      "item_id": "knife_01",
+      "frame": "cutlery_basket",
+      "position_mm": [
+       102,
+       34,
+       125
+      ],
+      "orientation": {
+       "preset": "handle_up"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_19645894c65aa6275253a634",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"knife_01\",\"released_at\":{\"position_mm\":[102,34,111.3],\"quat_wxyz\":[0.7071,0,0.7071,0]},\"displacement_mm\":12.2,\"rotation_deg\":90,\"settle_time_s\":1.5,\"stable\":true,\"resting\":{\"lowest_point_mm\":6,\"on_base\":true,\"force_over_weight\":1.2},\"contact_forces_N\":{\"cutlery_basket.foot.0.floor\":0.78,\"cutlery_basket.handle.front\":0.1,\"lower_rack_fittings.handle\":0.18},\"changes\":{\"items\":[{\"item_id\":\"knife_01\",\"frame\":\"cutlery_basket\",\"position_mm\":[93,26,109.6],\"quat_wxyz\":[0.5844,-0.4907,0.4156,0.4949],\"stable\":true,\"touches\":[\"cutlery_basket.foot.0.floor\",\"cutlery_basket.handle.front\",\"lower_rack_fittings.handle\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":6,\"unplaced\":6,\"by_location\":{\"lower_rack\":6},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"6/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"f06e8620bc97\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_30a4cb6fd1a7f1940d12d601",
+     "name": "place",
+     "arguments": {
+      "item_id": "spoon_01",
+      "frame": "cutlery_basket",
+      "position_mm": [
+       23,
+       93,
+       96
+      ],
+      "orientation": {
+       "preset": "handle_down"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_30a4cb6fd1a7f1940d12d601",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"spoon_01\",\"released_at\":{\"position_mm\":[23,93,86.3],\"quat_wxyz\":[0.7071,0,-0.7071,0]},\"displacement_mm\":11.2,\"rotation_deg\":8,\"settle_time_s\":1.2,\"stable\":true,\"resting\":{\"lowest_point_mm\":6,\"on_base\":true,\"force_over_weight\":1.1},\"contact_forces_N\":{\"cutlery_basket.foot.1.floor\":0.37,\"cutlery_basket.foot.1.left\":0.05},\"changes\":{\"items\":[{\"item_id\":\"spoon_01\",\"frame\":\"cutlery_basket\",\"position_mm\":[11.9,93,84.8],\"quat_wxyz\":[0.6563,-0.0001,-0.7545,-0.0001],\"stable\":true,\"touches\":[\"cutlery_basket.foot.1.floor\",\"cutlery_basket.foot.1.left\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":7,\"unplaced\":5,\"by_location\":{\"lower_rack\":7},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"7/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"7157b0411cf6\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_c3ccc00e4e8765e35e25e851",
+     "name": "place",
+     "arguments": {
+      "item_id": "spoon_02",
+      "frame": "cutlery_basket",
+      "position_mm": [
+       98,
+       138,
+       96
+      ],
+      "orientation": {
+       "preset": "handle_down",
+       "yaw_deg": 180
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_c3ccc00e4e8765e35e25e851",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"spoon_02\",\"released_at\":{\"position_mm\":[98,138,86.3],\"quat_wxyz\":[0,0.7071,0,0.7071]},\"displacement_mm\":15.6,\"rotation_deg\":11.2,\"settle_time_s\":1.3,\"stable\":true,\"resting\":{\"lowest_point_mm\":6,\"on_base\":true,\"force_over_weight\":1.1},\"contact_forces_N\":{\"cutlery_basket.foot.1.floor\":0.37,\"cutlery_basket.foot.1.right\":0.06},\"changes\":{\"items\":[{\"item_id\":\"spoon_02\",\"frame\":\"cutlery_basket\",\"position_mm\":[113.4,138,83.9],\"quat_wxyz\":[0.0001,-0.7726,-0.0001,-0.6349],\"stable\":true,\"touches\":[\"cutlery_basket.foot.1.floor\",\"cutlery_basket.foot.1.right\"],\"location\":\"lower_rack\"}]},\"load\":{\"placed\":8,\"unplaced\":4,\"by_location\":{\"lower_rack\":8},\"racks\":{\"lower_rack\":\"out\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"8/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"971dd287abf0\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_ea42a152e2facc00edc48309",
+     "name": "set_rack",
+     "arguments": {
+      "rack": "lower_rack",
+      "option": {
+       "name": "position",
+       "value": "in"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_ea42a152e2facc00edc48309",
+     "name": "set_rack",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"changes\":{\"items\":[{\"item_id\":\"fork_01\",\"frame\":\"cutlery_basket\",\"position_mm\":[7.7,37.3,96.5],\"quat_wxyz\":[0.634,-0.0096,-0.7731,0.0117],\"stable\":true,\"touches\":[\"cutlery_basket.foot.0.floor\",\"cutlery_basket.foot.0.left\"],\"location\":\"lower_rack\",\"moved_mm\":0.7,\"turned_deg\":1.8},{\"item_id\":\"fork_02\",\"frame\":\"cutlery_basket\",\"position_mm\":[78.2,194.1,95.2],\"quat_wxyz\":[0.0135,0.5956,0.0088,0.8031],\"stable\":true,\"touches\":[\"cutlery_basket.foot.2.floor\",\"cutlery_basket.foot.2.mid\",\"cutlery_basket.handle.rear\"],\"location\":\"lower_rack\",\"moved_mm\":6.7,\"turned_deg\":90.3},{\"item_id\":\"knife_01\",\"frame\":\"cutlery_basket\",\"position_mm\":[92.9,26.1,109.6],\"quat_wxyz\":[0.585,-0.4906,0.415,0.4949],\"stable\":true,\"touches\":[\"cutlery_basket.foot.0.floor\",\"cutlery_basket.handle.front\",\"lower_rack_fittings.handle\"],\"location\":\"lower_rack\"},{\"item_id\":\"plate_01\",\"frame\":\"lower_rack\",\"position_mm\":[151.9,373.5,139.4],\"quat_wxyz\":[0.4939,0.5045,0.5276,0.4723],\"stable\":true,\"touches\":[\"lower_rack.tine_row_r1\",\"lower_rack.tine_row_r2\"],\"location\":\"lower_rack\"},{\"item_id\":\"plate_02\",\"frame\":\"lower_rack\",\"position_mm\":[376.9,373.5,139.4],\"quat_wxyz\":[0.4939,0.5046,-0.5274,-0.4725],\"stable\":true,\"touches\":[\"lower_rack.tine_row_r1\",\"lower_rack.tine_row_r2\"],\"location\":\"lower_rack\"},{\"item_id\":\"soup_plate_01\",\"frame\":\"lower_rack\",\"position_mm\":[410.3,123.1,113.1],\"quat_wxyz\":[0.3888,0.5869,-0.5921,-0.3922],\"stable\":true,\"touches\":[\"lower_rack.tine_row_fr\",\"lower_rack.tine_row_mr\"],\"location\":\"lower_rack\"},{\"item_id\":\"spoon_01\",\"frame\":\"cutlery_basket\",\"position_mm\":[12,95.6,84.9],\"quat_wxyz\":[0.6557,-0.0105,-0.7549,0.0091],\"stable\":true,\"touches\":[\"cutlery_basket.divider\",\"cutlery_basket.foot.1.floor\",\"cutlery_basket.foot.1.left\"],\"location\":\"lower_rack\",\"moved_mm\":0.5,\"turned_deg\":1.6},{\"item_id\":\"spoon_02\",\"frame\":\"cutlery_basket\",\"position_mm\":[113.4,140.8,83.9],\"quat_wxyz\":[0.0092,0.7733,0.0114,0.6339],\"stable\":true,\"touches\":[\"cutlery_basket.foot.1.floor\",\"cutlery_basket.foot.1.right\"],\"location\":\"lower_rack\",\"moved_mm\":0.6,\"turned_deg\":1.7}],\"racks\":{\"lower_rack\":\"in\"}},\"load\":{\"placed\":8,\"unplaced\":4,\"by_location\":{\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"9/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"d733d78bd8bb\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_061d1d041ec32805a6b4faa0",
+     "name": "set_rack",
+     "arguments": {
+      "rack": "upper_rack",
+      "option": {
+       "name": "position",
+       "value": "out"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_061d1d041ec32805a6b4faa0",
+     "name": "set_rack",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"changes\":{\"racks\":{\"upper_rack\":\"out\"}},\"load\":{\"placed\":8,\"unplaced\":4,\"by_location\":{\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"10/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"3ba0ad639824\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_c8f7becedb8652b2c12864f1",
+     "name": "set_rack",
+     "arguments": {
+      "rack": "upper_rack",
+      "option": {
+       "name": "tine_row_c_rear",
+       "value": "folded"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_c8f7becedb8652b2c12864f1",
+     "name": "set_rack",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"changes\":{\"rack_options\":{\"upper_rack.tine_row_c_rear\":\"folded\"}},\"load\":{\"placed\":8,\"unplaced\":4,\"by_location\":{\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"11/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"3b37f45a1f1f\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_6bc7113e04407932d49e0761",
+     "name": "place",
+     "arguments": {
+      "item_id": "bowl_01",
+      "frame": "upper_rack",
+      "position_mm": [
+       365,
+       370,
+       115
+      ],
+      "orientation": {
+       "preset": "inverted",
+       "roll_deg": 10
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_6bc7113e04407932d49e0761",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"bowl_01\",\"released_at\":{\"position_mm\":[365,370,71.7],\"quat_wxyz\":[0.0872,-0.9962,0,0]},\"displacement_mm\":24.4,\"rotation_deg\":10.2,\"settle_time_s\":1.1,\"stable\":true,\"resting\":{\"lowest_point_mm\":12.6,\"on_base\":false,\"force_over_weight\":1},\"contact_forces_N\":{\"upper_rack.floor.y\":2.63,\"upper_rack.tine_row_c_rear\":1.69},\"changes\":{\"items\":[{\"item_id\":\"bowl_01\",\"frame\":\"upper_rack\",\"position_mm\":[363.5,381.4,50.2],\"quat_wxyz\":[0.0001,-0.9998,-0.0065,0.0168],\"stable\":true,\"touches\":[\"upper_rack.floor.y\",\"upper_rack.tine_row_c_rear\"],\"location\":\"upper_rack\"}]},\"load\":{\"placed\":9,\"unplaced\":3,\"by_location\":{\"upper_rack\":1,\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"12/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"cfc80f65a1b9\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_e9010bc1fb8d79552446f06b",
+     "name": "place",
+     "arguments": {
+      "item_id": "glass_01",
+      "frame": "upper_rack",
+      "position_mm": [
+       250,
+       170,
+       110
+      ],
+      "orientation": {
+       "preset": "inverted_tilted"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_e9010bc1fb8d79552446f06b",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"glass_01\",\"released_at\":{\"position_mm\":[250,170,84.6],\"quat_wxyz\":[0.1736,0.9848,0,0]},\"displacement_mm\":20.5,\"rotation_deg\":26.8,\"settle_time_s\":1.2,\"stable\":true,\"resting\":{\"lowest_point_mm\":14,\"on_base\":false,\"force_over_weight\":1.1},\"contact_forces_N\":{\"upper_rack.floor.x\":0.92,\"upper_rack.floor.y\":1.53},\"changes\":{\"items\":[{\"item_id\":\"glass_01\",\"frame\":\"upper_rack\",\"position_mm\":[260.9,161.1,69.7],\"quat_wxyz\":[0.0011,-0.988,-0.0053,0.1541],\"stable\":true,\"touches\":[\"upper_rack.floor.x\",\"upper_rack.floor.y\"],\"location\":\"upper_rack\"}]},\"load\":{\"placed\":10,\"unplaced\":2,\"by_location\":{\"upper_rack\":2,\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"13/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"279b71b2faf9\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_377b4bb4ee00d968f82c9f7d",
+     "name": "place",
+     "arguments": {
+      "item_id": "glass_02",
+      "frame": "upper_rack",
+      "position_mm": [
+       390,
+       200,
+       110
+      ],
+      "orientation": {
+       "preset": "inverted_tilted"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_377b4bb4ee00d968f82c9f7d",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"glass_02\",\"released_at\":{\"position_mm\":[390,200,81.7],\"quat_wxyz\":[0.1736,0.9848,0,0]},\"displacement_mm\":46.2,\"rotation_deg\":20.5,\"settle_time_s\":1.2,\"stable\":true,\"resting\":{\"lowest_point_mm\":9.8,\"on_base\":true,\"force_over_weight\":1},\"contact_forces_N\":{\"upper_rack.floor.y\":2.15},\"changes\":{\"items\":[{\"item_id\":\"glass_02\",\"frame\":\"upper_rack\",\"position_mm\":[382.2,161.3,57.6],\"quat_wxyz\":[0.0007,0.9992,0.0206,0.0354],\"stable\":true,\"touches\":[\"upper_rack.floor.y\"],\"location\":\"upper_rack\"}]},\"load\":{\"placed\":11,\"unplaced\":1,\"by_location\":{\"upper_rack\":3,\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"14/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"25df4171cec0\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_fdb0a9eee1a67a4a5e0ee503",
+     "name": "place",
+     "arguments": {
+      "item_id": "mug_01",
+      "frame": "upper_rack",
+      "position_mm": [
+       250,
+       325,
+       120
+      ],
+      "orientation": {
+       "preset": "inverted_tilted",
+       "yaw_deg": 180
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_fdb0a9eee1a67a4a5e0ee503",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"mug_01\",\"released_at\":{\"position_mm\":[250,325,101.6],\"quat_wxyz\":[0,0,0.9848,0.1736]},\"displacement_mm\":74.4,\"rotation_deg\":73.9,\"settle_time_s\":1.9,\"stable\":false,\"resting\":{\"lowest_point_mm\":17,\"on_base\":false,\"force_over_weight\":1},\"contact_forces_N\":{\"upper_rack.floor.x\":1.09,\"upper_rack.floor.y\":0.03,\"upper_rack.tine_row_c_rear\":2.3},\"changes\":{\"items\":[{\"item_id\":\"bowl_01\",\"frame\":\"upper_rack\",\"position_mm\":[367.9,383.5,50.1],\"quat_wxyz\":[0.0001,-0.9998,-0.0056,0.0168],\"stable\":true,\"touches\":[\"upper_rack.floor.y\",\"upper_rack.tine_row_c_rear\"],\"location\":\"upper_rack\",\"moved_mm\":4.8,\"turned_deg\":0.1},{\"item_id\":\"mug_01\",\"frame\":\"upper_rack\",\"position_mm\":[270.6,265.1,62.5],\"quat_wxyz\":[0.2468,-0.0316,-0.6918,-0.6779],\"stable\":false,\"touches\":[\"upper_rack.floor.x\",\"upper_rack.floor.y\",\"upper_rack.tine_row_c_rear\"],\"location\":\"upper_rack\"}]},\"load\":{\"placed\":12,\"unplaced\":0,\"by_location\":{\"upper_rack\":4,\"lower_rack\":8},\"unstable\":[\"mug_01\"],\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"15/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"98f219ee956e\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_f2ccf35348187818c3d4e112",
+     "name": "remove",
+     "arguments": {
+      "item_id": "mug_01"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_f2ccf35348187818c3d4e112",
+     "name": "remove",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"mug_01\",\"changes\":{\"to_counter\":[\"mug_01\"]},\"load\":{\"placed\":11,\"unplaced\":1,\"by_location\":{\"upper_rack\":3,\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"16/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"db0ec692bcc0\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_a8ac88c999940f57a854f948",
+     "name": "place",
+     "arguments": {
+      "item_id": "mug_01",
+      "frame": "upper_rack",
+      "position_mm": [
+       245,
+       365,
+       125
+      ],
+      "orientation": {
+       "preset": "inverted",
+       "yaw_deg": 90
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_a8ac88c999940f57a854f948",
+     "name": "place",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"item_id\":\"mug_01\",\"released_at\":{\"position_mm\":[245,365,78.2],\"quat_wxyz\":[0,0.7071,0.7071,0]},\"displacement_mm\":16.3,\"rotation_deg\":16.2,\"settle_time_s\":1.5,\"stable\":true,\"resting\":{\"lowest_point_mm\":16.7,\"on_base\":false,\"force_over_weight\":1},\"contact_forces_N\":{\"upper_rack.floor.y\":1.79,\"upper_rack.tine_row_c_rear\":1.68},\"changes\":{\"items\":[{\"item_id\":\"mug_01\",\"frame\":\"upper_rack\",\"position_mm\":[260.3,360.2,75.3],\"quat_wxyz\":[0.0998,-0.6767,-0.7235,0.0933],\"stable\":true,\"touches\":[\"upper_rack.floor.y\",\"upper_rack.tine_row_c_rear\"],\"location\":\"upper_rack\"}]},\"load\":{\"placed\":12,\"unplaced\":0,\"by_location\":{\"upper_rack\":4,\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"out\"}},\"budget\":{\"actions\":\"17/400\",\"queries\":\"7/300\",\"washes\":\"0/1\"},\"state_hash\":\"c85bcf0552bc\"}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_afd47652244bc763c0d8cff8",
+     "name": "render",
+     "arguments": {
+      "view": "top_upper",
+      "options": {
+       "labels": true,
+       "grid": true
+      }
+     }
+    },
+    {
+     "id": "call_a64fd7e9b7bf0edae694532a",
+     "name": "render",
+     "arguments": {
+      "view": "front",
+      "options": {
+       "labels": true,
+       "racks": "in"
+      }
+     }
+    },
+    {
+     "id": "call_c91e8e3fafbb118cc32173c0",
+     "name": "check_load",
+     "arguments": {}
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_afd47652244bc763c0d8cff8",
+     "name": "render",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"view\":\"top_upper\",\"image\":{\"mime_type\":\"image/png\",\"width_px\":768,\"height_px\":768},\"budget\":{\"queries\":\"8/300\"}}",
+     "images": [
+      "[png, 247113 bytes]"
+     ]
+    },
+    {
+     "call_id": "call_a64fd7e9b7bf0edae694532a",
+     "name": "render",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"view\":\"front\",\"image\":{\"mime_type\":\"image/png\",\"width_px\":768,\"height_px\":768},\"budget\":{\"queries\":\"9/300\"}}",
+     "images": [
+      "[png, 269757 bytes]"
+     ]
+    },
+    {
+     "call_id": "call_c91e8e3fafbb118cc32173c0",
+     "name": "check_load",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"shifted\":{\"columns\":[\"item_id\",\"displacement_mm\",\"rotation_deg\"],\"rows\":[[\"bowl_01\",1.9,0],[\"glass_01\",2.3,1.5],[\"glass_02\",2.5,0],[\"mug_01\",1.8,0.6]]},\"fell_out\":[],\"on_tub_floor\":[],\"protruding\":[],\"racks\":[{\"rack\":\"lower_rack\",\"slides_in\":true},{\"rack\":\"upper_rack\",\"slides_in\":true}],\"spray_arms\":[{\"arm\":\"lower_arm\",\"full_rotation\":true},{\"arm\":\"upper_arm\",\"full_rotation\":true}],\"door_closes\":true,\"door_blocked_by\":[],\"dispenser_opens\":true,\"dispenser_blocked_by\":[],\"tablet_path_clear\":true,\"tablet_blocked_by\":[],\"budget\":{\"queries\":\"10/300\"}}",
+     "images": []
+    }
+   ]
+  },
+  {
+   "role": "assistant",
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "call_86b0414c23523d93e36b23d6",
+     "name": "start_cycle",
+     "arguments": {}
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "results": [
+    {
+     "call_id": "call_86b0414c23523d93e36b23d6",
+     "name": "start_cycle",
+     "is_error": false,
+     "text": "{\"accepted\":true,\"job_id\":\"tutorial-wash-1\",\"programme\":\"eco_50\",\"phase\":\"washing\",\"prechecks\":{\"shifted\":{\"columns\":[\"item_id\",\"displacement_mm\",\"rotation_deg\"],\"rows\":[[\"bowl_01\",1.9,0],[\"glass_01\",2.3,1.5],[\"glass_02\",2.5,0],[\"mug_01\",1.8,0.6]]},\"fell_out\":[],\"on_tub_floor\":[],\"protruding\":[],\"racks\":[{\"rack\":\"lower_rack\",\"slides_in\":true},{\"rack\":\"upper_rack\",\"slides_in\":true}],\"spray_arms\":[{\"arm\":\"lower_arm\",\"full_rotation\":true},{\"arm\":\"upper_arm\",\"full_rotation\":true}],\"door_closes\":true,\"door_blocked_by\":[],\"dispenser_opens\":true,\"dispenser_blocked_by\":[],\"tablet_path_clear\":true,\"tablet_blocked_by\":[]},\"changes\":{\"items\":[{\"item_id\":\"bowl_01\",\"frame\":\"upper_rack\",\"position_mm\":[368,385.4,50.1],\"quat_wxyz\":[0.0001,-0.9998,-0.0056,0.0168],\"stable\":true,\"touches\":[\"upper_rack.floor.y\",\"upper_rack.tine_row_c_rear\"],\"location\":\"upper_rack\",\"moved_mm\":1.9,\"turned_deg\":0},{\"item_id\":\"glass_01\",\"frame\":\"upper_rack\",\"position_mm\":[260.9,163.4,69.7],\"quat_wxyz\":[0.0009,0.988,-0.0079,-0.1545],\"stable\":true,\"touches\":[\"upper_rack.floor.x\",\"upper_rack.floor.y\"],\"location\":\"upper_rack\",\"moved_mm\":2.3,\"turned_deg\":1.5},{\"item_id\":\"glass_02\",\"frame\":\"upper_rack\",\"position_mm\":[381.6,163.8,57.6],\"quat_wxyz\":[0.0007,0.9992,0.0207,0.0354],\"stable\":true,\"touches\":[\"upper_rack.floor.y\"],\"location\":\"upper_rack\",\"moved_mm\":2.5,\"turned_deg\":0},{\"item_id\":\"mug_01\",\"frame\":\"upper_rack\",\"position_mm\":[260.7,362,75.2],\"quat_wxyz\":[0.0961,-0.6792,-0.722,0.0904],\"stable\":true,\"touches\":[\"upper_rack.floor.y\",\"upper_rack.tine_row_c_rear\"],\"location\":\"upper_rack\",\"moved_mm\":1.8,\"turned_deg\":0.6}],\"racks\":{\"upper_rack\":\"in\"},\"phase\":\"washing\"},\"load\":{\"placed\":12,\"unplaced\":0,\"by_location\":{\"upper_rack\":4,\"lower_rack\":8},\"racks\":{\"lower_rack\":\"in\",\"upper_rack\":\"in\"}},\"budget\":{\"actions\":\"17/400\",\"queries\":\"10/300\",\"washes\":\"1/1\"},\"state_hash\":\"9ae36b036fec\"}",
+     "images": []
+    }
+   ]
+  }
+ ],
+ "turns": [
+  {
+   "turn": 1,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "render",
+    "list_slots",
+    "get_state"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 83,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 12781,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 2,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "place"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 52,
+    "cache_read_input_tokens": 12781,
+    "cache_creation_input_tokens": 1649,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 3,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "place"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 53,
+    "cache_read_input_tokens": 14430,
+    "cache_creation_input_tokens": 352,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 4,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "list_slots",
+    "list_slots"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 77,
+    "cache_read_input_tokens": 14782,
+    "cache_creation_input_tokens": 352,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 5,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "place"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 55,
+    "cache_read_input_tokens": 15134,
+    "cache_creation_input_tokens": 971,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 6,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "place"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 43,
+    "cache_read_input_tokens": 16105,
+    "cache_creation_input_tokens": 359,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 7,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "place"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 43,
+    "cache_read_input_tokens": 16464,
+    "cache_creation_input_tokens": 342,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 8,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "list_slots",
+    "list_slots"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 88,
+    "cache_read_input_tokens": 16806,
+    "cache_creation_input_tokens": 366,
+    "reasoning_output_tokens": 17
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 9,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "place"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 43,
+    "cache_read_input_tokens": 17172,
+    "cache_creation_input_tokens": 562,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 10,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "place"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 44,
+    "cache_read_input_tokens": 17734,
+    "cache_creation_input_tokens": 350,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 11,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "place"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 49,
+    "cache_read_input_tokens": 18084,
+    "cache_creation_input_tokens": 343,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 12,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "set_rack"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 31,
+    "cache_read_input_tokens": 18427,
+    "cache_creation_input_tokens": 349,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 13,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "set_rack"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 31,
+    "cache_read_input_tokens": 18776,
+    "cache_creation_input_tokens": 897,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 14,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "set_rack"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 315,
+    "cache_read_input_tokens": 19673,
+    "cache_creation_input_tokens": 128,
+    "reasoning_output_tokens": 276
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 15,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "place"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 148,
+    "cache_read_input_tokens": 19801,
+    "cache_creation_input_tokens": 145,
+    "reasoning_output_tokens": 98
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 16,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "place"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 95,
+    "cache_read_input_tokens": 19946,
+    "cache_creation_input_tokens": 350,
+    "reasoning_output_tokens": 48
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 17,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "place"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 45,
+    "cache_read_input_tokens": 20296,
+    "cache_creation_input_tokens": 334,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 18,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "place"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 51,
+    "cache_read_input_tokens": 20630,
+    "cache_creation_input_tokens": 318,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 19,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "remove"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 115,
+    "cache_read_input_tokens": 20948,
+    "cache_creation_input_tokens": 471,
+    "reasoning_output_tokens": 92
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 20,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "place"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 109,
+    "cache_read_input_tokens": 21419,
+    "cache_creation_input_tokens": 129,
+    "reasoning_output_tokens": 59
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 21,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "render",
+    "render",
+    "check_load"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 80,
+    "cache_read_input_tokens": 21548,
+    "cache_creation_input_tokens": 348,
+    "reasoning_output_tokens": 0
+   },
+   "folds_so_far": 0
+  },
+  {
+   "turn": 22,
+   "model": "gpt-6.1-sol",
+   "stop": "tool_use",
+   "tool_calls": [
+    "start_cycle"
+   ],
+   "usage": {
+    "input_tokens": 3,
+    "output_tokens": 35,
+    "cache_read_input_tokens": 21896,
+    "cache_creation_input_tokens": 1751,
+    "reasoning_output_tokens": 19
+   },
+   "folds_so_far": 0
+  }
+ ],
+ "context": {
+  "version": "standard-2",
+  "images_kept": 4,
+  "images_slack": 4,
+  "fold_above_tokens": 12000,
+  "keep_recent_tokens": 5000,
+  "hard_limit_tokens": 40000,
+  "request_limit_tokens": 120000,
+  "sizes": "estimated by a fixed rule over characters, the same for every model",
+  "folds": [],
+  "picture_prunings": 0,
+  "largest_request_tokens": 23650
+ },
+ "load_at_end": {
+  "state_hash": "9ae36b036fec",
+  "phase": "washing",
+  "racks": {
+   "lower_rack": "in",
+   "upper_rack": "in"
+  },
+  "rack_options": {
+   "lower_rack.tine_row_r1": "up",
+   "lower_rack.tine_row_r2": "up",
+   "upper_rack.height": "1",
+   "upper_rack.tine_row_c_rear": "folded",
+   "upper_rack.tine_row_c_front": "up",
+   "upper_rack.shelf_cup_front": "up",
+   "upper_rack.shelf_cup_rear": "up",
+   "upper_rack.shelf_knife_shelf": "down",
+   "cutlery_basket.position": "front_centre"
+  },
+  "placed": {
+   "columns": [
+    "item_id",
+    "frame",
+    "position_mm",
+    "quat_wxyz",
+    "stable",
+    "touches",
+    "location"
+   ],
+   "rows": [
+    [
+     "bowl_01",
+     "upper_rack",
+     [
+      368,
+      385.4,
+      50.1
+     ],
+     [
+      0.0001,
+      -0.9998,
+      -0.0056,
+      0.0168
+     ],
+     true,
+     [
+      "upper_rack.floor.y",
+      "upper_rack.tine_row_c_rear"
+     ],
+     "upper_rack"
+    ],
+    [
+     "fork_01",
+     "cutlery_basket",
+     [
+      7.7,
+      37.3,
+      96.5
+     ],
+     [
+      0.634,
+      -0.0096,
+      -0.7731,
+      0.0117
+     ],
+     true,
+     [
+      "cutlery_basket.foot.0.floor",
+      "cutlery_basket.foot.0.left"
+     ],
+     "lower_rack"
+    ],
+    [
+     "fork_02",
+     "cutlery_basket",
+     [
+      78.2,
+      194.1,
+      95.2
+     ],
+     [
+      0.0135,
+      0.5956,
+      0.0088,
+      0.8031
+     ],
+     true,
+     [
+      "cutlery_basket.foot.2.floor",
+      "cutlery_basket.foot.2.mid",
+      "cutlery_basket.handle.rear"
+     ],
+     "lower_rack"
+    ],
+    [
+     "glass_01",
+     "upper_rack",
+     [
+      260.9,
+      163.4,
+      69.7
+     ],
+     [
+      0.0009,
+      0.988,
+      -0.0079,
+      -0.1545
+     ],
+     true,
+     [
+      "upper_rack.floor.x",
+      "upper_rack.floor.y"
+     ],
+     "upper_rack"
+    ],
+    [
+     "glass_02",
+     "upper_rack",
+     [
+      381.6,
+      163.8,
+      57.6
+     ],
+     [
+      0.0007,
+      0.9992,
+      0.0207,
+      0.0354
+     ],
+     true,
+     [
+      "upper_rack.floor.y"
+     ],
+     "upper_rack"
+    ],
+    [
+     "knife_01",
+     "cutlery_basket",
+     [
+      92.9,
+      26.1,
+      109.6
+     ],
+     [
+      0.585,
+      -0.4906,
+      0.415,
+      0.4949
+     ],
+     true,
+     [
+      "cutlery_basket.foot.0.floor",
+      "cutlery_basket.handle.front",
+      "lower_rack_fittings.handle"
+     ],
+     "lower_rack"
+    ],
+    [
+     "mug_01",
+     "upper_rack",
+     [
+      260.7,
+      362,
+      75.2
+     ],
+     [
+      0.0961,
+      -0.6792,
+      -0.722,
+      0.0904
+     ],
+     true,
+     [
+      "upper_rack.floor.y",
+      "upper_rack.tine_row_c_rear"
+     ],
+     "upper_rack"
+    ],
+    [
+     "plate_01",
+     "lower_rack",
+     [
+      151.9,
+      373.5,
+      139.4
+     ],
+     [
+      0.4939,
+      0.5045,
+      0.5276,
+      0.4723
+     ],
+     true,
+     [
+      "lower_rack.tine_row_r1",
+      "lower_rack.tine_row_r2"
+     ],
+     "lower_rack"
+    ],
+    [
+     "plate_02",
+     "lower_rack",
+     [
+      376.9,
+      373.5,
+      139.4
+     ],
+     [
+      0.4939,
+      0.5046,
+      -0.5274,
+      -0.4725
+     ],
+     true,
+     [
+      "lower_rack.tine_row_r1",
+      "lower_rack.tine_row_r2"
+     ],
+     "lower_rack"
+    ],
+    [
+     "soup_plate_01",
+     "lower_rack",
+     [
+      410.3,
+      123.1,
+      113.1
+     ],
+     [
+      0.3888,
+      0.5869,
+      -0.5921,
+      -0.3922
+     ],
+     true,
+     [
+      "lower_rack.tine_row_fr",
+      "lower_rack.tine_row_mr"
+     ],
+     "lower_rack"
+    ],
+    [
+     "spoon_01",
+     "cutlery_basket",
+     [
+      12,
+      95.6,
+      84.9
+     ],
+     [
+      0.6557,
+      -0.0105,
+      -0.7549,
+      0.0091
+     ],
+     true,
+     [
+      "cutlery_basket.divider",
+      "cutlery_basket.foot.1.floor",
+      "cutlery_basket.foot.1.left"
+     ],
+     "lower_rack"
+    ],
+    [
+     "spoon_02",
+     "cutlery_basket",
+     [
+      113.4,
+      140.8,
+      83.9
+     ],
+     [
+      0.0092,
+      0.7733,
+      0.0114,
+      0.6339
+     ],
+     true,
+     [
+      "cutlery_basket.foot.1.floor",
+      "cutlery_basket.foot.1.right"
+     ],
+     "lower_rack"
+    ]
+   ]
+  },
+  "placed_total": 12,
+  "unplaced": [],
+  "budget": {
+   "actions": "17/400",
+   "queries": "10/300",
+   "washes": "1/1"
+  }
+ },
+ "prunings": 0,
+ "truncations": 0
+}

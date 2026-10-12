@@ -1,0 +1,1452 @@
+{
+ "tier": "official",
+ "gates": {
+  "carefulYieldMin": 0.6666666666666666,
+  "carefulOverCareless": 0.2,
+  "carelessOverRandom": 0,
+  "differentInKind": 1.2,
+  "edgeShareMax": 0.1,
+  "leftOnCounterMin": 0.15
+ },
+ "rows": [
+  {
+   "level": "tutorial",
+   "policy": "empty",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 0,
+   "points_available": 64,
+   "share": 0,
+   "points_strict": 0,
+   "points_lenient": 0,
+   "clean": 0,
+   "loaded": 0,
+   "offered": 12,
+   "points_loaded": 0,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "tutorial",
+   "policy": "careful",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 64,
+   "points_available": 64,
+   "share": 1,
+   "points_strict": 64,
+   "points_lenient": 64,
+   "clean": 12,
+   "loaded": 12,
+   "offered": 12,
+   "points_loaded": 64,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "tutorial",
+   "policy": "careless",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 58,
+   "points_available": 64,
+   "share": 0.90625,
+   "points_strict": 58,
+   "points_lenient": 58,
+   "clean": 11,
+   "loaded": 11,
+   "offered": 12,
+   "points_loaded": 58,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "tutorial",
+   "policy": "random",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 20,
+   "points_available": 64,
+   "share": 0.3125,
+   "points_strict": 20,
+   "points_lenient": 20,
+   "clean": 4,
+   "loaded": 10,
+   "offered": 12,
+   "points_loaded": 52,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "lunch-for-four",
+   "policy": "empty",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 0,
+   "points_available": 232,
+   "share": 0,
+   "points_strict": 0,
+   "points_lenient": 0,
+   "clean": 0,
+   "loaded": 0,
+   "offered": 39,
+   "points_loaded": 0,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "lunch-for-four",
+   "policy": "careful",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 187,
+   "points_available": 232,
+   "share": 0.8060344827586207,
+   "points_strict": 187,
+   "points_lenient": 187,
+   "clean": 36,
+   "loaded": 36,
+   "offered": 39,
+   "points_loaded": 187,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "lunch-for-four",
+   "policy": "careless",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 134,
+   "points_available": 232,
+   "share": 0.5775862068965517,
+   "points_strict": 134,
+   "points_lenient": 134,
+   "clean": 28,
+   "loaded": 36,
+   "offered": 39,
+   "points_loaded": 190,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "lunch-for-four",
+   "policy": "random",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 56,
+   "points_available": 232,
+   "share": 0.2413793103448276,
+   "points_strict": 52,
+   "points_lenient": 62,
+   "clean": 14,
+   "loaded": 23,
+   "offered": 39,
+   "points_loaded": 117,
+   "edge": 2,
+   "edge_points": 10,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "weeknight-dinner",
+   "policy": "empty",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 0,
+   "points_available": 269,
+   "share": 0,
+   "points_strict": 0,
+   "points_lenient": 0,
+   "clean": 0,
+   "loaded": 0,
+   "offered": 46,
+   "points_loaded": 0,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "weeknight-dinner",
+   "policy": "careful",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 200,
+   "points_available": 269,
+   "share": 0.7434944237918215,
+   "points_strict": 200,
+   "points_lenient": 200,
+   "clean": 38,
+   "loaded": 40,
+   "offered": 46,
+   "points_loaded": 206,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "weeknight-dinner",
+   "policy": "careless",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 117,
+   "points_available": 269,
+   "share": 0.4349442379182156,
+   "points_strict": 117,
+   "points_lenient": 117,
+   "clean": 27,
+   "loaded": 39,
+   "offered": 46,
+   "points_loaded": 197,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "weeknight-dinner",
+   "policy": "random",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 75,
+   "points_available": 269,
+   "share": 0.2788104089219331,
+   "points_strict": 75,
+   "points_lenient": 75,
+   "clean": 14,
+   "loaded": 21,
+   "offered": 46,
+   "points_loaded": 122,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "breakfast",
+   "policy": "empty",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 0,
+   "points_available": 220,
+   "share": 0,
+   "points_strict": 0,
+   "points_lenient": 0,
+   "clean": 0,
+   "loaded": 0,
+   "offered": 37,
+   "points_loaded": 0,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "breakfast",
+   "policy": "careful",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 174,
+   "points_available": 220,
+   "share": 0.7909090909090909,
+   "points_strict": 174,
+   "points_lenient": 174,
+   "clean": 34,
+   "loaded": 34,
+   "offered": 37,
+   "points_loaded": 174,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "breakfast",
+   "policy": "careless",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 112,
+   "points_available": 220,
+   "share": 0.509090909090909,
+   "points_strict": 107,
+   "points_lenient": 112,
+   "clean": 24,
+   "loaded": 34,
+   "offered": 37,
+   "points_loaded": 174,
+   "edge": 1,
+   "edge_points": 5,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "breakfast",
+   "policy": "random",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 36,
+   "points_available": 220,
+   "share": 0.16363636363636364,
+   "points_strict": 36,
+   "points_lenient": 36,
+   "clean": 11,
+   "loaded": 22,
+   "offered": 37,
+   "points_loaded": 128,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "mixed-family",
+   "policy": "empty",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 0,
+   "points_available": 266,
+   "share": 0,
+   "points_strict": 0,
+   "points_lenient": 0,
+   "clean": 0,
+   "loaded": 0,
+   "offered": 45,
+   "points_loaded": 0,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "mixed-family",
+   "policy": "careful",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 218,
+   "points_available": 266,
+   "share": 0.8195488721804511,
+   "points_strict": 218,
+   "points_lenient": 218,
+   "clean": 39,
+   "loaded": 40,
+   "offered": 45,
+   "points_loaded": 221,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "mixed-family",
+   "policy": "careless",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 148,
+   "points_available": 266,
+   "share": 0.556390977443609,
+   "points_strict": 148,
+   "points_lenient": 148,
+   "clean": 31,
+   "loaded": 39,
+   "offered": 45,
+   "points_loaded": 214,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "mixed-family",
+   "policy": "random",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 60,
+   "points_available": 266,
+   "share": 0.22556390977443608,
+   "points_strict": 45,
+   "points_lenient": 60,
+   "clean": 11,
+   "loaded": 24,
+   "offered": 45,
+   "points_loaded": 131,
+   "edge": 2,
+   "edge_points": 15,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "baking-day",
+   "policy": "empty",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 0,
+   "points_available": 272,
+   "share": 0,
+   "points_strict": 0,
+   "points_lenient": 0,
+   "clean": 0,
+   "loaded": 0,
+   "offered": 46,
+   "points_loaded": 0,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "baking-day",
+   "policy": "careful",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 191,
+   "points_available": 272,
+   "share": 0.7022058823529411,
+   "points_strict": 191,
+   "points_lenient": 191,
+   "clean": 37,
+   "loaded": 38,
+   "offered": 46,
+   "points_loaded": 203,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "baking-day",
+   "policy": "careless",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 124,
+   "points_available": 272,
+   "share": 0.45588235294117646,
+   "points_strict": 124,
+   "points_lenient": 124,
+   "clean": 27,
+   "loaded": 40,
+   "offered": 46,
+   "points_loaded": 216,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "baking-day",
+   "policy": "random",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 59,
+   "points_available": 272,
+   "share": 0.21691176470588236,
+   "points_strict": 55,
+   "points_lenient": 61,
+   "clean": 12,
+   "loaded": 24,
+   "offered": 46,
+   "points_loaded": 135,
+   "edge": 3,
+   "edge_points": 6,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "dinner-party",
+   "policy": "empty",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 0,
+   "points_available": 367,
+   "share": 0,
+   "points_strict": 0,
+   "points_lenient": 0,
+   "clean": 0,
+   "loaded": 0,
+   "offered": 62,
+   "points_loaded": 0,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "dinner-party",
+   "policy": "careful",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 250,
+   "points_available": 367,
+   "share": 0.6811989100817438,
+   "points_strict": 250,
+   "points_lenient": 250,
+   "clean": 46,
+   "loaded": 49,
+   "offered": 62,
+   "points_loaded": 263,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "dinner-party",
+   "policy": "careless",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 100,
+   "points_available": 367,
+   "share": 0.2724795640326976,
+   "points_strict": 100,
+   "points_lenient": 100,
+   "clean": 27,
+   "loaded": 51,
+   "offered": 62,
+   "points_loaded": 281,
+   "edge": 0,
+   "edge_points": 0,
+   "provisional": 0,
+   "provisional_points": 0
+  },
+  {
+   "level": "dinner-party",
+   "policy": "random",
+   "tier": "official",
+   "programme": "eco_50",
+   "points": 88,
+   "points_available": 367,
+   "share": 0.23978201634877383,
+   "points_strict": 84,
+   "points_lenient": 88,
+   "clean": 18,
+   "loaded": 32,
+   "offered": 62,
+   "points_loaded": 184,
+   "edge": 1,
+   "edge_points": 4,
+   "provisional": 0,
+   "provisional_points": 0
+  }
+ ],
+ "margins": [
+  {
+   "level": "tutorial",
+   "careful_yield": 1,
+   "left_on_counter": 0,
+   "careful_over_careless": {
+    "points": 6,
+    "of_careful": 0.09375,
+    "of_level": 0.09375
+   },
+   "careless_over_random": {
+    "points": 38,
+    "of_careful": 0.59375,
+    "of_level": 0.59375
+   },
+   "careless_to_random_loaded": 1.1153846153846154
+  },
+  {
+   "level": "lunch-for-four",
+   "careful_yield": 1,
+   "left_on_counter": 0.19396551724137934,
+   "careful_over_careless": {
+    "points": 53,
+    "of_careful": 0.28342245989304815,
+    "of_level": 0.22844827586206898
+   },
+   "careless_over_random": {
+    "points": 72,
+    "of_careful": 0.3850267379679144,
+    "of_level": 0.3103448275862069
+   },
+   "careless_to_random_loaded": 1.623931623931624
+  },
+  {
+   "level": "weeknight-dinner",
+   "careful_yield": 0.970873786407767,
+   "left_on_counter": 0.23420074349442377,
+   "careful_over_careless": {
+    "points": 83,
+    "of_careful": 0.415,
+    "of_level": 0.30855018587360594
+   },
+   "careless_over_random": {
+    "points": 42,
+    "of_careful": 0.21,
+    "of_level": 0.15613382899628253
+   },
+   "careless_to_random_loaded": 1.6147540983606556
+  },
+  {
+   "level": "breakfast",
+   "careful_yield": 1,
+   "left_on_counter": 0.2090909090909091,
+   "careful_over_careless": {
+    "points": 62,
+    "of_careful": 0.3563218390804598,
+    "of_level": 0.2818181818181818
+   },
+   "careless_over_random": {
+    "points": 71,
+    "of_careful": 0.40804597701149425,
+    "of_level": 0.32272727272727275
+   },
+   "careless_to_random_loaded": 1.359375
+  },
+  {
+   "level": "mixed-family",
+   "careful_yield": 0.9864253393665159,
+   "left_on_counter": 0.16917293233082709,
+   "careful_over_careless": {
+    "points": 70,
+    "of_careful": 0.3211009174311927,
+    "of_level": 0.2631578947368421
+   },
+   "careless_over_random": {
+    "points": 88,
+    "of_careful": 0.4036697247706422,
+    "of_level": 0.3308270676691729
+   },
+   "careless_to_random_loaded": 1.633587786259542
+  },
+  {
+   "level": "baking-day",
+   "careful_yield": 0.9408866995073891,
+   "left_on_counter": 0.2536764705882353,
+   "careful_over_careless": {
+    "points": 67,
+    "of_careful": 0.3507853403141361,
+    "of_level": 0.24632352941176472
+   },
+   "careless_over_random": {
+    "points": 63,
+    "of_careful": 0.3298429319371728,
+    "of_level": 0.23161764705882354
+   },
+   "careless_to_random_loaded": 1.6
+  },
+  {
+   "level": "dinner-party",
+   "careful_yield": 0.9505703422053232,
+   "left_on_counter": 0.2833787465940054,
+   "careful_over_careless": {
+    "points": 150,
+    "of_careful": 0.6,
+    "of_level": 0.4087193460490463
+   },
+   "careless_over_random": {
+    "points": 12,
+    "of_careful": 0.048,
+    "of_level": 0.0326975476839237
+   },
+   "careless_to_random_loaded": 1.5271739130434783
+  }
+ ],
+ "findings": [
+  {
+   "level": "tutorial",
+   "gate": "careful_over_careless",
+   "message": "careful 64 (strict) against careless 58 (lenient): apart by 6 points, 9.4 % of the level's 64 (9.4 % of the careful score), under 20.0 %"
+  }
+ ],
+ "costs": [
+  {
+   "level": "tutorial",
+   "costs": [
+    {
+     "kind": "spoons_nested",
+     "made": 1,
+     "items": [
+      "spoon_02",
+      "spoon_01"
+     ],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 0
+    },
+    {
+     "kind": "cutlery_bunched",
+     "made": 1,
+     "items": [
+      "fork_02",
+      "fork_01"
+     ],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 0
+    },
+    {
+     "kind": "bowl_face_down_flat",
+     "made": 1,
+     "items": [
+      "bowl_01"
+     ],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 0
+    },
+    {
+     "kind": "left_out",
+     "made": 0,
+     "items": [
+      "mug_01"
+     ],
+     "lost_items": [
+      "mug_01"
+     ],
+     "points_lost": 6,
+     "points_gained": 0
+    }
+   ]
+  },
+  {
+   "level": "lunch-for-four",
+   "costs": [
+    {
+     "kind": "plate_facing_away",
+     "made": 1,
+     "items": [
+      "side_plate_04"
+     ],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 0
+    },
+    {
+     "kind": "spoons_nested",
+     "made": 1,
+     "items": [
+      "spoon_04",
+      "spoon_03"
+     ],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 0
+    },
+    {
+     "kind": "cutlery_bunched",
+     "made": 2,
+     "items": [
+      "fork_03",
+      "fork_01",
+      "spoon_02",
+      "spoon_01"
+     ],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 0
+    },
+    {
+     "kind": "cup_upright",
+     "made": 4,
+     "items": [
+      "ketchup_pot_01",
+      "smoothie_glass_01",
+      "ketchup_pot_02",
+      "smoothie_glass_04"
+     ],
+     "lost_items": [
+      "smoothie_glass_01",
+      "smoothie_glass_04",
+      "ketchup_pot_01",
+      "ketchup_pot_02"
+     ],
+     "points_lost": 30,
+     "points_gained": 0
+    },
+    {
+     "kind": "cup_on_side",
+     "made": 4,
+     "items": [
+      "squash_glass_02",
+      "mug_04",
+      "squash_glass_01",
+      "mug_03"
+     ],
+     "lost_items": [
+      "mug_03",
+      "mug_04",
+      "squash_glass_01",
+      "squash_glass_02"
+     ],
+     "points_lost": 26,
+     "points_gained": 0
+    },
+    {
+     "kind": "left_out",
+     "made": 0,
+     "items": [
+      "yoghurt_bowl_04"
+     ],
+     "lost_items": [
+      "yoghurt_bowl_04"
+     ],
+     "points_lost": 6,
+     "points_gained": 0
+    },
+    {
+     "kind": "no_mistake_on_item",
+     "made": 0,
+     "items": [],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 9
+    }
+   ]
+  },
+  {
+   "level": "weeknight-dinner",
+   "costs": [
+    {
+     "kind": "plate_facing_away",
+     "made": 2,
+     "items": [
+      "side_plate_04",
+      "lid_01"
+     ],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 0
+    },
+    {
+     "kind": "cutlery_bunched",
+     "made": 2,
+     "items": [
+      "fork_04",
+      "fork_01",
+      "spoon_03",
+      "spoon_01"
+     ],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 0
+    },
+    {
+     "kind": "cup_upright",
+     "made": 4,
+     "items": [
+      "smoothie_glass_03",
+      "guacamole_pot_03",
+      "tumbler_02",
+      "guacamole_pot_02"
+     ],
+     "lost_items": [
+      "smoothie_glass_03",
+      "guacamole_pot_02",
+      "guacamole_pot_03"
+     ],
+     "points_lost": 21,
+     "points_gained": 0
+    },
+    {
+     "kind": "cup_on_side",
+     "made": 5,
+     "items": [
+      "ketchup_pot_02",
+      "guacamole_pot_01",
+      "smoothie_glass_04",
+      "smoothie_glass_01",
+      "mug_01"
+     ],
+     "lost_items": [
+      "smoothie_glass_01",
+      "smoothie_glass_04",
+      "mug_01",
+      "guacamole_pot_01",
+      "ketchup_pot_02"
+     ],
+     "points_lost": 39,
+     "points_gained": 0
+    },
+    {
+     "kind": "left_out",
+     "made": 0,
+     "items": [
+      "pasta_bowl_01",
+      "pasta_bowl_03"
+     ],
+     "lost_items": [
+      "pasta_bowl_01",
+      "pasta_bowl_03"
+     ],
+     "points_lost": 14,
+     "points_gained": 0
+    },
+    {
+     "kind": "no_mistake_on_item",
+     "made": 0,
+     "items": [
+      "smoothie_glass_02"
+     ],
+     "lost_items": [
+      "smoothie_glass_02"
+     ],
+     "points_lost": 9,
+     "points_gained": 0
+    }
+   ]
+  },
+  {
+   "level": "breakfast",
+   "costs": [
+    {
+     "kind": "plate_facing_away",
+     "made": 2,
+     "items": [
+      "toast_plate_04",
+      "toast_plate_03"
+     ],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 0
+    },
+    {
+     "kind": "spoons_nested",
+     "made": 1,
+     "items": [
+      "spoon_03",
+      "spoon_04"
+     ],
+     "lost_items": [
+      "spoon_03"
+     ],
+     "points_lost": 2,
+     "points_gained": 0
+    },
+    {
+     "kind": "cutlery_bunched",
+     "made": 3,
+     "items": [
+      "knife_02",
+      "knife_01",
+      "fork_02",
+      "fork_01",
+      "spoon_02",
+      "spoon_01"
+     ],
+     "lost_items": [
+      "fork_01",
+      "spoon_02"
+     ],
+     "points_lost": 4,
+     "points_gained": 0
+    },
+    {
+     "kind": "cup_on_side",
+     "made": 4,
+     "items": [
+      "mug_02",
+      "smoothie_glass_01",
+      "juice_glass_03",
+      "juice_glass_02"
+     ],
+     "lost_items": [
+      "smoothie_glass_01",
+      "juice_glass_02",
+      "juice_glass_03"
+     ],
+     "points_lost": 25,
+     "points_gained": 0
+    },
+    {
+     "kind": "cup_upright",
+     "made": 4,
+     "items": [
+      "juice_glass_04",
+      "smoothie_glass_03",
+      "mug_01",
+      "smoothie_glass_04"
+     ],
+     "lost_items": [
+      "smoothie_glass_03",
+      "smoothie_glass_04",
+      "juice_glass_04",
+      "mug_01"
+     ],
+     "points_lost": 31,
+     "points_gained": 0
+    }
+   ]
+  },
+  {
+   "level": "mixed-family",
+   "costs": [
+    {
+     "kind": "plate_facing_away",
+     "made": 1,
+     "items": [
+      "side_plate_04"
+     ],
+     "lost_items": [
+      "side_plate_04"
+     ],
+     "points_lost": 5,
+     "points_gained": 0
+    },
+    {
+     "kind": "spoons_nested",
+     "made": 1,
+     "items": [
+      "spoon_03",
+      "spoon_04"
+     ],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 0
+    },
+    {
+     "kind": "cutlery_bunched",
+     "made": 2,
+     "items": [
+      "fork_04",
+      "fork_01",
+      "spoon_02",
+      "spoon_01"
+     ],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 0
+    },
+    {
+     "kind": "cup_upright",
+     "made": 3,
+     "items": [
+      "glass_03",
+      "glass_04",
+      "glass_02"
+     ],
+     "lost_items": [
+      "glass_02",
+      "glass_03",
+      "glass_04"
+     ],
+     "points_lost": 27,
+     "points_gained": 0
+    },
+    {
+     "kind": "cup_on_side",
+     "made": 5,
+     "items": [
+      "glass_01",
+      "mug_04",
+      "sippy_cup_02",
+      "mug_03",
+      "mug_01"
+     ],
+     "lost_items": [
+      "glass_01",
+      "mug_03",
+      "mug_04",
+      "sippy_cup_02"
+     ],
+     "points_lost": 34,
+     "points_gained": 0
+    },
+    {
+     "kind": "item_over_others",
+     "made": 1,
+     "items": [
+      "spatula_01"
+     ],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 3
+    },
+    {
+     "kind": "left_out",
+     "made": 0,
+     "items": [
+      "cereal_bowl_03"
+     ],
+     "lost_items": [
+      "cereal_bowl_03"
+     ],
+     "points_lost": 7,
+     "points_gained": 0
+    }
+   ]
+  },
+  {
+   "level": "baking-day",
+   "costs": [
+    {
+     "kind": "plate_facing_away",
+     "made": 2,
+     "items": [
+      "cake_plate_06",
+      "cake_plate_04"
+     ],
+     "lost_items": [
+      "cake_plate_06"
+     ],
+     "points_lost": 5,
+     "points_gained": 0
+    },
+    {
+     "kind": "spoons_nested",
+     "made": 1,
+     "items": [
+      "dessert_spoon_03",
+      "dessert_spoon_04"
+     ],
+     "lost_items": [
+      "dessert_spoon_04"
+     ],
+     "points_lost": 2,
+     "points_gained": 0
+    },
+    {
+     "kind": "cutlery_bunched",
+     "made": 3,
+     "items": [
+      "cake_fork_03",
+      "cake_fork_01",
+      "cake_fork_04",
+      "dessert_spoon_02",
+      "dessert_spoon_01"
+     ],
+     "lost_items": [
+      "dessert_spoon_02"
+     ],
+     "points_lost": 2,
+     "points_gained": 0
+    },
+    {
+     "kind": "cup_upright",
+     "made": 7,
+     "items": [
+      "smoothie_glass_02",
+      "smoothie_glass_06",
+      "curd_pot_01",
+      "mug_04",
+      "smoothie_glass_01",
+      "smoothie_glass_04",
+      "smoothie_glass_05"
+     ],
+     "lost_items": [
+      "mug_04",
+      "smoothie_glass_01",
+      "smoothie_glass_02",
+      "smoothie_glass_04",
+      "smoothie_glass_05",
+      "smoothie_glass_06",
+      "curd_pot_01"
+     ],
+     "points_lost": 60,
+     "points_gained": 0
+    },
+    {
+     "kind": "cup_on_side",
+     "made": 1,
+     "items": [
+      "curd_pot_02"
+     ],
+     "lost_items": [
+      "curd_pot_02"
+     ],
+     "points_lost": 6,
+     "points_gained": 0
+    },
+    {
+     "kind": "no_mistake_on_item",
+     "made": 0,
+     "items": [
+      "cake_plate_05"
+     ],
+     "lost_items": [
+      "cake_plate_05"
+     ],
+     "points_lost": 5,
+     "points_gained": 13
+    }
+   ]
+  },
+  {
+   "level": "dinner-party",
+   "costs": [
+    {
+     "kind": "plate_facing_away",
+     "made": 1,
+     "items": [
+      "dessert_plate_02"
+     ],
+     "lost_items": [
+      "dessert_plate_02"
+     ],
+     "points_lost": 6,
+     "points_gained": 0
+    },
+    {
+     "kind": "spoons_nested",
+     "made": 2,
+     "items": [
+      "serving_spoon_01",
+      "serving_spoon_02",
+      "dessert_spoon_05",
+      "dessert_spoon_06"
+     ],
+     "lost_items": [
+      "dessert_spoon_06"
+     ],
+     "points_lost": 2,
+     "points_gained": 2
+    },
+    {
+     "kind": "cutlery_bunched",
+     "made": 2,
+     "items": [
+      "fork_03",
+      "fork_01",
+      "dessert_spoon_03",
+      "dessert_spoon_01"
+     ],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 0
+    },
+    {
+     "kind": "cup_on_side",
+     "made": 6,
+     "items": [
+      "guacamole_pot_04",
+      "gazpacho_glass_02",
+      "gazpacho_glass_01",
+      "juice_glass_06",
+      "guacamole_pot_03",
+      "guacamole_pot_01"
+     ],
+     "lost_items": [
+      "gazpacho_glass_01",
+      "gazpacho_glass_02",
+      "guacamole_pot_01",
+      "guacamole_pot_03",
+      "guacamole_pot_04"
+     ],
+     "points_lost": 36,
+     "points_gained": 0
+    },
+    {
+     "kind": "cup_upright",
+     "made": 4,
+     "items": [
+      "gazpacho_glass_03",
+      "juice_glass_03",
+      "juice_glass_04",
+      "gazpacho_glass_06"
+     ],
+     "lost_items": [
+      "gazpacho_glass_03",
+      "gazpacho_glass_06",
+      "juice_glass_03",
+      "juice_glass_04"
+     ],
+     "points_lost": 34,
+     "points_gained": 0
+    },
+    {
+     "kind": "item_over_others",
+     "made": 1,
+     "items": [
+      "tongs_01"
+     ],
+     "lost_items": [],
+     "points_lost": 0,
+     "points_gained": 3
+    },
+    {
+     "kind": "no_mistake_on_item",
+     "made": 0,
+     "items": [
+      "dinner_plate_01",
+      "dinner_plate_02",
+      "dinner_plate_03",
+      "dinner_plate_04",
+      "gazpacho_glass_04",
+      "dessert_plate_01",
+      "dessert_plate_04",
+      "dessert_plate_05",
+      "dessert_plate_06",
+      "juice_glass_02"
+     ],
+     "lost_items": [
+      "dinner_plate_01",
+      "dinner_plate_02",
+      "dinner_plate_03",
+      "dinner_plate_04",
+      "gazpacho_glass_04",
+      "dessert_plate_01",
+      "dessert_plate_04",
+      "dessert_plate_05",
+      "dessert_plate_06",
+      "juice_glass_02"
+     ],
+     "points_lost": 77,
+     "points_gained": 0
+    }
+   ]
+  }
+ ],
+ "washes": [
+  {
+   "load": "tutorial-careful",
+   "load_state": "sha256:6611e8871f273a843e03a6287ed0b7fb068f3a305a3a540da27fef5c5727d8c2",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:83536c464fae22061c71954b67e71bbdf675cafd79b9282a3d15bb5031f5deaf",
+   "seconds": 22
+  },
+  {
+   "load": "tutorial-careless",
+   "load_state": "sha256:e706ae661e8b1faa3a7ea8c5e80221a07f4f535485c5a425e2d1dbb8bc19e4f4",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:b20e5011ed8b0e91799ef603b387281fafe26196d14ed01593dee0ea8693322f",
+   "seconds": 21.6
+  },
+  {
+   "load": "tutorial-random",
+   "load_state": "sha256:d48a36df0dd24cad984c4f5ce264a44dcf174a47235dbe5d2064512fa1d62693",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:693ddcebdd477d50e910a2333991441563d935618b4e4719fcad716f0c0b0f52",
+   "seconds": 33
+  },
+  {
+   "load": "lunch-for-four-careful",
+   "load_state": "sha256:313420b440971fd4ed5c28cab005ed15c061b9c62b7095beb796544e8c9aaf55",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:20aa1adfd2ae00f11338da44705fbed87e22b9bf869fba0a3e0324e675e9ea9e",
+   "seconds": 47.3
+  },
+  {
+   "load": "lunch-for-four-careless",
+   "load_state": "sha256:3de012e0162b51331f383576e9e4883d74c79d0b4ef5bd069da4e64728b2d4cd",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:141bda1f6adb707bde358b346fab5480f198d3ff95296ecfd936a14aa7c07ae1",
+   "seconds": 46
+  },
+  {
+   "load": "lunch-for-four-random",
+   "load_state": "sha256:cbbf7e233de096c621508bdad10c89d12d5115340b8805abca8125f97eff6589",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:6f02a3f32d586b8588fac3eb294e3ec86d0b80771ea1b582df2a3462223d3ee1",
+   "seconds": 34.1
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "load_state": "sha256:f85651170c8655282eb486f913586484fe91707e9a81652dd9d0f2d962da9438",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:597be945fcbeb961f1e657f6ec35b223f30a9b46905bc378b1fc8075c603ed08",
+   "seconds": 41.2
+  },
+  {
+   "load": "weeknight-dinner-careless",
+   "load_state": "sha256:3f1e2c98a5bace3bf9e55c0d371689f04882ba388e3d35893721ef5e6f7a045a",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:bb42318526e81d35b53d8ebec1b11769aa0a7e9d9b41b6745c1c6e99c2d18d4c",
+   "seconds": 38.4
+  },
+  {
+   "load": "weeknight-dinner-random",
+   "load_state": "sha256:5984a5b2b8664291a90105ff2bbd9246ad633f606481a15a21ab430d42474a11",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:c2ebde82f11382825f8eedfdc497a63f4ee1e6ad96e27cf8509e3b138f540964",
+   "seconds": 30.1
+  },
+  {
+   "load": "breakfast-careful",
+   "load_state": "sha256:5495dfcee7768ee8859f02f7e1bced3f29ff2a1247c7c61a26423442dc504029",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:947ca0d877749cdfc7ecb5dfdd514d79073bad1c5707f47001d166a9071e32b2",
+   "seconds": 28.1
+  },
+  {
+   "load": "breakfast-careless",
+   "load_state": "sha256:3324d8158d6605f4a0567de774c0daa4ff96d1baae88aca954264e6ee4305d07",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:c037de5da5bf3b60961b3915aaba8a7b933bd6f6293069a6ed69acd7bbb8b780",
+   "seconds": 23.4
+  },
+  {
+   "load": "breakfast-random",
+   "load_state": "sha256:33080c4cf9e0aa82ec5715d2f3cd8eb6521452ed130fc1d988cd4a5f5e260bcb",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:617b95fbf020e805c1df0f3d4107b36fb06db0cfc60f5d0eb1acbe0c4e74ae20",
+   "seconds": 22.2
+  },
+  {
+   "load": "mixed-family-careful",
+   "load_state": "sha256:18dee0c639058f4c362ad4106562348026f94db61bf027c11cf0d8677e124e79",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:a8cf3f03d35741566b16a874b05f49bc427de8e21656be38faa904fbdd1dbbd7",
+   "seconds": 27.5
+  },
+  {
+   "load": "mixed-family-careless",
+   "load_state": "sha256:bc1c43dce9920c8952153a73cc2f771d3cd12f6d9eb2cebe01e089104a727045",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:5f45da6fae32725f64554e322dff9567917357595d8a1d5e5361432fd971a8af",
+   "seconds": 29.7
+  },
+  {
+   "load": "mixed-family-random",
+   "load_state": "sha256:b85022438fb30a386bcbfd39fe6cb6843d73adaa1aef2af2586312edde3075d5",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:75984f89487701250789b0b9898101debc70d900fc289bb143947ba90763c38c",
+   "seconds": 25
+  },
+  {
+   "load": "baking-day-careful",
+   "load_state": "sha256:a019e24f88078e2b215a2b37a6243fbc7f07da07db81e7e3b1856016d86561cd",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:50a9b1d2eba22628485df7edcc8506c8ae7c812476a7778de917bed843112293",
+   "seconds": 26
+  },
+  {
+   "load": "baking-day-careless",
+   "load_state": "sha256:9cb477cc4574693c6a938ac564d591845df6426d44612aee1c861508d02650fd",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:9116ffaf9e096876223847155fd0454a61a689bfa5bcfbb2293b5542d9e92e1d",
+   "seconds": 27.1
+  },
+  {
+   "load": "baking-day-random",
+   "load_state": "sha256:e05121111a6ebfc549c70c39c849d473939ea6a3b276a3210015e70041814c40",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:6d6865a3b0eadefaaa376e0d88309d9a15abbd36547cbe336b345732c8205d60",
+   "seconds": 20.4
+  },
+  {
+   "load": "dinner-party-careful",
+   "load_state": "sha256:a326f1b45e47d56d91d015951f651076e7695086bb31957eae585c608727f4d2",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:27e29648e4e75d6ebd4158f1a3b5fd3f420a3c6e2b4a65faa37f925c5174a6d0",
+   "seconds": 33.2
+  },
+  {
+   "load": "dinner-party-careless",
+   "load_state": "sha256:9986b83358359b05e4c7e2a0f8c673cc94d19e18b3a28ff2fe9e22516d74bbba",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:6ffadd536d471370c305f4b832712c7a49cd40bf3e36edb1cd7b58e1772b9818",
+   "seconds": 62.3
+  },
+  {
+   "load": "dinner-party-random",
+   "load_state": "sha256:15003188f51df749f8f3e603fa7544e755e737fbe041670dd5dcda255760223c",
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
+   "result_hash": "sha256:d27995432eee3dc0e64e1c486d6b3a131dddef80a7b411503f52403fc61a4026",
+   "seconds": 44
+  }
+ ]
+}

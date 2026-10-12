@@ -1,0 +1,438 @@
+{
+  "format": "spotless.wash-record",
+  "version": 1,
+  "id": "plates-mugs-template",
+  "kind": "synthetic",
+  "title": "Template of a measured record: a small mixed load with a measured course",
+  "provenance": {
+    "date": "2026-10-10",
+    "by": "the simulator",
+    "methods": {
+      "scale": {
+        "description": "kitchen balance, 0.01 g; items weighed dry before soiling, after drying and after the wash"
+      },
+      "photo": {
+        "description": "photograph under diffuse light before and after; soiled pixels over those of the soil as applied"
+      },
+      "eye": {
+        "description": "visual inspection, 10 s per item under 1000 to 1500 lux"
+      },
+      "probe": {
+        "description": "thermocouple in the sump, 1 reading per minute; smart plug, 1 reading per minute"
+      }
+    },
+    "notes": "Synthetic: drawn from the simulator at parameter overrides {\"obs.outlierShare\":0} with noise seed 20261010."
+  },
+  "machine": {
+    "id": "bosch_smv4hax40g",
+    "basket_heights": {
+      "upper": "1"
+    },
+    "measured": [
+      {
+        "quantity": "spec",
+        "path": "thermal.inletTemperature",
+        "value": 13.5,
+        "method": "probe",
+        "note": "cold tap after running for a minute"
+      }
+    ]
+  },
+  "programme": {
+    "id": "auto_145",
+    "options": [],
+    "course": {
+      "duration_s": 7936,
+      "events": [
+        {
+          "kind": "drain",
+          "t_s": 0
+        },
+        {
+          "kind": "fill",
+          "t_s": 30
+        },
+        {
+          "kind": "drain",
+          "t_s": 780
+        },
+        {
+          "kind": "fill",
+          "t_s": 810
+        },
+        {
+          "kind": "heater_on",
+          "t_s": 900
+        },
+        {
+          "kind": "heater_off",
+          "t_s": 1797
+        },
+        {
+          "kind": "drain",
+          "t_s": 3897
+        },
+        {
+          "kind": "fill",
+          "t_s": 3987
+        },
+        {
+          "kind": "drain",
+          "t_s": 4437
+        },
+        {
+          "kind": "fill",
+          "t_s": 4527
+        },
+        {
+          "kind": "heater_on",
+          "t_s": 4647
+        },
+        {
+          "kind": "heater_off",
+          "t_s": 5266
+        },
+        {
+          "kind": "drain",
+          "t_s": 5446
+        }
+      ],
+      "temperature_log": {
+        "t_s": [
+          120, 180, 240, 300, 360, 420, 480, 540, 600, 660, 720, 780, 840, 900, 960, 1020, 1080,
+          1140, 1200, 1260, 1320, 1380, 1440, 1500, 1560, 1620, 1680, 1740, 1800, 1860, 1920, 1980,
+          2040, 2100, 2160, 2220, 2280, 2340, 2400, 2460, 2520, 2580, 2640, 2700, 2760, 2820, 2880,
+          2940, 3000, 3060, 3120, 3180, 3240, 3300, 3360, 3420, 3480, 3540, 3600, 3660, 3720, 3780,
+          3840, 3900, 3960, 4020, 4080, 4140, 4200, 4260, 4320, 4380, 4440, 4500, 4560, 4620, 4680,
+          4740, 4800, 4860, 4920, 4980, 5040, 5100, 5160, 5220, 5280, 5340, 5400, 5460, 5520, 5580,
+          5640, 5700, 5760, 5820, 5880, 5940, 6000, 6060, 6120, 6180, 6240, 6300, 6360, 6420, 6480,
+          6540, 6600, 6660, 6720, 6780, 6840, 6900, 6960, 7020, 7080, 7140, 7200, 7260, 7320, 7380,
+          7440, 7500, 7560, 7620, 7680, 7740, 7800, 7860, 7920
+        ],
+        "values": [
+          22.4, 22.5, 22.6, 22.7, 22.7, 22.8, 22.8, 22.9, 22.9, 23, 23, 23.1, 18.2, 18.4, 25.1,
+          27.5, 29.9, 32.3, 34.7, 37.1, 39.5, 41.8, 44.2, 46.5, 48.9, 51.2, 53.5, 55.8, 57.8, 56.8,
+          56.7, 56.7, 56.6, 56.6, 56.5, 56.5, 56.4, 56.4, 56.3, 56.3, 56.2, 56.2, 56.1, 56.1, 56,
+          56, 56, 55.9, 55.9, 55.2, 54.5, 53.8, 53.2, 52.7, 52.2, 51.8, 51.4, 51.1, 50.8, 50.6,
+          50.3, 50.1, 50, 49.8, 49.4, 46, 47.7, 47.1, 46.5, 46, 45.5, 45.1, 44.7, 44, 36.3, 41.7,
+          44.4, 47.1, 49.6, 52.1, 54.7, 57.2, 59.7, 62.2, 64.7, 67.1, 68, 67.5, 67.4, 67.2, 66.9,
+          66.5, 66.1, 65.4, 64.3, 63, 61.7, 60.4, 59.3, 58.3, 57.5, 56.7, 56.1, 55.3, 54.3, 53.2,
+          52.1, 51.2, 50.4, 49.8, 49.2, 48.7, 48.4, 47.9, 47.3, 46.5, 45.8, 45.3, 44.8, 44.4, 44.1,
+          43.9, 43.7, 43.6, 43.5, 43.4, 43.4, 43.4, 43.3, 43.4, 43.4
+        ],
+        "method": "probe",
+        "where": "liquor (sump)"
+      },
+      "power_log": {
+        "t_s": [
+          0, 60, 120, 180, 240, 300, 360, 420, 480, 540, 600, 660, 720, 780, 840, 900, 960, 1020,
+          1080, 1140, 1200, 1260, 1320, 1380, 1440, 1500, 1560, 1620, 1680, 1740, 1800, 1860, 1920,
+          1980, 2040, 2100, 2160, 2220, 2280, 2340, 2400, 2460, 2520, 2580, 2640, 2700, 2760, 2820,
+          2880, 2940, 3000, 3060, 3120, 3180, 3240, 3300, 3360, 3420, 3480, 3540, 3600, 3660, 3720,
+          3780, 3840, 3900, 3960, 4020, 4080, 4140, 4200, 4260, 4320, 4380, 4440, 4500, 4560, 4620,
+          4680, 4740, 4800, 4860, 4920, 4980, 5040, 5100, 5160, 5220, 5280, 5340, 5400, 5460, 5520,
+          5580, 5640, 5700, 5760, 5820, 5880, 5940, 6000, 6060, 6120, 6180, 6240, 6300, 6360, 6420,
+          6480, 6540, 6600, 6660, 6720, 6780, 6840, 6900, 6960, 7020, 7080, 7140, 7200, 7260, 7320,
+          7380, 7440, 7500, 7560, 7620, 7680, 7740, 7800, 7860, 7920
+        ],
+        "values": [
+          0, 0, 48.60859497095679, 47.58443938114191, 48.60859497095679, 47.58443938114191,
+          48.60859497095679, 47.58443938114191, 48.60859497095679, 47.58443938114191,
+          48.60859497095679, 47.58443938114191, 48.60859497095679, 0, 0, 2157.9716786741633,
+          2156.8987189465033, 2157.9716786741633, 2156.8987189465033, 2157.9716786741633,
+          2156.8987189465033, 2157.9716786741633, 2156.8987189465033, 2157.9716786741633,
+          2156.8987189465033, 2157.9716786741633, 2156.8987189465033, 2157.9716786741633,
+          2156.8987189465033, 2157.9716786741633, 56.89871894650313, 57.97167867416309,
+          56.89871894650313, 57.97167867416309, 56.89871894650313, 57.97167867416309,
+          56.89871894650313, 57.97167867416309, 56.89871894650313, 57.97167867416309,
+          56.89871894650313, 57.97167867416309, 56.89871894650313, 57.97167867416309,
+          56.89871894650313, 57.97167867416309, 56.89871894650313, 57.97167867416309,
+          56.89871894650313, 57.97167867416309, 56.89871894650313, 57.97167867416309,
+          56.89871894650313, 57.97167867416309, 56.89871894650313, 57.97167867416309,
+          56.89871894650313, 57.97167867416309, 56.89871894650313, 57.97167867416309,
+          56.89871894650313, 57.97167867416309, 56.89871894650313, 57.97167867416309,
+          56.89871894650313, 0, 0, 48.60859497095679, 47.58443938114191, 48.60859497095679,
+          48.60859497095679, 47.58443938114191, 48.60859497095679, 48.60859497095679, 0, 0,
+          48.60859497095679, 47.58443938114191, 2148.608594970957, 2148.608594970957,
+          2147.5844393811417, 2148.608594970957, 2148.608594970957, 2147.5844393811417,
+          2148.608594970957, 2148.608594970957, 2147.5844393811417, 2148.608594970957,
+          48.60859497095679, 47.58443938114191, 48.60859497095679, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0
+        ],
+        "method": "probe"
+      }
+    }
+  },
+  "consumables": {
+    "detergent": {
+      "product": "generic all-in-one tablet",
+      "form": "tablet",
+      "dose_g": 18.5,
+      "method": "scale",
+      "placement": "dispenser"
+    },
+    "rinse_aid": {
+      "setting": "r05",
+      "dose_ml": 5
+    },
+    "softener": {
+      "setting": "H04",
+      "salt_filled": true
+    },
+    "water": {
+      "hardness_dh": 14,
+      "ambient_temperature_c": 21,
+      "method": "probe"
+    }
+  },
+  "load": {
+    "items": [
+      {
+        "id": "plate_facing",
+        "type": "dessert_plate_porcelain_190",
+        "position_mm": [-120, -130, 172],
+        "quat_wxyz": [0.5736, 0.8192, 0, 0],
+        "soils": [
+          {
+            "id": "sauce",
+            "type": "tomato_sauce",
+            "amount_g": 2,
+            "amount_method": "scale",
+            "where": {
+              "regions": [
+                {
+                  "region": "well",
+                  "coverage": 0.6
+                }
+              ]
+            },
+            "drying": {
+              "time_h": 2,
+              "temperature_c": 22,
+              "conditions": "open kitchen"
+            },
+            "heat": {
+              "history": "cooked"
+            }
+          },
+          {
+            "id": "egg",
+            "type": "egg_yolk_dried",
+            "amount_g": 0.5,
+            "amount_method": "scale",
+            "where": {
+              "regions": [
+                {
+                  "region": "rim",
+                  "coverage": 0.3
+                }
+              ]
+            },
+            "drying": {
+              "time_h": 2,
+              "temperature_c": 22,
+              "conditions": "open kitchen"
+            },
+            "heat": {
+              "history": "none"
+            }
+          }
+        ]
+      },
+      {
+        "id": "plate_away",
+        "type": "dessert_plate_porcelain_190",
+        "position_mm": [120, -130, 172],
+        "quat_wxyz": [0.8192, 0.5736, 0, 0],
+        "soils": [
+          {
+            "id": "sauce",
+            "type": "tomato_sauce",
+            "amount_g": 2,
+            "amount_method": "scale",
+            "where": {
+              "regions": [
+                {
+                  "region": "well",
+                  "coverage": 0.6
+                }
+              ]
+            },
+            "drying": {
+              "time_h": 2,
+              "temperature_c": 22,
+              "conditions": "open kitchen"
+            },
+            "heat": {
+              "history": "cooked"
+            }
+          },
+          {
+            "id": "egg",
+            "type": "egg_yolk_dried",
+            "amount_g": 0.5,
+            "amount_method": "scale",
+            "where": {
+              "regions": [
+                {
+                  "region": "rim",
+                  "coverage": 0.3
+                }
+              ]
+            },
+            "drying": {
+              "time_h": 2,
+              "temperature_c": 22,
+              "conditions": "open kitchen"
+            },
+            "heat": {
+              "history": "none"
+            }
+          }
+        ]
+      },
+      {
+        "id": "mug_inverted",
+        "type": "mug_porcelain_240",
+        "position_mm": [-100, 60, 425],
+        "quat_wxyz": [0, 1, 0, 0],
+        "soils": [
+          {
+            "id": "tea",
+            "type": "tea_tannin",
+            "amount_g": 0.6,
+            "amount_method": "scale",
+            "where": {
+              "regions": [
+                {
+                  "region": "interior",
+                  "coverage": 1
+                }
+              ]
+            },
+            "drying": {
+              "time_h": 2,
+              "temperature_c": 22,
+              "conditions": "open kitchen"
+            },
+            "heat": {
+              "history": "none"
+            }
+          }
+        ]
+      },
+      {
+        "id": "mug_upright",
+        "type": "mug_porcelain_240",
+        "position_mm": [100, 60, 425],
+        "quat_wxyz": [1, 0, 0, 0],
+        "soils": [
+          {
+            "id": "tea",
+            "type": "tea_tannin",
+            "amount_g": 0.6,
+            "amount_method": "scale",
+            "where": {
+              "regions": [
+                {
+                  "region": "interior",
+                  "coverage": 1
+                }
+              ]
+            },
+            "drying": {
+              "time_h": 2,
+              "temperature_c": 22,
+              "conditions": "open kitchen"
+            },
+            "heat": {
+              "history": "none"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "item": "plate_facing",
+      "kind": "score",
+      "method": "eye",
+      "value": 0
+    },
+    {
+      "item": "plate_facing",
+      "target": {
+        "soil": "sauce"
+      },
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05,
+      "value": 0.08056071162887626
+    },
+    {
+      "item": "plate_facing",
+      "target": {
+        "region": "rim"
+      },
+      "kind": "residual_mass",
+      "method": "scale",
+      "sd": 5,
+      "value": 97.0513229450085
+    },
+    {
+      "item": "plate_away",
+      "kind": "score",
+      "method": "eye",
+      "value": 1
+    },
+    {
+      "item": "plate_away",
+      "target": {
+        "soil": "sauce"
+      },
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05,
+      "value": 0.1977598209152348
+    },
+    {
+      "item": "plate_away",
+      "kind": "mass_fraction",
+      "method": "scale",
+      "sd": 0.03,
+      "value": 0.47209199749236247
+    },
+    {
+      "item": "mug_inverted",
+      "kind": "clean",
+      "method": "eye",
+      "value": false
+    },
+    {
+      "item": "mug_inverted",
+      "kind": "specks",
+      "method": "eye",
+      "value": 0
+    },
+    {
+      "item": "mug_upright",
+      "kind": "clean",
+      "method": "eye",
+      "value": false
+    },
+    {
+      "item": "mug_upright",
+      "kind": "retained_water",
+      "method": "scale",
+      "sd": 2,
+      "value": 243.95649483638564
+    }
+  ],
+  "sim": {
+    "tier": "fast",
+    "level_seed": 7,
+    "sim_seed": 3
+  }
+}

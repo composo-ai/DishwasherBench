@@ -1,0 +1,24 @@
+{
+  "name": "@spotless/sim-jets",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Wash simulation module M5: primary jet trace, footprints, impingement closures, exposure gather, emitters, item loads and live wrenches",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@spotless/core": "workspace:*",
+    "@spotless/sim-hydraulics": "workspace:*",
+    "@spotless/sim-params": "workspace:*",
+    "@spotless/sim-scene": "workspace:*"
+  }
+}

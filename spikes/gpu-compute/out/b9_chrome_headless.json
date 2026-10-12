@@ -1,0 +1,128 @@
+{
+  "when": "2026-10-08T15:25:17.344Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 220,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "attempts": [
+    {
+      "label": "new headless, default flags",
+      "args": [],
+      "headless": true,
+      "chromeVersion": "Chrome/154.0.8037.98",
+      "result": {
+        "adapter": {
+          "vendor": "apple",
+          "architecture": "metal-3",
+          "device": "",
+          "description": ""
+        },
+        "limits": {
+          "maxBufferSize": 4294967292,
+          "maxStorageBufferBindingSize": 4294967292,
+          "maxComputeInvocationsPerWorkgroup": 1024,
+          "maxTextureDimension2D": 16384,
+          "maxTextureDimension3D": 2048
+        },
+        "features": [
+          "bgra8unorm-storage",
+          "clip-distances",
+          "core-features-and-limits",
+          "depth-clip-control",
+          "depth32float-stencil8",
+          "dual-source-blending",
+          "float32-blendable",
+          "float32-filterable",
+          "indirect-first-instance",
+          "primitive-index",
+          "rg11b10ufloat-renderable",
+          "shader-f16",
+          "subgroup-size-control",
+          "subgroups",
+          "texture-component-swizzle",
+          "texture-compression-astc",
+          "texture-compression-astc-sliced-3d",
+          "texture-compression-bc",
+          "texture-compression-bc-sliced-3d",
+          "texture-compression-etc2",
+          "texture-formats-tier1",
+          "texture-formats-tier2",
+          "timestamp-query"
+        ],
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+        "crossOriginIsolated": false,
+        "cases": [
+          {
+            "w": 1024,
+            "h": 1024,
+            "kind": "buffer",
+            "steps": 3616,
+            "cellUpdatesPerSec": {
+              "best": 3801153700.2506266,
+              "median": 3777673424.2626786,
+              "worst": 3734512770.5658236
+            }
+          },
+          {
+            "w": 1024,
+            "h": 1024,
+            "kind": "texture",
+            "steps": 3488,
+            "cellUpdatesPerSec": {
+              "best": 4083779687.3876076,
+              "median": 3915042911.6320605,
+              "worst": 3878508046.6595974
+            }
+          },
+          {
+            "w": 2048,
+            "h": 2048,
+            "kind": "buffer",
+            "steps": 896,
+            "cellUpdatesPerSec": {
+              "best": 3787639975.7430673,
+              "median": 3735682290.258449,
+              "worst": 3677557866.6974072
+            }
+          },
+          {
+            "w": 2048,
+            "h": 2048,
+            "kind": "texture",
+            "steps": 896,
+            "cellUpdatesPerSec": {
+              "best": 4041833065.123486,
+              "median": 4030562402.3766365,
+              "worst": 3992877586.1109214
+            }
+          },
+          {
+            "w": 4096,
+            "h": 4096,
+            "kind": "buffer",
+            "steps": 224,
+            "cellUpdatesPerSec": {
+              "best": 3755467556.75504,
+              "median": 3706574991.5947404,
+              "worst": 3614944578.7048354
+            }
+          },
+          {
+            "w": 4096,
+            "h": 4096,
+            "kind": "texture",
+            "steps": 256,
+            "cellUpdatesPerSec": {
+              "best": 4024519580.1424623,
+              "median": 3968370411.2269797,
+              "worst": 3860644760.449438
+            }
+          }
+        ],
+        "deviceLost": null
+      }
+    }
+  ]
+}

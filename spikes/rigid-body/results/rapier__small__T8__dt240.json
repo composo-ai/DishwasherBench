@@ -1,0 +1,163 @@
+{
+ "engine": "rapier",
+ "preset": "small",
+ "test": "T8",
+ "hz": 240,
+ "tag": null,
+ "cfg": {
+  "lengthUnit": 0.1,
+  "ccd": false,
+  "sleep": true,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {
+  "t8hz": 240
+ },
+ "wallSeconds": 104.142043875,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:42:32.388Z",
+ "summary": {
+  "T2@1/240": {
+   "counts": {
+    "bodies": 12,
+    "pieces": 876,
+    "vertices": 7488,
+    "staticCapsules": 236,
+    "staticBoxes": 0
+   },
+   "stepMean_ms": {
+    "best": 0.2681808525000001,
+    "median": 0.2720450566666676,
+    "worst": 0.2766358800000007
+   },
+   "stepActiveMean_ms": {
+    "best": 0.9585551833333302,
+    "median": 0.9781227833333351,
+    "worst": 0.9958803791666688
+   },
+   "stepP99_ms": {
+    "best": 3.6405840000000182,
+    "median": 3.646041000000025,
+    "worst": 3.7720410000000015
+   },
+   "stepMax_ms": {
+    "best": 49.73887500000001,
+    "median": 52.280292
+   },
+   "total_ms": {
+    "best": 321.8170230000001,
+    "median": 326.45406800000114
+   },
+   "build_ms": {
+    "best": 74.84462500000001,
+    "median": 81.12787499999999
+   },
+   "rssAfter_MB": 245.296875,
+   "rssDelta_MB": 205.109375,
+   "engineMem": null,
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 0.24166666666666667,
+    "exploded": null,
+    "asleep": "12/12",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 0.6200706898872752
+   }
+  },
+  "T5@1/240": {
+   "counts": {
+    "bodies": 20,
+    "pieces": 140,
+    "vertices": 1160,
+    "staticCapsules": 0,
+    "staticBoxes": 10
+   },
+   "stepMean_ms": {
+    "best": 0.17539741583333357,
+    "median": 0.18014709249999977,
+    "worst": 0.23528004250000023
+   },
+   "stepActiveMean_ms": {
+    "best": 0.7076897833333317,
+    "median": 0.7366146041666656,
+    "worst": 0.9935545124999976
+   },
+   "stepP99_ms": {
+    "best": 1.3104580000000112,
+    "median": 1.728791000000001,
+    "worst": 1.8601249999999823
+   },
+   "stepMax_ms": {
+    "best": 46.517917,
+    "median": 47.567333000000005
+   },
+   "total_ms": {
+    "best": 210.4768990000003,
+    "median": 216.17651099999972
+   },
+   "build_ms": {
+    "best": 66.68558300000001,
+    "median": 69.14995900000001
+   },
+   "rssAfter_MB": 238.484375,
+   "rssDelta_MB": 202.734375,
+   "engineMem": null,
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 1.1958333333333333,
+    "exploded": null,
+    "asleep": "20/20",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.4714988470077515
+   }
+  },
+  "FULL@1/240": {
+   "counts": {
+    "bodies": 122,
+    "pieces": 3028,
+    "vertices": 25872,
+    "staticCapsules": 1355,
+    "staticBoxes": 30
+   },
+   "stepMean_ms": {
+    "best": 31.76526552708339,
+    "median": 33.237620102083376,
+    "worst": 37.529310816666694
+   },
+   "stepActiveMean_ms": {
+    "best": 21.857080899999968,
+    "median": 24.519465783333334,
+    "worst": 24.929575379166657
+   },
+   "stepP99_ms": {
+    "best": 44.11779200000092,
+    "median": 64.84745800000019,
+    "worst": 84.85908299999937
+   },
+   "stepMax_ms": {
+    "best": 73.18504199999998,
+    "median": 126.86570800000118
+   },
+   "total_ms": {
+    "best": 30494.654906000054,
+    "median": 31908.11529800004
+   },
+   "build_ms": {
+    "best": 94.83275,
+    "median": 101.66725000000001
+   },
+   "rssAfter_MB": 140.796875,
+   "rssDelta_MB": 97.265625,
+   "engineMem": null,
+   "simSeconds": 4,
+   "stability": {
+    "restTime_s": null,
+    "exploded": null,
+    "asleep": "109/122",
+    "rmsLin_mm_s": 0.6288447068161113,
+    "maxSpeed": 1.4714988470077515
+   }
+  }
+ },
+ "runs": []
+}

@@ -1,0 +1,118 @@
+{
+ "format": "spotless.params",
+ "version": 1,
+ "provenance": {
+  "name": "anchored-v4.owner-capsule",
+  "origin": "calibration",
+  "note": "The anchored set anchored-v4 (docs/calibration/anchoring.md) with the owner's capsule laid over it: the composition of detergents/finish-powerball-ultimate.json (Finish Powerball Ultimate, desk research, nothing measured: docs/research/detergent-finish-ultimate.md) and the protease level of a premium unit dose (liq.xProtease = 0.03; estimated from the active protease of a premium unit dose in its maker's patents, not this product's). Wash with a dose of 12.9 g (dosing.detergentMass, a machine value). The protease is as stable as the registry says (liq.proteaseHalfLife 30 min at 60 C and pH 10.5, 1.7 times as long at the capsule's pH 10.1). No measurement of the capsule's protease exists: this is the lower end of a bracket whose upper end is the set with the suffix \"stable\".",
+  "washRecords": [
+   "std-eu-13.round-robin-ta.detergent-d"
+  ],
+  "createdAt": "2026-10-10T17:54:36.341Z"
+ },
+ "overrides": {
+  "liq.amylaseKox": 0.00006,
+  "liq.amylaseKoxHP": 0.000002,
+  "liq.tabletTau": 300,
+  "liq.xAmylase": 0.012,
+  "liq.xCarbonate": 3.3,
+  "liq.xPeroxide": 0.955,
+  "liq.xProtease": 0.03,
+  "liq.xSilicate": 0,
+  "liq.xSurfactant": 0.1,
+  "liq.xTaed": 0.175,
+  "soil.amountCv": 0.05,
+  "soil.egg_yolk.rateRef": 0.000034,
+  "soil.egg_yolk.tLag": 300,
+  "soil.milk.rateRef": 0.000034,
+  "soil.milk.tLag": 300,
+  "soil.subCellCv": 0.1
+ },
+ "definitions": {
+  "liq.amylaseKox": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "liq.amylaseKoxHP": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "liq.tabletTau": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "liq.xAmylase": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xCarbonate": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "liq.xPeroxide": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "liq.xProtease": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xSilicate": {
+   "kind": "scalar",
+   "unit": "eq/kg"
+  },
+  "liq.xSurfactant": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xTaed": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "soil.amountCv": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.egg_yolk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.egg_yolk.tLag": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "soil.milk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.milk.tLag": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "soil.subCellCv": {
+   "kind": "scalar",
+   "unit": "1"
+  }
+ },
+ "registryHash": "sha256:24ceddc07b6323e2349c1e36ba879da39dad9054b0723f47fbd1c1b249bbe850",
+ "hydroHash": "sha256:ecdf6e077c2e67a36ffb4cf2600480fa6bce737a64d79462da7eb427329e7c3a",
+ "soilHash": "sha256:45173d348ccd08097267b5b9aaec8fd7d5c0395dfa5eb4a0c74a4055286a0275",
+ "anchoredOn": {
+  "simVersion": "spotless-sim 0.4.1 water-5",
+  "exposureSource": "34816aba7271f07506b07db21742b941def5dcbc719a27c597d2c9355be42205",
+  "files": 136,
+  "reference": {
+   "load": "iec-13-careful",
+   "programme": "eco_50",
+   "tier": "fast",
+   "levelSeed": 1,
+   "simSeed": 1,
+   "digest": "9881f3776806318f5c893bca501081b1250793c6112b2059976e584b85ec8548"
+  }
+ },
+ "supersededBy": {
+  "set": "anchored-v5",
+  "why": "made on water-5 with the soak circulated throughout; the prediction of the owner's wash 01 was registered with it (docs/calibration/owner-wash-01-prediction.md)",
+  "on": "2026-10-10"
+ }
+}

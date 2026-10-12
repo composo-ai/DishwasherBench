@@ -1,0 +1,24 @@
+{
+  "name": "@spotless/sim-film",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Wash simulation module M7: surface water (R0, K, S, LINE), reservoirs, wetting parameters and the exposure writer",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@spotless/core": "workspace:*",
+    "@spotless/sim-jets": "workspace:*",
+    "@spotless/sim-scene": "workspace:*",
+    "@spotless/sim-spray": "workspace:*"
+  }
+}

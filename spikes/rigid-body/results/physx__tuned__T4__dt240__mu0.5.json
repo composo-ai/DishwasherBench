@@ -1,0 +1,489 @@
+{
+ "engine": "physx",
+ "preset": "tuned",
+ "test": "T4",
+ "hz": 240,
+ "tag": "mu0.5",
+ "cfg": {
+  "ccd": false,
+  "sleep": true,
+  "tolLength": 0.1,
+  "tolSpeed": 1,
+  "solver": "tgs",
+  "posIters": 8,
+  "velIters": 2,
+  "contactOffset": 0.002,
+  "restOffset": 0,
+  "bounceThreshold": 0.2,
+  "enhancedDeterminism": true,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {
+  "friction": 0.5
+ },
+ "wallSeconds": 0.10243166599999995,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:26:36.536Z",
+ "summary": {
+  "tumbler": {
+   "restTime_s": 0.9416666666666667,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed_m_s": 0.44962507486343384,
+   "exploded": null,
+   "penInit_mm": 0,
+   "penMaxStatic_mm": 0.0033296979460406377,
+   "penMaxDynamic_mm": 0,
+   "penFinalStatic_mm": 0.00015768312893122208,
+   "penFinalDynamic_mm": 0,
+   "asleep": "1/1",
+   "allAsleepAt_s": 0.95,
+   "driftPos_mm": 0,
+   "driftAng_deg": 2.4265706493099338e-20,
+   "stepMean_ms": 0.006962625000001784,
+   "stepP99_ms": 0.03320900000016991,
+   "stepTotal_ms": 10.026180000002569,
+   "hash": "52d4c6d19630cfb3",
+   "axisFromVertical_deg": 0,
+   "pos_mm": [
+    15.768149867653847,
+    81.71659708023071,
+    -1.1514949146658182
+   ]
+  },
+  "mug_mu0.4": {
+   "restTime_s": 0.03333333333333333,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed_m_s": 0.2043750137090683,
+   "exploded": null,
+   "penInit_mm": 0,
+   "penMaxStatic_mm": 0.0020854893953824866,
+   "penMaxDynamic_mm": 0,
+   "penFinalStatic_mm": 0.0014615856694915469,
+   "penFinalDynamic_mm": 0,
+   "asleep": "1/1",
+   "allAsleepAt_s": 0.4083333333333333,
+   "driftPos_mm": 0,
+   "driftAng_deg": 0,
+   "stepMean_ms": 0.004587845000002252,
+   "stepP99_ms": 0.029417000000194093,
+   "stepTotal_ms": 11.010828000005404,
+   "hash": "77891de6e9bbf70f",
+   "slideDownhill_1s_to_10s_mm": 0,
+   "slideRate_mm_s": 0,
+   "axisFromShelfNormal_deg": 0,
+   "tanTilt": 0.2125565616700221
+  },
+  "mug_mu0.3": {
+   "restTime_s": 0.029166666666666667,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed_m_s": 0.2043750137090683,
+   "exploded": null,
+   "penInit_mm": 0,
+   "penMaxStatic_mm": 0.00035854070244527303,
+   "penMaxDynamic_mm": 0,
+   "penFinalStatic_mm": 0.0003317332009627333,
+   "penFinalDynamic_mm": 0,
+   "asleep": "1/1",
+   "allAsleepAt_s": 0.4083333333333333,
+   "driftPos_mm": 0,
+   "driftAng_deg": 0,
+   "stepMean_ms": 0.004544084166665622,
+   "stepP99_ms": 0.03125,
+   "stepTotal_ms": 10.905801999997491,
+   "hash": "7addb96f50632f51",
+   "slideDownhill_1s_to_10s_mm": 0,
+   "slideRate_mm_s": 0,
+   "axisFromShelfNormal_deg": 0,
+   "tanTilt": 0.2125565616700221
+  }
+ },
+ "runs": [
+  {
+   "engine": "physx",
+   "version": "5.11.0 (physx-js-webidl 2.8.0)",
+   "scene": "T4a-tumbler-over-tines",
+   "cfg": {
+    "ccd": false,
+    "sleep": true,
+    "tolLength": 0.1,
+    "tolSpeed": 1,
+    "solver": "tgs",
+    "posIters": 8,
+    "velIters": 2,
+    "contactOffset": 0.002,
+    "restOffset": 0,
+    "bounceThreshold": 0.2,
+    "enhancedDeterminism": true,
+    "dt": 0.004166666666666667
+   },
+   "params": {
+    "dt": 0.004166666666666667,
+    "tolerancesLength": 0.10000000149011612,
+    "tolerancesSpeed": 1,
+    "solver": "tgs",
+    "posIters": 8,
+    "velIters": 2,
+    "contactOffset": 0.002,
+    "restOffset": 0,
+    "bounceThresholdVelocity": 0.20000000298023224
+   },
+   "dt": 0.004166666666666667,
+   "steps": 1440,
+   "duration": 6,
+   "buildMs": 0.77475000000004,
+   "loadMs": 79.655,
+   "step": {
+    "meanMs": 0.006962625000001784,
+    "p50Ms": 0.0033330000001114968,
+    "p99Ms": 0.03320900000016991,
+    "maxMs": 0.10104200000023411,
+    "totalMs": 10.026180000002569
+   },
+   "stepActive": {
+    "meanMs": 0.024505720833343504,
+    "p50Ms": 0.0257090000000062,
+    "p99Ms": 0.0369580000001406,
+    "maxMs": 0.10104200000023411
+   },
+   "realTimeFactor": 598.4333016162151,
+   "restTime": 0.9416666666666667,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed": 0.44962507486343384,
+   "exploded": null,
+   "pen": {
+    "initialStatic_mm": 0,
+    "initialDynamic_mm": 0,
+    "maxStatic_mm": 0.0033296979460406377,
+    "maxStaticAt": 0.8375,
+    "maxDynamic_mm": 0,
+    "maxDynamicAt": 0,
+    "finalStatic_mm": 0.00015768312893122208,
+    "finalDynamic_mm": 0,
+    "finalWorstStatic": {
+     "body": 0,
+     "piece": 1,
+     "static": 9,
+     "tag": "base-z"
+    }
+   },
+   "sleep": {
+    "asleepAtEnd": 1,
+    "of": 1,
+    "allAsleepAt": 0.95,
+    "wokeAgain": false
+   },
+   "drift": {
+    "pos_mm": 0,
+    "ang_deg": 2.4265706493099338e-20,
+    "window": [
+     3,
+     6
+    ]
+   },
+   "bodies": [
+    {
+     "name": "tumbler",
+     "pos": [
+      0.015768149867653847,
+      0.08171659708023071,
+      -0.0011514949146658182
+     ],
+     "quat": [
+      0.9999794363975525,
+      -0.000006266021046030801,
+      -0.006413554772734642,
+      0.000004992123194824671
+     ],
+     "lean": 90,
+     "axisV": 0,
+     "asleep": true
+    }
+   ],
+   "hash": "52d4c6d19630cfb3",
+   "hashPose": "a01a9584ac9bd201",
+   "marks": {},
+   "mem": {
+    "before": {
+     "rssMB": 168.078125,
+     "heapUsedMB": 41.274627685546875,
+     "externalMB": 76.29190826416016,
+     "arrayBuffersMB": 10.407063484191895
+    },
+    "after": {
+     "rssMB": 169.890625,
+     "heapUsedMB": 40.103546142578125,
+     "externalMB": 76.29161834716797,
+     "arrayBuffersMB": 10.406773567199707
+    },
+    "engine": {
+     "wasmHeapMB": 64
+    }
+   },
+   "masses": [
+    0.15000000596046448
+   ]
+  },
+  {
+   "engine": "physx",
+   "version": "5.11.0 (physx-js-webidl 2.8.0)",
+   "scene": "T4b-mug-on-shelf",
+   "cfg": {
+    "ccd": false,
+    "sleep": true,
+    "tolLength": 0.1,
+    "tolSpeed": 1,
+    "solver": "tgs",
+    "posIters": 8,
+    "velIters": 2,
+    "contactOffset": 0.002,
+    "restOffset": 0,
+    "bounceThreshold": 0.2,
+    "enhancedDeterminism": true,
+    "dt": 0.004166666666666667
+   },
+   "params": {
+    "dt": 0.004166666666666667,
+    "tolerancesLength": 0.10000000149011612,
+    "tolerancesSpeed": 1,
+    "solver": "tgs",
+    "posIters": 8,
+    "velIters": 2,
+    "contactOffset": 0.002,
+    "restOffset": 0,
+    "bounceThresholdVelocity": 0.20000000298023224
+   },
+   "dt": 0.004166666666666667,
+   "steps": 2400,
+   "duration": 10,
+   "buildMs": 0.5086670000000595,
+   "loadMs": 79.655,
+   "step": {
+    "meanMs": 0.004587845000002252,
+    "p50Ms": 0.003290999999990163,
+    "p99Ms": 0.029417000000194093,
+    "maxMs": 0.12904100000014296,
+    "totalMs": 11.010828000005404
+   },
+   "stepActive": {
+    "meanMs": 0.014460766666678638,
+    "p50Ms": 0.0038749999998799467,
+    "p99Ms": 0.039249999999810825,
+    "maxMs": 0.12904100000014296
+   },
+   "realTimeFactor": 908.1969130745746,
+   "restTime": 0.03333333333333333,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed": 0.2043750137090683,
+   "exploded": null,
+   "pen": {
+    "initialStatic_mm": 0,
+    "initialDynamic_mm": 0,
+    "maxStatic_mm": 0.0020854893953824866,
+    "maxStaticAt": 0.0375,
+    "maxDynamic_mm": 0,
+    "maxDynamicAt": 0,
+    "finalStatic_mm": 0.0014615856694915469,
+    "finalDynamic_mm": 0,
+    "finalWorstStatic": {
+     "body": 0,
+     "piece": 6,
+     "static": 3,
+     "tag": "shelf-slope"
+    }
+   },
+   "sleep": {
+    "asleepAtEnd": 1,
+    "of": 1,
+    "allAsleepAt": 0.4083333333333333,
+    "wokeAgain": false
+   },
+   "drift": {
+    "pos_mm": 0,
+    "ang_deg": 0,
+    "window": [
+     5,
+     10
+    ]
+   },
+   "bodies": [
+    {
+     "name": "mug",
+     "pos": [
+      0.004902707878500223,
+      0.16134460270404816,
+      -0.006900313310325146
+     ],
+     "quat": [
+      0.9945223331451416,
+      -0.00005225837230682373,
+      0.0005887020379304886,
+      -0.10452314466238022
+     ],
+     "lean": 78.00067095464712,
+     "axisV": 11.999329045352896,
+     "asleep": true
+    }
+   ],
+   "hash": "77891de6e9bbf70f",
+   "hashPose": "0e013e530f8f42e3",
+   "marks": {},
+   "mem": {
+    "before": {
+     "rssMB": 169.890625,
+     "heapUsedMB": 40.46376037597656,
+     "externalMB": 76.30004119873047,
+     "arrayBuffersMB": 10.415196418762207
+    },
+    "after": {
+     "rssMB": 172.359375,
+     "heapUsedMB": 34.483001708984375,
+     "externalMB": 76.32176208496094,
+     "arrayBuffersMB": 10.436917304992676
+    },
+    "engine": {
+     "wasmHeapMB": 64
+    }
+   },
+   "masses": [
+    0.3199999928474426
+   ]
+  },
+  {
+   "engine": "physx",
+   "version": "5.11.0 (physx-js-webidl 2.8.0)",
+   "scene": "T4b-mug-on-shelf",
+   "cfg": {
+    "ccd": false,
+    "sleep": true,
+    "tolLength": 0.1,
+    "tolSpeed": 1,
+    "solver": "tgs",
+    "posIters": 8,
+    "velIters": 2,
+    "contactOffset": 0.002,
+    "restOffset": 0,
+    "bounceThreshold": 0.2,
+    "enhancedDeterminism": true,
+    "dt": 0.004166666666666667
+   },
+   "params": {
+    "dt": 0.004166666666666667,
+    "tolerancesLength": 0.10000000149011612,
+    "tolerancesSpeed": 1,
+    "solver": "tgs",
+    "posIters": 8,
+    "velIters": 2,
+    "contactOffset": 0.002,
+    "restOffset": 0,
+    "bounceThresholdVelocity": 0.20000000298023224
+   },
+   "dt": 0.004166666666666667,
+   "steps": 2400,
+   "duration": 10,
+   "buildMs": 0.4682079999997768,
+   "loadMs": 79.655,
+   "step": {
+    "meanMs": 0.004544084166665622,
+    "p50Ms": 0.0031669999998484855,
+    "p99Ms": 0.03125,
+    "maxMs": 0.14462500000036016,
+    "totalMs": 10.905801999997491
+   },
+   "stepActive": {
+    "meanMs": 0.015440958333323351,
+    "p50Ms": 0.004042000000026746,
+    "p99Ms": 0.04062500000009095,
+    "maxMs": 0.14462500000036016
+   },
+   "realTimeFactor": 916.9431097320767,
+   "restTime": 0.029166666666666667,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed": 0.2043750137090683,
+   "exploded": null,
+   "pen": {
+    "initialStatic_mm": 0,
+    "initialDynamic_mm": 0,
+    "maxStatic_mm": 0.00035854070244527303,
+    "maxStaticAt": 0.1375,
+    "maxDynamic_mm": 0,
+    "maxDynamicAt": 0,
+    "finalStatic_mm": 0.0003317332009627333,
+    "finalDynamic_mm": 0,
+    "finalWorstStatic": {
+     "body": 0,
+     "piece": 11,
+     "static": 4,
+     "tag": "shelf-slope"
+    }
+   },
+   "sleep": {
+    "asleepAtEnd": 1,
+    "of": 1,
+    "allAsleepAt": 0.4083333333333333,
+    "wokeAgain": false
+   },
+   "drift": {
+    "pos_mm": 0,
+    "ang_deg": 0,
+    "window": [
+     5,
+     10
+    ]
+   },
+   "bodies": [
+    {
+     "name": "mug",
+     "pos": [
+      0.004995024763047695,
+      0.1612817347049713,
+      -0.0065999021753668785
+     ],
+     "quat": [
+      0.9945208430290222,
+      0.00006309151649475098,
+      -0.0005743913352489471,
+      -0.10453737527132034
+     ],
+     "lean": 77.99902823003734,
+     "axisV": 12.000971769962668,
+     "asleep": true
+    }
+   ],
+   "hash": "7addb96f50632f51",
+   "hashPose": "066b15278d3a974c",
+   "marks": {},
+   "mem": {
+    "before": {
+     "rssMB": 172.359375,
+     "heapUsedMB": 34.83074951171875,
+     "externalMB": 76.33018493652344,
+     "arrayBuffersMB": 10.445340156555176
+    },
+    "after": {
+     "rssMB": 174.984375,
+     "heapUsedMB": 34.000221252441406,
+     "externalMB": 76.3445816040039,
+     "arrayBuffersMB": 10.459736824035645
+    },
+    "engine": {
+     "wasmHeapMB": 64
+    }
+   },
+   "masses": [
+    0.3199999928474426
+   ]
+  }
+ ]
+}

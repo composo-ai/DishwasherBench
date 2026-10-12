@@ -1,0 +1,68 @@
+name: A bug
+description: Something fails, crashes, refuses to run or behaves differently from what the documents say.
+title: '[bug] '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time. DishwasherBench has been run on one machine only (macOS on Apple silicon), so a report from any other machine is useful even when it is only "this is what happened".
+
+        Please do not paste a key, the address of a model endpoint, or a path that contains your name.
+        If a score or a verdict looks wrong although nothing failed, use "A result that looks physically wrong" instead.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected and what you got. Include the exact command.
+      placeholder: |
+        I ran `pnpm --filter @spotless/wash-runner wash-load tutorial-careful --tier fast`
+        and expected a report, but ...
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: The error message or the last lines of the output. This field is shown as plain text.
+      render: text
+  - type: dropdown
+    id: part
+    attributes:
+      label: Which part
+      options:
+        - Installing, typecheck or tests
+        - The page (playing in the browser)
+        - Washing a load (the simulation)
+        - The benchmark harness or the MCP server
+        - The calibration tool
+        - The documents
+        - Something else, or I do not know
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Operating system and hardware
+      description: For example "macOS 27.0.1, MacBook Pro, Apple M3 Pro" or "Ubuntu 24.04, x86-64, NVIDIA RTX 4070".
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Node, pnpm and browser versions
+      description: The output of `node --version` and `pnpm --version`, and the version of Chrome or Chromium if a picture or the page is involved.
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Commit
+      description: The output of `git rev-parse --short HEAD`, and whether you have local changes.
+  - type: checkboxes
+    id: stale
+    attributes:
+      label: If the wash refused to run
+      description: A wash refuses to run when a source file of the simulation or the machine data differs from what the parameter set was made for. CONTRIBUTING.md explains this.
+      options:
+        - label: I have not changed any file under `packages/` (or I have said above which).

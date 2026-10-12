@@ -1,0 +1,41 @@
+{
+  "name": "spotless",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DishwasherBench: Spotless, a dishwasher-loading simulation game, and the LLM benchmark built on it",
+  "license": "MIT",
+  "homepage": "https://github.com/composo-ai/DishwasherBench#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/composo-ai/DishwasherBench.git"
+  },
+  "bugs": {
+    "url": "https://github.com/composo-ai/DishwasherBench/issues"
+  },
+  "type": "module",
+  "packageManager": "pnpm@9.4.0",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json && pnpm -r --no-bail run typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "hygiene": "node scripts/check-hygiene.mjs",
+    "hygiene:test": "node --test scripts/check-hygiene.test.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "prettier": "3.9.9",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vitest": "4.1.11"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

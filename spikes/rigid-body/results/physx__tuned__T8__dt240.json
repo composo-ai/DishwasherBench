@@ -1,0 +1,469 @@
+{
+ "engine": "physx",
+ "preset": "tuned",
+ "test": "T8",
+ "hz": 240,
+ "tag": null,
+ "cfg": {
+  "ccd": false,
+  "sleep": true,
+  "tolLength": 0.1,
+  "tolSpeed": 1,
+  "solver": "tgs",
+  "posIters": 8,
+  "velIters": 2,
+  "contactOffset": 0.002,
+  "restOffset": 0,
+  "bounceThreshold": 0.2,
+  "enhancedDeterminism": true,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {},
+ "wallSeconds": 19.585069999999998,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:30:37.493Z",
+ "summary": {
+  "T2@1/120": {
+   "counts": {
+    "bodies": 12,
+    "pieces": 876,
+    "vertices": 7488,
+    "staticCapsules": 236,
+    "staticBoxes": 0
+   },
+   "stepMean_ms": {
+    "best": 0.07905617333333334,
+    "median": 0.0808760500000001,
+    "worst": 0.08327600666666664
+   },
+   "stepActiveMean_ms": {
+    "best": 0.37191665000000046,
+    "median": 0.3822090583333325,
+    "worst": 0.39234231666666636
+   },
+   "stepP99_ms": {
+    "best": 1.0735830000000135,
+    "median": 1.078833000000003,
+    "worst": 1.0847499999999854
+   },
+   "stepMax_ms": {
+    "best": 8.367999999999995,
+    "median": 8.735332999999997
+   },
+   "total_ms": {
+    "best": 47.433704000000006,
+    "median": 48.52563000000006
+   },
+   "build_ms": {
+    "best": 104.887084,
+    "median": 106.35300000000001
+   },
+   "rssAfter_MB": 133.15625,
+   "rssDelta_MB": 93.25,
+   "engineMem": {
+    "wasmHeapMB": 64
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 0.4083333333333333,
+    "exploded": null,
+    "asleep": "12/12",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 0.5743317945254589
+   }
+  },
+  "T2@1/240": {
+   "counts": {
+    "bodies": 12,
+    "pieces": 876,
+    "vertices": 7488,
+    "staticCapsules": 236,
+    "staticBoxes": 0
+   },
+   "stepMean_ms": {
+    "best": 0.07496225083333345,
+    "median": 0.0782344058333331,
+    "worst": 0.0793787233333335
+   },
+   "stepActiveMean_ms": {
+    "best": 0.3542613291666662,
+    "median": 0.3682314500000002,
+    "worst": 0.3747069458333335
+   },
+   "stepP99_ms": {
+    "best": 0.8314169999999876,
+    "median": 0.834666999999996,
+    "worst": 0.842250000000007
+   },
+   "stepMax_ms": {
+    "best": 8.662916999999993,
+    "median": 8.783500000000004
+   },
+   "total_ms": {
+    "best": 89.95470100000014,
+    "median": 93.88128699999973
+   },
+   "build_ms": {
+    "best": 105.185917,
+    "median": 105.32220799999999
+   },
+   "rssAfter_MB": 131.4375,
+   "rssDelta_MB": 92.125,
+   "engineMem": {
+    "wasmHeapMB": 64
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 0.2875,
+    "exploded": null,
+    "asleep": "12/12",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 0.6131251454353333
+   }
+  },
+  "T2@1/480": {
+   "counts": {
+    "bodies": 12,
+    "pieces": 876,
+    "vertices": 7488,
+    "staticCapsules": 236,
+    "staticBoxes": 0
+   },
+   "stepMean_ms": {
+    "best": 0.06377783124999915,
+    "median": 0.06522960624999956,
+    "worst": 0.06974455125000052
+   },
+   "stepActiveMean_ms": {
+    "best": 0.3000556541666652,
+    "median": 0.30671688541666714,
+    "worst": 0.33079573958333286
+   },
+   "stepP99_ms": {
+    "best": 0.7071249999999907,
+    "median": 0.7167090000000087,
+    "worst": 0.8253750000000082
+   },
+   "stepMax_ms": {
+    "best": 8.48845799999998,
+    "median": 9.608542
+   },
+   "total_ms": {
+    "best": 153.06679499999797,
+    "median": 156.55105499999894
+   },
+   "build_ms": {
+    "best": 103.70037500000001,
+    "median": 106.62629199999999
+   },
+   "rssAfter_MB": 135.265625,
+   "rssDelta_MB": 94.78125,
+   "engineMem": {
+    "wasmHeapMB": 64
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 0.24791666666666667,
+    "exploded": null,
+    "asleep": "12/12",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 0.6335625052452087
+   }
+  },
+  "T5@1/120": {
+   "counts": {
+    "bodies": 20,
+    "pieces": 140,
+    "vertices": 1160,
+    "staticCapsules": 0,
+    "staticBoxes": 10
+   },
+   "stepMean_ms": {
+    "best": 0.06738071666666609,
+    "median": 0.07858146166666675,
+    "worst": 0.07949713999999976
+   },
+   "stepActiveMean_ms": {
+    "best": 0.28086569166666586,
+    "median": 0.32731941666666653,
+    "worst": 0.33233960000000096
+   },
+   "stepP99_ms": {
+    "best": 0.36324999999999363,
+    "median": 0.4632919999999956,
+    "worst": 0.5771250000000236
+   },
+   "stepMax_ms": {
+    "best": 7.662166999999982,
+    "median": 8.385625000000005
+   },
+   "total_ms": {
+    "best": 40.42842999999966,
+    "median": 47.148877000000056
+   },
+   "build_ms": {
+    "best": 101.14470899999999,
+    "median": 103.777083
+   },
+   "rssAfter_MB": 132.890625,
+   "rssDelta_MB": 97.5,
+   "engineMem": {
+    "wasmHeapMB": 64
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 2.3666666666666667,
+    "exploded": null,
+    "asleep": "20/20",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.4715003967285156
+   }
+  },
+  "T5@1/240": {
+   "counts": {
+    "bodies": 20,
+    "pieces": 140,
+    "vertices": 1160,
+    "staticCapsules": 0,
+    "staticBoxes": 10
+   },
+   "stepMean_ms": {
+    "best": 0.0588834366666664,
+    "median": 0.059725975000000285,
+    "worst": 0.06322408000000007
+   },
+   "stepActiveMean_ms": {
+    "best": 0.2630885458333335,
+    "median": 0.26597100833333187,
+    "worst": 0.2839159666666666
+   },
+   "stepP99_ms": {
+    "best": 0.3574169999999981,
+    "median": 0.3634999999999877,
+    "worst": 0.3653750000000002
+   },
+   "stepMax_ms": {
+    "best": 7.622417000000013,
+    "median": 7.799333000000004
+   },
+   "total_ms": {
+    "best": 70.66012399999968,
+    "median": 71.67117000000034
+   },
+   "build_ms": {
+    "best": 101.62845800000001,
+    "median": 102.931208
+   },
+   "rssAfter_MB": 131.109375,
+   "rssDelta_MB": 96.046875,
+   "engineMem": {
+    "wasmHeapMB": 64
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 1.0958333333333332,
+    "exploded": null,
+    "asleep": "20/20",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.4306248426437378
+   }
+  },
+  "T5@1/480": {
+   "counts": {
+    "bodies": 20,
+    "pieces": 140,
+    "vertices": 1160,
+    "staticCapsules": 0,
+    "staticBoxes": 10
+   },
+   "stepMean_ms": {
+    "best": 0.04328224041666697,
+    "median": 0.04400594750000008,
+    "worst": 0.04529659000000039
+   },
+   "stepActiveMean_ms": {
+    "best": 0.1866053958333332,
+    "median": 0.1902947062499995,
+    "worst": 0.19296695208333334
+   },
+   "stepP99_ms": {
+    "best": 0.21820800000000418,
+    "median": 0.2245410000000163,
+    "worst": 0.22512499999999136
+   },
+   "stepMax_ms": {
+    "best": 7.713083000000012,
+    "median": 7.979165999999992
+   },
+   "total_ms": {
+    "best": 103.87737700000073,
+    "median": 105.6142740000002
+   },
+   "build_ms": {
+    "best": 100.450458,
+    "median": 103.014417
+   },
+   "rssAfter_MB": 136.203125,
+   "rssDelta_MB": 100.90625,
+   "engineMem": {
+    "wasmHeapMB": 64
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 1.1583333333333332,
+    "exploded": null,
+    "asleep": "20/20",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.451061725616455
+   }
+  },
+  "FULL@1/120": {
+   "counts": {
+    "bodies": 122,
+    "pieces": 3028,
+    "vertices": 25872,
+    "staticCapsules": 1355,
+    "staticBoxes": 30
+   },
+   "stepMean_ms": {
+    "best": 1.8231547666666663,
+    "median": 1.8586991312500003,
+    "worst": 1.8944679708333325
+   },
+   "stepActiveMean_ms": {
+    "best": 3.715915583333329,
+    "median": 3.8516292083333328,
+    "worst": 4.074997625
+   },
+   "stepP99_ms": {
+    "best": 5.674999999999983,
+    "median": 6.0068749999999795,
+    "worst": 6.2603750000000105
+   },
+   "stepMax_ms": {
+    "best": 12.338124999999991,
+    "median": 13.14545800000002
+   },
+   "total_ms": {
+    "best": 875.1142879999999,
+    "median": 892.1755830000002
+   },
+   "build_ms": {
+    "best": 95.26912499999999,
+    "median": 111.99670800000001
+   },
+   "rssAfter_MB": 141.25,
+   "rssDelta_MB": 98.328125,
+   "engineMem": {
+    "wasmHeapMB": 64
+   },
+   "simSeconds": 4,
+   "stability": {
+    "restTime_s": null,
+    "exploded": null,
+    "asleep": "112/122",
+    "rmsLin_mm_s": 2.329713742218816,
+    "maxSpeed": 1.4715003967285156
+   }
+  },
+  "FULL@1/240": {
+   "counts": {
+    "bodies": 122,
+    "pieces": 3028,
+    "vertices": 25872,
+    "staticCapsules": 1355,
+    "staticBoxes": 30
+   },
+   "stepMean_ms": {
+    "best": 1.4328516645833358,
+    "median": 1.4668316437500015,
+    "worst": 1.5228019510416608
+   },
+   "stepActiveMean_ms": {
+    "best": 3.403888929166671,
+    "median": 3.4459062458333345,
+    "worst": 3.655062516666667
+   },
+   "stepP99_ms": {
+    "best": 4.76683300000002,
+    "median": 4.776291000000015,
+    "worst": 5.150292000000036
+   },
+   "stepMax_ms": {
+    "best": 12.259999999999991,
+    "median": 12.323958000000005
+   },
+   "total_ms": {
+    "best": 1375.5375980000024,
+    "median": 1408.1583780000014
+   },
+   "build_ms": {
+    "best": 96.42591700000001,
+    "median": 96.50312500000001
+   },
+   "rssAfter_MB": 141.734375,
+   "rssDelta_MB": 98.34375,
+   "engineMem": {
+    "wasmHeapMB": 64
+   },
+   "simSeconds": 4,
+   "stability": {
+    "restTime_s": 3.1416666666666666,
+    "exploded": null,
+    "asleep": "118/122",
+    "rmsLin_mm_s": 0.5745402161781517,
+    "maxSpeed": 1.4306248426437378
+   }
+  },
+  "FULL@1/480": {
+   "counts": {
+    "bodies": 122,
+    "pieces": 3028,
+    "vertices": 25872,
+    "staticCapsules": 1355,
+    "staticBoxes": 30
+   },
+   "stepMean_ms": {
+    "best": 0.8905097026041656,
+    "median": 0.9110147500000042,
+    "worst": 0.9313086567708363
+   },
+   "stepActiveMean_ms": {
+    "best": 2.7193420875,
+    "median": 2.776812704166669,
+    "worst": 2.8534719208333352
+   },
+   "stepP99_ms": {
+    "best": 4.427374999999984,
+    "median": 4.516707999999994,
+    "worst": 4.805917000000022
+   },
+   "stepMax_ms": {
+    "best": 12.165415999999993,
+    "median": 12.442207999999994
+   },
+   "total_ms": {
+    "best": 1709.778628999998,
+    "median": 1749.148320000008
+   },
+   "build_ms": {
+    "best": 96.616042,
+    "median": 96.967667
+   },
+   "rssAfter_MB": 143.34375,
+   "rssDelta_MB": 99.5625,
+   "engineMem": {
+    "wasmHeapMB": 64
+   },
+   "simSeconds": 4,
+   "stability": {
+    "restTime_s": 3.3916666666666666,
+    "exploded": null,
+    "asleep": "120/122",
+    "rmsLin_mm_s": 0.18480130216332297,
+    "maxSpeed": 1.451061725616455
+   }
+  }
+ },
+ "runs": []
+}

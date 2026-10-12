@@ -1,0 +1,121 @@
+{
+  "when": "2026-10-08T15:11:04.356Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 203,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "w": 2048,
+  "h": 2048,
+  "cases": [
+    {
+      "impl": "JS single thread",
+      "variant": "f64 intermediates (idiomatic)",
+      "threads": 1,
+      "cellUpdatesPerSec": {
+        "best": 54657037.375601865,
+        "median": 54494230.68126112
+      },
+      "spreadPct": 2.1656262250956653
+    },
+    {
+      "impl": "JS single thread",
+      "variant": "f32 via Math.fround (bit-faithful)",
+      "threads": 1,
+      "cellUpdatesPerSec": {
+        "best": 36392387.21581068,
+        "median": 35507155.94759824
+      },
+      "spreadPct": 3.9788402296147867
+    },
+    {
+      "impl": "JS worker_threads + SharedArrayBuffer",
+      "variant": "f64",
+      "threads": 2,
+      "cellUpdatesPerSec": {
+        "best": 108945889.3724118,
+        "median": 108472580.72772475
+      },
+      "spreadPct": 1.1825559706344453,
+      "matchesSingleThread": true
+    },
+    {
+      "impl": "JS worker_threads + SharedArrayBuffer",
+      "variant": "f64",
+      "threads": 5,
+      "cellUpdatesPerSec": {
+        "best": 259942275.38880002,
+        "median": 258501086.89651275
+      },
+      "spreadPct": 1.361750693935891,
+      "matchesSingleThread": true
+    },
+    {
+      "impl": "JS worker_threads + SharedArrayBuffer",
+      "variant": "f64",
+      "threads": 8,
+      "cellUpdatesPerSec": {
+        "best": 271547998.5377394,
+        "median": 269810531.34284025
+      },
+      "spreadPct": 2.2398531716903776,
+      "matchesSingleThread": true
+    },
+    {
+      "impl": "JS worker_threads + SharedArrayBuffer",
+      "variant": "f64",
+      "threads": 11,
+      "cellUpdatesPerSec": {
+        "best": 319610663.07674897,
+        "median": 318402420.9381028
+      },
+      "spreadPct": 2.932130416577767,
+      "matchesSingleThread": true
+    },
+    {
+      "impl": "JS worker_threads + SharedArrayBuffer",
+      "variant": "f32",
+      "threads": 2,
+      "cellUpdatesPerSec": {
+        "best": 72832108.16943164,
+        "median": 72341068.34822227
+      },
+      "spreadPct": 0.898302139627656,
+      "matchesSingleThread": true
+    },
+    {
+      "impl": "JS worker_threads + SharedArrayBuffer",
+      "variant": "f32",
+      "threads": 5,
+      "cellUpdatesPerSec": {
+        "best": 174382315.8270709,
+        "median": 173482132.40108988
+      },
+      "spreadPct": 2.4023353772904623,
+      "matchesSingleThread": true
+    },
+    {
+      "impl": "JS worker_threads + SharedArrayBuffer",
+      "variant": "f32",
+      "threads": 8,
+      "cellUpdatesPerSec": {
+        "best": 180551980.6660676,
+        "median": 176393850.42410502
+      },
+      "spreadPct": 6.434474142190815,
+      "matchesSingleThread": true
+    },
+    {
+      "impl": "JS worker_threads + SharedArrayBuffer",
+      "variant": "f32",
+      "threads": 11,
+      "cellUpdatesPerSec": {
+        "best": 187981648.4526793,
+        "median": 185952533.40337458
+      },
+      "spreadPct": 2.5269538191484706,
+      "matchesSingleThread": true
+    }
+  ]
+}

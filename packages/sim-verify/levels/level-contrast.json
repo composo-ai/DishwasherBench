@@ -1,0 +1,312 @@
+{
+ "suite": "spotless-level-contrast",
+ "simVersion": "spotless-sim 0.5.0 water-7",
+ "tier": "fast",
+ "exposureSource": "325c9602e38528c76d71eaf5fd2d7f1d187015b9b6ea948d2426c97bf07ed0e0",
+ "sourceFingerprint": "f58d4ed8ab930946e89883b641dc26ac622ef1fc9d3ce1be9b372df174fdbae4",
+ "paramSets": [
+  "anchored-v7.owner-capsule"
+ ],
+ "paramSetsHash": "6232540bc607dbf7f3f72dd75bfe86272cc7fb0a174b3342aab47b8475492359",
+ "detergent": {
+  "name": "unnamed detergent",
+  "dose_g": 12.9
+ },
+ "rows": [
+  {
+   "level": "baking-day",
+   "careful": {
+    "points": 191,
+    "pointsStrict": 191,
+    "pointsLenient": 191,
+    "offered": 272,
+    "placed": 38,
+    "items": 46,
+    "dirty": [
+     "custard_pan_01"
+    ],
+    "edge": [],
+    "mistakes": 0,
+    "loadState": "sha256:a019e24f88078e2b215a2b37a6243fbc7f07da07db81e7e3b1856016d86561cd",
+    "programme": "eco_50"
+   },
+   "careless": {
+    "points": 114,
+    "pointsStrict": 114,
+    "pointsLenient": 114,
+    "offered": 272,
+    "placed": 40,
+    "items": 46,
+    "dirty": [
+     "cake_plate_01",
+     "cake_plate_05",
+     "cake_plate_06",
+     "curd_pot_01",
+     "curd_pot_02",
+     "custard_pan_01",
+     "mug_03",
+     "mug_04",
+     "smoothie_glass_01",
+     "smoothie_glass_02",
+     "smoothie_glass_04",
+     "smoothie_glass_05",
+     "smoothie_glass_06"
+    ],
+    "edge": [],
+    "mistakes": 14,
+    "loadState": "sha256:9cb477cc4574693c6a938ac564d591845df6426d44612aee1c861508d02650fd",
+    "programme": "eco_50"
+   }
+  },
+  {
+   "level": "breakfast",
+   "careful": {
+    "points": 174,
+    "pointsStrict": 174,
+    "pointsLenient": 174,
+    "offered": 220,
+    "placed": 34,
+    "items": 37,
+    "dirty": [],
+    "edge": [],
+    "mistakes": 0,
+    "loadState": "sha256:5495dfcee7768ee8859f02f7e1bced3f29ff2a1247c7c61a26423442dc504029",
+    "programme": "eco_50"
+   },
+   "careless": {
+    "points": 109,
+    "pointsStrict": 109,
+    "pointsLenient": 109,
+    "offered": 220,
+    "placed": 34,
+    "items": 37,
+    "dirty": [
+     "fork_01",
+     "fork_04",
+     "juice_glass_02",
+     "juice_glass_03",
+     "juice_glass_04",
+     "mug_01",
+     "mug_02",
+     "smoothie_glass_01",
+     "smoothie_glass_03",
+     "smoothie_glass_04"
+    ],
+    "edge": [],
+    "mistakes": 14,
+    "loadState": "sha256:3324d8158d6605f4a0567de774c0daa4ff96d1baae88aca954264e6ee4305d07",
+    "programme": "eco_50"
+   }
+  },
+  {
+   "level": "dinner-party",
+   "careful": {
+    "points": 249,
+    "pointsStrict": 249,
+    "pointsLenient": 249,
+    "offered": 367,
+    "placed": 49,
+    "items": 62,
+    "dirty": [
+     "fork_01",
+     "fork_05",
+     "juice_glass_06",
+     "serving_spoon_02"
+    ],
+    "edge": [],
+    "mistakes": 0,
+    "loadState": "sha256:a326f1b45e47d56d91d015951f651076e7695086bb31957eae585c608727f4d2",
+    "programme": "eco_50"
+   },
+   "careless": {
+    "points": 100,
+    "pointsStrict": 100,
+    "pointsLenient": 100,
+    "offered": 367,
+    "placed": 51,
+    "items": 62,
+    "dirty": [
+     "dessert_plate_01",
+     "dessert_plate_02",
+     "dessert_plate_04",
+     "dessert_plate_05",
+     "dessert_plate_06",
+     "dinner_plate_01",
+     "dinner_plate_02",
+     "dinner_plate_03",
+     "dinner_plate_04",
+     "dinner_plate_05",
+     "dinner_plate_06",
+     "fork_05",
+     "gazpacho_glass_01",
+     "gazpacho_glass_02",
+     "gazpacho_glass_03",
+     "gazpacho_glass_04",
+     "gazpacho_glass_06",
+     "guacamole_pot_01",
+     "guacamole_pot_03",
+     "guacamole_pot_04",
+     "juice_glass_02",
+     "juice_glass_03",
+     "juice_glass_04",
+     "juice_glass_06"
+    ],
+    "edge": [],
+    "mistakes": 16,
+    "loadState": "sha256:9986b83358359b05e4c7e2a0f8c673cc94d19e18b3a28ff2fe9e22516d74bbba",
+    "programme": "eco_50"
+   }
+  },
+  {
+   "level": "lunch-for-four",
+   "careful": {
+    "points": 187,
+    "pointsStrict": 187,
+    "pointsLenient": 187,
+    "offered": 232,
+    "placed": 36,
+    "items": 39,
+    "dirty": [],
+    "edge": [],
+    "mistakes": 0,
+    "loadState": "sha256:313420b440971fd4ed5c28cab005ed15c061b9c62b7095beb796544e8c9aaf55",
+    "programme": "eco_50"
+   },
+   "careless": {
+    "points": 134,
+    "pointsStrict": 134,
+    "pointsLenient": 134,
+    "offered": 232,
+    "placed": 36,
+    "items": 39,
+    "dirty": [
+     "ketchup_pot_01",
+     "ketchup_pot_02",
+     "mug_03",
+     "mug_04",
+     "smoothie_glass_01",
+     "smoothie_glass_04",
+     "squash_glass_01",
+     "squash_glass_02"
+    ],
+    "edge": [],
+    "mistakes": 12,
+    "loadState": "sha256:3de012e0162b51331f383576e9e4883d74c79d0b4ef5bd069da4e64728b2d4cd",
+    "programme": "eco_50"
+   }
+  },
+  {
+   "level": "mixed-family",
+   "careful": {
+    "points": 218,
+    "pointsStrict": 218,
+    "pointsLenient": 218,
+    "offered": 266,
+    "placed": 40,
+    "items": 45,
+    "dirty": [
+     "spatula_01"
+    ],
+    "edge": [],
+    "mistakes": 0,
+    "loadState": "sha256:18dee0c639058f4c362ad4106562348026f94db61bf027c11cf0d8677e124e79",
+    "programme": "eco_50"
+   },
+   "careless": {
+    "points": 148,
+    "pointsStrict": 148,
+    "pointsLenient": 148,
+    "offered": 266,
+    "placed": 39,
+    "items": 45,
+    "dirty": [
+     "glass_01",
+     "glass_02",
+     "glass_03",
+     "glass_04",
+     "mug_03",
+     "mug_04",
+     "side_plate_04",
+     "sippy_cup_02"
+    ],
+    "edge": [],
+    "mistakes": 13,
+    "loadState": "sha256:bc1c43dce9920c8952153a73cc2f771d3cd12f6d9eb2cebe01e089104a727045",
+    "programme": "eco_50"
+   }
+  },
+  {
+   "level": "tutorial",
+   "careful": {
+    "points": 64,
+    "pointsStrict": 64,
+    "pointsLenient": 64,
+    "offered": 64,
+    "placed": 12,
+    "items": 12,
+    "dirty": [],
+    "edge": [],
+    "mistakes": 0,
+    "loadState": "sha256:6611e8871f273a843e03a6287ed0b7fb068f3a305a3a540da27fef5c5727d8c2",
+    "programme": "eco_50"
+   },
+   "careless": {
+    "points": 58,
+    "pointsStrict": 58,
+    "pointsLenient": 58,
+    "offered": 64,
+    "placed": 11,
+    "items": 12,
+    "dirty": [],
+    "edge": [],
+    "mistakes": 3,
+    "loadState": "sha256:e706ae661e8b1faa3a7ea8c5e80221a07f4f535485c5a425e2d1dbb8bc19e4f4",
+    "programme": "eco_50"
+   }
+  },
+  {
+   "level": "weeknight-dinner",
+   "careful": {
+    "points": 204,
+    "pointsStrict": 204,
+    "pointsLenient": 204,
+    "offered": 269,
+    "placed": 40,
+    "items": 46,
+    "dirty": [
+     "serving_spoon_01"
+    ],
+    "edge": [],
+    "mistakes": 0,
+    "loadState": "sha256:f85651170c8655282eb486f913586484fe91707e9a81652dd9d0f2d962da9438",
+    "programme": "eco_50"
+   },
+   "careless": {
+    "points": 119,
+    "pointsStrict": 119,
+    "pointsLenient": 119,
+    "offered": 269,
+    "placed": 39,
+    "items": 46,
+    "dirty": [
+     "fork_02",
+     "guacamole_pot_01",
+     "guacamole_pot_02",
+     "guacamole_pot_03",
+     "ketchup_pot_02",
+     "mug_01",
+     "serving_spoon_01",
+     "smoothie_glass_01",
+     "smoothie_glass_02",
+     "smoothie_glass_03",
+     "smoothie_glass_04",
+     "tumbler_02"
+    ],
+    "edge": [],
+    "mistakes": 13,
+    "loadState": "sha256:3f1e2c98a5bace3bf9e55c0d371689f04882ba388e3d35893721ef5e6f7a045a",
+    "programme": "eco_50"
+   }
+  }
+ ]
+}

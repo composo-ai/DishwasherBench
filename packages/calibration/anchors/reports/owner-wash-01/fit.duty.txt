@@ -1,0 +1,114 @@
+log posterior -10.869 at the start, -6.681 at the estimate (log likelihood -10.861 -> -6.325, log prior -0.007 -> -0.356)
+78 evaluations of the objective, 49 computed, 1554.9 s; 2 minimisations
+
+parameter      unit  default  range     tag        estimate  95 % interval  moved (prior sd)  of range  post/prior sd  step  verdict
+-------------  ----  -------  --------  ---------  --------  -------------  ----------------  --------  -------------  ----  ----------
+prog.soakDuty  1         0.5  0.1 .. 1  ESTIMATED    0.8013  0.59 .. 1 (p)             +0.84      18 %           0.36   0.1  identified
+interval: (p) from the profile of the parameter (the others re-fitted along it), else the normal approximation at the estimate; step: of the derivatives behind the deviations, as a share of the prior deviation, chosen in 1 rounds
+
+prior against records:
+  prog.soakDuty: the log posterior falls by 3.3 with it at its prior centre 0.53
+  the records alone could gain about 0.1 of log likelihood over the estimate (linearised)
+
+no other local optimum was found near the estimate in log posterior (from the starts and the scans of each parameter)
+
+profiles (the other parameters re-fitted at every value):
+  prog.soakDuty: 95 % interval 0.59 .. up to the bound (normal approximation 0.565 .. 1)
+    0.551: -9.39  0.589: -8.62  0.594: -8.56  0.624: -8.02  0.707: -7.25  0.801: -6.68  0.908: -6.82  1: -6.95
+
+restricted replay against the replay of every soil, at the estimate (largest difference of a prediction):
+  owner-wash-01-egg-yolk-eco50: 0.000 deviations of its observation (plate_9122.clean); visible_area 4.85e-6, clean 3.62e-7, specks 0; background computed again 1 times, the last moving the log posterior by 0.001
+
+local identifiability at the estimate (from the derivatives there):
+parameter      sensitivity  information  post/prior sd  if others known  contraction  verdict     confounded with
+-------------  -----------  -----------  -------------  ---------------  -----------  ----------  ---------------
+prog.soakDuty        0.739         6.55          0.364            0.364         0.87  identified  -
+
+sensitivity: rms over the observations of the move of a prediction, in noise deviations, per prior deviation of the parameter
+information: Fisher information of the records about the parameter alone, in units of its prior precision
+
+information  combination (loadings in prior deviations)  reading
+-----------  ------------------------------------------  -----------
+       6.55  +1.00 prog.soakDuty                         constrained
+
+posterior predictive check (p near 0: the records scatter more than the model allows; near 1: less):
+record                        draws  deviance  replicated     p  beyond 3 sd       gross errors (P > 0.5)
+----------------------------  -----  --------  ----------  ----  ----------------  ----------------------
+owner-wash-01-egg-yolk-eco50     20      12.6        14.3  0.80  plate_9124.clean  -
+
+fit to each observation (predicted: the mean of the predicted observation; residual in its deviations):
+record                        observation              observed  predicted     sd  residual  log lik  P(gross error)
+----------------------------  -----------------------  --------  ---------  -----  --------  -------  --------------
+owner-wash-01-egg-yolk-eco50  plate_9121.visible_area       100        126     93     -0.28    -1.85            0.01
+owner-wash-01-egg-yolk-eco50  plate_9121.clean            false       0.02   0.14     -0.14    -0.20            0.00
+owner-wash-01-egg-yolk-eco50  plate_9121.specks               7        107   76.5     -1.31    -4.55            0.00
+owner-wash-01-egg-yolk-eco50  plate_9122.visible_area        25       15.1   15.1      0.66    -1.98            0.01
+owner-wash-01-egg-yolk-eco50  plate_9122.clean            false       0.02   0.14     -0.14    -0.44            0.00
+owner-wash-01-egg-yolk-eco50  plate_9122.specks               5        9.2   7.18     -0.59    -3.55            0.00
+owner-wash-01-egg-yolk-eco50  plate_9123.visible_area         0       1.05   3.54     -0.30    -0.66            0.01
+owner-wash-01-egg-yolk-eco50  plate_9123.clean             true      0.911  0.285      0.31    -0.52            0.00
+owner-wash-01-egg-yolk-eco50  plate_9123.specks               0        1.2   1.39     -0.87    -0.86            0.00
+owner-wash-01-egg-yolk-eco50  plate_9124.visible_area         0       15.4   11.9     -1.29    -1.29            0.08
+owner-wash-01-egg-yolk-eco50  plate_9124.clean             true       0.02   0.14      7.00    -1.00            0.00
+owner-wash-01-egg-yolk-eco50  plate_9124.specks               0       12.2   9.31     -1.31    -1.42            0.00
+
+the six in-machine egg-yolk rates at the fitted set: all within tolerance
+  30 C, pH 10.5, 60 g/m3: 0.84 against 0.85 +- 0.17 % per minute
+  55 C, pH 10.5, 60 g/m3: 1.79 against 1.75 +- 0.35 % per minute
+  55 C, pH 10.5, 20 g/m3: 0.17 against 0.17 +- 0.05 % per minute
+  55 C, pH 10.5, 100 g/m3: 2.47 against 2.59 +- 0.52 % per minute
+  55 C, pH 9.5, 60 g/m3: 0.68 against 0.69 +- 0.16 % per minute
+  55 C, pH 11.5, 60 g/m3: 4.77 against 4.66 +- 0.93 % per minute
+
+at the estimate: {
+ "z": [
+  -0.22152218055994533
+ ],
+ "values": {
+  "prog.soakDuty": 0.8012981487092017
+ },
+ "logPosterior": -6.681248750389148,
+ "ownerLogLikelihood": -5.780207184368879,
+ "literatureLogLikelihood": -0.5452247007744966,
+ "logPrior": -0.35581686524577294,
+ "plates": {
+  "plate_9121": {
+   "nominal": 101.46679412609532,
+   "median": 101.46679412609532,
+   "low": 0,
+   "high": 8967.758771136474,
+   "cleanShare": 0.17841
+  },
+  "plate_9122": {
+   "nominal": 11.052792950443338,
+   "median": 11.052792950443338,
+   "low": 0,
+   "high": 4450.09017770232,
+   "cleanShare": 0.37958
+  },
+  "plate_9123": {
+   "nominal": 0.22026148210681937,
+   "median": 0.22026148210681937,
+   "low": 0,
+   "high": 1356.5228309414715,
+   "cleanShare": 0.62042
+  },
+  "plate_9124": {
+   "nominal": 12.62316959511176,
+   "median": 12.62316959511176,
+   "low": 0,
+   "high": 5640.920042068081,
+   "cleanShare": 0.37958
+  }
+ },
+ "literature": {
+  "protease": 0.016,
+  "crockery": 3.4107465500319987,
+  "cutlery": 4.62634797822094,
+  "glass": 3.1534617298912044,
+  "all": 4.0908303110776245,
+  "milkGlasses": 2.1591718921403142,
+  "teaItems": 1.1474037025815969,
+  "clamped": false
+ }
+}

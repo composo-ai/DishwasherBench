@@ -1,0 +1,7504 @@
+{
+ "provenance": {
+  "simVersion": "spotless-sim 0.3.2 water-3",
+  "tier": "official",
+  "hydroHash": "sha256:e4abd440fb6306d0c522f2c99daf30296a2051298ff92c56599c9d7e23888651",
+  "soilHash": "sha256:6090c1c89fa31d68f457542f4bb0654d306877bddf0808993a5046a15bb23f05",
+  "inputHash": "sha256:6d97808ae9c6f161e7c3108e3e40f130156eaba8a5eacc1eb3234fe3bd3feb4c",
+  "levelSeed": 60437,
+  "simSeed": 1,
+  "exposureSchema": 4,
+  "exposureStandIn": false,
+  "exposureBackend": "gpu",
+  "resultHash": "sha256:ae0f6374422678c96f46a321c043794e897508daf7bf5b86493c681c4e7ae438"
+ },
+ "soilClasses": [
+  "adhesive",
+  "egg_yolk",
+  "fat",
+  "soluble",
+  "starch",
+  "tea"
+ ],
+ "items": [
+  {
+   "itemId": "cup_01",
+   "typeId": "tea_cup_porcelain_210",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 0.09999999931522222,
+   "residualMass_mg": 0.011373345400265876,
+   "initialVisibleAreaMm2": 7206.270930051804,
+   "visibleAreaMm2": 7206.270930051804,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 1.1675476798700402,
+    "puddle_mL": 0,
+    "film_g": 3.3162494418288317,
+    "pools": [
+     {
+      "volume_mL": 1.1675476798700402,
+      "capacity_mL": 1.1675476798700402,
+      "detergent_g_L": 0.3211165299987787,
+      "dissolvedSoil_mg": 0
+     }
+    ]
+   },
+   "jetLiftRatio": 0.07256496192690955,
+   "regionIds": [
+    "rim",
+    "interior",
+    "exterior",
+    "foot",
+    "handle"
+   ],
+   "regions": [
+    {
+     "regionId": "interior",
+     "areaMm2": 7206.270930051804,
+     "initialMass_mg": 0.09999999931522222,
+     "residualMass_mg": 0.011373345400265876,
+     "visibleAreaMm2": 7206.270930051804,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_tea",
+     "modelClass": "tea",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 7206.270982237584,
+     "initialMass_mg": 0.1,
+     "residualMass_mg": 0.011373345484332257
+    }
+   ]
+  },
+  {
+   "itemId": "cup_02",
+   "typeId": "tea_cup_porcelain_210",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 0.099999999341586,
+   "residualMass_mg": 0.011215161909589785,
+   "initialVisibleAreaMm2": 7206.238917827606,
+   "visibleAreaMm2": 7206.238917827606,
+   "specks": 1,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.7543949741037127,
+    "pools": []
+   },
+   "jetLiftRatio": 0.18748313866381874,
+   "regionIds": [
+    "rim",
+    "interior",
+    "exterior",
+    "foot",
+    "handle"
+   ],
+   "regions": [
+    {
+     "regionId": "interior",
+     "areaMm2": 7206.238917827606,
+     "initialMass_mg": 0.099999999341586,
+     "residualMass_mg": 0.011215161909589785,
+     "visibleAreaMm2": 7206.238917827606,
+     "specks": 1
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_tea",
+     "modelClass": "tea",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 7206.238964442946,
+     "initialMass_mg": 0.1,
+     "residualMass_mg": 0.011215161979654921
+    }
+   ]
+  },
+  {
+   "itemId": "cup_03",
+   "typeId": "tea_cup_porcelain_210",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 0.09999999924392713,
+   "residualMass_mg": 0.010962285960991969,
+   "initialVisibleAreaMm2": 7205.956059813499,
+   "visibleAreaMm2": 7205.956059813499,
+   "specks": 1,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.7409171572460768,
+    "pools": []
+   },
+   "jetLiftRatio": 0.07733218486799116,
+   "regionIds": [
+    "rim",
+    "interior",
+    "exterior",
+    "foot",
+    "handle"
+   ],
+   "regions": [
+    {
+     "regionId": "interior",
+     "areaMm2": 7205.956059813499,
+     "initialMass_mg": 0.09999999924392713,
+     "residualMass_mg": 0.010962285960991969,
+     "visibleAreaMm2": 7205.956059813499,
+     "specks": 1
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_tea",
+     "modelClass": "tea",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 7205.956117388723,
+     "initialMass_mg": 0.1,
+     "residualMass_mg": 0.010962286042350245
+    }
+   ]
+  },
+  {
+   "itemId": "dessert_plate_01",
+   "typeId": "dessert_plate_porcelain_190",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 1000.0000024617501,
+   "residualMass_mg": 866.7456672431548,
+   "initialVisibleAreaMm2": 9148.99802827835,
+   "visibleAreaMm2": 9148.99802827835,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.7769615980458681,
+    "pools": []
+   },
+   "jetLiftRatio": 0.052691849866997036,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside",
+    "foot"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 9148.99802827835,
+     "initialMass_mg": 1000.0000024617501,
+     "residualMass_mg": 866.7456672431548,
+     "visibleAreaMm2": 9148.99802827835,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "modelClass": "egg_yolk",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 9148.998003183806,
+     "initialMass_mg": 1000,
+     "residualMass_mg": 866.7456648082165
+    }
+   ]
+  },
+  {
+   "itemId": "dessert_plate_02",
+   "typeId": "dessert_plate_porcelain_190",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 500.0000016478213,
+   "residualMass_mg": 107.07299719312024,
+   "initialVisibleAreaMm2": 9148.801203787327,
+   "visibleAreaMm2": 8397.204597353935,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.7583058827840644,
+    "pools": []
+   },
+   "jetLiftRatio": 0.08442480444438517,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside",
+    "foot"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 9148.801203787327,
+     "initialMass_mg": 500.0000016478213,
+     "residualMass_mg": 107.07299719312024,
+     "visibleAreaMm2": 8397.204597353935,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_spinach",
+     "modelClass": "starch",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 9148.801176991128,
+     "initialMass_mg": 500,
+     "residualMass_mg": 107.0729968934424
+    }
+   ]
+  },
+  {
+   "itemId": "dessert_plate_03",
+   "typeId": "dessert_plate_porcelain_190",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 1000.0000018807609,
+   "residualMass_mg": 867.007939054018,
+   "initialVisibleAreaMm2": 9148.772652029991,
+   "visibleAreaMm2": 9148.772652029991,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.7630949243752992,
+    "pools": []
+   },
+   "jetLiftRatio": 0.1016248737791354,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside",
+    "foot"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 9148.772652029991,
+     "initialMass_mg": 1000.0000018807609,
+     "residualMass_mg": 867.007939054018,
+     "visibleAreaMm2": 9148.772652029991,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "modelClass": "egg_yolk",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 9148.77263295466,
+     "initialMass_mg": 1000,
+     "residualMass_mg": 867.0079375213145
+    }
+   ]
+  },
+  {
+   "itemId": "dessert_spoon_01",
+   "typeId": "dessert_spoon_160",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 0,
+   "residualMass_mg": 0,
+   "initialVisibleAreaMm2": 0,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.14644873222049726,
+    "pools": []
+   },
+   "jetLiftRatio": 0.04320735602443045,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [],
+   "soils": []
+  },
+  {
+   "itemId": "dessert_spoon_02",
+   "typeId": "dessert_spoon_160",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 0,
+   "residualMass_mg": 0,
+   "initialVisibleAreaMm2": 0,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.12653480712438495,
+    "pools": []
+   },
+   "jetLiftRatio": 0.07700161751328996,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [],
+   "soils": []
+  },
+  {
+   "itemId": "dessert_spoon_03",
+   "typeId": "dessert_spoon_160",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 0,
+   "residualMass_mg": 0,
+   "initialVisibleAreaMm2": 0,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.14655973955596735,
+    "pools": []
+   },
+   "jetLiftRatio": 0.04033763696548949,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [],
+   "soils": []
+  },
+  {
+   "itemId": "dessert_spoon_04",
+   "typeId": "dessert_spoon_160",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 0,
+   "residualMass_mg": 0,
+   "initialVisibleAreaMm2": 0,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.12178630629911988,
+    "pools": []
+   },
+   "jetLiftRatio": 0.056485774060684654,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [],
+   "soils": []
+  },
+  {
+   "itemId": "dessert_spoon_05",
+   "typeId": "dessert_spoon_160",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 0,
+   "residualMass_mg": 0,
+   "initialVisibleAreaMm2": 0,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.06637323122797979,
+    "pools": []
+   },
+   "jetLiftRatio": 0.1598760337111287,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [],
+   "soils": []
+  },
+  {
+   "itemId": "dessert_spoon_06",
+   "typeId": "dessert_spoon_160",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 0,
+   "residualMass_mg": 0,
+   "initialVisibleAreaMm2": 0,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.18823404069697613,
+    "pools": []
+   },
+   "jetLiftRatio": 0.00862784932646798,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [],
+   "soils": []
+  },
+  {
+   "itemId": "dinner_plate_01",
+   "typeId": "dinner_plate_porcelain_iec",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 1499.9999957550858,
+   "residualMass_mg": 1300.085955637892,
+   "initialVisibleAreaMm2": 15968.380526661873,
+   "visibleAreaMm2": 15968.380526661873,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 1.3325966518728536,
+    "pools": []
+   },
+   "jetLiftRatio": 0.022851596569565712,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside",
+    "foot"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 15968.380526661873,
+     "initialMass_mg": 1499.9999957550858,
+     "residualMass_mg": 1300.085955637892,
+     "visibleAreaMm2": 15968.380526661873,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "modelClass": "egg_yolk",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 15968.380572644492,
+     "initialMass_mg": 1500,
+     "residualMass_mg": 1300.085959127165
+    }
+   ]
+  },
+  {
+   "itemId": "dinner_plate_02",
+   "typeId": "dinner_plate_porcelain_iec",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 629.9999979013385,
+   "residualMass_mg": 336.7703434721943,
+   "initialVisibleAreaMm2": 15968.390931665897,
+   "visibleAreaMm2": 15965.406359672546,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 1.335843414115232,
+    "pools": []
+   },
+   "jetLiftRatio": 0.014528518148906265,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside",
+    "foot"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 15968.390931665897,
+     "initialMass_mg": 629.9999979013385,
+     "residualMass_mg": 336.7703434721943,
+     "visibleAreaMm2": 15965.406359672546,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_minced_meat",
+     "modelClass": "egg_yolk",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 15968.390984198777,
+     "initialMass_mg": 630,
+     "residualMass_mg": 336.7703446960986
+    }
+   ]
+  },
+  {
+   "itemId": "dinner_plate_03",
+   "typeId": "dinner_plate_porcelain_iec",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 1499.9999962739817,
+   "residualMass_mg": 1297.6113435585285,
+   "initialVisibleAreaMm2": 15968.48844641447,
+   "visibleAreaMm2": 15968.48844641447,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 1.3303498769239313,
+    "pools": []
+   },
+   "jetLiftRatio": 0.0233627558963519,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside",
+    "foot"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 15968.48844641447,
+     "initialMass_mg": 1499.9999962739817,
+     "residualMass_mg": 1297.6113435585285,
+     "visibleAreaMm2": 15968.48844641447,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "modelClass": "egg_yolk",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 15968.488486123533,
+     "initialMass_mg": 1500,
+     "residualMass_mg": 1297.611346965316
+    }
+   ]
+  },
+  {
+   "itemId": "fork_01",
+   "typeId": "dinner_fork_185",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 150.00000234037017,
+   "residualMass_mg": 131.2776670433941,
+   "initialVisibleAreaMm2": 1093.6508952379227,
+   "visibleAreaMm2": 1093.6508952379227,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.16302420018242247,
+    "pools": []
+   },
+   "jetLiftRatio": 0.03934170563874853,
+   "regionIds": [
+    "handle",
+    "tines"
+   ],
+   "regions": [
+    {
+     "regionId": "tines",
+     "areaMm2": 1093.6508952379227,
+     "initialMass_mg": 150.00000234037017,
+     "residualMass_mg": 131.2776670433941,
+     "visibleAreaMm2": 1093.6508952379227,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "modelClass": "egg_yolk",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 1093.6508787153798,
+     "initialMass_mg": 150,
+     "residualMass_mg": 131.27766509069153
+    }
+   ]
+  },
+  {
+   "itemId": "fork_02",
+   "typeId": "dinner_fork_185",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 150.0000021303625,
+   "residualMass_mg": 131.2899743678069,
+   "initialVisibleAreaMm2": 1094.5313773155212,
+   "visibleAreaMm2": 1094.5313773155212,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.5066821997061006,
+    "pools": []
+   },
+   "jetLiftRatio": 0.0007322248296256314,
+   "regionIds": [
+    "handle",
+    "tines"
+   ],
+   "regions": [
+    {
+     "regionId": "tines",
+     "areaMm2": 1094.5313773155212,
+     "initialMass_mg": 150.0000021303625,
+     "residualMass_mg": 131.2899743678069,
+     "visibleAreaMm2": 1094.5313773155212,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "modelClass": "egg_yolk",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 1094.531360649853,
+     "initialMass_mg": 150,
+     "residualMass_mg": 131.2899722191647
+    }
+   ]
+  },
+  {
+   "itemId": "fork_03",
+   "typeId": "dinner_fork_185",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 150.00000262348556,
+   "residualMass_mg": 133.88572297635244,
+   "initialVisibleAreaMm2": 1094.9684555530548,
+   "visibleAreaMm2": 1094.9684555530548,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.4878739548221876,
+    "pools": []
+   },
+   "regionIds": [
+    "handle",
+    "tines"
+   ],
+   "regions": [
+    {
+     "regionId": "tines",
+     "areaMm2": 1094.9684555530548,
+     "initialMass_mg": 150.00000262348556,
+     "residualMass_mg": 133.88572297635244,
+     "visibleAreaMm2": 1094.9684555530548,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "modelClass": "egg_yolk",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 1094.9684403840365,
+     "initialMass_mg": 150,
+     "residualMass_mg": 133.88572093901226
+    }
+   ]
+  },
+  {
+   "itemId": "fork_04",
+   "typeId": "dinner_fork_185",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 150.0000018682572,
+   "residualMass_mg": 131.14318804058098,
+   "initialVisibleAreaMm2": 1093.5789937973022,
+   "visibleAreaMm2": 1093.5789937973022,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.1311293004710532,
+    "pools": []
+   },
+   "jetLiftRatio": 0.11266870747028515,
+   "regionIds": [
+    "handle",
+    "tines"
+   ],
+   "regions": [
+    {
+     "regionId": "tines",
+     "areaMm2": 1093.5789937973022,
+     "initialMass_mg": 150.0000018682572,
+     "residualMass_mg": 131.14318804058098,
+     "visibleAreaMm2": 1093.5789937973022,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "modelClass": "egg_yolk",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 1093.578979407539,
+     "initialMass_mg": 150,
+     "residualMass_mg": 131.14318628850765
+    }
+   ]
+  },
+  {
+   "itemId": "fork_05",
+   "typeId": "dinner_fork_185",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 150.00000290088627,
+   "residualMass_mg": 132.08566936562968,
+   "initialVisibleAreaMm2": 1093.881513118744,
+   "visibleAreaMm2": 1093.881513118744,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.21618367312227554,
+    "pools": []
+   },
+   "jetLiftRatio": 0.11824694272161132,
+   "regionIds": [
+    "handle",
+    "tines"
+   ],
+   "regions": [
+    {
+     "regionId": "tines",
+     "areaMm2": 1093.881513118744,
+     "initialMass_mg": 150.00000290088627,
+     "residualMass_mg": 132.08566936562968,
+     "visibleAreaMm2": 1093.881513118744,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "modelClass": "egg_yolk",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 1093.8814914425166,
+     "initialMass_mg": 150,
+     "residualMass_mg": 132.08566640427458
+    }
+   ]
+  },
+  {
+   "itemId": "fork_06",
+   "typeId": "dinner_fork_185",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 150.0000011771718,
+   "residualMass_mg": 131.56072816539375,
+   "initialVisibleAreaMm2": 1094.396527171135,
+   "visibleAreaMm2": 1094.396527171135,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.2713550599051668,
+    "pools": []
+   },
+   "jetLiftRatio": 0.10336168745510685,
+   "regionIds": [
+    "handle",
+    "tines"
+   ],
+   "regions": [
+    {
+     "regionId": "tines",
+     "areaMm2": 1094.396527171135,
+     "initialMass_mg": 150.0000011771718,
+     "residualMass_mg": 131.56072816539375,
+     "visibleAreaMm2": 1094.396527171135,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "modelClass": "egg_yolk",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 1094.3965145315815,
+     "initialMass_mg": 150,
+     "residualMass_mg": 131.56072667124218
+    }
+   ]
+  },
+  {
+   "itemId": "glass_01",
+   "typeId": "test_glass_borosilicate_250",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 4999.999990138896,
+   "residualMass_mg": 4908.816125215725,
+   "initialVisibleAreaMm2": 10611.060255408287,
+   "visibleAreaMm2": 10611.060255408287,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.6940814682060664,
+    "pools": []
+   },
+   "jetLiftRatio": 0.08794965146007089,
+   "regionIds": [
+    "rim",
+    "interior",
+    "exterior"
+   ],
+   "regions": [
+    {
+     "regionId": "interior",
+     "areaMm2": 10611.060255408287,
+     "initialMass_mg": 4999.999990138896,
+     "residualMass_mg": 4908.816125215725,
+     "visibleAreaMm2": 10611.060255408287,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_milk",
+     "modelClass": "egg_yolk",
+     "bake": 0.8034444700164703,
+     "coveredAreaMm2": 10611.06027373171,
+     "initialMass_mg": 5000,
+     "residualMass_mg": 4908.816134117762
+    }
+   ]
+  },
+  {
+   "itemId": "glass_02",
+   "typeId": "test_glass_borosilicate_250",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 5000.0000093794215,
+   "residualMass_mg": 4912.734977701587,
+   "initialVisibleAreaMm2": 10611.161440551281,
+   "visibleAreaMm2": 10611.161440551281,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.7092697719280104,
+    "pools": []
+   },
+   "jetLiftRatio": 0.08046401636778111,
+   "regionIds": [
+    "rim",
+    "interior",
+    "exterior"
+   ],
+   "regions": [
+    {
+     "regionId": "interior",
+     "areaMm2": 10611.161440551281,
+     "initialMass_mg": 5000.0000093794215,
+     "residualMass_mg": 4912.734977701587,
+     "visibleAreaMm2": 10611.161440551281,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_milk",
+     "modelClass": "egg_yolk",
+     "bake": 0.8034444700164703,
+     "coveredAreaMm2": 10611.161424492366,
+     "initialMass_mg": 5000,
+     "residualMass_mg": 4912.734969612092
+    }
+   ]
+  },
+  {
+   "itemId": "glass_03",
+   "typeId": "test_glass_borosilicate_250",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 5000.000002467686,
+   "residualMass_mg": 4902.831200655524,
+   "initialVisibleAreaMm2": 10611.294014573097,
+   "visibleAreaMm2": 10611.294014573097,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.6676708900703003,
+    "pools": []
+   },
+   "jetLiftRatio": 0.2340936816423859,
+   "regionIds": [
+    "rim",
+    "interior",
+    "exterior"
+   ],
+   "regions": [
+    {
+     "regionId": "interior",
+     "areaMm2": 10611.294014573097,
+     "initialMass_mg": 5000.000002467686,
+     "residualMass_mg": 4902.831200655524,
+     "visibleAreaMm2": 10611.294014573097,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_milk",
+     "modelClass": "egg_yolk",
+     "bake": 0.8034444700164703,
+     "coveredAreaMm2": 10611.294015859585,
+     "initialMass_mg": 5000,
+     "residualMass_mg": 4902.831202267405
+    }
+   ]
+  },
+  {
+   "itemId": "glass_04",
+   "typeId": "test_glass_borosilicate_250",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 4999.999987283953,
+   "residualMass_mg": 4901.647912573756,
+   "initialVisibleAreaMm2": 10610.734700858593,
+   "visibleAreaMm2": 10610.734700858593,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.6472697231264694,
+    "pools": []
+   },
+   "jetLiftRatio": 0.10859086389582427,
+   "regionIds": [
+    "rim",
+    "interior",
+    "exterior"
+   ],
+   "regions": [
+    {
+     "regionId": "interior",
+     "areaMm2": 10610.734700858593,
+     "initialMass_mg": 4999.999987283953,
+     "residualMass_mg": 4901.647912573756,
+     "visibleAreaMm2": 10610.734700858593,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_milk",
+     "modelClass": "egg_yolk",
+     "bake": 0.8034444700164703,
+     "coveredAreaMm2": 10610.734724707527,
+     "initialMass_mg": 5000,
+     "residualMass_mg": 4901.6479245928285
+    }
+   ]
+  },
+  {
+   "itemId": "glass_05",
+   "typeId": "test_glass_borosilicate_250",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 4999.999993379549,
+   "residualMass_mg": 4902.104104645663,
+   "initialVisibleAreaMm2": 10611.130364954472,
+   "visibleAreaMm2": 10611.130364954472,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.698440190619649,
+    "pools": []
+   },
+   "jetLiftRatio": 0.1686111019258942,
+   "regionIds": [
+    "rim",
+    "interior",
+    "exterior"
+   ],
+   "regions": [
+    {
+     "regionId": "interior",
+     "areaMm2": 10611.130364954472,
+     "initialMass_mg": 4999.999993379549,
+     "residualMass_mg": 4902.104104645663,
+     "visibleAreaMm2": 10611.130364954472,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_milk",
+     "modelClass": "egg_yolk",
+     "bake": 0.8034444700164703,
+     "coveredAreaMm2": 10611.13037621908,
+     "initialMass_mg": 5000,
+     "residualMass_mg": 4902.104111433579
+    }
+   ]
+  },
+  {
+   "itemId": "knife_01",
+   "typeId": "dinner_knife_210",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 299.99999746763234,
+   "residualMass_mg": 0.00006475532363233103,
+   "initialVisibleAreaMm2": 2334.991982747568,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.15571468991058218,
+    "pools": []
+   },
+   "jetLiftRatio": 0.02644984660153335,
+   "regionIds": [
+    "handle",
+    "blade"
+   ],
+   "regions": [
+    {
+     "regionId": "blade",
+     "areaMm2": 2334.991982747568,
+     "initialMass_mg": 299.99999746763234,
+     "residualMass_mg": 0.00006475532363233103,
+     "visibleAreaMm2": 0,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_margarine",
+     "modelClass": "fat",
+     "bake": 0,
+     "coveredAreaMm2": 2334.99200256726,
+     "initialMass_mg": 300,
+     "residualMass_mg": 0.00006475532309138812
+    }
+   ]
+  },
+  {
+   "itemId": "knife_02",
+   "typeId": "dinner_knife_210",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 299.9999964722821,
+   "residualMass_mg": 5.295489716680229e-10,
+   "initialVisibleAreaMm2": 2334.3964729055297,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.06535418361962016,
+    "pools": []
+   },
+   "jetLiftRatio": 0.03329057533977734,
+   "regionIds": [
+    "handle",
+    "blade"
+   ],
+   "regions": [
+    {
+     "regionId": "blade",
+     "areaMm2": 2334.3964729055297,
+     "initialMass_mg": 299.9999964722821,
+     "residualMass_mg": 5.295489716680229e-10,
+     "visibleAreaMm2": 0,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_margarine",
+     "modelClass": "fat",
+     "bake": 0,
+     "coveredAreaMm2": 2334.396499002578,
+     "initialMass_mg": 300,
+     "residualMass_mg": 5.295489724458561e-10
+    }
+   ]
+  },
+  {
+   "itemId": "knife_03",
+   "typeId": "dinner_knife_210",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 299.9999980622968,
+   "residualMass_mg": 6.119009950128784e-10,
+   "initialVisibleAreaMm2": 2335.1559838249814,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.23197381124909286,
+    "pools": []
+   },
+   "jetLiftRatio": 0.03278761252737976,
+   "regionIds": [
+    "handle",
+    "blade"
+   ],
+   "regions": [
+    {
+     "regionId": "blade",
+     "areaMm2": 2335.1559838249814,
+     "initialMass_mg": 299.9999980622968,
+     "residualMass_mg": 6.119009950128784e-10,
+     "visibleAreaMm2": 0,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_margarine",
+     "modelClass": "fat",
+     "bake": 0,
+     "coveredAreaMm2": 2335.156002609251,
+     "initialMass_mg": 300,
+     "residualMass_mg": 6.119009954590932e-10
+    }
+   ]
+  },
+  {
+   "itemId": "knife_04",
+   "typeId": "dinner_knife_210",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 299.9999976425213,
+   "residualMass_mg": 7.162848804369115e-8,
+   "initialVisibleAreaMm2": 2334.7621820315253,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.16757631983931287,
+    "pools": []
+   },
+   "jetLiftRatio": 0.03660814856493118,
+   "regionIds": [
+    "handle",
+    "blade"
+   ],
+   "regions": [
+    {
+     "regionId": "blade",
+     "areaMm2": 2334.7621820315253,
+     "initialMass_mg": 299.9999976425213,
+     "residualMass_mg": 7.162848804369115e-8,
+     "visibleAreaMm2": 0,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_margarine",
+     "modelClass": "fat",
+     "bake": 0,
+     "coveredAreaMm2": 2334.762199972529,
+     "initialMass_mg": 300,
+     "residualMass_mg": 7.162848777548418e-8
+    }
+   ]
+  },
+  {
+   "itemId": "knife_05",
+   "typeId": "dinner_knife_210",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 299.9999974617914,
+   "residualMass_mg": 0.00004037415540064117,
+   "initialVisibleAreaMm2": 2335.062222798122,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.1470376645379642,
+    "pools": []
+   },
+   "jetLiftRatio": 0.06621059749092988,
+   "regionIds": [
+    "handle",
+    "blade"
+   ],
+   "regions": [
+    {
+     "regionId": "blade",
+     "areaMm2": 2335.062222798122,
+     "initialMass_mg": 299.9999974617914,
+     "residualMass_mg": 0.00004037415540064117,
+     "visibleAreaMm2": 0,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_margarine",
+     "modelClass": "fat",
+     "bake": 0,
+     "coveredAreaMm2": 2335.0622430704516,
+     "initialMass_mg": 300,
+     "residualMass_mg": 0.00004037415459845565
+    }
+   ]
+  },
+  {
+   "itemId": "knife_06",
+   "typeId": "dinner_knife_210",
+   "clean": true,
+   "score": 4,
+   "initialMass_mg": 299.9999973005685,
+   "residualMass_mg": 0.13403299957637813,
+   "initialVisibleAreaMm2": 2334.3479593291413,
+   "visibleAreaMm2": 1.4048914909362793,
+   "specks": 1,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.2798378289520842,
+    "pools": []
+   },
+   "jetLiftRatio": 0.032511897798043456,
+   "regionIds": [
+    "handle",
+    "blade"
+   ],
+   "regions": [
+    {
+     "regionId": "blade",
+     "areaMm2": 2334.3479593291413,
+     "initialMass_mg": 299.9999973005685,
+     "residualMass_mg": 0.13403299957637813,
+     "visibleAreaMm2": 1.4048914909362793,
+     "specks": 1
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_margarine",
+     "modelClass": "fat",
+     "bake": 0,
+     "coveredAreaMm2": 2334.347980444518,
+     "initialMass_mg": 300,
+     "residualMass_mg": 0.1340329953589322
+    }
+   ]
+  },
+  {
+   "itemId": "melamine_plate_01",
+   "typeId": "melamine_dessert_plate_iec_195",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 499.99999843542247,
+   "residualMass_mg": 61.3284650254447,
+   "initialVisibleAreaMm2": 10934.73645067215,
+   "visibleAreaMm2": 8193.01931744814,
+   "specks": 6,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.33576815698014434,
+    "pools": []
+   },
+   "jetLiftRatio": 0.24236578139587475,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 10934.73645067215,
+     "initialMass_mg": 499.99999843542247,
+     "residualMass_mg": 61.3284650254447,
+     "visibleAreaMm2": 8193.01931744814,
+     "specks": 6
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_spinach",
+     "modelClass": "starch",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 10934.736480294305,
+     "initialMass_mg": 500,
+     "residualMass_mg": 61.32846523198599
+    }
+   ]
+  },
+  {
+   "itemId": "melamine_plate_02",
+   "typeId": "melamine_dessert_plate_iec_195",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 419.99999877789105,
+   "residualMass_mg": 213.44085019756707,
+   "initialVisibleAreaMm2": 10934.868398308754,
+   "visibleAreaMm2": 10928.881543338299,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.3455725464469726,
+    "pools": []
+   },
+   "jetLiftRatio": 0.07959437698311433,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 10934.868398308754,
+     "initialMass_mg": 419.99999877789105,
+     "residualMass_mg": 213.44085019756707,
+     "visibleAreaMm2": 10928.881543338299,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_minced_meat",
+     "modelClass": "egg_yolk",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 10934.868426716093,
+     "initialMass_mg": 419.99999999999994,
+     "residualMass_mg": 213.44085074654487
+    }
+   ]
+  },
+  {
+   "itemId": "melamine_plate_03",
+   "typeId": "melamine_dessert_plate_iec_195",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 499.99999900894977,
+   "residualMass_mg": 70.63731538819215,
+   "initialVisibleAreaMm2": 10935.218181550503,
+   "visibleAreaMm2": 8660.52890098095,
+   "specks": 2,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.3603797458979518,
+    "pools": []
+   },
+   "jetLiftRatio": 0.06993992185068901,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 10935.218181550503,
+     "initialMass_mg": 499.99999900894977,
+     "residualMass_mg": 70.63731538819215,
+     "visibleAreaMm2": 8660.52890098095,
+     "specks": 2
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_spinach",
+     "modelClass": "starch",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 10935.218205077035,
+     "initialMass_mg": 500,
+     "residualMass_mg": 70.63731550965194
+    }
+   ]
+  },
+  {
+   "itemId": "mug_01",
+   "typeId": "mug_ceramic_300",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 0.09999999983338419,
+   "residualMass_mg": 0.012479350267276174,
+   "initialVisibleAreaMm2": 12104.57543694973,
+   "visibleAreaMm2": 12104.57543694973,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 4.996627012587851,
+    "puddle_mL": 0,
+    "film_g": 3.145873827039354,
+    "pools": [
+     {
+      "volume_mL": 4.996627012587851,
+      "capacity_mL": 4.996627012587851,
+      "detergent_g_L": 0.32111652999877893,
+      "dissolvedSoil_mg": 0
+     }
+    ]
+   },
+   "jetLiftRatio": 0.046643048350458696,
+   "regionIds": [
+    "rim",
+    "interior",
+    "exterior",
+    "foot",
+    "handle"
+   ],
+   "regions": [
+    {
+     "regionId": "interior",
+     "areaMm2": 12104.57543694973,
+     "initialMass_mg": 0.09999999983338419,
+     "residualMass_mg": 0.012479350267276174,
+     "visibleAreaMm2": 12104.57543694973,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_tea",
+     "modelClass": "tea",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 12104.575458693034,
+     "initialMass_mg": 0.1,
+     "residualMass_mg": 0.01247935028436717
+    }
+   ]
+  },
+  {
+   "itemId": "mug_02",
+   "typeId": "mug_ceramic_300",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 0.0999999998824349,
+   "residualMass_mg": 0.014527015002401415,
+   "initialVisibleAreaMm2": 12104.618256092072,
+   "visibleAreaMm2": 12104.618256092072,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 4.996627012587851,
+    "puddle_mL": 0,
+    "film_g": 3.090091804789577,
+    "pools": [
+     {
+      "volume_mL": 4.996627012587851,
+      "capacity_mL": 4.996627012587851,
+      "detergent_g_L": 0.3211239407857599,
+      "dissolvedSoil_mg": 0
+     }
+    ]
+   },
+   "jetLiftRatio": 0.03911718606231419,
+   "regionIds": [
+    "rim",
+    "interior",
+    "exterior",
+    "foot",
+    "handle"
+   ],
+   "regions": [
+    {
+     "regionId": "interior",
+     "areaMm2": 12104.618256092072,
+     "initialMass_mg": 0.0999999998824349,
+     "residualMass_mg": 0.014527015002401415,
+     "visibleAreaMm2": 12104.618256092072,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_tea",
+     "modelClass": "tea",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 12104.618271223444,
+     "initialMass_mg": 0.1,
+     "residualMass_mg": 0.014527015007706525
+    }
+   ]
+  },
+  {
+   "itemId": "mug_03",
+   "typeId": "mug_ceramic_300",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 0.09999999980165156,
+   "residualMass_mg": 0.01698743109713839,
+   "initialVisibleAreaMm2": 12104.345205843449,
+   "visibleAreaMm2": 12104.345205843449,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 4.996627012587851,
+    "puddle_mL": 0,
+    "film_g": 3.1924410579368816,
+    "pools": [
+     {
+      "volume_mL": 4.996627012587851,
+      "capacity_mL": 4.996627012587851,
+      "detergent_g_L": 0.32113067059234324,
+      "dissolvedSoil_mg": 0
+     }
+    ]
+   },
+   "jetLiftRatio": 0.009132734311199169,
+   "regionIds": [
+    "rim",
+    "interior",
+    "exterior",
+    "foot",
+    "handle"
+   ],
+   "regions": [
+    {
+     "regionId": "interior",
+     "areaMm2": 12104.345205843449,
+     "initialMass_mg": 0.09999999980165156,
+     "residualMass_mg": 0.01698743109713839,
+     "visibleAreaMm2": 12104.345205843449,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_tea",
+     "modelClass": "tea",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 12104.345231477964,
+     "initialMass_mg": 0.1,
+     "residualMass_mg": 0.016987431112761985
+    }
+   ]
+  },
+  {
+   "itemId": "oval_platter_01",
+   "typeId": "oval_platter_porcelain_320",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 4999.999985204111,
+   "residualMass_mg": 1.2384190247438253e-22,
+   "initialVisibleAreaMm2": 20245.091865956783,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 1.8068042285224417,
+    "pools": []
+   },
+   "jetLiftRatio": 0.04176343193464451,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside",
+    "foot"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 20245.091865956783,
+     "initialMass_mg": 4999.999985204111,
+     "residualMass_mg": 1.2384190247438253e-22,
+     "visibleAreaMm2": 0,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_margarine",
+     "modelClass": "fat",
+     "bake": 0,
+     "coveredAreaMm2": 20245.09192426649,
+     "initialMass_mg": 5000,
+     "residualMass_mg": 1.2384190265171634e-22
+    }
+   ]
+  },
+  {
+   "itemId": "saucer_01",
+   "typeId": "saucer_porcelain_140",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 0.09999999988774816,
+   "residualMass_mg": 0.010644844594811765,
+   "initialVisibleAreaMm2": 3001.7673354148865,
+   "visibleAreaMm2": 3001.7673354148865,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.6429770114806127,
+    "pools": []
+   },
+   "jetLiftRatio": 0.08658556862889698,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside",
+    "foot"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 3001.7673354148865,
+     "initialMass_mg": 0.09999999988774816,
+     "residualMass_mg": 0.010644844594811765,
+     "visibleAreaMm2": 3001.7673354148865,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_tea",
+     "modelClass": "tea",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 3001.7673381621535,
+     "initialMass_mg": 0.1,
+     "residualMass_mg": 0.010644844602257453
+    }
+   ]
+  },
+  {
+   "itemId": "saucer_02",
+   "typeId": "saucer_porcelain_140",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 0.09999999995163897,
+   "residualMass_mg": 0.010596960280819771,
+   "initialVisibleAreaMm2": 3001.619807958603,
+   "visibleAreaMm2": 3001.619807958603,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.5202590624463295,
+    "pools": []
+   },
+   "jetLiftRatio": 0.10420467444348977,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside",
+    "foot"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 3001.619807958603,
+     "initialMass_mg": 0.09999999995163897,
+     "residualMass_mg": 0.010596960280819771,
+     "visibleAreaMm2": 3001.619807958603,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_tea",
+     "modelClass": "tea",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 3001.619809595013,
+     "initialMass_mg": 0.1,
+     "residualMass_mg": 0.010596960280877409
+    }
+   ]
+  },
+  {
+   "itemId": "saucer_03",
+   "typeId": "saucer_porcelain_140",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 0.09999999988524419,
+   "residualMass_mg": 0.010640057677011136,
+   "initialVisibleAreaMm2": 3001.7207666635513,
+   "visibleAreaMm2": 3001.7207666635513,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.4683831508023225,
+    "pools": []
+   },
+   "jetLiftRatio": 0.25582801602191757,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside",
+    "foot"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 3001.7207666635513,
+     "initialMass_mg": 0.09999999988524419,
+     "residualMass_mg": 0.010640057677011136,
+     "visibleAreaMm2": 3001.7207666635513,
+     "specks": 0
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_tea",
+     "modelClass": "tea",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 3001.7207719765793,
+     "initialMass_mg": 0.1,
+     "residualMass_mg": 0.010640057688780341
+    }
+   ]
+  },
+  {
+   "itemId": "serving_fork_01",
+   "typeId": "serving_fork_210",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 0,
+   "residualMass_mg": 0,
+   "initialVisibleAreaMm2": 0,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.33199163087926886,
+    "pools": []
+   },
+   "jetLiftRatio": 0.11644176984171556,
+   "regionIds": [
+    "handle",
+    "tines"
+   ],
+   "regions": [],
+   "soils": []
+  },
+  {
+   "itemId": "serving_spoon_01",
+   "typeId": "serving_spoon_216",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 0,
+   "residualMass_mg": 0,
+   "initialVisibleAreaMm2": 0,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.07088848060442159,
+    "pools": []
+   },
+   "jetLiftRatio": 0.23285776911367653,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [],
+   "soils": []
+  },
+  {
+   "itemId": "soup_plate_01",
+   "typeId": "soup_plate_porcelain_230",
+   "clean": false,
+   "score": 1,
+   "initialMass_mg": 240.00000046677408,
+   "residualMass_mg": 0.670786253804476,
+   "initialVisibleAreaMm2": 14750.391237318516,
+   "visibleAreaMm2": 109.30088883638382,
+   "specks": 97,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 1.243443649310433,
+    "pools": []
+   },
+   "jetLiftRatio": 0.08951278571694805,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside",
+    "foot"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 14750.391237318516,
+     "initialMass_mg": 240.00000046677408,
+     "residualMass_mg": 0.670786253804476,
+     "visibleAreaMm2": 109.30088883638382,
+     "specks": 97
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "modelClass": "starch",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 14750.391217376091,
+     "initialMass_mg": 239.99999999999997,
+     "residualMass_mg": 0.6707862532522288
+    }
+   ]
+  },
+  {
+   "itemId": "soup_plate_03",
+   "typeId": "soup_plate_porcelain_230",
+   "clean": false,
+   "score": 0,
+   "initialMass_mg": 240.00000021801355,
+   "residualMass_mg": 1.6898172485754768,
+   "initialVisibleAreaMm2": 14750.634392559528,
+   "visibleAreaMm2": 403.91140443086624,
+   "specks": 233,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 1.4463944151553898,
+    "pools": []
+   },
+   "jetLiftRatio": 0.13019314565993967,
+   "regionIds": [
+    "rim",
+    "well",
+    "underside",
+    "foot"
+   ],
+   "regions": [
+    {
+     "regionId": "well",
+     "areaMm2": 14750.634392559528,
+     "initialMass_mg": 240.00000021801355,
+     "residualMass_mg": 1.6898172485754768,
+     "visibleAreaMm2": 403.91140443086624,
+     "specks": 233
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "modelClass": "starch",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 14750.634375502614,
+     "initialMass_mg": 239.99999999999997,
+     "residualMass_mg": 1.6898172472855404
+    }
+   ]
+  },
+  {
+   "itemId": "soup_spoon_01",
+   "typeId": "soup_spoon_190",
+   "clean": false,
+   "score": 2,
+   "initialMass_mg": 23.99999998721625,
+   "residualMass_mg": 0.08315952604559056,
+   "initialVisibleAreaMm2": 1449.9028819799423,
+   "visibleAreaMm2": 11.648307740688324,
+   "specks": 13,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.1038803741857631,
+    "pools": []
+   },
+   "jetLiftRatio": 0.0534174968083728,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [
+    {
+     "regionId": "bowl",
+     "areaMm2": 1449.9028819799423,
+     "initialMass_mg": 23.99999998721625,
+     "residualMass_mg": 0.08315952604559056,
+     "visibleAreaMm2": 11.648307740688324,
+     "specks": 13
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "modelClass": "starch",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 1449.9028810632808,
+     "initialMass_mg": 24,
+     "residualMass_mg": 0.0831595259709642
+    }
+   ]
+  },
+  {
+   "itemId": "soup_spoon_02",
+   "typeId": "soup_spoon_190",
+   "clean": false,
+   "score": 2,
+   "initialMass_mg": 24.000000008431563,
+   "residualMass_mg": 0.06865574026502982,
+   "initialVisibleAreaMm2": 1450.3811364769936,
+   "visibleAreaMm2": 9.111304104328156,
+   "specks": 11,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.49485439090821237,
+    "pools": []
+   },
+   "jetLiftRatio": 0.014155153164982294,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [
+    {
+     "regionId": "bowl",
+     "areaMm2": 1450.3811364769936,
+     "initialMass_mg": 24.000000008431563,
+     "residualMass_mg": 0.06865574026502982,
+     "visibleAreaMm2": 9.111304104328156,
+     "specks": 11
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "modelClass": "starch",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 1450.381136521628,
+     "initialMass_mg": 24,
+     "residualMass_mg": 0.06865574053513811
+    }
+   ]
+  },
+  {
+   "itemId": "soup_spoon_03",
+   "typeId": "soup_spoon_190",
+   "clean": false,
+   "score": 2,
+   "initialMass_mg": 24.000000021477643,
+   "residualMass_mg": 0.15328575185934382,
+   "initialVisibleAreaMm2": 1450.0891777276993,
+   "visibleAreaMm2": 24.29407423734665,
+   "specks": 15,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.19130776143035622,
+    "pools": []
+   },
+   "jetLiftRatio": 0.09776782429828697,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [
+    {
+     "regionId": "bowl",
+     "areaMm2": 1450.0891777276993,
+     "initialMass_mg": 24.000000021477643,
+     "residualMass_mg": 0.15328575185934382,
+     "visibleAreaMm2": 24.29407423734665,
+     "specks": 15
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "modelClass": "starch",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 1450.0891779789526,
+     "initialMass_mg": 24,
+     "residualMass_mg": 0.15328575143566478
+    }
+   ]
+  },
+  {
+   "itemId": "soup_spoon_04",
+   "typeId": "soup_spoon_190",
+   "clean": false,
+   "score": 3,
+   "initialMass_mg": 23.9999999961098,
+   "residualMass_mg": 0.059931230026023706,
+   "initialVisibleAreaMm2": 1450.2123839855194,
+   "visibleAreaMm2": 7.590399146080017,
+   "specks": 9,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.2101357284530139,
+    "pools": []
+   },
+   "jetLiftRatio": 0.08087844305962481,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [
+    {
+     "regionId": "bowl",
+     "areaMm2": 1450.2123839855194,
+     "initialMass_mg": 23.9999999961098,
+     "residualMass_mg": 0.059931230026023706,
+     "visibleAreaMm2": 7.590399146080017,
+     "specks": 9
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "modelClass": "starch",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 1450.2123838155967,
+     "initialMass_mg": 24,
+     "residualMass_mg": 0.059931230199909924
+    }
+   ]
+  },
+  {
+   "itemId": "soup_spoon_05",
+   "typeId": "soup_spoon_190",
+   "clean": false,
+   "score": 3,
+   "initialMass_mg": 23.999999990541454,
+   "residualMass_mg": 0.058324483591410396,
+   "initialVisibleAreaMm2": 1450.13438642025,
+   "visibleAreaMm2": 6.503117382526398,
+   "specks": 8,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.21838115348535503,
+    "pools": []
+   },
+   "jetLiftRatio": 0.01791223946303054,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [
+    {
+     "regionId": "bowl",
+     "areaMm2": 1450.13438642025,
+     "initialMass_mg": 23.999999990541454,
+     "residualMass_mg": 0.058324483591410396,
+     "visibleAreaMm2": 6.503117382526398,
+     "specks": 8
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "modelClass": "starch",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 1450.1343865163108,
+     "initialMass_mg": 24,
+     "residualMass_mg": 0.05832448388784863
+    }
+   ]
+  },
+  {
+   "itemId": "soup_spoon_06",
+   "typeId": "soup_spoon_190",
+   "clean": false,
+   "score": 2,
+   "initialMass_mg": 23.999999998257618,
+   "residualMass_mg": 0.0667134444477413,
+   "initialVisibleAreaMm2": 1449.848260998726,
+   "visibleAreaMm2": 9.295092105865479,
+   "specks": 11,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.14762227793749877,
+    "pools": []
+   },
+   "jetLiftRatio": 0.11955445113996187,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [
+    {
+     "regionId": "bowl",
+     "areaMm2": 1449.848260998726,
+     "initialMass_mg": 23.999999998257618,
+     "residualMass_mg": 0.0667134444477413,
+     "visibleAreaMm2": 9.295092105865479,
+     "specks": 11
+    }
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "modelClass": "starch",
+     "bake": 0.20399661524305324,
+     "coveredAreaMm2": 1449.848261245279,
+     "initialMass_mg": 24,
+     "residualMass_mg": 0.06671344407140055
+    }
+   ]
+  },
+  {
+   "itemId": "teaspoon_01",
+   "typeId": "teaspoon_130",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 0,
+   "residualMass_mg": 0,
+   "initialVisibleAreaMm2": 0,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.08632976038129919,
+    "pools": []
+   },
+   "jetLiftRatio": 0.04839401964782757,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [],
+   "soils": []
+  },
+  {
+   "itemId": "teaspoon_02",
+   "typeId": "teaspoon_130",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 0,
+   "residualMass_mg": 0,
+   "initialVisibleAreaMm2": 0,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.1799834254442245,
+    "pools": []
+   },
+   "jetLiftRatio": 0.2302887261753786,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [],
+   "soils": []
+  },
+  {
+   "itemId": "teaspoon_03",
+   "typeId": "teaspoon_130",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 0,
+   "residualMass_mg": 0,
+   "initialVisibleAreaMm2": 0,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.09977462331274393,
+    "pools": []
+   },
+   "jetLiftRatio": 0.15228794827489056,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [],
+   "soils": []
+  },
+  {
+   "itemId": "teaspoon_04",
+   "typeId": "teaspoon_130",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 0,
+   "residualMass_mg": 0,
+   "initialVisibleAreaMm2": 0,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.1659681598081289,
+    "pools": []
+   },
+   "jetLiftRatio": 0.08946324099110425,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [],
+   "soils": []
+  },
+  {
+   "itemId": "teaspoon_06",
+   "typeId": "teaspoon_130",
+   "clean": true,
+   "score": 5,
+   "initialMass_mg": 0,
+   "residualMass_mg": 0,
+   "initialVisibleAreaMm2": 0,
+   "visibleAreaMm2": 0,
+   "specks": 0,
+   "water": {
+    "pooled_mL": 0,
+    "puddle_mL": 0,
+    "film_g": 0.19350566463835892,
+    "pools": []
+   },
+   "jetLiftRatio": 0.030760989573384932,
+   "regionIds": [
+    "handle",
+    "bowl",
+    "bowl_back"
+   ],
+   "regions": [],
+   "soils": []
+  }
+ ],
+ "machine": {
+  "machineId": "bosch_smv4hax40g",
+  "programmeId": "auto_145",
+  "duration_s": 8695,
+  "ticks": 3971,
+  "states": [
+   {
+    "id": "l@2800",
+    "duration_s": 990,
+    "period_s": 1.5074973475652527,
+    "flow_L_min": 28.398096591633312,
+    "arms": [
+     {
+      "level": "lower",
+      "rpm": 39.80106505454589,
+      "stalled": false
+     }
+    ],
+    "exposureKey": "sha256:e6c2b6f3f465a9f7967c3d3c0c1b90e6086939866423f81b69f87f48cb46b9a7",
+    "exposure": {
+     "jetRays": 4513792,
+     "jetHits": 4498770,
+     "jetCells": 866523,
+     "secondaryPaths": 4194304,
+     "secondaryLanded": 5292523,
+     "wetBlocks": 667531,
+     "wetArea": 5.699738855687428,
+     "arrivalRate": 0.46668629317143623,
+     "lostFlow": 9.644121926315251e-7,
+     "backend": "gpu",
+     "water": {
+      "unit": 1e-12,
+      "nozzle": 704964804500,
+      "jets": 704964804500,
+      "showers": 0,
+      "jetLost": 671768045,
+      "handover": 534828117690,
+      "splatter": 37139972649,
+      "scatter": 132324946116,
+      "dropletsLanded": 168700231411,
+      "dropletsLost": 764687354,
+      "filmFed": 703528349101,
+      "closes": true,
+      "sumpReturnFraction": 0.9953854744730025
+     },
+     "film": {
+      "steps": 64,
+      "pilotRevolutions": 4,
+      "settleRevolutions": 2,
+      "recordedRevolutions": 2,
+      "fedPerRevolution": 703528349101,
+      "fed": 5628226792808,
+      "primed": 235295916760,
+      "toSump": 5318830138304,
+      "stored": 544692571264,
+      "sumpLastRevolution": 700275271015,
+      "storedChange": 0.004623947407601881,
+      "wetChange": 0.01148042855986008,
+      "converged": true,
+      "heldOnItems": 0.19203457097999999,
+      "heldInBasins": 0.015964125952147464,
+      "itemWetFraction": 0.8629913132312304,
+      "retainedOnItems": 0.036426528815999996,
+      "returnTime": 1.1560551594455455
+     },
+     "itemLoads": [
+      {
+       "instance": 0,
+       "itemId": "cup_01",
+       "mean": [
+        0.0005369510446400109,
+        0.00020047733629764117,
+        0.0029266017688942994
+       ],
+       "peak": 0.03444214220473898,
+       "peakUp": 0.03434770729005242,
+       "liftRatio": 0.022591547552603907
+      },
+      {
+       "instance": 1,
+       "itemId": "cup_02",
+       "mean": [
+        0.00016351560866261324,
+        0.000046307864254947314,
+        0.00025377014648152944
+       ],
+       "peak": 0.017242762858393913,
+       "peakUp": 0.014141809639852228,
+       "liftRatio": 0.009301504821287486
+      },
+      {
+       "instance": 2,
+       "itemId": "cup_03",
+       "mean": [
+        -0.000040176376324654045,
+        -0.00010609702848097002,
+        0.0005759387055761757
+       ],
+       "peak": 0.015472752326348416,
+       "peakUp": 0.015126102140504891,
+       "liftRatio": 0.00994890438849546
+      },
+      {
+       "instance": 3,
+       "itemId": "dessert_plate_01",
+       "mean": [
+        0.01009511788943034,
+        -0.005947909900595069,
+        0.01597032593504316
+       ],
+       "peak": 0.16753607799611758,
+       "peakUp": 0.13372390205390125,
+       "liftRatio": 0.04540935993284985
+      },
+      {
+       "instance": 4,
+       "itemId": "dessert_plate_02",
+       "mean": [
+        0.02433054798608478,
+        -0.005270985202196685,
+        0.027101372467931158
+       ],
+       "peak": 0.2910864272609363,
+       "peakUp": 0.21435069591800693,
+       "liftRatio": 0.07278824318837368
+      },
+      {
+       "instance": 5,
+       "itemId": "dessert_plate_03",
+       "mean": [
+        0.0207877874589011,
+        -0.0004307730237926343,
+        0.026019280360963182
+       ],
+       "peak": 0.3360188932102388,
+       "peakUp": 0.2584721258762324,
+       "liftRatio": 0.08777079950741908
+      },
+      {
+       "instance": 6,
+       "itemId": "dessert_spoon_01",
+       "mean": [
+        0.00009832213192494616,
+        -0.0008665653683847562,
+        0.0007757379529956295
+       ],
+       "peak": 0.02346879141247269,
+       "peakUp": 0.014483572309999219,
+       "liftRatio": 0.03726432888031642
+      },
+      {
+       "instance": 7,
+       "itemId": "dessert_spoon_02",
+       "mean": [
+        0.0001787587655728159,
+        -0.0003529607690237056,
+        0.00046899062059307337
+       ],
+       "peak": 0.03013965860698748,
+       "peakUp": 0.02294796651588246,
+       "liftRatio": 0.05904210322421341
+      },
+      {
+       "instance": 8,
+       "itemId": "dessert_spoon_03",
+       "mean": [
+        0.0009941205167066816,
+        -0.00027229685373727033,
+        0.0008123518586188343
+       ],
+       "peak": 0.023599978859941213,
+       "peakUp": 0.01351276466974857,
+       "liftRatio": 0.03476656835470021
+      },
+      {
+       "instance": 9,
+       "itemId": "dessert_spoon_04",
+       "mean": [
+        0.0005168059660169667,
+        -0.00010164580581351908,
+        0.0010235964206162565
+       ],
+       "peak": 0.023632885264912418,
+       "peakUp": 0.01926020570017483,
+       "liftRatio": 0.0495539790979853
+      },
+      {
+       "instance": 10,
+       "itemId": "dessert_spoon_05",
+       "mean": [
+        0.0010314222178281717,
+        0.00035909687668458375,
+        0.0016524227529685727
+       ],
+       "peak": 0.06449051508816073,
+       "peakUp": 0.05229027873101908,
+       "liftRatio": 0.13453601792223974
+      },
+      {
+       "instance": 11,
+       "itemId": "dessert_spoon_06",
+       "mean": [
+        0.000027575344605368193,
+        -0.00007511025602762588,
+        0.00007731495496839864
+       ],
+       "peak": 0.004900995403741732,
+       "peakUp": 0.002881064259020909,
+       "liftRatio": 0.007412599859729363
+      },
+      {
+       "instance": 12,
+       "itemId": "dinner_plate_01",
+       "mean": [
+        -0.003101362669219507,
+        -0.0011895881435545973,
+        0.009037976902955798
+       ],
+       "peak": 0.12837080827769332,
+       "peakUp": 0.10097440608317304,
+       "liftRatio": 0.019447266880676065
+      },
+      {
+       "instance": 13,
+       "itemId": "dinner_plate_02",
+       "mean": [
+        -0.007993487751540986,
+        -0.0003524161928342431,
+        0.00937050728755386
+       ],
+       "peak": 0.14041491624811914,
+       "peakUp": 0.06500428748028593,
+       "liftRatio": 0.01251956585885754
+      },
+      {
+       "instance": 14,
+       "itemId": "dinner_plate_03",
+       "mean": [
+        0.0032379853411712576,
+        0.001619534566105103,
+        0.018656584244317508
+       ],
+       "peak": 0.14716663803856334,
+       "peakUp": 0.10558414668261691,
+       "liftRatio": 0.020335084488775985
+      },
+      {
+       "instance": 15,
+       "itemId": "fork_01",
+       "mean": [
+        0.000567676754946691,
+        -0.00013717437131593335,
+        0.0005759012176924243
+       ],
+       "peak": 0.022765632522285674,
+       "peakUp": 0.014721392751710569,
+       "liftRatio": 0.03333240345064798
+      },
+      {
+       "instance": 16,
+       "itemId": "fork_02",
+       "mean": [
+        9.895388575534929e-7,
+        -0.000002870880897526979,
+        0.00000508264674101519
+       ],
+       "peak": 0.00024229748740677462,
+       "peakUp": 0.00019758408259169552,
+       "liftRatio": 0.0004473729128385142
+      },
+      {
+       "instance": 18,
+       "itemId": "fork_04",
+       "mean": [
+        -0.002240928915493758,
+        0.000033278021784380115,
+        0.002779429930932166
+       ],
+       "peak": 0.05948065675320811,
+       "peakUp": 0.043361578267173545,
+       "liftRatio": 0.09817995113881697
+      },
+      {
+       "instance": 19,
+       "itemId": "fork_05",
+       "mean": [
+        0.0010016510611939593,
+        0.00006388033483492001,
+        0.0018153796846780963
+       ],
+       "peak": 0.05708384189519008,
+       "peakUp": 0.045171323401081535,
+       "liftRatio": 0.10227760385168673
+      },
+      {
+       "instance": 20,
+       "itemId": "fork_06",
+       "mean": [
+        0.000380330491244552,
+        0.000025415258020978447,
+        0.0007582218422330503
+       ],
+       "peak": 0.04025815806572098,
+       "peakUp": 0.03716475698849177,
+       "liftRatio": 0.08414901327469536
+      },
+      {
+       "instance": 21,
+       "itemId": "glass_01",
+       "mean": [
+        0.0008193599298691537,
+        -0.00015069042295904125,
+        0.0016761707564169014
+       ],
+       "peak": 0.026924153104187106,
+       "peakUp": 0.020838727491644858,
+       "liftRatio": 0.02123142261224739
+      },
+      {
+       "instance": 22,
+       "itemId": "glass_02",
+       "mean": [
+        0.0006229308696452378,
+        -0.00009992336393438562,
+        0.0006648453777099182
+       ],
+       "peak": 0.028800575181396976,
+       "peakUp": 0.019968567181132928,
+       "liftRatio": 0.02034486457743982
+      },
+      {
+       "instance": 23,
+       "itemId": "glass_03",
+       "mean": [
+        0.0002552736422100474,
+        -0.0002846893105796398,
+        0.0006345471965461173
+       ],
+       "peak": 0.047414575284174865,
+       "peakUp": 0.04061102057895151,
+       "liftRatio": 0.04137631441133343
+      },
+      {
+       "instance": 24,
+       "itemId": "glass_04",
+       "mean": [
+        -0.0007345050294347761,
+        -0.0020856851897614968,
+        0.0033773172607571306
+       ],
+       "peak": 0.07055652904452185,
+       "peakUp": 0.05290469394052373,
+       "liftRatio": 0.05390165573561145
+      },
+      {
+       "instance": 25,
+       "itemId": "glass_05",
+       "mean": [
+        -0.0039446457211941306,
+        -0.0019279261921015469,
+        0.00705167046791413
+       ],
+       "peak": 0.1333872730951515,
+       "peakUp": 0.13296545702086549,
+       "liftRatio": 0.13547112279156645
+      },
+      {
+       "instance": 26,
+       "itemId": "knife_01",
+       "mean": [
+        0.00020611141365038308,
+        0.000299398389951851,
+        0.000533834724291044
+       ],
+       "peak": 0.02343350142273148,
+       "peakUp": 0.019664313888130995,
+       "liftRatio": 0.022734297782102588
+      },
+      {
+       "instance": 27,
+       "itemId": "knife_02",
+       "mean": [
+        -0.00016077768636065174,
+        0.0006687690445506514,
+        0.001353428099288868
+       ],
+       "peak": 0.03270410274761304,
+       "peakUp": 0.026012667394991636,
+       "liftRatio": 0.030073753400645022
+      },
+      {
+       "instance": 28,
+       "itemId": "knife_03",
+       "mean": [
+        0.001714997111497726,
+        -0.000053351902901496094,
+        0.0014049462014168702
+       ],
+       "peak": 0.03726865433146897,
+       "peakUp": 0.025626992629185406,
+       "liftRatio": 0.02962786726280353
+      },
+      {
+       "instance": 29,
+       "itemId": "knife_04",
+       "mean": [
+        0.0011556829281055277,
+        0.0001129259737566449,
+        0.0008014810967511366
+       ],
+       "peak": 0.05215675913023413,
+       "peakUp": 0.026833635055448963,
+       "liftRatio": 0.03102289016526808
+      },
+      {
+       "instance": 30,
+       "itemId": "knife_05",
+       "mean": [
+        -9.77336526096785e-7,
+        0.0007026208748030326,
+        0.0014418647836835765
+       ],
+       "peak": 0.05022823785639638,
+       "peakUp": 0.047587498011584635,
+       "liftRatio": 0.05501683692882745
+      },
+      {
+       "instance": 31,
+       "itemId": "knife_06",
+       "mean": [
+        0.0005426813489114294,
+        0.000012798387634437822,
+        0.0007836313881340428
+       ],
+       "peak": 0.027222068816330963,
+       "peakUp": 0.02214201763319011,
+       "liftRatio": 0.025598819528269576
+      },
+      {
+       "instance": 32,
+       "itemId": "melamine_plate_01",
+       "mean": [
+        0.00020430753875043433,
+        -0.00985126158948339,
+        0.01630374784048528
+       ],
+       "peak": 0.3313596768469547,
+       "peakUp": 0.2909069193930085,
+       "liftRatio": 0.21164343698345
+      },
+      {
+       "instance": 33,
+       "itemId": "melamine_plate_02",
+       "mean": [
+        -0.00030949532537508513,
+        -0.002919956445701239,
+        0.0037051948389415007
+       ],
+       "peak": 0.06804236823583668,
+       "peakUp": 0.05344699877143736,
+       "liftRatio": 0.03888428140533632
+      },
+      {
+       "instance": 34,
+       "itemId": "melamine_plate_03",
+       "mean": [
+        -0.00017899938318744054,
+        -0.002311928073197056,
+        0.003456959008328039
+       ],
+       "peak": 0.051924270970617414,
+       "peakUp": 0.04051635764418588,
+       "liftRatio": 0.02947685535895254
+      },
+      {
+       "instance": 35,
+       "itemId": "mug_01",
+       "mean": [
+        -0.00022832856758847318,
+        -0.0004011898234734307,
+        0.00301328608615863
+       ],
+       "peak": 0.07611372354002262,
+       "peakUp": 0.07365799640135237,
+       "liftRatio": 0.021384078556830274
+      },
+      {
+       "instance": 36,
+       "itemId": "mug_02",
+       "mean": [
+        0.00004617169300346141,
+        0.00000841033631798636,
+        0.000856683362153853
+       ],
+       "peak": 0.0152888312722913,
+       "peakUp": 0.01496432838009772,
+       "liftRatio": 0.004344380641126687
+      },
+      {
+       "instance": 37,
+       "itemId": "mug_03",
+       "mean": [
+        -0.00010656523116515656,
+        0.00040316105178615487,
+        0.0018457752947740038
+       ],
+       "peak": 0.026801729440355516,
+       "peakUp": 0.02611087613868701,
+       "liftRatio": 0.007580399329557336
+      },
+      {
+       "instance": 38,
+       "itemId": "oval_platter_01",
+       "mean": [
+        -0.030973269845868515,
+        0.006560986312523358,
+        0.056996077165337784
+       ],
+       "peak": 0.28825570583565513,
+       "peakUp": 0.28787488742599715,
+       "liftRatio": 0.036040915101940796
+      },
+      {
+       "instance": 39,
+       "itemId": "saucer_01",
+       "mean": [
+        -0.005435200101643399,
+        -0.0014406871280947206,
+        0.010537427699658425
+       ],
+       "peak": 0.13401418866270173,
+       "peakUp": 0.11434793194368324,
+       "liftRatio": 0.07518445965556454
+      },
+      {
+       "instance": 40,
+       "itemId": "saucer_02",
+       "mean": [
+        0.000671342024474439,
+        0.00132621924648888,
+        0.012154914231664432
+       ],
+       "peak": 0.15522453089766067,
+       "peakUp": 0.13759102052022903,
+       "liftRatio": 0.09046693154333492
+      },
+      {
+       "instance": 41,
+       "itemId": "saucer_03",
+       "mean": [
+        0.024752272366671272,
+        0.0020285345911445654,
+        0.030181040312918458
+       ],
+       "peak": 0.44492053319932473,
+       "peakUp": 0.33675871040595506,
+       "liftRatio": 0.22142089713215082
+      },
+      {
+       "instance": 42,
+       "itemId": "serving_fork_01",
+       "mean": [
+        0.00333051985061611,
+        -0.00019883174751211404,
+        0.0021173527814199
+       ],
+       "peak": 0.10810636488464563,
+       "peakUp": 0.05451295975706075,
+       "liftRatio": 0.10030169053975055
+      },
+      {
+       "instance": 43,
+       "itemId": "serving_spoon_01",
+       "mean": [
+        -0.0052701813195129244,
+        -0.008731087318686461,
+        0.013785306494423792
+       ],
+       "peak": 0.18630176300656087,
+       "peakUp": 0.15089399876447088,
+       "liftRatio": 0.20109667076225604
+      },
+      {
+       "instance": 44,
+       "itemId": "soup_plate_01",
+       "mean": [
+        -0.0014942820141079381,
+        0.005582625445168657,
+        0.04017712676889814
+       ],
+       "peak": 0.48422605662119905,
+       "peakUp": 0.3723028461257416,
+       "liftRatio": 0.07740880286938227
+      },
+      {
+       "instance": 45,
+       "itemId": "soup_plate_03",
+       "mean": [
+        0.03485284752179024,
+        -0.0064175052335067465,
+        0.07063611880280055
+       ],
+       "peak": 0.6211166214656472,
+       "peakUp": 0.541267594226362,
+       "liftRatio": 0.1125397695372501
+      },
+      {
+       "instance": 46,
+       "itemId": "soup_spoon_01",
+       "mean": [
+        -0.000013952452491053691,
+        0.00011995616877952348,
+        0.0011002602776381853
+       ],
+       "peak": 0.02592375685307904,
+       "peakUp": 0.02466965719466534,
+       "liftRatio": 0.04508379424922188
+      },
+      {
+       "instance": 47,
+       "itemId": "soup_spoon_02",
+       "mean": [
+        0.00003461474647979632,
+        0.0001851345068301285,
+        0.00023659220398394151
+       ],
+       "peak": 0.008248420889726662,
+       "peakUp": 0.006464902840411132,
+       "liftRatio": 0.011814608820804066
+      },
+      {
+       "instance": 48,
+       "itemId": "soup_spoon_03",
+       "mean": [
+        0.0018361363143350941,
+        -0.00017013957081858693,
+        0.004223931911234899
+       ],
+       "peak": 0.0505596758258535,
+       "peakUp": 0.04522854848263627,
+       "liftRatio": 0.08265516451615175
+      },
+      {
+       "instance": 49,
+       "itemId": "soup_spoon_04",
+       "mean": [
+        0.0002738710567120215,
+        -0.0011967195566472183,
+        0.0018440353455069576
+       ],
+       "peak": 0.04778574988169007,
+       "peakUp": 0.037799800774212265,
+       "liftRatio": 0.0690791293660407
+      },
+      {
+       "instance": 50,
+       "itemId": "soup_spoon_05",
+       "mean": [
+        0.00012254843139785382,
+        -0.0001619793367063249,
+        0.0002195292610315681
+       ],
+       "peak": 0.01078301760303377,
+       "peakUp": 0.008472889500857199,
+       "liftRatio": 0.015484204094884674
+      },
+      {
+       "instance": 51,
+       "itemId": "soup_spoon_06",
+       "mean": [
+        -0.00001956524393676481,
+        0.000019085118233438405,
+        0.00153508131765881
+       ],
+       "peak": 0.057390963805946056,
+       "peakUp": 0.05595916872264938,
+       "liftRatio": 0.102265371145691
+      },
+      {
+       "instance": 52,
+       "itemId": "teaspoon_01",
+       "mean": [
+        -0.00004564849296388654,
+        -0.000022599492522508852,
+        0.000192714685679986
+       ],
+       "peak": 0.009682974600720352,
+       "peakUp": 0.009492166996400129,
+       "liftRatio": 0.03966441024339676
+      },
+      {
+       "instance": 53,
+       "itemId": "teaspoon_02",
+       "mean": [
+        0.0002561961959673822,
+        0.0023819922465044274,
+        0.004662022991381797
+       ],
+       "peak": 0.05879590656884689,
+       "peakUp": 0.0482250247033624,
+       "liftRatio": 0.20151532990912807
+      },
+      {
+       "instance": 54,
+       "itemId": "teaspoon_03",
+       "mean": [
+        -0.00009211943882125133,
+        0.0000327269860806859,
+        0.0004928594316840004
+       ],
+       "peak": 0.03215753007997851,
+       "peakUp": 0.031543003627776026,
+       "liftRatio": 0.13180706119851757
+      },
+      {
+       "instance": 55,
+       "itemId": "teaspoon_04",
+       "mean": [
+        0.000426637232627451,
+        -0.00017821597119489673,
+        0.00035859337399065056
+       ],
+       "peak": 0.03197936715908499,
+       "peakUp": 0.019024114236617706,
+       "liftRatio": 0.07949504806274704
+      },
+      {
+       "instance": 56,
+       "itemId": "teaspoon_06",
+       "mean": [
+        0.00006126950598870734,
+        -0.0000824464095670636,
+        0.00014951823939080098
+       ],
+       "peak": 0.00910345286016445,
+       "peakUp": 0.00736147211601873,
+       "liftRatio": 0.030760989573384932
+      }
+     ]
+    }
+   },
+   {
+    "id": "l@3000",
+    "duration_s": 1921,
+    "period_s": 1.4286051382250722,
+    "flow_L_min": 30.490383824380082,
+    "arms": [
+     {
+      "level": "lower",
+      "rpm": 41.99900895956822,
+      "stalled": false
+     }
+    ],
+    "exposureKey": "sha256:14985e8b0d7f4c9d38d9ebeefafaa2d0832fe20443109fa351e26039eb785f77",
+    "exposure": {
+     "jetRays": 4513792,
+     "jetHits": 4498810,
+     "jetCells": 886316,
+     "secondaryPaths": 4194304,
+     "secondaryLanded": 5560088,
+     "wetBlocks": 667850,
+     "wetArea": 5.704764189516027,
+     "arrivalRate": 0.5010994448342915,
+     "lostFlow": 0.0000010060202879453735,
+     "backend": "gpu",
+     "water": {
+      "unit": 1e-12,
+      "nozzle": 717293253094,
+      "jets": 717293253094,
+      "showers": 0,
+      "jetLost": 681695885,
+      "handover": 540661266230,
+      "splatter": 41340115792,
+      "scatter": 134610175187,
+      "dropletsLanded": 175211975422,
+      "dropletsLost": 738315557,
+      "filmFed": 715873241652,
+      "closes": true,
+      "sumpReturnFraction": 0.9953731708200453
+     },
+     "film": {
+      "steps": 64,
+      "pilotRevolutions": 4,
+      "settleRevolutions": 2,
+      "recordedRevolutions": 2,
+      "fedPerRevolution": 715873241652,
+      "fed": 5726985933216,
+      "primed": 238339083975,
+      "toSump": 5403361393889,
+      "stored": 561963623302,
+      "sumpLastRevolution": 712554448298,
+      "storedChange": 0.004636006992440891,
+      "wetChange": 0.010987278416229563,
+      "converged": true,
+      "heldOnItems": 0.19923519623299998,
+      "heldInBasins": 0.015964125952147464,
+      "itemWetFraction": 0.8671515583009692,
+      "retainedOnItems": 0.036581725135,
+      "returnTime": 1.1076567401462745
+     },
+     "itemLoads": [
+      {
+       "instance": 0,
+       "itemId": "cup_01",
+       "mean": [
+        0.0006487981726470418,
+        0.0002185034545076209,
+        0.003467603328356632
+       ],
+       "peak": 0.040731595038330556,
+       "peakUp": 0.04059673499224634,
+       "liftRatio": 0.026701726007878547
+      },
+      {
+       "instance": 1,
+       "itemId": "cup_02",
+       "mean": [
+        0.00016975078410853508,
+        0.00004305946922242239,
+        0.0002779452322929764
+       ],
+       "peak": 0.01792043681517473,
+       "peakUp": 0.014995315808052086,
+       "liftRatio": 0.009862882179679969
+      },
+      {
+       "instance": 2,
+       "itemId": "cup_03",
+       "mean": [
+        -0.000051757628626360736,
+        -0.00012163655080113124,
+        0.0006904244013900178
+       ],
+       "peak": 0.018689577077867305,
+       "peakUp": 0.018270347454178843,
+       "liftRatio": 0.012016971608268505
+      },
+      {
+       "instance": 3,
+       "itemId": "dessert_plate_01",
+       "mean": [
+        0.011762443435912814,
+        -0.006890816885299598,
+        0.018501470347033377
+       ],
+       "peak": 0.1946453495425815,
+       "peakUp": 0.15516976634493096,
+       "liftRatio": 0.052691849866997036
+      },
+      {
+       "instance": 4,
+       "itemId": "dessert_plate_02",
+       "mean": [
+        0.028220862159274378,
+        -0.006114449457209931,
+        0.03140401711842823
+       ],
+       "peak": 0.33721958728280366,
+       "peakUp": 0.24861866137588176,
+       "liftRatio": 0.08442480444438517
+      },
+      {
+       "instance": 5,
+       "itemId": "dessert_plate_03",
+       "mean": [
+        0.024121837567556197,
+        -0.000531910696108665,
+        0.03020926603633639
+       ],
+       "peak": 0.3895542257955349,
+       "peakUp": 0.29927034178806367,
+       "liftRatio": 0.1016248737791354
+      },
+      {
+       "instance": 6,
+       "itemId": "dessert_spoon_01",
+       "mean": [
+        0.00011635223836285995,
+        -0.0010024586492713105,
+        0.000895924268713483
+       ],
+       "peak": 0.02708784514916378,
+       "peakUp": 0.016793455943178787,
+       "liftRatio": 0.04320735602443045
+      },
+      {
+       "instance": 7,
+       "itemId": "dessert_spoon_02",
+       "mean": [
+        0.00021044214731420709,
+        -0.0004046676877142481,
+        0.0005520864542357983
+       ],
+       "peak": 0.03889485648522853,
+       "peakUp": 0.029928312913471887,
+       "liftRatio": 0.07700161751328996
+      },
+      {
+       "instance": 8,
+       "itemId": "dessert_spoon_03",
+       "mean": [
+        0.0011463777732010614,
+        -0.0003188803946358008,
+        0.0009422591178358423
+       ],
+       "peak": 0.027191433967428295,
+       "peakUp": 0.015678078724577948,
+       "liftRatio": 0.04033763696548949
+      },
+      {
+       "instance": 9,
+       "itemId": "dessert_spoon_04",
+       "mean": [
+        0.0005772908040505749,
+        -0.00011939234965522766,
+        0.0011531925223319626
+       ],
+       "peak": 0.026940245713306596,
+       "peakUp": 0.02195439493145804,
+       "liftRatio": 0.056485774060684654
+      },
+      {
+       "instance": 10,
+       "itemId": "dessert_spoon_05",
+       "mean": [
+        0.0012133691591173458,
+        0.0004191930862424733,
+        0.0019595402257556746
+       ],
+       "peak": 0.07577629054187512,
+       "peakUp": 0.06213921367879853,
+       "liftRatio": 0.1598760337111287
+      },
+      {
+       "instance": 11,
+       "itemId": "dessert_spoon_06",
+       "mean": [
+        0.00003142064278928686,
+        -0.00008601881005983272,
+        0.00008635385822843057
+       ],
+       "peak": 0.00571964866452974,
+       "peakUp": 0.0033533967564805356,
+       "liftRatio": 0.00862784932646798
+      },
+      {
+       "instance": 12,
+       "itemId": "dinner_plate_01",
+       "mean": [
+        -0.003664991945659448,
+        -0.001403921617537287,
+        0.010504423744999665
+       ],
+       "peak": 0.147426452343128,
+       "peakUp": 0.1186504204329589,
+       "liftRatio": 0.022851596569565712
+      },
+      {
+       "instance": 13,
+       "itemId": "dinner_plate_02",
+       "mean": [
+        -0.009255021003984225,
+        -0.00042138721001687115,
+        0.010882142834377993
+       ],
+       "peak": 0.16245081037276102,
+       "peakUp": 0.07543520127304447,
+       "liftRatio": 0.014528518148906265
+      },
+      {
+       "instance": 14,
+       "itemId": "dinner_plate_03",
+       "mean": [
+        0.0036838895410668026,
+        0.0018419423411970264,
+        0.021559449871279775
+       ],
+       "peak": 0.16894109008082636,
+       "peakUp": 0.12130446995841673,
+       "liftRatio": 0.0233627558963519
+      },
+      {
+       "instance": 15,
+       "itemId": "fork_01",
+       "mean": [
+        0.0006691610597545992,
+        -0.00016127362585210167,
+        0.000676009797051695
+       ],
+       "peak": 0.02679624963722578,
+       "peakUp": 0.017375425720131937,
+       "liftRatio": 0.03934170563874853
+      },
+      {
+       "instance": 16,
+       "itemId": "fork_02",
+       "mean": [
+        0.0000013860099183799575,
+        -0.0000037260872325606194,
+        0.000007424915283703267
+       ],
+       "peak": 0.0003715545731925251,
+       "peakUp": 0.0003233901004298484,
+       "liftRatio": 0.0007322248296256314
+      },
+      {
+       "instance": 18,
+       "itemId": "fork_04",
+       "mean": [
+        -0.0025687996333239927,
+        0.0000463744927993633,
+        0.003223267319836125
+       ],
+       "peak": 0.06813663369025062,
+       "peakUp": 0.04976059695045514,
+       "liftRatio": 0.11266870747028515
+      },
+      {
+       "instance": 19,
+       "itemId": "fork_05",
+       "mean": [
+        0.00117696945175246,
+        0.00005875269262914776,
+        0.0020703684924542796
+       ],
+       "peak": 0.06607557465805605,
+       "peakUp": 0.05222424743751934,
+       "liftRatio": 0.11824694272161132
+      },
+      {
+       "instance": 20,
+       "itemId": "fork_06",
+       "mean": [
+        0.0004863769985064753,
+        0.00002529652542825463,
+        0.0009205043798983175
+       ],
+       "peak": 0.05002922721833542,
+       "peakUp": 0.045650113372685784,
+       "liftRatio": 0.10336168745510685
+      },
+      {
+       "instance": 21,
+       "itemId": "glass_01",
+       "mean": [
+        0.0009592704223014841,
+        -0.00018067969887639582,
+        0.001977166344632942
+       ],
+       "peak": 0.03141678323122115,
+       "peakUp": 0.023956326335246605,
+       "liftRatio": 0.02440777100542549
+      },
+      {
+       "instance": 22,
+       "itemId": "glass_02",
+       "mean": [
+        0.0006330398392111847,
+        -0.00009729437520257023,
+        0.0006779071742953132
+       ],
+       "peak": 0.03364735078672925,
+       "peakUp": 0.02347598038852906,
+       "liftRatio": 0.023918373185960302
+      },
+      {
+       "instance": 23,
+       "itemId": "glass_03",
+       "mean": [
+        0.00033298622950369,
+        -0.0003637473076093231,
+        0.0007929602668205868
+       ],
+       "peak": 0.05974183764199401,
+       "peakUp": 0.05070341352411073,
+       "liftRatio": 0.05165889331992811
+      },
+      {
+       "instance": 24,
+       "itemId": "glass_04",
+       "mean": [
+        -0.0008760510507186495,
+        -0.002529362570675263,
+        0.004120311250646498
+       ],
+       "peak": 0.08842555145676574,
+       "peakUp": 0.06636625868772265,
+       "liftRatio": 0.06761689675906186
+      },
+      {
+       "instance": 25,
+       "itemId": "glass_05",
+       "mean": [
+        -0.004540181751120525,
+        -0.002128027909467439,
+        0.008286859806094784
+       ],
+       "peak": 0.1661546839040021,
+       "peakUp": 0.16549248108663306,
+       "liftRatio": 0.1686111019258942
+      },
+      {
+       "instance": 26,
+       "itemId": "knife_01",
+       "mean": [
+        0.00023729707180149653,
+        0.00034245873459004485,
+        0.0006113054234746355
+       ],
+       "peak": 0.027134191512106474,
+       "peakUp": 0.02287812409472906,
+       "liftRatio": 0.02644984660153335
+      },
+      {
+       "instance": 27,
+       "itemId": "knife_02",
+       "mean": [
+        -0.00018103258636821952,
+        0.0007719221040915793,
+        0.001523398454977865
+       ],
+       "peak": 0.03614774688020636,
+       "peakUp": 0.028795097577775746,
+       "liftRatio": 0.03329057533977734
+      },
+      {
+       "instance": 28,
+       "itemId": "knife_03",
+       "mean": [
+        0.0020336396699499205,
+        -0.0000504843395391056,
+        0.0016294065614901123
+       ],
+       "peak": 0.04348707601267944,
+       "peakUp": 0.02836005363175911,
+       "liftRatio": 0.03278761252737976
+      },
+      {
+       "instance": 29,
+       "itemId": "knife_04",
+       "mean": [
+        0.001326079558503103,
+        0.00012170071409434841,
+        0.0009312782645642799
+       ],
+       "peak": 0.06070073125256455,
+       "peakUp": 0.031664673839666806,
+       "liftRatio": 0.03660814856493118
+      },
+      {
+       "instance": 30,
+       "itemId": "knife_05",
+       "mean": [
+        0.000006913800299844129,
+        0.0008356613996264978,
+        0.0016820376063368626
+       ],
+       "peak": 0.05997054192364022,
+       "peakUp": 0.0572696805619975,
+       "liftRatio": 0.06621059749092988
+      },
+      {
+       "instance": 31,
+       "itemId": "knife_06",
+       "mean": [
+        0.0006452277556657005,
+        0.00001573837528097365,
+        0.0009536734734537145
+       ],
+       "peak": 0.033684994010148434,
+       "peakUp": 0.028121570744219986,
+       "liftRatio": 0.032511897798043456
+      },
+      {
+       "instance": 32,
+       "itemId": "melamine_plate_01",
+       "mean": [
+        0.00025141808168645426,
+        -0.011844010110464629,
+        0.019591179062865647
+       ],
+       "peak": 0.38311484878785323,
+       "peakUp": 0.3331352194855286,
+       "liftRatio": 0.24236578139587475
+      },
+      {
+       "instance": 33,
+       "itemId": "melamine_plate_02",
+       "mean": [
+        -0.00034630190281566893,
+        -0.003487944714867038,
+        0.004407933554049986
+       ],
+       "peak": 0.07822840984394683,
+       "peakUp": 0.061785009434303845,
+       "liftRatio": 0.04495043217952835
+      },
+      {
+       "instance": 34,
+       "itemId": "melamine_plate_03",
+       "mean": [
+        -0.00018309094209986308,
+        -0.002681447108525037,
+        0.004050994184679274
+       ],
+       "peak": 0.062221261897772384,
+       "peakUp": 0.04694346205273928,
+       "liftRatio": 0.03415276499257681
+      },
+      {
+       "instance": 35,
+       "itemId": "mug_01",
+       "mean": [
+        -0.0002461883630341298,
+        -0.0005175661372544322,
+        0.003543535242498481
+       ],
+       "peak": 0.09589161979439476,
+       "peakUp": 0.09240133365947134,
+       "liftRatio": 0.0268255651017646
+      },
+      {
+       "instance": 36,
+       "itemId": "mug_02",
+       "mean": [
+        0.000057196857889077024,
+        0.000013575350653471072,
+        0.000984173599268694
+       ],
+       "peak": 0.016148029186126428,
+       "peakUp": 0.01566963618134153,
+       "liftRatio": 0.0045491426244198664
+      },
+      {
+       "instance": 37,
+       "itemId": "mug_03",
+       "mean": [
+        -0.00012584612289784833,
+        0.00047381000903703367,
+        0.0021604787005017148
+       ],
+       "peak": 0.03228142190034585,
+       "peakUp": 0.03145793302437852,
+       "liftRatio": 0.009132734311199169
+      },
+      {
+       "instance": 38,
+       "itemId": "oval_platter_01",
+       "mean": [
+        -0.03619704980514047,
+        0.007550287768504002,
+        0.06625233158494155
+       ],
+       "peak": 0.33394859776139413,
+       "peakUp": 0.33358318546305904,
+       "liftRatio": 0.04176343193464451
+      },
+      {
+       "instance": 39,
+       "itemId": "saucer_01",
+       "mean": [
+        -0.006242765447992415,
+        -0.0016569214282208915,
+        0.012147024089781406
+       ],
+       "peak": 0.15428610416501248,
+       "peakUp": 0.1316878614841444,
+       "liftRatio": 0.08658556862889698
+      },
+      {
+       "instance": 40,
+       "itemId": "saucer_02",
+       "mean": [
+        0.0008179979848072119,
+        0.0015479404722208896,
+        0.013977151376484353
+       ],
+       "peak": 0.1787667206698549,
+       "peakUp": 0.15848473309598285,
+       "liftRatio": 0.10420467444348977
+      },
+      {
+       "instance": 41,
+       "itemId": "saucer_03",
+       "mean": [
+        0.028429997417427914,
+        0.0023224496260082993,
+        0.03477562390170589
+       ],
+       "peak": 0.5136460163477398,
+       "peakUp": 0.38908844592855485,
+       "liftRatio": 0.25582801602191757
+      },
+      {
+       "instance": 42,
+       "itemId": "serving_fork_01",
+       "mean": [
+        0.003869384372594073,
+        -0.0002354558666794713,
+        0.0024832272574747912
+       ],
+       "peak": 0.1253185300385019,
+       "peakUp": 0.06328493048586015,
+       "liftRatio": 0.11644176984171556
+      },
+      {
+       "instance": 43,
+       "itemId": "serving_spoon_01",
+       "mean": [
+        -0.006097879356009013,
+        -0.010102905490122606,
+        0.015935472910778996
+       ],
+       "peak": 0.21574934165059997,
+       "peakUp": 0.17472611451870643,
+       "liftRatio": 0.23285776911367653
+      },
+      {
+       "instance": 44,
+       "itemId": "soup_plate_01",
+       "mean": [
+        -0.002082540581617447,
+        0.006365638461697169,
+        0.046848128426433044
+       ],
+       "peak": 0.5593087054835888,
+       "peakUp": 0.4305177660904619,
+       "liftRatio": 0.08951278571694805
+      },
+      {
+       "instance": 45,
+       "itemId": "soup_plate_03",
+       "mean": [
+        0.04013015183704108,
+        -0.007384956653447092,
+        0.08168136669606539
+       ],
+       "peak": 0.7181587768446117,
+       "peakUp": 0.62617269455837,
+       "liftRatio": 0.13019314565993967
+      },
+      {
+       "instance": 46,
+       "itemId": "soup_spoon_01",
+       "mean": [
+        0.000010765977266687302,
+        0.00012664052202807248,
+        0.0012788658146475752
+       ],
+       "peak": 0.030651746056131506,
+       "peakUp": 0.029229823186020576,
+       "liftRatio": 0.0534174968083728
+      },
+      {
+       "instance": 47,
+       "itemId": "soup_spoon_02",
+       "mean": [
+        0.00004329104154518184,
+        0.00021713661056074214,
+        0.00028109263869182625
+       ],
+       "peak": 0.009822259824491822,
+       "peakUp": 0.007745638581076665,
+       "liftRatio": 0.014155153164982294
+      },
+      {
+       "instance": 48,
+       "itemId": "soup_spoon_03",
+       "mean": [
+        0.0021316160992397113,
+        -0.00020060681045122445,
+        0.004926169007927267
+       ],
+       "peak": 0.058734396446841745,
+       "peakUp": 0.05349813054274241,
+       "liftRatio": 0.09776782429828697
+      },
+      {
+       "instance": 49,
+       "itemId": "soup_spoon_04",
+       "mean": [
+        0.000322161559211249,
+        -0.0014096940144832275,
+        0.002195899518348587
+       ],
+       "peak": 0.05585870336003091,
+       "peakUp": 0.044256334187170614,
+       "liftRatio": 0.08087844305962481
+      },
+      {
+       "instance": 50,
+       "itemId": "soup_spoon_05",
+       "mean": [
+        0.00014456060648880326,
+        -0.00018818870353093581,
+        0.0002563770756725981
+       ],
+       "peak": 0.01245927172069756,
+       "peakUp": 0.009801499951378793,
+       "liftRatio": 0.01791223946303054
+      },
+      {
+       "instance": 51,
+       "itemId": "soup_spoon_06",
+       "mean": [
+        -0.000030417236723714894,
+        0.00002208921925918813,
+        0.0017596690294798777
+       ],
+       "peak": 0.06701691004774406,
+       "peakUp": 0.06541967850831744,
+       "liftRatio": 0.11955445113996187
+      },
+      {
+       "instance": 52,
+       "itemId": "teaspoon_01",
+       "mean": [
+        -0.000060650296829736324,
+        -0.00001987329252952679,
+        0.0002245797108205382
+       ],
+       "peak": 0.011802233120344462,
+       "peakUp": 0.01158126676548083,
+       "liftRatio": 0.04839401964782757
+      },
+      {
+       "instance": 53,
+       "itemId": "teaspoon_02",
+       "mean": [
+        0.0003088909172615104,
+        0.0027701301959161587,
+        0.0054478646178591165
+       ],
+       "peak": 0.06778795452348459,
+       "peakUp": 0.055110842007511394,
+       "liftRatio": 0.2302887261753786
+      },
+      {
+       "instance": 54,
+       "itemId": "teaspoon_03",
+       "mean": [
+        -0.00010300473373870473,
+        0.00004115971803357033,
+        0.000569442569742456
+       ],
+       "peak": 0.03712931953608534,
+       "peakUp": 0.03644432446351718,
+       "liftRatio": 0.15228794827489056
+      },
+      {
+       "instance": 55,
+       "itemId": "teaspoon_04",
+       "mean": [
+        0.0004679030136377267,
+        -0.00019667756568696052,
+        0.00039376486480247486
+       ],
+       "peak": 0.03592976331659324,
+       "peakUp": 0.02140962183266355,
+       "liftRatio": 0.08946324099110425
+      },
+      {
+       "instance": 56,
+       "itemId": "teaspoon_06",
+       "mean": [
+        0.00006155770187380383,
+        -0.00008773508817971323,
+        0.00015231909826883097
+       ],
+       "peak": 0.00877231991684846,
+       "peakUp": 0.006999988971453615,
+       "liftRatio": 0.029250479302385543
+      }
+     ]
+    }
+   },
+   {
+    "id": "ur@2800",
+    "duration_s": 924,
+    "period_s": 2.198175200001116,
+    "flow_L_min": 26.19971023114467,
+    "arms": [
+     {
+      "level": "upper",
+      "rpm": 27.295367539388828,
+      "stalled": false
+     }
+    ],
+    "exposureKey": "sha256:8a09891573f57edfe2b9d8c38c31e3b7904629c99290ba6c5d3c2c0ebc2ee41d",
+    "exposure": {
+     "jetRays": 6848512,
+     "jetHits": 6848512,
+     "jetCells": 412040,
+     "secondaryPaths": 4194304,
+     "secondaryLanded": 4939554,
+     "wetBlocks": 665854,
+     "wetArea": 5.675014604133139,
+     "arrivalRate": 0.43072215029608163,
+     "lostFlow": 7.242568078383482e-7,
+     "backend": "gpu",
+     "water": {
+      "unit": 1e-12,
+      "nozzle": 948375745483,
+      "jets": 662264371988,
+      "showers": 286111373495,
+      "jetLost": 0,
+      "handover": 460027391772,
+      "splatter": 71733234422,
+      "scatter": 130503745794,
+      "dropletsLanded": 486775357100,
+      "dropletsLost": 1572996611,
+      "filmFed": 946802748872,
+      "closes": true,
+      "sumpReturnFraction": 0.9973717789464022
+     },
+     "film": {
+      "steps": 64,
+      "pilotRevolutions": 4,
+      "settleRevolutions": 2,
+      "recordedRevolutions": 2,
+      "fedPerRevolution": 946802748872,
+      "fed": 7574421990976,
+      "primed": 285474607584,
+      "toSump": 7243567234706,
+      "stored": 616329363854,
+      "sumpLastRevolution": 944310207771,
+      "storedChange": 0.0026325875204413576,
+      "wetChange": 0.00764778713914864,
+      "converged": true,
+      "heldOnItems": 0.210471564722,
+      "heldInBasins": 0.015964125952147464,
+      "itemWetFraction": 0.890636810651539,
+      "retainedOnItems": 0.036925855151,
+      "returnTime": 1.4240432459494434
+     },
+     "itemLoads": [
+      {
+       "instance": 0,
+       "itemId": "cup_01",
+       "mean": [
+        0.003382902026895131,
+        -0.0013379480690579222,
+        0.0040571726940890635
+       ],
+       "peak": 0.10254027116373822,
+       "peakUp": 0.09127500808099447,
+       "liftRatio": 0.06003439088417087
+      },
+      {
+       "instance": 1,
+       "itemId": "cup_02",
+       "mean": [
+        0.0012532335617323805,
+        -0.0002068938414154626,
+        0.01571875398085039
+       ],
+       "peak": 0.25155226115667795,
+       "peakUp": 0.24399584819796485,
+       "liftRatio": 0.16048360260711406
+      },
+      {
+       "instance": 2,
+       "itemId": "cup_03",
+       "mean": [
+        0.0023793098723362415,
+        0.006219596762150261,
+        0.007528428518637358
+       ],
+       "peak": 0.13110664203615569,
+       "peakUp": 0.10051000614896496,
+       "liftRatio": 0.06610853423932819
+      },
+      {
+       "instance": 9,
+       "itemId": "dessert_spoon_04",
+       "mean": [
+        -0.0021658393020278213,
+        0.0011806087464347982,
+        -0.003733947837470083
+       ],
+       "peak": 0.0831707266487387,
+       "peakUp": 0,
+       "liftRatio": 0
+      },
+      {
+       "instance": 18,
+       "itemId": "fork_04",
+       "mean": [
+        0.0011415737651463004,
+        -0.000002082958831243906,
+        -0.0013494841280280744
+       ],
+       "peak": 0.058891185981878535,
+       "peakUp": 0,
+       "liftRatio": 0
+      },
+      {
+       "instance": 21,
+       "itemId": "glass_01",
+       "mean": [
+        0.008841215832873102,
+        0.002469403080045773,
+        0.005792783012062117
+       ],
+       "peak": 0.13753977629800945,
+       "peakUp": 0.07391030516630427,
+       "liftRatio": 0.0753031069202832
+      },
+      {
+       "instance": 22,
+       "itemId": "glass_02",
+       "mean": [
+        0.009890123123608381,
+        -0.0031537620720352945,
+        0.006965545816774502
+       ],
+       "peak": 0.10458218121856432,
+       "peakUp": 0.06688035790325508,
+       "liftRatio": 0.06814068391036322
+      },
+      {
+       "instance": 23,
+       "itemId": "glass_03",
+       "mean": [
+        0.0020067929429534695,
+        0.00009202451928458487,
+        0.01157575735970188
+       ],
+       "peak": 0.19600304617712416,
+       "peakUp": 0.19438402868334628,
+       "liftRatio": 0.1980470959036273
+      },
+      {
+       "instance": 24,
+       "itemId": "glass_04",
+       "mean": [
+        -0.0038418830156498897,
+        -0.000008138612131994569,
+        0.009509860131911128
+       ],
+       "peak": 0.08984866196720927,
+       "peakUp": 0.08908010105798764,
+       "liftRatio": 0.09075876982709928
+      },
+      {
+       "instance": 25,
+       "itemId": "glass_05",
+       "mean": [
+        -0.0023428160127232636,
+        0.0002977592930361183,
+        0.010626004070135902
+       ],
+       "peak": 0.12236333328250493,
+       "peakUp": 0.11870251589964234,
+       "liftRatio": 0.12093940386776438
+      },
+      {
+       "instance": 27,
+       "itemId": "knife_02",
+       "mean": [
+        -0.0000016645128681107868,
+        -0.00010271759817657438,
+        -0.00024254087771753328
+       ],
+       "peak": 0.015901032699369568,
+       "peakUp": 0,
+       "liftRatio": 0
+      },
+      {
+       "instance": 32,
+       "itemId": "melamine_plate_01",
+       "mean": [
+        0.0009982689034864194,
+        -0.028369340376028708,
+        0.03614299797131741
+       ],
+       "peak": 0.14926593073957242,
+       "peakUp": 0.11782782663720769,
+       "liftRatio": 0.08572324870725667
+      },
+      {
+       "instance": 33,
+       "itemId": "melamine_plate_02",
+       "mean": [
+        -0.0003310812093337151,
+        -0.010583587615865859,
+        0.01316619210803185
+       ],
+       "peak": 0.12314237712913917,
+       "peakUp": 0.09444022880890296,
+       "liftRatio": 0.06870807561513102
+      },
+      {
+       "instance": 34,
+       "itemId": "melamine_plate_03",
+       "mean": [
+        0.0003675130820206147,
+        -0.007498122590490779,
+        0.010954544489553802
+       ],
+       "peak": 0.10158642927360045,
+       "peakUp": 0.08116938895947626,
+       "liftRatio": 0.05905314487903833
+      },
+      {
+       "instance": 35,
+       "itemId": "mug_01",
+       "mean": [
+        0.0007999757271148173,
+        -0.0042049816099593235,
+        0.011759212076713897
+       ],
+       "peak": 0.1368021724399402,
+       "peakUp": 0.1361894504884365,
+       "liftRatio": 0.03953794632136917
+      },
+      {
+       "instance": 36,
+       "itemId": "mug_02",
+       "mean": [
+        -0.0003454544234995533,
+        -0.006072842386327059,
+        0.009279802008178389
+       ],
+       "peak": 0.11950775277272319,
+       "peakUp": 0.11015261131396678,
+       "liftRatio": 0.03197904109070512
+      },
+      {
+       "instance": 37,
+       "itemId": "mug_03",
+       "mean": [
+        0.0015546544902657524,
+        -0.000019044437065845205,
+        0.0008142913074828637
+       ],
+       "peak": 0.06336068535092805,
+       "peakUp": 0.026201772262040707,
+       "liftRatio": 0.007606787908357602
+      },
+      {
+       "instance": 43,
+       "itemId": "serving_spoon_01",
+       "mean": [
+        0.0006884726807708176,
+        0.009890093751637043,
+        -0.013851949250628251
+       ],
+       "peak": 0.10736612925970145,
+       "peakUp": 0,
+       "liftRatio": 0
+      },
+      {
+       "instance": 48,
+       "itemId": "soup_spoon_03",
+       "mean": [
+        -0.002778825994973929,
+        -0.0003948543812026161,
+        -0.003454018470598985
+       ],
+       "peak": 0.05634960361303747,
+       "peakUp": 0,
+       "liftRatio": 0
+      },
+      {
+       "instance": 51,
+       "itemId": "soup_spoon_06",
+       "mean": [
+        0.00020245980683348058,
+        -0.0006452155279860167,
+        -0.00082804284539775
+       ],
+       "peak": 0.04209079771196647,
+       "peakUp": 0,
+       "liftRatio": 0
+      }
+     ]
+    }
+   },
+   {
+    "id": "ur@3000",
+    "duration_s": 1920,
+    "period_s": 1.9236493865745856,
+    "flow_L_min": 28.394755133590476,
+    "arms": [
+     {
+      "level": "upper",
+      "rpm": 31.190715116147604,
+      "stalled": false
+     }
+    ],
+    "exposureKey": "sha256:f5bbdc8af7f169f54efe5670e3224d1b69fe317d784022788b9bcc5b3d496340",
+    "exposure": {
+     "jetRays": 6848512,
+     "jetHits": 6848512,
+     "jetCells": 419428,
+     "secondaryPaths": 4194304,
+     "secondaryLanded": 4964847,
+     "wetBlocks": 666692,
+     "wetArea": 5.690686605196333,
+     "arrivalRate": 0.4668347685448555,
+     "lostFlow": 7.584480280874132e-7,
+     "backend": "gpu",
+     "water": {
+      "unit": 1e-12,
+      "nozzle": 899467949319,
+      "jets": 626498402500,
+      "showers": 272969546819,
+      "jetLost": 0,
+      "handover": 435080089990,
+      "splatter": 68200375250,
+      "scatter": 123217937260,
+      "dropletsLanded": 462946326153,
+      "dropletsLost": 1441533176,
+      "filmFed": 898026416143,
+      "closes": true,
+      "sumpReturnFraction": 0.9974355728753355
+     },
+     "film": {
+      "steps": 64,
+      "pilotRevolutions": 4,
+      "settleRevolutions": 2,
+      "recordedRevolutions": 2,
+      "fedPerRevolution": 898026416143,
+      "fed": 7184211329144,
+      "primed": 285658838863,
+      "toSump": 6840279208151,
+      "stored": 629590959856,
+      "sumpLastRevolution": 895719796136,
+      "storedChange": 0.0025685436035466224,
+      "wetChange": 0.006828968462863026,
+      "converged": true,
+      "heldOnItems": 0.21683598463099998,
+      "heldInBasins": 0.015964125952147464,
+      "itemWetFraction": 0.8904399865608524,
+      "retainedOnItems": 0.036915440845,
+      "returnTime": 1.3423012679860387
+     },
+     "itemLoads": [
+      {
+       "instance": 0,
+       "itemId": "cup_01",
+       "mean": [
+        0.004004684519579231,
+        -0.001549039544827645,
+        0.004792210392002518
+       ],
+       "peak": 0.12368462374423424,
+       "peakUp": 0.11032622116637636,
+       "liftRatio": 0.07256496192690955
+      },
+      {
+       "instance": 1,
+       "itemId": "cup_02",
+       "mean": [
+        0.00138464518037861,
+        -0.00023387275627109754,
+        0.018443920021438936
+       ],
+       "peak": 0.2942195094563082,
+       "peakUp": 0.2850453672397013,
+       "liftRatio": 0.18748313866381874
+      },
+      {
+       "instance": 2,
+       "itemId": "cup_03",
+       "mean": [
+        0.002688012335813767,
+        0.007098850654449078,
+        0.008869855714998572
+       ],
+       "peak": 0.15377572155758928,
+       "peakUp": 0.11757420529784952,
+       "liftRatio": 0.07733218486799116
+      },
+      {
+       "instance": 9,
+       "itemId": "dessert_spoon_04",
+       "mean": [
+        -0.00249378706670923,
+        0.0013616460128677468,
+        -0.004323013462392319
+       ],
+       "peak": 0.0964142599790134,
+       "peakUp": 0,
+       "liftRatio": 0
+      },
+      {
+       "instance": 18,
+       "itemId": "fork_04",
+       "mean": [
+        0.0013409704489758048,
+        0.0000061801946115046035,
+        -0.0015876114533126971
+       ],
+       "peak": 0.06818091619423013,
+       "peakUp": 0,
+       "liftRatio": 0
+      },
+      {
+       "instance": 21,
+       "itemId": "glass_01",
+       "mean": [
+        0.010190957559580925,
+        0.0028798170913340027,
+        0.0067250266400304
+       ],
+       "peak": 0.15981735015494059,
+       "peakUp": 0.0863229399759737,
+       "liftRatio": 0.08794965146007089
+      },
+      {
+       "instance": 22,
+       "itemId": "glass_02",
+       "mean": [
+        0.011467640416376023,
+        -0.0036272944383350402,
+        0.008170217756235535
+       ],
+       "peak": 0.12055602977117834,
+       "peakUp": 0.0789757587418657,
+       "liftRatio": 0.08046401636778111
+      },
+      {
+       "instance": 23,
+       "itemId": "glass_03",
+       "mean": [
+        0.002242900179548607,
+        0.0002035410974679367,
+        0.013707588292652936
+       ],
+       "peak": 0.23197936644158237,
+       "peakUp": 0.22976389893193203,
+       "liftRatio": 0.2340936816423859
+      },
+      {
+       "instance": 24,
+       "itemId": "glass_04",
+       "mean": [
+        -0.004497439970595815,
+        0.00006721029089311831,
+        0.011269663446866156
+       ],
+       "peak": 0.10746508710524791,
+       "peakUp": 0.10658237378318786,
+       "liftRatio": 0.10859086389582427
+      },
+      {
+       "instance": 25,
+       "itemId": "glass_05",
+       "mean": [
+        -0.0026340853622521163,
+        0.0004112089771029614,
+        0.012537082291537388
+       ],
+       "peak": 0.1444371508438451,
+       "peakUp": 0.14001188595333042,
+       "liftRatio": 0.14265033805950034
+      },
+      {
+       "instance": 27,
+       "itemId": "knife_02",
+       "mean": [
+        0.0000019295882649303678,
+        -0.00011997736148155977,
+        -0.00024504424109760334
+       ],
+       "peak": 0.01707554396692095,
+       "peakUp": 0,
+       "liftRatio": 0
+      },
+      {
+       "instance": 32,
+       "itemId": "melamine_plate_01",
+       "mean": [
+        0.0011107203879578674,
+        -0.033650488032846086,
+        0.04271367151057327
+       ],
+       "peak": 0.1767887369351953,
+       "peakUp": 0.13905576570131561,
+       "liftRatio": 0.10116720580864633
+      },
+      {
+       "instance": 33,
+       "itemId": "melamine_plate_02",
+       "mean": [
+        -0.0003794623121738673,
+        -0.012523051589430144,
+        0.015486308972792824
+       ],
+       "peak": 0.1434573989870143,
+       "peakUp": 0.10940360513505648,
+       "liftRatio": 0.07959437698311433
+      },
+      {
+       "instance": 34,
+       "itemId": "melamine_plate_03",
+       "mean": [
+        0.00045607579758575066,
+        -0.008891070864716997,
+        0.012896441573163284
+       ],
+       "peak": 0.12060089762367368,
+       "peakUp": 0.09613341900964645,
+       "liftRatio": 0.06993992185068901
+      },
+      {
+       "instance": 35,
+       "itemId": "mug_01",
+       "mean": [
+        0.000917809821320484,
+        -0.004916849438132033,
+        0.013902901673435202
+       ],
+       "peak": 0.16128524471015265,
+       "peakUp": 0.16066315312187338,
+       "liftRatio": 0.046643048350458696
+      },
+      {
+       "instance": 36,
+       "itemId": "mug_02",
+       "mean": [
+        -0.0004346977841606607,
+        -0.007007432730761119,
+        0.011075639520470323
+       ],
+       "peak": 0.14516089410879968,
+       "peakUp": 0.1347401311939465,
+       "liftRatio": 0.03911718606231419
+      },
+      {
+       "instance": 37,
+       "itemId": "mug_03",
+       "mean": [
+        0.0017958725319373308,
+        -0.00002051962672344708,
+        0.0009459785401088907
+       ],
+       "peak": 0.07364418420061997,
+       "peakUp": 0.0292743586719773,
+       "liftRatio": 0.00849880822350056
+      },
+      {
+       "instance": 43,
+       "itemId": "serving_spoon_01",
+       "mean": [
+        0.0007899386367156676,
+        0.01153727696660147,
+        -0.01614587339760434
+       ],
+       "peak": 0.12409974731880705,
+       "peakUp": 0,
+       "liftRatio": 0
+      },
+      {
+       "instance": 48,
+       "itemId": "soup_spoon_03",
+       "mean": [
+        -0.0032418738215823114,
+        -0.0004624211216221653,
+        -0.004003437683138541
+       ],
+       "peak": 0.06531299880855992,
+       "peakUp": 0,
+       "liftRatio": 0
+      },
+      {
+       "instance": 51,
+       "itemId": "soup_spoon_06",
+       "mean": [
+        0.0002324782892839284,
+        -0.000732760327238579,
+        -0.0009481950422460852
+       ],
+       "peak": 0.04535517951662604,
+       "peakUp": 0,
+       "liftRatio": 0
+      }
+     ]
+    }
+   }
+  ],
+  "water_L": 11.5,
+  "energy_kWh": 1.0378827803349024,
+  "heldWater_mL": 16.157428717633593,
+  "dispenser": "free",
+  "detergent": {
+   "dosed_g": 20,
+   "dissolved_g": 19.999999999999986
+  },
+  "carryOver": [
+   {
+    "time": 0,
+    "sump": 0,
+    "film": 0,
+    "pools": 0,
+    "fraction": 0
+   },
+   {
+    "time": 780,
+    "sump": 0.0015,
+    "film": 0.0003350236200351504,
+    "pools": 0.000016157428717633593,
+    "fraction": 0.4587559050087876
+   },
+   {
+    "time": 4741,
+    "sump": 0.0004000000000000002,
+    "film": 0.00033483081187529235,
+    "pools": 0.000016157428717633593,
+    "fraction": 0.18370770296882313
+   },
+   {
+    "time": 5281,
+    "sump": 0.0004000000000000002,
+    "film": 0.0003350236200351504,
+    "pools": 0.000016157428717633593,
+    "fraction": 0.25345642070177604
+   },
+   {
+    "time": 6205,
+    "sump": 0.0004000000000000002,
+    "film": 0.0003350236200351504,
+    "pools": 0.000016157428717633593,
+    "fraction": 0.25345642070177604
+   }
+  ],
+  "liquor": {
+   "fields": [
+    "time",
+    "volume",
+    "temperature",
+    "detergent",
+    "tabletLeft",
+    "pH",
+    "alkalinity",
+    "carbonate",
+    "protease",
+    "amylase",
+    "peracid",
+    "peroxide",
+    "taed",
+    "perhydroxyl",
+    "surfactant",
+    "rinseAid",
+    "suspendedSoil",
+    "liquorClass"
+   ],
+   "tickTime_s": [
+    0,
+    60,
+    120.15,
+    180.774,
+    241.657,
+    302.973,
+    363.165,
+    425.171,
+    486.18,
+    547.369,
+    607.687,
+    669.567,
+    730.702,
+    792,
+    852,
+    912.857,
+    973.466,
+    1034.29,
+    1095.39,
+    1155.71,
+    1217.31,
+    1278.57,
+    1339.24,
+    1400,
+    1461.16,
+    1521.43,
+    1583.08,
+    1644.29,
+    1705.01,
+    1765.71,
+    1826.93,
+    1887.14,
+    1948.85,
+    2009.57,
+    2070.78,
+    2131.43,
+    2192.7,
+    2252.86,
+    2314.63,
+    2375.72,
+    2436.55,
+    2497.14,
+    2558.47,
+    2618.57,
+    2680.4,
+    2741.43,
+    2802.32,
+    2862.86,
+    2924.24,
+    2984.29,
+    3046.17,
+    3107.14,
+    3168.09,
+    3228.57,
+    3290.01,
+    3351.43,
+    3411.94,
+    3472.86,
+    3533.86,
+    3594.29,
+    3655.79,
+    3717.14,
+    3777.71,
+    3838.57,
+    3899.63,
+    3960,
+    4020,
+    4080,
+    4140,
+    4200,
+    4260,
+    4320,
+    4380,
+    4440,
+    4500,
+    4560,
+    4620,
+    4680,
+    4740,
+    4801,
+    4861,
+    4921.39,
+    4982.66,
+    5044.01,
+    5105.78,
+    5167.18,
+    5228.54,
+    5289,
+    5349,
+    5410.04,
+    5470.18,
+    5530.19,
+    5591.55,
+    5652.38,
+    5713.21,
+    5774.57,
+    5834.58,
+    5894.72,
+    5956.07,
+    6016.77,
+    6078.2,
+    6139.09,
+    6201.17,
+    6263,
+    6325,
+    6385,
+    6445,
+    6505,
+    6565,
+    6625,
+    6685,
+    6745,
+    6805,
+    6865,
+    6925,
+    6985,
+    7045,
+    7105,
+    7165,
+    7225,
+    7285,
+    7345,
+    7405,
+    7465,
+    7525,
+    7585,
+    7645,
+    7705,
+    7765,
+    7825,
+    7885,
+    7945,
+    8005,
+    8065,
+    8125,
+    8185,
+    8245,
+    8305,
+    8365,
+    8425,
+    8485,
+    8545,
+    8605,
+    8665,
+    8685
+   ],
+   "values": [
+    [
+     2,
+     0,
+     23,
+     0,
+     0,
+     6.73012,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     62,
+     0.00206667,
+     21.2485,
+     0,
+     0,
+     8.01928,
+     0.967742,
+     0.967742,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     121.657,
+     0.004,
+     22.3807,
+     0,
+     0,
+     7.98156,
+     0.5,
+     0.5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0.00000363676,
+     0
+    ],
+    [
+     182.973,
+     0.004,
+     22.5472,
+     0,
+     0,
+     7.98031,
+     0.5,
+     0.5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0.0000207272,
+     0
+    ],
+    [
+     243.165,
+     0.004,
+     22.6052,
+     0,
+     0,
+     7.97987,
+     0.5,
+     0.5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0.0000363542,
+     0
+    ],
+    [
+     305.171,
+     0.004,
+     22.6612,
+     0,
+     0,
+     7.97945,
+     0.5,
+     0.5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0.0000609207,
+     0
+    ],
+    [
+     364.672,
+     0.004,
+     22.7161,
+     0,
+     0,
+     7.97904,
+     0.5,
+     0.5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0.0000812682,
+     0
+    ],
+    [
+     427.369,
+     0.004,
+     22.7718,
+     0,
+     0,
+     7.97862,
+     0.5,
+     0.5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0.000113264,
+     0
+    ],
+    [
+     487.687,
+     0.004,
+     22.8271,
+     0,
+     0,
+     7.9782,
+     0.5,
+     0.5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0.000152093,
+     0
+    ],
+    [
+     549.567,
+     0.004,
+     22.8816,
+     0,
+     0,
+     7.97779,
+     0.5,
+     0.5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0.000179686,
+     0
+    ],
+    [
+     609.195,
+     0.004,
+     22.9359,
+     0,
+     0,
+     7.97738,
+     0.5,
+     0.5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0.000228524,
+     0
+    ],
+    [
+     671.765,
+     0.004,
+     22.9907,
+     0,
+     0,
+     7.97697,
+     0.5,
+     0.5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0.000263077,
+     0
+    ],
+    [
+     732.21,
+     0.004,
+     23.0454,
+     0,
+     0,
+     7.97656,
+     0.5,
+     0.5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0.000323401,
+     0
+    ],
+    [
+     794,
+     0.00291667,
+     23.086,
+     0,
+     0,
+     7.94293,
+     0.314575,
+     0.314575,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0.000230055,
+     0
+    ],
+    [
+     854,
+     0.00269444,
+     18.2167,
+     0,
+     0,
+     8.03151,
+     0.804437,
+     0.804437,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0.000249029,
+     0
+    ],
+    [
+     914.286,
+     0.004,
+     21.6304,
+     0,
+     0,
+     7.99164,
+     0.541878,
+     0.541878,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0.000167831,
+     0
+    ],
+    [
+     975.389,
+     0.004,
+     25.683,
+     0.294717,
+     0.0188211,
+     10.2119,
+     3.2739,
+     1.82684,
+     0.00294715,
+     0.00147357,
+     0.0000207173,
+     0.197424,
+     0.0257162,
+     0.00796306,
+     0.00589434,
+     0,
+     0.0094618,
+     0
+    ],
+    [
+     1035.71,
+     0.004,
+     28.1393,
+     1.38952,
+     0.0144419,
+     10.72,
+     13.4227,
+     6.60018,
+     0.0138933,
+     0.00694547,
+     0.00742628,
+     0.923177,
+     0.102233,
+     0.11977,
+     0.0277904,
+     0,
+     0.16193,
+     1
+    ],
+    [
+     1097.31,
+     0.004,
+     30.5951,
+     2.38731,
+     0.0104508,
+     10.8554,
+     22.6722,
+     10.9505,
+     0.0238602,
+     0.0119174,
+     0.0506984,
+     1.54744,
+     0.117342,
+     0.283353,
+     0.0477462,
+     0,
+     0.627713,
+     1
+    ],
+    [
+     1157.14,
+     0.004,
+     32.9888,
+     3.21749,
+     0.00713004,
+     10.9063,
+     30.368,
+     14.5701,
+     0.032131,
+     0.0160082,
+     0.12726,
+     2.02513,
+     0.0870931,
+     0.438985,
+     0.0643498,
+     0,
+     0.882691,
+     1
+    ],
+    [
+     1219.24,
+     0.004,
+     35.4438,
+     3.91488,
+     0.00434049,
+     10.92,
+     36.8328,
+     17.6107,
+     0.0390401,
+     0.0193574,
+     0.209047,
+     2.40703,
+     0.0496662,
+     0.575783,
+     0.0782975,
+     0,
+     1.11607,
+     1
+    ],
+    [
+     1280,
+     0.004,
+     37.8573,
+     4.42358,
+     0.00230569,
+     10.9091,
+     41.5484,
+     19.8287,
+     0.0440293,
+     0.021687,
+     0.268561,
+     2.68317,
+     0.0256387,
+     0.676346,
+     0.0884715,
+     0,
+     1.2631,
+     1
+    ],
+    [
+     1341.16,
+     0.004,
+     40.2585,
+     4.7613,
+     0.000954781,
+     10.8822,
+     44.6792,
+     21.3012,
+     0.0472779,
+     0.0230981,
+     0.304757,
+     2.86637,
+     0.0123003,
+     0.739994,
+     0.0952261,
+     0,
+     1.41719,
+     1
+    ],
+    [
+     1401.43,
+     0.004,
+     42.6363,
+     4.93807,
+     0.000247736,
+     10.8438,
+     46.3177,
+     22.0718,
+     0.0488956,
+     0.0236717,
+     0.320702,
+     2.96052,
+     0.00501152,
+     0.766965,
+     0.0987613,
+     0,
+     1.52449,
+     1
+    ],
+    [
+     1463.08,
+     0.004,
+     45.0406,
+     4.99672,
+     0.0000131339,
+     10.7973,
+     46.8614,
+     22.3276,
+     0.0493092,
+     0.0236339,
+     0.321589,
+     2.98897,
+     0.0011255,
+     0.766955,
+     0.0999343,
+     0,
+     1.63875,
+     1
+    ],
+    [
+     1522.86,
+     0.004,
+     47.3831,
+     5,
+     0,
+     10.7492,
+     46.8919,
+     22.3419,
+     0.0491532,
+     0.0233314,
+     0.313825,
+     2.98802,
+     0.0000479556,
+     0.755842,
+     0.1,
+     0,
+     1.72257,
+     1
+    ],
+    [
+     1585.01,
+     0.004,
+     49.7905,
+     5,
+     0,
+     10.7002,
+     46.8919,
+     22.3419,
+     0.0489211,
+     0.0230048,
+     0.303077,
+     2.98612,
+     7.88753e-7,
+     0.744919,
+     0.1,
+     0,
+     1.81314,
+     1
+    ],
+    [
+     1645.71,
+     0.004,
+     52.1534,
+     5,
+     0,
+     10.6528,
+     46.8919,
+     22.3419,
+     0.0486333,
+     0.0226862,
+     0.291187,
+     2.9843,
+     8.86936e-9,
+     0.735156,
+     0.1,
+     0,
+     1.90067,
+     1
+    ],
+    [
+     1706.93,
+     0.004,
+     54.5084,
+     5,
+     0,
+     10.6061,
+     46.8919,
+     22.3419,
+     0.0482384,
+     0.022356,
+     0.277789,
+     2.98248,
+     5.66452e-11,
+     0.726292,
+     0.1,
+     0,
+     1.96635,
+     1
+    ],
+    [
+     1767.14,
+     0.004,
+     56.8365,
+     5,
+     0,
+     10.5605,
+     46.8919,
+     22.3419,
+     0.0476794,
+     0.0220069,
+     0.263209,
+     2.98068,
+     2.21777e-13,
+     0.718336,
+     0.1,
+     0,
+     2.04542,
+     1
+    ],
+    [
+     1828.85,
+     0.004,
+     59.1946,
+     5,
+     0,
+     10.515,
+     46.8919,
+     22.3419,
+     0.0468198,
+     0.0215964,
+     0.246841,
+     2.97884,
+     3.93931e-16,
+     0.711039,
+     0.1,
+     0,
+     2.1016,
+     1
+    ],
+    [
+     1888.57,
+     0.004,
+     61.4881,
+     5,
+     0,
+     10.4712,
+     46.8919,
+     22.3419,
+     0.0455501,
+     0.0211045,
+     0.229698,
+     2.97706,
+     4.28828e-19,
+     0.704642,
+     0.1,
+     0,
+     2.16263,
+     1
+    ],
+    [
+     1950.78,
+     0.004,
+     63.8492,
+     5,
+     0,
+     10.4266,
+     46.8919,
+     22.3419,
+     0.0435215,
+     0.0204184,
+     0.210612,
+     2.97521,
+     1.57176e-22,
+     0.698733,
+     0.1,
+     0,
+     2.20113,
+     1
+    ],
+    [
+     2011,
+     0.004,
+     63.9528,
+     5,
+     0,
+     10.4247,
+     46.8919,
+     22.3419,
+     0.0409216,
+     0.0195835,
+     0.191868,
+     2.97342,
+     4.01216e-26,
+     0.698088,
+     0.1,
+     0,
+     2.23853,
+     1
+    ],
+    [
+     2072.7,
+     0.004,
+     63.7322,
+     5,
+     0,
+     10.4288,
+     46.8919,
+     22.3419,
+     0.0387041,
+     0.0188583,
+     0.174984,
+     2.97159,
+     1.05272e-29,
+     0.698137,
+     0.1,
+     0,
+     2.27311,
+     1
+    ],
+    [
+     2132.86,
+     0.004,
+     63.6518,
+     5,
+     0,
+     10.4303,
+     46.8919,
+     22.3419,
+     0.0367068,
+     0.0182011,
+     0.160049,
+     2.9698,
+     3.55017e-33,
+     0.697894,
+     0.1,
+     0,
+     2.29665,
+     1
+    ],
+    [
+     2194.63,
+     0.004,
+     63.5758,
+     5,
+     0,
+     10.4317,
+     46.8919,
+     22.3419,
+     0.0347957,
+     0.0175683,
+     0.146098,
+     2.96797,
+     9.96689e-37,
+     0.69763,
+     0.1,
+     0,
+     2.32436,
+     1
+    ],
+    [
+     2254.29,
+     0.004,
+     63.5047,
+     5,
+     0,
+     10.4331,
+     46.8919,
+     22.3419,
+     0.0330726,
+     0.0169938,
+     0.133828,
+     2.9662,
+     3.81087e-40,
+     0.697371,
+     0.1,
+     0,
+     2.3435,
+     1
+    ],
+    [
+     2316.55,
+     0.004,
+     63.4307,
+     5,
+     0,
+     10.4345,
+     46.8919,
+     22.3419,
+     0.031392,
+     0.0164292,
+     0.122166,
+     2.96435,
+     1.06418e-43,
+     0.6971,
+     0.1,
+     0,
+     2.36619,
+     1
+    ],
+    [
+     2377.14,
+     0.004,
+     63.3597,
+     5,
+     0,
+     10.4358,
+     46.8919,
+     22.3419,
+     0.029863,
+     0.0159112,
+     0.111836,
+     2.96255,
+     3.81324e-47,
+     0.696836,
+     0.1,
+     0,
+     2.38528,
+     1
+    ],
+    [
+     2438.47,
+     0.004,
+     63.2874,
+     5,
+     0,
+     10.4372,
+     46.8919,
+     22.3419,
+     0.0284139,
+     0.0154159,
+     0.102307,
+     2.96074,
+     1.27609e-50,
+     0.69657,
+     0.1,
+     0,
+     2.40071,
+     1
+    ],
+    [
+     2498.57,
+     0.004,
+     63.2175,
+     5,
+     0,
+     10.4385,
+     46.8919,
+     22.3419,
+     0.0270829,
+     0.0149566,
+     0.0937918,
+     2.95896,
+     5.1623e-54,
+     0.696307,
+     0.1,
+     0,
+     2.41655,
+     1
+    ],
+    [
+     2560.4,
+     0.004,
+     63.145,
+     5,
+     0,
+     10.4399,
+     46.8919,
+     22.3419,
+     0.0257984,
+     0.0145091,
+     0.0858029,
+     2.95713,
+     1.71551e-57,
+     0.696039,
+     0.1,
+     0,
+     2.42938,
+     1
+    ],
+    [
+     2620,
+     0.004,
+     63.0762,
+     5,
+     0,
+     10.4411,
+     46.8919,
+     22.3419,
+     0.0246357,
+     0.0140997,
+     0.0787741,
+     2.95537,
+     7.8219e-61,
+     0.695779,
+     0.1,
+     0,
+     2.44258,
+     1
+    ],
+    [
+     2682.32,
+     0.004,
+     63.0037,
+     5,
+     0,
+     10.4425,
+     46.8919,
+     22.3419,
+     0.0234933,
+     0.0136931,
+     0.0720668,
+     2.95353,
+     2.58164e-64,
+     0.69551,
+     0.1,
+     0,
+     2.45329,
+     1
+    ],
+    [
+     2742.86,
+     0.004,
+     62.9343,
+     5,
+     0,
+     10.4438,
+     46.8919,
+     22.3419,
+     0.0224503,
+     0.0133177,
+     0.0661228,
+     2.95174,
+     1.10328e-67,
+     0.695246,
+     0.1,
+     0,
+     2.46433,
+     1
+    ],
+    [
+     2804.24,
+     0.004,
+     62.8633,
+     5,
+     0,
+     10.4452,
+     46.8919,
+     22.3419,
+     0.021455,
+     0.0129554,
+     0.0606179,
+     2.94993,
+     4.34254e-71,
+     0.69498,
+     0.1,
+     0,
+     2.47331,
+     1
+    ],
+    [
+     2864.29,
+     0.004,
+     62.795,
+     5,
+     0,
+     10.4464,
+     46.8919,
+     22.3419,
+     0.0205379,
+     0.0126175,
+     0.0556969,
+     2.94816,
+     2.08756e-74,
+     0.694719,
+     0.1,
+     0,
+     2.48258,
+     1
+    ],
+    [
+     2926.17,
+     0.004,
+     62.7238,
+     5,
+     0,
+     10.4478,
+     46.8919,
+     22.3419,
+     0.0196469,
+     0.0122854,
+     0.0510614,
+     2.94633,
+     8.15278e-78,
+     0.694451,
+     0.1,
+     0,
+     2.49014,
+     1
+    ],
+    [
+     2985.72,
+     0.004,
+     62.6566,
+     5,
+     0,
+     10.4491,
+     46.8919,
+     22.3419,
+     0.018838,
+     0.0119802,
+     0.0469817,
+     2.94458,
+     4.40162e-81,
+     0.694192,
+     0.1,
+     0,
+     2.49796,
+     1
+    ],
+    [
+     3048.09,
+     0.004,
+     62.5853,
+     5,
+     0,
+     10.4504,
+     46.8919,
+     22.3419,
+     0.0180381,
+     0.0116746,
+     0.0430729,
+     2.94274,
+     1.70592e-84,
+     0.693923,
+     0.1,
+     0,
+     2.50602,
+     1
+    ],
+    [
+     3108.57,
+     0.004,
+     62.5175,
+     5,
+     0,
+     10.4517,
+     46.8919,
+     22.3419,
+     0.0173058,
+     0.0113913,
+     0.0396077,
+     2.94096,
+     8.63534e-88,
+     0.693659,
+     0.1,
+     0,
+     2.51213,
+     1
+    ],
+    [
+     3170.01,
+     0.004,
+     62.4477,
+     5,
+     0,
+     10.453,
+     46.8919,
+     22.3419,
+     0.0166026,
+     0.0111157,
+     0.0363856,
+     2.93916,
+     3.97278e-91,
+     0.693395,
+     0.1,
+     0,
+     2.51784,
+     1
+    ],
+    [
+     3230,
+     0.004,
+     62.381,
+     5,
+     0,
+     10.4543,
+     46.8919,
+     22.3419,
+     0.015953,
+     0.010858,
+     0.0335043,
+     2.9374,
+     2.25431e-94,
+     0.693133,
+     0.1,
+     0,
+     2.52306,
+     1
+    ],
+    [
+     3291.94,
+     0.004,
+     62.311,
+     5,
+     0,
+     10.4556,
+     46.8919,
+     22.3419,
+     0.0153181,
+     0.0106027,
+     0.0307794,
+     2.93558,
+     1.02827e-97,
+     0.692867,
+     0.1,
+     0,
+     2.52795,
+     1
+    ],
+    [
+     3352.86,
+     0.004,
+     62.2436,
+     5,
+     0,
+     10.4569,
+     46.8919,
+     22.3419,
+     0.0147269,
+     0.0103619,
+     0.0283253,
+     2.93379,
+     5.47413e-101,
+     0.692602,
+     0.1,
+     0,
+     2.53243,
+     1
+    ],
+    [
+     3413.86,
+     0.004,
+     62.1749,
+     5,
+     0,
+     10.4582,
+     46.8919,
+     22.3419,
+     0.0141658,
+     0.0101304,
+     0.0260729,
+     2.932,
+     2.954e-104,
+     0.69234,
+     0.1,
+     0,
+     2.53664,
+     1
+    ],
+    [
+     3474.29,
+     0.004,
+     62.1086,
+     5,
+     0,
+     10.4594,
+     46.8919,
+     22.3419,
+     0.0136385,
+     0.00991,
+     0.0240265,
+     2.93023,
+     1.75965e-107,
+     0.692077,
+     0.1,
+     0,
+     2.54051,
+     1
+    ],
+    [
+     3535.79,
+     0.004,
+     62.0397,
+     5,
+     0,
+     10.4607,
+     46.8919,
+     22.3419,
+     0.0131292,
+     0.00969433,
+     0.0221162,
+     2.92843,
+     9.40634e-111,
+     0.691814,
+     0.1,
+     0,
+     2.54416,
+     1
+    ],
+    [
+     3595.72,
+     0.004,
+     61.9745,
+     5,
+     0,
+     10.462,
+     46.8919,
+     22.3419,
+     0.0126579,
+     0.00949209,
+     0.0204075,
+     2.92667,
+     6.26031e-114,
+     0.691553,
+     0.1,
+     0,
+     2.54752,
+     1
+    ],
+    [
+     3657.71,
+     0.004,
+     61.9054,
+     5,
+     0,
+     10.4633,
+     46.8919,
+     22.3419,
+     0.0121947,
+     0.00929072,
+     0.0187851,
+     2.92486,
+     3.31562e-117,
+     0.691288,
+     0.1,
+     0,
+     2.55071,
+     1
+    ],
+    [
+     3718.57,
+     0.004,
+     61.8395,
+     5,
+     0,
+     10.4645,
+     46.8919,
+     22.3419,
+     0.0117625,
+     0.00910035,
+     0.0173237,
+     2.92308,
+     2.07097e-120,
+     0.691023,
+     0.1,
+     0,
+     2.55419,
+     1
+    ],
+    [
+     3779.63,
+     0.004,
+     61.772,
+     5,
+     0,
+     10.4658,
+     46.8919,
+     22.3419,
+     0.0113501,
+     0.00891629,
+     0.015977,
+     2.9213,
+     1.29205e-123,
+     0.690762,
+     0.1,
+     0,
+     2.55645,
+     1
+    ],
+    [
+     3840,
+     0.004,
+     61.7072,
+     5,
+     0,
+     10.467,
+     46.8919,
+     22.3419,
+     0.0109619,
+     0.0087408,
+     0.0147533,
+     2.91953,
+     9.00265e-127,
+     0.690499,
+     0.1,
+     0,
+     2.55952,
+     1
+    ],
+    [
+     3900,
+     0.004,
+     61.0161,
+     5,
+     0,
+     10.4802,
+     46.8919,
+     22.3419,
+     0.0106128,
+     0.00858098,
+     0.0136511,
+     2.91778,
+     7.29248e-130,
+     0.691762,
+     0.1,
+     0,
+     2.56152,
+     1
+    ],
+    [
+     3961.92,
+     0.004,
+     60.1376,
+     5,
+     0,
+     10.4969,
+     46.8919,
+     22.3419,
+     0.01032,
+     0.00844512,
+     0.0126519,
+     2.91597,
+     6.26496e-133,
+     0.693549,
+     0.1,
+     0,
+     2.56441,
+     1
+    ],
+    [
+     4021.43,
+     0.004,
+     59.351,
+     5,
+     0,
+     10.512,
+     46.8919,
+     22.3419,
+     0.0100898,
+     0.0083367,
+     0.0118043,
+     2.91424,
+     9.18326e-136,
+     0.695199,
+     0.1,
+     0,
+     2.56668,
+     1
+    ],
+    [
+     4081.92,
+     0.004,
+     58.6461,
+     5,
+     0,
+     10.5255,
+     46.8919,
+     22.3419,
+     0.00989353,
+     0.00824285,
+     0.011036,
+     2.91248,
+     1.5168e-138,
+     0.696692,
+     0.1,
+     0,
+     2.56888,
+     1
+    ],
+    [
+     4141.43,
+     0.004,
+     58.0251,
+     5,
+     0,
+     10.5375,
+     46.8919,
+     22.3419,
+     0.00972833,
+     0.00816259,
+     0.0103568,
+     2.91075,
+     3.36761e-141,
+     0.698015,
+     0.1,
+     0,
+     2.57103,
+     1
+    ],
+    [
+     4201.92,
+     0.004,
+     57.4733,
+     5,
+     0,
+     10.5482,
+     46.8919,
+     22.3419,
+     0.00958189,
+     0.0080903,
+     0.00973166,
+     2.90898,
+     7.99918e-144,
+     0.699178,
+     0.1,
+     0,
+     2.57312,
+     1
+    ],
+    [
+     4261.43,
+     0.004,
+     56.9874,
+     5,
+     0,
+     10.5576,
+     46.8919,
+     22.3419,
+     0.00945429,
+     0.00802629,
+     0.00917145,
+     2.90725,
+     2.41728e-146,
+     0.70019,
+     0.1,
+     0,
+     2.57516,
+     1
+    ],
+    [
+     4321.92,
+     0.004,
+     56.5557,
+     5,
+     0,
+     10.566,
+     46.8919,
+     22.3419,
+     0.00933772,
+     0.00796691,
+     0.00864968,
+     2.9055,
+     7.52953e-149,
+     0.701061,
+     0.1,
+     0,
+     2.57714,
+     1
+    ],
+    [
+     4381.43,
+     0.004,
+     56.1743,
+     5,
+     0,
+     10.5734,
+     46.8919,
+     22.3419,
+     0.00923343,
+     0.00791298,
+     0.00817724,
+     2.90377,
+     2.86825e-151,
+     0.701808,
+     0.1,
+     0,
+     2.57909,
+     1
+    ],
+    [
+     4441.92,
+     0.004,
+     55.8352,
+     5,
+     0,
+     10.5801,
+     46.8919,
+     22.3419,
+     0.00913598,
+     0.00786187,
+     0.00773321,
+     2.90201,
+     1.09678e-153,
+     0.702434,
+     0.1,
+     0,
+     2.58098,
+     1
+    ],
+    [
+     4501.43,
+     0.004,
+     55.5343,
+     5,
+     0,
+     10.586,
+     46.8919,
+     22.3419,
+     0.00904705,
+     0.0078146,
+     0.00732796,
+     2.90029,
+     4.98423e-156,
+     0.702961,
+     0.1,
+     0,
+     2.58284,
+     1
+    ],
+    [
+     4561.92,
+     0.004,
+     55.2664,
+     5,
+     0,
+     10.5912,
+     46.8919,
+     22.3419,
+     0.0089625,
+     0.0077691,
+     0.00694444,
+     2.89853,
+     2.23069e-158,
+     0.703387,
+     0.1,
+     0,
+     2.58465,
+     1
+    ],
+    [
+     4621.43,
+     0.004,
+     55.0276,
+     5,
+     0,
+     10.5959,
+     46.8919,
+     22.3419,
+     0.00888419,
+     0.00772645,
+     0.00659227,
+     2.89681,
+     1.16178e-160,
+     0.703735,
+     0.1,
+     0,
+     2.58644,
+     1
+    ],
+    [
+     4681.92,
+     0.004,
+     54.8146,
+     5,
+     0,
+     10.6001,
+     46.8919,
+     22.3419,
+     0.00880876,
+     0.00768493,
+     0.00625719,
+     2.89506,
+     5.87659e-163,
+     0.704,
+     0.1,
+     0,
+     2.58817,
+     1
+    ],
+    [
+     4741,
+     0.004,
+     54.6241,
+     5,
+     0,
+     10.6038,
+     46.8919,
+     22.3419,
+     0.00873859,
+     0.00764592,
+     0.00595022,
+     2.89335,
+     3.53326e-165,
+     0.704206,
+     0.1,
+     0,
+     2.58988,
+     1
+    ],
+    [
+     4803,
+     0.00156,
+     54.1378,
+     2.35523,
+     0,
+     10.3993,
+     22.0882,
+     10.524,
+     0.00408674,
+     0.00358849,
+     0.00266766,
+     1.36205,
+     2.95535e-166,
+     0.224236,
+     0.0471045,
+     0,
+     1.22321,
+     1
+    ],
+    [
+     4862.51,
+     0.0029,
+     49.8381,
+     1.26695,
+     0,
+     10.2657,
+     12.313,
+     6.09224,
+     0.00218808,
+     0.0019244,
+     0.00137687,
+     0.732254,
+     6.52333e-168,
+     0.0798836,
+     0.025339,
+     0,
+     0.660575,
+     1
+    ],
+    [
+     4923.59,
+     0.0029,
+     52.2819,
+     1.26695,
+     0,
+     10.2199,
+     12.313,
+     6.09224,
+     0.00217849,
+     0.00192008,
+     0.00132034,
+     0.731807,
+     1.80175e-168,
+     0.0791394,
+     0.025339,
+     0,
+     0.660985,
+     1
+    ],
+    [
+     4984.16,
+     0.0029,
+     51.5059,
+     1.26695,
+     0,
+     10.2344,
+     12.313,
+     6.09224,
+     0.00216963,
+     0.00191606,
+     0.00126758,
+     0.731364,
+     5.11818e-169,
+     0.0793076,
+     0.025339,
+     0,
+     0.661614,
+     1
+    ],
+    [
+     5045.52,
+     0.0029,
+     50.7998,
+     1.26695,
+     0,
+     10.2477,
+     12.313,
+     6.09224,
+     0.00216201,
+     0.00191253,
+     0.00121873,
+     0.730915,
+     1.49569e-169,
+     0.0794592,
+     0.025339,
+     0,
+     0.662198,
+     1
+    ],
+    [
+     5107.98,
+     0.0029,
+     50.1714,
+     1.26695,
+     0,
+     10.2595,
+     12.313,
+     6.09224,
+     0.0021553,
+     0.00190935,
+     0.00117299,
+     0.730459,
+     4.44994e-170,
+     0.0795905,
+     0.025339,
+     0,
+     0.662736,
+     1
+    ],
+    [
+     5168.69,
+     0.0029,
+     49.6305,
+     1.26695,
+     0,
+     10.2696,
+     12.313,
+     6.09224,
+     0.00214956,
+     0.00190657,
+     0.00113181,
+     0.730016,
+     1.41556e-170,
+     0.0797002,
+     0.025339,
+     0,
+     0.663271,
+     1
+    ],
+    [
+     5230.04,
+     0.0029,
+     49.1505,
+     1.26695,
+     0,
+     10.2786,
+     12.313,
+     6.09224,
+     0.00214436,
+     0.00190399,
+     0.00109298,
+     0.729568,
+     4.57427e-171,
+     0.0797933,
+     0.025339,
+     0,
+     0.663719,
+     1
+    ],
+    [
+     5291,
+     0.00265,
+     48.6949,
+     0.351411,
+     0,
+     9.93807,
+     3.41521,
+     1.68979,
+     0.000593489,
+     0.000527477,
+     0.000293159,
+     0.202235,
+     4.71421e-172,
+     0.010555,
+     0.00702821,
+     0,
+     0.184229,
+     0
+    ],
+    [
+     5351,
+     0.000983333,
+     47.8874,
+     0.947022,
+     0,
+     10.2262,
+     9.20371,
+     4.55384,
+     0.00159658,
+     0.00142029,
+     0.000765716,
+     0.544679,
+     7.06582e-172,
+     0.0511285,
+     0.0189404,
+     0,
+     0.497883,
+     0
+    ],
+    [
+     5411.55,
+     0.0029,
+     42.4483,
+     0.321117,
+     0,
+     9.94351,
+     3.55183,
+     1.97515,
+     0.000540958,
+     0.000481325,
+     0.000254322,
+     0.184578,
+     1.37248e-172,
+     0.00772242,
+     0.00642233,
+     0,
+     0.16928,
+     0
+    ],
+    [
+     5472.38,
+     0.0029,
+     45.2909,
+     0.321117,
+     0,
+     9.89259,
+     3.55183,
+     1.97515,
+     0.000540515,
+     0.000481136,
+     0.000248088,
+     0.184466,
+     1.03082e-172,
+     0.00767362,
+     0.00642233,
+     1.72414,
+     0.169574,
+     2
+    ],
+    [
+     5531.7,
+     0.0029,
+     48.3437,
+     0.321117,
+     0,
+     9.83745,
+     3.55183,
+     1.97515,
+     0.000539869,
+     0.000480875,
+     0.000241391,
+     0.184357,
+     7.59807e-173,
+     0.00761431,
+     0.00642233,
+     1.72414,
+     0.16998,
+     2
+    ],
+    [
+     5593.06,
+     0.0029,
+     50.9783,
+     0.321117,
+     0,
+     9.78951,
+     3.55183,
+     1.97515,
+     0.000538545,
+     0.000480358,
+     0.000233061,
+     0.184244,
+     5.25525e-173,
+     0.00755696,
+     0.00642233,
+     1.72414,
+     0.170371,
+     2
+    ],
+    [
+     5654.58,
+     0.0029,
+     53.5604,
+     0.321117,
+     0,
+     9.74225,
+     3.55183,
+     1.97515,
+     0.000536169,
+     0.000479414,
+     0.00022346,
+     0.18413,
+     3.45394e-173,
+     0.00749645,
+     0.00642233,
+     1.72414,
+     0.170811,
+     2
+    ],
+    [
+     5714.72,
+     0.0029,
+     56.1012,
+     0.321117,
+     0,
+     9.69551,
+     3.55183,
+     1.97515,
+     0.000532088,
+     0.000477732,
+     0.000212805,
+     0.18402,
+     2.17245e-173,
+     0.00743342,
+     0.00642233,
+     1.72414,
+     0.171324,
+     2
+    ],
+    [
+     5776.07,
+     0.0029,
+     58.6669,
+     0.321117,
+     0,
+     9.6481,
+     3.55183,
+     1.97515,
+     0.000524864,
+     0.000474603,
+     0.000200612,
+     0.183907,
+     1.27497e-173,
+     0.00736675,
+     0.00642233,
+     1.72414,
+     0.171872,
+     2
+    ],
+    [
+     5836.77,
+     0.0029,
+     61.1821,
+     0.321117,
+     0,
+     9.60143,
+     3.55183,
+     1.97515,
+     0.000512657,
+     0.000468999,
+     0.000187247,
+     0.183795,
+     7.04961e-174,
+     0.00729894,
+     0.00642233,
+     1.72414,
+     0.172287,
+     2
+    ],
+    [
+     5896,
+     0.0029,
+     63.6602,
+     0.321117,
+     0,
+     9.5553,
+     3.55183,
+     1.97515,
+     0.000492953,
+     0.000459347,
+     0.000173029,
+     0.183686,
+     3.69242e-174,
+     0.00723032,
+     0.00642233,
+     1.72414,
+     0.172861,
+     2
+    ],
+    [
+     5957.58,
+     0.0029,
+     66.2026,
+     0.321117,
+     0,
+     9.50784,
+     3.55183,
+     1.97515,
+     0.000459966,
+     0.000441918,
+     0.000157151,
+     0.183573,
+     1.74222e-174,
+     0.00715842,
+     0.00642233,
+     1.72414,
+     0.173414,
+     2
+    ],
+    [
+     6018.97,
+     0.0029,
+     68.7186,
+     0.321117,
+     0,
+     9.46077,
+     3.55183,
+     1.97515,
+     0.000409085,
+     0.00041247,
+     0.000140436,
+     0.183461,
+     7.55262e-175,
+     0.00708629,
+     0.00642233,
+     1.72414,
+     0.173878,
+     2
+    ],
+    [
+     6080.4,
+     0.0029,
+     67.5063,
+     0.321117,
+     0,
+     9.48346,
+     3.55183,
+     1.97515,
+     0.000360065,
+     0.000382412,
+     0.000125111,
+     0.183348,
+     3.22224e-175,
+     0.00711466,
+     0.00642233,
+     1.72414,
+     0.174298,
+     2
+    ],
+    [
+     6140.6,
+     0.0029,
+     67.3772,
+     0.321117,
+     0,
+     9.48587,
+     3.55183,
+     1.97515,
+     0.000321856,
+     0.000358079,
+     0.000112109,
+     0.183238,
+     1.42343e-175,
+     0.00711385,
+     0.00642233,
+     1.72414,
+     0.174719,
+     2
+    ],
+    [
+     6203.37,
+     0.0029,
+     67.2649,
+     0.321117,
+     0,
+     9.48798,
+     3.55183,
+     1.97515,
+     0.000287124,
+     0.000334951,
+     0.00010007,
+     0.183123,
+     6.09848e-176,
+     0.0071124,
+     0.00642233,
+     1.72414,
+     0.175221,
+     2
+    ],
+    [
+     6265,
+     0.00126111,
+     66.9649,
+     0.187159,
+     0,
+     9.33061,
+     2.07014,
+     1.15119,
+     0.000150273,
+     0.000183373,
+     0.0000522468,
+     0.106665,
+     2.36193e-176,
+     0.00288489,
+     0.00374318,
+     1.00489,
+     0.102891,
+     2
+    ],
+    [
+     6335,
+     0.0004,
+     66.5462,
+     0.590071,
+     0,
+     9.66649,
+     6.52671,
+     3.62946,
+     0.000423153,
+     0.000541562,
+     0.000145756,
+     0.336056,
+     2.28514e-176,
+     0.018801,
+     0.0118014,
+     3.16821,
+     0.327888,
+     2
+    ],
+    [
+     6395,
+     0.0004,
+     66.1297,
+     0.590071,
+     0,
+     9.67372,
+     6.52671,
+     3.62946,
+     0.000387329,
+     0.000514774,
+     0.000131606,
+     0.335854,
+     7.098e-177,
+     0.0187959,
+     0.0118014,
+     3.16821,
+     0.327888,
+     2
+    ],
+    [
+     6455,
+     0.0004,
+     65.5621,
+     0.590071,
+     0,
+     9.68357,
+     6.52671,
+     3.62946,
+     0.000357448,
+     0.000491821,
+     0.000119178,
+     0.335653,
+     2.2608e-177,
+     0.0187927,
+     0.0118014,
+     3.16821,
+     0.332193,
+     2
+    ],
+    [
+     6515,
+     0.0004,
+     64.4703,
+     0.590071,
+     0,
+     9.70249,
+     6.52671,
+     3.62946,
+     0.000334344,
+     0.000473811,
+     0.000108501,
+     0.335452,
+     7.54164e-178,
+     0.0187963,
+     0.0118014,
+     3.16821,
+     0.335955,
+     2
+    ],
+    [
+     6575,
+     0.0004,
+     63.1595,
+     0.590071,
+     0,
+     9.72517,
+     6.52671,
+     3.62946,
+     0.000317571,
+     0.000460713,
+     0.00009948,
+     0.33525,
+     2.67761e-178,
+     0.0188012,
+     0.0118014,
+     3.16821,
+     0.335955,
+     2
+    ],
+    [
+     6635,
+     0.0004,
+     61.8331,
+     0.590071,
+     0,
+     9.74807,
+     6.52671,
+     3.62946,
+     0.000305486,
+     0.000451326,
+     0.0000918532,
+     0.335049,
+     1.01295e-178,
+     0.0188044,
+     0.0118014,
+     3.16821,
+     0.339657,
+     2
+    ],
+    [
+     6695,
+     0.0004,
+     60.5858,
+     0.590071,
+     0,
+     9.76957,
+     6.52671,
+     3.62946,
+     0.000296616,
+     0.000444497,
+     0.0000853468,
+     0.334848,
+     4.06129e-179,
+     0.0188049,
+     0.0118014,
+     3.16821,
+     0.343298,
+     2
+    ],
+    [
+     6755,
+     0.0004,
+     59.4563,
+     0.590071,
+     0,
+     9.78899,
+     6.52671,
+     3.62946,
+     0.000289916,
+     0.000439388,
+     0.0000797292,
+     0.334647,
+     1.7131e-179,
+     0.0188026,
+     0.0118014,
+     3.16821,
+     0.346869,
+     2
+    ],
+    [
+     6815,
+     0.0004,
+     58.4542,
+     0.590071,
+     0,
+     9.80618,
+     6.52671,
+     3.62946,
+     0.000284696,
+     0.000435442,
+     0.0000748175,
+     0.334447,
+     7.5461e-180,
+     0.0187979,
+     0.0118014,
+     3.16821,
+     0.346869,
+     2
+    ],
+    [
+     6875,
+     0.0004,
+     57.5756,
+     0.590071,
+     0,
+     9.82123,
+     6.52671,
+     3.62946,
+     0.000280502,
+     0.000432296,
+     0.0000704712,
+     0.334246,
+     3.44802e-180,
+     0.0187913,
+     0.0118014,
+     3.16821,
+     0.35036,
+     2
+    ],
+    [
+     6935,
+     0.0004,
+     56.8102,
+     0.590071,
+     0,
+     9.83432,
+     6.52671,
+     3.62946,
+     0.000277038,
+     0.000429714,
+     0.0000665834,
+     0.334046,
+     1.62485e-180,
+     0.0187831,
+     0.0118014,
+     3.16821,
+     0.353742,
+     2
+    ],
+    [
+     6995,
+     0.0004,
+     56.1457,
+     0.590071,
+     0,
+     9.84567,
+     6.52671,
+     3.62946,
+     0.000274105,
+     0.000427538,
+     0.0000630721,
+     0.333845,
+     7.85845e-181,
+     0.0187738,
+     0.0118014,
+     3.16821,
+     0.356999,
+     2
+    ],
+    [
+     7055,
+     0.0004,
+     55.4592,
+     0.590071,
+     0,
+     9.85737,
+     6.52671,
+     3.62946,
+     0.000271585,
+     0.000425675,
+     0.0000598808,
+     0.333645,
+     3.88937e-181,
+     0.0187638,
+     0.0118014,
+     3.16821,
+     0.358577,
+     2
+    ],
+    [
+     7115,
+     0.0004,
+     54.4435,
+     0.590071,
+     0,
+     9.87465,
+     6.52671,
+     3.62946,
+     0.000269526,
+     0.000424163,
+     0.0000570193,
+     0.333445,
+     1.98484e-181,
+     0.0187531,
+     0.0118014,
+     3.16821,
+     0.361641,
+     2
+    ],
+    [
+     7175,
+     0.0004,
+     53.3327,
+     0.590071,
+     0,
+     9.8935,
+     6.52671,
+     3.62946,
+     0.000267918,
+     0.00042299,
+     0.0000544808,
+     0.333245,
+     1.05013e-181,
+     0.0187405,
+     0.0118014,
+     3.16821,
+     0.361641,
+     2
+    ],
+    [
+     7235,
+     0.0004,
+     52.2745,
+     0.590071,
+     0,
+     9.91141,
+     6.52671,
+     3.62946,
+     0.000266661,
+     0.000422077,
+     0.0000522222,
+     0.333045,
+     5.75068e-182,
+     0.018726,
+     0.0118014,
+     3.16821,
+     0.364563,
+     2
+    ],
+    [
+     7295,
+     0.0004,
+     51.3298,
+     0.590071,
+     0,
+     9.92735,
+     6.52671,
+     3.62946,
+     0.000265657,
+     0.000421348,
+     0.0000501948,
+     0.332845,
+     3.2454e-182,
+     0.0187101,
+     0.0118014,
+     3.16821,
+     0.367336,
+     2
+    ],
+    [
+     7355,
+     0.0004,
+     50.5165,
+     0.590071,
+     0,
+     9.94105,
+     6.52671,
+     3.62946,
+     0.000264833,
+     0.000420747,
+     0.0000483555,
+     0.332646,
+     1.87835e-182,
+     0.0186935,
+     0.0118014,
+     3.16821,
+     0.369945,
+     2
+    ],
+    [
+     7415,
+     0.0004,
+     49.8313,
+     0.590071,
+     0,
+     9.95256,
+     6.52671,
+     3.62946,
+     0.000264136,
+     0.000420235,
+     0.0000466688,
+     0.332446,
+     1.10988e-182,
+     0.0186768,
+     0.0118014,
+     3.16821,
+     0.369945,
+     2
+    ],
+    [
+     7475,
+     0.0004,
+     49.2624,
+     0.590071,
+     0,
+     9.9621,
+     6.52671,
+     3.62946,
+     0.000263529,
+     0.000419785,
+     0.0000451068,
+     0.332247,
+     6.66899e-183,
+     0.0186603,
+     0.0118014,
+     3.16821,
+     0.372373,
+     2
+    ],
+    [
+     7535,
+     0.0004,
+     48.7948,
+     0.590071,
+     0,
+     9.96993,
+     6.52671,
+     3.62946,
+     0.000262987,
+     0.00041938,
+     0.0000436478,
+     0.332047,
+     4.06174e-183,
+     0.0186442,
+     0.0118014,
+     3.16821,
+     0.37463,
+     2
+    ],
+    [
+     7595,
+     0.0004,
+     48.4133,
+     0.590071,
+     0,
+     9.97631,
+     6.52671,
+     3.62946,
+     0.000262495,
+     0.000419008,
+     0.0000422752,
+     0.331848,
+     2.50074e-183,
+     0.0186288,
+     0.0118014,
+     3.16821,
+     0.376722,
+     2
+    ],
+    [
+     7655,
+     0.0004,
+     48.0142,
+     0.590071,
+     0,
+     9.98297,
+     6.52671,
+     3.62946,
+     0.000262041,
+     0.000418662,
+     0.000040978,
+     0.331649,
+     1.55411e-183,
+     0.0186128,
+     0.0118014,
+     3.16821,
+     0.37771,
+     2
+    ],
+    [
+     7715,
+     0.0004,
+     47.3488,
+     0.590071,
+     0,
+     9.99407,
+     6.52671,
+     3.62946,
+     0.00026164,
+     0.000418351,
+     0.0000397676,
+     0.33145,
+     9.79455e-184,
+     0.0185928,
+     0.0118014,
+     3.16821,
+     0.37958,
+     2
+    ],
+    [
+     7775,
+     0.0004,
+     46.6116,
+     0.590071,
+     0,
+     10.0063,
+     6.52671,
+     3.62946,
+     0.000261297,
+     0.000418079,
+     0.0000386492,
+     0.331251,
+     6.282e-184,
+     0.0185709,
+     0.0118014,
+     3.16821,
+     0.37958,
+     2
+    ],
+    [
+     7835,
+     0.0004,
+     45.9208,
+     0.590071,
+     0,
+     10.0178,
+     6.52671,
+     3.62946,
+     0.000261004,
+     0.000417839,
+     0.0000376143,
+     0.331053,
+     4.09755e-184,
+     0.0185485,
+     0.0118014,
+     3.16821,
+     0.381311,
+     2
+    ],
+    [
+     7895,
+     0.0004,
+     45.3222,
+     0.590071,
+     0,
+     10.0277,
+     6.52671,
+     3.62946,
+     0.000260749,
+     0.000417623,
+     0.0000366503,
+     0.330854,
+     2.71194e-184,
+     0.0185267,
+     0.0118014,
+     3.16821,
+     0.382897,
+     2
+    ],
+    [
+     7955,
+     0.0004,
+     44.8265,
+     0.590071,
+     0,
+     10.0359,
+     6.52671,
+     3.62946,
+     0.000260522,
+     0.000417425,
+     0.0000357452,
+     0.330656,
+     1.81647e-184,
+     0.0185062,
+     0.0118014,
+     3.16821,
+     0.384325,
+     2
+    ],
+    [
+     8015,
+     0.0004,
+     44.4281,
+     0.590071,
+     0,
+     10.0425,
+     6.52671,
+     3.62946,
+     0.000260315,
+     0.000417239,
+     0.0000348889,
+     0.330457,
+     1.22832e-184,
+     0.0184871,
+     0.0118014,
+     3.16821,
+     0.384325,
+     2
+    ],
+    [
+     8075,
+     0.0004,
+     44.1155,
+     0.590071,
+     0,
+     10.0476,
+     6.52671,
+     3.62946,
+     0.000260122,
+     0.000417063,
+     0.0000340729,
+     0.330259,
+     8.36776e-185,
+     0.0184695,
+     0.0118014,
+     3.16821,
+     0.385614,
+     2
+    ],
+    [
+     8135,
+     0.0004,
+     43.8752,
+     0.590071,
+     0,
+     10.0516,
+     6.52671,
+     3.62946,
+     0.00025994,
+     0.000416893,
+     0.0000332907,
+     0.330061,
+     5.73286e-185,
+     0.0184532,
+     0.0118014,
+     3.16821,
+     0.386784,
+     2
+    ],
+    [
+     8195,
+     0.0004,
+     43.6944,
+     0.590071,
+     0,
+     10.0546,
+     6.52671,
+     3.62946,
+     0.000259766,
+     0.000416727,
+     0.0000325372,
+     0.329863,
+     3.94444e-185,
+     0.0184381,
+     0.0118014,
+     3.16821,
+     0.387835,
+     2
+    ],
+    [
+     8255,
+     0.0004,
+     43.5619,
+     0.590071,
+     0,
+     10.0567,
+     6.52671,
+     3.62946,
+     0.000259597,
+     0.000416565,
+     0.0000318086,
+     0.329665,
+     2.72248e-185,
+     0.0184241,
+     0.0118014,
+     3.16821,
+     0.387835,
+     2
+    ],
+    [
+     8315,
+     0.0004,
+     43.4679,
+     0.590071,
+     0,
+     10.0583,
+     6.52671,
+     3.62946,
+     0.000259432,
+     0.000416406,
+     0.0000311016,
+     0.329467,
+     1.88331e-185,
+     0.0184109,
+     0.0118014,
+     3.16821,
+     0.388785,
+     2
+    ],
+    [
+     8375,
+     0.0004,
+     43.4043,
+     0.590071,
+     0,
+     10.0593,
+     6.52671,
+     3.62946,
+     0.000259269,
+     0.000416248,
+     0.0000304139,
+     0.32927,
+     1.30485e-185,
+     0.0183984,
+     0.0118014,
+     3.16821,
+     0.389647,
+     2
+    ],
+    [
+     8435,
+     0.0004,
+     43.3647,
+     0.590071,
+     0,
+     10.06,
+     6.52671,
+     3.62946,
+     0.000259108,
+     0.000416091,
+     0.0000297437,
+     0.329072,
+     9.04977e-186,
+     0.0183865,
+     0.0118014,
+     3.16821,
+     0.390423,
+     2
+    ],
+    [
+     8495,
+     0.0004,
+     43.3436,
+     0.590071,
+     0,
+     10.0603,
+     6.52671,
+     3.62946,
+     0.000258949,
+     0.000415935,
+     0.0000290896,
+     0.328875,
+     6.28023e-186,
+     0.018375,
+     0.0118014,
+     3.16821,
+     0.390423,
+     2
+    ],
+    [
+     8555,
+     0.0004,
+     43.3367,
+     0.590071,
+     0,
+     10.0604,
+     6.52671,
+     3.62946,
+     0.000258789,
+     0.000415779,
+     0.0000284504,
+     0.328678,
+     4.35946e-186,
+     0.0183638,
+     0.0118014,
+     3.16821,
+     0.391123,
+     2
+    ],
+    [
+     8615,
+     0.0004,
+     43.3406,
+     0.590071,
+     0,
+     10.0604,
+     6.52671,
+     3.62946,
+     0.00025863,
+     0.000415623,
+     0.0000278252,
+     0.328481,
+     3.02623e-186,
+     0.0183529,
+     0.0118014,
+     3.16821,
+     0.391757,
+     2
+    ],
+    [
+     8675,
+     0.0004,
+     43.3524,
+     0.590071,
+     0,
+     10.0602,
+     6.52671,
+     3.62946,
+     0.000258471,
+     0.000415467,
+     0.0000272134,
+     0.328284,
+     2.10041e-186,
+     0.0183421,
+     0.0118014,
+     3.16821,
+     0.392338,
+     2
+    ],
+    [
+     8695,
+     0.0004,
+     43.3577,
+     0.590071,
+     0,
+     10.0601,
+     6.52671,
+     3.62946,
+     0.000258418,
+     0.000415415,
+     0.0000270123,
+     0.328218,
+     1.85957e-186,
+     0.0183386,
+     0.0118014,
+     3.16821,
+     0.392338,
+     2
+    ]
+   ]
+  },
+  "soil": {
+   "initial_mg": 40874.90000000012,
+   "remaining_mg": 30443.17239946284,
+   "toLiquor_mg": 10431.72760053694,
+   "toPools_mg": 0
+  },
+  "timelineProblems": []
+ },
+ "problems": [],
+ "run": {
+  "timings_ms": {
+   "scene": 4926.460624999949,
+   "hydraulics": 24.98679100011941,
+   "exposure": 170158.88933399995,
+   "soil": 807.4802079999354,
+   "replay": 4986.30475000001,
+   "result": 659.9994169999845
+  },
+  "sceneReused": false,
+  "exposureCacheHits": 0,
+  "exposureComputed": 4,
+  "blocks": 677539,
+  "soilCells": 1799268,
+  "deposits": 308421
+ }
+}

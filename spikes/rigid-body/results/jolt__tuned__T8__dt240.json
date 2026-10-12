@@ -1,0 +1,470 @@
+{
+ "engine": "jolt",
+ "preset": "tuned",
+ "test": "T8",
+ "hz": 240,
+ "tag": null,
+ "cfg": {
+  "ccd": false,
+  "sleep": true,
+  "penetrationSlop": 0.0001,
+  "speculativeContactDistance": 0.005,
+  "convexRadius": 0.0002,
+  "hullTolerance": 0.00001,
+  "velocitySteps": 10,
+  "positionSteps": 4,
+  "manifoldTolerance": 0.0001,
+  "manifoldReduction": false,
+  "pointVelocitySleepThreshold": 0.005,
+  "minVelocityForRestitution": 0.2,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {},
+ "wallSeconds": 13.745960499999999,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:29:59.125Z",
+ "summary": {
+  "T2@1/120": {
+   "counts": {
+    "bodies": 12,
+    "pieces": 876,
+    "vertices": 7488,
+    "staticCapsules": 236,
+    "staticBoxes": 0
+   },
+   "stepMean_ms": {
+    "best": 0.06873425333333326,
+    "median": 0.06874828000000148,
+    "worst": 0.06966624833333265
+   },
+   "stepActiveMean_ms": {
+    "best": 0.34181492500000193,
+    "median": 0.34185246666666724,
+    "worst": 0.34617052499999945
+   },
+   "stepP99_ms": {
+    "best": 0.9485420000000033,
+    "median": 0.9582910000000027,
+    "worst": 1.0184999999999889
+   },
+   "stepMax_ms": {
+    "best": 3.245500000000007,
+    "median": 3.2847090000000065
+   },
+   "total_ms": {
+    "best": 41.24055199999996,
+    "median": 41.248968000000886
+   },
+   "build_ms": {
+    "best": 76.34516599999999,
+    "median": 77.81049999999999
+   },
+   "rssAfter_MB": 100.03125,
+   "rssDelta_MB": 59.703125,
+   "engineMem": {
+    "wasmHeapMB": 128
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 0.21666666666666667,
+    "exploded": null,
+    "asleep": "12/12",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 0.5722500085830688
+   }
+  },
+  "T2@1/240": {
+   "counts": {
+    "bodies": 12,
+    "pieces": 876,
+    "vertices": 7488,
+    "staticCapsules": 236,
+    "staticBoxes": 0
+   },
+   "stepMean_ms": {
+    "best": 0.05045252083333347,
+    "median": 0.05276749083333307,
+    "worst": 0.053228308333332953
+   },
+   "stepActiveMean_ms": {
+    "best": 0.2500097166666658,
+    "median": 0.26153175416666613,
+    "worst": 0.2637773083333332
+   },
+   "stepP99_ms": {
+    "best": 0.5899579999999958,
+    "median": 0.5914590000000004,
+    "worst": 0.6644999999999897
+   },
+   "stepMax_ms": {
+    "best": 3.250417000000013,
+    "median": 3.343583999999993
+   },
+   "total_ms": {
+    "best": 60.54302500000016,
+    "median": 63.320988999999685
+   },
+   "build_ms": {
+    "best": 76.511291,
+    "median": 78.13237500000001
+   },
+   "rssAfter_MB": 104.328125,
+   "rssDelta_MB": 64.140625,
+   "engineMem": {
+    "wasmHeapMB": 128
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 0.2125,
+    "exploded": null,
+    "asleep": "12/12",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 0.6131251454353333
+   }
+  },
+  "T2@1/480": {
+   "counts": {
+    "bodies": 12,
+    "pieces": 876,
+    "vertices": 7488,
+    "staticCapsules": 236,
+    "staticBoxes": 0
+   },
+   "stepMean_ms": {
+    "best": 0.04520748416666688,
+    "median": 0.04564600791666672,
+    "worst": 0.04590872500000027
+   },
+   "stepActiveMean_ms": {
+    "best": 0.22435857916666654,
+    "median": 0.2266298437500005,
+    "worst": 0.22786596875000076
+   },
+   "stepP99_ms": {
+    "best": 0.41541599999999335,
+    "median": 0.42329200000000355,
+    "worst": 0.4308330000000069
+   },
+   "stepMax_ms": {
+    "best": 3.208625000000012,
+    "median": 3.2439999999999998
+   },
+   "total_ms": {
+    "best": 108.49796200000051,
+    "median": 109.55041900000012
+   },
+   "build_ms": {
+    "best": 71.496042,
+    "median": 73.625834
+   },
+   "rssAfter_MB": 104.625,
+   "rssDelta_MB": 64.453125,
+   "engineMem": {
+    "wasmHeapMB": 128
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 0.20625,
+    "exploded": null,
+    "asleep": "12/12",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 0.6335625052452087
+   }
+  },
+  "T5@1/120": {
+   "counts": {
+    "bodies": 20,
+    "pieces": 140,
+    "vertices": 1160,
+    "staticCapsules": 0,
+    "staticBoxes": 10
+   },
+   "stepMean_ms": {
+    "best": 0.08056160666666687,
+    "median": 0.08106096500000003,
+    "worst": 0.08151250333333385
+   },
+   "stepActiveMean_ms": {
+    "best": 0.3457555500000004,
+    "median": 0.3480468916666671,
+    "worst": 0.35062643333333293
+   },
+   "stepP99_ms": {
+    "best": 0.4145419999999973,
+    "median": 0.41612500000000807,
+    "worst": 0.4231669999999923
+   },
+   "stepMax_ms": {
+    "best": 3.4353750000000076,
+    "median": 3.4515419999999892
+   },
+   "total_ms": {
+    "best": 48.33696400000012,
+    "median": 48.63657900000002
+   },
+   "build_ms": {
+    "best": 70.493416,
+    "median": 71.68995799999999
+   },
+   "rssAfter_MB": 104.421875,
+   "rssDelta_MB": 68.984375,
+   "engineMem": {
+    "wasmHeapMB": 128
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 1.0833333333333333,
+    "exploded": null,
+    "asleep": "20/20",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.4715003967285156
+   }
+  },
+  "T5@1/240": {
+   "counts": {
+    "bodies": 20,
+    "pieces": 140,
+    "vertices": 1160,
+    "staticCapsules": 0,
+    "staticBoxes": 10
+   },
+   "stepMean_ms": {
+    "best": 0.06967658416666704,
+    "median": 0.06978441333333363,
+    "worst": 0.06990562833333305
+   },
+   "stepActiveMean_ms": {
+    "best": 0.28072009583333396,
+    "median": 0.2813746791666654,
+    "worst": 0.28208390833333447
+   },
+   "stepP99_ms": {
+    "best": 0.335125000000005,
+    "median": 0.3382080000000087,
+    "worst": 0.35112499999999613
+   },
+   "stepMax_ms": {
+    "best": 3.4217920000000106,
+    "median": 3.5757090000000034
+   },
+   "total_ms": {
+    "best": 83.61190100000044,
+    "median": 83.74129600000035
+   },
+   "build_ms": {
+    "best": 70.630375,
+    "median": 70.856458
+   },
+   "rssAfter_MB": 103.15625,
+   "rssDelta_MB": 67.90625,
+   "engineMem": {
+    "wasmHeapMB": 128
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 1.1583333333333332,
+    "exploded": null,
+    "asleep": "20/20",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.4306248426437378
+   }
+  },
+  "T5@1/480": {
+   "counts": {
+    "bodies": 20,
+    "pieces": 140,
+    "vertices": 1160,
+    "staticCapsules": 0,
+    "staticBoxes": 10
+   },
+   "stepMean_ms": {
+    "best": 0.0681012399999999,
+    "median": 0.06834513458333333,
+    "worst": 0.06951412458333321
+   },
+   "stepActiveMean_ms": {
+    "best": 0.2717300520833331,
+    "median": 0.2725750791666661,
+    "worst": 0.2756415791666659
+   },
+   "stepP99_ms": {
+    "best": 0.3337500000000091,
+    "median": 0.3365000000000009,
+    "worst": 0.3397499999999809
+   },
+   "stepMax_ms": {
+    "best": 3.385458,
+    "median": 3.4175419999999974
+   },
+   "total_ms": {
+    "best": 163.44297599999976,
+    "median": 164.028323
+   },
+   "build_ms": {
+    "best": 70.139708,
+    "median": 70.73529199999999
+   },
+   "rssAfter_MB": 104.21875,
+   "rssDelta_MB": 69.421875,
+   "engineMem": {
+    "wasmHeapMB": 128
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 2.1333333333333333,
+    "exploded": null,
+    "asleep": "20/20",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.451061725616455
+   }
+  },
+  "FULL@1/120": {
+   "counts": {
+    "bodies": 122,
+    "pieces": 3028,
+    "vertices": 25872,
+    "staticCapsules": 1355,
+    "staticBoxes": 30
+   },
+   "stepMean_ms": {
+    "best": 0.8212340958333322,
+    "median": 0.8474503249999991,
+    "worst": 0.8489541604166658
+   },
+   "stepActiveMean_ms": {
+    "best": 3.1268625000000005,
+    "median": 3.231907616666669,
+    "worst": 3.2332986000000026
+   },
+   "stepP99_ms": {
+    "best": 5.365000000000009,
+    "median": 5.3764170000000036,
+    "worst": 5.511458000000005
+   },
+   "stepMax_ms": {
+    "best": 6.317958000000004,
+    "median": 6.416459000000003
+   },
+   "total_ms": {
+    "best": 394.1923659999994,
+    "median": 406.77615599999956
+   },
+   "build_ms": {
+    "best": 78.60050000000001,
+    "median": 79.016875
+   },
+   "rssAfter_MB": 111.46875,
+   "rssDelta_MB": 67.90625,
+   "engineMem": {
+    "wasmHeapMB": 128
+   },
+   "simSeconds": 4,
+   "stability": {
+    "restTime_s": 1.7166666666666666,
+    "exploded": null,
+    "asleep": "122/122",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.4715003967285156
+   }
+  },
+  "FULL@1/240": {
+   "counts": {
+    "bodies": 122,
+    "pieces": 3028,
+    "vertices": 25872,
+    "staticCapsules": 1355,
+    "staticBoxes": 30
+   },
+   "stepMean_ms": {
+    "best": 0.7495447364583313,
+    "median": 0.7808048541666671,
+    "worst": 0.7944796895833349
+   },
+   "stepActiveMean_ms": {
+    "best": 2.882482266666662,
+    "median": 3.0065985833333375,
+    "worst": 3.0607690750000027
+   },
+   "stepP99_ms": {
+    "best": 4.503292000000016,
+    "median": 4.757165999999984,
+    "worst": 4.930250000000001
+   },
+   "stepMax_ms": {
+    "best": 6.238707999999988,
+    "median": 6.318292
+   },
+   "total_ms": {
+    "best": 719.5629469999981,
+    "median": 749.5726600000004
+   },
+   "build_ms": {
+    "best": 79.760458,
+    "median": 80.195375
+   },
+   "rssAfter_MB": 118.015625,
+   "rssDelta_MB": 74.4375,
+   "engineMem": {
+    "wasmHeapMB": 128
+   },
+   "simSeconds": 4,
+   "stability": {
+    "restTime_s": 1.4833333333333334,
+    "exploded": null,
+    "asleep": "122/122",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.4306248426437378
+   }
+  },
+  "FULL@1/480": {
+   "counts": {
+    "bodies": 122,
+    "pieces": 3028,
+    "vertices": 25872,
+    "staticCapsules": 1355,
+    "staticBoxes": 30
+   },
+   "stepMean_ms": {
+    "best": 0.7795132932291667,
+    "median": 0.7970658484374983,
+    "worst": 0.8276629531250044
+   },
+   "stepActiveMean_ms": {
+    "best": 2.825389481250001,
+    "median": 2.8970040125000023,
+    "worst": 2.985431945833331
+   },
+   "stepP99_ms": {
+    "best": 4.57525000000004,
+    "median": 4.711708000000044,
+    "worst": 4.826958000000104
+   },
+   "stepMax_ms": {
+    "best": 6.197250000000011,
+    "median": 6.221833000000004
+   },
+   "total_ms": {
+    "best": 1496.6655230000001,
+    "median": 1530.3664289999967
+   },
+   "build_ms": {
+    "best": 79.665667,
+    "median": 80.94983300000001
+   },
+   "rssAfter_MB": 120.390625,
+   "rssDelta_MB": 76.015625,
+   "engineMem": {
+    "wasmHeapMB": 128
+   },
+   "simSeconds": 4,
+   "stability": {
+    "restTime_s": 2.5,
+    "exploded": null,
+    "asleep": "122/122",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.451061725616455
+   }
+  }
+ },
+ "runs": []
+}

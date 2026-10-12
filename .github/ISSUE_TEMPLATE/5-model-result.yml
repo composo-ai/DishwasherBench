@@ -1,0 +1,65 @@
+name: Model results
+description: You ran a model through the harness and want to share the episodes.
+title: '[model result] '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Results are welcome with their episode records: a record can be verified by replay (`bench verify <record> --rewash`), and a table of numbers cannot. [docs/benchmark/README.md](https://github.com/composo-ai/DishwasherBench/blob/main/docs/benchmark/README.md) says what is recorded.
+
+        One episode per cell is an anecdote, so please say how many you ran. Issues are public: read the files before you attach them, and attach nothing that holds a key, the address of an endpoint or a path with your name in it. If the files are large, a pull request that adds them under `docs/benchmark/` is as good as an attachment.
+  - type: textarea
+    id: episodes
+    attributes:
+      label: The episodes
+      description: The whole output directory of each episode (the directory under `--out` that holds `record.json`, the transcript and the pictures), as a zip dragged into this box or as a link to a pull request. Say which level each one is.
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: The model
+      description: The name of the model, with its version or snapshot date if you know it. On Azure the policy names a deployment; say which model is behind it.
+    validations:
+      required: true
+  - type: dropdown
+    id: endpoint
+    attributes:
+      label: The kind of endpoint
+      description: The kind only. Do not give the address.
+      options:
+        - The provider's own API, OpenAI-compatible (Responses or chat completions)
+        - Azure
+        - Another OpenAI-compatible server
+        - Anthropic's API
+        - An MCP client of my own
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: effort
+    attributes:
+      label: Reasoning effort
+      description: What you set (`SPOTLESS_OPENAI_REASONING_EFFORT` or the model's own setting), or "model default". The record holds what the API reported under `policy.settings.request`.
+    validations:
+      required: true
+  - type: input
+    id: count
+    attributes:
+      label: How many episodes were run
+      description: All of them, on each level, including those that failed or that you are not sending. For example "tutorial 3, breakfast 1; one tutorial episode ran out of tokens and is not attached".
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: The wash tier (only the official tier is a score), token limits, the commit, the machine, and anything that went differently.
+  - type: checkboxes
+    id: clean
+    attributes:
+      label: Before you submit
+      options:
+        - label: I have read the files I am sending, and none holds a key, the address of an endpoint or a path with my name in it.
+          required: true

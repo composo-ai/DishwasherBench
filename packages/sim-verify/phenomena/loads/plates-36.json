@@ -1,0 +1,271 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "plates-36",
+ "description": "P03, P06 A: seven IEC dinner plates in every second slot of the rear lane (R1 slots 0 to 12, pitch 36.5 mm)",
+ "recipe_hash": "sha256:4bf884712956654c9d413e1ae03370e675bad0a188706bb70a2a49f73555fc38",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "plate_1",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.22544093694715517,
+     0.11150633170092236,
+     0.19918597774607794
+    ],
+    "q": [
+     0.48113515973091125,
+     0.48144927620887756,
+     0.5177552103996277,
+     0.5183097720146179
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 6.9,
+    "rotation_deg": 4.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_2",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.18893768862376883,
+     0.11150865524771857,
+     0.19918548383403564
+    ],
+    "q": [
+     0.4821021258831024,
+     0.48047253489494324,
+     0.5187649130821228,
+     0.5173072218894958
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.9,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_3",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.15243820421352802,
+     0.11150274914824322,
+     0.19918681299159885
+    ],
+    "q": [
+     0.48334193229675293,
+     0.47929587960243225,
+     0.5200174450874329,
+     0.5159825682640076
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.5,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_4",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.1159424592894417,
+     0.11150844053878464,
+     0.19918395390696514
+    ],
+    "q": [
+     0.48205995559692383,
+     0.48048996925354004,
+     0.5187457203865051,
+     0.5173494219779968
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.9,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_5",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.0794547645079662,
+     0.11150990238178639,
+     0.1991805483628955
+    ],
+    "q": [
+     0.4832012355327606,
+     0.47928255796432495,
+     0.5200124382972717,
+     0.5161316990852356
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.6,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_6",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.04293070751988538,
+     0.11151024541453083,
+     0.1991905396070193
+    ],
+    "q": [
+     0.48213836550712585,
+     0.4805230498313904,
+     0.5186902284622192,
+     0.5173013806343079
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.9,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_7",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.0064426227598366175,
+     0.11150407065672746,
+     0.19918430056854905
+    ],
+    "q": [
+     0.4834640622138977,
+     0.4791310727596283,
+     0.5201764702796936,
+     0.5158608555793762
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.1,
+    "rotation_deg": 2.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:998b53082dce2ada48fd435ed6815baf782d16ef7e10ef58aba6bf52f9262615"
+}

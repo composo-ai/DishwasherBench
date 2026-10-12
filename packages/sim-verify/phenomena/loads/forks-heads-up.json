@@ -1,0 +1,243 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "forks-heads-up",
+ "description": "P16 A: six dinner forks, one per cell of the cutlery basket, handles down (heads up)",
+ "recipe_hash": "sha256:f731e49ab520f04e53735b8f3b9d684b2e1ab8b5006692744a29bdc07ba87603",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "fork_1",
+   "item_type": "dinner_fork_185",
+   "pose": {
+    "p": [
+     0.007504712451546658,
+     -0.21400462747914398,
+     0.07980044713850816
+    ],
+    "q": [
+     -0.0037776168901473284,
+     -0.8491355776786804,
+     0.00245686830021441,
+     0.5281557440757751
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 2,
+    "stable": true,
+    "displacement_mm": 33.1,
+    "rotation_deg": 20.6,
+    "contacts": [
+     "cutlery_basket.foot.0.floor",
+     "cutlery_basket.foot.0.left"
+    ]
+   }
+  },
+  {
+   "item_id": "fork_2",
+   "item_type": "dinner_fork_185",
+   "pose": {
+    "p": [
+     -0.034282560139304134,
+     -0.16654497817122793,
+     0.07944911709616059
+    ],
+    "q": [
+     -0.01610547862946987,
+     -0.7488791942596436,
+     0.015973830595612526,
+     0.662318229675293
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 11.2,
+    "rotation_deg": 6.9,
+    "contacts": [
+     "cutlery_basket.foot.1.floor",
+     "cutlery_basket.foot.1.left"
+    ]
+   }
+  },
+  {
+   "item_id": "fork_3",
+   "item_type": "dinner_fork_185",
+   "pose": {
+    "p": [
+     -0.034260952261566585,
+     -0.06053931577154537,
+     0.07943839216576849
+    ],
+    "q": [
+     -0.015098758973181248,
+     -0.7489584684371948,
+     0.016022251918911934,
+     0.6622511744499207
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 11.2,
+    "rotation_deg": 6.9,
+    "contacts": [
+     "cutlery_basket.foot.2.floor",
+     "cutlery_basket.foot.2.left"
+    ]
+   }
+  },
+  {
+   "item_id": "fork_4",
+   "item_type": "dinner_fork_185",
+   "pose": {
+    "p": [
+     0.07048210215888132,
+     -0.21814827836163123,
+     0.07993982509446987
+    ],
+    "q": [
+     -0.008015706203877926,
+     -0.8491879105567932,
+     0.0051962509751319885,
+     0.52800452709198
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 2,
+    "stable": true,
+    "displacement_mm": 33.5,
+    "rotation_deg": 21.3,
+    "contacts": [
+     "cutlery_basket.foot.0.floor",
+     "cutlery_basket.foot.0.mid"
+    ]
+   }
+  },
+  {
+   "item_id": "fork_5",
+   "item_type": "dinner_fork_185",
+   "pose": {
+    "p": [
+     0.029788851150194057,
+     -0.16652428095891697,
+     0.07944644438134849
+    ],
+    "q": [
+     -0.014031894505023956,
+     -0.7523564100265503,
+     0.01563575491309166,
+     0.6584212183952332
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 12.1,
+    "rotation_deg": 7.5,
+    "contacts": [
+     "cutlery_basket.foot.1.floor",
+     "cutlery_basket.foot.1.mid"
+    ]
+   }
+  },
+  {
+   "item_id": "fork_6",
+   "item_type": "dinner_fork_185",
+   "pose": {
+    "p": [
+     0.02983907968088369,
+     -0.06043793083194622,
+     0.07917120219055934
+    ],
+    "q": [
+     -0.005992937367409468,
+     -0.7526583671569824,
+     0.0007098977221176028,
+     0.6583836078643799
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 12.1,
+    "rotation_deg": 7.5,
+    "contacts": [
+     "cutlery_basket.foot.2.floor",
+     "cutlery_basket.foot.2.mid"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:b0aa1417a99f2a2283afb44db05a3a858dfbaed4afa8faac9472b450ae839fa3"
+}

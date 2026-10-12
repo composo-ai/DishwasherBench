@@ -1,0 +1,355 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "plates-18-upper",
+ "description": "P23 B: the plates of plates-18 with three mugs mouth down in the upper basket",
+ "recipe_hash": "sha256:acf7bec0862c172ba4b69e57c78e22c04a32d8b88eaf037a02a21583d873df1a",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "plate_1",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.17068621509894522,
+     0.11151032549776127,
+     0.1991863442603746
+    ],
+    "q": [
+     0.4825884997844696,
+     0.480001300573349,
+     0.5192369818687439,
+     0.5168172717094421
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.7,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_2",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.15244530182192023,
+     0.11151421955426685,
+     0.1991866924332263
+    ],
+    "q": [
+     0.48334595561027527,
+     0.47924312949180603,
+     0.5199875831604004,
+     0.5160578489303589
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.5,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_3",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.13418811534916902,
+     0.1115036647793123,
+     0.19918704866652814
+    ],
+    "q": [
+     0.4828830361366272,
+     0.4797618091106415,
+     0.5195091366767883,
+     0.5164909958839417
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 6.1,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_4",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.1159424592894417,
+     0.11150844053878464,
+     0.19918395390696514
+    ],
+    "q": [
+     0.48205995559692383,
+     0.48048996925354004,
+     0.5187457203865051,
+     0.5173494219779968
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.9,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_5",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.09769791284150166,
+     0.1115101320458656,
+     0.19918002497211607
+    ],
+    "q": [
+     0.4824411869049072,
+     0.4800385534763336,
+     0.5191992521286011,
+     0.5169581174850464
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.7,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_6",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.07944430906202753,
+     0.11150636618313155,
+     0.19918369112596226
+    ],
+    "q": [
+     0.4832867980003357,
+     0.4793034791946411,
+     0.5199404954910278,
+     0.5161046385765076
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.6,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_7",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.06119430502178342,
+     0.11150706796082926,
+     0.199177967653921
+    ],
+    "q": [
+     0.48274558782577515,
+     0.47978517413139343,
+     0.5194903612136841,
+     0.5166166424751282
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 6.1,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "upper_1",
+   "item_type": "mug_ceramic_300",
+   "pose": {
+    "p": [
+     0.10717179052276551,
+     0.04488641652371555,
+     0.5291267442795162
+    ],
+    "q": [
+     0.9844896197319031,
+     0.021189849823713303,
+     -0.1741178035736084,
+     -0.0037810462526977062
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 22.5,
+    "rotation_deg": 20.4,
+    "contacts": [
+     "upper_rack.floor.y",
+     "upper_rack.tine_row_c_rear"
+    ]
+   }
+  },
+  {
+   "item_id": "upper_2",
+   "item_type": "mug_ceramic_300",
+   "pose": {
+    "p": [
+     0.10714954237249286,
+     -0.11647926049707029,
+     0.5288901648808502
+    ],
+    "q": [
+     0.9795559644699097,
+     0.000986039056442678,
+     0.20116934180259705,
+     0.00031010559177957475
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 3,
+    "stable": true,
+    "displacement_mm": 95.9,
+    "rotation_deg": 22.7,
+    "contacts": [
+     "upper_rack.floor.y",
+     "upper_rack.tine_row_c_front"
+    ]
+   }
+  },
+  {
+   "item_id": "upper_3",
+   "item_type": "mug_ceramic_300",
+   "pose": {
+    "p": [
+     -0.03387715403050811,
+     0.07352467011371723,
+     0.5470255903289648
+    ],
+    "q": [
+     0.9945077896118164,
+     0.0758184865117073,
+     0.07191238552331924,
+     0.005862741265445948
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 63.8,
+    "rotation_deg": 12,
+    "contacts": [
+     "upper_rack.floor.y",
+     "upper_rack.tine_row_b"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:bcfc1196181d104924ba67f72faa59b4d9c4e25d74b5139386d9c3ed1aeefac8"
+}

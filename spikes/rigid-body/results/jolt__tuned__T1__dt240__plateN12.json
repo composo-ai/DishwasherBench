@@ -1,0 +1,205 @@
+{
+ "engine": "jolt",
+ "preset": "tuned",
+ "test": "T1",
+ "hz": 240,
+ "tag": "plateN12",
+ "cfg": {
+  "ccd": false,
+  "sleep": true,
+  "penetrationSlop": 0.0001,
+  "speculativeContactDistance": 0.005,
+  "convexRadius": 0.0002,
+  "hullTolerance": 0.00001,
+  "velocitySteps": 10,
+  "positionSteps": 4,
+  "manifoldTolerance": 0.0001,
+  "manifoldReduction": false,
+  "pointVelocitySleepThreshold": 0.005,
+  "minVelocityForRestitution": 0.2,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {
+  "plateN": 12
+ },
+ "wallSeconds": 0.182875625,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:24:39.330Z",
+ "summary": {
+  "restTime_s": 0.125,
+  "rmsLin_mm_s": 0,
+  "rmsAng_rad_s": 0,
+  "residualKE_uJ": 0,
+  "maxSpeed_m_s": 0.5445344655651497,
+  "exploded": null,
+  "penInit_mm": 0,
+  "penMaxStatic_mm": 0.10576284041559879,
+  "penMaxDynamic_mm": 0,
+  "penFinalStatic_mm": 0.05825384742624666,
+  "penFinalDynamic_mm": 0,
+  "asleep": "1/1",
+  "allAsleepAt_s": 0.575,
+  "driftPos_mm": 0,
+  "driftAng_deg": 0,
+  "stepMean_ms": 0.01119632083333323,
+  "stepP99_ms": 0.11570799999999792,
+  "stepTotal_ms": 13.435584999999875,
+  "hash": "a92d915da063a327",
+  "pos_mm": [
+   5.265361163765192,
+   124.49190765619278,
+   -1.2596952728927135
+  ],
+  "lean_deg": 11.822667163677536,
+  "counts": {
+   "bodies": 1,
+   "pieces": 37,
+   "vertices": 312,
+   "staticCapsules": 236,
+   "staticBoxes": 0
+  }
+ },
+ "runs": [
+  {
+   "engine": "jolt",
+   "version": "1.1.0",
+   "scene": "T1-single-plate",
+   "cfg": {
+    "ccd": false,
+    "sleep": true,
+    "penetrationSlop": 0.0001,
+    "speculativeContactDistance": 0.005,
+    "convexRadius": 0.0002,
+    "hullTolerance": 0.00001,
+    "velocitySteps": 10,
+    "positionSteps": 4,
+    "manifoldTolerance": 0.0001,
+    "manifoldReduction": false,
+    "pointVelocitySleepThreshold": 0.005,
+    "minVelocityForRestitution": 0.2,
+    "dt": 0.004166666666666667
+   },
+   "params": {
+    "dt": 0.004166666666666667,
+    "collisionSteps": 1,
+    "jsDefaults": {
+     "mMaxBodies": 10240,
+     "mMaxBodyPairs": 65536,
+     "mMaxContactConstraints": 10240
+    },
+    "mBaumgarte": 0.20000000298023224,
+    "mSpeculativeContactDistance": 0.004999999888241291,
+    "mPenetrationSlop": 0.00009999999747378752,
+    "mNumVelocitySteps": 10,
+    "mNumPositionSteps": 4,
+    "mManifoldTolerance": 0.00009999999747378752,
+    "mPointVelocitySleepThreshold": 0.004999999888241291,
+    "mTimeBeforeSleep": 0.5,
+    "mMinVelocityForRestitution": 0.20000000298023224,
+    "mLinearCastThreshold": 0.75,
+    "mLinearCastMaxPenetration": 0.25,
+    "mUseManifoldReduction": false,
+    "mDeterministicSimulation": true,
+    "hullMaxConvexRadius": 0.0002,
+    "hullTolerance": 0.00001
+   },
+   "dt": 0.004166666666666667,
+   "steps": 1200,
+   "duration": 5,
+   "buildMs": 79.927875,
+   "loadMs": 72.92666700000001,
+   "step": {
+    "meanMs": 0.01119632083333323,
+    "p50Ms": 0.00045800000000895125,
+    "p99Ms": 0.11570799999999792,
+    "maxMs": 3.1055000000000064,
+    "totalMs": 13.435584999999875
+   },
+   "stepActive": {
+    "meanMs": 0.05313228749999919,
+    "p50Ms": 0.040124999999989086,
+    "p99Ms": 0.3003750000000025,
+    "maxMs": 3.1055000000000064
+   },
+   "realTimeFactor": 372.14605839641865,
+   "restTime": 0.125,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed": 0.5445344655651497,
+   "exploded": null,
+   "pen": {
+    "initialStatic_mm": 0,
+    "initialDynamic_mm": 0,
+    "maxStatic_mm": 0.10576284041559879,
+    "maxStaticAt": 0.10416666666666667,
+    "maxDynamic_mm": 0,
+    "maxDynamicAt": 0,
+    "finalStatic_mm": 0.05825384742624666,
+    "finalDynamic_mm": 0,
+    "finalWorstStatic": {
+     "body": 0,
+     "piece": 28,
+     "static": 141,
+     "tag": "tine"
+    }
+   },
+   "sleep": {
+    "asleepAtEnd": 1,
+    "of": 1,
+    "allAsleepAt": 0.575,
+    "wokeAgain": false
+   },
+   "drift": {
+    "pos_mm": 0,
+    "ang_deg": 0,
+    "window": [
+     2.5,
+     5
+    ]
+   },
+   "bodies": [
+    {
+     "name": "plate",
+     "pos": [
+      0.005265361163765192,
+      0.12449190765619278,
+      -0.0012596952728927135
+     ],
+     "quat": [
+      0.6304907202720642,
+      0.00028727491735480726,
+      -0.006309169810265303,
+      0.776171088218689
+     ],
+     "lean": 11.822667163677536,
+     "axisV": 78.17733283632248,
+     "asleep": true
+    }
+   ],
+   "hash": "a92d915da063a327",
+   "hashPose": "f6c7ea5fed0708ca",
+   "marks": {},
+   "mem": {
+    "before": {
+     "rssMB": 35.5625,
+     "heapUsedMB": 5.0992431640625,
+     "externalMB": 1.9064302444458008,
+     "arrayBuffersMB": 0.03328227996826172
+    },
+    "after": {
+     "rssMB": 113.734375,
+     "heapUsedMB": 16.280838012695312,
+     "externalMB": 131.8540678024292,
+     "arrayBuffersMB": 1.971405029296875
+    },
+    "engine": {
+     "wasmHeapMB": 128
+    }
+   },
+   "masses": [
+    0.6499999883770945
+   ]
+  }
+ ]
+}

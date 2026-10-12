@@ -1,0 +1,4 @@
+# the C baselines of benchmark B6, built by b6_run_c.sh (b7_determinism.mjs needs them)
+b6_stencil_default
+b6_stencil_fast
+b6_stencil_strict

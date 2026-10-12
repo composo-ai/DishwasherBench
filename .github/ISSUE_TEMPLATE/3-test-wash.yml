@@ -1,0 +1,60 @@
+name: A new test wash or measurement
+description: You have this machine and want to run a test wash, have run one, or have measured something on the machine.
+title: '[test wash] '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The simulation models one machine, a Bosch SMV4HAX40G, and has been calibrated on a single test wash. A second wash, a power log of one run or a tape reading would each be worth a great deal.
+
+        The protocol is [docs/calibration/protocol.md](https://github.com/composo-ai/DishwasherBench/blob/main/docs/calibration/protocol.md): four washes that can be done at home, the measurements still open, and how to send a result in. Please read its paragraph "Care" first: you do these washes at your own risk. **If you can, open this issue before you run the wash**, so that the simulation's prediction can be written down and frozen first.
+
+        **Privacy.** Remove all metadata from photographs before you attach them. Attach nothing that shows a face, a serial number or rating plate, a view out of a window, a label with an address, or anything else that locates a home. Issues are public.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What this is
+      options:
+        - I plan to run a wash of the protocol
+        - I have run a wash of the protocol
+        - A wash of my own design
+        - A power or temperature log of a run
+        - A measurement of the machine
+    validations:
+      required: true
+  - type: input
+    id: machine
+    attributes:
+      label: The machine
+      description: The model number as on the rating plate (E-Nr, for example SMV4HAX40G/13). Do not give the serial number.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What you plan, did or measured
+      description: |
+        For a wash: which wash of the protocol, the programme, the detergent, the soils and how they were dried, the weights, where each piece stood, and the times.
+        For a measurement: which one from "Measurements of the machine still open", the reading, and how you took it.
+    validations:
+      required: true
+  - type: textarea
+    id: seen
+    attributes:
+      label: What you saw
+      description: For each piece after the wash - clean, a faint film, specks or patches and where. Attach the photographs, each with a coin or a ruler in it, and anything that moved, fell over or filled with water.
+  - type: checkboxes
+    id: record
+    attributes:
+      label: Wash record
+      options:
+        - label: I will send a wash record (docs/calibration/wash-record.md) as a pull request.
+        - label: I would rather the maintainers wrote the record from what is here.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before you submit
+      options:
+        - label: My photographs carry no metadata and show no face, no serial number and nothing that locates a home.
+          required: true

@@ -1,0 +1,412 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "soup-12",
+ "description": "P31: twelve soup plates in the lower basket (R1 slots 0 to 12 and 17 to 21, every second slot, ML slot 2 and MR slot 2; the rear slots 13 to 16 take no soup plate on the present basket)",
+ "recipe_hash": "sha256:d12a2dd6dcf7aea16e613ca8b258f71f29e02797b312f9252039baa901a7777d",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "soup_1",
+   "item_type": "soup_plate_porcelain_230",
+   "pose": {
+    "p": [
+     -0.22258199822131713,
+     0.11150188547329404,
+     0.194371643773483
+    ],
+    "q": [
+     0.5342600345611572,
+     0.5316729545593262,
+     0.4657866358757019,
+     0.4636085331439972
+    ]
+   },
+   "placed": {
+    "op": "slot, dropped",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 3,
+    "rotation_deg": 0.9,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "soup_10",
+   "item_type": "soup_plate_porcelain_230",
+   "pose": {
+    "p": [
+     0.2199259887078968,
+     0.11142393913629847,
+     0.19005521514378385
+    ],
+    "q": [
+     0.49942293763160706,
+     -0.49899107217788696,
+     -0.5020089149475098,
+     0.49957165122032166
+    ]
+   },
+   "placed": {
+    "op": "slot, dropped",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 2.2,
+    "rotation_deg": 0.8,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "soup_11",
+   "item_type": "soup_plate_porcelain_230",
+   "pose": {
+    "p": [
+     -0.17026918869007937,
+     -0.1399768863651181,
+     0.18987942585705456
+    ],
+    "q": [
+     0.5034948587417603,
+     0.5159823894500732,
+     0.4981020987033844,
+     0.4818189740180969
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 4.2,
+    "rotation_deg": 2.2,
+    "contacts": [
+     "lower_rack.tine_row_fl",
+     "lower_rack.tine_row_ml"
+    ]
+   }
+  },
+  {
+   "item_id": "soup_12",
+   "item_type": "soup_plate_porcelain_230",
+   "pose": {
+    "p": [
+     0.14191035779539557,
+     -0.13428285325804307,
+     0.19312983988799606
+    ],
+    "q": [
+     0.5414144396781921,
+     -0.5119792222976685,
+     -0.4425594210624695,
+     0.4988877475261688
+    ]
+   },
+   "placed": {
+    "op": "slot, dropped",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 65.7,
+    "rotation_deg": 9,
+    "contacts": [
+     "lower_rack.tine_row_fr",
+     "lower_rack.tine_row_mr",
+     "lower_rack_fittings.handle"
+    ]
+   }
+  },
+  {
+   "item_id": "soup_2",
+   "item_type": "soup_plate_porcelain_230",
+   "pose": {
+    "p": [
+     -0.1860692648196748,
+     0.11151406920761449,
+     0.19436886131599956
+    ],
+    "q": [
+     0.5341817736625671,
+     0.5317004323005676,
+     0.4655313491821289,
+     0.46392351388931274
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 3.9,
+    "rotation_deg": 0.3,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "soup_3",
+   "item_type": "soup_plate_porcelain_230",
+   "pose": {
+    "p": [
+     -0.14957859283762978,
+     0.11150314889978982,
+     0.19437286138553286
+    ],
+    "q": [
+     0.5342721939086914,
+     0.5316839814186096,
+     0.4657498002052307,
+     0.4636189341545105
+    ]
+   },
+   "placed": {
+    "op": "slot, dropped",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 3,
+    "rotation_deg": 0.9,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "soup_4",
+   "item_type": "soup_plate_porcelain_230",
+   "pose": {
+    "p": [
+     -0.11303820093684337,
+     0.11152322108584342,
+     0.19437829858436906
+    ],
+    "q": [
+     0.5344083905220032,
+     0.5316724181175232,
+     0.4653078317642212,
+     0.4639188349246979
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 3.9,
+    "rotation_deg": 0.3,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "soup_5",
+   "item_type": "soup_plate_porcelain_230",
+   "pose": {
+    "p": [
+     -0.07658330894606218,
+     0.11150165741055394,
+     0.19437104921245407
+    ],
+    "q": [
+     0.5342298150062561,
+     0.5316908955574036,
+     0.4657783508300781,
+     0.463631272315979
+    ]
+   },
+   "placed": {
+    "op": "slot, dropped",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 3,
+    "rotation_deg": 0.9,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "soup_6",
+   "item_type": "soup_plate_porcelain_230",
+   "pose": {
+    "p": [
+     -0.04004365661962778,
+     0.11152206211282309,
+     0.1943781555969659
+    ],
+    "q": [
+     0.5343659520149231,
+     0.5317006707191467,
+     0.46533313393592834,
+     0.46391013264656067
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 3.9,
+    "rotation_deg": 0.3,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "soup_7",
+   "item_type": "soup_plate_porcelain_230",
+   "pose": {
+    "p": [
+     -0.0035827166016325525,
+     0.1115013734458721,
+     0.19437175039234814
+    ],
+    "q": [
+     0.5342460870742798,
+     0.5316881537437439,
+     0.46578413248062134,
+     0.4636096954345703
+    ]
+   },
+   "placed": {
+    "op": "slot, dropped",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 3,
+    "rotation_deg": 0.9,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "soup_8",
+   "item_type": "soup_plate_porcelain_230",
+   "pose": {
+    "p": [
+     0.13480209172853963,
+     0.11149976015000629,
+     0.19456203710133738
+    ],
+    "q": [
+     0.5363184809684753,
+     -0.5334644913673401,
+     -0.4637162387371063,
+     0.46124327182769775
+    ]
+   },
+   "placed": {
+    "op": "slot, dropped",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.3,
+    "rotation_deg": 2.3,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "soup_9",
+   "item_type": "soup_plate_porcelain_230",
+   "pose": {
+    "p": [
+     0.17158711035244995,
+     0.1115002500131493,
+     0.19436942588620265
+    ],
+    "q": [
+     0.5342113375663757,
+     -0.531678318977356,
+     -0.46581971645355225,
+     0.46362537145614624
+    ]
+   },
+   "placed": {
+    "op": "slot, dropped",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 3,
+    "rotation_deg": 0.9,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:75402982c35741135af6a1ce851d6142225ce2e59f150d4c15c979c0faeb2f7a"
+}

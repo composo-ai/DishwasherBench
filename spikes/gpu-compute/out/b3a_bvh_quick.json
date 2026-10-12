@@ -1,0 +1,156 @@
+{
+  "when": "2026-10-08T15:24:39.446Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 248,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "scene": {
+    "objects": 100,
+    "triangles": 259200,
+    "tessellateMs": 19.086042000000003,
+    "bvhBuildMsBest": 516.63175,
+    "bvhBuildMsMedian": 516.63175,
+    "nodes": 164170,
+    "leaves": 82085,
+    "maxDepth": 24,
+    "nodeBytes": 5253440,
+    "triBytes": 12441600
+  },
+  "cases": [
+    {
+      "rays": 1048576,
+      "set": "coherent (16 jet cones)",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 169402954.81315836,
+        "median": 154816130.5977643,
+        "worst": 90269327.44884826,
+        "n": 3,
+        "spreadPct": 51.114588033407976
+      },
+      "msBest": 6.1898330000000215,
+      "hitFraction": 0.8090734481811523,
+      "meanNodeVisits": 36.6176815032959,
+      "meanTriTests": 7.2099609375,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 8.402903157983011e-7
+      }
+    },
+    {
+      "rays": 1048576,
+      "set": "incoherent (random o,d)",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 157265751.0068949,
+        "median": 154948612.8043177,
+        "worst": 151397972.67035037,
+        "n": 3,
+        "spreadPct": 3.786918921278013
+      },
+      "msBest": 6.667541999999912,
+      "hitFraction": 0.4575386047363281,
+      "meanNodeVisits": 22.92715072631836,
+      "meanTriTests": 4.295785903930664,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 0.0000021492563830027984
+      }
+    },
+    {
+      "rays": 1048576,
+      "set": "mixed 50/50",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 174681410.6971207,
+        "median": 165767487.36045223,
+        "worst": 162144650.99830496,
+        "n": 3,
+        "spreadPct": 7.562858011809784
+      },
+      "msBest": 6.002791000000116,
+      "hitFraction": 0.6332998275756836,
+      "meanNodeVisits": 29.774937629699707,
+      "meanTriTests": 5.7513933181762695,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 0.000002058891034998615
+      }
+    },
+    {
+      "rays": 1048576,
+      "set": "incoherent, Morton-sorted by origin",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 182456238.03723457,
+        "median": 138667659.7293346,
+        "worst": 126465875.68406905,
+        "n": 3,
+        "spreadPct": 40.37737599556603
+      },
+      "msBest": 5.747000000000071,
+      "hitFraction": 0.4575386047363281,
+      "meanNodeVisits": 22.92715072631836,
+      "meanTriTests": 4.295785903930664,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 0.000002347085920751031
+      }
+    },
+    {
+      "rays": 1048576,
+      "set": "incoherent short segments (tmax 1 cm)",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 413062301.1161514,
+        "median": 400423574.28417444,
+        "worst": 366149496.89082247,
+        "n": 3,
+        "spreadPct": 11.715794782860518
+      },
+      "msBest": 2.5385420000000067,
+      "hitFraction": 0.054195404052734375,
+      "meanNodeVisits": 9.60492992401123,
+      "meanTriTests": 0.6981239318847656,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 4.6925053774787026e-7
+      }
+    },
+    {
+      "rays": 1048576,
+      "set": "mixed 50/50 short segments (tmax 1 cm)",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 647385425.4067307,
+        "median": 549435958.540374,
+        "worst": 409453332.53674084,
+        "n": 3,
+        "spreadPct": 43.30479088082946
+      },
+      "msBest": 1.6197089999998298,
+      "hitFraction": 0.031884193420410156,
+      "meanNodeVisits": 7.68588924407959,
+      "meanTriTests": 0.39900970458984375,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 0.0000013115976499358417
+      }
+    }
+  ],
+  "foreignAtEnd": []
+}

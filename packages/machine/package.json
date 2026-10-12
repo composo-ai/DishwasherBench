@@ -1,0 +1,25 @@
+{
+  "name": "@spotless/machine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Machine specification types, the owner's Bosch SMV4HAX40G with its programmes and the SPOT-60 baseline with one, machine geometry, slot affordances, spray-arm and nozzle kinematics, programme expansion",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "draw-machine": "tsx scripts/draw-machine.ts",
+    "export-obj": "tsx scripts/export-obj.ts",
+    "render-drawings": "tsx scripts/render-drawings.ts"
+  },
+  "dependencies": {
+    "@spotless/core": "workspace:*",
+    "@spotless/geometry": "workspace:*"
+  }
+}

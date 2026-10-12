@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: A security problem, or something in the repository that should not be public
+    url: https://github.com/composo-ai/DishwasherBench/security/policy
+    about: Please report these privately, as the security policy describes, and not in a public issue.
+  - name: The open problems and what would settle each
+    url: https://github.com/composo-ai/DishwasherBench/blob/main/docs/ROADMAP.md
+    about: Read this first if you are looking for something to work on, or if the simulation's answer surprised you.

@@ -1,0 +1,627 @@
+{
+ "name": "anchored-v3",
+ "water": {
+  "simVersion": "spotless-sim 0.3.2 water-3",
+  "sourceHash": "sha256:97aa4d392843040da01252e2c616e5b0bced8cb5f608159e7aff197d8bab94d5",
+  "files": 176
+ },
+ "waterAfter": {
+  "simVersion": "spotless-sim 0.3.2 water-3",
+  "sourceHash": "sha256:97aa4d392843040da01252e2c616e5b0bced8cb5f608159e7aff197d8bab94d5",
+  "files": 176
+ },
+ "levelSeeds": [
+  1,
+  2
+ ],
+ "simSeeds": [
+  1,
+  2
+ ],
+ "rateRef": 0.000034,
+ "bench": {
+  "atDefault": {
+   "miss": 7.528153362318288,
+   "cases": [
+    {
+     "temperature": 30,
+     "pH": 10.5,
+     "protease": 0.06,
+     "rate": 0.85,
+     "sd": 0.12,
+     "simulated": 0.7410289186535347,
+     "tolerance": 0.17,
+     "within": true,
+     "z": -1.2820127217231208
+    },
+    {
+     "temperature": 55,
+     "pH": 10.5,
+     "protease": 0.06,
+     "rate": 1.75,
+     "sd": 0.29,
+     "simulated": 1.5734403272755548,
+     "tolerance": 0.35000000000000003,
+     "within": true,
+     "z": -1.008912415568258
+    },
+    {
+     "temperature": 55,
+     "pH": 10.5,
+     "protease": 0.02,
+     "rate": 0.17,
+     "sd": 0.05,
+     "simulated": 0.1538260381335118,
+     "tolerance": 0.05,
+     "within": true,
+     "z": -0.646958474659528
+    },
+    {
+     "temperature": 55,
+     "pH": 10.5,
+     "protease": 0.1,
+     "rate": 2.59,
+     "sd": 0.22,
+     "simulated": 2.179361447095955,
+     "tolerance": 0.518,
+     "within": true,
+     "z": -1.5854770382395553
+    },
+    {
+     "temperature": 55,
+     "pH": 9.5,
+     "protease": 0.06,
+     "rate": 0.69,
+     "sd": 0.16,
+     "simulated": 0.6034001599010296,
+     "tolerance": 0.16,
+     "within": true,
+     "z": -1.0824980012371297
+    },
+    {
+     "temperature": 55,
+     "pH": 11.5,
+     "protease": 0.06,
+     "rate": 4.66,
+     "sd": 0.38,
+     "simulated": 4.253056884635826,
+     "tolerance": 0.932,
+     "within": true,
+     "z": -0.8732684879059534
+    }
+   ]
+  },
+  "atFit": {
+   "miss": 0.3623196589519076,
+   "cases": [
+    {
+     "temperature": 30,
+     "pH": 10.5,
+     "protease": 0.06,
+     "rate": 0.85,
+     "sd": 0.12,
+     "simulated": 0.8404244143292184,
+     "tolerance": 0.17,
+     "within": true,
+     "z": -0.1126539490680181
+    },
+    {
+     "temperature": 55,
+     "pH": 10.5,
+     "protease": 0.06,
+     "rate": 1.75,
+     "sd": 0.29,
+     "simulated": 1.7856345698852354,
+     "tolerance": 0.35000000000000003,
+     "within": true,
+     "z": 0.2036261136299165
+    },
+    {
+     "temperature": 55,
+     "pH": 10.5,
+     "protease": 0.02,
+     "rate": 0.17,
+     "sd": 0.05,
+     "simulated": 0.17434891576770947,
+     "tolerance": 0.05,
+     "within": true,
+     "z": 0.1739566307083784
+    },
+    {
+     "temperature": 55,
+     "pH": 10.5,
+     "protease": 0.1,
+     "rate": 2.59,
+     "sd": 0.22,
+     "simulated": 2.4709661477637237,
+     "tolerance": 0.518,
+     "within": true,
+     "z": -0.4595901630744253
+    },
+    {
+     "temperature": 55,
+     "pH": 9.5,
+     "protease": 0.06,
+     "rate": 0.69,
+     "sd": 0.16,
+     "simulated": 0.6833051469960052,
+     "tolerance": 0.16,
+     "within": true,
+     "z": -0.08368566254993437
+    },
+    {
+     "temperature": 55,
+     "pH": 11.5,
+     "protease": 0.06,
+     "rate": 4.66,
+     "sd": 0.38,
+     "simulated": 4.773839360305541,
+     "tolerance": 0.932,
+     "within": true,
+     "z": 0.24429047275867066
+    }
+   ]
+  }
+ },
+ "protease": {
+  "points": [
+   {
+    "value": 0.01,
+    "logLikelihood": -0.6678448802813872,
+    "logPrior": 0,
+    "objective": 0.6678448802813872,
+    "continuous": {
+     "crockery": 2.3456071986868787,
+     "cutlery": 4.138718248322929,
+     "glass": 1.7529843119505855,
+     "melamine": 5,
+     "all": 3.2993278068812097
+    },
+    "score": {
+     "crockery": 2.2717948717948717,
+     "cutlery": 4.129721124286341,
+     "glass": 1.75,
+     "melamine": 5,
+     "all": 3.2727668475802805
+    },
+    "milkGlasses": 0,
+    "teaItems": 0.3571428571428571,
+    "crockeryWithoutTea": 4.055000000000001,
+    "cleanShare": 0.6105721393034825,
+    "soiledCleanShare": 0.4982371794871795,
+    "washes": 4
+   },
+   {
+    "value": 0.012,
+    "logLikelihood": -0.1843303222643643,
+    "logPrior": -0.0013932599390343242,
+    "objective": 0.18572358220339863,
+    "continuous": {
+     "crockery": 2.7906077285278363,
+     "cutlery": 4.527599312759755,
+     "glass": 2.5612814177850023,
+     "melamine": 5,
+     "all": 3.749728972751558
+    },
+    "score": {
+     "crockery": 2.7564102564102564,
+     "cutlery": 4.5108146684233645,
+     "glass": 2.585714285714286,
+     "melamine": 5,
+     "all": 3.7347798345932675
+    },
+    "milkGlasses": 1.2857142857142858,
+    "teaItems": 0.3571428571428571,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.6832315694255993,
+    "soiledCleanShare": 0.5918560606060606,
+    "washes": 4
+   },
+   {
+    "value": 0.013,
+    "logLikelihood": -0.10072836593328109,
+    "logPrior": -0.002885130563315524,
+    "objective": 0.10361349649659661,
+    "continuous": {
+     "crockery": 2.780844221541578,
+     "cutlery": 4.679259433924141,
+     "glass": 3.0435858605293262,
+     "melamine": 5,
+     "all": 3.8969667372498042
+    },
+    "score": {
+     "crockery": 2.7179487179487176,
+     "cutlery": 4.686374615722443,
+     "glass": 3.05,
+     "melamine": 5,
+     "all": 3.883282451379466
+    },
+    "milkGlasses": 2,
+    "teaItems": 0.2857142857142857,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.7140999547715966,
+    "soiledCleanShare": 0.6316287878787878,
+    "washes": 4
+   },
+   {
+    "value": 0.014,
+    "logLikelihood": -0.10869457290075904,
+    "logPrior": -0.004745200624706731,
+    "objective": 0.11343977352546578,
+    "continuous": {
+     "crockery": 2.77391403217658,
+     "cutlery": 4.7567557359746795,
+     "glass": 3.8474734325766633,
+     "melamine": 5,
+     "all": 4.0548377737960655
+    },
+    "score": {
+     "crockery": 2.6794871794871793,
+     "cutlery": 4.759167764602546,
+     "glass": 3.8625000000000003,
+     "melamine": 5,
+     "all": 4.030840117593849
+    },
+    "milkGlasses": 3.25,
+    "teaItems": 0.21428571428571425,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.7717419396523874,
+    "soiledCleanShare": 0.7058982683982683,
+    "washes": 4
+   },
+   {
+    "value": 0.016,
+    "logLikelihood": -0.21026905468767454,
+    "logPrior": -0.00925888162654553,
+    "objective": 0.21952793631422007,
+    "continuous": {
+     "crockery": 2.764512653110101,
+     "cutlery": 4.836865403583966,
+     "glass": 4.37597380288724,
+     "melamine": 5,
+     "all": 4.1722327043009875
+    },
+    "score": {
+     "crockery": 2.6794871794871793,
+     "cutlery": 4.836242863416777,
+     "glass": 4.396428571428571,
+     "melamine": 5,
+     "all": 4.150218873166635
+    },
+    "milkGlasses": 4.071428571428571,
+    "teaItems": 0.21428571428571425,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.8148946824319959,
+    "soiledCleanShare": 0.7614989177489178,
+    "washes": 4
+   },
+   {
+    "value": 0.02,
+    "logLikelihood": -0.27655752251339405,
+    "logPrior": -0.020137568508768095,
+    "objective": 0.2966950910221621,
+    "continuous": {
+     "crockery": 2.7548346986033434,
+     "cutlery": 4.914635402632219,
+     "glass": 4.5647586701006055,
+     "melamine": 5,
+     "all": 4.237638577829593
+    },
+    "score": {
+     "crockery": 2.641025641025641,
+     "cutlery": 4.917599912165129,
+     "glass": 4.5357142857142865,
+     "melamine": 5,
+     "all": 4.201706564579699
+    },
+    "milkGlasses": 4.285714285714286,
+    "teaItems": 0.14285714285714285,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.8281239904374232,
+    "soiledCleanShare": 0.7785443722943723,
+    "washes": 4
+   }
+  ],
+  "best": {
+   "value": 0.013,
+   "logLikelihood": -0.10072836593328109,
+   "logPrior": -0.002885130563315524,
+   "objective": 0.10361349649659661,
+   "continuous": {
+    "crockery": 2.780844221541578,
+    "cutlery": 4.679259433924141,
+    "glass": 3.0435858605293262,
+    "melamine": 5,
+    "all": 3.8969667372498042
+   },
+   "score": {
+    "crockery": 2.7179487179487176,
+    "cutlery": 4.686374615722443,
+    "glass": 3.05,
+    "melamine": 5,
+    "all": 3.883282451379466
+   },
+   "milkGlasses": 2,
+   "teaItems": 0.2857142857142857,
+   "crockeryWithoutTea": 5,
+   "cleanShare": 0.7140999547715966,
+   "soiledCleanShare": 0.6316287878787878,
+   "washes": 4
+  },
+  "atDefault": {
+   "value": 0.01,
+   "logLikelihood": -0.6678448802813872,
+   "logPrior": 0,
+   "objective": 0.6678448802813872,
+   "continuous": {
+    "crockery": 2.3456071986868787,
+    "cutlery": 4.138718248322929,
+    "glass": 1.7529843119505855,
+    "melamine": 5,
+    "all": 3.2993278068812097
+   },
+   "score": {
+    "crockery": 2.2717948717948717,
+    "cutlery": 4.129721124286341,
+    "glass": 1.75,
+    "melamine": 5,
+    "all": 3.2727668475802805
+   },
+   "milkGlasses": 0,
+   "teaItems": 0.3571428571428571,
+   "crockeryWithoutTea": 4.055000000000001,
+   "cleanShare": 0.6105721393034825,
+   "soiledCleanShare": 0.4982371794871795,
+   "washes": 4
+  },
+  "chosen": 0.013,
+  "returned": false
+ },
+ "bleach": {
+  "points": [
+   {
+    "value": 0.0008,
+    "logLikelihood": -0.10072836593328109,
+    "logPrior": 0,
+    "objective": 0.10072836593328109,
+    "continuous": {
+     "crockery": 2.780844221541578,
+     "cutlery": 4.679259433924141,
+     "glass": 3.0435858605293262,
+     "melamine": 5,
+     "all": 3.8969667372498042
+    },
+    "score": {
+     "crockery": 2.7179487179487176,
+     "cutlery": 4.686374615722443,
+     "glass": 3.05,
+     "melamine": 5,
+     "all": 3.883282451379466
+    },
+    "milkGlasses": 2,
+    "teaItems": 0.2857142857142857,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.7140999547715966,
+    "soiledCleanShare": 0.6316287878787878,
+    "washes": 4
+   },
+   {
+    "value": 0.0009,
+    "logLikelihood": -0.027976243245717902,
+    "logPrior": -0.0017646171550369486,
+    "objective": 0.02974086040075485,
+    "continuous": {
+     "crockery": 3.982288220093304,
+     "cutlery": 4.679259482684921,
+     "glass": 3.0435860508843087,
+     "melamine": 5,
+     "all": 4.246640790347646
+    },
+    "score": {
+     "crockery": 3.9957264957264957,
+     "cutlery": 4.686374615722443,
+     "glass": 3.05,
+     "melamine": 5,
+     "all": 4.255172998643148
+    },
+    "milkGlasses": 2,
+    "teaItems": 2.928571428571429,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.7364880144730891,
+    "soiledCleanShare": 0.6604749417249417,
+    "washes": 4
+   },
+   {
+    "value": 0.001,
+    "logLikelihood": -0.1541673672740326,
+    "logPrior": -0.0063336446192401455,
+    "objective": 0.16050101189327276,
+    "continuous": {
+     "crockery": 4.835516766194612,
+     "cutlery": 4.679259525763349,
+     "glass": 3.043586220393089,
+     "melamine": 5,
+     "all": 4.494968549008379
+    },
+    "score": {
+     "crockery": 4.833333333333334,
+     "cutlery": 4.686374615722443,
+     "glass": 3.05,
+     "melamine": 5,
+     "all": 4.498954093170511
+    },
+    "milkGlasses": 2,
+    "teaItems": 4.642857142857143,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.8384780642243329,
+    "soiledCleanShare": 0.7918851981351981,
+    "washes": 4
+   },
+   {
+    "value": 0.0011,
+    "logLikelihood": -0.18556227271926384,
+    "logPrior": -0.01289964306678647,
+    "objective": 0.19846191578605032,
+    "continuous": {
+     "crockery": 4.962447832036763,
+     "cutlery": 4.6792595646446875,
+     "glass": 3.0435863719969185,
+     "melamine": 5,
+     "all": 4.53191121529743
+    },
+    "score": {
+     "crockery": 4.955128205128205,
+     "cutlery": 4.686374615722443,
+     "glass": 3.05,
+     "melamine": 5,
+     "all": 4.534401854364541
+    },
+    "milkGlasses": 2,
+    "teaItems": 4.892857142857143,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.8384780642243329,
+    "soiledCleanShare": 0.7918851981351981,
+    "washes": 4
+   },
+   {
+    "value": 0.0012,
+    "logLikelihood": -0.19547699476701008,
+    "logPrior": -0.020911827370024328,
+    "objective": 0.21638882213703442,
+    "continuous": {
+     "crockery": 5,
+     "cutlery": 4.679259599333338,
+     "glass": 3.0435865073330124,
+     "melamine": 5,
+     "all": 4.542840615676571
+    },
+    "score": {
+     "crockery": 5,
+     "cutlery": 4.686374615722443,
+     "glass": 3.05,
+     "melamine": 5,
+     "all": 4.547461555857078
+    },
+    "milkGlasses": 2,
+    "teaItems": 5,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.8384780642243329,
+    "soiledCleanShare": 0.7918851981351981,
+    "washes": 4
+   },
+   {
+    "value": 0.0014,
+    "logLikelihood": -0.1954769727782173,
+    "logPrior": -0.039835009679656905,
+    "objective": 0.2353119824578742,
+    "continuous": {
+     "crockery": 5,
+     "cutlery": 4.6792596586010395,
+     "glass": 3.043586740412721,
+     "melamine": 5,
+     "all": 4.542840680983031
+    },
+    "score": {
+     "crockery": 5,
+     "cutlery": 4.686374615722443,
+     "glass": 3.05,
+     "melamine": 5,
+     "all": 4.547461555857078
+    },
+    "milkGlasses": 2,
+    "teaItems": 5,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.8384780642243329,
+    "soiledCleanShare": 0.7918851981351981,
+    "washes": 4
+   },
+   {
+    "value": 0.0016,
+    "logLikelihood": -0.19547695468322993,
+    "logPrior": -0.061113327722335804,
+    "objective": 0.25659028240556575,
+    "continuous": {
+     "crockery": 5,
+     "cutlery": 4.679259707712431,
+     "glass": 3.0435869322497107,
+     "melamine": 5,
+     "all": 4.542840734904119
+    },
+    "score": {
+     "crockery": 5,
+     "cutlery": 4.686374615722443,
+     "glass": 3.05,
+     "melamine": 5,
+     "all": 4.547461555857078
+    },
+    "milkGlasses": 2,
+    "teaItems": 5,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.8384780642243329,
+    "soiledCleanShare": 0.7918851981351981,
+    "washes": 4
+   }
+  ],
+  "best": {
+   "value": 0.0009,
+   "logLikelihood": -0.027976243245717902,
+   "logPrior": -0.0017646171550369486,
+   "objective": 0.02974086040075485,
+   "continuous": {
+    "crockery": 3.982288220093304,
+    "cutlery": 4.679259482684921,
+    "glass": 3.0435860508843087,
+    "melamine": 5,
+    "all": 4.246640790347646
+   },
+   "score": {
+    "crockery": 3.9957264957264957,
+    "cutlery": 4.686374615722443,
+    "glass": 3.05,
+    "melamine": 5,
+    "all": 4.255172998643148
+   },
+   "milkGlasses": 2,
+   "teaItems": 2.928571428571429,
+   "crockeryWithoutTea": 5,
+   "cleanShare": 0.7364880144730891,
+   "soiledCleanShare": 0.6604749417249417,
+   "washes": 4
+  },
+  "atDefault": {
+   "value": 0.0008,
+   "logLikelihood": -0.10072836593328109,
+   "logPrior": 0,
+   "objective": 0.10072836593328109,
+   "continuous": {
+    "crockery": 2.780844221541578,
+    "cutlery": 4.679259433924141,
+    "glass": 3.0435858605293262,
+    "melamine": 5,
+    "all": 3.8969667372498042
+   },
+   "score": {
+    "crockery": 2.7179487179487176,
+    "cutlery": 4.686374615722443,
+    "glass": 3.05,
+    "melamine": 5,
+    "all": 3.883282451379466
+   },
+   "milkGlasses": 2,
+   "teaItems": 0.2857142857142857,
+   "crockeryWithoutTea": 5,
+   "cleanShare": 0.7140999547715966,
+   "soiledCleanShare": 0.6316287878787878,
+   "washes": 4
+  },
+  "chosen": 0.0008,
+  "returned": true
+ },
+ "overrides": {
+  "soil.egg_yolk.tLag": 300,
+  "soil.milk.tLag": 300,
+  "soil.egg_yolk.rateRef": 0.000034,
+  "soil.milk.rateRef": 0.000034,
+  "liq.xProtease": 0.013
+ }
+}

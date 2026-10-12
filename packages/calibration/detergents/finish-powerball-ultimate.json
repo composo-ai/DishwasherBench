@@ -1,0 +1,67 @@
+{
+ "format": "spotless.params",
+ "version": 1,
+ "provenance": {
+  "name": "finish-powerball-ultimate",
+  "origin": "manual",
+  "note": "Finish Ultimate All in 1 (the UK retail name of Finish Powerball Ultimate; 12.9 g multi-compartment capsule) expressed as differences from the registry defaults, which are IEC reference detergent type D. Desk research, not a fit: docs/research/detergent-finish-ultimate.md gives the evidence, the tag and the range of every value (fact-checked 2026-10-10, see its last section); ranges, the dose (0.0129 kg, a machine dosing value and not a parameter) and the values the registry cannot carry are in finish-powerball-ultimate.notes.json beside this file. Verified in opened sources: the ingredient order (Reckitt UK disclosure, sku 000011654), the unit mass (12.9 g from Sainsbury's unit prices and from pack weights), and concentration bands of three safety data sheets that do not agree with one another: Finish Powerball Ultimate All in 1, Switzerland 2022 (D8395627: sodium carbonate 10 to 25 %, percarbonate 10 to <25 %, C12-14 alcohol EO/PO 10 to 25 %, etidronate up to 10 %, subtilisin <1 %, pH 9.4 to 10.4 at 10 %), Australia 2024 (D8408447: 10 to 30 %, 10 to <25 %, 10 to <25 %, pH 9.4 to 10.4) and Australia 2025 (D8411614: 30 to 60 %, up to 10 %, 10 to <25 %, pH 10.4 to 11). No sheet for the United Kingdom was found. Estimated: every number here; carbonate 30 % and percarbonate 10 % sit where the bands meet. liq.xCarbonate may be too high: the two older sheets imply a main-wash pH up to about 0.3 below what this set gives, lower than the registry minimum of liq.xCarbonate can express. liq.xSurfactant is held at the registry maximum 0.1 (best estimate 0.14). liq.xProtease and liq.xAmylase are in the registry's unit (granulate of the type D grades per kg of product), are not supported by any source and are the least certain values; if this set is layered on a set that fitted liq.xProtease for type D, scale that fitted value by 2.5 (range 1.25 to 5) instead of taking 0.025. Apply with dosing.detergentMass = 0.0129 kg. Regenerated 2026-10-10 against the registry of the third anchoring; liq.xProtease 0.025 (a guess of 2.5 times type D) replaced by 0.03: 32 to 43 mg of active protease per premium unit dose (US 11,492,571) is 0.33 to 0.44 g of the 9.71 % granulate the rate law is written in, 0.026 to 0.034 kg per kg of a 12.9 g capsule (docs/research/enzymes-at-temperature.md section 4); another maker's product, range 0.0125 to 0.05.",
+  "createdAt": "2026-10-10T00:00:00.000Z"
+ },
+ "overrides": {
+  "liq.amylaseKox": 0.00006,
+  "liq.amylaseKoxHP": 0.000002,
+  "liq.tabletTau": 300,
+  "liq.xAmylase": 0.012,
+  "liq.xCarbonate": 3.3,
+  "liq.xPeroxide": 0.955,
+  "liq.xProtease": 0.03,
+  "liq.xSilicate": 0,
+  "liq.xSurfactant": 0.1,
+  "liq.xTaed": 0.175
+ },
+ "definitions": {
+  "liq.amylaseKox": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "liq.amylaseKoxHP": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "liq.tabletTau": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "liq.xAmylase": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xCarbonate": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "liq.xPeroxide": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "liq.xProtease": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xSilicate": {
+   "kind": "scalar",
+   "unit": "eq/kg"
+  },
+  "liq.xSurfactant": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xTaed": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  }
+ },
+ "registryHash": "sha256:3de76719423f0c90baa964d7f582835fe4275a7f68fb0d1b2714d3b6aa92405e",
+ "hydroHash": "sha256:7c3bd46790e76f4c422bd688a3cb34e400390bb00705cbbf3ada21f9f3fe13cb",
+ "soilHash": "sha256:8a6c7ae55b19bfe6e8c181d77e1612b2413720b9a0f918b1f97a3858f831cb51"
+}

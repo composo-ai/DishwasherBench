@@ -1,0 +1,70 @@
+{
+ "format": "spotless.params",
+ "version": 1,
+ "provenance": {
+  "name": "anchored-v2",
+  "origin": "calibration",
+  "note": "Provisional anchoring to the published results of another machine (round robin 2022/2023, Bosch SMV6ECX51E, eco programme, detergent D; docs/research/standards.md section 7.1), to be replaced by washes on the owner's machine. Made on the water side \"spotless-sim 0.3.2 water-3\", sources sha256:97aa4d392843040da01252e2c616e5b0bced8cb5f608159e7aff197d8bab94d5; it is valid for that water side only (anchors/scripts/check.ts compares). Mechanism corrections (not fitted): soil.subCellCv = 0.3, soil.loadScale = 0.002, soil.amountCv = 0.05, soil.heatDryingFactor = 80, soil.heldFilmCapacity = 0.02, soil.tea.visibleFraction = 0, soil.tea.visibleMass = 0.00005. Fitted to the six in-machine egg-yolk rates (soils 6.1): soil.egg_yolk.rateRef = 0.0000354. Searched against the class means of the record from its default to 0.02 (milk case \"film\", level seeds 1 2, simulation seeds 1 2): liq.xProtease, best 0.02, kept (its default costs 0.66 log units). At their defaults, not searched: soil.bleachRate, soil.supplyRenewal. See docs/calibration/anchoring.md.",
+  "washRecords": [
+   "std-eu-13.round-robin-ta.detergent-d"
+  ],
+  "createdAt": "2026-10-10T10:06:56.629Z"
+ },
+ "overrides": {
+  "liq.xProtease": 0.02,
+  "soil.amountCv": 0.05,
+  "soil.egg_yolk.rateRef": 0.0000354,
+  "soil.heatDryingFactor": 80,
+  "soil.heldFilmCapacity": 0.02,
+  "soil.loadScale": 0.002,
+  "soil.subCellCv": 0.3,
+  "soil.tea.visibleFraction": 0,
+  "soil.tea.visibleMass": 0.00005
+ },
+ "definitions": {
+  "liq.xProtease": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "soil.amountCv": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.egg_yolk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.heatDryingFactor": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.heldFilmCapacity": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "soil.loadScale": {
+   "kind": "scalar",
+   "unit": "m"
+  },
+  "soil.subCellCv": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.tea.visibleFraction": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.tea.visibleMass": {
+   "kind": "scalar",
+   "unit": "kg/m2"
+  }
+ },
+ "registryHash": "sha256:98b99c7c15f56affc39a0ec94f8bb1b5e8290c0548b81984a3d386610a8276e3",
+ "hydroHash": "sha256:e4abd440fb6306d0c522f2c99daf30296a2051298ff92c56599c9d7e23888651",
+ "soilHash": "sha256:4bfbce58484fa6462480c0adbebfab12c1083022d2f53dd1a2d6a0a5b4864bdc",
+ "anchoredOn": {
+  "simVersion": "spotless-sim 0.3.2 water-3",
+  "sourceHash": "sha256:97aa4d392843040da01252e2c616e5b0bced8cb5f608159e7aff197d8bab94d5",
+  "files": 176
+ }
+}

@@ -1,0 +1,32 @@
+spotless-fit: WARNING: no calibration.json beside packages/calibration/anchors/anchored-v7.owner-capsule.json: the calibration's own keys (obs.*, cal.*, prog.*) are at their defaults
+  scene of owner-wash-01-egg-yolk-eco50
+  background of owner-wash-01-egg-yolk-eco50
+  first replay of owner-wash-01-egg-yolk-eco50
+24 items, 545519 blocks, 1272436 soil cells, 73418 deposits replayed (192786 in the load), 7752 ticks, tier official; exposure 4 cached / 0 computed; prepared in 65.8 s
+  the soils of the 4 observed items are replayed, those of the other 20 items are not; what the others release into the liquor (5.13 g by the end) is fed in as the history it has at the parameters of the preparation (refreshBackground moves it)
+  note: machine: dosing.detergentMass = 0.0129 (dose of Finish Powerball Ultimate)
+observation              observed  predicted     sd  residual  log lik  residue mg      visible mm2    specks  score  clean
+-----------------------  --------  ---------  -----  --------  -------  --------------  -------------  ------  -----  -----
+plate_9121.visible_area       100       75.4   57.2      0.43    -2.00  1.19 / 1540     59.2 / 21100       64      1  false
+plate_9121.clean            false       0.02   0.14     -0.14    -0.20  1.19 / 1540     59.2 / 21100       64      1  false
+plate_9121.specks               7       64.2   46.1     -1.24    -4.12  1.19 / 1540     59.2 / 21100       64      1  false
+plate_9122.visible_area        25       15.3   15.3      0.64    -1.98  0.228 / 1560    10.7 / 21100        9      3  false
+plate_9122.clean            false       0.02   0.14     -0.14    -0.44  0.228 / 1560    10.7 / 21100        9      3  false
+plate_9122.specks               5        9.2   7.18     -0.59    -3.55  0.228 / 1560    10.7 / 21100        9      3  false
+plate_9123.visible_area         0       1.04   3.53     -0.29    -0.66  0.00222 / 1470  0.212 / 21100       1      4  true
+plate_9123.clean             true      0.911  0.285      0.31    -0.52  0.00222 / 1470  0.212 / 21100       1      4  true
+plate_9123.specks               0        1.2   1.39     -0.87    -0.86  0.00222 / 1470  0.212 / 21100       1      4  true
+plate_9124.visible_area         0       16.2   12.4     -1.31    -1.30  0.381 / 1070    13.1 / 10200       13      2  false
+plate_9124.clean             true       0.02   0.14      7.00    -1.00  0.381 / 1070    13.1 / 10200       13      2  false
+plate_9124.specks               0       13.2     10     -1.32    -1.42  0.381 / 1070    13.1 / 10200       13      2  false
+reported and not fitted (their log likelihood is not in the sum): plate_9121.clean, plate_9121.specks, plate_9122.clean, plate_9122.specks, plate_9123.clean, plate_9123.specks, plate_9124.clean, plate_9124.specks
+
+9 input scenarios (sim.scenarios; the first is the record as written, shown above). Visible area mm2 / specks / clean per scenario; "log lik" above integrates them out:
+item        s0 (0.24)        s1 (0.20)       s2 (0.20)       s3 (0.12)       s4 (0.12)        s5 (0.05)    s6 (0.05)        s7 (0.01)    s8 (0.01)        median  range
+----------  ---------------  --------------  --------------  --------------  ---------------  -----------  ---------------  -----------  ---------------  ------  ---------
+plate_9121  59.2 / 64 / no   8.49 / 6 / no   344 / 268 / no  1.95 / 1 / yes  1300 / 696 / no  0 / 0 / yes  3600 / 620 / no  0 / 0 / yes  7700 / 8 / no    59.2    0 .. 7700
+plate_9122  10.7 / 9 / no    1.01 / 2 / yes  78.6 / 73 / no  0 / 0 / yes     429 / 319 / no   0 / 0 / yes  1640 / 890 / no  0 / 0 / yes  4500 / 565 / no  10.7    0 .. 4500
+plate_9123  0.212 / 1 / yes  0 / 0 / yes     4.35 / 5 / no   0 / 0 / yes     49.8 / 60 / no   0 / 0 / yes  316 / 299 / no   0 / 0 / yes  1360 / 851 / no  0.212   0 .. 1360
+plate_9124  13.1 / 13 / no   1.33 / 1 / yes  128 / 113 / no  0 / 0 / yes     816 / 493 / no   0 / 0 / yes  2720 / 69 / no   0 / 0 / yes  5740 / 0 / no    13.1    0 .. 5740
+log likelihood -5.936 (weight 1)
+packages/calibration/anchors/reports/v7/owner-wash-01.predict.json

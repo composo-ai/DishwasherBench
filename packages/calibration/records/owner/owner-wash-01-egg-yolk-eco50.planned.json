@@ -1,0 +1,1042 @@
+{
+ "format": "spotless.wash-record",
+ "version": 1,
+ "id": "owner-wash-01-egg-yolk-eco50",
+ "kind": "planned",
+ "title": "Owner wash 01: four egg-yolk plates (two oven-dried, two air-dried, one of each turned to the wall), Eco 50, one Finish Powerball Ultimate capsule",
+ "provenance": {
+  "date": "2026-10-10",
+  "by": "The owner; load and observation plan written by the simulation side before the result was known",
+  "methods": {
+   "eye": {
+    "description": "visual inspection of the unwiped plate in good light, flash off, and a fingertip over the well (dried yolk feels matt and rough)"
+   },
+   "photo": {
+    "description": "photograph face-on in good light before and after"
+   }
+  },
+  "notes": "Planned record: the four observations are open. What the owner set up is in docs/reference/calibration_runs/2026-10-10_egg_plates/ (README.md and IMG_9120 to IMG_9126); the plan he was given is docs/calibration/owner-wash-01-egg-yolk.md; the prediction registered before the result is docs/calibration/owner-wash-01-prediction.md. The simulation side wrote this record from his photographs: the plates and the rest of the load are catalogue stand-ins at poses the loading physics gave them, the yolk amount was not weighed, and the drying times are his statement of 2 hours at 80 C for the oven pair and 2 hours on the counter as the plan asked for the other pair (not timed). Predict with the game default set: spotless-fit predict <this file> --params packages/calibration/anchors/anchored-v4.owner-capsule.json. To make it a measured record: set kind to measured, give each yolk soil an amount_method, correct the drying times, and enter the four values."
+ },
+ "machine": {
+  "id": "bosch_smv4hax40g",
+  "config": {
+   "basketHeights": {
+    "upper": "1"
+   },
+   "foldedTineRows": [],
+   "shelves": [
+    {
+     "basketId": "upper",
+     "shelfId": "cup_front",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "cup_rear",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "knife_shelf",
+     "state": "down"
+    }
+   ],
+   "cutleryBasket": {
+    "basketId": "lower",
+    "centre": [
+     0.2705,
+     0.123
+    ],
+    "longAxis": "y"
+   }
+  }
+ },
+ "programme": {
+  "id": "eco_50",
+  "options": []
+ },
+ "consumables": {
+  "detergent": {
+   "product": "Finish Powerball Ultimate",
+   "form": "pouch",
+   "dose_g": 12.9,
+   "placement": "dispenser"
+  }
+ },
+ "load": {
+  "dispenser_blocked": false,
+  "items": [
+   {
+    "id": "bowl_01",
+    "type": "cereal_bowl_porcelain_160",
+    "frame": "tub",
+    "position_mm": [
+     181.04212960238866,
+     -131.02377681624756,
+     194.7864079524733
+    ],
+    "quat_wxyz": [
+     0.6376698613166809,
+     0.391116201877594,
+     -0.35205110907554626,
+     -0.5625525116920471
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "porridge",
+      "amount_g": 7.12,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.4
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 12
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for the bowl at the front right; soil and amount are assumed"
+   },
+   {
+    "id": "colander_01",
+    "type": "mixing_bowl_pp_3l",
+    "frame": "tub",
+    "position_mm": [
+     36.02214728861866,
+     -3.505839630415989,
+     587.6953129014117
+    ],
+    "quat_wxyz": [
+     0.0033923389855772257,
+     0.9794365167617798,
+     0.0010045054368674755,
+     -0.2017219215631485
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "pasta_starch",
+      "amount_g": 1.08,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.3
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 1
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "a 3 L plastic mixing bowl standing in for his plastic colander in the upper basket (the catalogue colander finds no seat there); soil and amount are assumed"
+   },
+   {
+    "id": "deep_bowl_01",
+    "type": "pasta_bowl_porcelain_230",
+    "frame": "tub",
+    "position_mm": [
+     -180.48820920479193,
+     -139.26199259963138,
+     242.22232129113112
+    ],
+    "quat_wxyz": [
+     0.5405762791633606,
+     0.4468965530395508,
+     0.45623672008514404,
+     0.5476392507553101
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "pasta_starch",
+      "amount_g": 0.87,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.5
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 1
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for a deep bowl at the front left (a second one found no seat in the model and is left out); soil and amount are assumed"
+   },
+   {
+    "id": "fork_01",
+    "type": "dinner_fork_185",
+    "frame": "tub",
+    "position_mm": [
+     56.04735077970989,
+     -115.38341489995115,
+     79.61192322818144
+    ],
+    "quat_wxyz": [
+     0.5703957080841064,
+     0.004247013013809919,
+     -0.8213531970977783,
+     -0.003111444413661957
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "tomato_sauce",
+      "amount_g": 0.14,
+      "where": {
+       "regions": [
+        {
+         "region": "tines",
+         "coverage": 0.5
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 1
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for his cutlery; soil and amount are assumed"
+   },
+   {
+    "id": "fork_02",
+    "type": "dinner_fork_185",
+    "frame": "tub",
+    "position_mm": [
+     63.257424689534474,
+     -116.65683412894259,
+     79.81242333364263
+    ],
+    "quat_wxyz": [
+     0.5561261177062988,
+     0.009952612221240997,
+     -0.8310089111328125,
+     -0.006998878438025713
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "tomato_sauce",
+      "amount_g": 0.14,
+      "where": {
+       "regions": [
+        {
+         "region": "tines",
+         "coverage": 0.5
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 1
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for his cutlery; soil and amount are assumed"
+   },
+   {
+    "id": "fork_03",
+    "type": "dinner_fork_185",
+    "frame": "tub",
+    "position_mm": [
+     69.72536746543587,
+     -114.66761249639114,
+     80.73330875030146
+    ],
+    "quat_wxyz": [
+     0.5379148721694946,
+     0.006046558264642954,
+     -0.8342018127441406,
+     0.12131936103105545
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "tomato_sauce",
+      "amount_g": 0.14,
+      "where": {
+       "regions": [
+        {
+         "region": "tines",
+         "coverage": 0.5
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 1
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for his cutlery; soil and amount are assumed"
+   },
+   {
+    "id": "fork_04",
+    "type": "dinner_fork_185",
+    "frame": "tub",
+    "position_mm": [
+     66.61167694926766,
+     -125.85455809944088,
+     79.72186373736012
+    ],
+    "quat_wxyz": [
+     0.5541297197341919,
+     -0.07439026981592178,
+     -0.8281798958778381,
+     -0.039042435586452484
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "tomato_sauce",
+      "amount_g": 0.14,
+      "where": {
+       "regions": [
+        {
+         "region": "tines",
+         "coverage": 0.5
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 1
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for his cutlery; soil and amount are assumed"
+   },
+   {
+    "id": "glass_01",
+    "type": "wine_glass_generic_200",
+    "frame": "tub",
+    "position_mm": [
+     124.22083710553537,
+     75.66145219767267,
+     632.0382387620133
+    ],
+    "quat_wxyz": [
+     -0.00019646104192361236,
+     0.9993243217468262,
+     0.008106989786028862,
+     0.03584965318441391
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "red_wine",
+      "amount_g": 0.01,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.3
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 1
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for a glass in the upper basket; soil and amount are assumed"
+   },
+   {
+    "id": "glass_02",
+    "type": "wine_glass_generic_200",
+    "frame": "tub",
+    "position_mm": [
+     132.63332420057438,
+     -67.94343685940859,
+     632.6475738258923
+    ],
+    "quat_wxyz": [
+     -0.0003135907172691077,
+     0.9993332028388977,
+     -0.008845706470310688,
+     0.03542369604110718
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "red_wine",
+      "amount_g": 0.01,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.3
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 1
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for a glass in the upper basket; soil and amount are assumed"
+   },
+   {
+    "id": "knife_01",
+    "type": "dinner_knife_210",
+    "frame": "tub",
+    "position_mm": [
+     49.40480403650241,
+     -160.35201171117714,
+     78.61702751981554
+    ],
+    "quat_wxyz": [
+     0.7715250253677368,
+     -0.0054320162162184715,
+     -0.6349847316741943,
+     0.03891134262084961
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "butter_margarine",
+      "amount_g": 0.02,
+      "where": {
+       "regions": [
+        {
+         "region": "blade",
+         "coverage": 0.4
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 1
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for his cutlery; soil and amount are assumed"
+   },
+   {
+    "id": "knife_02",
+    "type": "dinner_knife_210",
+    "frame": "tub",
+    "position_mm": [
+     41.077610290355196,
+     -160.20593119454355,
+     78.5519068433986
+    ],
+    "quat_wxyz": [
+     0.7753703594207764,
+     -0.0038325113710016012,
+     -0.6305206418037415,
+     0.03507031872868538
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "butter_margarine",
+      "amount_g": 0.02,
+      "where": {
+       "regions": [
+        {
+         "region": "blade",
+         "coverage": 0.4
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 1
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for his cutlery; soil and amount are assumed"
+   },
+   {
+    "id": "knife_03",
+    "type": "dinner_knife_210",
+    "frame": "tub",
+    "position_mm": [
+     33.01732270593746,
+     -160.16712204425826,
+     78.49992669593506
+    ],
+    "quat_wxyz": [
+     0.7782894968986511,
+     -0.0015244523528963327,
+     -0.6270934343338013,
+     0.031890980899333954
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "butter_margarine",
+      "amount_g": 0.02,
+      "where": {
+       "regions": [
+        {
+         "region": "blade",
+         "coverage": 0.4
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 1
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for his cutlery; soil and amount are assumed"
+   },
+   {
+    "id": "plate_9121",
+    "type": "dinner_plate_porcelain_270",
+    "frame": "tub",
+    "position_mm": [
+     -175.00588562973132,
+     100.35533770717839,
+     211.01558302661843
+    ],
+    "quat_wxyz": [
+     0.31617555022239685,
+     0.624170184135437,
+     -0.615230143070221,
+     -0.3632306158542633
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "egg_yolk_dried",
+      "amount_g": 3,
+      "where": {
+       "regions": [
+        {
+         "region": "well",
+         "coverage": 0.67
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 0.25,
+       "conditions": "oven at 80 C for 2 hours (his README first said \"20 hours\"; corrected to 2 hours, which he confirmed), then about a quarter of an hour to the start of the wash"
+      },
+      "heat": {
+       "history": "warm",
+       "temperature_c": 80,
+       "time_min": 120
+      },
+      "recipe": "raw egg yolk, no white",
+      "preparation": "spread with a fork over the well in streaks (thick ridges and bare stripes, about two thirds of the well covered, rim clean); about 3 g asked for, not weighed",
+      "amount_sd_g": 1.0
+     }
+    ],
+    "notes": "oven-dried; far left of the rear rows, eating face turned to the left wall. Stand-in for his wide-rimmed earthenware plate (about 27 cm); the pose is the rest pose of the catalogue plate in the loading physics, not a measurement"
+   },
+   {
+    "id": "plate_9122",
+    "type": "dinner_plate_porcelain_270",
+    "frame": "tub",
+    "position_mm": [
+     -106.88965537771219,
+     111.5000449529494,
+     213.56318210218075
+    ],
+    "quat_wxyz": [
+     0.49190014600753784,
+     0.5064103603363037,
+     0.5290071368217468,
+     0.4708867371082306
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "egg_yolk_dried",
+      "amount_g": 3,
+      "where": {
+       "regions": [
+        {
+         "region": "well",
+         "coverage": 0.67
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 0.25,
+       "conditions": "oven at 80 C for 2 hours (his README first said \"20 hours\"; corrected to 2 hours, which he confirmed), then about a quarter of an hour to the start of the wash"
+      },
+      "heat": {
+       "history": "warm",
+       "temperature_c": 80,
+       "time_min": 120
+      },
+      "recipe": "raw egg yolk, no white",
+      "preparation": "spread with a fork over the well in streaks (thick ridges and bare stripes, about two thirds of the well covered, rim clean); about 3 g asked for, not weighed",
+      "amount_sd_g": 1.0
+     }
+    ],
+    "notes": "oven-dried; left of the middle of the rear rows, eating face to the middle. Stand-in for his wide-rimmed earthenware plate (about 27 cm); the pose is the rest pose of the catalogue plate in the loading physics, not a measurement"
+   },
+   {
+    "id": "plate_9123",
+    "type": "dinner_plate_porcelain_270",
+    "frame": "tub",
+    "position_mm": [
+     131.11595791589596,
+     111.49986716999163,
+     212.85841516096852
+    ],
+    "quat_wxyz": [
+     0.5010027885437012,
+     0.49813657999038696,
+     -0.520706295967102,
+     -0.4792923629283905
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "egg_yolk_dried",
+      "amount_g": 3,
+      "where": {
+       "regions": [
+        {
+         "region": "well",
+         "coverage": 0.67
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 2.25,
+       "conditions": "on the counter for as long as the other pair was in the oven; still glossy in the photographs"
+      },
+      "heat": {
+       "history": "none"
+      },
+      "recipe": "raw egg yolk, no white",
+      "preparation": "spread with a fork over the well in streaks (thick ridges and bare stripes, about two thirds of the well covered, rim clean); about 3 g asked for, not weighed",
+      "amount_sd_g": 1.0
+     }
+    ],
+    "notes": "air-dried; right of the middle of the rear rows, eating face to the middle. Stand-in for his wide-rimmed earthenware plate (about 27 cm); the pose is the rest pose of the catalogue plate in the loading physics, not a measurement"
+   },
+   {
+    "id": "plate_9124",
+    "type": "dessert_plate_porcelain_190",
+    "frame": "tub",
+    "position_mm": [
+     210.65800277091603,
+     111.49772387300447,
+     168.2727619956763
+    ],
+    "quat_wxyz": [
+     0.3985539674758911,
+     0.5899463891983032,
+     0.5666046142578125,
+     0.41482195258140564
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "egg_yolk_dried",
+      "amount_g": 3,
+      "where": {
+       "regions": [
+        {
+         "region": "well",
+         "coverage": 0.67
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 2.25,
+       "conditions": "on the counter for as long as the other pair was in the oven; still glossy in the photographs"
+      },
+      "heat": {
+       "history": "none"
+      },
+      "recipe": "raw egg yolk, no white",
+      "preparation": "spread with a fork over the well in streaks (thick ridges and bare stripes, about two thirds of the well covered, rim clean); about 3 g asked for, not weighed. NOTE: 3 g is what was asked for per plate; on this small well that is twice the loading of the large plates (15 against 7.3 mg/cm2 dry). If he put on a film as thick as on the others, the amount here was about 1.45 g, and the prediction for this plate changes from dirty to clean",
+      "amount_sd_g": 1.0
+     }
+    ],
+    "notes": "air-dried; the small plate, far right of the rear rows, eating face turned to the right wall. Stand-in for his wide-rimmed earthenware plate (about 22 cm; the catalogue has no plain plate between 19 and 23 cm); the pose is the rest pose of the catalogue plate in the loading physics, not a measurement"
+   },
+   {
+    "id": "spoon_01",
+    "type": "dessert_spoon_160",
+    "frame": "tub",
+    "position_mm": [
+     -25.57522028650066,
+     -115.34445886082375,
+     79.55462261365938
+    ],
+    "quat_wxyz": [
+     0.6473833918571472,
+     -0.032497771084308624,
+     -0.7609826922416687,
+     0.027276450768113136
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "porridge",
+      "amount_g": 0.64,
+      "where": {
+       "regions": [
+        {
+         "region": "bowl",
+         "coverage": 0.6
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 12
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for his cutlery; soil and amount are assumed"
+   },
+   {
+    "id": "spoon_02",
+    "type": "dessert_spoon_160",
+    "frame": "tub",
+    "position_mm": [
+     -21.065866323477323,
+     -115.44043027416465,
+     79.57991277960541
+    ],
+    "quat_wxyz": [
+     0.6413842439651489,
+     -0.0340537428855896,
+     -0.7660505175590515,
+     0.025165461003780365
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "porridge",
+      "amount_g": 0.64,
+      "where": {
+       "regions": [
+        {
+         "region": "bowl",
+         "coverage": 0.6
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 12
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for his cutlery; soil and amount are assumed"
+   },
+   {
+    "id": "spoon_03",
+    "type": "dessert_spoon_160",
+    "frame": "tub",
+    "position_mm": [
+     -11.412181256318563,
+     -116.36872795332108,
+     79.65088412959193
+    ],
+    "quat_wxyz": [
+     0.6244137287139893,
+     -0.0396580696105957,
+     -0.7797825932502747,
+     0.021767783910036087
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "porridge",
+      "amount_g": 0.64,
+      "where": {
+       "regions": [
+        {
+         "region": "bowl",
+         "coverage": 0.6
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 12
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for his cutlery; soil and amount are assumed"
+   },
+   {
+    "id": "spoon_04",
+    "type": "dessert_spoon_160",
+    "frame": "tub",
+    "position_mm": [
+     -28.065904971782572,
+     -50.62355451758842,
+     79.40960013921094
+    ],
+    "quat_wxyz": [
+     0.6555356383323669,
+     -0.015569503419101238,
+     -0.7548801302909851,
+     0.013660925440490246
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "porridge",
+      "amount_g": 0.64,
+      "where": {
+       "regions": [
+        {
+         "region": "bowl",
+         "coverage": 0.6
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 12
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for his cutlery; soil and amount are assumed"
+   },
+   {
+    "id": "teaspoon_01",
+    "type": "teaspoon_130",
+    "frame": "tub",
+    "position_mm": [
+     -28.390436156511566,
+     -160.6223086328562,
+     79.24933139206107
+    ],
+    "quat_wxyz": [
+     0.6526826024055481,
+     0.013493705540895462,
+     -0.7574368119239807,
+     -0.010626187548041344
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "coffee",
+      "amount_g": 0.01,
+      "where": {
+       "regions": [
+        {
+         "region": "bowl",
+         "coverage": 0.5
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 12
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for his cutlery; soil and amount are assumed"
+   },
+   {
+    "id": "teaspoon_02",
+    "type": "teaspoon_130",
+    "frame": "tub",
+    "position_mm": [
+     -16.087611184345562,
+     -159.94235426041195,
+     79.62291409281622
+    ],
+    "quat_wxyz": [
+     0.6168832182884216,
+     0.07180078327655792,
+     -0.7767648696899414,
+     0.10457585006952286
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "coffee",
+      "amount_g": 0.01,
+      "where": {
+       "regions": [
+        {
+         "region": "bowl",
+         "coverage": 0.5
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 12
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for his cutlery; soil and amount are assumed"
+   },
+   {
+    "id": "used_plate_01",
+    "type": "dinner_plate_porcelain_270",
+    "frame": "tub",
+    "position_mm": [
+     227.77620467441852,
+     -121.75685535915156,
+     212.62263179717002
+    ],
+    "quat_wxyz": [
+     0.51766037940979,
+     0.4775754511356354,
+     -0.4667072594165802,
+     -0.5349147319793701
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "tomato_sauce",
+      "amount_g": 2.36,
+      "where": {
+       "regions": [
+        {
+         "region": "well",
+         "coverage": 0.5
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 1
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for a used dinner plate at the front right; soil and amount are assumed"
+   },
+   {
+    "id": "used_plate_02",
+    "type": "dinner_plate_porcelain_270",
+    "frame": "tub",
+    "position_mm": [
+     203.50908597049568,
+     -121.1729262347936,
+     211.36829871554662
+    ],
+    "quat_wxyz": [
+     0.5292955636978149,
+     0.4757065176963806,
+     -0.45315128564834595,
+     -0.5368459224700928
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "tomato_sauce",
+      "amount_g": 2.36,
+      "where": {
+       "regions": [
+        {
+         "region": "well",
+         "coverage": 0.5
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 1
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "stand-in for a used dinner plate at the front right; soil and amount are assumed"
+   }
+  ]
+ },
+ "observations": [
+  {
+   "id": "plate_9121.clean",
+   "item": "plate_9121",
+   "kind": "clean",
+   "method": "eye",
+   "photos": [],
+   "notes": "OPEN. Before the wash: IMG_9121.JPG. Enter value true (clean: nothing to see or feel) or false, and say here what was seen and where (faint film, specks, patches; well or rim)."
+  },
+  {
+   "id": "plate_9122.clean",
+   "item": "plate_9122",
+   "kind": "clean",
+   "method": "eye",
+   "photos": [],
+   "notes": "OPEN. Before the wash: IMG_9122.JPG. Enter value true (clean: nothing to see or feel) or false, and say here what was seen and where (faint film, specks, patches; well or rim)."
+  },
+  {
+   "id": "plate_9123.clean",
+   "item": "plate_9123",
+   "kind": "clean",
+   "method": "eye",
+   "photos": [],
+   "notes": "OPEN. Before the wash: IMG_9123.JPG. Enter value true (clean: nothing to see or feel) or false, and say here what was seen and where (faint film, specks, patches; well or rim)."
+  },
+  {
+   "id": "plate_9124.clean",
+   "item": "plate_9124",
+   "kind": "clean",
+   "method": "eye",
+   "photos": [],
+   "notes": "OPEN. Before the wash: IMG_9124.JPG. Enter value true (clean: nothing to see or feel) or false, and say here what was seen and where (faint film, specks, patches; well or rim)."
+  }
+ ],
+ "sim": {
+  "tier": "official",
+  "level_seed": 20261010,
+  "sim_seed": 1
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "format": "spotless.params",
+ "version": 1,
+ "provenance": {
+  "name": "anchored-v6",
+  "origin": "calibration",
+  "note": "Anchoring to the published results of another machine with what the first washes on the owner's machine fixed held in place (round robin 2022/2023, Bosch SMV6ECX51E, eco programme, detergent D; docs/research/standards.md section 7.1), to be replaced by more washes on the owner's machine. Made on the water side \"spotless-sim 0.5.0 water-6\", sources sha256:3ae47724f84751e1ac420c22c4d9a18ef53aa485153eeb3f4253210260c527bf; valid for that water side only (anchors/scripts/check.ts). Reference detergent D at 20 g. soil.egg_yolk.rateRef (and soil.milk.rateRef with it) fitted to the six in-machine egg-yolk rates; the lags read off the same bench data; liq.xProtease fitted to the cutlery and glass class means and soil.bleachRate to the crockery class mean of the record, each through the calibration tool's likelihood of a group mean score. Held at values a wash of the owner's machine fixed (owner-wash-01-egg-yolk-eco50: prog.soakDuty): prog.soakDuty = 0.8; the three fits were made with them in place. Everything else is the registry's default. soil.bleachRate is kept by the floor rule: at its default every iec_tea item reads dirty, which caps the crockery mean at 3.10 against the published 3.68; the record bounds it from below only (off the floor from 0.0009). See docs/calibration/owner-wash-01-calibration.md.",
+  "washRecords": [
+   "std-eu-13.round-robin-ta.detergent-d",
+   "owner-wash-01-egg-yolk-eco50"
+  ],
+  "createdAt": "2026-10-11T08:40:12.473Z"
+ },
+ "overrides": {
+  "liq.xProtease": 0.016,
+  "prog.soakDuty": 0.8,
+  "soil.amountCv": 0.05,
+  "soil.bleachRate": 0.001,
+  "soil.egg_yolk.rateRef": 0.000034,
+  "soil.egg_yolk.tLag": 300,
+  "soil.milk.rateRef": 0.000034,
+  "soil.milk.tLag": 300,
+  "soil.subCellCv": 0.1
+ },
+ "definitions": {
+  "liq.xProtease": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "prog.soakDuty": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.amountCv": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.bleachRate": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "soil.egg_yolk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.egg_yolk.tLag": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "soil.milk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.milk.tLag": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "soil.subCellCv": {
+   "kind": "scalar",
+   "unit": "1"
+  }
+ },
+ "registryHash": "sha256:3de76719423f0c90baa964d7f582835fe4275a7f68fb0d1b2714d3b6aa92405e",
+ "hydroHash": "sha256:7c3bd46790e76f4c422bd688a3cb34e400390bb00705cbbf3ada21f9f3fe13cb",
+ "soilHash": "sha256:5bb18f6a18dc889c8be466f1a5bfc3aa5f38f4bdb6da376776e70e47730f2295",
+ "anchoredOn": {
+  "simVersion": "spotless-sim 0.5.0 water-6",
+  "exposureSource": "3ae47724f84751e1ac420c22c4d9a18ef53aa485153eeb3f4253210260c527bf",
+  "machineSource": "b647c5746839ae53d9f4ee2a8342db055e18d92d319ef146de078ea216970afc",
+  "files": 136,
+  "reference": {
+   "load": "iec-13-careful",
+   "programme": "eco_50",
+   "tier": "fast",
+   "levelSeed": 1,
+   "simSeed": 1,
+   "digest": "21d1e9b476e7adc29080a9a86bb261fdcea4f658e10db0952a5b82ac93724836"
+  }
+ },
+ "supersededBy": {
+  "set": "anchored-v7",
+  "why": "fitted on the machine as it was drawn before the upper basket was corrected and on the standard loads settled on that basket; fitted again on the corrected machine (docs/calibration/anchoring-v7.md)",
+  "on": "2026-10-11"
+ }
+}

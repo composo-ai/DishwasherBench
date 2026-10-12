@@ -1,0 +1,104 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "pot-on-side",
+ "description": "P35 B: the same saucepan lying on its side at the same place, opening to the arm axis",
+ "recipe_hash": "sha256:8433dd9067c632479e54de508f686efadd5238bfa561efcaad6b3f4f51ae9fe3",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "pot",
+   "item_type": "saucepan_steel_170",
+   "pose": {
+    "p": [
+     -0.139192655027753,
+     0.16647364838608159,
+     0.15502404033863038
+    ],
+    "q": [
+     0.300695538520813,
+     0.1072511225938797,
+     -0.3183518648147583,
+     0.8925982117652893
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 105.8,
+    "rotation_deg": 65,
+    "contacts": [
+     "cutlery_basket.foot.2.rear",
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:7a9b20d3269183d3d214c657667429f6cc189d7d3d8a4b7a58f7c69651fcc8bb"
+}

@@ -1,0 +1,494 @@
+{
+ "name": "duty-bake",
+ "records": [
+  "owner-wash-01-egg-yolk-eco50",
+  "std-eu-13.round-robin-ta.detergent-d"
+ ],
+ "keys": [
+  "prog.soakDuty",
+  "soil.bakeRate"
+ ],
+ "fixed": {
+  "prog.soakDuty": 0.8
+ },
+ "priors": {
+  "prog.soakDuty": {
+   "centre": 0.53,
+   "sd": 0.49
+  }
+ },
+ "parameters": [
+  {
+   "id": "prog.soakDuty",
+   "key": "prog.soakDuty",
+   "unit": "1",
+   "transform": "log",
+   "default": 0.5,
+   "min": 0.1,
+   "max": 1,
+   "tag": "ESTIMATED",
+   "priorCentre": 0.53,
+   "priorSd": 0.49,
+   "start": 0.8,
+   "estimate": 0.8980404584339113,
+   "z": -0.10754015775952226,
+   "sd": 0.2993050634740016,
+   "interval": [
+    0.4994848147939452,
+    1
+   ],
+   "normalInterval": [
+    0.4994848147939452,
+    1
+   ],
+   "intervalFrom": "normal",
+   "movedSd": 1.0762002340335657,
+   "movedRange": 0.22902003330124526,
+   "shrink": 0.6108266601510237,
+   "contraction": 0.6268907912487458,
+   "verdict": "weak",
+   "status": "weak",
+   "returnedPrior": false,
+   "atBound": null,
+   "priorCentreDrop": 4.839546342806551,
+   "priorPull": 2.0141635506859723,
+   "recordsAlone": 1,
+   "step": 0.1,
+   "curvatureSd": 0.09273158032247639,
+   "profileInterval": null,
+   "profileDisagrees": false,
+   "confoundedWith": [
+    {
+     "id": "soil.bakeRate",
+     "correlation": 0.834506358195536
+    }
+   ]
+  },
+  {
+   "id": "soil.bakeRate",
+   "key": "soil.bakeRate",
+   "unit": "1/s",
+   "transform": "log",
+   "default": 0.00003,
+   "min": 0.00001,
+   "max": 0.0001,
+   "tag": "ESTIMATED",
+   "priorCentre": 0.000029999999999999977,
+   "priorSd": 1.8059592064889065,
+   "start": 0.000029999999999999977,
+   "estimate": 0.0000540088656716326,
+   "z": -9.826362345771606,
+   "sd": 1.0247185514624513,
+   "interval": [
+    0.00001,
+    0.0001
+   ],
+   "normalInterval": [
+    0.00001,
+    0.0001
+   ],
+   "intervalFrom": "normal",
+   "movedSd": 0.3255615234375033,
+   "movedRange": 0.25534380132983564,
+   "shrink": 0.5674095781236828,
+   "contraction": 0.6780463706535044,
+   "verdict": "weak",
+   "status": "weak",
+   "returnedPrior": false,
+   "atBound": null,
+   "priorCentreDrop": 0.2683727980596968,
+   "priorPull": 1.914710599626854,
+   "recordsAlone": 0.0001,
+   "step": 0.1,
+   "curvatureSd": 0.32529862184934694,
+   "profileInterval": null,
+   "profileDisagrees": false,
+   "confoundedWith": [
+    {
+     "id": "prog.soakDuty",
+     "correlation": 0.834506358195536
+    }
+   ]
+  }
+ ],
+ "estimate": {
+  "logPosterior": -6.56053283595964,
+  "logLikelihood": -5.928434211321216,
+  "logPrior": -0.6320986246384248
+ },
+ "covariance": [
+  [
+   0.08958352102117613,
+   0.25594598001383007
+  ],
+  [
+   0.25594598001383007,
+   1.0500481097113044
+  ]
+ ],
+ "correlation": [
+  [
+   1,
+   0.834506358195536
+  ],
+  [
+   0.834506358195536,
+   1
+  ]
+ ],
+ "profiles": [],
+ "observations": [
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9121.visible_area",
+   "kind": "visible_area",
+   "observed": 100,
+   "eta": 111.74150214014352,
+   "mean": 138.29748962227143,
+   "sd": 102.00319364468068,
+   "residual": -0.3754538289818398,
+   "logLikelihood": -1.8666838511187953,
+   "outlierProbability": 0.005992082208738481
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9121.clean",
+   "kind": "clean",
+   "observed": false,
+   "eta": -19.23786211423623,
+   "mean": 0.02,
+   "sd": 0.13999999999999999,
+   "residual": -0.14285714285714288,
+   "logLikelihood": -0.19812971015679492,
+   "outlierProbability": 0
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9121.specks",
+   "kind": "specks",
+   "observed": 7,
+   "eta": 107,
+   "mean": 107.2,
+   "sd": 76.50568606319402,
+   "residual": -1.3097065741915495,
+   "logLikelihood": -4.696071234664606,
+   "outlierProbability": 0
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9122.visible_area",
+   "kind": "visible_area",
+   "observed": 25,
+   "eta": 13.633513499022097,
+   "mean": 18.319358376669854,
+   "sd": 17.546748286288558,
+   "residual": 0.3807338838131369,
+   "logLikelihood": -1.9372242333063947,
+   "outlierProbability": 0.007945941139043788
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9122.clean",
+   "kind": "clean",
+   "observed": false,
+   "eta": -15.211977426466783,
+   "mean": 0.02,
+   "sd": 0.13999999999999999,
+   "residual": -0.14285714285714288,
+   "logLikelihood": -0.43788465107936836,
+   "outlierProbability": 0
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9122.specks",
+   "kind": "specks",
+   "observed": 5,
+   "eta": 13,
+   "mean": 13.2,
+   "sd": 10.015987220439131,
+   "residual": -0.8186911404266435,
+   "logLikelihood": -3.7436481282617757,
+   "outlierProbability": 0
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9123.visible_area",
+   "kind": "visible_area",
+   "observed": 0,
+   "eta": 0,
+   "mean": 0.7928916177150613,
+   "sd": 3.389231389920174,
+   "residual": -0.23394437454851266,
+   "logLikelihood": -0.5348973689124379,
+   "outlierProbability": 0.005013759260854123
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9123.clean",
+   "kind": "clean",
+   "observed": true,
+   "eta": 2.5,
+   "mean": 0.9740387212872547,
+   "sd": 0.15901978090899413,
+   "residual": 0.16325817180947313,
+   "logLikelihood": -0.2343931682846374,
+   "outlierProbability": 0
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9123.specks",
+   "kind": "specks",
+   "observed": 0,
+   "eta": 0,
+   "mean": 0.2,
+   "sd": 0.469041575982343,
+   "residual": -0.4264014327112209,
+   "logLikelihood": -0.5242061637677957,
+   "outlierProbability": 0
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9124.visible_area",
+   "kind": "visible_area",
+   "observed": 0,
+   "eta": 4.8421421522274475,
+   "mean": 6.40289255479969,
+   "sd": 6.6714594252771535,
+   "residual": -0.9597439100866141,
+   "logLikelihood": -1.042040697981745,
+   "outlierProbability": 0.011882384175658567
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9124.clean",
+   "kind": "clean",
+   "observed": true,
+   "eta": -9.533033842168933,
+   "mean": 0.02,
+   "sd": 0.13999999999999999,
+   "residual": 7.000000000000001,
+   "logLikelihood": -0.9959941043468358,
+   "outlierProbability": 0
+  },
+  {
+   "recordId": "owner-wash-01-egg-yolk-eco50",
+   "observationId": "plate_9124.specks",
+   "kind": "specks",
+   "observed": 0,
+   "eta": 6,
+   "mean": 6.2,
+   "sd": 5.041825066382213,
+   "residual": -1.2297134308249298,
+   "logLikelihood": -1.4160595739029689,
+   "outlierProbability": 0
+  }
+ ],
+ "identifiability": {
+  "parameters": [
+   {
+    "id": "prog.soakDuty",
+    "sensitivity": 0.8076727806142023,
+    "information": 7.82802384654093,
+    "marginal": 0.6108266601510237,
+    "conditional": 0.3365644577279421,
+    "contraction": 0.6268907912487458,
+    "verdict": "weak",
+    "confoundedWith": [
+     {
+      "id": "soil.bakeRate",
+      "correlation": 0.834506358195536
+     }
+    ]
+   },
+   {
+    "id": "soil.bakeRate",
+    "sensitivity": 0.8770556151713899,
+    "information": 9.230718625243982,
+    "marginal": 0.5674095781236828,
+    "conditional": 0.3126417188857169,
+    "contraction": 0.6780463706535044,
+    "verdict": "weak",
+    "confoundedWith": [
+     {
+      "id": "prog.soakDuty",
+      "correlation": 0.834506358195536
+     }
+    ]
+   }
+  ],
+  "combinations": [
+   {
+    "information": 16.49107609696601,
+    "loadings": [
+     {
+      "id": "soil.bakeRate",
+      "loading": 0.7375940962017422
+     },
+     {
+      "id": "prog.soakDuty",
+      "loading": -0.6752443626187004
+     }
+    ]
+   },
+   {
+    "information": 0.5676663748188965,
+    "loadings": [
+     {
+      "id": "prog.soakDuty",
+      "loading": 0.7375940962017422
+     },
+     {
+      "id": "soil.bakeRate",
+      "loading": 0.6752443626187004
+     }
+    ]
+   }
+  ]
+ },
+ "bench": [
+  {
+   "temperature": 30,
+   "pH": 10.5,
+   "protease": 0.06,
+   "rate": 0.85,
+   "sd": 0.12,
+   "simulated": 0.8404244143292184,
+   "tolerance": 0.17,
+   "within": true,
+   "z": -0.1126539490680181
+  },
+  {
+   "temperature": 55,
+   "pH": 10.5,
+   "protease": 0.06,
+   "rate": 1.75,
+   "sd": 0.29,
+   "simulated": 1.7856345698852354,
+   "tolerance": 0.35000000000000003,
+   "within": true,
+   "z": 0.2036261136299165
+  },
+  {
+   "temperature": 55,
+   "pH": 10.5,
+   "protease": 0.02,
+   "rate": 0.17,
+   "sd": 0.05,
+   "simulated": 0.17434891576770947,
+   "tolerance": 0.05,
+   "within": true,
+   "z": 0.1739566307083784
+  },
+  {
+   "temperature": 55,
+   "pH": 10.5,
+   "protease": 0.1,
+   "rate": 2.59,
+   "sd": 0.22,
+   "simulated": 2.4709661477637237,
+   "tolerance": 0.518,
+   "within": true,
+   "z": -0.4595901630744253
+  },
+  {
+   "temperature": 55,
+   "pH": 9.5,
+   "protease": 0.06,
+   "rate": 0.69,
+   "sd": 0.16,
+   "simulated": 0.6833051469960052,
+   "tolerance": 0.16,
+   "within": true,
+   "z": -0.08368566254993437
+  },
+  {
+   "temperature": 55,
+   "pH": 11.5,
+   "protease": 0.06,
+   "rate": 4.66,
+   "sd": 0.38,
+   "simulated": 4.773839360305541,
+   "tolerance": 0.932,
+   "within": true,
+   "z": 0.24429047275867066
+  }
+ ],
+ "at": {
+  "z": [
+   -0.10754015775952226,
+   -9.826362345771606
+  ],
+  "values": {
+   "prog.soakDuty": 0.8980404584339113,
+   "soil.bakeRate": 0.0000540088656716326
+  },
+  "logPosterior": -6.56053283595964,
+  "ownerLogLikelihood": -5.380846151319373,
+  "literatureLogLikelihood": -0.5475880600018427,
+  "logPrior": -0.6320986246384248,
+  "plates": {
+   "plate_9121": {
+    "nominal": 111.74150214014352,
+    "median": 111.74150214014352,
+    "low": 0,
+    "high": 9327.056703151,
+    "cleanShare": 0.17841
+   },
+   "plate_9122": {
+    "nominal": 13.633513499022097,
+    "median": 13.633513499022097,
+    "low": 0,
+    "high": 4906.027180378109,
+    "cleanShare": 0.37958
+   },
+   "plate_9123": {
+    "nominal": 0,
+    "median": 0,
+    "low": 0,
+    "high": 664.8784162380186,
+    "cleanShare": 0.82159
+   },
+   "plate_9124": {
+    "nominal": 4.8421421522274475,
+    "median": 4.8421421522274475,
+    "low": 0,
+    "high": 4357.74754572931,
+    "cleanShare": 0.37958
+   }
+  },
+  "literature": {
+   "protease": 0.02,
+   "crockery": 3.3279152470081774,
+   "cutlery": 4.5969169110684325,
+   "glass": 3.6070853542002235,
+   "all": 4.124071683085437,
+   "milkGlasses": 2.857054391077267,
+   "teaItems": 0.931567633252871,
+   "clamped": false
+  }
+ },
+ "overrides": {
+  "liq.amylaseKox": 0.00006,
+  "liq.amylaseKoxHP": 0.000002,
+  "liq.tabletTau": 300,
+  "liq.xAmylase": 0.012,
+  "liq.xCarbonate": 3.3,
+  "liq.xPeroxide": 0.955,
+  "liq.xProtease": 0.03,
+  "liq.xSilicate": 0,
+  "liq.xSurfactant": 0.1,
+  "liq.xTaed": 0.175,
+  "prog.soakDuty": 0.8980404584339113,
+  "soil.amountCv": 0.05,
+  "soil.bakeRate": 0.0000540088656716326,
+  "soil.bleachRate": 0.0009,
+  "soil.egg_yolk.rateRef": 0.000034,
+  "soil.egg_yolk.tLag": 300,
+  "soil.milk.rateRef": 0.000034,
+  "soil.milk.tLag": 300,
+  "soil.subCellCv": 0.1
+ },
+ "evaluations": 80,
+ "computed": 74,
+ "elapsed_s": 2027.670748792
+}

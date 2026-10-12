@@ -1,0 +1,269 @@
+{
+ "format": "spotless.wash-record",
+ "version": 1,
+ "id": "candidate-tea-mugs-eco50",
+ "kind": "planned",
+ "title": "Four mugs with a dried tea film in the upper basket, Eco 50",
+ "provenance": {
+  "date": "2026-10-11",
+  "by": "the simulation side: a candidate test wash, not run",
+  "methods": {
+   "photo_area": {
+    "description": "photograph of the piece after the wash, read as those of wash 01 were (soiled pixels against their surroundings, scaled by a known diameter)"
+   },
+   "scale": {
+    "description": "kitchen scale, 0.1 g, the piece weighed before and after the soil is put on"
+   },
+   "asked": {
+    "description": "not weighed: an amount asked for"
+   }
+  },
+  "notes": "Candidate for the experiment ranking. What it would settle: the bleaching of a tea stain by the capsule, which the published class means bound from below only."
+ },
+ "machine": {
+  "id": "bosch_smv4hax40g",
+  "config": {
+   "basketHeights": {
+    "upper": "1"
+   },
+   "foldedTineRows": [],
+   "shelves": [
+    {
+     "basketId": "upper",
+     "shelfId": "cup_front",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "cup_rear",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "knife_shelf",
+     "state": "down"
+    }
+   ],
+   "cutleryBasket": {
+    "basketId": "lower",
+    "centre": [
+     0.2705,
+     0.123
+    ],
+    "longAxis": "y"
+   }
+  }
+ },
+ "programme": {
+  "id": "eco_50",
+  "options": []
+ },
+ "consumables": {
+  "detergent": {
+   "product": "Finish Powerball Ultimate",
+   "form": "pouch",
+   "dose_g": 12.9,
+   "placement": "dispenser"
+  }
+ },
+ "load": {
+  "dispenser_blocked": false,
+  "items": [
+   {
+    "id": "mug_01",
+    "type": "mug_ceramic_300",
+    "frame": "tub",
+    "position_mm": [
+     182.81233908684126,
+     -73.3166684819516,
+     595.0050025197328
+    ],
+    "quat_wxyz": [
+     4.200795444830874e-7,
+     0.9999393224716187,
+     0.011021270416676998,
+     8.425985242865863e-8
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "tea_tannin",
+      "recipe": "black tea, two bags per mug, left to stand for an hour and poured out",
+      "preparation": "the mug half filled twice and emptied; left to dry overnight",
+      "amount_g": 0.003,
+      "amount_method": "asked",
+      "amount_sd_g": 0.0015,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.6
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 24
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ]
+   },
+   {
+    "id": "mug_02",
+    "type": "mug_ceramic_300",
+    "frame": "tub",
+    "position_mm": [
+     182.81117630731467,
+     -168.34462650876483,
+     595.0049180266485
+    ],
+    "quat_wxyz": [
+     0.0000016308318890878581,
+     0.9999997019767761,
+     -0.0008184276521205902,
+     7.098569199115445e-7
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "tea_tannin",
+      "recipe": "black tea, two bags per mug, left to stand for an hour and poured out",
+      "preparation": "the mug half filled twice and emptied; left to dry overnight",
+      "amount_g": 0.003,
+      "amount_method": "asked",
+      "amount_sd_g": 0.0015,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.6
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 24
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ]
+   },
+   {
+    "id": "mug_03",
+    "type": "mug_ceramic_300",
+    "frame": "tub",
+    "position_mm": [
+     182.8479730451147,
+     177.5456113601146,
+     595.00499925772
+    ],
+    "quat_wxyz": [
+     2.8768593551831145e-7,
+     0.9999973773956299,
+     0.002316203434020281,
+     5.946227474851185e-7
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "tea_tannin",
+      "recipe": "black tea, two bags per mug, left to stand for an hour and poured out",
+      "preparation": "the mug half filled twice and emptied; left to dry overnight",
+      "amount_g": 0.003,
+      "amount_method": "asked",
+      "amount_sd_g": 0.0015,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.6
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 24
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ]
+   },
+   {
+    "id": "mug_04",
+    "type": "mug_ceramic_300",
+    "frame": "tub",
+    "position_mm": [
+     182.8365447607128,
+     86.24616581754087,
+     595.004962299026
+    ],
+    "quat_wxyz": [
+     -6.999779316174681e-7,
+     0.999979555606842,
+     0.006405919324606657,
+     7.848695418033458e-7
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "tea_tannin",
+      "recipe": "black tea, two bags per mug, left to stand for an hour and poured out",
+      "preparation": "the mug half filled twice and emptied; left to dry overnight",
+      "amount_g": 0.003,
+      "amount_method": "asked",
+      "amount_sd_g": 0.0015,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.6
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 24
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "observations": [
+  {
+   "item": "mug_01",
+   "kind": "area_fraction",
+   "sd": 0.1,
+   "method": "photo_area"
+  },
+  {
+   "item": "mug_02",
+   "kind": "area_fraction",
+   "sd": 0.1,
+   "method": "photo_area"
+  },
+  {
+   "item": "mug_03",
+   "kind": "area_fraction",
+   "sd": 0.1,
+   "method": "photo_area"
+  },
+  {
+   "item": "mug_04",
+   "kind": "area_fraction",
+   "sd": 0.1,
+   "method": "photo_area"
+  }
+ ],
+ "sim": {
+  "tier": "fast",
+  "level_seed": 20261101,
+  "sim_seed": 1
+ }
+}

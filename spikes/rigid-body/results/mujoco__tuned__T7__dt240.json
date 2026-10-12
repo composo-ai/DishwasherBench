@@ -1,0 +1,38 @@
+{
+ "engine": "mujoco",
+ "preset": "tuned",
+ "test": "T7",
+ "hz": 240,
+ "tag": null,
+ "cfg": {
+  "integrator": "implicitfast",
+  "cone": "elliptic",
+  "impratio": 10,
+  "solrefTimeconstSteps": 2,
+  "solimp": "0.95 0.99 0.0005 0.5 2",
+  "noslip": 0,
+  "multiccd": true,
+  "sleep": true,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {},
+ "wallSeconds": 1.1480655000000002,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:34:19.014Z",
+ "summary": {
+  "sameProcessIdentical": true,
+  "freshProcessIdentical": true,
+  "hashA": "a07f3c8ee82481dc",
+  "hashB": "a07f3c8ee82481dc",
+  "hashChild": "a07f3c8ee82481dc",
+  "snapshotReplay": {
+   "identical": true,
+   "h1": "a07f3c8ee82481dc",
+   "h2": "a07f3c8ee82481dc",
+   "saveMs": 1.4671249999998963,
+   "restoreMs": 1.1569999999999254,
+   "snapshotBytes": 3032
+  }
+ },
+ "runs": []
+}

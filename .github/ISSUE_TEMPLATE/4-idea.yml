@@ -1,0 +1,42 @@
+name: An idea
+description: A new level, a change to the game or the benchmark, a port to another platform, or an opinion on one of the open design questions.
+title: '[idea] '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas are welcome. The open design questions of the project, each with what the code does today, are in [docs/benchmark/README.md](https://github.com/composo-ai/DishwasherBench/blob/main/docs/benchmark/README.md) (section 10) and at the end of [docs/design/platform.md](https://github.com/composo-ai/DishwasherBench/blob/main/docs/design/platform.md); the open problems are in the [roadmap](https://github.com/composo-ai/DishwasherBench/blob/main/docs/ROADMAP.md).
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What should be different, and for whom.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What it would make possible or what problem it removes. If it answers an open question or a roadmap item, say which.
+  - type: dropdown
+    id: part
+    attributes:
+      label: Which part
+      options:
+        - A level or the course
+        - The page
+        - The benchmark harness, the agent interface or how runs are compared
+        - The simulation
+        - Calibration
+        - Another platform (Linux, Windows, another GPU)
+        - The documents
+        - Something else
+    validations:
+      required: true
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Would you work on it?
+      options:
+        - label: I would like to send a pull request for this.

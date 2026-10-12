@@ -1,0 +1,18 @@
+{
+  "name": "@spotless/core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Math types, units, counter-based RNG (TypeScript + WGSL), SHA-256, canonical JSON, quantisation, ids and results",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run"
+  }
+}

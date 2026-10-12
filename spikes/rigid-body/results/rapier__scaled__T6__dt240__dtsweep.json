@@ -1,0 +1,1434 @@
+{
+ "engine": "rapier",
+ "preset": "scaled",
+ "test": "T6",
+ "hz": 240,
+ "tag": "dtsweep",
+ "cfg": {
+  "worldScale": 10,
+  "lengthUnit": 0.1,
+  "softCcd": 0.005,
+  "ccd": false,
+  "sleep": true,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {
+  "t6hz": "120,480"
+ },
+ "wallSeconds": 7.296787041,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:41:09.146Z",
+ "summary": {
+  "knife-edge-2mps@1/120-noCCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 0.5033929749893619,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.449664428830147,
+     "penMax_mm": 0.502951931785242,
+     "penFinal_mm": 0.0760831456541153,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.44888174533844,
+     "penMax_mm": 0.5033929749893619,
+     "penFinal_mm": 0.07602800949893604,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.447992891073227,
+     "penMax_mm": 0.5024733696463387,
+     "penFinal_mm": 0.07602902957314214,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.39949557185173,
+     "penMax_mm": 0.5009563596891173,
+     "penFinal_mm": 0.07347923528405742,
+     "maxSpeed": 2.0817497253417967
+    }
+   ]
+  },
+  "knife-edge-5mps@1/120-noCCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 0.505400708583174,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.470990598201752,
+     "penMax_mm": 0.5044800486053856,
+     "penFinal_mm": 0.07657570896119786,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.470986500382423,
+     "penMax_mm": 0.5025980127032529,
+     "penFinal_mm": 0.0763897752993584,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.470840096473694,
+     "penMax_mm": 0.505400708583174,
+     "penFinal_mm": 0.07649475664433017,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.470986500382423,
+     "penMax_mm": 0.5025980127032529,
+     "penFinal_mm": 0.0763897752993584,
+     "maxSpeed": 5.08175048828125
+    }
+   ]
+  },
+  "knife-flat-2mps@1/120-noCCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 2.0406851370757697,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.366498067975044,
+     "penMax_mm": 0.5569359912135222,
+     "penFinal_mm": 0.154533603744989,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.366093873977661,
+     "penMax_mm": 0.5595272581381397,
+     "penFinal_mm": 0.15448373970497412,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.384694620966911,
+     "penMax_mm": 2.0406851370757697,
+     "penFinal_mm": 0.1484489848892895,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.378445819020271,
+     "penMax_mm": 0.6746503530537065,
+     "penFinal_mm": 0.15318337494164683,
+     "maxSpeed": 2.0817497253417967
+    }
+   ]
+  },
+  "knife-flat-5mps@1/120-noCCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 0.5212724070795365,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.7601184099912643,
+     "penMax_mm": 0.5212724070795365,
+     "penFinal_mm": 0.13854347036773745,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.7601184099912643,
+     "penMax_mm": 0.5212724070795365,
+     "penFinal_mm": 0.13854347036773745,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.7503808736801147,
+     "penMax_mm": 0.5007558858244007,
+     "penFinal_mm": 0.13772098366323077,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.7512976676225662,
+     "penMax_mm": 0.5007520782184188,
+     "penFinal_mm": 0.13795807350882586,
+     "maxSpeed": 5.08175048828125
+    }
+   ]
+  },
+  "plate-flat-2mps@1/120-noCCD": {
+   "passedThrough": "0/4",
+   "impaled": "0/4",
+   "penMax_mm": 0.4999974252251193,
+   "detail": [
+    {
+     "gap_mm": 11,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 1.5325167657402605,
+     "penMax_mm": 0.4999974252251193,
+     "penFinal_mm": 0.09280709935599422,
+     "restTime": 0.075,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 14,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 1.5325167657402605,
+     "penMax_mm": 0.4999974252251193,
+     "penFinal_mm": 0.0927983764857903,
+     "restTime": 0.075,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 17,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 1.520148801949367,
+     "penMax_mm": 0.09251770127674357,
+     "penFinal_mm": 0.09251188647049595,
+     "restTime": 0.09166666666666666,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 20,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.15546469702992782,
+     "penMax_mm": 0.14565351884178285,
+     "penFinal_mm": 0.0437283117056108,
+     "restTime": 0.175,
+     "maxSpeed": 2.0817497253417967
+    }
+   ]
+  },
+  "knife-edge-2mps@1/120-CCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 0.5033929749893619,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.449664428830147,
+     "penMax_mm": 0.502951931785242,
+     "penFinal_mm": 0.0760831456541153,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.44888174533844,
+     "penMax_mm": 0.5033929749893619,
+     "penFinal_mm": 0.07602800949893604,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.447992891073227,
+     "penMax_mm": 0.5024733696463387,
+     "penFinal_mm": 0.07602902957314214,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.39949557185173,
+     "penMax_mm": 0.5009563596891173,
+     "penFinal_mm": 0.07347923528405742,
+     "maxSpeed": 2.0817497253417967
+    }
+   ]
+  },
+  "knife-edge-5mps@1/120-CCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 0.505400708583174,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.470990598201752,
+     "penMax_mm": 0.5044800486053856,
+     "penFinal_mm": 0.07657570896119786,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.470986500382423,
+     "penMax_mm": 0.5025980127032529,
+     "penFinal_mm": 0.0763897752993584,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.470840096473694,
+     "penMax_mm": 0.505400708583174,
+     "penFinal_mm": 0.07649475664433017,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.470986500382423,
+     "penMax_mm": 0.5025980127032529,
+     "penFinal_mm": 0.0763897752993584,
+     "maxSpeed": 5.08175048828125
+    }
+   ]
+  },
+  "knife-flat-2mps@1/120-CCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 2.0406851370757697,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.366498067975044,
+     "penMax_mm": 0.5569359912135222,
+     "penFinal_mm": 0.154533603744989,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.366093873977661,
+     "penMax_mm": 0.5595272581381397,
+     "penFinal_mm": 0.15448373970497412,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.384694620966911,
+     "penMax_mm": 2.0406851370757697,
+     "penFinal_mm": 0.1484489848892895,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.378445819020271,
+     "penMax_mm": 0.6746503530537065,
+     "penFinal_mm": 0.15318337494164683,
+     "maxSpeed": 2.0817497253417967
+    }
+   ]
+  },
+  "knife-flat-5mps@1/120-CCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 0.5212724070795365,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.7601184099912643,
+     "penMax_mm": 0.5212724070795365,
+     "penFinal_mm": 0.13854347036773745,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.7601184099912643,
+     "penMax_mm": 0.5212724070795365,
+     "penFinal_mm": 0.13854347036773745,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.7503808736801147,
+     "penMax_mm": 0.5007558858244007,
+     "penFinal_mm": 0.13772098366323077,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.7512976676225662,
+     "penMax_mm": 0.5007520782184188,
+     "penFinal_mm": 0.13795807350882586,
+     "maxSpeed": 5.08175048828125
+    }
+   ]
+  },
+  "plate-flat-2mps@1/120-CCD": {
+   "passedThrough": "0/4",
+   "impaled": "0/4",
+   "penMax_mm": 0.4999974252251193,
+   "detail": [
+    {
+     "gap_mm": 11,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 1.5325167657402605,
+     "penMax_mm": 0.4999974252251193,
+     "penFinal_mm": 0.09280709935599422,
+     "restTime": 0.075,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 14,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 1.5325167657402605,
+     "penMax_mm": 0.4999974252251193,
+     "penFinal_mm": 0.0927983764857903,
+     "restTime": 0.075,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 17,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 1.520148801949367,
+     "penMax_mm": 0.09251770127674357,
+     "penFinal_mm": 0.09251188647049595,
+     "restTime": 0.09166666666666666,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 20,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.15546469702992782,
+     "penMax_mm": 0.14565351884178285,
+     "penFinal_mm": 0.0437283117056108,
+     "restTime": 0.175,
+     "maxSpeed": 2.0817497253417967
+    }
+   ]
+  },
+  "knife-edge-2mps@1/120-softCCD10mm": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 1.5745772264122537,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.416070878505707,
+     "penMax_mm": 1.5745772264122537,
+     "penFinal_mm": 0.07534960950657016,
+     "maxSpeed": 0.3410741195848353
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.446233436465263,
+     "penMax_mm": 0.5000056330261692,
+     "penFinal_mm": 0.07427497042684157,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.447992891073227,
+     "penMax_mm": 0.5024733696463387,
+     "penFinal_mm": 0.07602902957314214,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.39949557185173,
+     "penMax_mm": 0.5009563596891173,
+     "penFinal_mm": 0.07347923528405742,
+     "maxSpeed": 2.0817497253417967
+    }
+   ]
+  },
+  "knife-edge-5mps@1/120-softCCD10mm": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 0.5213484458833355,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.8141172379255295,
+     "penMax_mm": 0.5213484458833355,
+     "penFinal_mm": 0.11207560443788614,
+     "maxSpeed": 0.7305486470834226
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.467102512717247,
+     "penMax_mm": 0.5107051971250695,
+     "penFinal_mm": 0.0750625546145369,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.470840096473694,
+     "penMax_mm": 0.505400708583174,
+     "penFinal_mm": 0.07649475664433017,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.470986500382423,
+     "penMax_mm": 0.5025980127032529,
+     "penFinal_mm": 0.0763897752993584,
+     "maxSpeed": 5.08175048828125
+    }
+   ]
+  },
+  "knife-flat-2mps@1/120-softCCD10mm": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 2.0406851370757697,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.379285126924515,
+     "penMax_mm": 1.503891819556777,
+     "penFinal_mm": 0.14728502980896285,
+     "maxSpeed": 1.4679081933032483
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.390250518918037,
+     "penMax_mm": 0.7803528918505623,
+     "penFinal_mm": 0.14922462670854691,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.384694620966911,
+     "penMax_mm": 2.0406851370757697,
+     "penFinal_mm": 0.1484489848892895,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.372674599289894,
+     "penMax_mm": 0.5517631538411927,
+     "penFinal_mm": 0.153505747748845,
+     "maxSpeed": 2.0817497253417967
+    }
+   ]
+  },
+  "knife-flat-5mps@1/120-softCCD10mm": {
+   "passedThrough": "0/4",
+   "fellOffLater": 1,
+   "penMax_mm": 9.370190387941049,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.05,
+     "finalY_mm": -5589.034271240234,
+     "penMax_mm": 9.370190387941049,
+     "penFinal_mm": 0,
+     "maxSpeed": 10.504210596315533
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.125875607132912,
+     "penMax_mm": 0.5211308357781722,
+     "penFinal_mm": 0.14452351042190584,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.7503808736801147,
+     "penMax_mm": 0.5007558858244007,
+     "penFinal_mm": 0.13772098366323077,
+     "maxSpeed": 5.08175048828125
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.7512976676225662,
+     "penMax_mm": 0.5007520782184188,
+     "penFinal_mm": 0.13795807350882586,
+     "maxSpeed": 5.08175048828125
+    }
+   ]
+  },
+  "plate-flat-2mps@1/120-softCCD10mm": {
+   "passedThrough": "0/4",
+   "impaled": "0/4",
+   "penMax_mm": 0.4999974252251193,
+   "detail": [
+    {
+     "gap_mm": 11,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 1.3360717774895252,
+     "penMax_mm": 0.4999974252251193,
+     "penFinal_mm": 0.04552833626457302,
+     "restTime": 0.13333333333333333,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 14,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 1.4068046094444786,
+     "penMax_mm": 0.4999974252251193,
+     "penFinal_mm": 0.05888099205072182,
+     "restTime": 0.125,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 17,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 1.3892331601647046,
+     "penMax_mm": 0.0924506665733859,
+     "penFinal_mm": 0.03991479685608833,
+     "restTime": 0.125,
+     "maxSpeed": 2.0817497253417967
+    },
+    {
+     "gap_mm": 20,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.3607669354942916,
+     "penMax_mm": 0.14888728801529078,
+     "penFinal_mm": 0.03887491911760792,
+     "restTime": 0.3,
+     "maxSpeed": 2.0817497253417967
+    }
+   ]
+  },
+  "knife-edge-2mps@1/480-noCCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 0.14842908292419144,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.413096234202385,
+     "penMax_mm": 0.14842908292419144,
+     "penFinal_mm": 0.14842908292419144,
+     "maxSpeed": 2.0204376220703124
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 11.443980783224106,
+     "penMax_mm": 0.04440184795453549,
+     "penFinal_mm": 0.04440184795453549,
+     "maxSpeed": 2.040875244140625
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.450726136565208,
+     "penMax_mm": 0.07456571132821525,
+     "penFinal_mm": 0.07456174430918666,
+     "maxSpeed": 2.0613128662109377
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.488146677613258,
+     "penMax_mm": 0.07483301676005912,
+     "penFinal_mm": 0.07483276898988646,
+     "maxSpeed": 2.08175048828125
+    }
+   ]
+  },
+  "knife-edge-5mps@1/480-noCCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 1,
+   "penMax_mm": 0.5104761270489258,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.350630939006805,
+     "penMax_mm": 0.5104761270489258,
+     "penFinal_mm": 0.07342860126036047,
+     "maxSpeed": 5.020437622070313
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.3020833333333333,
+     "finalY_mm": -2923.8269805908203,
+     "penMax_mm": 0.1944924484546648,
+     "penFinal_mm": 0,
+     "maxSpeed": 7.56772995678229
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.343367367982864,
+     "penMax_mm": 0.5000056330261692,
+     "penFinal_mm": 0.07305826777946003,
+     "maxSpeed": 5.040875244140625
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.343367367982864,
+     "penMax_mm": 0.5000063780843298,
+     "penFinal_mm": 0.07305826777946003,
+     "maxSpeed": 5.040875244140625
+    }
+   ]
+  },
+  "knife-flat-2mps@1/480-noCCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 0.8091009422427783,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.377245530486107,
+     "penMax_mm": 0.7340969827071527,
+     "penFinal_mm": 0.14676531143174723,
+     "maxSpeed": 2.0204376220703124
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.332881048321724,
+     "penMax_mm": 0.8091009422427783,
+     "penFinal_mm": 0.1450578589307491,
+     "maxSpeed": 2.040875244140625
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.9967428892850876,
+     "penMax_mm": 0.7100995104425186,
+     "penFinal_mm": 0.14551498142563674,
+     "maxSpeed": 2.0613128662109377
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.389271140098572,
+     "penMax_mm": 0.5000122937791002,
+     "penFinal_mm": 0.1491450603928236,
+     "maxSpeed": 2.08175048828125
+    }
+   ]
+  },
+  "knife-flat-5mps@1/480-noCCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 4,
+   "penMax_mm": 0.955414248924018,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.275,
+     "finalY_mm": -3645.335006713867,
+     "penMax_mm": 0.5014903000743849,
+     "penFinal_mm": 0,
+     "maxSpeed": 8.55379612510782
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.2583333333333333,
+     "finalY_mm": -3731.644058227539,
+     "penMax_mm": 0.5036904982824325,
+     "penFinal_mm": 0,
+     "maxSpeed": 8.634698615202582
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.2791666666666667,
+     "finalY_mm": -3623.024368286133,
+     "penMax_mm": 0.5013403169006206,
+     "penFinal_mm": 0,
+     "maxSpeed": 8.529157460961986
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.3958333333333333,
+     "finalY_mm": -2476.376152038574,
+     "penMax_mm": 0.955414248924018,
+     "penFinal_mm": 0,
+     "maxSpeed": 7.014485840406055
+    }
+   ]
+  },
+  "plate-flat-2mps@1/480-noCCD": {
+   "passedThrough": "0/4",
+   "impaled": "0/4",
+   "penMax_mm": 0.09027817668165287,
+   "detail": [
+    {
+     "gap_mm": 11,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.19739656462941513,
+     "penMax_mm": 0.09027817668165287,
+     "penFinal_mm": 0.044044368090188565,
+     "restTime": 0.34791666666666665,
+     "maxSpeed": 2.040875244140625
+    },
+    {
+     "gap_mm": 14,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.4148700715569109,
+     "penMax_mm": 0.044999246991415595,
+     "penFinal_mm": 0.04483087917299226,
+     "restTime": 0.3458333333333333,
+     "maxSpeed": 2.0613128662109377
+    },
+    {
+     "gap_mm": 17,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.032685089257106226,
+     "penMax_mm": 0.042831419241410804,
+     "penFinal_mm": 0.041039653616249325,
+     "restTime": 0.7125,
+     "maxSpeed": 2.0613128662109377
+    },
+    {
+     "gap_mm": 20,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.9262063981560348,
+     "penMax_mm": 0.04579592909875578,
+     "penFinal_mm": 0.04576667077538059,
+     "restTime": 0.32708333333333334,
+     "maxSpeed": 2.08175048828125
+    }
+   ]
+  },
+  "knife-edge-2mps@1/480-CCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 0.14842908292419144,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.413096234202385,
+     "penMax_mm": 0.14842908292419144,
+     "penFinal_mm": 0.14842908292419144,
+     "maxSpeed": 2.0204376220703124
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 11.443980783224106,
+     "penMax_mm": 0.04440184795453549,
+     "penFinal_mm": 0.04440184795453549,
+     "maxSpeed": 2.040875244140625
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.450726136565208,
+     "penMax_mm": 0.07456571132821525,
+     "penFinal_mm": 0.07456174430918666,
+     "maxSpeed": 2.0613128662109377
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.488146677613258,
+     "penMax_mm": 0.07483301676005912,
+     "penFinal_mm": 0.07483276898988646,
+     "maxSpeed": 2.08175048828125
+    }
+   ]
+  },
+  "knife-edge-5mps@1/480-CCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 1,
+   "penMax_mm": 0.5104761270489258,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.350630939006805,
+     "penMax_mm": 0.5104761270489258,
+     "penFinal_mm": 0.07342860126036047,
+     "maxSpeed": 5.020437622070313
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.3020833333333333,
+     "finalY_mm": -2923.8269805908203,
+     "penMax_mm": 0.1944924484546648,
+     "penFinal_mm": 0,
+     "maxSpeed": 7.56772995678229
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.343367367982864,
+     "penMax_mm": 0.5000056330261692,
+     "penFinal_mm": 0.07305826777946003,
+     "maxSpeed": 5.040875244140625
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.343367367982864,
+     "penMax_mm": 0.5000063780843298,
+     "penFinal_mm": 0.07305826777946003,
+     "maxSpeed": 5.040875244140625
+    }
+   ]
+  },
+  "knife-flat-2mps@1/480-CCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 0.8091009422427783,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.377245530486107,
+     "penMax_mm": 0.7340969827071527,
+     "penFinal_mm": 0.14676531143174723,
+     "maxSpeed": 2.0204376220703124
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.332881048321724,
+     "penMax_mm": 0.8091009422427783,
+     "penFinal_mm": 0.1450578589307491,
+     "maxSpeed": 2.040875244140625
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.9967428892850876,
+     "penMax_mm": 0.7100995104425186,
+     "penFinal_mm": 0.14551498142563674,
+     "maxSpeed": 2.0613128662109377
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.389271140098572,
+     "penMax_mm": 0.5000122937791002,
+     "penFinal_mm": 0.1491450603928236,
+     "maxSpeed": 2.08175048828125
+    }
+   ]
+  },
+  "knife-flat-5mps@1/480-CCD": {
+   "passedThrough": "0/4",
+   "fellOffLater": 4,
+   "penMax_mm": 0.955414248924018,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.275,
+     "finalY_mm": -3645.335006713867,
+     "penMax_mm": 0.5014903000743849,
+     "penFinal_mm": 0,
+     "maxSpeed": 8.55379612510782
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.2583333333333333,
+     "finalY_mm": -3731.644058227539,
+     "penMax_mm": 0.5036904982824325,
+     "penFinal_mm": 0,
+     "maxSpeed": 8.634698615202582
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.2791666666666667,
+     "finalY_mm": -3623.024368286133,
+     "penMax_mm": 0.5013403169006206,
+     "penFinal_mm": 0,
+     "maxSpeed": 8.529157460961986
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.3958333333333333,
+     "finalY_mm": -2476.376152038574,
+     "penMax_mm": 0.955414248924018,
+     "penFinal_mm": 0,
+     "maxSpeed": 7.014485840406055
+    }
+   ]
+  },
+  "plate-flat-2mps@1/480-CCD": {
+   "passedThrough": "0/4",
+   "impaled": "0/4",
+   "penMax_mm": 0.09027817668165287,
+   "detail": [
+    {
+     "gap_mm": 11,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.19739656462941513,
+     "penMax_mm": 0.09027817668165287,
+     "penFinal_mm": 0.044044368090188565,
+     "restTime": 0.34791666666666665,
+     "maxSpeed": 2.040875244140625
+    },
+    {
+     "gap_mm": 14,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.4148700715569109,
+     "penMax_mm": 0.044999246991415595,
+     "penFinal_mm": 0.04483087917299226,
+     "restTime": 0.3458333333333333,
+     "maxSpeed": 2.0613128662109377
+    },
+    {
+     "gap_mm": 17,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.032685089257106226,
+     "penMax_mm": 0.042831419241410804,
+     "penFinal_mm": 0.041039653616249325,
+     "restTime": 0.7125,
+     "maxSpeed": 2.0613128662109377
+    },
+    {
+     "gap_mm": 20,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.9262063981560348,
+     "penMax_mm": 0.04579592909875578,
+     "penFinal_mm": 0.04576667077538059,
+     "restTime": 0.32708333333333334,
+     "maxSpeed": 2.08175048828125
+    }
+   ]
+  },
+  "knife-edge-2mps@1/480-softCCD10mm": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 0.14842908292419144,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.413096234202385,
+     "penMax_mm": 0.14842908292419144,
+     "penFinal_mm": 0.14842908292419144,
+     "maxSpeed": 2.0204376220703124
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 11.443980783224106,
+     "penMax_mm": 0.04440184795453549,
+     "penFinal_mm": 0.04440184795453549,
+     "maxSpeed": 2.040875244140625
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.450726136565208,
+     "penMax_mm": 0.07456571132821525,
+     "penFinal_mm": 0.07456174430918666,
+     "maxSpeed": 2.0613128662109377
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.488146677613258,
+     "penMax_mm": 0.07483301676005912,
+     "penFinal_mm": 0.07483276898988646,
+     "maxSpeed": 2.08175048828125
+    }
+   ]
+  },
+  "knife-edge-5mps@1/480-softCCD10mm": {
+   "passedThrough": "0/4",
+   "fellOffLater": 2,
+   "penMax_mm": 0.5014689170438085,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.212875664234161,
+     "penMax_mm": 0.07883318219263527,
+     "penFinal_mm": 0.07883318219263527,
+     "maxSpeed": 0.6842204576914171
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.325,
+     "finalY_mm": -2651.6340255737305,
+     "penMax_mm": 0.5014689170438085,
+     "penFinal_mm": 0,
+     "maxSpeed": 7.181196251412693
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.22708333333333333,
+     "finalY_mm": -3603.3519744873047,
+     "penMax_mm": 0.06166053729249159,
+     "penFinal_mm": 0,
+     "maxSpeed": 8.415238372236846
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.661878943443298,
+     "penMax_mm": 0.11626360643182243,
+     "penFinal_mm": 0.07296328113762479,
+     "maxSpeed": 5.020437622070313
+    }
+   ]
+  },
+  "knife-flat-2mps@1/480-softCCD10mm": {
+   "passedThrough": "0/4",
+   "fellOffLater": 0,
+   "penMax_mm": 0.8091009422427783,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.377245530486107,
+     "penMax_mm": 0.7340969827071527,
+     "penFinal_mm": 0.14676531143174723,
+     "maxSpeed": 2.0204376220703124
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.332881048321724,
+     "penMax_mm": 0.8091009422427783,
+     "penFinal_mm": 0.1450578589307491,
+     "maxSpeed": 2.040875244140625
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.9967428892850876,
+     "penMax_mm": 0.7100995104425186,
+     "penFinal_mm": 0.14551498142563674,
+     "maxSpeed": 2.0613128662109377
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.389271140098572,
+     "penMax_mm": 0.5000122937791002,
+     "penFinal_mm": 0.1491450603928236,
+     "maxSpeed": 2.08175048828125
+    }
+   ]
+  },
+  "knife-flat-5mps@1/480-softCCD10mm": {
+   "passedThrough": "0/4",
+   "fellOffLater": 2,
+   "penMax_mm": 1.276562383882878,
+   "detail": [
+    {
+     "gap_mm": 7,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 3.843623399734497,
+     "penMax_mm": 0.7309290759177595,
+     "penFinal_mm": 0.13832051174811735,
+     "maxSpeed": 3.569599759277695
+    },
+    {
+     "gap_mm": 11,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.29375,
+     "finalY_mm": -3274.736785888672,
+     "penMax_mm": 1.276562383882878,
+     "penFinal_mm": 0,
+     "maxSpeed": 8.065647181866797
+    },
+    {
+     "gap_mm": 16,
+     "tunnelled": false,
+     "fellOff": false,
+     "tPass": null,
+     "finalY_mm": 4.379557818174362,
+     "penMax_mm": 0.548360077868995,
+     "penFinal_mm": 0.14594032613015911,
+     "maxSpeed": 5.020437622070313
+    },
+    {
+     "gap_mm": 20,
+     "tunnelled": false,
+     "fellOff": true,
+     "tPass": 0.29791666666666666,
+     "finalY_mm": -3527.8453826904297,
+     "penMax_mm": 0.5616379725803481,
+     "penFinal_mm": 0,
+     "maxSpeed": 8.437072412110693
+    }
+   ]
+  },
+  "plate-flat-2mps@1/480-softCCD10mm": {
+   "passedThrough": "0/4",
+   "impaled": "0/4",
+   "penMax_mm": 0.09027817668165287,
+   "detail": [
+    {
+     "gap_mm": 11,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.19739656462941513,
+     "penMax_mm": 0.09027817668165287,
+     "penFinal_mm": 0.044044368090188565,
+     "restTime": 0.34791666666666665,
+     "maxSpeed": 2.040875244140625
+    },
+    {
+     "gap_mm": 14,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.4148700715569109,
+     "penMax_mm": 0.044999246991415595,
+     "penFinal_mm": 0.04483087917299226,
+     "restTime": 0.3458333333333333,
+     "maxSpeed": 2.0613128662109377
+    },
+    {
+     "gap_mm": 17,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.032685089257106226,
+     "penMax_mm": 0.042831419241410804,
+     "penFinal_mm": 0.041039653616249325,
+     "restTime": 0.7125,
+     "maxSpeed": 2.0613128662109377
+    },
+    {
+     "gap_mm": 20,
+     "passedThrough": false,
+     "impaled": false,
+     "comBelowRest_mm": 0.9262063981560348,
+     "penMax_mm": 0.04579592909875578,
+     "penFinal_mm": 0.04576667077538059,
+     "restTime": 0.32708333333333334,
+     "maxSpeed": 2.08175048828125
+    }
+   ]
+  }
+ },
+ "runs": []
+}

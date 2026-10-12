@@ -1,0 +1,70 @@
+{
+ "engine": "rapier",
+ "preset": "default",
+ "test": "T8",
+ "hz": 240,
+ "tag": "awake-full-1rep",
+ "cfg": {
+  "ccd": false,
+  "sleep": false,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {
+  "t8hz": 240,
+  "t8scenes": "FULL",
+  "reps": 1
+ },
+ "wallSeconds": 75.968746166,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:40:25.220Z",
+ "summary": {
+  "FULL@1/240": {
+   "counts": {
+    "bodies": 122,
+    "pieces": 3028,
+    "vertices": 25872,
+    "staticCapsules": 1355,
+    "staticBoxes": 30
+   },
+   "stepMean_ms": {
+    "best": 78.83499791979169,
+    "median": 78.83499791979169,
+    "worst": 78.83499791979169
+   },
+   "stepActiveMean_ms": {
+    "best": 80.99623019166664,
+    "median": 80.99623019166664,
+    "worst": 80.99623019166664
+   },
+   "stepP99_ms": {
+    "best": 104.29258400000253,
+    "median": 104.29258400000253,
+    "worst": 104.29258400000253
+   },
+   "stepMax_ms": {
+    "best": 492.39191700000003,
+    "median": 492.39191700000003
+   },
+   "total_ms": {
+    "best": 75681.59800300002,
+    "median": 75681.59800300002
+   },
+   "build_ms": {
+    "best": 95.818917,
+    "median": 95.818917
+   },
+   "rssAfter_MB": 492.65625,
+   "rssDelta_MB": 448.015625,
+   "engineMem": null,
+   "simSeconds": 4,
+   "stability": {
+    "restTime_s": 2.6958333333333333,
+    "exploded": null,
+    "asleep": "0/122",
+    "rmsLin_mm_s": 0.14771752762558013,
+    "maxSpeed": 1.3488739728927612
+   }
+  }
+ },
+ "runs": []
+}

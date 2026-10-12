@@ -1,0 +1,30 @@
+[
+ {
+  "name": "eco capsule careless tablet free L1S1",
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9,
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "load": "iec-13-careless-tablet-free"
+ },
+ {
+  "name": "eco capsule careless tablet free fast L1S1",
+  "tier": "fast",
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9,
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "load": "iec-13-careless-tablet-free"
+ },
+ {
+  "name": "eco capsule careless tablet free L2S1",
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9,
+  "programme": "eco_50",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "load": "iec-13-careless-tablet-free"
+ }
+]

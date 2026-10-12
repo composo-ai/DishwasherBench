@@ -1,0 +1,31 @@
+01-level-picker.png: the level picker shown when the page opens: the loads numbered in order, the tutorial first
+02-how-to-play.png: the how-to-play panel: the game in eight steps and the mouse and key table of the new controls
+03-tutorial-start.png: the tutorial as it opens: tray with thumbnails and soil, lower basket pulled out over the open door, upper basket in
+04-plate-in-hand.png: plate_01 in hand: picked up on edge, drawn where it would be let go, standing across row R1, gap 7; its stances as pictures on the right
+05-plate-settled.png: plate_01 after the click: standing between the tines of rows R1 and R2, leaning on them by itself; feedback on the right
+06-drag-from-list.png: plate_02 dragged from the list into the machine with the button held: over a gap of the same rows
+07-top-view-bowl.png: plan view of the lower basket with both plates in their gaps and bowl_01 upside down under the cursor at (420, 270) mm (perched)
+08-collision-refused.png: glass_01 held by a typed pose where the bowl already is (the exact pose panel unfolded): red, the preview names what it overlaps, and the drop is refused at no cost
+09-rim-not-put-down.png: glass_02 pointed at the right-hand rim of the lower basket: amber, the panel says it would be let go on the rim and fall out
+10-perched-yellow.png: glass_02 over the upturned bowl in the lower basket: yellow, free but let go above the floor of the basket, where it may tip; a click still puts it down
+11-insert-arrow.png: the insert gesture: knife_01 held handle down over the cutlery basket, right button dragged downwards, blue arrow along the push
+12-cutlery-placed.png: fork and knife standing in cells of the cutlery basket
+13-held-as-it-stood.png: bowl_01 picked up in the machine with one click and carried ten centimetres towards the back: held as it stood, drawn where it would be let go
+14-selected-item.png: plate_02 selected from the list: highlighted in the machine, with its settled pose in the basket frame, stability and contacts
+15-exact-pose.png: the exact pose panel unfolded: frame, position, preset, angles, quaternion and release, as a program types them
+16-suggested-spots.png: "Suggest spots" for plate_02: the free places marked in the lower basket and numbered best first (the panel counts 23, and 11 more that are not free now), the plate held at spot 1 under the cursor
+17-upper-basket-out.png: lower basket pushed in with its load, upper basket pulled out
+18-upper-basket-options.png: plan view of the upper basket with the front half of tine row C folded flat and the front cup shelf down
+19-upper-basket-loaded.png: mug and glass upside down in the upper basket, each put down with two clicks
+20-front-elevation.png: front elevation, both baskets in, upper basket lowered to height 2
+21-side-elevation.png: side elevation from the right with the near wall cut away
+22-free-orbit.png: free orbit camera dragged round to the left of the machine
+23-mechanical-check-lowered.png: the mechanical check with the upper basket at height 2 (no problem found)
+24-mechanical-check.png: the mechanical check with the upper basket back at height 1, and the budgets at the top
+25-confirm-start.png: the confirmation before the wash: what is loaded, and the choice between a quick preview and the full wash, in plain words with the expected time; Eco 50 is the only programme
+26-washing.png: the wash in progress with a runner that reports no stages (Washing; simulating for 0:01): the placeholder, slowed down by this script. The real wash is played by scripts/play-wash.ts
+27-report.png: the report: every item with its result and points, the total, and (with the placeholder runner) the notice that nothing was simulated; behind it the machine after the cycle: door shut (cut away from the front), baskets in; with the placeholder runner the items keep the soil they had
+29-new-session.png: a new session of the same level from the Levels menu: empty machine again, and a first bowl placed
+30-on-the-door.png: a fork that fell through the basket onto the door: labelled in the tray as not going to be washed, left out of the points in the machine, and named in the confirmation before the start
+31-preview-report.png: the report of a quick preview: labelled as one, with the button that runs the full wash on the same load (with the placeholder runner: the notice says that nothing was simulated)
+32-full-wash-report.png: the report of the full wash that followed the preview: the same load, set up again by the same moves in a new game of the level (with the placeholder runner: the notice says that nothing was simulated)

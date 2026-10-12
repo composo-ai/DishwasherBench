@@ -1,0 +1,419 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "spoons-2",
+ "description": "P17: twelve dessert spoons, two per cell",
+ "recipe_hash": "sha256:4bb3cf8e7137f9cdea018f5ea7e8c32fbf1aaa6dc604272cfed59896ab5c5c68",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "spoon_1",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     0.007463212675056993,
+     -0.21413947759757682,
+     0.07965532897863137
+    ],
+    "q": [
+     -0.008591942489147186,
+     -0.8357086181640625,
+     0.004652318544685841,
+     0.5490861535072327
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 2,
+    "stable": true,
+    "displacement_mm": 25.3,
+    "rotation_deg": 18.2,
+    "contacts": [
+     "cutlery_basket.foot.0.floor",
+     "cutlery_basket.foot.0.left",
+     "cutlery_basket.tunnel.0.left"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_10",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     0.06351718180134477,
+     -0.21108978612476684,
+     0.07985007633878682
+    ],
+    "q": [
+     0.3201877474784851,
+     -0.7100560069084167,
+     0.3288280963897705,
+     0.534015417098999
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 36.9,
+    "rotation_deg": 33.6,
+    "contacts": [
+     "cutlery_basket.foot.0.floor",
+     "cutlery_basket.handle.front",
+     "lower_rack_fittings.handle",
+     "spoon_4"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_11",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     0.053925435690521814,
+     -0.10498564355111456,
+     0.07929257996849493
+    ],
+    "q": [
+     0.5436108112335205,
+     -0.5498470067977905,
+     0.4509687125682831,
+     0.4458507299423218
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 15.2,
+    "rotation_deg": 10.7,
+    "contacts": [
+     "cutlery_basket.divider",
+     "cutlery_basket.foot.1.floor",
+     "cutlery_basket.foot.1.right"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_12",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     0.05357869854289448,
+     -0.025606287242261244,
+     0.07963534586272138
+    ],
+    "q": [
+     0.582414984703064,
+     -0.5937972068786621,
+     0.39632219076156616,
+     0.3887498676776886
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 24.2,
+    "rotation_deg": 19.8,
+    "contacts": [
+     "cutlery_basket.foot.2.floor",
+     "cutlery_basket.tunnel.1.cross"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_2",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     -0.03307659046701793,
+     -0.166635868753864,
+     0.07931280025662692
+    ],
+    "q": [
+     -0.020482879132032394,
+     -0.7412511706352234,
+     0.018197111785411835,
+     0.6706683039665222
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 7.9,
+    "rotation_deg": 5.7,
+    "contacts": [
+     "cutlery_basket.foot.1.floor",
+     "cutlery_basket.foot.1.left"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_3",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     -0.029327393193874167,
+     -0.06061162127473263,
+     0.07919060494836515
+    ],
+    "q": [
+     0.0007435669540427625,
+     -0.7517256140708923,
+     0.0011290671536698937,
+     0.6594747304916382
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 7.9,
+    "rotation_deg": 5.7,
+    "contacts": [
+     "cutlery_basket.foot.2.floor",
+     "cutlery_basket.foot.2.left"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_4",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     0.05680439481161549,
+     -0.21388006282462424,
+     0.0794894720234489
+    ],
+    "q": [
+     -0.00889489147812128,
+     -0.8079526424407959,
+     0.005524300970137119,
+     0.5891544818878174
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 2,
+    "stable": true,
+    "displacement_mm": 25.3,
+    "rotation_deg": 19.4,
+    "contacts": [
+     "cutlery_basket.foot.0.floor",
+     "cutlery_basket.foot.0.mid",
+     "cutlery_basket.tunnel.0.mid"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_5",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     0.030625303899855846,
+     -0.16617194403245528,
+     0.07940619632100229
+    ],
+    "q": [
+     -0.026955122128129005,
+     -0.7429862022399902,
+     0.02391420304775238,
+     0.6683360934257507
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 8.6,
+    "rotation_deg": 6.1,
+    "contacts": [
+     "cutlery_basket.foot.1.floor",
+     "cutlery_basket.foot.1.mid"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_6",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     0.030743305507483453,
+     -0.06071970236408576,
+     0.07921109565770758
+    ],
+    "q": [
+     0.010595052503049374,
+     -0.7436349987983704,
+     -0.00946472492069006,
+     0.6684348583221436
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 1.9,
+    "rotation_deg": 2.4,
+    "contacts": [
+     "cutlery_basket.foot.2.floor",
+     "cutlery_basket.handle.rear"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_7",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     -0.007937882419377679,
+     -0.2289836753970663,
+     0.07882846439721039
+    ],
+    "q": [
+     0.4223109185695648,
+     -0.41853031516075134,
+     0.5984880924224854,
+     0.5369338393211365
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 108.6,
+    "rotation_deg": 17.7,
+    "contacts": [
+     "cutlery_basket.foot.0.floor",
+     "cutlery_basket.tunnel.0.cross",
+     "spoon_1"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_8",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     0.0013328036079794867,
+     -0.09656742261784436,
+     0.08066619112120553
+    ],
+    "q": [
+     0.47764790058135986,
+     -0.6347284317016602,
+     0.48532530665397644,
+     0.36528295278549194
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 112,
+    "rotation_deg": 21.2,
+    "contacts": [
+     "cutlery_basket.divider",
+     "cutlery_basket.foot.1.floor",
+     "cutlery_basket.foot.1.left"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_9",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     -0.0007488976591396891,
+     -0.060228075988848835,
+     0.07935607655054645
+    ],
+    "q": [
+     0.44151172041893005,
+     -0.3574603497982025,
+     0.7243847846984863,
+     0.39058446884155273
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 2,
+    "stable": true,
+    "displacement_mm": 111.3,
+    "rotation_deg": 53.5,
+    "contacts": [
+     "cutlery_basket.foot.2.floor",
+     "cutlery_basket.foot.2.rear",
+     "spoon_3"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:601a52e4356fe7d88d014acf13817f083625db7c5c60e467bc4484fc8da8e1a9"
+}

@@ -1,0 +1,103 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "platter-inward",
+ "description": "P14 A: an oval platter in the outermost slot of the rear lane (R1 slot 0, next to the left wall), eating face to the arm axis",
+ "recipe_hash": "sha256:aa8405a12d09363c08d800c6a0cbf49aa26fd5a7a006e5c736166cf9eae6cf5a",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "platter",
+   "item_type": "oval_platter_vitrelle_241",
+   "pose": {
+    "p": [
+     -0.2211936286286455,
+     0.1121981743010125,
+     0.17074161578238495
+    ],
+    "q": [
+     0.47624698281288147,
+     0.4726203978061676,
+     0.5255627036094666,
+     0.5230705142021179
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 7.6,
+    "rotation_deg": 5.7,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:02349dd09add1deb58472a7572511ebab5634eff2be4e29887e707f0e84cfb2a"
+}

@@ -1,0 +1,41 @@
+{
+ "engine": "physx",
+ "preset": "tuned",
+ "test": "T7",
+ "hz": 240,
+ "tag": "nosleep",
+ "cfg": {
+  "ccd": false,
+  "sleep": false,
+  "tolLength": 0.1,
+  "tolSpeed": 1,
+  "solver": "tgs",
+  "posIters": 8,
+  "velIters": 2,
+  "contactOffset": 0.002,
+  "restOffset": 0,
+  "bounceThreshold": 0.2,
+  "enhancedDeterminism": true,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {},
+ "wallSeconds": 5.078010958,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:34:17.822Z",
+ "summary": {
+  "sameProcessIdentical": true,
+  "freshProcessIdentical": true,
+  "hashA": "0f504423e1ef57bc",
+  "hashB": "0f504423e1ef57bc",
+  "hashChild": "0f504423e1ef57bc",
+  "snapshotReplay": {
+   "identical": false,
+   "h1": "21455a03cdb02285",
+   "h2": "289959fac9e69562",
+   "saveMs": 0.21483299999999872,
+   "restoreMs": 0.7695839999996679,
+   "snapshotBytes": 1248
+  }
+ },
+ "runs": []
+}

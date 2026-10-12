@@ -1,0 +1,499 @@
+{
+ "engine": "mujoco",
+ "preset": "tuned-noslip",
+ "test": "T4",
+ "hz": 240,
+ "tag": "nosleep",
+ "cfg": {
+  "integrator": "implicitfast",
+  "cone": "elliptic",
+  "impratio": 10,
+  "solrefTimeconstSteps": 2,
+  "solimp": "0.95 0.99 0.0005 0.5 2",
+  "noslip": 5,
+  "multiccd": true,
+  "sleep": false,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {},
+ "wallSeconds": 0.5228315000000002,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:21:22.239Z",
+ "summary": {
+  "tumbler": {
+   "restTime_s": 1.1375,
+   "rmsLin_mm_s": 1.5877780921424278e-9,
+   "rmsAng_rad_s": 4.722237533134578e-11,
+   "residualKE_uJ": 5.059963938380894e-19,
+   "maxSpeed_m_s": 0.44962500000035965,
+   "exploded": null,
+   "penInit_mm": 0,
+   "penMaxStatic_mm": 0.6906290055753109,
+   "penMaxDynamic_mm": 0,
+   "penFinalStatic_mm": 0.0031109717269889835,
+   "penFinalDynamic_mm": 0,
+   "asleep": "0/1",
+   "allAsleepAt_s": null,
+   "driftPos_mm": 4.771157909546582e-9,
+   "driftAng_deg": 8.102784302891002e-9,
+   "stepMean_ms": 0.03858713194444413,
+   "stepP99_ms": 0.12204099999962637,
+   "stepTotal_ms": 55.56546999999955,
+   "hash": "2037f516a4f217f8",
+   "axisFromVertical_deg": 0.0008383448587889403,
+   "pos_mm": [
+    14.396075406561998,
+    81.71352323717427,
+    -1.267014693124603
+   ]
+  },
+  "mug_mu0.4": {
+   "restTime_s": 0.05416666666666667,
+   "rmsLin_mm_s": 0.0000033070907468801555,
+   "rmsAng_rad_s": 9.189449615264941e-8,
+   "residualKE_uJ": 3.749447619953858e-12,
+   "maxSpeed_m_s": 0.24525000000019617,
+   "exploded": null,
+   "penInit_mm": 0,
+   "penMaxStatic_mm": 0.2073312687519962,
+   "penMaxDynamic_mm": 0,
+   "penFinalStatic_mm": 0.0038457032562038557,
+   "penFinalDynamic_mm": 0,
+   "asleep": "0/1",
+   "allAsleepAt_s": null,
+   "driftPos_mm": 0.00001627020044239201,
+   "driftAng_deg": 0.000026310545790029776,
+   "stepMean_ms": 0.05815784375001423,
+   "stepP99_ms": 0.11329099999966274,
+   "stepTotal_ms": 139.57882500003416,
+   "hash": "b82935f11c5b0844",
+   "slideDownhill_1s_to_10s_mm": -0.000020659098877515916,
+   "slideRate_mm_s": -0.000002295455430835102,
+   "axisFromShelfNormal_deg": 0.002555150541445986,
+   "tanTilt": 0.2125565616700221
+  },
+  "mug_mu0.3": {
+   "restTime_s": 0.05416666666666667,
+   "rmsLin_mm_s": 0.002325835392848824,
+   "rmsAng_rad_s": 0.000005746189560197669,
+   "residualKE_uJ": 8.733399657688627e-7,
+   "maxSpeed_m_s": 0.24525000000019617,
+   "exploded": null,
+   "penInit_mm": 0,
+   "penMaxStatic_mm": 0.20733927654567436,
+   "penMaxDynamic_mm": 0,
+   "penFinalStatic_mm": 0.0038372914475653247,
+   "penFinalDynamic_mm": 0,
+   "asleep": "0/1",
+   "allAsleepAt_s": null,
+   "driftPos_mm": 0.000019357587127924245,
+   "driftAng_deg": 0.000031154219672377206,
+   "stepMean_ms": 0.06103335291666478,
+   "stepP99_ms": 0.130500000000211,
+   "stepTotal_ms": 146.48004699999547,
+   "hash": "cdf05af5e28859de",
+   "slideDownhill_1s_to_10s_mm": -0.00002446375849963279,
+   "slideRate_mm_s": -0.000002718195388848088,
+   "axisFromShelfNormal_deg": 0.0025570928348954258,
+   "tanTilt": 0.2125565616700221
+  }
+ },
+ "runs": [
+  {
+   "engine": "mujoco-wasm",
+   "version": "3.15.0",
+   "scene": "T4a-tumbler-over-tines",
+   "cfg": {
+    "integrator": "implicitfast",
+    "cone": "elliptic",
+    "impratio": 10,
+    "solrefTimeconstSteps": 2,
+    "solimp": "0.95 0.99 0.0005 0.5 2",
+    "noslip": 5,
+    "multiccd": true,
+    "sleep": false,
+    "dt": 0.004166666666666667
+   },
+   "params": {
+    "dt": 0.00416666666667,
+    "integrator": 3,
+    "cone": 1,
+    "impratio": 10,
+    "solver": 2,
+    "iterations": 100,
+    "tolerance": 1e-8,
+    "noslip_iterations": 5,
+    "enableflags": 0,
+    "disableflags": 0,
+    "solref": "0.008333333333333333 1",
+    "solimp": "0.95 0.99 0.0005 0.5 2",
+    "margin": 0,
+    "ngeom": 163,
+    "nmesh": 17,
+    "xmlBytes": 30925
+   },
+   "dt": 0.004166666666666667,
+   "steps": 1440,
+   "duration": 6,
+   "buildMs": 11.894209000000046,
+   "loadMs": 73.157208,
+   "step": {
+    "meanMs": 0.03858713194444413,
+    "p50Ms": 0.037624999999934516,
+    "p99Ms": 0.12204099999962637,
+    "maxMs": 0.34645799999998417,
+    "totalMs": 55.56546999999955
+   },
+   "stepActive": {
+    "meanMs": 0.031406270833334325,
+    "p50Ms": 0.023749999999381544,
+    "p99Ms": 0.1815839999999298,
+    "maxMs": 0.34645799999998417
+   },
+   "realTimeFactor": 107.9807297589681,
+   "restTime": 1.1375,
+   "rmsLin_mm_s": 1.5877780921424278e-9,
+   "rmsAng_rad_s": 4.722237533134578e-11,
+   "residualKE_uJ": 5.059963938380894e-19,
+   "maxSpeed": 0.44962500000035965,
+   "exploded": null,
+   "pen": {
+    "initialStatic_mm": 0,
+    "initialDynamic_mm": 0,
+    "maxStatic_mm": 0.6906290055753109,
+    "maxStaticAt": 0.05416666666666667,
+    "maxDynamic_mm": 0,
+    "maxDynamicAt": 0,
+    "finalStatic_mm": 0.0031109717269889835,
+    "finalDynamic_mm": 0,
+    "finalWorstStatic": {
+     "body": 0,
+     "piece": 1,
+     "static": 9,
+     "tag": "base-z"
+    }
+   },
+   "sleep": {
+    "asleepAtEnd": 0,
+    "of": 1,
+    "allAsleepAt": null,
+    "wokeAgain": false
+   },
+   "drift": {
+    "pos_mm": 4.771157909546582e-9,
+    "ang_deg": 8.102784302891002e-9,
+    "window": [
+     3,
+     6
+    ]
+   },
+   "bodies": [
+    {
+     "name": "tumbler",
+     "pos": [
+      0.014396075406561999,
+      0.08171352323717428,
+      -0.001267014693124603
+     ],
+     "quat": [
+      0.9999905945687165,
+      -0.000005154791972647877,
+      -0.004337132760463367,
+      0.0000051914372175275836
+     ],
+     "lean": 89.99916165514121,
+     "axisV": 0.0008383448587889403,
+     "asleep": false
+    }
+   ],
+   "hash": "2037f516a4f217f8",
+   "hashPose": "10688265f0b2b7c2",
+   "marks": {},
+   "mem": {
+    "before": {
+     "rssMB": 215.203125,
+     "heapUsedMB": 41.56025695800781,
+     "externalMB": 263.15345573425293,
+     "arrayBuffersMB": 0.08111095428466797
+    },
+    "after": {
+     "rssMB": 223.203125,
+     "heapUsedMB": 52.448997497558594,
+     "externalMB": 263.15316581726074,
+     "arrayBuffersMB": 0.08082103729248047
+    },
+    "engine": {
+     "narenaMB": 256,
+     "maxuseArenaMB": 0.08366012573242188
+    }
+   },
+   "masses": [
+    0.14999998106425952
+   ]
+  },
+  {
+   "engine": "mujoco-wasm",
+   "version": "3.15.0",
+   "scene": "T4b-mug-on-shelf",
+   "cfg": {
+    "integrator": "implicitfast",
+    "cone": "elliptic",
+    "impratio": 10,
+    "solrefTimeconstSteps": 2,
+    "solimp": "0.95 0.99 0.0005 0.5 2",
+    "noslip": 5,
+    "multiccd": true,
+    "sleep": false,
+    "dt": 0.004166666666666667
+   },
+   "params": {
+    "dt": 0.00416666666667,
+    "integrator": 3,
+    "cone": 1,
+    "impratio": 10,
+    "solver": 2,
+    "iterations": 100,
+    "tolerance": 1e-8,
+    "noslip_iterations": 5,
+    "enableflags": 0,
+    "disableflags": 0,
+    "solref": "0.008333333333333333 1",
+    "solimp": "0.95 0.99 0.0005 0.5 2",
+    "margin": 0,
+    "ngeom": 34,
+    "nmesh": 20,
+    "xmlBytes": 13705
+   },
+   "dt": 0.004166666666666667,
+   "steps": 2400,
+   "duration": 10,
+   "buildMs": 8.92229099999986,
+   "loadMs": 73.157208,
+   "step": {
+    "meanMs": 0.05815784375001423,
+    "p50Ms": 0.05629200000021228,
+    "p99Ms": 0.11329099999966274,
+    "maxMs": 0.33304099999986647,
+    "totalMs": 139.57882500003416
+   },
+   "stepActive": {
+    "meanMs": 0.06214374166667843,
+    "p50Ms": 0.05687500000021828,
+    "p99Ms": 0.1621660000000702,
+    "maxMs": 0.23208400000021356
+   },
+   "realTimeFactor": 71.64410504241995,
+   "restTime": 0.05416666666666667,
+   "rmsLin_mm_s": 0.0000033070907468801555,
+   "rmsAng_rad_s": 9.189449615264941e-8,
+   "residualKE_uJ": 3.749447619953858e-12,
+   "maxSpeed": 0.24525000000019617,
+   "exploded": null,
+   "pen": {
+    "initialStatic_mm": 0,
+    "initialDynamic_mm": 0,
+    "maxStatic_mm": 0.2073312687519962,
+    "maxStaticAt": 0.0375,
+    "maxDynamic_mm": 0,
+    "maxDynamicAt": 0,
+    "finalStatic_mm": 0.0038457032562038557,
+    "finalDynamic_mm": 0,
+    "finalWorstStatic": {
+     "body": 0,
+     "piece": 14,
+     "static": 6,
+     "tag": "shelf-slope"
+    }
+   },
+   "sleep": {
+    "asleepAtEnd": 0,
+    "of": 1,
+    "allAsleepAt": null,
+    "wokeAgain": false
+   },
+   "drift": {
+    "pos_mm": 0.00001627020044239201,
+    "ang_deg": 0.000026310545790029776,
+    "window": [
+     5,
+     10
+    ]
+   },
+   "bodies": [
+    {
+     "name": "mug",
+     "pos": [
+      0.005002099262765501,
+      0.1612916477146817,
+      -0.006659374387975754
+     ],
+     "quat": [
+      0.9945205685131442,
+      -0.000018281382062625433,
+      -0.0000014588018575241958,
+      -0.10454108507163679
+     ],
+     "lean": 77.99854549574249,
+     "axisV": 12.001454504257508,
+     "asleep": false
+    }
+   ],
+   "hash": "b82935f11c5b0844",
+   "hashPose": "3a305496ccd43527",
+   "marks": {},
+   "mem": {
+    "before": {
+     "rssMB": 223.21875,
+     "heapUsedMB": 52.912330627441406,
+     "externalMB": 263.16158866882324,
+     "arrayBuffersMB": 0.08924388885498047
+    },
+    "after": {
+     "rssMB": 212.34375,
+     "heapUsedMB": 25.179122924804688,
+     "externalMB": 263.13586235046387,
+     "arrayBuffersMB": 0.06351757049560547
+    },
+    "engine": {
+     "narenaMB": 256,
+     "maxuseArenaMB": 0.08366012573242188
+    }
+   },
+   "masses": [
+    0.32000000326816935
+   ]
+  },
+  {
+   "engine": "mujoco-wasm",
+   "version": "3.15.0",
+   "scene": "T4b-mug-on-shelf",
+   "cfg": {
+    "integrator": "implicitfast",
+    "cone": "elliptic",
+    "impratio": 10,
+    "solrefTimeconstSteps": 2,
+    "solimp": "0.95 0.99 0.0005 0.5 2",
+    "noslip": 5,
+    "multiccd": true,
+    "sleep": false,
+    "dt": 0.004166666666666667
+   },
+   "params": {
+    "dt": 0.00416666666667,
+    "integrator": 3,
+    "cone": 1,
+    "impratio": 10,
+    "solver": 2,
+    "iterations": 100,
+    "tolerance": 1e-8,
+    "noslip_iterations": 5,
+    "enableflags": 0,
+    "disableflags": 0,
+    "solref": "0.008333333333333333 1",
+    "solimp": "0.95 0.99 0.0005 0.5 2",
+    "margin": 0,
+    "ngeom": 34,
+    "nmesh": 20,
+    "xmlBytes": 13705
+   },
+   "dt": 0.004166666666666667,
+   "steps": 2400,
+   "duration": 10,
+   "buildMs": 4.944082999999409,
+   "loadMs": 73.157208,
+   "step": {
+    "meanMs": 0.06103335291666478,
+    "p50Ms": 0.0590409999995245,
+    "p99Ms": 0.130500000000211,
+    "maxMs": 0.3826250000001892,
+    "totalMs": 146.48004699999547
+   },
+   "stepActive": {
+    "meanMs": 0.07151929583338491,
+    "p50Ms": 0.05916700000034325,
+    "p99Ms": 0.1897079999998823,
+    "maxMs": 0.3826250000001892
+   },
+   "realTimeFactor": 68.26868372045449,
+   "restTime": 0.05416666666666667,
+   "rmsLin_mm_s": 0.002325835392848824,
+   "rmsAng_rad_s": 0.000005746189560197669,
+   "residualKE_uJ": 8.733399657688627e-7,
+   "maxSpeed": 0.24525000000019617,
+   "exploded": null,
+   "pen": {
+    "initialStatic_mm": 0,
+    "initialDynamic_mm": 0,
+    "maxStatic_mm": 0.20733927654567436,
+    "maxStaticAt": 0.0375,
+    "maxDynamic_mm": 0,
+    "maxDynamicAt": 0,
+    "finalStatic_mm": 0.0038372914475653247,
+    "finalDynamic_mm": 0,
+    "finalWorstStatic": {
+     "body": 0,
+     "piece": 14,
+     "static": 6,
+     "tag": "shelf-slope"
+    }
+   },
+   "sleep": {
+    "asleepAtEnd": 0,
+    "of": 1,
+    "allAsleepAt": null,
+    "wokeAgain": false
+   },
+   "drift": {
+    "pos_mm": 0.000019357587127924245,
+    "ang_deg": 0.000031154219672377206,
+    "window": [
+     5,
+     10
+    ]
+   },
+   "bodies": [
+    {
+     "name": "mug",
+     "pos": [
+      0.005002104894203816,
+      0.16129165779411841,
+      -0.006659375086793503
+     ],
+     "quat": [
+      0.9945205672126124,
+      -0.000018302053253945167,
+      -0.0000013768067683885741,
+      -0.10454109744135082
+     ],
+     "lean": 77.99854407005088,
+     "axisV": 12.001455929949106,
+     "asleep": false
+    }
+   ],
+   "hash": "cdf05af5e28859de",
+   "hashPose": "d9dd6bf75adfd828",
+   "marks": {},
+   "mem": {
+    "before": {
+     "rssMB": 212.34375,
+     "heapUsedMB": 25.66632080078125,
+     "externalMB": 263.14428520202637,
+     "arrayBuffersMB": 0.07194042205810547
+    },
+    "after": {
+     "rssMB": 212.484375,
+     "heapUsedMB": 26.520980834960938,
+     "externalMB": 263.15868186950684,
+     "arrayBuffersMB": 0.08633708953857422
+    },
+    "engine": {
+     "narenaMB": 256,
+     "maxuseArenaMB": 0.08366012573242188
+    }
+   },
+   "masses": [
+    0.32000000326816935
+   ]
+  }
+ ]
+}

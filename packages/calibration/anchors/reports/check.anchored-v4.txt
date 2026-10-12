@@ -1,0 +1,27 @@
+ok   packages/calibration/anchors/anchored-v4.json reads against the registry with its hydro and soil hashes
+ok   the set was made on the simulator version on disk (spotless-sim 0.4.1 water-5): it records spotless-sim 0.4.1 water-5
+ok   the set was made on the water sources on disk (34816aba7271...): it records 34816aba7271...
+ok   no override is in the hydro group: cached exposure is reused
+ok   liq.xProtease = 0.016 (default 0.01, range 0 to 0.05; fitted)
+ok   soil.amountCv = 0.05 (default 0, range 0 to 0.3; read off bench data)
+ok   soil.egg_yolk.rateRef = 0.000034 (default 0.00003, range 0.00001 to 0.0001; fitted)
+ok   soil.egg_yolk.tLag = 300 (default 540, range 30 to 1800; read off bench data)
+ok   soil.milk.rateRef = 0.000034 (default 0.00003, range 0.00001 to 0.0001; NOT LISTED)
+ok   soil.milk.tLag = 300 (default 540, range 30 to 1800; read off bench data)
+ok   soil.subCellCv = 0.1 (default 0, range 0 to 0.6; read off bench data)
+ok   soil.subCellCv, read off bench data, is in the set
+ok   soil.amountCv, read off bench data, is in the set
+ok   soil.egg_yolk.tLag, read off bench data, is in the set
+ok   soil.milk.tLag, read off bench data, is in the set
+ok   egg-yolk tile (dried) at 30 C, pH 10.5, 0.06 g/L: 0.84 against 0.85 +- 0.17 % per minute
+ok   egg-yolk tile (dried) at 55 C, pH 10.5, 0.06 g/L: 1.79 against 1.75 +- 0.35 % per minute
+ok   egg-yolk tile (dried) at 55 C, pH 10.5, 0.02 g/L: 0.17 against 0.17 +- 0.05 % per minute
+ok   egg-yolk tile (dried) at 55 C, pH 10.5, 0.1 g/L: 2.47 against 2.59 +- 0.52 % per minute
+ok   egg-yolk tile (dried) at 55 C, pH 9.5, 0.06 g/L: 0.68 against 0.69 +- 0.16 % per minute
+ok   egg-yolk tile (dried) at 55 C, pH 11.5, 0.06 g/L: 4.77 against 4.66 +- 0.93 % per minute
+ok   IKW programme leaves 72 % of the egg yolk
+ok   IKW programme leaves 92 % of the starch mix
+ok   IKW programme leaves 88 % of the minced meat
+ok   IKW programme leaves 69 % of the tea
+ok   the literature record is a valid wash record
+anchored set: all checks pass

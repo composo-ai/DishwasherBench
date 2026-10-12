@@ -1,0 +1,188 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "glasses-milk",
+ "description": "P32: four 250 mL test glasses mouth down in the upper basket",
+ "recipe_hash": "sha256:aa31e4052e070641792f26ad75dbba7835b1e70ef88ff4c8edc7fdd787d31716",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "glass_1",
+   "item_type": "test_glass_borosilicate_250",
+   "pose": {
+    "p": [
+     0.10774938049462836,
+     0.04445717731976308,
+     0.5501490517579661
+    ],
+    "q": [
+     0.9844617247581482,
+     0.02229507826268673,
+     -0.17415116727352142,
+     -0.0030745340045541525
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 56,
+    "rotation_deg": 20.2,
+    "contacts": [
+     "upper_rack.floor.y",
+     "upper_rack.tine_row_c_rear"
+    ]
+   }
+  },
+  {
+   "item_id": "glass_2",
+   "item_type": "test_glass_borosilicate_250",
+   "pose": {
+    "p": [
+     0.1951550378433058,
+     -0.10579221008545157,
+     0.5597192718865825
+    ],
+    "q": [
+     0.9941886067390442,
+     0.002506931545212865,
+     -0.10762318223714828,
+     -0.0002888236485887319
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 11,
+    "rotation_deg": 12.5,
+    "contacts": [
+     "upper_rack.floor.y",
+     "upper_rack_fittings.shelf.cup_front"
+    ]
+   }
+  },
+  {
+   "item_id": "glass_3",
+   "item_type": "test_glass_borosilicate_250",
+   "pose": {
+    "p": [
+     0.1943364423941887,
+     0.13049592202639249,
+     0.5613508902401021
+    ],
+    "q": [
+     0.9878686666488647,
+     0.14633512496948242,
+     -0.05136178806424141,
+     -0.007964715361595154
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 16.4,
+    "rotation_deg": 17.2,
+    "contacts": [
+     "upper_rack.floor.x",
+     "upper_rack.floor.y",
+     "upper_rack_fittings.shelf.cup_rear"
+    ]
+   }
+  },
+  {
+   "item_id": "glass_4",
+   "item_type": "test_glass_borosilicate_250",
+   "pose": {
+    "p": [
+     -0.03315280217168123,
+     0.07440426917142791,
+     0.566313671526817
+    ],
+    "q": [
+     0.9917057752609253,
+     0.0018891057698056102,
+     0.1285116970539093,
+     0.000984224141575396
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 14.1,
+    "rotation_deg": 14.6,
+    "contacts": [
+     "upper_rack.floor.y",
+     "upper_rack.tine_row_b"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:5f7c1134d5ef72a6cb4a036d338c34654a658c3caeff97026cac8dc42f417174"
+}

@@ -1,0 +1,159 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "board-side",
+ "description": "P05 A: two dessert plates in the left front lane of the lower basket (ML slots 2 and 3), faces to the arm axis, and a 32 cm oval platter on edge outboard of them (slot 0, at the side wall)",
+ "recipe_hash": "sha256:a1c0e34312184608e117f86907b62c00a1edc45ac2569f1239b57e3761f7e91b",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "board",
+   "item_type": "oval_platter_porcelain_320",
+   "pose": {
+    "p": [
+     -0.22769747657025527,
+     -0.09374601137868356,
+     0.19581333392152328
+    ],
+    "q": [
+     0.4658094048500061,
+     0.45408180356025696,
+     0.5371753573417664,
+     0.5369115471839905
+    ]
+   },
+   "placed": {
+    "op": "slot, dropped",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 8.4,
+    "rotation_deg": 6.6,
+    "contacts": [
+     "lower_rack.tine_row_fl",
+     "lower_rack.tine_row_ml"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_1",
+   "item_type": "dessert_plate_porcelain_190",
+   "pose": {
+    "p": [
+     -0.17018790498640504,
+     -0.13964148174226695,
+     0.1569104346010284
+    ],
+    "q": [
+     0.4112659990787506,
+     0.42352238297462463,
+     0.5718370676040649,
+     0.5696415305137634
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 8.2,
+    "rotation_deg": 2.8,
+    "contacts": [
+     "lower_rack.tine_row_fl",
+     "lower_rack.tine_row_ml"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_2",
+   "item_type": "dessert_plate_porcelain_190",
+   "pose": {
+    "p": [
+     -0.14495458014830442,
+     -0.13966600299511492,
+     0.15645760596553995
+    ],
+    "q": [
+     0.4087447226047516,
+     0.4194343090057373,
+     0.5754189491271973,
+     0.5708727240562439
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 8.6,
+    "rotation_deg": 3.5,
+    "contacts": [
+     "lower_rack.tine_row_fl",
+     "lower_rack.tine_row_ml"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:3a0d249edb3acd869fdb20c097e7e757e4062aa246524b80f5ac017da13234f5"
+}

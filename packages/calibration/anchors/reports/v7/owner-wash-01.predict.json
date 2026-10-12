@@ -1,0 +1,2859 @@
+{
+  "record": "owner-wash-01-egg-yolk-eco50",
+  "params": {
+    "liq.amylaseKox": 0.00006,
+    "liq.amylaseKoxHP": 0.000002,
+    "liq.tabletTau": 300,
+    "liq.xAmylase": 0.012,
+    "liq.xCarbonate": 3.3,
+    "liq.xPeroxide": 0.955,
+    "liq.xProtease": 0.03,
+    "liq.xSilicate": 0,
+    "liq.xSurfactant": 0.1,
+    "liq.xTaed": 0.175,
+    "prog.soakDuty": 0.8,
+    "soil.amountCv": 0.05,
+    "soil.bleachRate": 0.0009,
+    "soil.egg_yolk.rateRef": 0.000034,
+    "soil.egg_yolk.tLag": 300,
+    "soil.milk.rateRef": 0.000034,
+    "soil.milk.tLag": 300,
+    "soil.subCellCv": 0.1
+  },
+  "info": {
+    "tier": "official",
+    "blocks": 545519,
+    "soilCells": 1272436,
+    "deposits": 73418,
+    "depositsOfLoad": 192786,
+    "itemsReplayed": 4,
+    "items": 24,
+    "ticks": 7752,
+    "sprayStates": 4,
+    "scenarios": 9,
+    "exposureStandIn": false,
+    "exposureCacheHits": 4,
+    "exposureComputed": 0,
+    "timings_ms": {
+      "setup": 562.135334,
+      "exposure": 684.9295830000008,
+      "scene": 10423.527708,
+      "background": 2445.4752499999995,
+      "firstReplay": 51675.195792
+    },
+    "restriction": "the soils of the 4 observed items are replayed, those of the other 20 items are not; what the others release into the liquor (5.13 g by the end) is fed in as the history it has at the parameters of the preparation (refreshBackground moves it)",
+    "notes": [
+      "machine: dosing.detergentMass = 0.0129 (dose of Finish Powerball Ultimate)"
+    ]
+  },
+  "logLikelihood": -5.935923339984354,
+  "scenarioWeights": [
+    0.24084,
+    0.20117,
+    0.20117,
+    0.11723,
+    0.11723,
+    0.04766,
+    0.04766,
+    0.01352,
+    0.01352
+  ],
+  "observations": [
+    {
+      "index": 0,
+      "id": "plate_9121.visible_area",
+      "kind": "visible_area",
+      "itemId": "plate_9121",
+      "target": "item",
+      "at": null,
+      "value": 100,
+      "sd": 57.22293841971581,
+      "fitted": true,
+      "logLikelihood": -1.9953899364176553,
+      "scenarios": [
+        {
+          "eta": 60.49100620575445,
+          "state": {
+            "initialMass_mg": 1536.0722829755516,
+            "residualMass_mg": 1.1857349139921345,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 59.22769591970953,
+            "softVisibleAreaMm2": 60.49100620575445,
+            "bandThresholdLog": [
+              6,
+              5.601380935297311,
+              4.006904676486556,
+              2.2195875540670333,
+              -20
+            ],
+            "cleanThresholdLog": 5.601380935297311,
+            "specks": 64,
+            "score": 1,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 8.917641830409744,
+          "state": {
+            "initialMass_mg": 1264.1874888888838,
+            "residualMass_mg": 0.19728197051216612,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 8.489911925087926,
+            "softVisibleAreaMm2": 8.917641830409744,
+            "bandThresholdLog": [
+              6,
+              4.004330565909056,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": 4.004330565909056,
+            "specks": 6,
+            "score": 3,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 346.04836969836276,
+          "state": {
+            "initialMass_mg": 1866.3278238152982,
+            "residualMass_mg": 7.424237559077795,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 343.5383645661981,
+            "softVisibleAreaMm2": 346.04836969836276,
+            "bandThresholdLog": [
+              20,
+              5.9562781162608065,
+              5.722170623176246,
+              5.283219073642696,
+              3.451423126189436
+            ],
+            "cleanThresholdLog": 5.9562781162608065,
+            "specks": 268,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2.037998994178027,
+          "state": {
+            "initialMass_mg": 1040.5353644876452,
+            "residualMass_mg": 0.026734603590281583,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 1.9506339583010934,
+            "softVisibleAreaMm2": 2.037998994178027,
+            "bandThresholdLog": [
+              6,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 1,
+            "score": 4,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 1303.4728052674288,
+          "state": {
+            "initialMass_mg": 2267.703511356822,
+            "residualMass_mg": 35.27124908043065,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 1301.6656960705034,
+            "softVisibleAreaMm2": 1303.4728052674288,
+            "bandThresholdLog": [
+              20,
+              20,
+              5.957055116460874,
+              5.8652290560711755,
+              5.406098754122681
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 696,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0.0027374595272777543,
+          "state": {
+            "initialMass_mg": 856.3602977588778,
+            "residualMass_mg": 0.0004655963888165656,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0.0027374595272777543,
+            "bandThresholdLog": [
+              -0.25,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 3594.995539310908,
+          "state": {
+            "initialMass_mg": 2755.252853973235,
+            "residualMass_mg": 124.034102744557,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 3603.4065217151506,
+            "softVisibleAreaMm2": 3594.995539310908,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              5.988707851518638,
+              5.844902969406153
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 620,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 704.9035706574766,
+            "residualMass_mg": 2.9051895375581417e-7,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 7680.7309667320105,
+          "state": {
+            "initialMass_mg": 3347.562326288629,
+            "residualMass_mg": 345.58516890547935,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 7697.36246009952,
+            "softVisibleAreaMm2": 7680.7309667320105,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              20,
+              20
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 8,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        }
+      ],
+      "eta": 60.49100620575445,
+      "mean": 75.38869305326615,
+      "state": {
+        "initialMass_mg": 1536.0722829755516,
+        "residualMass_mg": 1.1857349139921345,
+        "soiledAreaMm2": 21092.137450814247,
+        "visibleAreaMm2": 59.22769591970953,
+        "softVisibleAreaMm2": 60.49100620575445,
+        "bandThresholdLog": [
+          6,
+          5.601380935297311,
+          4.006904676486556,
+          2.2195875540670333,
+          -20
+        ],
+        "cleanThresholdLog": 5.601380935297311,
+        "specks": 64,
+        "score": 1,
+        "clean": false,
+        "pooledWater_mL": 0
+      }
+    },
+    {
+      "index": 1,
+      "id": "plate_9121.clean",
+      "kind": "clean",
+      "itemId": "plate_9121",
+      "target": "item",
+      "at": null,
+      "value": false,
+      "sd": 0.13999999999999999,
+      "fitted": false,
+      "logLikelihood": -0.20182714691788783,
+      "scenarios": [
+        {
+          "eta": -18.671269784324373,
+          "state": {
+            "initialMass_mg": 1536.0722829755516,
+            "residualMass_mg": 1.1857349139921345,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 59.22769591970953,
+            "softVisibleAreaMm2": 60.49100620575445,
+            "bandThresholdLog": [
+              6,
+              5.601380935297311,
+              4.006904676486556,
+              2.2195875540670333,
+              -20
+            ],
+            "cleanThresholdLog": 5.601380935297311,
+            "specks": 64,
+            "score": 1,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -13.347768553030187,
+          "state": {
+            "initialMass_mg": 1264.1874888888838,
+            "residualMass_mg": 0.19728197051216612,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 8.489911925087926,
+            "softVisibleAreaMm2": 8.917641830409744,
+            "bandThresholdLog": [
+              6,
+              4.004330565909056,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": 4.004330565909056,
+            "specks": 6,
+            "score": 3,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -19.854260387536023,
+          "state": {
+            "initialMass_mg": 1866.3278238152982,
+            "residualMass_mg": 7.424237559077795,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 343.5383645661981,
+            "softVisibleAreaMm2": 346.04836969836276,
+            "bandThresholdLog": [
+              20,
+              5.9562781162608065,
+              5.722170623176246,
+              5.283219073642696,
+              3.451423126189436
+            ],
+            "cleanThresholdLog": 5.9562781162608065,
+            "specks": 268,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 1.4583333333333335,
+          "state": {
+            "initialMass_mg": 1040.5353644876452,
+            "residualMass_mg": 0.026734603590281583,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 1.9506339583010934,
+            "softVisibleAreaMm2": 2.037998994178027,
+            "bandThresholdLog": [
+              6,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 1,
+            "score": 4,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -50,
+          "state": {
+            "initialMass_mg": 2267.703511356822,
+            "residualMass_mg": 35.27124908043065,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 1301.6656960705034,
+            "softVisibleAreaMm2": 1303.4728052674288,
+            "bandThresholdLog": [
+              20,
+              20,
+              5.957055116460874,
+              5.8652290560711755,
+              5.406098754122681
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 696,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2.5,
+          "state": {
+            "initialMass_mg": 856.3602977588778,
+            "residualMass_mg": 0.0004655963888165656,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0.0027374595272777543,
+            "bandThresholdLog": [
+              -0.25,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -50,
+          "state": {
+            "initialMass_mg": 2755.252853973235,
+            "residualMass_mg": 124.034102744557,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 3603.4065217151506,
+            "softVisibleAreaMm2": 3594.995539310908,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              5.988707851518638,
+              5.844902969406153
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 620,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2.5,
+          "state": {
+            "initialMass_mg": 704.9035706574766,
+            "residualMass_mg": 2.9051895375581417e-7,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -50,
+          "state": {
+            "initialMass_mg": 3347.562326288629,
+            "residualMass_mg": 345.58516890547935,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 7697.36246009952,
+            "softVisibleAreaMm2": 7680.7309667320105,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              20,
+              20
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 8,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        }
+      ],
+      "eta": -18.671269784324373,
+      "mean": 0.02,
+      "state": {
+        "initialMass_mg": 1536.0722829755516,
+        "residualMass_mg": 1.1857349139921345,
+        "soiledAreaMm2": 21092.137450814247,
+        "visibleAreaMm2": 59.22769591970953,
+        "softVisibleAreaMm2": 60.49100620575445,
+        "bandThresholdLog": [
+          6,
+          5.601380935297311,
+          4.006904676486556,
+          2.2195875540670333,
+          -20
+        ],
+        "cleanThresholdLog": 5.601380935297311,
+        "specks": 64,
+        "score": 1,
+        "clean": false,
+        "pooledWater_mL": 0
+      }
+    },
+    {
+      "index": 2,
+      "id": "plate_9121.specks",
+      "kind": "specks",
+      "itemId": "plate_9121",
+      "target": "item",
+      "at": null,
+      "value": 7,
+      "sd": 46.09793921641183,
+      "fitted": false,
+      "logLikelihood": -4.115172222779492,
+      "scenarios": [
+        {
+          "eta": 64,
+          "state": {
+            "initialMass_mg": 1536.0722829755516,
+            "residualMass_mg": 1.1857349139921345,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 59.22769591970953,
+            "softVisibleAreaMm2": 60.49100620575445,
+            "bandThresholdLog": [
+              6,
+              5.601380935297311,
+              4.006904676486556,
+              2.2195875540670333,
+              -20
+            ],
+            "cleanThresholdLog": 5.601380935297311,
+            "specks": 64,
+            "score": 1,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 6,
+          "state": {
+            "initialMass_mg": 1264.1874888888838,
+            "residualMass_mg": 0.19728197051216612,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 8.489911925087926,
+            "softVisibleAreaMm2": 8.917641830409744,
+            "bandThresholdLog": [
+              6,
+              4.004330565909056,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": 4.004330565909056,
+            "specks": 6,
+            "score": 3,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 268,
+          "state": {
+            "initialMass_mg": 1866.3278238152982,
+            "residualMass_mg": 7.424237559077795,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 343.5383645661981,
+            "softVisibleAreaMm2": 346.04836969836276,
+            "bandThresholdLog": [
+              20,
+              5.9562781162608065,
+              5.722170623176246,
+              5.283219073642696,
+              3.451423126189436
+            ],
+            "cleanThresholdLog": 5.9562781162608065,
+            "specks": 268,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 1,
+          "state": {
+            "initialMass_mg": 1040.5353644876452,
+            "residualMass_mg": 0.026734603590281583,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 1.9506339583010934,
+            "softVisibleAreaMm2": 2.037998994178027,
+            "bandThresholdLog": [
+              6,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 1,
+            "score": 4,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 696,
+          "state": {
+            "initialMass_mg": 2267.703511356822,
+            "residualMass_mg": 35.27124908043065,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 1301.6656960705034,
+            "softVisibleAreaMm2": 1303.4728052674288,
+            "bandThresholdLog": [
+              20,
+              20,
+              5.957055116460874,
+              5.8652290560711755,
+              5.406098754122681
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 696,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 856.3602977588778,
+            "residualMass_mg": 0.0004655963888165656,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0.0027374595272777543,
+            "bandThresholdLog": [
+              -0.25,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 620,
+          "state": {
+            "initialMass_mg": 2755.252853973235,
+            "residualMass_mg": 124.034102744557,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 3603.4065217151506,
+            "softVisibleAreaMm2": 3594.995539310908,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              5.988707851518638,
+              5.844902969406153
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 620,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 704.9035706574766,
+            "residualMass_mg": 2.9051895375581417e-7,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 8,
+          "state": {
+            "initialMass_mg": 3347.562326288629,
+            "residualMass_mg": 345.58516890547935,
+            "soiledAreaMm2": 21092.137450814247,
+            "visibleAreaMm2": 7697.36246009952,
+            "softVisibleAreaMm2": 7680.7309667320105,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              20,
+              20
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 8,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        }
+      ],
+      "eta": 64,
+      "mean": 64.2,
+      "state": {
+        "initialMass_mg": 1536.0722829755516,
+        "residualMass_mg": 1.1857349139921345,
+        "soiledAreaMm2": 21092.137450814247,
+        "visibleAreaMm2": 59.22769591970953,
+        "softVisibleAreaMm2": 60.49100620575445,
+        "bandThresholdLog": [
+          6,
+          5.601380935297311,
+          4.006904676486556,
+          2.2195875540670333,
+          -20
+        ],
+        "cleanThresholdLog": 5.601380935297311,
+        "specks": 64,
+        "score": 1,
+        "clean": false,
+        "pooledWater_mL": 0
+      }
+    },
+    {
+      "index": 3,
+      "id": "plate_9122.visible_area",
+      "kind": "visible_area",
+      "itemId": "plate_9122",
+      "target": "item",
+      "at": null,
+      "value": 25,
+      "sd": 15.255878328280088,
+      "fitted": true,
+      "logLikelihood": -1.9783376190293689,
+      "scenarios": [
+        {
+          "eta": 11.200757549567257,
+          "state": {
+            "initialMass_mg": 1562.0301685512077,
+            "residualMass_mg": 0.22768081796824405,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 10.735560524125692,
+            "softVisibleAreaMm2": 11.200757549567257,
+            "bandThresholdLog": [
+              6,
+              4.2387488205407875,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": 4.2387488205407875,
+            "specks": 9,
+            "score": 3,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 1.0037747302281514,
+          "state": {
+            "initialMass_mg": 1285.5508287176492,
+            "residualMass_mg": 0.011754859686639602,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 1.0050011672665828,
+            "softVisibleAreaMm2": 1.0037747302281514,
+            "bandThresholdLog": [
+              6,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 2,
+            "score": 4,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 80.56666611409932,
+          "state": {
+            "initialMass_mg": 1897.866654789737,
+            "residualMass_mg": 1.8389899455944247,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 78.62948620355274,
+            "softVisibleAreaMm2": 80.56666611409932,
+            "bandThresholdLog": [
+              6,
+              5.760159191117961,
+              4.800795955589806,
+              3.343769285606589,
+              -20
+            ],
+            "cleanThresholdLog": 5.760159191117961,
+            "specks": 73,
+            "score": 1,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 1058.1192361765873,
+            "residualMass_mg": 0.00003183738929318262,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 432.8508209624345,
+          "state": {
+            "initialMass_mg": 2306.0251378321495,
+            "residualMass_mg": 11.594190164941232,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 428.6790322089622,
+            "softVisibleAreaMm2": 432.8508209624345,
+            "bandThresholdLog": [
+              20,
+              5.982395252449639,
+              5.829353832766036,
+              5.5424011708592795,
+              4.107637861325498
+            ],
+            "cleanThresholdLog": 5.982395252449639,
+            "specks": 319,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 870.8318189672924,
+            "residualMass_mg": 2.607068302572446e-9,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 1640.10965917173,
+          "state": {
+            "initialMass_mg": 2801.8135133303012,
+            "residualMass_mg": 53.86867886586369,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 1638.3312206832195,
+            "softVisibleAreaMm2": 1640.10965917173,
+            "bandThresholdLog": [
+              20,
+              20,
+              5.992831285980902,
+              5.927119899779458,
+              5.598562968772239
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 890,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 716.8156443481483,
+            "residualMass_mg": 0,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 4491.035325563748,
+          "state": {
+            "initialMass_mg": 3404.1323463236536,
+            "residualMass_mg": 188.3178540661392,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 4500.541784648809,
+            "softVisibleAreaMm2": 4491.035325563748,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              20,
+              5.943687772695053
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 565,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        }
+      ],
+      "eta": 11.200757549567257,
+      "mean": 15.274827465669606,
+      "state": {
+        "initialMass_mg": 1562.0301685512077,
+        "residualMass_mg": 0.22768081796824405,
+        "soiledAreaMm2": 21091.942795455456,
+        "visibleAreaMm2": 10.735560524125692,
+        "softVisibleAreaMm2": 11.200757549567257,
+        "bandThresholdLog": [
+          6,
+          4.2387488205407875,
+          -20,
+          -20,
+          -20
+        ],
+        "cleanThresholdLog": 4.2387488205407875,
+        "specks": 9,
+        "score": 3,
+        "clean": false,
+        "pooledWater_mL": 0
+      }
+    },
+    {
+      "index": 4,
+      "id": "plate_9122.clean",
+      "kind": "clean",
+      "itemId": "plate_9122",
+      "target": "item",
+      "at": null,
+      "value": false,
+      "sd": 0.13999999999999999,
+      "fitted": false,
+      "logLikelihood": -0.43788465107936836,
+      "scenarios": [
+        {
+          "eta": -14.129162735135958,
+          "state": {
+            "initialMass_mg": 1562.0301685512077,
+            "residualMass_mg": 0.22768081796824405,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 10.735560524125692,
+            "softVisibleAreaMm2": 11.200757549567257,
+            "bandThresholdLog": [
+              6,
+              4.2387488205407875,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": 4.2387488205407875,
+            "specks": 9,
+            "score": 3,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 1.0416666666666667,
+          "state": {
+            "initialMass_mg": 1285.5508287176492,
+            "residualMass_mg": 0.011754859686639602,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 1.0050011672665828,
+            "softVisibleAreaMm2": 1.0037747302281514,
+            "bandThresholdLog": [
+              6,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 2,
+            "score": 4,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -19.20053063705987,
+          "state": {
+            "initialMass_mg": 1897.866654789737,
+            "residualMass_mg": 1.8389899455944247,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 78.62948620355274,
+            "softVisibleAreaMm2": 80.56666611409932,
+            "bandThresholdLog": [
+              6,
+              5.760159191117961,
+              4.800795955589806,
+              3.343769285606589,
+              -20
+            ],
+            "cleanThresholdLog": 5.760159191117961,
+            "specks": 73,
+            "score": 1,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2.5,
+          "state": {
+            "initialMass_mg": 1058.1192361765873,
+            "residualMass_mg": 0.00003183738929318262,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -19.941317508165465,
+          "state": {
+            "initialMass_mg": 2306.0251378321495,
+            "residualMass_mg": 11.594190164941232,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 428.6790322089622,
+            "softVisibleAreaMm2": 432.8508209624345,
+            "bandThresholdLog": [
+              20,
+              5.982395252449639,
+              5.829353832766036,
+              5.5424011708592795,
+              4.107637861325498
+            ],
+            "cleanThresholdLog": 5.982395252449639,
+            "specks": 319,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2.5,
+          "state": {
+            "initialMass_mg": 870.8318189672924,
+            "residualMass_mg": 2.607068302572446e-9,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -50,
+          "state": {
+            "initialMass_mg": 2801.8135133303012,
+            "residualMass_mg": 53.86867886586369,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 1638.3312206832195,
+            "softVisibleAreaMm2": 1640.10965917173,
+            "bandThresholdLog": [
+              20,
+              20,
+              5.992831285980902,
+              5.927119899779458,
+              5.598562968772239
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 890,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2.5,
+          "state": {
+            "initialMass_mg": 716.8156443481483,
+            "residualMass_mg": 0,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -50,
+          "state": {
+            "initialMass_mg": 3404.1323463236536,
+            "residualMass_mg": 188.3178540661392,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 4500.541784648809,
+            "softVisibleAreaMm2": 4491.035325563748,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              20,
+              5.943687772695053
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 565,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        }
+      ],
+      "eta": -14.129162735135958,
+      "mean": 0.02,
+      "state": {
+        "initialMass_mg": 1562.0301685512077,
+        "residualMass_mg": 0.22768081796824405,
+        "soiledAreaMm2": 21091.942795455456,
+        "visibleAreaMm2": 10.735560524125692,
+        "softVisibleAreaMm2": 11.200757549567257,
+        "bandThresholdLog": [
+          6,
+          4.2387488205407875,
+          -20,
+          -20,
+          -20
+        ],
+        "cleanThresholdLog": 4.2387488205407875,
+        "specks": 9,
+        "score": 3,
+        "clean": false,
+        "pooledWater_mL": 0
+      }
+    },
+    {
+      "index": 5,
+      "id": "plate_9122.specks",
+      "kind": "specks",
+      "itemId": "plate_9122",
+      "target": "item",
+      "at": null,
+      "value": 5,
+      "sd": 7.177743377970544,
+      "fitted": false,
+      "logLikelihood": -3.5471664503969453,
+      "scenarios": [
+        {
+          "eta": 9,
+          "state": {
+            "initialMass_mg": 1562.0301685512077,
+            "residualMass_mg": 0.22768081796824405,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 10.735560524125692,
+            "softVisibleAreaMm2": 11.200757549567257,
+            "bandThresholdLog": [
+              6,
+              4.2387488205407875,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": 4.2387488205407875,
+            "specks": 9,
+            "score": 3,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2,
+          "state": {
+            "initialMass_mg": 1285.5508287176492,
+            "residualMass_mg": 0.011754859686639602,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 1.0050011672665828,
+            "softVisibleAreaMm2": 1.0037747302281514,
+            "bandThresholdLog": [
+              6,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 2,
+            "score": 4,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 73,
+          "state": {
+            "initialMass_mg": 1897.866654789737,
+            "residualMass_mg": 1.8389899455944247,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 78.62948620355274,
+            "softVisibleAreaMm2": 80.56666611409932,
+            "bandThresholdLog": [
+              6,
+              5.760159191117961,
+              4.800795955589806,
+              3.343769285606589,
+              -20
+            ],
+            "cleanThresholdLog": 5.760159191117961,
+            "specks": 73,
+            "score": 1,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 1058.1192361765873,
+            "residualMass_mg": 0.00003183738929318262,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 319,
+          "state": {
+            "initialMass_mg": 2306.0251378321495,
+            "residualMass_mg": 11.594190164941232,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 428.6790322089622,
+            "softVisibleAreaMm2": 432.8508209624345,
+            "bandThresholdLog": [
+              20,
+              5.982395252449639,
+              5.829353832766036,
+              5.5424011708592795,
+              4.107637861325498
+            ],
+            "cleanThresholdLog": 5.982395252449639,
+            "specks": 319,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 870.8318189672924,
+            "residualMass_mg": 2.607068302572446e-9,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 890,
+          "state": {
+            "initialMass_mg": 2801.8135133303012,
+            "residualMass_mg": 53.86867886586369,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 1638.3312206832195,
+            "softVisibleAreaMm2": 1640.10965917173,
+            "bandThresholdLog": [
+              20,
+              20,
+              5.992831285980902,
+              5.927119899779458,
+              5.598562968772239
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 890,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 716.8156443481483,
+            "residualMass_mg": 0,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 565,
+          "state": {
+            "initialMass_mg": 3404.1323463236536,
+            "residualMass_mg": 188.3178540661392,
+            "soiledAreaMm2": 21091.942795455456,
+            "visibleAreaMm2": 4500.541784648809,
+            "softVisibleAreaMm2": 4491.035325563748,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              20,
+              5.943687772695053
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 565,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        }
+      ],
+      "eta": 9,
+      "mean": 9.2,
+      "state": {
+        "initialMass_mg": 1562.0301685512077,
+        "residualMass_mg": 0.22768081796824405,
+        "soiledAreaMm2": 21091.942795455456,
+        "visibleAreaMm2": 10.735560524125692,
+        "softVisibleAreaMm2": 11.200757549567257,
+        "bandThresholdLog": [
+          6,
+          4.2387488205407875,
+          -20,
+          -20,
+          -20
+        ],
+        "cleanThresholdLog": 4.2387488205407875,
+        "specks": 9,
+        "score": 3,
+        "clean": false,
+        "pooledWater_mL": 0
+      }
+    },
+    {
+      "index": 6,
+      "id": "plate_9123.visible_area",
+      "kind": "visible_area",
+      "itemId": "plate_9123",
+      "target": "item",
+      "at": null,
+      "value": 0,
+      "sd": 3.53247333575446,
+      "fitted": true,
+      "logLikelihood": -0.6586756447236493,
+      "scenarios": [
+        {
+          "eta": 0.21131921865868844,
+          "state": {
+            "initialMass_mg": 1472.8199405909443,
+            "residualMass_mg": 0.0022162763853053225,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0.21162858457941525,
+            "softVisibleAreaMm2": 0.21131921865868844,
+            "bandThresholdLog": [
+              4,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 1,
+            "score": 4,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 1212.1308111063663,
+            "residualMass_mg": 0.000001977911071908164,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 4.45894871572687,
+          "state": {
+            "initialMass_mg": 1789.4762278180085,
+            "residualMass_mg": 0.08578536044747018,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 4.3464010103563755,
+            "softVisibleAreaMm2": 4.45894871572687,
+            "bandThresholdLog": [
+              6,
+              1.9559780895300398,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": 1.9559780895300398,
+            "specks": 5,
+            "score": 3,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 997.6882277563074,
+            "residualMass_mg": 4.701910268463866e-11,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 51.36082175676955,
+          "state": {
+            "initialMass_mg": 2174.324078294419,
+            "residualMass_mg": 1.093996654592106,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 49.806042757342304,
+            "softVisibleAreaMm2": 51.36082175676955,
+            "bandThresholdLog": [
+              6,
+              5.606197746486295,
+              4.0309887324314735,
+              0.9735196207306824,
+              -20
+            ],
+            "cleanThresholdLog": 5.606197746486295,
+            "specks": 60,
+            "score": 2,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 821.0971168794579,
+            "residualMass_mg": 0,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 319.3429432662095,
+          "state": {
+            "initialMass_mg": 2641.79712743801,
+            "residualMass_mg": 8.624776181574068,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 315.9622930454176,
+            "softVisibleAreaMm2": 319.3429432662095,
+            "bandThresholdLog": [
+              20,
+              5.959914937947914,
+              5.755384230409835,
+              5.3718891537759355,
+              3.536493222601338
+            ],
+            "cleanThresholdLog": 5.959914937947914,
+            "specks": 299,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 675.877070737194,
+            "residualMass_mg": 0,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 1358.323422230056,
+          "state": {
+            "initialMass_mg": 3209.716496529899,
+            "residualMass_mg": 46.576478564877725,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 1355.3802686551978,
+            "softVisibleAreaMm2": 1358.323422230056,
+            "bandThresholdLog": [
+              20,
+              20,
+              5.985072482735337,
+              5.908659633051539,
+              5.526595384632556
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 851,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        }
+      ],
+      "eta": 0.21131921865868844,
+      "mean": 1.0377214838010635,
+      "state": {
+        "initialMass_mg": 1472.8199405909443,
+        "residualMass_mg": 0.0022162763853053225,
+        "soiledAreaMm2": 21091.54753136635,
+        "visibleAreaMm2": 0.21162858457941525,
+        "softVisibleAreaMm2": 0.21131921865868844,
+        "bandThresholdLog": [
+          4,
+          -20,
+          -20,
+          -20,
+          -20
+        ],
+        "cleanThresholdLog": -20,
+        "specks": 1,
+        "score": 4,
+        "clean": true,
+        "pooledWater_mL": 0
+      }
+    },
+    {
+      "index": 7,
+      "id": "plate_9123.clean",
+      "kind": "clean",
+      "itemId": "plate_9123",
+      "target": "item",
+      "at": null,
+      "value": true,
+      "sd": 0.2854344267794163,
+      "fitted": false,
+      "logLikelihood": -0.5164966629779837,
+      "scenarios": [
+        {
+          "eta": 1.4583333333333335,
+          "state": {
+            "initialMass_mg": 1472.8199405909443,
+            "residualMass_mg": 0.0022162763853053225,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0.21162858457941525,
+            "softVisibleAreaMm2": 0.21131921865868844,
+            "bandThresholdLog": [
+              4,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 1,
+            "score": 4,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2.5,
+          "state": {
+            "initialMass_mg": 1212.1308111063663,
+            "residualMass_mg": 0.000001977911071908164,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -6.519926965100133,
+          "state": {
+            "initialMass_mg": 1789.4762278180085,
+            "residualMass_mg": 0.08578536044747018,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 4.3464010103563755,
+            "softVisibleAreaMm2": 4.45894871572687,
+            "bandThresholdLog": [
+              6,
+              1.9559780895300398,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": 1.9559780895300398,
+            "specks": 5,
+            "score": 3,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2.5,
+          "state": {
+            "initialMass_mg": 997.6882277563074,
+            "residualMass_mg": 4.701910268463866e-11,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -18.687325821620984,
+          "state": {
+            "initialMass_mg": 2174.324078294419,
+            "residualMass_mg": 1.093996654592106,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 49.806042757342304,
+            "softVisibleAreaMm2": 51.36082175676955,
+            "bandThresholdLog": [
+              6,
+              5.606197746486295,
+              4.0309887324314735,
+              0.9735196207306824,
+              -20
+            ],
+            "cleanThresholdLog": 5.606197746486295,
+            "specks": 60,
+            "score": 2,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2.5,
+          "state": {
+            "initialMass_mg": 821.0971168794579,
+            "residualMass_mg": 0,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -19.866383126493048,
+          "state": {
+            "initialMass_mg": 2641.79712743801,
+            "residualMass_mg": 8.624776181574068,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 315.9622930454176,
+            "softVisibleAreaMm2": 319.3429432662095,
+            "bandThresholdLog": [
+              20,
+              5.959914937947914,
+              5.755384230409835,
+              5.3718891537759355,
+              3.536493222601338
+            ],
+            "cleanThresholdLog": 5.959914937947914,
+            "specks": 299,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2.5,
+          "state": {
+            "initialMass_mg": 675.877070737194,
+            "residualMass_mg": 0,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -50,
+          "state": {
+            "initialMass_mg": 3209.716496529899,
+            "residualMass_mg": 46.576478564877725,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 1355.3802686551978,
+            "softVisibleAreaMm2": 1358.323422230056,
+            "bandThresholdLog": [
+              20,
+              20,
+              5.985072482735337,
+              5.908659633051539,
+              5.526595384632556
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 851,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        }
+      ],
+      "eta": 1.4583333333333335,
+      "mean": 0.910520630430562,
+      "state": {
+        "initialMass_mg": 1472.8199405909443,
+        "residualMass_mg": 0.0022162763853053225,
+        "soiledAreaMm2": 21091.54753136635,
+        "visibleAreaMm2": 0.21162858457941525,
+        "softVisibleAreaMm2": 0.21131921865868844,
+        "bandThresholdLog": [
+          4,
+          -20,
+          -20,
+          -20,
+          -20
+        ],
+        "cleanThresholdLog": -20,
+        "specks": 1,
+        "score": 4,
+        "clean": true,
+        "pooledWater_mL": 0
+      }
+    },
+    {
+      "index": 8,
+      "id": "plate_9123.specks",
+      "kind": "specks",
+      "itemId": "plate_9123",
+      "target": "item",
+      "at": null,
+      "value": 0,
+      "sd": 1.3856406460551018,
+      "fitted": false,
+      "logLikelihood": -0.8593756623256064,
+      "scenarios": [
+        {
+          "eta": 1,
+          "state": {
+            "initialMass_mg": 1472.8199405909443,
+            "residualMass_mg": 0.0022162763853053225,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0.21162858457941525,
+            "softVisibleAreaMm2": 0.21131921865868844,
+            "bandThresholdLog": [
+              4,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 1,
+            "score": 4,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 1212.1308111063663,
+            "residualMass_mg": 0.000001977911071908164,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 5,
+          "state": {
+            "initialMass_mg": 1789.4762278180085,
+            "residualMass_mg": 0.08578536044747018,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 4.3464010103563755,
+            "softVisibleAreaMm2": 4.45894871572687,
+            "bandThresholdLog": [
+              6,
+              1.9559780895300398,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": 1.9559780895300398,
+            "specks": 5,
+            "score": 3,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 997.6882277563074,
+            "residualMass_mg": 4.701910268463866e-11,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 60,
+          "state": {
+            "initialMass_mg": 2174.324078294419,
+            "residualMass_mg": 1.093996654592106,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 49.806042757342304,
+            "softVisibleAreaMm2": 51.36082175676955,
+            "bandThresholdLog": [
+              6,
+              5.606197746486295,
+              4.0309887324314735,
+              0.9735196207306824,
+              -20
+            ],
+            "cleanThresholdLog": 5.606197746486295,
+            "specks": 60,
+            "score": 2,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 821.0971168794579,
+            "residualMass_mg": 0,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 299,
+          "state": {
+            "initialMass_mg": 2641.79712743801,
+            "residualMass_mg": 8.624776181574068,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 315.9622930454176,
+            "softVisibleAreaMm2": 319.3429432662095,
+            "bandThresholdLog": [
+              20,
+              5.959914937947914,
+              5.755384230409835,
+              5.3718891537759355,
+              3.536493222601338
+            ],
+            "cleanThresholdLog": 5.959914937947914,
+            "specks": 299,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 675.877070737194,
+            "residualMass_mg": 0,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 851,
+          "state": {
+            "initialMass_mg": 3209.716496529899,
+            "residualMass_mg": 46.576478564877725,
+            "soiledAreaMm2": 21091.54753136635,
+            "visibleAreaMm2": 1355.3802686551978,
+            "softVisibleAreaMm2": 1358.323422230056,
+            "bandThresholdLog": [
+              20,
+              20,
+              5.985072482735337,
+              5.908659633051539,
+              5.526595384632556
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 851,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        }
+      ],
+      "eta": 1,
+      "mean": 1.2,
+      "state": {
+        "initialMass_mg": 1472.8199405909443,
+        "residualMass_mg": 0.0022162763853053225,
+        "soiledAreaMm2": 21091.54753136635,
+        "visibleAreaMm2": 0.21162858457941525,
+        "softVisibleAreaMm2": 0.21131921865868844,
+        "bandThresholdLog": [
+          4,
+          -20,
+          -20,
+          -20,
+          -20
+        ],
+        "cleanThresholdLog": -20,
+        "specks": 1,
+        "score": 4,
+        "clean": true,
+        "pooledWater_mL": 0
+      }
+    },
+    {
+      "index": 9,
+      "id": "plate_9124.visible_area",
+      "kind": "visible_area",
+      "itemId": "plate_9124",
+      "target": "item",
+      "at": null,
+      "value": 0,
+      "sd": 12.408603424277917,
+      "fitted": true,
+      "logLikelihood": -1.3035201398136818,
+      "scenarios": [
+        {
+          "eta": 13.305925439587902,
+          "state": {
+            "initialMass_mg": 1070.4378924467367,
+            "residualMass_mg": 0.3806985225734415,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 13.122615926927637,
+            "softVisibleAreaMm2": 13.305925439587902,
+            "bandThresholdLog": [
+              6,
+              4.828637590377252,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": 4.828637590377252,
+            "specks": 13,
+            "score": 2,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 1.3287870727048317,
+          "state": {
+            "initialMass_mg": 836.654256736362,
+            "residualMass_mg": 0.02612627686040739,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 1.3296214378767708,
+            "softVisibleAreaMm2": 1.3287870727048317,
+            "bandThresholdLog": [
+              6,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 1,
+            "score": 4,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 130.01337568265663,
+          "state": {
+            "initialMass_mg": 1369.518239596345,
+            "residualMass_mg": 3.877518213128187,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 128.41945917518706,
+            "softVisibleAreaMm2": 130.01337568265663,
+            "bandThresholdLog": [
+              20,
+              5.920982364021533,
+              5.421064714687137,
+              4.483719122185143,
+              -20
+            ],
+            "cleanThresholdLog": 5.920982364021533,
+            "specks": 113,
+            "score": 1,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 653.9305084957044,
+            "residualMass_mg": 0.0000718316816050243,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 816.4586069355656,
+          "state": {
+            "initialMass_mg": 1752.0927423568057,
+            "residualMass_mg": 31.439240247651412,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 815.5144430539705,
+            "softVisibleAreaMm2": 816.4586069355656,
+            "bandThresholdLog": [
+              20,
+              20,
+              5.984162379395228,
+              5.862510465293694,
+              5.254250894786024
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 493,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 511.13409364331045,
+            "residualMass_mg": 6.089911974776302e-10,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2717.099745954604,
+          "state": {
+            "initialMass_mg": 2241.6039905727016,
+            "residualMass_mg": 153.24225795371888,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 2723.954373777963,
+            "softVisibleAreaMm2": 2717.099745954604,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              20,
+              5.974011969460142
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 69,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 399.4874214611175,
+            "residualMass_mg": 0,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 5736.159528795227,
+          "state": {
+            "initialMass_mg": 2867.917201443268,
+            "residualMass_mg": 485.03163635213724,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 5744.542614045043,
+            "softVisibleAreaMm2": 5736.159528795227,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              20,
+              20
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 0,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        }
+      ],
+      "eta": 13.305925439587902,
+      "mean": 16.208848406701133,
+      "state": {
+        "initialMass_mg": 1070.4378924467367,
+        "residualMass_mg": 0.3806985225734415,
+        "soiledAreaMm2": 10216.273756921291,
+        "visibleAreaMm2": 13.122615926927637,
+        "softVisibleAreaMm2": 13.305925439587902,
+        "bandThresholdLog": [
+          6,
+          4.828637590377252,
+          -20,
+          -20,
+          -20
+        ],
+        "cleanThresholdLog": 4.828637590377252,
+        "specks": 13,
+        "score": 2,
+        "clean": false,
+        "pooledWater_mL": 0
+      }
+    },
+    {
+      "index": 10,
+      "id": "plate_9124.clean",
+      "kind": "clean",
+      "itemId": "plate_9124",
+      "target": "item",
+      "at": null,
+      "value": true,
+      "sd": 0.13999999999999999,
+      "fitted": false,
+      "logLikelihood": -0.9959941043468358,
+      "scenarios": [
+        {
+          "eta": -16.09545863459084,
+          "state": {
+            "initialMass_mg": 1070.4378924467367,
+            "residualMass_mg": 0.3806985225734415,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 13.122615926927637,
+            "softVisibleAreaMm2": 13.305925439587902,
+            "bandThresholdLog": [
+              6,
+              4.828637590377252,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": 4.828637590377252,
+            "specks": 13,
+            "score": 2,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 1.4583333333333335,
+          "state": {
+            "initialMass_mg": 836.654256736362,
+            "residualMass_mg": 0.02612627686040739,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 1.3296214378767708,
+            "softVisibleAreaMm2": 1.3287870727048317,
+            "bandThresholdLog": [
+              6,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 1,
+            "score": 4,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -19.73660788007178,
+          "state": {
+            "initialMass_mg": 1369.518239596345,
+            "residualMass_mg": 3.877518213128187,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 128.41945917518706,
+            "softVisibleAreaMm2": 130.01337568265663,
+            "bandThresholdLog": [
+              20,
+              5.920982364021533,
+              5.421064714687137,
+              4.483719122185143,
+              -20
+            ],
+            "cleanThresholdLog": 5.920982364021533,
+            "specks": 113,
+            "score": 1,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2.5,
+          "state": {
+            "initialMass_mg": 653.9305084957044,
+            "residualMass_mg": 0.0000718316816050243,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -50,
+          "state": {
+            "initialMass_mg": 1752.0927423568057,
+            "residualMass_mg": 31.439240247651412,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 815.5144430539705,
+            "softVisibleAreaMm2": 816.4586069355656,
+            "bandThresholdLog": [
+              20,
+              20,
+              5.984162379395228,
+              5.862510465293694,
+              5.254250894786024
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 493,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2.5,
+          "state": {
+            "initialMass_mg": 511.13409364331045,
+            "residualMass_mg": 6.089911974776302e-10,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -50,
+          "state": {
+            "initialMass_mg": 2241.6039905727016,
+            "residualMass_mg": 153.24225795371888,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 2723.954373777963,
+            "softVisibleAreaMm2": 2717.099745954604,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              20,
+              5.974011969460142
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 69,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 2.5,
+          "state": {
+            "initialMass_mg": 399.4874214611175,
+            "residualMass_mg": 0,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": -50,
+          "state": {
+            "initialMass_mg": 2867.917201443268,
+            "residualMass_mg": 485.03163635213724,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 5744.542614045043,
+            "softVisibleAreaMm2": 5736.159528795227,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              20,
+              20
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 0,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        }
+      ],
+      "eta": -16.09545863459084,
+      "mean": 0.02,
+      "state": {
+        "initialMass_mg": 1070.4378924467367,
+        "residualMass_mg": 0.3806985225734415,
+        "soiledAreaMm2": 10216.273756921291,
+        "visibleAreaMm2": 13.122615926927637,
+        "softVisibleAreaMm2": 13.305925439587902,
+        "bandThresholdLog": [
+          6,
+          4.828637590377252,
+          -20,
+          -20,
+          -20
+        ],
+        "cleanThresholdLog": 4.828637590377252,
+        "specks": 13,
+        "score": 2,
+        "clean": false,
+        "pooledWater_mL": 0
+      }
+    },
+    {
+      "index": 11,
+      "id": "plate_9124.specks",
+      "kind": "specks",
+      "itemId": "plate_9124",
+      "target": "item",
+      "at": null,
+      "value": 0,
+      "sd": 10.015987220439131,
+      "fitted": false,
+      "logLikelihood": -1.4210030558930202,
+      "scenarios": [
+        {
+          "eta": 13,
+          "state": {
+            "initialMass_mg": 1070.4378924467367,
+            "residualMass_mg": 0.3806985225734415,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 13.122615926927637,
+            "softVisibleAreaMm2": 13.305925439587902,
+            "bandThresholdLog": [
+              6,
+              4.828637590377252,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": 4.828637590377252,
+            "specks": 13,
+            "score": 2,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 1,
+          "state": {
+            "initialMass_mg": 836.654256736362,
+            "residualMass_mg": 0.02612627686040739,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 1.3296214378767708,
+            "softVisibleAreaMm2": 1.3287870727048317,
+            "bandThresholdLog": [
+              6,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 1,
+            "score": 4,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 113,
+          "state": {
+            "initialMass_mg": 1369.518239596345,
+            "residualMass_mg": 3.877518213128187,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 128.41945917518706,
+            "softVisibleAreaMm2": 130.01337568265663,
+            "bandThresholdLog": [
+              20,
+              5.920982364021533,
+              5.421064714687137,
+              4.483719122185143,
+              -20
+            ],
+            "cleanThresholdLog": 5.920982364021533,
+            "specks": 113,
+            "score": 1,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 653.9305084957044,
+            "residualMass_mg": 0.0000718316816050243,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 493,
+          "state": {
+            "initialMass_mg": 1752.0927423568057,
+            "residualMass_mg": 31.439240247651412,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 815.5144430539705,
+            "softVisibleAreaMm2": 816.4586069355656,
+            "bandThresholdLog": [
+              20,
+              20,
+              5.984162379395228,
+              5.862510465293694,
+              5.254250894786024
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 493,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 511.13409364331045,
+            "residualMass_mg": 6.089911974776302e-10,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 69,
+          "state": {
+            "initialMass_mg": 2241.6039905727016,
+            "residualMass_mg": 153.24225795371888,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 2723.954373777963,
+            "softVisibleAreaMm2": 2717.099745954604,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              20,
+              5.974011969460142
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 69,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 399.4874214611175,
+            "residualMass_mg": 0,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 0,
+            "softVisibleAreaMm2": 0,
+            "bandThresholdLog": [
+              -20,
+              -20,
+              -20,
+              -20,
+              -20
+            ],
+            "cleanThresholdLog": -20,
+            "specks": 0,
+            "score": 5,
+            "clean": true,
+            "pooledWater_mL": 0
+          }
+        },
+        {
+          "eta": 0,
+          "state": {
+            "initialMass_mg": 2867.917201443268,
+            "residualMass_mg": 485.03163635213724,
+            "soiledAreaMm2": 10216.273756921291,
+            "visibleAreaMm2": 5744.542614045043,
+            "softVisibleAreaMm2": 5736.159528795227,
+            "bandThresholdLog": [
+              20,
+              20,
+              20,
+              20,
+              20
+            ],
+            "cleanThresholdLog": 20,
+            "specks": 0,
+            "score": 0,
+            "clean": false,
+            "pooledWater_mL": 0
+          }
+        }
+      ],
+      "eta": 13,
+      "mean": 13.2,
+      "state": {
+        "initialMass_mg": 1070.4378924467367,
+        "residualMass_mg": 0.3806985225734415,
+        "soiledAreaMm2": 10216.273756921291,
+        "visibleAreaMm2": 13.122615926927637,
+        "softVisibleAreaMm2": 13.305925439587902,
+        "bandThresholdLog": [
+          6,
+          4.828637590377252,
+          -20,
+          -20,
+          -20
+        ],
+        "cleanThresholdLog": 4.828637590377252,
+        "specks": 13,
+        "score": 2,
+        "clean": false,
+        "pooledWater_mL": 0
+      }
+    }
+  ]
+}

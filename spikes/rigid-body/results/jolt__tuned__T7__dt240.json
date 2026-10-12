@@ -1,0 +1,42 @@
+{
+ "engine": "jolt",
+ "preset": "tuned",
+ "test": "T7",
+ "hz": 240,
+ "tag": null,
+ "cfg": {
+  "ccd": false,
+  "sleep": true,
+  "penetrationSlop": 0.0001,
+  "speculativeContactDistance": 0.005,
+  "convexRadius": 0.0002,
+  "hullTolerance": 0.00001,
+  "velocitySteps": 10,
+  "positionSteps": 4,
+  "manifoldTolerance": 0.0001,
+  "manifoldReduction": false,
+  "pointVelocitySleepThreshold": 0.005,
+  "minVelocityForRestitution": 0.2,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {},
+ "wallSeconds": 0.48275550000000006,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:28:45.395Z",
+ "summary": {
+  "sameProcessIdentical": true,
+  "freshProcessIdentical": true,
+  "hashA": "5e58bc50bca5c7a3",
+  "hashB": "5e58bc50bca5c7a3",
+  "hashChild": "5e58bc50bca5c7a3",
+  "snapshotReplay": {
+   "identical": true,
+   "h1": "5e58bc50bca5c7a3",
+   "h2": "5e58bc50bca5c7a3",
+   "saveMs": 0.6233749999999532,
+   "restoreMs": 0.36483399999997346,
+   "snapshotBytes": null
+  }
+ },
+ "runs": []
+}

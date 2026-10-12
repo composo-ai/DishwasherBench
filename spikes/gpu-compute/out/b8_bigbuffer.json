@@ -1,0 +1,303 @@
+{
+  "when": "2026-10-08T15:21:03.177Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 202,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "cases": [
+    {
+      "label": "3.5 GiB",
+      "bytes": 3758096384,
+      "words": 939524096,
+      "fillMs": 186.23475000000008,
+      "fillError": null,
+      "arrayLengthSeen": 939524096,
+      "arrayLengthExpected": 939524096,
+      "probes": [
+        {
+          "index": 0,
+          "byteOffsetGiB": "0.000",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "index": 1,
+          "byteOffsetGiB": "0.000",
+          "got": 1,
+          "ok": true
+        },
+        {
+          "index": 536870911,
+          "byteOffsetGiB": "2.000",
+          "got": 536870911,
+          "ok": true
+        },
+        {
+          "index": 536870912,
+          "byteOffsetGiB": "2.000",
+          "got": 536870912,
+          "ok": true
+        },
+        {
+          "index": 469762048,
+          "byteOffsetGiB": "1.750",
+          "got": 469762048,
+          "ok": true
+        },
+        {
+          "index": 939524094,
+          "byteOffsetGiB": "3.500",
+          "got": 939524094,
+          "ok": true
+        },
+        {
+          "index": 939524095,
+          "byteOffsetGiB": "3.500",
+          "got": 939524095,
+          "ok": true
+        }
+      ],
+      "allOk": true,
+      "deviceLost": null,
+      "uncapturedErrors": 0
+    },
+    {
+      "label": "4 GiB - 4 KiB",
+      "bytes": 4294963200,
+      "words": 1073740800,
+      "fillMs": 198.07233399999996,
+      "fillError": null,
+      "arrayLengthSeen": 1073740800,
+      "arrayLengthExpected": 1073740800,
+      "probes": [
+        {
+          "index": 0,
+          "byteOffsetGiB": "0.000",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "index": 1,
+          "byteOffsetGiB": "0.000",
+          "got": 1,
+          "ok": true
+        },
+        {
+          "index": 536870911,
+          "byteOffsetGiB": "2.000",
+          "got": 536870911,
+          "ok": true
+        },
+        {
+          "index": 536870912,
+          "byteOffsetGiB": "2.000",
+          "got": 536870912,
+          "ok": true
+        },
+        {
+          "index": 536870400,
+          "byteOffsetGiB": "2.000",
+          "got": 536870400,
+          "ok": true
+        },
+        {
+          "index": 1073740798,
+          "byteOffsetGiB": "4.000",
+          "got": 1073740798,
+          "ok": true
+        },
+        {
+          "index": 1073740799,
+          "byteOffsetGiB": "4.000",
+          "got": 1073740799,
+          "ok": true
+        }
+      ],
+      "allOk": true,
+      "deviceLost": null,
+      "uncapturedErrors": 0
+    },
+    {
+      "label": "4 GiB exactly",
+      "bytes": 4294967296,
+      "words": 1073741824,
+      "fillMs": 199.5469579999999,
+      "fillError": null,
+      "arrayLengthSeen": 0,
+      "arrayLengthExpected": 1073741824,
+      "probes": [
+        {
+          "index": 0,
+          "byteOffsetGiB": "0.000",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "index": 1,
+          "byteOffsetGiB": "0.000",
+          "got": 1,
+          "ok": true
+        },
+        {
+          "index": 536870911,
+          "byteOffsetGiB": "2.000",
+          "got": 536870911,
+          "ok": true
+        },
+        {
+          "index": 536870912,
+          "byteOffsetGiB": "2.000",
+          "got": 536870912,
+          "ok": true
+        },
+        {
+          "index": 536870912,
+          "byteOffsetGiB": "2.000",
+          "got": 536870912,
+          "ok": true
+        },
+        {
+          "index": 1073741822,
+          "byteOffsetGiB": "4.000",
+          "got": 1073741822,
+          "ok": true
+        },
+        {
+          "index": 1073741823,
+          "byteOffsetGiB": "4.000",
+          "got": 1073741823,
+          "ok": true
+        }
+      ],
+      "allOk": true,
+      "deviceLost": null,
+      "uncapturedErrors": 0
+    },
+    {
+      "label": "4 GiB + 4 KiB",
+      "bytes": 4294971392,
+      "words": 1073742848,
+      "fillMs": 164.86266700000033,
+      "fillError": null,
+      "arrayLengthSeen": 1024,
+      "arrayLengthExpected": 1073742848,
+      "probes": [
+        {
+          "index": 0,
+          "byteOffsetGiB": "0.000",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "index": 1,
+          "byteOffsetGiB": "0.000",
+          "got": 1,
+          "ok": true
+        },
+        {
+          "index": 536870911,
+          "byteOffsetGiB": "2.000",
+          "got": 0,
+          "ok": false
+        },
+        {
+          "index": 536870912,
+          "byteOffsetGiB": "2.000",
+          "got": 0,
+          "ok": false
+        },
+        {
+          "index": 536871424,
+          "byteOffsetGiB": "2.000",
+          "got": 0,
+          "ok": false
+        },
+        {
+          "index": 1073742846,
+          "byteOffsetGiB": "4.000",
+          "got": 0,
+          "ok": false
+        },
+        {
+          "index": 1073742847,
+          "byteOffsetGiB": "4.000",
+          "got": 0,
+          "ok": false
+        }
+      ],
+      "allOk": false,
+      "deviceLost": null,
+      "uncapturedErrors": 0
+    },
+    {
+      "label": "4.5 GiB",
+      "bytes": 4831838208,
+      "words": 1207959552,
+      "fillMs": 182.23770799999966,
+      "fillError": null,
+      "arrayLengthSeen": 134217728,
+      "arrayLengthExpected": 1207959552,
+      "probes": [
+        {
+          "index": 0,
+          "byteOffsetGiB": "0.000",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "index": 1,
+          "byteOffsetGiB": "0.000",
+          "got": 1,
+          "ok": true
+        },
+        {
+          "index": 536870911,
+          "byteOffsetGiB": "2.000",
+          "got": 0,
+          "ok": false
+        },
+        {
+          "index": 536870912,
+          "byteOffsetGiB": "2.000",
+          "got": 0,
+          "ok": false
+        },
+        {
+          "index": 603979776,
+          "byteOffsetGiB": "2.250",
+          "got": 0,
+          "ok": false
+        },
+        {
+          "index": 1207959550,
+          "byteOffsetGiB": "4.500",
+          "got": 0,
+          "ok": false
+        },
+        {
+          "index": 1207959551,
+          "byteOffsetGiB": "4.500",
+          "got": 0,
+          "ok": false
+        }
+      ],
+      "allOk": false,
+      "window": {
+        "offset": 4295032832,
+        "size": 67108864,
+        "error": null,
+        "arrayLengthSeen": 16777216,
+        "arrayLengthExpected": 16777216,
+        "first": 268435456,
+        "last": 285212671,
+        "ok": true,
+        "valueAtWrappedOffset": 16384,
+        "wrappedOffsetWasOverwritten": false
+      },
+      "deviceLost": null,
+      "uncapturedErrors": 0
+    }
+  ]
+}

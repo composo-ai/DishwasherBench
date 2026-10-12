@@ -1,0 +1,3113 @@
+{
+ "format": "spotless-standard-load/1",
+ "name": "owner-2026-10-10",
+ "description": "The owner's own load of 10 October 2026, placed by hand after his photograph of the loaded lower basket: stand-ins from the catalogue, items resting on items as he loads them.",
+ "level": {
+  "id": "owner-2026-10-10",
+  "title": "The owner's load of 10 October 2026",
+  "summary": "The lower basket as the owner of the machine loaded it on the morning of 10 October 2026, with what can be seen of his upper basket: plates in the rear rows, a baking tray and two chopping boards along the walls, bowls and a frying pan leaning on one another, the cutlery basket at the front right.",
+  "machineId": "bosch_smv4hax40g",
+  "config": null,
+  "racks": {},
+  "programmeId": "auto_145",
+  "items": [
+   {
+    "id": "plate_01",
+    "itemType": "dinner_plate_porcelain_270",
+    "points": 10,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 2.36,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce from dinner, dried overnight"
+     }
+    ]
+   },
+   {
+    "id": "plate_02",
+    "itemType": "dinner_plate_porcelain_270",
+    "points": 10,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 2.36,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce from dinner, dried overnight"
+     }
+    ]
+   },
+   {
+    "id": "baking_tray_01",
+    "itemType": "baking_tray_half_sheet",
+    "points": 10,
+    "soils": [
+     {
+      "type": "lard_tallow",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 10.5,
+      "ageH": 12,
+      "heatHistory": "cooked",
+      "description": "Roasting fat, set"
+     }
+    ]
+   },
+   {
+    "id": "board_brown_01",
+    "itemType": "chopping_board_pe_340",
+    "points": 10,
+    "soils": [
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "top",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 2.51,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Shreds of vegetables on the cutting side"
+     }
+    ]
+   },
+   {
+    "id": "board_white_01",
+    "itemType": "chopping_board_pp_375",
+    "points": 10,
+    "soils": [
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "top",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 3.07,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Shreds of vegetables on the cutting side"
+     }
+    ]
+   },
+   {
+    "id": "pasta_bowl_01",
+    "itemType": "pasta_bowl_porcelain_230",
+    "points": 10,
+    "soils": [
+     {
+      "type": "pasta_starch",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.866,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Starchy film from pasta, dried on"
+     }
+    ]
+   },
+   {
+    "id": "pasta_bowl_02",
+    "itemType": "pasta_bowl_porcelain_230",
+    "points": 10,
+    "soils": [
+     {
+      "type": "pasta_starch",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.866,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Starchy film from pasta, dried on"
+     }
+    ]
+   },
+   {
+    "id": "serving_bowl_01",
+    "itemType": "serving_bowl_vitrelle_216",
+    "points": 10,
+    "soils": [
+     {
+      "type": "vegetable_oil",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.323,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Salad dressing"
+     }
+    ]
+   },
+   {
+    "id": "cereal_bowl_01",
+    "itemType": "cereal_bowl_porcelain_160",
+    "points": 10,
+    "soils": [
+     {
+      "type": "porridge",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 7.12,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Porridge from breakfast"
+     }
+    ]
+   },
+   {
+    "id": "frying_pan_01",
+    "itemType": "frying_pan_clad_254",
+    "points": 10,
+    "soils": [
+     {
+      "type": "egg_cooked",
+      "regions": [
+       {
+        "region": "interior_base",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 2.06,
+      "ageH": 12,
+      "heatHistory": "cooked",
+      "description": "Fried egg stuck to the bottom"
+     }
+    ]
+   },
+   {
+    "id": "fork_01",
+    "itemType": "dinner_fork_185",
+    "points": 10,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.142,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce between the tines"
+     }
+    ]
+   },
+   {
+    "id": "fork_02",
+    "itemType": "dinner_fork_185",
+    "points": 10,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.142,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce between the tines"
+     }
+    ]
+   },
+   {
+    "id": "fork_03",
+    "itemType": "dinner_fork_185",
+    "points": 10,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.142,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce between the tines"
+     }
+    ]
+   },
+   {
+    "id": "fork_04",
+    "itemType": "dinner_fork_185",
+    "points": 10,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.142,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce between the tines"
+     }
+    ]
+   },
+   {
+    "id": "fork_05",
+    "itemType": "dinner_fork_185",
+    "points": 10,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.142,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce between the tines"
+     }
+    ]
+   },
+   {
+    "id": "fork_06",
+    "itemType": "dinner_fork_185",
+    "points": 10,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.142,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce between the tines"
+     }
+    ]
+   },
+   {
+    "id": "knife_01",
+    "itemType": "dinner_knife_210",
+    "points": 10,
+    "soils": [
+     {
+      "type": "butter_margarine",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.0163,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Butter on the blade"
+     }
+    ]
+   },
+   {
+    "id": "knife_02",
+    "itemType": "dinner_knife_210",
+    "points": 10,
+    "soils": [
+     {
+      "type": "butter_margarine",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.0163,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Butter on the blade"
+     }
+    ]
+   },
+   {
+    "id": "knife_03",
+    "itemType": "dinner_knife_210",
+    "points": 10,
+    "soils": [
+     {
+      "type": "butter_margarine",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.0163,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Butter on the blade"
+     }
+    ]
+   },
+   {
+    "id": "knife_04",
+    "itemType": "dinner_knife_210",
+    "points": 10,
+    "soils": [
+     {
+      "type": "butter_margarine",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.0163,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Butter on the blade"
+     }
+    ]
+   },
+   {
+    "id": "spoon_01",
+    "itemType": "dessert_spoon_160",
+    "points": 10,
+    "soils": [
+     {
+      "type": "porridge",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.6
+       }
+      ],
+      "amountG": 0.636,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Porridge in the bowl of the spoon"
+     }
+    ]
+   },
+   {
+    "id": "spoon_02",
+    "itemType": "dessert_spoon_160",
+    "points": 10,
+    "soils": [
+     {
+      "type": "porridge",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.6
+       }
+      ],
+      "amountG": 0.636,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Porridge in the bowl of the spoon"
+     }
+    ]
+   },
+   {
+    "id": "spoon_03",
+    "itemType": "dessert_spoon_160",
+    "points": 10,
+    "soils": [
+     {
+      "type": "porridge",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.6
+       }
+      ],
+      "amountG": 0.636,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Porridge in the bowl of the spoon"
+     }
+    ]
+   },
+   {
+    "id": "spoon_04",
+    "itemType": "dessert_spoon_160",
+    "points": 10,
+    "soils": [
+     {
+      "type": "porridge",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.6
+       }
+      ],
+      "amountG": 0.636,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Porridge in the bowl of the spoon"
+     }
+    ]
+   },
+   {
+    "id": "teaspoon_01",
+    "itemType": "teaspoon_130",
+    "points": 10,
+    "soils": [
+     {
+      "type": "coffee",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.0000881,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Coffee dried in the bowl"
+     }
+    ]
+   },
+   {
+    "id": "teaspoon_02",
+    "itemType": "teaspoon_130",
+    "points": 10,
+    "soils": [
+     {
+      "type": "coffee",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.0000881,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Coffee dried in the bowl"
+     }
+    ]
+   },
+   {
+    "id": "tongs_01",
+    "itemType": "turner_nylon_279",
+    "points": 10,
+    "soils": [
+     {
+      "type": "lard_tallow",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 1.22,
+      "ageH": 12,
+      "heatHistory": "cooked",
+      "description": "Fat on the working end"
+     }
+    ]
+   },
+   {
+    "id": "peeler_01",
+    "itemType": "swivel_peeler_180",
+    "points": 10,
+    "soils": [
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.0758,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Peelings on the blade"
+     }
+    ]
+   },
+   {
+    "id": "mug_01",
+    "itemType": "mug_ceramic_300",
+    "points": 10,
+    "soils": [
+     {
+      "type": "coffee",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.6
+       }
+      ],
+      "amountG": 0.0018,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Coffee ring inside"
+     }
+    ]
+   },
+   {
+    "id": "glass_01",
+    "itemType": "tumbler_360",
+    "points": 10,
+    "soils": [
+     {
+      "type": "milk_film",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.367,
+      "ageH": 5,
+      "heatHistory": "none",
+      "description": "A film of milk inside"
+     }
+    ]
+   },
+   {
+    "id": "glass_02",
+    "itemType": "tumbler_360",
+    "points": 10,
+    "soils": [
+     {
+      "type": "milk_film",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.367,
+      "ageH": 5,
+      "heatHistory": "none",
+      "description": "A film of milk inside"
+     }
+    ]
+   },
+   {
+    "id": "container_01",
+    "itemType": "food_container_600ml",
+    "points": 10,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 3.36,
+      "ageH": 24,
+      "heatHistory": "none",
+      "description": "Tomato sauce from a packed lunch"
+     }
+    ]
+   },
+   {
+    "id": "container_02",
+    "itemType": "food_container_600ml",
+    "points": 10,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 3.36,
+      "ageH": 24,
+      "heatHistory": "none",
+      "description": "Tomato sauce from a packed lunch"
+     }
+    ]
+   }
+  ],
+  "rules": {
+   "track": "one_shot",
+   "actionsMax": 400,
+   "queriesMax": 495,
+   "washesMax": 1,
+   "mechanicalChecks": true
+  },
+  "seed": 20261010,
+  "manual": "Frames. All frames are right-handed with z up. In the tub frame the origin is on the lower spray-arm axis at the tub floor, +x is to the right as you face the open machine and +y towards the back. Each basket has its own frame with the origin at its front-left corner on top of its base grid; the cutlery basket has one too. A position is that of the item's reference point (the centre of its bounding box), in millimetres.\n\nBaskets. A basket can be loaded only while it is pulled out (set_rack with option position); pushed in, it is closed to place. The upper basket, when pulled out, hangs over the lower one, so push it in before reaching the lower basket from above. Items travel with their basket and may shift when it moves.\n\nPlacing. place puts an item at a pose: the pose must not overlap anything, and the item must be able to reach it straight down from above (mode drop), or along insert_dir pushed with a limited force (mode insert, which can nudge neighbours aside). The item is lowered until it touches, let go, and then does whatever gravity and friction make it do. Orientation is a preset of the item plus yaw, pitch and roll in whole degrees, or a quaternion. remove takes an item out again; what leaned on it may fall. An item that ends on the kitchen floor goes back to the counter at once (the action is still charged); one that ends on the open door stays there, and is left out of the wash if it is still neither in a basket nor inside the tub when the cycle starts.\n\nLooking. list_slots with an item_id gives the places suggested for that item in a basket, most useful first and a screenful at a time: for each place the position and orientation in which a hand seats the item there (a plate or a lid with its lower edge between two tines, laid back the way they lean; a piece of cutlery let down by its lower end into a cell of the cutlery basket; a piece that leans on a rest or stands on a shelf, where the basket has one for it) and whether the place is free now. Without an item_id it gives the basket as geometry: its rows of tines and its slots, cells, rests and shelves. A piece that has no places of its own goes wherever a pose is free. preview tests a pose without placing and costs no query, get_state gives every settled pose and contact, check_load pushes the baskets in, turns the spray arms by hand and tests the door and the detergent dispenser. None of these says anything about how well an item will wash.\n\nWashing. start_cycle pushes the baskets in and washes what is loaded on the programme the level card names. Rejected calls cost nothing."
+ },
+ "policy": {
+  "name": "careful",
+  "seed": 0,
+  "spaced": false,
+  "mistakes": null,
+  "by_hand": "owner-2026-10-10"
+ },
+ "offered": [
+  "baking_tray_01",
+  "board_brown_01",
+  "board_white_01",
+  "cereal_bowl_01",
+  "container_01",
+  "container_02",
+  "fork_01",
+  "fork_02",
+  "fork_03",
+  "fork_04",
+  "fork_05",
+  "fork_06",
+  "frying_pan_01",
+  "glass_01",
+  "glass_02",
+  "knife_01",
+  "knife_02",
+  "knife_03",
+  "knife_04",
+  "mug_01",
+  "pasta_bowl_01",
+  "pasta_bowl_02",
+  "peeler_01",
+  "plate_01",
+  "plate_02",
+  "serving_bowl_01",
+  "spoon_01",
+  "spoon_02",
+  "spoon_03",
+  "spoon_04",
+  "teaspoon_01",
+  "teaspoon_02",
+  "tongs_01"
+ ],
+ "placed": [
+  "board_brown_01",
+  "board_white_01",
+  "cereal_bowl_01",
+  "container_01",
+  "container_02",
+  "fork_01",
+  "fork_02",
+  "fork_03",
+  "fork_04",
+  "fork_05",
+  "fork_06",
+  "frying_pan_01",
+  "glass_01",
+  "glass_02",
+  "knife_01",
+  "knife_02",
+  "knife_03",
+  "knife_04",
+  "mug_01",
+  "pasta_bowl_01",
+  "pasta_bowl_02",
+  "peeler_01",
+  "plate_01",
+  "plate_02",
+  "serving_bowl_01",
+  "spoon_01",
+  "spoon_02",
+  "spoon_03",
+  "spoon_04",
+  "teaspoon_01",
+  "teaspoon_02",
+  "tongs_01"
+ ],
+ "left_out": [
+  {
+   "item_id": "baking_tray_01",
+   "reason": "taken out again: where the photograph has it, it stopped the lower basket from sliding in under the upper one"
+  }
+ ],
+ "mistakes": [],
+ "notes": [
+  "baking_tray_01 (in the photograph: on its long edge against the left wall, its inside to the middle): let go at 36, 256, 182 mm, came to rest 10 mm and 4 degrees from there, stable, on lower_rack.rim, lower_rack.tine_row_ml, lower_rack.tine_row_r1, lower_rack.tine_row_r2",
+  "plate_01 (in the photograph: on edge in the third gap of the rear rows from the left, leaning 3 degrees outwards): let go at 81, 368, 143 mm, came to rest 6.2 mm and 2 degrees from there, stable, on lower_rack.tine_row_r1, lower_rack.tine_row_r2",
+  "plate_02 (in the photograph: on edge near the right end of the rear rows, leaning outwards): let go at 467, 368, 141 mm, came to rest 7 mm and 3 degrees from there, stable, on lower_rack.tine_row_r1, lower_rack.tine_row_r2",
+  "board_brown_01 (in the photograph: on its long edge across the back, between the two plates): let go at 272, 482, 124 mm, came to rest 6.1 mm and 3 degrees from there, stable, on lower_rack.floor.y, lower_rack.rim",
+  "board_white_01 (in the photograph: on its long edge against the right wall, beside the cutlery basket): let go at 508, 240, 146 mm, came to rest 0.5 mm and 1 degrees from there, stable, on lower_rack.rim, lower_rack.tine_row_fr, lower_rack.tine_row_mr, lower_rack.tine_row_r1, lower_rack.tine_row_r2",
+  "frying_pan_01 (in the photograph: lying tilted against the right-hand plate, its inside up and to the left, handle to the front): let go at 345, 258, 208 mm, came to rest 29.8 mm and 21 degrees from there, stable, on board_brown_01, cutlery_basket.foot.2.rear, lower_rack.tine_row_r2, plate_02",
+  "pasta_bowl_01 (in the photograph: on edge in the middle of the rear rows, leaning on the pan): let go at 230, 370, 170 mm, came to rest 58.7 mm and 14 degrees from there, stable, on board_brown_01, frying_pan_01, lower_rack.tine_row_r1, lower_rack.tine_row_r2",
+  "pasta_bowl_02 (in the photograph: on edge to the left of the middle, leaning outwards): let go at 140, 240, 170 mm, came to rest 15 mm and 2 degrees from there, stable, on lower_rack.tine_row_ml, lower_rack.tine_row_r2, plate_01",
+  "serving_bowl_01 (in the photograph: on edge at the front left, large, leaning): let go at 220, 150, 130 mm, came to rest 46.3 mm and 13 degrees from there, stable, on cutlery_basket.foot.1.floor, cutlery_basket.foot.1.left, lower_rack.tine_row_fr, lower_rack.tine_row_mr, pasta_bowl_02",
+  "cereal_bowl_01 (in the photograph: tilted in front of the serving bowl, beside the cutlery basket): let go at 240, 110, 110 mm, came to rest 21.3 mm and 10 degrees from there, stable, on cutlery_basket.foot.1.left, serving_bowl_01",
+  "baking_tray_01 stopped the lower basket from sliding in under the upper basket and was taken out; in the owner's machine it went in",
+  "mug_01 (in the photograph: a patterned mug at the front right of the upper basket): let go at 413, 92, 76 mm, came to rest 3.8 mm and 4 degrees from there, stable, on upper_rack.floor.y, upper_rack_fittings.shelf.cup_front",
+  "container_01 (in the photograph: a clear plastic container at the left): let go at 185, 330, 150 mm, came to rest 63.2 mm and 0 degrees from there, stable, on upper_rack.tine_row_a, upper_rack.tine_row_b",
+  "container_02 (in the photograph: a second container in front of the first): let go at 175, 150, 150 mm, came to rest 0.8 mm and 0 degrees from there, stable, on upper_rack.tine_row_a2, upper_rack.tine_row_b2",
+  "glass_01 (in the photograph: a glass to the right of the middle): let go at 325, 150, 170 mm, came to rest 15.7 mm and 20 degrees from there, stable, on upper_rack.floor.y, upper_rack.tine_row_c_front",
+  "glass_02 (in the photograph: a second glass behind it): let go at 305, 330, 170 mm, came to rest 36 mm and 20 degrees from there, stable, on upper_rack.floor.y, upper_rack.tine_row_c_rear",
+  "board_brown_01 did not stay where it was when the lower basket was pushed in: it moved 2 mm and turned 10 degrees",
+  "fork_05 did not stay where it was when the lower basket was pushed in: it moved 10 mm and turned 25 degrees",
+  "fork_06 did not stay where it was when the lower basket was pushed in: it moved 10 mm and turned 19 degrees",
+  "knife_01 did not stay where it was when the lower basket was pushed in: it moved 9 mm and turned 1 degrees",
+  "knife_02 did not stay where it was when the lower basket was pushed in: it moved 10 mm and turned 2 degrees",
+  "knife_03 did not stay where it was when the lower basket was pushed in: it moved 10 mm and turned 2 degrees",
+  "knife_04 did not stay where it was when the lower basket was pushed in: it moved 10 mm and turned 1 degrees",
+  "pasta_bowl_01 did not stay where it was when the lower basket was pushed in: it moved 6 mm and turned 2 degrees",
+  "peeler_01 did not stay where it was when the lower basket was pushed in: it moved 7 mm and turned 38 degrees",
+  "spoon_01 did not stay where it was when the lower basket was pushed in: it moved 6 mm and turned 0 degrees",
+  "spoon_02 did not stay where it was when the lower basket was pushed in: it moved 20 mm and turned 45 degrees",
+  "spoon_03 did not stay where it was when the lower basket was pushed in: it moved 9 mm and turned 0 degrees",
+  "spoon_04 did not stay where it was when the lower basket was pushed in: it moved 9 mm and turned 14 degrees",
+  "teaspoon_02 did not stay where it was when the lower basket was pushed in: it moved 8 mm and turned 12 degrees",
+  "tongs_01 did not stay where it was when the lower basket was pushed in: it moved 37 mm and turned 24 degrees",
+  "peeler_01 is not stable where it lies"
+ ],
+ "counts": {
+  "offered": 33,
+  "placed": 32,
+  "placedByBasket": {
+   "lower_rack": 9,
+   "upper_rack": 5,
+   "cutlery_basket": 18
+  },
+  "placeCalls": 34,
+  "placeAccepted": 33,
+  "placeRejected": {
+   "collision_at_pose": 1
+  },
+  "attemptsPerPlaced": 1.06,
+  "acceptedPerPlaced": 1.03,
+  "removes": 1,
+  "retries": 0,
+  "rackMoves": 4,
+  "previews": 0,
+  "checks": 1,
+  "actionsUsed": 38,
+  "actionsMax": 400,
+  "queriesUsed": 26,
+  "queriesMax": 495,
+  "unstable": [
+   "peeler_01"
+  ]
+ },
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [
+   {
+    "item_id": "board_white_01",
+    "rack": "lower_rack",
+    "beyond_mm": 5.4
+   }
+  ],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "load_manifest": {
+  "benchmark_version": "spotless-0.2.0/levels-starter",
+  "level_id": "owner-2026-10-10",
+  "machine_id": "bosch_smv4hax40g",
+  "programme_id": "auto_145",
+  "rack_options": {
+   "lower_rack.tine_row_r1": "up",
+   "lower_rack.tine_row_r2": "up",
+   "upper_rack.height": "1",
+   "upper_rack.tine_row_c_rear": "up",
+   "upper_rack.tine_row_c_front": "up",
+   "upper_rack.shelf_cup_front": "up",
+   "upper_rack.shelf_cup_rear": "up",
+   "upper_rack.shelf_knife_shelf": "down",
+   "cutlery_basket.position": "front_right"
+  },
+  "items": [
+   {
+    "frame": "tub",
+    "position_mm": [
+     7.8,
+     227.2,
+     189.3
+    ],
+    "quat_wxyz": [
+     0.7006,
+     0.7125,
+     0.026,
+     0.0277
+    ],
+    "item_id": "board_brown_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     248.4,
+     -19.6,
+     218.8
+    ],
+    "quat_wxyz": [
+     0.5233,
+     0.4706,
+     -0.475,
+     -0.5282
+    ],
+    "item_id": "board_white_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     -13.5,
+     -138.8,
+     146.9
+    ],
+    "quat_wxyz": [
+     0.6456,
+     0.3588,
+     0.4486,
+     0.5032
+    ],
+    "item_id": "cereal_bowl_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     -63.4,
+     52.8,
+     486.1
+    ],
+    "quat_wxyz": [
+     0,
+     0.9981,
+     -0.0621,
+     0
+    ],
+    "item_id": "container_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     -69,
+     -108,
+     506.5
+    ],
+    "quat_wxyz": [
+     0.001,
+     1,
+     -0.007,
+     -0.0057
+    ],
+    "item_id": "container_02"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     124.7,
+     -117.3,
+     163.6
+    ],
+    "quat_wxyz": [
+     0.5532,
+     0.0045,
+     -0.833,
+     -0.0028
+    ],
+    "item_id": "fork_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     127.9,
+     -107,
+     162.4
+    ],
+    "quat_wxyz": [
+     0.5445,
+     -0.056,
+     -0.8324,
+     0.0863
+    ],
+    "item_id": "fork_02"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     131.5,
+     -114.1,
+     162.9
+    ],
+    "quat_wxyz": [
+     0.5438,
+     -0.0071,
+     -0.8391,
+     0.0108
+    ],
+    "item_id": "fork_03"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     124.2,
+     -66,
+     168.2
+    ],
+    "quat_wxyz": [
+     0.014,
+     -0.5952,
+     0.0098,
+     -0.8034
+    ],
+    "item_id": "fork_04"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     127.1,
+     -50.7,
+     169
+    ],
+    "quat_wxyz": [
+     0.6072,
+     -0.0958,
+     -0.7628,
+     -0.2004
+    ],
+    "item_id": "fork_05"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     131.3,
+     -55.5,
+     166.8
+    ],
+    "quat_wxyz": [
+     0.5903,
+     -0.0333,
+     -0.7868,
+     -0.1771
+    ],
+    "item_id": "fork_06"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     87.2,
+     -3.6,
+     225.7
+    ],
+    "quat_wxyz": [
+     0.6212,
+     0.2297,
+     -0.1393,
+     -0.7362
+    ],
+    "item_id": "frying_pan_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     92.7,
+     -101.6,
+     493.9
+    ],
+    "quat_wxyz": [
+     0.0091,
+     -0.9832,
+     -0.0544,
+     0.1739
+    ],
+    "item_id": "glass_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     93.4,
+     81.5,
+     493.7
+    ],
+    "quat_wxyz": [
+     0.0079,
+     -0.9837,
+     -0.0443,
+     0.1741
+    ],
+    "item_id": "glass_02"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     168,
+     -151.1,
+     182.1
+    ],
+    "quat_wxyz": [
+     0.7703,
+     -0.013,
+     -0.6358,
+     0.047
+    ],
+    "item_id": "knife_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     161,
+     -151.3,
+     181.8
+    ],
+    "quat_wxyz": [
+     0.7751,
+     -0.0123,
+     -0.63,
+     0.0456
+    ],
+    "item_id": "knife_02"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     153.8,
+     -151.2,
+     181.6
+    ],
+    "quat_wxyz": [
+     0.7777,
+     -0.013,
+     -0.6268,
+     0.0459
+    ],
+    "item_id": "knife_03"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     146.7,
+     -151.2,
+     181.5
+    ],
+    "quat_wxyz": [
+     0.7805,
+     -0.013,
+     -0.6234,
+     0.0456
+    ],
+    "item_id": "knife_04"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     172.7,
+     -165.5,
+     494.1
+    ],
+    "quat_wxyz": [
+     0.1329,
+     -0.6942,
+     -0.6943,
+     0.1356
+    ],
+    "item_id": "mug_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     -3.8,
+     107.6,
+     190.3
+    ],
+    "quat_wxyz": [
+     0.3035,
+     0.6198,
+     0.6428,
+     0.3325
+    ],
+    "item_id": "pasta_bowl_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     -122.7,
+     -4.8,
+     225.1
+    ],
+    "quat_wxyz": [
+     0.626,
+     0.3998,
+     0.4538,
+     0.4923
+    ],
+    "item_id": "pasta_bowl_02"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     93.5,
+     -213.6,
+     166.6
+    ],
+    "quat_wxyz": [
+     0.7412,
+     -0.2729,
+     -0.585,
+     -0.1841
+    ],
+    "item_id": "peeler_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     -185.4,
+     111.7,
+     212.4
+    ],
+    "quat_wxyz": [
+     0.502,
+     0.4975,
+     0.5212,
+     0.4783
+    ],
+    "item_id": "plate_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     207.6,
+     111.6,
+     209.7
+    ],
+    "quat_wxyz": [
+     0.5383,
+     0.461,
+     -0.4808,
+     -0.5163
+    ],
+    "item_id": "plate_02"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     -38.5,
+     -130.9,
+     151.2
+    ],
+    "quat_wxyz": [
+     0.5889,
+     0.4004,
+     0.2827,
+     0.6425
+    ],
+    "item_id": "serving_bowl_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     58.1,
+     -45.6,
+     157.8
+    ],
+    "quat_wxyz": [
+     0.6543,
+     -0.0192,
+     -0.7558,
+     0.0167
+    ],
+    "item_id": "spoon_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     66,
+     -48,
+     157.9
+    ],
+    "quat_wxyz": [
+     0.674,
+     0.1778,
+     -0.6242,
+     0.353
+    ],
+    "item_id": "spoon_02"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     85.2,
+     -107.9,
+     158.9
+    ],
+    "quat_wxyz": [
+     0.6884,
+     -0.1336,
+     -0.7091,
+     -0.0734
+    ],
+    "item_id": "spoon_03"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     135.3,
+     -64.2,
+     156.7
+    ],
+    "quat_wxyz": [
+     0.6172,
+     -0.0761,
+     -0.7671,
+     -0.1578
+    ],
+    "item_id": "spoon_04"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     60,
+     -157.3,
+     143
+    ],
+    "quat_wxyz": [
+     0.6518,
+     -0.0206,
+     -0.7579,
+     0.0161
+    ],
+    "item_id": "teaspoon_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     67,
+     -157.3,
+     142
+    ],
+    "quat_wxyz": [
+     0.6266,
+     -0.0253,
+     -0.7789,
+     0.0092
+    ],
+    "item_id": "teaspoon_02"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     61.9,
+     -184.1,
+     210.1
+    ],
+    "quat_wxyz": [
+     0.6063,
+     -0.0168,
+     -0.7591,
+     -0.2363
+    ],
+    "item_id": "tongs_01"
+   }
+  ],
+  "state_hash": "sha256:1f27104b7d952f9a1f28c66b6c2a0728351230da4ad97b3038c43f9b04e77a26"
+ },
+ "wash_manifest": {
+  "load": {
+   "benchmark_version": "spotless-0.2.0/levels-starter",
+   "level_id": "owner-2026-10-10",
+   "machine_id": "bosch_smv4hax40g",
+   "programme_id": "auto_145",
+   "rack_options": {
+    "lower_rack.tine_row_r1": "up",
+    "lower_rack.tine_row_r2": "up",
+    "upper_rack.height": "1",
+    "upper_rack.tine_row_c_rear": "up",
+    "upper_rack.tine_row_c_front": "up",
+    "upper_rack.shelf_cup_front": "up",
+    "upper_rack.shelf_cup_rear": "up",
+    "upper_rack.shelf_knife_shelf": "down",
+    "cutlery_basket.position": "front_right"
+   },
+   "items": [
+    {
+     "frame": "tub",
+     "position_mm": [
+      7.8,
+      227.2,
+      189.3
+     ],
+     "quat_wxyz": [
+      0.7006,
+      0.7125,
+      0.026,
+      0.0277
+     ],
+     "item_id": "board_brown_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      248.4,
+      -19.6,
+      218.8
+     ],
+     "quat_wxyz": [
+      0.5233,
+      0.4706,
+      -0.475,
+      -0.5282
+     ],
+     "item_id": "board_white_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      -13.5,
+      -138.8,
+      146.9
+     ],
+     "quat_wxyz": [
+      0.6456,
+      0.3588,
+      0.4486,
+      0.5032
+     ],
+     "item_id": "cereal_bowl_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      -63.4,
+      52.8,
+      486.1
+     ],
+     "quat_wxyz": [
+      0,
+      0.9981,
+      -0.0621,
+      0
+     ],
+     "item_id": "container_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      -69,
+      -108,
+      506.5
+     ],
+     "quat_wxyz": [
+      0.001,
+      1,
+      -0.007,
+      -0.0057
+     ],
+     "item_id": "container_02"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      124.7,
+      -117.3,
+      163.6
+     ],
+     "quat_wxyz": [
+      0.5532,
+      0.0045,
+      -0.833,
+      -0.0028
+     ],
+     "item_id": "fork_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      127.9,
+      -107,
+      162.4
+     ],
+     "quat_wxyz": [
+      0.5445,
+      -0.056,
+      -0.8324,
+      0.0863
+     ],
+     "item_id": "fork_02"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      131.5,
+      -114.1,
+      162.9
+     ],
+     "quat_wxyz": [
+      0.5438,
+      -0.0071,
+      -0.8391,
+      0.0108
+     ],
+     "item_id": "fork_03"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      124.2,
+      -66,
+      168.2
+     ],
+     "quat_wxyz": [
+      0.014,
+      -0.5952,
+      0.0098,
+      -0.8034
+     ],
+     "item_id": "fork_04"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      127.1,
+      -50.7,
+      169
+     ],
+     "quat_wxyz": [
+      0.6072,
+      -0.0958,
+      -0.7628,
+      -0.2004
+     ],
+     "item_id": "fork_05"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      131.3,
+      -55.5,
+      166.8
+     ],
+     "quat_wxyz": [
+      0.5903,
+      -0.0333,
+      -0.7868,
+      -0.1771
+     ],
+     "item_id": "fork_06"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      87.2,
+      -3.6,
+      225.7
+     ],
+     "quat_wxyz": [
+      0.6212,
+      0.2297,
+      -0.1393,
+      -0.7362
+     ],
+     "item_id": "frying_pan_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      92.7,
+      -101.6,
+      493.9
+     ],
+     "quat_wxyz": [
+      0.0091,
+      -0.9832,
+      -0.0544,
+      0.1739
+     ],
+     "item_id": "glass_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      93.4,
+      81.5,
+      493.7
+     ],
+     "quat_wxyz": [
+      0.0079,
+      -0.9837,
+      -0.0443,
+      0.1741
+     ],
+     "item_id": "glass_02"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      168,
+      -151.1,
+      182.1
+     ],
+     "quat_wxyz": [
+      0.7703,
+      -0.013,
+      -0.6358,
+      0.047
+     ],
+     "item_id": "knife_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      161,
+      -151.3,
+      181.8
+     ],
+     "quat_wxyz": [
+      0.7751,
+      -0.0123,
+      -0.63,
+      0.0456
+     ],
+     "item_id": "knife_02"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      153.8,
+      -151.2,
+      181.6
+     ],
+     "quat_wxyz": [
+      0.7777,
+      -0.013,
+      -0.6268,
+      0.0459
+     ],
+     "item_id": "knife_03"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      146.7,
+      -151.2,
+      181.5
+     ],
+     "quat_wxyz": [
+      0.7805,
+      -0.013,
+      -0.6234,
+      0.0456
+     ],
+     "item_id": "knife_04"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      172.7,
+      -165.5,
+      494.1
+     ],
+     "quat_wxyz": [
+      0.1329,
+      -0.6942,
+      -0.6943,
+      0.1356
+     ],
+     "item_id": "mug_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      -3.8,
+      107.6,
+      190.3
+     ],
+     "quat_wxyz": [
+      0.3035,
+      0.6198,
+      0.6428,
+      0.3325
+     ],
+     "item_id": "pasta_bowl_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      -122.7,
+      -4.8,
+      225.1
+     ],
+     "quat_wxyz": [
+      0.626,
+      0.3998,
+      0.4538,
+      0.4923
+     ],
+     "item_id": "pasta_bowl_02"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      93.5,
+      -213.6,
+      166.6
+     ],
+     "quat_wxyz": [
+      0.7412,
+      -0.2729,
+      -0.585,
+      -0.1841
+     ],
+     "item_id": "peeler_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      -185.4,
+      111.7,
+      212.4
+     ],
+     "quat_wxyz": [
+      0.502,
+      0.4975,
+      0.5212,
+      0.4783
+     ],
+     "item_id": "plate_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      207.6,
+      111.6,
+      209.7
+     ],
+     "quat_wxyz": [
+      0.5383,
+      0.461,
+      -0.4808,
+      -0.5163
+     ],
+     "item_id": "plate_02"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      -38.5,
+      -130.9,
+      151.2
+     ],
+     "quat_wxyz": [
+      0.5889,
+      0.4004,
+      0.2827,
+      0.6425
+     ],
+     "item_id": "serving_bowl_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      58.1,
+      -45.6,
+      157.8
+     ],
+     "quat_wxyz": [
+      0.6543,
+      -0.0192,
+      -0.7558,
+      0.0167
+     ],
+     "item_id": "spoon_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      66,
+      -48,
+      157.9
+     ],
+     "quat_wxyz": [
+      0.674,
+      0.1778,
+      -0.6242,
+      0.353
+     ],
+     "item_id": "spoon_02"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      85.2,
+      -107.9,
+      158.9
+     ],
+     "quat_wxyz": [
+      0.6884,
+      -0.1336,
+      -0.7091,
+      -0.0734
+     ],
+     "item_id": "spoon_03"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      135.3,
+      -64.2,
+      156.7
+     ],
+     "quat_wxyz": [
+      0.6172,
+      -0.0761,
+      -0.7671,
+      -0.1578
+     ],
+     "item_id": "spoon_04"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      60,
+      -157.3,
+      143
+     ],
+     "quat_wxyz": [
+      0.6518,
+      -0.0206,
+      -0.7579,
+      0.0161
+     ],
+     "item_id": "teaspoon_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      67,
+      -157.3,
+      142
+     ],
+     "quat_wxyz": [
+      0.6266,
+      -0.0253,
+      -0.7789,
+      0.0092
+     ],
+     "item_id": "teaspoon_02"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      61.9,
+      -184.1,
+      210.1
+     ],
+     "quat_wxyz": [
+      0.6063,
+      -0.0168,
+      -0.7591,
+      -0.2363
+     ],
+     "item_id": "tongs_01"
+    }
+   ],
+   "state_hash": "sha256:1f27104b7d952f9a1f28c66b6c2a0728351230da4ad97b3038c43f9b04e77a26"
+  },
+  "machine_id": "bosch_smv4hax40g",
+  "machine_config": {
+   "basketHeights": {
+    "upper": "1"
+   },
+   "foldedTineRows": [],
+   "shelves": [
+    {
+     "basketId": "upper",
+     "shelfId": "cup_front",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "cup_rear",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "knife_shelf",
+     "state": "down"
+    }
+   ],
+   "cutleryBasket": {
+    "basketId": "lower",
+    "centre": [
+     0.3725,
+     0.123
+    ],
+    "longAxis": "y"
+   }
+  },
+  "programme_id": "auto_145",
+  "items": [
+   {
+    "item_id": "board_brown_01",
+    "item_type": "chopping_board_pe_340",
+    "pose": {
+     "p": [
+      0.007484368760290401,
+      0.231188206945349,
+      0.1893457021926189
+     ],
+     "q": [
+      0.712518036365509,
+      0.026017043739557266,
+      0.027661718428134918,
+      0.7006254196166992
+     ]
+    },
+    "soils": [
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "top",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 2.51,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Shreds of vegetables on the cutting side"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "board_white_01",
+    "item_type": "chopping_board_pp_375",
+    "pose": {
+     "p": [
+      0.2524106119943852,
+      -0.019662005698177432,
+      0.21835341240761044
+     ],
+     "q": [
+      0.47063663601875305,
+      -0.4750031530857086,
+      -0.5281922817230225,
+      0.5233413577079773
+     ]
+    },
+    "soils": [
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "top",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 3.07,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Shreds of vegetables on the cutting side"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "cereal_bowl_01",
+    "item_type": "cereal_bowl_porcelain_160",
+    "pose": {
+     "p": [
+      -0.04645985296335613,
+      -0.1383863041528748,
+      0.135041242576373
+     ],
+     "q": [
+      0.3588278591632843,
+      0.44855797290802,
+      0.503201961517334,
+      0.6456208229064941
+     ]
+    },
+    "soils": [
+     {
+      "type": "porridge",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 7.12,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Porridge from breakfast"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "container_01",
+    "item_type": "food_container_600ml",
+    "pose": {
+     "p": [
+      -0.06340633399710079,
+      0.05279353186601381,
+      0.5160699916385068
+     ],
+     "q": [
+      0.9980682730674744,
+      -0.06212755665183067,
+      -2.2376194408479932e-7,
+      -8.578899723943323e-8
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 3.36,
+      "ageH": 24,
+      "heatHistory": "none",
+      "description": "Tomato sauce from a packed lunch"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "container_02",
+    "item_type": "food_container_600ml",
+    "pose": {
+     "p": [
+      -0.06863562841174109,
+      -0.10797166100362257,
+      0.5364673484136832
+     ],
+     "q": [
+      0.999958872795105,
+      -0.006964424625039101,
+      -0.005727071315050125,
+      0.0009938071016222239
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 3.36,
+      "ageH": 24,
+      "heatHistory": "none",
+      "description": "Tomato sauce from a packed lunch"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "fork_01",
+    "item_type": "dinner_fork_185",
+    "pose": {
+     "p": [
+      0.16384507300311382,
+      -0.11627464732781789,
+      0.07969296063683887
+     ],
+     "q": [
+      0.004498833324760199,
+      -0.8330204486846924,
+      -0.0028033603448420763,
+      0.5532167553901672
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.142,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce between the tines"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "fork_02",
+    "item_type": "dinner_fork_185",
+    "pose": {
+     "p": [
+      0.16824048938031194,
+      -0.1239977397745772,
+      0.08078448997345677
+     ],
+     "q": [
+      -0.056021302938461304,
+      -0.8324259519577026,
+      0.0863092914223671,
+      0.5444991588592529
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.142,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce between the tines"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "fork_03",
+    "item_type": "dinner_fork_185",
+    "pose": {
+     "p": [
+      0.1725109818962261,
+      -0.11629921982350797,
+      0.07990931926189862
+     ],
+     "q": [
+      -0.007127976045012474,
+      -0.8391111493110657,
+      0.010769149288535118,
+      0.5438066720962524
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.142,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce between the tines"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "fork_04",
+    "item_type": "dinner_fork_185",
+    "pose": {
+     "p": [
+      0.14776356440270869,
+      -0.0628764885955223,
+      0.0787384975876095
+     ],
+     "q": [
+      -0.595238983631134,
+      0.009761936962604523,
+      -0.8033668398857117,
+      0.014040132984519005
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.142,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce between the tines"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "fork_05",
+    "item_type": "dinner_fork_185",
+    "pose": {
+     "p": [
+      0.15285423105863258,
+      -0.043199939918408176,
+      0.08036915743643802
+     ],
+     "q": [
+      -0.09581229835748672,
+      -0.7628292441368103,
+      -0.20043882727622986,
+      0.6072362661361694
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.142,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce between the tines"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "fork_06",
+    "item_type": "dinner_fork_185",
+    "pose": {
+     "p": [
+      0.16236978097146063,
+      -0.04214296792847458,
+      0.0806794714674802
+     ],
+     "q": [
+      -0.033276017755270004,
+      -0.7868388295173645,
+      -0.17714156210422516,
+      0.5902527570724487
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.142,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce between the tines"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "frying_pan_01",
+    "item_type": "frying_pan_clad_254",
+    "pose": {
+     "p": [
+      0.1321508264665585,
+      0.1070491023653123,
+      0.19049062077543025
+     ],
+     "q": [
+      0.229709193110466,
+      -0.13926471769809723,
+      -0.7362064123153687,
+      0.6211596131324768
+     ]
+    },
+    "soils": [
+     {
+      "type": "egg_cooked",
+      "regions": [
+       {
+        "region": "interior_base",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 2.06,
+      "ageH": 12,
+      "heatHistory": "cooked",
+      "description": "Fried egg stuck to the bottom"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "glass_01",
+    "item_type": "tumbler_360",
+    "pose": {
+     "p": [
+      0.11394695139424652,
+      -0.10152528364118217,
+      0.5521333693521477
+     ],
+     "q": [
+      0.9832223653793335,
+      0.05436236783862114,
+      -0.1738833785057068,
+      -0.009116803295910358
+     ]
+    },
+    "soils": [
+     {
+      "type": "milk_film",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.367,
+      "ageH": 5,
+      "heatHistory": "none",
+      "description": "A film of milk inside"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "glass_02",
+    "item_type": "tumbler_360",
+    "pose": {
+     "p": [
+      0.11469093184108062,
+      0.08150333734546394,
+      0.5519190987826472
+     ],
+     "q": [
+      0.9837035536766052,
+      0.04429975152015686,
+      -0.17407828569412231,
+      -0.007853892631828785
+     ]
+    },
+    "soils": [
+     {
+      "type": "milk_film",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.367,
+      "ageH": 5,
+      "heatHistory": "none",
+      "description": "A film of milk inside"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "knife_01",
+    "item_type": "dinner_knife_210",
+    "pose": {
+     "p": [
+      0.15183304008279616,
+      -0.16034032374040344,
+      0.07872578216017889
+     ],
+     "q": [
+      -0.013034408912062645,
+      -0.6358045935630798,
+      0.04701384902000427,
+      0.7703066468238831
+     ]
+    },
+    "soils": [
+     {
+      "type": "butter_margarine",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.0163,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Butter on the blade"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "knife_02",
+    "item_type": "dinner_knife_210",
+    "pose": {
+     "p": [
+      0.14317346933350494,
+      -0.16024125022756058,
+      0.07864657279136653
+     ],
+     "q": [
+      -0.012266585603356361,
+      -0.6300463676452637,
+      0.045579396188259125,
+      0.775121808052063
+     ]
+    },
+    "soils": [
+     {
+      "type": "butter_margarine",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.0163,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Butter on the blade"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "knife_03",
+    "item_type": "dinner_knife_210",
+    "pose": {
+     "p": [
+      0.1351951540732528,
+      -0.16026348343454955,
+      0.0786508285204134
+     ],
+     "q": [
+      -0.013020513579249382,
+      -0.6268438100814819,
+      0.04593202844262123,
+      0.7776808142662048
+     ]
+    },
+    "soils": [
+     {
+      "type": "butter_margarine",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.0163,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Butter on the blade"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "knife_04",
+    "item_type": "dinner_knife_210",
+    "pose": {
+     "p": [
+      0.1271202016633392,
+      -0.1602641223101829,
+      0.07862868622624834
+     ],
+     "q": [
+      -0.01303680520504713,
+      -0.6233770251274109,
+      0.04562455415725708,
+      0.7804803848266602
+     ]
+    },
+    "soils": [
+     {
+      "type": "butter_margarine",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.0163,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Butter on the blade"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "mug_01",
+    "item_type": "mug_ceramic_300",
+    "pose": {
+     "p": [
+      0.191332347795517,
+      -0.1801049863673963,
+      0.5405573965229761
+     ],
+     "q": [
+      -0.6942336559295654,
+      -0.6942564845085144,
+      0.13556697964668274,
+      0.1329256296157837
+     ]
+    },
+    "soils": [
+     {
+      "type": "coffee",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.6
+       }
+      ],
+      "amountG": 0.0018,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Coffee ring inside"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "pasta_bowl_01",
+    "item_type": "pasta_bowl_porcelain_230",
+    "pose": {
+     "p": [
+      -0.029926246411650377,
+      0.10590878116574359,
+      0.20960156075001962
+     ],
+     "q": [
+      0.6198360323905945,
+      0.6427693367004395,
+      0.33250874280929565,
+      0.30346155166625977
+     ]
+    },
+    "soils": [
+     {
+      "type": "pasta_starch",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.866,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Starchy film from pasta, dried on"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "pasta_bowl_02",
+    "item_type": "pasta_bowl_porcelain_230",
+    "pose": {
+     "p": [
+      -0.15400449004829783,
+      -0.003028689592279198,
+      0.21638678154712687
+     ],
+     "q": [
+      0.3998098373413086,
+      0.4537680745124817,
+      0.4923097789287567,
+      0.6260014176368713
+     ]
+    },
+    "soils": [
+     {
+      "type": "pasta_starch",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.866,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Starchy film from pasta, dried on"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "peeler_01",
+    "item_type": "swivel_peeler_180",
+    "pose": {
+     "p": [
+      0.07997018152317217,
+      -0.22493826084612456,
+      0.0775473903749036
+     ],
+     "q": [
+      -0.2728791832923889,
+      -0.5849936008453369,
+      -0.18410253524780273,
+      0.7412325739860535
+     ]
+    },
+    "soils": [
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.0758,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Peelings on the blade"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "plate_01",
+    "item_type": "dinner_plate_porcelain_270",
+    "pose": {
+     "p": [
+      -0.2004169543221632,
+      0.11172345121668482,
+      0.21293142168815454
+     ],
+     "q": [
+      0.49754098057746887,
+      0.5212261080741882,
+      0.4782789945602417,
+      0.5020214915275574
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 2.36,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce from dinner, dried overnight"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "plate_02",
+    "item_type": "dinner_plate_porcelain_270",
+    "pose": {
+     "p": [
+      0.22246175017529185,
+      0.11156115258124488,
+      0.20799373822102796
+     ],
+     "q": [
+      0.46100595593452454,
+      -0.4807612895965576,
+      -0.5162939429283142,
+      0.5383146405220032
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 2.36,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Tomato sauce from dinner, dried overnight"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "serving_bowl_01",
+    "item_type": "serving_bowl_vitrelle_216",
+    "pose": {
+     "p": [
+      -0.06602524027269119,
+      -0.1274088476772972,
+      0.13432543466181435
+     ],
+     "q": [
+      0.4004397988319397,
+      0.2827284038066864,
+      0.6425474882125854,
+      0.5889358520507812
+     ]
+    },
+    "soils": [
+     {
+      "type": "vegetable_oil",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.323,
+      "ageH": 12,
+      "heatHistory": "none",
+      "description": "Salad dressing"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "spoon_01",
+    "item_type": "dessert_spoon_160",
+    "pose": {
+     "p": [
+      0.07430382913215915,
+      -0.04963839271441787,
+      0.07946049739803485
+     ],
+     "q": [
+      -0.019153183326125145,
+      -0.7557898759841919,
+      0.01668264903128147,
+      0.6543214321136475
+     ]
+    },
+    "soils": [
+     {
+      "type": "porridge",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.6
+       }
+      ],
+      "amountG": 0.636,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Porridge in the bowl of the spoon"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "spoon_02",
+    "item_type": "dessert_spoon_160",
+    "pose": {
+     "p": [
+      0.07166349904377242,
+      -0.06501331381262176,
+      0.07979856556894609
+     ],
+     "q": [
+      0.1778324395418167,
+      -0.6241648197174072,
+      0.35296431183815,
+      0.6739510893821716
+     ]
+    },
+    "soils": [
+     {
+      "type": "porridge",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.6
+       }
+      ],
+      "amountG": 0.636,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Porridge in the bowl of the spoon"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "spoon_03",
+    "item_type": "dessert_spoon_160",
+    "pose": {
+     "p": [
+      0.091108987340942,
+      -0.11632811505537041,
+      0.07945076443020939
+     ],
+     "q": [
+      -0.13356097042560577,
+      -0.7091436386108398,
+      -0.07335586100816727,
+      0.6884008049964905
+     ]
+    },
+    "soils": [
+     {
+      "type": "porridge",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.6
+       }
+      ],
+      "amountG": 0.636,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Porridge in the bowl of the spoon"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "spoon_04",
+    "item_type": "dessert_spoon_160",
+    "pose": {
+     "p": [
+      0.15785208620625157,
+      -0.05952630335751969,
+      0.07996658481757482
+     ],
+     "q": [
+      -0.07606136053800583,
+      -0.7670563459396362,
+      -0.15784437954425812,
+      0.6171907186508179
+     ]
+    },
+    "soils": [
+     {
+      "type": "porridge",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.6
+       }
+      ],
+      "amountG": 0.636,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Porridge in the bowl of the spoon"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "teaspoon_01",
+    "item_type": "teaspoon_130",
+    "pose": {
+     "p": [
+      0.07380018315431905,
+      -0.16065768900263164,
+      0.07942400060683903
+     ],
+     "q": [
+      -0.020582448691129684,
+      -0.7579068541526794,
+      0.01610376127064228,
+      0.6518391966819763
+     ]
+    },
+    "soils": [
+     {
+      "type": "coffee",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.0000881,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Coffee dried in the bowl"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "teaspoon_02",
+    "item_type": "teaspoon_130",
+    "pose": {
+     "p": [
+      0.08490076476145879,
+      -0.16069848323396282,
+      0.0795035834055719
+     ],
+     "q": [
+      -0.025262590497732162,
+      -0.7788985967636108,
+      0.009157218970358372,
+      0.6265740394592285
+     ]
+    },
+    "soils": [
+     {
+      "type": "coffee",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.0000881,
+      "ageH": 3,
+      "heatHistory": "none",
+      "description": "Coffee dried in the bowl"
+     }
+    ],
+    "points": 10
+   },
+   {
+    "item_id": "tongs_01",
+    "item_type": "turner_nylon_279",
+    "pose": {
+     "p": [
+      0.10510817106732401,
+      -0.15029500287513148,
+      0.08162666090586582
+     ],
+     "q": [
+      -0.01676373928785324,
+      -0.7591313719749451,
+      -0.23625345528125763,
+      0.6063191294670105
+     ]
+    },
+    "soils": [
+     {
+      "type": "lard_tallow",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 1.22,
+      "ageH": 12,
+      "heatHistory": "cooked",
+      "description": "Fat on the working end"
+     }
+    ],
+    "points": 10
+   }
+  ],
+  "unloaded": [
+   "baking_tray_01"
+  ],
+  "seed": 20261010,
+  "prechecks": {
+   "shifted": [],
+   "fell_out": [],
+   "on_tub_floor": [],
+   "protruding": [
+    {
+     "item_id": "board_white_01",
+     "rack": "lower_rack",
+     "beyond_mm": 5.4
+    }
+   ],
+   "racks": [
+    {
+     "rack": "lower_rack",
+     "slides_in": true
+    },
+    {
+     "rack": "upper_rack",
+     "slides_in": true
+    }
+   ],
+   "spray_arms": [
+    {
+     "arm": "lower_arm",
+     "full_rotation": true
+    },
+    {
+     "arm": "upper_arm",
+     "full_rotation": true
+    }
+   ],
+   "door_closes": true,
+   "door_blocked_by": [],
+   "dispenser_opens": true,
+   "dispenser_blocked_by": [],
+   "tablet_path_clear": true,
+   "tablet_blocked_by": []
+  }
+ },
+ "final_state_hash": "sha256:1f27104b7d952f9a1f28c66b6c2a0728351230da4ad97b3038c43f9b04e77a26",
+ "numbers": {
+  "items": 32,
+  "deepest_overlap_mm": 0.1,
+  "overlaps": [],
+  "deepest_true_overlap_mm": 0.27,
+  "true_overlaps": [],
+  "out_of_basket": [
+   {
+    "item_id": "board_white_01",
+    "rack": "lower_rack",
+    "beyond_plan_mm": 5.43,
+    "below_floor_mm": 0,
+    "above_roof_mm": 0
+   }
+  ],
+  "not_in_a_basket": [],
+  "unstable": [
+   "peeler_01"
+  ],
+  "by_basket": {
+   "lower_rack": 27,
+   "upper_rack": 5
+  },
+  "check_passes": false,
+  "check_findings": [
+   "board_white_01 sticks 5.4 mm out of the lower_rack"
+  ]
+ },
+ "measured": {
+  "totalMs": 21501,
+  "placeMedianMs": 98,
+  "placeMaxMs": 1562,
+  "placeTotalMs": 7443,
+  "checkMedianMs": 234,
+  "rackMoveMedianMs": 527,
+  "startCycleMs": 190
+ }
+,
+ "action_log": [
+{"seq":0,"kind":"query","name":"get_level","args":{},"accepted":true,"result_digest":"sha256:8b65e0d3344dab37fc82b77a3154c008ef0def5d46ebbb02811ecd44e175d4ba","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":0,"queries_used":1,"washes_used":0}},
+{"seq":1,"kind":"query","name":"get_state","args":{},"accepted":true,"result_digest":"sha256:4ede265dbfa55380bfa83ea52f2d8041952704a58b713c9582a655d6d67d2525","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":0,"queries_used":2,"washes_used":0}},
+{"seq":2,"kind":"action","name":"set_rack","args":{"rack":"cutlery_basket","option":{"name":"position","value":"front_right"}},"accepted":true,"result_digest":"sha256:97d1887bd4b2b216d91b1ab69a6b09b96690848af30be5f86d8d7a5a8345cb7e","state_hash":"sha256:9a92e8f03ca5ec8cbc98a8264fd75982dbcf2e88de309378abbb2fcd5b822450","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":1,"queries_used":2,"washes_used":0}},
+{"seq":3,"kind":"action","name":"place","args":{"item_id":"baking_tray_01","frame":"lower_rack","position_mm":[36,256,182],"orientation":{"preset":"on_long_edge","yaw_deg":90,"roll_deg":0}},"accepted":true,"result_digest":"sha256:28b9ca2e30b11602be1814a23fe7b3ee31bbf66dee4e331b6f7820f75f4d4371","state_hash":"sha256:b3d62aa36332178a690923d71450a920238eda461916bc7321391e5972042066","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":2,"queries_used":2,"washes_used":0}},
+{"seq":4,"kind":"query","name":"list_slots","args":{"rack":"lower_rack","item_id":"plate_01"},"accepted":true,"result_digest":"sha256:2035060b8cb8da416cbcd3f424d7dda07a1d18683f22c9455ff86bc098855f6c","state_hash":"sha256:b3d62aa36332178a690923d71450a920238eda461916bc7321391e5972042066","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":2,"queries_used":3,"washes_used":0}},
+{"seq":5,"kind":"action","name":"place","args":{"item_id":"plate_01","frame":"lower_rack","position_mm":[81,368,143],"orientation":{"preset":"on_edge","roll_deg":5,"yaw_deg":90}},"accepted":true,"result_digest":"sha256:366aa12c378b846e05eeeb6cb68ae554b2a5dc652c24af1c9a41d1ea63a118eb","state_hash":"sha256:5b851225f6e0587d2296fd3d11368d7a9aec178d3d45db2cc89343a091e4eb28","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":3,"queries_used":3,"washes_used":0}},
+{"seq":6,"kind":"query","name":"list_slots","args":{"rack":"lower_rack","item_id":"plate_02"},"accepted":true,"result_digest":"sha256:c37236737c7fb5a6d168ee4bf921322fabec63a8e78b48061573af43abe7a6dd","state_hash":"sha256:5b851225f6e0587d2296fd3d11368d7a9aec178d3d45db2cc89343a091e4eb28","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":3,"queries_used":4,"washes_used":0}},
+{"seq":7,"kind":"action","name":"place","args":{"item_id":"plate_02","frame":"lower_rack","position_mm":[467,368,141],"orientation":{"preset":"on_edge","roll_deg":-4,"yaw_deg":-90}},"accepted":true,"result_digest":"sha256:c64763fdd58ca4871f88a461e004f0f6f8f37e2375de8b1f064af708ea87d4f5","state_hash":"sha256:8ced640321deff9123680930c4ec2f77599a19dd1c815bd8914027099388df16","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":4,"queries_used":4,"washes_used":0}},
+{"seq":8,"kind":"action","name":"place","args":{"item_id":"board_brown_01","frame":"lower_rack","position_mm":[272,482,124],"orientation":{"preset":"on_long_edge","yaw_deg":0,"roll_deg":-6}},"accepted":true,"result_digest":"sha256:9029218623a8592401610a5342d8af188c4ac23b23c45a107129e280a7419f47","state_hash":"sha256:4ac788a42305cf3924d3b074aab2003fcb8e2b90193c14edfbc6b9a36130c6ea","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":5,"queries_used":4,"washes_used":0}},
+{"seq":9,"kind":"action","name":"place","args":{"item_id":"board_white_01","frame":"lower_rack","position_mm":[508,240,146],"orientation":{"preset":"on_long_edge","yaw_deg":-90,"roll_deg":-4}},"accepted":true,"result_digest":"sha256:467768be1488de0360524088419aabeed72c9f6c429542b83808efd2ebf57a88","state_hash":"sha256:955d6c401c8baa2faea9244aad65c16a05c569990adea7ba7e24cd059c9049c8","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":6,"queries_used":4,"washes_used":0}},
+{"seq":10,"kind":"action","name":"place","args":{"item_id":"frying_pan_01","frame":"lower_rack","position_mm":[345,258,208],"orientation":{"preset":"upright","yaw_deg":-95,"roll_deg":50}},"accepted":true,"result_digest":"sha256:87f17aaf6c1e544043aa8224b8b2309d3043cdad43592850a5c6c2703481a30f","state_hash":"sha256:3d501ee2a0c2755f83011b531c9fd4761e274381b87190fdf8f8991949be38d4","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":7,"queries_used":4,"washes_used":0}},
+{"seq":11,"kind":"action","name":"place","args":{"item_id":"pasta_bowl_01","frame":"lower_rack","position_mm":[230,370,170],"orientation":{"preset":"on_edge","yaw_deg":90,"roll_deg":25}},"accepted":true,"result_digest":"sha256:c12cfecfba5f6fedf123b60eb2c81e9e4d94ea3e10bca72ce1a23fd750d96961","state_hash":"sha256:00feaebbb75a58c326f1c1ef126316ddc3e4c95471cf4c8e602667a41bac49ce","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":8,"queries_used":4,"washes_used":0}},
+{"seq":12,"kind":"action","name":"place","args":{"item_id":"pasta_bowl_02","frame":"lower_rack","position_mm":[140,240,170],"orientation":{"preset":"on_edge","yaw_deg":90,"roll_deg":-10}},"accepted":true,"result_digest":"sha256:03bd6359b73d41b4d5c377c3a5fb955db4ebad2ee2b122878b2701d7ef92cc0d","state_hash":"sha256:dbd55cbf1be46bddc0505172fb602151b7d0b2b5aa8fc8f859d224998b558ccf","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":9,"queries_used":4,"washes_used":0}},
+{"seq":13,"kind":"action","name":"place","args":{"item_id":"serving_bowl_01","frame":"lower_rack","position_mm":[220,150,130],"orientation":{"preset":"on_edge","yaw_deg":90,"roll_deg":-20}},"accepted":true,"result_digest":"sha256:327e8327f71a1a72a6618e1b9ade1bea90a3f02c30fea2f1f8f66917afa51fc4","state_hash":"sha256:157ec37cf27e1fc44d788bbe9cff2c398f9946fdc641cfab20ce927a9c896ce3","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":10,"queries_used":4,"washes_used":0}},
+{"seq":14,"kind":"action","name":"place","args":{"item_id":"cereal_bowl_01","frame":"lower_rack","position_mm":[250,90,110],"orientation":{"preset":"on_edge","yaw_deg":90,"roll_deg":-10}},"accepted":false,"result_digest":"sha256:5de340708f7098efbd025789215f5a900125caa24be680a147b3e6ff5aeac6cd","state_hash":"sha256:157ec37cf27e1fc44d788bbe9cff2c398f9946fdc641cfab20ce927a9c896ce3","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":10,"queries_used":4,"washes_used":0}},
+{"seq":15,"kind":"action","name":"place","args":{"item_id":"cereal_bowl_01","frame":"lower_rack","position_mm":[240,110,110],"orientation":{"preset":"on_edge","yaw_deg":90,"roll_deg":-10}},"accepted":true,"result_digest":"sha256:9d3bf84a836bbb3e95da175e31ff7816ef564a302278c2d3aaa6d50802c45445","state_hash":"sha256:e3d43a986020d0fdd59f57bb0a4f8f547213c958ffb0931915dca0a91b1f91e0","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":11,"queries_used":4,"washes_used":0}},
+{"seq":16,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"fork_01"},"accepted":true,"result_digest":"sha256:edb0bacd886b4f7f045afe3ce087cdf6cd2aaa957ad9743355284db903e3203d","state_hash":"sha256:e3d43a986020d0fdd59f57bb0a4f8f547213c958ffb0931915dca0a91b1f91e0","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":11,"queries_used":5,"washes_used":0}},
+{"seq":17,"kind":"action","name":"place","args":{"item_id":"fork_01","frame":"cutlery_basket","position_mm":[100,138,109],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:7346748f6e1bb8f82907c69c6150f3f88d08ad768c55887f1a1bf5bd3ab25f6b","state_hash":"sha256:51dcc7a60ac1240fd6297f7467653f69f6d7ff226c5fb7e79d4ed8a7988fc814","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":12,"queries_used":5,"washes_used":0}},
+{"seq":18,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"fork_02"},"accepted":true,"result_digest":"sha256:505574f4927b41e8f58ddc8757ba082ded7b704ae90973de118b4d07b000b6ab","state_hash":"sha256:51dcc7a60ac1240fd6297f7467653f69f6d7ff226c5fb7e79d4ed8a7988fc814","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":12,"queries_used":6,"washes_used":0}},
+{"seq":19,"kind":"action","name":"place","args":{"item_id":"fork_02","frame":"cutlery_basket","position_mm":[100,138,109],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:5746f8d9b4f9e3275fa49c07c5c0c49113dd056b740c1f72f5a74724f88b58e2","state_hash":"sha256:e8dfc9492c91110331874647858ba6ceb5fb1e113d58f5abe07a9b464b7fafee","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":13,"queries_used":6,"washes_used":0}},
+{"seq":20,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"fork_03"},"accepted":true,"result_digest":"sha256:6bf02b5f7ee63cbdabe22e8c6896c859a28570879a323de4f55896d6bb813b28","state_hash":"sha256:e8dfc9492c91110331874647858ba6ceb5fb1e113d58f5abe07a9b464b7fafee","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":13,"queries_used":7,"washes_used":0}},
+{"seq":21,"kind":"action","name":"place","args":{"item_id":"fork_03","frame":"cutlery_basket","position_mm":[116,138,109],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:5a3899ed3b5da551af0ad7c0a2e5ebd94db65c34e1000768e698a2b8431af2d9","state_hash":"sha256:39454b7d5f68652bc1311aac11d9cfc2929ebdaa884b3952410888b43a9fcf09","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":14,"queries_used":7,"washes_used":0}},
+{"seq":22,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"fork_04"},"accepted":true,"result_digest":"sha256:8ef8ee1281f640718d0913b8dcff4a2ba2abf74e499e08493787f6e68225d538","state_hash":"sha256:39454b7d5f68652bc1311aac11d9cfc2929ebdaa884b3952410888b43a9fcf09","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":14,"queries_used":8,"washes_used":0}},
+{"seq":23,"kind":"action","name":"place","args":{"item_id":"fork_04","frame":"cutlery_basket","position_mm":[100,203,109],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:af285e8e67a598be4fb8e4fd1984847770754bad7c4762142171fe14a4e15124","state_hash":"sha256:07e8ad2829efdd80d631c92ae4937e559573cb3e21027f196b443a1015d3940c","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":15,"queries_used":8,"washes_used":0}},
+{"seq":24,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"fork_05"},"accepted":true,"result_digest":"sha256:1e4964863f5bc2c8c47f22598413ef5fe7af56055686dfcc8fce64057a04f3d1","state_hash":"sha256:07e8ad2829efdd80d631c92ae4937e559573cb3e21027f196b443a1015d3940c","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":15,"queries_used":9,"washes_used":0}},
+{"seq":25,"kind":"action","name":"place","args":{"item_id":"fork_05","frame":"cutlery_basket","position_mm":[100,211,109],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:d42b6c2c8a5f29572bf9e1481e13167d91d341e6ddcf699b7faff168b7de869b","state_hash":"sha256:be1f20076f5a51ceef65084522ce661248ca2c423c4c589698cc7c8e69267067","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":16,"queries_used":9,"washes_used":0}},
+{"seq":26,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"fork_06"},"accepted":true,"result_digest":"sha256:6d9ab17c9c007777a410f3633337004a2c2a59c16b6a5c50889cfe71f95b54ad","state_hash":"sha256:be1f20076f5a51ceef65084522ce661248ca2c423c4c589698cc7c8e69267067","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":16,"queries_used":10,"washes_used":0}},
+{"seq":27,"kind":"action","name":"place","args":{"item_id":"fork_06","frame":"cutlery_basket","position_mm":[108,211,109],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:c46ccea4ead256677e47c51749ef6c8fb976b615760291bd11fd857dddbb8f1b","state_hash":"sha256:a9f5dbdc8d8432d47ca7f24c8d5e7d8de2a73717fd4069ec6dbc414d45979adc","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":17,"queries_used":10,"washes_used":0}},
+{"seq":28,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"knife_01"},"accepted":true,"result_digest":"sha256:01e4c7f26921769c8163f52a78da4e4474b0a116e40ca4ef9ba50bfea7a2f20f","state_hash":"sha256:a9f5dbdc8d8432d47ca7f24c8d5e7d8de2a73717fd4069ec6dbc414d45979adc","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":17,"queries_used":11,"washes_used":0}},
+{"seq":29,"kind":"action","name":"place","args":{"item_id":"knife_01","frame":"cutlery_basket","position_mm":[102,93,121],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:750661a34f2fc3e1f3076121852a6338c073d38c2e1d85de7972da9ab504744f","state_hash":"sha256:2f951cdcc913c1f45e4e625f474b3a39b40cd439b5731537b35d2abbcf16ceab","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":18,"queries_used":11,"washes_used":0}},
+{"seq":30,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"knife_02"},"accepted":true,"result_digest":"sha256:58748dc759521d41f4df4e7730a23f165332fffdd60c9682a3335e11d0762c4f","state_hash":"sha256:2f951cdcc913c1f45e4e625f474b3a39b40cd439b5731537b35d2abbcf16ceab","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":18,"queries_used":12,"washes_used":0}},
+{"seq":31,"kind":"action","name":"place","args":{"item_id":"knife_02","frame":"cutlery_basket","position_mm":[94,93,121],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:051929a9942312cbedc2131666e7e4e68c099b4ac87c3546b5a70df1683bf34c","state_hash":"sha256:ca9fa0b882973cca1d80018e2c6d21ea866de95fb1519ff58feaf658270b7e2b","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":19,"queries_used":12,"washes_used":0}},
+{"seq":32,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"knife_03"},"accepted":true,"result_digest":"sha256:53f06678d15ef0b2a1ea0e7e3f4f7401d0a3f6eaf6c7d2d8dc85a3fb1597e22c","state_hash":"sha256:ca9fa0b882973cca1d80018e2c6d21ea866de95fb1519ff58feaf658270b7e2b","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":19,"queries_used":13,"washes_used":0}},
+{"seq":33,"kind":"action","name":"place","args":{"item_id":"knife_03","frame":"cutlery_basket","position_mm":[86,93,121],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:bca46854c70f09bbd75c8d5a6addd55cde68ad57500fb33ba941ab4c7edafdf6","state_hash":"sha256:89d4fc4d7196076905c5ba6966eda54a6274f5081bd7c8c1ade8a1139a194274","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":20,"queries_used":13,"washes_used":0}},
+{"seq":34,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"knife_04"},"accepted":true,"result_digest":"sha256:8376cde7ef90b54709323f3e38f10a42e4b3c096a919f575531c97b56ff30df9","state_hash":"sha256:89d4fc4d7196076905c5ba6966eda54a6274f5081bd7c8c1ade8a1139a194274","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":20,"queries_used":14,"washes_used":0}},
+{"seq":35,"kind":"action","name":"place","args":{"item_id":"knife_04","frame":"cutlery_basket","position_mm":[78,93,121],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:337636da50d61be328616227baac221ec65354139598e2f7d2716026df449e7c","state_hash":"sha256:7f12b71386d535db347702190a045c1d43a47bdc39651effa08b9305fcdf8493","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":21,"queries_used":14,"washes_used":0}},
+{"seq":36,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"spoon_01"},"accepted":true,"result_digest":"sha256:2b8488145dde3e2d0d542e5a65c93149b842b9d6acbf040be74f0015f1fd75c9","state_hash":"sha256:7f12b71386d535db347702190a045c1d43a47bdc39651effa08b9305fcdf8493","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":21,"queries_used":15,"washes_used":0}},
+{"seq":37,"kind":"action","name":"place","args":{"item_id":"spoon_01","frame":"cutlery_basket","position_mm":[23,203,96],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:073168b5e80933db9bad2d6bf33af6793a9dcc4d4f3f0caeec82d6fe18bde095","state_hash":"sha256:8389cfc057fa03267cf833ae62a478004759dedfa0ac5739895a8827254ed9c9","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":22,"queries_used":15,"washes_used":0}},
+{"seq":38,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"spoon_02"},"accepted":true,"result_digest":"sha256:8dcb065711627fc05221195088093937322182ad36c58bc7dc38cd52f475a7fb","state_hash":"sha256:8389cfc057fa03267cf833ae62a478004759dedfa0ac5739895a8827254ed9c9","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":22,"queries_used":16,"washes_used":0}},
+{"seq":39,"kind":"action","name":"place","args":{"item_id":"spoon_02","frame":"cutlery_basket","position_mm":[15,187,96],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:a2e3d5b031575cf7f85fdc8efc702d7e961719b6ac964902b7b6e49be35f1d9e","state_hash":"sha256:2f5a66e79faa7970fb9c362bd2ef68d8255f9b99d69bbf910e2a1f7f37a81bd2","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":23,"queries_used":16,"washes_used":0}},
+{"seq":40,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"spoon_03"},"accepted":true,"result_digest":"sha256:72aea973bb0f968413f1ccdbfb2d65d6ada6df14beac1b87d98b9f2c7a058fe2","state_hash":"sha256:2f5a66e79faa7970fb9c362bd2ef68d8255f9b99d69bbf910e2a1f7f37a81bd2","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":23,"queries_used":17,"washes_used":0}},
+{"seq":41,"kind":"action","name":"place","args":{"item_id":"spoon_03","frame":"cutlery_basket","position_mm":[39,138,96],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:931bdf9af678790c20757cc5154d1e7af90b7cc8807f3054456cc1d57b6af427","state_hash":"sha256:1f604081adfcd4074633ef14b7e23f3fa45267e805e2b486ab2b95c8ead9cffd","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":24,"queries_used":17,"washes_used":0}},
+{"seq":42,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"spoon_04"},"accepted":true,"result_digest":"sha256:060800562552be662af1aacfb9c21614fa56e30dc866a68601682fa797cc8735","state_hash":"sha256:1f604081adfcd4074633ef14b7e23f3fa45267e805e2b486ab2b95c8ead9cffd","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":24,"queries_used":18,"washes_used":0}},
+{"seq":43,"kind":"action","name":"place","args":{"item_id":"spoon_04","frame":"cutlery_basket","position_mm":[106,195,96],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:8f9b7d1315884c9e1cea905124034e4b0c74d2805dd6cbe8c040358b70c7c88b","state_hash":"sha256:2ad41987305a89228594e97ef733a44a947f8162650b1c8f94bffb1f4adc0ab3","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":25,"queries_used":18,"washes_used":0}},
+{"seq":44,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"teaspoon_01"},"accepted":true,"result_digest":"sha256:6b642e778734f0147508d95abc7cef544d8471fc207f87b3d1a3b896c57d1eaf","state_hash":"sha256:2ad41987305a89228594e97ef733a44a947f8162650b1c8f94bffb1f4adc0ab3","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":25,"queries_used":19,"washes_used":0}},
+{"seq":45,"kind":"action","name":"place","args":{"item_id":"teaspoon_01","frame":"cutlery_basket","position_mm":[24,93,81],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:0b67795c1eee615b63dea5d3e457de7c164b271b6e2a02ece6a4a9fd96636e22","state_hash":"sha256:5a73b20f2427b93bf3d5a052a8cc6c05fa4723f9f1cc508d5e98bc45d1497256","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":26,"queries_used":19,"washes_used":0}},
+{"seq":46,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"teaspoon_02"},"accepted":true,"result_digest":"sha256:6b642e778734f0147508d95abc7cef544d8471fc207f87b3d1a3b896c57d1eaf","state_hash":"sha256:5a73b20f2427b93bf3d5a052a8cc6c05fa4723f9f1cc508d5e98bc45d1497256","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":26,"queries_used":20,"washes_used":0}},
+{"seq":47,"kind":"action","name":"place","args":{"item_id":"teaspoon_02","frame":"cutlery_basket","position_mm":[24,93,81],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:710e152f2c5faab4b80eddfffcdcc1a104f0068b1b50821b11e7cb9116f1c588","state_hash":"sha256:3b2de4e26c83fad4d387b4f61536f50e392d6b7641ff0662cf26d8e448ee9ed5","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":27,"queries_used":20,"washes_used":0}},
+{"seq":48,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"peeler_01"},"accepted":true,"result_digest":"sha256:a161b0d11e670ebf956933e891cd09be81e99e98cea44c728bb0f801ad00859e","state_hash":"sha256:3b2de4e26c83fad4d387b4f61536f50e392d6b7641ff0662cf26d8e448ee9ed5","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":27,"queries_used":21,"washes_used":0}},
+{"seq":49,"kind":"action","name":"place","args":{"item_id":"peeler_01","frame":"cutlery_basket","position_mm":[27,34,106],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:afdaee6b2188754414305c13e6d74a29b45fe05402ec6051aa2be9d3055e0ebd","state_hash":"sha256:b6db5b81e94739fa53f5f34aed3d08e77ac653ab2113822f2736afe263c01e4e","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":28,"queries_used":21,"washes_used":0}},
+{"seq":50,"kind":"query","name":"list_slots","args":{"rack":"cutlery_basket","item_id":"tongs_01"},"accepted":true,"result_digest":"sha256:280a7728db3fa42fad3ca8f671853de645354bb1283b626f32957f63ddb6f598","state_hash":"sha256:b6db5b81e94739fa53f5f34aed3d08e77ac653ab2113822f2736afe263c01e4e","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":28,"queries_used":22,"washes_used":0}},
+{"seq":51,"kind":"action","name":"place","args":{"item_id":"tongs_01","frame":"cutlery_basket","position_mm":[43,93,156],"orientation":{"preset":"handle_down"}},"accepted":true,"result_digest":"sha256:663ca01774a2483442d7fe6cf0e6f072a37e82251f8f0567eccb86053320256a","state_hash":"sha256:a2ac099d146248b899c80d9a2fd95bf3d73d60a417652c68e86fe235e1a9691e","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":29,"queries_used":22,"washes_used":0}},
+{"seq":52,"kind":"action","name":"set_rack","args":{"rack":"lower_rack","option":{"name":"position","value":"in"}},"accepted":false,"result_digest":"sha256:c2b692d3ad9640d0dd9ee0bc86bff0b1c3591a3d578de756688c3c86ecae30c6","state_hash":"sha256:a2ac099d146248b899c80d9a2fd95bf3d73d60a417652c68e86fe235e1a9691e","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":29,"queries_used":22,"washes_used":0}},
+{"seq":53,"kind":"action","name":"remove","args":{"item_id":"baking_tray_01"},"accepted":true,"result_digest":"sha256:cba382d7fae7a3cab349a77439c092f11d798acbd17d3f69f1fb7dd97120fceb","state_hash":"sha256:6e786a3a27ff88282bba7b31d30bf17f789640fd8662c6d7eefb43f0988bf1a3","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":30,"queries_used":22,"washes_used":0}},
+{"seq":54,"kind":"action","name":"set_rack","args":{"rack":"lower_rack","option":{"name":"position","value":"in"}},"accepted":true,"result_digest":"sha256:526a81aba2c56fbcddd40cb759f1a4053ae27b017cce23eeb48e36ebe173dae0","state_hash":"sha256:60ba3c57ba62e33b75cf77102214cff67617e91f6836f2c2c81db19f5e19f66e","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":31,"queries_used":22,"washes_used":0}},
+{"seq":55,"kind":"action","name":"set_rack","args":{"rack":"upper_rack","option":{"name":"position","value":"out"}},"accepted":true,"result_digest":"sha256:ea85a12e090f0eb5a251dfa1fee00a715ab03cf18cf6d5ec0ba0b67f7edab806","state_hash":"sha256:22d64e4f5daf42628f92e14011bd29edd8c35b216c1efecf95a367167d80193b","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":32,"queries_used":22,"washes_used":0}},
+{"seq":56,"kind":"query","name":"list_slots","args":{"rack":"upper_rack","item_id":"mug_01"},"accepted":true,"result_digest":"sha256:374c7cea20e08f09fa2d8a61f7434b0d94c15b58e25f6811094b3e7e4855eba8","state_hash":"sha256:22d64e4f5daf42628f92e14011bd29edd8c35b216c1efecf95a367167d80193b","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":32,"queries_used":23,"washes_used":0}},
+{"seq":57,"kind":"action","name":"place","args":{"item_id":"mug_01","frame":"upper_rack","position_mm":[413,92,76],"orientation":{"preset":"inverted","roll_deg":19,"yaw_deg":90}},"accepted":true,"result_digest":"sha256:aa4959db7fbdad0c959e59f4652a8e694c967ca8ff2f3d2a939e7f5099a8e467","state_hash":"sha256:c1839aede7c2966fb87abca4c23c491315203f9b3a42b42f5e6607c58d47de63","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":33,"queries_used":23,"washes_used":0}},
+{"seq":58,"kind":"action","name":"place","args":{"item_id":"container_01","frame":"upper_rack","position_mm":[185,330,150],"orientation":{"preset":"inverted"}},"accepted":true,"result_digest":"sha256:e073539de70ae58e242e8af2a9d16a9b3594593c3082f5e7ce84b80ddd388c26","state_hash":"sha256:899718c4470c50d2db3cda7abba33dddaf6cfb35f1c45090ca77ee31bd83bc66","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":34,"queries_used":23,"washes_used":0}},
+{"seq":59,"kind":"action","name":"place","args":{"item_id":"container_02","frame":"upper_rack","position_mm":[175,150,150],"orientation":{"preset":"inverted"}},"accepted":true,"result_digest":"sha256:1a35ea4fb7fc253bf337c7e38349c66f466d183730bd396b34845b11c858ee32","state_hash":"sha256:2275d1544e629d95573bb3582c7a109d4941e8bbd57ecdaaff1e1145ea6f3d1d","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":35,"queries_used":23,"washes_used":0}},
+{"seq":60,"kind":"action","name":"place","args":{"item_id":"glass_01","frame":"upper_rack","position_mm":[325,150,170],"orientation":{"preset":"inverted"}},"accepted":true,"result_digest":"sha256:31091db6a37169d078315596fa5444db22c7eeb7328f427faf4647bc65ef0925","state_hash":"sha256:9068b3f235f39d8a1fd4dbc3f0093608d53afc12e4fcfe07df126146005f736b","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":36,"queries_used":23,"washes_used":0}},
+{"seq":61,"kind":"action","name":"place","args":{"item_id":"glass_02","frame":"upper_rack","position_mm":[305,330,170],"orientation":{"preset":"inverted"}},"accepted":true,"result_digest":"sha256:9dd1f74e0668bf98e594d99054a62ba5364702865b8e77890e0bf3fe40dd1744","state_hash":"sha256:a79217eb6cb60c0e9e6cc63911811a9005ebe8f30ec5f6303ee926d992e66dcd","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":37,"queries_used":23,"washes_used":0}},
+{"seq":62,"kind":"action","name":"set_rack","args":{"rack":"upper_rack","option":{"name":"position","value":"in"}},"accepted":true,"result_digest":"sha256:6e205fc3800807ddea124e8179e8fdf84b391946e2d574da7cdfa0f7e745813d","state_hash":"sha256:1f27104b7d952f9a1f28c66b6c2a0728351230da4ad97b3038c43f9b04e77a26","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":38,"queries_used":23,"washes_used":0}},
+{"seq":63,"kind":"query","name":"get_state","args":{},"accepted":true,"result_digest":"sha256:9324c8d85599c30137078d125a68d8482ab697fb13d0da488c7373c62eba4ee6","state_hash":"sha256:1f27104b7d952f9a1f28c66b6c2a0728351230da4ad97b3038c43f9b04e77a26","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":38,"queries_used":24,"washes_used":0}},
+{"seq":64,"kind":"query","name":"check_load","args":{},"accepted":true,"result_digest":"sha256:4fe184b4f260558521db363aa0d1b35bd6e5264a65f1289428a05b220ea62b38","state_hash":"sha256:1f27104b7d952f9a1f28c66b6c2a0728351230da4ad97b3038c43f9b04e77a26","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":38,"queries_used":25,"washes_used":0}},
+{"seq":65,"kind":"query","name":"get_state","args":{},"accepted":true,"result_digest":"sha256:cc113ea129b8c7f13cfe1516db6ebf2fd0f1e841f083e4f0a9b55ef71684b251","state_hash":"sha256:1f27104b7d952f9a1f28c66b6c2a0728351230da4ad97b3038c43f9b04e77a26","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":38,"queries_used":26,"washes_used":0}},
+{"seq":66,"kind":"action","name":"start_cycle","args":{},"accepted":true,"result_digest":"sha256:3990a94b75c5435d647fcbfb316178e2e9973c2933997a9cd8ad24995f292a60","state_hash":"sha256:1f27104b7d952f9a1f28c66b6c2a0728351230da4ad97b3038c43f9b04e77a26","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":38,"queries_used":26,"washes_used":1}},
+{"seq":67,"kind":"query","name":"get_level","args":{},"accepted":true,"result_digest":"sha256:8b65e0d3344dab37fc82b77a3154c008ef0def5d46ebbb02811ecd44e175d4ba","state_hash":"sha256:1f27104b7d952f9a1f28c66b6c2a0728351230da4ad97b3038c43f9b04e77a26","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":38,"queries_used":27,"washes_used":1}},
+{"seq":68,"kind":"query","name":"get_level","args":{},"accepted":true,"result_digest":"sha256:8b65e0d3344dab37fc82b77a3154c008ef0def5d46ebbb02811ecd44e175d4ba","state_hash":"sha256:1f27104b7d952f9a1f28c66b6c2a0728351230da4ad97b3038c43f9b04e77a26","budget":{"actions_max":400,"queries_max":495,"washes_max":1,"actions_used":38,"queries_used":28,"washes_used":1}}
+]
+}

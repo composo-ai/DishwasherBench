@@ -1,0 +1,1476 @@
+{
+  "when": "2026-10-08T14:59:46.025Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 201,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "grids": [
+    {
+      "w": 1024,
+      "h": 1024,
+      "cells": 1048576,
+      "sweep": [
+        {
+          "k": 1,
+          "onePass": false,
+          "steps": 2904,
+          "stepsPerSec": {
+            "best": 3850.991557390584,
+            "median": 3801.4735870414547,
+            "worst": 3689.76047683537,
+            "n": 5,
+            "spreadPct": 4.241278463825771
+          },
+          "cellUpdatesPerSec": {
+            "best": 4038057323.282389,
+            "median": 3986133968.0055804
+          },
+          "submitFrac": 0.9785432255708439
+        },
+        {
+          "k": 2,
+          "onePass": false,
+          "steps": 2904,
+          "stepsPerSec": {
+            "best": 3925.8670415253273,
+            "median": 3807.3950646258636,
+            "worst": 3700.6545574801444,
+            "n": 5,
+            "spreadPct": 5.915133056130953
+          },
+          "cellUpdatesPerSec": {
+            "best": 4116569958.9344616,
+            "median": 3992343087.2851295
+          },
+          "submitFrac": 0.9562008825588951
+        },
+        {
+          "k": 4,
+          "onePass": false,
+          "steps": 2904,
+          "stepsPerSec": {
+            "best": 3863.910049100118,
+            "median": 3759.9174863838057,
+            "worst": 3663.229498205992,
+            "n": 5,
+            "spreadPct": 5.337365823076496
+          },
+          "cellUpdatesPerSec": {
+            "best": 4051603343.6452055,
+            "median": 3942559238.2023854
+          },
+          "submitFrac": 0.9130994134970312
+        },
+        {
+          "k": 4,
+          "onePass": true,
+          "steps": 2904,
+          "stepsPerSec": {
+            "best": 3916.3128607053623,
+            "median": 3824.644944440304,
+            "worst": 3784.1616216575303,
+            "n": 5,
+            "spreadPct": 3.4552550881862545
+          },
+          "cellUpdatesPerSec": {
+            "best": 4106551674.226986,
+            "median": 4010430897.261436
+          },
+          "submitFrac": 0.9118071937316807
+        },
+        {
+          "k": 8,
+          "onePass": false,
+          "steps": 2904,
+          "stepsPerSec": {
+            "best": 3914.976434571827,
+            "median": 3897.922918083024,
+            "worst": 3871.0539608646245,
+            "n": 5,
+            "spreadPct": 1.1268174007094918
+          },
+          "cellUpdatesPerSec": {
+            "best": 4105150329.8575883,
+            "median": 4087268421.751825
+          },
+          "submitFrac": 0.8255314808467962
+        },
+        {
+          "k": 16,
+          "onePass": false,
+          "steps": 2912,
+          "stepsPerSec": {
+            "best": 3922.2581601820075,
+            "median": 3815.5094623697873,
+            "worst": 3699.467788618354,
+            "n": 5,
+            "spreadPct": 5.839072704730756
+          },
+          "cellUpdatesPerSec": {
+            "best": 4112785772.5710087,
+            "median": 4000851650.013862
+          },
+          "submitFrac": 0.6559960658073214
+        },
+        {
+          "k": 16,
+          "onePass": true,
+          "steps": 2912,
+          "stepsPerSec": {
+            "best": 3981.6300823638226,
+            "median": 3904.8656089812434,
+            "worst": 3884.7229800307673,
+            "n": 5,
+            "spreadPct": 2.481701344859798
+          },
+          "cellUpdatesPerSec": {
+            "best": 4175041745.2447276,
+            "median": 4094548360.8031163
+          },
+          "submitFrac": 0.655678903920177
+        },
+        {
+          "k": 32,
+          "onePass": false,
+          "steps": 2912,
+          "stepsPerSec": {
+            "best": 4009.9808864922124,
+            "median": 3973.79641525901,
+            "worst": 3939.709499891878,
+            "n": 5,
+            "spreadPct": 1.7683690671846952
+          },
+          "cellUpdatesPerSec": {
+            "best": 4204769718.034458,
+            "median": 4166827549.9266315
+          },
+          "submitFrac": 0.3055716590803622
+        },
+        {
+          "k": 64,
+          "onePass": false,
+          "steps": 2944,
+          "stepsPerSec": {
+            "best": 3996.4650831940876,
+            "median": 3984.45556692823,
+            "worst": 3938.876066305686,
+            "n": 5,
+            "spreadPct": 1.4453421783995244
+          },
+          "cellUpdatesPerSec": {
+            "best": 4190597371.0753236,
+            "median": 4178004480.5473356
+          },
+          "submitFrac": 0.010146827112182307
+        },
+        {
+          "k": 64,
+          "onePass": true,
+          "steps": 2944,
+          "stepsPerSec": {
+            "best": 3985.053790449643,
+            "median": 3968.697973187022,
+            "worst": 3901.418289455366,
+            "n": 5,
+            "spreadPct": 2.1073788320332825
+          },
+          "cellUpdatesPerSec": {
+            "best": 4178631763.374525,
+            "median": 4161481445.9325547
+          },
+          "submitFrac": 0.005134018454344076
+        },
+        {
+          "k": 128,
+          "onePass": false,
+          "steps": 2944,
+          "stepsPerSec": {
+            "best": 4011.7982844929484,
+            "median": 3980.971389472583,
+            "worst": 3894.6765993902222,
+            "n": 5,
+            "spreadPct": 2.942037850672495
+          },
+          "cellUpdatesPerSec": {
+            "best": 4206675397.960478,
+            "median": 4174351055.687603
+          },
+          "submitFrac": 0.009392418736044643
+        },
+        {
+          "k": 256,
+          "onePass": false,
+          "steps": 3072,
+          "stepsPerSec": {
+            "best": 3994.129285237522,
+            "median": 3692.9825582381313,
+            "worst": 3478.4768289401927,
+            "n": 5,
+            "spreadPct": 13.963035247676322
+          },
+          "cellUpdatesPerSec": {
+            "best": 4188148109.3972197,
+            "median": 3872372878.987107
+          },
+          "submitFrac": 0.008885086203786561
+        },
+        {
+          "k": 256,
+          "onePass": true,
+          "steps": 3072,
+          "stepsPerSec": {
+            "best": 3683.280997651202,
+            "median": 3666.7152363204414,
+            "worst": 3618.382374691705,
+            "n": 5,
+            "spreadPct": 1.769938999261448
+          },
+          "cellUpdatesPerSec": {
+            "best": 3862200055.393107,
+            "median": 3844829595.639943
+          },
+          "submitFrac": 0.004040315560775416
+        }
+      ],
+      "variants": [
+        {
+          "name": "buffer 8x8 k=1 awaitEvery=1",
+          "k": 1,
+          "onePass": false,
+          "awaitEvery": 1,
+          "steps": 2904,
+          "stepsPerSec": {
+            "best": 2430.7210822229163,
+            "median": 2331.1849294108906,
+            "worst": 2307.3003929918855,
+            "n": 5,
+            "spreadPct": 5.294332837945216
+          },
+          "cellUpdatesPerSec": {
+            "best": 2548795789.5129766,
+            "median": 2444424568.541954
+          },
+          "submitFrac": 0.9999864249312617
+        },
+        {
+          "name": "buffer 8x8 k=16 awaitEvery=1",
+          "k": 16,
+          "onePass": false,
+          "awaitEvery": 1,
+          "steps": 2912,
+          "stepsPerSec": {
+            "best": 3695.3941476623986,
+            "median": 3643.5836193419536,
+            "worst": 3434.994856820679,
+            "n": 5,
+            "spreadPct": 7.146790578906726
+          },
+          "cellUpdatesPerSec": {
+            "best": 3874901613.7792473,
+            "median": 3820574337.2351084
+          },
+          "submitFrac": 0.9999719488294765
+        },
+        {
+          "name": "buffer 8x8 k=16 awaitEvery=4",
+          "k": 16,
+          "onePass": false,
+          "awaitEvery": 4,
+          "steps": 2912,
+          "stepsPerSec": {
+            "best": 3719.9231296791136,
+            "median": 3652.677837516321,
+            "worst": 3517.2892904649248,
+            "n": 5,
+            "spreadPct": 5.547542056212983
+          },
+          "cellUpdatesPerSec": {
+            "best": 3900622115.626406,
+            "median": 3830110316.1515136
+          },
+          "submitFrac": 0.9891790071879596
+        },
+        {
+          "name": "buffer 16x16 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 3584,
+          "stepsPerSec": {
+            "best": 3861.2383623835185,
+            "median": 3722.528465681288,
+            "worst": 3511.7327815293256,
+            "n": 5,
+            "spreadPct": 9.38892970399965
+          },
+          "cellUpdatesPerSec": {
+            "best": 4048801877.0746603,
+            "median": 3903354008.430222
+          },
+          "submitFrac": 0.43809721441271166
+        },
+        {
+          "name": "buffer 32x8 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 2912,
+          "stepsPerSec": {
+            "best": 3992.9608980870375,
+            "median": 3888.6839747699187,
+            "worst": 3763.8896024812016,
+            "n": 5,
+            "spreadPct": 5.890715138902215
+          },
+          "cellUpdatesPerSec": {
+            "best": 4186922966.6725135,
+            "median": 4077580687.5283422
+          },
+          "submitFrac": 0.3099962356039205
+        },
+        {
+          "name": "buffer 32x32 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 3776,
+          "stepsPerSec": {
+            "best": 3987.2166581654474,
+            "median": 3932.5625224040064,
+            "worst": 3880.6230527353714,
+            "n": 5,
+            "spreadPct": 2.7105380988301353
+          },
+          "cellUpdatesPerSec": {
+            "best": 4180899694.552492,
+            "median": 4123590679.4923034
+          },
+          "submitFrac": 0.46313402049013425
+        },
+        {
+          "name": "buffer 64x4 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 3744,
+          "stepsPerSec": {
+            "best": 3969.82393051536,
+            "median": 3940.88601091838,
+            "worst": 3733.505117115782,
+            "n": 5,
+            "spreadPct": 5.996590937795399
+          },
+          "cellUpdatesPerSec": {
+            "best": 4162662097.7640743,
+            "median": 4132318489.7847514
+          },
+          "submitFrac": 0.45431532197164937
+        },
+        {
+          "name": "buffer 4x4 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 3680,
+          "stepsPerSec": {
+            "best": 3956.619818144844,
+            "median": 3920.074337221827,
+            "worst": 3912.04836343776,
+            "n": 5,
+            "spreadPct": 1.1370053441045662
+          },
+          "cellUpdatesPerSec": {
+            "best": 4148816582.431048,
+            "median": 4110495868.2267146
+          },
+          "submitFrac": 0.4513790555317966
+        },
+        {
+          "name": "buffer 256x1 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 3424,
+          "stepsPerSec": {
+            "best": 4007.860435006503,
+            "median": 3998.386356831307,
+            "worst": 3939.626716341506,
+            "n": 5,
+            "spreadPct": 1.7065313998087908
+          },
+          "cellUpdatesPerSec": {
+            "best": 4202546263.497379,
+            "median": 4192611972.5007443
+          },
+          "submitFrac": 0.4115963952209508
+        },
+        {
+          "name": "texture(sampled) 8x8 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 3904,
+          "stepsPerSec": {
+            "best": 4183.038653868021,
+            "median": 4174.910649239168,
+            "worst": 4169.594665905917,
+            "n": 5,
+            "spreadPct": 0.32201857935699996
+          },
+          "cellUpdatesPerSec": {
+            "best": 4386233939.518314,
+            "median": 4377711108.93661
+          },
+          "submitFrac": 0.48301385258869833
+        },
+        {
+          "name": "texture(sampled) 8x8 timestamp",
+          "msPerStepBest": 0.237568,
+          "msPerStepMedian": 0.241664,
+          "cellUpdatesPerSecBest": 4413793103.448276
+        },
+        {
+          "name": "texture(sampled) 16x16 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 4096,
+          "stepsPerSec": {
+            "best": 4195.447309737311,
+            "median": 4173.876360435799,
+            "worst": 4103.13381102218,
+            "n": 5,
+            "spreadPct": 2.2116970112045222
+          },
+          "cellUpdatesPerSec": {
+            "best": 4399245358.255111,
+            "median": 4376626578.5203285
+          },
+          "submitFrac": 0.5063641892516577
+        },
+        {
+          "name": "texture(storage) 8x8 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 4096,
+          "stepsPerSec": {
+            "best": 4190.63019184849,
+            "median": 4180.095866722709,
+            "worst": 4111.306740344056,
+            "n": 5,
+            "spreadPct": 1.8976467055676562
+          },
+          "cellUpdatesPerSec": {
+            "best": 4394194244.047722,
+            "median": 4383148203.544631
+          },
+          "submitFrac": 0.5088829114271013
+        },
+        {
+          "name": "texture(storage) 8x8 timestamp",
+          "msPerStepBest": 0.237568,
+          "msPerStepMedian": 0.237568,
+          "cellUpdatesPerSecBest": 4413793103.448276
+        },
+        {
+          "name": "texture(storage) 16x16 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 2816,
+          "stepsPerSec": {
+            "best": 4203.866110847308,
+            "median": 4199.137167080684,
+            "worst": 4165.157000630747,
+            "n": 5,
+            "spreadPct": 0.9218348597903188
+          },
+          "cellUpdatesPerSec": {
+            "best": 4408073111.047827,
+            "median": 4403114454.108795
+          },
+          "submitFrac": 0.2855515340925972
+        }
+      ],
+      "bestK": {
+        "k": 64,
+        "onePass": false
+      },
+      "gpuTimestamp": {
+        "msPerStepBest": 0.249856,
+        "msPerStepMedian": 0.258048,
+        "cellUpdatesPerSecBest": 4196721311.4754095
+      }
+    },
+    {
+      "w": 2048,
+      "h": 2048,
+      "cells": 4194304,
+      "sweep": [
+        {
+          "k": 1,
+          "onePass": false,
+          "steps": 929,
+          "stepsPerSec": {
+            "best": 966.5646487332274,
+            "median": 963.5458074157395,
+            "worst": 954.2605075861144,
+            "n": 5,
+            "spreadPct": 1.2769648367951596
+          },
+          "cellUpdatesPerSec": {
+            "best": 4054065972.4403706,
+            "median": 4041404034.227066
+          },
+          "submitFrac": 0.9318349389802162
+        },
+        {
+          "k": 2,
+          "onePass": false,
+          "steps": 930,
+          "stepsPerSec": {
+            "best": 961.6318368647559,
+            "median": 959.6384736023884,
+            "worst": 953.0395314884694,
+            "n": 5,
+            "spreadPct": 0.8953689970382112
+          },
+          "cellUpdatesPerSec": {
+            "best": 4033376259.889193,
+            "median": 4025015488.3843923
+          },
+          "submitFrac": 0.8630000778788514
+        },
+        {
+          "k": 4,
+          "onePass": false,
+          "steps": 932,
+          "stepsPerSec": {
+            "best": 934.1426514068204,
+            "median": 914.6458148854217,
+            "worst": 897.6316300530168,
+            "n": 5,
+            "spreadPct": 3.991820741931383
+          },
+          "cellUpdatesPerSec": {
+            "best": 3918078259.3662324,
+            "median": 3836302599.957184
+          },
+          "submitFrac": 0.7237713998106603
+        },
+        {
+          "k": 4,
+          "onePass": true,
+          "steps": 932,
+          "stepsPerSec": {
+            "best": 944.6012967961003,
+            "median": 935.1082221163338,
+            "worst": 908.6071147982985,
+            "n": 5,
+            "spreadPct": 3.8491996056178253
+          },
+          "cellUpdatesPerSec": {
+            "best": 3961944997.5570707,
+            "median": 3922128156.455427
+          },
+          "submitFrac": 0.7317947799835881
+        },
+        {
+          "k": 8,
+          "onePass": false,
+          "steps": 936,
+          "stepsPerSec": {
+            "best": 965.5903970178093,
+            "median": 960.1497666225283,
+            "worst": 932.0255327637935,
+            "n": 5,
+            "spreadPct": 3.495794658377647
+          },
+          "cellUpdatesPerSec": {
+            "best": 4049979664.5733857,
+            "median": 4027160006.743937
+          },
+          "submitFrac": 0.4612369613065699
+        },
+        {
+          "k": 16,
+          "onePass": false,
+          "steps": 944,
+          "stepsPerSec": {
+            "best": 964.8436377109181,
+            "median": 954.3380655979086,
+            "worst": 927.8230196775522,
+            "n": 5,
+            "spreadPct": 3.8791932720583477
+          },
+          "cellUpdatesPerSec": {
+            "best": 4046847529.0254545,
+            "median": 4002783965.88957
+          },
+          "submitFrac": 0.0032861873034085226
+        },
+        {
+          "k": 16,
+          "onePass": true,
+          "steps": 944,
+          "stepsPerSec": {
+            "best": 955.7264848975663,
+            "median": 934.591197513977,
+            "worst": 922.5477282901252,
+            "n": 5,
+            "spreadPct": 3.550082292204007
+          },
+          "cellUpdatesPerSec": {
+            "best": 4008607418.5118017,
+            "median": 3919959598.097664
+          },
+          "submitFrac": 0.0020055716030417912
+        },
+        {
+          "k": 32,
+          "onePass": false,
+          "steps": 960,
+          "stepsPerSec": {
+            "best": 956.7046709425226,
+            "median": 952.6456943205753,
+            "worst": 945.3668638954358,
+            "n": 5,
+            "spreadPct": 1.1901389062775232
+          },
+          "cellUpdatesPerSec": {
+            "best": 4012710228.1529064,
+            "median": 3995685646.2715664
+          },
+          "submitFrac": 0.0028566853148742307
+        },
+        {
+          "k": 64,
+          "onePass": false,
+          "steps": 960,
+          "stepsPerSec": {
+            "best": 960.5689372969968,
+            "median": 957.215540399098,
+            "worst": 953.437094892609,
+            "n": 5,
+            "spreadPct": 0.7450612848820027
+          },
+          "cellUpdatesPerSec": {
+            "best": 4028918135.9805427,
+            "median": 4014852969.9580984
+          },
+          "submitFrac": 0.002482825130251761
+        },
+        {
+          "k": 64,
+          "onePass": true,
+          "steps": 960,
+          "stepsPerSec": {
+            "best": 962.512116197754,
+            "median": 961.4049731927125,
+            "worst": 942.1160466161024,
+            "n": 5,
+            "spreadPct": 2.1214857578610933
+          },
+          "cellUpdatesPerSec": {
+            "best": 4037068419.0167046,
+            "median": 4032424724.682087
+          },
+          "submitFrac": 0.0012959229592961244
+        },
+        {
+          "k": 128,
+          "onePass": false,
+          "steps": 1024,
+          "stepsPerSec": {
+            "best": 958.2235430851142,
+            "median": 957.829655280709,
+            "worst": 955.2476423821109,
+            "n": 5,
+            "spreadPct": 0.310692061641288
+          },
+          "cellUpdatesPerSec": {
+            "best": 4019080839.656067,
+            "median": 4017428754.4624987
+          },
+          "submitFrac": 0.002259137859420968
+        },
+        {
+          "k": 256,
+          "onePass": false,
+          "steps": 1024,
+          "stepsPerSec": {
+            "best": 961.9797621666377,
+            "median": 957.5103984577372,
+            "worst": 952.2323502878312,
+            "n": 5,
+            "spreadPct": 1.017995407100188
+          },
+          "cellUpdatesPerSec": {
+            "best": 4034835564.374577,
+            "median": 4016089694.292881
+          },
+          "submitFrac": 0.002229333183689335
+        },
+        {
+          "k": 256,
+          "onePass": true,
+          "steps": 1024,
+          "stepsPerSec": {
+            "best": 962.0602746264123,
+            "median": 959.0764019321575,
+            "worst": 955.0505629743022,
+            "n": 5,
+            "spreadPct": 0.7308814644994113
+          },
+          "cellUpdatesPerSec": {
+            "best": 4035173258.1066594,
+            "median": 4022657988.929656
+          },
+          "submitFrac": 0.001065352616522904
+        }
+      ],
+      "variants": [
+        {
+          "name": "buffer 8x8 k=1 awaitEvery=1",
+          "k": 1,
+          "onePass": false,
+          "awaitEvery": 1,
+          "steps": 929,
+          "stepsPerSec": {
+            "best": 816.7647188462138,
+            "median": 807.6618914009345,
+            "worst": 735.5966523225886,
+            "n": 5,
+            "spreadPct": 10.049758121289422
+          },
+          "cellUpdatesPerSec": {
+            "best": 3425759527.31555,
+            "median": 3387579501.750505
+          },
+          "submitFrac": 0.9999829540102882
+        },
+        {
+          "name": "buffer 8x8 k=16 awaitEvery=1",
+          "k": 16,
+          "onePass": false,
+          "awaitEvery": 1,
+          "steps": 944,
+          "stepsPerSec": {
+            "best": 913.4750880876816,
+            "median": 906.8095120656078,
+            "worst": 888.7936908829054,
+            "n": 5,
+            "spreadPct": 2.7217841097139375
+          },
+          "cellUpdatesPerSec": {
+            "best": 3831392215.866515,
+            "median": 3803434763.694827
+          },
+          "submitFrac": 0.999982305415525
+        },
+        {
+          "name": "buffer 8x8 k=16 awaitEvery=4",
+          "k": 16,
+          "onePass": false,
+          "awaitEvery": 4,
+          "steps": 944,
+          "stepsPerSec": {
+            "best": 954.0440160758965,
+            "median": 951.8539851953442,
+            "worst": 948.7825757688206,
+            "n": 5,
+            "spreadPct": 0.552757081328613
+          },
+          "cellUpdatesPerSec": {
+            "best": 4001550632.803197,
+            "median": 3992364977.520773
+          },
+          "submitFrac": 0.9486963224409686
+        },
+        {
+          "name": "buffer 16x16 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 960,
+          "stepsPerSec": {
+            "best": 958.3224565398322,
+            "median": 955.1583415282884,
+            "worst": 942.2456191406492,
+            "n": 5,
+            "spreadPct": 1.683159398834276
+          },
+          "cellUpdatesPerSec": {
+            "best": 4019495712.754844,
+            "median": 4006224452.505466
+          },
+          "submitFrac": 0.003116725722763263
+        },
+        {
+          "name": "buffer 32x8 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 928,
+          "stepsPerSec": {
+            "best": 958.4917385531224,
+            "median": 952.8844996181126,
+            "worst": 915.2031337438832,
+            "n": 5,
+            "spreadPct": 4.542901561163815
+          },
+          "cellUpdatesPerSec": {
+            "best": 4020205732.9803157,
+            "median": 3996687268.286248
+          },
+          "submitFrac": 0.0029928820717049854
+        },
+        {
+          "name": "buffer 32x32 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 800,
+          "stepsPerSec": {
+            "best": 895.3714608385004,
+            "median": 886.7775778892452,
+            "worst": 852.8066017703464,
+            "n": 5,
+            "spreadPct": 4.79994760010386
+          },
+          "cellUpdatesPerSec": {
+            "best": 3755460099.6807656,
+            "median": 3719414742.0511727
+          },
+          "submitFrac": 0.003756091213535876
+        },
+        {
+          "name": "buffer 64x4 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 800,
+          "stepsPerSec": {
+            "best": 937.1998950481535,
+            "median": 900.9811409826025,
+            "worst": 864.2492232373814,
+            "n": 5,
+            "spreadPct": 8.09680341712954
+          },
+          "cellUpdatesPerSec": {
+            "best": 3930901268.6000504,
+            "median": 3778988803.5478935
+          },
+          "submitFrac": 0.005248560927954295
+        },
+        {
+          "name": "buffer 4x4 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 960,
+          "stepsPerSec": {
+            "best": 941.8851163238329,
+            "median": 929.9281760674144,
+            "worst": 892.1037665364381,
+            "n": 5,
+            "spreadPct": 5.353246741906005
+          },
+          "cellUpdatesPerSec": {
+            "best": 3950552510.9375176,
+            "median": 3900401468.5922604
+          },
+          "submitFrac": 0.00289886211608618
+        },
+        {
+          "name": "buffer 256x1 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 992,
+          "stepsPerSec": {
+            "best": 955.5171217629743,
+            "median": 945.6494643305781,
+            "worst": 933.0456285883432,
+            "n": 5,
+            "spreadPct": 2.376302638794234
+          },
+          "cellUpdatesPerSec": {
+            "best": 4007729285.87893,
+            "median": 3966341330.839601
+          },
+          "submitFrac": 0.0029580920671289576
+        },
+        {
+          "name": "texture(sampled) 8x8 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 928,
+          "stepsPerSec": {
+            "best": 1016.1238032365216,
+            "median": 1001.2409410433219,
+            "worst": 924.9667638909141,
+            "n": 5,
+            "spreadPct": 9.10440590359991
+          },
+          "cellUpdatesPerSec": {
+            "best": 4261932132.4101553,
+            "median": 4199508883.981769
+          },
+          "submitFrac": 0.004097833145348467
+        },
+        {
+          "name": "texture(sampled) 8x8 timestamp",
+          "msPerStepBest": 0.96256,
+          "msPerStepMedian": 0.96256,
+          "cellUpdatesPerSecBest": 4357446808.510638
+        },
+        {
+          "name": "texture(sampled) 16x16 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 1056,
+          "stepsPerSec": {
+            "best": 1035.8763319394334,
+            "median": 1011.8257537399087,
+            "worst": 992.755088648024,
+            "n": 5,
+            "spreadPct": 4.261726204539147
+          },
+          "cellUpdatesPerSec": {
+            "best": 4344780242.558893,
+            "median": 4243904806.214314
+          },
+          "submitFrac": 0.0033588708785714846
+        },
+        {
+          "name": "texture(storage) 8x8 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 1024,
+          "stepsPerSec": {
+            "best": 1021.3769762528404,
+            "median": 1011.9518280294631,
+            "worst": 990.8650592286587,
+            "n": 5,
+            "spreadPct": 3.0151550873322246
+          },
+          "cellUpdatesPerSec": {
+            "best": 4283965537.0051937,
+            "median": 4244433600.111289
+          },
+          "submitFrac": 0.0033395121954308896
+        },
+        {
+          "name": "texture(storage) 8x8 timestamp",
+          "msPerStepBest": 0.98304,
+          "msPerStepMedian": 0.987136,
+          "cellUpdatesPerSecBest": 4266666666.666666
+        },
+        {
+          "name": "texture(storage) 16x16 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 1024,
+          "stepsPerSec": {
+            "best": 1030.4037014032801,
+            "median": 1018.8542338997993,
+            "worst": 1014.1009378654031,
+            "n": 5,
+            "spreadPct": 1.6001075517423164
+          },
+          "cellUpdatesPerSec": {
+            "best": 4321826366.4105835,
+            "median": 4273384388.6628637
+          },
+          "submitFrac": 0.003441030871407237
+        }
+      ],
+      "bestK": {
+        "k": 1,
+        "onePass": false
+      },
+      "gpuTimestamp": {
+        "msPerStepBest": 1.048576,
+        "msPerStepMedian": 1.056768,
+        "cellUpdatesPerSecBest": 4000000000.0000005
+      }
+    },
+    {
+      "w": 4096,
+      "h": 4096,
+      "cells": 16777216,
+      "sweep": [
+        {
+          "k": 1,
+          "onePass": false,
+          "steps": 235,
+          "stepsPerSec": {
+            "best": 239.42401713257627,
+            "median": 235.3477067027976,
+            "worst": 230.83748083619403,
+            "n": 5,
+            "spreadPct": 3.6484469794411494
+          },
+          "cellUpdatesPerSec": {
+            "best": 4016868451.0209327,
+            "median": 3948479310.4574833
+          },
+          "submitFrac": 0.7285200092231503
+        },
+        {
+          "k": 2,
+          "onePass": false,
+          "steps": 236,
+          "stepsPerSec": {
+            "best": 237.3822769989659,
+            "median": 233.96015034679957,
+            "worst": 222.44893014869518,
+            "n": 5,
+            "spreadPct": 6.3828591442324605
+          },
+          "cellUpdatesPerSec": {
+            "best": 3982613735.7834826,
+            "median": 3925199977.760731
+          },
+          "submitFrac": 0.46020244101718255
+        },
+        {
+          "k": 4,
+          "onePass": false,
+          "steps": 236,
+          "stepsPerSec": {
+            "best": 236.2659075920933,
+            "median": 228.52596330336667,
+            "worst": 207.33343180207166,
+            "n": 5,
+            "spreadPct": 12.660476460442254
+          },
+          "cellUpdatesPerSec": {
+            "best": 3963884165.108589,
+            "median": 3834029447.948656
+          },
+          "submitFrac": 0.0015409879517944863
+        },
+        {
+          "k": 4,
+          "onePass": true,
+          "steps": 236,
+          "stepsPerSec": {
+            "best": 238.91904310428322,
+            "median": 237.31485290977793,
+            "worst": 234.9903054052548,
+            "n": 5,
+            "spreadPct": 1.6554959164406176
+          },
+          "cellUpdatesPerSec": {
+            "best": 4008396392.67387,
+            "median": 3981482547.275573
+          },
+          "submitFrac": 0.001303473912766728
+        },
+        {
+          "k": 8,
+          "onePass": false,
+          "steps": 240,
+          "stepsPerSec": {
+            "best": 238.33494251790484,
+            "median": 237.90330865692366,
+            "worst": 237.0871473081667,
+            "n": 5,
+            "spreadPct": 0.5244967868595588
+          },
+          "cellUpdatesPerSec": {
+            "best": 3998596810.9704733,
+            "median": 3991355196.451878
+          },
+          "submitFrac": 0.0012618671178751652
+        },
+        {
+          "k": 16,
+          "onePass": false,
+          "steps": 240,
+          "stepsPerSec": {
+            "best": 239.2901059392902,
+            "median": 238.435495482094,
+            "worst": 237.64707602497904,
+            "n": 5,
+            "spreadPct": 0.6890878017088521
+          },
+          "cellUpdatesPerSec": {
+            "best": 4014621794.006355,
+            "median": 4000283809.7701154
+          },
+          "submitFrac": 0.00098551465705215
+        },
+        {
+          "k": 16,
+          "onePass": true,
+          "steps": 240,
+          "stepsPerSec": {
+            "best": 239.6849640753396,
+            "median": 236.46556900321994,
+            "worst": 229.85590364049344,
+            "n": 5,
+            "spreadPct": 4.156656073135245
+          },
+          "cellUpdatesPerSec": {
+            "best": 4021246414.2442126,
+            "median": 3967233927.7299256
+          },
+          "submitFrac": 0.0006065527103188907
+        },
+        {
+          "k": 32,
+          "onePass": false,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 239.61395017741094,
+            "median": 237.7667387551971,
+            "worst": 232.19119265682795,
+            "n": 5,
+            "spreadPct": 3.1218653876669467
+          },
+          "cellUpdatesPerSec": {
+            "best": 4020054998.7396617,
+            "median": 3989063933.711513
+          },
+          "submitFrac": 0.0008231670130011268
+        },
+        {
+          "k": 64,
+          "onePass": false,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 239.6554952256106,
+            "median": 239.5687761281116,
+            "worst": 237.70081104955554,
+            "n": 5,
+            "spreadPct": 0.815917753409471
+          },
+          "cellUpdatesPerSec": {
+            "best": 4020752008.9870377,
+            "median": 4019297103.956972
+          },
+          "submitFrac": 0.0007020988054408255
+        },
+        {
+          "k": 64,
+          "onePass": true,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 239.7917185618174,
+            "median": 239.24159494815856,
+            "worst": 237.7879036433309,
+            "n": 5,
+            "spreadPct": 0.8375696203332417
+          },
+          "cellUpdatesPerSec": {
+            "best": 4023037457.3228197,
+            "median": 4013807914.629765
+          },
+          "submitFrac": 0.0003816839516788191
+        },
+        {
+          "k": 128,
+          "onePass": false,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 237.86975539850206,
+            "median": 237.3974560529354,
+            "worst": 235.91575457619697,
+            "n": 5,
+            "spreadPct": 0.8230925700692358
+          },
+          "cellUpdatesPerSec": {
+            "best": 3990792266.187835,
+            "median": 3982868398.050605
+          },
+          "submitFrac": 0.0006356024437675241
+        },
+        {
+          "k": 256,
+          "onePass": false,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 239.59293527174003,
+            "median": 239.16667231105941,
+            "worst": 238.231032220859,
+            "n": 5,
+            "spreadPct": 0.5694368022605394
+          },
+          "cellUpdatesPerSec": {
+            "best": 4019702427.128001,
+            "median": 4012550921.363863
+          },
+          "submitFrac": 0.0006313956761486103
+        },
+        {
+          "k": 256,
+          "onePass": true,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 239.83354997016176,
+            "median": 239.55914566751756,
+            "worst": 237.52386022277892,
+            "n": 5,
+            "spreadPct": 0.964141753364088
+          },
+          "cellUpdatesPerSec": {
+            "best": 4023739271.8961973,
+            "median": 4019135531.639406
+          },
+          "submitFrac": 0.0003048977698119175
+        }
+      ],
+      "variants": [
+        {
+          "name": "buffer 8x8 k=1 awaitEvery=1",
+          "k": 1,
+          "onePass": false,
+          "awaitEvery": 1,
+          "steps": 235,
+          "stepsPerSec": {
+            "best": 227.13934156160096,
+            "median": 226.61550942082317,
+            "worst": 224.48571561998773,
+            "n": 5,
+            "spreadPct": 1.170981610391664
+          },
+          "cellUpdatesPerSec": {
+            "best": 3810765795.4767566,
+            "median": 3801977350.5031853
+          },
+          "submitFrac": 0.9999837579663037
+        },
+        {
+          "name": "buffer 8x8 k=16 awaitEvery=1",
+          "k": 16,
+          "onePass": false,
+          "awaitEvery": 1,
+          "steps": 240,
+          "stepsPerSec": {
+            "best": 239.2977408168447,
+            "median": 238.87378986463756,
+            "worst": 238.67549017733307,
+            "n": 5,
+            "spreadPct": 0.26049347643550363
+          },
+          "cellUpdatesPerSec": {
+            "best": 4014749885.99622,
+            "median": 4007637169.297635
+          },
+          "submitFrac": 0.999982149363841
+        },
+        {
+          "name": "buffer 8x8 k=16 awaitEvery=4",
+          "k": 16,
+          "onePass": false,
+          "awaitEvery": 4,
+          "steps": 240,
+          "stepsPerSec": {
+            "best": 239.14587067377852,
+            "median": 238.29392487480078,
+            "worst": 237.84892406189212,
+            "n": 5,
+            "spreadPct": 0.5442633976371035
+          },
+          "cellUpdatesPerSec": {
+            "best": 4012201927.8020477,
+            "median": 3997908649.1123056
+          },
+          "submitFrac": 0.7998694538959858
+        },
+        {
+          "name": "buffer 16x16 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 237.65801035147734,
+            "median": 236.9981041734742,
+            "worst": 235.12630921038905,
+            "n": 5,
+            "spreadPct": 1.068236874686211
+          },
+          "cellUpdatesPerSec": {
+            "best": 3987239773.7969713,
+            "median": 3976168385.308878
+          },
+          "submitFrac": 0.0008018247251995242
+        },
+        {
+          "name": "buffer 32x8 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 237.7918243968044,
+            "median": 235.01197173475353,
+            "worst": 228.576905029173,
+            "n": 5,
+            "spreadPct": 3.921042532263776
+          },
+          "cellUpdatesPerSec": {
+            "best": 3989484800.939257,
+            "median": 3942846612.3798547
+          },
+          "submitFrac": 0.000772115858010076
+        },
+        {
+          "name": "buffer 32x32 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 232.48126527928844,
+            "median": 230.60496450584216,
+            "worst": 224.49855061017166,
+            "n": 5,
+            "spreadPct": 3.461640423146458
+          },
+          "cellUpdatesPerSec": {
+            "best": 3900388403.5439224,
+            "median": 3868909300.186847
+          },
+          "submitFrac": 0.0007749340282794484
+        },
+        {
+          "name": "buffer 64x4 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 233.44466409672532,
+            "median": 224.78780150079325,
+            "worst": 222.5519367803192,
+            "n": 5,
+            "spreadPct": 4.845782219355737
+          },
+          "cellUpdatesPerSec": {
+            "best": 3916551553.5982056,
+            "median": 3771313499.9439325
+          },
+          "submitFrac": 0.0008904651293772867
+        },
+        {
+          "name": "buffer 4x4 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 236.35815470099885,
+            "median": 235.16533155791254,
+            "worst": 234.92117854874553,
+            "n": 5,
+            "spreadPct": 0.6110493169778507
+          },
+          "cellUpdatesPerSec": {
+            "best": 3965431814.780073,
+            "median": 3945419563.258715
+          },
+          "submitFrac": 0.000773253528024126
+        },
+        {
+          "name": "buffer 256x1 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 238.38045614290357,
+            "median": 236.28489997543406,
+            "worst": 233.6553537039158,
+            "n": 5,
+            "spreadPct": 1.9997479481249196
+          },
+          "cellUpdatesPerSec": {
+            "best": 3999360402.88802,
+            "median": 3964202804.426252
+          },
+          "submitFrac": 0.0007717791317390318
+        },
+        {
+          "name": "texture(sampled) 8x8 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 254.38030766996604,
+            "median": 254.20645701917547,
+            "worst": 252.39205556569252,
+            "n": 5,
+            "spreadPct": 0.782140677143991
+          },
+          "cellUpdatesPerSec": {
+            "best": 4267793367.925477,
+            "median": 4264876638.005423
+          },
+          "submitFrac": 0.0009046770903493895
+        },
+        {
+          "name": "texture(sampled) 8x8 timestamp",
+          "msPerStepBest": 3.907584,
+          "msPerStepMedian": 3.91168,
+          "cellUpdatesPerSecBest": 4293501048.21803
+        },
+        {
+          "name": "texture(sampled) 16x16 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 255.11216730913856,
+            "median": 254.18789450010487,
+            "worst": 251.4412855122764,
+            "n": 5,
+            "spreadPct": 1.4441607473406382
+          },
+          "cellUpdatesPerSec": {
+            "best": 4280071935.1735563,
+            "median": 4264565210.6134715
+          },
+          "submitFrac": 0.0008957578261534572
+        },
+        {
+          "name": "texture(storage) 8x8 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 256,
+          "stepsPerSec": {
+            "best": 257.08291912102806,
+            "median": 256.10123476930215,
+            "worst": 248.2510502592748,
+            "n": 5,
+            "spreadPct": 3.4485850369714446
+          },
+          "cellUpdatesPerSec": {
+            "best": 4313135664.004018,
+            "median": 4296665733.591292
+          },
+          "submitFrac": 0.0009045601002105693
+        },
+        {
+          "name": "texture(storage) 8x8 timestamp",
+          "msPerStepBest": 3.862528,
+          "msPerStepMedian": 3.87072,
+          "cellUpdatesPerSecBest": 4343584305.408272
+        },
+        {
+          "name": "texture(storage) 16x16 k=32",
+          "k": 32,
+          "onePass": false,
+          "steps": 288,
+          "stepsPerSec": {
+            "best": 257.13591217738286,
+            "median": 255.66340492389722,
+            "worst": 254.46528210963865,
+            "n": 5,
+            "spreadPct": 1.0445883205455915
+          },
+          "cellUpdatesPerSec": {
+            "best": 4314024739.956983,
+            "median": 4289320167.703687
+          },
+          "submitFrac": 0.0008995535645709223
+        }
+      ],
+      "bestK": {
+        "k": 64,
+        "onePass": false
+      },
+      "gpuTimestamp": {
+        "msPerStepBest": 4.173824,
+        "msPerStepMedian": 4.23936,
+        "cellUpdatesPerSecBest": 4019627085.377822
+      }
+    }
+  ],
+  "foreignAtEnd": []
+}

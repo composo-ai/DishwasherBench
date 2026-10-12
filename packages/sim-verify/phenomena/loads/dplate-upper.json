@@ -1,0 +1,103 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "dplate-upper",
+ "description": "P11 B: the same porcelain dessert plate standing in row C of the upper basket (rear half, slot 2)",
+ "recipe_hash": "sha256:82f261523866e68c209f3a703ce424570c2a9e3dc36b78ed0a6b4a87ed2dfe83",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "plate",
+   "item_type": "dessert_plate_porcelain_190",
+   "pose": {
+    "p": [
+     0.10767577417752623,
+     0.06233756221936859,
+     0.5166335043836225
+    ],
+    "q": [
+     0.060903195291757584,
+     0.6212116479873657,
+     0.7785052061080933,
+     -0.06570125371217728
+    ]
+   },
+   "placed": {
+    "op": "slot, dropped",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 24.2,
+    "rotation_deg": 16.4,
+    "contacts": [
+     "upper_rack.floor.y",
+     "upper_rack.tine_row_c_rear"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:d9f53833ffec7de10a711ea570606c6604e65389fef3988ef8b5677dcf90a185"
+}

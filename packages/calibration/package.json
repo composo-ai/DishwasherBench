@@ -1,0 +1,37 @@
+{
+  "name": "@spotless/calibration",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Calibration of the wash simulation against real washes: the wash record, observation models, the log posterior, fitting, sensitivity, identifiability and experiment ranking, and the spotless-fit command",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./node": "./src/node/index.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "spotless-fit": "tsx scripts/spotless-fit.ts",
+    "study:recovery": "tsx scripts/study-recovery.ts",
+    "study:which-matter": "tsx scripts/study-which-matter.ts",
+    "study:cost": "tsx scripts/study-cost.ts",
+    "study:rank": "tsx scripts/study-rank.ts",
+    "study:water": "tsx scripts/study-water.ts",
+    "make-examples": "tsx scripts/make-examples.ts"
+  },
+  "dependencies": {
+    "@spotless/catalogue": "workspace:*",
+    "@spotless/core": "workspace:*",
+    "@spotless/geometry": "workspace:*",
+    "@spotless/inspector": "workspace:*",
+    "@spotless/levels": "workspace:*",
+    "@spotless/machine": "workspace:*",
+    "@spotless/session": "workspace:*",
+    "@spotless/sim-core": "workspace:*",
+    "@spotless/sim-params": "workspace:*"
+  }
+}

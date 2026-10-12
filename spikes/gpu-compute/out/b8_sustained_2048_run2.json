@@ -1,0 +1,773 @@
+{
+  "when": "2026-10-08T15:30:34.441Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 220,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "grid": 2048,
+  "cells": 4194304,
+  "k": 32,
+  "awaitEvery": 2,
+  "power": "Now drawing from 'AC Power'",
+  "samples": [
+    {
+      "tSec": 10.0274105,
+      "stepsPerSec": 899.9332379979857,
+      "cellUpdatesPerSec": 3774593579.867903,
+      "gpuMsPerStep": 1.06496,
+      "gpuOnlyCellUpdatesPerSec": 3938461538.4615383,
+      "otherBusyProcesses": "knowledgeconstructiond:97% node:101%",
+      "rssMB": 197.25,
+      "heapUsedMB": 10.88787841796875,
+      "externalMB": 65.7376298904419,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 20.122894291,
+      "stepsPerSec": 898.0430394821341,
+      "cellUpdatesPerSec": 3766665512.672073,
+      "gpuMsPerStep": 1.155072,
+      "gpuOnlyCellUpdatesPerSec": 3631205673.758865,
+      "otherBusyProcesses": "WindowServer:46% knowledgeconstructiond:98% node:98% com.apple.WebKit.WebContent:34%",
+      "rssMB": 201.296875,
+      "heapUsedMB": 15.28948974609375,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 30.220719291,
+      "stepsPerSec": 885.1218220883493,
+      "cellUpdatesPerSec": 3712469998.872452,
+      "gpuMsPerStep": 1.089536,
+      "gpuOnlyCellUpdatesPerSec": 3849624060.1503754,
+      "otherBusyProcesses": "WindowServer:51% node:99%",
+      "rssMB": 201.96875,
+      "heapUsedMB": 8.688568115234375,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 40.335159583,
+      "stepsPerSec": 839.2251288474617,
+      "cellUpdatesPerSec": 3519965314.825424,
+      "gpuMsPerStep": 1.204224,
+      "gpuOnlyCellUpdatesPerSec": 3482993197.2789116,
+      "otherBusyProcesses": "WindowServer:45% node:122%",
+      "rssMB": 202.71875,
+      "heapUsedMB": 5.883232116699219,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 50.408699999999996,
+      "stepsPerSec": 861.8837700652583,
+      "cellUpdatesPerSec": 3615002544.319793,
+      "gpuMsPerStep": 1.114112,
+      "gpuOnlyCellUpdatesPerSec": 3764705882.352941,
+      "otherBusyProcesses": "WindowServer:41% node:99%",
+      "rssMB": 208,
+      "heapUsedMB": 20.3768310546875,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 60.480477332999996,
+      "stepsPerSec": 861.9083280233922,
+      "cellUpdatesPerSec": 3615105547.861826,
+      "gpuMsPerStep": 1.130496,
+      "gpuOnlyCellUpdatesPerSec": 3710144927.536232,
+      "otherBusyProcesses": "WindowServer:40% node:99%",
+      "rssMB": 208.59375,
+      "heapUsedMB": 7.4584503173828125,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 70.585775708,
+      "stepsPerSec": 833.6373603185081,
+      "cellUpdatesPerSec": 3496528514.9333596,
+      "gpuMsPerStep": 1.14688,
+      "gpuOnlyCellUpdatesPerSec": 3657142857.1428576,
+      "otherBusyProcesses": "WindowServer:64% node:121%",
+      "rssMB": 212.34375,
+      "heapUsedMB": 20.2462158203125,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 80.695970875,
+      "stepsPerSec": 840.0489595449268,
+      "cellUpdatesPerSec": 3523420711.2151246,
+      "gpuMsPerStep": 1.14688,
+      "gpuOnlyCellUpdatesPerSec": 3657142857.1428576,
+      "otherBusyProcesses": "WindowServer:64% node:100%",
+      "rssMB": 214.796875,
+      "heapUsedMB": 11.825981140136719,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 90.80760487500001,
+      "stepsPerSec": 839.874569528915,
+      "cellUpdatesPerSec": 3522689266.4734063,
+      "gpuMsPerStep": 1.122304,
+      "gpuOnlyCellUpdatesPerSec": 3737226277.372263,
+      "otherBusyProcesses": "WindowServer:63% node:204%",
+      "rssMB": 217.90625,
+      "heapUsedMB": 8.864456176757812,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 100.92672341599999,
+      "stepsPerSec": 852.0477656991877,
+      "cellUpdatesPerSec": 3573747351.863166,
+      "gpuMsPerStep": 1.138688,
+      "gpuOnlyCellUpdatesPerSec": 3683453237.4100723,
+      "otherBusyProcesses": "WindowServer:51% node:100%",
+      "rssMB": 218.546875,
+      "heapUsedMB": 7.447174072265625,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 110.995971333,
+      "stepsPerSec": 849.6543336461376,
+      "cellUpdatesPerSec": 3563708570.2293296,
+      "gpuMsPerStep": 1.179648,
+      "gpuOnlyCellUpdatesPerSec": 3555555555.555556,
+      "otherBusyProcesses": "WindowServer:52% node:100%",
+      "rssMB": 218.84375,
+      "heapUsedMB": 5.334373474121094,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 121.05868541599999,
+      "stepsPerSec": 856.5220527783132,
+      "cellUpdatesPerSec": 3592513872.05629,
+      "gpuMsPerStep": 1.073152,
+      "gpuOnlyCellUpdatesPerSec": 3908396946.5648847,
+      "otherBusyProcesses": "WindowServer:44% node:100%",
+      "rssMB": 219.09375,
+      "heapUsedMB": 18.510032653808594,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 131.112967416,
+      "stepsPerSec": 850.6760828068903,
+      "cellUpdatesPerSec": 3567994096.8212714,
+      "gpuMsPerStep": 1.261568,
+      "gpuOnlyCellUpdatesPerSec": 3324675324.6753244,
+      "otherBusyProcesses": "WindowServer:71% TextEdit:43% node:99%",
+      "rssMB": 219.375,
+      "heapUsedMB": 18.9510498046875,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 141.232310541,
+      "stepsPerSec": 845.7504668306835,
+      "cellUpdatesPerSec": 3547334566.0298033,
+      "gpuMsPerStep": 1.130496,
+      "gpuOnlyCellUpdatesPerSec": 3710144927.536232,
+      "otherBusyProcesses": "WindowServer:49% node:130%",
+      "rssMB": 219.609375,
+      "heapUsedMB": 20.277191162109375,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 151.332563375,
+      "stepsPerSec": 853.2523839637067,
+      "cellUpdatesPerSec": 3578799887.068511,
+      "gpuMsPerStep": 1.179648,
+      "gpuOnlyCellUpdatesPerSec": 3555555555.555556,
+      "otherBusyProcesses": "WindowServer:48% node:99%",
+      "rssMB": 220.046875,
+      "heapUsedMB": 11.830551147460938,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 161.40565175000003,
+      "stepsPerSec": 855.6700326475499,
+      "cellUpdatesPerSec": 3588940240.613749,
+      "gpuMsPerStep": 1.081344,
+      "gpuOnlyCellUpdatesPerSec": 3878787878.7878785,
+      "otherBusyProcesses": "WindowServer:55% node:99%",
+      "rssMB": 220.0625,
+      "heapUsedMB": 6.5862274169921875,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 171.50394391600003,
+      "stepsPerSec": 898.2284474443779,
+      "cellUpdatesPerSec": 3767443170.029744,
+      "gpuMsPerStep": 1.06496,
+      "gpuOnlyCellUpdatesPerSec": 3938461538.4615383,
+      "otherBusyProcesses": "WindowServer:40% node:130%",
+      "rssMB": 220.15625,
+      "heapUsedMB": 3.9608993530273438,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 181.60488816600002,
+      "stepsPerSec": 897.6151390790562,
+      "cellUpdatesPerSec": 3764870768.299842,
+      "gpuMsPerStep": 1.14688,
+      "gpuOnlyCellUpdatesPerSec": 3657142857.1428576,
+      "otherBusyProcesses": "WindowServer:43% node:100%",
+      "rssMB": 220.15625,
+      "heapUsedMB": 10.121452331542969,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 191.67651608300002,
+      "stepsPerSec": 900.1944935144127,
+      "cellUpdatesPerSec": 3775689364.925475,
+      "gpuMsPerStep": 1.114112,
+      "gpuOnlyCellUpdatesPerSec": 3764705882.352941,
+      "otherBusyProcesses": "WindowServer:41% node:102%",
+      "rssMB": 220.15625,
+      "heapUsedMB": 14.165153503417969,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 201.791816833,
+      "stepsPerSec": 902.8538534558169,
+      "cellUpdatesPerSec": 3786843528.9651465,
+      "gpuMsPerStep": 1.073152,
+      "gpuOnlyCellUpdatesPerSec": 3908396946.5648847,
+      "otherBusyProcesses": "WindowServer:36% node:109%",
+      "rssMB": 220.15625,
+      "heapUsedMB": 16.363052368164062,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 211.90785425,
+      "stepsPerSec": 896.2678399439354,
+      "cellUpdatesPerSec": 3759219786.148208,
+      "gpuMsPerStep": 1.073152,
+      "gpuOnlyCellUpdatesPerSec": 3908396946.5648847,
+      "otherBusyProcesses": "WindowServer:34% node:99% node:31% node:103%",
+      "rssMB": 220.15625,
+      "heapUsedMB": 19.228378295898438,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 221.991283291,
+      "stepsPerSec": 892.9460538637549,
+      "cellUpdatesPerSec": 3745287205.5049624,
+      "gpuMsPerStep": 1.122304,
+      "gpuOnlyCellUpdatesPerSec": 3737226277.372263,
+      "otherBusyProcesses": "WindowServer:41% node:99% node:111%",
+      "rssMB": 222.1875,
+      "heapUsedMB": 20.551048278808594,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 232.098148583,
+      "stepsPerSec": 865.4184674002203,
+      "cellUpdatesPerSec": 3629828139.4906135,
+      "gpuMsPerStep": 1.179648,
+      "gpuOnlyCellUpdatesPerSec": 3555555555.555556,
+      "otherBusyProcesses": "WindowServer:45% node:124% node:221%",
+      "rssMB": 222.296875,
+      "heapUsedMB": 7.493309020996094,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 242.22357029100002,
+      "stepsPerSec": 858.3201451474448,
+      "cellUpdatesPerSec": 3600055618.0725083,
+      "gpuMsPerStep": 1.204224,
+      "gpuOnlyCellUpdatesPerSec": 3482993197.2789116,
+      "otherBusyProcesses": "WindowServer:43% node:138% node:100%",
+      "rssMB": 223.96875,
+      "heapUsedMB": 21.885231018066406,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 252.326315416,
+      "stepsPerSec": 846.8657516687834,
+      "cellUpdatesPerSec": 3552012409.687385,
+      "gpuMsPerStep": 1.196032,
+      "gpuOnlyCellUpdatesPerSec": 3506849315.068493,
+      "otherBusyProcesses": "WindowServer:42% node:99% node:133%",
+      "rssMB": 224.15625,
+      "heapUsedMB": 24.983848571777344,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 262.40653312499995,
+      "stepsPerSec": 855.1349913799036,
+      "cellUpdatesPerSec": 3586696114.884695,
+      "gpuMsPerStep": 1.138688,
+      "gpuOnlyCellUpdatesPerSec": 3683453237.4100723,
+      "otherBusyProcesses": "WindowServer:43% node:100%",
+      "rssMB": 224.21875,
+      "heapUsedMB": 21.556991577148438,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 272.51475495799997,
+      "stepsPerSec": 891.1390038227129,
+      "cellUpdatesPerSec": 3737707888.28962,
+      "gpuMsPerStep": 1.138688,
+      "gpuOnlyCellUpdatesPerSec": 3683453237.4100723,
+      "otherBusyProcesses": "WindowServer:37% node:99%",
+      "rssMB": 224.21875,
+      "heapUsedMB": 16.35980224609375,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 282.610297583,
+      "stepsPerSec": 898.1131264249468,
+      "cellUpdatesPerSec": 3766959478.61666,
+      "gpuMsPerStep": 1.196032,
+      "gpuOnlyCellUpdatesPerSec": 3506849315.068493,
+      "otherBusyProcesses": "WindowServer:46% node:82%",
+      "rssMB": 224.25,
+      "heapUsedMB": 7.911674499511719,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 292.723619958,
+      "stepsPerSec": 891.09087273831,
+      "cellUpdatesPerSec": 3737506011.889785,
+      "gpuMsPerStep": 1.122304,
+      "gpuOnlyCellUpdatesPerSec": 3737226277.372263,
+      "otherBusyProcesses": "WindowServer:42% node:99%",
+      "rssMB": 224.25,
+      "heapUsedMB": 20.50749969482422,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 302.776543958,
+      "stepsPerSec": 882.8772825732044,
+      "cellUpdatesPerSec": 3703055717.8059216,
+      "gpuMsPerStep": 1.081344,
+      "gpuOnlyCellUpdatesPerSec": 3878787878.7878785,
+      "otherBusyProcesses": "WindowServer:38% node:99%",
+      "rssMB": 226.125,
+      "heapUsedMB": 21.369651794433594,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 312.892561666,
+      "stepsPerSec": 883.7836869883755,
+      "cellUpdatesPerSec": 3706857453.4700913,
+      "gpuMsPerStep": 1.089536,
+      "gpuOnlyCellUpdatesPerSec": 3849624060.1503754,
+      "otherBusyProcesses": "WindowServer:36% node:100%",
+      "rssMB": 226.125,
+      "heapUsedMB": 23.3602294921875,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 322.97855675,
+      "stepsPerSec": 892.4983052119582,
+      "cellUpdatesPerSec": 3743409211.543737,
+      "gpuMsPerStep": 1.220608,
+      "gpuOnlyCellUpdatesPerSec": 3436241610.738255,
+      "otherBusyProcesses": "WindowServer:40% Google Chrome Helper:39% node:98% claude:67%",
+      "rssMB": 226.125,
+      "heapUsedMB": 20.34014892578125,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 333.07887425,
+      "stepsPerSec": 891.4472377515585,
+      "cellUpdatesPerSec": 3739000715.090313,
+      "gpuMsPerStep": 1.10592,
+      "gpuOnlyCellUpdatesPerSec": 3792592592.5925922,
+      "otherBusyProcesses": "WindowServer:37% node:152%",
+      "rssMB": 226.4375,
+      "heapUsedMB": 24.037208557128906,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 343.155051416,
+      "stepsPerSec": 849.0657564745595,
+      "cellUpdatesPerSec": 3561239898.644271,
+      "gpuMsPerStep": 1.155072,
+      "gpuOnlyCellUpdatesPerSec": 3631205673.758865,
+      "otherBusyProcesses": "WindowServer:48% node:99%",
+      "rssMB": 226.4375,
+      "heapUsedMB": 8.498062133789062,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 353.237429833,
+      "stepsPerSec": 848.4031400402105,
+      "cellUpdatesPerSec": 3558460683.883215,
+      "gpuMsPerStep": 1.171456,
+      "gpuOnlyCellUpdatesPerSec": 3580419580.4195805,
+      "otherBusyProcesses": "WindowServer:48% node:100%",
+      "rssMB": 226.4375,
+      "heapUsedMB": 20.452529907226562,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 363.324521,
+      "stepsPerSec": 854.3505771969087,
+      "cellUpdatesPerSec": 3583406043.339303,
+      "gpuMsPerStep": 1.122304,
+      "gpuOnlyCellUpdatesPerSec": 3737226277.372263,
+      "otherBusyProcesses": "WindowServer:45% node:100%",
+      "rssMB": 226.4375,
+      "heapUsedMB": 16.576316833496094,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 373.43365191600003,
+      "stepsPerSec": 852.5897210365928,
+      "cellUpdatesPerSec": 3576020477.302665,
+      "gpuMsPerStep": 1.130496,
+      "gpuOnlyCellUpdatesPerSec": 3710144927.536232,
+      "otherBusyProcesses": "WindowServer:43% node:98%",
+      "rssMB": 228.296875,
+      "heapUsedMB": 5.2273406982421875,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 383.51701299999996,
+      "stepsPerSec": 867.4038641421256,
+      "cellUpdatesPerSec": 3638155496.986774,
+      "gpuMsPerStep": 1.130496,
+      "gpuOnlyCellUpdatesPerSec": 3710144927.536232,
+      "otherBusyProcesses": "WindowServer:36%",
+      "rssMB": 228.296875,
+      "heapUsedMB": 21.37267303466797,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 393.583769333,
+      "stepsPerSec": 888.0635242644204,
+      "cellUpdatesPerSec": 3724808392.0763555,
+      "gpuMsPerStep": 1.097728,
+      "gpuOnlyCellUpdatesPerSec": 3820895522.3880596,
+      "otherBusyProcesses": "WindowServer:30% node:100%",
+      "rssMB": 228.296875,
+      "heapUsedMB": 20.69426727294922,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 403.658650541,
+      "stepsPerSec": 887.147469730583,
+      "cellUpdatesPerSec": 3720966180.880863,
+      "gpuMsPerStep": 1.10592,
+      "gpuOnlyCellUpdatesPerSec": 3792592592.5925922,
+      "otherBusyProcesses": "WindowServer:42% node:99%",
+      "rssMB": 228.3125,
+      "heapUsedMB": 6.935821533203125,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 413.76014499999997,
+      "stepsPerSec": 884.8925816277311,
+      "cellUpdatesPerSec": 3711508494.6915193,
+      "gpuMsPerStep": 1.073152,
+      "gpuOnlyCellUpdatesPerSec": 3908396946.5648847,
+      "otherBusyProcesses": "WindowServer:36%",
+      "rssMB": 228.3125,
+      "heapUsedMB": 8.435943603515625,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    }
+  ],
+  "summary": {
+    "totalSteps": 364032,
+    "totalCellUpdates": 1526860873728,
+    "seconds": 420.017051208,
+    "first": 3774593579.867903,
+    "last": 3711508494.6915193,
+    "min": 3496528514.9333596,
+    "max": 3786843528.9651465,
+    "mean": 3652109459.1766624,
+    "minOverFirstPct": 92.63324490303735,
+    "lastOverFirstPct": 98.32869198122803,
+    "rssFirstMB": 197.25,
+    "rssLastMB": 228.3125,
+    "stateFinite": true,
+    "deviceLost": null,
+    "uncapturedErrors": 0,
+    "foreignAtEnd": [],
+    "powerAtEnd": "Now drawing from 'AC Power'"
+  }
+}

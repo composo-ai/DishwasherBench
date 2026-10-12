@@ -1,0 +1,712 @@
+{
+  "version": 1,
+  "stack": {
+    "gpu": "apple metal-3 apple-m3-pro",
+    "os": "macOS 27.0.1 (26A434)",
+    "webgpu": "webgpu 0.6.2",
+    "runtime": "node 20.19.0"
+  },
+  "probes": {
+    "addmul": {
+      "hash": "d57e07b28349fc74131f6a46e8ea3ee80de30e5efea5b98a451a57deb741cc22",
+      "source": "91708160e6c64c1a075c11cd558ee0f61c54766d07ddb866bfcca2db74933d1e",
+      "count": 16384,
+      "expressions": {
+        "sum4": {
+          "sourceOrder": {
+            "matches": 16384,
+            "maxUlp": 0
+          },
+          "pairwise": {
+            "matches": 12482,
+            "maxUlp": 2512
+          },
+          "reversed": {
+            "matches": 10493,
+            "maxUlp": 2528
+          }
+        },
+        "product4": {
+          "sourceOrder": {
+            "matches": 16384,
+            "maxUlp": 0
+          },
+          "pairwise": {
+            "matches": 10577,
+            "maxUlp": 2
+          }
+        },
+        "sumTimesSum": {
+          "sourceOrder": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "cancel": {
+          "sourceOrder": {
+            "matches": 8900,
+            "maxUlp": 31589
+          },
+          "simplified": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "scale": {
+          "sourceOrder": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "differenceOfSquares": {
+          "sourceOrder": {
+            "matches": 16384,
+            "maxUlp": 0
+          },
+          "expanded": {
+            "matches": 11131,
+            "maxUlp": 462
+          }
+        },
+        "sum4SharedPairs": {
+          "sourceOrder": {
+            "matches": 12427,
+            "maxUlp": 768
+          },
+          "pairwise": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        }
+      }
+    },
+    "div": {
+      "hash": "5e6b088d1270b52e0870abc13494ac53232e7cd4d09b6aed0a21226cb956816f",
+      "source": "8eb6238ca97708c719b235d5891bd3608b36b4f72889a77d1842ccd3857ac9b6",
+      "count": 16384,
+      "expressions": {
+        "quotient": {
+          "correctlyRounded": {
+            "matches": 11721,
+            "maxUlp": 2
+          },
+          "timesReciprocal": {
+            "matches": 14865,
+            "maxUlp": 2
+          }
+        },
+        "reciprocal": {
+          "correctlyRounded": {
+            "matches": 14706,
+            "maxUlp": 1
+          }
+        },
+        "overSum": {
+          "correctlyRounded": {
+            "matches": 11818,
+            "maxUlp": 2
+          }
+        },
+        "twice": {
+          "sourceOrder": {
+            "matches": 9428,
+            "maxUlp": 2
+          },
+          "combined": {
+            "matches": 11918,
+            "maxUlp": 2
+          }
+        },
+        "byConstant": {
+          "correctlyRounded": {
+            "matches": 10921,
+            "maxUlp": 1
+          },
+          "timesReciprocal": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "mulDiv": {
+          "sourceOrder": {
+            "matches": 11694,
+            "maxUlp": 2
+          },
+          "simplified": {
+            "matches": 11449,
+            "maxUlp": 2
+          }
+        },
+        "ratio": {
+          "sourceOrder": {
+            "matches": 11699,
+            "maxUlp": 2
+          }
+        }
+      }
+    },
+    "sqrt": {
+      "hash": "ad8b41603ce8c9a7e041706fe5a3ce8665efc11b3937cb5b018d63eaf44a59a4",
+      "source": "fd927eaffa2ab76d69107437748d82b31653e71ca741048c7e931566bdc8ae4f",
+      "count": 16384,
+      "expressions": {
+        "sqrt": {
+          "correctlyRounded": {
+            "matches": 11855,
+            "maxUlp": 2
+          }
+        },
+        "inverseSqrt": {
+          "correctlyRounded": {
+            "matches": 15702,
+            "maxUlp": 1
+          },
+          "oneOverSqrt": {
+            "matches": 12045,
+            "maxUlp": 2
+          }
+        },
+        "hypot": {
+          "separate": {
+            "matches": 11215,
+            "maxUlp": 2
+          },
+          "fusedLeft": {
+            "matches": 11658,
+            "maxUlp": 2
+          },
+          "fusedRight": {
+            "matches": 10857,
+            "maxUlp": 2
+          }
+        },
+        "length2": {
+          "separate": {
+            "matches": 11249,
+            "maxUlp": 2
+          },
+          "fusedLeft": {
+            "matches": 10935,
+            "maxUlp": 2
+          },
+          "fusedRight": {
+            "matches": 11677,
+            "maxUlp": 2
+          },
+          "correctlyRounded": {
+            "matches": 11277,
+            "maxUlp": 2
+          }
+        },
+        "oneOverSqrt": {
+          "sourceOrder": {
+            "matches": 11991,
+            "maxUlp": 2
+          },
+          "correctlyRounded": {
+            "matches": 15663,
+            "maxUlp": 1
+          }
+        },
+        "normalizeX": {
+          "correctlyRounded": {
+            "matches": 10795,
+            "maxUlp": 2
+          }
+        }
+      }
+    },
+    "explog": {
+      "hash": "5fc45ededf1fcc4066ca5ca59c39b4f6783c9d03a704af358badb6f4299c1d6a",
+      "source": "c28129c63d36037d07b3f5f1b03e149ae6eafd1e0ba16937d0f7c51fa7dfe763",
+      "count": 16384,
+      "expressions": {
+        "exp": {
+          "double": {
+            "matches": 7508,
+            "maxUlp": 14
+          }
+        },
+        "exp2": {
+          "double": {
+            "matches": 11238,
+            "maxUlp": 1
+          }
+        },
+        "log": {
+          "double": {
+            "matches": 8543,
+            "maxUlp": 3
+          }
+        },
+        "log2": {
+          "double": {
+            "matches": 8017,
+            "maxUlp": 3
+          }
+        },
+        "expNegative": {
+          "double": {
+            "matches": 7123,
+            "maxUlp": 15
+          }
+        },
+        "log1p": {
+          "double": {
+            "matches": 8589,
+            "maxUlp": 3
+          }
+        },
+        "expTimesExp": {
+          "double": {
+            "matches": 11963,
+            "maxUlp": 1
+          },
+          "one": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        }
+      }
+    },
+    "pow": {
+      "hash": "a272121ea974d301ce314cfe02b24bb80b6548a2087089a37c32b5eef804126a",
+      "source": "cb58f3eb006383f157132370229d90c79af675d901b619fa0ba4b8c537cb026b",
+      "count": 16384,
+      "expressions": {
+        "pow": {
+          "double": {
+            "matches": 6503,
+            "maxUlp": 14
+          }
+        },
+        "powHalf": {
+          "double": {
+            "matches": 11460,
+            "maxUlp": 2
+          },
+          "sqrt": {
+            "matches": 11460,
+            "maxUlp": 2
+          }
+        },
+        "powTwo": {
+          "square": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "powThreeHalves": {
+          "double": {
+            "matches": 5766,
+            "maxUlp": 7
+          }
+        },
+        "powMinusOne": {
+          "reciprocal": {
+            "matches": 14680,
+            "maxUlp": 1
+          }
+        },
+        "twoToThe": {
+          "double": {
+            "matches": 12910,
+            "maxUlp": 1
+          }
+        }
+      }
+    },
+    "cbrt": {
+      "hash": "73ccf9ac1f10b2d0a0f93c43b4341fe58e3e9f1c279c13126e18f0272611908c",
+      "source": "b0f24438c823ff5616cc9116952f0ff7f75c06febb65a051b10f6c0e73d56f28",
+      "count": 16384,
+      "expressions": {
+        "powThird": {
+          "double": {
+            "matches": 7662,
+            "maxUlp": 5
+          },
+          "cubeRoot": {
+            "matches": 8995,
+            "maxUlp": 4
+          }
+        },
+        "signedPowThird": {
+          "double": {
+            "matches": 7686,
+            "maxUlp": 4
+          },
+          "cubeRoot": {
+            "matches": 9006,
+            "maxUlp": 3
+          }
+        },
+        "expLogThird": {
+          "double": {
+            "matches": 8083,
+            "maxUlp": 5
+          },
+          "cubeRoot": {
+            "matches": 9019,
+            "maxUlp": 4
+          }
+        }
+      }
+    },
+    "trig": {
+      "hash": "1121006d95cb7c15f11a2272031d5bd7290bcf4414b2496325e29e55a061a577",
+      "source": "f07ce0934714c263ba8805282e29e8f0b2110aaa16aee0893b1b39309579f4dc",
+      "count": 16384,
+      "expressions": {
+        "sin": {
+          "double": {
+            "matches": 9237,
+            "maxUlp": 2
+          }
+        },
+        "cos": {
+          "double": {
+            "matches": 9364,
+            "maxUlp": 2
+          }
+        },
+        "tan": {
+          "double": {
+            "matches": 6736,
+            "maxUlp": 4
+          }
+        },
+        "sinLarge": {
+          "double": {
+            "matches": 9406,
+            "maxUlp": 2
+          }
+        },
+        "tanh": {
+          "double": {
+            "matches": 8974,
+            "maxUlp": 6
+          }
+        },
+        "pythagoras": {
+          "double": {
+            "matches": 7625,
+            "maxUlp": 4
+          },
+          "one": {
+            "matches": 7085,
+            "maxUlp": 4
+          }
+        }
+      }
+    },
+    "atan2": {
+      "hash": "8e9f877bd121a415487f79967345297c661155c26845e793b3182a72aae6c7be",
+      "source": "b1e50a22616e18d5c07f106df3081d9e441b859aaee0bbc0c643cf8fdaab25bc",
+      "count": 16384,
+      "expressions": {
+        "atan2": {
+          "double": {
+            "matches": 9314,
+            "maxUlp": 4
+          }
+        },
+        "atan": {
+          "double": {
+            "matches": 8326,
+            "maxUlp": 3
+          }
+        },
+        "acos": {
+          "double": {
+            "matches": 10694,
+            "maxUlp": 3
+          }
+        },
+        "asin": {
+          "double": {
+            "matches": 3038,
+            "maxUlp": 3
+          }
+        }
+      }
+    },
+    "ftoi": {
+      "hash": "95084391e5f0aa0154b7be620094658b68a6f8179be6c35f02e335f1f2f74ad6",
+      "source": "ec23247e506741fbeeddadc156d1754b9c330be812ff11c60db6c8a3c8a54612",
+      "count": 16384,
+      "expressions": {
+        "truncate": {
+          "specified": {
+            "matches": 16384,
+            "maxUlp": null
+          }
+        },
+        "unsigned": {
+          "specified": {
+            "matches": 16384,
+            "maxUlp": null
+          }
+        },
+        "fixedPoint20": {
+          "specified": {
+            "matches": 16384,
+            "maxUlp": null
+          }
+        },
+        "floor": {
+          "specified": {
+            "matches": 16384,
+            "maxUlp": null
+          }
+        },
+        "roundTie": {
+          "tiesToEven": {
+            "matches": 16384,
+            "maxUlp": null
+          },
+          "tiesAway": {
+            "matches": 4877,
+            "maxUlp": null
+          }
+        },
+        "saturateI32": {
+          "clampedToFloat": {
+            "matches": 16384,
+            "maxUlp": null
+          },
+          "clampedToInteger": {
+            "matches": 8302,
+            "maxUlp": null
+          }
+        },
+        "saturateU32": {
+          "clampedToFloat": {
+            "matches": 16384,
+            "maxUlp": null
+          },
+          "clampedToInteger": {
+            "matches": 8103,
+            "maxUlp": null
+          }
+        },
+        "fixedPointDecimal": {
+          "specified": {
+            "matches": 16384,
+            "maxUlp": null
+          }
+        }
+      }
+    },
+    "fma": {
+      "hash": "f595150ba8a4a56eadc92cedfa335b258905fb7e8a7d9f6aa184bd55869a628d",
+      "source": "6b09b7c589fac826648833f27a7cb6c3c3afa985bdd38cfb3377524100effc23",
+      "count": 16384,
+      "expressions": {
+        "mulAdd": {
+          "separate": {
+            "matches": 13454,
+            "maxUlp": 182
+          },
+          "fused": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "mulSubMul": {
+          "separate": {
+            "matches": 13668,
+            "maxUlp": 1896
+          },
+          "fusedLeft": {
+            "matches": 16384,
+            "maxUlp": 0
+          },
+          "fusedRight": {
+            "matches": 11899,
+            "maxUlp": 2375
+          }
+        },
+        "fmaBuiltin": {
+          "separate": {
+            "matches": 13463,
+            "maxUlp": 643
+          },
+          "fused": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "sumOfSquares": {
+          "separate": {
+            "matches": 14273,
+            "maxUlp": 1
+          },
+          "fusedLeft": {
+            "matches": 16384,
+            "maxUlp": 0
+          },
+          "fusedRight": {
+            "matches": 12674,
+            "maxUlp": 1
+          }
+        },
+        "dot2": {
+          "separate": {
+            "matches": 13626,
+            "maxUlp": 5163
+          },
+          "fusedLeft": {
+            "matches": 11843,
+            "maxUlp": 15863
+          },
+          "fusedRight": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "addMul": {
+          "separate": {
+            "matches": 13509,
+            "maxUlp": 213
+          },
+          "fused": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "horner": {
+          "separate": {
+            "matches": 11577,
+            "maxUlp": 763
+          },
+          "fused": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "mulAddSharedProduct": {
+          "separate": {
+            "matches": 16384,
+            "maxUlp": 0
+          },
+          "fused": {
+            "matches": 13463,
+            "maxUlp": 507
+          }
+        },
+        "product": {
+          "correctlyRounded": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        }
+      }
+    },
+    "atomics": {
+      "hash": "3f301c3dd4477901ed4e2cb957e5850f2a0a1ebbd02cea8573d52eb571babad1",
+      "source": "785d6e8d8f5c1ce77a99cf36dd8a01744a771759a5f52e6e5eb41f46feb9f442",
+      "count": 768,
+      "expressions": {
+        "bins": {
+          "exact": {
+            "matches": 768,
+            "maxUlp": null
+          }
+        }
+      }
+    },
+    "f16": {
+      "hash": "15d05ed7c4e9a206903dfd5e7bf8b9440b43a120152100637cdf46908caf3723",
+      "source": "7de6e4cc6122d3aa5e618f731299a07abdaa2409262b1ada1f8294ffe6f03a74",
+      "count": 16384,
+      "expressions": {
+        "pack": {
+          "nearestEven": {
+            "matches": 16384,
+            "maxUlp": null
+          }
+        },
+        "unpackX": {
+          "exact": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "unpackY": {
+          "exact": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "unpackPack": {
+          "identity": {
+            "matches": 16384,
+            "maxUlp": null
+          }
+        },
+        "quantize": {
+          "nearestEven": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        }
+      }
+    },
+    "bitcast": {
+      "hash": "3f57d6ed1cd416cb61210554e66263275b2225e9030511b73db029d27dcd51f1",
+      "source": "92006097d736582356aa1e73f29462c8c24ab2f400f6d253f25fd2460cf184ad",
+      "count": 16384,
+      "expressions": {
+        "roundTrip": {
+          "identity": {
+            "matches": 16384,
+            "maxUlp": null
+          }
+        },
+        "negate": {
+          "signFlip": {
+            "matches": 16384,
+            "maxUlp": null
+          }
+        },
+        "abs": {
+          "signClear": {
+            "matches": 16384,
+            "maxUlp": null
+          }
+        },
+        "min": {
+          "exact": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "max": {
+          "exact": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "select": {
+          "exact": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "fromU32": {
+          "nearestEven": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        },
+        "fromI32": {
+          "nearestEven": {
+            "matches": 16384,
+            "maxUlp": 0
+          }
+        }
+      }
+    }
+  }
+}

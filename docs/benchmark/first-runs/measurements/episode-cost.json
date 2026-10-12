@@ -1,0 +1,894 @@
+{
+ "note": "Estimates, not measurements. No Anthropic model was run. The prices are what the script assumed on 6 October 2026 and may be wrong or out of date; check the provider's price list. No prices were supplied for the other two models, so no comparison of cost can be read from this table.",
+ "token_model": {
+  "perLetter": 0.1647,
+  "perDigit": 1.2025,
+  "perOther": 0.3443,
+  "perItem": 10.28,
+  "perPicture768": 703.4
+ },
+ "prices_usd_per_million_tokens": {
+  "claude-haiku-5-5": {
+   "input": 0.1,
+   "output": 0.5,
+   "cacheRead": 0.01,
+   "cacheWrite": 0.125,
+   "note": "prompts up to 100,000 tokens; no request of a rehearsal is larger"
+  },
+  "claude-sonnet-5-5": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.2,
+   "cacheWrite": 2.5
+  },
+  "claude-opus-5-5": {
+   "input": 4,
+   "output": 20,
+   "cacheRead": 0.2,
+   "cacheWrite": 5
+  },
+  "gpt-6.1-sol": null,
+  "gpt-6-astra": null
+ },
+ "scenarios": [
+  {
+   "name": "as rehearsed, terse",
+   "turns": 1,
+   "outputPerTurn": 60
+  },
+  {
+   "name": "twice the turns, thinking",
+   "turns": 2,
+   "outputPerTurn": 400
+  },
+  {
+   "name": "four times the turns, thinking hard",
+   "turns": 4,
+   "outputPerTurn": 1500
+  }
+ ],
+ "episodes": [
+  {
+   "load": "tutorial-careful",
+   "items": 12,
+   "measurement": {
+    "requests": 54,
+    "calls": 53,
+    "system_tokens": 5265,
+    "tools_tokens": 7698,
+    "system_characters": 20914,
+    "tools_characters": 35445,
+    "input_tokens": 1150522,
+    "cached_tokens": 1102626,
+    "written_tokens": 47895,
+    "largest_request_tokens": 25152,
+    "largest_request_turn": 42,
+    "largest_conversation_tokens": 12189,
+    "largest_conversation_characters": 31025,
+    "result_characters": 65048,
+    "result_tokens": 21956,
+    "pictures": 1,
+    "by_tool": [
+     {
+      "tool": "list_slots",
+      "calls": 13,
+      "refused": 0,
+      "characters_median": 1534,
+      "characters_max": 1855,
+      "characters_total": 15894,
+      "tokens_median": 568,
+      "tokens_max": 729,
+      "tokens_total": 6084,
+      "pictures": 0
+     },
+     {
+      "tool": "set_rack",
+      "calls": 14,
+      "refused": 0,
+      "characters_median": 1116,
+      "characters_max": 2471,
+      "characters_total": 14808,
+      "tokens_median": 406,
+      "tokens_max": 874,
+      "tokens_total": 5239,
+      "pictures": 0
+     },
+     {
+      "tool": "place",
+      "calls": 16,
+      "refused": 0,
+      "characters_median": 811,
+      "characters_max": 1021,
+      "characters_total": 13266,
+      "tokens_median": 283,
+      "tokens_max": 375,
+      "tokens_total": 4605,
+      "pictures": 0
+     },
+     {
+      "tool": "get_level",
+      "calls": 1,
+      "refused": 0,
+      "characters_median": 15410,
+      "characters_max": 15410,
+      "characters_total": 15410,
+      "tokens_median": 4121,
+      "tokens_max": 4121,
+      "tokens_total": 4121,
+      "pictures": 0
+     },
+     {
+      "tool": "get_state",
+      "calls": 2,
+      "refused": 0,
+      "characters_median": 1698,
+      "characters_max": 2654,
+      "characters_total": 3395,
+      "tokens_median": 623,
+      "tokens_max": 1030,
+      "tokens_total": 1245,
+      "pictures": 0
+     },
+     {
+      "tool": "remove",
+      "calls": 4,
+      "refused": 0,
+      "characters_median": 294,
+      "characters_max": 294,
+      "characters_total": 1156,
+      "tokens_median": 98,
+      "tokens_max": 100,
+      "tokens_total": 385,
+      "pictures": 0
+     },
+     {
+      "tool": "check_load",
+      "calls": 2,
+      "refused": 0,
+      "characters_median": 494,
+      "characters_max": 494,
+      "characters_total": 988,
+      "tokens_median": 118,
+      "tokens_max": 118,
+      "tokens_total": 236,
+      "pictures": 0
+     },
+     {
+      "tool": "render",
+      "calls": 1,
+      "refused": 0,
+      "characters_median": 131,
+      "characters_max": 131,
+      "characters_total": 131,
+      "tokens_median": 41,
+      "tokens_max": 41,
+      "tokens_total": 41,
+      "pictures": 1
+     }
+    ]
+   }
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "items": 44,
+   "measurement": {
+    "requests": 198,
+    "calls": 197,
+    "system_tokens": 7403,
+    "tools_tokens": 7698,
+    "system_characters": 28133,
+    "tools_characters": 35445,
+    "input_tokens": 4979468,
+    "cached_tokens": 4754994,
+    "written_tokens": 224474,
+    "largest_request_tokens": 30596,
+    "largest_request_turn": 172,
+    "largest_conversation_tokens": 15495,
+    "largest_conversation_characters": 40740,
+    "result_characters": 315008,
+    "result_tokens": 112196,
+    "pictures": 4,
+    "by_tool": [
+     {
+      "tool": "place",
+      "calls": 81,
+      "refused": 1,
+      "characters_median": 1056,
+      "characters_max": 3229,
+      "characters_total": 99748,
+      "tokens_median": 385,
+      "tokens_max": 1185,
+      "tokens_total": 35844,
+      "pictures": 0
+     },
+     {
+      "tool": "set_rack",
+      "calls": 19,
+      "refused": 0,
+      "characters_median": 3433,
+      "characters_max": 6472,
+      "characters_total": 68346,
+      "tokens_median": 1227,
+      "tokens_max": 2373,
+      "tokens_total": 24599,
+      "pictures": 0
+     },
+     {
+      "tool": "list_slots",
+      "calls": 39,
+      "refused": 0,
+      "characters_median": 1581,
+      "characters_max": 2127,
+      "characters_total": 52977,
+      "tokens_median": 575,
+      "tokens_max": 729,
+      "tokens_total": 18821,
+      "pictures": 0
+     },
+     {
+      "tool": "remove",
+      "calls": 43,
+      "refused": 2,
+      "characters_median": 819,
+      "characters_max": 2980,
+      "characters_total": 40647,
+      "tokens_median": 283,
+      "tokens_max": 1082,
+      "tokens_total": 14616,
+      "pictures": 0
+     },
+     {
+      "tool": "get_state",
+      "calls": 6,
+      "refused": 0,
+      "characters_median": 5353,
+      "characters_max": 7001,
+      "characters_total": 28032,
+      "tokens_median": 2206,
+      "tokens_max": 2903,
+      "tokens_total": 11389,
+      "pictures": 0
+     },
+     {
+      "tool": "get_level",
+      "calls": 1,
+      "refused": 0,
+      "characters_median": 22695,
+      "characters_max": 22695,
+      "characters_total": 22695,
+      "tokens_median": 6273,
+      "tokens_max": 6273,
+      "tokens_total": 6273,
+      "pictures": 0
+     },
+     {
+      "tool": "check_load",
+      "calls": 4,
+      "refused": 0,
+      "characters_median": 494,
+      "characters_max": 557,
+      "characters_total": 2039,
+      "tokens_median": 118,
+      "tokens_max": 136,
+      "tokens_total": 490,
+      "pictures": 0
+     },
+     {
+      "tool": "render",
+      "calls": 4,
+      "refused": 0,
+      "characters_median": 131,
+      "characters_max": 131,
+      "characters_total": 524,
+      "tokens_median": 41,
+      "tokens_max": 41,
+      "tokens_total": 164,
+      "pictures": 4
+     }
+    ]
+   }
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "items": 57,
+   "measurement": {
+    "requests": 314,
+    "calls": 313,
+    "system_tokens": 10081,
+    "tools_tokens": 7698,
+    "system_characters": 38029,
+    "tools_characters": 35445,
+    "input_tokens": 8932171,
+    "cached_tokens": 8558601,
+    "written_tokens": 373570,
+    "largest_request_tokens": 33960,
+    "largest_request_turn": 242,
+    "largest_conversation_tokens": 16181,
+    "largest_conversation_characters": 40967,
+    "result_characters": 510427,
+    "result_tokens": 184450,
+    "pictures": 7,
+    "by_tool": [
+     {
+      "tool": "place",
+      "calls": 142,
+      "refused": 0,
+      "characters_median": 1145,
+      "characters_max": 4279,
+      "characters_total": 195856,
+      "tokens_median": 411,
+      "tokens_max": 1584,
+      "tokens_total": 70722,
+      "pictures": 0
+     },
+     {
+      "tool": "remove",
+      "calls": 96,
+      "refused": 0,
+      "characters_median": 1096,
+      "characters_max": 3600,
+      "characters_total": 108826,
+      "tokens_median": 388,
+      "tokens_max": 1340,
+      "tokens_total": 39550,
+      "pictures": 0
+     },
+     {
+      "tool": "set_rack",
+      "calls": 15,
+      "refused": 1,
+      "characters_median": 4718,
+      "characters_max": 7502,
+      "characters_total": 65535,
+      "tokens_median": 1678,
+      "tokens_max": 2738,
+      "tokens_total": 23802,
+      "pictures": 0
+     },
+     {
+      "tool": "get_state",
+      "calls": 9,
+      "refused": 0,
+      "characters_median": 7483,
+      "characters_max": 8418,
+      "characters_total": 53451,
+      "tokens_median": 3111,
+      "tokens_max": 3486,
+      "tokens_total": 22035,
+      "pictures": 0
+     },
+     {
+      "tool": "list_slots",
+      "calls": 41,
+      "refused": 0,
+      "characters_median": 1529,
+      "characters_max": 1987,
+      "characters_total": 52277,
+      "tokens_median": 560,
+      "tokens_max": 729,
+      "tokens_total": 18874,
+      "pictures": 0
+     },
+     {
+      "tool": "get_level",
+      "calls": 1,
+      "refused": 0,
+      "characters_median": 32575,
+      "characters_max": 32575,
+      "characters_total": 32575,
+      "tokens_median": 8943,
+      "tokens_max": 8943,
+      "tokens_total": 8943,
+      "pictures": 0
+     },
+     {
+      "tool": "render",
+      "calls": 7,
+      "refused": 0,
+      "characters_median": 131,
+      "characters_max": 133,
+      "characters_total": 919,
+      "tokens_median": 41,
+      "tokens_max": 42,
+      "tokens_total": 288,
+      "pictures": 7
+     },
+     {
+      "tool": "check_load",
+      "calls": 2,
+      "refused": 0,
+      "characters_median": 494,
+      "characters_max": 494,
+      "characters_total": 988,
+      "tokens_median": 118,
+      "tokens_max": 118,
+      "tokens_total": 236,
+      "pictures": 0
+     }
+    ]
+   }
+  },
+  {
+   "load": "iec-13-careful",
+   "items": 140,
+   "measurement": {
+    "requests": 548,
+    "calls": 547,
+    "system_tokens": 8069,
+    "tools_tokens": 7698,
+    "system_characters": 29648,
+    "tools_characters": 35445,
+    "input_tokens": 17801088,
+    "cached_tokens": 16139856,
+    "written_tokens": 1661232,
+    "largest_request_tokens": 54020,
+    "largest_request_turn": 548,
+    "largest_conversation_tokens": 38254,
+    "largest_conversation_characters": 99917,
+    "result_characters": 2587340,
+    "result_tokens": 955705,
+    "pictures": 13,
+    "by_tool": [
+     {
+      "tool": "place",
+      "calls": 253,
+      "refused": 1,
+      "characters_median": 2525,
+      "characters_max": 20024,
+      "characters_total": 1173127,
+      "tokens_median": 921,
+      "tokens_max": 7323,
+      "tokens_total": 429940,
+      "pictures": 0
+     },
+     {
+      "tool": "remove",
+      "calls": 134,
+      "refused": 2,
+      "characters_median": 2247,
+      "characters_max": 17934,
+      "characters_total": 847936,
+      "tokens_median": 826,
+      "tokens_max": 6590,
+      "tokens_total": 310469,
+      "pictures": 0
+     },
+     {
+      "tool": "get_state",
+      "calls": 15,
+      "refused": 0,
+      "characters_median": 19737,
+      "characters_max": 22779,
+      "characters_total": 237400,
+      "tokens_median": 8381,
+      "tokens_max": 9600,
+      "tokens_total": 100199,
+      "pictures": 0
+     },
+     {
+      "tool": "set_rack",
+      "calls": 16,
+      "refused": 0,
+      "characters_median": 6656,
+      "characters_max": 25339,
+      "characters_total": 173651,
+      "tokens_median": 2408,
+      "tokens_max": 9336,
+      "tokens_total": 63589,
+      "pictures": 0
+     },
+     {
+      "tool": "list_slots",
+      "calls": 113,
+      "refused": 0,
+      "characters_median": 671,
+      "characters_max": 1998,
+      "characters_total": 104593,
+      "tokens_median": 244,
+      "tokens_max": 730,
+      "tokens_total": 36957,
+      "pictures": 0
+     },
+     {
+      "tool": "get_level",
+      "calls": 2,
+      "refused": 0,
+      "characters_median": 24204,
+      "characters_max": 24205,
+      "characters_total": 48408,
+      "tokens_median": 6933,
+      "tokens_max": 6934,
+      "tokens_total": 13865,
+      "pictures": 0
+     },
+     {
+      "tool": "render",
+      "calls": 13,
+      "refused": 0,
+      "characters_median": 133,
+      "characters_max": 134,
+      "characters_total": 1729,
+      "tokens_median": 44,
+      "tokens_max": 44,
+      "tokens_total": 566,
+      "pictures": 13
+     },
+     {
+      "tool": "check_load",
+      "calls": 1,
+      "refused": 0,
+      "characters_median": 496,
+      "characters_max": 496,
+      "characters_total": 496,
+      "tokens_median": 120,
+      "tokens_max": 120,
+      "tokens_total": 120,
+      "pictures": 0
+     }
+    ]
+   }
+  }
+ ],
+ "estimates": [
+  {
+   "load": "tutorial-careful",
+   "model": "claude-haiku-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 0.019
+  },
+  {
+   "load": "tutorial-careful",
+   "model": "claude-haiku-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 0.056
+  },
+  {
+   "load": "tutorial-careful",
+   "model": "claude-haiku-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 0.23
+  },
+  {
+   "load": "tutorial-careful",
+   "model": "claude-sonnet-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 0.373
+  },
+  {
+   "load": "tutorial-careful",
+   "model": "claude-sonnet-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 1.113
+  },
+  {
+   "load": "tutorial-careful",
+   "model": "claude-sonnet-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 4.601
+  },
+  {
+   "load": "tutorial-careful",
+   "model": "claude-opus-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 0.525
+  },
+  {
+   "load": "tutorial-careful",
+   "model": "claude-opus-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 1.784
+  },
+  {
+   "load": "tutorial-careful",
+   "model": "claude-opus-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 8.32
+  },
+  {
+   "load": "tutorial-careful",
+   "model": "gpt-6.1-sol",
+   "scenario": "as rehearsed, terse",
+   "usd": null
+  },
+  {
+   "load": "tutorial-careful",
+   "model": "gpt-6.1-sol",
+   "scenario": "twice the turns, thinking",
+   "usd": null
+  },
+  {
+   "load": "tutorial-careful",
+   "model": "gpt-6.1-sol",
+   "scenario": "four times the turns, thinking hard",
+   "usd": null
+  },
+  {
+   "load": "tutorial-careful",
+   "model": "gpt-6-astra",
+   "scenario": "as rehearsed, terse",
+   "usd": null
+  },
+  {
+   "load": "tutorial-careful",
+   "model": "gpt-6-astra",
+   "scenario": "twice the turns, thinking",
+   "usd": null
+  },
+  {
+   "load": "tutorial-careful",
+   "model": "gpt-6-astra",
+   "scenario": "four times the turns, thinking hard",
+   "usd": null
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "claude-haiku-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 0.082
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "claude-haiku-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 0.23
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "claude-haiku-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 0.896
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "claude-sonnet-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 1.631
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "claude-sonnet-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 4.608
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "claude-sonnet-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 17.929
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "claude-opus-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 2.311
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "claude-opus-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 7.315
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "claude-opus-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 32.053
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "gpt-6.1-sol",
+   "scenario": "as rehearsed, terse",
+   "usd": null
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "gpt-6.1-sol",
+   "scenario": "twice the turns, thinking",
+   "usd": null
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "gpt-6.1-sol",
+   "scenario": "four times the turns, thinking hard",
+   "usd": null
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "gpt-6-astra",
+   "scenario": "as rehearsed, terse",
+   "usd": null
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "gpt-6-astra",
+   "scenario": "twice the turns, thinking",
+   "usd": null
+  },
+  {
+   "load": "weeknight-dinner-careful",
+   "model": "gpt-6-astra",
+   "scenario": "four times the turns, thinking hard",
+   "usd": null
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "claude-haiku-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 0.142
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "claude-haiku-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 0.39
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "claude-haiku-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 1.471
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "claude-sonnet-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 2.834
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "claude-sonnet-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 7.803
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "claude-sonnet-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 29.423
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "claude-opus-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 3.956
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "claude-opus-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 12.183
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "claude-opus-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 51.998
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "gpt-6.1-sol",
+   "scenario": "as rehearsed, terse",
+   "usd": null
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "gpt-6.1-sol",
+   "scenario": "twice the turns, thinking",
+   "usd": null
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "gpt-6.1-sol",
+   "scenario": "four times the turns, thinking hard",
+   "usd": null
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "gpt-6-astra",
+   "scenario": "as rehearsed, terse",
+   "usd": null
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "gpt-6-astra",
+   "scenario": "twice the turns, thinking",
+   "usd": null
+  },
+  {
+   "load": "cooked-breakfast-2-careful",
+   "model": "gpt-6-astra",
+   "scenario": "four times the turns, thinking hard",
+   "usd": null
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "claude-haiku-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 0.385
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "claude-haiku-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 0.957
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "claude-haiku-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 3.12
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "claude-sonnet-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 7.71
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "claude-sonnet-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 19.146
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "claude-sonnet-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 62.404
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "claude-opus-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 12.192
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "claude-opus-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 31.836
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "claude-opus-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 111.897
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "gpt-6.1-sol",
+   "scenario": "as rehearsed, terse",
+   "usd": null
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "gpt-6.1-sol",
+   "scenario": "twice the turns, thinking",
+   "usd": null
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "gpt-6.1-sol",
+   "scenario": "four times the turns, thinking hard",
+   "usd": null
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "gpt-6-astra",
+   "scenario": "as rehearsed, terse",
+   "usd": null
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "gpt-6-astra",
+   "scenario": "twice the turns, thinking",
+   "usd": null
+  },
+  {
+   "load": "iec-13-careful",
+   "model": "gpt-6-astra",
+   "scenario": "four times the turns, thinking hard",
+   "usd": null
+  }
+ ]
+}

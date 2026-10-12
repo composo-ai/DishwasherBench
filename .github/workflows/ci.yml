@@ -1,0 +1,66 @@
+# The automatic checks of DishwasherBench.
+#
+# One job, "checks", on Linux. In this order:
+#
+#   1. the hygiene check, which fails when a file that would be published carries a personal
+#      path, metadata in a picture, a secret, a compiled program or a file it cannot look into
+#      (scripts/check-hygiene.mjs), and the tests of that check. They need Node and nothing
+#      else, so they run before anything is installed: a failed install does not hide them;
+#   2. the install, from the lockfile as it is;
+#   3. the typecheck of every package.
+#
+# It runs no wash, loads no GPU and starts no browser, and it runs no test but those of the
+# hygiene check. The whole test suite is a separate workflow that is started by hand
+# (tests-macos.yml): the simulation has been run on macOS on Apple silicon only, and whether
+# its GPU code runs on Linux has not been tried.
+
+name: checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Least privilege: the job reads the repository and nothing else. It uses no secret.
+permissions:
+  contents: read
+
+# A newer run for the same pull request cancels the older one. Runs on main are never
+# cancelled, so that every commit there has a result.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  checks:
+    name: checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      # The version of pnpm is the one named by "packageManager" in package.json. Major 5 of
+      # this action is its major 4 on the Node 24 runtime: it installs that version directly.
+      # Major 6 installs a newer pnpm first and then switches to the one named.
+      - uses: pnpm/action-setup@v5
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      # What `pnpm hygiene` and `pnpm hygiene:test` run, called directly: neither needs pnpm.
+      - name: Hygiene of the published files
+        run: node scripts/check-hygiene.mjs
+
+      - name: Tests of the hygiene check
+        run: node --test scripts/check-hygiene.test.mjs
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm typecheck

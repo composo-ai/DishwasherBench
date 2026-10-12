@@ -1,0 +1,1572 @@
+{
+ "machine": "bosch_smv4hax40g",
+ "programme": "eco_50",
+ "basketHeights": {
+  "upper": "1"
+ },
+ "machineConfig": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "up"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "tier": "official",
+ "levelSeed": 60437,
+ "simSeed": 1,
+ "items": [
+  {
+   "id": "cup_01",
+   "type": "tea_cup_porcelain_210",
+   "position_mm": [
+    199.13704332953702,
+    -187.05966294188363,
+    499.0212731176781
+   ],
+   "quat_wxyz": [
+    0.154654398560524,
+    -0.6932399868965149,
+    -0.6863691806793213,
+    0.15619789063930511
+   ],
+   "soils": [
+    {
+     "type": "iec_tea",
+     "regions": [
+      {
+       "region": "interior",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.00182,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "dessert_bowl_01",
+   "type": "dessert_bowl_vitrelle_130",
+   "position_mm": [
+    -82.84465724622687,
+    149.19983117883626,
+    490.01084604601147
+   ],
+   "quat_wxyz": [
+    0.011462188325822353,
+    0.012132063508033752,
+    0.8022438287734985,
+    0.5967633128166199
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "regions": [
+      {
+       "region": "interior",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 2,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "dessert_bowl_02",
+   "type": "dessert_bowl_vitrelle_130",
+   "position_mm": [
+    -82.44791568674052,
+    112.71993823486086,
+    488.8343326621407
+   ],
+   "quat_wxyz": [
+    0.005355416797101498,
+    0.00688395369797945,
+    0.7889736294746399,
+    0.61436527967453
+   ],
+   "soils": [
+    {
+     "type": "iec_spinach",
+     "regions": [
+      {
+       "region": "interior",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 2,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "dessert_bowl_03",
+   "type": "dessert_bowl_vitrelle_130",
+   "position_mm": [
+    -82.88234107306634,
+    76.59232487609482,
+    488.95671603566115
+   ],
+   "quat_wxyz": [
+    0.05453427881002426,
+    -0.04427221789956093,
+    0.7891301512718201,
+    0.6101964712142944
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "regions": [
+      {
+       "region": "interior",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 2,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "dessert_plate_01",
+   "type": "dessert_plate_porcelain_190",
+   "position_mm": [
+    -118.67018799330233,
+    -139.95151548470992,
+    156.72935604245296
+   ],
+   "quat_wxyz": [
+    0.5654788613319397,
+    0.4104321300983429,
+    0.4217863976955414,
+    0.5778195858001709
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "regions": [
+      {
+       "region": "well",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 2,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "dessert_plate_02",
+   "type": "dessert_plate_porcelain_190",
+   "position_mm": [
+    -81.16143758302879,
+    40.2443677880149,
+    509.6697682075658
+   ],
+   "quat_wxyz": [
+    0.025516372174024582,
+    -0.043856747448444366,
+    0.6634091734886169,
+    0.7465345859527588
+   ],
+   "soils": [
+    {
+     "type": "iec_spinach",
+     "regions": [
+      {
+       "region": "well",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 2,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "dessert_plate_03",
+   "type": "dessert_plate_porcelain_190",
+   "position_mm": [
+    -81.67078468265026,
+    -148.9442344098138,
+    512.2445716683746
+   ],
+   "quat_wxyz": [
+    -0.0014809141866862774,
+    -0.008527602069079876,
+    0.8165008425712585,
+    0.5772795081138611
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "regions": [
+      {
+       "region": "well",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 2,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "dessert_spoon_01",
+   "type": "dessert_spoon_160",
+   "position_mm": [
+    -6.558629894355253,
+    -44.91184523003164,
+    80.17896443491858
+   ],
+   "quat_wxyz": [
+    0.5874804854393005,
+    0.06733255833387375,
+    -0.8049899339675903,
+    -0.04821136221289635
+   ],
+   "soils": []
+  },
+  {
+   "id": "dessert_spoon_02",
+   "type": "dessert_spoon_160",
+   "position_mm": [
+    -18.32573795308947,
+    -115.68380575089564,
+    79.54015014463516
+   ],
+   "quat_wxyz": [
+    0.6545581221580505,
+    0.034861911088228226,
+    -0.7496569752693176,
+    0.09139381349086761
+   ],
+   "soils": []
+  },
+  {
+   "id": "dessert_spoon_03",
+   "type": "dessert_spoon_160",
+   "position_mm": [
+    42.03059120007667,
+    -39.719670693788736,
+    79.61218864777491
+   ],
+   "quat_wxyz": [
+    0.6210720539093018,
+    0.23120763897895813,
+    -0.685901403427124,
+    0.30058568716049194
+   ],
+   "soils": []
+  },
+  {
+   "id": "dessert_spoon_04",
+   "type": "dessert_spoon_160",
+   "position_mm": [
+    45.1312558319137,
+    -35.504309211548225,
+    79.13971754745972
+   ],
+   "quat_wxyz": [
+    0.6617641448974609,
+    0.14034028351306915,
+    -0.7247511148452759,
+    0.13080032169818878
+   ],
+   "soils": []
+  },
+  {
+   "id": "dessert_spoon_05",
+   "type": "dessert_spoon_160",
+   "position_mm": [
+    6.433561600543536,
+    -170.4608451700002,
+    80.08620663072836
+   ],
+   "quat_wxyz": [
+    0.5612136721611023,
+    -0.04996330291032791,
+    -0.8198157548904419,
+    -0.10220027714967728
+   ],
+   "soils": []
+  },
+  {
+   "id": "dessert_spoon_06",
+   "type": "dessert_spoon_160",
+   "position_mm": [
+    -19.77688097087535,
+    -219.95749702281896,
+    79.6548938780455
+   ],
+   "quat_wxyz": [
+    0.6346674561500549,
+    -0.02511727437376976,
+    -0.7719127535820007,
+    0.026778435334563255
+   ],
+   "soils": []
+  },
+  {
+   "id": "dinner_plate_01",
+   "type": "dinner_plate_porcelain_iec",
+   "position_mm": [
+    -188.96429884125325,
+    111.51028620780535,
+    199.17165539088185
+   ],
+   "quat_wxyz": [
+    0.5173147916793823,
+    0.4820965528488159,
+    0.48024871945381165,
+    0.5189696550369263
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "regions": [
+      {
+       "region": "well",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "dinner_plate_02",
+   "type": "dinner_plate_porcelain_iec",
+   "position_mm": [
+    -152.4758416818689,
+    111.50906407643413,
+    199.16426625252933
+   ],
+   "quat_wxyz": [
+    0.5170634984970093,
+    0.482309490442276,
+    0.47990354895591736,
+    0.5193415284156799
+   ],
+   "soils": [
+    {
+     "type": "iec_minced_meat",
+     "regions": [
+      {
+       "region": "well",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "dinner_plate_03",
+   "type": "dinner_plate_porcelain_iec",
+   "position_mm": [
+    -115.9591795927184,
+    111.50872908995615,
+    199.178114598262
+   ],
+   "quat_wxyz": [
+    0.5172629952430725,
+    0.48213496804237366,
+    0.480313777923584,
+    0.5189254879951477
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "regions": [
+      {
+       "region": "well",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "fork_01",
+   "type": "dinner_fork_185",
+   "position_mm": [
+    -22.66052861332223,
+    -219.59909348588712,
+    79.76199013462033
+   ],
+   "quat_wxyz": [
+    0.6191965937614441,
+    -0.026393789798021317,
+    -0.7841330170631409,
+    0.03216029331088066
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "regions": [
+      {
+       "region": "tines",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "fork_02",
+   "type": "dinner_fork_185",
+   "position_mm": [
+    38.48730708053923,
+    -49.422651454950234,
+    79.86485009237978
+   ],
+   "quat_wxyz": [
+    0.478684663772583,
+    -0.4375431537628174,
+    -0.5612533688545227,
+    -0.5142098069190979
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "regions": [
+      {
+       "region": "tines",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "fork_03",
+   "type": "dinner_fork_185",
+   "position_mm": [
+    70.41651888006182,
+    -218.2797102802007,
+    79.78146394317038
+   ],
+   "quat_wxyz": [
+    0.5506372451782227,
+    0.007950433529913425,
+    -0.8347067832946777,
+    0.00015558808809146285
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "regions": [
+      {
+       "region": "tines",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "fork_04",
+   "type": "dinner_fork_185",
+   "position_mm": [
+    -12.160338945215122,
+    -114.55137009676432,
+    80.28536210994423
+   ],
+   "quat_wxyz": [
+    0.629539430141449,
+    0.066134512424469,
+    -0.7498908042907715,
+    0.19227637350559235
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "regions": [
+      {
+       "region": "tines",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "fork_05",
+   "type": "dinner_fork_185",
+   "position_mm": [
+    -6.294067183843454,
+    -114.88601575836323,
+    80.28612640251417
+   ],
+   "quat_wxyz": [
+    0.6266246438026428,
+    0.03364768251776695,
+    -0.7636352777481079,
+    0.15188954770565033
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "regions": [
+      {
+       "region": "tines",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "fork_06",
+   "type": "dinner_fork_185",
+   "position_mm": [
+    -2.4197380804318223,
+    -115.2362814316761,
+    80.23771325059293
+   ],
+   "quat_wxyz": [
+    0.626108705997467,
+    0.004967016167938709,
+    -0.770561695098877,
+    0.11915503442287445
+   ],
+   "soils": [
+    {
+     "type": "iec_egg_yolk",
+     "regions": [
+      {
+       "region": "tines",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "glass_01",
+   "type": "test_glass_borosilicate_250",
+   "position_mm": [
+    107.72328563394632,
+    117.90059413671983,
+    550.3639396784963
+   ],
+   "quat_wxyz": [
+    -0.01354654598981142,
+    0.9830226302146912,
+    0.08137799799442291,
+    -0.16389238834381104
+   ],
+   "soils": [
+    {
+     "type": "iec_milk",
+     "regions": [
+      {
+       "region": "interior",
+       "coverage": 0.5
+      }
+     ],
+     "amount_g": 10,
+     "age_h": 2,
+     "heat_history": "baked"
+    }
+   ]
+  },
+  {
+   "id": "glass_02",
+   "type": "test_glass_borosilicate_250",
+   "position_mm": [
+    107.60050660111092,
+    44.347555603144336,
+    550.1793966712492
+   ],
+   "quat_wxyz": [
+    -0.006569281220436096,
+    0.9842560887336731,
+    0.037476878613233566,
+    -0.17260444164276123
+   ],
+   "soils": [
+    {
+     "type": "iec_milk",
+     "regions": [
+      {
+       "region": "interior",
+       "coverage": 0.5
+      }
+     ],
+     "amount_g": 10,
+     "age_h": 2,
+     "heat_history": "baked"
+    }
+   ]
+  },
+  {
+   "id": "glass_03",
+   "type": "test_glass_borosilicate_250",
+   "position_mm": [
+    104.74677209550576,
+    -28.848130731106888,
+    552.1057959524214
+   ],
+   "quat_wxyz": [
+    0.01096829678863287,
+    0.9883397221565247,
+    -0.08148950338363647,
+    -0.1281554400920868
+   ],
+   "soils": [
+    {
+     "type": "iec_milk",
+     "regions": [
+      {
+       "region": "interior",
+       "coverage": 0.5
+      }
+     ],
+     "amount_g": 10,
+     "age_h": 2,
+     "heat_history": "baked"
+    }
+   ]
+  },
+  {
+   "id": "glass_04",
+   "type": "test_glass_borosilicate_250",
+   "position_mm": [
+    106.65274957373262,
+    -101.64318628579916,
+    550.5818763388288
+   ],
+   "quat_wxyz": [
+    -0.013148069381713867,
+    0.9821979999542236,
+    0.07179982215166092,
+    -0.17308694124221802
+   ],
+   "soils": [
+    {
+     "type": "iec_milk",
+     "regions": [
+      {
+       "region": "interior",
+       "coverage": 0.5
+      }
+     ],
+     "amount_g": 10,
+     "age_h": 2,
+     "heat_history": "baked"
+    }
+   ]
+  },
+  {
+   "id": "glass_06",
+   "type": "test_glass_borosilicate_250",
+   "position_mm": [
+    -206.3480556094902,
+    203.7626760120671,
+    556.9503921216782
+   ],
+   "quat_wxyz": [
+    -0.020664088428020477,
+    0.9785646200180054,
+    -0.16935186088085175,
+    0.11534397304058075
+   ],
+   "soils": [
+    {
+     "type": "iec_milk",
+     "regions": [
+      {
+       "region": "interior",
+       "coverage": 0.5
+      }
+     ],
+     "amount_g": 10,
+     "age_h": 2,
+     "heat_history": "baked"
+    }
+   ]
+  },
+  {
+   "id": "knife_01",
+   "type": "dinner_knife_210",
+   "position_mm": [
+    -26.482011471731223,
+    -160.0410373045944,
+    78.14015043220148
+   ],
+   "quat_wxyz": [
+    0.7908757925033569,
+    0.09118583798408508,
+    -0.5921231508255005,
+    0.12486350536346436
+   ],
+   "soils": [
+    {
+     "type": "iec_margarine",
+     "regions": [
+      {
+       "region": "blade",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 0,
+     "heat_history": "none"
+    }
+   ]
+  },
+  {
+   "id": "knife_02",
+   "type": "dinner_knife_210",
+   "position_mm": [
+    -13.260220119362828,
+    -220.826492513211,
+    79.25965431271975
+   ],
+   "quat_wxyz": [
+    0.7407820820808411,
+    -0.08143611997365952,
+    -0.6666648387908936,
+    0.012962480075657368
+   ],
+   "soils": [
+    {
+     "type": "iec_margarine",
+     "regions": [
+      {
+       "region": "blade",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 0,
+     "heat_history": "none"
+    }
+   ]
+  },
+  {
+   "id": "knife_03",
+   "type": "dinner_knife_210",
+   "position_mm": [
+    58.25312116863179,
+    -163.6000924128193,
+    79.02651348398275
+   ],
+   "quat_wxyz": [
+    0.7470282316207886,
+    -0.0318327397108078,
+    -0.6622036695480347,
+    0.049211978912353516
+   ],
+   "soils": [
+    {
+     "type": "iec_margarine",
+     "regions": [
+      {
+       "region": "blade",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 0,
+     "heat_history": "none"
+    }
+   ]
+  },
+  {
+   "id": "knife_04",
+   "type": "dinner_knife_210",
+   "position_mm": [
+    -26.837071476588164,
+    -64.93539167786865,
+    78.22758240479908
+   ],
+   "quat_wxyz": [
+    0.8031938672065735,
+    0.004939046688377857,
+    -0.5950648784637451,
+    0.027439240366220474
+   ],
+   "soils": [
+    {
+     "type": "iec_margarine",
+     "regions": [
+      {
+       "region": "blade",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 0,
+     "heat_history": "none"
+    }
+   ]
+  },
+  {
+   "id": "knife_05",
+   "type": "dinner_knife_210",
+   "position_mm": [
+    8.092856560208178,
+    -37.85634968097241,
+    80.88115544898734
+   ],
+   "quat_wxyz": [
+    0.5309250950813293,
+    -0.01681264117360115,
+    -0.8471766114234924,
+    -0.011302242986857891
+   ],
+   "soils": [
+    {
+     "type": "iec_margarine",
+     "regions": [
+      {
+       "region": "blade",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 0,
+     "heat_history": "none"
+    }
+   ]
+  },
+  {
+   "id": "knife_06",
+   "type": "dinner_knife_210",
+   "position_mm": [
+    32.80325847141757,
+    -70.23207420220211,
+    78.97797897592064
+   ],
+   "quat_wxyz": [
+    0.8063012361526489,
+    -0.05702231079339981,
+    -0.5775358080863953,
+    0.11436469852924347
+   ],
+   "soils": [
+    {
+     "type": "iec_margarine",
+     "regions": [
+      {
+       "region": "blade",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 0,
+     "heat_history": "none"
+    }
+   ]
+  },
+  {
+   "id": "melamine_plate_01",
+   "type": "melamine_dessert_plate_iec_195",
+   "position_mm": [
+    -84.23525100742889,
+    -39.73211204029308,
+    516.0347130969965
+   ],
+   "quat_wxyz": [
+    0.03128993138670921,
+    -0.015152937732636929,
+    0.7962004542350769,
+    0.6040332913398743
+   ],
+   "soils": [
+    {
+     "type": "iec_spinach",
+     "regions": [
+      {
+       "region": "well",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 2,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "melamine_plate_02",
+   "type": "melamine_dessert_plate_iec_195",
+   "position_mm": [
+    -84.53220565420509,
+    -76.29029967479089,
+    516.0753560092467
+   ],
+   "quat_wxyz": [
+    0.02908480539917946,
+    -0.025435032323002815,
+    0.7958166003227234,
+    0.604303777217865
+   ],
+   "soils": [
+    {
+     "type": "iec_minced_meat",
+     "regions": [
+      {
+       "region": "well",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 2,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "melamine_plate_03",
+   "type": "melamine_dessert_plate_iec_195",
+   "position_mm": [
+    -81.99234517098947,
+    -112.34899064577738,
+    517.5575766253241
+   ],
+   "quat_wxyz": [
+    0.005617513321340084,
+    -0.006277032662183046,
+    0.7962638735771179,
+    0.6048908233642578
+   ],
+   "soils": [
+    {
+     "type": "iec_spinach",
+     "regions": [
+      {
+       "region": "well",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 2,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "mug_01",
+   "type": "mug_ceramic_300",
+   "position_mm": [
+    189.9320422926272,
+    157.4094472275474,
+    540.4019195212768
+   ],
+   "quat_wxyz": [
+    0.10926209390163422,
+    -0.7062670588493347,
+    -0.6906125545501709,
+    0.11091932654380798
+   ],
+   "soils": [
+    {
+     "type": "iec_tea",
+     "regions": [
+      {
+       "region": "interior",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.00301,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "mug_02",
+   "type": "mug_ceramic_300",
+   "position_mm": [
+    190.91100984668628,
+    41.14846059899057,
+    540.5532073680665
+   ],
+   "quat_wxyz": [
+    0.12537135183811188,
+    -0.7002635598182678,
+    -0.6908685564994812,
+    0.12889422476291656
+   ],
+   "soils": [
+    {
+     "type": "iec_tea",
+     "regions": [
+      {
+       "region": "interior",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.00301,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "mug_03",
+   "type": "mug_ceramic_300",
+   "position_mm": [
+    189.8845121609949,
+    -74.6998766844476,
+    540.4452810744741
+   ],
+   "quat_wxyz": [
+    0.10840754956007004,
+    -0.7020415663719177,
+    -0.6952751278877258,
+    0.10944384336471558
+   ],
+   "soils": [
+    {
+     "type": "iec_tea",
+     "regions": [
+      {
+       "region": "interior",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.00301,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "oval_platter_01",
+   "type": "oval_platter_porcelain_320",
+   "position_mm": [
+    -228.02077142204112,
+    -92.04706030951859,
+    195.7681550414303
+   ],
+   "quat_wxyz": [
+    0.541566789150238,
+    0.4632212817668915,
+    0.4540952146053314,
+    0.5347233414649963
+   ],
+   "soils": [
+    {
+     "type": "iec_margarine",
+     "regions": [
+      {
+       "region": "well",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 5,
+     "age_h": 0,
+     "heat_history": "none"
+    }
+   ]
+  },
+  {
+   "id": "saucer_01",
+   "type": "saucer_porcelain_140",
+   "position_mm": [
+    -224.56685012245376,
+    111.50506403111413,
+    129.06038313319135
+   ],
+   "quat_wxyz": [
+    0.57350093126297,
+    0.4129473567008972,
+    0.41120022535324097,
+    0.5757479071617126
+   ],
+   "soils": [
+    {
+     "type": "iec_tea",
+     "regions": [
+      {
+       "region": "well",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.00075,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "serving_fork_01",
+   "type": "serving_fork_210",
+   "position_mm": [
+    47.06732032578626,
+    -116.11481388705921,
+    79.19257485849609
+   ],
+   "quat_wxyz": [
+    0.6609468460083008,
+    -0.000395866169128567,
+    -0.7504315972328186,
+    -0.001241043210029602
+   ],
+   "soils": []
+  },
+  {
+   "id": "serving_spoon_01",
+   "type": "serving_spoon_216",
+   "position_mm": [
+    53.45689050650601,
+    -142.73787527690178,
+    79.34135978253333
+   ],
+   "quat_wxyz": [
+    0.5447468757629395,
+    -0.35031551122665405,
+    -0.39104580879211426,
+    -0.6539212465286255
+   ],
+   "soils": []
+  },
+  {
+   "id": "small_pot_01",
+   "type": "saucepan_steel_170",
+   "position_mm": [
+    9.981133956005687,
+    150.038137397387,
+    233.86028027614248
+   ],
+   "quat_wxyz": [
+    -0.0006828582845628262,
+    0.9998058676719666,
+    -0.018601026386022568,
+    0.006469663232564926
+   ],
+   "soils": [
+    {
+     "type": "iec_minced_meat",
+     "regions": [
+      {
+       "region": "interior_base",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 5,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "soup_plate_01",
+   "type": "soup_plate_porcelain_230",
+   "position_mm": [
+    -171.37081227491484,
+    -140.12486862156214,
+    188.072461135883
+   ],
+   "quat_wxyz": [
+    0.49214962124824524,
+    0.49323296546936035,
+    0.501651406288147,
+    0.5126948356628418
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "regions": [
+      {
+       "region": "well",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "soup_plate_02",
+   "type": "soup_plate_porcelain_230",
+   "position_mm": [
+    222.29157205189193,
+    -140.33963464616156,
+    188.6004519675613
+   ],
+   "quat_wxyz": [
+    0.5043165683746338,
+    0.4772096574306488,
+    -0.5236252546310425,
+    -0.4937129020690918
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "regions": [
+      {
+       "region": "well",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "soup_plate_03",
+   "type": "soup_plate_porcelain_230",
+   "position_mm": [
+    171.16419048380195,
+    -139.82393259158053,
+    187.9732932868897
+   ],
+   "quat_wxyz": [
+    0.5005022287368774,
+    0.48893725872039795,
+    -0.5045387744903564,
+    -0.5058444142341614
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "regions": [
+      {
+       "region": "well",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "soup_spoon_01",
+   "type": "soup_spoon_190",
+   "position_mm": [
+    -21.607525278410236,
+    -115.5300461200637,
+    79.47246520700503
+   ],
+   "quat_wxyz": [
+    0.6436107754707336,
+    0.01466932613402605,
+    -0.7638925909996033,
+    0.044924113899469376
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "regions": [
+      {
+       "region": "bowl",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "soup_spoon_02",
+   "type": "soup_spoon_190",
+   "position_mm": [
+    -34.6466790857444,
+    -162.0476064311119,
+    79.65722325602121
+   ],
+   "quat_wxyz": [
+    0.6697534322738647,
+    -0.13842906057834625,
+    -0.7274637222290039,
+    -0.05535702034831047
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "regions": [
+      {
+       "region": "bowl",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "soup_spoon_03",
+   "type": "soup_spoon_190",
+   "position_mm": [
+    56.69356248984098,
+    -114.74691606986697,
+    80.0616289483557
+   ],
+   "quat_wxyz": [
+    0.6601201295852661,
+    0.050219785422086716,
+    -0.746829628944397,
+    -0.06296765804290771
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "regions": [
+      {
+       "region": "bowl",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "soup_spoon_04",
+   "type": "soup_spoon_190",
+   "position_mm": [
+    63.483435558617145,
+    -114.48720714518602,
+    80.0810265688526
+   ],
+   "quat_wxyz": [
+    0.6508681774139404,
+    0.05246059224009514,
+    -0.7548834681510925,
+    -0.061396680772304535
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "regions": [
+      {
+       "region": "bowl",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "soup_spoon_05",
+   "type": "soup_spoon_190",
+   "position_mm": [
+    53.54483314631434,
+    -41.45839057129148,
+    80.69373536338304
+   ],
+   "quat_wxyz": [
+    0.5702598094940186,
+    -0.23863179981708527,
+    -0.6227484941482544,
+    -0.4796280562877655
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "regions": [
+      {
+       "region": "bowl",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "soup_spoon_06",
+   "type": "soup_spoon_190",
+   "position_mm": [
+    62.166393093398995,
+    -30.731455312455193,
+    80.81798435204581
+   ],
+   "quat_wxyz": [
+    0.5876827239990234,
+    -0.19702289998531342,
+    -0.6215654611587524,
+    -0.4790276288986206
+   ],
+   "soils": [
+    {
+     "type": "iec_oat_flakes",
+     "regions": [
+      {
+       "region": "bowl",
+       "coverage": 0.6
+      }
+     ],
+     "amount_g": 0.3,
+     "age_h": 2,
+     "heat_history": "warm"
+    }
+   ]
+  },
+  {
+   "id": "teaspoon_01",
+   "type": "teaspoon_130",
+   "position_mm": [
+    47.60490847225575,
+    -219.13796751637852,
+    79.354329742331
+   ],
+   "quat_wxyz": [
+    0.6131446957588196,
+    -0.0007030872511677444,
+    -0.7899699807167053,
+    0.0007100392249412835
+   ],
+   "soils": []
+  },
+  {
+   "id": "teaspoon_02",
+   "type": "teaspoon_130",
+   "position_mm": [
+    -0.6853564744111023,
+    -42.57416451048546,
+    79.88204087424519
+   ],
+   "quat_wxyz": [
+    0.5829603672027588,
+    0.13277116417884827,
+    -0.8008110523223877,
+    0.035082872956991196
+   ],
+   "soils": []
+  },
+  {
+   "id": "teaspoon_03",
+   "type": "teaspoon_130",
+   "position_mm": [
+    -3.1226632292627174,
+    -178.31883520622898,
+    79.76560942046626
+   ],
+   "quat_wxyz": [
+    0.5514046549797058,
+    -0.17757318913936615,
+    -0.8111177682876587,
+    -0.08067557215690613
+   ],
+   "soils": []
+  },
+  {
+   "id": "teaspoon_04",
+   "type": "teaspoon_130",
+   "position_mm": [
+    1.1272386580287939,
+    -178.06516524317004,
+    79.8339820659581
+   ],
+   "quat_wxyz": [
+    0.5480135679244995,
+    -0.17069682478904724,
+    -0.8153712749481201,
+    -0.07558737695217133
+   ],
+   "soils": []
+  },
+  {
+   "id": "teaspoon_05",
+   "type": "teaspoon_130",
+   "position_mm": [
+    67.68714492437147,
+    -102.86162545594357,
+    79.4124988163845
+   ],
+   "quat_wxyz": [
+    0.580634593963623,
+    0.23065678775310516,
+    -0.7593918442726135,
+    0.18161757290363312
+   ],
+   "soils": []
+  },
+  {
+   "id": "teaspoon_06",
+   "type": "teaspoon_130",
+   "position_mm": [
+    4.844415055340244,
+    -116.32883051749826,
+    80.45894578679074
+   ],
+   "quat_wxyz": [
+    0.5662152171134949,
+    -0.13724148273468018,
+    -0.7568337321281433,
+    -0.2962563931941986
+   ],
+   "soils": []
+  }
+ ]
+}

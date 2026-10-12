@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-267.12 -136.51 559.19 209.03" width="1677.56" height="627.08" font-family="Helvetica, Arial, sans-serif">
+<rect x="-267.12" y="-136.51" width="559.19" height="209.03" fill="#ffffff"/>
+<text x="-263.12" y="-123.51" font-size="11" font-weight="bold" fill="#111">Bosch Serie 4 SMV4HAX40G/13: lower spray arm from above</text>
+<text x="-263.12" y="-110.51" font-size="7.5" fill="#444">tip radius 230 mm; 10 openings on top, 1 underneath; turns clockwise seen from above; red: horizontal part of each jet (30 mm for a horizontal jet)</text>
+<g id="ruler" stroke="#999" stroke-width="0.4" fill="none" font-size="6" >
+<rect x="-251.12" y="-84.51" width="507.19" height="141.03"/>
+<line x1="-250" y1="56.51" x2="-250" y2="60.51"/>
+<line x1="-250" y1="-84.51" x2="-250" y2="56.51" stroke="#e4e4e4" stroke-width="0.25"/>
+<text x="-250" y="66.51" text-anchor="middle" stroke="none" fill="#666">-250</text>
+<line x1="-200" y1="56.51" x2="-200" y2="60.51"/>
+<line x1="-200" y1="-84.51" x2="-200" y2="56.51" stroke="#e4e4e4" stroke-width="0.25"/>
+<text x="-200" y="66.51" text-anchor="middle" stroke="none" fill="#666">-200</text>
+<line x1="-150" y1="56.51" x2="-150" y2="60.51"/>
+<line x1="-150" y1="-84.51" x2="-150" y2="56.51" stroke="#e4e4e4" stroke-width="0.25"/>
+<text x="-150" y="66.51" text-anchor="middle" stroke="none" fill="#666">-150</text>
+<line x1="-100" y1="56.51" x2="-100" y2="60.51"/>
+<line x1="-100" y1="-84.51" x2="-100" y2="56.51" stroke="#e4e4e4" stroke-width="0.25"/>
+<text x="-100" y="66.51" text-anchor="middle" stroke="none" fill="#666">-100</text>
+<line x1="-50" y1="56.51" x2="-50" y2="60.51"/>
+<line x1="-50" y1="-84.51" x2="-50" y2="56.51" stroke="#e4e4e4" stroke-width="0.25"/>
+<text x="-50" y="66.51" text-anchor="middle" stroke="none" fill="#666">-50</text>
+<line x1="0" y1="56.51" x2="0" y2="60.51"/>
+<line x1="0" y1="-84.51" x2="0" y2="56.51" stroke="#e4e4e4" stroke-width="0.25"/>
+<text x="0" y="66.51" text-anchor="middle" stroke="none" fill="#666">0</text>
+<line x1="50" y1="56.51" x2="50" y2="60.51"/>
+<line x1="50" y1="-84.51" x2="50" y2="56.51" stroke="#e4e4e4" stroke-width="0.25"/>
+<text x="50" y="66.51" text-anchor="middle" stroke="none" fill="#666">50</text>
+<line x1="100" y1="56.51" x2="100" y2="60.51"/>
+<line x1="100" y1="-84.51" x2="100" y2="56.51" stroke="#e4e4e4" stroke-width="0.25"/>
+<text x="100" y="66.51" text-anchor="middle" stroke="none" fill="#666">100</text>
+<line x1="150" y1="56.51" x2="150" y2="60.51"/>
+<line x1="150" y1="-84.51" x2="150" y2="56.51" stroke="#e4e4e4" stroke-width="0.25"/>
+<text x="150" y="66.51" text-anchor="middle" stroke="none" fill="#666">150</text>
+<line x1="200" y1="56.51" x2="200" y2="60.51"/>
+<line x1="200" y1="-84.51" x2="200" y2="56.51" stroke="#e4e4e4" stroke-width="0.25"/>
+<text x="200" y="66.51" text-anchor="middle" stroke="none" fill="#666">200</text>
+<line x1="250" y1="56.51" x2="250" y2="60.51"/>
+<line x1="250" y1="-84.51" x2="250" y2="56.51" stroke="#e4e4e4" stroke-width="0.25"/>
+<text x="250" y="66.51" text-anchor="middle" stroke="none" fill="#666">250</text>
+<line x1="-255.12" y1="50" x2="-251.12" y2="50"/>
+<line x1="-251.12" y1="50" x2="256.06" y2="50" stroke="#e4e4e4" stroke-width="0.25"/>
+<text x="-256.12" y="52" text-anchor="end" stroke="none" fill="#666">-50</text>
+<line x1="-255.12" y1="0" x2="-251.12" y2="0"/>
+<line x1="-251.12" y1="0" x2="256.06" y2="0" stroke="#e4e4e4" stroke-width="0.25"/>
+<text x="-256.12" y="2" text-anchor="end" stroke="none" fill="#666">0</text>
+<line x1="-255.12" y1="-50" x2="-251.12" y2="-50"/>
+<line x1="-251.12" y1="-50" x2="256.06" y2="-50" stroke="#e4e4e4" stroke-width="0.25"/>
+<text x="-256.12" y="-48" text-anchor="end" stroke="none" fill="#666">50</text>
+<text x="256.06" y="74.51" text-anchor="end" stroke="none" fill="#666">x (mm)</text>
+<text x="-256.12" y="-87.51" text-anchor="end" stroke="none" fill="#666">y</text>
+</g>
+<g id="body" stroke="#566573" fill="#eaeded" opacity="1" stroke-linecap="round" stroke-linejoin="round">
+<polygon data-part="blade.0" points="-2.12,-18.62 2.12,-18.62 229.12,-14.12 229.12,14.12 2.12,18.62 -2.12,18.62" stroke-width="0.4"/>
+<polygon data-part="blade.1" points="-229.12,-14.12 -2.12,-18.62 2.12,-18.62 2.12,-14.38 2.12,18.62 -2.12,18.62 -229.12,14.12" stroke-width="0.4"/>
+<polygon data-part="hub" points="-17.5,0 -17.35,-2.28 -16.9,-4.53 -16.17,-6.7 -15.16,-8.75 -13.88,-10.65 -12.37,-12.37 -10.65,-13.88 -8.75,-15.16 -6.7,-16.17 -4.53,-16.9 -2.28,-17.35 0,-17.5 2.28,-17.35 4.53,-16.9 6.7,-16.17 8.75,-15.16 10.65,-13.88 12.37,-12.37 13.88,-10.65 15.16,-8.75 16.17,-6.7 16.9,-4.53 17.35,-2.28 17.5,0 17.5,0 17.35,2.28 16.9,4.53 16.17,6.7 15.16,8.75 13.88,10.65 12.37,12.37 10.65,13.88 8.75,15.16 6.7,16.17 4.53,16.9 2.28,17.35 0,17.5 -2.28,17.35 -4.53,16.9 -6.7,16.17 -8.75,15.16 -10.65,13.88 -12.37,12.37 -13.88,10.65 -15.16,8.75 -16.17,6.7 -16.9,4.53 -17.35,2.28" stroke-width="0.4"/>
+<polygon data-part="stem" points="-14.25,0 -14.13,-1.86 -13.76,-3.69 -13.17,-5.45 -12.34,-7.12 -11.31,-8.67 -10.08,-10.08 -8.67,-11.31 -7.12,-12.34 -5.45,-13.17 -3.69,-13.76 -1.86,-14.13 0,-14.25 1.86,-14.13 3.69,-13.76 5.45,-13.17 7.13,-12.34 8.67,-11.31 10.08,-10.08 11.31,-8.67 12.34,-7.12 13.17,-5.45 13.76,-3.69 14.13,-1.86 14.25,0 14.25,0 14.13,1.86 13.76,3.69 13.17,5.45 12.34,7.13 11.31,8.67 10.08,10.08 8.67,11.31 7.13,12.34 5.45,13.17 3.69,13.76 1.86,14.13 0,14.25 -1.86,14.13 -3.69,13.76 -5.45,13.17 -7.13,12.34 -8.67,11.31 -10.08,10.08 -11.31,8.67 -12.34,7.12 -13.17,5.45 -13.76,3.69 -14.13,1.86" stroke-width="0.4"/>
+</g>
+<g id="openings" stroke="#111" fill="#111" opacity="1" stroke-linecap="round" stroke-linejoin="round">
+<circle data-part="l1" cx="45" cy="0" r="1.65" fill="#111" stroke="none"/>
+<circle data-part="l2" cx="-69" cy="0" r="1.65" fill="#111" stroke="none"/>
+<circle data-part="l3" cx="91" cy="0" r="1.65" fill="#111" stroke="none"/>
+<circle data-part="l4" cx="114" cy="0" r="1.65" fill="#111" stroke="none"/>
+<circle data-part="l5" cx="138" cy="0" r="1.65" fill="#111" stroke="none"/>
+<circle data-part="l6" cx="-161" cy="0" r="1.65" fill="#111" stroke="none"/>
+<circle data-part="l7" cx="183" cy="0" r="1.65" fill="#111" stroke="none"/>
+<circle data-part="l8" cx="-207" cy="0" r="1.65" fill="#111" stroke="none"/>
+<polygon data-part="l9" points="224.1,-2.5 225.9,-2.5 225.9,2.5 224.1,2.5" stroke-width="0.2"/>
+<polygon data-part="l10" points="-225.9,-2.5 -224.1,-2.5 -224.1,2.5 -225.9,2.5" stroke-width="0.2"/>
+<polygon data-part="l11" points="205.5,-1.1 208.5,-1.1 208.5,1.1 205.5,1.1" stroke-width="0.2"/>
+</g>
+<g id="jets" stroke="#c01c28" fill="none" opacity="1" stroke-linecap="round" stroke-linejoin="round">
+<line data-part="l7" x1="183" y1="0" x2="183" y2="-21.21" stroke-width="0.9"/>
+<circle data-part="l7" cx="183" cy="-21.21" r="1.3" fill="#c01c28" stroke="none"/>
+<line data-part="l8" x1="-207" y1="0" x2="-207" y2="21.21" stroke-width="0.9"/>
+<circle data-part="l8" cx="-207" cy="21.21" r="1.3" fill="#c01c28" stroke="none"/>
+<line data-part="l9" x1="225" y1="0" x2="232.76" y2="0" stroke-width="0.9"/>
+<circle data-part="l9" cx="232.76" cy="0" r="1.3" fill="#c01c28" stroke="none"/>
+<line data-part="l10" x1="-225" y1="0" x2="-225" y2="7.76" stroke-width="0.9"/>
+<circle data-part="l10" cx="-225" cy="7.76" r="1.3" fill="#c01c28" stroke="none"/>
+<line data-part="l11" x1="207" y1="0" x2="196.74" y2="0" stroke-width="0.9"/>
+<circle data-part="l11" cx="196.74" cy="0" r="1.3" fill="#c01c28" stroke="none"/>
+</g>
+<g id="levels" font-size="6.5">
+</g>
+<g id="labels">
+<line x1="45" y1="-46.95" x2="45" y2="0" stroke="#111" stroke-width="0.3"/>
+<text x="45" y="-45" font-size="6.5" text-anchor="middle" fill="#111" stroke="#ffffff" stroke-width="1.43" paint-order="stroke">L1 r45</text>
+<line x1="-69" y1="-37.95" x2="-69" y2="0" stroke="#111" stroke-width="0.3"/>
+<text x="-69" y="-36" font-size="6.5" text-anchor="middle" fill="#111" stroke="#ffffff" stroke-width="1.43" paint-order="stroke">L2 r69</text>
+<line x1="91" y1="-55.95" x2="91" y2="0" stroke="#111" stroke-width="0.3"/>
+<text x="91" y="-54" font-size="6.5" text-anchor="middle" fill="#111" stroke="#ffffff" stroke-width="1.43" paint-order="stroke">L3 r91</text>
+<line x1="114" y1="-37.95" x2="114" y2="0" stroke="#111" stroke-width="0.3"/>
+<text x="114" y="-36" font-size="6.5" text-anchor="middle" fill="#111" stroke="#ffffff" stroke-width="1.43" paint-order="stroke">L4 r114</text>
+<line x1="138" y1="-46.95" x2="138" y2="0" stroke="#111" stroke-width="0.3"/>
+<text x="138" y="-45" font-size="6.5" text-anchor="middle" fill="#111" stroke="#ffffff" stroke-width="1.43" paint-order="stroke">L5 r138</text>
+<line x1="-161" y1="-55.95" x2="-161" y2="0" stroke="#111" stroke-width="0.3"/>
+<text x="-161" y="-54" font-size="6.5" text-anchor="middle" fill="#111" stroke="#ffffff" stroke-width="1.43" paint-order="stroke">L6 r161</text>
+<line x1="183" y1="-55.95" x2="183" y2="0" stroke="#111" stroke-width="0.3"/>
+<text x="183" y="-54" font-size="6.5" text-anchor="middle" fill="#111" stroke="#ffffff" stroke-width="1.43" paint-order="stroke">L7 r183</text>
+<line x1="-207" y1="-46.95" x2="-207" y2="0" stroke="#111" stroke-width="0.3"/>
+<text x="-207" y="-45" font-size="6.5" text-anchor="middle" fill="#111" stroke="#ffffff" stroke-width="1.43" paint-order="stroke">L8 r207</text>
+<line x1="225" y1="-46.95" x2="225" y2="0" stroke="#111" stroke-width="0.3"/>
+<text x="225" y="-45" font-size="6.5" text-anchor="middle" fill="#111" stroke="#ffffff" stroke-width="1.43" paint-order="stroke">L9 r225</text>
+<line x1="-225" y1="-37.95" x2="-225" y2="0" stroke="#111" stroke-width="0.3"/>
+<text x="-225" y="-36" font-size="6.5" text-anchor="middle" fill="#111" stroke="#ffffff" stroke-width="1.43" paint-order="stroke">L10 r225</text>
+<line x1="207" y1="-37.95" x2="207" y2="0" stroke="#7d3c98" stroke-width="0.3"/>
+<text x="207" y="-36" font-size="6.5" text-anchor="middle" fill="#7d3c98" stroke="#ffffff" stroke-width="1.43" paint-order="stroke">L11 r207 (under)</text>
+<text x="-230" y="34" font-size="7" text-anchor="start" fill="#566573" stroke="#ffffff" stroke-width="1.54" paint-order="stroke">&quot;-&quot; blade</text>
+<text x="230" y="34" font-size="7" text-anchor="end" fill="#566573" stroke="#ffffff" stroke-width="1.54" paint-order="stroke">&quot;+&quot; blade (arm angle 0: along +x)</text>
+<text x="0" y="34" font-size="7" text-anchor="middle" fill="#c01c28" stroke="#ffffff" stroke-width="1.54" paint-order="stroke">drive: L7, L8, L10</text>
+</g>
+</svg>

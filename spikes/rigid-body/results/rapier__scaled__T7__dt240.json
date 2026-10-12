@@ -1,0 +1,35 @@
+{
+ "engine": "rapier",
+ "preset": "scaled",
+ "test": "T7",
+ "hz": 240,
+ "tag": null,
+ "cfg": {
+  "worldScale": 10,
+  "lengthUnit": 0.1,
+  "softCcd": 0.005,
+  "ccd": false,
+  "sleep": true,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {},
+ "wallSeconds": 1.728329833,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:43:55.207Z",
+ "summary": {
+  "sameProcessIdentical": true,
+  "freshProcessIdentical": true,
+  "hashA": "644e18108205b5e3",
+  "hashB": "644e18108205b5e3",
+  "hashChild": "644e18108205b5e3",
+  "snapshotReplay": {
+   "identical": true,
+   "h1": "644e18108205b5e3",
+   "h2": "644e18108205b5e3",
+   "saveMs": 4.571874999999864,
+   "restoreMs": 9.221666999999798,
+   "snapshotBytes": 2022722
+  }
+ },
+ "runs": []
+}

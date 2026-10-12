@@ -1,0 +1,597 @@
+{
+ "name": "anchored-v1",
+ "keys": [
+  "soil.egg_yolk.rateRef",
+  "liq.xProtease",
+  "soil.bleachRate",
+  "soil.supplyRenewal"
+ ],
+ "searched": {
+  "soil.egg_yolk.rateRef": 0.0000358,
+  "liq.xProtease": 0.0257,
+  "soil.bleachRate": 0.00121,
+  "soil.supplyRenewal": 0.0232
+ },
+ "fitted": {
+  "soil.egg_yolk.rateRef": 0.0000358,
+  "liq.xProtease": 0.0257,
+  "soil.bleachRate": 0.00121,
+  "soil.supplyRenewal": 0.05
+ },
+ "returned": [
+  "soil.supplyRenewal"
+ ],
+ "mechanism": {
+  "soil.subCellCv": 0.3,
+  "soil.amountCv": 0.05,
+  "soil.heatDryingFactor": 80,
+  "soil.egg_yolk.bakeReference": 0.2,
+  "soil.starch.bakeReference": 0.2,
+  "soil.tea.visibleFraction": 0,
+  "soil.tea.visibleMass": 0.00005
+ },
+ "trace": {
+  "start": [
+   -10.41431317630212,
+   -4.605170185988091,
+   -7.1308988302963465,
+   -2.995732273553991
+  ],
+  "x": [
+   -10.23756266455762,
+   -3.661264287080963,
+   -6.717134919373487,
+   -3.763603000309873
+  ],
+  "f": 0.7341021174428578,
+  "evaluations": 112,
+  "restarts": 1,
+  "converged": false
+ },
+ "evaluations": [
+  {
+   "overrides": {},
+   "score": {
+    "crockery": 2.6393162393162393,
+    "cutlery": 3.7234299516908207,
+    "glass": 1.75,
+    "melamine": 4.5,
+    "pots": null,
+    "all": 3.1481343283582093
+   },
+   "continuous": {
+    "crockery": 2.670292691590045,
+    "cutlery": 3.7303227401904575,
+    "glass": 1.75,
+    "melamine": 4.2502640810572245,
+    "pots": null,
+    "all": 3.149516929339527
+   },
+   "logLikelihood": -1.2561719891399121,
+   "benchPenalty": 206.6654987482917
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005
+   },
+   "score": {
+    "crockery": 1.4512820512820512,
+    "cutlery": 3.7919411506368026,
+    "glass": 1.75,
+    "melamine": 5,
+    "pots": null,
+    "all": 2.8600293984622343
+   },
+   "continuous": {
+    "crockery": 1.5138569276250347,
+    "cutlery": 3.8172226065930213,
+    "glass": 1.75,
+    "melamine": 5,
+    "pots": null,
+    "all": 2.8912595524798115
+   },
+   "logLikelihood": -3.1661057304657967,
+   "benchPenalty": 4.262066284359939
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.0000358,
+    "liq.xProtease": 0.0257,
+    "soil.bleachRate": 0.00121,
+    "soil.supplyRenewal": 0.0232
+   },
+   "score": {
+    "crockery": 3.632478632478633,
+    "cutlery": 4.408541941150637,
+    "glass": 3.7,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.103403437358661
+   },
+   "continuous": {
+    "crockery": 3.641019287427324,
+    "cutlery": 4.405577444247329,
+    "glass": 3.8020809851837924,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.119598623629905
+   },
+   "logLikelihood": -0.5865822871947122,
+   "benchPenalty": 0.07474815943773717
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.00003,
+    "liq.xProtease": 0.0257,
+    "soil.bleachRate": 0.00121,
+    "soil.supplyRenewal": 0.0232
+   },
+   "score": {
+    "crockery": 3.632478632478633,
+    "cutlery": 4.3229029424681595,
+    "glass": 3.514285714285714,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.031587193900626
+   },
+   "continuous": {
+    "crockery": 3.669335541053653,
+    "cutlery": 4.331245692855236,
+    "glass": 3.4727528978885887,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.040411170640862
+   },
+   "logLikelihood": -0.7213182455667871,
+   "benchPenalty": 4.262066284359939
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.0000358,
+    "liq.xProtease": 0.01,
+    "soil.bleachRate": 0.00121,
+    "soil.supplyRenewal": 0.0232
+   },
+   "score": {
+    "crockery": 2.9435897435897433,
+    "cutlery": 3.91183574879227,
+    "glass": 1.75,
+    "melamine": 5,
+    "pots": null,
+    "all": 3.3560945273631844
+   },
+   "continuous": {
+    "crockery": 3.0174146445557293,
+    "cutlery": 3.8978298779272667,
+    "glass": 1.82244125952563,
+    "melamine": 5,
+    "pots": null,
+    "all": 3.3811810291430406
+   },
+   "logLikelihood": -2.386083277433273,
+   "benchPenalty": 0.07474815943773717
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.0000358,
+    "liq.xProtease": 0.0257,
+    "soil.bleachRate": 0.0008,
+    "soil.supplyRenewal": 0.0232
+   },
+   "score": {
+    "crockery": 2.5641025641025643,
+    "cutlery": 4.408541941150637,
+    "glass": 3.7,
+    "melamine": 5,
+    "pots": null,
+    "all": 3.7924581637268204
+   },
+   "continuous": {
+    "crockery": 2.5641025641025643,
+    "cutlery": 4.405577427378809,
+    "glass": 3.802080976324929,
+    "melamine": 5,
+    "pots": null,
+    "all": 3.8061676269823614
+   },
+   "logLikelihood": -0.7127599412168619,
+   "benchPenalty": 0.07474815943773717
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.0000358,
+    "liq.xProtease": 0.0257,
+    "soil.bleachRate": 0.00121,
+    "soil.supplyRenewal": 0.05
+   },
+   "score": {
+    "crockery": 3.632478632478633,
+    "cutlery": 4.408541941150637,
+    "glass": 3.7,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.103403437358661
+   },
+   "continuous": {
+    "crockery": 3.612410431457918,
+    "cutlery": 4.404392025096928,
+    "glass": 3.795011744406291,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.109606652587109
+   },
+   "logLikelihood": -0.5885015060935381,
+   "benchPenalty": 0.07474815943773717
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.0000358,
+    "liq.xProtease": 0.0257,
+    "soil.bleachRate": 0.00121
+   },
+   "score": {
+    "crockery": 3.632478632478633,
+    "cutlery": 4.408541941150637,
+    "glass": 3.7,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.103403437358661
+   },
+   "continuous": {
+    "crockery": 3.612410431457918,
+    "cutlery": 4.404392025096928,
+    "glass": 3.795011744406291,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.109606652587109
+   },
+   "logLikelihood": -0.5885015060935381,
+   "benchPenalty": 0.07474815943773717
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.000035799999999999976,
+    "liq.xProtease": 0.025699999999999997,
+    "soil.bleachRate": 0.0012100000000000001,
+    "soil.supplyRenewal": 0.05
+   },
+   "score": {
+    "crockery": 3.632478632478633,
+    "cutlery": 4.408541941150637,
+    "glass": 3.7,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.103403437358661
+   },
+   "continuous": {
+    "crockery": 3.612410431457918,
+    "cutlery": 4.404392025096928,
+    "glass": 3.795011744406291,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.109606652587109
+   },
+   "logLikelihood": -0.5885015060935381,
+   "benchPenalty": 0.07474815943773717
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.000023866666666666666,
+    "liq.xProtease": 0.025699999999999997,
+    "soil.bleachRate": 0.0012100000000000001,
+    "soil.supplyRenewal": 0.05
+   },
+   "score": {
+    "crockery": 3.632478632478633,
+    "cutlery": 4.271519543258674,
+    "glass": 2.957142857142857,
+    "melamine": 5,
+    "pots": null,
+    "all": 3.921972927569943
+   },
+   "continuous": {
+    "crockery": 3.6718423409075878,
+    "cutlery": 4.275258604687907,
+    "glass": 2.8926713705462594,
+    "melamine": 5,
+    "pots": null,
+    "all": 3.9257322569387063
+   },
+   "logLikelihood": -0.8852690660548586,
+   "benchPenalty": 423.2737303298083
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.00005369999999999993,
+    "liq.xProtease": 0.025699999999999997,
+    "soil.bleachRate": 0.0012100000000000001,
+    "soil.supplyRenewal": 0.05
+   },
+   "score": {
+    "crockery": 3.5555555555555562,
+    "cutlery": 4.425669740887132,
+    "glass": 4.164285714285714,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.159131291593979
+   },
+   "continuous": {
+    "crockery": 3.5751815031986913,
+    "cutlery": 4.421468443433795,
+    "glass": 4.17569688809892,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.164383126743727
+   },
+   "logLikelihood": -0.6099397457158791,
+   "benchPenalty": 2216.5394741120945
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.000035799999999999976,
+    "liq.xProtease": 0.017133333333333334,
+    "soil.bleachRate": 0.0012100000000000001,
+    "soil.supplyRenewal": 0.05
+   },
+   "score": {
+    "crockery": 3.632478632478633,
+    "cutlery": 4.3229029424681595,
+    "glass": 3.05,
+    "melamine": 5,
+    "pots": null,
+    "all": 3.9622908186341026
+   },
+   "continuous": {
+    "crockery": 3.6415430583331565,
+    "cutlery": 4.308350583415888,
+    "glass": 3.0920676165136705,
+    "melamine": 5,
+    "pots": null,
+    "all": 3.9637143422459906
+   },
+   "logLikelihood": -0.7864687806853415,
+   "benchPenalty": 0.07474815943773717
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.000035799999999999976,
+    "liq.xProtease": 0.03854999999999999,
+    "soil.bleachRate": 0.0012100000000000001,
+    "soil.supplyRenewal": 0.05
+   },
+   "score": {
+    "crockery": 3.632478632478633,
+    "cutlery": 4.408541941150637,
+    "glass": 3.9785714285714286,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.144981262518576
+   },
+   "continuous": {
+    "crockery": 3.6120224542876067,
+    "cutlery": 4.408636480589127,
+    "glass": 4.024327841211004,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.1459055947916905
+   },
+   "logLikelihood": -0.607933628423607,
+   "benchPenalty": 0.07474815943773717
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.000035799999999999976,
+    "liq.xProtease": 0.025699999999999997,
+    "soil.bleachRate": 0.0008066666666666665,
+    "soil.supplyRenewal": 0.05
+   },
+   "score": {
+    "crockery": 2.5641025641025643,
+    "cutlery": 4.408541941150637,
+    "glass": 3.7,
+    "melamine": 5,
+    "pots": null,
+    "all": 3.7924581637268204
+   },
+   "continuous": {
+    "crockery": 2.5641025641025643,
+    "cutlery": 4.40439201041666,
+    "glass": 3.7950117358687443,
+    "melamine": 5,
+    "pots": null,
+    "all": 3.804502115194959
+   },
+   "logLikelihood": -0.7143698412865853,
+   "benchPenalty": 0.07474815943773717
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.000035799999999999976,
+    "liq.xProtease": 0.025699999999999997,
+    "soil.bleachRate": 0.0018150000000000004,
+    "soil.supplyRenewal": 0.05
+   },
+   "score": {
+    "crockery": 4.418803418803418,
+    "cutlery": 4.408541941150637,
+    "glass": 3.7,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.332259158751696
+   },
+   "continuous": {
+    "crockery": 4.426670588784803,
+    "cutlery": 4.40439203805614,
+    "glass": 3.795011751875053,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.34659282556703
+   },
+   "logLikelihood": -0.645289022446056,
+   "benchPenalty": 0.07474815943773717
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.000035799999999999976,
+    "liq.xProtease": 0.025699999999999997,
+    "soil.bleachRate": 0.0012100000000000001,
+    "soil.supplyRenewal": 0.03333333333333333
+   },
+   "score": {
+    "crockery": 3.632478632478633,
+    "cutlery": 4.408541941150637,
+    "glass": 3.7,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.103403437358661
+   },
+   "continuous": {
+    "crockery": 3.631930920913026,
+    "cutlery": 4.40536815021333,
+    "glass": 3.7985108994087824,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.116312882600772
+   },
+   "logLikelihood": -0.5867309093112283,
+   "benchPenalty": 0.07474815943773717
+  },
+  {
+   "overrides": {
+    "soil.subCellCv": 0.3,
+    "soil.amountCv": 0.05,
+    "soil.heatDryingFactor": 80,
+    "soil.egg_yolk.bakeReference": 0.2,
+    "soil.starch.bakeReference": 0.2,
+    "soil.tea.visibleFraction": 0,
+    "soil.tea.visibleMass": 0.00005,
+    "soil.egg_yolk.rateRef": 0.000035799999999999976,
+    "liq.xProtease": 0.025699999999999997,
+    "soil.bleachRate": 0.0012100000000000001,
+    "soil.supplyRenewal": 0.075
+   },
+   "score": {
+    "crockery": 3.632478632478633,
+    "cutlery": 4.408541941150637,
+    "glass": 3.7,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.103403437358661
+   },
+   "continuous": {
+    "crockery": 3.591319151840288,
+    "cutlery": 4.401206547644508,
+    "glass": 3.7870629499504473,
+    "melamine": 5,
+    "pots": null,
+    "all": 4.10064147543471
+   },
+   "logLikelihood": -0.5942209055056686,
+   "benchPenalty": 0.07474815943773717
+  }
+ ]
+}

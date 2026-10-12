@@ -1,0 +1,59 @@
+name: A result that looks physically wrong
+description: Nothing failed, but a verdict or a score is not what a real dishwasher would do.
+title: '[wrong result] '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        These reports are welcome: the simulation is known to be wrong in several ways, and a concrete load that shows one is the most useful thing to have.
+
+        Before you write, please look at [what a verdict can be trusted for](https://github.com/composo-ai/DishwasherBench/blob/main/docs/validation/README.md) (section 8) and at the [roadmap](https://github.com/composo-ai/DishwasherBench/blob/main/docs/ROADMAP.md). Plates that come out clean although they have fallen over, crowded cutlery that comes out clean, fat that goes without detergent and a spray arm whose blocking costs nothing are known. A new load that shows one of them is still worth adding to the issue that tracks it.
+  - type: textarea
+    id: what
+    attributes:
+      label: What the simulation said, and what you expected
+      description: Which items, which verdicts, and why you think a real machine would do otherwise. If you have seen it in a real machine, say so; a source is welcome too.
+      placeholder: |
+        The dinner plate with dried egg in the lower basket came out clean although a board stood directly in front of it.
+        In my machine a plate behind a board keeps most of its soil.
+    validations:
+      required: true
+  - type: textarea
+    id: load
+    attributes:
+      label: The load
+      description: |
+        Attach the load so that the wash can be repeated. One of:
+        - played in the browser with `pnpm --filter @spotless/web play`: the episode record, `.spotless/episodes/<id>.json` at the root of your checkout (it holds the load, the report and the score);
+        - played against a server you started with `serve`: the episode record, `episodes/<id>.json` in the directory you gave as `--data` (`packages/server/.spotless` if you gave none);
+        - played through the harness: the `record.json` of the episode;
+        - a saved load: its name (for example `breakfast-careless`), or the file if you changed it.
+        Attach files by dragging them into this box. Check first that they hold no path with your name in it.
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: The report
+      description: The report of the wash, if it is not in a record attached above. For a saved load, `pnpm --filter @spotless/wash-runner wash-load <name> --tier official` prints it. A screenshot of the page's report or of "Look closely" helps too.
+      render: text
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Which wash
+      description: A quick preview is coarser and a few of its verdicts differ from the full wash. Only the full wash is the scored result.
+      options:
+        - Full wash (official tier)
+        - Quick preview (fast tier)
+        - Both, and they agree
+        - Both, and they differ
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Operating system, hardware and commit
+      description: For example "macOS 27.0.1, Apple M3 Pro, commit 1a2b3c4". The commit matters because `wash-load` does not print which wash code it ran. An episode record names the wash code under `versions`, and the harness's `results.md` has it in the column "Wash code".
+    validations:
+      required: true

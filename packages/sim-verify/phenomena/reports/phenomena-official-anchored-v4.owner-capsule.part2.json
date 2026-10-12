@@ -1,0 +1,571 @@
+{
+ "suite": "spotless-phenomena",
+ "tier": "official",
+ "simVersion": "spotless-sim 0.4.1 water-5",
+ "paramSet": "packages/calibration/anchors/anchored-v4.owner-capsule.json",
+ "paramOverrides": {
+  "liq.amylaseKox": 0.00006,
+  "liq.amylaseKoxHP": 0.000002,
+  "liq.tabletTau": 300,
+  "liq.xAmylase": 0.012,
+  "liq.xCarbonate": 3.3,
+  "liq.xPeroxide": 0.955,
+  "liq.xProtease": 0.03,
+  "liq.xSilicate": 0,
+  "liq.xSurfactant": 0.1,
+  "liq.xTaed": 0.175,
+  "soil.amountCv": 0.05,
+  "soil.egg_yolk.rateRef": 0.000034,
+  "soil.egg_yolk.tLag": 300,
+  "soil.milk.rateRef": 0.000034,
+  "soil.milk.tLag": 300,
+  "soil.subCellCv": 0.1
+ },
+ "paramSetsStale": [],
+ "detergent": {
+  "name": "Finish Powerball Ultimate",
+  "dose_g": 12.9
+ },
+ "sourceFingerprint": "beaf25c1244cad08d877b5d53a1fb97fab706056e770e26389165fb5d43b0bdf",
+ "hydroHash": "sha256:ecdf6e077c2e67a36ffb4cf2600480fa6bce737a64d79462da7eb427329e7c3a",
+ "soilHash": "sha256:45173d348ccd08097267b5b9aaec8fd7d5c0395dfa5eb4a0c74a4055286a0275",
+ "exposureBackend": "gpu",
+ "machineId": "bosch_smv4hax40g",
+ "scenarios": [
+  {
+   "id": "P05",
+   "title": "Large flat item shadows what is behind or above it",
+   "group": "A",
+   "test": "Two dessert plates with egg yolk in the left front lane of the lower basket, faces to the arm axis; a 32 cm oval platter on edge outboard of them at the side wall (A) against inboard of them, between the plates and the arm axis (B)",
+   "adapted": "A 32 cm platter on edge stands in for the baking tray, which is too tall to stand in the lower basket of this machine. Items above it in the upper basket are not scored: the upper basket has its own arm underneath, so the lower basket does not shadow it from its main spray.",
+   "stages": "water: jets (line of sight), droplets; soil: removal laws",
+   "verdict": "too small",
+   "note": "",
+   "checks": [
+    {
+     "id": "score",
+     "quantity": "mean IEC score of the two plates, B - A",
+     "unit": "score",
+     "decides": true,
+     "expected": {
+      "stated": "-1 to -3 for tenacious soils on faces served only by that arm",
+      "sign": -1,
+      "min": 0,
+      "max": 6,
+      "tolerance": "stated range, a factor of two or one score point either way; the sign must be right"
+     },
+     "a": 0,
+     "b": 0,
+     "value": 0,
+     "verdict": "too small",
+     "note": ""
+    },
+    {
+     "id": "f_jet",
+     "quantity": "fraction of time their faces are under a direct jet, B over A, minus one",
+     "unit": "1",
+     "decides": true,
+     "expected": {
+      "stated": "items inside the shadow lose direct impingement from that arm",
+      "sign": -1,
+      "min": 0.05,
+      "max": null,
+      "tolerance": "direction only: the checklist gives no size; under 0.05 counts as no effect"
+     },
+     "a": 0.0017850426817945725,
+     "b": 0.00014337228900491105,
+     "value": -0.9196813104430795,
+     "verdict": "pass",
+     "note": ""
+    }
+   ],
+   "cases": [
+    {
+     "label": "A",
+     "what": "platter at the side wall",
+     "load": "board-side",
+     "programme": "auto_145",
+     "params": {},
+     "dispenserBlocked": false,
+     "stalledArms": {},
+     "levelSeed": 1,
+     "simSeed": 1,
+     "resultHash": "sha256:117d765cfe54de23646599605245e90fe57a7512a56bac57623d836722640b5e",
+     "exposureBackend": "gpu",
+     "seconds": 429.7,
+     "exposureCached": false,
+     "items": 3,
+     "cleanItems": 1,
+     "meanScore": 0,
+     "liquor": {
+      "washTime_s": 6799.534454293978,
+      "temperatureMean_C": 54.31196124635441,
+      "temperatureMax_C": 66.80746918090654,
+      "pHMean": 9.965310582228145,
+      "pHMax": 10.590699669178502,
+      "detergentPeak_g_L": 5.294926811657725,
+      "proteasePeak_g_L": 0.09584311321008687,
+      "proteaseMean_g_L": 0.033805285553630764,
+      "amylasePeak_g_L": 0.0385029641882845,
+      "peracidPeak_mmol_L": 0.4487185054783442,
+      "peracidMean_mmol_L": 0.07725000111661544
+     },
+     "surfaces": [
+      {
+       "item": "plate_1",
+       "regions": [
+        "well"
+       ],
+       "exposure": {
+        "area_cm2": 152.47642676058604,
+        "fJet": 0.0004891943290131728,
+        "jetAreaShare": 0.16025446094043763,
+        "shearPeakMax_Pa": 278.01904296875,
+        "shearPeakMean_Pa": 30.187497725034383,
+        "shearMean_Pa": 20.29890021433068,
+        "wetFraction": 1,
+        "wetTime": 1,
+        "wettedAreaShare": 1,
+        "flux_kg_m2_s": 1.0999993306092763,
+        "renewal_per_s": 11.31908578955194,
+        "filmShear_Pa": 0.7843876008906314,
+        "filmThickness_um": 84.33860974324206,
+        "pooledAreaShare": 0,
+        "retained_g_m2": 10.99406848940918
+       },
+       "soils": [
+        {
+         "type": "iec_egg_yolk",
+         "modelClass": "egg_yolk",
+         "law": "reaction",
+         "initial_mg": 985.0023456916823,
+         "residual_mg": 412.9904842234372
+        }
+       ],
+       "score": 0,
+       "clean": false,
+       "visibleArea_mm2": 9124.545511398579,
+       "specks": 0,
+       "pooled_mL": 0,
+       "film_g": 1.0692100330353258,
+       "pools": [],
+       "jetLiftRatio": 0.022069671805745514
+      },
+      {
+       "item": "plate_2",
+       "regions": [
+        "well"
+       ],
+       "exposure": {
+        "area_cm2": 152.47642676058604,
+        "fJet": 0.0030808910345759724,
+        "jetAreaShare": 0.40685862851989785,
+        "shearPeakMax_Pa": 276.2165832519531,
+        "shearPeakMean_Pa": 28.80123025023775,
+        "shearMean_Pa": 23.381901782586112,
+        "wetFraction": 1,
+        "wetTime": 1,
+        "wettedAreaShare": 1,
+        "flux_kg_m2_s": 2.6206860033352424,
+        "renewal_per_s": 23.477159331436898,
+        "filmShear_Pa": 0.9402192117483023,
+        "filmThickness_um": 99.41985246812719,
+        "pooledAreaShare": 0,
+        "retained_g_m2": 9.81838131329658
+       },
+       "soils": [
+        {
+         "type": "iec_egg_yolk",
+         "modelClass": "egg_yolk",
+         "law": "reaction",
+         "initial_mg": 968.9066846394919,
+         "residual_mg": 372.5272649518523
+        }
+       ],
+       "score": 0,
+       "clean": false,
+       "visibleArea_mm2": 9087.506113119813,
+       "specks": 1,
+       "pooled_mL": 0,
+       "film_g": 0.9916919506365192,
+       "pools": [],
+       "jetLiftRatio": 0.03870441329814539
+      }
+     ],
+     "exactOverlap_mm": 0,
+     "exactOverlapWith": "",
+     "problems": [],
+     "loadNotes": []
+    },
+    {
+     "label": "B",
+     "what": "platter between the plates and the arm axis",
+     "load": "board-middle",
+     "programme": "auto_145",
+     "params": {},
+     "dispenserBlocked": false,
+     "stalledArms": {},
+     "levelSeed": 1,
+     "simSeed": 1,
+     "resultHash": "sha256:16fe0604c24819ecada08f039c91c22dd7898998f0bacbe1b34625900adfb23c",
+     "exposureBackend": "gpu",
+     "seconds": 282.3,
+     "exposureCached": false,
+     "items": 3,
+     "cleanItems": 1,
+     "meanScore": 0,
+     "liquor": {
+      "washTime_s": 6799.534454293978,
+      "temperatureMean_C": 54.31196124635441,
+      "temperatureMax_C": 66.80746918090654,
+      "pHMean": 9.965171894254947,
+      "pHMax": 10.59070409228043,
+      "detergentPeak_g_L": 5.292720175263151,
+      "proteasePeak_g_L": 0.09584311154443691,
+      "proteaseMean_g_L": 0.03380385147656569,
+      "amylasePeak_g_L": 0.03850296381433332,
+      "peracidPeak_mmol_L": 0.4487181555770317,
+      "peracidMean_mmol_L": 0.07725011031157006
+     },
+     "surfaces": [
+      {
+       "item": "plate_1",
+       "regions": [
+        "well"
+       ],
+       "exposure": {
+        "area_cm2": 152.47642676058604,
+        "fJet": 0.00019306220152247905,
+        "jetAreaShare": 0.11146977377977402,
+        "shearPeakMax_Pa": 452.25653076171875,
+        "shearPeakMean_Pa": 47.61761403268422,
+        "shearMean_Pa": 30.253026697208735,
+        "wetFraction": 1,
+        "wetTime": 1,
+        "wettedAreaShare": 1,
+        "flux_kg_m2_s": 1.9596511423564837,
+        "renewal_per_s": 16.640869151362836,
+        "filmShear_Pa": 0.9309531805449105,
+        "filmThickness_um": 103.13015226094052,
+        "pooledAreaShare": 0,
+        "retained_g_m2": 10.701200408027704
+       },
+       "soils": [
+        {
+         "type": "iec_egg_yolk",
+         "modelClass": "egg_yolk",
+         "law": "reaction",
+         "initial_mg": 985.0023456916823,
+         "residual_mg": 405.45615443642833
+        }
+       ],
+       "score": 0,
+       "clean": false,
+       "visibleArea_mm2": 9121.224696774478,
+       "specks": 0,
+       "pooled_mL": 0,
+       "film_g": 1.0340559515359682,
+       "pools": [],
+       "jetLiftRatio": 0.08672930215724302
+      },
+      {
+       "item": "plate_2",
+       "regions": [
+        "well"
+       ],
+       "exposure": {
+        "area_cm2": 152.47642676058604,
+        "fJet": 0.00009368237648734303,
+        "jetAreaShare": 0.09327650486653291,
+        "shearPeakMax_Pa": 382.0386962890625,
+        "shearPeakMean_Pa": 36.35621563720112,
+        "shearMean_Pa": 30.55537527514045,
+        "wetFraction": 1,
+        "wetTime": 1,
+        "wettedAreaShare": 1,
+        "flux_kg_m2_s": 2.614194928394224,
+        "renewal_per_s": 19.538312331992735,
+        "filmShear_Pa": 1.0045785740766147,
+        "filmThickness_um": 110.58696480680621,
+        "pooledAreaShare": 0,
+        "retained_g_m2": 10.609182053246926
+       },
+       "soils": [
+        {
+         "type": "iec_egg_yolk",
+         "modelClass": "egg_yolk",
+         "law": "reaction",
+         "initial_mg": 968.9066846394919,
+         "residual_mg": 384.956797603095
+        }
+       ],
+       "score": 0,
+       "clean": false,
+       "visibleArea_mm2": 9107.4299641788,
+       "specks": 1,
+       "pooled_mL": 0,
+       "film_g": 1.0271444216836831,
+       "pools": [],
+       "jetLiftRatio": 0.05433241522897664
+      }
+     ],
+     "exactOverlap_mm": 0,
+     "exactOverlapWith": "",
+     "problems": [],
+     "loadNotes": []
+    }
+   ]
+  },
+  {
+   "id": "P14",
+   "title": "Soiled face against the tub wall or door liner",
+   "group": "A",
+   "test": "An oval platter with egg yolk in the outermost slot of the rear lane of the lower basket (R1 slot 0, next to the left wall): face to the arm axis (A) against face to the wall (B)",
+   "adapted": "The outermost seat of the Bosch leaves several centimetres to the wall, not 8 mm; the platter is seated by the loading physics both ways round.",
+   "stages": "water: jets (line of sight), run-off (renewal); soil: removal laws",
+   "verdict": "too small",
+   "note": "",
+   "checks": [
+    {
+     "id": "f_jet",
+     "quantity": "fraction of time the soiled face is under a direct jet, B over A",
+     "unit": "1",
+     "decides": true,
+     "expected": {
+      "stated": "as P02: f_jet on the soiled face drops to about 0",
+      "sign": 0,
+      "min": 0,
+      "max": 0.1,
+      "tolerance": "negative control: at most twice the stated limit, either sign"
+     },
+     "a": 0.006692573678787264,
+     "b": 0,
+     "value": 0,
+     "verdict": "pass",
+     "note": ""
+    },
+    {
+     "id": "score",
+     "quantity": "change of the IEC score of the platter, B - A",
+     "unit": "score",
+     "decides": true,
+     "expected": {
+      "stated": "as P02: -1 to -2",
+      "sign": -1,
+      "min": 0,
+      "max": 4,
+      "tolerance": "stated range, a factor of two or one score point either way; the sign must be right"
+     },
+     "a": 0,
+     "b": 0,
+     "value": 0,
+     "verdict": "too small",
+     "note": ""
+    },
+    {
+     "id": "renewal",
+     "quantity": "rate the water on the soiled face is replaced, B over A, minus one",
+     "unit": "1",
+     "decides": false,
+     "expected": {
+      "stated": "slow exchange near the wall",
+      "sign": -1,
+      "min": 0.05,
+      "max": null,
+      "tolerance": "direction only: the checklist gives no size; under 0.05 counts as no effect"
+     },
+     "a": 37.759141124621955,
+     "b": 4.3378897899677495,
+     "value": -0.885116831030378,
+     "verdict": "pass",
+     "note": ""
+    },
+    {
+     "id": "residue",
+     "quantity": "share of the egg yolk left on the well, B - A",
+     "unit": "1",
+     "decides": false,
+     "expected": {
+      "stated": "the face to the wall keeps more",
+      "sign": 1,
+      "min": 0.01,
+      "max": null,
+      "tolerance": "direction only: the checklist gives no size; under 0.01 counts as no effect"
+     },
+     "a": 0.16538751878905514,
+     "b": 0.25224629989734065,
+     "value": 0.08685878110828552,
+     "verdict": "pass",
+     "note": ""
+    }
+   ],
+   "cases": [
+    {
+     "label": "A",
+     "what": "face inward",
+     "load": "platter-inward",
+     "programme": "auto_145",
+     "params": {},
+     "dispenserBlocked": false,
+     "stalledArms": {},
+     "levelSeed": 1,
+     "simSeed": 1,
+     "resultHash": "sha256:ea3ecb132733ac4441dc652104e9b370979d9c8f6ac2055f429a4dae49679a40",
+     "exposureBackend": "gpu",
+     "seconds": 267.6,
+     "exposureCached": false,
+     "items": 1,
+     "cleanItems": 0,
+     "meanScore": 0,
+     "liquor": {
+      "washTime_s": 6801.458103680553,
+      "temperatureMean_C": 54.30384152470833,
+      "temperatureMax_C": 66.80746918090654,
+      "pHMean": 9.963619324521925,
+      "pHMax": 10.590751588171042,
+      "detergentPeak_g_L": 5.2667364292705665,
+      "proteasePeak_g_L": 0.09584309371166062,
+      "proteaseMean_g_L": 0.03378042316631107,
+      "amylasePeak_g_L": 0.03850295981078197,
+      "peracidPeak_mmol_L": 0.44871440871270263,
+      "peracidMean_mmol_L": 0.07724224688859399
+     },
+     "surfaces": [
+      {
+       "item": "platter",
+       "regions": [
+        "well"
+       ],
+       "exposure": {
+        "area_cm2": 220.12175543750345,
+        "fJet": 0.006692573678787264,
+        "jetAreaShare": 0.5085285744467848,
+        "shearPeakMax_Pa": 414.9102783203125,
+        "shearPeakMean_Pa": 51.80432743390808,
+        "shearMean_Pa": 30.23680931597376,
+        "wetFraction": 1,
+        "wetTime": 1,
+        "wettedAreaShare": 1,
+        "flux_kg_m2_s": 6.346716482599698,
+        "renewal_per_s": 37.759141124621955,
+        "filmShear_Pa": 1.2642399938737094,
+        "filmThickness_um": 132.75321407711513,
+        "pooledAreaShare": 0,
+        "retained_g_m2": 10.251145489142601
+       },
+       "soils": [
+        {
+         "type": "iec_egg_yolk",
+         "modelClass": "egg_yolk",
+         "law": "reaction",
+         "initial_mg": 1026.2937289062031,
+         "residual_mg": 169.73617336566133
+        }
+       ],
+       "score": 0,
+       "clean": false,
+       "visibleArea_mm2": 10240.468224142709,
+       "specks": 0,
+       "pooled_mL": 0,
+       "film_g": 1.2134032273641255,
+       "pools": [],
+       "jetLiftRatio": 0.04344234568162763
+      }
+     ],
+     "exactOverlap_mm": 0,
+     "exactOverlapWith": "",
+     "problems": [],
+     "loadNotes": []
+    },
+    {
+     "label": "B",
+     "what": "face to the wall",
+     "load": "platter-to-wall",
+     "programme": "auto_145",
+     "params": {},
+     "dispenserBlocked": false,
+     "stalledArms": {},
+     "levelSeed": 1,
+     "simSeed": 1,
+     "resultHash": "sha256:4708fa617ae5d836d6e3bd5c9a1adf0bfebb95c25fa75984aa0089019d20ad89",
+     "exposureBackend": "gpu",
+     "seconds": 269.7,
+     "exposureCached": false,
+     "items": 1,
+     "cleanItems": 0,
+     "meanScore": 0,
+     "liquor": {
+      "washTime_s": 6801.458103680553,
+      "temperatureMean_C": 54.30384152470833,
+      "temperatureMax_C": 66.80746918090654,
+      "pHMean": 9.963613417780255,
+      "pHMax": 10.590751768469271,
+      "detergentPeak_g_L": 5.266638595606061,
+      "proteasePeak_g_L": 0.09584309364398351,
+      "proteaseMean_g_L": 0.03378032589896665,
+      "amylasePeak_g_L": 0.038502959795588355,
+      "peracidPeak_mmol_L": 0.4487143944903662,
+      "peracidMean_mmol_L": 0.07724787372294334
+     },
+     "surfaces": [
+      {
+       "item": "platter",
+       "regions": [
+        "well"
+       ],
+       "exposure": {
+        "area_cm2": 220.12175543750345,
+        "fJet": 0,
+        "jetAreaShare": 0,
+        "shearPeakMax_Pa": 0,
+        "shearPeakMean_Pa": 0,
+        "shearMean_Pa": 0,
+        "wetFraction": 1,
+        "wetTime": 1,
+        "wettedAreaShare": 1,
+        "flux_kg_m2_s": 0.27938246639884173,
+        "renewal_per_s": 4.3378897899677495,
+        "filmShear_Pa": 0.48949368730977133,
+        "filmThickness_um": 52.06490085306909,
+        "pooledAreaShare": 0,
+        "retained_g_m2": 10.387299314707697
+       },
+       "soils": [
+        {
+         "type": "iec_egg_yolk",
+         "modelClass": "egg_yolk",
+         "law": "reaction",
+         "initial_mg": 1026.2937289062031,
+         "residual_mg": 258.878796016898
+        }
+       ],
+       "score": 0,
+       "clean": false,
+       "visibleArea_mm2": 12241.92380357001,
+       "specks": 0,
+       "pooled_mL": 0,
+       "film_g": 1.2188941071334745,
+       "pools": [],
+       "jetLiftRatio": 0.03938668666282513
+      }
+     ],
+     "exactOverlap_mm": 0,
+     "exactOverlapWith": "",
+     "problems": [],
+     "loadNotes": []
+    }
+   ]
+  }
+ ],
+ "counts": {
+  "pass": 0,
+  "wrong sign": 0,
+  "too small": 2,
+  "too large": 0,
+  "not covered": 0,
+  "error": 0
+ },
+ "seconds": 1249.4,
+ "washes": 4,
+ "washesCached": 0
+}

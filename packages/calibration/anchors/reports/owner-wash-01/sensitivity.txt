@@ -1,0 +1,40 @@
+parameter                   sensitivity  information  post/prior sd  if others known  contraction  verdict         confounded with
+--------------------------  -----------  -----------  -------------  ---------------  -----------  --------------  ---------------
+prog.soakDuty                      4.52          245          0.788           0.0637         0.38  weak            -
+soil.egg_yolk.rateRef              2.11         53.3          0.918            0.136         0.16  not identified  -
+liq.xProtease                      5.37          346          0.698           0.0536         0.51  weak            -
+soil.bakeRate                     0.467         2.61          0.872            0.526         0.24  not identified  -
+soil.supplyExchange                1.38         22.9          0.605            0.205         0.63  weak            -
+soil.applicationCv[spread]         1.77         37.6          0.894            0.161          0.2  not identified  -
+
+sensitivity: rms over the observations of the move of a prediction, in noise deviations, per prior deviation of the parameter
+information: Fisher information of the records about the parameter alone, in units of its prior precision
+
+information  combination (loadings in prior deviations)                                                                                                          reading
+-----------  --------------------------------------------------------------------------------------------------------------------------------------------------  --------------------
+        704  +0.70 liq.xProtease +0.59 prog.soakDuty +0.27 soil.egg_yolk.rateRef -0.23 soil.applicationCv[spread]                                                fixed by the records
+       3.48  +0.88 soil.supplyExchange +0.34 soil.bakeRate -0.23 soil.applicationCv[spread]                                                                      constrained
+      0.416  +0.68 soil.bakeRate +0.58 soil.applicationCv[spread] +0.41 soil.egg_yolk.rateRef                                                                    left to the prior
+     0.0582  -0.47 soil.egg_yolk.rateRef +0.45 soil.bakeRate -0.43 prog.soakDuty -0.38 soil.applicationCv[spread] +0.37 liq.xProtease -0.33 soil.supplyExchange  left to the prior
+   2.99e-15  +0.62 prog.soakDuty -0.61 soil.egg_yolk.rateRef +0.32 soil.applicationCv[spread] +0.23 soil.bakeRate -0.21 liq.xProtease -0.21 soil.supplyExchange  left to the prior
+          0  -0.55 soil.applicationCv[spread] -0.54 liq.xProtease +0.41 soil.bakeRate +0.36 soil.egg_yolk.rateRef +0.24 prog.soakDuty -0.22 soil.supplyExchange  left to the prior
+
+step of the derivatives (share of each prior deviation): prog.soakDuty 0.05, soil.egg_yolk.rateRef 0.05, liq.xProtease 0.05, soil.bakeRate 0.05, soil.supplyExchange 0.05, soil.applicationCv[spread] 0.05; 1 rounds
+local: these are properties of the parameter values the derivatives were taken at
+
+scaled sensitivities (move of each prediction in noise deviations per prior deviation of each parameter):
+record                        observation              predicted  noise sd  prog.soakDuty  soil.egg_yolk.rateRef  liq.xProtease  soil.bakeRate  soil.supplyExchange  soil.applicationCv[spread]
+----------------------------  -----------------------  ---------  --------  -------------  ---------------------  -------------  -------------  -------------------  --------------------------
+owner-wash-01-egg-yolk-eco50  plate_9121.visible_area        127      93.8          -9.39                  -4.77         -11.33           1.23                 3.99                        3.34
+owner-wash-01-egg-yolk-eco50  plate_9121.clean              0.02      0.14           0.00                   0.00           0.00           0.00                 0.00                        0.00
+owner-wash-01-egg-yolk-eco50  plate_9121.specks              107      76.5           0.00                   0.00           0.00           0.00                 0.00                        0.00
+owner-wash-01-egg-yolk-eco50  plate_9122.visible_area       15.3      15.2          -9.54                  -4.12         -11.13           1.04                 2.29                        4.04
+owner-wash-01-egg-yolk-eco50  plate_9122.clean              0.02      0.14           0.00                   0.00           0.00           0.00                 0.00                        0.00
+owner-wash-01-egg-yolk-eco50  plate_9122.specks             10.2      7.89           0.00                   0.00           0.00           0.00                 0.00                        0.00
+owner-wash-01-egg-yolk-eco50  plate_9123.visible_area       1.06      3.54          -2.32                  -0.95          -2.94           0.01                 0.51                        1.09
+owner-wash-01-egg-yolk-eco50  plate_9123.clean             0.911     0.285           0.00                   0.00           0.00           0.00                 0.00                        0.00
+owner-wash-01-egg-yolk-eco50  plate_9123.specks              1.2      1.39           0.00                   0.00           0.00           0.00                 0.00                        0.00
+owner-wash-01-egg-yolk-eco50  plate_9124.visible_area       15.6      12.1          -7.80                  -3.56          -9.25           0.06                 1.21                        3.00
+owner-wash-01-egg-yolk-eco50  plate_9124.clean              0.02      0.14           0.00                   0.00           0.00           0.00                 0.00                        0.00
+owner-wash-01-egg-yolk-eco50  plate_9124.specks             12.2      9.31           0.00                   0.00           0.00           0.00                 0.00                        0.00
+packages/calibration/anchors/reports/owner-wash-01/sensitivity.json

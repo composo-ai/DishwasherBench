@@ -1,0 +1,56 @@
+# Line endings and binary files.
+#
+# The simulation refuses to wash, and stored checks go red, when the fingerprint of its source
+# changes, and that fingerprint is a hash of the bytes of the source files
+# (packages/sim-core/src/node/fingerprint.ts). A checkout that turned LF into CRLF (git on
+# Windows with core.autocrlf) would change those bytes and make every wash refuse. So: every
+# text file is LF in the repository and LF in the working directory, on every platform.
+#
+# No file had a CRLF line ending when this was written. If one is ever needed, give it its own
+# line with -text so that git leaves its bytes alone.
+
+* text=auto eol=lf
+
+# Source, data and documents: text whatever git guesses.
+*.ts     text eol=lf
+*.mts    text eol=lf
+*.js     text eol=lf
+*.mjs    text eol=lf
+*.cjs    text eol=lf
+*.json   text eol=lf
+*.jsonl  text eol=lf
+*.wgsl   text eol=lf
+*.md     text eol=lf
+*.txt    text eol=lf
+*.yaml   text eol=lf
+*.yml    text eol=lf
+*.html   text eol=lf
+*.css    text eol=lf
+*.svg    text eol=lf
+*.py     text eol=lf
+*.sh     text eol=lf
+*.c      text eol=lf
+*.out    text eol=lf
+
+# Pictures, sound and other binaries: never converted, never merged as text.
+*.png    binary
+*.jpg    binary
+*.JPG    binary
+*.jpeg   binary
+*.JPEG   binary
+*.gif    binary
+*.webp   binary
+*.ico    binary
+*.pdf    binary
+*.mp3    binary
+*.wav    binary
+*.ogg    binary
+*.mp4    binary
+*.mov    binary
+*.woff   binary
+*.woff2  binary
+*.ttf    binary
+*.zip    binary
+*.gz     binary
+*.node   binary
+*.wasm   binary

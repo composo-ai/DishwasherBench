@@ -1,0 +1,15 @@
+{
+  "name": "spotless-spike-rigid-body",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Rigid-body engine bake-off on a dish-rack scenario (Spotless spike)",
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "0.21.0",
+    "@dimforge/rapier3d-deterministic-compat": "0.21.0",
+    "@dimforge/rapier3d-simd-compat": "0.21.0",
+    "@mujoco/mujoco": "3.15.0",
+    "jolt-physics": "1.1.0",
+    "physx-js-webidl": "2.8.0"
+  }
+}

@@ -1,0 +1,13 @@
+# The research dossiers and design documents are evidence, not code: never reformat them.
+docs/
+# Hardware spikes and working notes are kept as they were run.
+spikes/
+.scratch/
+
+node_modules/
+pnpm-lock.yaml
+dist/
+build/
+coverage/
+.spotless/
+*.wasm

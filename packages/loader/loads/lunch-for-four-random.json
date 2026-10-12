@@ -1,0 +1,3028 @@
+{
+ "format": "spotless-standard-load/1",
+ "name": "lunch-for-four-random",
+ "description": "Level 'Lunch for four', loaded by the random policy.",
+ "level": {
+  "id": "lunch-for-four",
+  "title": "Lunch for four",
+  "summary": "Pasta with a salad for four, soup in mugs, yoghurt and a smoothie each, squash for the children, cleared an hour after the meal, and the pan and the dish it was cooked in. New: more than the machine holds, so something stays on the counter.",
+  "machineId": "bosch_smv4hax40g",
+  "config": null,
+  "racks": {},
+  "programmeId": "eco_50",
+  "items": [
+   {
+    "id": "plate_01",
+    "itemType": "dinner_plate_porcelain_270",
+    "points": 8,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 2.36,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Tomato sauce over half the eating face, about an hour old"
+     }
+    ]
+   },
+   {
+    "id": "plate_02",
+    "itemType": "dinner_plate_porcelain_270",
+    "points": 8,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 2.36,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Tomato sauce over half the eating face, about an hour old"
+     }
+    ]
+   },
+   {
+    "id": "plate_03",
+    "itemType": "dinner_plate_porcelain_270",
+    "points": 8,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 2.36,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Tomato sauce over half the eating face, about an hour old"
+     }
+    ]
+   },
+   {
+    "id": "plate_04",
+    "itemType": "dinner_plate_porcelain_270",
+    "points": 8,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 2.36,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Tomato sauce over half the eating face, about an hour old"
+     }
+    ]
+   },
+   {
+    "id": "side_plate_01",
+    "itemType": "dessert_plate_porcelain_190",
+    "points": 4,
+    "soils": [
+     {
+      "type": "vegetable_oil",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.115,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Salad dressing: oil and a few herb leaves"
+     },
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.15
+       }
+      ],
+      "amountG": 0.23,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Bits of salad leaf stuck in the dressing"
+     }
+    ]
+   },
+   {
+    "id": "side_plate_02",
+    "itemType": "dessert_plate_porcelain_190",
+    "points": 4,
+    "soils": [
+     {
+      "type": "vegetable_oil",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.115,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Salad dressing: oil and a few herb leaves"
+     },
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.15
+       }
+      ],
+      "amountG": 0.23,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Bits of salad leaf stuck in the dressing"
+     }
+    ]
+   },
+   {
+    "id": "side_plate_03",
+    "itemType": "dessert_plate_porcelain_190",
+    "points": 4,
+    "soils": [
+     {
+      "type": "vegetable_oil",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.115,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Salad dressing: oil and a few herb leaves"
+     },
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.15
+       }
+      ],
+      "amountG": 0.23,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Bits of salad leaf stuck in the dressing"
+     }
+    ]
+   },
+   {
+    "id": "side_plate_04",
+    "itemType": "dessert_plate_porcelain_190",
+    "points": 4,
+    "soils": [
+     {
+      "type": "vegetable_oil",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.115,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Salad dressing: oil and a few herb leaves"
+     },
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.15
+       }
+      ],
+      "amountG": 0.23,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Bits of salad leaf stuck in the dressing"
+     }
+    ]
+   },
+   {
+    "id": "yoghurt_bowl_01",
+    "itemType": "cereal_bowl_vitrelle_159",
+    "points": 6,
+    "soils": [
+     {
+      "type": "yoghurt",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 1.45,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Yoghurt up the inside of the bowl"
+     }
+    ]
+   },
+   {
+    "id": "yoghurt_bowl_02",
+    "itemType": "cereal_bowl_vitrelle_159",
+    "points": 6,
+    "soils": [
+     {
+      "type": "yoghurt",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 1.45,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Yoghurt up the inside of the bowl"
+     }
+    ]
+   },
+   {
+    "id": "yoghurt_bowl_03",
+    "itemType": "cereal_bowl_vitrelle_159",
+    "points": 6,
+    "soils": [
+     {
+      "type": "yoghurt",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 1.45,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Yoghurt up the inside of the bowl"
+     }
+    ]
+   },
+   {
+    "id": "yoghurt_bowl_04",
+    "itemType": "cereal_bowl_vitrelle_159",
+    "points": 6,
+    "soils": [
+     {
+      "type": "yoghurt",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 1.45,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Yoghurt up the inside of the bowl"
+     }
+    ]
+   },
+   {
+    "id": "smoothie_glass_01",
+    "itemType": "tumbler_250",
+    "points": 9,
+    "soils": [
+     {
+      "type": "avocado",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.784,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "A thick smoothie of avocado and banana, dried in a band up the inside of the glass"
+     }
+    ]
+   },
+   {
+    "id": "smoothie_glass_02",
+    "itemType": "tumbler_250",
+    "points": 9,
+    "soils": [
+     {
+      "type": "avocado",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.784,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "A thick smoothie of avocado and banana, dried in a band up the inside of the glass"
+     }
+    ]
+   },
+   {
+    "id": "smoothie_glass_03",
+    "itemType": "tumbler_250",
+    "points": 9,
+    "soils": [
+     {
+      "type": "avocado",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.784,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "A thick smoothie of avocado and banana, dried in a band up the inside of the glass"
+     }
+    ]
+   },
+   {
+    "id": "smoothie_glass_04",
+    "itemType": "tumbler_250",
+    "points": 9,
+    "soils": [
+     {
+      "type": "avocado",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.784,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "A thick smoothie of avocado and banana, dried in a band up the inside of the glass"
+     }
+    ]
+   },
+   {
+    "id": "mug_01",
+    "itemType": "mug_ceramic_300",
+    "points": 9,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.902,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Tomato soup dried in a band inside the mug, about an hour old"
+     }
+    ]
+   },
+   {
+    "id": "mug_02",
+    "itemType": "mug_ceramic_300",
+    "points": 9,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.902,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Tomato soup dried in a band inside the mug, about an hour old"
+     }
+    ]
+   },
+   {
+    "id": "mug_03",
+    "itemType": "mug_ceramic_300",
+    "points": 9,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.902,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Tomato soup dried in a band inside the mug, about an hour old"
+     }
+    ]
+   },
+   {
+    "id": "mug_04",
+    "itemType": "mug_ceramic_300",
+    "points": 9,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.902,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Tomato soup dried in a band inside the mug, about an hour old"
+     }
+    ]
+   },
+   {
+    "id": "ketchup_pot_01",
+    "itemType": "ramekin_porcelain_89",
+    "points": 6,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.675,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Ketchup smeared round the inside of the little pot"
+     }
+    ]
+   },
+   {
+    "id": "ketchup_pot_02",
+    "itemType": "ramekin_porcelain_89",
+    "points": 6,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.675,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Ketchup smeared round the inside of the little pot"
+     }
+    ]
+   },
+   {
+    "id": "squash_glass_01",
+    "itemType": "tumbler_360",
+    "points": 4,
+    "soils": [
+     {
+      "type": "avocado",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.2
+       }
+      ],
+      "amountG": 0.733,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "The same smoothie let down with squash for the children, dried in a band inside the tall glass"
+     }
+    ]
+   },
+   {
+    "id": "squash_glass_02",
+    "itemType": "tumbler_360",
+    "points": 4,
+    "soils": [
+     {
+      "type": "avocado",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.2
+       }
+      ],
+      "amountG": 0.733,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "The same smoothie let down with squash for the children, dried in a band inside the tall glass"
+     }
+    ]
+   },
+   {
+    "id": "fork_01",
+    "itemType": "dinner_fork_185",
+    "points": 2,
+    "soils": [
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.0944,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Shreds of salad leaf between the tines"
+     }
+    ]
+   },
+   {
+    "id": "fork_02",
+    "itemType": "dinner_fork_185",
+    "points": 2,
+    "soils": [
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.0944,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Shreds of salad leaf between the tines"
+     }
+    ]
+   },
+   {
+    "id": "fork_03",
+    "itemType": "dinner_fork_185",
+    "points": 2,
+    "soils": [
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.0944,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Shreds of salad leaf between the tines"
+     }
+    ]
+   },
+   {
+    "id": "fork_04",
+    "itemType": "dinner_fork_185",
+    "points": 2,
+    "soils": [
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.0944,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Shreds of salad leaf between the tines"
+     }
+    ]
+   },
+   {
+    "id": "knife_01",
+    "itemType": "dinner_knife_210",
+    "points": 2,
+    "soils": [
+     {
+      "type": "butter_margarine",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.0163,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Butter on the blade"
+     }
+    ]
+   },
+   {
+    "id": "knife_02",
+    "itemType": "dinner_knife_210",
+    "points": 2,
+    "soils": [
+     {
+      "type": "butter_margarine",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.0163,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Butter on the blade"
+     }
+    ]
+   },
+   {
+    "id": "knife_03",
+    "itemType": "dinner_knife_210",
+    "points": 2,
+    "soils": [
+     {
+      "type": "butter_margarine",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.0163,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Butter on the blade"
+     }
+    ]
+   },
+   {
+    "id": "knife_04",
+    "itemType": "dinner_knife_210",
+    "points": 2,
+    "soils": [
+     {
+      "type": "butter_margarine",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.0163,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Butter on the blade"
+     }
+    ]
+   },
+   {
+    "id": "spoon_01",
+    "itemType": "dessert_spoon_160",
+    "points": 2,
+    "soils": [
+     {
+      "type": "yoghurt",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.133,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Yoghurt in the bowl of the spoon"
+     }
+    ]
+   },
+   {
+    "id": "spoon_02",
+    "itemType": "dessert_spoon_160",
+    "points": 2,
+    "soils": [
+     {
+      "type": "yoghurt",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.133,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Yoghurt in the bowl of the spoon"
+     }
+    ]
+   },
+   {
+    "id": "spoon_03",
+    "itemType": "dessert_spoon_160",
+    "points": 2,
+    "soils": [
+     {
+      "type": "yoghurt",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.133,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Yoghurt in the bowl of the spoon"
+     }
+    ]
+   },
+   {
+    "id": "spoon_04",
+    "itemType": "dessert_spoon_160",
+    "points": 2,
+    "soils": [
+     {
+      "type": "yoghurt",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.133,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Yoghurt in the bowl of the spoon"
+     }
+    ]
+   },
+   {
+    "id": "salad_bowl_01",
+    "itemType": "serving_bowl_vitrelle_216",
+    "points": 8,
+    "soils": [
+     {
+      "type": "vegetable_oil",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.6
+       }
+      ],
+      "amountG": 0.387,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Dressing all round the inside"
+     },
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.1
+       }
+      ],
+      "amountG": 0.43,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Shreds of leaf"
+     }
+    ]
+   },
+   {
+    "id": "frying_pan_01",
+    "itemType": "skillet_steel_270",
+    "points": 18,
+    "soils": [
+     {
+      "type": "lard_tallow",
+      "regions": [
+       {
+        "region": "interior_base",
+        "coverage": 0.9
+       },
+       {
+        "region": "interior_wall",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 7.02,
+      "ageH": 1.5,
+      "heatHistory": "cooked",
+      "description": "Fat from browning the mince, set white"
+     },
+     {
+      "type": "minced_meat",
+      "regions": [
+       {
+        "region": "interior_base",
+        "coverage": 0.2
+       }
+      ],
+      "amountG": 0.753,
+      "ageH": 1.5,
+      "heatHistory": "cooked",
+      "description": "Crumbs of browned mince"
+     }
+    ]
+   },
+   {
+    "id": "oven_dish_01",
+    "itemType": "oven_dish_glass_3qt",
+    "points": 18,
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 10.9,
+      "ageH": 1.5,
+      "heatHistory": "cooked",
+      "description": "Tomato sauce cooked onto the bottom and up the sides of the dish the pasta was finished in"
+     }
+    ]
+   }
+  ],
+  "rules": {
+   "track": "one_shot",
+   "actionsMax": 400,
+   "queriesMax": 585,
+   "washesMax": 1,
+   "mechanicalChecks": true
+  },
+  "seed": 1502,
+  "manual": "Frames. All frames are right-handed with z up. In the tub frame the origin is on the lower spray-arm axis at the tub floor, +x is to the right as you face the open machine and +y towards the back. Each basket has its own frame with the origin at its front-left corner on top of its base grid; the cutlery basket has one too. A position is that of the item's reference point (the centre of its bounding box), in millimetres.\n\nBaskets. A basket can be loaded only while it is pulled out (set_rack with option position); pushed in, it is closed to place. The upper basket, when pulled out, hangs over the lower one, so push it in before reaching the lower basket from above. Items travel with their basket and may shift when it moves.\n\nPlacing. place puts an item at a pose: the pose must not overlap anything, and the item must be able to reach it straight down from above (mode drop), or along insert_dir pushed with a limited force (mode insert, which can nudge neighbours aside). The item is lowered until it touches, let go, and then does whatever gravity and friction make it do. Orientation is a preset of the item plus yaw, pitch and roll in whole degrees, or a quaternion. remove takes an item out again; what leaned on it may fall. An item that ends on the kitchen floor goes back to the counter at once (the action is still charged); one that ends on the open door stays there, and is left out of the wash if it is still neither in a basket nor inside the tub when the cycle starts.\n\nLooking. list_slots with an item_id gives the places suggested for that item in a basket, most useful first and a screenful at a time: for each place the position and orientation in which a hand seats the item there (a plate or a lid with its lower edge between two tines, laid back the way they lean; a piece of cutlery let down by its lower end into a cell of the cutlery basket; a piece that leans on a rest or stands on a shelf, where the basket has one for it) and whether the place is free now. Without an item_id it gives the basket as geometry: its rows of tines and its slots, cells, rests and shelves. A piece that has no places of its own goes wherever a pose is free. preview tests a pose without placing and costs no query, get_state gives every settled pose and contact, check_load pushes the baskets in, turns the spray arms by hand and tests the door and the detergent dispenser. None of these says anything about how well an item will wash.\n\nWashing. start_cycle pushes the baskets in and washes what is loaded on the programme the level card names. Rejected calls cost nothing.",
+  "newHere": "New: more than the machine holds, so something stays on the counter.",
+  "number": 2,
+  "difficulty": 3.7
+ },
+ "policy": {
+  "name": "random",
+  "seed": 1502,
+  "spaced": false,
+  "mistakes": null
+ },
+ "offered": [
+  "plate_01",
+  "plate_02",
+  "plate_03",
+  "plate_04",
+  "side_plate_01",
+  "side_plate_02",
+  "side_plate_03",
+  "side_plate_04",
+  "yoghurt_bowl_01",
+  "yoghurt_bowl_02",
+  "yoghurt_bowl_03",
+  "yoghurt_bowl_04",
+  "smoothie_glass_01",
+  "smoothie_glass_02",
+  "smoothie_glass_03",
+  "smoothie_glass_04",
+  "mug_01",
+  "mug_02",
+  "mug_03",
+  "mug_04",
+  "ketchup_pot_01",
+  "ketchup_pot_02",
+  "squash_glass_01",
+  "squash_glass_02",
+  "fork_01",
+  "fork_02",
+  "fork_03",
+  "fork_04",
+  "knife_01",
+  "knife_02",
+  "knife_03",
+  "knife_04",
+  "spoon_01",
+  "spoon_02",
+  "spoon_03",
+  "spoon_04",
+  "salad_bowl_01",
+  "frying_pan_01",
+  "oven_dish_01"
+ ],
+ "placed": [
+  "plate_03",
+  "plate_04",
+  "side_plate_01",
+  "side_plate_02",
+  "side_plate_03",
+  "side_plate_04",
+  "yoghurt_bowl_01",
+  "smoothie_glass_02",
+  "smoothie_glass_03",
+  "smoothie_glass_04",
+  "mug_02",
+  "mug_04",
+  "ketchup_pot_01",
+  "ketchup_pot_02",
+  "squash_glass_01",
+  "squash_glass_02",
+  "fork_01",
+  "fork_03",
+  "fork_04",
+  "knife_03",
+  "spoon_01",
+  "spoon_02",
+  "spoon_04"
+ ],
+ "left_out": [
+  {
+   "item_id": "plate_01",
+   "reason": "taken out again: it stopped the basket from sliding in"
+  },
+  {
+   "item_id": "plate_02",
+   "reason": "every random pose that was accepted fell or did not hold"
+  },
+  {
+   "item_id": "yoghurt_bowl_02",
+   "reason": "every random pose that was accepted fell or did not hold"
+  },
+  {
+   "item_id": "yoghurt_bowl_03",
+   "reason": "none of 16 random poses was accepted and held"
+  },
+  {
+   "item_id": "yoghurt_bowl_04",
+   "reason": "none of 16 random poses was accepted and held"
+  },
+  {
+   "item_id": "smoothie_glass_01",
+   "reason": "none of 16 random poses was accepted and held"
+  },
+  {
+   "item_id": "mug_01",
+   "reason": "every random pose that was accepted fell or did not hold"
+  },
+  {
+   "item_id": "mug_03",
+   "reason": "taken out again: check_load found it in the way of an arm, the door or a basket"
+  },
+  {
+   "item_id": "fork_02",
+   "reason": "every random pose that was accepted fell or did not hold"
+  },
+  {
+   "item_id": "knife_01",
+   "reason": "no place was found for it"
+  },
+  {
+   "item_id": "knife_02",
+   "reason": "every random pose that was accepted fell or did not hold"
+  },
+  {
+   "item_id": "knife_04",
+   "reason": "taken out again: check_load found it in the way of an arm, the door or a basket"
+  },
+  {
+   "item_id": "spoon_03",
+   "reason": "every random pose that was accepted fell or did not hold"
+  },
+  {
+   "item_id": "salad_bowl_01",
+   "reason": "none of 16 random poses was accepted and held"
+  },
+  {
+   "item_id": "frying_pan_01",
+   "reason": "every random pose that was accepted fell or did not hold"
+  },
+  {
+   "item_id": "oven_dish_01",
+   "reason": "none of 16 random poses was accepted and held"
+  }
+ ],
+ "mistakes": [],
+ "notes": [
+  "each basket was pulled out and pushed in once after loading"
+ ],
+ "counts": {
+  "offered": 39,
+  "placed": 23,
+  "placedByBasket": {
+   "lower_rack": 8,
+   "upper_rack": 13,
+   "cutlery_basket": 2
+  },
+  "placeCalls": 196,
+  "placeAccepted": 48,
+  "placeRejected": {
+   "collision_at_pose": 144,
+   "not_insertable": 4
+  },
+  "attemptsPerPlaced": 8.52,
+  "acceptedPerPlaced": 2.09,
+  "removes": 17,
+  "retries": 21,
+  "rackMoves": 7,
+  "previews": 0,
+  "checks": 3,
+  "actionsUsed": 72,
+  "actionsMax": 400,
+  "queriesUsed": 6,
+  "queriesMax": 585,
+  "unstable": []
+ },
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [
+   {
+    "item_id": "smoothie_glass_04",
+    "rack": "upper_rack",
+    "beyond_mm": 16.3
+   }
+  ],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "load_manifest": {
+  "benchmark_version": "spotless-0.2.0/levels-starter",
+  "level_id": "lunch-for-four",
+  "machine_id": "bosch_smv4hax40g",
+  "programme_id": "eco_50",
+  "rack_options": {
+   "lower_rack.tine_row_r1": "up",
+   "lower_rack.tine_row_r2": "up",
+   "upper_rack.height": "1",
+   "upper_rack.tine_row_c_rear": "up",
+   "upper_rack.tine_row_c_front": "up",
+   "upper_rack.shelf_cup_front": "up",
+   "upper_rack.shelf_cup_rear": "up",
+   "upper_rack.shelf_knife_shelf": "down",
+   "cutlery_basket.position": "front_centre"
+  },
+  "items": [
+   {
+    "frame": "tub",
+    "position_mm": [
+     38.6,
+     -172,
+     202.6
+    ],
+    "quat_wxyz": [
+     0.9992,
+     -0.0005,
+     -0.0134,
+     -0.0375
+    ],
+    "item_id": "fork_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     -17.3,
+     -142.8,
+     466
+    ],
+    "quat_wxyz": [
+     0.0652,
+     -0.5898,
+     -0.5916,
+     0.5459
+    ],
+    "item_id": "fork_03"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     170.7,
+     -25.1,
+     505.6
+    ],
+    "quat_wxyz": [
+     0.186,
+     0.3963,
+     0.0353,
+     0.8984
+    ],
+    "item_id": "fork_04"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     -34.7,
+     -81.3,
+     222
+    ],
+    "quat_wxyz": [
+     0.4501,
+     0,
+     0,
+     -0.893
+    ],
+    "item_id": "ketchup_pot_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     179.6,
+     -135.2,
+     498.7
+    ],
+    "quat_wxyz": [
+     0.6437,
+     -0.755,
+     -0.1006,
+     -0.0743
+    ],
+    "item_id": "ketchup_pot_02"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     -169.1,
+     -32.1,
+     577
+    ],
+    "quat_wxyz": [
+     0,
+     0.7024,
+     -0.7118,
+     0
+    ],
+    "item_id": "knife_03"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     187.1,
+     -53.5,
+     171
+    ],
+    "quat_wxyz": [
+     0.4354,
+     -0.2024,
+     0.8659,
+     0.1402
+    ],
+    "item_id": "mug_02"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     -194.9,
+     -177.2,
+     482
+    ],
+    "quat_wxyz": [
+     0.2945,
+     -0.2681,
+     0.9132,
+     -0.0865
+    ],
+    "item_id": "mug_04"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     130.2,
+     -65.8,
+     488.6
+    ],
+    "quat_wxyz": [
+     0.7533,
+     0.1953,
+     0.2567,
+     0.5732
+    ],
+    "item_id": "plate_03"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     11,
+     40.4,
+     200
+    ],
+    "quat_wxyz": [
+     0.0135,
+     0.0252,
+     -0.8879,
+     0.4591
+    ],
+    "item_id": "plate_04"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     -161.8,
+     144.7,
+     156.6
+    ],
+    "quat_wxyz": [
+     0.6608,
+     0.0303,
+     -0.0343,
+     0.7492
+    ],
+    "item_id": "side_plate_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     152.7,
+     118.6,
+     158.5
+    ],
+    "quat_wxyz": [
+     0.2754,
+     0.6144,
+     0.626,
+     0.3936
+    ],
+    "item_id": "side_plate_02"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     192.1,
+     3.9,
+     152.3
+    ],
+    "quat_wxyz": [
+     0.5057,
+     -0.7784,
+     -0.2537,
+     0.2722
+    ],
+    "item_id": "side_plate_03"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     35.2,
+     177.6,
+     179.3
+    ],
+    "quat_wxyz": [
+     0.5573,
+     0.2215,
+     0.3037,
+     -0.7404
+    ],
+    "item_id": "side_plate_04"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     186.5,
+     131.7,
+     473.5
+    ],
+    "quat_wxyz": [
+     0.6899,
+     -0.3984,
+     -0.3943,
+     -0.4581
+    ],
+    "item_id": "smoothie_glass_02"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     184.1,
+     63.5,
+     520
+    ],
+    "quat_wxyz": [
+     0.5665,
+     0.7944,
+     -0.1999,
+     0.0894
+    ],
+    "item_id": "smoothie_glass_03"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     184.2,
+     -217.8,
+     526.1
+    ],
+    "quat_wxyz": [
+     0.9798,
+     0.1842,
+     -0.0518,
+     0.0575
+    ],
+    "item_id": "smoothie_glass_04"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     103.7,
+     -129.2,
+     516.8
+    ],
+    "quat_wxyz": [
+     0.1229,
+     -0.8274,
+     -0.4209,
+     0.351
+    ],
+    "item_id": "spoon_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     159.4,
+     10.4,
+     542.1
+    ],
+    "quat_wxyz": [
+     0.0638,
+     0.2032,
+     0.1025,
+     -0.9717
+    ],
+    "item_id": "spoon_02"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     32.2,
+     -157.4,
+     158.8
+    ],
+    "quat_wxyz": [
+     0.5187,
+     -0.4774,
+     -0.4558,
+     -0.5434
+    ],
+    "item_id": "spoon_04"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     119.8,
+     -166.2,
+     564.7
+    ],
+    "quat_wxyz": [
+     0.6139,
+     -0.6324,
+     -0.2366,
+     -0.4089
+    ],
+    "item_id": "squash_glass_01"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     154.6,
+     -220.5,
+     190.6
+    ],
+    "quat_wxyz": [
+     0.1882,
+     -0.5951,
+     0.0529,
+     -0.7795
+    ],
+    "item_id": "squash_glass_02"
+   },
+   {
+    "frame": "tub",
+    "position_mm": [
+     172.9,
+     -45.1,
+     477.6
+    ],
+    "quat_wxyz": [
+     0.057,
+     -0.3289,
+     0.0199,
+     -0.9424
+    ],
+    "item_id": "yoghurt_bowl_01"
+   }
+  ],
+  "state_hash": "sha256:cbbf7e233de096c621508bdad10c89d12d5115340b8805abca8125f97eff6589"
+ },
+ "wash_manifest": {
+  "load": {
+   "benchmark_version": "spotless-0.2.0/levels-starter",
+   "level_id": "lunch-for-four",
+   "machine_id": "bosch_smv4hax40g",
+   "programme_id": "eco_50",
+   "rack_options": {
+    "lower_rack.tine_row_r1": "up",
+    "lower_rack.tine_row_r2": "up",
+    "upper_rack.height": "1",
+    "upper_rack.tine_row_c_rear": "up",
+    "upper_rack.tine_row_c_front": "up",
+    "upper_rack.shelf_cup_front": "up",
+    "upper_rack.shelf_cup_rear": "up",
+    "upper_rack.shelf_knife_shelf": "down",
+    "cutlery_basket.position": "front_centre"
+   },
+   "items": [
+    {
+     "frame": "tub",
+     "position_mm": [
+      38.6,
+      -172,
+      202.6
+     ],
+     "quat_wxyz": [
+      0.9992,
+      -0.0005,
+      -0.0134,
+      -0.0375
+     ],
+     "item_id": "fork_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      -17.3,
+      -142.8,
+      466
+     ],
+     "quat_wxyz": [
+      0.0652,
+      -0.5898,
+      -0.5916,
+      0.5459
+     ],
+     "item_id": "fork_03"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      170.7,
+      -25.1,
+      505.6
+     ],
+     "quat_wxyz": [
+      0.186,
+      0.3963,
+      0.0353,
+      0.8984
+     ],
+     "item_id": "fork_04"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      -34.7,
+      -81.3,
+      222
+     ],
+     "quat_wxyz": [
+      0.4501,
+      0,
+      0,
+      -0.893
+     ],
+     "item_id": "ketchup_pot_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      179.6,
+      -135.2,
+      498.7
+     ],
+     "quat_wxyz": [
+      0.6437,
+      -0.755,
+      -0.1006,
+      -0.0743
+     ],
+     "item_id": "ketchup_pot_02"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      -169.1,
+      -32.1,
+      577
+     ],
+     "quat_wxyz": [
+      0,
+      0.7024,
+      -0.7118,
+      0
+     ],
+     "item_id": "knife_03"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      187.1,
+      -53.5,
+      171
+     ],
+     "quat_wxyz": [
+      0.4354,
+      -0.2024,
+      0.8659,
+      0.1402
+     ],
+     "item_id": "mug_02"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      -194.9,
+      -177.2,
+      482
+     ],
+     "quat_wxyz": [
+      0.2945,
+      -0.2681,
+      0.9132,
+      -0.0865
+     ],
+     "item_id": "mug_04"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      130.2,
+      -65.8,
+      488.6
+     ],
+     "quat_wxyz": [
+      0.7533,
+      0.1953,
+      0.2567,
+      0.5732
+     ],
+     "item_id": "plate_03"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      11,
+      40.4,
+      200
+     ],
+     "quat_wxyz": [
+      0.0135,
+      0.0252,
+      -0.8879,
+      0.4591
+     ],
+     "item_id": "plate_04"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      -161.8,
+      144.7,
+      156.6
+     ],
+     "quat_wxyz": [
+      0.6608,
+      0.0303,
+      -0.0343,
+      0.7492
+     ],
+     "item_id": "side_plate_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      152.7,
+      118.6,
+      158.5
+     ],
+     "quat_wxyz": [
+      0.2754,
+      0.6144,
+      0.626,
+      0.3936
+     ],
+     "item_id": "side_plate_02"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      192.1,
+      3.9,
+      152.3
+     ],
+     "quat_wxyz": [
+      0.5057,
+      -0.7784,
+      -0.2537,
+      0.2722
+     ],
+     "item_id": "side_plate_03"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      35.2,
+      177.6,
+      179.3
+     ],
+     "quat_wxyz": [
+      0.5573,
+      0.2215,
+      0.3037,
+      -0.7404
+     ],
+     "item_id": "side_plate_04"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      186.5,
+      131.7,
+      473.5
+     ],
+     "quat_wxyz": [
+      0.6899,
+      -0.3984,
+      -0.3943,
+      -0.4581
+     ],
+     "item_id": "smoothie_glass_02"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      184.1,
+      63.5,
+      520
+     ],
+     "quat_wxyz": [
+      0.5665,
+      0.7944,
+      -0.1999,
+      0.0894
+     ],
+     "item_id": "smoothie_glass_03"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      184.2,
+      -217.8,
+      526.1
+     ],
+     "quat_wxyz": [
+      0.9798,
+      0.1842,
+      -0.0518,
+      0.0575
+     ],
+     "item_id": "smoothie_glass_04"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      103.7,
+      -129.2,
+      516.8
+     ],
+     "quat_wxyz": [
+      0.1229,
+      -0.8274,
+      -0.4209,
+      0.351
+     ],
+     "item_id": "spoon_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      159.4,
+      10.4,
+      542.1
+     ],
+     "quat_wxyz": [
+      0.0638,
+      0.2032,
+      0.1025,
+      -0.9717
+     ],
+     "item_id": "spoon_02"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      32.2,
+      -157.4,
+      158.8
+     ],
+     "quat_wxyz": [
+      0.5187,
+      -0.4774,
+      -0.4558,
+      -0.5434
+     ],
+     "item_id": "spoon_04"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      119.8,
+      -166.2,
+      564.7
+     ],
+     "quat_wxyz": [
+      0.6139,
+      -0.6324,
+      -0.2366,
+      -0.4089
+     ],
+     "item_id": "squash_glass_01"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      154.6,
+      -220.5,
+      190.6
+     ],
+     "quat_wxyz": [
+      0.1882,
+      -0.5951,
+      0.0529,
+      -0.7795
+     ],
+     "item_id": "squash_glass_02"
+    },
+    {
+     "frame": "tub",
+     "position_mm": [
+      172.9,
+      -45.1,
+      477.6
+     ],
+     "quat_wxyz": [
+      0.057,
+      -0.3289,
+      0.0199,
+      -0.9424
+     ],
+     "item_id": "yoghurt_bowl_01"
+    }
+   ],
+   "state_hash": "sha256:cbbf7e233de096c621508bdad10c89d12d5115340b8805abca8125f97eff6589"
+  },
+  "machine_id": "bosch_smv4hax40g",
+  "machine_config": {
+   "basketHeights": {
+    "upper": "1"
+   },
+   "foldedTineRows": [],
+   "shelves": [
+    {
+     "basketId": "upper",
+     "shelfId": "cup_front",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "cup_rear",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "knife_shelf",
+     "state": "down"
+    }
+   ],
+   "cutleryBasket": {
+    "basketId": "lower",
+    "centre": [
+     0.2705,
+     0.123
+    ],
+    "longAxis": "y"
+   }
+  },
+  "programme_id": "eco_50",
+  "items": [
+   {
+    "item_id": "fork_01",
+    "item_type": "dinner_fork_185",
+    "pose": {
+     "p": [
+      -0.05355323739209903,
+      -0.16503238875536197,
+      0.1966175512843833
+     ],
+     "q": [
+      -0.0005023822304792702,
+      -0.013414205983281136,
+      -0.03748812526464462,
+      0.9992069602012634
+     ]
+    },
+    "soils": [
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.0944,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Shreds of salad leaf between the tines"
+     }
+    ],
+    "points": 2
+   },
+   {
+    "item_id": "fork_03",
+    "item_type": "dinner_fork_185",
+    "pose": {
+     "p": [
+      0.012594938233691835,
+      -0.21191120220450688,
+      0.5198516822630866
+     ],
+     "q": [
+      0.5897611379623413,
+      0.5915723443031311,
+      -0.5458656549453735,
+      -0.06522735953330994
+     ]
+    },
+    "soils": [
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.0944,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Shreds of salad leaf between the tines"
+     }
+    ],
+    "points": 2
+   },
+   {
+    "item_id": "fork_04",
+    "item_type": "dinner_fork_185",
+    "pose": {
+     "p": [
+      0.22514700493932105,
+      -0.05833776846682537,
+      0.4385823830196265
+     ],
+     "q": [
+      -0.39626839756965637,
+      -0.03530566394329071,
+      -0.898405134677887,
+      -0.18599219620227814
+     ]
+    },
+    "soils": [
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "tines",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.0944,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Shreds of salad leaf between the tines"
+     }
+    ],
+    "points": 2
+   },
+   {
+    "item_id": "ketchup_pot_01",
+    "item_type": "ramekin_porcelain_89",
+    "pose": {
+     "p": [
+      -0.03470889060934817,
+      -0.08126952527443831,
+      0.20000000476837196
+     ],
+     "q": [
+      -4.148978405282833e-8,
+      -1.0348986734243226e-7,
+      -0.8929753303527832,
+      0.45010560750961304
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.675,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Ketchup smeared round the inside of the little pot"
+     }
+    ],
+    "points": 6
+   },
+   {
+    "item_id": "ketchup_pot_02",
+    "item_type": "ramekin_porcelain_89",
+    "pose": {
+     "p": [
+      0.18001351475254582,
+      -0.1568867120297883,
+      0.5022004034348431
+     ],
+     "q": [
+      -0.7549633979797363,
+      -0.10056407004594803,
+      -0.07425406575202942,
+      0.6437417268753052
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.675,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Ketchup smeared round the inside of the little pot"
+     }
+    ],
+    "points": 6
+   },
+   {
+    "item_id": "knife_03",
+    "item_type": "dinner_knife_210",
+    "pose": {
+     "p": [
+      -0.16769895044343844,
+      0.07288220986620705,
+      0.5804999560971885
+     ],
+     "q": [
+      0.7023977637290955,
+      -0.7117847204208374,
+      0.0000010056858172902139,
+      -8.402544153796043e-7
+     ]
+    },
+    "soils": [
+     {
+      "type": "butter_margarine",
+      "regions": [
+       {
+        "region": "blade",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 0.0163,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Butter on the blade"
+     }
+    ],
+    "points": 2
+   },
+   {
+    "item_id": "mug_02",
+    "item_type": "mug_ceramic_300",
+    "pose": {
+     "p": [
+      0.1602121485387236,
+      -0.07102006123045282,
+      0.21211642084591625
+     ],
+     "q": [
+      -0.20243768393993378,
+      0.8658901453018188,
+      0.140165314078331,
+      0.4354389011859894
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.902,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Tomato soup dried in a band inside the mug, about an hour old"
+     }
+    ],
+    "points": 9
+   },
+   {
+    "item_id": "mug_04",
+    "item_type": "mug_ceramic_300",
+    "pose": {
+     "p": [
+      -0.21394772657804495,
+      -0.16915998548939742,
+      0.5298794459387184
+     ],
+     "q": [
+      -0.2680538296699524,
+      0.9132143259048462,
+      -0.08651036024093628,
+      0.2944534122943878
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.902,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Tomato soup dried in a band inside the mug, about an hour old"
+     }
+    ],
+    "points": 9
+   },
+   {
+    "item_id": "plate_03",
+    "item_type": "dinner_plate_porcelain_270",
+    "pose": {
+     "p": [
+      0.12104742622204094,
+      -0.06579647331007477,
+      0.47667676142853826
+     ],
+     "q": [
+      0.19534263014793396,
+      0.25670257210731506,
+      0.5731999278068542,
+      0.753250777721405
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 2.36,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Tomato sauce over half the eating face, about an hour old"
+     }
+    ],
+    "points": 8
+   },
+   {
+    "item_id": "plate_04",
+    "item_type": "dinner_plate_porcelain_270",
+    "pose": {
+     "p": [
+      0.011024224826887054,
+      0.05265208110251148,
+      0.20865602672380107
+     ],
+     "q": [
+      0.02519407868385315,
+      -0.8879063725471497,
+      0.4591355323791504,
+      0.013494543731212616
+     ]
+    },
+    "soils": [
+     {
+      "type": "tomato_sauce",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 2.36,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Tomato sauce over half the eating face, about an hour old"
+     }
+    ],
+    "points": 8
+   },
+   {
+    "item_id": "side_plate_01",
+    "item_type": "dessert_plate_porcelain_190",
+    "pose": {
+     "p": [
+      -0.1617899372479041,
+      0.14547806138976918,
+      0.14767877574363475
+     ],
+     "q": [
+      0.03027760609984398,
+      -0.034319061785936356,
+      0.7491948008537292,
+      0.6607667207717896
+     ]
+    },
+    "soils": [
+     {
+      "type": "vegetable_oil",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.115,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Salad dressing: oil and a few herb leaves"
+     },
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.15
+       }
+      ],
+      "amountG": 0.23,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Bits of salad leaf stuck in the dressing"
+     }
+    ],
+    "points": 4
+   },
+   {
+    "item_id": "side_plate_02",
+    "item_type": "dessert_plate_porcelain_190",
+    "pose": {
+     "p": [
+      0.14520335753885114,
+      0.11724166552005125,
+      0.16334428048409316
+     ],
+     "q": [
+      0.6143505573272705,
+      0.6259878277778625,
+      0.39355742931365967,
+      0.27536383271217346
+     ]
+    },
+    "soils": [
+     {
+      "type": "vegetable_oil",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.115,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Salad dressing: oil and a few herb leaves"
+     },
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.15
+       }
+      ],
+      "amountG": 0.23,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Bits of salad leaf stuck in the dressing"
+     }
+    ],
+    "points": 4
+   },
+   {
+    "item_id": "side_plate_03",
+    "item_type": "dessert_plate_porcelain_190",
+    "pose": {
+     "p": [
+      0.19819252087539224,
+      -0.0019134236940997087,
+      0.15534270603465689
+     ],
+     "q": [
+      -0.7783621549606323,
+      -0.2536608576774597,
+      0.27224597334861755,
+      0.5056588053703308
+     ]
+    },
+    "soils": [
+     {
+      "type": "vegetable_oil",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.115,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Salad dressing: oil and a few herb leaves"
+     },
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.15
+       }
+      ],
+      "amountG": 0.23,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Bits of salad leaf stuck in the dressing"
+     }
+    ],
+    "points": 4
+   },
+   {
+    "item_id": "side_plate_04",
+    "item_type": "dessert_plate_porcelain_190",
+    "pose": {
+     "p": [
+      0.03507970052292588,
+      0.18391335404906448,
+      0.1728295307665126
+     ],
+     "q": [
+      0.2215123474597931,
+      0.3037196695804596,
+      -0.7403584122657776,
+      0.5572755932807922
+     ]
+    },
+    "soils": [
+     {
+      "type": "vegetable_oil",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.115,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Salad dressing: oil and a few herb leaves"
+     },
+     {
+      "type": "spinach_particles",
+      "regions": [
+       {
+        "region": "well",
+        "coverage": 0.15
+       }
+      ],
+      "amountG": 0.23,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Bits of salad leaf stuck in the dressing"
+     }
+    ],
+    "points": 4
+   },
+   {
+    "item_id": "smoothie_glass_02",
+    "item_type": "tumbler_250",
+    "pose": {
+     "p": [
+      0.19452820184325784,
+      0.0907205329646458,
+      0.4568083102669833
+     ],
+     "q": [
+      -0.39840835332870483,
+      -0.3942817747592926,
+      -0.458068311214447,
+      0.6899175047874451
+     ]
+    },
+    "soils": [
+     {
+      "type": "avocado",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.784,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "A thick smoothie of avocado and banana, dried in a band up the inside of the glass"
+     }
+    ],
+    "points": 9
+   },
+   {
+    "item_id": "smoothie_glass_03",
+    "item_type": "tumbler_250",
+    "pose": {
+     "p": [
+      0.18793478979696288,
+      0.10560239336232413,
+      0.5354245181444539
+     ],
+     "q": [
+      0.7944385409355164,
+      -0.19988933205604553,
+      0.08937964588403702,
+      0.5665006637573242
+     ]
+    },
+    "soils": [
+     {
+      "type": "avocado",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.784,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "A thick smoothie of avocado and banana, dried in a band up the inside of the glass"
+     }
+    ],
+    "points": 9
+   },
+   {
+    "item_id": "smoothie_glass_04",
+    "item_type": "tumbler_250",
+    "pose": {
+     "p": [
+      0.18784249001613632,
+      -0.20124666594318458,
+      0.4844072833602936
+     ],
+     "q": [
+      0.18419377505779266,
+      -0.05179966241121292,
+      0.05753403529524803,
+      0.9798364043235779
+     ]
+    },
+    "soils": [
+     {
+      "type": "avocado",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.3
+       }
+      ],
+      "amountG": 0.784,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "A thick smoothie of avocado and banana, dried in a band up the inside of the glass"
+     }
+    ],
+    "points": 9
+   },
+   {
+    "item_id": "spoon_01",
+    "item_type": "dessert_spoon_160",
+    "pose": {
+     "p": [
+      0.07500008893825755,
+      -0.19137635583501061,
+      0.558466643093097
+     ],
+     "q": [
+      -0.8274027109146118,
+      -0.42085811495780945,
+      0.3509758710861206,
+      0.12287881225347519
+     ]
+    },
+    "soils": [
+     {
+      "type": "yoghurt",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.133,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Yoghurt in the bowl of the spoon"
+     }
+    ],
+    "points": 2
+   },
+   {
+    "item_id": "spoon_02",
+    "item_type": "dessert_spoon_160",
+    "pose": {
+     "p": [
+      0.23399271841794225,
+      0.018069846380632915,
+      0.5704033323478529
+     ],
+     "q": [
+      0.20315587520599365,
+      0.10247384011745453,
+      -0.9716749787330627,
+      0.0638326033949852
+     ]
+    },
+    "soils": [
+     {
+      "type": "yoghurt",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.133,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Yoghurt in the bowl of the spoon"
+     }
+    ],
+    "points": 2
+   },
+   {
+    "item_id": "spoon_04",
+    "item_type": "dessert_spoon_160",
+    "pose": {
+     "p": [
+      0.03243992799731517,
+      -0.15186834813229094,
+      0.07883157546478074
+     ],
+     "q": [
+      -0.47744935750961304,
+      -0.4557892978191376,
+      -0.5433583855628967,
+      0.5187098979949951
+     ]
+    },
+    "soils": [
+     {
+      "type": "yoghurt",
+      "regions": [
+       {
+        "region": "bowl",
+        "coverage": 0.5
+       }
+      ],
+      "amountG": 0.133,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Yoghurt in the bowl of the spoon"
+     }
+    ],
+    "points": 2
+   },
+   {
+    "item_id": "squash_glass_01",
+    "item_type": "tumbler_360",
+    "pose": {
+     "p": [
+      0.10570006096003891,
+      -0.22637412313941493,
+      0.5592020551536702
+     ],
+     "q": [
+      -0.6324112415313721,
+      -0.236562579870224,
+      -0.4088688790798187,
+      0.6139384508132935
+     ]
+    },
+    "soils": [
+     {
+      "type": "avocado",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.2
+       }
+      ],
+      "amountG": 0.733,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "The same smoothie let down with squash for the children, dried in a band inside the tall glass"
+     }
+    ],
+    "points": 4
+   },
+   {
+    "item_id": "squash_glass_02",
+    "item_type": "tumbler_360",
+    "pose": {
+     "p": [
+      0.09587703556549593,
+      -0.22930561251809245,
+      0.17285345771595578
+     ],
+     "q": [
+      -0.595136284828186,
+      0.05286305025219917,
+      -0.7794946432113647,
+      0.18816611170768738
+     ]
+    },
+    "soils": [
+     {
+      "type": "avocado",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.2
+       }
+      ],
+      "amountG": 0.733,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "The same smoothie let down with squash for the children, dried in a band inside the tall glass"
+     }
+    ],
+    "points": 4
+   },
+   {
+    "item_id": "yoghurt_bowl_01",
+    "item_type": "cereal_bowl_vitrelle_159",
+    "pose": {
+     "p": [
+      0.157029012855494,
+      -0.045093940199544526,
+      0.4576612219650946
+     ],
+     "q": [
+      -0.32890960574150085,
+      0.019905170425772667,
+      -0.9424272179603577,
+      0.05703694000840187
+     ]
+    },
+    "soils": [
+     {
+      "type": "yoghurt",
+      "regions": [
+       {
+        "region": "interior",
+        "coverage": 0.4
+       }
+      ],
+      "amountG": 1.45,
+      "ageH": 1,
+      "heatHistory": "none",
+      "description": "Yoghurt up the inside of the bowl"
+     }
+    ],
+    "points": 6
+   }
+  ],
+  "unloaded": [
+   "fork_02",
+   "frying_pan_01",
+   "knife_01",
+   "knife_02",
+   "knife_04",
+   "mug_01",
+   "mug_03",
+   "oven_dish_01",
+   "plate_01",
+   "plate_02",
+   "salad_bowl_01",
+   "smoothie_glass_01",
+   "spoon_03",
+   "yoghurt_bowl_02",
+   "yoghurt_bowl_03",
+   "yoghurt_bowl_04"
+  ],
+  "seed": 1502,
+  "prechecks": {
+   "shifted": [],
+   "fell_out": [],
+   "on_tub_floor": [],
+   "protruding": [
+    {
+     "item_id": "smoothie_glass_04",
+     "rack": "upper_rack",
+     "beyond_mm": 16.3
+    }
+   ],
+   "racks": [
+    {
+     "rack": "lower_rack",
+     "slides_in": true
+    },
+    {
+     "rack": "upper_rack",
+     "slides_in": true
+    }
+   ],
+   "spray_arms": [
+    {
+     "arm": "lower_arm",
+     "full_rotation": true
+    },
+    {
+     "arm": "upper_arm",
+     "full_rotation": true
+    }
+   ],
+   "door_closes": true,
+   "door_blocked_by": [],
+   "dispenser_opens": true,
+   "dispenser_blocked_by": [],
+   "tablet_path_clear": true,
+   "tablet_blocked_by": []
+  }
+ },
+ "final_state_hash": "sha256:cbbf7e233de096c621508bdad10c89d12d5115340b8805abca8125f97eff6589",
+ "numbers": {
+  "items": 23,
+  "deepest_overlap_mm": 0.1,
+  "overlaps": [],
+  "deepest_true_overlap_mm": 0.57,
+  "true_overlaps": [
+   {
+    "a": "ketchup_pot_02",
+    "b": "squash_glass_01",
+    "depth_mm": 0.57
+   }
+  ],
+  "out_of_basket": [
+   {
+    "item_id": "fork_03",
+    "rack": "upper_rack",
+    "beyond_plan_mm": 0,
+    "below_floor_mm": 4.64,
+    "above_roof_mm": 0
+   },
+   {
+    "item_id": "side_plate_03",
+    "rack": "lower_rack",
+    "beyond_plan_mm": 0,
+    "below_floor_mm": 4.54,
+    "above_roof_mm": 0
+   },
+   {
+    "item_id": "smoothie_glass_04",
+    "rack": "upper_rack",
+    "beyond_plan_mm": 16.27,
+    "below_floor_mm": 0,
+    "above_roof_mm": 0
+   }
+  ],
+  "not_in_a_basket": [],
+  "unstable": [],
+  "by_basket": {
+   "lower_rack": 10,
+   "upper_rack": 13
+  },
+  "check_passes": false,
+  "check_findings": [
+   "smoothie_glass_04 sticks 16.3 mm out of the upper_rack"
+  ]
+ },
+ "measured": {
+  "totalMs": 119127,
+  "placeMedianMs": 885,
+  "placeMaxMs": 26867,
+  "placeTotalMs": 105190,
+  "checkMedianMs": 617,
+  "rackMoveMedianMs": 1113,
+  "startCycleMs": 555
+ }
+,
+ "action_log": [
+{"seq":0,"kind":"query","name":"get_level","args":{},"accepted":true,"result_digest":"sha256:f8eb8690cbd528992dfaaec48e31a993048ed2e5e75c62fca77fb84efffceb4e","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":0,"queries_used":1,"washes_used":0}},
+{"seq":1,"kind":"query","name":"get_state","args":{},"accepted":true,"result_digest":"sha256:2f5197e539a41f67a5e91f95513f4902a86258f3bbc321902f448f9b36834278","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":0,"queries_used":2,"washes_used":0}},
+{"seq":2,"kind":"action","name":"place","args":{"item_id":"plate_02","frame":"cutlery_basket","position_mm":[81.4877700805664,97.89848566055298,289],"orientation":{"preset":"on_edge","yaw_deg":6}},"accepted":false,"result_digest":"sha256:8e9d87bf96041d6712866120c9399d4d068d6a739cf9dc58c7aa3eeec012fb4c","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":0,"queries_used":2,"washes_used":0}},
+{"seq":3,"kind":"action","name":"place","args":{"item_id":"plate_02","frame":"cutlery_basket","position_mm":[81.4877700805664,97.89848566055298,274],"orientation":{"preset":"on_edge","yaw_deg":6}},"accepted":false,"result_digest":"sha256:8cec86168d749c582eb36e8772c4cd902c3cd3663afb14e6f94d6a3f0f66c1cf","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":0,"queries_used":2,"washes_used":0}},
+{"seq":4,"kind":"action","name":"place","args":{"item_id":"plate_02","frame":"cutlery_basket","position_mm":[123.50947570800781,101.97258770465851,289],"orientation":{"quat_wxyz":[0.3687,-0.1824,0.8463,-0.3385]}},"accepted":false,"result_digest":"sha256:63681b5258f689a260e33f25bd4c6f2b43d4b1a55a0d02ddfedf743924e9a51b","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":0,"queries_used":2,"washes_used":0}},
+{"seq":5,"kind":"action","name":"place","args":{"item_id":"plate_02","frame":"cutlery_basket","position_mm":[123.50947570800781,101.97258770465851,274],"orientation":{"quat_wxyz":[0.3687,-0.1824,0.8463,-0.3385]}},"accepted":false,"result_digest":"sha256:3a0a180626bdab8229d4f1fdc67362c6e6205d19453a6fdb98a9a5c6019727b7","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":0,"queries_used":2,"washes_used":0}},
+{"seq":6,"kind":"action","name":"place","args":{"item_id":"plate_02","frame":"cutlery_basket","position_mm":[90.86903381347656,177.98758924007416,289],"orientation":{"quat_wxyz":[0.0415,0.9713,-0.2316,0.0349]}},"accepted":true,"result_digest":"sha256:3f7838c077cf068a2ebf503f0911afabbf5b0a7e7405b0440f9fbb98e64df546","state_hash":"sha256:83fd2d8636067d57bccc71b7c46b4102bf4c998d19311b201bcc5a61a3cdd3d8","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":1,"queries_used":2,"washes_used":0}},
+{"seq":7,"kind":"action","name":"remove","args":{"item_id":"plate_02"},"accepted":true,"result_digest":"sha256:401b52742330914d2b0c9cf9e6a3c25c35ca447b1bae06d3d46f3d877b5e1fda","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":2,"queries_used":2,"washes_used":0}},
+{"seq":8,"kind":"action","name":"place","args":{"item_id":"plate_02","frame":"cutlery_basket","position_mm":[99.31409454345703,46.60299062728882,289],"orientation":{"preset":"leaning","yaw_deg":212}},"accepted":false,"result_digest":"sha256:5ce6323c1f94b3b62592fddbf3c78319b2bd45164acae96c18f3d8d952cae619","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":2,"queries_used":2,"washes_used":0}},
+{"seq":9,"kind":"action","name":"place","args":{"item_id":"plate_02","frame":"cutlery_basket","position_mm":[99.31409454345703,46.60299062728882,274],"orientation":{"preset":"leaning","yaw_deg":212}},"accepted":false,"result_digest":"sha256:085815232200fb40f5f334108aa2e250b011c40f581722d7081028065e1bf527","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":2,"queries_used":2,"washes_used":0}},
+{"seq":10,"kind":"action","name":"place","args":{"item_id":"plate_02","frame":"cutlery_basket","position_mm":[22.93140411376953,111.63719296455383,289],"orientation":{"preset":"on_edge","yaw_deg":160}},"accepted":false,"result_digest":"sha256:f54065b7efb99fffd7cbc688223257ae975a149faccd6126b325916416ebe4f2","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":2,"queries_used":2,"washes_used":0}},
+{"seq":11,"kind":"action","name":"place","args":{"item_id":"plate_02","frame":"cutlery_basket","position_mm":[22.93140411376953,111.63719296455383,274],"orientation":{"preset":"on_edge","yaw_deg":160}},"accepted":false,"result_digest":"sha256:20266b94fb3eceafa1dde69a363a4e28e237b4e0485200191dc863b9d7f42ef3","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":2,"queries_used":2,"washes_used":0}},
+{"seq":12,"kind":"action","name":"place","args":{"item_id":"plate_02","frame":"cutlery_basket","position_mm":[37.08366394042969,187.60846257209778,289],"orientation":{"preset":"on_edge","yaw_deg":159}},"accepted":false,"result_digest":"sha256:b9f1c34c654cdef4a5efc640e493dd18f01673a640e30059cd11064312c65865","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":2,"queries_used":2,"washes_used":0}},
+{"seq":13,"kind":"action","name":"place","args":{"item_id":"plate_02","frame":"cutlery_basket","position_mm":[37.08366394042969,187.60846257209778,274],"orientation":{"preset":"on_edge","yaw_deg":159}},"accepted":false,"result_digest":"sha256:4d607ab366f37224aea00a89573b810604d574a511c34abb97f90a97ace13b96","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":2,"queries_used":2,"washes_used":0}},
+{"seq":14,"kind":"action","name":"place","args":{"item_id":"plate_02","frame":"cutlery_basket","position_mm":[7.7793121337890625,122.98337996006012,289],"orientation":{"preset":"inverted","yaw_deg":61}},"accepted":true,"result_digest":"sha256:c215f20ad740f612e489661cc3f9a57c3268a26392d8aeef2a62d2b2449c6303","state_hash":"sha256:c554e794b84a4d4a133fb6580242572c9300c146e14ae4bcd0aee372d2d7e3d2","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":3,"queries_used":2,"washes_used":0}},
+{"seq":15,"kind":"action","name":"remove","args":{"item_id":"plate_02"},"accepted":true,"result_digest":"sha256:3b0a791a189500db697e81df9fa9d928cace0d3057373969c7933d5485726d3d","state_hash":"sha256:468207c5387778dc1935fd62e36c7f700c974aaedf82d599fc9b366d3c0c1ed3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":4,"queries_used":2,"washes_used":0}},
+{"seq":16,"kind":"action","name":"place","args":{"item_id":"plate_04","frame":"lower_rack","position_mm":[274.1037994623184,270.7295227050781,330],"orientation":{"preset":"inverted","yaw_deg":184}},"accepted":true,"result_digest":"sha256:ccd15e385d4c408069f0beb23214d84301b388a0909fbcce94bc4decb8826055","state_hash":"sha256:5556ba07bd4d5db82091bec96b80f090038592785a6945e1d2698fdf9778b5f1","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":5,"queries_used":2,"washes_used":0}},
+{"seq":17,"kind":"action","name":"place","args":{"item_id":"side_plate_01","frame":"lower_rack","position_mm":[116.64150059223175,385.3064880371094,330],"orientation":{"quat_wxyz":[-0.6956,-0.0203,-0.2278,-0.681]}},"accepted":true,"result_digest":"sha256:b5fd44097e9a1ec8583c9bd6a24efeaf9dbfa2d3a0cb6c7660003e1084fb0c0f","state_hash":"sha256:cff3ab7bfc8165799bf88cf17ffdb602581d25598b4db99f312c0a50c8327fdf","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":6,"queries_used":2,"washes_used":0}},
+{"seq":18,"kind":"action","name":"place","args":{"item_id":"side_plate_02","frame":"lower_rack","position_mm":[389.9380177259445,387.72918701171875,261],"orientation":{"preset":"on_edge","yaw_deg":104}},"accepted":true,"result_digest":"sha256:5be121aa6bac55e17211de583c0ba2e231e3ceee26e78f7616b0c8726a037e52","state_hash":"sha256:e3a963ac4559861d0cf49bdd76284abb6b26e366f6de0b5f2df47e30c3ecc7e1","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":7,"queries_used":2,"washes_used":0}},
+{"seq":19,"kind":"action","name":"place","args":{"item_id":"side_plate_03","frame":"lower_rack","position_mm":[461.4387050271034,193.1346435546875,330],"orientation":{"preset":"on_edge_reversed","yaw_deg":9}},"accepted":true,"result_digest":"sha256:ffb1e896fdea314deee82e37bbb85b751f0c2d53704c2db8903075981d14c313","state_hash":"sha256:2530b74288937798c542d226b697bf38197520b8b70ef57284d0dff34cdabfc9","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":8,"queries_used":2,"washes_used":0}},
+{"seq":20,"kind":"action","name":"place","args":{"item_id":"side_plate_04","frame":"lower_rack","position_mm":[301.71174108982086,369.237060546875,330],"orientation":{"quat_wxyz":[0.0897,0.7156,-0.0029,-0.6927]}},"accepted":true,"result_digest":"sha256:4d551657d998d8f42a7237066d486f3749ffa994e3b9763c2ddad157fc4b996a","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":21,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[66.89958190917969,179.37300026416779,233.5],"orientation":{"quat_wxyz":[0.1595,0.1314,-0.2942,-0.9331]}},"accepted":false,"result_digest":"sha256:57ada82af95c4215bbd1cf2d782b16f2b390f95507cbcd03652410408bb45cfd","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":22,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[66.89958190917969,179.37300026416779,218.5],"orientation":{"quat_wxyz":[0.1595,0.1314,-0.2942,-0.9331]}},"accepted":false,"result_digest":"sha256:384461451383b3a5d5591a27ab88ce1f78080da902a9cdc7a3eec6dcad7ed60c","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":23,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[6.623847961425781,93.69117259979248,233.5],"orientation":{"quat_wxyz":[-0.3598,0.7222,0.4212,0.4143]}},"accepted":false,"result_digest":"sha256:133e7d29856166611093c7102861c275f7aa725090c4e89fc2f79763ad6f9900","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":24,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[6.623847961425781,93.69117259979248,218.5],"orientation":{"quat_wxyz":[-0.3598,0.7222,0.4212,0.4143]}},"accepted":false,"result_digest":"sha256:1df0824d0e88e5ff5b36f3ae29954ccee16015fdec0d0d157496decb77cc84ea","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":25,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[94.41499328613281,61.33783996105194,233.5],"orientation":{"quat_wxyz":[0.4783,-0.4369,0.717,-0.2573]}},"accepted":false,"result_digest":"sha256:166aea1529586754db30ba4209edf875e0addd107129e553e221234e31cb457f","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":26,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[94.41499328613281,61.33783996105194,218.5],"orientation":{"quat_wxyz":[0.4783,-0.4369,0.717,-0.2573]}},"accepted":false,"result_digest":"sha256:c1ec2ce63fcbce2e4f24087b4b0749f8e3392a99a53a5eb17509c7cb51ceaf5b","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":27,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[124.58235931396484,171.83829069137573,233.5],"orientation":{"quat_wxyz":[0.4905,-0.7479,0.4429,0.0624]}},"accepted":false,"result_digest":"sha256:bec631a8ae3fc93a94bdd10cf88b58d64db2e815e3327dc913b4175b4c9ad477","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":28,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[124.58235931396484,171.83829069137573,218.5],"orientation":{"quat_wxyz":[0.4905,-0.7479,0.4429,0.0624]}},"accepted":false,"result_digest":"sha256:b2f70398cbbf20f556e48a82037c03f288cbb75ad7c63107b42558c3e24d6adb","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":29,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[90.861328125,154.37040150165558,233.5],"orientation":{"quat_wxyz":[-0.6439,-0.2749,0.6663,0.2568]}},"accepted":false,"result_digest":"sha256:f6d33cd5acf95d8e8f05f911eb4f8a4f709b18682631f70d7cde5dd57050997e","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":30,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[90.861328125,154.37040150165558,218.5],"orientation":{"quat_wxyz":[-0.6439,-0.2749,0.6663,0.2568]}},"accepted":false,"result_digest":"sha256:c1964678fa4ac3fbeb50c4a2f4465e216f6b18d3eaf26fb34489d7b5049f3001","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":31,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[15.501167297363281,32.221519947052,233.5],"orientation":{"preset":"on_edge","yaw_deg":151}},"accepted":false,"result_digest":"sha256:c33a7a4e9bd4a8981d353cb037bd293e5735215a1c96382d89eb694f7b0435c2","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":32,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[15.501167297363281,32.221519947052,218.5],"orientation":{"preset":"on_edge","yaw_deg":151}},"accepted":false,"result_digest":"sha256:f1bbbfd6aa64d18220fa58f23e473a861490e103a70d8daa97830deb17d131f6","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":33,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[90.57709503173828,99.15608704090118,233.5],"orientation":{"quat_wxyz":[-0.6076,-0.3645,-0.6584,-0.2541]}},"accepted":false,"result_digest":"sha256:9a9c797b40836a77a4bc8ba1908a92e2e854381653f446152494de45fd824bd9","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":34,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[90.57709503173828,99.15608704090118,218.5],"orientation":{"quat_wxyz":[-0.6076,-0.3645,-0.6584,-0.2541]}},"accepted":false,"result_digest":"sha256:6325fa4d15eeaa0e4b94ec6f8323bce52d0977284c385b4be51b6065c344bb50","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":35,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[30.29181671142578,121.47532761096954,233.5],"orientation":{"preset":"upright","yaw_deg":7}},"accepted":false,"result_digest":"sha256:8afde6371cc845e327c4ec0404a564b7e312254c5322fec1225d6bba3e1b563a","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":36,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[30.29181671142578,121.47532761096954,218.5],"orientation":{"preset":"upright","yaw_deg":7}},"accepted":false,"result_digest":"sha256:0df520cd8188641c3653f2f0b09fa9ec52625a503de9deafbabe8a3ae2e93a0b","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":37,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[11.6085205078125,34.34824883937836,233.5],"orientation":{"quat_wxyz":[0.7061,0.1642,0.6412,-0.2516]}},"accepted":false,"result_digest":"sha256:9df84771a57534258ede714c8bb30e41ba2c4b0880094e40cdf00306c7fd3e1e","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":38,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[11.6085205078125,34.34824883937836,218.5],"orientation":{"quat_wxyz":[0.7061,0.1642,0.6412,-0.2516]}},"accepted":false,"result_digest":"sha256:47a72c6e271d0b5561010da88e1b0cfb68cd794f8a04354ad981a9fddc2a860f","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":39,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[41.624595642089844,219.9562156200409,233.5],"orientation":{"quat_wxyz":[0.5365,-0.6958,-0.477,0.0216]}},"accepted":false,"result_digest":"sha256:670d9cd409e3531e2801fe83f0b9385847413a994645edd33c485e4c274f22bf","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":40,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[41.624595642089844,219.9562156200409,218.5],"orientation":{"quat_wxyz":[0.5365,-0.6958,-0.477,0.0216]}},"accepted":false,"result_digest":"sha256:622def3c1841f9a6aee7bbd9b63133d4fada8aebc1117c7ac94ec892b75256bc","state_hash":"sha256:04727fbcde05a9513fd45f1bb84c6788f4d31852686bf2e2ed85b4a4444fa7fc","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":9,"queries_used":2,"washes_used":0}},
+{"seq":41,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[100.4253158569336,61.977436542510986,233.5],"orientation":{"preset":"inclined","yaw_deg":264}},"accepted":true,"result_digest":"sha256:9ba853126ad947825726ecf08fc8cacfc573984b3ddfb375a24ac6864fbb10cb","state_hash":"sha256:e82e3de0023697af32e42431b665b4e1df3c54de7f9404473d0c9a184df93c78","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":10,"queries_used":2,"washes_used":0}},
+{"seq":42,"kind":"action","name":"remove","args":{"item_id":"yoghurt_bowl_03"},"accepted":true,"result_digest":"sha256:960e7d7b3b1519635bc5df23d10cfc657d84e7c0a9e0ce968d1744cc8a8861b4","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":43,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[118.41441345214844,227.87010431289673,233.5],"orientation":{"preset":"on_edge","yaw_deg":246}},"accepted":false,"result_digest":"sha256:ac492c66becc65ebb78a99e7760e145bb14b307a4c6b5fb3895b8608dc509cba","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":44,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[118.41441345214844,227.87010431289673,218.5],"orientation":{"preset":"on_edge","yaw_deg":246}},"accepted":false,"result_digest":"sha256:ac492c66becc65ebb78a99e7760e145bb14b307a4c6b5fb3895b8608dc509cba","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":45,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[7.0681610107421875,80.62211215496063,233.5],"orientation":{"preset":"on_edge","yaw_deg":37}},"accepted":false,"result_digest":"sha256:ebab2fb63d24e60bc06dcbd887b90ec487002564aea105623ea3f6d96fe5bd9a","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":46,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[7.0681610107421875,80.62211215496063,218.5],"orientation":{"preset":"on_edge","yaw_deg":37}},"accepted":false,"result_digest":"sha256:977d150a1f0f19e41cc5bf2317109f49eb1d52fb576507bfabf3d1450f6172c5","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":47,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[56.876220703125,113.46725761890411,233.5],"orientation":{"quat_wxyz":[0.1223,-0.6164,-0.6412,0.4403]}},"accepted":false,"result_digest":"sha256:1e576e36348d72ccef22b9888338371599da9cde3d0c74cdf4fee8cff06a2efa","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":48,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[56.876220703125,113.46725761890411,218.5],"orientation":{"quat_wxyz":[0.1223,-0.6164,-0.6412,0.4403]}},"accepted":false,"result_digest":"sha256:9af7fa03af6d7620b3953e68658bef657497cd939bb6197ea57d28b82431f709","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":49,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[104.7533950805664,143.1315290927887,233.5],"orientation":{"quat_wxyz":[0.369,0.3294,-0.3873,-0.7781]}},"accepted":false,"result_digest":"sha256:7fc843a7c7e1bb5f6a72240e98886782e74ad8b8de775783fe09e68166a9d349","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":50,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[104.7533950805664,143.1315290927887,218.5],"orientation":{"quat_wxyz":[0.369,0.3294,-0.3873,-0.7781]}},"accepted":false,"result_digest":"sha256:9917bdc45096aea05065316c7021f193f2b3ebe6046e6c0925fa6de11c054005","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":51,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[60.07740783691406,175.85545897483826,233.5],"orientation":{"preset":"on_edge","yaw_deg":229}},"accepted":false,"result_digest":"sha256:32d11b7b22db1ec714c8fad4d42aff043be9fb21c00bd200c6c020d33b71d496","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":52,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_03","frame":"cutlery_basket","position_mm":[60.07740783691406,175.85545897483826,218.5],"orientation":{"preset":"on_edge","yaw_deg":229}},"accepted":false,"result_digest":"sha256:73a67e7be49e188113bc39181bab5b498c8c2398bc2de426a94d967c613d93b1","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":53,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[68.1026382446289,58.155444264411926,233.5],"orientation":{"preset":"inclined","yaw_deg":290}},"accepted":false,"result_digest":"sha256:6672887772ff7768d24721dcd379dbde4f69fbed8733192a80bd700a208360fe","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":54,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[68.1026382446289,58.155444264411926,218.5],"orientation":{"preset":"inclined","yaw_deg":290}},"accepted":false,"result_digest":"sha256:eebd59e8aef3cdacd243d025a78c6551c127ce0e0e9e30a3f1720bbb3176b771","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":55,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[0.8509521484375,69.7263503074646,233.5],"orientation":{"preset":"inclined","yaw_deg":188}},"accepted":false,"result_digest":"sha256:6672887772ff7768d24721dcd379dbde4f69fbed8733192a80bd700a208360fe","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":56,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[0.8509521484375,69.7263503074646,218.5],"orientation":{"preset":"inclined","yaw_deg":188}},"accepted":false,"result_digest":"sha256:59664c524335c1e93cf2be91bdb052a4375a49690c773d4fc1998c3d142a7c76","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":57,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[11.377105712890625,107.76254415512085,233.5],"orientation":{"quat_wxyz":[0.352,-0.7861,0.4325,-0.2668]}},"accepted":false,"result_digest":"sha256:d34be4faf157b851e58f3a9f3a28790e27c03ec4e2b932cd578a66fea0db3786","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":58,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[11.377105712890625,107.76254415512085,218.5],"orientation":{"quat_wxyz":[0.352,-0.7861,0.4325,-0.2668]}},"accepted":false,"result_digest":"sha256:a566b467e2897ab6495e6174e0329f7bcbcac34da957e0af92f88def8ce14e36","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":59,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[54.60334777832031,29.33901011943817,233.5],"orientation":{"quat_wxyz":[0.3257,0.4576,-0.2698,0.7821]}},"accepted":false,"result_digest":"sha256:eb5d51ded0976a473b4456a579474d948757066996546832447529e9ea35bf34","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":60,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[54.60334777832031,29.33901011943817,218.5],"orientation":{"quat_wxyz":[0.3257,0.4576,-0.2698,0.7821]}},"accepted":false,"result_digest":"sha256:ebebcf085bae170faa864d72ff244859aba834dec95b79058c11a24f6a43900c","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":61,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[109.31050109863281,147.52420246601105,233.5],"orientation":{"preset":"upright","yaw_deg":340}},"accepted":false,"result_digest":"sha256:ae157cc8f8b39733632c0be49582b9e2f32f950da97c80d9e84e29d91a93ce1a","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":62,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[109.31050109863281,147.52420246601105,218.5],"orientation":{"preset":"upright","yaw_deg":340}},"accepted":false,"result_digest":"sha256:0df520cd8188641c3653f2f0b09fa9ec52625a503de9deafbabe8a3ae2e93a0b","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":63,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[101.74040222167969,203.6033946275711,233.5],"orientation":{"quat_wxyz":[0.6872,-0.6692,-0.0612,0.2762]}},"accepted":false,"result_digest":"sha256:be5f3715205192cd799fc5df14f5b41823fc6a51ee035036b9662047a85db6ec","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":64,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[101.74040222167969,203.6033946275711,218.5],"orientation":{"quat_wxyz":[0.6872,-0.6692,-0.0612,0.2762]}},"accepted":false,"result_digest":"sha256:a4cb8d5801b7dc619710d36e0773c3ba11a7ee5640d4c023108c082684631d29","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":65,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[94.52982330322266,161.1803811788559,233.5],"orientation":{"quat_wxyz":[0.5682,-0.5838,-0.2628,-0.517]}},"accepted":false,"result_digest":"sha256:848750f419326c83034e9438830d772f4015c7dbdc2a66f0ac24766dda6a9734","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":66,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[94.52982330322266,161.1803811788559,218.5],"orientation":{"quat_wxyz":[0.5682,-0.5838,-0.2628,-0.517]}},"accepted":false,"result_digest":"sha256:2358177bc0e0fe223ec1ffdfc872332c12ef9cb245b2081478b87f8fbff74cc6","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":67,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[54.53135681152344,47.12141275405884,233.5],"orientation":{"preset":"upright","yaw_deg":207}},"accepted":false,"result_digest":"sha256:b42d6351f317a49d36688f1eaee1fd642f6178b6a255c8ced1a76d1417eff3f7","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":68,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[54.53135681152344,47.12141275405884,218.5],"orientation":{"preset":"upright","yaw_deg":207}},"accepted":false,"result_digest":"sha256:27602d19e9c344b1077e7a94a00c22da2f28b54e0d0cf6459a99853d4c500cfc","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":69,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[18.72369384765625,38.476542830467224,233.5],"orientation":{"quat_wxyz":[0.3507,0.1201,-0.7539,0.5424]}},"accepted":false,"result_digest":"sha256:d1c9fdc4c2c00d0f52e263aead8bcfdc9ecb174a45a314db946f8132bb714541","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":70,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[18.72369384765625,38.476542830467224,218.5],"orientation":{"quat_wxyz":[0.3507,0.1201,-0.7539,0.5424]}},"accepted":false,"result_digest":"sha256:0a0a90f4f26293150d00e3f9be95bb341881a5eb1e7a3e9e9b02bb847306d99e","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":71,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[75.48695373535156,141.67995810508728,233.5],"orientation":{"preset":"on_edge","yaw_deg":255}},"accepted":false,"result_digest":"sha256:6b92809de20259a1273adabe14d3a10740c43e6176ed9d06cb22cb7421dca496","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":72,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[75.48695373535156,141.67995810508728,218.5],"orientation":{"preset":"on_edge","yaw_deg":255}},"accepted":false,"result_digest":"sha256:6b92809de20259a1273adabe14d3a10740c43e6176ed9d06cb22cb7421dca496","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":73,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[41.93867492675781,18.847473859786987,233.5],"orientation":{"quat_wxyz":[0.3729,-0.7693,-0.117,-0.5054]}},"accepted":false,"result_digest":"sha256:5faf7e7cfce3ab3208cf43f0356c8dc51a10a10b7a92b5efe3153f51ff03d2b6","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":74,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[41.93867492675781,18.847473859786987,218.5],"orientation":{"quat_wxyz":[0.3729,-0.7693,-0.117,-0.5054]}},"accepted":false,"result_digest":"sha256:0bdcee5c4b652971c89382ebd08c0363f94aea6b1bdc1cc4c36426026f7decd6","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":75,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[56.92896270751953,102.43750333786011,233.5],"orientation":{"quat_wxyz":[-0.8253,0.2629,-0.4113,-0.2837]}},"accepted":false,"result_digest":"sha256:cde78b655a5d7170783dc30ca76ca40a8e45de13702299ae97ebd0b604c3272c","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":76,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[56.92896270751953,102.43750333786011,218.5],"orientation":{"quat_wxyz":[-0.8253,0.2629,-0.4113,-0.2837]}},"accepted":false,"result_digest":"sha256:ebb3011948dace71d8644d4c3d7c220b9bf8f09c189f33153556a70410a352e0","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":77,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[12.580238342285156,176.0037225484848,233.5],"orientation":{"preset":"inclined","yaw_deg":172}},"accepted":false,"result_digest":"sha256:b2f70398cbbf20f556e48a82037c03f288cbb75ad7c63107b42558c3e24d6adb","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":78,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[12.580238342285156,176.0037225484848,218.5],"orientation":{"preset":"inclined","yaw_deg":172}},"accepted":false,"result_digest":"sha256:107895cb21c18bc2902d4fd8d398a0cb802c99c8f8a4591e4a315e1d0c2dbcae","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":79,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[74.70196533203125,196.7942237854004,233.5],"orientation":{"quat_wxyz":[-0.9368,0.0371,-0.1258,-0.3243]}},"accepted":false,"result_digest":"sha256:252cc7dc0f8fa7997d45a6a0128a43975990b43960f4a39ebe61fc233531a974","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":80,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[74.70196533203125,196.7942237854004,218.5],"orientation":{"quat_wxyz":[-0.9368,0.0371,-0.1258,-0.3243]}},"accepted":false,"result_digest":"sha256:244e1b19a27e1f7944eed7e6d5db4e93f449bc565b4252524235abf0f73e7941","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":81,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[89.56800079345703,220.32995223999023,233.5],"orientation":{"preset":"upright","yaw_deg":206}},"accepted":false,"result_digest":"sha256:8b09b0b8800eb86f4da74d7e58b641c7422b53b2f3deb08e990e0fbfd106f5d4","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":82,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[89.56800079345703,220.32995223999023,218.5],"orientation":{"preset":"upright","yaw_deg":206}},"accepted":false,"result_digest":"sha256:768f7e1acc37ae4accc4e8f9e94c9aae5ab9d51eb9f81ed61727458321e210cb","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":83,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[24.640647888183594,91.90919935703278,233.5],"orientation":{"quat_wxyz":[-0.4105,0.232,0.0437,0.8808]}},"accepted":false,"result_digest":"sha256:cd38027f96ac42540162eeffab61a079025fda3ee39327e2e4446777101fe750","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":84,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_04","frame":"cutlery_basket","position_mm":[24.640647888183594,91.90919935703278,218.5],"orientation":{"quat_wxyz":[-0.4105,0.232,0.0437,0.8808]}},"accepted":false,"result_digest":"sha256:33eeed65e2b15c37a47102ddcfdea1f65a1360da9174acb3c52902fac03894c5","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":85,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[87.96758270263672,123.01072955131531,199],"orientation":{"preset":"upright","yaw_deg":13}},"accepted":false,"result_digest":"sha256:a918c91414e3e6316733034b87af25420310a86f0050a7a2e14591e30712e08c","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":86,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[87.96758270263672,123.01072955131531,184],"orientation":{"preset":"upright","yaw_deg":13}},"accepted":false,"result_digest":"sha256:34c0d0a8e9c1c4508ed9db5a968361eb6cb1e618e6123078b530e850500e6795","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":87,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[126.19668579101562,145.6219869852066,199],"orientation":{"preset":"on_side","yaw_deg":178}},"accepted":false,"result_digest":"sha256:4799a93cc56991f5f3fe3f925124c3959e98429f35a44ce1035a5818e4f4678e","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":88,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[126.19668579101562,145.6219869852066,184],"orientation":{"preset":"on_side","yaw_deg":178}},"accepted":false,"result_digest":"sha256:a56ff7ca36f6980291dbddd226c34702f9405e1ca98e9d77c61d65f5db5c2d74","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":89,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[54.767539978027344,228.86031031608582,199],"orientation":{"quat_wxyz":[-0.7757,-0.5269,0.1802,0.2969]}},"accepted":false,"result_digest":"sha256:e50ad3bbb1aa2543bcff943beaaaed89cd5e683570da1d599d9942545ba0c338","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":90,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[54.767539978027344,228.86031031608582,184],"orientation":{"quat_wxyz":[-0.7757,-0.5269,0.1802,0.2969]}},"accepted":false,"result_digest":"sha256:cc4ad2de0fdd53d8a4c35e7f6ed6591f7b20125b1e15f7ed68fcf63917a99255","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":91,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[85.08373260498047,22.738546133041382,199],"orientation":{"preset":"inverted_tilted","yaw_deg":53}},"accepted":false,"result_digest":"sha256:099bf32d45a49803fcf3939f870c4a8388042b91bfd87ad51cd3283bb5980e88","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":92,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[85.08373260498047,22.738546133041382,184],"orientation":{"preset":"inverted_tilted","yaw_deg":53}},"accepted":false,"result_digest":"sha256:2e6ba9942fe9f3791168ff8525cb02e1f7a19f03b995fe3aebf9c9712bd56d0a","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":93,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[59.58869171142578,64.6602326631546,199],"orientation":{"quat_wxyz":[0.509,0.4719,-0.6223,0.3621]}},"accepted":false,"result_digest":"sha256:eabef7d9e25881c68953d5e6644b534ea1732d58cfd024ceddf86ccaa26ae998","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":94,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[59.58869171142578,64.6602326631546,184],"orientation":{"quat_wxyz":[0.509,0.4719,-0.6223,0.3621]}},"accepted":false,"result_digest":"sha256:7934fa2d4f537998be3dcf997ee5c7f551e2d209fd0a5956e3ca960b4c8dbcf8","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":95,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[118.56309509277344,209.1287386417389,199],"orientation":{"preset":"inverted_tilted","yaw_deg":316}},"accepted":false,"result_digest":"sha256:cc2ad8c81c34a81496a56d21b2de89d83abd73acaa6db13dbb09fd372bc69e5f","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":96,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[118.56309509277344,209.1287386417389,184],"orientation":{"preset":"inverted_tilted","yaw_deg":316}},"accepted":false,"result_digest":"sha256:5348b722adaa29855b675e0426af0108cf9d9c3f1474158df36a0a34696b8e75","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":97,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[31.58844757080078,229.28933560848236,199],"orientation":{"quat_wxyz":[0.4578,0.3488,-0.8147,0.0717]}},"accepted":false,"result_digest":"sha256:846152898e4409b2cfef818dfb1d4f2c0f4c76a434f24e2573fa869e9f43d847","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":98,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[31.58844757080078,229.28933560848236,184],"orientation":{"quat_wxyz":[0.4578,0.3488,-0.8147,0.0717]}},"accepted":false,"result_digest":"sha256:7ab8d4a3b33cefa145a373ef1685e3d9efae559cfb65555fcff005aac2e3df0c","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":99,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[42.91871643066406,189.20847535133362,199],"orientation":{"preset":"upright","yaw_deg":295}},"accepted":false,"result_digest":"sha256:08fd17c5ec72c6a23cbf4e7d4674d7d437ea6aa6cb811a9ebf3bb4678ee146f0","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":100,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[42.91871643066406,189.20847535133362,184],"orientation":{"preset":"upright","yaw_deg":295}},"accepted":false,"result_digest":"sha256:4b19c38463f06ec43aee886ff8334100a23954ff6aea9521804368cb33370701","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":101,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[117.15303039550781,199.10775244235992,199],"orientation":{"preset":"inverted","yaw_deg":249}},"accepted":false,"result_digest":"sha256:12210fccb75756f86e9f9ed3c1cf5030cf8ff915c45f03371f33e2d78e2a788a","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":102,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[117.15303039550781,199.10775244235992,184],"orientation":{"preset":"inverted","yaw_deg":249}},"accepted":false,"result_digest":"sha256:32447c8e9e5990967a03bbb6717d82e4d27f8a619103d98ae8a264ee18b9b872","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":103,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[106.53855895996094,24.732913970947266,199],"orientation":{"preset":"upright","yaw_deg":293}},"accepted":false,"result_digest":"sha256:f4253d49ea8703da7d836ba71ee7b9a6d97986db70a406b78f60afa735de1508","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":104,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[106.53855895996094,24.732913970947266,184],"orientation":{"preset":"upright","yaw_deg":293}},"accepted":false,"result_digest":"sha256:e066fdfa7996233650a87fbd832c3792ef9d8025cfe2aa0dacc8889a6b947f5d","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":105,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[63.36949157714844,39.250118136405945,199],"orientation":{"preset":"on_side","yaw_deg":25}},"accepted":false,"result_digest":"sha256:d5557fbd04523e2b2e2b871aaba832a381a8ab053b00e1d773bbdb0b5d9dcf87","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":106,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[63.36949157714844,39.250118136405945,184],"orientation":{"preset":"on_side","yaw_deg":25}},"accepted":false,"result_digest":"sha256:700cf9ab923bad5316b11a39c6d7d93c9262555fe363b4bc28df8f136aff080b","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":107,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[85.22944641113281,193.3201813697815,199],"orientation":{"quat_wxyz":[-0.2121,0.6282,0.6514,-0.3689]}},"accepted":false,"result_digest":"sha256:c553f81154759d8df21fa763c46c81f408223e522dda90e2cbd819114a84d13c","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":108,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[85.22944641113281,193.3201813697815,184],"orientation":{"quat_wxyz":[-0.2121,0.6282,0.6514,-0.3689]}},"accepted":false,"result_digest":"sha256:d36b626a473fc2c09f752b1c5cb524fb1417beacb88f6f970297bb0d6356233a","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":109,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[67.01170349121094,99.30879235267639,199],"orientation":{"quat_wxyz":[0.1306,0.2272,0.7359,0.6243]}},"accepted":false,"result_digest":"sha256:8f0ad2ccc4e00dc77a3527f73fbdfb62695cff54f6120b23d7ee5bbfde04affa","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":110,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[67.01170349121094,99.30879235267639,184],"orientation":{"quat_wxyz":[0.1306,0.2272,0.7359,0.6243]}},"accepted":false,"result_digest":"sha256:6daec904d45b2523140d2b0800c59f2be064b9f9ec2af43e01e47c7deba5075e","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":111,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[110.60511779785156,187.09448218345642,199],"orientation":{"quat_wxyz":[-0.2538,0.0141,-0.5937,0.7634]}},"accepted":false,"result_digest":"sha256:5edd2d86e0f3d9cb7cff600b39281c3097ed0d68942fa90483d4feb4e84445a1","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":112,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[110.60511779785156,187.09448218345642,184],"orientation":{"quat_wxyz":[-0.2538,0.0141,-0.5937,0.7634]}},"accepted":false,"result_digest":"sha256:d3b756698c60173cb95324deb8fecb8c8b0806d191c6ba1a6d0946227ee1e03b","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":113,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[40.01464080810547,127.57933139801025,199],"orientation":{"quat_wxyz":[0.2293,-0.1259,0.2223,-0.9392]}},"accepted":false,"result_digest":"sha256:bad309c8773b54f9bf4d1ef1af33223f53c47472963254518c216555f4c0c45b","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":114,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[40.01464080810547,127.57933139801025,184],"orientation":{"quat_wxyz":[0.2293,-0.1259,0.2223,-0.9392]}},"accepted":false,"result_digest":"sha256:63681b5258f689a260e33f25bd4c6f2b43d4b1a55a0d02ddfedf743924e9a51b","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":115,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[113.09327697753906,51.11150562763214,199],"orientation":{"quat_wxyz":[-0.8022,0.5529,0.2008,-0.1024]}},"accepted":false,"result_digest":"sha256:4bef48ae77708babe23e8ef83d62c41ef76e0d0428a4bc8cd27a553950a0437a","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":116,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_01","frame":"cutlery_basket","position_mm":[113.09327697753906,51.11150562763214,184],"orientation":{"quat_wxyz":[-0.8022,0.5529,0.2008,-0.1024]}},"accepted":false,"result_digest":"sha256:ff7900d8410238c5c0a352d3f441c9228649decd68af84ebf60f89b7e38028a2","state_hash":"sha256:1d167666bece24f215b72f098a478c68de201fa80aeb407d99badb73f2613a6f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":11,"queries_used":2,"washes_used":0}},
+{"seq":117,"kind":"action","name":"place","args":{"item_id":"mug_01","frame":"lower_rack","position_mm":[390.63374251127243,215.22775268554688,330],"orientation":{"preset":"upright","yaw_deg":271}},"accepted":true,"result_digest":"sha256:0941836b0541024eda4f13484262d17a3cd8cc759eaefe2f306b1329e1ba393e","state_hash":"sha256:e261a9d90c87a74b7e07aec3085c8e4afecedcee8ed04981e48c7527b841ed61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":12,"queries_used":2,"washes_used":0}},
+{"seq":118,"kind":"action","name":"remove","args":{"item_id":"mug_01"},"accepted":true,"result_digest":"sha256:bf9c49100aedd94abfd18f8098fef9009a5a9e0274a75f1ddc23815fd40007cb","state_hash":"sha256:757a1514dde2997f8fc9595496b6f91b61848c89da7d47503cca713548c0eb82","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":13,"queries_used":2,"washes_used":0}},
+{"seq":119,"kind":"action","name":"place","args":{"item_id":"mug_01","frame":"lower_rack","position_mm":[385.09710878133774,273.35992431640625,330],"orientation":{"preset":"inverted_tilted","yaw_deg":200}},"accepted":true,"result_digest":"sha256:7a83a6ac3ec65ac2ac0f39d8ee7af48ed1dd6f0d863e459c219dd4b6e32f83dd","state_hash":"sha256:20f351a85381c943e5346cb018dcf315d587695456b2c80b964351015c3d54d8","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":14,"queries_used":2,"washes_used":0}},
+{"seq":120,"kind":"action","name":"remove","args":{"item_id":"mug_01"},"accepted":true,"result_digest":"sha256:4bba325d698baaf9ea6946cefa39fcad110bf16a4a3a5ba3bbdf9c55177b3d0c","state_hash":"sha256:9c7d0b462aa8848557cf2d94d1a8e3fe8fdbcc33f91538f132ecd4a9ed58de83","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":15,"queries_used":2,"washes_used":0}},
+{"seq":121,"kind":"action","name":"place","args":{"item_id":"mug_02","frame":"lower_rack","position_mm":[423.98991733789444,222.56634521484375,330],"orientation":{"quat_wxyz":[-0.7132,0.1752,-0.4285,0.5264]}},"accepted":true,"result_digest":"sha256:5e74663c864c2690c3f346538866c094fc6ede1e6d170cee2cc669500bd29eac","state_hash":"sha256:75a769415d1f41ab59ba94b6552458903a0e032de4da89dc94df917ab1708be0","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":16,"queries_used":2,"washes_used":0}},
+{"seq":122,"kind":"action","name":"place","args":{"item_id":"mug_03","frame":"lower_rack","position_mm":[430.20159155130386,467.5515441894531,301.2],"orientation":{"preset":"inverted_tilted","yaw_deg":136}},"accepted":false,"result_digest":"sha256:adc4028247e2f11dce52463e6cc4d6d9535fcea778662e3727647b19f9de1a55","state_hash":"sha256:75a769415d1f41ab59ba94b6552458903a0e032de4da89dc94df917ab1708be0","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":16,"queries_used":2,"washes_used":0}},
+{"seq":123,"kind":"action","name":"place","args":{"item_id":"mug_03","frame":"lower_rack","position_mm":[342.64647513628006,157.64364624023438,330],"orientation":{"preset":"upright","yaw_deg":278}},"accepted":true,"result_digest":"sha256:42567fbe7bdb4f6055de3a7ab6eddc0ebe261e404afd7ab5bbbf381e57d684d9","state_hash":"sha256:2c1fc6e2ea6f9c5e01e80f9214d6bc98245cd65099c4023d9db87117e131377b","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":17,"queries_used":2,"washes_used":0}},
+{"seq":124,"kind":"action","name":"remove","args":{"item_id":"mug_03"},"accepted":true,"result_digest":"sha256:6181cbf82ca668b7606947cbc509db614c7dc8415ea21afa5fe4fa8b00daf737","state_hash":"sha256:75a769415d1f41ab59ba94b6552458903a0e032de4da89dc94df917ab1708be0","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":18,"queries_used":2,"washes_used":0}},
+{"seq":125,"kind":"action","name":"place","args":{"item_id":"mug_03","frame":"lower_rack","position_mm":[9.198130667209625,186.4161376953125,330],"orientation":{"quat_wxyz":[-0.4337,0.543,0.3103,0.6487]}},"accepted":true,"result_digest":"sha256:4579c7d970c311c611621ca7ad037ce4b8fac4d5932591f9807210aefa514c81","state_hash":"sha256:51f32a81dcaf6ac7f5be4685022e8546f68a7efab02deffcf1155c4a67687334","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":19,"queries_used":2,"washes_used":0}},
+{"seq":126,"kind":"action","name":"place","args":{"item_id":"ketchup_pot_01","frame":"cutlery_basket","position_mm":[10.382102966308594,6.058818697929382,198.5],"orientation":{"quat_wxyz":[-0.601,0.7239,0.0418,-0.3362]}},"accepted":false,"result_digest":"sha256:9f6a21588ab0559622039990fb02901925a76e12d3cf6973c65097a936fb7c8c","state_hash":"sha256:51f32a81dcaf6ac7f5be4685022e8546f68a7efab02deffcf1155c4a67687334","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":19,"queries_used":2,"washes_used":0}},
+{"seq":127,"kind":"action","name":"place","args":{"item_id":"ketchup_pot_01","frame":"cutlery_basket","position_mm":[10.382102966308594,6.058818697929382,183.5],"orientation":{"quat_wxyz":[-0.601,0.7239,0.0418,-0.3362]}},"accepted":false,"result_digest":"sha256:fafd32de0a0a18e0af476a93660f79288c22be948f685283c787394597dd3167","state_hash":"sha256:51f32a81dcaf6ac7f5be4685022e8546f68a7efab02deffcf1155c4a67687334","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":19,"queries_used":2,"washes_used":0}},
+{"seq":128,"kind":"action","name":"place","args":{"item_id":"ketchup_pot_01","frame":"cutlery_basket","position_mm":[21.088180541992188,157.40619242191315,198.5],"orientation":{"preset":"inverted","yaw_deg":329}},"accepted":false,"result_digest":"sha256:c3a6eeeb9b7cb657597bff04f8cc26754b565e8ae1157d6d4eb9d6699bcad9f6","state_hash":"sha256:51f32a81dcaf6ac7f5be4685022e8546f68a7efab02deffcf1155c4a67687334","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":19,"queries_used":2,"washes_used":0}},
+{"seq":129,"kind":"action","name":"place","args":{"item_id":"ketchup_pot_01","frame":"cutlery_basket","position_mm":[21.088180541992188,157.40619242191315,183.5],"orientation":{"preset":"inverted","yaw_deg":329}},"accepted":false,"result_digest":"sha256:00a31229881fff7632fb047be4bab6ba88cd443513479159b3c73a65ecee68f4","state_hash":"sha256:51f32a81dcaf6ac7f5be4685022e8546f68a7efab02deffcf1155c4a67687334","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":19,"queries_used":2,"washes_used":0}},
+{"seq":130,"kind":"action","name":"place","args":{"item_id":"ketchup_pot_01","frame":"cutlery_basket","position_mm":[126.64260864257812,173.10483038425446,198.5],"orientation":{"preset":"upright","yaw_deg":258}},"accepted":false,"result_digest":"sha256:bf6f5285ede02f29a7e109bfe3cdbf066dd066b4961ac55aa3bbde7e2d5c7fe6","state_hash":"sha256:51f32a81dcaf6ac7f5be4685022e8546f68a7efab02deffcf1155c4a67687334","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":19,"queries_used":2,"washes_used":0}},
+{"seq":131,"kind":"action","name":"place","args":{"item_id":"ketchup_pot_01","frame":"cutlery_basket","position_mm":[126.64260864257812,173.10483038425446,183.5],"orientation":{"preset":"upright","yaw_deg":258}},"accepted":false,"result_digest":"sha256:a56ff7ca36f6980291dbddd226c34702f9405e1ca98e9d77c61d65f5db5c2d74","state_hash":"sha256:51f32a81dcaf6ac7f5be4685022e8546f68a7efab02deffcf1155c4a67687334","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":19,"queries_used":2,"washes_used":0}},
+{"seq":132,"kind":"action","name":"place","args":{"item_id":"ketchup_pot_01","frame":"cutlery_basket","position_mm":[64.06404113769531,62.56426692008972,198.5],"orientation":{"quat_wxyz":[0.7671,0.0107,0.0668,-0.638]}},"accepted":false,"result_digest":"sha256:24bd98254ba01f761cf78cac51d7c164cf16c304129fc234505416549d880e5e","state_hash":"sha256:51f32a81dcaf6ac7f5be4685022e8546f68a7efab02deffcf1155c4a67687334","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":19,"queries_used":2,"washes_used":0}},
+{"seq":133,"kind":"action","name":"place","args":{"item_id":"ketchup_pot_01","frame":"cutlery_basket","position_mm":[64.06404113769531,62.56426692008972,183.5],"orientation":{"quat_wxyz":[0.7671,0.0107,0.0668,-0.638]}},"accepted":false,"result_digest":"sha256:68bbac208222f1cc77f19e74f44345e22221151ed7f02654e88007c2893b1633","state_hash":"sha256:51f32a81dcaf6ac7f5be4685022e8546f68a7efab02deffcf1155c4a67687334","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":19,"queries_used":2,"washes_used":0}},
+{"seq":134,"kind":"action","name":"place","args":{"item_id":"ketchup_pot_01","frame":"cutlery_basket","position_mm":[76.48004913330078,81.39590680599213,198.5],"orientation":{"preset":"inverted_tilted","yaw_deg":332}},"accepted":false,"result_digest":"sha256:867c3bff5f011249c88514901a263bdb2d7d51f416c86784d3ca29a6f5ce1150","state_hash":"sha256:51f32a81dcaf6ac7f5be4685022e8546f68a7efab02deffcf1155c4a67687334","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":19,"queries_used":2,"washes_used":0}},
+{"seq":135,"kind":"action","name":"place","args":{"item_id":"ketchup_pot_01","frame":"cutlery_basket","position_mm":[76.48004913330078,81.39590680599213,183.5],"orientation":{"preset":"inverted_tilted","yaw_deg":332}},"accepted":false,"result_digest":"sha256:5321e449a8bccc570f521bb2a015fe5cf730c058ccf0e134f2ae92be67210f12","state_hash":"sha256:51f32a81dcaf6ac7f5be4685022e8546f68a7efab02deffcf1155c4a67687334","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":19,"queries_used":2,"washes_used":0}},
+{"seq":136,"kind":"action","name":"place","args":{"item_id":"ketchup_pot_01","frame":"cutlery_basket","position_mm":[93.51493072509766,145.87533056735992,198.5],"orientation":{"preset":"on_side","yaw_deg":303}},"accepted":false,"result_digest":"sha256:b78edb6c1f210e80988b38f98bf47b8fa99c4cf60afcb0f462e307bf42ad4ac6","state_hash":"sha256:51f32a81dcaf6ac7f5be4685022e8546f68a7efab02deffcf1155c4a67687334","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":19,"queries_used":2,"washes_used":0}},
+{"seq":137,"kind":"action","name":"place","args":{"item_id":"ketchup_pot_01","frame":"cutlery_basket","position_mm":[93.51493072509766,145.87533056735992,183.5],"orientation":{"preset":"on_side","yaw_deg":303}},"accepted":false,"result_digest":"sha256:49a307b18146c04d9fb8b26615b0e19c7d1005dece8067ab541e3eda401f01f8","state_hash":"sha256:51f32a81dcaf6ac7f5be4685022e8546f68a7efab02deffcf1155c4a67687334","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":19,"queries_used":2,"washes_used":0}},
+{"seq":138,"kind":"action","name":"place","args":{"item_id":"ketchup_pot_01","frame":"cutlery_basket","position_mm":[1.6262283325195312,139.35166478157043,198.5],"orientation":{"quat_wxyz":[-0.4039,-0.4404,-0.2157,0.7722]}},"accepted":true,"result_digest":"sha256:f6c7710074b87239dd037d7f9c62b14bb8822a3ff13b1e1cd94780974a28a9b7","state_hash":"sha256:86606bd9a34a3b299da35f362e875fd16999acfc7b0e482b039c727e44aac0ae","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":20,"queries_used":2,"washes_used":0}},
+{"seq":139,"kind":"action","name":"place","args":{"item_id":"squash_glass_02","frame":"lower_rack","position_mm":[350.46288818120956,89.37088012695312,330],"orientation":{"quat_wxyz":[-0.1074,0.2155,0.1166,0.9636]}},"accepted":true,"result_digest":"sha256:77a60c113be5c86a9db5251813f38252bd1c0f8f93c9e08086446e119e6c65ca","state_hash":"sha256:6041a1931f4f4b9916554a109d97ffd98df205540148b9176af5ee5dbbcbc26b","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":21,"queries_used":2,"washes_used":0}},
+{"seq":140,"kind":"action","name":"place","args":{"item_id":"fork_01","frame":"lower_rack","position_mm":[287.37751990556717,152.74761962890625,330],"orientation":{"preset":"on_edge","yaw_deg":105}},"accepted":true,"result_digest":"sha256:2f92109155f810614889d3e5ec1038aa6f8228525bee3ead6d760cd5a5892363","state_hash":"sha256:23d5bb3f77027bdf439ec2c1ad62906a8ae78200c283302d3cda162d3a189b90","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":22,"queries_used":2,"washes_used":0}},
+{"seq":141,"kind":"action","name":"place","args":{"item_id":"fork_02","frame":"lower_rack","position_mm":[38.47239464521408,194.20645141601562,330],"orientation":{"quat_wxyz":[0.139,0.1707,0.8933,0.3918]}},"accepted":true,"result_digest":"sha256:b0a8f095a4b70e640feecdcc258f96213b528d6d9114d62abe1aee74a76fcc53","state_hash":"sha256:0a122d86f2c978f84cb4279ae4d9e067deacdc3738941db219c97c82d83c111b","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":23,"queries_used":2,"washes_used":0}},
+{"seq":142,"kind":"action","name":"remove","args":{"item_id":"fork_02"},"accepted":true,"result_digest":"sha256:3581c9d07719fbf0c676e5f3dbbd435c81d30c5c447831aa56202d09b70da23a","state_hash":"sha256:23d5bb3f77027bdf439ec2c1ad62906a8ae78200c283302d3cda162d3a189b90","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":24,"queries_used":2,"washes_used":0}},
+{"seq":143,"kind":"action","name":"place","args":{"item_id":"fork_02","frame":"lower_rack","position_mm":[166.49877279996872,3.404022216796875,330],"orientation":{"preset":"flat","yaw_deg":137}},"accepted":true,"result_digest":"sha256:6789ec3dfe281f1db8a417d39899b066da87c1da328f83e5e9fad2d5b068dc49","state_hash":"sha256:5a4aeefda7c5a6315eeed216c4eecc655ef1444ad958f16a45c3b709ab8b48ef","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":25,"queries_used":2,"washes_used":0}},
+{"seq":144,"kind":"action","name":"remove","args":{"item_id":"fork_02"},"accepted":true,"result_digest":"sha256:23654cbc178d746156f34a18298063a273349ecdd8bf81d0f9bc4c83d3ca285a","state_hash":"sha256:23d5bb3f77027bdf439ec2c1ad62906a8ae78200c283302d3cda162d3a189b90","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":26,"queries_used":2,"washes_used":0}},
+{"seq":145,"kind":"action","name":"place","args":{"item_id":"knife_01","frame":"cutlery_basket","position_mm":[38.089271545410156,45.641902685165405,259],"orientation":{"preset":"flat_inverted","yaw_deg":127}},"accepted":true,"result_digest":"sha256:0c0dca07a647322783f2b8ea82973b3f3bf1c57e4a4bddd6032a80f9c6fd1e4a","state_hash":"sha256:4ecd68232ef99ed53905e93225cad3cc11589c37c79d6b656e1c8b258503f777","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":27,"queries_used":2,"washes_used":0}},
+{"seq":146,"kind":"action","name":"place","args":{"item_id":"spoon_03","frame":"lower_rack","position_mm":[227.49762386083603,343.81109619140625,330],"orientation":{"preset":"handle_down","yaw_deg":192}},"accepted":true,"result_digest":"sha256:04a3ac9a0e84ae09e2dedc574327cf852ae20595d98da3c9ca9e36e13ab612bf","state_hash":"sha256:32e1b12db856dcd4911c1de0127aa44ab11f23a05b4404622464ea25f7055fef","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":28,"queries_used":2,"washes_used":0}},
+{"seq":147,"kind":"action","name":"remove","args":{"item_id":"spoon_03"},"accepted":true,"result_digest":"sha256:dde480ed285fd02d1cac727b4fd398155f2c4d0b4cb2716ac4698b10ace65b54","state_hash":"sha256:c4880c88a6586a4cfba62359877a9e33074c30e0067ec2ced73df36f191a4792","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":29,"queries_used":2,"washes_used":0}},
+{"seq":148,"kind":"action","name":"place","args":{"item_id":"spoon_03","frame":"lower_rack","position_mm":[306.317737698555,176.97116088867188,330],"orientation":{"preset":"flat_inverted","yaw_deg":31}},"accepted":true,"result_digest":"sha256:1a37740cb737af70f2d088ce9f76e2886d786487edb8fa30ac1e5e4026ec3229","state_hash":"sha256:3222ea5d6e793fa30ad8290bd5e5f535b446257edd7989223f0a9128a16cf788","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":30,"queries_used":2,"washes_used":0}},
+{"seq":149,"kind":"action","name":"remove","args":{"item_id":"spoon_03"},"accepted":true,"result_digest":"sha256:12b8a184b1e21ee76a07a7c3917f98671d2fd196faadcc932bddd0e3ff946d74","state_hash":"sha256:c2a736c93551aa6948d02da465ab5a9b349e05094fbeab83bca813a436069368","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":31,"queries_used":2,"washes_used":0}},
+{"seq":150,"kind":"action","name":"place","args":{"item_id":"spoon_04","frame":"cutlery_basket","position_mm":[45.31703186035156,227.77829468250275,234],"orientation":{"preset":"handle_up","yaw_deg":225}},"accepted":false,"result_digest":"sha256:2156d5f95fb0156931abcea9bd012e4ed8264892a250ffb2d6f1a61118c6aaea","state_hash":"sha256:c2a736c93551aa6948d02da465ab5a9b349e05094fbeab83bca813a436069368","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":31,"queries_used":2,"washes_used":0}},
+{"seq":151,"kind":"action","name":"place","args":{"item_id":"spoon_04","frame":"cutlery_basket","position_mm":[45.31703186035156,227.77829468250275,219],"orientation":{"preset":"handle_up","yaw_deg":225}},"accepted":false,"result_digest":"sha256:aed3963663d7b07284e8d8e3443012fa44e99efee72932b596fc593b812fc67c","state_hash":"sha256:c2a736c93551aa6948d02da465ab5a9b349e05094fbeab83bca813a436069368","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":31,"queries_used":2,"washes_used":0}},
+{"seq":152,"kind":"action","name":"place","args":{"item_id":"spoon_04","frame":"cutlery_basket","position_mm":[91.74260711669922,107.79092192649841,234],"orientation":{"preset":"handle_down","yaw_deg":238}},"accepted":true,"result_digest":"sha256:33bfa81b1b4ff1dda3a5fd3c2667a6e2f3c0ba9c46e61fe44db485f4b65f703a","state_hash":"sha256:5612a2b4783fb26cdb785baed047654e35cf7f1115e134e1782e03536297b0a3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":32,"queries_used":2,"washes_used":0}},
+{"seq":153,"kind":"action","name":"place","args":{"item_id":"frying_pan_01","frame":"lower_rack","position_mm":[390.5466556549072,25.112548828125,343.7],"orientation":{"preset":"inverted","yaw_deg":323}},"accepted":true,"result_digest":"sha256:91a9c3f4f1db691b4efe1f3f5d2157c81d1588a42951a821e8c90da240001923","state_hash":"sha256:220ad0014dc4a88611ec458894851302475b26d8f8c3be3e98f724faafbcf270","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":33,"queries_used":2,"washes_used":0}},
+{"seq":154,"kind":"action","name":"remove","args":{"item_id":"frying_pan_01"},"accepted":false,"result_digest":"sha256:a2b65e3733333f26909bb873dff3ff835f34d5ffed2850bd646848ed48138c33","state_hash":"sha256:220ad0014dc4a88611ec458894851302475b26d8f8c3be3e98f724faafbcf270","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":33,"queries_used":2,"washes_used":0}},
+{"seq":155,"kind":"action","name":"place","args":{"item_id":"frying_pan_01","frame":"lower_rack","position_mm":[363.5437533259392,112.06002807617188,343.7],"orientation":{"preset":"inverted","yaw_deg":294}},"accepted":true,"result_digest":"sha256:c497eec29b01426d5cbcc011d5b2d9704deb10e98dad37fc2fb2f484103325fb","state_hash":"sha256:e18d0c9bd71759518973477b3d6771ec314a539acbe1bcdaa7c9585f50faa026","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":34,"queries_used":2,"washes_used":0}},
+{"seq":156,"kind":"action","name":"remove","args":{"item_id":"frying_pan_01"},"accepted":true,"result_digest":"sha256:069f3667a86092c3de6b7007f70f3d66ede45f66c9e5bcddaffbb36a5d6cb82a","state_hash":"sha256:a7b4e2a018ef96bc3fd4238c394dcad2be7b46b153f2067612615d2f3cf40784","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":35,"queries_used":2,"washes_used":0}},
+{"seq":157,"kind":"action","name":"set_rack","args":{"rack":"lower_rack","option":{"name":"position","value":"in"}},"accepted":true,"result_digest":"sha256:f7b8ca750be7354bb78d71e7396a0e1bcdc50b081f38d82e8dcbeef5798a28ba","state_hash":"sha256:0e729c2df3d8af3bd1e3af43ab91fbe0957e22637f19b16e23352f7638656ce4","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":36,"queries_used":2,"washes_used":0}},
+{"seq":158,"kind":"action","name":"set_rack","args":{"rack":"upper_rack","option":{"name":"position","value":"out"}},"accepted":true,"result_digest":"sha256:5a419cffff5ad7cc2cf07ca8fd308787737cb6e4d63b242d8fba4c7c605b73b5","state_hash":"sha256:f36bc168e5ebf9802edbc54e78218bf95f8ea9fa5656b2b6b54db1bb2b117ca9","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":37,"queries_used":2,"washes_used":0}},
+{"seq":159,"kind":"action","name":"place","args":{"item_id":"plate_01","frame":"upper_rack","position_mm":[431.72964453697205,110.49227178096771,218],"orientation":{"quat_wxyz":[-0.1915,-0.5665,0.6602,0.4544]}},"accepted":false,"result_digest":"sha256:c1575616c9f203164e0a6f863054b8343431489cc7a8afda279d72fdae229f55","state_hash":"sha256:f36bc168e5ebf9802edbc54e78218bf95f8ea9fa5656b2b6b54db1bb2b117ca9","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":37,"queries_used":2,"washes_used":0}},
+{"seq":160,"kind":"action","name":"place","args":{"item_id":"plate_01","frame":"upper_rack","position_mm":[453.6275863647461,22.53636932373047,218],"orientation":{"quat_wxyz":[-0.3523,0.6664,0.0947,-0.6503]}},"accepted":false,"result_digest":"sha256:8e98f5efba36528dd6358f77419e35e5fa3f04850344faf4666632a0a42e8ee8","state_hash":"sha256:f36bc168e5ebf9802edbc54e78218bf95f8ea9fa5656b2b6b54db1bb2b117ca9","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":37,"queries_used":2,"washes_used":0}},
+{"seq":161,"kind":"action","name":"place","args":{"item_id":"plate_01","frame":"upper_rack","position_mm":[212.65563368797302,257.21895718574524,218],"orientation":{"preset":"leaning","yaw_deg":283}},"accepted":true,"result_digest":"sha256:a7d510dc2259ede53188cea193714d5d70a03b1fda928b74bb232bada8a8701b","state_hash":"sha256:6fc5dc52ee33c805b82b888b2799b59be08b0ab01cd2fb43eb11455e223e205a","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":38,"queries_used":2,"washes_used":0}},
+{"seq":162,"kind":"action","name":"place","args":{"item_id":"plate_03","frame":"upper_rack","position_mm":[247.7189004421234,7.134365916252136,218],"orientation":{"preset":"inverted","yaw_deg":301}},"accepted":false,"result_digest":"sha256:8d95ab73b0e07eaba94509cd37cc029b9e826779b9da03e441503a92e9e11c87","state_hash":"sha256:6fc5dc52ee33c805b82b888b2799b59be08b0ab01cd2fb43eb11455e223e205a","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":38,"queries_used":2,"washes_used":0}},
+{"seq":163,"kind":"action","name":"place","args":{"item_id":"plate_03","frame":"upper_rack","position_mm":[363.36806416511536,278.1831604242325,218],"orientation":{"quat_wxyz":[-0.8504,-0.2132,-0.3446,0.3356]}},"accepted":false,"result_digest":"sha256:409663ee1968927de5f6c0017f29d52561239b2b326e0d2f6abd639a47158230","state_hash":"sha256:6fc5dc52ee33c805b82b888b2799b59be08b0ab01cd2fb43eb11455e223e205a","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":38,"queries_used":2,"washes_used":0}},
+{"seq":164,"kind":"action","name":"place","args":{"item_id":"plate_03","frame":"upper_rack","position_mm":[316.23589992523193,0.732163667678833,218],"orientation":{"quat_wxyz":[-0.5113,0.01,-0.1861,0.8389]}},"accepted":true,"result_digest":"sha256:32bd71e8f004f418b8f84482fd6858020f1d9e958c0ee8e9f246959ac20be8cd","state_hash":"sha256:6fc5dc52ee33c805b82b888b2799b59be08b0ab01cd2fb43eb11455e223e205a","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":39,"queries_used":2,"washes_used":0}},
+{"seq":165,"kind":"action","name":"remove","args":{"item_id":"plate_03"},"accepted":false,"result_digest":"sha256:a2b65e3733333f26909bb873dff3ff835f34d5ffed2850bd646848ed48138c33","state_hash":"sha256:6fc5dc52ee33c805b82b888b2799b59be08b0ab01cd2fb43eb11455e223e205a","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":39,"queries_used":2,"washes_used":0}},
+{"seq":166,"kind":"action","name":"place","args":{"item_id":"plate_03","frame":"upper_rack","position_mm":[398.1001079082489,106.91827654838562,218],"orientation":{"preset":"on_edge","yaw_deg":128}},"accepted":false,"result_digest":"sha256:e4dc7862577dbc54e91b49ea8469d6b49dd104dd2ee68addf9189d840e4543c6","state_hash":"sha256:6fc5dc52ee33c805b82b888b2799b59be08b0ab01cd2fb43eb11455e223e205a","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":39,"queries_used":2,"washes_used":0}},
+{"seq":167,"kind":"action","name":"place","args":{"item_id":"plate_03","frame":"upper_rack","position_mm":[204.68822121620178,204.95438611507416,218],"orientation":{"preset":"inverted","yaw_deg":88}},"accepted":false,"result_digest":"sha256:178fb6ba6dd13359a71b7304cce8ca4949d60e3a5852b715276572fb1fb1cf85","state_hash":"sha256:6fc5dc52ee33c805b82b888b2799b59be08b0ab01cd2fb43eb11455e223e205a","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":39,"queries_used":2,"washes_used":0}},
+{"seq":168,"kind":"action","name":"place","args":{"item_id":"plate_03","frame":"upper_rack","position_mm":[340.9721851348877,181.17355227470398,218],"orientation":{"preset":"leaning","yaw_deg":73}},"accepted":true,"result_digest":"sha256:5254ef1c3631c3a46a0c43e3c58e51ce1f556892e02791a9731da83f602b862a","state_hash":"sha256:b542f8011da5fc307261aff026aff3452f149eb5966a252464a896256b571660","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":40,"queries_used":2,"washes_used":0}},
+{"seq":169,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_01","frame":"upper_rack","position_mm":[358.66230726242065,213.48302721977234,218],"orientation":{"quat_wxyz":[0.0498,-0.1788,0.4251,-0.8859]}},"accepted":true,"result_digest":"sha256:1f07ce62d7888191c04833dbadfb1ce60c553eac26175e952613c5d65fe78180","state_hash":"sha256:ddc12d02d67db556ee37e709e8f7a7b3c291f4e00e4ed33d1efce7e1b1d53459","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":41,"queries_used":2,"washes_used":0}},
+{"seq":170,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_02","frame":"upper_rack","position_mm":[302.09970474243164,14.66517949104309,218],"orientation":{"preset":"upright","yaw_deg":160}},"accepted":true,"result_digest":"sha256:146a4b0625d56e6be9c1b9badbdcc3822193ab2712b76d5eaae2334bc7b90087","state_hash":"sha256:2c9f2becb11ee5eb907ce9d55b709391064fc61dca158ad80df2f97ce3ceb90a","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":42,"queries_used":2,"washes_used":0}},
+{"seq":171,"kind":"action","name":"remove","args":{"item_id":"yoghurt_bowl_02"},"accepted":true,"result_digest":"sha256:bee3bf38bd5bfb190b601afe941c23f440bf7019535a9f9d537079568593232f","state_hash":"sha256:ef2af313829f33021beb7dc308efc012e6949e85d78d6369433bc2e96a9a8b22","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":43,"queries_used":2,"washes_used":0}},
+{"seq":172,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_02","frame":"upper_rack","position_mm":[494.30808424949646,369.05973279476166,128.5],"orientation":{"quat_wxyz":[-0.2387,0.1574,0.772,-0.5677]}},"accepted":false,"result_digest":"sha256:5c201c57c6d389fbf9265539c25e057b393c6beb10f384eab91ba70bfa56276a","state_hash":"sha256:ef2af313829f33021beb7dc308efc012e6949e85d78d6369433bc2e96a9a8b22","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":43,"queries_used":2,"washes_used":0}},
+{"seq":173,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_02","frame":"upper_rack","position_mm":[494.30808424949646,369.05973279476166,108.5],"orientation":{"quat_wxyz":[-0.2387,0.1574,0.772,-0.5677]}},"accepted":false,"result_digest":"sha256:5c201c57c6d389fbf9265539c25e057b393c6beb10f384eab91ba70bfa56276a","state_hash":"sha256:ef2af313829f33021beb7dc308efc012e6949e85d78d6369433bc2e96a9a8b22","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":43,"queries_used":2,"washes_used":0}},
+{"seq":174,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_02","frame":"upper_rack","position_mm":[494.30808424949646,369.05973279476166,88.5],"orientation":{"quat_wxyz":[-0.2387,0.1574,0.772,-0.5677]}},"accepted":false,"result_digest":"sha256:fc9de4ef75007bff058aad2641d2fd1487912d73bc2eee11a24de343524bb0c1","state_hash":"sha256:ef2af313829f33021beb7dc308efc012e6949e85d78d6369433bc2e96a9a8b22","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":43,"queries_used":2,"washes_used":0}},
+{"seq":175,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_02","frame":"upper_rack","position_mm":[183.86763334274292,95.34352469444275,218],"orientation":{"preset":"inclined","yaw_deg":267}},"accepted":false,"result_digest":"sha256:e774b876b686ebc8e99ab422f217498d255e8bcf56c1df3b79245457f15e1040","state_hash":"sha256:ef2af313829f33021beb7dc308efc012e6949e85d78d6369433bc2e96a9a8b22","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":43,"queries_used":2,"washes_used":0}},
+{"seq":176,"kind":"action","name":"place","args":{"item_id":"yoghurt_bowl_02","frame":"upper_rack","position_mm":[395.60166001319885,161.85189378261566,218],"orientation":{"preset":"on_edge","yaw_deg":124}},"accepted":true,"result_digest":"sha256:5d7015e4d0bc130a3e80a32e1bbda606a5287c36253f18f82f74769e0a847581","state_hash":"sha256:677dc8e829de94c117accb47366a16cf1d74d8233cd90f8a767a10fb6171b3d3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":44,"queries_used":2,"washes_used":0}},
+{"seq":177,"kind":"action","name":"remove","args":{"item_id":"yoghurt_bowl_02"},"accepted":true,"result_digest":"sha256:9efc0fe972b29e9c25c7141af0db7731f1ba7f34a3341847ee4e09b62de8a31c","state_hash":"sha256:0367b569e9a6f1ac793b14e48bc2f51a12ad2f939f42e5e0b2a2f6f56f4e7a62","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":45,"queries_used":2,"washes_used":0}},
+{"seq":178,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_02","frame":"upper_rack","position_mm":[393.25612783432007,329.11507844924927,218],"orientation":{"preset":"on_side","yaw_deg":268}},"accepted":true,"result_digest":"sha256:59420592362cc9da5fbaa58ee0dd1641c4566237d55d08d3f81cdec41ec2ea4e","state_hash":"sha256:b173789f0c3af03bddc1e998cea6713fcde7a4ea50b6f8e5f3b589d060173c52","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":46,"queries_used":2,"washes_used":0}},
+{"seq":179,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_03","frame":"upper_rack","position_mm":[447.0946490764618,333.54964649677277,218],"orientation":{"quat_wxyz":[0.7822,0.5873,-0.1199,-0.1698]}},"accepted":true,"result_digest":"sha256:7c167ed9bc116c9e3d561b3a1af05c14a1bb855ad091fd3f8fc00122cdebb152","state_hash":"sha256:9f810019e1fa3799f272eb0b30bcf21744f34018eb678082a19caac9688e412f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":47,"queries_used":2,"washes_used":0}},
+{"seq":180,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_04","frame":"upper_rack","position_mm":[288.943886756897,25.10588800907135,218],"orientation":{"preset":"inverted_tilted","yaw_deg":287}},"accepted":true,"result_digest":"sha256:5d2b1ce612738a5c84b5faa7f4c368ad6d386b15de4242293d191572406ead37","state_hash":"sha256:9f810019e1fa3799f272eb0b30bcf21744f34018eb678082a19caac9688e412f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":48,"queries_used":2,"washes_used":0}},
+{"seq":181,"kind":"action","name":"remove","args":{"item_id":"smoothie_glass_04"},"accepted":false,"result_digest":"sha256:a2b65e3733333f26909bb873dff3ff835f34d5ffed2850bd646848ed48138c33","state_hash":"sha256:9f810019e1fa3799f272eb0b30bcf21744f34018eb678082a19caac9688e412f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":48,"queries_used":2,"washes_used":0}},
+{"seq":182,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_04","frame":"upper_rack","position_mm":[218.96839141845703,80.37234199047089,218],"orientation":{"preset":"on_side","yaw_deg":22}},"accepted":false,"result_digest":"sha256:27da79d3cf13e60738e2186cbfe7fff4dc06651d788772ad7bb4172157e1aa97","state_hash":"sha256:9f810019e1fa3799f272eb0b30bcf21744f34018eb678082a19caac9688e412f","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":48,"queries_used":2,"washes_used":0}},
+{"seq":183,"kind":"action","name":"place","args":{"item_id":"smoothie_glass_04","frame":"upper_rack","position_mm":[393.3306932449341,43.269697308540344,218],"orientation":{"preset":"upright","yaw_deg":0}},"accepted":true,"result_digest":"sha256:8b6ef1a2cfd04129a86ab902b4b34568388ff99735a7110bc69dfa367e8efe33","state_hash":"sha256:4958e263cfeef43e3d861bfa99b84b4d8f4e4c8f22dab2a04e694fb84c17cc9d","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":49,"queries_used":2,"washes_used":0}},
+{"seq":184,"kind":"action","name":"place","args":{"item_id":"mug_04","frame":"upper_rack","position_mm":[232.83103108406067,164.60212326049805,218],"orientation":{"quat_wxyz":[0.8099,0.4019,-0.4263,-0.0305]}},"accepted":false,"result_digest":"sha256:d64b5e9fcf6cfce86cb087378ca965ed97db8c99a2a533f668e2089a98fa03c1","state_hash":"sha256:4958e263cfeef43e3d861bfa99b84b4d8f4e4c8f22dab2a04e694fb84c17cc9d","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":49,"queries_used":2,"washes_used":0}},
+{"seq":185,"kind":"action","name":"place","args":{"item_id":"mug_04","frame":"upper_rack","position_mm":[155.78266978263855,260.8476880788803,218],"orientation":{"quat_wxyz":[-0.1331,-0.2342,0.7822,-0.5618]}},"accepted":false,"result_digest":"sha256:c99050b66b807360936d66495179ccf25fdc9f8abc6c745aab3f27c3fc32b4da","state_hash":"sha256:4958e263cfeef43e3d861bfa99b84b4d8f4e4c8f22dab2a04e694fb84c17cc9d","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":49,"queries_used":2,"washes_used":0}},
+{"seq":186,"kind":"action","name":"place","args":{"item_id":"mug_04","frame":"upper_rack","position_mm":[62.784820795059204,29.389932990074158,218],"orientation":{"quat_wxyz":[0.2883,-0.2674,0.8556,0.3367]}},"accepted":true,"result_digest":"sha256:5ca26e3ac556ae072cf24c862555364f362734d9bedf1348b996e183f311ff6d","state_hash":"sha256:1683bfc2fb6e0f67fd1b65da066d6bef4c70b21d1b982459e898a1dfb4ebec75","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":50,"queries_used":2,"washes_used":0}},
+{"seq":187,"kind":"action","name":"place","args":{"item_id":"ketchup_pot_02","frame":"upper_rack","position_mm":[463.92589807510376,93.88623225688934,218],"orientation":{"quat_wxyz":[-0.665,0.3235,-0.6693,0.0721]}},"accepted":true,"result_digest":"sha256:9afa0993ec15f1cd069a49c95c9b90143b55004d4e5b3502de3a405dc5e722b2","state_hash":"sha256:3760029237f5c9d6ee4f60dbe8483464a2be0d265493320ca86dab4239d45143","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":51,"queries_used":2,"washes_used":0}},
+{"seq":188,"kind":"action","name":"place","args":{"item_id":"squash_glass_01","frame":"upper_rack","position_mm":[283.48785638809204,124.6232442855835,218],"orientation":{"preset":"inverted_tilted","yaw_deg":344}},"accepted":false,"result_digest":"sha256:c3d1fc1944ac11bc3cf876e82c7f33dbbfaf1ccffc6de3465b26c9639439831b","state_hash":"sha256:3760029237f5c9d6ee4f60dbe8483464a2be0d265493320ca86dab4239d45143","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":51,"queries_used":2,"washes_used":0}},
+{"seq":189,"kind":"action","name":"place","args":{"item_id":"squash_glass_01","frame":"upper_rack","position_mm":[350.68193078041077,57.74760603904724,218],"orientation":{"quat_wxyz":[0.7494,-0.2541,-0.2526,-0.5568]}},"accepted":true,"result_digest":"sha256:2357988a83c1df0f8bd2e21bca539a5c8f3beb91db95f978c73c863a05d057ac","state_hash":"sha256:d11415058efeb263c46bd37b976176485473549c9817e79f9e394f0f502db154","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":52,"queries_used":2,"washes_used":0}},
+{"seq":190,"kind":"action","name":"place","args":{"item_id":"fork_03","frame":"upper_rack","position_mm":[353.23014855384827,91.1050432920456,218],"orientation":{"preset":"flat_inverted","yaw_deg":182}},"accepted":true,"result_digest":"sha256:1e37ba0c48af80e2d2d7151942e16f2adb053ae6ecdffc4dc35d167ae88ab294","state_hash":"sha256:00144fa294f36c3be388e659e63530d95b532fd2ecbf5022fd6bdfef9a9578b2","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":53,"queries_used":2,"washes_used":0}},
+{"seq":191,"kind":"action","name":"place","args":{"item_id":"fork_04","frame":"upper_rack","position_mm":[253.8498044013977,40.212544441223145,218],"orientation":{"quat_wxyz":[-0.2253,-0.892,-0.3838,-0.0793]}},"accepted":true,"result_digest":"sha256:114849c6face20efefd6e9855330f4178f9802019a44b0962c1834f5c5783c57","state_hash":"sha256:b21fec9a610cdff95b65ce38fd45abc616ee0503ce3d3e36e2282d73f4c9f347","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":54,"queries_used":2,"washes_used":0}},
+{"seq":192,"kind":"action","name":"remove","args":{"item_id":"fork_04"},"accepted":false,"result_digest":"sha256:a2b65e3733333f26909bb873dff3ff835f34d5ffed2850bd646848ed48138c33","state_hash":"sha256:b21fec9a610cdff95b65ce38fd45abc616ee0503ce3d3e36e2282d73f4c9f347","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":54,"queries_used":2,"washes_used":0}},
+{"seq":193,"kind":"action","name":"place","args":{"item_id":"fork_04","frame":"upper_rack","position_mm":[376.193642616272,229.71410965919495,218],"orientation":{"preset":"on_edge","yaw_deg":209}},"accepted":true,"result_digest":"sha256:52730a30e9cdd983bf388bc5d9e036ea0b1b44c722ec194381ddb5c9cd43d92b","state_hash":"sha256:d31ecd4406e62d86e0c0aba9657d3c760a2b3192b3e211cd3d44f8a01ca81230","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":55,"queries_used":2,"washes_used":0}},
+{"seq":194,"kind":"action","name":"place","args":{"item_id":"knife_02","frame":"upper_rack","position_mm":[290.4741168022156,17.84679365158081,218],"orientation":{"quat_wxyz":[-0.2573,0.7523,0.0634,0.6031]}},"accepted":true,"result_digest":"sha256:0afcb30b484910bd778a3bf96d9ea3f53f5527b14f9004f22e3554c4298d9444","state_hash":"sha256:d31ecd4406e62d86e0c0aba9657d3c760a2b3192b3e211cd3d44f8a01ca81230","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":56,"queries_used":2,"washes_used":0}},
+{"seq":195,"kind":"action","name":"remove","args":{"item_id":"knife_02"},"accepted":false,"result_digest":"sha256:a2b65e3733333f26909bb873dff3ff835f34d5ffed2850bd646848ed48138c33","state_hash":"sha256:d31ecd4406e62d86e0c0aba9657d3c760a2b3192b3e211cd3d44f8a01ca81230","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":56,"queries_used":2,"washes_used":0}},
+{"seq":196,"kind":"action","name":"place","args":{"item_id":"knife_02","frame":"upper_rack","position_mm":[326.8737196922302,22.19062042236328,218],"orientation":{"quat_wxyz":[0.2406,-0.8817,-0.1868,0.3602]}},"accepted":true,"result_digest":"sha256:ebb15a18cc4e862af51ac5e115bcd937fffc3f8fd768b8dca4e86ef43ece4e07","state_hash":"sha256:409fcc5c2b221d616e8725e0e0f1036a46ed56033b43d9670fb58d921342d1d3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":57,"queries_used":2,"washes_used":0}},
+{"seq":197,"kind":"action","name":"remove","args":{"item_id":"knife_02"},"accepted":false,"result_digest":"sha256:a2b65e3733333f26909bb873dff3ff835f34d5ffed2850bd646848ed48138c33","state_hash":"sha256:409fcc5c2b221d616e8725e0e0f1036a46ed56033b43d9670fb58d921342d1d3","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":57,"queries_used":2,"washes_used":0}},
+{"seq":198,"kind":"action","name":"place","args":{"item_id":"knife_03","frame":"upper_rack","position_mm":[51.05087161064148,31.69165062904358,218],"orientation":{"quat_wxyz":[0.7129,0.5112,0.4289,-0.2157]}},"accepted":true,"result_digest":"sha256:da1ac044499060259e7c43164d28bf14cae67afef2d579d7bcb60d28007540cd","state_hash":"sha256:84c7dcbea336f2cfa76eac6765ceef4d241021a64390ae4c9e06438ee8e4ca3a","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":58,"queries_used":2,"washes_used":0}},
+{"seq":199,"kind":"action","name":"remove","args":{"item_id":"knife_03"},"accepted":false,"result_digest":"sha256:a2b65e3733333f26909bb873dff3ff835f34d5ffed2850bd646848ed48138c33","state_hash":"sha256:84c7dcbea336f2cfa76eac6765ceef4d241021a64390ae4c9e06438ee8e4ca3a","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":58,"queries_used":2,"washes_used":0}},
+{"seq":200,"kind":"action","name":"place","args":{"item_id":"knife_03","frame":"upper_rack","position_mm":[352.4535000324249,45.810927987098694,218],"orientation":{"quat_wxyz":[-0.2474,0.7089,-0.3951,0.5293]}},"accepted":false,"result_digest":"sha256:a57de4d5de3e223e52cf7130016d23f0043f381f879bda4d8c7078cdfe52cd98","state_hash":"sha256:84c7dcbea336f2cfa76eac6765ceef4d241021a64390ae4c9e06438ee8e4ca3a","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":58,"queries_used":2,"washes_used":0}},
+{"seq":201,"kind":"action","name":"place","args":{"item_id":"knife_03","frame":"upper_rack","position_mm":[86.6885781288147,224.2070313692093,218],"orientation":{"preset":"on_edge","yaw_deg":261}},"accepted":true,"result_digest":"sha256:2cecf63dd0383f535c208fa9a3f016fd6569495e046790730737e9b7fee39351","state_hash":"sha256:ddd625cb7a00eb720df6f6a3231af6386de5ea7469f5aee55baa7329c8dca42e","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":59,"queries_used":2,"washes_used":0}},
+{"seq":202,"kind":"action","name":"place","args":{"item_id":"knife_04","frame":"upper_rack","position_mm":[269.94210481643677,84.3378278017044,218],"orientation":{"preset":"handle_up","yaw_deg":340}},"accepted":true,"result_digest":"sha256:44fd01c554401dd7e8f86dd35afb97dbe980e17222cc0551a780404094e2fcd6","state_hash":"sha256:0aa7cda5cef8b63e37f6e8837c72ca5edcf544547a30742d557c5a6175d91872","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":60,"queries_used":2,"washes_used":0}},
+{"seq":203,"kind":"action","name":"remove","args":{"item_id":"knife_04"},"accepted":true,"result_digest":"sha256:103d68f415f07ea3afa6e16d56e8c8a4e01b8970140145fc9421b16e68c14788","state_hash":"sha256:ddd625cb7a00eb720df6f6a3231af6386de5ea7469f5aee55baa7329c8dca42e","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":61,"queries_used":2,"washes_used":0}},
+{"seq":204,"kind":"action","name":"place","args":{"item_id":"knife_04","frame":"upper_rack","position_mm":[232.16533660888672,94.69251465797424,218],"orientation":{"quat_wxyz":[0.6779,0.4691,0.0028,0.566]}},"accepted":true,"result_digest":"sha256:8ffc2beec98a397c26f0b28495d6971334580a7f3cab697f86e73b13352caaa9","state_hash":"sha256:de56d445394a85e18a3f1d91994e5f73a0bfc8cc2b345db05c0ad238748855af","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":62,"queries_used":2,"washes_used":0}},
+{"seq":205,"kind":"action","name":"place","args":{"item_id":"spoon_01","frame":"upper_rack","position_mm":[361.40841245651245,126.69735181331635,218],"orientation":{"quat_wxyz":[0.5186,-0.3324,-0.2646,0.742]}},"accepted":true,"result_digest":"sha256:f2ef434554ead86428b330a5b764fb730c08b248574f63a72a753f9fb51d4ef7","state_hash":"sha256:11fd0765812ecdde22150140c1eba27cf4db75db94ba5f846aaccd7548023da5","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":63,"queries_used":2,"washes_used":0}},
+{"seq":206,"kind":"action","name":"place","args":{"item_id":"spoon_02","frame":"upper_rack","position_mm":[465.8876955509186,302.90298986434937,218],"orientation":{"quat_wxyz":[0.014,-0.2981,-0.0297,-0.954]}},"accepted":true,"result_digest":"sha256:936c01d0efd146ca7d4a5ef548cffa2c3e1ffdcb7e1c198e3f6ea08070307ede","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":207,"kind":"action","name":"place","args":{"item_id":"salad_bowl_01","frame":"upper_rack","position_mm":[68.99210810661316,178.71662163734436,218],"orientation":{"quat_wxyz":[0.1836,0.8843,-0.377,0.2054]}},"accepted":false,"result_digest":"sha256:649b315d4563d6aa46e76d535a82d8ec5e5617ecd2f49475843b2bff2df865e3","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":208,"kind":"action","name":"place","args":{"item_id":"salad_bowl_01","frame":"upper_rack","position_mm":[463.5618031024933,189.11093544960022,218],"orientation":{"quat_wxyz":[0.3233,0.3533,0.6015,0.6394]}},"accepted":false,"result_digest":"sha256:2d01f76dcf8dff57ec4e51e0630daaf87a9dc34279c276a04bcc1d01cae9d2d2","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":209,"kind":"action","name":"place","args":{"item_id":"salad_bowl_01","frame":"upper_rack","position_mm":[345.5333411693573,254.6454312801361,218],"orientation":{"quat_wxyz":[0.517,0.265,0.7734,-0.2535]}},"accepted":false,"result_digest":"sha256:c5aebbda3639e0efbb8d788fb397a057e64decbf3b052689ab8901259995d73a","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":210,"kind":"action","name":"place","args":{"item_id":"salad_bowl_01","frame":"upper_rack","position_mm":[109.15762186050415,177.1452273130417,218],"orientation":{"quat_wxyz":[0.7423,-0.4983,0.4479,-0.0094]}},"accepted":false,"result_digest":"sha256:874efbe16fafa66f2218df5a6a770fe5142dbb18e721f45876ac64c621935826","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":211,"kind":"action","name":"place","args":{"item_id":"salad_bowl_01","frame":"upper_rack","position_mm":[145.33275365829468,221.96352231502533,218],"orientation":{"preset":"inclined","yaw_deg":335}},"accepted":false,"result_digest":"sha256:ab44f1111d91e0734b76cd72bf3d5625c1c09cf3505c571a23c825f9e9936af2","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":212,"kind":"action","name":"place","args":{"item_id":"salad_bowl_01","frame":"upper_rack","position_mm":[9.653538465499878,229.66263914108276,218],"orientation":{"quat_wxyz":[0.0547,-0.4425,-0.8692,-0.2139]}},"accepted":false,"result_digest":"sha256:f234fa39f58b651d98619361fd9c4b6e907a61374441ec83f6d7eeeb503323e7","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":213,"kind":"action","name":"place","args":{"item_id":"salad_bowl_01","frame":"upper_rack","position_mm":[306.8602979183197,152.78993618488312,218],"orientation":{"quat_wxyz":[0.4256,0.0818,-0.5122,-0.7415]}},"accepted":false,"result_digest":"sha256:332c32686ba7b86b3c437803efd8e1a8810f3cb71aeccb6d72be6ed2da77b1c4","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":214,"kind":"action","name":"place","args":{"item_id":"salad_bowl_01","frame":"upper_rack","position_mm":[249.64112043380737,78.42127096652985,218],"orientation":{"preset":"inverted","yaw_deg":96}},"accepted":false,"result_digest":"sha256:9bf6dae8bee3daa2967b4a94a303a3d30d439421082a890daae17ea493e7537a","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":215,"kind":"action","name":"place","args":{"item_id":"salad_bowl_01","frame":"upper_rack","position_mm":[75.36324858665466,231.78872179985046,218],"orientation":{"quat_wxyz":[0.2579,-0.1362,0.9565,-0.011]}},"accepted":false,"result_digest":"sha256:e6afa9a3c4876d68ad8afee9a254abfc8c35ae7435380f782baa79eec1e9fa48","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":216,"kind":"action","name":"place","args":{"item_id":"oven_dish_01","frame":"upper_rack","position_mm":[298.6837327480316,41.71768605709076,218],"orientation":{"quat_wxyz":[0.2598,0.2642,-0.7891,-0.49]}},"accepted":false,"result_digest":"sha256:bbad15a98a289e4f8ba9a405aae6ea6073ed4c46b13542aa7228e9c12df7b8bd","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":217,"kind":"action","name":"place","args":{"item_id":"oven_dish_01","frame":"upper_rack","position_mm":[128.48997116088867,102.59095358848572,218],"orientation":{"preset":"inverted","yaw_deg":139}},"accepted":false,"result_digest":"sha256:957656d29a3c38cdd7ea4aabc74e0406aa8c1bc57019b22940c482bb49e879a2","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":218,"kind":"action","name":"place","args":{"item_id":"oven_dish_01","frame":"upper_rack","position_mm":[499.6814429759979,174.85339415073395,218],"orientation":{"quat_wxyz":[-0.1555,-0.9594,-0.2091,-0.1077]}},"accepted":false,"result_digest":"sha256:63965e0a6a8df5e60807844f9a5c32f8be448b4a3a526ba232e0c00d54c9a798","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":219,"kind":"action","name":"place","args":{"item_id":"oven_dish_01","frame":"upper_rack","position_mm":[454.328328371048,52.58811700344086,218],"orientation":{"quat_wxyz":[-0.3237,0.0838,0.9199,-0.205]}},"accepted":false,"result_digest":"sha256:549a4d16a4f87155fe62c094160f4bcfb3308119e673fc96726aa9fd88c33d53","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":220,"kind":"action","name":"place","args":{"item_id":"oven_dish_01","frame":"upper_rack","position_mm":[351.1226773262024,23.315699458122253,218],"orientation":{"quat_wxyz":[-0.121,-0.0362,-0.0254,-0.9917]}},"accepted":false,"result_digest":"sha256:973b22e762169fe3498dbb7edc64495581ff0afed18e4ffcdc5ab15197b07da0","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":221,"kind":"action","name":"set_rack","args":{"rack":"upper_rack","option":{"name":"position","value":"in"}},"accepted":false,"result_digest":"sha256:ae51352500397a202b65a8891d38382b198f99e74a2f1ddbc216e2f01e65c603","state_hash":"sha256:631402d9fdb64ce90dacbf6c51387d94c6b44723cb5a4e233266fa374920dc61","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":64,"queries_used":2,"washes_used":0}},
+{"seq":222,"kind":"action","name":"remove","args":{"item_id":"plate_01"},"accepted":true,"result_digest":"sha256:9e80693dfe6ff6cea0bef7f544dff3340e81d0634f393b817329450c292aa276","state_hash":"sha256:52d538db16fb99175d4717922f3f24d0911164ef34afb010a78abffbbbfec858","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":65,"queries_used":2,"washes_used":0}},
+{"seq":223,"kind":"action","name":"set_rack","args":{"rack":"upper_rack","option":{"name":"position","value":"in"}},"accepted":true,"result_digest":"sha256:554c81d6a4e088d6f220b29fbb1dab8838d5f7090e67906b6650c9d094a193b0","state_hash":"sha256:a609d92fe78b91d4de33f636211b45f5ef0c44f64651fd281148820b7bc6b644","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":66,"queries_used":2,"washes_used":0}},
+{"seq":224,"kind":"query","name":"check_load","args":{},"accepted":true,"result_digest":"sha256:f174e17f89e617a922c507cfe3ce09169452a71b64b2340b14bfc4f929daee1a","state_hash":"sha256:a609d92fe78b91d4de33f636211b45f5ef0c44f64651fd281148820b7bc6b644","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":66,"queries_used":3,"washes_used":0}},
+{"seq":225,"kind":"action","name":"remove","args":{"item_id":"mug_03"},"accepted":true,"result_digest":"sha256:b17c97f8325076a86f009600b714dcc6eb03fc8f956a6abcf8ef62052c3ec4c0","state_hash":"sha256:473912e0b5bcee356586cb5ad31e671b0c234996acb344acefeb350413838ec7","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":67,"queries_used":3,"washes_used":0}},
+{"seq":226,"kind":"action","name":"remove","args":{"item_id":"knife_04"},"accepted":true,"result_digest":"sha256:52c8c66c28b8febfc40b2c988fec5b208f4a30cc5cb143355445afd69f952c7f","state_hash":"sha256:b6be21cd95eafc5b32e885a8b8ab5376ead82cc0fe4d4f1b6e6ad6b68373e01d","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":68,"queries_used":3,"washes_used":0}},
+{"seq":227,"kind":"query","name":"check_load","args":{},"accepted":true,"result_digest":"sha256:eb809ae58368dbfc438d0b057d14cfbf256d25e6e3b9f915b8a11b7d50528ea9","state_hash":"sha256:b6be21cd95eafc5b32e885a8b8ab5376ead82cc0fe4d4f1b6e6ad6b68373e01d","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":68,"queries_used":4,"washes_used":0}},
+{"seq":228,"kind":"action","name":"set_rack","args":{"rack":"lower_rack","option":{"name":"position","value":"out"}},"accepted":true,"result_digest":"sha256:0a9247cc0ba099319fdcd2357866dcc0bc6d135c114929ae8ea992a91edcc4b6","state_hash":"sha256:8718e894fff4fd497988a614725fbdb20073013289b9e6b6aa243722f6e6d618","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":69,"queries_used":4,"washes_used":0}},
+{"seq":229,"kind":"action","name":"set_rack","args":{"rack":"lower_rack","option":{"name":"position","value":"in"}},"accepted":true,"result_digest":"sha256:55546f0e21a3229a792159596f0c087fb70d098d106fe52536dc8e13b9afb3e3","state_hash":"sha256:5ec4cc0251b1e6e01df1508366177c7f7f7419b85ad9ee1fa6b906fbdb818e9d","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":70,"queries_used":4,"washes_used":0}},
+{"seq":230,"kind":"action","name":"set_rack","args":{"rack":"upper_rack","option":{"name":"position","value":"out"}},"accepted":true,"result_digest":"sha256:19380027a61327b77d6f4887f639db9fa579e53f07c1411b491a4da6089f4bc2","state_hash":"sha256:e4b090816143d3bef4474c9098840ea74f4db0482e2b30fb42a19f369e6aec1a","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":71,"queries_used":4,"washes_used":0}},
+{"seq":231,"kind":"action","name":"set_rack","args":{"rack":"upper_rack","option":{"name":"position","value":"in"}},"accepted":true,"result_digest":"sha256:d9ca175caeed6bc89e5c6d6095c6fe3a6f822219218b15a21a5994fb6bb80fd8","state_hash":"sha256:5bb893c4f3f3516252886f108dfd5601afe8c9bce11d8176d7ccfd2306009566","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":72,"queries_used":4,"washes_used":0}},
+{"seq":232,"kind":"query","name":"check_load","args":{},"accepted":true,"result_digest":"sha256:4b357d8223b349f7abeea796c2ffc627b4625c6e67848ee9109dd2e7ee2c3716","state_hash":"sha256:5bb893c4f3f3516252886f108dfd5601afe8c9bce11d8176d7ccfd2306009566","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":72,"queries_used":5,"washes_used":0}},
+{"seq":233,"kind":"query","name":"get_state","args":{},"accepted":true,"result_digest":"sha256:d8c5b434a34ad968aa06fe1f41810955467412aab23794d99939734e347259ff","state_hash":"sha256:5bb893c4f3f3516252886f108dfd5601afe8c9bce11d8176d7ccfd2306009566","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":72,"queries_used":6,"washes_used":0}},
+{"seq":234,"kind":"action","name":"start_cycle","args":{},"accepted":true,"result_digest":"sha256:f6a2f0705269d4709855edc935f921f2998f5c3c3745c14e44c4f9acb07e1177","state_hash":"sha256:cbbf7e233de096c621508bdad10c89d12d5115340b8805abca8125f97eff6589","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":72,"queries_used":6,"washes_used":1}},
+{"seq":235,"kind":"query","name":"get_level","args":{},"accepted":true,"result_digest":"sha256:f8eb8690cbd528992dfaaec48e31a993048ed2e5e75c62fca77fb84efffceb4e","state_hash":"sha256:cbbf7e233de096c621508bdad10c89d12d5115340b8805abca8125f97eff6589","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":72,"queries_used":7,"washes_used":1}},
+{"seq":236,"kind":"query","name":"get_level","args":{},"accepted":true,"result_digest":"sha256:f8eb8690cbd528992dfaaec48e31a993048ed2e5e75c62fca77fb84efffceb4e","state_hash":"sha256:cbbf7e233de096c621508bdad10c89d12d5115340b8805abca8125f97eff6589","budget":{"actions_max":400,"queries_max":585,"washes_max":1,"actions_used":72,"queries_used":8,"washes_used":1}}
+]
+}

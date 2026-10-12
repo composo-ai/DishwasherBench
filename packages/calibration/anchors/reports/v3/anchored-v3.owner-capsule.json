@@ -1,0 +1,105 @@
+{
+ "format": "spotless.params",
+ "version": 1,
+ "provenance": {
+  "name": "anchored-v3.owner-capsule",
+  "origin": "calibration",
+  "note": "The anchored set anchored-v3 (docs/calibration/anchoring.md) with the owner's capsule laid over it: the composition of detergents/finish-powerball-ultimate.json (Finish Powerball Ultimate, desk research, nothing measured: docs/research/detergent-finish-ultimate.md) and the protease level of a premium unit dose (liq.xProtease = 0.03; estimated from the active protease of a premium unit dose in its maker's patents, not this product's). Wash with a dose of 12.9 g (dosing.detergentMass, a machine value). The protease is as stable as the registry says (liq.proteaseHalfLife 30 min at 60 C and pH 10.5, 1.7 times as long at the capsule's pH 10.1). No measurement of the capsule's protease exists: this is the lower end of a bracket whose upper end is the set with the suffix \"stable\".",
+  "washRecords": [
+   "std-eu-13.round-robin-ta.detergent-d"
+  ],
+  "createdAt": "2026-10-10T13:43:05.895Z"
+ },
+ "overrides": {
+  "liq.amylaseKox": 0.00006,
+  "liq.amylaseKoxHP": 0.000002,
+  "liq.tabletTau": 300,
+  "liq.xAmylase": 0.012,
+  "liq.xCarbonate": 3.3,
+  "liq.xPeroxide": 0.955,
+  "liq.xProtease": 0.03,
+  "liq.xSilicate": 0,
+  "liq.xSurfactant": 0.1,
+  "liq.xTaed": 0.175,
+  "soil.amountCv": 0.05,
+  "soil.egg_yolk.rateRef": 0.000034,
+  "soil.egg_yolk.tLag": 300,
+  "soil.milk.rateRef": 0.000034,
+  "soil.milk.tLag": 300,
+  "soil.subCellCv": 0.1
+ },
+ "definitions": {
+  "liq.amylaseKox": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "liq.amylaseKoxHP": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "liq.tabletTau": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "liq.xAmylase": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xCarbonate": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "liq.xPeroxide": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "liq.xProtease": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xSilicate": {
+   "kind": "scalar",
+   "unit": "eq/kg"
+  },
+  "liq.xSurfactant": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xTaed": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "soil.amountCv": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.egg_yolk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.egg_yolk.tLag": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "soil.milk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.milk.tLag": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "soil.subCellCv": {
+   "kind": "scalar",
+   "unit": "1"
+  }
+ },
+ "registryHash": "sha256:8e13be4b58f5e5f0a7a7329848b3c3eac1ee8fccaf8c148e05e9aae5b687c898",
+ "hydroHash": "sha256:e4abd440fb6306d0c522f2c99daf30296a2051298ff92c56599c9d7e23888651",
+ "soilHash": "sha256:346066b3e745e70c86b7873316916d0d4436b965a4945f219d8087709de0cd2e",
+ "anchoredOn": {
+  "simVersion": "spotless-sim 0.3.2 water-3",
+  "sourceHash": "sha256:97aa4d392843040da01252e2c616e5b0bced8cb5f608159e7aff197d8bab94d5",
+  "files": 176
+ }
+}

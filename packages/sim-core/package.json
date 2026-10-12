@@ -1,0 +1,42 @@
+{
+  "name": "@spotless/sim-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Wash simulation module M12: the orchestrator. wash(input, options), the exposure cache, the result per item, and the spotless-wash command",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./node": "./src/node/index.ts",
+    "./fingerprint": "./src/node/fingerprint.ts",
+    "./tier-agreement": "./src/node/tier-agreement.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "spotless-wash": "tsx scripts/spotless-wash.ts",
+    "bench:full-load": "tsx bench/full-load-wash.ts"
+  },
+  "dependencies": {
+    "@spotless/catalogue": "workspace:*",
+    "@spotless/core": "workspace:*",
+    "@spotless/geometry": "workspace:*",
+    "@spotless/inspector": "workspace:*",
+    "@spotless/machine": "workspace:*",
+    "@spotless/physics": "workspace:*",
+    "@spotless/sim-film": "workspace:*",
+    "@spotless/sim-gpu": "workspace:*",
+    "@spotless/sim-hydraulics": "workspace:*",
+    "@spotless/sim-jets": "workspace:*",
+    "@spotless/sim-liquor": "workspace:*",
+    "@spotless/sim-params": "workspace:*",
+    "@spotless/sim-rigid": "workspace:*",
+    "@spotless/sim-scene": "workspace:*",
+    "@spotless/sim-soil": "workspace:*",
+    "@spotless/sim-spray": "workspace:*",
+    "@spotless/sim-timeline": "workspace:*"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "when": "2026-10-08T15:22:21.800Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 201,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "dawnFlags": "enable-dawn-features=allow_unsafe_apis,disable_robustness",
+  "cases": [
+    {
+      "name": "vec4f buffers (baseline, 16 B/cell)",
+      "w": 2048,
+      "h": 2048,
+      "bytesPerCell": 16,
+      "cellUpdatesPerSec": {
+        "best": 3838893600.123307,
+        "median": 3828756467.483046,
+        "worst": 3691122184.1334243,
+        "n": 5,
+        "spreadPct": 3.8595146294855662
+      },
+      "trafficGBps": 122.52020695945747
+    },
+    {
+      "name": "vec4f buffers, update evaluated twice (2x flops)",
+      "w": 2048,
+      "h": 2048,
+      "bytesPerCell": 16,
+      "cellUpdatesPerSec": {
+        "best": 3865047013.117285,
+        "median": 3855864463.2822814,
+        "worst": 3808734916.859444,
+        "n": 5,
+        "spreadPct": 1.460427273678217
+      },
+      "trafficGBps": 123.387662825033
+    },
+    {
+      "name": "vec4<f16> buffers (8 B/cell), f32 arithmetic",
+      "w": 2048,
+      "h": 2048,
+      "bytesPerCell": 8,
+      "cellUpdatesPerSec": {
+        "best": 7743627659.847891,
+        "median": 7718134889.433425,
+        "worst": 7460298981.004806,
+        "n": 5,
+        "spreadPct": 3.6709474879867505
+      },
+      "trafficGBps": 123.4901582309348
+    },
+    {
+      "name": "rgba32float textures (16 B/cell)",
+      "w": 2048,
+      "h": 2048,
+      "bytesPerCell": 16,
+      "cellUpdatesPerSec": {
+        "best": 4121504940.045801,
+        "median": 4094657363.63698,
+        "worst": 4023285633.816677,
+        "n": 5,
+        "spreadPct": 2.398718561933181
+      },
+      "trafficGBps": 131.02903563638336
+    },
+    {
+      "name": "rgba16float textures (8 B/cell)",
+      "w": 2048,
+      "h": 2048,
+      "bytesPerCell": 8,
+      "cellUpdatesPerSec": {
+        "best": 8268060930.183478,
+        "median": 8229896275.505492,
+        "worst": 7986465893.461076,
+        "n": 5,
+        "spreadPct": 3.4216110057244506
+      },
+      "trafficGBps": 131.67834040808788
+    },
+    {
+      "name": "vec4f buffers (baseline, 16 B/cell)",
+      "w": 4096,
+      "h": 4096,
+      "bytesPerCell": 16,
+      "cellUpdatesPerSec": {
+        "best": 3817921080.75337,
+        "median": 3815268782.8467026,
+        "worst": 3792132850.152768,
+        "n": 5,
+        "spreadPct": 0.675921725791497
+      },
+      "trafficGBps": 122.08860105109449
+    },
+    {
+      "name": "vec4f buffers, update evaluated twice (2x flops)",
+      "w": 4096,
+      "h": 4096,
+      "bytesPerCell": 16,
+      "cellUpdatesPerSec": {
+        "best": 3757659556.076609,
+        "median": 3735056842.737958,
+        "worst": 3600763282.8336387,
+        "n": 5,
+        "spreadPct": 4.200639504269464
+      },
+      "trafficGBps": 119.52181896761465
+    },
+    {
+      "name": "vec4<f16> buffers (8 B/cell), f32 arithmetic",
+      "w": 4096,
+      "h": 4096,
+      "bytesPerCell": 8,
+      "cellUpdatesPerSec": {
+        "best": 7499224520.152694,
+        "median": 7333850330.501426,
+        "worst": 7085369256.850511,
+        "n": 5,
+        "spreadPct": 5.643083028037297
+      },
+      "trafficGBps": 117.3416052880228
+    },
+    {
+      "name": "rgba32float textures (16 B/cell)",
+      "w": 4096,
+      "h": 4096,
+      "bytesPerCell": 16,
+      "cellUpdatesPerSec": {
+        "best": 4013766180.837739,
+        "median": 3979699327.803357,
+        "worst": 3827891486.940069,
+        "n": 5,
+        "spreadPct": 4.6705712815813545
+      },
+      "trafficGBps": 127.35037848970742
+    },
+    {
+      "name": "rgba16float textures (8 B/cell)",
+      "w": 4096,
+      "h": 4096,
+      "bytesPerCell": 8,
+      "cellUpdatesPerSec": {
+        "best": 8223741002.274436,
+        "median": 8100573228.0854845,
+        "worst": 7959117797.809329,
+        "n": 5,
+        "spreadPct": 3.2667219592266914
+      },
+      "trafficGBps": 129.60917164936774
+    }
+  ],
+  "foreignAtEnd": []
+}

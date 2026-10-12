@@ -1,0 +1,164 @@
+{
+  "when": "2026-10-08T15:07:08.618Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 222,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "cases": [
+    {
+      "cells": 2000000,
+      "ordering": "row-major",
+      "workgroup": 64,
+      "meanNeighbourIdDistance": 666.332,
+      "finite": true,
+      "steps": 704,
+      "stepsPerSec": {
+        "best": 691.1715111669852,
+        "median": 690.1542970315276,
+        "worst": 679.9644467453343,
+        "n": 5,
+        "spreadPct": 1.6238491116920393
+      },
+      "cellUpdatesPerSec": {
+        "best": 1382343022.3339703,
+        "median": 1380308594.063055
+      }
+    },
+    {
+      "cells": 2000000,
+      "ordering": "row-major",
+      "workgroup": 256,
+      "meanNeighbourIdDistance": 666.332,
+      "finite": true,
+      "steps": 816,
+      "stepsPerSec": {
+        "best": 820.2082490249387,
+        "median": 819.1304092502514,
+        "worst": 811.2417289717796,
+        "n": 5,
+        "spreadPct": 1.0946388941128622
+      },
+      "cellUpdatesPerSec": {
+        "best": 1640416498.0498774,
+        "median": 1638260818.5005028
+      }
+    },
+    {
+      "cells": 2000000,
+      "ordering": "morton",
+      "workgroup": 64,
+      "meanNeighbourIdDistance": 645.78016,
+      "finite": true,
+      "steps": 816,
+      "stepsPerSec": {
+        "best": 806.1285862544211,
+        "median": 803.6780420143152,
+        "worst": 799.658251150777,
+        "n": 5,
+        "spreadPct": 0.8050904423650797
+      },
+      "cellUpdatesPerSec": {
+        "best": 1612257172.5088422,
+        "median": 1607356084.0286305
+      }
+    },
+    {
+      "cells": 2000000,
+      "ordering": "shuffled",
+      "workgroup": 64,
+      "meanNeighbourIdDistance": 666650.7249183333,
+      "finite": true,
+      "steps": 272,
+      "stepsPerSec": {
+        "best": 264.902747831918,
+        "median": 263.66576689011197,
+        "worst": 263.4449544116737,
+        "n": 5,
+        "spreadPct": 0.5528944608315072
+      },
+      "cellUpdatesPerSec": {
+        "best": 529805495.66383606,
+        "median": 527331533.7802239
+      }
+    },
+    {
+      "cells": 8000000,
+      "ordering": "row-major",
+      "workgroup": 64,
+      "meanNeighbourIdDistance": 1332.9968333333334,
+      "finite": true,
+      "steps": 160,
+      "stepsPerSec": {
+        "best": 145.92132788408364,
+        "median": 145.87760709211352,
+        "worst": 145.38085269330145,
+        "n": 5,
+        "spreadPct": 0.3704990790265083
+      },
+      "cellUpdatesPerSec": {
+        "best": 1167370623.072669,
+        "median": 1167020856.7369082
+      }
+    },
+    {
+      "cells": 8000000,
+      "ordering": "row-major",
+      "workgroup": 256,
+      "meanNeighbourIdDistance": 1332.9968333333334,
+      "finite": true,
+      "steps": 160,
+      "stepsPerSec": {
+        "best": 148.96998313031287,
+        "median": 148.80685962421177,
+        "worst": 147.186834137686,
+        "n": 5,
+        "spreadPct": 1.198297576556577
+      },
+      "cellUpdatesPerSec": {
+        "best": 1191759865.0425029,
+        "median": 1190454876.993694
+      }
+    },
+    {
+      "cells": 8000000,
+      "ordering": "morton",
+      "workgroup": 64,
+      "meanNeighbourIdDistance": 2582.12064,
+      "finite": true,
+      "steps": 208,
+      "stepsPerSec": {
+        "best": 193.90290349210224,
+        "median": 193.2566140872959,
+        "worst": 192.87139283413447,
+        "n": 5,
+        "spreadPct": 0.5337518008578109
+      },
+      "cellUpdatesPerSec": {
+        "best": 1551223227.936818,
+        "median": 1546052912.698367
+      }
+    },
+    {
+      "cells": 8000000,
+      "ordering": "shuffled",
+      "workgroup": 64,
+      "meanNeighbourIdDistance": 2667665.6789483335,
+      "finite": true,
+      "steps": 64,
+      "stepsPerSec": {
+        "best": 61.02999558771266,
+        "median": 60.72054891353453,
+        "worst": 60.296815767461396,
+        "n": 5,
+        "spreadPct": 1.2074657317332667
+      },
+      "cellUpdatesPerSec": {
+        "best": 488239964.7017013,
+        "median": 485764391.30827624
+      }
+    }
+  ],
+  "foreignAtEnd": []
+}

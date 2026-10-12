@@ -1,0 +1,23 @@
+name: A question
+description: How something works, how to run something, or what a result means.
+title: '[question] '
+labels: ['question']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Questions are welcome. The project is maintained at a small scale and there is no support commitment, so an answer may take a while.
+
+        Two places answer many questions: the [index of the documents](https://github.com/composo-ai/DishwasherBench/blob/main/docs/README.md) and [what a score can be trusted for](https://github.com/composo-ai/DishwasherBench/blob/main/docs/validation/README.md). Anything private goes to support@composo.ai, not here.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What you want to know, and what you have tried or read so far.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: If it is about a command or a result, the exact command, what it printed, your operating system and the commit. Do not paste a key, the address of an endpoint or a path that contains your name.

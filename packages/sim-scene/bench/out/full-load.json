@@ -1,0 +1,283 @@
+{
+  "benchmark": "sim-scene full load",
+  "stack": {
+    "sim": "0.0.0-dev",
+    "gpu": "apple metal-3 apple-m3-pro",
+    "os": "macOS 27.0.1 (26A434)",
+    "webgpu": "webgpu 0.6.2",
+    "runtime": "node 20.19.0",
+    "physics": "none"
+  },
+  "stackKey": "sim=0.0.0-dev; gpu=apple metal-3 apple-m3-pro; os=macOS 27.0.1 (26A434); webgpu=webgpu 0.6.2; runtime=node 20.19.0; physics=none",
+  "finishedAt": "2026-10-10T00:02:27.299Z",
+  "lockWaited": 0.154,
+  "machine": "bosch_smv4hax40g",
+  "load": {
+    "items": 114,
+    "itemTypes": {
+      "dinner_plate_porcelain_270": 12,
+      "dessert_plate_porcelain_190": 6,
+      "soup_plate_porcelain_230": 12,
+      "dinner_fork_185": 12,
+      "dinner_knife_210": 12,
+      "soup_spoon_190": 12,
+      "teaspoon_130": 12,
+      "tumbler_250": 12,
+      "mug_porcelain_240": 12,
+      "saucer_porcelain_140": 12
+    },
+    "placement": "lattice, no loading physics"
+  },
+  "scenes": [
+    {
+      "blockSize_m": 0.002,
+      "counts": {
+        "instances": 129,
+        "parts": 1642,
+        "patches": 2402,
+        "blocks": 1403579,
+        "lineBlocks": 14847,
+        "soilCells": 1867080,
+        "links": 3827324,
+        "drips": 59039,
+        "contacts": 61217,
+        "basins": 12,
+        "triangles": 1435998,
+        "hierarchyNodes": 909726,
+        "unclassifiedTriangles": 0
+      },
+      "itemBlocks": 1175112,
+      "machineBlocks": 228467,
+      "soiledBlocks": 466770,
+      "blockArea_m2": 8.8034,
+      "itemBlockArea_m2": 4.7739,
+      "basinVolume_L": 0.052,
+      "buildSeconds": 10.71,
+      "stageSeconds": {
+        "atlas": 1.533,
+        "blocks": 0.225,
+        "soil": 0.369,
+        "graph": 0.186,
+        "triangles": 1.071,
+        "hierarchy": 2.458,
+        "drips": 0.24,
+        "contacts": 4.612,
+        "basins": 0.017
+      },
+      "gpuSceneBytes": 112011240,
+      "gpuLiveBytes": 112011832,
+      "cpuBlockArrayBytes": 96846951,
+      "cpuGraphBytes": 74506152,
+      "cpuTraceBytes": 104503244,
+      "heapGrowthBytes": 695721071,
+      "rssBytes": 865599488,
+      "unsupported": []
+    },
+    {
+      "blockSize_m": 0.004,
+      "counts": {
+        "instances": 129,
+        "parts": 1642,
+        "patches": 2402,
+        "blocks": 357927,
+        "lineBlocks": 7729,
+        "soilCells": 474000,
+        "links": 961694,
+        "drips": 16807,
+        "contacts": 15681,
+        "basins": 12,
+        "triangles": 1435998,
+        "hierarchyNodes": 909726,
+        "unclassifiedTriangles": 0
+      },
+      "itemBlocks": 295632,
+      "machineBlocks": 62295,
+      "soiledBlocks": 118500,
+      "blockArea_m2": 8.8169,
+      "itemBlockArea_m2": 4.781,
+      "basinVolume_L": 0.052,
+      "buildSeconds": 5.045,
+      "stageSeconds": {
+        "atlas": 0.495,
+        "blocks": 0.077,
+        "soil": 0.121,
+        "graph": 0.064,
+        "triangles": 0.54,
+        "hierarchy": 2.536,
+        "drips": 0.092,
+        "contacts": 1.107,
+        "basins": 0.013
+      },
+      "gpuSceneBytes": 102292852,
+      "gpuLiveBytes": 102293444,
+      "cpuBlockArrayBytes": 24696963,
+      "cpuGraphBytes": 18742204,
+      "cpuTraceBytes": 99689316,
+      "heapGrowthBytes": 257609745,
+      "rssBytes": 1354661888,
+      "unsupported": []
+    }
+  ],
+  "results": [
+    {
+      "name": "GPU, 2 mm blocks, jet-like bundles of 19 sub-rays, 4194304 rays, 100 % hit",
+      "work": 4194304,
+      "unit": "rays",
+      "time": {
+        "best": 0.054259,
+        "median": 0.05444,
+        "worst": 0.055374,
+        "samples": [
+          0.055374,
+          0.05443,
+          0.055248,
+          0.05444,
+          0.054259
+        ]
+      },
+      "rate": {
+        "best": 77301535.22917856,
+        "median": 77044526.08376193
+      }
+    },
+    {
+      "name": "CPU f64 reference, 2 mm blocks, jet-like bundles of 19 sub-rays, 400000 rays",
+      "work": 400000,
+      "unit": "rays",
+      "time": {
+        "best": 1.1244981670000016,
+        "median": 1.1425947500000002,
+        "worst": 1.1626556250000013,
+        "samples": [
+          1.1244981670000016,
+          1.1425947500000002,
+          1.1626556250000013
+        ]
+      },
+      "rate": {
+        "best": 355714.2303460948,
+        "median": 350080.37626638834
+      }
+    },
+    {
+      "name": "GPU, 2 mm blocks, random segments of 10 mm, 4194304 rays, 9 % hit",
+      "work": 4194304,
+      "unit": "rays",
+      "time": {
+        "best": 0.038693,
+        "median": 0.039479,
+        "worst": 0.041328,
+        "samples": [
+          0.039478,
+          0.041328,
+          0.040279,
+          0.038693,
+          0.039479
+        ]
+      },
+      "rate": {
+        "best": 108399555.47515056,
+        "median": 106241394.15891993
+      }
+    },
+    {
+      "name": "CPU f64 reference, 2 mm blocks, random segments of 10 mm, 400000 rays",
+      "work": 400000,
+      "unit": "rays",
+      "time": {
+        "best": 0.6346165000000001,
+        "median": 0.6379019580000022,
+        "worst": 0.6399756669999987,
+        "samples": [
+          0.6346165000000001,
+          0.6379019580000022,
+          0.6399756669999987
+        ]
+      },
+      "rate": {
+        "best": 630301.9224996512,
+        "median": 627055.6078148903
+      }
+    },
+    {
+      "name": "GPU, 4 mm blocks, jet-like bundles of 19 sub-rays, 4194304 rays, 100 % hit",
+      "work": 4194304,
+      "unit": "rays",
+      "time": {
+        "best": 0.053822,
+        "median": 0.054547,
+        "worst": 0.055791,
+        "samples": [
+          0.054649,
+          0.053822,
+          0.055791,
+          0.054194,
+          0.054547
+        ]
+      },
+      "rate": {
+        "best": 77929173.94374047,
+        "median": 76893394.68715054
+      }
+    },
+    {
+      "name": "CPU f64 reference, 4 mm blocks, jet-like bundles of 19 sub-rays, 400000 rays",
+      "work": 400000,
+      "unit": "rays",
+      "time": {
+        "best": 1.1041243749999994,
+        "median": 1.114900625000002,
+        "worst": 1.1232244170000012,
+        "samples": [
+          1.1041243749999994,
+          1.114900625000002,
+          1.1232244170000012
+        ]
+      },
+      "rate": {
+        "best": 362278.0268753692,
+        "median": 358776.3707639856
+      }
+    },
+    {
+      "name": "GPU, 4 mm blocks, random segments of 10 mm, 4194304 rays, 9 % hit",
+      "work": 4194304,
+      "unit": "rays",
+      "time": {
+        "best": 0.038609,
+        "median": 0.039052,
+        "worst": 0.039522,
+        "samples": [
+          0.038818,
+          0.039522,
+          0.039052,
+          0.038609,
+          0.039387
+        ]
+      },
+      "rate": {
+        "best": 108635395.89214951,
+        "median": 107403052.3404691
+      }
+    },
+    {
+      "name": "CPU f64 reference, 4 mm blocks, random segments of 10 mm, 400000 rays",
+      "work": 400000,
+      "unit": "rays",
+      "time": {
+        "best": 0.6374827919999989,
+        "median": 0.6415191250000025,
+        "worst": 0.6492385419999992,
+        "samples": [
+          0.6374827919999989,
+          0.6415191250000025,
+          0.6492385419999992
+        ]
+      },
+      "rate": {
+        "best": 627467.9175967477,
+        "median": 623519.9924865817
+      }
+    }
+  ]
+}

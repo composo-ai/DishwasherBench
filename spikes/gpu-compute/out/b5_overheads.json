@@ -1,0 +1,357 @@
+{
+  "when": "2026-10-08T15:10:55.195Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 203,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "tiny": [
+    {
+      "name": "1 dispatch / pass / encoder / submit (await at end)",
+      "N": 10000,
+      "dispatchesPerSec": {
+        "best": 90649.94825383679,
+        "median": 84741.96225030311,
+        "worst": 82212.61507525822,
+        "n": 5,
+        "spreadPct": 9.956499654394529
+      },
+      "usEachMedian": 11.800529200000005,
+      "allExecuted": true
+    },
+    {
+      "name": "N passes (1 dispatch each) in ONE encoder, one submit",
+      "N": 10000,
+      "dispatchesPerSec": {
+        "best": 360208.92982431105,
+        "median": 357775.8904702024,
+        "worst": 344670.1076232415,
+        "n": 5,
+        "spreadPct": 4.343171973004627
+      },
+      "usEachMedian": 2.7950458000000022,
+      "allExecuted": true
+    },
+    {
+      "name": "N dispatches in ONE pass (setBindGroup each), one submit",
+      "N": 10000,
+      "dispatchesPerSec": {
+        "best": 616540.220432865,
+        "median": 612624.6752476587,
+        "worst": 608172.3278185063,
+        "n": 5,
+        "spreadPct": 1.3659085166584084
+      },
+      "usEachMedian": 1.6323208000000025,
+      "allExecuted": true
+    },
+    {
+      "name": "N dispatches in ONE pass (no rebinding), one submit",
+      "N": 10000,
+      "dispatchesPerSec": {
+        "best": 808750.6823833911,
+        "median": 796762.4672610301,
+        "worst": 788125.5953796259,
+        "n": 5,
+        "spreadPct": 2.5886117696615982
+      },
+      "usEachMedian": 1.2550792000000002,
+      "allExecuted": true
+    },
+    {
+      "name": "submit + await onSubmittedWorkDone after EVERY dispatch",
+      "N": 1000,
+      "dispatchesPerSec": {
+        "best": 11890.547463040506,
+        "median": 11208.45341556603,
+        "worst": 10161.315042437855,
+        "n": 5,
+        "spreadPct": 15.427930656348495
+      },
+      "usEachMedian": 89.21837499999992,
+      "allExecuted": true
+    }
+  ],
+  "scalarRoundTripMs": {
+    "best": 0.08712500000001455,
+    "median": 0.10783299999991414,
+    "worst": 0.7614579999999478,
+    "n": 380,
+    "spreadPct": 625.3493828424232
+  },
+  "readback": [
+    {
+      "mb": 4,
+      "checksumOK": true,
+      "freshStaging": {
+        "copyAndMapMs": {
+          "best": 0.3111669999998412,
+          "median": 0.3153749999999036,
+          "worst": 1.250250000000051,
+          "n": 5,
+          "spreadPct": 297.7671026557263
+        },
+        "getMappedRangeAndSliceMs": {
+          "best": 0.4783749999999145,
+          "median": 0.5595420000001923,
+          "worst": 0.9467920000001868,
+          "n": 5,
+          "spreadPct": 83.71435924383002
+        },
+        "totalMs": {
+          "best": 0.7937499999998181,
+          "median": 0.8707090000000335,
+          "worst": 2.019833999999946,
+          "n": 5,
+          "spreadPct": 140.81443972671477
+        },
+        "MBperSecMedian": 4593.957338215002
+      },
+      "reusedStaging": {
+        "copyAndMapMs": {
+          "best": 0.17212499999982356,
+          "median": 0.18937499999992724,
+          "worst": 0.26316700000006676,
+          "n": 5,
+          "spreadPct": 48.074983498496735
+        },
+        "getMappedRangeAndSliceMs": {
+          "best": 0.24733299999979863,
+          "median": 0.29541600000015933,
+          "worst": 1.2261250000001382,
+          "n": 5,
+          "spreadPct": 331.32667154108503
+        },
+        "totalMs": {
+          "best": 0.48179099999993014,
+          "median": 0.5427080000001752,
+          "worst": 1.3992080000000442,
+          "n": 5,
+          "spreadPct": 169.0443111212324
+        },
+        "MBperSecMedian": 7370.445985684215
+      },
+      "zeroCopyViewMs": {
+        "best": 0.1737909999999374,
+        "median": 0.1909579999999096,
+        "worst": 0.26520800000002964,
+        "n": 5,
+        "spreadPct": 47.87283067487904
+      }
+    },
+    {
+      "mb": 64,
+      "checksumOK": true,
+      "freshStaging": {
+        "copyAndMapMs": {
+          "best": 3.4314580000000205,
+          "median": 4.5305419999999685,
+          "worst": 29.29300000000012,
+          "n": 5,
+          "spreadPct": 570.8266693035906
+        },
+        "getMappedRangeAndSliceMs": {
+          "best": 9.250708000000031,
+          "median": 9.339291999999887,
+          "worst": 14.538666999999805,
+          "n": 5,
+          "spreadPct": 56.62055539113498
+        },
+        "totalMs": {
+          "best": 12.770749999999907,
+          "median": 13.782916999999998,
+          "worst": 43.831666999999925,
+          "n": 5,
+          "spreadPct": 225.3580791352079
+        },
+        "MBperSecMedian": 4643.429253763918
+      },
+      "reusedStaging": {
+        "copyAndMapMs": {
+          "best": 1.6356250000001182,
+          "median": 1.6801249999998618,
+          "worst": 1.7345840000002681,
+          "n": 5,
+          "spreadPct": 5.889978424233795
+        },
+        "getMappedRangeAndSliceMs": {
+          "best": 4.1747919999997976,
+          "median": 4.321915999999874,
+          "worst": 8.559625000000096,
+          "n": 5,
+          "spreadPct": 101.45576637769977
+        },
+        "totalMs": {
+          "best": 5.854916999999659,
+          "median": 6.056500000000142,
+          "worst": 10.244167000000061,
+          "n": 5,
+          "spreadPct": 72.47172459341698
+        },
+        "MBperSecMedian": 10567.159250391893
+      },
+      "zeroCopyViewMs": {
+        "best": 1.9175000000000182,
+        "median": 1.95962499999996,
+        "worst": 2.259416999999985,
+        "n": 5,
+        "spreadPct": 17.448083179178347
+      }
+    },
+    {
+      "mb": 256,
+      "checksumOK": true,
+      "freshStaging": {
+        "copyAndMapMs": {
+          "best": 15.680041999999958,
+          "median": 16.074542000000292,
+          "worst": 20.369750000000295,
+          "n": 5,
+          "spreadPct": 29.17475347042704
+        },
+        "getMappedRangeAndSliceMs": {
+          "best": 38.41370800000004,
+          "median": 40.0290829999999,
+          "worst": 41.870666999999685,
+          "n": 5,
+          "spreadPct": 8.636118394217652
+        },
+        "totalMs": {
+          "best": 54.488250000000335,
+          "median": 57.13974999999982,
+          "worst": 59.964292000000114,
+          "n": 5,
+          "spreadPct": 9.583594607956451
+        },
+        "MBperSecMedian": 4480.2436132464845
+      },
+      "reusedStaging": {
+        "copyAndMapMs": {
+          "best": 4.843499999999949,
+          "median": 5.058666999999787,
+          "worst": 5.11304199999995,
+          "n": 5,
+          "spreadPct": 5.328320682108798
+        },
+        "getMappedRangeAndSliceMs": {
+          "best": 17.926292000000103,
+          "median": 18.447375000000193,
+          "worst": 38.64504100000022,
+          "n": 5,
+          "spreadPct": 112.31272199974197
+        },
+        "totalMs": {
+          "best": 22.98495899999989,
+          "median": 23.55441699999983,
+          "worst": 43.61683300000004,
+          "n": 5,
+          "spreadPct": 87.59237810895638
+        },
+        "MBperSecMedian": 10868.449853800323
+      },
+      "zeroCopyViewMs": {
+        "best": 5.579791999999998,
+        "median": 5.986625000000004,
+        "worst": 6.109124999999949,
+        "n": 5,
+        "spreadPct": 8.8419267951467
+      }
+    }
+  ],
+  "upload": [
+    {
+      "mb": 4,
+      "writeBufferMs": {
+        "best": 0.14587500000016007,
+        "median": 0.35229100000015023,
+        "worst": 2.6819580000001224,
+        "n": 5,
+        "spreadPct": 719.8829944559699
+      },
+      "writeBufferCallMs": {
+        "best": 0.12887499999987995,
+        "median": 0.33220799999980954,
+        "worst": 2.6618750000002365,
+        "n": 5,
+        "spreadPct": 762.4741126046961
+      },
+      "mappedAtCreationMs": {
+        "best": 0.3304169999996702,
+        "median": 1.4744160000000193,
+        "worst": 2.8169169999996484,
+        "n": 5,
+        "spreadPct": 168.64304239779992
+      },
+      "writeBufferMBps": 11354.249753749866,
+      "mappedAtCreationMBps": 2712.938546516009
+    },
+    {
+      "mb": 64,
+      "writeBufferMs": {
+        "best": 8.662874999999985,
+        "median": 9.271041999999852,
+        "worst": 10.598791999999776,
+        "n": 5,
+        "spreadPct": 20.88133135412202
+      },
+      "writeBufferCallMs": {
+        "best": 5.868874999999662,
+        "median": 6.381915999999819,
+        "worst": 7.931292000000212,
+        "n": 5,
+        "spreadPct": 32.316580161829286
+      },
+      "mappedAtCreationMs": {
+        "best": 10.010458000000199,
+        "median": 10.564375000000382,
+        "worst": 11.644249999999829,
+        "n": 5,
+        "spreadPct": 15.465107968995527
+      },
+      "writeBufferMBps": 6903.215409875289,
+      "mappedAtCreationMBps": 6058.09619594133
+    },
+    {
+      "mb": 256,
+      "writeBufferMs": {
+        "best": 34.8037089999998,
+        "median": 35.504083000000264,
+        "worst": 38.2013750000001,
+        "n": 5,
+        "spreadPct": 9.569789480269844
+      },
+      "writeBufferCallMs": {
+        "best": 24.603999999999814,
+        "median": 26.064792000000125,
+        "worst": 27.758041999999932,
+        "n": 5,
+        "spreadPct": 12.100775636345391
+      },
+      "mappedAtCreationMs": {
+        "best": 41.997665999999754,
+        "median": 44.05141700000013,
+        "worst": 47.32600000000002,
+        "n": 5,
+        "spreadPct": 12.095715331927353
+      },
+      "writeBufferMBps": 7210.438303673358,
+      "mappedAtCreationMBps": 5811.390811787037
+    }
+  ],
+  "pipelineCreateMs": {
+    "best": 15.135957999999846,
+    "median": 15.652749999999742,
+    "worst": 16.286209000000326,
+    "n": 5,
+    "spreadPct": 7.34855536567376
+  },
+  "firstDispatchMs": {
+    "best": 0.6016669999999067,
+    "median": 0.6110000000003311,
+    "worst": 0.6497079999999187,
+    "n": 5,
+    "spreadPct": 7.8626841243839545
+  },
+  "foreignAtEnd": []
+}

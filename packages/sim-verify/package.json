@@ -1,0 +1,38 @@
+{
+  "name": "@spotless/sim-verify",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Wash simulation module M13: reference implementations, conservation audits, the phenomena harness and the contract checks",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "check-deps": "tsx scripts/check-dependency-graph.ts"
+  },
+  "dependencies": {
+    "@spotless/catalogue": "workspace:*",
+    "@spotless/core": "workspace:*",
+    "@spotless/geometry": "workspace:*",
+    "@spotless/machine": "workspace:*",
+    "@spotless/physics": "workspace:*",
+    "@spotless/sim-core": "workspace:*",
+    "@spotless/sim-film": "workspace:*",
+    "@spotless/sim-gpu": "workspace:*",
+    "@spotless/sim-hydraulics": "workspace:*",
+    "@spotless/sim-jets": "workspace:*",
+    "@spotless/sim-liquor": "workspace:*",
+    "@spotless/sim-params": "workspace:*",
+    "@spotless/sim-rigid": "workspace:*",
+    "@spotless/sim-scene": "workspace:*",
+    "@spotless/sim-soil": "workspace:*",
+    "@spotless/sim-spray": "workspace:*",
+    "@spotless/sim-timeline": "workspace:*"
+  }
+}

@@ -1,0 +1,104 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "glass-free",
+ "description": "P13: one 250 mL test glass mouth down on the floor of the upper basket, clear of the tines (the scenario also sets it over a tine, as an exact pose)",
+ "recipe_hash": "sha256:4df6401262970d47dbc6d91c9cf80fba1f6f3ae061c6734903a6e72a310e7450",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "glass",
+   "item_type": "test_glass_borosilicate_250",
+   "pose": {
+    "p": [
+     0.1943457719141844,
+     0.1303676640923767,
+     0.5613367828517366
+    ],
+    "q": [
+     0.988161563873291,
+     0.1440737098455429,
+     -0.05216965079307556,
+     -0.007605226710438728
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 16.3,
+    "rotation_deg": 17.2,
+    "contacts": [
+     "upper_rack.floor.x",
+     "upper_rack.floor.y",
+     "upper_rack_fittings.shelf.cup_rear"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:1312cf4d7fe1bf9460b38568a2ffd9e1874dd5eea46fd2e29e506053870733ab"
+}

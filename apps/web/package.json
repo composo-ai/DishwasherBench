@@ -1,0 +1,50 @@
+{
+  "name": "@spotless/web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Human 3D client (Vite + Three.js)",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "tsx ../../packages/server/src/cli.ts serve --data ../../.spotless",
+    "play": "vite build && tsx ../../packages/server/src/cli.ts serve --data ../../.spotless",
+    "screenshots": "vite build && tsx scripts/play-tutorial.ts",
+    "wash-shots": "vite build && tsx scripts/play-wash.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "benchmark-shots": "vite build && tsx scripts/play-benchmark.ts",
+    "measure-placing": "vite build && tsx scripts/measure-placing.ts",
+    "check-edges": "vite build && tsx scripts/check-edges.ts",
+    "count-gestures": "vite build && tsx scripts/count-gestures.ts",
+    "measure-frame": "vite build && tsx scripts/measure-frame.ts",
+    "audio-check": "vite build && tsx scripts/audio-mix-check.ts",
+    "audio-joins": "vite build && tsx scripts/audio-joins.ts",
+    "audio-live": "vite build && tsx scripts/audio-live-check.ts"
+  },
+  "dependencies": {
+    "@spotless/core": "workspace:*",
+    "@spotless/geometry": "workspace:*",
+    "@spotless/render": "workspace:*",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@spotless/catalogue": "workspace:*",
+    "@spotless/levels": "workspace:*",
+    "@spotless/machine": "workspace:*",
+    "@spotless/server": "workspace:*",
+    "@spotless/session": "workspace:*",
+    "@spotless/wash-runner": "workspace:*",
+    "@types/three": "0.186.0",
+    "puppeteer-core": "24.43.1",
+    "vite": "8.3.4"
+  }
+}

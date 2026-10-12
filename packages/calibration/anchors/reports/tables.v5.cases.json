@@ -1,0 +1,272 @@
+[
+ {
+  "name": "eco record v5 D careful L1S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "eco record v5 D careful L1S2",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 2
+ },
+ {
+  "name": "eco record v5 D careful L2S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 2,
+  "simSeed": 1
+ },
+ {
+  "name": "eco record v5 D careful L2S2",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 2,
+  "simSeed": 2
+ },
+ {
+  "name": "eco as written v5 D careful L1S1",
+  "programme": "eco_50",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "eco record defaults D careful L1S1",
+  "programme": "eco_record",
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "eco record v5 D careless L1S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "load": "iec-13-careless",
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "eco capsule careful L1S1",
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ },
+ {
+  "name": "eco capsule careful L1S2",
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 2,
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ },
+ {
+  "name": "eco capsule careful L2S1",
+  "programme": "eco_50",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ },
+ {
+  "name": "eco capsule careful L2S2",
+  "programme": "eco_50",
+  "levelSeed": 2,
+  "simSeed": 2,
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ },
+ {
+  "name": "eco capsule careless L1S1",
+  "programme": "eco_50",
+  "load": "iec-13-careless",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ },
+ {
+  "name": "eco capsule careless L2S1",
+  "programme": "eco_50",
+  "load": "iec-13-careless",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ },
+ {
+  "name": "eco capsule careful duty 1",
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 1
+  },
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ },
+ {
+  "name": "eco capsule careful duty 0.75",
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.75
+  },
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ },
+ {
+  "name": "eco capsule careful duty 0.25",
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.25
+  },
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ },
+ {
+  "name": "eco capsule careful cycle 150",
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakCycle": 150
+  },
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ },
+ {
+  "name": "eco capsule careful cycle 2400",
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakCycle": 2400
+  },
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ },
+ {
+  "name": "eco capsule careless duty 1",
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 1
+  },
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9,
+  "load": "iec-13-careless"
+ },
+ {
+  "name": "eco capsule careless duty 0.75",
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.75
+  },
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9,
+  "load": "iec-13-careless"
+ },
+ {
+  "name": "eco capsule careless duty 0.25",
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.25
+  },
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9,
+  "load": "iec-13-careless"
+ },
+ {
+  "name": "eco capsule careless cycle 150",
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakCycle": 150
+  },
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9,
+  "load": "iec-13-careless"
+ },
+ {
+  "name": "eco capsule careless cycle 2400",
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakCycle": 2400
+  },
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9,
+  "load": "iec-13-careless"
+ },
+ {
+  "name": "eco record v5 D careful duty 1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 1
+  }
+ },
+ {
+  "name": "eco record v5 D careful duty 0.25",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.25
+  }
+ },
+ {
+  "name": "auto capsule careful L1S1",
+  "course": "as_written",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ },
+ {
+  "name": "auto capsule careless L1S1",
+  "course": "as_written",
+  "load": "iec-13-careless",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ },
+ {
+  "name": "eco capsule careful fast L1S1",
+  "programme": "eco_50",
+  "tier": "fast",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ },
+ {
+  "name": "eco capsule careless fast L1S1",
+  "programme": "eco_50",
+  "tier": "fast",
+  "load": "iec-13-careless",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "set": "anchored-v5.owner-capsule",
+  "dose_g": 12.9
+ }
+]

@@ -1,0 +1,371 @@
+{
+  "tier": "official",
+  "backend": "gpu",
+  "overrides": {},
+  "stack": {
+    "sim": "exposure bench",
+    "gpu": "apple metal-3 apple-m3-pro",
+    "os": "macOS 27.0.1 (26A434)",
+    "webgpu": "webgpu 0.6.2",
+    "runtime": "node 20.19.0",
+    "physics": "none"
+  },
+  "items": 114,
+  "blocks": 1403579,
+  "soilCells": 4700448,
+  "dripSites": 59039,
+  "contactLinks": 61217,
+  "basins": 12,
+  "itemArea_m2": 4.773901268543341,
+  "sceneBuild_ms": 17073,
+  "gpuSceneBytes": 112011240,
+  "gpuPeakBytes": 166799928,
+  "rssBytes": 989609984,
+  "heapUsedBytes": 127989624,
+  "arrayBuffersBytes": 993167911,
+  "exposure_ms": 309347,
+  "encodedBytes": 512317384,
+  "deflatedBytes": 186002644,
+  "states": [
+    {
+      "id": "l@2800",
+      "duration_s": 990,
+      "period_s": 1.5074973475652527,
+      "total_ms": 71419,
+      "stages_ms": {
+        "jets:setup": 41,
+        "jets:trace": 11659,
+        "jets:tables": 535,
+        "spray:sources": 15,
+        "spray:flight": 7956,
+        "spray:drips": 3187,
+        "spray:tables": 79,
+        "film:static": 3456,
+        "film:march": 43636,
+        "film:tables": 216
+      },
+      "jetRays": 4513792,
+      "jetCells": 1677052,
+      "parcels": 1048576,
+      "wetBlocks": 1145171,
+      "encodedBytes": 152266068,
+      "deflatedBytes": 46992232,
+      "water": {
+        "unit": 1e-12,
+        "nozzle": 704964804500,
+        "jets": 704964804500,
+        "showers": 0,
+        "jetLost": 671857447,
+        "handover": 558956742906,
+        "splatter": 34932475999,
+        "scatter": 110403728148,
+        "dropletsLanded": 144860924875,
+        "dropletsLost": 475279272,
+        "filmFed": 703817667781,
+        "closes": true,
+        "sumpReturnFraction": 0.9940421587146058
+      },
+      "film": {
+        "steps": 64,
+        "pilotRevolutions": 4,
+        "settleRevolutions": 2,
+        "recordedRevolutions": 2,
+        "fedPerRevolution": 703817667781,
+        "fed": 5630541342248,
+        "primed": 245658733567,
+        "toSump": 5297934901182,
+        "stored": 578265174633,
+        "sumpLastRevolution": 699617599364,
+        "storedChange": 0.005967551838023614,
+        "wetChange": 0.018221638294920836,
+        "converged": true,
+        "heldOnItems": 0.402090874059,
+        "heldInBasins": 0.051682189558196846,
+        "itemWetFraction": 0.7829189124631716,
+        "retainedOnItems": 0.165442819798
+      },
+      "liftRatios": [
+        {
+          "itemId": "teaspoon_130_04",
+          "peakUp_N": 0.04524463817077908,
+          "liftRatio": 0.18906134820430637
+        },
+        {
+          "itemId": "teaspoon_130_12",
+          "peakUp_N": 0.041320103399276276,
+          "liftRatio": 0.17266210478071323
+        },
+        {
+          "itemId": "teaspoon_130_05",
+          "peakUp_N": 0.03818177433557925,
+          "liftRatio": 0.15954813707360666
+        },
+        {
+          "itemId": "soup_spoon_190_10",
+          "peakUp_N": 0.06800251671504932,
+          "liftRatio": 0.12427458751528653
+        },
+        {
+          "itemId": "dinner_fork_185_05",
+          "peakUp_N": 0.05488171275764956,
+          "liftRatio": 0.1242640164931397
+        }
+      ]
+    },
+    {
+      "id": "l@3000",
+      "duration_s": 1921,
+      "period_s": 1.4286051382250722,
+      "total_ms": 80927,
+      "stages_ms": {
+        "jets:setup": 65,
+        "jets:trace": 13575,
+        "jets:tables": 524,
+        "spray:sources": 39,
+        "spray:flight": 7234,
+        "spray:drips": 0,
+        "spray:tables": 51,
+        "film:static": 0,
+        "film:march": 59240,
+        "film:tables": 200
+      },
+      "jetRays": 4513792,
+      "jetCells": 1731012,
+      "parcels": 1048576,
+      "wetBlocks": 1154481,
+      "encodedBytes": 155719472,
+      "deflatedBytes": 47868180,
+      "water": {
+        "unit": 1e-12,
+        "nozzle": 717293253094,
+        "jets": 717293253094,
+        "showers": 0,
+        "jetLost": 681832403,
+        "handover": 562663773897,
+        "splatter": 41729358200,
+        "scatter": 112218288594,
+        "dropletsLanded": 153471624295,
+        "dropletsLost": 476022499,
+        "filmFed": 716135398192,
+        "closes": true,
+        "sumpReturnFraction": 0.9939675955596463
+      },
+      "film": {
+        "steps": 64,
+        "pilotRevolutions": 4,
+        "settleRevolutions": 2,
+        "recordedRevolutions": 2,
+        "fedPerRevolution": 716135398192,
+        "fed": 5729083185536,
+        "primed": 248755313325,
+        "toSump": 5380982336964,
+        "stored": 596856161897,
+        "sumpLastRevolution": 711808395187,
+        "storedChange": 0.006042157692419926,
+        "wetChange": 0.01672445209343699,
+        "converged": true,
+        "heldOnItems": 0.41564925333999997,
+        "heldInBasins": 0.051682189558196846,
+        "itemWetFraction": 0.7897463881396922,
+        "retainedOnItems": 0.16758716064
+      },
+      "liftRatios": [
+        {
+          "itemId": "teaspoon_130_04",
+          "peakUp_N": 0.04901294190305101,
+          "liftRatio": 0.20480775734515294
+        },
+        {
+          "itemId": "teaspoon_130_12",
+          "peakUp_N": 0.04734899166587098,
+          "liftRatio": 0.19785469753729915
+        },
+        {
+          "itemId": "teaspoon_130_05",
+          "peakUp_N": 0.04135202645803847,
+          "liftRatio": 0.17279549995796284
+        },
+        {
+          "itemId": "soup_spoon_190_10",
+          "peakUp_N": 0.07765518484730156,
+          "liftRatio": 0.14191483685464848
+        },
+        {
+          "itemId": "dessert_plate_porcelain_190_03",
+          "peakUp_N": 0.4072974847762399,
+          "liftRatio": 0.1383082440900784
+        }
+      ]
+    },
+    {
+      "id": "ur@2800",
+      "duration_s": 924,
+      "period_s": 2.198175200001116,
+      "total_ms": 85005,
+      "stages_ms": {
+        "jets:setup": 21,
+        "jets:trace": 12770,
+        "jets:tables": 289,
+        "spray:sources": 22,
+        "spray:flight": 8058,
+        "spray:drips": 0,
+        "spray:tables": 27,
+        "film:static": 0,
+        "film:march": 63524,
+        "film:tables": 294
+      },
+      "jetRays": 6848512,
+      "jetCells": 885864,
+      "parcels": 1048576,
+      "wetBlocks": 1305900,
+      "encodedBytes": 101620464,
+      "deflatedBytes": 45471209,
+      "water": {
+        "unit": 1e-12,
+        "nozzle": 948375745483,
+        "jets": 662264371988,
+        "showers": 286111373495,
+        "jetLost": 0,
+        "handover": 499241759753,
+        "splatter": 43101619724,
+        "scatter": 119920992511,
+        "dropletsLanded": 448819145869,
+        "dropletsLost": 314839861,
+        "filmFed": 948060905622,
+        "closes": true,
+        "sumpReturnFraction": 0.996958614792989
+      },
+      "film": {
+        "steps": 64,
+        "pilotRevolutions": 4,
+        "settleRevolutions": 2,
+        "recordedRevolutions": 2,
+        "fedPerRevolution": 948060905622,
+        "fed": 7584487244976,
+        "primed": 418088166780,
+        "toSump": 7042280351992,
+        "stored": 960295059764,
+        "sumpLastRevolution": 945176529659,
+        "storedChange": 0.003042395215218404,
+        "wetChange": 0.010380277727319828,
+        "converged": true,
+        "heldOnItems": 0.645843869875,
+        "heldInBasins": 0.051682189558196846,
+        "itemWetFraction": 0.8999886483897892,
+        "retainedOnItems": 0.246571849608
+      },
+      "liftRatios": [
+        {
+          "itemId": "tumbler_250_07",
+          "peakUp_N": 0.24700853514365,
+          "liftRatio": 0.11444331265206946
+        },
+        {
+          "itemId": "mug_porcelain_240_10",
+          "peakUp_N": 0.2886137073803386,
+          "liftRatio": 0.11319398122279817
+        },
+        {
+          "itemId": "mug_porcelain_240_04",
+          "peakUp_N": 0.27141717304279783,
+          "liftRatio": 0.10644951921311402
+        },
+        {
+          "itemId": "tumbler_250_05",
+          "peakUp_N": 0.21485485171969274,
+          "liftRatio": 0.09954595680619312
+        },
+        {
+          "itemId": "tumbler_250_03",
+          "peakUp_N": 0.1859236378149123,
+          "liftRatio": 0.08614162664252831
+        }
+      ]
+    },
+    {
+      "id": "ur@3000",
+      "duration_s": 1920,
+      "period_s": 1.9236493865745856,
+      "total_ms": 71996,
+      "stages_ms": {
+        "jets:setup": 28,
+        "jets:trace": 12019,
+        "jets:tables": 215,
+        "spray:sources": 11,
+        "spray:flight": 7395,
+        "spray:drips": 0,
+        "spray:tables": 77,
+        "film:static": 0,
+        "film:march": 52106,
+        "film:tables": 145
+      },
+      "jetRays": 6848512,
+      "jetCells": 902910,
+      "parcels": 1048576,
+      "wetBlocks": 1301479,
+      "encodedBytes": 102711380,
+      "deflatedBytes": 45671023,
+      "water": {
+        "unit": 1e-12,
+        "nozzle": 899467949319,
+        "jets": 626498402500,
+        "showers": 272969546819,
+        "jetLost": 0,
+        "handover": 472115132674,
+        "splatter": 41001622468,
+        "scatter": 113381647358,
+        "dropletsLanded": 427106593169,
+        "dropletsLost": 246223476,
+        "filmFed": 899221725843,
+        "closes": true,
+        "sumpReturnFraction": 0.9967556212000557
+      },
+      "film": {
+        "steps": 64,
+        "pilotRevolutions": 4,
+        "settleRevolutions": 2,
+        "recordedRevolutions": 2,
+        "fedPerRevolution": 899221725843,
+        "fed": 7193773806744,
+        "primed": 416539204064,
+        "toSump": 6633764243350,
+        "stored": 976548767458,
+        "sumpLastRevolution": 896303511097,
+        "storedChange": 0.003245267170634962,
+        "wetChange": 0.008430482301995732,
+        "converged": true,
+        "heldOnItems": 0.659554924268,
+        "heldInBasins": 0.051682189558196846,
+        "itemWetFraction": 0.8966338873594206,
+        "retainedOnItems": 0.246237393651
+      },
+      "liftRatios": [
+        {
+          "itemId": "tumbler_250_07",
+          "peakUp_N": 0.290571761894036,
+          "liftRatio": 0.13462690661665874
+        },
+        {
+          "itemId": "mug_porcelain_240_10",
+          "peakUp_N": 0.3406893730011466,
+          "liftRatio": 0.13361800047659755
+        },
+        {
+          "itemId": "mug_porcelain_240_04",
+          "peakUp_N": 0.31835596640076075,
+          "liftRatio": 0.12485886276858235
+        },
+        {
+          "itemId": "tumbler_250_05",
+          "peakUp_N": 0.24970665369941708,
+          "liftRatio": 0.11569339749335004
+        },
+        {
+          "itemId": "tumbler_250_03",
+          "peakUp_N": 0.22023881097932582,
+          "liftRatio": 0.1020404379483037
+        }
+      ]
+    }
+  ]
+}

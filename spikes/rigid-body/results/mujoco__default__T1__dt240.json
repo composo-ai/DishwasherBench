@@ -1,0 +1,176 @@
+{
+ "engine": "mujoco",
+ "preset": "default",
+ "test": "T1",
+ "hz": 240,
+ "tag": null,
+ "cfg": {
+  "sleep": false,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {},
+ "wallSeconds": 0.388878709,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:21:16.561Z",
+ "summary": {
+  "restTime_s": 0.2375,
+  "rmsLin_mm_s": 0.0018658853649589598,
+  "rmsAng_rad_s": 0.00023183567123241905,
+  "residualKE_uJ": 0.00007568983200142923,
+  "maxSpeed_m_s": 0.6037588197825009,
+  "exploded": null,
+  "penInit_mm": 0,
+  "penMaxStatic_mm": 2.3671157460821006,
+  "penMaxDynamic_mm": 0,
+  "penFinalStatic_mm": 0.02583397753448506,
+  "penFinalDynamic_mm": 0,
+  "asleep": "0/1",
+  "allAsleepAt_s": null,
+  "driftPos_mm": 0.004762051503943985,
+  "driftAng_deg": 0.033883707666132745,
+  "stepMean_ms": 0.05661589999999985,
+  "stepP99_ms": 0.2067079999999919,
+  "stepTotal_ms": 67.93907999999982,
+  "hash": "b920a3246c7d18f5",
+  "pos_mm": [
+   -0.17563900381475953,
+   125.35052628513863,
+   -1.3670722539467228
+  ],
+  "lean_deg": 11.802701222939646,
+  "counts": {
+   "bodies": 1,
+   "pieces": 73,
+   "vertices": 624,
+   "staticCapsules": 236,
+   "staticBoxes": 0
+  }
+ },
+ "runs": [
+  {
+   "engine": "mujoco-wasm",
+   "version": "3.15.0",
+   "scene": "T1-single-plate",
+   "cfg": {
+    "sleep": false,
+    "dt": 0.004166666666666667
+   },
+   "params": {
+    "dt": 0.00416666666667,
+    "integrator": 0,
+    "cone": 0,
+    "impratio": 1,
+    "solver": 2,
+    "iterations": 100,
+    "tolerance": 1e-8,
+    "noslip_iterations": 0,
+    "enableflags": 0,
+    "disableflags": 0,
+    "solref": "default(0.02 1)",
+    "solimp": "default(0.9 0.95 0.001 0.5 2)",
+    "margin": 0,
+    "ngeom": 309,
+    "nmesh": 73,
+    "xmlBytes": 72193
+   },
+   "dt": 0.004166666666666667,
+   "steps": 1200,
+   "duration": 5,
+   "buildMs": 156.607333,
+   "loadMs": 80.878792,
+   "step": {
+    "meanMs": 0.05661589999999985,
+    "p50Ms": 0.03612499999996999,
+    "p99Ms": 0.2067079999999919,
+    "maxMs": 5.784708000000023,
+    "totalMs": 67.93907999999982
+   },
+   "stepActive": {
+    "meanMs": 0.10123958333333291,
+    "p50Ms": 0.04941700000000537,
+    "p99Ms": 0.5074579999999855,
+    "maxMs": 5.784708000000023
+   },
+   "realTimeFactor": 73.59534453513373,
+   "restTime": 0.2375,
+   "rmsLin_mm_s": 0.0018658853649589598,
+   "rmsAng_rad_s": 0.00023183567123241905,
+   "residualKE_uJ": 0.00007568983200142923,
+   "maxSpeed": 0.6037588197825009,
+   "exploded": null,
+   "pen": {
+    "initialStatic_mm": 0,
+    "initialDynamic_mm": 0,
+    "maxStatic_mm": 2.3671157460821006,
+    "maxStaticAt": 0.0875,
+    "maxDynamic_mm": 0,
+    "maxDynamicAt": 0,
+    "finalStatic_mm": 0.02583397753448506,
+    "finalDynamic_mm": 0,
+    "finalWorstStatic": {
+     "body": 0,
+     "piece": 55,
+     "static": 141,
+     "tag": "tine"
+    }
+   },
+   "sleep": {
+    "asleepAtEnd": 0,
+    "of": 1,
+    "allAsleepAt": null,
+    "wokeAgain": false
+   },
+   "drift": {
+    "pos_mm": 0.004762051503943985,
+    "ang_deg": 0.033883707666132745,
+    "window": [
+     2.5,
+     5
+    ]
+   },
+   "bodies": [
+    {
+     "name": "plate",
+     "pos": [
+      -0.00017563900381475952,
+      0.12535052628513862,
+      -0.0013670722539467228
+     ],
+     "quat": [
+      0.6305999271327809,
+      0.009621521524934918,
+      0.008522419067693961,
+      0.7760016279602202
+     ],
+     "lean": 11.802701222939646,
+     "axisV": 78.19729877706035,
+     "asleep": false
+    }
+   ],
+   "hash": "b920a3246c7d18f5",
+   "hashPose": "0f7ea58c07350610",
+   "marks": {},
+   "mem": {
+    "before": {
+     "rssMB": 37.875,
+     "heapUsedMB": 5.124702453613281,
+     "externalMB": 1.9141206741333008,
+     "arrayBuffersMB": 0.04097270965576172
+    },
+    "after": {
+     "rssMB": 198,
+     "heapUsedMB": 12.880012512207031,
+     "externalMB": 260.8717784881592,
+     "arrayBuffersMB": 0.05161571502685547
+    },
+    "engine": {
+     "narenaMB": 256,
+     "maxuseArenaMB": 0.01821136474609375
+    }
+   },
+   "masses": [
+    0.6499999825224044
+   ]
+  }
+ ]
+}

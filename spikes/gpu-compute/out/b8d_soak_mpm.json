@@ -1,0 +1,320 @@
+{
+  "when": "2026-10-08T15:37:35.114Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 343955,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "particles": 1048576,
+  "grid": 256,
+  "power": "Now drawing from 'AC Power'",
+  "samples": [
+    {
+      "tSec": 30.161857042000047,
+      "stepsPerSec": 29.441158041544657,
+      "particleStepsPerSec": 30871291.73457073,
+      "rssMB": 295.78125,
+      "finite": true,
+      "meanZ": 0.2177583167267585,
+      "errors": 0,
+      "otherBusyProcesses": "WindowServer:52% node:151% node:99% softwareupdated:93%"
+    },
+    {
+      "tSec": 60.22902112500003,
+      "stepsPerSec": 36.49415599560997,
+      "particleStepsPerSec": 38266896.11725272,
+      "rssMB": 196.0625,
+      "finite": true,
+      "meanZ": 0.05871893517632998,
+      "errors": 0,
+      "otherBusyProcesses": "WindowServer:39% node:98%"
+    },
+    {
+      "tSec": 90.36255770800001,
+      "stepsPerSec": 40.66390142444978,
+      "particleStepsPerSec": 42639191.100043856,
+      "rssMB": 180.3125,
+      "finite": true,
+      "meanZ": 0.04065562307550863,
+      "errors": 0,
+      "otherBusyProcesses": "WindowServer:47% node:173%"
+    },
+    {
+      "tSec": 120.430930583,
+      "stepsPerSec": 44.751359374567784,
+      "particleStepsPerSec": 46925201.40754679,
+      "rssMB": 130.71875,
+      "finite": true,
+      "meanZ": 0.02944904240575852,
+      "errors": 0,
+      "otherBusyProcesses": "node:99% node:125%"
+    },
+    {
+      "tSec": 150.631502125,
+      "stepsPerSec": 47.4752544210049,
+      "particleStepsPerSec": 49781412.37975963,
+      "rssMB": 135.21875,
+      "finite": true,
+      "meanZ": 0.02759673883429059,
+      "errors": 0,
+      "otherBusyProcesses": "node:99% node:112%"
+    },
+    {
+      "tSec": 180.71414345800002,
+      "stepsPerSec": 48.9909111373056,
+      "particleStepsPerSec": 51370693.63671136,
+      "rssMB": 140.828125,
+      "finite": true,
+      "meanZ": 0.026699254152845242,
+      "errors": 0,
+      "otherBusyProcesses": "node:100% node:118%"
+    },
+    {
+      "tSec": 210.77958683300005,
+      "stepsPerSec": 47.94942188531814,
+      "particleStepsPerSec": 50278613.00281935,
+      "rssMB": 145.6875,
+      "finite": true,
+      "meanZ": 0.02611071130650089,
+      "errors": 0,
+      "otherBusyProcesses": "WindowServer:40% node:96% node:96%"
+    },
+    {
+      "tSec": 240.84290212500002,
+      "stepsPerSec": 47.16941201208461,
+      "particleStepsPerSec": 49460713.36998363,
+      "rssMB": 136.25,
+      "finite": true,
+      "meanZ": 0.02567114952398697,
+      "errors": 0,
+      "otherBusyProcesses": "node:100% node:112%"
+    },
+    {
+      "tSec": 270.935369833,
+      "stepsPerSec": 49.24053155004088,
+      "particleStepsPerSec": 51632439.61061566,
+      "rssMB": 136.84375,
+      "finite": true,
+      "meanZ": 0.025286594803219486,
+      "errors": 0,
+      "otherBusyProcesses": "node:99%"
+    },
+    {
+      "tSec": 301.0341062500001,
+      "stepsPerSec": 48.42873285259031,
+      "particleStepsPerSec": 50781206.979637735,
+      "rssMB": 120.640625,
+      "finite": true,
+      "meanZ": 0.02496031959344691,
+      "errors": 0,
+      "otherBusyProcesses": "node:114% node:99%"
+    },
+    {
+      "tSec": 331.183176542,
+      "stepsPerSec": 51.805155341861735,
+      "particleStepsPerSec": 54321642.56774801,
+      "rssMB": 135.15625,
+      "finite": true,
+      "meanZ": 0.024663210534527025,
+      "errors": 0,
+      "otherBusyProcesses": "node:122%"
+    },
+    {
+      "tSec": 361.34415754200006,
+      "stepsPerSec": 52.04369773125414,
+      "particleStepsPerSec": 54571772.39224754,
+      "rssMB": 137.140625,
+      "finite": true,
+      "meanZ": 0.02441311864185991,
+      "errors": 0,
+      "otherBusyProcesses": "node:100%"
+    },
+    {
+      "tSec": 391.51444233300003,
+      "stepsPerSec": 51.760771204965465,
+      "particleStepsPerSec": 54275102.42701787,
+      "rssMB": 141.90625,
+      "finite": true,
+      "meanZ": 0.024196821925215772,
+      "errors": 0,
+      "otherBusyProcesses": "node:177%"
+    },
+    {
+      "tSec": 421.60773200000006,
+      "stepsPerSec": 50.562175367191315,
+      "particleStepsPerSec": 53018283.597828,
+      "rssMB": 121.375,
+      "finite": true,
+      "meanZ": 0.02400829023190454,
+      "errors": 0,
+      "otherBusyProcesses": "node:76%"
+    },
+    {
+      "tSec": 451.77999887500005,
+      "stepsPerSec": 52.039479788379694,
+      "particleStepsPerSec": 54567349.558580026,
+      "rssMB": 121.453125,
+      "finite": true,
+      "meanZ": 0.02383058925261139,
+      "errors": 0,
+      "otherBusyProcesses": "WindowServer:31% Google Drive:40%"
+    },
+    {
+      "tSec": 481.89104845800006,
+      "stepsPerSec": 52.66639771156479,
+      "particleStepsPerSec": 55224720.64680176,
+      "rssMB": 121.359375,
+      "finite": true,
+      "meanZ": 0.023668151779020263,
+      "errors": 0,
+      "otherBusyProcesses": ""
+    },
+    {
+      "tSec": 512.010118667,
+      "stepsPerSec": 52.916849144828575,
+      "particleStepsPerSec": 55487338.00888777,
+      "rssMB": 122.609375,
+      "finite": true,
+      "meanZ": 0.023518576293099613,
+      "errors": 0,
+      "otherBusyProcesses": ""
+    },
+    {
+      "tSec": 542.1366124580001,
+      "stepsPerSec": 52.90183117345895,
+      "particleStepsPerSec": 55471590.524540894,
+      "rssMB": 121.890625,
+      "finite": true,
+      "meanZ": 0.023379673374620324,
+      "errors": 0,
+      "otherBusyProcesses": ""
+    },
+    {
+      "tSec": 572.247306833,
+      "stepsPerSec": 52.93093623562975,
+      "particleStepsPerSec": 55502109.3942117,
+      "rssMB": 121.796875,
+      "finite": true,
+      "meanZ": 0.023248797066116822,
+      "errors": 0,
+      "otherBusyProcesses": ""
+    },
+    {
+      "tSec": 602.344860917,
+      "stepsPerSec": 53.21519781149172,
+      "particleStepsPerSec": 55800179.26038274,
+      "rssMB": 122.234375,
+      "finite": true,
+      "meanZ": 0.023126820120523917,
+      "errors": 0,
+      "otherBusyProcesses": ""
+    },
+    {
+      "tSec": 632.3876900829999,
+      "stepsPerSec": 53.31241383891537,
+      "particleStepsPerSec": 55902117.65355452,
+      "rssMB": 122.84375,
+      "finite": true,
+      "meanZ": 0.023012872882645752,
+      "errors": 0,
+      "otherBusyProcesses": ""
+    },
+    {
+      "tSec": 662.522251875,
+      "stepsPerSec": 53.41743146076169,
+      "particleStepsPerSec": 56012236.61139965,
+      "rssMB": 123.4375,
+      "finite": true,
+      "meanZ": 0.02290207707665104,
+      "errors": 0,
+      "otherBusyProcesses": ""
+    },
+    {
+      "tSec": 692.5698577920001,
+      "stepsPerSec": 53.304369737731584,
+      "particleStepsPerSec": 55893682.80211163,
+      "rssMB": 119.9375,
+      "finite": true,
+      "meanZ": 0.022794472292844148,
+      "errors": 0,
+      "otherBusyProcesses": ""
+    },
+    {
+      "tSec": 722.6662766249999,
+      "stepsPerSec": 53.48527816461239,
+      "particleStepsPerSec": 56083379.0367366,
+      "rssMB": 112.28125,
+      "finite": true,
+      "meanZ": 0.022690499698001076,
+      "errors": 0,
+      "otherBusyProcesses": "accountsd:65% contactsd:52%"
+    },
+    {
+      "tSec": 752.7664937080001,
+      "stepsPerSec": 53.231777453757815,
+      "particleStepsPerSec": 55817564.275351554,
+      "rssMB": 120.15625,
+      "finite": true,
+      "meanZ": 0.022588783763239917,
+      "errors": 0,
+      "otherBusyProcesses": "node:115%"
+    },
+    {
+      "tSec": 782.8255511670001,
+      "stepsPerSec": 52.75451761877865,
+      "particleStepsPerSec": 55317121.06662844,
+      "rssMB": 122.796875,
+      "finite": true,
+      "meanZ": 0.022491150315545383,
+      "errors": 0,
+      "otherBusyProcesses": "node:129%"
+    },
+    {
+      "tSec": 812.9896996250001,
+      "stepsPerSec": 52.83524542977482,
+      "particleStepsPerSec": 55401770.311771564,
+      "rssMB": 127.5625,
+      "finite": true,
+      "meanZ": 0.02239587034091528,
+      "errors": 0,
+      "otherBusyProcesses": "node:108%"
+    },
+    {
+      "tSec": 843.1346495829999,
+      "stepsPerSec": 52.87494673635836,
+      "particleStepsPerSec": 55443400.149023704,
+      "rssMB": 130.671875,
+      "finite": true,
+      "meanZ": 0.0223025271188817,
+      "errors": 0,
+      "otherBusyProcesses": "node:118%"
+    },
+    {
+      "tSec": 873.2130925420001,
+      "stepsPerSec": 53.51724130909243,
+      "particleStepsPerSec": 56116894.8229229,
+      "rssMB": 129.046875,
+      "finite": true,
+      "meanZ": 0.02221273053510231,
+      "errors": 0,
+      "otherBusyProcesses": "Python:99%"
+    }
+  ],
+  "summary": {
+    "seconds": 900.108400833,
+    "totalSteps": 44824,
+    "totalParticleSteps": 47001370624,
+    "first": 30871291.73457073,
+    "last": 56116894.8229229,
+    "min": 30871291.73457073,
+    "max": 56116894.8229229,
+    "mean": 52146066.01540305,
+    "rssFirstMB": 295.78125,
+    "rssLastMB": 129.046875,
+    "allFinite": true,
+    "deviceLost": null,
+    "uncapturedErrors": 0,
+    "powerAtEnd": "Now drawing from 'AC Power'"
+  }
+}

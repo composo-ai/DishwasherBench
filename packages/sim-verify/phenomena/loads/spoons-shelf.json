@@ -1,0 +1,249 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "spoons-shelf",
+ "description": "P18 B: six dessert spoons lying flat, bowls up, on the knife shelf of the upper basket (this machine has no cutlery drawer; the shelf is where pieces lie flat)",
+ "recipe_hash": "sha256:86314456c0467723d9755fa7f89ed8ff87323361155248817dee3646bc9a55b3",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "spoon_1",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     -0.19400170036650638,
+     -0.18640521867579957,
+     0.5957311471110177
+    ],
+    "q": [
+     -0.057590894401073456,
+     0.05758657678961754,
+     0.7047475576400757,
+     0.7047680616378784
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 7.5,
+    "rotation_deg": 9.5,
+    "contacts": [
+     "upper_rack_fittings.holder.knife_shelf.floor",
+     "upper_rack_fittings.holder.knife_shelf.rim.front"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_2",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     -0.19396783929570194,
+     -0.13142856321649238,
+     0.5942084764233598
+    ],
+    "q": [
+     -0.05424845591187477,
+     0.05328752100467682,
+     0.7051181793212891,
+     0.7050006985664368
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 10.1,
+    "rotation_deg": 8.8,
+    "contacts": [
+     "spoon_1",
+     "upper_rack_fittings.holder.knife_shelf.floor"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_3",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     -0.19420426430046805,
+     -0.07651907283729623,
+     0.5935414756492702
+    ],
+    "q": [
+     -0.052927467972040176,
+     0.051271550357341766,
+     0.7053757309913635,
+     0.7049930095672607
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 9.5,
+    "rotation_deg": 8.5,
+    "contacts": [
+     "spoon_2",
+     "upper_rack_fittings.holder.knife_shelf.floor"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_4",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     -0.19400692361369692,
+     -0.021487551674176042,
+     0.5932226087952298
+    ],
+    "q": [
+     -0.051493216305971146,
+     0.051118217408657074,
+     0.7052496671676636,
+     0.7052363157272339
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 9.2,
+    "rotation_deg": 8.3,
+    "contacts": [
+     "spoon_3",
+     "upper_rack_fittings.holder.knife_shelf.floor"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_5",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     -0.19402177183229916,
+     0.03357079152824652,
+     0.5930809259403147
+    ],
+    "q": [
+     -0.05111423507332802,
+     0.05077319219708443,
+     0.7052776217460632,
+     0.7052608728408813
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 9,
+    "rotation_deg": 8.3,
+    "contacts": [
+     "spoon_4",
+     "upper_rack_fittings.holder.knife_shelf.floor"
+    ]
+   }
+  },
+  {
+   "item_id": "spoon_6",
+   "item_type": "dessert_spoon_160",
+   "pose": {
+    "p": [
+     -0.19406036584863287,
+     0.08873934568613015,
+     0.590166810267452
+    ],
+    "q": [
+     -0.0005825710250064731,
+     0.0019517411710694432,
+     0.7070026397705078,
+     0.707207977771759
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 0.9,
+    "rotation_deg": 0.4,
+    "contacts": [
+     "spoon_5",
+     "upper_rack_fittings.holder.knife_shelf.rim.rear"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [
+   {
+    "item_id": "spoon_6",
+    "rack": "upper_rack",
+    "beyond_mm": 8.8
+   }
+  ],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:ed0dc77cf2269bb96dc60d767676099cafb3c89612ec7b81e19931901c575388"
+}

@@ -1,0 +1,197 @@
+{
+ "note": "Estimates, not measurements. No Anthropic model was run. The prices are what the script assumed on 6 October 2026 and may be wrong or out of date; check the provider's price list.",
+ "chars_per_token": 3.2,
+ "pixels_per_token": 750,
+ "prices_usd_per_million_tokens": {
+  "claude-haiku-5-5": {
+   "input": 0.1,
+   "output": 0.5,
+   "cacheRead": 0.01,
+   "cacheWrite": 0.125,
+   "note": "prompts up to 100,000 tokens; beyond that 0.50 in and 2.50 out, applied per request below"
+  },
+  "claude-sonnet-5-5": {
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.2,
+   "cacheWrite": 2.5
+  },
+  "claude-opus-5-5": {
+   "input": 4,
+   "output": 20,
+   "cacheRead": 0.2,
+   "cacheWrite": 5
+  }
+ },
+ "scenarios": [
+  {
+   "name": "as rehearsed, terse",
+   "turns": 1,
+   "outputPerTurn": 400
+  },
+  {
+   "name": "twice the turns, thinking",
+   "turns": 2,
+   "outputPerTurn": 1200
+  },
+  {
+   "name": "four times the turns, thinking hard",
+   "turns": 4,
+   "outputPerTurn": 2500
+  }
+ ],
+ "rehearsals": [
+  {
+   "level": "tutorial",
+   "requests": 68,
+   "tool_calls": {
+    "get_level": 1,
+    "render": 7,
+    "list_slots": 8,
+    "preview": 16,
+    "place": 16,
+    "remove": 4,
+    "set_rack": 14,
+    "check_load": 1
+   },
+   "system_chars": 7826,
+   "tools_chars": 32886,
+   "final_chars": 294457,
+   "pictures_sent": 7,
+   "tokens_cache_read": 3966205,
+   "tokens_cache_write": 97470,
+   "tokens_largest_request": 97470
+  },
+  {
+   "level": "weeknight-dinner",
+   "requests": 265,
+   "tool_calls": {
+    "get_level": 1,
+    "render": 23,
+    "list_slots": 19,
+    "preview": 80,
+    "place": 80,
+    "remove": 41,
+    "set_rack": 19,
+    "check_load": 1
+   },
+   "system_chars": 7760,
+   "tools_chars": 32886,
+   "final_chars": 1605374,
+   "pictures_sent": 23,
+   "tokens_cache_read": 59340848,
+   "tokens_cache_write": 949185,
+   "tokens_largest_request": 507911
+  }
+ ],
+ "estimates": [
+  {
+   "level": "tutorial",
+   "model": "claude-haiku-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 0.065
+  },
+  {
+   "level": "tutorial",
+   "model": "claude-haiku-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 1.004
+  },
+  {
+   "level": "tutorial",
+   "model": "claude-haiku-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 5.009
+  },
+  {
+   "level": "tutorial",
+   "model": "claude-sonnet-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 1.309
+  },
+  {
+   "level": "tutorial",
+   "model": "claude-sonnet-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 5.331
+  },
+  {
+   "level": "tutorial",
+   "model": "claude-sonnet-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 20.7
+  },
+  {
+   "level": "tutorial",
+   "model": "claude-opus-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 1.825
+  },
+  {
+   "level": "tutorial",
+   "model": "claude-opus-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 7.451
+  },
+  {
+   "level": "tutorial",
+   "model": "claude-opus-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 28.475
+  },
+  {
+   "level": "weeknight-dinner",
+   "model": "claude-haiku-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 3.577
+  },
+  {
+   "level": "weeknight-dinner",
+   "model": "claude-haiku-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 14.594
+  },
+  {
+   "level": "weeknight-dinner",
+   "model": "claude-haiku-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 56.989
+  },
+  {
+   "level": "weeknight-dinner",
+   "model": "claude-sonnet-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 15.301
+  },
+  {
+   "level": "weeknight-dinner",
+   "model": "claude-sonnet-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 58.958
+  },
+  {
+   "level": "weeknight-dinner",
+   "model": "claude-sonnet-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 228.161
+  },
+  {
+   "level": "weeknight-dinner",
+   "model": "claude-opus-5-5",
+   "scenario": "as rehearsed, terse",
+   "usd": 18.734
+  },
+  {
+   "level": "weeknight-dinner",
+   "model": "claude-opus-5-5",
+   "scenario": "twice the turns, thinking",
+   "usd": 70.064
+  },
+  {
+   "level": "weeknight-dinner",
+   "model": "claude-opus-5-5",
+   "scenario": "four times the turns, thinking hard",
+   "usd": 264.153
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+  "when": "2026-10-08T15:26:50.996Z",
+  "chrome": "Chrome/154.0.8037.98",
+  "chromeHashes": [
+    "ba69c15a8d62ffc6",
+    "ba69c15a8d62ffc6"
+  ],
+  "chromeRunToRunIdentical": true,
+  "nodeDawnHash": "ba69c15a8d62ffc6",
+  "chromeEqualsNodeDawn": true,
+  "adapter": {
+    "vendor": "apple",
+    "architecture": "metal-3"
+  }
+}

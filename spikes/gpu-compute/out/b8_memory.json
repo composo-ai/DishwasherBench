@@ -1,0 +1,230 @@
+{
+  "when": "2026-10-08T15:20:03.406Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 209,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "start": {
+    "rssMB": 60.046875,
+    "freeGB": 0.050262451171875,
+    "inactiveGB": 4.7652587890625,
+    "wiredGB": 3.174530029296875,
+    "compressorGB": 4.5821533203125,
+    "availableGB": 5.5132904052734375,
+    "swapUsedGB": 4.407470703125,
+    "freePct": 55
+  },
+  "stages": [
+    {
+      "totalGB": 1,
+      "buffers": 2,
+      "allocAndFirstTouchMs": 183.584875,
+      "ringPassMs": [
+        23.237416000000053,
+        19.582583999999997,
+        18.935791999999992
+      ],
+      "trafficGBps": [
+        86.06808949841908,
+        102.13156751938357,
+        105.62008708164943
+      ],
+      "steadyGBps": 105.62008708164943,
+      "verified": true,
+      "memBefore": {
+        "rssMB": 60.828125,
+        "freeGB": 0.04986572265625,
+        "inactiveGB": 4.7653045654296875,
+        "wiredGB": 3.174530029296875,
+        "compressorGB": 4.5821533203125,
+        "availableGB": 5.5128021240234375,
+        "swapUsedGB": 4.407470703125,
+        "freePct": 55
+      },
+      "memAfter": {
+        "rssMB": 69.09375,
+        "freeGB": 0.0675048828125,
+        "inactiveGB": 3.8943634033203125,
+        "wiredGB": 4.4358673095703125,
+        "compressorGB": 5.0716094970703125,
+        "availableGB": 4.3846893310546875,
+        "swapUsedGB": 4.407470703125,
+        "freePct": 45
+      },
+      "deviceLost": null,
+      "uncapturedErrors": 0
+    },
+    {
+      "totalGB": 2,
+      "buffers": 4,
+      "allocAndFirstTouchMs": 138.25458300000003,
+      "ringPassMs": [
+        37.050666999999976,
+        33.24358300000006,
+        32.89533299999994
+      ],
+      "trafficGBps": [
+        107.96026964912677,
+        120.32397350189338,
+        121.59779625881907
+      ],
+      "steadyGBps": 121.59779625881907,
+      "verified": true,
+      "memBefore": {
+        "rssMB": 69.59375,
+        "freeGB": 0.0628814697265625,
+        "inactiveGB": 3.894378662109375,
+        "wiredGB": 4.43603515625,
+        "compressorGB": 5.0715789794921875,
+        "availableGB": 4.3804779052734375,
+        "swapUsedGB": 4.407470703125,
+        "freePct": 45
+      },
+      "memAfter": {
+        "rssMB": 79.421875,
+        "freeGB": 0.04229736328125,
+        "inactiveGB": 3.12103271484375,
+        "wiredGB": 5.4387969970703125,
+        "compressorGB": 5.406707763671875,
+        "availableGB": 3.283538818359375,
+        "swapUsedGB": 4.407470703125,
+        "freePct": 37
+      },
+      "deviceLost": null,
+      "uncapturedErrors": 0
+    },
+    {
+      "totalGB": 4,
+      "buffers": 8,
+      "allocAndFirstTouchMs": 388.746667,
+      "ringPassMs": [
+        79.67816599999992,
+        71.51845800000001,
+        74.5675839999999
+      ],
+      "trafficGBps": [
+        100.40391742952526,
+        111.85923499636974,
+        107.28522463594919
+      ],
+      "steadyGBps": 111.85923499636974,
+      "verified": true,
+      "memBefore": {
+        "rssMB": 79.546875,
+        "freeGB": 0.041473388671875,
+        "inactiveGB": 3.1212615966796875,
+        "wiredGB": 5.4387969970703125,
+        "compressorGB": 5.406494140625,
+        "availableGB": 3.2829437255859375,
+        "swapUsedGB": 4.407470703125,
+        "freePct": 37
+      },
+      "memAfter": {
+        "rssMB": 101,
+        "freeGB": 0.27423095703125,
+        "inactiveGB": 1.740234375,
+        "wiredGB": 7.4428253173828125,
+        "compressorGB": 5.913238525390625,
+        "availableGB": 2.1407318115234375,
+        "swapUsedGB": 4.988466796875,
+        "freePct": 23
+      },
+      "deviceLost": null,
+      "uncapturedErrors": 0
+    },
+    {
+      "totalGB": 6,
+      "buffers": 12,
+      "allocAndFirstTouchMs": 273.1856250000001,
+      "ringPassMs": [
+        126.42624999999998,
+        120.74404200000026,
+        122.49770799999988
+      ],
+      "trafficGBps": [
+        94.9169970635054,
+        99.3837857440616,
+        97.96101654408108
+      ],
+      "steadyGBps": 99.3837857440616,
+      "verified": true,
+      "memBefore": {
+        "rssMB": 101.265625,
+        "freeGB": 0.269989013671875,
+        "inactiveGB": 1.7451171875,
+        "wiredGB": 7.4428253173828125,
+        "compressorGB": 5.9098663330078125,
+        "availableGB": 2.141326904296875,
+        "swapUsedGB": 4.988466796875,
+        "freePct": 23
+      },
+      "memAfter": {
+        "rssMB": 97.40625,
+        "freeGB": 0.387725830078125,
+        "inactiveGB": 1.3231658935546875,
+        "wiredGB": 9.40887451171875,
+        "compressorGB": 4.6584625244140625,
+        "availableGB": 1.84228515625,
+        "swapUsedGB": 6.31396484375,
+        "freePct": 18
+      },
+      "deviceLost": null,
+      "uncapturedErrors": 0
+    },
+    {
+      "totalGB": 8,
+      "buffers": 16,
+      "allocAndFirstTouchMs": 265.1915409999997,
+      "ringPassMs": [
+        151.9451250000002,
+        146.55858399999988,
+        148.1785420000001
+      ],
+      "trafficGBps": [
+        105.30117369675388,
+        109.17136044382097,
+        107.97784742678861
+      ],
+      "steadyGBps": 109.17136044382097,
+      "verified": true,
+      "memBefore": {
+        "rssMB": 98.15625,
+        "freeGB": 0.3696441650390625,
+        "inactiveGB": 1.332489013671875,
+        "wiredGB": 9.40887451171875,
+        "compressorGB": 4.65289306640625,
+        "availableGB": 1.834320068359375,
+        "swapUsedGB": 6.31396484375,
+        "freePct": 18
+      },
+      "memAfter": {
+        "rssMB": 78.4375,
+        "freeGB": 0.4633941650390625,
+        "inactiveGB": 0.8864898681640625,
+        "wiredGB": 11.406875610351562,
+        "compressorGB": 3.4615325927734375,
+        "availableGB": 1.47381591796875,
+        "swapUsedGB": 7.66119140625,
+        "freePct": 14
+      },
+      "deviceLost": null,
+      "uncapturedErrors": 0
+    }
+  ],
+  "single": [],
+  "stoppedBecause": "swap grew by 3.3 GB",
+  "end": {
+    "rssMB": 90.125,
+    "freeGB": 7.7314910888671875,
+    "inactiveGB": 1.335418701171875,
+    "wiredGB": 3.250885009765625,
+    "compressorGB": 3.1611175537109375,
+    "availableGB": 9.455276489257812,
+    "swapUsedGB": 7.66119140625,
+    "freePct": 62
+  },
+  "deviceLost": null,
+  "uncapturedErrors": []
+}

@@ -1,0 +1,459 @@
+{
+ "engine": "rapier",
+ "preset": "scaled",
+ "test": "T3",
+ "hz": 240,
+ "tag": null,
+ "cfg": {
+  "worldScale": 10,
+  "lengthUnit": 0.1,
+  "softCcd": 0.005,
+  "ccd": false,
+  "sleep": true,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {},
+ "wallSeconds": 3.415778667,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:40:40.634Z",
+ "summary": {
+  "facetsMisaligned": {
+   "restTime_s": 0.3875,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed_m_s": 1.1444992065429687,
+   "exploded": null,
+   "penInit_mm": 0,
+   "penMaxStatic_mm": 0.13254356820956312,
+   "penMaxDynamic_mm": 0.34073932471793966,
+   "penFinalStatic_mm": 0.024384130320905667,
+   "penFinalDynamic_mm": 0.10298449858598888,
+   "asleep": "4/4",
+   "allAsleepAt_s": 0.8875,
+   "driftPos_mm": 0,
+   "driftAng_deg": 2.5446104195226635e-15,
+   "stepMean_ms": 0.2030180760416748,
+   "stepP99_ms": 1.7554580000000897,
+   "stepTotal_ms": 389.7947060000156,
+   "hash": "3b86511b7a12b7da",
+   "idealSpacing_mm": 19.399891962423393,
+   "spacing_mm": [
+    21.222394704818722,
+    21.249288320541382,
+    21.23828530311585
+   ],
+   "sink_mm": [
+    -1.8225027423953293,
+    -1.849396358117989,
+    -1.8383933406924555
+   ],
+   "lateralOffset_mm": [
+    0.6888170292091759,
+    0.537477785362024,
+    0.15243204452176895
+   ],
+   "maxTilt_deg": 1.2684219424330385,
+   "bottomBowlY_mm": 31.187349557876587,
+   "counts": {
+    "bodies": 4,
+    "pieces": 580,
+    "vertices": 4800,
+    "staticCapsules": 41,
+    "staticBoxes": 0
+   }
+  },
+  "facetsAligned": {
+   "restTime_s": 0.30833333333333335,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed_m_s": 1.1036243438720703,
+   "exploded": null,
+   "penInit_mm": 0,
+   "penMaxStatic_mm": 0.09030095216592225,
+   "penMaxDynamic_mm": 0.072910736390569,
+   "penFinalStatic_mm": 0.02160817638481756,
+   "penFinalDynamic_mm": 0.072910736390569,
+   "asleep": "4/4",
+   "allAsleepAt_s": 0.7625,
+   "driftPos_mm": 0,
+   "driftAng_deg": 3.913573143207061e-16,
+   "stepMean_ms": 0.23123407604166696,
+   "stepP99_ms": 2.275374999999258,
+   "stepTotal_ms": 443.96942600000057,
+   "hash": "4e1bcb52b294166a",
+   "idealSpacing_mm": 19.399891962423393,
+   "spacing_mm": [
+    20.245295763015747,
+    19.85132694244384,
+    20.476180315017704
+   ],
+   "sink_mm": [
+    -0.8454038005923543,
+    -0.4514349800204478,
+    -1.076288352594311
+   ],
+   "lateralOffset_mm": [
+    0.48622220806961136,
+    2.8241966553273707,
+    1.65742364814376
+   ],
+   "maxTilt_deg": 3.453865483751555,
+   "bottomBowlY_mm": 31.190675497055054,
+   "counts": {
+    "bodies": 4,
+    "pieces": 580,
+    "vertices": 4800,
+    "staticCapsules": 41,
+    "staticBoxes": 0
+   }
+  }
+ },
+ "runs": [
+  {
+   "engine": "rapier-compat",
+   "version": "0.21.0",
+   "scene": "T3-nested-bowls",
+   "cfg": {
+    "worldScale": 10,
+    "lengthUnit": 0.1,
+    "softCcd": 0.005,
+    "ccd": false,
+    "sleep": true,
+    "dt": 0.004166666666666667
+   },
+   "params": {
+    "dt": 0.004166666883975267,
+    "lengthUnit": 1,
+    "numSolverIterations": 4,
+    "numInternalPgsIterations": 1,
+    "normalizedAllowedLinearError": 0.004999999888241291,
+    "normalizedPredictionDistance": 0.019999999552965164,
+    "contact_erp": 0.037786055356264114,
+    "maxCcdSubsteps": 1
+   },
+   "dt": 0.004166666666666667,
+   "steps": 1920,
+   "duration": 8,
+   "buildMs": 4.407083000000057,
+   "loadMs": 57.362750000000005,
+   "step": {
+    "meanMs": 0.2030180760416748,
+    "p50Ms": 0.04429199999958655,
+    "p99Ms": 1.7554580000000897,
+    "maxMs": 2.833708999999999,
+    "totalMs": 389.7947060000156
+   },
+   "stepActive": {
+    "meanMs": 1.2128885124999897,
+    "p50Ms": 1.257832999999664,
+    "p99Ms": 2.5206669999997757,
+    "maxMs": 2.833708999999999
+   },
+   "realTimeFactor": 20.523624043266715,
+   "restTime": 0.3875,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed": 1.1444992065429687,
+   "exploded": null,
+   "pen": {
+    "initialStatic_mm": 0,
+    "initialDynamic_mm": 0,
+    "maxStatic_mm": 0.13254356820956312,
+    "maxStaticAt": 0.1375,
+    "maxDynamic_mm": 0.34073932471793966,
+    "maxDynamicAt": 0.12083333333333333,
+    "finalStatic_mm": 0.024384130320905667,
+    "finalDynamic_mm": 0.10298449858598888,
+    "finalWorstStatic": {
+     "body": 0,
+     "piece": 20,
+     "static": 8,
+     "tag": "base-z"
+    }
+   },
+   "sleep": {
+    "asleepAtEnd": 4,
+    "of": 4,
+    "allAsleepAt": 0.8875,
+    "wokeAgain": false
+   },
+   "drift": {
+    "pos_mm": 0,
+    "ang_deg": 2.5446104195226635e-15,
+    "window": [
+     4,
+     8
+    ]
+   },
+   "bodies": [
+    {
+     "name": "bowl0",
+     "pos": [
+      0.004094816371798515,
+      0.03118734955787659,
+      0.002669265493750572
+     ],
+     "quat": [
+      -0.00000242025930674572,
+      0.053764864802360535,
+      -0.00018282658129464835,
+      0.9985536932945251
+     ],
+     "lean": 89.97904778126347,
+     "axisV": 0.02095221873651531,
+     "asleep": true
+    },
+    {
+     "name": "bowl1",
+     "pos": [
+      0.004701914265751839,
+      0.05240974426269531,
+      0.0023438410833477976
+     ],
+     "quat": [
+      0.001935598673298955,
+      0.23463967442512512,
+      0.007514084689319134,
+      0.9720515012741089
+     ],
+     "lean": 89.11083138269527,
+     "axisV": 0.8891686173047341,
+     "asleep": true
+    },
+    {
+     "name": "bowl2",
+     "pos": [
+      0.004492168128490448,
+      0.0736590325832367,
+      0.002838703617453575
+     ],
+     "quat": [
+      -0.0031596736516803503,
+      0.4075062572956085,
+      0.007073389831930399,
+      0.9131696224212646
+     ],
+     "lean": 89.11224755865118,
+     "axisV": 0.8877524413488186,
+     "asleep": true
+    },
+    {
+     "name": "bowl3",
+     "pos": [
+      0.004376264661550522,
+      0.09489731788635254,
+      0.0027396989986300468
+     ],
+     "quat": [
+      -0.005332597065716982,
+      0.5651909708976746,
+      0.00969962403178215,
+      0.8248858451843262
+     ],
+     "lean": 88.73157805756698,
+     "axisV": 1.2684219424330385,
+     "asleep": true
+    }
+   ],
+   "hash": "3b86511b7a12b7da",
+   "hashPose": "2980e43d73dfe4b4",
+   "marks": {},
+   "mem": {
+    "before": {
+     "rssMB": 290.09375,
+     "heapUsedMB": 32.516258239746094,
+     "externalMB": 11.91617488861084,
+     "arrayBuffersMB": 3.209702491760254
+    },
+    "after": {
+     "rssMB": 298.125,
+     "heapUsedMB": 46.509246826171875,
+     "externalMB": 14.226210594177246,
+     "arrayBuffersMB": 3.26973819732666
+    },
+    "engine": null
+   },
+   "masses": [
+    0.3500004708766937,
+    0.3500004708766937,
+    0.3500004708766937,
+    0.3500004708766937
+   ]
+  },
+  {
+   "engine": "rapier-compat",
+   "version": "0.21.0",
+   "scene": "T3-nested-bowls",
+   "cfg": {
+    "worldScale": 10,
+    "lengthUnit": 0.1,
+    "softCcd": 0.005,
+    "ccd": false,
+    "sleep": true,
+    "dt": 0.004166666666666667
+   },
+   "params": {
+    "dt": 0.004166666883975267,
+    "lengthUnit": 1,
+    "numSolverIterations": 4,
+    "numInternalPgsIterations": 1,
+    "normalizedAllowedLinearError": 0.004999999888241291,
+    "normalizedPredictionDistance": 0.019999999552965164,
+    "contact_erp": 0.037786055356264114,
+    "maxCcdSubsteps": 1
+   },
+   "dt": 0.004166666666666667,
+   "steps": 1920,
+   "duration": 8,
+   "buildMs": 4.497749999999542,
+   "loadMs": 57.362750000000005,
+   "step": {
+    "meanMs": 0.23123407604166696,
+    "p50Ms": 0.04308299999956944,
+    "p99Ms": 2.275374999999258,
+    "maxMs": 3.3724169999995866,
+    "totalMs": 443.96942600000057
+   },
+   "stepActive": {
+    "meanMs": 1.481396024999996,
+    "p50Ms": 1.8780409999999392,
+    "p99Ms": 3.127209000000221,
+    "maxMs": 3.3724169999995866
+   },
+   "realTimeFactor": 18.019258830674502,
+   "restTime": 0.30833333333333335,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed": 1.1036243438720703,
+   "exploded": null,
+   "pen": {
+    "initialStatic_mm": 0,
+    "initialDynamic_mm": 0,
+    "maxStatic_mm": 0.09030095216592225,
+    "maxStaticAt": 0.1375,
+    "maxDynamic_mm": 0.072910736390569,
+    "maxDynamicAt": 0.7708333333333334,
+    "finalStatic_mm": 0.02160817638481756,
+    "finalDynamic_mm": 0.072910736390569,
+    "finalWorstStatic": {
+     "body": 0,
+     "piece": 6,
+     "static": 8,
+     "tag": "base-z"
+    }
+   },
+   "sleep": {
+    "asleepAtEnd": 4,
+    "of": 4,
+    "allAsleepAt": 0.7625,
+    "wokeAgain": false
+   },
+   "drift": {
+    "pos_mm": 0,
+    "ang_deg": 3.913573143207061e-16,
+    "window": [
+     4,
+     8
+    ]
+   },
+   "bodies": [
+    {
+     "name": "bowl0",
+     "pos": [
+      0.0038803059607744215,
+      0.031190675497055054,
+      0.003115817904472351
+     ],
+     "quat": [
+      0.00004793249172507785,
+      0.05491860955953598,
+      -0.00011827082198578864,
+      0.9984908699989319
+     ],
+     "lean": 89.98537643277947,
+     "axisV": 0.014623567220519388,
+     "asleep": true
+    },
+    {
+     "name": "bowl1",
+     "pos": [
+      0.004333434253931045,
+      0.0514359712600708,
+      0.002939503453671932
+     ],
+     "quat": [
+      0.0035492791794240475,
+      0.05609476566314697,
+      0.009026012383401394,
+      0.9983783960342407
+     ],
+     "lean": 88.88858455698903,
+     "axisV": 1.1114154430109775,
+     "asleep": true
+    },
+    {
+     "name": "bowl2",
+     "pos": [
+      0.002639223448932171,
+      0.07128729820251464,
+      0.0051990911364555355
+     ],
+     "quat": [
+      -0.027634380385279655,
+      0.05538962408900261,
+      -0.012021875008940697,
+      0.9980100393295288
+     ],
+     "lean": 86.54613451624844,
+     "axisV": 3.453865483751555,
+     "asleep": true
+    },
+    {
+     "name": "bowl3",
+     "pos": [
+      0.0033494383096694946,
+      0.09176347851753235,
+      0.0037015438079833984
+     ],
+     "quat": [
+      -0.02540687657892704,
+      0.05479961261153221,
+      -0.009918509051203728,
+      0.9981248378753662
+     ],
+     "lean": 86.87421042872808,
+     "axisV": 3.1257895712719224,
+     "asleep": true
+    }
+   ],
+   "hash": "4e1bcb52b294166a",
+   "hashPose": "dfc031d7bfb75846",
+   "marks": {},
+   "mem": {
+    "before": {
+     "rssMB": 298.203125,
+     "heapUsedMB": 47.44706726074219,
+     "externalMB": 14.264449119567871,
+     "arrayBuffersMB": 3.307976722717285
+    },
+    "after": {
+     "rssMB": 300.484375,
+     "heapUsedMB": 34.58500671386719,
+     "externalMB": 16.199484825134277,
+     "arrayBuffersMB": 3.3680124282836914
+    },
+    "engine": null
+   },
+   "masses": [
+    0.3500004708766937,
+    0.3500004708766937,
+    0.3500004708766937,
+    0.3500004708766937
+   ]
+  }
+ ]
+}

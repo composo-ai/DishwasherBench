@@ -1,0 +1,288 @@
+{
+ "format": "spotless.wash-record",
+ "version": 1,
+ "id": "candidate-egg-plates-weighed-eco50",
+ "kind": "planned",
+ "title": "The four yolk plates of wash 01 again on Eco 50, the yolk weighed on a kitchen scale",
+ "provenance": {
+  "date": "2026-10-11",
+  "by": "the simulation side: a candidate test wash, not run",
+  "methods": {
+   "photo_area": {
+    "description": "photograph of the piece after the wash, read as those of wash 01 were (soiled pixels against their surroundings, scaled by a known diameter)"
+   },
+   "scale": {
+    "description": "kitchen scale, 0.1 g, the piece weighed before and after the soil is put on"
+   },
+   "asked": {
+    "description": "not weighed: an amount asked for"
+   }
+  },
+  "notes": "Candidate for the experiment ranking. What it would settle: how much cleaning Eco 50 delivers (the soak) without the amount in the way; with it what two hours at 80 C cost and what turning a plate costs."
+ },
+ "machine": {
+  "id": "bosch_smv4hax40g",
+  "config": {
+   "basketHeights": {
+    "upper": "1"
+   },
+   "foldedTineRows": [],
+   "shelves": [
+    {
+     "basketId": "upper",
+     "shelfId": "cup_front",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "cup_rear",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "knife_shelf",
+     "state": "down"
+    }
+   ],
+   "cutleryBasket": {
+    "basketId": "lower",
+    "centre": [
+     0.2705,
+     0.123
+    ],
+    "longAxis": "y"
+   }
+  }
+ },
+ "programme": {
+  "id": "eco_50",
+  "options": []
+ },
+ "consumables": {
+  "detergent": {
+   "product": "Finish Powerball Ultimate",
+   "form": "pouch",
+   "dose_g": 12.9,
+   "placement": "dispenser"
+  }
+ },
+ "load": {
+  "dispenser_blocked": false,
+  "items": [
+   {
+    "id": "plate_9121",
+    "type": "dinner_plate_porcelain_270",
+    "frame": "tub",
+    "position_mm": [
+     -175.00588562973132,
+     100.35533770717839,
+     211.01558302661843
+    ],
+    "quat_wxyz": [
+     0.31617555022239685,
+     0.624170184135437,
+     -0.615230143070221,
+     -0.3632306158542633
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "egg_yolk_dried",
+      "recipe": "raw egg yolk, no white",
+      "preparation": "spread with a fork over about two thirds of the well, rim clean",
+      "amount_g": 3,
+      "amount_method": "scale",
+      "amount_sd_g": 0.05,
+      "where": {
+       "regions": [
+        {
+         "region": "well",
+         "coverage": 0.67
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 0.25
+      },
+      "heat": {
+       "history": "warm",
+       "temperature_c": 80,
+       "time_min": 120
+      }
+     }
+    ],
+    "notes": "plate_9121: as in wash 01 (oven-dried 2 h at 80 C), the yolk weighed"
+   },
+   {
+    "id": "plate_9122",
+    "type": "dinner_plate_porcelain_270",
+    "frame": "tub",
+    "position_mm": [
+     -106.88965537771219,
+     111.5000449529494,
+     213.56318210218075
+    ],
+    "quat_wxyz": [
+     0.49190014600753784,
+     0.5064103603363037,
+     0.5290071368217468,
+     0.4708867371082306
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "egg_yolk_dried",
+      "recipe": "raw egg yolk, no white",
+      "preparation": "spread with a fork over about two thirds of the well, rim clean",
+      "amount_g": 3,
+      "amount_method": "scale",
+      "amount_sd_g": 0.05,
+      "where": {
+       "regions": [
+        {
+         "region": "well",
+         "coverage": 0.67
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 0.25
+      },
+      "heat": {
+       "history": "warm",
+       "temperature_c": 80,
+       "time_min": 120
+      }
+     }
+    ],
+    "notes": "plate_9122: as in wash 01 (oven-dried 2 h at 80 C), the yolk weighed"
+   },
+   {
+    "id": "plate_9123",
+    "type": "dinner_plate_porcelain_270",
+    "frame": "tub",
+    "position_mm": [
+     131.11595791589596,
+     111.49986716999163,
+     212.85841516096852
+    ],
+    "quat_wxyz": [
+     0.5010027885437012,
+     0.49813657999038696,
+     -0.520706295967102,
+     -0.4792923629283905
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "egg_yolk_dried",
+      "recipe": "raw egg yolk, no white",
+      "preparation": "spread with a fork over about two thirds of the well, rim clean",
+      "amount_g": 3,
+      "amount_method": "scale",
+      "amount_sd_g": 0.05,
+      "where": {
+       "regions": [
+        {
+         "region": "well",
+         "coverage": 0.67
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 2.25
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "plate_9123: as in wash 01 (air-dried 2 h), the yolk weighed"
+   },
+   {
+    "id": "plate_9124",
+    "type": "dessert_plate_porcelain_190",
+    "frame": "tub",
+    "position_mm": [
+     210.65800277091603,
+     111.49772387300447,
+     168.2727619956763
+    ],
+    "quat_wxyz": [
+     0.3985539674758911,
+     0.5899463891983032,
+     0.5666046142578125,
+     0.41482195258140564
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "egg_yolk_dried",
+      "recipe": "raw egg yolk, no white",
+      "preparation": "spread with a fork over about two thirds of the well, rim clean",
+      "amount_g": 1.5,
+      "amount_method": "scale",
+      "amount_sd_g": 0.05,
+      "where": {
+       "regions": [
+        {
+         "region": "well",
+         "coverage": 0.67
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 2.25
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "plate_9124: as in wash 01 (air-dried 2 h), the yolk weighed"
+   }
+  ]
+ },
+ "observations": [
+  {
+   "item": "plate_9121",
+   "kind": "visible_area",
+   "sd": 0.4,
+   "method": "photo_area"
+  },
+  {
+   "item": "plate_9122",
+   "kind": "visible_area",
+   "sd": 0.4,
+   "method": "photo_area"
+  },
+  {
+   "item": "plate_9123",
+   "kind": "visible_area",
+   "sd": 0.4,
+   "method": "photo_area"
+  },
+  {
+   "item": "plate_9124",
+   "kind": "visible_area",
+   "sd": 0.4,
+   "method": "photo_area"
+  }
+ ],
+ "sim": {
+  "tier": "fast",
+  "level_seed": 20261101,
+  "sim_seed": 1,
+  "scenarios": [
+   {
+    "level_seed": 20261101
+   },
+   {
+    "level_seed": 20261102
+   },
+   {
+    "level_seed": 20261103
+   }
+  ]
+ }
+}

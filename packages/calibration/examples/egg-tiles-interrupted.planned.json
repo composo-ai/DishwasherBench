@@ -1,0 +1,928 @@
+{
+  "format": "spotless.wash-record",
+  "version": 1,
+  "id": "egg-tiles-interrupted",
+  "kind": "planned",
+  "title": "Ten egg-yolk tiles, three door openings in the main wash",
+  "provenance": {
+    "methods": {
+      "scale": {
+        "description": "balance, 0.001 g; tile weighed dry before soiling, after drying and after the wash"
+      },
+      "photo": {
+        "description": "photograph under diffuse light, soiled pixels over the pixels of the patch"
+      },
+      "eye": {
+        "description": "visual inspection, 10 s per item, 1000 to 1500 lux"
+      }
+    }
+  },
+  "machine": {
+    "id": "bosch_smv4hax40g"
+  },
+  "programme": {
+    "id": "auto_145"
+  },
+  "load": {
+    "items": [
+      {
+        "id": "tile_01",
+        "type": "test_tile_100x100",
+        "custom": {
+          "tile": {
+            "length_mm": 100,
+            "width_mm": 100,
+            "thickness_mm": 6,
+            "material": "porcelain_glazed"
+          }
+        },
+        "frame": "lower_rack",
+        "position_mm": [77.04557674096337, 100, 54.04459282059329],
+        "quat_wxyz": [0.6427876096865394, 0, 0.766044443118978, 0],
+        "soils": [
+          {
+            "id": "soil_1",
+            "type": "iec_egg_yolk",
+            "amount_g": 0.21,
+            "amount_method": "scale",
+            "where": {
+              "patch": {
+                "region": "top",
+                "shape": "disc",
+                "centre_mm": [0, 0, 6],
+                "diameter_mm": 50,
+                "description": "50 mm disc at the middle of the face"
+              }
+            },
+            "drying": {
+              "time_h": 2
+            },
+            "heat": {
+              "history": "warm",
+              "temperature_c": 80,
+              "time_min": 120
+            }
+          }
+        ]
+      },
+      {
+        "id": "tile_02",
+        "type": "test_tile_100x100",
+        "custom": {
+          "tile": {
+            "length_mm": 100,
+            "width_mm": 100,
+            "thickness_mm": 6,
+            "material": "porcelain_glazed"
+          }
+        },
+        "frame": "lower_rack",
+        "position_mm": [182.95442325903662, 100, 54.04459282059329],
+        "quat_wxyz": [0.6427876096865394, 0, -0.766044443118978, 0],
+        "soils": [
+          {
+            "id": "soil_1",
+            "type": "iec_egg_yolk",
+            "amount_g": 0.21,
+            "amount_method": "scale",
+            "where": {
+              "patch": {
+                "region": "top",
+                "shape": "disc",
+                "centre_mm": [0, 0, 6],
+                "diameter_mm": 50,
+                "description": "50 mm disc at the middle of the face"
+              }
+            },
+            "drying": {
+              "time_h": 2
+            },
+            "heat": {
+              "history": "warm",
+              "temperature_c": 80,
+              "time_min": 120
+            }
+          }
+        ]
+      },
+      {
+        "id": "tile_03",
+        "type": "test_tile_100x100",
+        "custom": {
+          "tile": {
+            "length_mm": 100,
+            "width_mm": 100,
+            "thickness_mm": 6,
+            "material": "porcelain_glazed"
+          }
+        },
+        "frame": "lower_rack",
+        "position_mm": [297.0455767409634, 100, 54.04459282059329],
+        "quat_wxyz": [0.6427876096865394, 0, 0.766044443118978, 0],
+        "soils": [
+          {
+            "id": "soil_1",
+            "type": "iec_egg_yolk",
+            "amount_g": 0.21,
+            "amount_method": "scale",
+            "where": {
+              "patch": {
+                "region": "top",
+                "shape": "disc",
+                "centre_mm": [0, 0, 6],
+                "diameter_mm": 50,
+                "description": "50 mm disc at the middle of the face"
+              }
+            },
+            "drying": {
+              "time_h": 2
+            },
+            "heat": {
+              "history": "warm",
+              "temperature_c": 80,
+              "time_min": 120
+            }
+          }
+        ]
+      },
+      {
+        "id": "tile_04",
+        "type": "test_tile_100x100",
+        "custom": {
+          "tile": {
+            "length_mm": 100,
+            "width_mm": 100,
+            "thickness_mm": 6,
+            "material": "porcelain_glazed"
+          }
+        },
+        "frame": "lower_rack",
+        "position_mm": [442.9544232590366, 100, 54.04459282059329],
+        "quat_wxyz": [0.6427876096865394, 0, -0.766044443118978, 0],
+        "soils": [
+          {
+            "id": "soil_1",
+            "type": "iec_egg_yolk",
+            "amount_g": 0.21,
+            "amount_method": "scale",
+            "where": {
+              "patch": {
+                "region": "top",
+                "shape": "disc",
+                "centre_mm": [0, 0, 6],
+                "diameter_mm": 50,
+                "description": "50 mm disc at the middle of the face"
+              }
+            },
+            "drying": {
+              "time_h": 2
+            },
+            "heat": {
+              "history": "warm",
+              "temperature_c": 80,
+              "time_min": 120
+            }
+          }
+        ]
+      },
+      {
+        "id": "tile_05",
+        "type": "test_tile_100x100",
+        "custom": {
+          "tile": {
+            "length_mm": 100,
+            "width_mm": 100,
+            "thickness_mm": 6,
+            "material": "porcelain_glazed"
+          }
+        },
+        "frame": "lower_rack",
+        "position_mm": [80, 377.0455767409634, 54.04459282059329],
+        "quat_wxyz": [0.6427876096865394, -0.766044443118978, 0, 0],
+        "soils": [
+          {
+            "id": "soil_1",
+            "type": "iec_egg_yolk",
+            "amount_g": 0.21,
+            "amount_method": "scale",
+            "where": {
+              "patch": {
+                "region": "top",
+                "shape": "disc",
+                "centre_mm": [0, 0, 6],
+                "diameter_mm": 50,
+                "description": "50 mm disc at the middle of the face"
+              }
+            },
+            "drying": {
+              "time_h": 2
+            },
+            "heat": {
+              "history": "warm",
+              "temperature_c": 80,
+              "time_min": 120
+            }
+          }
+        ]
+      },
+      {
+        "id": "tile_06",
+        "type": "test_tile_100x100",
+        "custom": {
+          "tile": {
+            "length_mm": 100,
+            "width_mm": 100,
+            "thickness_mm": 6,
+            "material": "porcelain_glazed"
+          }
+        },
+        "frame": "lower_rack",
+        "position_mm": [260, 382.9544232590366, 54.04459282059329],
+        "quat_wxyz": [0.6427876096865394, 0.766044443118978, 0, 0],
+        "soils": [
+          {
+            "id": "soil_1",
+            "type": "iec_egg_yolk",
+            "amount_g": 0.21,
+            "amount_method": "scale",
+            "where": {
+              "patch": {
+                "region": "top",
+                "shape": "disc",
+                "centre_mm": [0, 0, 6],
+                "diameter_mm": 50,
+                "description": "50 mm disc at the middle of the face"
+              }
+            },
+            "drying": {
+              "time_h": 2
+            },
+            "heat": {
+              "history": "warm",
+              "temperature_c": 80,
+              "time_min": 120
+            }
+          }
+        ]
+      },
+      {
+        "id": "tile_07",
+        "type": "test_tile_100x100",
+        "custom": {
+          "tile": {
+            "length_mm": 100,
+            "width_mm": 100,
+            "thickness_mm": 6,
+            "material": "porcelain_glazed"
+          }
+        },
+        "frame": "lower_rack",
+        "position_mm": [440, 377.0455767409634, 54.04459282059329],
+        "quat_wxyz": [0.6427876096865394, -0.766044443118978, 0, 0],
+        "soils": [
+          {
+            "id": "soil_1",
+            "type": "iec_egg_yolk",
+            "amount_g": 0.21,
+            "amount_method": "scale",
+            "where": {
+              "patch": {
+                "region": "top",
+                "shape": "disc",
+                "centre_mm": [0, 0, 6],
+                "diameter_mm": 50,
+                "description": "50 mm disc at the middle of the face"
+              }
+            },
+            "drying": {
+              "time_h": 2
+            },
+            "heat": {
+              "history": "warm",
+              "temperature_c": 80,
+              "time_min": 120
+            }
+          }
+        ]
+      },
+      {
+        "id": "tile_08",
+        "type": "test_tile_100x100",
+        "custom": {
+          "tile": {
+            "length_mm": 100,
+            "width_mm": 100,
+            "thickness_mm": 6,
+            "material": "porcelain_glazed"
+          }
+        },
+        "frame": "upper_rack",
+        "position_mm": [120, 150, 10],
+        "quat_wxyz": [0, 1, 0, 0],
+        "soils": [
+          {
+            "id": "soil_1",
+            "type": "iec_egg_yolk",
+            "amount_g": 0.21,
+            "amount_method": "scale",
+            "where": {
+              "patch": {
+                "region": "top",
+                "shape": "disc",
+                "centre_mm": [0, 0, 6],
+                "diameter_mm": 50,
+                "description": "50 mm disc at the middle of the face"
+              }
+            },
+            "drying": {
+              "time_h": 2
+            },
+            "heat": {
+              "history": "warm",
+              "temperature_c": 80,
+              "time_min": 120
+            }
+          }
+        ]
+      },
+      {
+        "id": "tile_09",
+        "type": "test_tile_100x100",
+        "custom": {
+          "tile": {
+            "length_mm": 100,
+            "width_mm": 100,
+            "thickness_mm": 6,
+            "material": "porcelain_glazed"
+          }
+        },
+        "frame": "upper_rack",
+        "position_mm": [260, 330, 10],
+        "quat_wxyz": [0, 1, 0, 0],
+        "soils": [
+          {
+            "id": "soil_1",
+            "type": "iec_egg_yolk",
+            "amount_g": 0.21,
+            "amount_method": "scale",
+            "where": {
+              "patch": {
+                "region": "top",
+                "shape": "disc",
+                "centre_mm": [0, 0, 6],
+                "diameter_mm": 50,
+                "description": "50 mm disc at the middle of the face"
+              }
+            },
+            "drying": {
+              "time_h": 2
+            },
+            "heat": {
+              "history": "warm",
+              "temperature_c": 80,
+              "time_min": 120
+            }
+          }
+        ]
+      },
+      {
+        "id": "tile_10",
+        "type": "test_tile_100x100",
+        "custom": {
+          "tile": {
+            "length_mm": 100,
+            "width_mm": 100,
+            "thickness_mm": 6,
+            "material": "porcelain_glazed"
+          }
+        },
+        "frame": "upper_rack",
+        "position_mm": [397.0455767409634, 150, 54.04459282059329],
+        "quat_wxyz": [0.6427876096865394, 0, 0.766044443118978, 0],
+        "soils": [
+          {
+            "id": "soil_1",
+            "type": "iec_egg_yolk",
+            "amount_g": 0.21,
+            "amount_method": "scale",
+            "where": {
+              "patch": {
+                "region": "top",
+                "shape": "disc",
+                "centre_mm": [0, 0, 6],
+                "diameter_mm": 50,
+                "description": "50 mm disc at the middle of the face"
+              }
+            },
+            "drying": {
+              "time_h": 2
+            },
+            "heat": {
+              "history": "warm",
+              "temperature_c": 80,
+              "time_min": 120
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "observations": [
+    {
+      "item": "tile_01",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 1500,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_01",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 2400,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_01",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 3600,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_01",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_01",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "mass_fraction",
+      "method": "scale",
+      "sd": 0.03
+    },
+    {
+      "item": "tile_02",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 1500,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_02",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 2400,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_02",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 3600,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_02",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_02",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "mass_fraction",
+      "method": "scale",
+      "sd": 0.03
+    },
+    {
+      "item": "tile_03",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 1500,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_03",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 2400,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_03",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 3600,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_03",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_03",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "mass_fraction",
+      "method": "scale",
+      "sd": 0.03
+    },
+    {
+      "item": "tile_04",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 1500,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_04",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 2400,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_04",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 3600,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_04",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_04",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "mass_fraction",
+      "method": "scale",
+      "sd": 0.03
+    },
+    {
+      "item": "tile_05",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 1500,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_05",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 2400,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_05",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 3600,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_05",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_05",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "mass_fraction",
+      "method": "scale",
+      "sd": 0.03
+    },
+    {
+      "item": "tile_06",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 1500,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_06",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 2400,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_06",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 3600,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_06",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_06",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "mass_fraction",
+      "method": "scale",
+      "sd": 0.03
+    },
+    {
+      "item": "tile_07",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 1500,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_07",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 2400,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_07",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 3600,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_07",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_07",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "mass_fraction",
+      "method": "scale",
+      "sd": 0.03
+    },
+    {
+      "item": "tile_08",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 1500,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_08",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 2400,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_08",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 3600,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_08",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_08",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "mass_fraction",
+      "method": "scale",
+      "sd": 0.03
+    },
+    {
+      "item": "tile_09",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 1500,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_09",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 2400,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_09",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 3600,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_09",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_09",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "mass_fraction",
+      "method": "scale",
+      "sd": 0.03
+    },
+    {
+      "item": "tile_10",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 1500,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_10",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 2400,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_10",
+      "target": {
+        "soil": "soil_1"
+      },
+      "at_s": 3600,
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_10",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "area_fraction",
+      "method": "photo",
+      "sd": 0.05
+    },
+    {
+      "item": "tile_10",
+      "target": {
+        "soil": "soil_1"
+      },
+      "kind": "mass_fraction",
+      "method": "scale",
+      "sd": 0.03
+    }
+  ],
+  "interruptions": [
+    {
+      "t_s": 1500
+    },
+    {
+      "t_s": 2400
+    },
+    {
+      "t_s": 3600
+    }
+  ],
+  "sim": {
+    "tier": "fast",
+    "level_seed": 1,
+    "sim_seed": 1
+  }
+}

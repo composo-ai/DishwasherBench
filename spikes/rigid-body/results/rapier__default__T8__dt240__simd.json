@@ -1,0 +1,117 @@
+{
+ "engine": "rapier",
+ "preset": "default",
+ "test": "T8",
+ "hz": 240,
+ "tag": "simd",
+ "cfg": {
+  "ccd": false,
+  "sleep": true,
+  "variant": "simd",
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {
+  "t8scenes": "T2,T5",
+  "t8hz": 240
+ },
+ "wallSeconds": 17.270244290999997,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:42:49.712Z",
+ "summary": {
+  "T2@1/240": {
+   "counts": {
+    "bodies": 12,
+    "pieces": 876,
+    "vertices": 7488,
+    "staticCapsules": 236,
+    "staticBoxes": 0
+   },
+   "stepMean_ms": {
+    "best": 3.903723436666678,
+    "median": 3.9435047658333375,
+    "worst": 4.584133253333332
+   },
+   "stepActiveMean_ms": {
+    "best": 14.344444287500009,
+    "median": 14.358541683333339,
+    "worst": 16.814504879166673
+   },
+   "stepP99_ms": {
+    "best": 21.354833000000326,
+    "median": 21.50012500000048,
+    "worst": 25.34762499999988
+   },
+   "stepMax_ms": {
+    "best": 143.111417,
+    "median": 144.23975
+   },
+   "total_ms": {
+    "best": 4684.468124000014,
+    "median": 4732.205719000005
+   },
+   "build_ms": {
+    "best": 74.10145800000001,
+    "median": 75.264417
+   },
+   "rssAfter_MB": 311.765625,
+   "rssDelta_MB": 270.71875,
+   "engineMem": null,
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 0.9541666666666666,
+    "exploded": null,
+    "asleep": "12/12",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 0.3269999921321869
+   }
+  },
+  "T5@1/240": {
+   "counts": {
+    "bodies": 20,
+    "pieces": 140,
+    "vertices": 1160,
+    "staticCapsules": 0,
+    "staticBoxes": 10
+   },
+   "stepMean_ms": {
+    "best": 0.2958643450000006,
+    "median": 0.301032911666667,
+    "worst": 0.3029129774999993
+   },
+   "stepActiveMean_ms": {
+    "best": 1.1079737875000002,
+    "median": 1.1484480624999993,
+    "worst": 1.1588357416666661
+   },
+   "stepP99_ms": {
+    "best": 1.9217920000000106,
+    "median": 2.1058749999999975,
+    "worst": 2.1273750000000007
+   },
+   "stepMax_ms": {
+    "best": 32.759457999999995,
+    "median": 33.20254200000001
+   },
+   "total_ms": {
+    "best": 355.0372140000007,
+    "median": 361.23949400000043
+   },
+   "build_ms": {
+    "best": 63.186875,
+    "median": 63.867875
+   },
+   "rssAfter_MB": 238.671875,
+   "rssDelta_MB": 203.71875,
+   "engineMem": null,
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 1.3791666666666667,
+    "exploded": null,
+    "asleep": "20/20",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.0299464535001477
+   }
+  }
+ },
+ "runs": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@spotless/sim-spray",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Wash simulation module M6: droplet parcels as Monte Carlo deposition tables and as time-coupled parcels",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@spotless/core": "workspace:*",
+    "@spotless/sim-jets": "workspace:*",
+    "@spotless/sim-scene": "workspace:*"
+  }
+}

@@ -1,0 +1,94 @@
+/* The sound control of the top bar and its two small panels (src/audio/control.ts). */
+
+#sound-control {
+  margin-left: auto;
+  white-space: nowrap;
+  /* Above the veil of the page's dialogs: the list of levels is a dialog, and its music must be
+     as easy to turn down as any other. */
+  position: relative;
+  z-index: 30;
+}
+#sound-control.off {
+  color: var(--muted);
+}
+#sound-panel,
+#sound-credits {
+  position: fixed;
+  z-index: 40;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  box-shadow: 0 6px 24px rgba(20, 30, 50, 0.16);
+  padding: 10px 12px;
+}
+#sound-panel[hidden],
+#sound-credits[hidden] {
+  display: none;
+}
+#sound-panel {
+  width: 300px;
+  display: grid;
+  gap: 8px;
+}
+#sound-panel label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+#sound-panel input[type='range'] {
+  flex: 1 1 auto;
+  min-width: 0;
+  accent-color: var(--accent);
+}
+#sound-panel .now {
+  color: var(--muted);
+  font-size: 12px;
+  min-height: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#sound-panel .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#sound-credits {
+  width: min(520px, calc(100vw - 24px));
+  max-height: calc(100vh - 80px);
+  overflow: auto;
+}
+#sound-credits h2 {
+  margin-bottom: 8px;
+}
+#sound-credits ul {
+  margin: 0 0 8px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 7px;
+}
+#sound-credits li span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+#sound-credits a {
+  color: var(--accent);
+}
+
+#sound-heard {
+  margin: 2px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 12px;
+}
+#sound-skip {
+  white-space: nowrap;
+  font-size: 12px;
+}
+#sound-next {
+  flex: 1 1 auto;
+  min-width: 0;
+}

@@ -1,0 +1,650 @@
+{
+  "when": "2026-10-08T15:12:49.333Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 203,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "grid": 2048,
+  "cells": 4194304,
+  "k": 32,
+  "awaitEvery": 2,
+  "power": "Now drawing from 'AC Power'",
+  "samples": [
+    {
+      "tSec": 10.039838,
+      "stepsPerSec": 873.3208643406398,
+      "cellUpdatesPerSec": 3662973194.587403,
+      "rssMB": 191,
+      "heapUsedMB": 19.54271697998047,
+      "externalMB": 65.7376298904419,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 20.122350209,
+      "stepsPerSec": 844.9125585242947,
+      "cellUpdatesPerSec": 3543820123.8686833,
+      "rssMB": 199.140625,
+      "heapUsedMB": 24.746856689453125,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 30.139041541999998,
+      "stepsPerSec": 863.3189923958233,
+      "cellUpdatesPerSec": 3621022303.0817714,
+      "rssMB": 202.421875,
+      "heapUsedMB": 20.91960906982422,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 40.173753084,
+      "stepsPerSec": 893.68906155779,
+      "cellUpdatesPerSec": 3748403605.6480846,
+      "rssMB": 202.53125,
+      "heapUsedMB": 20.729827880859375,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 50.19318675,
+      "stepsPerSec": 856.6508736645235,
+      "cellUpdatesPerSec": 3593054186.0146055,
+      "rssMB": 210.65625,
+      "heapUsedMB": 11.11676025390625,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 60.25686775,
+      "stepsPerSec": 884.7622197183301,
+      "cellUpdatesPerSec": 3710961717.213471,
+      "rssMB": 213.875,
+      "heapUsedMB": 7.5522308349609375,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 70.305978667,
+      "stepsPerSec": 911.6774984982538,
+      "cellUpdatesPerSec": 3823852578.66122,
+      "rssMB": 214.546875,
+      "heapUsedMB": 11.499588012695312,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 80.316055792,
+      "stepsPerSec": 953.3912311551574,
+      "cellUpdatesPerSec": 3998812654.399001,
+      "rssMB": 214.5625,
+      "heapUsedMB": 14.669479370117188,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 90.3865115,
+      "stepsPerSec": 947.7348598927541,
+      "cellUpdatesPerSec": 3975088113.787618,
+      "rssMB": 217.625,
+      "heapUsedMB": 22.27893829345703,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 100.39873200000001,
+      "stepsPerSec": 953.2054167096097,
+      "cellUpdatesPerSec": 3998033292.126783,
+      "rssMB": 217.640625,
+      "heapUsedMB": 5.042137145996094,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 110.448585542,
+      "stepsPerSec": 911.3807979769784,
+      "cellUpdatesPerSec": 3822608126.4780326,
+      "rssMB": 132.578125,
+      "heapUsedMB": 24.185821533203125,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 120.519552417,
+      "stepsPerSec": 884.1434644022677,
+      "cellUpdatesPerSec": 3708366469.316289,
+      "rssMB": 137.1875,
+      "heapUsedMB": 17.768081665039062,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 130.54595925,
+      "stepsPerSec": 792.646805912666,
+      "cellUpdatesPerSec": 3324601668.6267185,
+      "rssMB": 101.828125,
+      "heapUsedMB": 11.686111450195312,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 140.70590341700003,
+      "stepsPerSec": 811.7146800034348,
+      "cellUpdatesPerSec": 3404578129.1971264,
+      "rssMB": 116.875,
+      "heapUsedMB": 9.383316040039062,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 150.80228637500002,
+      "stepsPerSec": 864.9011423285662,
+      "cellUpdatesPerSec": 3627658320.8732743,
+      "rssMB": 132.96875,
+      "heapUsedMB": 10.19183349609375,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 160.86571441700002,
+      "stepsPerSec": 904.2899105890577,
+      "cellUpdatesPerSec": 3792866789.143327,
+      "rssMB": 136.34375,
+      "heapUsedMB": 23.44231414794922,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 170.92731799999999,
+      "stepsPerSec": 897.8380884435385,
+      "cellUpdatesPerSec": 3765805885.711087,
+      "rssMB": 137.296875,
+      "heapUsedMB": 13.266677856445312,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 180.941665625,
+      "stepsPerSec": 914.9384076725148,
+      "cellUpdatesPerSec": 3837529823.0544596,
+      "rssMB": 139.4375,
+      "heapUsedMB": 20.2861328125,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 190.974526209,
+      "stepsPerSec": 925.7823000724555,
+      "cellUpdatesPerSec": 3883012404.3231006,
+      "rssMB": 139.984375,
+      "heapUsedMB": 20.215560913085938,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 201.00438025000003,
+      "stepsPerSec": 945.1673271160078,
+      "cellUpdatesPerSec": 3964319100.79198,
+      "rssMB": 140.109375,
+      "heapUsedMB": 10.070022583007812,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 211.065718167,
+      "stepsPerSec": 954.9332791972379,
+      "cellUpdatesPerSec": 4005280472.6700916,
+      "rssMB": 140.375,
+      "heapUsedMB": 24.838462829589844,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 221.12082383400002,
+      "stepsPerSec": 955.6332577196818,
+      "cellUpdatesPerSec": 4008216395.386692,
+      "rssMB": 140.6875,
+      "heapUsedMB": 15.958595275878906,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 231.18810775000003,
+      "stepsPerSec": 954.3735820713232,
+      "cellUpdatesPerSec": 4002932932.776079,
+      "rssMB": 140.890625,
+      "heapUsedMB": 7.366340637207031,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 241.25467275000003,
+      "stepsPerSec": 954.3820460242584,
+      "cellUpdatesPerSec": 4002968433.1677313,
+      "rssMB": 140.9375,
+      "heapUsedMB": 23.834190368652344,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 251.30222995900002,
+      "stepsPerSec": 956.3047943801237,
+      "cellUpdatesPerSec": 4011033024.28773,
+      "rssMB": 140.96875,
+      "heapUsedMB": 15.622703552246094,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 261.3769335,
+      "stepsPerSec": 896.4371318383671,
+      "cellUpdatesPerSec": 3759929847.8181906,
+      "rssMB": 128.109375,
+      "heapUsedMB": 11.943893432617188,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 271.424371834,
+      "stepsPerSec": 860.61446815985,
+      "cellUpdatesPerSec": 3609678706.2607317,
+      "rssMB": 124.28125,
+      "heapUsedMB": 3.65338134765625,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 281.43912329200003,
+      "stepsPerSec": 914.6915686915389,
+      "cellUpdatesPerSec": 3836494505.3291965,
+      "rssMB": 132.171875,
+      "heapUsedMB": 18.429176330566406,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 291.48525754200006,
+      "stepsPerSec": 899.168586636053,
+      "cellUpdatesPerSec": 3771386399.6019435,
+      "rssMB": 116,
+      "heapUsedMB": 22.048995971679688,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 301.560661917,
+      "stepsPerSec": 902.751695262934,
+      "cellUpdatesPerSec": 3786415046.4481053,
+      "rssMB": 132.125,
+      "heapUsedMB": 4.0971221923828125,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 311.595994667,
+      "stepsPerSec": 893.570415549013,
+      "cellUpdatesPerSec": 3747905968.2188873,
+      "rssMB": 135.109375,
+      "heapUsedMB": 20.606483459472656,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 321.66793725,
+      "stepsPerSec": 922.2052961852436,
+      "cellUpdatesPerSec": 3868009362.610952,
+      "rssMB": 137.421875,
+      "heapUsedMB": 14.033988952636719,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 331.72000858399997,
+      "stepsPerSec": 898.6642451839898,
+      "cellUpdatesPerSec": 3769271038.232189,
+      "rssMB": 132.921875,
+      "heapUsedMB": 6.347198486328125,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 341.779206417,
+      "stepsPerSec": 885.1496262977874,
+      "cellUpdatesPerSec": 3712586618.179315,
+      "rssMB": 131.953125,
+      "heapUsedMB": 6.697105407714844,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 351.84240512499997,
+      "stepsPerSec": 911.0590355217186,
+      "cellUpdatesPerSec": 3821258556.924886,
+      "rssMB": 123.734375,
+      "heapUsedMB": 12.769760131835938,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 361.876508667,
+      "stepsPerSec": 887.4176772679419,
+      "cellUpdatesPerSec": 3722099513.435638,
+      "rssMB": 121.109375,
+      "heapUsedMB": 13.114952087402344,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 371.9531145,
+      "stepsPerSec": 909.0311592905314,
+      "cellUpdatesPerSec": 3812753027.536913,
+      "rssMB": 127.203125,
+      "heapUsedMB": 20.6900634765625,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 381.97133170899997,
+      "stepsPerSec": 914.2449454458019,
+      "cellUpdatesPerSec": 3834621231.663109,
+      "rssMB": 126.90625,
+      "heapUsedMB": 3.4635162353515625,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 391.981844167,
+      "stepsPerSec": 908.6639351176262,
+      "cellUpdatesPerSec": 3811212777.7196,
+      "rssMB": 126.0625,
+      "heapUsedMB": 20.44916534423828,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 402.061024334,
+      "stepsPerSec": 902.7132976159984,
+      "cellUpdatesPerSec": 3786253995.0439725,
+      "rssMB": 127.03125,
+      "heapUsedMB": 13.374488830566406,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    },
+    {
+      "tSec": 412.081876292,
+      "stepsPerSec": 914.2512319441972,
+      "cellUpdatesPerSec": 3834647599.148474,
+      "rssMB": 126.8125,
+      "heapUsedMB": 11.754745483398438,
+      "externalMB": 65.73766803741455,
+      "therm": {
+        "cpuSpeedLimit": null,
+        "schedulerLimit": null,
+        "availableCpus": null,
+        "warning": "none"
+      },
+      "errors": 0
+    }
+  ],
+  "summary": {
+    "totalSteps": 379136,
+    "totalCellUpdates": 1590211641344,
+    "seconds": 420.033237917,
+    "first": 3662973194.587403,
+    "last": 3834647599.148474,
+    "min": 3324601668.6267185,
+    "max": 4011033024.28773,
+    "mean": 3788349364.374743,
+    "minOverFirstPct": 90.76238050388469,
+    "lastOverFirstPct": 104.68675022833217,
+    "rssFirstMB": 191,
+    "rssLastMB": 126.8125,
+    "stateFinite": true,
+    "deviceLost": null,
+    "uncapturedErrors": 0,
+    "foreignAtEnd": [],
+    "powerAtEnd": "Now drawing from 'AC Power'"
+  }
+}

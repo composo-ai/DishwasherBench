@@ -1,0 +1,81 @@
+{
+ "engine": "jolt",
+ "preset": "tuned-ccd",
+ "test": "T8",
+ "hz": 240,
+ "tag": "awake2",
+ "cfg": {
+  "ccd": true,
+  "sleep": false,
+  "penetrationSlop": 0.0001,
+  "speculativeContactDistance": 0.005,
+  "convexRadius": 0.0002,
+  "hullTolerance": 0.00001,
+  "velocitySteps": 10,
+  "positionSteps": 4,
+  "manifoldTolerance": 0.0001,
+  "manifoldReduction": false,
+  "pointVelocitySleepThreshold": 0.005,
+  "minVelocityForRestitution": 0.2,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {
+  "t8hz": 240,
+  "t8scenes": "FULL"
+ },
+ "wallSeconds": 13.757509875,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:45:04.107Z",
+ "summary": {
+  "FULL@1/240": {
+   "counts": {
+    "bodies": 122,
+    "pieces": 3028,
+    "vertices": 25872,
+    "staticCapsules": 1355,
+    "staticBoxes": 30
+   },
+   "stepMean_ms": {
+    "best": 4.447087454166666,
+    "median": 4.599621601041664,
+    "worst": 4.660919604166675
+   },
+   "stepActiveMean_ms": {
+    "best": 5.584406954166668,
+    "median": 5.678712825000008,
+    "worst": 5.794729124999999
+   },
+   "stepP99_ms": {
+    "best": 17.034625000000005,
+    "median": 18.030583000000007,
+    "worst": 18.359375
+   },
+   "stepMax_ms": {
+    "best": 29.015084,
+    "median": 29.482459000000006
+   },
+   "total_ms": {
+    "best": 4269.203955999999,
+    "median": 4415.636736999998
+   },
+   "build_ms": {
+    "best": 76.99000000000001,
+    "median": 79.431083
+   },
+   "rssAfter_MB": 114.171875,
+   "rssDelta_MB": 70.015625,
+   "engineMem": {
+    "wasmHeapMB": 128
+   },
+   "simSeconds": 4,
+   "stability": {
+    "restTime_s": 1.7291666666666667,
+    "exploded": null,
+    "asleep": "0/122",
+    "rmsLin_mm_s": 0.3019065230993021,
+    "maxSpeed": 1.4306248426437378
+   }
+  }
+ },
+ "runs": []
+}

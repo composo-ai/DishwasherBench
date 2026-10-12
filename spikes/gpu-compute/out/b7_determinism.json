@@ -1,0 +1,145 @@
+{
+  "when": "2026-10-08T15:11:52.763Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 200,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "b1": {
+    "baseline": {
+      "w": 1024,
+      "h": 1024,
+      "steps": 200,
+      "hash": "ba69c15a8d62ffc6",
+      "finite": true,
+      "nonUniform": true
+    },
+    "checks": [
+      {
+        "name": "second run, same device, same settings",
+        "identical": true
+      },
+      {
+        "name": "third run",
+        "identical": true
+      },
+      {
+        "name": "1 dispatch per submit (k=1)",
+        "identical": true
+      },
+      {
+        "name": "all 200 dispatches in one pass / one submit",
+        "identical": true
+      },
+      {
+        "name": "workgroup 16x16",
+        "identical": true
+      },
+      {
+        "name": "workgroup 256x1",
+        "identical": true
+      },
+      {
+        "name": "rgba32float texture formulation (sampled read)",
+        "identical": true
+      },
+      {
+        "name": "rgba32float texture formulation (storage read)",
+        "identical": true
+      },
+      {
+        "name": "a second GPUDevice in the same process",
+        "identical": true
+      },
+      {
+        "name": "vs JS reference with Math.fround (strict f32, no FMA)",
+        "identical": false,
+        "differingFloats": 3221079,
+        "ofFloats": 4194304,
+        "maxAbsDiff": 3.5762786865234375e-7
+      },
+      {
+        "name": "vs C clang -O3 -ffp-contract=off (strict)",
+        "identical": false,
+        "differingFloats": 3221079,
+        "ofFloats": 4194304,
+        "maxAbsDiff": 3.5762786865234375e-7
+      },
+      {
+        "name": "vs C clang -O3 default (fp-contract=on, FMA allowed)",
+        "identical": false,
+        "differingFloats": 3064538,
+        "ofFloats": 4194304,
+        "maxAbsDiff": 2.980232238769531e-7
+      }
+    ],
+    "firstStepVsJS": {
+      "differingFloats": 592665,
+      "ofFloats": 4194304,
+      "maxAbsDiff": 5.960464477539063e-8
+    }
+  },
+  "b4": {
+    "baselineHash": "a46cbbdde956a6c9",
+    "finite": true,
+    "checks": [
+      {
+        "name": "fixed-point i32 atomicAdd: second run (dispersed, shuffled)",
+        "identical": true
+      },
+      {
+        "name": "fixed-point i32 atomicAdd: third run",
+        "identical": true
+      },
+      {
+        "name": "fixed-point i32 atomicAdd: workgroup 256 instead of 64",
+        "identical": true
+      },
+      {
+        "name": "fixed-point, dense block (8 particles/cell, heavy contention): 2nd run",
+        "identical": true
+      },
+      {
+        "name": "fixed-point: grid after scatter, particles in shuffled order vs sorted order",
+        "identical": true
+      },
+      {
+        "name": "f32 compare-exchange accumulation, dense block: second run",
+        "identical": false,
+        "differingFloats": 12872344,
+        "ofFloats": 20971520,
+        "maxAbsDiff": 0.0002918541431427002
+      },
+      {
+        "name": "f32 compare-exchange accumulation, dispersed: second run",
+        "identical": false,
+        "differingFloats": 11716016,
+        "ofFloats": 20971520,
+        "maxAbsDiff": 0.0009998232126235962
+      },
+      {
+        "name": "f32 CAS: grid after ONE scatter, second run",
+        "identical": false,
+        "differingFloats": 394581,
+        "ofFloats": 67108864,
+        "maxAbsDiff": 0.00000762939453125
+      },
+      {
+        "name": "f32 CAS: grid after scatter, shuffled vs sorted particle order",
+        "identical": false,
+        "differingFloats": 524761,
+        "ofFloats": 67108864,
+        "maxAbsDiff": 0.00001049041748046875
+      }
+    ]
+  },
+  "crossProcess": {
+    "childHashes": {
+      "b1": "ba69c15a8d62ffc6",
+      "b4": "a46cbbdde956a6c9"
+    },
+    "b1Identical": true,
+    "b4Identical": true
+  }
+}

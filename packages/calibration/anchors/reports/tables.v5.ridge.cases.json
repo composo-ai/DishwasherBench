@@ -1,0 +1,266 @@
+[
+ {
+  "name": "ridge duty 1 protease 0.012 L1S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 1,
+   "liq.xProtease": 0.012
+  }
+ },
+ {
+  "name": "ridge duty 1 protease 0.012 L2S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 1,
+   "liq.xProtease": 0.012
+  }
+ },
+ {
+  "name": "ridge duty 1 protease 0.014 L1S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 1,
+   "liq.xProtease": 0.014
+  }
+ },
+ {
+  "name": "ridge duty 1 protease 0.014 L2S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 1,
+   "liq.xProtease": 0.014
+  }
+ },
+ {
+  "name": "ridge duty 1 protease 0.016 L1S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 1,
+   "liq.xProtease": 0.016
+  }
+ },
+ {
+  "name": "ridge duty 1 protease 0.016 L2S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 1,
+   "liq.xProtease": 0.016
+  }
+ },
+ {
+  "name": "ridge duty 1 protease 0.02 L1S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 1,
+   "liq.xProtease": 0.02
+  }
+ },
+ {
+  "name": "ridge duty 1 protease 0.02 L2S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 1,
+   "liq.xProtease": 0.02
+  }
+ },
+ {
+  "name": "ridge duty 0.75 protease 0.012 L1S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.75,
+   "liq.xProtease": 0.012
+  }
+ },
+ {
+  "name": "ridge duty 0.75 protease 0.012 L2S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.75,
+   "liq.xProtease": 0.012
+  }
+ },
+ {
+  "name": "ridge duty 0.75 protease 0.014 L1S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.75,
+   "liq.xProtease": 0.014
+  }
+ },
+ {
+  "name": "ridge duty 0.75 protease 0.014 L2S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.75,
+   "liq.xProtease": 0.014
+  }
+ },
+ {
+  "name": "ridge duty 0.75 protease 0.016 L1S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.75,
+   "liq.xProtease": 0.016
+  }
+ },
+ {
+  "name": "ridge duty 0.75 protease 0.016 L2S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.75,
+   "liq.xProtease": 0.016
+  }
+ },
+ {
+  "name": "ridge duty 0.75 protease 0.02 L1S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.75,
+   "liq.xProtease": 0.02
+  }
+ },
+ {
+  "name": "ridge duty 0.75 protease 0.02 L2S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.75,
+   "liq.xProtease": 0.02
+  }
+ },
+ {
+  "name": "ridge duty 0.5 protease 0.012 L1S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.5,
+   "liq.xProtease": 0.012
+  }
+ },
+ {
+  "name": "ridge duty 0.5 protease 0.012 L2S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.5,
+   "liq.xProtease": 0.012
+  }
+ },
+ {
+  "name": "ridge duty 0.5 protease 0.014 L1S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.5,
+   "liq.xProtease": 0.014
+  }
+ },
+ {
+  "name": "ridge duty 0.5 protease 0.014 L2S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.5,
+   "liq.xProtease": 0.014
+  }
+ },
+ {
+  "name": "ridge duty 0.5 protease 0.016 L1S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.5,
+   "liq.xProtease": 0.016
+  }
+ },
+ {
+  "name": "ridge duty 0.5 protease 0.016 L2S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.5,
+   "liq.xProtease": 0.016
+  }
+ },
+ {
+  "name": "ridge duty 0.5 protease 0.02 L1S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 1,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.5,
+   "liq.xProtease": 0.02
+  }
+ },
+ {
+  "name": "ridge duty 0.5 protease 0.02 L2S1",
+  "programme": "eco_record",
+  "set": "anchored-v5",
+  "levelSeed": 2,
+  "simSeed": 1,
+  "extra": {
+   "prog.soakDuty": 0.5,
+   "liq.xProtease": 0.02
+  }
+ }
+]

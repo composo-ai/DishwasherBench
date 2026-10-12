@@ -1,0 +1,131 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "hollow-inverted",
+ "description": "P01 A: a ceramic mug and a cereal bowl mouth down on the floor of the upper basket",
+ "recipe_hash": "sha256:8ce411ebab702f4b7e73f7e0b836bbcda1801cbf07bb55dd93cfc7fc852d3b36",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "bowl",
+   "item_type": "cereal_bowl_vitrelle_159",
+   "pose": {
+    "p": [
+     0.0895600524492251,
+     0.07206405209960291,
+     0.5252887021552416
+    ],
+    "q": [
+     0.9816406965255737,
+     -0.018645131960511208,
+     -0.18210692703723907,
+     -0.0535823255777359
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 14.9,
+    "rotation_deg": 22.5,
+    "contacts": [
+     "upper_rack.floor.x",
+     "upper_rack.tine_row_c_rear"
+    ]
+   }
+  },
+  {
+   "item_id": "mug",
+   "item_type": "mug_ceramic_300",
+   "pose": {
+    "p": [
+     0.10699457790041357,
+     -0.11649902832005146,
+     0.528747718892107
+    ],
+    "q": [
+     0.978887677192688,
+     -0.0014755321899428964,
+     0.20439088344573975,
+     -0.0010741481091827154
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 3,
+    "stable": true,
+    "displacement_mm": 95.9,
+    "rotation_deg": 23.1,
+    "contacts": [
+     "upper_rack.floor.y",
+     "upper_rack.tine_row_c_front"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:f37b24ece488510202229eaeaaac9eb428fcf56d98c426670883a8586e0ec6ef"
+}

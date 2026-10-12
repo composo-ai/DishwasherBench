@@ -1,0 +1,49 @@
+# The whole test suite of DishwasherBench, on a hosted macOS machine. Started by hand only
+# (Actions, "tests (macOS)", "Run workflow"): no push and no pull request starts it.
+#
+# It has not yet been seen to pass on a hosted machine. Many of the tests run real washes on
+# the GPU. A hosted macOS machine is a virtual one: its GPU is virtual too, and it has three
+# cores. On the reference machine (an Apple M3 Pro) the suite runs up to six workers at once
+# (vitest.config.ts) and takes 8 to 17 minutes. Whether every test passes on a hosted machine,
+# and in what time, is not known. Tests that compare stored hashes of results may fail there:
+# the bits of a result depend on the GPU, the build of the operating system and the version of
+# Dawn (docs/ROADMAP.md). Hence the long limit, and hence no badge and no place among the
+# required checks until it has passed here a few times.
+
+name: tests (macOS)
+
+on:
+  workflow_dispatch:
+
+# Least privilege: the job reads the repository and nothing else. It uses no secret.
+permissions:
+  contents: read
+
+# One run at a time for a branch; a second one waits for the first.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  tests-macos:
+    name: tests (macOS)
+    runs-on: macos-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      # The version of pnpm is the one named by "packageManager" in package.json.
+      - uses: pnpm/action-setup@v5
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Tests
+        run: pnpm test

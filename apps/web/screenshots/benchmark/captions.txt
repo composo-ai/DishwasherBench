@@ -1,0 +1,8 @@
+01-no-link.png: benchmark mode without a link: the page asks for the link, offers no levels
+02-name-asked.png: an episode link without a name: the page says what is recorded and asks who is playing
+03-guidance.png: the how-to panel: the manual of the interface and the loading guidance every player is shown
+04-item-pictures.png: a plate in hand: the four pictures of it in the panel on the right
+05-marks-top_lower.png: the lower basket from above with item ids and the millimetre grid of its frame
+06-marks-iso_lower.png: the three-quarter view with the same grid on the base of the basket
+07-marks-front.png: the front elevation: tub-frame grid, and a ruler for each basket in its own frame
+08-report.png: after the wash (the placeholder here: nothing was simulated)

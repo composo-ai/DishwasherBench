@@ -1,0 +1,153 @@
+{
+  "when": "2026-10-08T15:23:26.791Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 221,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "dawnFlags": null,
+  "cases": [
+    {
+      "name": "vec4f buffers (baseline, 16 B/cell)",
+      "w": 2048,
+      "h": 2048,
+      "bytesPerCell": 16,
+      "cellUpdatesPerSec": {
+        "best": 3917317700.608242,
+        "median": 3887259217.2953095,
+        "worst": 3847617303.6873903,
+        "n": 5,
+        "spreadPct": 1.7930473123772819
+      },
+      "trafficGBps": 124.3922949534499
+    },
+    {
+      "name": "vec4f buffers, update evaluated twice (2x flops)",
+      "w": 2048,
+      "h": 2048,
+      "bytesPerCell": 16,
+      "cellUpdatesPerSec": {
+        "best": 3956484750.2989287,
+        "median": 3938528697.058629,
+        "worst": 3928879378.045738,
+        "n": 5,
+        "spreadPct": 0.7009057030308489
+      },
+      "trafficGBps": 126.03291830587612
+    },
+    {
+      "name": "vec4<f16> buffers (8 B/cell), f32 arithmetic",
+      "w": 2048,
+      "h": 2048,
+      "bytesPerCell": 8,
+      "cellUpdatesPerSec": {
+        "best": 7635265147.404346,
+        "median": 7535417546.222579,
+        "worst": 7291897441.556555,
+        "n": 5,
+        "spreadPct": 4.556717709955145
+      },
+      "trafficGBps": 120.56668073956126
+    },
+    {
+      "name": "rgba32float textures (16 B/cell)",
+      "w": 2048,
+      "h": 2048,
+      "bytesPerCell": 16,
+      "cellUpdatesPerSec": {
+        "best": 4092966127.8610625,
+        "median": 4038851147.6792192,
+        "worst": 4001314845.225429,
+        "n": 5,
+        "spreadPct": 2.269241407628939
+      },
+      "trafficGBps": 129.24323672573502
+    },
+    {
+      "name": "rgba16float textures (8 B/cell)",
+      "w": 2048,
+      "h": 2048,
+      "bytesPerCell": 8,
+      "cellUpdatesPerSec": {
+        "best": 8220701166.734488,
+        "median": 8170531170.956452,
+        "worst": 8093630274.821737,
+        "n": 5,
+        "spreadPct": 1.5552341610842317
+      },
+      "trafficGBps": 130.72849873530325
+    },
+    {
+      "name": "vec4f buffers (baseline, 16 B/cell)",
+      "w": 4096,
+      "h": 4096,
+      "bytesPerCell": 16,
+      "cellUpdatesPerSec": {
+        "best": 3822266182.5577774,
+        "median": 3792491280.0494504,
+        "worst": 3778200342.9309464,
+        "n": 5,
+        "spreadPct": 1.1619232945541929
+      },
+      "trafficGBps": 121.35972096158241
+    },
+    {
+      "name": "vec4f buffers, update evaluated twice (2x flops)",
+      "w": 4096,
+      "h": 4096,
+      "bytesPerCell": 16,
+      "cellUpdatesPerSec": {
+        "best": 3773502296.7361717,
+        "median": 3757031324.323171,
+        "worst": 3700593139.203528,
+        "n": 5,
+        "spreadPct": 1.9406055270454359
+      },
+      "trafficGBps": 120.22500237834147
+    },
+    {
+      "name": "vec4<f16> buffers (8 B/cell), f32 arithmetic",
+      "w": 4096,
+      "h": 4096,
+      "bytesPerCell": 8,
+      "cellUpdatesPerSec": {
+        "best": 7397043047.84609,
+        "median": 7300608237.839135,
+        "worst": 7228397142.77368,
+        "n": 5,
+        "spreadPct": 2.3100254058054634
+      },
+      "trafficGBps": 116.80973180542617
+    },
+    {
+      "name": "rgba32float textures (16 B/cell)",
+      "w": 4096,
+      "h": 4096,
+      "bytesPerCell": 16,
+      "cellUpdatesPerSec": {
+        "best": 4022640405.5537033,
+        "median": 3935674490.78087,
+        "worst": 3889274336.367307,
+        "n": 5,
+        "spreadPct": 3.3886458216704605
+      },
+      "trafficGBps": 125.94158370498783
+    },
+    {
+      "name": "rgba16float textures (8 B/cell)",
+      "w": 4096,
+      "h": 4096,
+      "bytesPerCell": 8,
+      "cellUpdatesPerSec": {
+        "best": 8270222606.280116,
+        "median": 7961633030.196289,
+        "worst": 7647706839.722477,
+        "n": 5,
+        "spreadPct": 7.818945738852918
+      },
+      "trafficGBps": 127.38612848314062
+    }
+  ],
+  "foreignAtEnd": []
+}

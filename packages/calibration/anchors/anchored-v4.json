@@ -1,0 +1,73 @@
+{
+ "format": "spotless.params",
+ "version": 1,
+ "provenance": {
+  "name": "anchored-v4",
+  "origin": "calibration",
+  "note": "Provisional anchoring to the published results of another machine (round robin 2022/2023, Bosch SMV6ECX51E, eco programme, detergent D; docs/research/standards.md section 7.1), to be replaced by washes on the owner's machine. Made on the water side \"spotless-sim 0.4.1 water-5\", sources sha256:34816aba7271f07506b07db21742b941def5dcbc719a27c597d2c9355be42205; valid for that water side only (anchors/scripts/check.ts). Reference detergent D at 20 g. soil.egg_yolk.rateRef (and soil.milk.rateRef with it) fitted to the six in-machine egg-yolk rates; the lags read off the same bench data; liq.xProtease fitted to the cutlery and glass class means and soil.bleachRate to the crockery class mean of the record, each through the calibration tool's likelihood of a group mean score. Everything else is the registry's default. See docs/calibration/anchoring.md.",
+  "washRecords": [
+   "std-eu-13.round-robin-ta.detergent-d"
+  ],
+  "createdAt": "2026-10-10T17:54:13.140Z"
+ },
+ "overrides": {
+  "liq.xProtease": 0.016,
+  "soil.amountCv": 0.05,
+  "soil.egg_yolk.rateRef": 0.000034,
+  "soil.egg_yolk.tLag": 300,
+  "soil.milk.rateRef": 0.000034,
+  "soil.milk.tLag": 300,
+  "soil.subCellCv": 0.1
+ },
+ "definitions": {
+  "liq.xProtease": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "soil.amountCv": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.egg_yolk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.egg_yolk.tLag": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "soil.milk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.milk.tLag": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "soil.subCellCv": {
+   "kind": "scalar",
+   "unit": "1"
+  }
+ },
+ "registryHash": "sha256:eb54d956d66ec045ec5610366ed14585bd969f343e87500c2d28166ee92eadbb",
+ "hydroHash": "sha256:ecdf6e077c2e67a36ffb4cf2600480fa6bce737a64d79462da7eb427329e7c3a",
+ "soilHash": "sha256:a7190b8e74ee7dc026b179f5719f24f1efb33bea64bd4a6976368ff27e7fcc0a",
+ "anchoredOn": {
+  "simVersion": "spotless-sim 0.4.1 water-5",
+  "exposureSource": "34816aba7271f07506b07db21742b941def5dcbc719a27c597d2c9355be42205",
+  "files": 136,
+  "reference": {
+   "load": "iec-13-careful",
+   "programme": "eco_50",
+   "tier": "fast",
+   "levelSeed": 1,
+   "simSeed": 1,
+   "digest": "9881f3776806318f5c893bca501081b1250793c6112b2059976e584b85ec8548"
+  }
+ },
+ "supersededBy": {
+  "set": "anchored-v5",
+  "why": "made on water-5 with the soak circulated throughout; the prediction of the owner's wash 01 was registered with it (docs/calibration/owner-wash-01-prediction.md)",
+  "on": "2026-10-10"
+ }
+}

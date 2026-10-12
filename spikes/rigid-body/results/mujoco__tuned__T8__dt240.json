@@ -1,0 +1,475 @@
+{
+ "engine": "mujoco",
+ "preset": "tuned",
+ "test": "T8",
+ "hz": 240,
+ "tag": null,
+ "cfg": {
+  "integrator": "implicitfast",
+  "cone": "elliptic",
+  "impratio": 10,
+  "solrefTimeconstSteps": 2,
+  "solimp": "0.95 0.99 0.0005 0.5 2",
+  "noslip": 0,
+  "multiccd": true,
+  "sleep": true,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {},
+ "wallSeconds": 18.686855791000003,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:30:17.866Z",
+ "summary": {
+  "T2@1/120": {
+   "counts": {
+    "bodies": 12,
+    "pieces": 876,
+    "vertices": 7488,
+    "staticCapsules": 236,
+    "staticBoxes": 0
+   },
+   "stepMean_ms": {
+    "best": 0.11680833000000011,
+    "median": 0.11874056666666676,
+    "worst": 0.12728584333333334
+   },
+   "stepActiveMean_ms": {
+    "best": 0.35070033333333533,
+    "median": 0.37346009166666716,
+    "worst": 0.39530733333333384
+   },
+   "stepP99_ms": {
+    "best": 0.9832079999999905,
+    "median": 1.290582999999998,
+    "worst": 1.3677090000000192
+   },
+   "stepMax_ms": {
+    "best": 2.5283330000000035,
+    "median": 2.745792000000023
+   },
+   "total_ms": {
+    "best": 70.08499800000007,
+    "median": 71.24434000000005
+   },
+   "build_ms": {
+    "best": 138.646042,
+    "median": 143.368834
+   },
+   "rssAfter_MB": 166.421875,
+   "rssDelta_MB": 126.578125,
+   "engineMem": {
+    "narenaMB": 256,
+    "maxuseArenaMB": 0.08909225463867188
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 0.25,
+    "exploded": null,
+    "asleep": "12/12",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 0.6539999999997385
+   }
+  },
+  "T2@1/240": {
+   "counts": {
+    "bodies": 12,
+    "pieces": 876,
+    "vertices": 7488,
+    "staticCapsules": 236,
+    "staticBoxes": 0
+   },
+   "stepMean_ms": {
+    "best": 0.089230808333333,
+    "median": 0.0977006908333341,
+    "worst": 0.10377781999999983
+   },
+   "stepActiveMean_ms": {
+    "best": 0.23431547916666537,
+    "median": 0.2695329750000011,
+    "worst": 0.28671131250000076
+   },
+   "stepP99_ms": {
+    "best": 0.8890829999999994,
+    "median": 1.0726250000000164,
+    "worst": 1.161707999999976
+   },
+   "stepMax_ms": {
+    "best": 2.166249999999991,
+    "median": 2.5215419999999824
+   },
+   "total_ms": {
+    "best": 107.07696999999959,
+    "median": 117.24082900000093
+   },
+   "build_ms": {
+    "best": 132.87458400000003,
+    "median": 133.661292
+   },
+   "rssAfter_MB": 178.34375,
+   "rssDelta_MB": 138.21875,
+   "engineMem": {
+    "narenaMB": 256,
+    "maxuseArenaMB": 0.07040023803710938
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 0.2375,
+    "exploded": null,
+    "asleep": "12/12",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 0.6540000000005233
+   }
+  },
+  "T2@1/480": {
+   "counts": {
+    "bodies": 12,
+    "pieces": 876,
+    "vertices": 7488,
+    "staticCapsules": 236,
+    "staticBoxes": 0
+   },
+   "stepMean_ms": {
+    "best": 0.07733526125000005,
+    "median": 0.07870941833333336,
+    "worst": 0.0836852062500001
+   },
+   "stepActiveMean_ms": {
+    "best": 0.17936747708333362,
+    "median": 0.1826666062499994,
+    "worst": 0.1871363583333343
+   },
+   "stepP99_ms": {
+    "best": 0.6799589999999966,
+    "median": 0.726916999999986,
+    "worst": 0.7340409999999906
+   },
+   "stepMax_ms": {
+    "best": 2.369833,
+    "median": 2.4106250000000102
+   },
+   "total_ms": {
+    "best": 185.60462700000014,
+    "median": 188.90260400000008
+   },
+   "build_ms": {
+    "best": 131.431958,
+    "median": 132.488709
+   },
+   "rssAfter_MB": 180.15625,
+   "rssDelta_MB": 140.140625,
+   "engineMem": {
+    "narenaMB": 256,
+    "maxuseArenaMB": 0.061061859130859375
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 0.2375,
+    "exploded": null,
+    "asleep": "12/12",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 0.6539999999989532
+   }
+  },
+  "T5@1/120": {
+   "counts": {
+    "bodies": 20,
+    "pieces": 140,
+    "vertices": 1160,
+    "staticCapsules": 0,
+    "staticBoxes": 10
+   },
+   "stepMean_ms": {
+    "best": 0.07931860000000043,
+    "median": 0.08027770666666764,
+    "worst": 0.08311434666666699
+   },
+   "stepActiveMean_ms": {
+    "best": 0.324983308333335,
+    "median": 0.332941675,
+    "worst": 0.3473915833333334
+   },
+   "stepP99_ms": {
+    "best": 0.5563750000000027,
+    "median": 0.5592499999999916,
+    "worst": 0.5829590000000167
+   },
+   "stepMax_ms": {
+    "best": 2.2657920000000047,
+    "median": 2.3113329999999905
+   },
+   "total_ms": {
+    "best": 47.59116000000026,
+    "median": 48.16662400000059
+   },
+   "build_ms": {
+    "best": 104.328916,
+    "median": 104.68908400000001
+   },
+   "rssAfter_MB": 161.046875,
+   "rssDelta_MB": 125.46875,
+   "engineMem": {
+    "narenaMB": 256,
+    "maxuseArenaMB": 0.13329315185546875
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 0.8333333333333334,
+    "exploded": null,
+    "asleep": "20/20",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.4714999999994118
+   }
+  },
+  "T5@1/240": {
+   "counts": {
+    "bodies": 20,
+    "pieces": 140,
+    "vertices": 1160,
+    "staticCapsules": 0,
+    "staticBoxes": 10
+   },
+   "stepMean_ms": {
+    "best": 0.0661198850000001,
+    "median": 0.06753718583333274,
+    "worst": 0.06995347666666642
+   },
+   "stepActiveMean_ms": {
+    "best": 0.24721106250000016,
+    "median": 0.24862730833333255,
+    "worst": 0.26132846666666654
+   },
+   "stepP99_ms": {
+    "best": 0.386084000000011,
+    "median": 0.41320799999999736,
+    "worst": 0.4919170000000008
+   },
+   "stepMax_ms": {
+    "best": 2.3162920000000042,
+    "median": 2.3389589999999885
+   },
+   "total_ms": {
+    "best": 79.34386200000012,
+    "median": 81.04462299999928
+   },
+   "build_ms": {
+    "best": 104.844167,
+    "median": 105.482459
+   },
+   "rssAfter_MB": 171.296875,
+   "rssDelta_MB": 136.203125,
+   "engineMem": {
+    "narenaMB": 256,
+    "maxuseArenaMB": 0.11785125732421875
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 1.3875,
+    "exploded": null,
+    "asleep": "20/20",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.4715000000011769
+   }
+  },
+  "T5@1/480": {
+   "counts": {
+    "bodies": 20,
+    "pieces": 140,
+    "vertices": 1160,
+    "staticCapsules": 0,
+    "staticBoxes": 10
+   },
+   "stepMean_ms": {
+    "best": 0.0699109883333326,
+    "median": 0.07298433708333356,
+    "worst": 0.07336988458333261
+   },
+   "stepActiveMean_ms": {
+    "best": 0.2020921062499992,
+    "median": 0.2047196208333331,
+    "worst": 0.21130368124999924
+   },
+   "stepP99_ms": {
+    "best": 0.30895799999998985,
+    "median": 0.3112499999999727,
+    "worst": 0.31412499999999
+   },
+   "stepMax_ms": {
+    "best": 2.3732499999999845,
+    "median": 2.3856250000000045
+   },
+   "total_ms": {
+    "best": 167.78637199999824,
+    "median": 175.16240900000054
+   },
+   "build_ms": {
+    "best": 103.181417,
+    "median": 104.14025000000001
+   },
+   "rssAfter_MB": 168.203125,
+   "rssDelta_MB": 133.171875,
+   "engineMem": {
+    "narenaMB": 256,
+    "maxuseArenaMB": 0.1018829345703125
+   },
+   "simSeconds": 5,
+   "stability": {
+    "restTime_s": 3.377083333333333,
+    "exploded": null,
+    "asleep": "20/20",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.471499999997643
+   }
+  },
+  "FULL@1/120": {
+   "counts": {
+    "bodies": 122,
+    "pieces": 3028,
+    "vertices": 25872,
+    "staticCapsules": 1355,
+    "staticBoxes": 30
+   },
+   "stepMean_ms": {
+    "best": 1.1720178895833362,
+    "median": 1.2782811500000002,
+    "worst": 1.2862001791666677
+   },
+   "stepActiveMean_ms": {
+    "best": 3.885716991666676,
+    "median": 4.326530874999998,
+    "worst": 4.36862498333334
+   },
+   "stepP99_ms": {
+    "best": 10.31841700000001,
+    "median": 11.683791000000042,
+    "worst": 11.93391600000001
+   },
+   "stepMax_ms": {
+    "best": 11.742583000000081,
+    "median": 13.575500000000034
+   },
+   "total_ms": {
+    "best": 562.5685870000013,
+    "median": 613.574952
+   },
+   "build_ms": {
+    "best": 255.018042,
+    "median": 255.55070900000004
+   },
+   "rssAfter_MB": 204.609375,
+   "rssDelta_MB": 159.84375,
+   "engineMem": {
+    "narenaMB": 256,
+    "maxuseArenaMB": 2.0973587036132812
+   },
+   "simSeconds": 4,
+   "stability": {
+    "restTime_s": 1.125,
+    "exploded": null,
+    "asleep": "120/122",
+    "rmsLin_mm_s": 0.006522466913669925,
+    "maxSpeed": 1.4714999999994118
+   }
+  },
+  "FULL@1/240": {
+   "counts": {
+    "bodies": 122,
+    "pieces": 3028,
+    "vertices": 25872,
+    "staticCapsules": 1355,
+    "staticBoxes": 30
+   },
+   "stepMean_ms": {
+    "best": 0.8250894572916699,
+    "median": 0.8381286010416706,
+    "worst": 0.8676724489583335
+   },
+   "stepActiveMean_ms": {
+    "best": 2.618083687500004,
+    "median": 2.626028491666665,
+    "worst": 2.7636683791666696
+   },
+   "stepP99_ms": {
+    "best": 7.989874999999984,
+    "median": 8.031542000000002,
+    "worst": 9.347707999999955
+   },
+   "stepMax_ms": {
+    "best": 12.420917000000031,
+    "median": 12.576665999999989
+   },
+   "total_ms": {
+    "best": 792.0858790000032,
+    "median": 804.6034570000038
+   },
+   "build_ms": {
+    "best": 272.050083,
+    "median": 272.71854199999996
+   },
+   "rssAfter_MB": 194.578125,
+   "rssDelta_MB": 151.328125,
+   "engineMem": {
+    "narenaMB": 256,
+    "maxuseArenaMB": 1.3217201232910156
+   },
+   "simSeconds": 4,
+   "stability": {
+    "restTime_s": 1.5666666666666667,
+    "exploded": null,
+    "asleep": "122/122",
+    "rmsLin_mm_s": 0,
+    "maxSpeed": 1.4715000000011769
+   }
+  },
+  "FULL@1/480": {
+   "counts": {
+    "bodies": 122,
+    "pieces": 3028,
+    "vertices": 25872,
+    "staticCapsules": 1355,
+    "staticBoxes": 30
+   },
+   "stepMean_ms": {
+    "best": 0.9895586604166654,
+    "median": 1.002536041666669,
+    "worst": 1.0142533890625032
+   },
+   "stepActiveMean_ms": {
+    "best": 3.033092810416666,
+    "median": 3.0980160791666633,
+    "worst": 3.1464871583333234
+   },
+   "stepP99_ms": {
+    "best": 6.692457999999988,
+    "median": 6.989416000000006,
+    "worst": 7.707041000000004
+   },
+   "stepMax_ms": {
+    "best": 7.919582999999989,
+    "median": 8.39716599999997
+   },
+   "total_ms": {
+    "best": 1899.9526279999975,
+    "median": 1924.8692000000046
+   },
+   "build_ms": {
+    "best": 261.0735,
+    "median": 268.58016699999996
+   },
+   "rssAfter_MB": 201.546875,
+   "rssDelta_MB": 158.3125,
+   "engineMem": {
+    "narenaMB": 256,
+    "maxuseArenaMB": 1.0473518371582031
+   },
+   "simSeconds": 4,
+   "stability": {
+    "restTime_s": null,
+    "exploded": null,
+    "asleep": "120/122",
+    "rmsLin_mm_s": 1.8882134528038266,
+    "maxSpeed": 1.471499999997643
+   }
+  }
+ },
+ "runs": []
+}

@@ -1,0 +1,206 @@
+{
+  "format": "spotless.detergent-notes",
+  "version": 1,
+  "about": "Sidecar of finish-powerball-ultimate.json. The parameter-file format (spotless.params) carries values, units and a provenance note only, so the dose, the ranges, the values the registry's bounds cannot hold and the comparison with type D are here. Evidence and tags: docs/research/detergent-finish-ultimate.md. Not read by any code.",
+  "product": {
+    "name": "Finish Ultimate All in 1 (sold as Finish Powerball Ultimate All in One), United Kingdom",
+    "maker": "Reckitt Benckiser",
+    "form": "multi-compartment water-soluble capsule (powder, gel, liquid) in polyvinyl alcohol film",
+    "disclosure": "rbeuroinfo.com, UK/Ireland, sku 000011654 (Fresh), read 2026-10-10",
+    "safetyDataSheets": [
+      "D8395627 v2.0, formulation FF3233992, \"Finish Powerball Ultimate All in 1\", Switzerland, 16/12/2022: sodium carbonate 10 to 25 %, C12-14 alcohol EO/PO 10 to 25 %, percarbonate 10 to <25 %, etidronate up to 10 %, subtilisin <1 %, pH 9.4 to 10.4 at 10 %",
+      "D8408447, formulation FF3289622, \"Finish Ultimate Dishwashing Tablets Fresh\", Australia/New Zealand, 17/05/2024: sodium carbonate 10 to 30 %, C12-14 alcohol EO/PO 10 to <25 %, percarbonate 10 to <25 %, pH 9.4 to 10.4 at 10 %",
+      "D8411614, formulation FF3314399, \"Finish Ultimate Dishwashing Tablets Lemon\", Australia/New Zealand, 05/12/2025: sodium carbonate 30 to 60 %, C12-14 alcohol EO/PO 10 to <25 %, percarbonate up to 10 %, pH 10.4 to 11 at 10 %"
+    ],
+    "safetyDataSheetsNote": "No sheet for the United Kingdom was found. The three sheets do not agree; which of them the UK product of 2026 follows is not known. The best estimates (carbonate 30 %, percarbonate 10 %) sit where their bands meet."
+  },
+  "dose": {
+    "key": "dosing.detergentMass (machine definition; packages/machine/src/data/bosch-smv4hax40g.ts has detergentMassG: 20)",
+    "unit": "kg",
+    "value": 0.0129,
+    "range": [0.0127, 0.0131],
+    "tag": "VERIFIED",
+    "how": "Sainsbury's unit prices on 2026-10-10: x55 at 13.75 GBP and 19.38 GBP/kg, x75 at 16.00 and 16.54, x32 at 9.00 and 21.80, each 12.90 g per unit. Pack weights 412.8 g for 32, 709.5 g for 55 and 967.5 g for 75 read on trolley.co.uk (a price aggregator) give the same 12.90 g; Tesco titles (search results only) add 1186.8 g for 92 and 1483.5 g for 115. The film is taken to be part of the declared weight. The range is an assumed fill tolerance of 1.5 %, not a sourced figure."
+  },
+  "parameters": {
+    "liq.xCarbonate": {
+      "unit": "mol/kg",
+      "typeD": 4.36,
+      "value": 3.3,
+      "range": [2, 4.5],
+      "tag": "ESTIMATED",
+      "how": "pH-equivalent value for 30 % soda ash, 10 % percarbonate, 2.5 % bicarbonate: stoichiometric carbonate 3.77 mol/kg (2.83 + 0.64 + 0.30), alkalinity 7.23 eq/kg plus about 0.1 from etidronate. The model has no bicarbonate term; 3.3 gives a main-wash pH 0.03 above that balance with the etidronate and 0.06 above it without (the exact equivalents are 3.0 and 2.6; the pH is flat in this parameter). Lower bound: the registry minimum. The 2022 and 2024 sheets (carbonate at most 25 to 30 %, pH 9.4 to 10.4 at 10 %) correspond to equivalents of 1.4 to 2.6, partly below what the registry allows."
+    },
+    "liq.xSilicate": {
+      "unit": "eq/kg",
+      "typeD": 0.55,
+      "value": 0,
+      "range": [0, 0.2],
+      "tag": "VERIFIED",
+      "how": "No silicate in the UK ingredient list. The upper bound stands for tetrasodium etidronate acting as a base."
+    },
+    "liq.xPeroxide": {
+      "unit": "mol/kg",
+      "typeD": 0.67,
+      "value": 0.955,
+      "range": [0.57, 1.53],
+      "tag": "ESTIMATED",
+      "how": "Sodium percarbonate 10 % (6 to 16 %), 3 mol H2O2 per 314.0 g. 10 % is the only value inside the bands of all three sheets (up to 10 %; 10 to <25 % twice)."
+    },
+    "liq.xTaed": {
+      "unit": "mol/kg",
+      "typeD": 0.088,
+      "value": 0.175,
+      "range": [0.11, 0.26],
+      "tag": "ESTIMATED",
+      "how": "TAED 4 % (2.5 to 6 %), 228.25 g/mol: listed after percarbonate and before etidronate, the sulfonated polymer and the film."
+    },
+    "liq.xProtease": {
+      "unit": "kg/kg (granulate of the type D grade)",
+      "typeD": 0.01,
+      "value": 0.025,
+      "range": [0.0125, 0.05],
+      "tag": "ESTIMATED",
+      "relativeToTypeDPerKg": 2.5,
+      "relativeToTypeDPerDose": 1.6,
+      "how": "No source gives a level or a grade (the 2022 sheet says only subtilisin <1 % as enzyme substance). The best value is a guess: 1.6 times the protease that 20 g of type D gives per wash. Lower bound: half the best value, 0.8 times type D per wash (parity per wash would be 0.0155). Upper bound: the registry maximum, 3.2 times type D per wash."
+    },
+    "liq.xAmylase": {
+      "unit": "kg/kg (granulate of the type D grade)",
+      "typeD": 0.005,
+      "value": 0.012,
+      "range": [0.005, 0.025],
+      "tag": "ESTIMATED",
+      "how": "About half the protease, as in type D and in the Reckitt example of US 8,962,543 (0.8 and 0.4 %)."
+    },
+    "liq.xSurfactant": {
+      "unit": "kg/kg",
+      "typeD": 0.02,
+      "value": 0.1,
+      "bestEstimate": 0.14,
+      "range": [0.1, 0.2],
+      "tag": "VERIFIED band, ESTIMATED value",
+      "how": "C12-14 alcohol ethoxylated propoxylated (PPG-5-laureth-5) 10 to <25 % in both Australian sheets and 10 to 25 % in the Swiss sheet of the exact product. The registry maximum is 0.1, so the file holds 0.1; the model uses the surfactant only for the liquor class, which is D either way."
+    },
+    "liq.tabletTau": {
+      "unit": "s",
+      "typeD": 480,
+      "value": 300,
+      "range": [150, 600],
+      "tag": "ESTIMATED",
+      "how": "Film lag 60 s and contents 180 s at 40 C (chemistry 10.3, pouch column) expressed as one shrinking-core time that gives the same time to 90 % released."
+    },
+    "liq.amylaseKox": {
+      "unit": "m3/(mol s)",
+      "typeD": 0.0006,
+      "value": 0.00006,
+      "range": [0.00006, 0.0006],
+      "tag": "ESTIMATED",
+      "how": "The dossier's oxidation-stable amylase column (chemistry 10.5). The grade in the product is not disclosed; Reckitt's patent example names Stainzyme 12GT."
+    },
+    "liq.amylaseKoxHP": {
+      "unit": "m3/(mol s)",
+      "typeD": 0.00001,
+      "value": 0.000002,
+      "range": [0.000002, 0.00001],
+      "tag": "ESTIMATED",
+      "how": "As liq.amylaseKox."
+    }
+  },
+  "notOverridden": {
+    "liq.tabletEa": {
+      "unit": "J/mol",
+      "typeD": 25000,
+      "plausible": [25000, 60000],
+      "why": "A film dissolves with a steeper temperature dependence than a tablet (chemistry 10.3 gives 60 kJ/mol for the film), but no opened source gives a number and the time to release changes by under two minutes."
+    },
+    "liq.proteaseHalfLife": {
+      "unit": "s",
+      "typeD": 1800,
+      "plausible": [1800, 7200],
+      "why": "The protease grade is not disclosed. If it is a heat-stable grade, 3600 s raises the mean protease of the main wash by 29 %."
+    },
+    "liq.rinseAidDensity": {
+      "unit": "kg/m3",
+      "typeD": 1000,
+      "product": [1010, 1020],
+      "why": "Sister sheet D8411055 gives 1.01 to 1.02 g/cm3; a 1 to 2 % difference, recorded only."
+    }
+  },
+  "notInTheModel": [
+    "Manganese bleach catalyst (MN-TACN in the ingredient list): bleaches tea with hydrogen peroxide without TAED. The model's tea bleaching reads peracid and perhydroxyl only.",
+    "Acid from TAED (two acetyl groups per mole): lowers the main-wash pH by about 0.12 for this product, 0.05 for type D.",
+    "Staged release: powder, gel and liquid compartments dissolve at their own rates; the model releases every species in proportion to one dissolved mass.",
+    "Citrate, etidronate and polymers (hardness control), benzotriazole and the glass-care polymer."
+  ],
+  "predictedMainWash": {
+    "conditions": "First bath of auto_145 on the Bosch SMV4HAX40G: 4.0 L, dose released 60 s after circulation starts, heated from 19 to 64 C in about 19 min and held (temperature trace of packages/calibration/anchors/reports/first-build-demonstration.auto_145.md), 62.5 min. Computed with packages/sim-liquor on 2026-10-10; no soil in the liquor.",
+    "typeD_20g": {
+      "pH_at47C": 10.77,
+      "pH_mean": 10.54,
+      "protease_peak_mgL": 49.3,
+      "protease_mean_mgL": 24.7,
+      "amylase_mean_mgL": 13.8,
+      "peracid_peak_mM": 0.323,
+      "peracid_mean_mM": 0.1,
+      "time_to_90pct_released_s": 326
+    },
+    "typeD_12.9g": {
+      "pH_at47C": 10.63,
+      "pH_mean": 10.4,
+      "protease_peak_mgL": 32,
+      "protease_mean_mgL": 16.2,
+      "amylase_mean_mgL": 9.7,
+      "peracid_peak_mM": 0.166,
+      "peracid_mean_mM": 0.051,
+      "time_to_90pct_released_s": 326
+    },
+    "finish_12.9g": {
+      "pH_at47C": 10.4,
+      "pH_mean": 10.22,
+      "protease_peak_mgL": 79.9,
+      "protease_mean_mgL": 40.7,
+      "amylase_mean_mgL": 25.5,
+      "peracid_peak_mM": 0.447,
+      "peracid_mean_mM": 0.139,
+      "time_to_90pct_released_s": 222
+    },
+    "finish_ranges": {
+      "pH_at47C": [10.27, 10.54],
+      "pH_mean": [10.08, 10.34],
+      "protease_peak_mgL": [39.9, 159.8],
+      "protease_mean_mgL": [20.3, 81.4],
+      "peracid_peak_mM": [0.208, 0.835],
+      "peracid_mean_mM": [0.064, 0.259],
+      "time_to_90pct_released_s": [121, 389],
+      "amylase_mean_mgL": [10.6, 53.1],
+      "note": "Ranges of the model output over the parameter ranges above. The lower pH bound is the registry minimum of liq.xCarbonate; the older sheets suggest the real pH may be lower still (about 10.0 to 10.1 at 47 C)."
+    }
+  },
+  "rinseAid": {
+    "name": "Finish Rinse & Shine Aid (UK)",
+    "recordedOnly": true,
+    "ingredientsInOrder": [
+      "aqua",
+      "fatty alcohol alkoxylate",
+      "sodium cumenesulfonate",
+      "citric acid",
+      "potassium sorbate",
+      "polymer of N,N'-bis[3-(dimethylamino)propyl]urea with 1,1'-oxybis[2-chloroethane]",
+      "5-chloro-2-methyl-isothiazol-3-one / 2-methyl-isothiazol-3-one (3:1)"
+    ],
+    "sisterSafetyDataSheet": {
+      "id": "D8411055 (Australia/New Zealand, 05/12/2025)",
+      "isotridecanolEthoxylated_pct": "<= 10",
+      "pH_neat": [4, 4.2],
+      "density_g_cm3": [1.01, 1.02],
+      "classification": "serious eye damage, category 1"
+    }
+  },
+  "factCheck": {
+    "date": "2026-10-10",
+    "by": "second pass, sources re-opened",
+    "see": "docs/research/detergent-finish-ultimate.md section 9",
+    "recomputedWith": "own script against packages/sim-liquor; every figure of predictedMainWash reproduced"
+  }
+}

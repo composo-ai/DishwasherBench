@@ -1,0 +1,293 @@
+{
+ "format": "spotless.wash-record",
+ "version": 1,
+ "id": "candidate-milk-glasses-eco50",
+ "kind": "planned",
+ "title": "Four glasses with milk heated dry in the microwave oven, upper basket, Eco 50",
+ "provenance": {
+  "date": "2026-10-11",
+  "by": "the simulation side: a candidate test wash, not run",
+  "methods": {
+   "photo_area": {
+    "description": "photograph of the piece after the wash, read as those of wash 01 were (soiled pixels against their surroundings, scaled by a known diameter)"
+   },
+   "scale": {
+    "description": "kitchen scale, 0.1 g, the piece weighed before and after the soil is put on"
+   },
+   "asked": {
+    "description": "not weighed: an amount asked for"
+   }
+  },
+  "notes": "Candidate for the experiment ranking. What it would settle: whether heated milk in glasses comes off on Eco 50 with the capsule, which turns on the soak and on a rate no measurement stands behind."
+ },
+ "machine": {
+  "id": "bosch_smv4hax40g",
+  "config": {
+   "basketHeights": {
+    "upper": "1"
+   },
+   "foldedTineRows": [],
+   "shelves": [
+    {
+     "basketId": "upper",
+     "shelfId": "cup_front",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "cup_rear",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "knife_shelf",
+     "state": "down"
+    }
+   ],
+   "cutleryBasket": {
+    "basketId": "lower",
+    "centre": [
+     0.2705,
+     0.123
+    ],
+    "longAxis": "y"
+   }
+  }
+ },
+ "programme": {
+  "id": "eco_50",
+  "options": []
+ },
+ "consumables": {
+  "detergent": {
+   "product": "Finish Powerball Ultimate",
+   "form": "pouch",
+   "dose_g": 12.9,
+   "placement": "dispenser"
+  }
+ },
+ "load": {
+  "dispenser_blocked": false,
+  "items": [
+   {
+    "id": "glass_01",
+    "type": "test_glass_borosilicate_250",
+    "frame": "tub",
+    "position_mm": [
+     102.9807202994422,
+     133.02511458237018,
+     550.1353308973878
+    ],
+    "quat_wxyz": [
+     0.01998221129179001,
+     0.9842256307601929,
+     0.13867872953414917,
+     0.10802227258682251
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "iec_milk",
+      "recipe": "semi-skimmed milk, 10 mL per glass",
+      "preparation": "heated in the glass in a microwave oven until dry (about 10 min at 450 W)",
+      "amount_g": 10,
+      "amount_method": "scale",
+      "amount_sd_g": 0.5,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.25
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 2
+      },
+      "heat": {
+       "history": "baked"
+      }
+     }
+    ]
+   },
+   {
+    "id": "glass_02",
+    "type": "test_glass_borosilicate_250",
+    "frame": "tub",
+    "position_mm": [
+     107.15186770330635,
+     200.85663928612175,
+     550.9535530346642
+    ],
+    "quat_wxyz": [
+     0.01112421229481697,
+     0.9753567576408386,
+     0.20115697383880615,
+     0.08995179831981659
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "iec_milk",
+      "recipe": "semi-skimmed milk, 10 mL per glass",
+      "preparation": "heated in the glass in a microwave oven until dry (about 10 min at 450 W)",
+      "amount_g": 10,
+      "amount_method": "scale",
+      "amount_sd_g": 0.5,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.25
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 2
+      },
+      "heat": {
+       "history": "baked"
+      }
+     }
+    ]
+   },
+   {
+    "id": "glass_03",
+    "type": "test_glass_borosilicate_250",
+    "frame": "tub",
+    "position_mm": [
+     102.79631104472138,
+     72.71066449428983,
+     549.7416318793437
+    ],
+    "quat_wxyz": [
+     -0.02935818023979664,
+     0.9359019994735718,
+     -0.34170180559158325,
+     0.08040842413902283
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "iec_milk",
+      "recipe": "semi-skimmed milk, 10 mL per glass",
+      "preparation": "heated in the glass in a microwave oven until dry (about 10 min at 450 W)",
+      "amount_g": 10,
+      "amount_method": "scale",
+      "amount_sd_g": 0.5,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.25
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 2
+      },
+      "heat": {
+       "history": "baked"
+      }
+     }
+    ]
+   },
+   {
+    "id": "glass_04",
+    "type": "test_glass_borosilicate_250",
+    "frame": "tub",
+    "position_mm": [
+     97.83356128080077,
+     7.399339671004558,
+     548.7583782867545
+    ],
+    "quat_wxyz": [
+     0.003323899582028389,
+     0.9943282008171082,
+     0.03020409680902958,
+     0.10192233324050903
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "iec_milk",
+      "recipe": "semi-skimmed milk, 10 mL per glass",
+      "preparation": "heated in the glass in a microwave oven until dry (about 10 min at 450 W)",
+      "amount_g": 10,
+      "amount_method": "scale",
+      "amount_sd_g": 0.5,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.25
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 2
+      },
+      "heat": {
+       "history": "baked"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "observations": [
+  {
+   "item": "glass_01",
+   "kind": "visible_area",
+   "sd": 0.4,
+   "method": "photo_area"
+  },
+  {
+   "item": "glass_01",
+   "kind": "area_fraction",
+   "sd": 0.1,
+   "method": "photo_area"
+  },
+  {
+   "item": "glass_02",
+   "kind": "visible_area",
+   "sd": 0.4,
+   "method": "photo_area"
+  },
+  {
+   "item": "glass_02",
+   "kind": "area_fraction",
+   "sd": 0.1,
+   "method": "photo_area"
+  },
+  {
+   "item": "glass_03",
+   "kind": "visible_area",
+   "sd": 0.4,
+   "method": "photo_area"
+  },
+  {
+   "item": "glass_03",
+   "kind": "area_fraction",
+   "sd": 0.1,
+   "method": "photo_area"
+  },
+  {
+   "item": "glass_04",
+   "kind": "visible_area",
+   "sd": 0.4,
+   "method": "photo_area"
+  },
+  {
+   "item": "glass_04",
+   "kind": "area_fraction",
+   "sd": 0.1,
+   "method": "photo_area"
+  }
+ ],
+ "sim": {
+  "tier": "fast",
+  "level_seed": 20261101,
+  "sim_seed": 1
+ }
+}

@@ -1,0 +1,303 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "plates-9",
+ "description": "P03: eight IEC dinner plates two to a slot (R1 slots 2, 4, 6, 8, each with a second plate pushed in beside the first). The physics nests the pair (under 1 mm between the covered well and its partner); the scenario sets one plate of each pair half a pitch in front of the other",
+ "recipe_hash": "sha256:c635ad2f5221500c70f3cc1a39dbccdeec9271fc58cd797d6286d69f8997c8e5",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "plate_1",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.1746313814359036,
+     0.11152374330309953,
+     0.20228442350953776
+    ],
+    "q": [
+     0.5167842507362366,
+     0.5151586532592773,
+     0.4841908812522888,
+     0.4828093647956848
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.9,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_2",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.18116286065779885,
+     0.11337902510095847,
+     0.21426673862428094
+    ],
+    "q": [
+     0.5265924334526062,
+     0.5211179256439209,
+     0.472276896238327,
+     0.477588951587677
+    ]
+   },
+   "placed": {
+    "op": "slot (crowded)",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 38.3,
+    "rotation_deg": 0.7,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2",
+     "plate_1"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_3",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.1300322969010448,
+     0.11150231124938789,
+     0.20317153647905092
+    ],
+    "q": [
+     0.5451306700706482,
+     0.5530973672866821,
+     0.4421684741973877,
+     0.44877946376800537
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.5,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_4",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.12923892636492107,
+     0.11176103346993527,
+     0.2495544462438335
+    ],
+    "q": [
+     0.5838721990585327,
+     0.5650733113288879,
+     0.41817018389701843,
+     0.4061022400856018
+    ]
+   },
+   "placed": {
+    "op": "slot (crowded)",
+    "attempt": 2,
+    "stable": true,
+    "displacement_mm": 35.5,
+    "rotation_deg": 11.6,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2",
+     "plate_3"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_5",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.1021659405341271,
+     0.11154511075118426,
+     0.20242275929539624
+    ],
+    "q": [
+     0.519694983959198,
+     0.5166611075401306,
+     0.48092612624168396,
+     0.48134034872055054
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.9,
+    "rotation_deg": 3.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_6",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.10727308168503194,
+     0.1115413501565467,
+     0.20242542354576354
+    ],
+    "q": [
+     0.5116268396377563,
+     0.5247761607170105,
+     0.4734954535961151,
+     0.4885183274745941
+    ]
+   },
+   "placed": {
+    "op": "slot (crowded)",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 37.5,
+    "rotation_deg": 2.1,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2",
+     "plate_5"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_7",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.06547962994010978,
+     0.11167408667737144,
+     0.20226710528293612
+    ],
+    "q": [
+     0.5244292616844177,
+     0.5039238333702087,
+     0.49518755078315735,
+     0.4752095639705658
+    ]
+   },
+   "placed": {
+    "op": "slot",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 5.1,
+    "rotation_deg": 2.2,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2"
+    ]
+   }
+  },
+  {
+   "item_id": "plate_8",
+   "item_type": "dinner_plate_porcelain_iec",
+   "pose": {
+    "p": [
+     -0.07197583193676212,
+     0.11270166352895389,
+     0.21324731366308697
+    ],
+    "q": [
+     0.5247215032577515,
+     0.5184289216995239,
+     0.4769365191459656,
+     0.4779439866542816
+    ]
+   },
+   "placed": {
+    "op": "slot (crowded)",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 40,
+    "rotation_deg": 1.4,
+    "contacts": [
+     "lower_rack.tine_row_r1",
+     "lower_rack.tine_row_r2",
+     "plate_7"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:93d83e3fe09afe3a683a786dd542fb716d8fd0c6f3a6fe08eb4f3c843a7c91a9"
+}

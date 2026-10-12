@@ -1,0 +1,125 @@
+{
+ "format": "spotless.params",
+ "version": 1,
+ "provenance": {
+  "name": "anchored-v2.owner-tablet",
+  "origin": "calibration",
+  "note": "The soil side of anchored-v2 with the owner's detergent, Finish Powerball Ultimate, as packages/calibration/detergents/finish-powerball-ultimate.json gives it (desk research, nothing measured: docs/research/detergent-finish-ultimate.md); liq.xProtease is that file's ratio to the reference default applied to the anchored value (0.05). DOSE: 12.9 g, a value of the machine (dosing.detergentMass), not in this file: a wash must be given it. ASSUMPTION, labelled as one: a heat-stable protease (liq.proteaseHalfLife = 7200, soil.enzymeTm = 75; the registry's values are those of the Savinase of reference detergent D, which leave every egg and milk item dirty at Auto's 65 C). No source gives these numbers; an egg-yolk wash on Auto on the owner's machine decides between this file and its .savinase sibling. See docs/calibration/anchoring.md, section 5.3.",
+  "washRecords": [
+   "std-eu-13.round-robin-ta.detergent-d"
+  ],
+  "createdAt": "2026-10-10T10:06:57.586Z"
+ },
+ "overrides": {
+  "liq.amylaseKox": 0.00006,
+  "liq.amylaseKoxHP": 0.000002,
+  "liq.proteaseHalfLife": 7200,
+  "liq.tabletTau": 300,
+  "liq.xAmylase": 0.012,
+  "liq.xCarbonate": 3.3,
+  "liq.xPeroxide": 0.955,
+  "liq.xProtease": 0.05,
+  "liq.xSilicate": 0,
+  "liq.xSurfactant": 0.1,
+  "liq.xTaed": 0.175,
+  "soil.amountCv": 0.05,
+  "soil.egg_yolk.rateRef": 0.0000354,
+  "soil.enzymeTm": 75,
+  "soil.heatDryingFactor": 80,
+  "soil.heldFilmCapacity": 0.02,
+  "soil.loadScale": 0.002,
+  "soil.subCellCv": 0.3,
+  "soil.tea.visibleFraction": 0,
+  "soil.tea.visibleMass": 0.00005
+ },
+ "definitions": {
+  "liq.amylaseKox": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "liq.amylaseKoxHP": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "liq.proteaseHalfLife": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "liq.tabletTau": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "liq.xAmylase": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xCarbonate": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "liq.xPeroxide": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "liq.xProtease": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xSilicate": {
+   "kind": "scalar",
+   "unit": "eq/kg"
+  },
+  "liq.xSurfactant": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xTaed": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "soil.amountCv": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.egg_yolk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.enzymeTm": {
+   "kind": "scalar",
+   "unit": "degC"
+  },
+  "soil.heatDryingFactor": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.heldFilmCapacity": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "soil.loadScale": {
+   "kind": "scalar",
+   "unit": "m"
+  },
+  "soil.subCellCv": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.tea.visibleFraction": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.tea.visibleMass": {
+   "kind": "scalar",
+   "unit": "kg/m2"
+  }
+ },
+ "registryHash": "sha256:98b99c7c15f56affc39a0ec94f8bb1b5e8290c0548b81984a3d386610a8276e3",
+ "hydroHash": "sha256:e4abd440fb6306d0c522f2c99daf30296a2051298ff92c56599c9d7e23888651",
+ "soilHash": "sha256:a0dee415ffe5670bf67b7c6301aa11ca9ed76899663f4b4af1a2bb4e4c63147b",
+ "anchoredOn": {
+  "simVersion": "spotless-sim 0.3.2 water-3",
+  "sourceHash": "sha256:97aa4d392843040da01252e2c616e5b0bced8cb5f608159e7aff197d8bab94d5",
+  "files": 176
+ }
+}

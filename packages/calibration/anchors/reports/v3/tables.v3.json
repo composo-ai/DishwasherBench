@@ -1,0 +1,4004 @@
+[
+ {
+  "name": "eco v3 D careful L1S1",
+  "load": "iec-13-careful",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 20,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.72856187750287,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.637285700364195,
+   "pH_peak": 10.725325459739178,
+   "pH_end": 10.850331717630251,
+   "minAbove": {
+    "45": 138.98609650184054,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 64.05540447958994,
+   "proteaseEnd_mgL": 40.682155416222756,
+   "peracidPeak_mmolL": 0.3217194190502835
+  },
+  "items": 97,
+  "score": {
+   "crockery": 2.5641025641025643,
+   "cutlery": 4.817083882301273,
+   "glass": 4.164285714285714,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.07212315048136
+  },
+  "soiled": {
+   "crockery": 2.5641025641025643,
+   "cutlery": 4.676379176379176,
+   "glass": 4.164285714285714,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.8044663669663668
+  },
+  "raw": {
+   "crockery": 3.409090909090909,
+   "cutlery": 4.8307692307692305,
+   "glass": 3.875,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.43298969072165
+  },
+  "milkGlasses": 3.7142857142857144,
+  "teaItems": 0,
+  "crockeryWithoutTea": 5,
+  "cleanShare": 0.8047667506622731,
+  "clean": 85,
+  "soiledItems": 68,
+  "soiledClean": 56,
+  "histogram": [
+   8,
+   0,
+   2,
+   2,
+   5,
+   51
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 17,
+    "left_pct": 0.00698155871780976,
+    "meanScore": 4.529411764705882,
+    "clean": 15,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 12,
+    "left_pct": 0.010688397025612322,
+    "meanScore": 4.833333333333333,
+    "clean": 11,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 1.2259594379761547,
+    "meanScore": 3.7142857142857144,
+    "clean": 5,
+    "medianVisibleMm2": 0.15548164066330372
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 19,
+    "left_pct": 0.0020487968584885414,
+    "meanScore": 4.947368421052632,
+    "clean": 19,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 7,
+    "left_pct": 12.246173316558309,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 810.613291437368
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    1
+   ],
+   "dessert_plate_porcelain_190": [
+    5,
+    5,
+    5
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    11,
+    4.2727272727272725,
+    9
+   ],
+   "dinner_knife_210": [
+    12,
+    4.833333333333333,
+    11
+   ],
+   "dinner_plate_porcelain_iec": [
+    5,
+    5,
+    5
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    0,
+    0
+   ],
+   "saucer_porcelain_140": [
+    2,
+    0,
+    0
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    5,
+    5,
+    5
+   ],
+   "soup_spoon_190": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "tea_cup_porcelain_210": [
+    2,
+    0,
+    0
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    3.7142857142857144,
+    5
+   ]
+  },
+  "drySoilLeft_pct": 0.2256676074839395,
+  "heldWater_mL": 2.232617418940208,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 18.058682834
+ },
+ {
+  "name": "eco v3 D careful L1S2",
+  "load": "iec-13-careful",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   1,
+   2
+  ],
+  "dose_g": 20,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.72856187750287,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.637285700364195,
+   "pH_peak": 10.725325459739178,
+   "pH_end": 10.850331717630251,
+   "minAbove": {
+    "45": 138.98609650184054,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 64.05540935215576,
+   "proteaseEnd_mgL": 40.68238718821987,
+   "peracidPeak_mmolL": 0.32171272280114377
+  },
+  "items": 97,
+  "score": {
+   "crockery": 2.5641025641025643,
+   "cutlery": 4.836846728151076,
+   "glass": 4.164285714285714,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.0822995412547645
+  },
+  "soiled": {
+   "crockery": 2.5641025641025643,
+   "cutlery": 4.711344211344211,
+   "glass": 4.164285714285714,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.817578255078255
+  },
+  "raw": {
+   "crockery": 3.409090909090909,
+   "cutlery": 4.846153846153846,
+   "glass": 3.875,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.443298969072165
+  },
+  "milkGlasses": 3.7142857142857144,
+  "teaItems": 0,
+  "crockeryWithoutTea": 5,
+  "cleanShare": 0.8053886412095368,
+  "clean": 85,
+  "soiledItems": 68,
+  "soiledClean": 56,
+  "histogram": [
+   8,
+   0,
+   0,
+   4,
+   6,
+   50
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 17,
+    "left_pct": 0.003623088998426048,
+    "meanScore": 4.647058823529412,
+    "clean": 15,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 12,
+    "left_pct": 0.005616785433512728,
+    "meanScore": 4.833333333333333,
+    "clean": 12,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 1.4490185927104815,
+    "meanScore": 3.7142857142857144,
+    "clean": 5,
+    "medianVisibleMm2": 0.3123135241542947
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 19,
+    "left_pct": 0.01261943769269833,
+    "meanScore": 4.894736842105263,
+    "clean": 18,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 7,
+    "left_pct": 12.249802813201981,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 819.1104063267387
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    1
+   ],
+   "dessert_plate_porcelain_190": [
+    5,
+    5,
+    5
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    11,
+    4.454545454545454,
+    9
+   ],
+   "dinner_knife_210": [
+    12,
+    4.833333333333333,
+    12
+   ],
+   "dinner_plate_porcelain_iec": [
+    5,
+    5,
+    5
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    0,
+    0
+   ],
+   "saucer_porcelain_140": [
+    2,
+    0,
+    0
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    5,
+    5,
+    5
+   ],
+   "soup_spoon_190": [
+    13,
+    4.846153846153846,
+    12
+   ],
+   "tea_cup_porcelain_210": [
+    2,
+    0,
+    0
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    3.7142857142857144,
+    5
+   ]
+  },
+  "drySoilLeft_pct": 0.26262202352061614,
+  "heldWater_mL": 2.232617418940208,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 11.712482207999997
+ },
+ {
+  "name": "eco v3 D careful L2S1",
+  "load": "iec-13-careful",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   2,
+   1
+  ],
+  "dose_g": 20,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.72856187750287,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.637285700364195,
+   "pH_peak": 10.725325459739178,
+   "pH_end": 10.850331717630251,
+   "minAbove": {
+    "45": 138.98609650184054,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 64.05542908454437,
+   "proteaseEnd_mgL": 40.6849411964277,
+   "peracidPeak_mmolL": 0.32169617729638866
+  },
+  "items": 97,
+  "score": {
+   "crockery": 2.5641025641025643,
+   "cutlery": 4.785682916117699,
+   "glass": 3.9785714285714286,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.028235446145894
+  },
+  "soiled": {
+   "crockery": 2.5641025641025643,
+   "cutlery": 4.620823620823621,
+   "glass": 3.9785714285714286,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.747918747918748
+  },
+  "raw": {
+   "crockery": 3.409090909090909,
+   "cutlery": 4.8,
+   "glass": 3.625,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.391752577319588
+  },
+  "milkGlasses": 3.4285714285714284,
+  "teaItems": 0,
+  "crockeryWithoutTea": 5,
+  "cleanShare": 0.7740033598242554,
+  "clean": 82,
+  "soiledItems": 68,
+  "soiledClean": 53,
+  "histogram": [
+   8,
+   1,
+   1,
+   5,
+   2,
+   51
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 17,
+    "left_pct": 0.011549064302221851,
+    "meanScore": 4.529411764705882,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 12,
+    "left_pct": 0.03861504475091016,
+    "meanScore": 4.666666666666667,
+    "clean": 10,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 1.414155913612353,
+    "meanScore": 3.4285714285714284,
+    "clean": 4,
+    "medianVisibleMm2": 0.228805254947682
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 19,
+    "left_pct": 0.002092804649575556,
+    "meanScore": 4.947368421052632,
+    "clean": 19,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 7,
+    "left_pct": 12.278934132751399,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 1024.4578016512173
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    1
+   ],
+   "dessert_plate_porcelain_190": [
+    5,
+    5,
+    5
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    11,
+    4.2727272727272725,
+    8
+   ],
+   "dinner_knife_210": [
+    12,
+    4.666666666666667,
+    10
+   ],
+   "dinner_plate_porcelain_iec": [
+    5,
+    5,
+    5
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    0,
+    0
+   ],
+   "saucer_porcelain_140": [
+    2,
+    0,
+    0
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    5,
+    5,
+    5
+   ],
+   "soup_spoon_190": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "tea_cup_porcelain_210": [
+    2,
+    0,
+    0
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    3.4285714285714284,
+    4
+   ]
+  },
+  "drySoilLeft_pct": 0.27021230853377426,
+  "heldWater_mL": 2.232617418940208,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 11.517956041999998
+ },
+ {
+  "name": "eco v3 D careful L2S2",
+  "load": "iec-13-careful",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   2,
+   2
+  ],
+  "dose_g": 20,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.72856187750287,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.637285700364195,
+   "pH_peak": 10.725325459739178,
+   "pH_end": 10.850331717630251,
+   "minAbove": {
+    "45": 138.98609650184054,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 64.05543509668394,
+   "proteaseEnd_mgL": 40.68525632055749,
+   "peracidPeak_mmolL": 0.3216893319643859
+  },
+  "items": 97,
+  "score": {
+   "crockery": 2.5641025641025643,
+   "cutlery": 4.802591128678086,
+   "glass": 3.9785714285714286,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.036941913807586
+  },
+  "soiled": {
+   "crockery": 2.5641025641025643,
+   "cutlery": 4.6507381507381504,
+   "glass": 3.9785714285714286,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.7591366966366966
+  },
+  "raw": {
+   "crockery": 3.409090909090909,
+   "cutlery": 4.815384615384615,
+   "glass": 3.625,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.402061855670103
+  },
+  "milkGlasses": 3.4285714285714284,
+  "teaItems": 0,
+  "crockeryWithoutTea": 5,
+  "cleanShare": 0.783444789041804,
+  "clean": 83,
+  "soiledItems": 68,
+  "soiledClean": 54,
+  "histogram": [
+   8,
+   0,
+   2,
+   4,
+   4,
+   50
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 17,
+    "left_pct": 0.003633197600548204,
+    "meanScore": 4.529411764705882,
+    "clean": 15,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 12,
+    "left_pct": 0.023249138400749658,
+    "meanScore": 4.833333333333333,
+    "clean": 11,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 1.4264572985251678,
+    "meanScore": 3.4285714285714284,
+    "clean": 4,
+    "medianVisibleMm2": 0.23988272695980228
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 19,
+    "left_pct": 0.011670797695307293,
+    "meanScore": 4.894736842105263,
+    "clean": 18,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 7,
+    "left_pct": 12.279014264823264,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 1026.3827564651574
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    1
+   ],
+   "dessert_plate_porcelain_190": [
+    5,
+    5,
+    5
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    11,
+    4.2727272727272725,
+    9
+   ],
+   "dinner_knife_210": [
+    12,
+    4.833333333333333,
+    11
+   ],
+   "dinner_plate_porcelain_iec": [
+    5,
+    5,
+    5
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    0,
+    0
+   ],
+   "saucer_porcelain_140": [
+    2,
+    0,
+    0
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    5,
+    5,
+    5
+   ],
+   "soup_spoon_190": [
+    13,
+    4.846153846153846,
+    12
+   ],
+   "tea_cup_porcelain_210": [
+    2,
+    0,
+    0
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    3.4285714285714284,
+    4
+   ]
+  },
+  "drySoilLeft_pct": 0.26682688308826313,
+  "heldWater_mL": 2.232617418940208,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 12.057637083000001
+ },
+ {
+  "name": "eco defaults D careful L1S1",
+  "load": "iec-13-careful",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 20,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.72856187750287,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.637285700364195,
+   "pH_peak": 10.725325459739178,
+   "pH_end": 10.850331717630251,
+   "minAbove": {
+    "45": 138.98609650184054,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 49.273387781898734,
+   "proteaseEnd_mgL": 31.24836418403751,
+   "peracidPeak_mmolL": 0.3217204172597778
+  },
+  "items": 97,
+  "score": {
+   "crockery": 2.2051282051282053,
+   "cutlery": 4.200483091787439,
+   "glass": 1.75,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.2898009950248754
+  },
+  "soiled": {
+   "crockery": 2.2051282051282053,
+   "cutlery": 3.585470085470085,
+   "glass": 1.75,
+   "melamine": 5,
+   "pots": null,
+   "all": 2.7964743589743586
+  },
+  "raw": {
+   "crockery": 2.9545454545454546,
+   "cutlery": 4.276923076923077,
+   "glass": 0.625,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.6907216494845363
+  },
+  "milkGlasses": 0,
+  "teaItems": 0,
+  "crockeryWithoutTea": 4.3,
+  "cleanShare": 0.6247512437810946,
+  "clean": 68,
+  "soiledItems": 68,
+  "soiledClean": 39,
+  "histogram": [
+   16,
+   7,
+   5,
+   1,
+   2,
+   37
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 17,
+    "left_pct": 0.3268819392948894,
+    "meanScore": 1.8235294117647058,
+    "clean": 3,
+    "medianVisibleMm2": 50.65340091514569
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 12,
+    "left_pct": 0.010688397025612322,
+    "meanScore": 4.833333333333333,
+    "clean": 11,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 8.18367582247667,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 794.5786493218908
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 7.803112729290112e-12,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 19,
+    "left_pct": 0.0020487968584885414,
+    "meanScore": 4.947368421052632,
+    "clean": 19,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 7,
+    "left_pct": 11.750165682377878,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 592.938526468519
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    1
+   ],
+   "dessert_plate_porcelain_190": [
+    5,
+    3.2,
+    2
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    11,
+    1,
+    0
+   ],
+   "dinner_knife_210": [
+    12,
+    4.833333333333333,
+    11
+   ],
+   "dinner_plate_porcelain_iec": [
+    5,
+    4.8,
+    5
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    0,
+    0
+   ],
+   "saucer_porcelain_140": [
+    2,
+    0,
+    0
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    5,
+    5,
+    5
+   ],
+   "soup_spoon_190": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "tea_cup_porcelain_210": [
+    2,
+    0,
+    0
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    0,
+    0
+   ]
+  },
+  "drySoilLeft_pct": 1.5732633784929806,
+  "heldWater_mL": 2.232617418940208,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 14.692131167
+ },
+ {
+  "name": "eco v3 D careless L1S1",
+  "load": "iec-13-careless",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 20,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.73333333333332,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.81811572217194,
+   "pH_peak": 10.72673298728223,
+   "pH_end": 10.846507585215658,
+   "minAbove": {
+    "45": 138.99084436091144,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 64.05464210102974,
+   "proteaseEnd_mgL": 40.64839350421297,
+   "peracidPeak_mmolL": 0.32257412117499523
+  },
+  "items": 92,
+  "score": {
+   "crockery": 1.5,
+   "cutlery": 4.184523809523809,
+   "glass": 2.0285714285714285,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.003345139708776
+  },
+  "soiled": {
+   "crockery": 1.5,
+   "cutlery": 3.243589743589744,
+   "glass": 2.0285714285714285,
+   "melamine": 5,
+   "pots": null,
+   "all": 2.345107273678702
+  },
+  "raw": {
+   "crockery": 1.9310344827586208,
+   "cutlery": 4.169811320754717,
+   "glass": 1,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.2065217391304346
+  },
+  "milkGlasses": 0.42857142857142855,
+  "teaItems": 0.1,
+  "crockeryWithoutTea": 2.875,
+  "cleanShare": 0.5048209366391184,
+  "clean": 54,
+  "soiledItems": 64,
+  "soiledClean": 26,
+  "histogram": [
+   23,
+   7,
+   5,
+   2,
+   3,
+   24
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 13.970514112139114,
+    "meanScore": 2.8,
+    "clean": 9,
+    "medianVisibleMm2": 6.252900689090788
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 4.529797768462346,
+    "meanScore": 0.42857142857142855,
+    "clean": 0,
+    "medianVisibleMm2": 225.16002889038754
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 18,
+    "left_pct": 8.934652433343615,
+    "meanScore": 3.0555555555555554,
+    "clean": 10,
+    "medianVisibleMm2": 0.08287583476723803
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 6,
+    "left_pct": 0.458813702134905,
+    "meanScore": 4.166666666666667,
+    "clean": 4,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 16.78042034916235,
+    "meanScore": 0.1,
+    "clean": 0,
+    "medianVisibleMm2": 1735.2276311331377
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    0
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    3.5714285714285716,
+    5
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    13,
+    3.1538461538461537,
+    6
+   ],
+   "dinner_plate_porcelain_iec": [
+    6,
+    2.5,
+    3
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    0,
+    0
+   ],
+   "saucer_porcelain_140": [
+    6,
+    0.16666666666666666,
+    0
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    2.5,
+    3
+   ],
+   "soup_spoon_190": [
+    12,
+    3.3333333333333335,
+    7
+   ],
+   "tea_cup_porcelain_210": [
+    1,
+    0,
+    0
+   ],
+   "teaspoon_130": [
+    12,
+    5,
+    12
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    0.42857142857142855,
+    0
+   ]
+  },
+  "drySoilLeft_pct": 9.657105717448331,
+  "heldWater_mL": 3.9151295254669094,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 18.938257375000003
+ },
+ {
+  "name": "auto v3 D careful L1S1",
+  "load": "iec-13-careful",
+  "programme": "as_written",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 20,
+  "duration_min": 144.91666666666666,
+  "energy_kWh": 1.0378827803349024,
+  "mainWash": {
+   "minutes": 62.96654263290885,
+   "peak_C": 65.01486175243527,
+   "end_C": 55.715717941334646,
+   "pH_peak": 10.418349662192849,
+   "pH_end": 10.582368051456069,
+   "minAbove": {
+    "45": 55.06399761246189,
+    "55": 48.50164405163145,
+    "60": 35.39084436091829
+   },
+   "proteasePeak_mgL": 64.05547569860647,
+   "proteaseEnd_mgL": 12.877151956425848,
+   "peracidPeak_mmolL": 0.3238657772385069
+  },
+  "items": 97,
+  "score": {
+   "crockery": 1.1435897435897435,
+   "cutlery": 3.910628019323671,
+   "glass": 1.75,
+   "melamine": 2.5,
+   "pots": null,
+   "all": 2.719651741293532
+  },
+  "soiled": {
+   "crockery": 1.1435897435897435,
+   "cutlery": 3.072649572649573,
+   "glass": 1.75,
+   "melamine": 2.5,
+   "pots": null,
+   "all": 2.061858974358974
+  },
+  "raw": {
+   "crockery": 1.5454545454545454,
+   "cutlery": 4,
+   "glass": 0.625,
+   "melamine": 2.5,
+   "pots": null,
+   "all": 3.134020618556701
+  },
+  "milkGlasses": 0,
+  "teaItems": 0.14285714285714285,
+  "crockeryWithoutTea": 2.0799999999999996,
+  "cleanShare": 0.5262437810945274,
+  "clean": 59,
+  "soiledItems": 68,
+  "soiledClean": 30,
+  "histogram": [
+   33,
+   1,
+   0,
+   4,
+   4,
+   26
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 17,
+    "left_pct": 42.133505179139846,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 1823.7794761434955
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 12,
+    "left_pct": 0.005654302849060926,
+    "meanScore": 4.833333333333333,
+    "clean": 11,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 62.09610892446522,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 5305.098561716016
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 1.030112929432565,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 986.7065927519355
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 19,
+    "left_pct": 0.005875153880008039,
+    "meanScore": 4.473684210526316,
+    "clean": 16,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 3,
+    "left_pct": 1.2573291097969815e-05,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 7,
+    "left_pct": 11.274143818150895,
+    "meanScore": 0.14285714285714285,
+    "clean": 0,
+    "medianVisibleMm2": 422.85171684470544
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    1
+   ],
+   "dessert_plate_porcelain_190": [
+    5,
+    2,
+    2
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    11,
+    0,
+    0
+   ],
+   "dinner_knife_210": [
+    12,
+    4.833333333333333,
+    11
+   ],
+   "dinner_plate_porcelain_iec": [
+    5,
+    0,
+    0
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    2.5,
+    1
+   ],
+   "mug_ceramic_300": [
+    3,
+    0,
+    0
+   ],
+   "saucer_porcelain_140": [
+    2,
+    0.5,
+    0
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    5,
+    4.6,
+    4
+   ],
+   "soup_spoon_190": [
+    13,
+    4.384615384615385,
+    11
+   ],
+   "tea_cup_porcelain_210": [
+    2,
+    0,
+    0
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    0,
+    0
+   ]
+  },
+  "drySoilLeft_pct": 30.041410673625638,
+  "heldWater_mL": 2.232617418940208,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 17.858188332999998
+ },
+ {
+  "name": "auto v3 D careless L1S1",
+  "load": "iec-13-careless",
+  "programme": "as_written",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 20,
+  "duration_min": 144.91666666666666,
+  "energy_kWh": 1.0378827803349024,
+  "mainWash": {
+   "minutes": 62.96654263290885,
+   "peak_C": 65.01486175243527,
+   "end_C": 55.9670138449097,
+   "pH_peak": 10.430477047958629,
+   "pH_end": 10.577333518166778,
+   "minAbove": {
+    "45": 55.063997612460284,
+    "55": 48.49211687114122,
+    "60": 35.39084436091841
+   },
+   "proteasePeak_mgL": 64.05472376782963,
+   "proteaseEnd_mgL": 12.986898261671048,
+   "peracidPeak_mmolL": 0.3247530596383114
+  },
+  "items": 92,
+  "score": {
+   "crockery": 0.5641025641025641,
+   "cutlery": 2.9880952380952377,
+   "glass": 1.75,
+   "melamine": 4.5,
+   "pots": null,
+   "all": 2.077134986225895
+  },
+  "soiled": {
+   "crockery": 0.5641025641025641,
+   "cutlery": 0.6666666666666666,
+   "glass": 1.75,
+   "melamine": 4.5,
+   "pots": null,
+   "all": 1.1135531135531136
+  },
+  "raw": {
+   "crockery": 0.7586206896551724,
+   "cutlery": 2.943396226415094,
+   "glass": 0.625,
+   "melamine": 4.5,
+   "pots": null,
+   "all": 2.0869565217391304
+  },
+  "milkGlasses": 0,
+  "teaItems": 0.1,
+  "crockeryWithoutTea": 1.05,
+  "cleanShare": 0.3395316804407713,
+  "clean": 35,
+  "soiledItems": 64,
+  "soiledClean": 7,
+  "histogram": [
+   48,
+   3,
+   3,
+   2,
+   3,
+   5
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 59.17466358174441,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 1823.779483672758
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 71.53362363088263,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 5305.682447108
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 5.105908267907517,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 1985.243146025096
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 18,
+    "left_pct": 10.154228180215512,
+    "meanScore": 1.5555555555555556,
+    "clean": 3,
+    "medianVisibleMm2": 113.2312529194778
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 6,
+    "left_pct": 1.0654489907230733,
+    "meanScore": 3.8333333333333335,
+    "clean": 4,
+    "medianVisibleMm2": 0.35083525598843046
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 16.11114198614841,
+    "meanScore": 0.1,
+    "clean": 0,
+    "medianVisibleMm2": 1539.185648868755
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    0
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    1.2857142857142858,
+    2
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    13,
+    0,
+    0
+   ],
+   "dinner_plate_porcelain_iec": [
+    6,
+    0,
+    0
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    4.5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    0,
+    0
+   ],
+   "saucer_porcelain_140": [
+    6,
+    0.16666666666666666,
+    0
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    2,
+    2
+   ],
+   "soup_spoon_190": [
+    12,
+    1.3333333333333333,
+    1
+   ],
+   "tea_cup_porcelain_210": [
+    1,
+    0,
+    0
+   ],
+   "teaspoon_130": [
+    12,
+    5,
+    12
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    0,
+    0
+   ]
+  },
+  "drySoilLeft_pct": 48.70055867628743,
+  "heldWater_mL": 3.9151295254669094,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 18.688992584000008
+ },
+ {
+  "name": "auto capsule careful L1S1",
+  "load": "iec-13-careful",
+  "programme": "as_written",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 12.9,
+  "duration_min": 144.91666666666666,
+  "energy_kWh": 1.0378827803349024,
+  "mainWash": {
+   "minutes": 62.96654263290885,
+   "peak_C": 65.01486175243527,
+   "end_C": 55.715717941334646,
+   "pH_peak": 10.100633530569393,
+   "pH_end": 10.246131342807711,
+   "minAbove": {
+    "45": 55.06399761246189,
+    "55": 48.50164405163145,
+    "60": 35.39084436091829
+   },
+   "proteasePeak_mgL": 95.84366969680633,
+   "proteaseEnd_mgL": 31.983773214609254,
+   "peracidPeak_mmolL": 0.4476663299141638
+  },
+  "items": 97,
+  "score": {
+   "crockery": 3.3333333333333335,
+   "cutlery": 4.01207729468599,
+   "glass": 1.75,
+   "melamine": 4,
+   "pots": null,
+   "all": 3.47636815920398
+  },
+  "soiled": {
+   "crockery": 3.3333333333333335,
+   "cutlery": 3.252136752136752,
+   "glass": 1.75,
+   "melamine": 4,
+   "pots": null,
+   "all": 3.036858974358974
+  },
+  "raw": {
+   "crockery": 3.1363636363636362,
+   "cutlery": 4.107692307692307,
+   "glass": 0.625,
+   "melamine": 4,
+   "pots": null,
+   "all": 3.597938144329897
+  },
+  "milkGlasses": 0,
+  "teaItems": 4.142857142857143,
+  "crockeryWithoutTea": 2.55,
+  "cleanShare": 0.657089552238806,
+  "clean": 67,
+  "soiledItems": 68,
+  "soiledClean": 38,
+  "histogram": [
+   24,
+   0,
+   1,
+   4,
+   5,
+   34
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 17,
+    "left_pct": 10.73367382693019,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 1772.6089466707945
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 12,
+    "left_pct": 0.0026699235949420876,
+    "meanScore": 4.833333333333333,
+    "clean": 11,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 38.20890624807861,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 5016.528394530228
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 0.006439677983875373,
+    "meanScore": 2.6666666666666665,
+    "clean": 0,
+    "medianVisibleMm2": 5.698814723284951
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 19,
+    "left_pct": 0.0020488045088325317,
+    "meanScore": 4.947368421052632,
+    "clean": 19,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 7,
+    "left_pct": 6.77647524696507,
+    "meanScore": 4.142857142857143,
+    "clean": 5,
+    "medianVisibleMm2": 0.3328509879959807
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    1
+   ],
+   "dessert_plate_porcelain_190": [
+    5,
+    2,
+    2
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    11,
+    0,
+    0
+   ],
+   "dinner_knife_210": [
+    12,
+    4.833333333333333,
+    11
+   ],
+   "dinner_plate_porcelain_iec": [
+    5,
+    1,
+    0
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    4,
+    1
+   ],
+   "mug_ceramic_300": [
+    3,
+    4,
+    1
+   ],
+   "saucer_porcelain_140": [
+    2,
+    4.5,
+    2
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    5,
+    5,
+    5
+   ],
+   "soup_spoon_190": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "tea_cup_porcelain_210": [
+    2,
+    4,
+    2
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    0,
+    0
+   ]
+  },
+  "drySoilLeft_pct": 11.503870254616348,
+  "heldWater_mL": 2.232617418940208,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 19.630283750000004
+ },
+ {
+  "name": "auto capsule.stable careful L1S1",
+  "load": "iec-13-careful",
+  "programme": "as_written",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 12.9,
+  "duration_min": 144.91666666666666,
+  "energy_kWh": 1.0378827803349024,
+  "mainWash": {
+   "minutes": 62.96654263290885,
+   "peak_C": 65.01486175243527,
+   "end_C": 55.715717941334646,
+   "pH_peak": 10.100633530569393,
+   "pH_end": 10.246131342807711,
+   "minAbove": {
+    "45": 55.06399761246189,
+    "55": 48.50164405163145,
+    "60": 35.39084436091829
+   },
+   "proteasePeak_mgL": 95.86484018096799,
+   "proteaseEnd_mgL": 68.40063198971866,
+   "peracidPeak_mmolL": 0.44766632991298083
+  },
+  "items": 97,
+  "score": {
+   "crockery": 3.8,
+   "cutlery": 4.046332894158981,
+   "glass": 1.75,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.6746042514699235
+  },
+  "soiled": {
+   "crockery": 3.8,
+   "cutlery": 3.3127428127428127,
+   "glass": 1.75,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.2922785547785547
+  },
+  "raw": {
+   "crockery": 3.727272727272727,
+   "cutlery": 4.138461538461539,
+   "glass": 0.625,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.7731958762886597
+  },
+  "milkGlasses": 0,
+  "teaItems": 4.142857142857143,
+  "crockeryWithoutTea": 3.46,
+  "cleanShare": 0.7003731343283581,
+  "clean": 70,
+  "soiledItems": 68,
+  "soiledClean": 41,
+  "histogram": [
+   18,
+   3,
+   2,
+   3,
+   5,
+   37
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 17,
+    "left_pct": 0.7992297315636057,
+    "meanScore": 0.5882352941176471,
+    "clean": 0,
+    "medianVisibleMm2": 263.39369323271103
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 12,
+    "left_pct": 0.0026699235949420876,
+    "meanScore": 4.833333333333333,
+    "clean": 11,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 13.394791693990252,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 1908.8641318214782
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 2.9521654058043178e-08,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 19,
+    "left_pct": 0.0020488045064924955,
+    "meanScore": 4.947368421052632,
+    "clean": 19,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 7,
+    "left_pct": 6.792126150743977,
+    "meanScore": 4.142857142857143,
+    "clean": 5,
+    "medianVisibleMm2": 0.34704205644179753
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    1
+   ],
+   "dessert_plate_porcelain_190": [
+    5,
+    2.2,
+    2
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    11,
+    0.18181818181818182,
+    0
+   ],
+   "dinner_knife_210": [
+    12,
+    4.833333333333333,
+    11
+   ],
+   "dinner_plate_porcelain_iec": [
+    5,
+    3.4,
+    2
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    4,
+    1
+   ],
+   "saucer_porcelain_140": [
+    2,
+    4.5,
+    2
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    5,
+    5,
+    5
+   ],
+   "soup_spoon_190": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "tea_cup_porcelain_210": [
+    2,
+    4,
+    2
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    0,
+    0
+   ]
+  },
+  "drySoilLeft_pct": 2.684084524446677,
+  "heldWater_mL": 2.232617418940208,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 10.228432457999995
+ },
+ {
+  "name": "auto staged55 capsule careful L1S1",
+  "load": "iec-13-careful",
+  "programme": "staged_55",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 12.9,
+  "duration_min": 144.68333333333334,
+  "energy_kWh": 0.9633562767350903,
+  "mainWash": {
+   "minutes": 64.63320929957551,
+   "peak_C": 55.021723444492416,
+   "end_C": 48.14100100530364,
+   "pH_peak": 10.449974074356941,
+   "pH_end": 10.375425006074874,
+   "minAbove": {
+    "45": 46.50623851736136,
+    "55": 0.010056048032204975,
+    "60": 0
+   },
+   "proteasePeak_mgL": 95.84366969680633,
+   "proteaseEnd_mgL": 74.0447616552605,
+   "peracidPeak_mmolL": 0.4476663299141638
+  },
+  "items": 97,
+  "score": {
+   "crockery": 2.31965811965812,
+   "cutlery": 4.029205094422485,
+   "glass": 1.75,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.2349389416553596
+  },
+  "soiled": {
+   "crockery": 2.31965811965812,
+   "cutlery": 3.282439782439782,
+   "glass": 1.75,
+   "melamine": 5,
+   "pots": null,
+   "all": 2.7257867132867135
+  },
+  "raw": {
+   "crockery": 2.727272727272727,
+   "cutlery": 4.123076923076923,
+   "glass": 0.625,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.536082474226804
+  },
+  "milkGlasses": 0,
+  "teaItems": 1.1428571428571428,
+  "crockeryWithoutTea": 3.3900000000000006,
+  "cleanShare": 0.593407960199005,
+  "clean": 65,
+  "soiledItems": 68,
+  "soiledClean": 36,
+  "histogram": [
+   20,
+   6,
+   5,
+   1,
+   1,
+   35
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 17,
+    "left_pct": 0.9982169685312338,
+    "meanScore": 0.47058823529411764,
+    "clean": 0,
+    "medianVisibleMm2": 363.7805051539498
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 12,
+    "left_pct": 0.003011226347805337,
+    "meanScore": 4.833333333333333,
+    "clean": 11,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 14.779743351800882,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 2198.5546173045086
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 1.330070498677789e-07,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 19,
+    "left_pct": 0.0020213552588925414,
+    "meanScore": 4.947368421052632,
+    "clean": 19,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 7,
+    "left_pct": 9.505255565099779,
+    "meanScore": 1.1428571428571428,
+    "clean": 0,
+    "medianVisibleMm2": 73.75636722449106
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    1
+   ],
+   "dessert_plate_porcelain_190": [
+    5,
+    2.2,
+    2
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    11,
+    0.09090909090909091,
+    0
+   ],
+   "dinner_knife_210": [
+    12,
+    4.833333333333333,
+    11
+   ],
+   "dinner_plate_porcelain_iec": [
+    5,
+    3.2,
+    2
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    0.6666666666666666,
+    0
+   ],
+   "saucer_porcelain_140": [
+    2,
+    1.5,
+    0
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    5,
+    5,
+    5
+   ],
+   "soup_spoon_190": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "tea_cup_porcelain_210": [
+    2,
+    1.5,
+    0
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    0,
+    0
+   ]
+  },
+  "drySoilLeft_pct": 3.016085661172758,
+  "heldWater_mL": 2.232617418940208,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 10.74097975
+ },
+ {
+  "name": "eco capsule careful L1S1",
+  "load": "iec-13-careful",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 12.9,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.72856187750287,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.637285700364195,
+   "pH_peak": 10.369892825148053,
+   "pH_end": 10.473410356088788,
+   "minAbove": {
+    "45": 138.98609650184054,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 95.86139893698392,
+   "proteaseEnd_mgL": 66.49234619690864,
+   "peracidPeak_mmolL": 0.44511573371590274
+  },
+  "items": 97,
+  "score": {
+   "crockery": 4.042735042735043,
+   "cutlery": 4.86846728151076,
+   "glass": 4.35,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.556648575305292
+  },
+  "soiled": {
+   "crockery": 4.042735042735043,
+   "cutlery": 4.767288267288268,
+   "glass": 4.35,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.428758741258742
+  },
+  "raw": {
+   "crockery": 4.363636363636363,
+   "cutlery": 4.876923076923077,
+   "glass": 4.125,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.701030927835052
+  },
+  "milkGlasses": 4,
+  "teaItems": 3,
+  "crockeryWithoutTea": 5,
+  "cleanShare": 0.8410140854170706,
+  "clean": 87,
+  "soiledItems": 68,
+  "soiledClean": 58,
+  "histogram": [
+   1,
+   0,
+   2,
+   7,
+   4,
+   54
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 17,
+    "left_pct": 0.003615114157801229,
+    "meanScore": 4.705882352941177,
+    "clean": 15,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 12,
+    "left_pct": 0.006614123547948236,
+    "meanScore": 4.833333333333333,
+    "clean": 11,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 0.8785775327799342,
+    "meanScore": 4,
+    "clean": 6,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 19,
+    "left_pct": 0.0020487968584885414,
+    "meanScore": 4.947368421052632,
+    "clean": 19,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 7,
+    "left_pct": 7.937605937482993,
+    "meanScore": 3,
+    "clean": 1,
+    "medianVisibleMm2": 8.776128453566441
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    1
+   ],
+   "dessert_plate_porcelain_190": [
+    5,
+    5,
+    5
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    11,
+    4.545454545454546,
+    9
+   ],
+   "dinner_knife_210": [
+    12,
+    4.833333333333333,
+    11
+   ],
+   "dinner_plate_porcelain_iec": [
+    5,
+    5,
+    5
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    2.6666666666666665,
+    0
+   ],
+   "saucer_porcelain_140": [
+    2,
+    3.5,
+    1
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    5,
+    5,
+    5
+   ],
+   "soup_spoon_190": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "tea_cup_porcelain_210": [
+    2,
+    3,
+    0
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    4,
+    6
+   ]
+  },
+  "drySoilLeft_pct": 0.16036063456339184,
+  "heldWater_mL": 2.232617418940208,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 11.528896791999985
+ },
+ {
+  "name": "auto capsule careless L1S1",
+  "load": "iec-13-careless",
+  "programme": "as_written",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 12.9,
+  "duration_min": 144.91666666666666,
+  "energy_kWh": 1.0378827803349024,
+  "mainWash": {
+   "minutes": 62.96654263290885,
+   "peak_C": 65.01486175243527,
+   "end_C": 55.9670138449097,
+   "pH_peak": 10.111508030245385,
+   "pH_end": 10.24166883765174,
+   "minAbove": {
+    "45": 55.063997612460284,
+    "55": 48.49211687114122,
+    "60": 35.39084436091841
+   },
+   "proteasePeak_mgL": 95.84331920286688,
+   "proteaseEnd_mgL": 32.15621108710836,
+   "peracidPeak_mmolL": 0.4487700156017318
+  },
+  "items": 92,
+  "score": {
+   "crockery": 1.863247863247863,
+   "cutlery": 3.3169642857142856,
+   "glass": 1.75,
+   "melamine": 5,
+   "pots": null,
+   "all": 2.6728650137741043
+  },
+  "soiled": {
+   "crockery": 1.863247863247863,
+   "cutlery": 1.375,
+   "glass": 1.75,
+   "melamine": 5,
+   "pots": null,
+   "all": 1.9056776556776558
+  },
+  "raw": {
+   "crockery": 1.6206896551724137,
+   "cutlery": 3.2641509433962264,
+   "glass": 0.625,
+   "melamine": 5,
+   "pots": null,
+   "all": 2.5543478260869565
+  },
+  "milkGlasses": 0,
+  "teaItems": 1.8,
+  "crockeryWithoutTea": 1.4833333333333332,
+  "cleanShare": 0.45867768595041325,
+  "clean": 44,
+  "soiledItems": 64,
+  "soiledClean": 16,
+  "histogram": [
+   39,
+   4,
+   1,
+   3,
+   5,
+   12
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 34.54067960177232,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 1789.4673773287177
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 54.269939824337186,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 5267.490966925573
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 0.405414174581521,
+    "meanScore": 1.3333333333333333,
+    "clean": 0,
+    "medianVisibleMm2": 143.34848740762732
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 18,
+    "left_pct": 9.139796938216273,
+    "meanScore": 2.6666666666666665,
+    "clean": 9,
+    "medianVisibleMm2": 3.5503743464207647
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 6,
+    "left_pct": 0.505518562993937,
+    "meanScore": 4.166666666666667,
+    "clean": 4,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 11.136423536513032,
+    "meanScore": 1.8,
+    "clean": 3,
+    "medianVisibleMm2": 252.68705211813875
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    0
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    1.4285714285714286,
+    2
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    13,
+    0,
+    0
+   ],
+   "dinner_plate_porcelain_iec": [
+    6,
+    0.6666666666666666,
+    0
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    0,
+    0
+   ],
+   "saucer_porcelain_140": [
+    6,
+    2.1666666666666665,
+    2
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    2.5,
+    3
+   ],
+   "soup_spoon_190": [
+    12,
+    2.75,
+    6
+   ],
+   "tea_cup_porcelain_210": [
+    1,
+    5,
+    1
+   ],
+   "teaspoon_130": [
+    12,
+    5,
+    12
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    0,
+    0
+   ]
+  },
+  "drySoilLeft_pct": 30.861529707067618,
+  "heldWater_mL": 3.9151295254669094,
+  "exposure": [
+   0,
+   4
+  ],
+  "seconds": 193.59959083399997
+ },
+ {
+  "name": "auto capsule.stable careless L1S1",
+  "load": "iec-13-careless",
+  "programme": "as_written",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 12.9,
+  "duration_min": 144.91666666666666,
+  "energy_kWh": 1.0378827803349024,
+  "mainWash": {
+   "minutes": 62.96654263290885,
+   "peak_C": 65.01486175243527,
+   "end_C": 55.9670138449097,
+   "pH_peak": 10.111508030245385,
+   "pH_end": 10.24166883765174,
+   "minAbove": {
+    "45": 55.063997612460284,
+    "55": 48.49211687114122,
+    "60": 35.39084436091841
+   },
+   "proteasePeak_mgL": 95.8645774705261,
+   "proteaseEnd_mgL": 68.49002322827396,
+   "peracidPeak_mmolL": 0.4487700156004928
+  },
+  "items": 92,
+  "score": {
+   "crockery": 2.0683760683760686,
+   "cutlery": 3.3348214285714284,
+   "glass": 1.75,
+   "melamine": 5,
+   "pots": null,
+   "all": 2.7472451790633605
+  },
+  "soiled": {
+   "crockery": 2.0683760683760686,
+   "cutlery": 1.4134615384615385,
+   "glass": 1.75,
+   "melamine": 5,
+   "pots": null,
+   "all": 2.004578754578755
+  },
+  "raw": {
+   "crockery": 1.8620689655172413,
+   "cutlery": 3.2830188679245285,
+   "glass": 0.625,
+   "melamine": 5,
+   "pots": null,
+   "all": 2.641304347826087
+  },
+  "milkGlasses": 0,
+  "teaItems": 1.8,
+  "crockeryWithoutTea": 1.8833333333333335,
+  "cleanShare": 0.46831955922865015,
+  "clean": 45,
+  "soiledItems": 64,
+  "soiledClean": 17,
+  "histogram": [
+   36,
+   5,
+   2,
+   3,
+   5,
+   13
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 19.83962360411133,
+    "meanScore": 0.1,
+    "clean": 0,
+    "medianVisibleMm2": 723.355409546836
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 32.540995808073625,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 4222.035221711316
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 0.015342038696401687,
+    "meanScore": 3.3333333333333335,
+    "clean": 1,
+    "medianVisibleMm2": 4.160859135676183
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 18,
+    "left_pct": 9.139793215456242,
+    "meanScore": 2.6666666666666665,
+    "clean": 9,
+    "medianVisibleMm2": 3.5502404896322766
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 6,
+    "left_pct": 0.5055177453786185,
+    "meanScore": 4.166666666666667,
+    "clean": 4,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 11.152654929019318,
+    "meanScore": 1.8,
+    "clean": 3,
+    "medianVisibleMm2": 253.8165096413728
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    0
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    1.5714285714285714,
+    2
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    13,
+    0.07692307692307693,
+    0
+   ],
+   "dinner_plate_porcelain_iec": [
+    6,
+    1.6666666666666667,
+    1
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    0,
+    0
+   ],
+   "saucer_porcelain_140": [
+    6,
+    2.1666666666666665,
+    2
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    2.5,
+    3
+   ],
+   "soup_spoon_190": [
+    12,
+    2.75,
+    6
+   ],
+   "tea_cup_porcelain_210": [
+    1,
+    5,
+    1
+   ],
+   "teaspoon_130": [
+    12,
+    5,
+    12
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    0,
+    0
+   ]
+  },
+  "drySoilLeft_pct": 18.344587429230977,
+  "heldWater_mL": 3.9151295254669094,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 15.089649749999982
+ },
+ {
+  "name": "auto staged55 capsule careless L1S1",
+  "load": "iec-13-careless",
+  "programme": "staged_55",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 12.9,
+  "duration_min": 144.68333333333334,
+  "energy_kWh": 0.9633562767350903,
+  "mainWash": {
+   "minutes": 64.63320929957551,
+   "peak_C": 55.021723444492416,
+   "end_C": 48.336498558208646,
+   "pH_peak": 10.372780588267414,
+   "pH_end": 10.371862659934049,
+   "minAbove": {
+    "45": 46.50623851736052,
+    "55": 0.010056048032204975,
+    "60": 0
+   },
+   "proteasePeak_mgL": 95.84331920286688,
+   "proteaseEnd_mgL": 74.07526995154052,
+   "peracidPeak_mmolL": 0.4487700156017318
+  },
+  "items": 92,
+  "score": {
+   "crockery": 1.4017094017094018,
+   "cutlery": 3.354166666666667,
+   "glass": 1.75,
+   "melamine": 5,
+   "pots": null,
+   "all": 2.541322314049587
+  },
+  "soiled": {
+   "crockery": 1.4017094017094018,
+   "cutlery": 1.4551282051282053,
+   "glass": 1.75,
+   "melamine": 5,
+   "pots": null,
+   "all": 1.7307692307692308
+  },
+  "raw": {
+   "crockery": 1.4827586206896552,
+   "cutlery": 3.30188679245283,
+   "glass": 0.625,
+   "melamine": 5,
+   "pots": null,
+   "all": 2.532608695652174
+  },
+  "milkGlasses": 0,
+  "teaItems": 0.7,
+  "crockeryWithoutTea": 1.8833333333333335,
+  "cleanShare": 0.41115702479338845,
+  "clean": 43,
+  "soiledItems": 64,
+  "soiledClean": 15,
+  "histogram": [
+   37,
+   6,
+   3,
+   2,
+   5,
+   11
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 20.488947958728286,
+    "meanScore": 0.1,
+    "clean": 0,
+    "medianVisibleMm2": 923.1929766271653
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 34.15464394664789,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 4347.192349532077
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 0.021857294307326115,
+    "meanScore": 3.3333333333333335,
+    "clean": 1,
+    "medianVisibleMm2": 8.183490372935905
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 18,
+    "left_pct": 9.082269039123736,
+    "meanScore": 2.7222222222222223,
+    "clean": 10,
+    "medianVisibleMm2": 1.7400961960137995
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 6,
+    "left_pct": 0.49700921691325284,
+    "meanScore": 4.166666666666667,
+    "clean": 4,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 13.947216320192638,
+    "meanScore": 0.7,
+    "clean": 0,
+    "medianVisibleMm2": 759.5082852247242
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    0
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    1.5714285714285714,
+    2
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    13,
+    0.07692307692307693,
+    0
+   ],
+   "dinner_plate_porcelain_iec": [
+    6,
+    1.6666666666666667,
+    1
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    0,
+    0
+   ],
+   "saucer_porcelain_140": [
+    6,
+    0.8333333333333334,
+    0
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    2.5,
+    3
+   ],
+   "soup_spoon_190": [
+    12,
+    2.8333333333333335,
+    7
+   ],
+   "tea_cup_porcelain_210": [
+    1,
+    2,
+    0
+   ],
+   "teaspoon_130": [
+    12,
+    5,
+    12
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    0,
+    0
+   ]
+  },
+  "drySoilLeft_pct": 19.017631689845487,
+  "heldWater_mL": 3.9151295254669094,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 13.033373416999995
+ },
+ {
+  "name": "eco capsule careless L1S1",
+  "load": "iec-13-careless",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 12.9,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.73333333333332,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.81811572217194,
+   "pH_peak": 10.371078121338723,
+   "pH_end": 10.470297227221817,
+   "minAbove": {
+    "45": 138.99084436091144,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 95.86090369454537,
+   "proteaseEnd_mgL": 66.35703361104387,
+   "peracidPeak_mmolL": 0.4461701276421505
+  },
+  "items": 92,
+  "score": {
+   "crockery": 2.371794871794872,
+   "cutlery": 4.369047619047619,
+   "glass": 2.2142857142857144,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.4004329004329006
+  },
+  "soiled": {
+   "crockery": 2.371794871794872,
+   "cutlery": 3.6410256410256405,
+   "glass": 2.2142857142857144,
+   "melamine": 5,
+   "pots": null,
+   "all": 2.873103087388802
+  },
+  "raw": {
+   "crockery": 2.413793103448276,
+   "cutlery": 4.3584905660377355,
+   "glass": 1.25,
+   "melamine": 5,
+   "pots": null,
+   "all": 3.489130434782609
+  },
+  "milkGlasses": 0.7142857142857143,
+  "teaItems": 1.5,
+  "crockeryWithoutTea": 2.875,
+  "cleanShare": 0.5792011019283747,
+  "clean": 58,
+  "soiledItems": 64,
+  "soiledClean": 30,
+  "histogram": [
+   16,
+   8,
+   4,
+   5,
+   5,
+   26
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 13.874807725514401,
+    "meanScore": 3.1,
+    "clean": 11,
+    "medianVisibleMm2": 1.920093500062659
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 3.6018853871471403,
+    "meanScore": 0.7142857142857143,
+    "clean": 0,
+    "medianVisibleMm2": 119.32484375435953
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 18,
+    "left_pct": 8.848053820486143,
+    "meanScore": 3.2777777777777777,
+    "clean": 10,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 6,
+    "left_pct": 0.44670426723142265,
+    "meanScore": 4.166666666666667,
+    "clean": 4,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 12.088465830149213,
+    "meanScore": 1.5,
+    "clean": 2,
+    "medianVisibleMm2": 357.3368472770864
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    0
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    3.5714285714285716,
+    5
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    13,
+    3.6153846153846154,
+    8
+   ],
+   "dinner_plate_porcelain_iec": [
+    6,
+    2.5,
+    3
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    0,
+    0
+   ],
+   "saucer_porcelain_140": [
+    6,
+    1.8333333333333333,
+    1
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    2.5,
+    3
+   ],
+   "soup_spoon_190": [
+    12,
+    3.6666666666666665,
+    7
+   ],
+   "tea_cup_porcelain_210": [
+    1,
+    4,
+    1
+   ],
+   "teaspoon_130": [
+    12,
+    5,
+    12
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    0.7142857142857143,
+    0
+   ]
+  },
+  "drySoilLeft_pct": 9.413266832660252,
+  "heldWater_mL": 3.9151295254669094,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 13.47436829100002
+ },
+ {
+  "name": "auto capsule careful L2S2",
+  "load": "iec-13-careful",
+  "programme": "as_written",
+  "tier": "official",
+  "seeds": [
+   2,
+   2
+  ],
+  "dose_g": 12.9,
+  "duration_min": 144.91666666666666,
+  "energy_kWh": 1.0378827803349024,
+  "mainWash": {
+   "minutes": 62.96654263290885,
+   "peak_C": 65.01486175243527,
+   "end_C": 55.715717941334646,
+   "pH_peak": 10.100633955852754,
+   "pH_end": 10.246131859986416,
+   "minAbove": {
+    "45": 55.06399761246189,
+    "55": 48.50164405163145,
+    "60": 35.39084436091829
+   },
+   "proteasePeak_mgL": 95.84369139475766,
+   "proteaseEnd_mgL": 31.98422425610165,
+   "peracidPeak_mmolL": 0.44762936942184356
+  },
+  "items": 97,
+  "score": {
+   "crockery": 3.2444444444444445,
+   "cutlery": 3.9975845410628015,
+   "glass": 1.75,
+   "melamine": 4.5,
+   "pots": null,
+   "all": 3.465422885572139
+  },
+  "soiled": {
+   "crockery": 3.2444444444444445,
+   "cutlery": 3.226495726495726,
+   "glass": 1.75,
+   "melamine": 4.5,
+   "pots": null,
+   "all": 3.0227564102564104
+  },
+  "raw": {
+   "crockery": 3.0454545454545454,
+   "cutlery": 4.092307692307692,
+   "glass": 0.625,
+   "melamine": 4.5,
+   "pots": null,
+   "all": 3.577319587628866
+  },
+  "milkGlasses": 0,
+  "teaItems": 4.142857142857143,
+  "crockeryWithoutTea": 2.41,
+  "cleanShare": 0.6720149253731345,
+  "clean": 67,
+  "soiledItems": 68,
+  "soiledClean": 38,
+  "histogram": [
+   24,
+   1,
+   1,
+   3,
+   5,
+   34
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 17,
+    "left_pct": 10.097411360738214,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 1740.0271177989941
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 12,
+    "left_pct": 0.0058020632925635755,
+    "meanScore": 4.833333333333333,
+    "clean": 11,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 39.02926736179847,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 4953.783707688657
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 0.026472219561062705,
+    "meanScore": 2.3333333333333335,
+    "clean": 1,
+    "medianVisibleMm2": 14.369537122385829
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 19,
+    "left_pct": 0.011670850855861135,
+    "meanScore": 4.894736842105263,
+    "clean": 18,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 7,
+    "left_pct": 6.78800514142293,
+    "meanScore": 4.142857142857143,
+    "clean": 5,
+    "medianVisibleMm2": 0.4897290902532427
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    1
+   ],
+   "dessert_plate_porcelain_190": [
+    5,
+    2,
+    2
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    11,
+    0,
+    0
+   ],
+   "dinner_knife_210": [
+    12,
+    4.833333333333333,
+    11
+   ],
+   "dinner_plate_porcelain_iec": [
+    5,
+    0.6,
+    0
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    4.5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    4.333333333333333,
+    1
+   ],
+   "saucer_porcelain_140": [
+    2,
+    4,
+    2
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    5,
+    5,
+    5
+   ],
+   "soup_spoon_190": [
+    13,
+    4.846153846153846,
+    12
+   ],
+   "tea_cup_porcelain_210": [
+    2,
+    4,
+    2
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    0,
+    0
+   ]
+  },
+  "drySoilLeft_pct": 11.4459338902548,
+  "heldWater_mL": 2.232617418940208,
+  "exposure": [
+   0,
+   4
+  ],
+  "seconds": 200.59048579199998
+ },
+ {
+  "name": "eco capsule careful L2S2",
+  "load": "iec-13-careful",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   2,
+   2
+  ],
+  "dose_g": 12.9,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.72856187750287,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.637285700364195,
+   "pH_peak": 10.369892825148053,
+   "pH_end": 10.473410356088788,
+   "minAbove": {
+    "45": 138.98609650184054,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 95.8614201154934,
+   "proteaseEnd_mgL": 66.49891599252491,
+   "peracidPeak_mmolL": 0.445081580872539
+  },
+  "items": 97,
+  "score": {
+   "crockery": 4.0256410256410255,
+   "cutlery": 4.819718928414581,
+   "glass": 4.35,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.526571687019448
+  },
+  "soiled": {
+   "crockery": 4.0256410256410255,
+   "cutlery": 4.681041181041181,
+   "glass": 4.35,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.390005827505828
+  },
+  "raw": {
+   "crockery": 4.363636363636363,
+   "cutlery": 4.8307692307692305,
+   "glass": 4.125,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.670103092783505
+  },
+  "milkGlasses": 4,
+  "teaItems": 3,
+  "crockeryWithoutTea": 5,
+  "cleanShare": 0.8335513988499064,
+  "clean": 86,
+  "soiledItems": 68,
+  "soiledClean": 57,
+  "histogram": [
+   1,
+   0,
+   3,
+   6,
+   6,
+   52
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 17,
+    "left_pct": 0.0011501552299712596,
+    "meanScore": 4.588235294117647,
+    "clean": 15,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 12,
+    "left_pct": 0.014381928884098092,
+    "meanScore": 4.833333333333333,
+    "clean": 11,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 7,
+    "left_pct": 1.0442208086153841,
+    "meanScore": 4,
+    "clean": 6,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 19,
+    "left_pct": 0.011670797695307293,
+    "meanScore": 4.894736842105263,
+    "clean": 18,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 3,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 3,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 7,
+    "left_pct": 7.964452785374644,
+    "meanScore": 3,
+    "clean": 1,
+    "medianVisibleMm2": 9.137120132268063
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    1,
+    5,
+    1
+   ],
+   "dessert_plate_porcelain_190": [
+    5,
+    5,
+    5
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    11,
+    4.363636363636363,
+    9
+   ],
+   "dinner_knife_210": [
+    12,
+    4.833333333333333,
+    11
+   ],
+   "dinner_plate_porcelain_iec": [
+    5,
+    5,
+    5
+   ],
+   "ladle_steel_311": [
+    1,
+    5,
+    1
+   ],
+   "melamine_dessert_plate_iec_195": [
+    2,
+    5,
+    2
+   ],
+   "mug_ceramic_300": [
+    3,
+    3,
+    0
+   ],
+   "saucer_porcelain_140": [
+    2,
+    3.5,
+    1
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    5,
+    5,
+    5
+   ],
+   "soup_spoon_190": [
+    13,
+    4.846153846153846,
+    12
+   ],
+   "tea_cup_porcelain_210": [
+    2,
+    2.5,
+    0
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    7,
+    4,
+    6
+   ]
+  },
+  "drySoilLeft_pct": 0.19372839160379607,
+  "heldWater_mL": 2.232617418940208,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 12.631452292000002
+ }
+]

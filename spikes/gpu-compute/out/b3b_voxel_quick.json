@@ -1,0 +1,194 @@
+{
+  "when": "2026-10-08T15:08:23.670Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 201,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "grids": [
+    {
+      "N": 256,
+      "voxelMm": 1.953125,
+      "sdfVoxeliseMs": 47.74954200000002,
+      "objects": 100,
+      "voxelObjectEvalsPerSec": 35135867900.05231,
+      "occupancyPackMs": 2.876500000000078,
+      "texToBufferCopyMs": 4.736582999999996,
+      "occupiedFraction": 0.060254037380218506
+    }
+  ],
+  "cases": [
+    {
+      "grid": 256,
+      "rays": 1048576,
+      "set": "mixed 50/50",
+      "kernel": "DDA / bit-packed occupancy buffer",
+      "raysPerSec": {
+        "best": 143241571.1143194,
+        "median": 142166148.65989754,
+        "worst": 136920347.25236455,
+        "n": 3,
+        "spreadPct": 4.4463635834132775
+      },
+      "msBest": 7.320333000000005,
+      "hitFraction": 0.6722831726074219,
+      "meanSteps": 103.89590644836426,
+      "meanHitT": 0.1195066992351362
+    },
+    {
+      "grid": 256,
+      "rays": 1048576,
+      "set": "mixed 50/50",
+      "kernel": "sphere trace / r32float 3D texture, trilinear sampler",
+      "raysPerSec": {
+        "best": 201363642.91029277,
+        "median": 195071821.59691477,
+        "worst": 194183725.41652173,
+        "n": 3,
+        "spreadPct": 3.6806533280891878
+      },
+      "msBest": 5.20737500000007,
+      "hitFraction": 0.6629714965820312,
+      "meanSteps": 8.899784088134766,
+      "meanHitT": 0.12176736256343414
+    },
+    {
+      "grid": 256,
+      "rays": 1048576,
+      "set": "mixed 50/50",
+      "kernel": "sphere trace / r32float 3D texture, textureLoad nearest",
+      "raysPerSec": {
+        "best": 472526501.92603004,
+        "median": 470248668.8465043,
+        "worst": 424381403.2023055,
+        "n": 3,
+        "spreadPct": 10.238221161119284
+      },
+      "msBest": 2.2190839999999525,
+      "hitFraction": 0.6706151962280273,
+      "meanSteps": 8.410309791564941,
+      "meanHitT": 0.12036035410621584
+    },
+    {
+      "grid": 256,
+      "rays": 1048576,
+      "set": "mixed 50/50",
+      "kernel": "sphere trace / f32 storage buffer, nearest",
+      "raysPerSec": {
+        "best": 413823097.0351789,
+        "median": 409420079.0668066,
+        "worst": 407134925.2572263,
+        "n": 3,
+        "spreadPct": 1.6335720009621895
+      },
+      "msBest": 2.5338749999999663,
+      "hitFraction": 0.6706151962280273,
+      "meanSteps": 8.410309791564941,
+      "meanHitT": 0.12036035410621584
+    },
+    {
+      "grid": 256,
+      "rays": 1048576,
+      "set": "coherent (16 jet cones)",
+      "kernel": "DDA / bit-packed occupancy buffer",
+      "raysPerSec": {
+        "best": 197752815.7695921,
+        "median": 197133175.0992885,
+        "worst": 189218144.49732473,
+        "n": 3,
+        "spreadPct": 4.329393704519182
+      },
+      "msBest": 5.3024580000000014,
+      "hitFraction": 0.8497724533081055,
+      "meanSteps": 129.72475337982178,
+      "meanHitT": 0.14653910143780524
+    },
+    {
+      "grid": 256,
+      "rays": 1048576,
+      "set": "coherent (16 jet cones)",
+      "kernel": "sphere trace / r32float 3D texture, trilinear sampler",
+      "raysPerSec": {
+        "best": 782494877.0262194,
+        "median": 775597484.834989,
+        "worst": 754755659.7172863,
+        "n": 3,
+        "spreadPct": 3.576496552826578
+      },
+      "msBest": 1.3400420000000395,
+      "hitFraction": 0.8388280868530273,
+      "meanSteps": 11.384281158447266,
+      "meanHitT": 0.14959617808841044
+    },
+    {
+      "grid": 256,
+      "rays": 1048576,
+      "set": "incoherent (random o,d)",
+      "kernel": "DDA / bit-packed occupancy buffer",
+      "raysPerSec": {
+        "best": 121024444.7042611,
+        "median": 120440616.45505121,
+        "worst": 120250699.66270301,
+        "n": 3,
+        "spreadPct": 0.6424286626321368
+      },
+      "msBest": 8.664167000000134,
+      "hitFraction": 0.4948091506958008,
+      "meanSteps": 78.05285453796387,
+      "meanHitT": 0.0727824978712637
+    },
+    {
+      "grid": 256,
+      "rays": 1048576,
+      "set": "incoherent (random o,d)",
+      "kernel": "sphere trace / r32float 3D texture, trilinear sampler",
+      "raysPerSec": {
+        "best": 118882798.10662979,
+        "median": 117539632.70209989,
+        "worst": 115892501.55258358,
+        "n": 3,
+        "spreadPct": 2.544075121984613
+      },
+      "msBest": 8.820249999999987,
+      "hitFraction": 0.4871091842651367,
+      "meanSteps": 6.422435760498047,
+      "meanHitT": 0.07358201393263301
+    },
+    {
+      "grid": 256,
+      "rays": 1048576,
+      "set": "mixed 50/50 short segments (tmax 1 cm)",
+      "kernel": "DDA / bit-packed occupancy buffer",
+      "raysPerSec": {
+        "best": 2149822655.048669,
+        "median": 2119765660.0613136,
+        "worst": 2029500626.1282449,
+        "n": 3,
+        "spreadPct": 5.676194835467978
+      },
+      "msBest": 0.48775000000000546,
+      "hitFraction": 0.06920337677001953,
+      "meanSteps": 8.029067993164062,
+      "meanHitT": 0.0038200268295897673
+    },
+    {
+      "grid": 256,
+      "rays": 1048576,
+      "set": "mixed 50/50 short segments (tmax 1 cm)",
+      "kernel": "sphere trace / r32float 3D texture, trilinear sampler",
+      "raysPerSec": {
+        "best": 800618153.0539628,
+        "median": 792225345.8981581,
+        "worst": 752971454.5047503,
+        "n": 3,
+        "spreadPct": 6.014286060892784
+      },
+      "msBest": 1.3097080000000005,
+      "hitFraction": 0.06743144989013672,
+      "meanSteps": 1.157698631286621,
+      "meanHitT": 0.0034098869096420626
+    }
+  ],
+  "foreignAtEnd": []
+}

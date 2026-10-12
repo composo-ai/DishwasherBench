@@ -1,0 +1,192 @@
+{
+ "engine": "mujoco",
+ "preset": "tuned",
+ "test": "T1",
+ "hz": 240,
+ "tag": "plateN16",
+ "cfg": {
+  "integrator": "implicitfast",
+  "cone": "elliptic",
+  "impratio": 10,
+  "solrefTimeconstSteps": 2,
+  "solimp": "0.95 0.99 0.0005 0.5 2",
+  "noslip": 0,
+  "multiccd": true,
+  "sleep": true,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {
+  "plateN": 16
+ },
+ "wallSeconds": 0.204196166,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:25:06.868Z",
+ "summary": {
+  "restTime_s": 0.2125,
+  "rmsLin_mm_s": 0,
+  "rmsAng_rad_s": 0,
+  "residualKE_uJ": 0,
+  "maxSpeed_m_s": 0.55779170974798,
+  "exploded": null,
+  "penInit_mm": 0,
+  "penMaxStatic_mm": 2.1833397197031363,
+  "penMaxDynamic_mm": 0,
+  "penFinalStatic_mm": 0.028747489759744452,
+  "penFinalDynamic_mm": 0,
+  "asleep": "1/1",
+  "allAsleepAt_s": 0.275,
+  "driftPos_mm": 0,
+  "driftAng_deg": 0,
+  "stepMean_ms": 0.008782454999999878,
+  "stepP99_ms": 0.1164590000000203,
+  "stepTotal_ms": 10.538945999999854,
+  "hash": "4b9828bfc1fb9b97",
+  "pos_mm": [
+   1.694037701552833,
+   124.84277178931998,
+   -1.4391875541200532
+  ],
+  "lean_deg": 11.86214808426836,
+  "counts": {
+   "bodies": 1,
+   "pieces": 49,
+   "vertices": 416,
+   "staticCapsules": 236,
+   "staticBoxes": 0
+  }
+ },
+ "runs": [
+  {
+   "engine": "mujoco-wasm",
+   "version": "3.15.0",
+   "scene": "T1-single-plate",
+   "cfg": {
+    "integrator": "implicitfast",
+    "cone": "elliptic",
+    "impratio": 10,
+    "solrefTimeconstSteps": 2,
+    "solimp": "0.95 0.99 0.0005 0.5 2",
+    "noslip": 0,
+    "multiccd": true,
+    "sleep": true,
+    "dt": 0.004166666666666667
+   },
+   "params": {
+    "dt": 0.00416666666667,
+    "integrator": 3,
+    "cone": 1,
+    "impratio": 10,
+    "solver": 2,
+    "iterations": 100,
+    "tolerance": 1e-8,
+    "noslip_iterations": 0,
+    "enableflags": 16,
+    "disableflags": 0,
+    "solref": "0.008333333333333333 1",
+    "solimp": "0.95 0.99 0.0005 0.5 2",
+    "margin": 0,
+    "ngeom": 285,
+    "nmesh": 49,
+    "xmlBytes": 59589
+   },
+   "dt": 0.004166666666666667,
+   "steps": 1200,
+   "duration": 5,
+   "buildMs": 101.02825000000001,
+   "loadMs": 60.67762499999999,
+   "step": {
+    "meanMs": 0.008782454999999878,
+    "p50Ms": 0.002082999999998947,
+    "p99Ms": 0.1164590000000203,
+    "maxMs": 1.3418749999999875,
+    "totalMs": 10.538945999999854
+   },
+   "stepActive": {
+    "meanMs": 0.033548620833333175,
+    "p50Ms": 0.009041999999993777,
+    "p99Ms": 0.318333999999993,
+    "maxMs": 1.3418749999999875
+   },
+   "realTimeFactor": 474.43074478226475,
+   "restTime": 0.2125,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed": 0.55779170974798,
+   "exploded": null,
+   "pen": {
+    "initialStatic_mm": 0,
+    "initialDynamic_mm": 0,
+    "maxStatic_mm": 2.1833397197031363,
+    "maxStaticAt": 0.07083333333333333,
+    "maxDynamic_mm": 0,
+    "maxDynamicAt": 0,
+    "finalStatic_mm": 0.028747489759744452,
+    "finalDynamic_mm": 0,
+    "finalWorstStatic": {
+     "body": 0,
+     "piece": 36,
+     "static": 8,
+     "tag": "base-z"
+    }
+   },
+   "sleep": {
+    "asleepAtEnd": 1,
+    "of": 1,
+    "allAsleepAt": 0.275,
+    "wokeAgain": false
+   },
+   "drift": {
+    "pos_mm": 0,
+    "ang_deg": 0,
+    "window": [
+     2.5,
+     5
+    ]
+   },
+   "bodies": [
+    {
+     "name": "plate",
+     "pos": [
+      0.001694037701552833,
+      0.12484277178931999,
+      -0.0014391875541200532
+     ],
+     "quat": [
+      0.6302491760403449,
+      0.010113671188632996,
+      0.002669688877508962,
+      0.776322460397001
+     ],
+     "lean": 11.86214808426836,
+     "axisV": 78.13785191573164,
+     "asleep": true
+    }
+   ],
+   "hash": "4b9828bfc1fb9b97",
+   "hashPose": "809056db9f68057d",
+   "marks": {},
+   "mem": {
+    "before": {
+     "rssMB": 35.734375,
+     "heapUsedMB": 5.8817596435546875,
+     "externalMB": 1.9175996780395508,
+     "arrayBuffersMB": 0.04445171356201172
+    },
+    "after": {
+     "rssMB": 178.84375,
+     "heapUsedMB": 15.669654846191406,
+     "externalMB": 260.4295177459717,
+     "arrayBuffersMB": 0.04685497283935547
+    },
+    "engine": {
+     "narenaMB": 256,
+     "maxuseArenaMB": 0.01821136474609375
+    }
+   },
+   "masses": [
+    0.6500000119298233
+   ]
+  }
+ ]
+}

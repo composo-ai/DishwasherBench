@@ -1,0 +1,7 @@
+{
+ "axes": {
+  "prog.soakDuty": [0.8, 0.6, 1, 0.7, 0.9],
+  "liq.xProtease": [0.016, 0.02]
+ },
+ "first": { "prog.soakDuty": 0.8 }
+}

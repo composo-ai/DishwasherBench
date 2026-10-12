@@ -1,0 +1,322 @@
+{
+  "when": "2026-10-08T15:08:07.726Z",
+  "lock": {
+    "locked": true,
+    "waitedMs": 202,
+    "proceededUnlocked": false,
+    "foreignAtStart": []
+  },
+  "scene": {
+    "objects": 400,
+    "triangles": 1036800,
+    "tessellateMs": 23.303833,
+    "bvhBuildMsBest": 1398.4975829999998,
+    "bvhBuildMsMedian": 1493.023458,
+    "nodes": 665152,
+    "leaves": 332576,
+    "maxDepth": 26,
+    "nodeBytes": 21284864,
+    "triBytes": 49766400
+  },
+  "cases": [
+    {
+      "rays": 1048576,
+      "set": "coherent (16 jet cones)",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 291554566.9400352,
+        "median": 290176259.96135026,
+        "worst": 189826163.69849542,
+        "n": 5,
+        "spreadPct": 35.057452065544375
+      },
+      "msBest": 3.5965000000005602,
+      "hitFraction": 0.9608783721923828,
+      "meanNodeVisits": 37.50255489349365,
+      "meanTriTests": 8.5331449508667,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 0.0000032470659137760064
+      }
+    },
+    {
+      "rays": 1048576,
+      "set": "incoherent (random o,d)",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 99163155.77937283,
+        "median": 98984129.23171817,
+        "worst": 97389455.19077256,
+        "n": 5,
+        "spreadPct": 1.7919040177118655
+      },
+      "msBest": 10.574249999999665,
+      "hitFraction": 0.6785926818847656,
+      "meanNodeVisits": 33.12646770477295,
+      "meanTriTests": 6.924881935119629,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 0.00001634931321966653
+      }
+    },
+    {
+      "rays": 1048576,
+      "set": "mixed 50/50",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 150725145.9886834,
+        "median": 149735949.75977096,
+        "worst": 129813088.8905716,
+        "n": 5,
+        "spreadPct": 13.96595615926709
+      },
+      "msBest": 6.9568749999998545,
+      "hitFraction": 0.8196096420288086,
+      "meanNodeVisits": 35.30618762969971,
+      "meanTriTests": 7.730786323547363,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 0.000002058891034998615
+      }
+    },
+    {
+      "rays": 1048576,
+      "set": "mixed 50/50",
+      "workgroup": 256,
+      "raysPerSec": {
+        "best": 149175893.15882087,
+        "median": 148617356.39869922,
+        "worst": 145153404.3308383,
+        "n": 5,
+        "spreadPct": 2.7066077108728477
+      },
+      "msBest": 7.029125000000022,
+      "hitFraction": 0.8196096420288086,
+      "meanNodeVisits": 35.30618762969971,
+      "meanTriTests": 7.730786323547363,
+      "validation": null
+    },
+    {
+      "rays": 1048576,
+      "set": "incoherent, Morton-sorted by origin",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 135565434.9615647,
+        "median": 131605264.53188339,
+        "worst": 104186896.85151911,
+        "n": 5,
+        "spreadPct": 23.842920130633264
+      },
+      "msBest": 7.734832999999526,
+      "hitFraction": 0.6785926818847656,
+      "meanNodeVisits": 33.12646770477295,
+      "meanTriTests": 6.924881935119629,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 5.894927415155957e-7
+      }
+    },
+    {
+      "rays": 1048576,
+      "set": "incoherent short segments (tmax 1 cm)",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 191630108.5094168,
+        "median": 182227684.50496528,
+        "worst": 136628208.10335732,
+        "n": 5,
+        "spreadPct": 30.183064969231282
+      },
+      "msBest": 5.471875000000182,
+      "hitFraction": 0.18987178802490234,
+      "meanNodeVisits": 18.874382972717285,
+      "meanTriTests": 2.5359859466552734,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 0.00001634931321966653
+      }
+    },
+    {
+      "rays": 1048576,
+      "set": "mixed 50/50 short segments (tmax 1 cm)",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 343955095.2179632,
+        "median": 336635017.45663476,
+        "worst": 261270377.1762873,
+        "n": 5,
+        "spreadPct": 24.562126265526537
+      },
+      "msBest": 3.048584000000119,
+      "hitFraction": 0.10974788665771484,
+      "meanNodeVisits": 15.662745475769043,
+      "meanTriTests": 1.562016487121582,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 0.0000013115976499358417
+      }
+    },
+    {
+      "rays": 4194304,
+      "set": "coherent (16 jet cones)",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 366540190.04527795,
+        "median": 365860741.0245303,
+        "worst": 326244168.8275974,
+        "n": 5,
+        "spreadPct": 11.01403258104121
+      },
+      "msBest": 11.442957999999635,
+      "hitFraction": 0.9608538150787354,
+      "meanNodeVisits": 37.5036997795105,
+      "meanTriTests": 8.536309242248535,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 7.648926977761523e-7
+      }
+    },
+    {
+      "rays": 4194304,
+      "set": "incoherent (random o,d)",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 101574521.02814324,
+        "median": 100936431.59888989,
+        "worst": 99934077.83352183,
+        "n": 5,
+        "spreadPct": 1.6252240827577025
+      },
+      "msBest": 41.292875000000095,
+      "hitFraction": 0.6787879467010498,
+      "meanNodeVisits": 33.1230309009552,
+      "meanTriTests": 6.927895545959473,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 0.00001634931321966653
+      }
+    },
+    {
+      "rays": 4194304,
+      "set": "mixed 50/50",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 161100449.10504994,
+        "median": 160169191.17251664,
+        "worst": 156108756.51936504,
+        "n": 5,
+        "spreadPct": 3.1165123262115952
+      },
+      "msBest": 26.035334000000148,
+      "hitFraction": 0.8196327686309814,
+      "meanNodeVisits": 35.30289602279663,
+      "meanTriTests": 7.726476192474365,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 0.0000011654681454964315
+      }
+    },
+    {
+      "rays": 4194304,
+      "set": "mixed 50/50",
+      "workgroup": 256,
+      "raysPerSec": {
+        "best": 161733827.54848,
+        "median": 159740156.56447405,
+        "worst": 157115046.40251806,
+        "n": 5,
+        "spreadPct": 2.891433967073718
+      },
+      "msBest": 25.933374999999614,
+      "hitFraction": 0.8196327686309814,
+      "meanNodeVisits": 35.30289602279663,
+      "meanTriTests": 7.726476192474365,
+      "validation": null
+    },
+    {
+      "rays": 4194304,
+      "set": "incoherent, Morton-sorted by origin",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 135743669.28222096,
+        "median": 135613825.68426123,
+        "worst": 134843583.4570093,
+        "n": 5,
+        "spreadPct": 0.6637124354173677
+      },
+      "msBest": 30.898708000000624,
+      "hitFraction": 0.6787879467010498,
+      "meanNodeVisits": 33.1230309009552,
+      "meanTriTests": 6.927895545959473,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 0.000006329376961667524
+      }
+    },
+    {
+      "rays": 4194304,
+      "set": "incoherent short segments (tmax 1 cm)",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 201851402.41665506,
+        "median": 200981700.9697222,
+        "worst": 197123521.12852305,
+        "n": 5,
+        "spreadPct": 2.3523939071668343
+      },
+      "msBest": 20.779167000000598,
+      "hitFraction": 0.19051814079284668,
+      "meanNodeVisits": 18.881335496902466,
+      "meanTriTests": 2.539484977722168,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 0.00001634931321966653
+      }
+    },
+    {
+      "rays": 4194304,
+      "set": "mixed 50/50 short segments (tmax 1 cm)",
+      "workgroup": 64,
+      "raysPerSec": {
+        "best": 363069866.4935881,
+        "median": 361557141.4988842,
+        "worst": 348336374.2040833,
+        "n": 5,
+        "spreadPct": 4.075010724010339
+      },
+      "msBest": 11.552333000001454,
+      "hitFraction": 0.11009478569030762,
+      "meanNodeVisits": 15.66748309135437,
+      "meanTriTests": 1.5634644031524658,
+      "validation": {
+        "sampled": 1501,
+        "disagreements": 0,
+        "primMismatch": 0,
+        "maxRelErrT": 5.839651971765759e-7
+      }
+    }
+  ],
+  "foreignAtEnd": []
+}

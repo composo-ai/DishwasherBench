@@ -1,0 +1,143 @@
+[
+ {
+  "name": "eco v3 D careful L1S1",
+  "programme": "eco_50",
+  "set": "anchored-v3",
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "eco v3 D careful L1S2",
+  "programme": "eco_50",
+  "set": "anchored-v3",
+  "levelSeed": 1,
+  "simSeed": 2
+ },
+ {
+  "name": "eco v3 D careful L2S1",
+  "programme": "eco_50",
+  "set": "anchored-v3",
+  "levelSeed": 2,
+  "simSeed": 1
+ },
+ {
+  "name": "eco v3 D careful L2S2",
+  "programme": "eco_50",
+  "set": "anchored-v3",
+  "levelSeed": 2,
+  "simSeed": 2
+ },
+ {
+  "name": "eco defaults D careful L1S1",
+  "programme": "eco_50",
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "eco v3 D careless L1S1",
+  "programme": "eco_50",
+  "set": "anchored-v3",
+  "load": "iec-13-careless",
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "auto v3 D careful L1S1",
+  "course": "as_written",
+  "set": "anchored-v3",
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "auto v3 D careless L1S1",
+  "course": "as_written",
+  "set": "anchored-v3",
+  "load": "iec-13-careless",
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "auto capsule careful L1S1",
+  "course": "as_written",
+  "set": "anchored-v3.owner-capsule",
+  "dose_g": 12.9,
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "auto capsule.stable careful L1S1",
+  "course": "as_written",
+  "set": "anchored-v3.owner-capsule.stable",
+  "dose_g": 12.9,
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "auto staged55 capsule careful L1S1",
+  "course": "staged_55",
+  "set": "anchored-v3.owner-capsule",
+  "dose_g": 12.9,
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "eco capsule careful L1S1",
+  "programme": "eco_50",
+  "set": "anchored-v3.owner-capsule",
+  "dose_g": 12.9,
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "auto capsule careless L1S1",
+  "course": "as_written",
+  "set": "anchored-v3.owner-capsule",
+  "dose_g": 12.9,
+  "load": "iec-13-careless",
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "auto capsule.stable careless L1S1",
+  "course": "as_written",
+  "set": "anchored-v3.owner-capsule.stable",
+  "dose_g": 12.9,
+  "load": "iec-13-careless",
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "auto staged55 capsule careless L1S1",
+  "course": "staged_55",
+  "set": "anchored-v3.owner-capsule",
+  "dose_g": 12.9,
+  "load": "iec-13-careless",
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "eco capsule careless L1S1",
+  "programme": "eco_50",
+  "set": "anchored-v3.owner-capsule",
+  "dose_g": 12.9,
+  "load": "iec-13-careless",
+  "levelSeed": 1,
+  "simSeed": 1
+ },
+ {
+  "name": "auto capsule careful L2S2",
+  "course": "as_written",
+  "set": "anchored-v3.owner-capsule",
+  "dose_g": 12.9,
+  "levelSeed": 2,
+  "simSeed": 2
+ },
+ {
+  "name": "eco capsule careful L2S2",
+  "programme": "eco_50",
+  "set": "anchored-v3.owner-capsule",
+  "dose_g": 12.9,
+  "levelSeed": 2,
+  "simSeed": 2
+ }
+]

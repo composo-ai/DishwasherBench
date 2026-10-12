@@ -1,0 +1,35 @@
+# dependencies
+node_modules/
+.pnpm-store/
+.pnpm-install.lock/
+
+# build and tool output
+dist/
+build/
+coverage/
+*.tsbuildinfo
+.vite/
+.vitest/
+.cache/
+
+# runtime artefacts (wash job checkpoints, result cache, rendered images, logs)
+.spotless/
+*.log
+
+# editors and operating system
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# local environment
+.env
+.env.*
+!.env.example
+
+# local working files
+.scratch/
+
+# never commit: it shows the machine's serial number
+docs/reference/owner-photos/IMG_9079-rating-plate-and-control-panel.jpg

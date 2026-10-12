@@ -1,0 +1,132 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "glasses-apart",
+ "description": "P40 A: the same two glasses with a clear gap between them",
+ "recipe_hash": "sha256:8f1065585b7ee72cbf2348d221ee3722129cd932641c89107e0ee3ebc5b2544f",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "glass_1",
+   "item_type": "test_glass_borosilicate_250",
+   "pose": {
+    "p": [
+     0.19515413984043067,
+     -0.10571199764080534,
+     0.5597887361005539
+    ],
+    "q": [
+     0.9941934943199158,
+     0.0024495471734553576,
+     -0.10757946223020554,
+     0.00024943353491835296
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 10.9,
+    "rotation_deg": 12.5,
+    "contacts": [
+     "upper_rack.floor.y",
+     "upper_rack_fittings.shelf.cup_front"
+    ]
+   }
+  },
+  {
+   "item_id": "glass_2",
+   "item_type": "test_glass_borosilicate_250",
+   "pose": {
+    "p": [
+     0.19434858839538274,
+     -0.013559938984403245,
+     0.5610854609167183
+    ],
+    "q": [
+     0.9930004477500916,
+     0.10220181941986084,
+     -0.05885177105665207,
+     -0.006440642289817333
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 12.4,
+    "rotation_deg": 10.1,
+    "contacts": [
+     "upper_rack.floor.x",
+     "upper_rack.floor.y",
+     "upper_rack_fittings.shelf.cup_rear"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:b8d79fa0fdff44a87f247537e60df8665edebef7875e99e50ea93362d831955c"
+}

@@ -1,0 +1,103 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "glass-between",
+ "description": "P10, P13 A, P32, P43: one 250 mL test glass mouth down on the floor of the upper basket between the tine rows",
+ "recipe_hash": "sha256:c9a07479032a515bc96e03f475c81f2484d28265b2163e068f596daa0e178a0f",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "glass",
+   "item_type": "test_glass_borosilicate_250",
+   "pose": {
+    "p": [
+     0.10771657937786046,
+     0.04443949975953689,
+     0.5502151504820842
+    ],
+    "q": [
+     0.9844509959220886,
+     0.022397730499505997,
+     -0.17418043315410614,
+     -0.003972524311393499
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 56,
+    "rotation_deg": 20.2,
+    "contacts": [
+     "upper_rack.floor.y",
+     "upper_rack.tine_row_c_rear"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:e10bfe871970002ebcbbd748c19a5b799488b2576e654fba14c163fe16d31567"
+}

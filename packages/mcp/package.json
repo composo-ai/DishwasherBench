@@ -1,0 +1,30 @@
+{
+  "name": "@spotless/mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP server exposing the Spotless actions and queries as tools",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "mcp": "tsx src/cli.ts",
+    "play-tutorial": "tsx scripts/play-tutorial.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "@spotless/core": "workspace:*",
+    "@spotless/server": "workspace:*",
+    "@spotless/session": "workspace:*",
+    "zod": "4.6.5"
+  },
+  "bin": {
+    "spotless-mcp": "./src/cli.ts"
+  }
+}

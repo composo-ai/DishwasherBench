@@ -1,0 +1,8101 @@
+[
+ {
+  "name": "eco record v6 D careful L1S1",
+  "load": "iec-13-careful",
+  "programme": "eco_record",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 20,
+  "sets": [
+   "anchored-v6 (stale)"
+  ],
+  "source": "ee5fd167dc08ad64ce5b72260910a66421c49f5fb8c5e546eb827347f81915c4",
+  "edge": 7,
+  "edgeItems": [
+   "mug_03",
+   "saucer_01",
+   "saucer_02",
+   "saucer_03",
+   "saucer_04",
+   "saucer_05",
+   "saucer_06"
+  ],
+  "soiledCleanStrict": 63,
+  "soiledCleanLenient": 70,
+  "duration_min": 290.8,
+  "energy_kWh": 0.757255444328215,
+  "mainWash": {
+   "minutes": 160.46189521083622,
+   "peak_C": 54.01394713580623,
+   "end_C": 44.87740542782064,
+   "pH_peak": 10.644791407340744,
+   "pH_end": 10.803265233183264,
+   "minAbove": {
+    "45": 147.61527012268078,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 78.83819204105828,
+   "proteaseEnd_mgL": 38.71087931081435,
+   "peracidPeak_mmolL": 0.320962745672003
+  },
+  "items": 114,
+  "score": {
+   "crockery": 4.036764705882353,
+   "cutlery": 4.611519607843138,
+   "glass": 3.29375,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.271158854166667
+  },
+  "soiled": {
+   "crockery": 4.036764705882353,
+   "cutlery": 4.322649572649573,
+   "glass": 3.29375,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.057659932659933
+  },
+  "raw": {
+   "crockery": 4.258064516129032,
+   "cutlery": 4.621212121212121,
+   "glass": 3.090909090909091,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.394736842105263
+  },
+  "milkGlasses": 2.375,
+  "teaItems": 2.7,
+  "crockeryWithoutTea": 5,
+  "cleanShare": 0.818359375,
+  "clean": 96,
+  "soiledItems": 86,
+  "soiledClean": 68,
+  "histogram": [
+   5,
+   4,
+   3,
+   6,
+   7,
+   61
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 0.1000875281318662,
+    "meanScore": 4.15,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 14,
+    "left_pct": 0.00246065489548005,
+    "meanScore": 4.785714285714286,
+    "clean": 13,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 8,
+    "left_pct": 1.881105813574659,
+    "meanScore": 2.375,
+    "clean": 4,
+    "medianVisibleMm2": 34.149108960286284
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 6,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 6,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 20,
+    "left_pct": 0.01251436827966022,
+    "meanScore": 4.75,
+    "clean": 18,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 8,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 8,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 7.49088383341277,
+    "meanScore": 2.7,
+    "clean": 5,
+    "medianVisibleMm2": 19.14814043660816
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    3,
+    5,
+    3
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    5,
+    7
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    12,
+    3.5833333333333335,
+    6
+   ],
+   "dinner_knife_210": [
+    13,
+    4.769230769230769,
+    12
+   ],
+   "dinner_plate_porcelain_iec": [
+    7,
+    5,
+    7
+   ],
+   "melamine_dessert_plate_iec_195": [
+    6,
+    5,
+    6
+   ],
+   "mug_ceramic_300": [
+    4,
+    1.75,
+    1
+   ],
+   "oval_platter_porcelain_320": [
+    1,
+    5,
+    1
+   ],
+   "saucer_porcelain_140": [
+    6,
+    3.3333333333333335,
+    4
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    5,
+    6
+   ],
+   "soup_spoon_190": [
+    13,
+    4.615384615384615,
+    11
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    8,
+    2.375,
+    4
+   ]
+  },
+  "perItem": {
+   "dessert_bowl_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "fork_01": [
+    3,
+    0,
+    0.0015
+   ],
+   "fork_02": [
+    4,
+    1,
+    0
+   ],
+   "fork_03": [
+    3,
+    0,
+    0.0009
+   ],
+   "fork_04": [
+    5,
+    1,
+    0
+   ],
+   "fork_05": [
+    3,
+    0,
+    0.008
+   ],
+   "fork_06": [
+    5,
+    1,
+    0
+   ],
+   "fork_07": [
+    0,
+    0,
+    0.0495
+   ],
+   "fork_08": [
+    2,
+    0,
+    0.0143
+   ],
+   "fork_09": [
+    3,
+    0,
+    0.0013
+   ],
+   "fork_11": [
+    5,
+    1,
+    0
+   ],
+   "fork_12": [
+    5,
+    1,
+    0
+   ],
+   "fork_13": [
+    5,
+    1,
+    0
+   ],
+   "glass_01": [
+    4,
+    1,
+    0.0001
+   ],
+   "glass_02": [
+    5,
+    1,
+    0
+   ],
+   "glass_03": [
+    5,
+    1,
+    0
+   ],
+   "glass_04": [
+    4,
+    1,
+    0.0001
+   ],
+   "glass_05": [
+    1,
+    0,
+    0.0021
+   ],
+   "glass_06": [
+    0,
+    0,
+    0.1099
+   ],
+   "glass_07": [
+    0,
+    0,
+    0.0201
+   ],
+   "glass_08": [
+    0,
+    0,
+    0.0138
+   ],
+   "knife_01": [
+    5,
+    1,
+    0
+   ],
+   "knife_02": [
+    5,
+    1,
+    0
+   ],
+   "knife_03": [
+    5,
+    1,
+    0
+   ],
+   "knife_04": [
+    4,
+    1,
+    0.0004
+   ],
+   "knife_05": [
+    5,
+    1,
+    0
+   ],
+   "knife_06": [
+    5,
+    1,
+    0
+   ],
+   "knife_07": [
+    5,
+    1,
+    0
+   ],
+   "knife_08": [
+    5,
+    1,
+    0
+   ],
+   "knife_09": [
+    5,
+    1,
+    0
+   ],
+   "knife_10": [
+    5,
+    1,
+    0
+   ],
+   "knife_11": [
+    5,
+    1,
+    0
+   ],
+   "knife_12": [
+    3,
+    0,
+    0.0003
+   ],
+   "knife_13": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "mug_01": [
+    1,
+    0,
+    0.0752
+   ],
+   "mug_02": [
+    0,
+    0,
+    0.0822
+   ],
+   "mug_03": [
+    5,
+    1,
+    0.0635
+   ],
+   "mug_04": [
+    1,
+    0,
+    0.0766
+   ],
+   "oval_platter_01": [
+    5,
+    1,
+    0
+   ],
+   "saucer_01": [
+    4,
+    1,
+    0.0726
+   ],
+   "saucer_02": [
+    4,
+    1,
+    0.0659
+   ],
+   "saucer_03": [
+    5,
+    1,
+    0.0658
+   ],
+   "saucer_04": [
+    4,
+    1,
+    0.0739
+   ],
+   "saucer_05": [
+    1,
+    0,
+    0.0903
+   ],
+   "saucer_06": [
+    2,
+    0,
+    0.0854
+   ],
+   "soup_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_04": [
+    3,
+    0,
+    0.0026
+   ],
+   "soup_spoon_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_06": [
+    2,
+    0,
+    0.007
+   ],
+   "soup_spoon_07": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_08": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_09": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_10": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_11": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_12": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_13": [
+    5,
+    1,
+    0
+   ]
+  },
+  "timings_ms": {
+   "scene": 16409.18525,
+   "hydraulics": 68.30175000000236,
+   "exposure": 1543.7972919999993,
+   "soil": 1945.3324159999975,
+   "replay": 8294.586792000002,
+   "result": 3363.1064579999984
+  },
+  "blocks": 1115120,
+  "drySoilLeft_pct": 0.30205211165183743,
+  "heldWater_mL": 0.36137774372946296,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 31.649381249999998
+ },
+ {
+  "name": "eco record v6 D careful L1S2",
+  "load": "iec-13-careful",
+  "programme": "eco_record",
+  "tier": "official",
+  "seeds": [
+   1,
+   2
+  ],
+  "dose_g": 20,
+  "sets": [
+   "anchored-v6 (stale)"
+  ],
+  "source": "ee5fd167dc08ad64ce5b72260910a66421c49f5fb8c5e546eb827347f81915c4",
+  "edge": 6,
+  "edgeItems": [
+   "mug_03",
+   "saucer_01",
+   "saucer_02",
+   "saucer_03",
+   "saucer_04",
+   "saucer_06"
+  ],
+  "soiledCleanStrict": 63,
+  "soiledCleanLenient": 69,
+  "duration_min": 290.8,
+  "energy_kWh": 0.757255444328215,
+  "mainWash": {
+   "minutes": 160.46189521083622,
+   "peak_C": 54.01394713580623,
+   "end_C": 44.87740542782064,
+   "pH_peak": 10.644791407340744,
+   "pH_end": 10.803265233183264,
+   "minAbove": {
+    "45": 147.61527012268078,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 78.83820077260086,
+   "proteaseEnd_mgL": 38.710921845116886,
+   "peracidPeak_mmolL": 0.32095608173653734
+  },
+  "items": 114,
+  "score": {
+   "crockery": 4.036764705882353,
+   "cutlery": 4.5796568627450975,
+   "glass": 3.29375,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.254231770833333
+  },
+  "soiled": {
+   "crockery": 4.036764705882353,
+   "cutlery": 4.267094017094017,
+   "glass": 3.29375,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.03577441077441
+  },
+  "raw": {
+   "crockery": 4.258064516129032,
+   "cutlery": 4.590909090909091,
+   "glass": 3.090909090909091,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.37719298245614
+  },
+  "milkGlasses": 2.375,
+  "teaItems": 2.7,
+  "crockeryWithoutTea": 5,
+  "cleanShare": 0.818359375,
+  "clean": 96,
+  "soiledItems": 86,
+  "soiledClean": 68,
+  "histogram": [
+   5,
+   4,
+   4,
+   5,
+   8,
+   60
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 0.09094195464747348,
+    "meanScore": 4.05,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 14,
+    "left_pct": 0.0024004680765181735,
+    "meanScore": 4.785714285714286,
+    "clean": 13,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 8,
+    "left_pct": 1.9205293536340065,
+    "meanScore": 2.375,
+    "clean": 4,
+    "medianVisibleMm2": 28.086081416648444
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 6,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 6,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 20,
+    "left_pct": 0.011827941369721096,
+    "meanScore": 4.75,
+    "clean": 18,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 8,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 8,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 7.487620060498575,
+    "meanScore": 2.7,
+    "clean": 5,
+    "medianVisibleMm2": 24.874343625800925
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    3,
+    5,
+    3
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    5,
+    7
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    12,
+    3.4166666666666665,
+    6
+   ],
+   "dinner_knife_210": [
+    13,
+    4.769230769230769,
+    12
+   ],
+   "dinner_plate_porcelain_iec": [
+    7,
+    5,
+    7
+   ],
+   "melamine_dessert_plate_iec_195": [
+    6,
+    5,
+    6
+   ],
+   "mug_ceramic_300": [
+    4,
+    1.75,
+    1
+   ],
+   "oval_platter_porcelain_320": [
+    1,
+    5,
+    1
+   ],
+   "saucer_porcelain_140": [
+    6,
+    3.3333333333333335,
+    4
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    5,
+    6
+   ],
+   "soup_spoon_190": [
+    13,
+    4.615384615384615,
+    11
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    8,
+    2.375,
+    4
+   ]
+  },
+  "perItem": {
+   "dessert_bowl_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "fork_01": [
+    3,
+    0,
+    0.0016
+   ],
+   "fork_02": [
+    4,
+    1,
+    0
+   ],
+   "fork_03": [
+    3,
+    0,
+    0.001
+   ],
+   "fork_04": [
+    5,
+    1,
+    0
+   ],
+   "fork_05": [
+    2,
+    0,
+    0.0083
+   ],
+   "fork_06": [
+    5,
+    1,
+    0
+   ],
+   "fork_07": [
+    0,
+    0,
+    0.0414
+   ],
+   "fork_08": [
+    2,
+    0,
+    0.0147
+   ],
+   "fork_09": [
+    3,
+    0,
+    0.0013
+   ],
+   "fork_11": [
+    4,
+    1,
+    0
+   ],
+   "fork_12": [
+    5,
+    1,
+    0
+   ],
+   "fork_13": [
+    5,
+    1,
+    0
+   ],
+   "glass_01": [
+    4,
+    1,
+    0.0001
+   ],
+   "glass_02": [
+    5,
+    1,
+    0
+   ],
+   "glass_03": [
+    5,
+    1,
+    0
+   ],
+   "glass_04": [
+    4,
+    1,
+    0.0001
+   ],
+   "glass_05": [
+    1,
+    0,
+    0.0017
+   ],
+   "glass_06": [
+    0,
+    0,
+    0.1134
+   ],
+   "glass_07": [
+    0,
+    0,
+    0.0201
+   ],
+   "glass_08": [
+    0,
+    0,
+    0.0137
+   ],
+   "knife_01": [
+    5,
+    1,
+    0
+   ],
+   "knife_02": [
+    5,
+    1,
+    0
+   ],
+   "knife_03": [
+    5,
+    1,
+    0
+   ],
+   "knife_04": [
+    4,
+    1,
+    0.0004
+   ],
+   "knife_05": [
+    5,
+    1,
+    0
+   ],
+   "knife_06": [
+    5,
+    1,
+    0
+   ],
+   "knife_07": [
+    5,
+    1,
+    0
+   ],
+   "knife_08": [
+    5,
+    1,
+    0
+   ],
+   "knife_09": [
+    5,
+    1,
+    0
+   ],
+   "knife_10": [
+    5,
+    1,
+    0
+   ],
+   "knife_11": [
+    5,
+    1,
+    0
+   ],
+   "knife_12": [
+    3,
+    0,
+    0.0003
+   ],
+   "knife_13": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "mug_01": [
+    1,
+    0,
+    0.0751
+   ],
+   "mug_02": [
+    0,
+    0,
+    0.0819
+   ],
+   "mug_03": [
+    5,
+    1,
+    0.0635
+   ],
+   "mug_04": [
+    1,
+    0,
+    0.0765
+   ],
+   "oval_platter_01": [
+    5,
+    1,
+    0
+   ],
+   "saucer_01": [
+    4,
+    1,
+    0.0726
+   ],
+   "saucer_02": [
+    4,
+    1,
+    0.0648
+   ],
+   "saucer_03": [
+    5,
+    1,
+    0.0657
+   ],
+   "saucer_04": [
+    4,
+    1,
+    0.0738
+   ],
+   "saucer_05": [
+    1,
+    0,
+    0.0921
+   ],
+   "saucer_06": [
+    2,
+    0,
+    0.0859
+   ],
+   "soup_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_04": [
+    3,
+    0,
+    0.0029
+   ],
+   "soup_spoon_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_06": [
+    2,
+    0,
+    0.0062
+   ],
+   "soup_spoon_07": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_08": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_09": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_10": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_11": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_12": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_13": [
+    5,
+    1,
+    0
+   ]
+  },
+  "timings_ms": {
+   "scene": 181.28233399999954,
+   "hydraulics": 67.08124899999893,
+   "exposure": 1306.4512510000022,
+   "soil": 1963.2954580000005,
+   "replay": 13520.595999999998,
+   "result": 2847.883625000002
+  },
+  "blocks": 1115120,
+  "drySoilLeft_pct": 0.3036601539248596,
+  "heldWater_mL": 0.36137774372946296,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 19.901624083
+ },
+ {
+  "name": "eco record v6 D careful L2S1",
+  "load": "iec-13-careful",
+  "programme": "eco_record",
+  "tier": "official",
+  "seeds": [
+   2,
+   1
+  ],
+  "dose_g": 20,
+  "sets": [
+   "anchored-v6 (stale)"
+  ],
+  "source": "ee5fd167dc08ad64ce5b72260910a66421c49f5fb8c5e546eb827347f81915c4",
+  "edge": 8,
+  "edgeItems": [
+   "mug_01",
+   "mug_03",
+   "saucer_01",
+   "saucer_02",
+   "saucer_03",
+   "saucer_04",
+   "saucer_05",
+   "saucer_06"
+  ],
+  "soiledCleanStrict": 64,
+  "soiledCleanLenient": 72,
+  "duration_min": 290.8,
+  "energy_kWh": 0.757255444328215,
+  "mainWash": {
+   "minutes": 160.46189521083622,
+   "peak_C": 54.01394713580623,
+   "end_C": 44.87740542782064,
+   "pH_peak": 10.644791407340744,
+   "pH_end": 10.803265233183264,
+   "minAbove": {
+    "45": 147.61527012268078,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 78.83820818180821,
+   "proteaseEnd_mgL": 38.715017012011046,
+   "peracidPeak_mmolL": 0.32094457111356245
+  },
+  "items": 114,
+  "score": {
+   "crockery": 4.044117647058823,
+   "cutlery": 4.699754901960785,
+   "glass": 2.96875,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.269205729166667
+  },
+  "soiled": {
+   "crockery": 4.044117647058823,
+   "cutlery": 4.476495726495727,
+   "glass": 2.96875,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.055134680134681
+  },
+  "raw": {
+   "crockery": 4.290322580645161,
+   "cutlery": 4.712121212121212,
+   "glass": 2.727272727272727,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.421052631578948
+  },
+  "milkGlasses": 1.875,
+  "teaItems": 2.8,
+  "crockeryWithoutTea": 5,
+  "cleanShare": 0.81640625,
+  "clean": 97,
+  "soiledItems": 86,
+  "soiledClean": 69,
+  "histogram": [
+   6,
+   2,
+   3,
+   6,
+   7,
+   62
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 0.08757340063526954,
+    "meanScore": 4.15,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 14,
+    "left_pct": 0.0015940972623076054,
+    "meanScore": 4.928571428571429,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 8,
+    "left_pct": 1.4659610709044077,
+    "meanScore": 1.875,
+    "clean": 2,
+    "medianVisibleMm2": 68.65932129160173
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 6,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 6,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 20,
+    "left_pct": 0.00023384288102973772,
+    "meanScore": 4.95,
+    "clean": 20,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 8,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 8,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 7.499370870554053,
+    "meanScore": 2.8,
+    "clean": 5,
+    "medianVisibleMm2": 3.2575253600425746
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    3,
+    5,
+    3
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    5,
+    7
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    12,
+    3.5833333333333335,
+    6
+   ],
+   "dinner_knife_210": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "dinner_plate_porcelain_iec": [
+    7,
+    5,
+    7
+   ],
+   "melamine_dessert_plate_iec_195": [
+    6,
+    5,
+    6
+   ],
+   "mug_ceramic_300": [
+    4,
+    1.5,
+    1
+   ],
+   "oval_platter_porcelain_320": [
+    1,
+    5,
+    1
+   ],
+   "saucer_porcelain_140": [
+    6,
+    3.6666666666666665,
+    4
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    5,
+    6
+   ],
+   "soup_spoon_190": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    8,
+    1.875,
+    2
+   ]
+  },
+  "perItem": {
+   "dessert_bowl_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "fork_01": [
+    3,
+    0,
+    0.0006
+   ],
+   "fork_02": [
+    4,
+    1,
+    0.0001
+   ],
+   "fork_03": [
+    3,
+    0,
+    0.0001
+   ],
+   "fork_04": [
+    5,
+    1,
+    0
+   ],
+   "fork_05": [
+    3,
+    0,
+    0.0072
+   ],
+   "fork_06": [
+    5,
+    1,
+    0
+   ],
+   "fork_07": [
+    0,
+    0,
+    0.0497
+   ],
+   "fork_08": [
+    2,
+    0,
+    0.0136
+   ],
+   "fork_09": [
+    3,
+    0,
+    0.0008
+   ],
+   "fork_11": [
+    5,
+    1,
+    0
+   ],
+   "fork_12": [
+    5,
+    1,
+    0
+   ],
+   "fork_13": [
+    5,
+    1,
+    0
+   ],
+   "glass_01": [
+    5,
+    1,
+    0
+   ],
+   "glass_02": [
+    2,
+    0,
+    0.0002
+   ],
+   "glass_03": [
+    3,
+    0,
+    0.0001
+   ],
+   "glass_04": [
+    4,
+    1,
+    0
+   ],
+   "glass_05": [
+    1,
+    0,
+    0.0044
+   ],
+   "glass_06": [
+    0,
+    0,
+    0.0892
+   ],
+   "glass_07": [
+    0,
+    0,
+    0.0139
+   ],
+   "glass_08": [
+    0,
+    0,
+    0.0134
+   ],
+   "knife_01": [
+    4,
+    1,
+    0.0005
+   ],
+   "knife_02": [
+    5,
+    1,
+    0
+   ],
+   "knife_03": [
+    5,
+    1,
+    0
+   ],
+   "knife_04": [
+    5,
+    1,
+    0
+   ],
+   "knife_05": [
+    5,
+    1,
+    0
+   ],
+   "knife_06": [
+    5,
+    1,
+    0
+   ],
+   "knife_07": [
+    5,
+    1,
+    0
+   ],
+   "knife_08": [
+    5,
+    1,
+    0
+   ],
+   "knife_09": [
+    5,
+    1,
+    0
+   ],
+   "knife_10": [
+    5,
+    1,
+    0
+   ],
+   "knife_11": [
+    5,
+    1,
+    0
+   ],
+   "knife_12": [
+    5,
+    1,
+    0
+   ],
+   "knife_13": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "mug_01": [
+    2,
+    0,
+    0.0752
+   ],
+   "mug_02": [
+    0,
+    0,
+    0.0835
+   ],
+   "mug_03": [
+    4,
+    1,
+    0.0637
+   ],
+   "mug_04": [
+    0,
+    0,
+    0.0777
+   ],
+   "oval_platter_01": [
+    5,
+    1,
+    0
+   ],
+   "saucer_01": [
+    4,
+    1,
+    0.0735
+   ],
+   "saucer_02": [
+    5,
+    1,
+    0.0665
+   ],
+   "saucer_03": [
+    5,
+    1,
+    0.0655
+   ],
+   "saucer_04": [
+    3,
+    0,
+    0.0739
+   ],
+   "saucer_05": [
+    1,
+    0,
+    0.0898
+   ],
+   "saucer_06": [
+    4,
+    1,
+    0.0841
+   ],
+   "soup_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_04": [
+    4,
+    1,
+    0.0002
+   ],
+   "soup_spoon_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_07": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_08": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_09": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_10": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_11": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_12": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_13": [
+    5,
+    1,
+    0
+   ]
+  },
+  "timings_ms": {
+   "scene": 189.0080420000013,
+   "hydraulics": 65.91970799999399,
+   "exposure": 1371.2696250000008,
+   "soil": 2078.3832089999996,
+   "replay": 13406.548999999999,
+   "result": 3636.6135829999985
+  },
+  "blocks": 1115120,
+  "drySoilLeft_pct": 0.24037426213702143,
+  "heldWater_mL": 0.36137774372946296,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 20.779186041
+ },
+ {
+  "name": "eco record v6 D careful L2S2",
+  "load": "iec-13-careful",
+  "programme": "eco_record",
+  "tier": "official",
+  "seeds": [
+   2,
+   2
+  ],
+  "dose_g": 20,
+  "sets": [
+   "anchored-v6 (stale)"
+  ],
+  "source": "ee5fd167dc08ad64ce5b72260910a66421c49f5fb8c5e546eb827347f81915c4",
+  "edge": 8,
+  "edgeItems": [
+   "mug_01",
+   "mug_03",
+   "saucer_01",
+   "saucer_02",
+   "saucer_03",
+   "saucer_04",
+   "saucer_05",
+   "saucer_06"
+  ],
+  "soiledCleanStrict": 64,
+  "soiledCleanLenient": 72,
+  "duration_min": 290.8,
+  "energy_kWh": 0.757255444328215,
+  "mainWash": {
+   "minutes": 160.46189521083622,
+   "peak_C": 54.01394713580623,
+   "end_C": 44.87740542782064,
+   "pH_peak": 10.644791407340744,
+   "pH_end": 10.803265233183264,
+   "minAbove": {
+    "45": 147.61527012268078,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 78.83822489133684,
+   "proteaseEnd_mgL": 38.71512715080355,
+   "peracidPeak_mmolL": 0.32093174070606656
+  },
+  "items": 114,
+  "score": {
+   "crockery": 4.044117647058823,
+   "cutlery": 4.669117647058823,
+   "glass": 2.96875,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.2529296875
+  },
+  "soiled": {
+   "crockery": 4.044117647058823,
+   "cutlery": 4.423076923076923,
+   "glass": 2.96875,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.034090909090909
+  },
+  "raw": {
+   "crockery": 4.290322580645161,
+   "cutlery": 4.681818181818182,
+   "glass": 2.727272727272727,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.4035087719298245
+  },
+  "milkGlasses": 1.875,
+  "teaItems": 2.8,
+  "crockeryWithoutTea": 5,
+  "cleanShare": 0.81640625,
+  "clean": 97,
+  "soiledItems": 86,
+  "soiledClean": 69,
+  "histogram": [
+   6,
+   3,
+   2,
+   6,
+   8,
+   61
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 0.08023189189885942,
+    "meanScore": 4.1,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 14,
+    "left_pct": 0.0018796990114716707,
+    "meanScore": 4.857142857142857,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 8,
+    "left_pct": 1.4422140258767375,
+    "meanScore": 1.875,
+    "clean": 2,
+    "medianVisibleMm2": 64.11975445690025
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 6,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 6,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 20,
+    "left_pct": 0.0002733063951611684,
+    "meanScore": 4.95,
+    "clean": 20,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 8,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 8,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 7.4985700044102686,
+    "meanScore": 2.8,
+    "clean": 5,
+    "medianVisibleMm2": 3.431395096278946
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    3,
+    5,
+    3
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    5,
+    7
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    12,
+    3.5,
+    6
+   ],
+   "dinner_knife_210": [
+    13,
+    4.846153846153846,
+    13
+   ],
+   "dinner_plate_porcelain_iec": [
+    7,
+    5,
+    7
+   ],
+   "melamine_dessert_plate_iec_195": [
+    6,
+    5,
+    6
+   ],
+   "mug_ceramic_300": [
+    4,
+    1.5,
+    1
+   ],
+   "oval_platter_porcelain_320": [
+    1,
+    5,
+    1
+   ],
+   "saucer_porcelain_140": [
+    6,
+    3.6666666666666665,
+    4
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    5,
+    6
+   ],
+   "soup_spoon_190": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    8,
+    1.875,
+    2
+   ]
+  },
+  "perItem": {
+   "dessert_bowl_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "fork_01": [
+    3,
+    0,
+    0.0006
+   ],
+   "fork_02": [
+    4,
+    1,
+    0.0002
+   ],
+   "fork_03": [
+    3,
+    0,
+    0.0001
+   ],
+   "fork_04": [
+    5,
+    1,
+    0
+   ],
+   "fork_05": [
+    3,
+    0,
+    0.0075
+   ],
+   "fork_06": [
+    5,
+    1,
+    0
+   ],
+   "fork_07": [
+    0,
+    0,
+    0.0423
+   ],
+   "fork_08": [
+    1,
+    0,
+    0.0144
+   ],
+   "fork_09": [
+    3,
+    0,
+    0.0009
+   ],
+   "fork_11": [
+    5,
+    1,
+    0
+   ],
+   "fork_12": [
+    5,
+    1,
+    0
+   ],
+   "fork_13": [
+    5,
+    1,
+    0
+   ],
+   "glass_01": [
+    5,
+    1,
+    0
+   ],
+   "glass_02": [
+    2,
+    0,
+    0.0002
+   ],
+   "glass_03": [
+    3,
+    0,
+    0.0001
+   ],
+   "glass_04": [
+    4,
+    1,
+    0
+   ],
+   "glass_05": [
+    1,
+    0,
+    0.0042
+   ],
+   "glass_06": [
+    0,
+    0,
+    0.0906
+   ],
+   "glass_07": [
+    0,
+    0,
+    0.0136
+   ],
+   "glass_08": [
+    0,
+    0,
+    0.0105
+   ],
+   "knife_01": [
+    4,
+    1,
+    0.0006
+   ],
+   "knife_02": [
+    5,
+    1,
+    0
+   ],
+   "knife_03": [
+    5,
+    1,
+    0
+   ],
+   "knife_04": [
+    5,
+    1,
+    0
+   ],
+   "knife_05": [
+    5,
+    1,
+    0
+   ],
+   "knife_06": [
+    5,
+    1,
+    0
+   ],
+   "knife_07": [
+    5,
+    1,
+    0
+   ],
+   "knife_08": [
+    5,
+    1,
+    0
+   ],
+   "knife_09": [
+    5,
+    1,
+    0
+   ],
+   "knife_10": [
+    5,
+    1,
+    0
+   ],
+   "knife_11": [
+    5,
+    1,
+    0
+   ],
+   "knife_12": [
+    5,
+    1,
+    0
+   ],
+   "knife_13": [
+    4,
+    1,
+    0
+   ],
+   "melamine_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "mug_01": [
+    2,
+    0,
+    0.0752
+   ],
+   "mug_02": [
+    0,
+    0,
+    0.0828
+   ],
+   "mug_03": [
+    4,
+    1,
+    0.0637
+   ],
+   "mug_04": [
+    0,
+    0,
+    0.0777
+   ],
+   "oval_platter_01": [
+    5,
+    1,
+    0
+   ],
+   "saucer_01": [
+    4,
+    1,
+    0.0734
+   ],
+   "saucer_02": [
+    5,
+    1,
+    0.0654
+   ],
+   "saucer_03": [
+    5,
+    1,
+    0.0655
+   ],
+   "saucer_04": [
+    3,
+    0,
+    0.0738
+   ],
+   "saucer_05": [
+    1,
+    0,
+    0.0926
+   ],
+   "saucer_06": [
+    4,
+    1,
+    0.0845
+   ],
+   "soup_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_04": [
+    4,
+    1,
+    0.0002
+   ],
+   "soup_spoon_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_07": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_08": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_09": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_10": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_11": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_12": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_13": [
+    5,
+    1,
+    0
+   ]
+  },
+  "timings_ms": {
+   "scene": 181.9274999999907,
+   "hydraulics": 49.77445800001442,
+   "exposure": 1249.8668749999924,
+   "soil": 1926.4716670000053,
+   "replay": 12867.00712499999,
+   "result": 3085.634167000011
+  },
+  "blocks": 1115120,
+  "drySoilLeft_pct": 0.23424150753649875,
+  "heldWater_mL": 0.36137774372946296,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 19.394118375000005
+ },
+ {
+  "name": "eco capsule careful L1S1",
+  "load": "iec-13-careful",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 12.9,
+  "sets": [
+   "anchored-v6.owner-capsule (stale)"
+  ],
+  "source": "ee5fd167dc08ad64ce5b72260910a66421c49f5fb8c5e546eb827347f81915c4",
+  "edge": 3,
+  "edgeItems": [
+   "mug_04",
+   "saucer_05",
+   "saucer_06"
+  ],
+  "soiledCleanStrict": 68,
+  "soiledCleanLenient": 71,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.72856187750287,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.68374925723195,
+   "pH_peak": 10.369892825148053,
+   "pH_end": 10.472610436864851,
+   "minAbove": {
+    "45": 138.98609650184048,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 95.86178850278847,
+   "proteaseEnd_mgL": 66.76228690193466,
+   "peracidPeak_mmolL": 0.4441550250646745
+  },
+  "items": 114,
+  "score": {
+   "crockery": 4.397058823529412,
+   "cutlery": 4.627450980392156,
+   "glass": 3.29375,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.375325520833333
+  },
+  "soiled": {
+   "crockery": 4.397058823529412,
+   "cutlery": 4.35042735042735,
+   "glass": 3.29375,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.192340067340067
+  },
+  "raw": {
+   "crockery": 4.580645161290323,
+   "cutlery": 4.636363636363637,
+   "glass": 3.090909090909091,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.491228070175438
+  },
+  "milkGlasses": 2.375,
+  "teaItems": 3.7,
+  "crockeryWithoutTea": 5,
+  "cleanShare": 0.826171875,
+  "clean": 97,
+  "soiledItems": 86,
+  "soiledClean": 69,
+  "histogram": [
+   4,
+   2,
+   4,
+   7,
+   4,
+   65
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 0.10179527019427748,
+    "meanScore": 4.2,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 14,
+    "left_pct": 0.002461096854030656,
+    "meanScore": 4.785714285714286,
+    "clean": 13,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 8,
+    "left_pct": 2.0211353412074122,
+    "meanScore": 2.375,
+    "clean": 4,
+    "medianVisibleMm2": 40.37744271473679
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 6,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 6,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 20,
+    "left_pct": 0.009596012688466405,
+    "meanScore": 4.75,
+    "clean": 18,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 8,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 8,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 5.47370096022502,
+    "meanScore": 3.7,
+    "clean": 6,
+    "medianVisibleMm2": 0.14342492022712272
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    3,
+    5,
+    3
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    5,
+    7
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    12,
+    3.6666666666666665,
+    6
+   ],
+   "dinner_knife_210": [
+    13,
+    4.769230769230769,
+    12
+   ],
+   "dinner_plate_porcelain_iec": [
+    7,
+    5,
+    7
+   ],
+   "melamine_dessert_plate_iec_195": [
+    6,
+    5,
+    6
+   ],
+   "mug_ceramic_300": [
+    4,
+    2.5,
+    1
+   ],
+   "oval_platter_porcelain_320": [
+    1,
+    5,
+    1
+   ],
+   "saucer_porcelain_140": [
+    6,
+    4.5,
+    5
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    5,
+    6
+   ],
+   "soup_spoon_190": [
+    13,
+    4.615384615384615,
+    11
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    8,
+    2.375,
+    4
+   ]
+  },
+  "perItem": {
+   "dessert_bowl_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "fork_01": [
+    3,
+    0,
+    0.0014
+   ],
+   "fork_02": [
+    5,
+    1,
+    0
+   ],
+   "fork_03": [
+    3,
+    0,
+    0.0008
+   ],
+   "fork_04": [
+    5,
+    1,
+    0
+   ],
+   "fork_05": [
+    3,
+    0,
+    0.0081
+   ],
+   "fork_06": [
+    5,
+    1,
+    0
+   ],
+   "fork_07": [
+    0,
+    0,
+    0.0508
+   ],
+   "fork_08": [
+    2,
+    0,
+    0.0144
+   ],
+   "fork_09": [
+    3,
+    0,
+    0.0014
+   ],
+   "fork_11": [
+    5,
+    1,
+    0
+   ],
+   "fork_12": [
+    5,
+    1,
+    0
+   ],
+   "fork_13": [
+    5,
+    1,
+    0
+   ],
+   "glass_01": [
+    4,
+    1,
+    0.0001
+   ],
+   "glass_02": [
+    5,
+    1,
+    0
+   ],
+   "glass_03": [
+    5,
+    1,
+    0
+   ],
+   "glass_04": [
+    4,
+    1,
+    0.0001
+   ],
+   "glass_05": [
+    1,
+    0,
+    0.0026
+   ],
+   "glass_06": [
+    0,
+    0,
+    0.1159
+   ],
+   "glass_07": [
+    0,
+    0,
+    0.023
+   ],
+   "glass_08": [
+    0,
+    0,
+    0.0153
+   ],
+   "knife_01": [
+    5,
+    1,
+    0
+   ],
+   "knife_02": [
+    5,
+    1,
+    0
+   ],
+   "knife_03": [
+    5,
+    1,
+    0
+   ],
+   "knife_04": [
+    4,
+    1,
+    0.0004
+   ],
+   "knife_05": [
+    5,
+    1,
+    0
+   ],
+   "knife_06": [
+    5,
+    1,
+    0
+   ],
+   "knife_07": [
+    5,
+    1,
+    0
+   ],
+   "knife_08": [
+    5,
+    1,
+    0
+   ],
+   "knife_09": [
+    5,
+    1,
+    0
+   ],
+   "knife_10": [
+    5,
+    1,
+    0
+   ],
+   "knife_11": [
+    5,
+    1,
+    0
+   ],
+   "knife_12": [
+    3,
+    0,
+    0.0003
+   ],
+   "knife_13": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "mug_01": [
+    2,
+    0,
+    0.0549
+   ],
+   "mug_02": [
+    1,
+    0,
+    0.0608
+   ],
+   "mug_03": [
+    5,
+    1,
+    0.0455
+   ],
+   "mug_04": [
+    2,
+    0,
+    0.0561
+   ],
+   "oval_platter_01": [
+    5,
+    1,
+    0
+   ],
+   "saucer_01": [
+    5,
+    1,
+    0.0528
+   ],
+   "saucer_02": [
+    5,
+    1,
+    0.0474
+   ],
+   "saucer_03": [
+    5,
+    1,
+    0.0473
+   ],
+   "saucer_04": [
+    5,
+    1,
+    0.0538
+   ],
+   "saucer_05": [
+    3,
+    0,
+    0.0672
+   ],
+   "saucer_06": [
+    4,
+    1,
+    0.0632
+   ],
+   "soup_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_04": [
+    3,
+    0,
+    0.0017
+   ],
+   "soup_spoon_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_06": [
+    2,
+    0,
+    0.0056
+   ],
+   "soup_spoon_07": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_08": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_09": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_10": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_11": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_12": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_13": [
+    5,
+    1,
+    0
+   ]
+  },
+  "timings_ms": {
+   "scene": 148.67750000000524,
+   "hydraulics": 58.31674999999814,
+   "exposure": 1536.8047919999954,
+   "soil": 1808.1483750000043,
+   "replay": 14078.822415999995,
+   "result": 2879.274292000002
+  },
+  "blocks": 1115120,
+  "drySoilLeft_pct": 0.32043683189470407,
+  "heldWater_mL": 0.36137774372946296,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 20.535860374999988
+ },
+ {
+  "name": "eco capsule careful L1S2",
+  "load": "iec-13-careful",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   1,
+   2
+  ],
+  "dose_g": 12.9,
+  "sets": [
+   "anchored-v6.owner-capsule (stale)"
+  ],
+  "source": "ee5fd167dc08ad64ce5b72260910a66421c49f5fb8c5e546eb827347f81915c4",
+  "edge": 5,
+  "edgeItems": [
+   "glass_04",
+   "mug_01",
+   "mug_04",
+   "saucer_05",
+   "saucer_06"
+  ],
+  "soiledCleanStrict": 68,
+  "soiledCleanLenient": 71,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.72856187750287,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.68374925723195,
+   "pH_peak": 10.369892825148053,
+   "pH_end": 10.472610436864851,
+   "minAbove": {
+    "45": 138.98609650184048,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 95.86179387768934,
+   "proteaseEnd_mgL": 66.76239150612156,
+   "peracidPeak_mmolL": 0.44414739825041566
+  },
+  "items": 114,
+  "score": {
+   "crockery": 4.397058823529412,
+   "cutlery": 4.5796568627450975,
+   "glass": 3.29375,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.349934895833333
+  },
+  "soiled": {
+   "crockery": 4.397058823529412,
+   "cutlery": 4.267094017094017,
+   "glass": 3.29375,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.159511784511784
+  },
+  "raw": {
+   "crockery": 4.580645161290323,
+   "cutlery": 4.590909090909091,
+   "glass": 3.090909090909091,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.464912280701754
+  },
+  "milkGlasses": 2.375,
+  "teaItems": 3.7,
+  "crockeryWithoutTea": 5,
+  "cleanShare": 0.826171875,
+  "clean": 97,
+  "soiledItems": 86,
+  "soiledClean": 69,
+  "histogram": [
+   4,
+   2,
+   5,
+   6,
+   6,
+   63
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 0.09282511507839282,
+    "meanScore": 4.05,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 14,
+    "left_pct": 0.002405333787446677,
+    "meanScore": 4.785714285714286,
+    "clean": 13,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 8,
+    "left_pct": 2.0656693822182923,
+    "meanScore": 2.375,
+    "clean": 4,
+    "medianVisibleMm2": 33.530630172490746
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 6,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 6,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 20,
+    "left_pct": 0.008536958780811824,
+    "meanScore": 4.75,
+    "clean": 18,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 8,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 8,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 5.471119823433892,
+    "meanScore": 3.7,
+    "clean": 6,
+    "medianVisibleMm2": 0.42043106078031645
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    3,
+    5,
+    3
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    5,
+    7
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    12,
+    3.4166666666666665,
+    6
+   ],
+   "dinner_knife_210": [
+    13,
+    4.769230769230769,
+    12
+   ],
+   "dinner_plate_porcelain_iec": [
+    7,
+    5,
+    7
+   ],
+   "melamine_dessert_plate_iec_195": [
+    6,
+    5,
+    6
+   ],
+   "mug_ceramic_300": [
+    4,
+    2.5,
+    1
+   ],
+   "oval_platter_porcelain_320": [
+    1,
+    5,
+    1
+   ],
+   "saucer_porcelain_140": [
+    6,
+    4.5,
+    5
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    5,
+    6
+   ],
+   "soup_spoon_190": [
+    13,
+    4.615384615384615,
+    11
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    8,
+    2.375,
+    4
+   ]
+  },
+  "perItem": {
+   "dessert_bowl_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "fork_01": [
+    3,
+    0,
+    0.0014
+   ],
+   "fork_02": [
+    4,
+    1,
+    0
+   ],
+   "fork_03": [
+    3,
+    0,
+    0.0009
+   ],
+   "fork_04": [
+    5,
+    1,
+    0
+   ],
+   "fork_05": [
+    2,
+    0,
+    0.0084
+   ],
+   "fork_06": [
+    5,
+    1,
+    0
+   ],
+   "fork_07": [
+    0,
+    0,
+    0.0427
+   ],
+   "fork_08": [
+    2,
+    0,
+    0.015
+   ],
+   "fork_09": [
+    3,
+    0,
+    0.0014
+   ],
+   "fork_11": [
+    4,
+    1,
+    0
+   ],
+   "fork_12": [
+    5,
+    1,
+    0
+   ],
+   "fork_13": [
+    5,
+    1,
+    0
+   ],
+   "glass_01": [
+    4,
+    1,
+    0.0001
+   ],
+   "glass_02": [
+    5,
+    1,
+    0
+   ],
+   "glass_03": [
+    5,
+    1,
+    0
+   ],
+   "glass_04": [
+    4,
+    1,
+    0.0001
+   ],
+   "glass_05": [
+    1,
+    0,
+    0.002
+   ],
+   "glass_06": [
+    0,
+    0,
+    0.1197
+   ],
+   "glass_07": [
+    0,
+    0,
+    0.0228
+   ],
+   "glass_08": [
+    0,
+    0,
+    0.0156
+   ],
+   "knife_01": [
+    5,
+    1,
+    0
+   ],
+   "knife_02": [
+    5,
+    1,
+    0
+   ],
+   "knife_03": [
+    5,
+    1,
+    0
+   ],
+   "knife_04": [
+    4,
+    1,
+    0.0004
+   ],
+   "knife_05": [
+    5,
+    1,
+    0
+   ],
+   "knife_06": [
+    5,
+    1,
+    0
+   ],
+   "knife_07": [
+    5,
+    1,
+    0
+   ],
+   "knife_08": [
+    5,
+    1,
+    0
+   ],
+   "knife_09": [
+    5,
+    1,
+    0
+   ],
+   "knife_10": [
+    5,
+    1,
+    0
+   ],
+   "knife_11": [
+    5,
+    1,
+    0
+   ],
+   "knife_12": [
+    3,
+    0,
+    0.0003
+   ],
+   "knife_13": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "mug_01": [
+    2,
+    0,
+    0.0549
+   ],
+   "mug_02": [
+    1,
+    0,
+    0.0605
+   ],
+   "mug_03": [
+    5,
+    1,
+    0.0455
+   ],
+   "mug_04": [
+    2,
+    0,
+    0.056
+   ],
+   "oval_platter_01": [
+    5,
+    1,
+    0
+   ],
+   "saucer_01": [
+    5,
+    1,
+    0.0528
+   ],
+   "saucer_02": [
+    5,
+    1,
+    0.0465
+   ],
+   "saucer_03": [
+    5,
+    1,
+    0.0472
+   ],
+   "saucer_04": [
+    5,
+    1,
+    0.0538
+   ],
+   "saucer_05": [
+    3,
+    0,
+    0.0688
+   ],
+   "saucer_06": [
+    4,
+    1,
+    0.0636
+   ],
+   "soup_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_04": [
+    3,
+    0,
+    0.0021
+   ],
+   "soup_spoon_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_06": [
+    2,
+    0,
+    0.0044
+   ],
+   "soup_spoon_07": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_08": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_09": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_10": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_11": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_12": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_13": [
+    5,
+    1,
+    0
+   ]
+  },
+  "timings_ms": {
+   "scene": 188.00749999999243,
+   "hydraulics": 63.47508300001209,
+   "exposure": 1136.3539170000004,
+   "soil": 1770.2670829999988,
+   "replay": 14216.814583,
+   "result": 3163.8869589999813
+  },
+  "blocks": 1115120,
+  "drySoilLeft_pct": 0.32278801462888856,
+  "heldWater_mL": 0.36137774372946296,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 20.60287808400001
+ },
+ {
+  "name": "eco capsule careful L2S1",
+  "load": "iec-13-careful",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   2,
+   1
+  ],
+  "dose_g": 12.9,
+  "sets": [
+   "anchored-v6.owner-capsule (stale)"
+  ],
+  "source": "ee5fd167dc08ad64ce5b72260910a66421c49f5fb8c5e546eb827347f81915c4",
+  "edge": 6,
+  "edgeItems": [
+   "mug_01",
+   "mug_02",
+   "mug_03",
+   "saucer_04",
+   "saucer_05",
+   "saucer_06"
+  ],
+  "soiledCleanStrict": 67,
+  "soiledCleanLenient": 73,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.72856187750287,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.68374925723195,
+   "pH_peak": 10.369892825148053,
+   "pH_end": 10.472610436864851,
+   "minAbove": {
+    "45": 138.98609650184048,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 95.86179704128602,
+   "proteaseEnd_mgL": 66.77572103260826,
+   "peracidPeak_mmolL": 0.44413154696029733
+  },
+  "items": 114,
+  "score": {
+   "crockery": 4.507352941176471,
+   "cutlery": 4.699754901960785,
+   "glass": 2.96875,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.392252604166667
+  },
+  "soiled": {
+   "crockery": 4.507352941176471,
+   "cutlery": 4.476495726495727,
+   "glass": 2.96875,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.21422558922559
+  },
+  "raw": {
+   "crockery": 4.67741935483871,
+   "cutlery": 4.712121212121212,
+   "glass": 2.727272727272727,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.526315789473684
+  },
+  "milkGlasses": 1.875,
+  "teaItems": 4,
+  "crockeryWithoutTea": 5,
+  "cleanShare": 0.83203125,
+  "clean": 99,
+  "soiledItems": 86,
+  "soiledClean": 71,
+  "histogram": [
+   4,
+   2,
+   3,
+   6,
+   5,
+   66
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 0.08949478592467083,
+    "meanScore": 4.15,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 14,
+    "left_pct": 0.0015026031028853922,
+    "meanScore": 4.928571428571429,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 8,
+    "left_pct": 1.5900055016885286,
+    "meanScore": 1.875,
+    "clean": 2,
+    "medianVisibleMm2": 81.31140982920475
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 6,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 6,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 20,
+    "left_pct": 0.00015443667987463737,
+    "meanScore": 4.95,
+    "clean": 20,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 8,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 8,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 5.490192192250354,
+    "meanScore": 4,
+    "clean": 7,
+    "medianVisibleMm2": 0
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    3,
+    5,
+    3
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    5,
+    7
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    12,
+    3.5833333333333335,
+    6
+   ],
+   "dinner_knife_210": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "dinner_plate_porcelain_iec": [
+    7,
+    5,
+    7
+   ],
+   "melamine_dessert_plate_iec_195": [
+    6,
+    5,
+    6
+   ],
+   "mug_ceramic_300": [
+    4,
+    2.75,
+    1
+   ],
+   "oval_platter_porcelain_320": [
+    1,
+    5,
+    1
+   ],
+   "saucer_porcelain_140": [
+    6,
+    4.833333333333333,
+    6
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    5,
+    6
+   ],
+   "soup_spoon_190": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    8,
+    1.875,
+    2
+   ]
+  },
+  "perItem": {
+   "dessert_bowl_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "fork_01": [
+    3,
+    0,
+    0.0004
+   ],
+   "fork_02": [
+    4,
+    1,
+    0.0001
+   ],
+   "fork_03": [
+    3,
+    0,
+    0
+   ],
+   "fork_04": [
+    5,
+    1,
+    0
+   ],
+   "fork_05": [
+    3,
+    0,
+    0.0073
+   ],
+   "fork_06": [
+    5,
+    1,
+    0
+   ],
+   "fork_07": [
+    0,
+    0,
+    0.0511
+   ],
+   "fork_08": [
+    2,
+    0,
+    0.0139
+   ],
+   "fork_09": [
+    3,
+    0,
+    0.0009
+   ],
+   "fork_11": [
+    5,
+    1,
+    0
+   ],
+   "fork_12": [
+    5,
+    1,
+    0
+   ],
+   "fork_13": [
+    5,
+    1,
+    0
+   ],
+   "glass_01": [
+    5,
+    1,
+    0
+   ],
+   "glass_02": [
+    2,
+    0,
+    0.0003
+   ],
+   "glass_03": [
+    3,
+    0,
+    0.0001
+   ],
+   "glass_04": [
+    4,
+    1,
+    0
+   ],
+   "glass_05": [
+    1,
+    0,
+    0.0053
+   ],
+   "glass_06": [
+    0,
+    0,
+    0.0942
+   ],
+   "glass_07": [
+    0,
+    0,
+    0.0162
+   ],
+   "glass_08": [
+    0,
+    0,
+    0.0153
+   ],
+   "knife_01": [
+    4,
+    1,
+    0.0005
+   ],
+   "knife_02": [
+    5,
+    1,
+    0
+   ],
+   "knife_03": [
+    5,
+    1,
+    0
+   ],
+   "knife_04": [
+    5,
+    1,
+    0
+   ],
+   "knife_05": [
+    5,
+    1,
+    0
+   ],
+   "knife_06": [
+    5,
+    1,
+    0
+   ],
+   "knife_07": [
+    5,
+    1,
+    0
+   ],
+   "knife_08": [
+    5,
+    1,
+    0
+   ],
+   "knife_09": [
+    5,
+    1,
+    0
+   ],
+   "knife_10": [
+    5,
+    1,
+    0
+   ],
+   "knife_11": [
+    5,
+    1,
+    0
+   ],
+   "knife_12": [
+    5,
+    1,
+    0
+   ],
+   "knife_13": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "mug_01": [
+    3,
+    0,
+    0.055
+   ],
+   "mug_02": [
+    2,
+    0,
+    0.0619
+   ],
+   "mug_03": [
+    5,
+    1,
+    0.0457
+   ],
+   "mug_04": [
+    1,
+    0,
+    0.0571
+   ],
+   "oval_platter_01": [
+    5,
+    1,
+    0
+   ],
+   "saucer_01": [
+    5,
+    1,
+    0.0536
+   ],
+   "saucer_02": [
+    5,
+    1,
+    0.048
+   ],
+   "saucer_03": [
+    5,
+    1,
+    0.0471
+   ],
+   "saucer_04": [
+    5,
+    1,
+    0.054
+   ],
+   "saucer_05": [
+    4,
+    1,
+    0.0669
+   ],
+   "saucer_06": [
+    5,
+    1,
+    0.0622
+   ],
+   "soup_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_04": [
+    4,
+    1,
+    0.0001
+   ],
+   "soup_spoon_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_07": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_08": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_09": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_10": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_11": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_12": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_13": [
+    5,
+    1,
+    0
+   ]
+  },
+  "timings_ms": {
+   "scene": 157.05504099998507,
+   "hydraulics": 65.24895900001866,
+   "exposure": 1315.2165410000016,
+   "soil": 1899.8099169999768,
+   "replay": 14586.071125000017,
+   "result": 3162.301166999998
+  },
+  "blocks": 1115120,
+  "drySoilLeft_pct": 0.2569940202405048,
+  "heldWater_mL": 0.36137774372946296,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 21.21473633300001
+ },
+ {
+  "name": "eco capsule careful L2S2",
+  "load": "iec-13-careful",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   2,
+   2
+  ],
+  "dose_g": 12.9,
+  "sets": [
+   "anchored-v6.owner-capsule (stale)"
+  ],
+  "source": "ee5fd167dc08ad64ce5b72260910a66421c49f5fb8c5e546eb827347f81915c4",
+  "edge": 6,
+  "edgeItems": [
+   "mug_01",
+   "mug_02",
+   "mug_03",
+   "saucer_04",
+   "saucer_05",
+   "saucer_06"
+  ],
+  "soiledCleanStrict": 67,
+  "soiledCleanLenient": 73,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.72856187750287,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.68374925723195,
+   "pH_peak": 10.369892825148053,
+   "pH_end": 10.472610436864851,
+   "minAbove": {
+    "45": 138.98609650184048,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 95.8618067461583,
+   "proteaseEnd_mgL": 66.77601672710036,
+   "peracidPeak_mmolL": 0.4441166415649985
+  },
+  "items": 114,
+  "score": {
+   "crockery": 4.5588235294117645,
+   "cutlery": 4.6838235294117645,
+   "glass": 2.96875,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.3974609375
+  },
+  "soiled": {
+   "crockery": 4.5588235294117645,
+   "cutlery": 4.448717948717949,
+   "glass": 2.96875,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.220959595959596
+  },
+  "raw": {
+   "crockery": 4.709677419354839,
+   "cutlery": 4.696969696969697,
+   "glass": 2.727272727272727,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.526315789473684
+  },
+  "milkGlasses": 1.875,
+  "teaItems": 4.1,
+  "crockeryWithoutTea": 5,
+  "cleanShare": 0.845703125,
+  "clean": 100,
+  "soiledItems": 86,
+  "soiledClean": 72,
+  "histogram": [
+   4,
+   3,
+   2,
+   5,
+   6,
+   66
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 0.08218751519067245,
+    "meanScore": 4.1,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 14,
+    "left_pct": 0.0018251329587305593,
+    "meanScore": 4.928571428571429,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 8,
+    "left_pct": 1.5611231165975632,
+    "meanScore": 1.875,
+    "clean": 2,
+    "medianVisibleMm2": 75.77583846563806
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 6,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 6,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 20,
+    "left_pct": 0.0002157853714574457,
+    "meanScore": 4.95,
+    "clean": 20,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 8,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 8,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 5.489658050858362,
+    "meanScore": 4.1,
+    "clean": 8,
+    "medianVisibleMm2": 0
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    3,
+    5,
+    3
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    5,
+    7
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    12,
+    3.5,
+    6
+   ],
+   "dinner_knife_210": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "dinner_plate_porcelain_iec": [
+    7,
+    5,
+    7
+   ],
+   "melamine_dessert_plate_iec_195": [
+    6,
+    5,
+    6
+   ],
+   "mug_ceramic_300": [
+    4,
+    3,
+    2
+   ],
+   "oval_platter_porcelain_320": [
+    1,
+    5,
+    1
+   ],
+   "saucer_porcelain_140": [
+    6,
+    4.833333333333333,
+    6
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    5,
+    6
+   ],
+   "soup_spoon_190": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    8,
+    1.875,
+    2
+   ]
+  },
+  "perItem": {
+   "dessert_bowl_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "fork_01": [
+    3,
+    0,
+    0.0004
+   ],
+   "fork_02": [
+    4,
+    1,
+    0.0001
+   ],
+   "fork_03": [
+    3,
+    0,
+    0
+   ],
+   "fork_04": [
+    5,
+    1,
+    0
+   ],
+   "fork_05": [
+    3,
+    0,
+    0.0076
+   ],
+   "fork_06": [
+    5,
+    1,
+    0
+   ],
+   "fork_07": [
+    0,
+    0,
+    0.0436
+   ],
+   "fork_08": [
+    1,
+    0,
+    0.0148
+   ],
+   "fork_09": [
+    3,
+    0,
+    0.0009
+   ],
+   "fork_11": [
+    5,
+    1,
+    0
+   ],
+   "fork_12": [
+    5,
+    1,
+    0
+   ],
+   "fork_13": [
+    5,
+    1,
+    0
+   ],
+   "glass_01": [
+    5,
+    1,
+    0
+   ],
+   "glass_02": [
+    2,
+    0,
+    0.0003
+   ],
+   "glass_03": [
+    3,
+    0,
+    0.0001
+   ],
+   "glass_04": [
+    4,
+    1,
+    0
+   ],
+   "glass_05": [
+    1,
+    0,
+    0.0049
+   ],
+   "glass_06": [
+    0,
+    0,
+    0.0956
+   ],
+   "glass_07": [
+    0,
+    0,
+    0.0159
+   ],
+   "glass_08": [
+    0,
+    0,
+    0.0122
+   ],
+   "knife_01": [
+    4,
+    1,
+    0.0005
+   ],
+   "knife_02": [
+    5,
+    1,
+    0
+   ],
+   "knife_03": [
+    5,
+    1,
+    0
+   ],
+   "knife_04": [
+    5,
+    1,
+    0
+   ],
+   "knife_05": [
+    5,
+    1,
+    0
+   ],
+   "knife_06": [
+    5,
+    1,
+    0
+   ],
+   "knife_07": [
+    5,
+    1,
+    0
+   ],
+   "knife_08": [
+    5,
+    1,
+    0
+   ],
+   "knife_09": [
+    5,
+    1,
+    0
+   ],
+   "knife_10": [
+    5,
+    1,
+    0
+   ],
+   "knife_11": [
+    5,
+    1,
+    0
+   ],
+   "knife_12": [
+    5,
+    1,
+    0
+   ],
+   "knife_13": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "mug_01": [
+    4,
+    1,
+    0.055
+   ],
+   "mug_02": [
+    2,
+    0,
+    0.0614
+   ],
+   "mug_03": [
+    5,
+    1,
+    0.0457
+   ],
+   "mug_04": [
+    1,
+    0,
+    0.0571
+   ],
+   "oval_platter_01": [
+    5,
+    1,
+    0
+   ],
+   "saucer_01": [
+    5,
+    1,
+    0.0535
+   ],
+   "saucer_02": [
+    5,
+    1,
+    0.0471
+   ],
+   "saucer_03": [
+    5,
+    1,
+    0.0471
+   ],
+   "saucer_04": [
+    5,
+    1,
+    0.0539
+   ],
+   "saucer_05": [
+    4,
+    1,
+    0.0693
+   ],
+   "saucer_06": [
+    5,
+    1,
+    0.0626
+   ],
+   "soup_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_04": [
+    4,
+    1,
+    0.0002
+   ],
+   "soup_spoon_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_07": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_08": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_09": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_10": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_11": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_12": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_13": [
+    5,
+    1,
+    0
+   ]
+  },
+  "timings_ms": {
+   "scene": 136.15004199999385,
+   "hydraulics": 56.18237500000396,
+   "exposure": 1316.850999999995,
+   "soil": 1851.5256669999799,
+   "replay": 13993.661708,
+   "result": 3184.6261670000094
+  },
+  "blocks": 1115120,
+  "drySoilLeft_pct": 0.25018290989924535,
+  "heldWater_mL": 0.36137774372946296,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 20.567356624999984
+ },
+ {
+  "name": "eco capsule careless L1S1",
+  "load": "iec-13-careless",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 12.9,
+  "sets": [
+   "anchored-v6.owner-capsule (stale)"
+  ],
+  "source": "ee5fd167dc08ad64ce5b72260910a66421c49f5fb8c5e546eb827347f81915c4",
+  "edge": 3,
+  "edgeItems": [
+   "saucer_04",
+   "saucer_05",
+   "saucer_06"
+  ],
+  "soiledCleanStrict": 61,
+  "soiledCleanLenient": 64,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.72856187750287,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.68374925723195,
+   "pH_peak": 10.369892825148053,
+   "pH_end": 10.472610436864851,
+   "minAbove": {
+    "45": 138.98609650184048,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 95.86179556684348,
+   "proteaseEnd_mgL": 66.73486278316835,
+   "peracidPeak_mmolL": 0.4441479401222474
+  },
+  "items": 113,
+  "score": {
+   "crockery": 3.735294117647059,
+   "cutlery": 4.6286764705882355,
+   "glass": 3.78125,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.2763671875
+  },
+  "soiled": {
+   "crockery": 3.735294117647059,
+   "cutlery": 4.352564102564102,
+   "glass": 3.78125,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.0643939393939394
+  },
+  "raw": {
+   "crockery": 4.096774193548387,
+   "cutlery": 4.636363636363637,
+   "glass": 3.5,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.407079646017699
+  },
+  "milkGlasses": 3.125,
+  "teaItems": 2.5,
+  "crockeryWithoutTea": 4.857142857142857,
+  "cleanShare": 0.7848307291666667,
+  "clean": 92,
+  "soiledItems": 85,
+  "soiledClean": 64,
+  "histogram": [
+   6,
+   3,
+   3,
+   6,
+   4,
+   63
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 0.028656891739857315,
+    "meanScore": 4.25,
+    "clean": 15,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 14,
+    "left_pct": 0.015143129762983468,
+    "meanScore": 4.428571428571429,
+    "clean": 10,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 8,
+    "left_pct": 5.175752310016775,
+    "meanScore": 3.125,
+    "clean": 3,
+    "medianVisibleMm2": 1.0836950522773705
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 6,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 6,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 20,
+    "left_pct": 0.00010356788113576119,
+    "meanScore": 4.95,
+    "clean": 20,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 7,
+    "left_pct": 0.017183429110677353,
+    "meanScore": 4.571428571428571,
+    "clean": 5,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 14.003940588096537,
+    "meanScore": 2.5,
+    "clean": 5,
+    "medianVisibleMm2": 69.94448531302072
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    2,
+    5,
+    2
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    4.571428571428571,
+    6
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    12,
+    3.75,
+    7
+   ],
+   "dinner_knife_210": [
+    13,
+    4.384615384615385,
+    9
+   ],
+   "dinner_plate_porcelain_iec": [
+    7,
+    5,
+    7
+   ],
+   "melamine_dessert_plate_iec_195": [
+    6,
+    5,
+    5
+   ],
+   "mug_ceramic_300": [
+    4,
+    0,
+    0
+   ],
+   "oval_platter_porcelain_320": [
+    1,
+    5,
+    1
+   ],
+   "saucer_porcelain_140": [
+    6,
+    4.166666666666667,
+    5
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    5,
+    6
+   ],
+   "soup_spoon_190": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    8,
+    3.125,
+    3
+   ]
+  },
+  "perItem": {
+   "dessert_bowl_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_02": [
+    2,
+    0,
+    0.0012
+   ],
+   "dessert_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "fork_01": [
+    5,
+    1,
+    0
+   ],
+   "fork_02": [
+    3,
+    0,
+    0.0024
+   ],
+   "fork_03": [
+    5,
+    1,
+    0
+   ],
+   "fork_04": [
+    5,
+    1,
+    0
+   ],
+   "fork_05": [
+    5,
+    1,
+    0
+   ],
+   "fork_06": [
+    3,
+    0,
+    0.0006
+   ],
+   "fork_07": [
+    5,
+    1,
+    0
+   ],
+   "fork_08": [
+    1,
+    0,
+    0.0118
+   ],
+   "fork_09": [
+    2,
+    0,
+    0.0039
+   ],
+   "fork_11": [
+    4,
+    1,
+    0
+   ],
+   "fork_12": [
+    2,
+    0,
+    0.0021
+   ],
+   "fork_13": [
+    5,
+    1,
+    0
+   ],
+   "glass_01": [
+    5,
+    1,
+    0
+   ],
+   "glass_02": [
+    5,
+    1,
+    0
+   ],
+   "glass_03": [
+    0,
+    0,
+    0.1686
+   ],
+   "glass_04": [
+    4,
+    1,
+    0.0001
+   ],
+   "glass_05": [
+    1,
+    0,
+    0.0021
+   ],
+   "glass_06": [
+    5,
+    0,
+    0
+   ],
+   "glass_07": [
+    0,
+    0,
+    0.2338
+   ],
+   "glass_08": [
+    5,
+    0,
+    0
+   ],
+   "knife_01": [
+    3,
+    0,
+    0.0003
+   ],
+   "knife_02": [
+    5,
+    1,
+    0
+   ],
+   "knife_03": [
+    5,
+    1,
+    0
+   ],
+   "knife_04": [
+    3,
+    0,
+    0.0007
+   ],
+   "knife_05": [
+    5,
+    1,
+    0
+   ],
+   "knife_06": [
+    5,
+    1,
+    0
+   ],
+   "knife_07": [
+    5,
+    1,
+    0
+   ],
+   "knife_08": [
+    5,
+    1,
+    0
+   ],
+   "knife_09": [
+    5,
+    1,
+    0
+   ],
+   "knife_10": [
+    5,
+    1,
+    0
+   ],
+   "knife_11": [
+    3,
+    0,
+    0.0029
+   ],
+   "knife_12": [
+    5,
+    1,
+    0
+   ],
+   "knife_13": [
+    3,
+    0,
+    0.0003
+   ],
+   "melamine_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_03": [
+    5,
+    0,
+    0
+   ],
+   "melamine_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "mug_01": [
+    0,
+    0,
+    0.0694
+   ],
+   "mug_02": [
+    0,
+    0,
+    0.2047
+   ],
+   "mug_03": [
+    0,
+    0,
+    0.2041
+   ],
+   "mug_04": [
+    0,
+    0,
+    0.192
+   ],
+   "oval_platter_01": [
+    5,
+    1,
+    0
+   ],
+   "saucer_01": [
+    5,
+    1,
+    0.0515
+   ],
+   "saucer_02": [
+    1,
+    0,
+    0.1001
+   ],
+   "saucer_03": [
+    5,
+    1,
+    0.0498
+   ],
+   "saucer_04": [
+    5,
+    1,
+    0.0608
+   ],
+   "saucer_05": [
+    4,
+    1,
+    0.0602
+   ],
+   "saucer_06": [
+    5,
+    1,
+    0.0603
+   ],
+   "soup_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_04": [
+    4,
+    1,
+    0.0001
+   ],
+   "soup_spoon_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_07": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_08": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_09": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_10": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_11": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_12": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_13": [
+    5,
+    1,
+    0
+   ]
+  },
+  "timings_ms": {
+   "scene": 11368.800208,
+   "hydraulics": 58.2479170000006,
+   "exposure": 1088.9451249999984,
+   "soil": 1477.7958750000107,
+   "replay": 54733.192290999985,
+   "result": 4201.845500000025
+  },
+  "blocks": 1104207,
+  "drySoilLeft_pct": 0.7320728483186022,
+  "heldWater_mL": 1273.4610972984228,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 73.005426959
+ },
+ {
+  "name": "eco capsule careless L2S1",
+  "load": "iec-13-careless",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   2,
+   1
+  ],
+  "dose_g": 12.9,
+  "sets": [
+   "anchored-v6.owner-capsule (stale)"
+  ],
+  "source": "ee5fd167dc08ad64ce5b72260910a66421c49f5fb8c5e546eb827347f81915c4",
+  "edge": 3,
+  "edgeItems": [
+   "saucer_04",
+   "saucer_05",
+   "saucer_06"
+  ],
+  "soiledCleanStrict": 64,
+  "soiledCleanLenient": 67,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 158.72856187750287,
+   "peak_C": 49.97704946682357,
+   "end_C": 42.68374925723195,
+   "pH_peak": 10.369892825148053,
+   "pH_end": 10.472610436864851,
+   "minAbove": {
+    "45": 138.98609650184048,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 95.86180629330424,
+   "proteaseEnd_mgL": 66.74961150420255,
+   "peracidPeak_mmolL": 0.4441183533114143
+  },
+  "items": 113,
+  "score": {
+   "crockery": 3.8161764705882355,
+   "cutlery": 4.7463235294117645,
+   "glass": 3.5375,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.322265625
+  },
+  "soiled": {
+   "crockery": 3.8161764705882355,
+   "cutlery": 4.5576923076923075,
+   "glass": 3.5375,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.123737373737374
+  },
+  "raw": {
+   "crockery": 4.161290322580645,
+   "cutlery": 4.757575757575758,
+   "glass": 3.2,
+   "melamine": 5,
+   "pots": null,
+   "all": 4.469026548672566
+  },
+  "milkGlasses": 2.75,
+  "teaItems": 2.6,
+  "crockeryWithoutTea": 4.904761904761905,
+  "cleanShare": 0.8033854166666667,
+  "clean": 95,
+  "soiledItems": 85,
+  "soiledClean": 67,
+  "histogram": [
+   5,
+   4,
+   3,
+   3,
+   4,
+   66
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 0.028440846977037627,
+    "meanScore": 4.25,
+    "clean": 15,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 14,
+    "left_pct": 1.5547575547193384e-10,
+    "meanScore": 5,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 8,
+    "left_pct": 4.047261100874738,
+    "meanScore": 2.75,
+    "clean": 2,
+    "medianVisibleMm2": 7.827831365652103
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 6,
+    "left_pct": 0,
+    "meanScore": 5,
+    "clean": 6,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 20,
+    "left_pct": 0.00020456220329080437,
+    "meanScore": 4.95,
+    "clean": 20,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 7,
+    "left_pct": 0.003956948990232583,
+    "meanScore": 4.714285714285714,
+    "clean": 5,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 14.235910207866743,
+    "meanScore": 2.6,
+    "clean": 5,
+    "medianVisibleMm2": 90.68537471298336
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    2,
+    5,
+    2
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    4.714285714285714,
+    6
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    12,
+    3.75,
+    7
+   ],
+   "dinner_knife_210": [
+    13,
+    5,
+    13
+   ],
+   "dinner_plate_porcelain_iec": [
+    7,
+    5,
+    7
+   ],
+   "melamine_dessert_plate_iec_195": [
+    6,
+    5,
+    5
+   ],
+   "mug_ceramic_300": [
+    4,
+    0.25,
+    0
+   ],
+   "oval_platter_porcelain_320": [
+    1,
+    5,
+    1
+   ],
+   "saucer_porcelain_140": [
+    6,
+    4.166666666666667,
+    5
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    5,
+    6
+   ],
+   "soup_spoon_190": [
+    13,
+    4.923076923076923,
+    13
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    8,
+    2.75,
+    2
+   ]
+  },
+  "perItem": {
+   "dessert_bowl_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_02": [
+    3,
+    0,
+    0.0003
+   ],
+   "dessert_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dinner_plate_07": [
+    5,
+    1,
+    0
+   ],
+   "fork_01": [
+    5,
+    1,
+    0
+   ],
+   "fork_02": [
+    3,
+    0,
+    0.0041
+   ],
+   "fork_03": [
+    5,
+    1,
+    0
+   ],
+   "fork_04": [
+    5,
+    1,
+    0
+   ],
+   "fork_05": [
+    5,
+    1,
+    0
+   ],
+   "fork_06": [
+    2,
+    0,
+    0.0004
+   ],
+   "fork_07": [
+    5,
+    1,
+    0
+   ],
+   "fork_08": [
+    1,
+    0,
+    0.0125
+   ],
+   "fork_09": [
+    2,
+    0,
+    0.0041
+   ],
+   "fork_11": [
+    4,
+    1,
+    0
+   ],
+   "fork_12": [
+    3,
+    0,
+    0.001
+   ],
+   "fork_13": [
+    5,
+    1,
+    0
+   ],
+   "glass_01": [
+    5,
+    1,
+    0
+   ],
+   "glass_02": [
+    2,
+    0,
+    0.0004
+   ],
+   "glass_03": [
+    0,
+    0,
+    0.1261
+   ],
+   "glass_04": [
+    4,
+    1,
+    0
+   ],
+   "glass_05": [
+    1,
+    0,
+    0.0043
+   ],
+   "glass_06": [
+    5,
+    0,
+    0
+   ],
+   "glass_07": [
+    0,
+    0,
+    0.1885
+   ],
+   "glass_08": [
+    5,
+    0,
+    0
+   ],
+   "knife_01": [
+    5,
+    1,
+    0
+   ],
+   "knife_02": [
+    5,
+    1,
+    0
+   ],
+   "knife_03": [
+    5,
+    1,
+    0
+   ],
+   "knife_04": [
+    5,
+    1,
+    0
+   ],
+   "knife_05": [
+    5,
+    1,
+    0
+   ],
+   "knife_06": [
+    5,
+    1,
+    0
+   ],
+   "knife_07": [
+    5,
+    1,
+    0
+   ],
+   "knife_08": [
+    5,
+    1,
+    0
+   ],
+   "knife_09": [
+    5,
+    1,
+    0
+   ],
+   "knife_10": [
+    5,
+    1,
+    0
+   ],
+   "knife_11": [
+    5,
+    1,
+    0
+   ],
+   "knife_12": [
+    5,
+    1,
+    0
+   ],
+   "knife_13": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_03": [
+    5,
+    0,
+    0
+   ],
+   "melamine_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "mug_01": [
+    1,
+    0,
+    0.0704
+   ],
+   "mug_02": [
+    0,
+    0,
+    0.2054
+   ],
+   "mug_03": [
+    0,
+    0,
+    0.2115
+   ],
+   "mug_04": [
+    0,
+    0,
+    0.1945
+   ],
+   "oval_platter_01": [
+    5,
+    1,
+    0
+   ],
+   "saucer_01": [
+    5,
+    1,
+    0.0523
+   ],
+   "saucer_02": [
+    1,
+    0,
+    0.104
+   ],
+   "saucer_03": [
+    5,
+    1,
+    0.0493
+   ],
+   "saucer_04": [
+    5,
+    1,
+    0.0615
+   ],
+   "saucer_05": [
+    4,
+    1,
+    0.0605
+   ],
+   "saucer_06": [
+    5,
+    1,
+    0.0592
+   ],
+   "soup_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_04": [
+    4,
+    1,
+    0.0002
+   ],
+   "soup_spoon_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_07": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_08": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_09": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_10": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_11": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_12": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_13": [
+    5,
+    1,
+    0
+   ]
+  },
+  "timings_ms": {
+   "scene": 295.4194579999894,
+   "hydraulics": 57.171750000008615,
+   "exposure": 1705.6393340000068,
+   "soil": 2441.749374999985,
+   "replay": 65139.981582999986,
+   "result": 4606.75225000002
+  },
+  "blocks": 1104207,
+  "drySoilLeft_pct": 0.5763091716081523,
+  "heldWater_mL": 1273.4610972984228,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 74.27624000000002
+ },
+ {
+  "name": "eco capsule careless tablet blocked L1S1",
+  "load": "iec-13-careless-tablet-blocked",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   1,
+   1
+  ],
+  "dose_g": 12.9,
+  "sets": [
+   "anchored-v6.owner-capsule (stale)"
+  ],
+  "source": "ee5fd167dc08ad64ce5b72260910a66421c49f5fb8c5e546eb827347f81915c4",
+  "edge": 1,
+  "edgeItems": [
+   "soup_spoon_04"
+  ],
+  "soiledCleanStrict": 34,
+  "soiledCleanLenient": 35,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 114.99593440181305,
+   "peak_C": 48.0939314241643,
+   "end_C": 42.74936416058597,
+   "pH_peak": 9.935119743412724,
+   "pH_end": 10.258479981393247,
+   "minAbove": {
+    "45": 102.85785320940333,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 41.47680142141177,
+   "proteaseEnd_mgL": 40.60919881545534,
+   "peracidPeak_mmolL": 0.02413214876686971
+  },
+  "items": 113,
+  "score": {
+   "crockery": 1.2647058823529411,
+   "cutlery": 3.8676470588235294,
+   "glass": 1.75,
+   "melamine": 2.5,
+   "pots": null,
+   "all": 2.78125
+  },
+  "soiled": {
+   "crockery": 1.2647058823529411,
+   "cutlery": 3.0256410256410255,
+   "glass": 1.75,
+   "melamine": 2.5,
+   "pots": null,
+   "all": 2.1313131313131315
+  },
+  "raw": {
+   "crockery": 1.3870967741935485,
+   "cutlery": 3.909090909090909,
+   "glass": 1,
+   "melamine": 2.5,
+   "pots": null,
+   "all": 2.8849557522123894
+  },
+  "milkGlasses": 0,
+  "teaItems": 0,
+  "crockeryWithoutTea": 2.0476190476190474,
+  "cleanShare": 0.53125,
+  "clean": 62,
+  "soiledItems": 85,
+  "soiledClean": 34,
+  "histogram": [
+   45,
+   0,
+   0,
+   5,
+   4,
+   31
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 53.11706120709699,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 1823.7795104980469
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 14,
+    "left_pct": 0.0174484184419927,
+    "meanScore": 4.428571428571429,
+    "clean": 10,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 8,
+    "left_pct": 76.61454603850893,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 5305.674044966937
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 6,
+    "left_pct": 3.425948240010082,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 2780.3601234900852
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 20,
+    "left_pct": 0.0019473285158227577,
+    "meanScore": 4.7,
+    "clean": 19,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 7,
+    "left_pct": 0.649731433598397,
+    "meanScore": 4.285714285714286,
+    "clean": 5,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 69.53537060912497,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 3002.251859664917
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    2,
+    5,
+    2
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    1.4285714285714286,
+    2
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    12,
+    0,
+    0
+   ],
+   "dinner_knife_210": [
+    13,
+    4.384615384615385,
+    9
+   ],
+   "dinner_plate_porcelain_iec": [
+    7,
+    0,
+    0
+   ],
+   "melamine_dessert_plate_iec_195": [
+    6,
+    2.5,
+    2
+   ],
+   "mug_ceramic_300": [
+    4,
+    0,
+    0
+   ],
+   "oval_platter_porcelain_320": [
+    1,
+    5,
+    1
+   ],
+   "saucer_porcelain_140": [
+    6,
+    0,
+    0
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    4.666666666666667,
+    6
+   ],
+   "soup_spoon_190": [
+    13,
+    4.6923076923076925,
+    12
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    8,
+    0,
+    0
+   ]
+  },
+  "perItem": {
+   "dessert_bowl_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_01": [
+    0,
+    0,
+    0.6246
+   ],
+   "dessert_plate_02": [
+    0,
+    0,
+    0.0444
+   ],
+   "dessert_plate_03": [
+    0,
+    0,
+    0.5677
+   ],
+   "dessert_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_05": [
+    0,
+    0,
+    0.5947
+   ],
+   "dessert_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_07": [
+    0,
+    0,
+    0.5592
+   ],
+   "dinner_plate_01": [
+    0,
+    0,
+    0.4606
+   ],
+   "dinner_plate_02": [
+    0,
+    0,
+    0.038
+   ],
+   "dinner_plate_03": [
+    0,
+    0,
+    0.4623
+   ],
+   "dinner_plate_04": [
+    0,
+    0,
+    0.0185
+   ],
+   "dinner_plate_05": [
+    0,
+    0,
+    0.4502
+   ],
+   "dinner_plate_06": [
+    0,
+    0,
+    0.0407
+   ],
+   "dinner_plate_07": [
+    0,
+    0,
+    0.4321
+   ],
+   "fork_01": [
+    0,
+    0,
+    0.6588
+   ],
+   "fork_02": [
+    0,
+    0,
+    0.6481
+   ],
+   "fork_03": [
+    0,
+    0,
+    0.6649
+   ],
+   "fork_04": [
+    0,
+    0,
+    0.5687
+   ],
+   "fork_05": [
+    0,
+    0,
+    0.6849
+   ],
+   "fork_06": [
+    0,
+    0,
+    0.6396
+   ],
+   "fork_07": [
+    0,
+    0,
+    0.6376
+   ],
+   "fork_08": [
+    0,
+    0,
+    0.739
+   ],
+   "fork_09": [
+    0,
+    0,
+    0.6674
+   ],
+   "fork_11": [
+    0,
+    0,
+    0.6502
+   ],
+   "fork_12": [
+    0,
+    0,
+    0.6932
+   ],
+   "fork_13": [
+    0,
+    0,
+    0.6332
+   ],
+   "glass_01": [
+    0,
+    0,
+    0.674
+   ],
+   "glass_02": [
+    0,
+    0,
+    0.6777
+   ],
+   "glass_03": [
+    0,
+    0,
+    0.7842
+   ],
+   "glass_04": [
+    0,
+    0,
+    0.6739
+   ],
+   "glass_05": [
+    0,
+    0,
+    0.7228
+   ],
+   "glass_06": [
+    0,
+    0,
+    0.8996
+   ],
+   "glass_07": [
+    0,
+    0,
+    0.8493
+   ],
+   "glass_08": [
+    0,
+    0,
+    0.8383
+   ],
+   "knife_01": [
+    3,
+    0,
+    0.0005
+   ],
+   "knife_02": [
+    5,
+    1,
+    0
+   ],
+   "knife_03": [
+    5,
+    1,
+    0
+   ],
+   "knife_04": [
+    3,
+    0,
+    0.0008
+   ],
+   "knife_05": [
+    5,
+    1,
+    0
+   ],
+   "knife_06": [
+    5,
+    1,
+    0
+   ],
+   "knife_07": [
+    5,
+    1,
+    0
+   ],
+   "knife_08": [
+    5,
+    1,
+    0
+   ],
+   "knife_09": [
+    5,
+    1,
+    0
+   ],
+   "knife_10": [
+    5,
+    1,
+    0
+   ],
+   "knife_11": [
+    3,
+    0,
+    0.0031
+   ],
+   "knife_12": [
+    5,
+    1,
+    0
+   ],
+   "knife_13": [
+    3,
+    0,
+    0.0004
+   ],
+   "melamine_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_02": [
+    0,
+    0,
+    0.0574
+   ],
+   "melamine_plate_03": [
+    5,
+    0,
+    0
+   ],
+   "melamine_plate_04": [
+    0,
+    0,
+    0.0226
+   ],
+   "melamine_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_06": [
+    0,
+    0,
+    0.0252
+   ],
+   "mug_01": [
+    0,
+    0,
+    0.6146
+   ],
+   "mug_02": [
+    0,
+    0,
+    0.7876
+   ],
+   "mug_03": [
+    0,
+    0,
+    0.7194
+   ],
+   "mug_04": [
+    0,
+    0,
+    0.7681
+   ],
+   "oval_platter_01": [
+    5,
+    1,
+    0
+   ],
+   "saucer_01": [
+    0,
+    0,
+    0.6013
+   ],
+   "saucer_02": [
+    0,
+    0,
+    0.6658
+   ],
+   "saucer_03": [
+    0,
+    0,
+    0.5958
+   ],
+   "saucer_04": [
+    0,
+    0,
+    0.619
+   ],
+   "saucer_05": [
+    0,
+    0,
+    0.615
+   ],
+   "saucer_06": [
+    0,
+    0,
+    0.6183
+   ],
+   "soup_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_05": [
+    4,
+    1,
+    0
+   ],
+   "soup_plate_06": [
+    4,
+    1,
+    0
+   ],
+   "soup_spoon_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_04": [
+    3,
+    0,
+    0.0012
+   ],
+   "soup_spoon_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_06": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_07": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_08": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_09": [
+    4,
+    1,
+    0.0001
+   ],
+   "soup_spoon_10": [
+    4,
+    1,
+    0
+   ],
+   "soup_spoon_11": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_12": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_13": [
+    5,
+    1,
+    0
+   ]
+  },
+  "timings_ms": {
+   "scene": 237.35391700000037,
+   "hydraulics": 133.71387499995762,
+   "exposure": 1628.8442920000525,
+   "soil": 2967.2619580000173,
+   "replay": 63818.26212500001,
+   "result": 12629.225291999988
+  },
+  "blocks": 1104207,
+  "drySoilLeft_pct": 32.46823451985234,
+  "heldWater_mL": 1273.4610972984228,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 81.45373304199998
+ },
+ {
+  "name": "eco capsule careless tablet blocked L2S1",
+  "load": "iec-13-careless-tablet-blocked",
+  "programme": "eco_50",
+  "tier": "official",
+  "seeds": [
+   2,
+   1
+  ],
+  "dose_g": 12.9,
+  "sets": [
+   "anchored-v6.owner-capsule (stale)"
+  ],
+  "source": "ee5fd167dc08ad64ce5b72260910a66421c49f5fb8c5e546eb827347f81915c4",
+  "edge": 0,
+  "edgeItems": [],
+  "soiledCleanStrict": 37,
+  "soiledCleanLenient": 37,
+  "duration_min": 294.81666666666666,
+  "energy_kWh": 0.9007479941933965,
+  "mainWash": {
+   "minutes": 114.99593440181305,
+   "peak_C": 48.0939314241643,
+   "end_C": 42.74936416058597,
+   "pH_peak": 9.935119743412724,
+   "pH_end": 10.258479981393247,
+   "minAbove": {
+    "45": 102.85785320940333,
+    "55": 0,
+    "60": 0
+   },
+   "proteasePeak_mgL": 41.47722803054469,
+   "proteaseEnd_mgL": 40.60958319670253,
+   "peracidPeak_mmolL": 0.02408557896003239
+  },
+  "items": 113,
+  "score": {
+   "crockery": 1.2352941176470589,
+   "cutlery": 3.9411764705882355,
+   "glass": 1.75,
+   "melamine": 2.5,
+   "pots": null,
+   "all": 2.8125
+  },
+  "soiled": {
+   "crockery": 1.2352941176470589,
+   "cutlery": 3.1538461538461537,
+   "glass": 1.75,
+   "melamine": 2.5,
+   "pots": null,
+   "all": 2.1717171717171717
+  },
+  "raw": {
+   "crockery": 1.3548387096774193,
+   "cutlery": 3.984848484848485,
+   "glass": 1,
+   "melamine": 2.5,
+   "pots": null,
+   "all": 2.920353982300885
+  },
+  "milkGlasses": 0,
+  "teaItems": 0,
+  "crockeryWithoutTea": 2,
+  "cleanShare": 0.5546875,
+  "clean": 65,
+  "soiledItems": 85,
+  "soiledClean": 37,
+  "histogram": [
+   45,
+   0,
+   0,
+   2,
+   6,
+   32
+  ],
+  "bySoil": [
+   {
+    "type": "iec_egg_yolk",
+    "modelClass": "egg_yolk",
+    "records": 20,
+    "left_pct": 54.22307470069204,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 1823.7795104980469
+   },
+   {
+    "type": "iec_margarine",
+    "modelClass": "fat_margarine",
+    "records": 14,
+    "left_pct": 1.4459547226187567e-9,
+    "meanScore": 5,
+    "clean": 14,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_milk",
+    "modelClass": "milk",
+    "records": 8,
+    "left_pct": 76.95506927407419,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 5305.700660113483
+   },
+   {
+    "type": "iec_minced_meat",
+    "modelClass": "egg_yolk",
+    "records": 6,
+    "left_pct": 4.953409868008088,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 3785.123269550847
+   },
+   {
+    "type": "iec_oat_flakes",
+    "modelClass": "starch",
+    "records": 20,
+    "left_pct": 0.005162345219277607,
+    "meanScore": 4.5,
+    "clean": 18,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_spinach",
+    "modelClass": "coloured_starch",
+    "records": 7,
+    "left_pct": 0.5277494037783701,
+    "meanScore": 4.285714285714286,
+    "clean": 5,
+    "medianVisibleMm2": 0
+   },
+   {
+    "type": "iec_tea",
+    "modelClass": "tea",
+    "records": 10,
+    "left_pct": 69.6144814758,
+    "meanScore": 0,
+    "clean": 0,
+    "medianVisibleMm2": 3002.105891138315
+   }
+  ],
+  "byType": {
+   "dessert_bowl_vitrelle_130": [
+    2,
+    5,
+    2
+   ],
+   "dessert_plate_porcelain_190": [
+    7,
+    1.4285714285714286,
+    2
+   ],
+   "dessert_spoon_160": [
+    12,
+    5,
+    12
+   ],
+   "dinner_fork_185": [
+    12,
+    0,
+    0
+   ],
+   "dinner_knife_210": [
+    13,
+    5,
+    13
+   ],
+   "dinner_plate_porcelain_iec": [
+    7,
+    0,
+    0
+   ],
+   "melamine_dessert_plate_iec_195": [
+    6,
+    2.5,
+    2
+   ],
+   "mug_ceramic_300": [
+    4,
+    0,
+    0
+   ],
+   "oval_platter_porcelain_320": [
+    1,
+    5,
+    1
+   ],
+   "saucer_porcelain_140": [
+    6,
+    0,
+    0
+   ],
+   "serving_fork_210": [
+    1,
+    5,
+    1
+   ],
+   "serving_spoon_216": [
+    2,
+    5,
+    2
+   ],
+   "soup_plate_porcelain_230": [
+    6,
+    4.5,
+    5
+   ],
+   "soup_spoon_190": [
+    13,
+    4.461538461538462,
+    12
+   ],
+   "teaspoon_130": [
+    13,
+    5,
+    13
+   ],
+   "test_glass_borosilicate_250": [
+    8,
+    0,
+    0
+   ]
+  },
+  "perItem": {
+   "dessert_bowl_03": [
+    5,
+    1,
+    0
+   ],
+   "dessert_bowl_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_01": [
+    0,
+    0,
+    0.6047
+   ],
+   "dessert_plate_02": [
+    0,
+    0,
+    0.0386
+   ],
+   "dessert_plate_03": [
+    0,
+    0,
+    0.5146
+   ],
+   "dessert_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_05": [
+    0,
+    0,
+    0.5859
+   ],
+   "dessert_plate_06": [
+    5,
+    1,
+    0
+   ],
+   "dessert_plate_07": [
+    0,
+    0,
+    0.5529
+   ],
+   "dinner_plate_01": [
+    0,
+    0,
+    0.5065
+   ],
+   "dinner_plate_02": [
+    0,
+    0,
+    0.0464
+   ],
+   "dinner_plate_03": [
+    0,
+    0,
+    0.4946
+   ],
+   "dinner_plate_04": [
+    0,
+    0,
+    0.0644
+   ],
+   "dinner_plate_05": [
+    0,
+    0,
+    0.4544
+   ],
+   "dinner_plate_06": [
+    0,
+    0,
+    0.0574
+   ],
+   "dinner_plate_07": [
+    0,
+    0,
+    0.5208
+   ],
+   "fork_01": [
+    0,
+    0,
+    0.6444
+   ],
+   "fork_02": [
+    0,
+    0,
+    0.6652
+   ],
+   "fork_03": [
+    0,
+    0,
+    0.6665
+   ],
+   "fork_04": [
+    0,
+    0,
+    0.634
+   ],
+   "fork_05": [
+    0,
+    0,
+    0.6496
+   ],
+   "fork_06": [
+    0,
+    0,
+    0.6269
+   ],
+   "fork_07": [
+    0,
+    0,
+    0.6175
+   ],
+   "fork_08": [
+    0,
+    0,
+    0.721
+   ],
+   "fork_09": [
+    0,
+    0,
+    0.6527
+   ],
+   "fork_11": [
+    0,
+    0,
+    0.6736
+   ],
+   "fork_12": [
+    0,
+    0,
+    0.6557
+   ],
+   "fork_13": [
+    0,
+    0,
+    0.6418
+   ],
+   "glass_01": [
+    0,
+    0,
+    0.6531
+   ],
+   "glass_02": [
+    0,
+    0,
+    0.7203
+   ],
+   "glass_03": [
+    0,
+    0,
+    0.7909
+   ],
+   "glass_04": [
+    0,
+    0,
+    0.6837
+   ],
+   "glass_05": [
+    0,
+    0,
+    0.7363
+   ],
+   "glass_06": [
+    0,
+    0,
+    0.8963
+   ],
+   "glass_07": [
+    0,
+    0,
+    0.8374
+   ],
+   "glass_08": [
+    0,
+    0,
+    0.841
+   ],
+   "knife_01": [
+    5,
+    1,
+    0
+   ],
+   "knife_02": [
+    5,
+    1,
+    0
+   ],
+   "knife_03": [
+    5,
+    1,
+    0
+   ],
+   "knife_04": [
+    5,
+    1,
+    0
+   ],
+   "knife_05": [
+    5,
+    1,
+    0
+   ],
+   "knife_06": [
+    5,
+    1,
+    0
+   ],
+   "knife_07": [
+    5,
+    1,
+    0
+   ],
+   "knife_08": [
+    5,
+    1,
+    0
+   ],
+   "knife_09": [
+    5,
+    1,
+    0
+   ],
+   "knife_10": [
+    5,
+    1,
+    0
+   ],
+   "knife_11": [
+    5,
+    1,
+    0
+   ],
+   "knife_12": [
+    5,
+    1,
+    0
+   ],
+   "knife_13": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_02": [
+    0,
+    0,
+    0.0273
+   ],
+   "melamine_plate_03": [
+    5,
+    0,
+    0
+   ],
+   "melamine_plate_04": [
+    0,
+    0,
+    0.0408
+   ],
+   "melamine_plate_05": [
+    5,
+    1,
+    0
+   ],
+   "melamine_plate_06": [
+    0,
+    0,
+    0.0474
+   ],
+   "mug_01": [
+    0,
+    0,
+    0.6152
+   ],
+   "mug_02": [
+    0,
+    0,
+    0.7877
+   ],
+   "mug_03": [
+    0,
+    0,
+    0.7253
+   ],
+   "mug_04": [
+    0,
+    0,
+    0.7701
+   ],
+   "oval_platter_01": [
+    5,
+    1,
+    0
+   ],
+   "saucer_01": [
+    0,
+    0,
+    0.6016
+   ],
+   "saucer_02": [
+    0,
+    0,
+    0.6692
+   ],
+   "saucer_03": [
+    0,
+    0,
+    0.5924
+   ],
+   "saucer_04": [
+    0,
+    0,
+    0.6197
+   ],
+   "saucer_05": [
+    0,
+    0,
+    0.6147
+   ],
+   "saucer_06": [
+    0,
+    0,
+    0.6143
+   ],
+   "soup_plate_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_02": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_04": [
+    5,
+    1,
+    0
+   ],
+   "soup_plate_05": [
+    3,
+    0,
+    0.0001
+   ],
+   "soup_plate_06": [
+    4,
+    1,
+    0
+   ],
+   "soup_spoon_01": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_02": [
+    4,
+    1,
+    0.0002
+   ],
+   "soup_spoon_03": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_04": [
+    3,
+    0,
+    0.002
+   ],
+   "soup_spoon_05": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_06": [
+    4,
+    1,
+    0.0002
+   ],
+   "soup_spoon_07": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_08": [
+    4,
+    1,
+    0.0002
+   ],
+   "soup_spoon_09": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_10": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_11": [
+    4,
+    1,
+    0
+   ],
+   "soup_spoon_12": [
+    5,
+    1,
+    0
+   ],
+   "soup_spoon_13": [
+    4,
+    1,
+    0.0002
+   ]
+  },
+  "timings_ms": {
+   "scene": 422.6426249999786,
+   "hydraulics": 64.54816700000083,
+   "exposure": 1937.4714580000145,
+   "soil": 3325.331208999967,
+   "replay": 93821.432416,
+   "result": 16513.90558400005
+  },
+  "blocks": 1104207,
+  "drySoilLeft_pct": 33.12705574230248,
+  "heldWater_mL": 1273.4610972984228,
+  "exposure": [
+   4,
+   0
+  ],
+  "seconds": 116.12014645800001
+ }
+]

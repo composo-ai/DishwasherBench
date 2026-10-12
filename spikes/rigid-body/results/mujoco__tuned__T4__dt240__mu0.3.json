@@ -1,0 +1,501 @@
+{
+ "engine": "mujoco",
+ "preset": "tuned",
+ "test": "T4",
+ "hz": 240,
+ "tag": "mu0.3",
+ "cfg": {
+  "integrator": "implicitfast",
+  "cone": "elliptic",
+  "impratio": 10,
+  "solrefTimeconstSteps": 2,
+  "solimp": "0.95 0.99 0.0005 0.5 2",
+  "noslip": 0,
+  "multiccd": true,
+  "sleep": true,
+  "dt": 0.004166666666666667
+ },
+ "sceneOpts": {
+  "friction": 0.3
+ },
+ "wallSeconds": 0.10849220799999966,
+ "node": "v20.19.0",
+ "when": "2026-10-08T15:25:02.581Z",
+ "summary": {
+  "tumbler": {
+   "restTime_s": 0.49166666666666664,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed_m_s": 0.5620743397890124,
+   "exploded": null,
+   "penInit_mm": 0,
+   "penMaxStatic_mm": 2.001228660061112,
+   "penMaxDynamic_mm": 0,
+   "penFinalStatic_mm": 2.0002427962173224,
+   "penFinalDynamic_mm": 0,
+   "asleep": "1/1",
+   "allAsleepAt_s": 0.5416666666666666,
+   "driftPos_mm": 0,
+   "driftAng_deg": 1.9412565194479475e-19,
+   "stepMean_ms": 0.003355087499999677,
+   "stepP99_ms": 0.02804199999991397,
+   "stepTotal_ms": 4.831325999999535,
+   "hash": "3dbc9a2be6b093fc",
+   "axisFromVertical_deg": 6.293645227410196,
+   "pos_mm": [
+    15.983997994512109,
+    82.76155583067258,
+    7.617990454045303
+   ]
+  },
+  "mug_mu0.4": {
+   "restTime_s": 0.05416666666666667,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed_m_s": 0.24525000000019617,
+   "exploded": null,
+   "penInit_mm": 0,
+   "penMaxStatic_mm": 0.20723597261983023,
+   "penMaxDynamic_mm": 0,
+   "penFinalStatic_mm": 0.00511970253942555,
+   "penFinalDynamic_mm": 0,
+   "asleep": "1/1",
+   "allAsleepAt_s": 0.12083333333333333,
+   "driftPos_mm": 0,
+   "driftAng_deg": 7.279711947929803e-20,
+   "stepMean_ms": 0.0017443137500051382,
+   "stepP99_ms": 0.02216699999962657,
+   "stepTotal_ms": 4.186353000012332,
+   "hash": "d59e8a139b78cf24",
+   "slideDownhill_1s_to_10s_mm": 0,
+   "slideRate_mm_s": 0,
+   "axisFromShelfNormal_deg": 0.0028586734848602734,
+   "tanTilt": 0.2125565616700221
+  },
+  "mug_mu0.3": {
+   "restTime_s": 0.05416666666666667,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed_m_s": 0.24525000000019617,
+   "exploded": null,
+   "penInit_mm": 0,
+   "penMaxStatic_mm": 0.20735020187713332,
+   "penMaxDynamic_mm": 0,
+   "penFinalStatic_mm": 0.005109337529020028,
+   "penFinalDynamic_mm": 0,
+   "asleep": "1/1",
+   "allAsleepAt_s": 0.12083333333333333,
+   "driftPos_mm": 0,
+   "driftAng_deg": 6.066426623274836e-20,
+   "stepMean_ms": 0.0017279720833321714,
+   "stepP99_ms": 0.0154579999998532,
+   "stepTotal_ms": 4.147132999997211,
+   "hash": "501d22dda82f10c3",
+   "slideDownhill_1s_to_10s_mm": 0,
+   "slideRate_mm_s": 0,
+   "axisFromShelfNormal_deg": 0.002934126763786605,
+   "tanTilt": 0.2125565616700221
+  }
+ },
+ "runs": [
+  {
+   "engine": "mujoco-wasm",
+   "version": "3.15.0",
+   "scene": "T4a-tumbler-over-tines",
+   "cfg": {
+    "integrator": "implicitfast",
+    "cone": "elliptic",
+    "impratio": 10,
+    "solrefTimeconstSteps": 2,
+    "solimp": "0.95 0.99 0.0005 0.5 2",
+    "noslip": 0,
+    "multiccd": true,
+    "sleep": true,
+    "dt": 0.004166666666666667
+   },
+   "params": {
+    "dt": 0.00416666666667,
+    "integrator": 3,
+    "cone": 1,
+    "impratio": 10,
+    "solver": 2,
+    "iterations": 100,
+    "tolerance": 1e-8,
+    "noslip_iterations": 0,
+    "enableflags": 16,
+    "disableflags": 0,
+    "solref": "0.008333333333333333 1",
+    "solimp": "0.95 0.99 0.0005 0.5 2",
+    "margin": 0,
+    "ngeom": 163,
+    "nmesh": 17,
+    "xmlBytes": 30918
+   },
+   "dt": 0.004166666666666667,
+   "steps": 1440,
+   "duration": 6,
+   "buildMs": 6.632333000000017,
+   "loadMs": 59.668042,
+   "step": {
+    "meanMs": 0.003355087499999677,
+    "p50Ms": 0.0012080000001333246,
+    "p99Ms": 0.02804199999991397,
+    "maxMs": 0.23408300000028248,
+    "totalMs": 4.831325999999535
+   },
+   "stepActive": {
+    "meanMs": 0.013620454166656751,
+    "p50Ms": 0.014875000000301952,
+    "p99Ms": 0.04529199999979028,
+    "maxMs": 0.23408300000028248
+   },
+   "realTimeFactor": 1241.8950822197833,
+   "restTime": 0.49166666666666664,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed": 0.5620743397890124,
+   "exploded": null,
+   "pen": {
+    "initialStatic_mm": 0,
+    "initialDynamic_mm": 0,
+    "maxStatic_mm": 2.001228660061112,
+    "maxStaticAt": 0.3208333333333333,
+    "maxDynamic_mm": 0,
+    "maxDynamicAt": 0,
+    "finalStatic_mm": 2.0002427962173224,
+    "finalDynamic_mm": 0,
+    "finalWorstStatic": {
+     "body": 0,
+     "piece": 12,
+     "static": 8,
+     "tag": "base-z"
+    }
+   },
+   "sleep": {
+    "asleepAtEnd": 1,
+    "of": 1,
+    "allAsleepAt": 0.5416666666666666,
+    "wokeAgain": false
+   },
+   "drift": {
+    "pos_mm": 0,
+    "ang_deg": 1.9412565194479475e-19,
+    "window": [
+     3,
+     6
+    ]
+   },
+   "bodies": [
+    {
+     "name": "tumbler",
+     "pos": [
+      0.015983997994512108,
+      0.08276155583067257,
+      0.007617990454045304
+     ],
+     "quat": [
+      0.9984921379571376,
+      0.00006139146566600328,
+      -0.00010255899496374348,
+      -0.05489477343541131
+     ],
+     "lean": 83.7063547725898,
+     "axisV": 6.293645227410196,
+     "asleep": true
+    }
+   ],
+   "hash": "3dbc9a2be6b093fc",
+   "hashPose": "f1c4a72cadeec086",
+   "marks": {},
+   "mem": {
+    "before": {
+     "rssMB": 200.953125,
+     "heapUsedMB": 27.719192504882812,
+     "externalMB": 312.71595573425293,
+     "arrayBuffersMB": 0.08111095428466797
+    },
+    "after": {
+     "rssMB": 203.46875,
+     "heapUsedMB": 33.05206298828125,
+     "externalMB": 312.71566581726074,
+     "arrayBuffersMB": 0.08082103729248047
+    },
+    "engine": {
+     "narenaMB": 256,
+     "maxuseArenaMB": 0.024600982666015625
+    }
+   },
+   "masses": [
+    0.14999998106425952
+   ]
+  },
+  {
+   "engine": "mujoco-wasm",
+   "version": "3.15.0",
+   "scene": "T4b-mug-on-shelf",
+   "cfg": {
+    "integrator": "implicitfast",
+    "cone": "elliptic",
+    "impratio": 10,
+    "solrefTimeconstSteps": 2,
+    "solimp": "0.95 0.99 0.0005 0.5 2",
+    "noslip": 0,
+    "multiccd": true,
+    "sleep": true,
+    "dt": 0.004166666666666667
+   },
+   "params": {
+    "dt": 0.00416666666667,
+    "integrator": 3,
+    "cone": 1,
+    "impratio": 10,
+    "solver": 2,
+    "iterations": 100,
+    "tolerance": 1e-8,
+    "noslip_iterations": 0,
+    "enableflags": 16,
+    "disableflags": 0,
+    "solref": "0.008333333333333333 1",
+    "solimp": "0.95 0.99 0.0005 0.5 2",
+    "margin": 0,
+    "ngeom": 34,
+    "nmesh": 20,
+    "xmlBytes": 13698
+   },
+   "dt": 0.004166666666666667,
+   "steps": 2400,
+   "duration": 10,
+   "buildMs": 4.190958000000137,
+   "loadMs": 59.668042,
+   "step": {
+    "meanMs": 0.0017443137500051382,
+    "p50Ms": 0.0010419999998703133,
+    "p99Ms": 0.02216699999962657,
+    "maxMs": 0.1269999999999527,
+    "totalMs": 4.186353000012332
+   },
+   "stepActive": {
+    "meanMs": 0.007521008333336947,
+    "p50Ms": 0.0010410000004412723,
+    "p99Ms": 0.08787500000016735,
+    "maxMs": 0.1269999999999527
+   },
+   "realTimeFactor": 2388.713995205503,
+   "restTime": 0.05416666666666667,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed": 0.24525000000019617,
+   "exploded": null,
+   "pen": {
+    "initialStatic_mm": 0,
+    "initialDynamic_mm": 0,
+    "maxStatic_mm": 0.20723597261983023,
+    "maxStaticAt": 0.0375,
+    "maxDynamic_mm": 0,
+    "maxDynamicAt": 0,
+    "finalStatic_mm": 0.00511970253942555,
+    "finalDynamic_mm": 0,
+    "finalWorstStatic": {
+     "body": 0,
+     "piece": 14,
+     "static": 6,
+     "tag": "shelf-slope"
+    }
+   },
+   "sleep": {
+    "asleepAtEnd": 1,
+    "of": 1,
+    "allAsleepAt": 0.12083333333333333,
+    "wokeAgain": false
+   },
+   "drift": {
+    "pos_mm": 0,
+    "ang_deg": 7.279711947929803e-20,
+    "window": [
+     5,
+     10
+    ]
+   },
+   "bodies": [
+    {
+     "name": "mug",
+     "pos": [
+      0.004999445012106983,
+      0.16129036892020135,
+      -0.006658679747668329
+     ],
+     "quat": [
+      0.994520527233559,
+      -0.000020228174421679082,
+      -0.00001073352243736967,
+      -0.10454147687256132
+     ],
+     "lean": 77.99850030998266,
+     "axisV": 12.001499690017337,
+     "asleep": true
+    }
+   ],
+   "hash": "d59e8a139b78cf24",
+   "hashPose": "aee579a7111c09d5",
+   "marks": {},
+   "mem": {
+    "before": {
+     "rssMB": 203.484375,
+     "heapUsedMB": 33.50945281982422,
+     "externalMB": 312.72408866882324,
+     "arrayBuffersMB": 0.08924388885498047
+    },
+    "after": {
+     "rssMB": 204.15625,
+     "heapUsedMB": 31.766845703125,
+     "externalMB": 312.7458095550537,
+     "arrayBuffersMB": 0.11096477508544922
+    },
+    "engine": {
+     "narenaMB": 256,
+     "maxuseArenaMB": 0.040813446044921875
+    }
+   },
+   "masses": [
+    0.32000000326816935
+   ]
+  },
+  {
+   "engine": "mujoco-wasm",
+   "version": "3.15.0",
+   "scene": "T4b-mug-on-shelf",
+   "cfg": {
+    "integrator": "implicitfast",
+    "cone": "elliptic",
+    "impratio": 10,
+    "solrefTimeconstSteps": 2,
+    "solimp": "0.95 0.99 0.0005 0.5 2",
+    "noslip": 0,
+    "multiccd": true,
+    "sleep": true,
+    "dt": 0.004166666666666667
+   },
+   "params": {
+    "dt": 0.00416666666667,
+    "integrator": 3,
+    "cone": 1,
+    "impratio": 10,
+    "solver": 2,
+    "iterations": 100,
+    "tolerance": 1e-8,
+    "noslip_iterations": 0,
+    "enableflags": 16,
+    "disableflags": 0,
+    "solref": "0.008333333333333333 1",
+    "solimp": "0.95 0.99 0.0005 0.5 2",
+    "margin": 0,
+    "ngeom": 34,
+    "nmesh": 20,
+    "xmlBytes": 13698
+   },
+   "dt": 0.004166666666666667,
+   "steps": 2400,
+   "duration": 10,
+   "buildMs": 3.7604169999999613,
+   "loadMs": 59.668042,
+   "step": {
+    "meanMs": 0.0017279720833321714,
+    "p50Ms": 0.0010000000002037268,
+    "p99Ms": 0.0154579999998532,
+    "maxMs": 0.09833400000024994,
+    "totalMs": 4.147132999997211
+   },
+   "stepActive": {
+    "meanMs": 0.007564408333320216,
+    "p50Ms": 0.0010419999998703133,
+    "p99Ms": 0.09104200000001583,
+    "maxMs": 0.09833400000024994
+   },
+   "realTimeFactor": 2411.304387876329,
+   "restTime": 0.05416666666666667,
+   "rmsLin_mm_s": 0,
+   "rmsAng_rad_s": 0,
+   "residualKE_uJ": 0,
+   "maxSpeed": 0.24525000000019617,
+   "exploded": null,
+   "pen": {
+    "initialStatic_mm": 0,
+    "initialDynamic_mm": 0,
+    "maxStatic_mm": 0.20735020187713332,
+    "maxStaticAt": 0.0375,
+    "maxDynamic_mm": 0,
+    "maxDynamicAt": 0,
+    "finalStatic_mm": 0.005109337529020028,
+    "finalDynamic_mm": 0,
+    "finalWorstStatic": {
+     "body": 0,
+     "piece": 14,
+     "static": 6,
+     "tag": "shelf-slope"
+    }
+   },
+   "sleep": {
+    "asleepAtEnd": 1,
+    "of": 1,
+    "allAsleepAt": 0.12083333333333333,
+    "wokeAgain": false
+   },
+   "drift": {
+    "pos_mm": 0,
+    "ang_deg": 6.066426623274836e-20,
+    "window": [
+     5,
+     10
+    ]
+   },
+   "bodies": [
+    {
+     "name": "mug",
+     "pos": [
+      0.004999613568167156,
+      0.16129043236344842,
+      -0.006658907909550111
+     ],
+     "quat": [
+      0.9945206525453029,
+      -0.000022471403559363687,
+      -0.0000031613721561707963,
+      -0.10454028479923663
+     ],
+     "lean": 77.99863761135352,
+     "axisV": 12.00136238864649,
+     "asleep": true
+    }
+   ],
+   "hash": "501d22dda82f10c3",
+   "hashPose": "c9488633966da709",
+   "marks": {},
+   "mem": {
+    "before": {
+     "rssMB": 204.15625,
+     "heapUsedMB": 32.184852600097656,
+     "externalMB": 312.7542324066162,
+     "arrayBuffersMB": 0.11938762664794922
+    },
+    "after": {
+     "rssMB": 204.265625,
+     "heapUsedMB": 24.837890625,
+     "externalMB": 312.7686290740967,
+     "arrayBuffersMB": 0.13378429412841797
+    },
+    "engine": {
+     "narenaMB": 256,
+     "maxuseArenaMB": 0.040813446044921875
+    }
+   },
+   "masses": [
+    0.32000000326816935
+   ]
+  }
+ ]
+}

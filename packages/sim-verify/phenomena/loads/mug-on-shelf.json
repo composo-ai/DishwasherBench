@@ -1,0 +1,102 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "mug-on-shelf",
+ "description": "P36, P37: a ceramic mug mouth down on the rear cup shelf of the upper basket folded down (a level support)",
+ "recipe_hash": "sha256:75ca2de6fd9b30a0bc0aa4a301469646523b0239b252f5d8391028f20c123d09",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "down"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "mug",
+   "item_type": "mug_ceramic_300",
+   "pose": {
+    "p": [
+     0.1811856109470038,
+     0.04387706420825589,
+     0.6175049902488259
+    ],
+    "q": [
+     1,
+     7.021855097377738e-9,
+     3.291562791218894e-7,
+     3.8549504211005114e-7
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 0.3,
+    "rotation_deg": 0,
+    "contacts": [
+     "upper_rack_fittings.shelf.cup_rear"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:b56a56f57f928cf5f9f5d8484a4ab89e346bc9b955bda83ad584781f764fbb00"
+}

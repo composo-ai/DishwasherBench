@@ -1,0 +1,196 @@
+{
+  "benchmark": "stencil",
+  "stack": {
+    "sim": "0.0.0-dev",
+    "gpu": "apple metal-3 apple-m3-pro",
+    "os": "macOS 27.0.1 (26A434)",
+    "webgpu": "webgpu 0.6.2",
+    "runtime": "node 20.19.0",
+    "physics": "none"
+  },
+  "stackKey": "sim=0.0.0-dev; gpu=apple metal-3 apple-m3-pro; os=macOS 27.0.1 (26A434); webgpu=webgpu 0.6.2; runtime=node 20.19.0; physics=none",
+  "finishedAt": "2026-10-09T20:57:18.961Z",
+  "lockWaited": 0.155,
+  "results": [
+    {
+      "name": "stencil 1024x1024, workgroup 8x8, command buffers of 250 ms planned",
+      "work": 4000317440,
+      "unit": "cell updates",
+      "time": {
+        "best": 1.122848,
+        "median": 1.125293,
+        "worst": 1.131379,
+        "samples": [1.129406, 1.122848, 1.122987, 1.125293, 1.131379]
+      },
+      "rate": {
+        "best": 3562652683.177064,
+        "median": 3554911867.398091
+      }
+    },
+    {
+      "name": "stencil 1024x1024, workgroup 8x8, command buffers of 50 ms planned",
+      "work": 4000317440,
+      "unit": "cell updates",
+      "time": {
+        "best": 1.128556,
+        "median": 1.132084,
+        "worst": 1.133319,
+        "samples": [1.128556, 1.131255, 1.132084, 1.133215, 1.133319]
+      },
+      "rate": {
+        "best": 3544633531.6989145,
+        "median": 3533587118.977037
+      }
+    },
+    {
+      "name": "stencil 1024x1024, workgroup 16x16, command buffers of 250 ms planned",
+      "work": 4000317440,
+      "unit": "cell updates",
+      "time": {
+        "best": 1.128288,
+        "median": 1.131388,
+        "worst": 1.171877,
+        "samples": [1.171877, 1.140467, 1.128288, 1.130944, 1.131388]
+      },
+      "rate": {
+        "best": 3545475481.4373636,
+        "median": 3535760888.3954926
+      }
+    },
+    {
+      "name": "stencil 1024x1024, workgroup 16x16, command buffers of 50 ms planned",
+      "work": 4000317440,
+      "unit": "cell updates",
+      "time": {
+        "best": 1.126606,
+        "median": 1.130867,
+        "worst": 1.132117,
+        "samples": [1.132117, 1.126606, 1.130867, 1.130305, 1.131249]
+      },
+      "rate": {
+        "best": 3550768804.7107863,
+        "median": 3537389843.3679643
+      }
+    },
+    {
+      "name": "stencil 2048x2048, workgroup 8x8, command buffers of 250 ms planned",
+      "work": 4001366016,
+      "unit": "cell updates",
+      "time": {
+        "best": 1.153736,
+        "median": 1.156775,
+        "worst": 1.157924,
+        "samples": [1.153736, 1.153966, 1.157924, 1.15699, 1.156775]
+      },
+      "rate": {
+        "best": 3468181642.940846,
+        "median": 3459070273.8216157
+      }
+    },
+    {
+      "name": "stencil 2048x2048, workgroup 8x8, command buffers of 50 ms planned",
+      "work": 4001366016,
+      "unit": "cell updates",
+      "time": {
+        "best": 1.152709,
+        "median": 1.153606,
+        "worst": 1.154898,
+        "samples": [1.154898, 1.153255, 1.15458, 1.153606, 1.152709]
+      },
+      "rate": {
+        "best": 3471271601.07191,
+        "median": 3468572472.7506623
+      }
+    },
+    {
+      "name": "stencil 2048x2048, workgroup 16x16, command buffers of 250 ms planned",
+      "work": 4001366016,
+      "unit": "cell updates",
+      "time": {
+        "best": 1.156161,
+        "median": 1.171366,
+        "worst": 1.213541,
+        "samples": [1.156161, 1.16109, 1.213541, 1.210841, 1.171366]
+      },
+      "rate": {
+        "best": 3460907275.024845,
+        "median": 3415982721.02827
+      }
+    },
+    {
+      "name": "stencil 2048x2048, workgroup 16x16, command buffers of 50 ms planned",
+      "work": 4001366016,
+      "unit": "cell updates",
+      "time": {
+        "best": 1.163951,
+        "median": 1.166001,
+        "worst": 1.167371,
+        "samples": [1.167371, 1.16661, 1.16583, 1.163951, 1.166001]
+      },
+      "rate": {
+        "best": 3437744386.1468396,
+        "median": 3431700329.588053
+      }
+    },
+    {
+      "name": "stencil 4096x4096, workgroup 8x8, command buffers of 250 ms planned",
+      "work": 3992977408,
+      "unit": "cell updates",
+      "time": {
+        "best": 1.170653,
+        "median": 1.175323,
+        "worst": 1.184014,
+        "samples": [1.184014, 1.175323, 1.17294, 1.170653, 1.178638]
+      },
+      "rate": {
+        "best": 3410897514.4641495,
+        "median": 3397344736.7234373
+      }
+    },
+    {
+      "name": "stencil 4096x4096, workgroup 8x8, command buffers of 50 ms planned",
+      "work": 3992977408,
+      "unit": "cell updates",
+      "time": {
+        "best": 1.170491,
+        "median": 1.177754,
+        "worst": 1.182783,
+        "samples": [1.170491, 1.177754, 1.182783, 1.176547, 1.180315]
+      },
+      "rate": {
+        "best": 3411369594.46933,
+        "median": 3390332283.3121347
+      }
+    },
+    {
+      "name": "stencil 4096x4096, workgroup 16x16, command buffers of 250 ms planned",
+      "work": 3992977408,
+      "unit": "cell updates",
+      "time": {
+        "best": 1.170054,
+        "median": 1.176176,
+        "worst": 1.214879,
+        "samples": [1.176176, 1.176436, 1.170054, 1.171269, 1.214879]
+      },
+      "rate": {
+        "best": 3412643696.7866445,
+        "median": 3394880874.971092
+      }
+    },
+    {
+      "name": "stencil 4096x4096, workgroup 16x16, command buffers of 50 ms planned",
+      "work": 3992977408,
+      "unit": "cell updates",
+      "time": {
+        "best": 1.180429,
+        "median": 1.187041,
+        "worst": 1.207035,
+        "samples": [1.187041, 1.19118, 1.180429, 1.207035, 1.182141]
+      },
+      "rate": {
+        "best": 3382649365.611994,
+        "median": 3363807491.0639143
+      }
+    }
+  ]
+}

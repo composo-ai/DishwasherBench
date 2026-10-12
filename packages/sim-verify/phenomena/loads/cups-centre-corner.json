@@ -1,0 +1,131 @@
+{
+ "format": "spotless-phenomena-load-1",
+ "name": "cups-centre-corner",
+ "description": "P28: two tea cups mouth down in the upper basket, one near the axis of the upper arm and one in a corner of the basket (outside the swept circle)",
+ "recipe_hash": "sha256:bc2d3702e624f39dda119ca08cde7b7572c43540f406aa7d964534507d937d07",
+ "machine_id": "bosch_smv4hax40g",
+ "machine_config": {
+  "basketHeights": {
+   "upper": "1"
+  },
+  "foldedTineRows": [],
+  "shelves": [
+   {
+    "basketId": "upper",
+    "shelfId": "cup_front",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "cup_rear",
+    "state": "up"
+   },
+   {
+    "basketId": "upper",
+    "shelfId": "knife_shelf",
+    "state": "down"
+   }
+  ],
+  "cutleryBasket": {
+   "basketId": "lower",
+   "centre": [
+    0.2705,
+    0.123
+   ],
+   "longAxis": "y"
+  }
+ },
+ "items": [
+  {
+   "item_id": "cup_1",
+   "item_type": "tea_cup_porcelain_210",
+   "pose": {
+    "p": [
+     0.03202997365385472,
+     0.00143891400760252,
+     0.5101249730375611
+    ],
+    "q": [
+     0.9927380084991455,
+     -0.002241893205791712,
+     -0.12027563899755478,
+     0.00027060267166234553
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 12.1,
+    "rotation_deg": 13.8,
+    "contacts": [
+     "upper_rack.floor.y",
+     "upper_rack.tine_row_c_rear"
+    ]
+   }
+  },
+  {
+   "item_id": "cup_2",
+   "item_type": "tea_cup_porcelain_210",
+   "pose": {
+    "p": [
+     0.198468014449298,
+     0.16108278122802744,
+     0.4996364580231987
+    ],
+    "q": [
+     -0.6936925649642944,
+     -0.6906676888465881,
+     0.14482834935188293,
+     0.14419987797737122
+    ]
+   },
+   "placed": {
+    "op": "drop",
+    "attempt": 1,
+    "stable": true,
+    "displacement_mm": 2.3,
+    "rotation_deg": 3.7,
+    "contacts": [
+     "upper_rack.floor.y",
+     "upper_rack_fittings.shelf.cup_rear"
+    ]
+   }
+  }
+ ],
+ "check": {
+  "shifted": [],
+  "fell_out": [],
+  "on_tub_floor": [],
+  "protruding": [],
+  "racks": [
+   {
+    "rack": "lower_rack",
+    "slides_in": true
+   },
+   {
+    "rack": "upper_rack",
+    "slides_in": true
+   }
+  ],
+  "spray_arms": [
+   {
+    "arm": "lower_arm",
+    "full_rotation": true
+   },
+   {
+    "arm": "upper_arm",
+    "full_rotation": true
+   }
+  ],
+  "door_closes": true,
+  "door_blocked_by": [],
+  "dispenser_opens": true,
+  "dispenser_blocked_by": [],
+  "tablet_path_clear": true,
+  "tablet_blocked_by": []
+ },
+ "failed": [],
+ "notes": [],
+ "state_hash": "sha256:72845be815afa27d07cdf229825ee2343e4ae3b7658dd0f4dac2ce69f8f7fd9e"
+}

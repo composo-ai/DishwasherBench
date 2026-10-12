@@ -1,0 +1,222 @@
+{
+ "format": "spotless.wash-record",
+ "version": 1,
+ "id": "candidate-porridge-bowls-nested-eco50",
+ "kind": "planned",
+ "title": "Two porridge bowls nested and one standing free in the upper basket, Eco 50",
+ "provenance": {
+  "date": "2026-10-11",
+  "by": "the simulation side: a candidate test wash, not run",
+  "methods": {
+   "photo_area": {
+    "description": "photograph of the piece after the wash, read as those of wash 01 were (soiled pixels against their surroundings, scaled by a known diameter)"
+   },
+   "scale": {
+    "description": "kitchen scale, 0.1 g, the piece weighed before and after the soil is put on"
+   },
+   "asked": {
+    "description": "not weighed: an amount asked for"
+   }
+  },
+  "notes": "Candidate for the experiment ranking. What it would settle: whether a bowl covered by another stays dirty (the water in a narrow gap), which no parameter of the soil side decides."
+ },
+ "machine": {
+  "id": "bosch_smv4hax40g",
+  "config": {
+   "basketHeights": {
+    "upper": "1"
+   },
+   "foldedTineRows": [],
+   "shelves": [
+    {
+     "basketId": "upper",
+     "shelfId": "cup_front",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "cup_rear",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "knife_shelf",
+     "state": "down"
+    }
+   ],
+   "cutleryBasket": {
+    "basketId": "lower",
+    "centre": [
+     0.2705,
+     0.123
+    ],
+    "longAxis": "y"
+   }
+  }
+ },
+ "programme": {
+  "id": "eco_50",
+  "options": []
+ },
+ "consumables": {
+  "detergent": {
+   "product": "Finish Powerball Ultimate",
+   "form": "pouch",
+   "dose_g": 12.9,
+   "placement": "dispenser"
+  }
+ },
+ "load": {
+  "dispenser_blocked": false,
+  "items": [
+   {
+    "id": "bowl_over",
+    "type": "cereal_bowl_vitrelle_159",
+    "frame": "tub",
+    "position_mm": [
+     126.52779575385026,
+     82.3427512750274,
+     526.6891356535128
+    ],
+    "quat_wxyz": [
+     -0.9318377375602722,
+     -0.0004117520002182573,
+     0.36273130774497986,
+     -0.010213956236839294
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "porridge",
+      "recipe": "porridge oats cooked with water",
+      "preparation": "a tablespoon spread over the inside of the bowl with the back of a spoon",
+      "amount_g": 5,
+      "amount_method": "scale",
+      "amount_sd_g": 0.5,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.5
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 12
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ]
+   },
+   {
+    "id": "bowl_under",
+    "type": "cereal_bowl_vitrelle_159",
+    "frame": "tub",
+    "position_mm": [
+     111.49004095864767,
+     77.56918179747632,
+     525.7841867770733
+    ],
+    "quat_wxyz": [
+     0.9567772150039673,
+     -0.013143597170710564,
+     -0.2897392511367798,
+     -0.021350033581256866
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "porridge",
+      "recipe": "porridge oats cooked with water",
+      "preparation": "a tablespoon spread over the inside of the bowl with the back of a spoon",
+      "amount_g": 5,
+      "amount_method": "scale",
+      "amount_sd_g": 0.5,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.5
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 12
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ]
+   },
+   {
+    "id": "bowl_apart",
+    "type": "cereal_bowl_vitrelle_159",
+    "frame": "tub",
+    "position_mm": [
+     101.4771269159649,
+     -101.20670127697272,
+     528.0625105569638
+    ],
+    "quat_wxyz": [
+     0.9598721265792847,
+     0.02924913913011551,
+     -0.27890610694885254,
+     -0.0011874643387272954
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "porridge",
+      "recipe": "porridge oats cooked with water",
+      "preparation": "a tablespoon spread over the inside of the bowl with the back of a spoon",
+      "amount_g": 5,
+      "amount_method": "scale",
+      "amount_sd_g": 0.5,
+      "where": {
+       "regions": [
+        {
+         "region": "interior",
+         "coverage": 0.5
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 12
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "observations": [
+  {
+   "item": "bowl_over",
+   "kind": "area_fraction",
+   "sd": 0.1,
+   "method": "photo_area"
+  },
+  {
+   "item": "bowl_under",
+   "kind": "area_fraction",
+   "sd": 0.1,
+   "method": "photo_area"
+  },
+  {
+   "item": "bowl_apart",
+   "kind": "area_fraction",
+   "sd": 0.1,
+   "method": "photo_area"
+  }
+ ],
+ "sim": {
+  "tier": "fast",
+  "level_seed": 20261101,
+  "sim_seed": 1
+ }
+}
