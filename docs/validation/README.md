@@ -3,8 +3,8 @@
 Written at the close of the build, on 12 October 2026, for anyone
 who wants to know how far to trust a verdict, and for an engineer new to the repository. It
 collects the checks made so far, says plainly what a clean or not-clean verdict can be trusted
-for today, and lists what is not modelled. The open problems it names are written up as work a
-contributor could pick up in `docs/ROADMAP.md`.
+for today, and lists what is not modelled. The open problems it names are tracked as issues that a
+contributor could pick up; `docs/ROADMAP.md` is the map of them.
 
 The reviewers and engineers named below are roles in the build (see `docs/README.md`).
 

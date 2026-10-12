@@ -92,7 +92,7 @@ run so far is the worked example:
 
 | Document | Label | What it is |
 |---|---|---|
-| [ROADMAP.md](ROADMAP.md) | Current | The open problems, each as work a contributor could pick up |
+| [ROADMAP.md](ROADMAP.md) | Current | The map of the open problems, each of which is an issue a contributor could pick up |
 | [validation/README.md](validation/README.md) | Current | What the simulation has been checked against, how it did, what a verdict can be trusted for, what is not modelled. Written on 12 October 2026 and the reference for every claim the README makes |
 
 ### `docs/benchmark/`
