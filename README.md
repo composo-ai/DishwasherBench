@@ -1,6 +1,7 @@
 # DishwasherBench
 
 [![Licence: MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](LICENSE)
+[![checks](https://github.com/composo-ai/DishwasherBench/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/composo-ai/DishwasherBench/actions/workflows/ci.yml)
 
 DishwasherBench is a dishwasher-loading game on a physical simulation of one real machine, built
 to benchmark language models and playable by people in a browser. The game inside is called
