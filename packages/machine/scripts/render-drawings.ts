@@ -13,7 +13,7 @@ import { execFileSync } from 'node:child_process';
 import { readdirSync, readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { chromeFlags, resolveChrome } from '../../render/src/headless/chrome.ts';
+import { resolveChrome } from '../../render/src/headless/chrome.ts';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const dir = resolve(process.argv[2] ?? resolve(here, '../../../docs/reference/machine-drawings'));
@@ -32,7 +32,7 @@ for (const file of readdirSync(dir)
     chrome,
     [
       '--headless=new',
-      ...chromeFlags(),
+      '--disable-gpu',
       '--hide-scrollbars',
       '--force-device-scale-factor=1',
       '--default-background-color=FFFFFFFF',

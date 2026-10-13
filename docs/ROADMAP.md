@@ -105,7 +105,6 @@ Most of these need the machine itself.
 | [#37](https://github.com/composo-ai/DishwasherBench/issues/37) | The hygiene check reads the working files, not what is staged                        | small | good first issue |
 | [#38](https://github.com/composo-ai/DishwasherBench/issues/38) | Relative `--out` and `--data` are taken from the package directory, not the caller's | small | good first issue |
 | [#39](https://github.com/composo-ai/DishwasherBench/issues/39) | `wash-load` shows a stale parameter set as a crash                                   | small | good first issue |
-| [#40](https://github.com/composo-ai/DishwasherBench/issues/40) | One test and one script look for Chrome their own way                                | small | good first issue |
 | [#41](https://github.com/composo-ai/DishwasherBench/issues/41) | The formatter is not enforced                                                        | small | needs a decision |
 | [#54](https://github.com/composo-ai/DishwasherBench/issues/54) | Three forms of personal data pass the hygiene check                                  | small | good first issue |
 | [#57](https://github.com/composo-ai/DishwasherBench/issues/57) | Repository settings still to switch on                                               | small |                  |
