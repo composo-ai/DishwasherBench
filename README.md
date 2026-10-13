@@ -3,7 +3,7 @@
 [![Licence: MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](LICENSE)
 [![checks](https://github.com/composo-ai/DishwasherBench/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/composo-ai/DishwasherBench/actions/workflows/ci.yml)
 
-DishwasherBench is a dishwasher-loading game on a physical simulation of one real machine, built
+DishwasherBench is a dishwasher-loading game on a physical simulation of a real machine, built
 to benchmark language models and playable by people in a browser. The game inside is called
 **Spotless**, and the packages are named `@spotless/*`.
 
@@ -12,19 +12,14 @@ programme is then simulated (jets, droplets, run-off, soil and detergent chemist
 player gets points for every item that comes out clean. On every level after the first, not
 everything fits, so the player has to choose what to load and how.
 
-**This is an early release, version 0.1.0.** The simulation is calibrated on one test wash of
-the real machine. A score shows whether a player packed well and put cups, glasses and pots in
-mouth down. It does not yet show whether plates and cutlery were stacked so that they wash
-clean. The section [What a score can be trusted for](#what-a-score-can-be-trusted-for) says so
-in full.
+- **Physical.** Loading is rigid-body physics on exact shapes. The wash traces water from the
+  nozzle positions measured on the machine and is calibrated on a test wash of it.
+- **Deterministic and verifiable.** The same load always settles the same way, and every
+  episode is a record that anyone can verify by replaying it and by washing its load again.
+- **One game for people and models.** People play in a browser and models play through MCP,
+  with the same actions on the same grid.
 
-What is solid today: loading is deterministic rigid-body physics, every episode is a record
-that anyone can verify by replaying it and by washing its load again, and the same game is
-played by people in a browser and by models through MCP. What is rough is how the wash scores
-plates and cutlery.
-
-Built and maintained by [Composo](https://composo.ai). Many documents under `docs/` are working
-records, kept as they were written; [docs/README.md](docs/README.md) explains how to read them.
+Built and maintained by [Composo](https://composo.ai).
 
 ![The game in a browser: a dinner plate in hand over the lower basket of the modelled machine, with the free seats numbered best first](apps/web/screenshots/16-suggested-spots.png)
 
@@ -34,115 +29,63 @@ pose a program would send._
 
 ## Contents
 
-- [What works today](#what-works-today)
-- [What a score can be trusted for](#what-a-score-can-be-trusted-for)
+- [Features](#features)
 - [Requirements](#requirements)
 - [Quick start](#quick-start)
 - [Play in the browser](#play-in-the-browser)
 - [Run a scripted player](#run-a-scripted-player)
 - [Run a model](#run-a-model)
-- [Results so far](#results-so-far)
+- [Results](#results)
 - [How it works](#how-it-works)
-- [Limitations and roadmap](#limitations-and-roadmap)
+- [Scope and limitations](#scope-and-limitations)
 - [Where things are](#where-things-are)
 - [Contributing](#contributing)
 - [Licence, notices and disclaimer](#licence-notices-and-disclaimer)
 - [How to cite](#how-to-cite)
 
-## What works today
+## Features
 
-- **The machine.** One Bosch SMV4HAX40G as data and geometry, from its owner's photographs and
-  tape readings (`packages/machine`): both baskets with their tine rows, shelves and rests, the
-  spray arms and the Eco 50 programme.
+- **The machine.** A Bosch SMV4HAX40G as data and geometry, from photographs and tape readings
+  of the real machine (`packages/machine`): both baskets with their tine rows, shelves and
+  rests, the spray arms and the Eco 50 programme.
 - **Loading.** A catalogue of items and soils, deterministic rigid-body loading (Jolt), and a
   session layer with the actions and queries of the game (`place`, `remove`, `set_rack`,
   `list_slots`, `check_load` and the rest).
-- **The wash.** A simulation at two tiers. The **official** tier gives the scored result; the
-  **fast** tier is a coarser preview. A cold official wash of the largest level takes 4.9 minutes
-  on the reference machine, a MacBook Pro (Apple M3 Pro, 18 GB), best of three, and 5 to 8.5
-  minutes with another job running beside it, against a budget of 30.
+- **The wash.** A simulation at two tiers: the **official** tier gives the scored result, and
+  the **fast** tier a preview in about a minute. An official wash of the largest level takes
+  about five minutes on a MacBook Pro (Apple M3 Pro).
 - **A course of seven levels**, numbered in order of difficulty
   ([docs/benchmark/levels.md](docs/benchmark/levels.md)), each with saved reference loads of
-  three scripted players (careful, careless, random). Six pass the benchmark's gates on the
-  reference loads; the tutorial does not (its careless load loses too little).
+  three scripted players (careful, careless, random).
 - **Three ways to play.** The page (`apps/web`), an MCP server for agents (`packages/mcp`), and a
   harness that runs scripted players and models and writes verified episode records
   (`packages/bench`).
 - **Checks.** 48 loading phenomena from the literature as executable pairs of washes
   ([docs/research/standards.md](docs/research/standards.md) section 9), and a calibration tool
   that scores the simulation against a record of a real wash, fits parameters and ranks candidate
-  test washes (the stored ranking is of an earlier parameter set and has not been run again).
-
-Two models have played, through an OpenAI-compatible endpoint: six episodes on three levels at
-the official tier ([Results so far](#results-so-far)). No person has played for a baseline, and
-the path for Anthropic's API has not been run against the live API.
-
-## What a score can be trusted for
-
-The full account, with every number and where it comes from, is
-[docs/validation/README.md](docs/validation/README.md). In short, the simulation has been
-checked against four things:
-
-- **One test wash on the real machine.** Four egg-yolk plates on Eco 50. A prediction written
-  before the result got the order of the plates and the form of the residue right, and was ten
-  to thirty times too optimistic on the amount left on the two oven-dried plates. The
-  calibration that followed moved one number: the share of the long soak during which the pump
-  runs, from 0.5 to 0.8 (anywhere from 0.59 to 1). The record that the prediction came first is
-  in the private development history, which is not published, so that order cannot be checked
-  from this repository.
-- **Published class means of a sister machine** (Bosch SMV6ECX51E, eco programme, reference
-  detergent): cutlery within 0.1 of a score point, crockery 0.2 low, glass 0.1 to 0.5 low. This
-  is a fit, not a prediction: the soil and chemistry defaults were set so that these numbers
-  come out.
-- **48 loading phenomena** with evidence in the literature: 17 pass, 21 fail in size or sign,
-  1 is a faulty scenario and 9 need mechanisms that are not built.
-- **Its own book-keeping.** Water is conserved exactly, and the same input gives the same
-  result on one machine. The fast tier agrees with the official tier on 89 % of the verdicts of
-  a standard 13-place load and on 97 % on the levels.
-
-**A score today shows whether a player packed well and put cups, glasses and pots in mouth
-down. It does not yet show whether plates and cutlery were stacked so that they wash clean.**
-
-| A verdict can be trusted for                                                         | A verdict cannot be trusted for                                                                                    |
-| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| A glass, mug or pot left mouth up or on its side: it comes out not clean             | Plates fallen over or leaning on each other: they come out clean, which is most probably wrong                     |
-| A blocked detergent tray, for protein soils (egg, yoghurt, mince, milk)              | A spray arm held still by an item: the plates above it keep their verdicts                                         |
-| A bowl or a spoon that truly lies in another                                         | Cutlery crowded into one cell, and spoons as the loading physics usually nests them: clean                         |
-| Egg yolk and other protein soils, on an item that is far from the threshold of clean | Items near the threshold; tea, coffee and wine; milk dried on glass; fat, which comes clean even with no detergent |
-
-About three quarters of the gap between a careful and a careless reference load is hollow
-pieces put in the wrong way up. The soils in those pieces (smoothie, tomato soup, ketchup,
-guacamole) rest on values from the literature that no test wash has checked.
-
-Not modelled at all: drying, spots and film on glass, items moved by the jets, and soil settling
-on clean pieces. Only Eco 50 is calibrated and scored.
+  test washes.
 
 ## Requirements
 
-DishwasherBench has been run on **one machine**: a MacBook Pro (Apple M3 Pro, 18 GB) under
-macOS 27. Every figure in this repository was measured on that machine. **Linux and Windows are
-untested.** Nothing is known to rule them out, and a report of what happens there is welcome
-([docs/ROADMAP.md](docs/ROADMAP.md)).
-
-- **Node 20.19 or newer** in the 20 line (`.nvmrc` pins 20.19.0). An older Node is refused at
-  install. Node 22 has not been tried.
-- **pnpm 9** (`package.json` names 9.4.0; `corepack enable` picks it up).
+- **macOS.** Developed and tested on a MacBook Pro (Apple M3 Pro, 18 GB) under macOS 27, where
+  every figure in this repository was measured. Linux and Windows are untested
+  ([issue 28](https://github.com/composo-ai/DishwasherBench/issues/28)).
+- **Node 20.19 or newer** in the 20 line (`.nvmrc` pins 20.19.0; an older Node is refused at
+  install), and **pnpm 9** (`package.json` names 9.4.0; `corepack enable` picks it up).
 - **A GPU that Dawn can open.** The wash traces water on the GPU through WebGPU from Node (the
-  `webgpu` package, version 0.6.2, which carries prebuilt Dawn binaries). On the reference
-  machine that is Metal. This version did not load on macOS 14.7 on the same hardware.
+  `webgpu` package, version 0.6.2, which carries prebuilt Dawn binaries). On a Mac that is
+  Metal. Version 0.6.2 loads on macOS 27 and does not load on macOS 14.7.
 - **Google Chrome or Chromium**, for the pictures an agent is sent and for the scripts that
   drive the page. The harness looks for it in the usual install locations; set
   `SPOTLESS_CHROME` to the path of the program to choose another. Playing by hand needs only a
   desktop browser, and scripted players need none (`--no-render`).
-- About 680 MB for the clone (a download of about 290 MB; the files themselves are about
-  385 MB, mostly photographs, screenshots and episode records) and about 420 MB for
-  `node_modules`.
-- 1 to 2 GB of memory for an official wash of a level (2.4 GB was seen on the standard 13-place
-  load), and free ports 8787 (game server) and 8788 (MCP server).
+- **Disk and memory.** About 680 MB for the clone (a download of about 290 MB) and about
+  420 MB for `node_modules`; 1 to 2 GB of memory for an official wash of a level.
+- **Ports** 8787 (game server) and 8788 (MCP server), or others of your choosing.
 
-Results are repeatable bit for bit on one machine. Across machines, operating-system builds
-and versions of the `webgpu` package they may differ in the last bits, which is why every
-result names the stack it was computed on
+Results are repeatable bit for bit on one machine, and every result names the stack it was
+computed on: across machines, operating-system builds and versions of the `webgpu` package,
+results can differ in the last bits
 ([docs/research/spike-gpu-compute-macos27-recheck.md](docs/research/spike-gpu-compute-macos27-recheck.md)).
 
 ## Quick start
@@ -157,7 +100,7 @@ pnpm install --frozen-lockfile        # about 15 seconds the first time
 There is no build step for the packages: they are consumed as TypeScript source and run with
 `tsx`. Only the page is built, by the `play` command below.
 
-The shortest thing that shows a result is to wash a saved load from the command line:
+Wash a saved load from the command line:
 
 ```sh
 pnpm --filter @spotless/wash-runner wash-load tutorial-careful --tier fast       # under a minute
@@ -167,19 +110,16 @@ pnpm --filter @spotless/wash-runner wash-load tutorial-careful --tier official  
 It prints the points and, for each item, the verdict, the score and what is left on it. The
 saved loads are in `packages/loader/loads/` (`<level>-<player>.json`). The first wash of a load
 works out where the water goes and keeps that in `.spotless/exposure-cache`, so a second wash
-of the same load takes seconds (pass `--no-cache` to switch this off).
+of the same load takes seconds to about a minute (pass `--no-cache` to switch this off).
 
-To check that everything runs on your machine:
+Run the checks:
 
 ```sh
 pnpm typecheck      # the root and every package; a few seconds
-pnpm test           # every package; 8 to 17 minutes on the reference machine
+pnpm test           # every package; 8 to 17 minutes, with real washes on the GPU
 ```
 
-How long `pnpm test` takes depends on what else the machine is doing. One test is skipped by
-design. The tests run real washes on the GPU.
-
-**A wash refuses to run when the parameter set is stale.** The set the game washes with
+**A wash is tied to its parameter set.** The set the game washes with
 (`anchored-v7.owner-capsule`, in `packages/calibration/anchors/`) records the state of the
 simulation source and of the machine data it was made for. After a change to either, the wash
 stops and lists what differs. [CONTRIBUTING.md](CONTRIBUTING.md) explains the rule and how to
@@ -192,41 +132,30 @@ pnpm --filter @spotless/web play
 ```
 
 This builds the page and starts the game server. Open http://127.0.0.1:8787 (add `--port <n>`
-for another port). **The page plays music**: mute the tab, or use the Sound button, if you do
-not want it.
+for another port). **The page plays music**; the Sound button turns it off.
 
-If the port is taken the server stops with `serve: port 8787 is in use; give --port <n>`. The
-server answers only the page it serves itself: a request that carries the `Origin` of another
-site gets 403 unless the server was started with `--allow-origin <scheme://host[:port]>` (may
-be repeated), and a request whose `Host` header names another host than the addresses the
-server listens on (`127.0.0.1`, `localhost` and `[::1]` by default) gets 403 as well
-(`--allow-host <name>` adds a name). Requests without an `Origin` header (the harness, the MCP
-server, `curl`) are not affected, and the client under the Vite development server needs no
-flag.
+When you start the wash you choose between two kinds:
 
-When you start the wash you are offered two kinds:
-
-- **Quick preview**: the fast tier. About a minute; coarser, and a few verdicts may differ from
-  the full wash. It is not the scored result.
-- **Full wash**: the official tier. Several minutes; this is the scored result. After a preview,
-  the report offers the full wash on the same load.
+- **Quick preview**: the fast tier, in about a minute.
+- **Full wash**: the official tier, in several minutes. This is the scored result, and the
+  report of a preview offers it on the same load.
 
 The game is scored on Eco 50 with one capsule of detergent (Finish Powerball Ultimate, 12.9 g).
-The levels are listed 1 to 7 with a difficulty figure, which is worked out from what is on the
-counter and is not a measured score.
+The levels are listed 1 to 7 in order of difficulty.
 
-Placing by pointing works for plates in a free row, bowls and cutlery. Two things do not work by
-pointing yet: a plate pointed at the gap next to a plate already placed often perches on its
-neighbour, and cups and glasses cannot be leant on the side rests of the upper basket. For
-both, pick the piece up and press "Suggest spots" (it costs one query), then click a numbered
-mark.
+Plates, bowls and cutlery are placed by pointing. For a tight spot, such as a plate beside one
+already placed or a cup against the side rests of the upper basket, pick the piece up and press
+"Suggest spots" (it costs one query), then click a numbered mark.
+
+The server answers the page it serves and clients on your own machine. `--allow-origin` admits
+a page served from another origin, and `--allow-host` a request under another host name
+([SECURITY.md](SECURITY.md)).
 
 ![The report after a quick preview of a careless load, with a verdict and what is left for each item](apps/web/screenshots/wash/05-bad-report.png)
 
-_After a quick preview of a careless load of the first level: a bowl left mouth up holds 432 ml
-of water and is not clean, and the report says that a fork held the lower spray arm still. The
-banner says what a preview is: not the scored result. All of this is the simulation's output
-for a deliberately bad load, not a test of the real machine or detergent._
+_After a quick preview of a deliberately careless load of the first level: a bowl left mouth up
+holds 432 ml of water and is not clean, and the report says that a fork held the lower spray
+arm still._
 
 ![One item looked at closely after the wash: a mug with the residue painted where it was left](apps/web/screenshots/wash/12-bad-mug_01-three_quarter.png)
 
@@ -248,8 +177,7 @@ pnpm --filter @spotless/bench bench verify \
 
 - Give `--out` as an absolute path; a relative one resolves inside `packages/bench`.
 - The scripted players are `empty`, `random`, `careless` and `careful`. Add `--tier fast` for a
-  preview in about a minute; a fast wash is labelled as a preview in the record and in the
-  results table, and is never a score.
+  preview in about a minute; the record and the results table label it as a preview.
 - Each run writes under `--out`: `record.json`, a results table (`results.md`, `results.json`),
   the data of the game server it started (`server-data/`) and, without `--no-render`, the
   pictures the tools returned.
@@ -277,17 +205,15 @@ pnpm --filter @spotless/bench bench run --levels tutorial --policies openai:gpt-
 ```
 
 - The policy names the model or, on Azure, the deployment: `openai:<model or deployment>`.
-- With no address set, no request is made: the episode ends at once with no result, and its
-  record says `no address of the API (set SPOTLESS_OPENAI_BASE_URL, or give --base-url)`. The
-  command then exits with status 1, and pnpm reports the failed script.
-- `--max-input-tokens` ends an episode before its requests add up to more. As measured with two
-  models: the first level takes 0.4 to 0.65 million input tokens, a level of 37 pieces 2.5 to
-  2.8 million, and the largest level (62 pieces) 3.0 to 3.2 million, with 95 % or more of it
-  read from the provider's cache. Use limits of 2,000,000, 12,000,000 and 20,000,000.
-- The harness records tokens. It records a cost only when prices are given in `.env`.
-- Without `--tier fast` the wash is at the official tier, which is the score.
+- `--max-input-tokens` ends an episode before its requests add up to more. The first level
+  takes 0.4 to 0.65 million input tokens, a level of 37 pieces 2.5 to 2.8 million, and the
+  largest level (62 pieces) 3.0 to 3.2 million, with 95 % or more of it read from the
+  provider's cache. Use limits of 2,000,000, 12,000,000 and 20,000,000.
+- The harness records tokens, and a cost when prices are given in `.env`.
+- The wash is at the official tier, which is the score; `--tier fast` gives a preview.
 - Each run writes the record, the transcript, the pictures and a results table under `--out`,
   and verifies the episode by replaying its action log.
+- With no address set, no request is made and the command exits with status 1.
 
 A model through Anthropic's API, with the key in `ANTHROPIC_API_KEY` (put the model's id in
 place of `<model id>`):
@@ -297,16 +223,12 @@ pnpm --filter @spotless/bench bench run --levels tutorial --policies anthropic:<
   --max-input-tokens 2000000 --out "$PWD/.spotless/bench/anthropic-tutorial"
 ```
 
-**This path has not been run against the live API.** It has unit tests against a local stand-in
-and nothing else behind it. A report of a first run is welcome. With no key the episode fails
-at once (`Could not resolve authentication method`). The SDK also accepts a stored login
-profile if you have one, so the absence of a key in `.env` does not guarantee that nothing is
-spent.
+The SDK also accepts a stored login profile, so a run can spend without a key in `.env`.
 
 ### Connect an MCP client
 
-Any agent that speaks MCP can play. An MCP server is bound to one episode, so the game server
-must be running in benchmark mode and the episode must exist first.
+Any agent that speaks MCP can play. An MCP server is bound to one episode, so start the game
+server in benchmark mode and create the episode first.
 
 ```sh
 # 1. The game server (the token: 8 characters or more, of your choosing)
@@ -324,17 +246,11 @@ pnpm --filter @spotless/mcp exec tsx src/cli.ts --server http://127.0.0.1:8787 \
 
 `--data` keeps the server's files, the episode records among them (`.spotless/episodes/`), in
 the directory the page uses; without it `serve` writes to `packages/server/.spotless`. The
-address that `link` prints shows the episode in the page, and works only once the page has been
-built (`pnpm --filter @spotless/web build`, which `play` also does); the MCP calls work either
-way. If the game server is on another port (`serve --port <n>`), give `link` its address with
-`--server http://127.0.0.1:<n>`. For a desktop client that starts the MCP server itself over
-stdio, the configuration is in [docs/benchmark/README.md](docs/benchmark/README.md) section 3.
-
-Over HTTP the MCP server is for MCP clients on this machine: it answers 403 to any request that
-carries an `Origin` header and to a request whose `Host` header does not name an address it
-listens on (`127.0.0.1`, `localhost` or `[::1]` by default). For a client that reaches it under
-another name, for example from a container, start it with `--allow-host <name>`; the game
-server takes the same flag.
+address that `link` prints shows the episode in the page once the page has been built
+(`pnpm --filter @spotless/web build`, which `play` also does). If the game server is on another
+port (`serve --port <n>`), give `link` its address with `--server http://127.0.0.1:<n>`. For a
+desktop client that starts the MCP server itself over stdio, the configuration is in
+[docs/benchmark/README.md](docs/benchmark/README.md) section 3.
 
 The agent gets thirteen tools (`place`, `remove`, `reset`, `set_rack`, `start_cycle`,
 `get_level`, `get_item`, `get_state`, `render`, `preview`, `list_slots`, `check_load`,
@@ -344,17 +260,15 @@ The agent gets thirteen tools (`place`, `remove`, `reset`, `set_rack`, `start_cy
 pnpm --filter @spotless/mcp exec tsx scripts/call.ts --url http://127.0.0.1:8788/mcp get_state '{}'
 ```
 
-Both servers listen on 127.0.0.1 and are meant for use on your own machine
-([SECURITY.md](SECURITY.md)).
+Both servers listen on 127.0.0.1 and serve clients on your own machine. For a client that
+reaches them under another name, for example from a container, start them with
+`--allow-host <name>` ([SECURITY.md](SECURITY.md)).
 
-## Results so far
+## Results
 
 Two models have played three levels of the course at the official tier, through one
-OpenAI-compatible endpoint. **One episode per cell is an anecdote, not a benchmark result**, and
-nothing here ranks the two models.
-
-Points, with the share of the level's points. The middle columns are the scripted reference
-players.
+OpenAI-compatible endpoint: six episodes, and each figure is a single episode. Points, with the
+share of the level's points. The middle columns are the scripted reference players.
 
 | #   | Level                | Points on offer | Random      | Careless     | Careful      | `gpt-6.1-sol`                               | `gpt-6-astra` |
 | --- | -------------------- | --------------- | ----------- | ------------ | ------------ | ------------------------------------------- | ------------- |
@@ -363,31 +277,19 @@ players.
 | 7   | dinner-party (62)    | 367             | 88 (24.0 %) | 100 (27.2 %) | 250 (68.1 %) | 260 (70.8 %)                                | 274 (74.7 %)  |
 
 `gpt-6.1-sol` and `gpt-6-astra` are the names of the two deployments on the Azure endpoint
-used. The records hold that name and the reasoning effort the API reported (medium for both;
-the harness sent none); no model version or snapshot date was recorded.
+used; both ran at medium reasoning effort. The three scripted columns are the saved reference
+loads ([docs/benchmark/course-table.md](docs/benchmark/course-table.md)).
 
-The three scripted columns are the saved reference loads on the wash code as it is now
-([docs/benchmark/course-table.md](docs/benchmark/course-table.md)). The reference records
-stored beside the model episodes were washed on the earlier code and read, for random and
-careless, 43 and 117 on the breakfast and, for random, 99 on the dinner party.
-
-What six episodes are worth:
-
-- **The careful reference load is not a ceiling.** Both models beat it on both full levels, by
-  placing pans, a platter and boards that the scripted player never tries. Nothing here is
-  normalised.
+- **Both models beat the careful reference load** on both full levels, by placing pans, a
+  platter and boards that the scripted player never tries.
 - **Neither model made the mistake the levels are built around.** No hollow piece was stood
   mouth up or laid on its side in six episodes, and what the models loaded came out 84 to 100 %
-  clean. So the wash decided almost nothing between them: their scores differ by what they
-  fitted in.
-- **Not shown:** people, any Anthropic model, levels 2, 3, 5 and 6, money, or the spread of
-  a model's own play (the one repeat reached 188 after 190 with a different load).
+  clean. Their scores differ by what they fitted in.
 
 The records, transcripts and pictures of the six episodes, and a fuller account, are in
-[docs/benchmark/first-runs/course/](docs/benchmark/first-runs/course/README.md). Each of the
-six model episodes verifies by replay and by a second wash with the same verdicts and points.
-The wash code has changed once since they were played, so the second wash reports a different
-result hash and says why.
+[docs/benchmark/first-runs/course/](docs/benchmark/first-runs/course/README.md). Each episode
+verifies by replay and by a second wash with the same verdicts and points.
+[Scope and limitations](#scope-and-limitations) says what decides a score.
 
 ## How it works
 
@@ -408,7 +310,7 @@ programme. Where the water goes is cached apart from the soil and the chemistry,
 other soil parameters replays in seconds to about a minute. The official tier works on blocks
 of 2 mm, the fast tier on 4 mm. See [docs/design/scope.md](docs/design/scope.md) for what is
 built and what is left out, and [docs/design/sim-core.md](docs/design/sim-core.md) for the
-physics as designed.
+design of the physics.
 
 **The scoring.** After the wash an inspector looks at every item. An item is clean when it
 carries at most 4 specks and 4 mm² of visible soil, counting what dirty water left where it
@@ -423,8 +325,9 @@ is left where, which do not change the points. See
 default, a range and a source. A _wash record_ describes a real test wash: the machine and the
 programme, each item with its soil and where it stood, and what was seen afterwards. The
 calibration tool runs the simulation on a record, scores it against what was seen, fits chosen
-parameters and says which parameters the data can and cannot identify. One such wash exists so
-far. See [docs/calibration/wash-record.md](docs/calibration/wash-record.md),
+parameters and says which parameters the data can and cannot identify. The first wash record is
+four egg-yolk plates on Eco 50. See
+[docs/calibration/wash-record.md](docs/calibration/wash-record.md),
 [docs/calibration/fitting.md](docs/calibration/fitting.md) and, for the set the game washes
 with, [docs/calibration/anchoring-v7.md](docs/calibration/anchoring-v7.md).
 
@@ -445,11 +348,11 @@ INIT_CWD=. pnpm exec tsx packages/sim-verify/src/phenomena/cli.ts P36 --tier fas
 
 With no ids it runs all 48. Without `--params` it washes with the registry defaults and the
 reference detergent; the third form washes as the game does, with the calibrated set and the
-capsule. By default the reports go to `packages/sim-verify/phenomena/reports/`, which holds the
-stored reports of the project; the commands above send them to the git-ignored
-`.spotless/phenomena` so that a trial does not overwrite a stored report.
+capsule. The commands above send their reports to the git-ignored `.spotless/phenomena`. The
+default is `packages/sim-verify/phenomena/reports/`, which holds the stored reports of the
+project.
 
-The calibration tool, on the one test wash:
+The calibration tool, on the first test wash:
 
 ```sh
 pnpm --filter @spotless/calibration spotless-fit validate \
@@ -460,71 +363,83 @@ pnpm --filter @spotless/calibration spotless-fit predict \
 ```
 
 `validate` checks a wash record; `predict` says what the simulation gives for every observation
-in it (five to seven minutes the first time, less once the water of the load is cached). Give
-`--params`: without it `predict` uses the registry defaults and says so; they are not the
-game's set and read all four plates as dirty. With the set, `predict` warns that there is no
-`calibration.json` beside it; that is expected.
+in it (five to seven minutes the first time, less once the water of the load is cached). With
+`--params`, `predict` washes as the game does; without it, it uses the registry defaults. Its
+warning that there is no `calibration.json` beside the set is expected.
 
-The saved loads against the loading physics as it is now:
+The saved loads against the loading physics:
 
 ```sh
 pnpm --filter @spotless/loader check-loads tutorial-careful
 pnpm --filter @spotless/loader check-loads --jobs 3      # all 25 of them: about 50 minutes
 ```
 
-## Limitations and roadmap
+## Scope and limitations
 
-The open problems, each written as something a contributor could pick up, are tracked as
-[issues](https://github.com/composo-ai/DishwasherBench/issues);
-[docs/ROADMAP.md](docs/ROADMAP.md) is the map of them. The largest:
+DishwasherBench models one machine and scores one programme, Eco 50, with one detergent. The
+wash is calibrated on a test wash of that machine (four egg-yolk plates) and on the published
+class means of a sister machine, the Bosch SMV6ECX51E.
+[docs/validation/README.md](docs/validation/README.md) has the full account, with every number
+and where it comes from.
 
-- **Stacking makes no difference for plates and cutlery.** Plates fallen over, crowded cutlery
-  and a stalled arm cost little or nothing.
-- **Faces lying within a millimetre or two of another body come out too clean.** A mechanism
-  for such gaps was built and is not in this repository, because it broke the cutlery control
-  and its deciding parameter has no measurement behind it.
-- **Fat comes clean with no detergent**, and starch always comes clean.
-- **One machine, one programme, one test wash.** The soils the levels rest on have never been
-  tested in a real wash.
-- **No human baseline, no repeated episodes, and no run through Anthropic's API.**
-- **One platform.** Linux and Windows are untested.
+Three things decide most of a score:
+
+- **What is loaded.** An item left on the counter earns nothing.
+- **Which way up the hollow pieces go.** A glass, mug or pot left mouth up comes out not clean.
+  About three quarters of the gap between a careful and a careless reference load is hollow
+  pieces put in the wrong way up.
+- **Detergent and nesting.** A blocked detergent tray leaves protein soils (egg, yoghurt,
+  mince, milk) on the load, and a bowl or spoon that lies fully in another comes out not clean.
+
+The wash does not respond to how plates and cutlery are stacked: plates that lean on each other
+and cutlery crowded into one cell come out clean, where a real machine would be expected to
+leave soil. A score therefore does not show how well plates and cutlery were stacked
+([issue 1](https://github.com/composo-ai/DishwasherBench/issues/1)). Of the 48 loading
+phenomena in the suite, 17 pass. Drying, spots and film on glass, items moved by the jets and
+soil settling on clean pieces are outside the model
+([issue 7](https://github.com/composo-ai/DishwasherBench/issues/7)). The adapter for
+Anthropic's API is tested against a local stand-in only
+([issue 13](https://github.com/composo-ai/DishwasherBench/issues/13)).
+
+Open work is tracked as [issues](https://github.com/composo-ai/DishwasherBench/issues), each
+written as something a contributor could pick up, and [docs/ROADMAP.md](docs/ROADMAP.md) is the
+map of them.
 
 ## Where things are
 
-| Path                                                   | What                                                                                                                |
-| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
-| [docs/README.md](docs/README.md)                       | The index of the documents, with a reading order and a label for each: current, record of the build, or superseded  |
-| [docs/design/scope.md](docs/design/scope.md)           | The aim of the project, what was built first, what is left out, the status                                          |
-| [docs/validation/README.md](docs/validation/README.md) | What the simulation was checked against and what a verdict can be trusted for                                       |
-| [docs/benchmark/](docs/benchmark/README.md)            | Running the benchmark, the course of levels, the first runs with models                                             |
-| [docs/calibration/](docs/calibration/protocol.md)      | Test washes that would calibrate the simulation, the wash-record format, the fitting tool, the one test wash so far |
-| `docs/research/`                                       | Sourced dossiers: the machine, jets, films, soils, chemistry, standards, the benchmark's design                     |
-| [docs/reference/](docs/reference/REDACTIONS.md)        | Photographs and measurements of the machine, the machine drawings, the photographs of the test wash                 |
-| `packages/machine`, `catalogue`, `geometry`, `physics` | The machine, the items and soils, shapes, loading physics                                                           |
-| `packages/session`, `levels`, `loader`                 | The game's actions and queries, the levels, the scripted players and their saved loads                              |
-| `packages/sim-*`, `inspector`                          | The wash: scene, hydraulics, jets, spray, film, liquor, soil, timeline, the inspection of the result                |
-| `packages/wash-runner`                                 | The wash as the game runs it: default parameters, reports                                                           |
-| `packages/calibration`                                 | Wash records, the fitting tool, the parameter sets (`anchors/`)                                                     |
-| `packages/sim-verify`                                  | The phenomena suite and demonstration washes                                                                        |
-| `packages/server`, `mcp`, `bench`, `render`            | Game server, agent interface, benchmark harness, pictures                                                           |
-| `apps/web`                                             | The page                                                                                                            |
-| `scripts/`                                             | The hygiene check that guards what is published, and its tests                                                      |
-| `spikes/`                                              | The exploratory code of two early trials (GPU compute, rigid-body engines); not part of the game                    |
+| Path                                                   | What                                                                                                                      |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| [docs/README.md](docs/README.md)                       | The index of the documents, with a reading order and a label for each: current, record of the build, or superseded        |
+| [docs/design/scope.md](docs/design/scope.md)           | The aim of the project, what was built first, what is left out, the status                                                |
+| [docs/validation/README.md](docs/validation/README.md) | What the simulation was checked against and what a verdict can be trusted for                                             |
+| [docs/benchmark/](docs/benchmark/README.md)            | Running the benchmark, the course of levels, the first runs with models                                                   |
+| [docs/calibration/](docs/calibration/protocol.md)      | The protocol of test washes for calibrating the simulation, the wash-record format, the fitting tool, the first test wash |
+| `docs/research/`                                       | Sourced dossiers: the machine, jets, films, soils, chemistry, standards, the benchmark's design                           |
+| [docs/reference/](docs/reference/REDACTIONS.md)        | Photographs and measurements of the machine, the machine drawings, the photographs of the test wash                       |
+| `packages/machine`, `catalogue`, `geometry`, `physics` | The machine, the items and soils, shapes, loading physics                                                                 |
+| `packages/session`, `levels`, `loader`                 | The game's actions and queries, the levels, the scripted players and their saved loads                                    |
+| `packages/sim-*`, `inspector`                          | The wash: scene, hydraulics, jets, spray, film, liquor, soil, timeline, the inspection of the result                      |
+| `packages/wash-runner`                                 | The wash as the game runs it: default parameters, reports                                                                 |
+| `packages/calibration`                                 | Wash records, the fitting tool, the parameter sets (`anchors/`)                                                           |
+| `packages/sim-verify`                                  | The phenomena suite and demonstration washes                                                                              |
+| `packages/server`, `mcp`, `bench`, `render`            | Game server, agent interface, benchmark harness, pictures                                                                 |
+| `apps/web`                                             | The page                                                                                                                  |
+| `scripts/`                                             | The hygiene check that guards what is published, and its tests                                                            |
+| `spikes/`                                              | The exploratory code of two early trials (GPU compute, rigid-body engines)                                                |
 
 ## Contributing
 
 Bug reports, results that look physically wrong, test washes of a real machine, new levels,
 model results with their episode records and reports from other platforms are all welcome.
 [CONTRIBUTING.md](CONTRIBUTING.md) says how to set up, which checks to run before a pull
-request, and the one rule that surprises people: the simulation's source is fingerprinted, and a
-change to it has consequences. Please read the [code of conduct](CODE_OF_CONDUCT.md).
+request, and the rule for changing the simulation's source, which is fingerprinted. Please read
+the [code of conduct](CODE_OF_CONDUCT.md).
 
 Questions go to the question form among the
 [issue forms](https://github.com/composo-ai/DishwasherBench/issues/new/choose). Anything
 private goes to support@composo.ai; to report a security problem, or something in a photograph
-or a record that should not be public, see [SECURITY.md](SECURITY.md). The project is
-maintained at a small scale and there is no support commitment. What each version contains is
-in [CHANGELOG.md](CHANGELOG.md).
+or a record that should not be public, see [SECURITY.md](SECURITY.md). What each version
+contains is in [CHANGELOG.md](CHANGELOG.md).
 
 ## Licence, notices and disclaimer
 
