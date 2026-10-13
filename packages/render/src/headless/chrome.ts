@@ -12,7 +12,7 @@
 
 import { existsSync } from 'node:fs';
 import { homedir } from 'node:os';
-import { delimiter, join, win32 } from 'node:path';
+import { posix, win32 } from 'node:path';
 
 /** The environment variable that names the browser to run. */
 export const CHROME_ENV = 'SPOTLESS_CHROME';
@@ -50,8 +50,8 @@ export function chromeCandidates(lookup: ChromeLookup = {}): string[] {
   const home = lookup.home ?? homedir();
   if (platform === 'darwin') {
     const inApp = (app: string, program: string): string[] =>
-      ['/Applications', join(home, 'Applications')].map(
-        (dir) => `${dir}/${app}.app/Contents/MacOS/${program}`,
+      ['/Applications', posix.join(home, 'Applications')].map((dir) =>
+        posix.join(dir, `${app}.app`, 'Contents', 'MacOS', program),
       );
     return [...inApp('Google Chrome', 'Google Chrome'), ...inApp('Chromium', 'Chromium')];
   }
@@ -67,7 +67,7 @@ export function chromeCandidates(lookup: ChromeLookup = {}): string[] {
   // Linux and the other Unix systems: the names a package installs, on the PATH first.
   const names = ['google-chrome-stable', 'google-chrome', 'chromium', 'chromium-browser'];
   const dirs = [
-    ...(env['PATH'] ?? '').split(delimiter).filter((dir) => dir !== ''),
+    ...(env['PATH'] ?? '').split(':').filter((dir) => dir !== ''),
     '/usr/bin',
     '/usr/local/bin',
     '/snap/bin',
