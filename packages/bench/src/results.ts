@@ -10,8 +10,7 @@
  * recommends): binary on the verdict, as the headline. Beside it every line says how
  * many loaded items were at the edge of clean or carried a provisional verdict, what they are
  * worth, and what the line would score with the edge items read either way; a fast wash is
- * marked a preview and a wash on a secondary programme uncalibrated. The notes under the table
- * say so in words.
+ * marked a preview. The notes under the table say so in words.
  */
 
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
@@ -36,11 +35,6 @@ export interface ResultRow {
   readonly preview: boolean;
   /** The programme the loads were washed on (`none` for episodes without a load). */
   readonly programme: string;
-  /**
-   * `scored` when that is the programme the level is scored on, `uncalibrated` when it is one
-   * of the level's secondary programmes (every verdict of such a line is provisional).
-   */
-  readonly programme_status: 'scored' | 'uncalibrated';
   /**
    * The code that ran the washes: the runner's version, which ends in a fingerprint of the
    * simulation's source (`none` without a report). Episodes washed by different code are
@@ -181,14 +175,6 @@ function programmeOf(record: EpisodeRecord): string {
   return record.score?.programme_id ?? record.load?.programme_id ?? 'none';
 }
 
-/** Whether that is the programme the level is scored on (taken to be so when the record does not say). */
-function programmeStatusOf(record: EpisodeRecord): 'scored' | 'uncalibrated' {
-  if (record.score?.programme_status !== undefined) return record.score.programme_status;
-  const scored = record.level.programme_id;
-  const washed = programmeOf(record);
-  return scored !== undefined && washed !== 'none' && washed !== scored ? 'uncalibrated' : 'scored';
-}
-
 /** True when a limit of the harness, not the player, ended the loading. */
 function limitEnded(record: EpisodeRecord): boolean {
   return /^(max_tokens|turn_limit|action_budget|token_budget)/.test(record.agent?.stopped ?? '');
@@ -263,7 +249,6 @@ export function resultsTable(records: readonly EpisodeRecord[]): ResultsTable {
       fidelity: first.versions.fidelity ?? 'none',
       preview: first.versions.fidelity === 'fast',
       programme: programmeOf(first),
-      programme_status: programmeStatusOf(first),
       simulation: simulationOf(first),
       setup: setupOf(first),
       episodes: group.length,
@@ -319,7 +304,7 @@ export function resultsTable(records: readonly EpisodeRecord[]): ResultsTable {
     rows,
     notes: [
       'Counting. Points are binary on the verdict of the standard inspector: an item that reads clean scores its points, any other loaded item scores nothing, whatever is flagged beside it. "At the edge of clean" are loaded items whose residue is seen by the strictest eye the inspection standard allows and not by the most lenient; they count by the verdict given, and "Strict to lenient" is what the line would score if every one of them were read not clean, and if every one were read clean. "Provisional" are loaded items whose verdict the parameters of the wash do not vouch for on the programme; they count by the verdict given too. Each is given as the number of items and the points they are worth.',
-      'A line marked "preview" was washed at the fast tier, whose verdicts differ from those of the official tier on some items of a full load: it is not a benchmark result. A line whose programme is marked "uncalibrated" was washed on a programme the level is not scored on and the wash simulation is not calibrated for: every verdict of it is provisional.',
+      'A line marked "preview" was washed at the fast tier, whose verdicts differ from those of the official tier on some items of a full load: it is not a benchmark result.',
       'No reference scores exist yet, so the normalised score N of benchmark.md section 5.1 is not computed; "Value loaded" is the points put in the machine over the points available (V with the points available in place of the reference score) and "Yield" the share of those that came out clean (Y).',
       'A line holds episodes of one level digest, benchmark version, tier, programme and wash code only, and of one way of running them ("Run with": the harness version, the MCP server version with the first characters of the digest of its tool list, and for a model the prompt version and the context policy): episodes that differ in any of these are on lines of their own. Its means leave out episodes that failed verification and repeats of a scripted policy with the same seed; both are counted under Left out.',
       'Verified: "log" means the action log reproduced every scene hash; "load" that the recorded load, report and score belong to the replayed scene; "score" that the replayed load was washed again and gave the recorded outcome. Only "score" covers the score itself; a run makes the first two, and the second wash is made afterwards with bench verify --rewash, whose answer kept beside a record (verify-rewash.json) is what the line then shows.',
@@ -373,7 +358,7 @@ export function resultsMarkdown(table: ResultsTable): string {
           ? String(row.episodes)
           : `${row.episodes} (${row.scored} scored)`,
         row.preview ? `${row.fidelity} (preview)` : row.fidelity,
-        row.programme_status === 'uncalibrated' ? `${row.programme} (uncalibrated)` : row.programme,
+        row.programme,
         shortSimulation(row.simulation),
         scored ? `${number(row.points, several ? 1 : 0)} of ${row.points_available}` : 'not scored',
         scored ? `${number((row.share ?? 0) * 100, 1)}%` : '-',

@@ -50,8 +50,9 @@
  * need not have carried soil of its own). Its area joins A and its mass the residue of its
  * region; it is a film or a sediment, never a speck.
  *
- * Simplifications against the dossier: redeposited particles are not counted (the simulation
- * does not produce them yet); deep hollow ware is scored as a whole, not surface by surface.
+ * Simplifications against the dossier: redeposited particles are not counted (soil settling
+ * from the wash water onto clean items is out of scope, docs/design/scope.md); deep hollow ware
+ * is scored as a whole, not surface by surface.
  *
  * Deterministic: elements are visited in index order and regions are numbered by their lowest
  * element.

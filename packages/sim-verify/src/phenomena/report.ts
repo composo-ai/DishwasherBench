@@ -129,7 +129,6 @@ export function reportMarkdown(report: SuiteReport): string {
       `(hydro \`${report.hydroHash.slice(0, 19)}\`, soil \`${report.soilHash.slice(0, 19)}\`` +
       `${Object.keys(report.paramOverrides).length > 0 ? `, ${Object.keys(report.paramOverrides).length} overrides` : ''})` +
       `${(report.paramSetsStale ?? []).length > 0 ? ` **STALE, accepted knowingly: ${(report.paramSetsStale ?? []).join(', ')}**` : ''}. ` +
-      `${report.programme === undefined ? '' : `Programme of every wash whose case names none: \`${report.programme}\` (not the scored programme, Eco 50). `}` +
       `Detergent: ${report.detergent === undefined ? "the machine's own dose of the reference detergent" : `${report.detergent.name}, ${report.detergent.dose_g} g`}. ` +
       `${report.sourceFingerprint === undefined ? '' : `Source \`${report.sourceFingerprint.slice(0, 16)}\`. `}` +
       `Exposure traced on: ${report.exposureBackend}. ${report.scenarios.length} phenomena, ${report.washes} washes (${report.washesCached} with cached exposure), ${report.seconds} s.`,

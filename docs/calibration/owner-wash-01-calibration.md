@@ -368,8 +368,6 @@ level seeds 1 and 2 (`anchors/reports/tables.v6.json`).
 | Careful, fast tier (1) | 3.94 | 4.95 / 3.0 | 4.59 | 3.10 | 2.08 | 4.20 | 96 | 68 | 53 to 55 |
 | Careless, fast tier (1) | 1.15 | 1.86 / 0.00 | 3.82 | 1.23 | 0.00 | 2.64 | 60 | 32 | |
 | Careful, the stable-protease layer (1) | 3.99 | 5.00 / 3.0 | 4.61 | 3.20 | 2.23 | 4.24 | 95 | 67 | |
-| Auto 45-65, careful (secondary) | 2.64 | 2.81 / 3.0 | 3.94 | 1.75 | 0.00 | 3.27 | 75 | 47 | 45 |
-| Auto 45-65, careless | 0.15 | 0.24 / 0.00 | 3.00 | 0.00 | 0.00 | 1.63 | 40 | 12 | 12 |
 
 By soil, careful / careless / careless with the tablet freed (items clean): egg yolk 11 to 13
 of 20 / 0 / 14 or 15; milk 3 of 13 / 0 / 1 or 2; tea 6 of 10 / 0 / 5; margarine 13 or 14 of
@@ -400,7 +398,9 @@ against careless; fast tier in brackets), and the pairs of the phenomena suite:
 | Plate over another | `melamine_plate_02` | 5 | 5, and holds water (fast the same) | the same |
 
 The pairs of the phenomena suite with the capsule on Eco 50
-(`anchors/reports/owner-wash-01/phenomena/`; the suite's own loads and soils):
+(the official pairs are in `anchors/reports/owner-wash-01/phenomena/`; the fast report of the
+whole suite is in the repository's history, since two of its phenomena compared programmes and
+were removed; the suite's own loads and soils):
 
 | Pair | Official, calibrated | Fast, calibrated | Official, last night's default | Reading |
 |---|---|---|---|---|
@@ -413,8 +413,8 @@ The pairs of the phenomena suite with the capsule on Eco 50
 | P03 plates two to a slot (fast) | | 5 to 0 on halving the pitch | 0 against 0 | now too large (expected -0.5 to -1.5) |
 
 The whole suite at the fast tier (48 phenomena, 82 washes): **17 pass, 14 too small, 6 too
-large, 1 wrong sign, 9 not covered, 1 error**; under last night's default 15, 17, 4, 2, 9, 1.
-Against it: P06, P29 and P44 now pass; P10 goes from the wrong sign to too small; P03 and P27
+large, 1 wrong sign, 9 out of scope, 1 error**; under last night's default 15, 17, 4, 2, 9, 1.
+Against it: P06, P29 and P44 now pass; P10 goes from the wrong sign to too small; P03
 from too small to too large; P14 from pass to too small. With the default at a duty of 0.75
 last night's engineer had 16, 15, 6, 1, 9, 1; the calibrated set differs from that run in P29
 alone.
@@ -436,16 +436,16 @@ starch mix, 88 % of the minced meat and 63 % of the tea: partial, as it must be.
 ### 8.4 Fast against official
 
 The careful standard load with the capsule, level seeds 1 and 2, simulation seeds 1 to 4,
-eight washes per tier and programme (`anchors/reports/variance/v6.capsule.*.jsonl`,
+eight washes per tier (`anchors/reports/variance/v6.capsule.eco-*.jsonl`,
 `anchors/tiers.anchored-v6.owner-capsule.json`, which the report of every fast wash quotes):
 
-| | Eco 50, calibrated | Eco 50, last night's default | Auto 45-65, calibrated |
-|---|---|---|---|
-| Verdicts of soiled items that agree between the tiers | 662 of 720: 92 % | 680 of 720: 94 % | 694 of 720: 96 % |
-| Crockery / cutlery / glass / melamine | 100 % / 85 % / 91 % / 100 % | 92 % / 93 % / 100 % / 100 % | 100 % / 93 % / 100 % / 88 % |
-| Soiled items clean of 90, official / fast | 66 to 69 / 67 to 70 | 56 to 60 / 53 to 55 | |
-| Verdicts that differ between two simulation seeds, official | 0.2 (0 or 1; one fork) | 0.6 | |
-| Verdicts that differ between two level seeds, official | 2.2 | 3.2 | |
+| | Eco 50, calibrated | Eco 50, last night's default |
+|---|---|---|
+| Verdicts of soiled items that agree between the tiers | 662 of 720: 92 % | 680 of 720: 94 % |
+| Crockery / cutlery / glass / melamine | 100 % / 85 % / 91 % / 100 % | 92 % / 93 % / 100 % / 100 % |
+| Soiled items clean of 90, official / fast | 66 to 69 / 67 to 70 | 56 to 60 / 53 to 55 |
+| Verdicts that differ between two simulation seeds, official | 0.2 (0 or 1; one fork) | 0.6 |
+| Verdicts that differ between two level seeds, official | 2.2 | 3.2 |
 
 The fast tier now agrees on every plate and bowl, and disagrees more on cutlery and glasses:
 egg forks and milk glasses were all dirty at both tiers under last night's default and now sit
@@ -485,39 +485,33 @@ ranges at the amount that was asked for.
 
 ## 11. The owner's next washes
 
-Six candidate washes that need only supermarket soils and what he has shown he will do
+Five candidate washes that need only supermarket soils and what he has shown he will do
 (pieces in chosen places, counter or oven, a photograph of every piece before and after), as
 planned records (`packages/calibration/records/owner/candidates/`, written by
 `scripts/make-owner-candidates.ts`; the test pieces alone, his capsule, fast tier). Ranked by
 the tool (`spotless-fit rank`) on the calibrated model with wash 01 counted as known, for
 eight parameters (the duty, the oven penalty, the cost of turning, the spread of a spread
 layer, the bleach rate, the milk rate, the capsule's protease level and its heat stability),
-the gain averaged over the calibrated set and four sets drawn from the priors
-(`anchors/reports/owner-wash-01/rank.txt`):
+the gain averaged over the calibrated set and four sets drawn from the priors (the command is in
+section 14):
 
 | Rank | Wash | Gain, bits (least to most over the sets) | Place over the sets; leads in | Run in this order, adds | What it narrows most (deviation after over before) |
 |---|---|---|---|---|---|
 | 1 | Tea in four mugs, upper basket, Eco 50 | 3.07 (0.0 to 8.0), unstable | 1 to 6; 40 % | first, 3.07 | bleach rate 0.62, duty 0.70, protease 0.74 |
-| 2 | The four yolk plates again, **weighed**, on Auto 45-65 | 3.07 (0.0 to 5.9) | 1 to 3; 20 % | second, 3.05 | protease 0.59, duty 0.67, oven penalty 0.81, protease half-life 0.91 |
-| 3 | Two porridge bowls nested and one free, upper basket, Eco 50 | 2.41 (0.1 to 4.3), unstable | 1 to 5; 20 % | third, 1.87 | protease 0.57, duty 0.60, cost of old water 0.67 |
-| 4 | The weighed yolk plates on Eco 50 with the lower arm held | 1.95 (0.0 to 4.9) | 3 to 5; 0 % | fifth, 1.33 | cost of old water 0.73, protease 0.73 |
-| 5 | Milk heated dry in four glasses, Eco 50 | 1.67 (0.0 to 6.6), unstable | 1 to 6; 20 % | fourth, 1.51 | protease 0.69, duty 0.84, milk rate 0.86 |
-| 6 | The four yolk plates again, weighed, on Eco 50 | 1.59 (0.0 to 3.8) | 3 or 4; 0 % | last, 0.52 | cost of old water 0.79, oven penalty 0.84, duty 0.89 |
+| 2 | Two porridge bowls nested and one free, upper basket, Eco 50 | 2.41 (0.1 to 4.3), unstable | 1 to 5; 20 % | third, 1.87 | protease 0.57, duty 0.60, cost of old water 0.67 |
+| 3 | The weighed yolk plates on Eco 50 with the lower arm held | 1.95 (0.0 to 4.9) | 3 to 5; 0 % | fifth, 1.33 | cost of old water 0.73, protease 0.73 |
+| 4 | Milk heated dry in four glasses, Eco 50 | 1.67 (0.0 to 6.6), unstable | 1 to 6; 20 % | fourth, 1.51 | protease 0.69, duty 0.84, milk rate 0.86 |
+| 5 | The four yolk plates again, weighed, on Eco 50 | 1.59 (0.0 to 3.8) | 3 or 4; 0 % | last, 0.52 | cost of old water 0.79, oven penalty 0.84, duty 0.89 |
 
-The top three, and what each would settle:
+The top two, and what each would settle:
 
 1. **Tea in mugs on Eco 50.** The bleaching of a tea stain by his capsule. Every tea verdict
    of the game turns on a tenth of one rate, which the published means bound from below only
-   (0.0009 to 0.002) and which no wash of his has touched. It is the cheapest wash of the six
+   (0.0009 to 0.002) and which no wash of his has touched. It is the cheapest wash of the five
    (four mugs, tea bags, a day's standing). Its place is unstable: where a stain is far from
    its threshold either way it says nothing, so the mugs should carry stains of two strengths
    (one fill and three).
-2. **The four yolk plates, weighed, on Auto 45-65.** Whether Auto cleans protein, and with it
-   the one thing wash 01 could not separate: Auto has no long soak, so the plates there answer
-   to the capsule's protease and its life at 55 to 65 C and not to the duty. Together with
-   wash 01 this splits "duty, protease, rate". It is also the wash that removes the flag on
-   Auto. The most stable of the six (first to third at every parameter set).
-3. **Porridge bowls, nested and free, on Eco 50.** Whether a bowl covered by another stays
+2. **Porridge bowls, nested and free, on Eco 50.** Whether a bowl covered by another stays
    dirty and how dirty (the model: 5 % of the porridge left, score 0), which is the water in a
    narrow gap and the supply of a face that only old water reaches; the calibrated model has
    the sign from a geometric correction of last night, not from a measurement. The tool
@@ -528,7 +522,7 @@ kitchen scale to 0.1 g; section 4.5: the duty moves from 0.7 to 1 with a quarter
 fifth less on every plate), put a coin or a ruler in every photograph, note the display time
 at the start and the clock at start and finish. The tool ranks the plain repeat of wash 01
 with weighed plates last because, in its linear approximation, it says again what wash 01
-said; done as wash 2 on Auto, the weighing comes with it. A fuller protocol is being written
+said. A fuller protocol is being written
 by others.
 
 ## 12. What changed in the tool
@@ -547,8 +541,8 @@ All in `packages/calibration`; `docs/calibration/wash-record.md` and `fitting.md
 
 ## 13. What remains confounded or open
 
-- **Duty, capsule protease, reaction rate**: one combination. A wash on another programme (a
-  short hot one) or with another detergent separates the duty from the chemistry; a power log
+- **Duty, capsule protease, reaction rate**: one combination. A wash with another detergent
+  separates the duty from the chemistry; a power log
   of one Eco run measures the duty directly.
 - **Duty and oven penalty** (0.83): weighed plates, oven-dried against air-dried, in the same
   place and facing the same way.
@@ -563,7 +557,6 @@ All in `packages/calibration`; `docs/calibration/wash-record.md` and `fitting.md
   clean with detergent D: 12.5 of 20 at 0.8, 9.5 at 1; tea 1.15 against 0.85 at one bleach
   rate). A rest leaves a film that goes on working, and more soil in the liquor spends the
   bleach. Whether a real machine does this is not known.
-- **Auto 45-65** is as it was: uncalibrated, flagged.
 
 ## 14. Commands
 
@@ -585,8 +578,7 @@ pnpm exec tsx anchors/scripts/make-owner-set.ts                # the capsule lay
 pnpm exec tsx anchors/scripts/check.ts                         # staleness, ranges, bench anchors
 pnpm exec tsx anchors/scripts/study.ts anchors/reports/tables.v6.cases.json anchors/reports/tables.v6.json
 pnpm exec tsx anchors/scripts/tier-agreement.ts --set anchored-v6.owner-capsule \
-  eco_50=anchors/reports/variance/v6.capsule.eco-off.jsonl,anchors/reports/variance/v6.capsule.eco-fast.jsonl \
-  auto_145=anchors/reports/variance/v6.capsule.auto-off.jsonl,anchors/reports/variance/v6.capsule.auto-fast.jsonl
+  eco_50=anchors/reports/variance/v6.capsule.eco-off.jsonl,anchors/reports/variance/v6.capsule.eco-fast.jsonl
 pnpm exec tsx scripts/make-owner-candidates.ts                 # the candidate washes
 pnpm exec tsx scripts/spotless-fit.ts rank records/owner/candidates/*.planned.json \
   --params anchors/anchored-v6.owner-capsule.json --draws 4 --no-adapt --step 0.05 \

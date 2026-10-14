@@ -1,23 +1,22 @@
-# Spotless machine dossier: Bosch SMV4HAX40G/13 (the owner's dishwasher) and its Auto 45-65 programme
+# Spotless machine dossier: Bosch SMV4HAX40G/13 (the owner's dishwasher) and its Eco 50 programme
 
 > **Reference, kept as written (9 October 2026), and overridden in places.** Where this dossier
 > and the first-hand measurements differ, `docs/reference/owner-measurements.md` and
-> `machine-bosch-owner-update.md` take precedence. Two parts are history: the simulated
-> programme is now Eco 50, not Auto 45-65 (`docs/design/scope.md`), and the checklist of
+> `machine-bosch-owner-update.md` take precedence. One part is history: the checklist of
 > section 6, written for the machine's owner, is replaced by the measurements still open in
 > `docs/calibration/protocol.md`, which anyone with this model can take. The rating-plate
 > photograph it cites is not published. The index of the documents is `docs/README.md`.
 
 Author: machine specialist, merging four research angles (official documents, hardware and parts, programme behaviour, measurement from the owner's photographs). Date: 2026-10-09.
-Scope: replaces the generic SPOT-60 baseline of `docs/research/machine.md` with this machine wherever a fact, a sister-model figure or a photo measurement exists, in the same parametric form (machine.md sections 3.2, 7.3, 12.1, 12.2). The simulated programme is Auto 45-65 as a 2 h 25 min run.
+Scope: replaces the generic SPOT-60 baseline of `docs/research/machine.md` with this machine wherever a fact, a sister-model figure or a photo measurement exists, in the same parametric form (machine.md sections 3.2, 7.3, 12.1, 12.2).
 
 At a glance:
 
 - The machine is a BSH GV640-platform dishwasher with three spray levels (lower arm, upper arm, a small roof spinner), a cutlery basket, no third rack, a sliding-lid dispenser that drops the tablet into a tray on the upper basket, and closed-door condensation drying against a water tank on the left wall.
 - Counted on the owner's machine: 10 + 1 nozzles on the lower arm, 7 on the upper arm; 6 tine rows in the lower basket (2 hinged rows of 23 tines, 4 fixed rows of 6 to 7), running left-right so plates lean sideways; 5 tine rows in the upper basket (1 hinged), running front-back.
 - Scaled from photographs: nozzle radii, every tine and wire position and the tub width (545 mm) to about 2 %; the height of each arm and basket to about 12 mm.
-- Taken from sister sources (the platform's service manuals of 2008 and 2010 and BSH patents), not from documents for this machine: 2100 W heater at 2.5 K/min, a 3.1 L pre-fill tank, a rotary water switch with three outlets, pump duty of about 3 m at 25 to 30 L/min, the sensor's three decisions.
-- Still estimated: every jet angle and bore, both arm speeds and senses, the pump curve, the roof outlet, the water switch's states and timing, and every step duration of Auto. Auto at 2:25 is reconstructed as 11.5 L and about 1.04 kWh with a wash heated to 65 C, no reheating afterwards, and a 69 C final rinse; two sister machines measured in a laboratory used 1.06 and 1.11 kWh.
+- Taken from sister sources (the platform's service manuals of 2008 and 2010 and BSH patents), not from documents for this machine: 2100 W heater at 2.5 K/min, a 3.1 L pre-fill tank, a rotary water switch with three outlets, pump duty of about 3 m at 25 to 30 L/min.
+- Still estimated: every jet angle and bore, both arm speeds and senses, the pump curve, the roof outlet, the water switch's states and timing, and every step duration of Eco 50 but its printed total.
 - The printed plate limits are only just met by the measured heights: a 30 cm plate clears the upper arm by about 2 mm, and a 31 cm plate fits in one place only, astride the left middle row and the second rear row. Nothing in the vertical stack counts as validated until the owner has measured it.
 - Section 6 is a 35-minute checklist for the owner that replaces most of the estimates; section 2.14 lists every disagreement between the four researchers and how it was settled.
 
@@ -80,10 +79,10 @@ The scripts and crops behind these checks are working files, not in the reposito
 ### 0.5 Limits
 
 - No ruler is in any photograph. Absolute scale rests on published part dimensions: the 460 mm span of both spray arms, the 260 x 130 mm filter plate, the 215 mm basket handle, the 230 mm cutlery basket, and the 525 mm width of four sister baskets. They agree to about 2 %.
-- No source gives jet angles, nozzle bores, arm speeds, a pump curve, the water switch's position set or timing, or the step-by-step Auto sequence for this platform. Those parts of the specification are reconstructions; section 6 says how the owner can replace them.
+- No source gives jet angles, nozzle bores, arm speeds, a pump curve or the water switch's position set or timing for this platform. Those parts of the specification are reconstructions; section 6 says how the owner can replace them.
 - No document gives an interior dimension of the tub. Depth, height and both arm positions front to back are derived, they are mutually tight (section 2.1), and they stay on the owner's measuring list.
 - Nothing here is validated. Where the text says a figure "is consistent with" or "reproduces" a printed value, it means only that one self-consistent set of estimates exists.
-- Nearly everything rests on the four researchers' downloads, re-opened where the specification leans on them. One page was fetched new: Bosch's symbols guide [B14].
+- Nearly everything rests on the four researchers' downloads, re-opened where the specification leans on them.
 
 ## 1. What the machine is
 
@@ -100,9 +99,7 @@ The scripts and crops behind these checks are working files, not in the reposito
 | Outer size H x W x D | 815 x 598 x 550 mm; niche 815-875 x 600 x 550 mm; depth with door open 1150 mm | [VERIFIED] (re-checked) spec sheet [B4] |
 | Net / gross weight | 33.9 kg / 36.0 kg (product page: 33.6 kg) | [VERIFIED] [B4], [B8] |
 | Energy label | class D, EEI 49.9; Eco 50: 0.836 kWh, 9.5 L, 295 min; cleaning index 1.121; drying index 1.061; 46 dB(A), noise class C | [VERIFIED] (re-checked) EPREL record 365247 [B5] |
-| Control panel, left to right | Eco 50, Auto 45-65, Intensive 70, Express 65, Silence 50, Favourite | [VERIFIED] (re-checked) [O79] |
-| Options | Remote Start, Extra Dry, Half Load, SpeedPerfect+, Machine Care | [VERIFIED] (re-checked) [B4] |
-| The owner's programme | Auto 45-65, shown by the machine as 2:25 | owner's statement; the display itself is not in a photograph |
+| The simulated programme | Eco 50 | the project's choice (`docs/design/scope.md`) |
 
 ### 1.2 Platform
 
@@ -143,11 +140,9 @@ The scripts and crops behind these checks are working files, not in the reposito
 | Pump | H0 5.5 m at 3000 rpm (constructed) | about 3.1 m at 25 to 30 L/min (sister platform), 2000 to 3500 rpm and 200 to 400 mbar (BSH patent): jets about 7 m/s instead of 8.4 m/s | [K1 p. 63], [PA5], section 3.3 |
 | Diverter | L, U (mid + top), A (all) | three outlets (lower arm, upper arm, roof spinner) on a rotary disc; single and combined supply are possible, but the production part's position set is not documented. A BSH patent embodiment has lower; upper; roof; lower + upper; upper + roof; closed, and nothing that feeds all three. The model alternates lower with upper + roof, which is an assumption | [K2 p. 99-100], [PA1] (re-checked), section 2.8 |
 | Heater | 2000 W at 0.7 duty, 1.6 K/min | 2100 W at full duty, design rate 2.5 K/min (2010 platform manual; compatible with the rating plate) | (re-checked) [K2 p. 8, 67], [O79] |
-| Fill | 3.0 L/min; 3.8 / 2.9 / 2.8 L | 2.5 L/min; 4.0 L first bath (printed for the pre-rinse programme); 2.5 L final rinse (2010 platform) and 2.5 L adopted for an intermediate rinse (2.9 L not excluded); next bath pre-stored in a 3.1 L wall tank | [K1 p. 29-30], [K2 p. 92, 120], [B2] |
+| Fill | 3.0 L/min; 3.8 / 2.9 / 2.8 L | 2.5 L/min; 4.0 L first bath (printed for one cold bath); 2.5 L final rinse (2010 platform) and 2.5 L adopted for an intermediate rinse (2.9 L not excluded); next bath pre-stored in a 3.1 L wall tank | [K1 p. 29-30], [K2 p. 92, 120], [B2] |
 | Drying | heat exchanger plus automatic door opening after 25 min | heat exchanger only, door closed | [B4], [B8] |
 | Rinse aid | 3 mL | 1 mL per pulse on the 2010 platform, factory setting r05 here, so 5 mL if the rule still holds | [K2 p. 80], [B1 p. 25] |
-| Programmes | ECO 50, AUTO 45-65, INTENSIVE 70, QUICK 60, GLASS 40, PRE-RINSE | Eco 50, Auto 45-65, Intensive 70, Express 65 (1 h), Silence 50, Favourite (pre-rinse), Machine Care | [B1 p. 16], [O79] |
-| AUTO baseline | 13.0 L, 1.15 kWh, 135 min, final rinse 62 C | 11.5 L, about 1.04 kWh, 145 min, wash heated to 65 C and not reheated, final rinse 69 C | section 4 |
 
 ## 2. Evidence by subsystem
 
@@ -358,7 +353,6 @@ Roof spinner, part 00611388, and the baking-sheet spray head.
 | Pressure rise | "typically 200 to 400 mbar" between suction and discharge | [VERIFIED] sister (BSH patent) (re-checked) | [PA5] |
 | Flow | "beispielsweise in einer Groessenordnung von 20 bis 30 l/min" | [VERIFIED] sister (BSH patent) (re-checked) | [PA4] |
 | Sister platform (2008, single-phase pump) | head 3.1 m, delivery 25 to 30 L/min, running current 0.31 A; elsewhere in the same manual: head 3.0 to 4.0 m, delivery 17 to 63 L/min | [VERIFIED] sister (2008 platform manual) (re-checked) | [K1 p. 63, 42]. A different motor, but the same job: one spray level at a time through the same kind of arm |
-| Spray pressure by programme | Silence: "an especially adapted Eco 50 C programme, a reduced spray pressure and extended cleaning phase". Intensive 70: "uses high temperatures and increased spray pressure" | [VERIFIED] (re-checked); the second is Bosch's wording for the range, not for this model | [B8] for Silence; Bosch's symbols guide [B14] for Intensive 70. Neither gives a figure |
 | Pump curve, speed per programme, electrical power | not found | | section 3.3: curve anchored on the sister figures |
 
 ### 2.8 Water switch (diverter), part 00644996 with motor 00611329
@@ -374,7 +368,7 @@ Roof spinner, part 00611388, and the baking-sheet spray head.
 | Time per 60 deg step | about 2.5 s | [ESTIMATED], factor 2 | 4 rpm if the disc turns at motor speed; the gear ratio is not documented |
 | Pump speed at change-over | reduced while the switch moves, to avoid noise | [VERIFIED] sister (BSH patent of 1999) | [PA9] |
 | Sister platform (2008) | "Wechselspuelen": upper or lower basket, high pressure; "Zweikorb": both, medium pressure; for the fixed programmes only the lower basket is sprayed until the wash temperature is reached | [VERIFIED] sister (2008 platform manual) (re-checked) | [K1 p. 44, 8] |
-| Sequence and dwell times in Auto | not found | | assumed lower 60 s, upper + roof 60 s. The dwell is generic and the pairing of the upper arm with the roof spinner is my choice; lower / upper with the roof fed separately, or not at all, is as defensible |
+| Sequence and dwell times | not found | | assumed lower 60 s, upper + roof 60 s. The dwell is generic and the pairing of the upper arm with the roof spinner is my choice; lower / upper with the roof fed separately, or not at all, is as defensible |
 
 ### 2.9 Fill, drain and softener
 
@@ -385,8 +379,8 @@ Roof spinner, part 00611388, and the baking-sheet spray head.
 | Metering | by flow-sensor pulses only; no pressure switch in this machine's parts list; the quantity for the final rinse is filled during the intermediate rinse and held in the heat exchanger | metering rule and tank use [VERIFIED] sister (2010 platform manual) (re-checked); absence of a pressure switch [VERIFIED] | [K2 p. 91]; [B9] |
 | Fill rate | 2.5 L/min | [ESTIMATED] | service step S:12 fills "1,5 l" in "ca. 36" s (re-checked) [K2 p. 120]; sister platform: valve 2.75 L/min, flow sensor nominal 2.5 L/min at 208 pulses per litre (re-checked) [K1 p. 29-30] |
 | Heat exchanger content | 3.1 L ("Waermetauscher voll (enthaelt 3,1 l Wasser)"); "Fuer das Klarspuelen wird ein gefuellter Waermetauscher erwartet (2,5 l von 3,1 l Fuellmenge)" | [VERIFIED] sister (2010 platform manual) (re-checked) | [K2 p. 120, 92] |
-| First bath | 4.0 L | [ESTIMATED] | the stand-alone pre-rinse programme uses 4.0 L in one bath [VERIFIED] (re-checked) [B2] |
-| Later baths | 2.5 L for the final rinse; 2.5 L adopted for an intermediate rinse, with 2.9 L not excluded | [ESTIMATED] | the final-rinse quantity above; Intensive 70 is printed as 11.5 to 14.0 L, a step of exactly 2.5 L [B2]. A BSH patent example gives cleaning 3.9 L, intermediate rinse 2.9 L, final rinse 2.5 L [VERIFIED] sister (BSH patent) (re-checked) [PA6]. With 2.9 L and no separate filter flush, Eco comes to 9.4 L against the printed 9.5 and the 9.3 and 9.4 L measured on two sisters [T1]: as good a fit as 2.5 L plus a 0.5 L flush (section 4.2) |
+| First bath | 4.0 L | [ESTIMATED] | one cold bath is printed at 4.0 L [VERIFIED] (re-checked) [B2] |
+| Later baths | 2.5 L for the final rinse; 2.5 L adopted for an intermediate rinse, with 2.9 L not excluded | [ESTIMATED] | the final-rinse quantity above. A BSH patent example gives cleaning 3.9 L, intermediate rinse 2.9 L, final rinse 2.5 L [VERIFIED] sister (BSH patent) (re-checked) [PA6]. With 2.9 L and no separate filter flush, Eco comes to 9.4 L against the printed 9.5 and the 9.3 and 9.4 L measured on two sisters [T1]: as good a fit as 2.5 L plus a 0.5 L flush (section 4.2) |
 | Water left after a drain | 160 to 180 mL in the sump after a normal drain; 60 to 100 mL after a drain with three extra 7 s pump bursts | [VERIFIED] sister (BSH patent) (re-checked) | [PA6] |
 | Drain pump (part 00631200) | brushless, 70 x 70 x 70 mm, bayonet fixing under a removable cover beside the filter; detects idling, blockage and a kinked hose by motor current | part [VERIFIED] [B9]; description [VERIFIED] sister (2010 platform manual) | [K2 p. 71]; [B1 p. 45-46] |
 | Drain time | a cancelled programme "ends after approx. 1 minute" of pumping | [VERIFIED] | [B1 p. 31] |
@@ -472,8 +466,6 @@ The manual names three parts: micro filter, fine filter, coarse filter [VERIFIED
 | 12 | Cutlery basket: 6 or 7 compartments; 230 x 128 x 220 or 231 x 210 x 158 mm; photo 223 x 147 mm | 6 compartments; body 230 x 128 mm in plan (149 mm over the folded-out lid grids), about 127 mm high, 220 mm with handle; two tunnels across the width | BSH photographs of the part fitted; the retailer's key ("Hoehenangabe = Artikeltiefe") makes the published 128 mm the depth in plan, not the height; the 147 mm of the photographs is the width over the lids |
 | 13 | Lower-arm rotation: counter-clockwise (hardware, low confidence) or unknown (photos) | clockwise, low to moderate confidence | my reading of the two hooded jets in two BSH photographs and [O82]; flagged for the owner |
 | 14 | Arm axis to rear wall: 230 to 255 mm from the floor stubs, 275 to 305 mm from the upper feed tube | both: lower axis 265 mm, upper axis 295 mm | the two routes measure two different arms; the upper basket sits further forward because of the docking plate |
-| 15 | Auto at 2:25: about 1.3 kWh and 13 L (documents, interpolating the printed range) or about 1.0 kWh and 11.5 L (programme) | 11.5 L, about 1.04 kWh | two sister machines measured 11.2 to 11.9 L and 1.06 to 1.11 kWh in a laboratory; the model comes within 2 to 6 % of them only with a 65 C wash and a 69 C final rinse (section 4.5). The 11.5 L and 0.95 kWh that a same-generation Siemens shows in its app belong to Auto with the intensive-zone option at 2:40, on a machine whose Eco is 0.75 kWh, so they are not evidence for plain Auto here. Linear interpolation in a range has no physical basis |
-| 16 | Normal branch: partial water exchange and one intermediate rinse, or no exchange and two rinses | the first as the table, the second as the named alternative | same water; section 4.6 |
 | 17 | Programme researcher assumed two spray levels | three levels; pattern lower / upper + roof | three levels: parts list and [K2]. The pattern, including the pairing of upper arm and roof spinner, is an assumption |
 | 18 | Heater 2000 W (generic), 2100 W [K2], 2150 W [K1], 2519 W from 21 ohm | 2100 W at 230 V, full duty | row "Reconciliation" in 2.7 |
 | 19 | Fill rate 2.5 or 3.0 L/min | 2.5 L/min | two platform figures |
@@ -632,7 +624,7 @@ hydraulics:
   inventory: {V_min_sump_L: 0.5, t_flight_s: 0.5, t_return_s: 1.5,                         # G
               carry_over_L: 0.4,                                                           # S 0.17 in the sump + G 0.25 on the load
               topup_L: 0.5, max_topups_per_phase: 1, level_check_in: [pre_rinse, wash]}    # G ; G ; S
-  fill: {L_per_min: 2.5, first_bath_L: 4.0, later_bath_L: 2.5, flush_L: 0.5,               # S ; E (printed for the pre-rinse programme) ; E (final rinse S; intermediate rinse 2.5 to 2.9) ; E
+  fill: {L_per_min: 2.5, first_bath_L: 4.0, later_bath_L: 2.5, flush_L: 0.5,               # S ; E (one cold bath printed at 4.0 L) ; E (final rinse S; intermediate rinse 2.5 to 2.9) ; E
          metering: flow_sensor_pulses, prestore_tank_L: 3.1}                               # S
   drain: {L_per_min: 16, pattern_s: [35, 10, 10]}                                          # G (sister platform pump: 10 L/min at 0.9 m)
 thermal:
@@ -652,7 +644,7 @@ sensors: {turbidity: {part: "00611323", active_in: [pre_rinse, wash, end_of_wash
           water_level: pump_motor_current, water_quantity: impeller_pulses, load: not_listed_for_this_model}   # S ; S ; V
 drying: {method: heat_exchanger_condensation, door: closed, auto_open: false,              # V
          duration_min: 40, tank_fill_L: 3.1, tank_fill_portions: 3}                        # E ; S ; S
-programmes: see section 4          # Eco 50, Auto 45-65, Intensive 70, Express 65, Silence 50, Favourite (pre-rinse), Machine Care   (V)
+programme: see section 4           # Eco 50   (V)
 ```
 
 ### 3.2 Nozzle tables
@@ -799,169 +791,97 @@ Rough shares of the fields in each block, by how they were obtained. "Verified" 
 | Thermal | 10 % (appliance rating) | 30 % (heater power, heating rate, tank volume) | 0 % | 60 % (heat capacities, conductances, losses) | items 7, 8 |
 | Dosing | 40 % (marks, sliding lid, tablet path, setting r05) | 25 % (1 mL per pulse, actuation) | 0 % | 35 % (release time, dose timing, chamber height) | items 5, 6 |
 | Drying | 60 % (method, closed door, tank) | 25 % (portioned tank filling) | 0 % | 15 % (duration, wall coupling) | item 7 |
-| Programme (Auto 2:25) | 20 % (envelope, total duration, phase names of the other programmes) | 30 % (water and energy totals of two measured sisters, sensor decisions, tank sequence, heating rate) | 0 % | 50 % (every step duration, both targets, whether the heat-up is staged or the wash held, exchange volume, pump speeds, diverter pattern) | item 7 |
 
 ## 4. The programme
 
-### 4.1 The manual's printed programme table
+The simulated programme is Eco 50 (`docs/design/scope.md`). This section gives what is printed for it, what the sister machines measured, and the reconstruction the machine data follows row for row.
 
-Sequence column summarised from the user manual [B1 p. 16]; consumption values from the quick reference guide [B2 p. 1], whose two editions (2022 and 2024) print the same figures. The guide's header says the programme data were measured in the laboratory to European standard EN 60436. All rows [VERIFIED] (re-checked in the extracted text).
+### 4.1 The manual's printed figures for Eco 50
+
+Sequence summarised from the user manual [B1 p. 16]; consumption values from the quick reference guide [B2 p. 1], whose two editions (2022 and 2024) print the same figures. The guide's header says the programme data were measured in the laboratory to European standard EN 60436. [VERIFIED] (re-checked in the extracted text).
 
 | Programme | For | Sequence (summarised; temperatures as printed) | Duration (h:min) | Energy (kWh) | Water (L) |
 |---|---|---|---|---|---|
-| Intensive 70 | pots and pans; stubborn, burnt-on or dried-on residues | pre-rinse; cleaning 70 C; intermediate rinse; final rinse 69 C; drying | 2:05 - 2:15 | 1.300 - 1.400 | 11.5 - 14.0 |
-| Auto 45-65 | mixed tableware and cutlery; ordinary residues, lightly dried on | "Sensor-controlled: Optimised by sensors depending on the soiling of the washing water." | 1:40 - 2:45 | 0.900 - 1.500 | 7.0 - 15.5 |
-| Eco 50 | as Auto | pre-rinse; cleaning 50 C; intermediate rinse; final rinse 61 C; drying | 4:55 | 0.836 | 9.5 |
-| Silence 50 | as Auto | pre-rinse; cleaning 50 C; intermediate rinse; final rinse 63 C; drying | 4:00 | 1.050 | 11.0 |
-| Express 65 - 1h | as Auto | cleaning 65 C; intermediate rinse; final rinse 69 C; drying | 1:00 | 1.300 | 10.5 |
-| Machine Care | empty machine only | Machine Care at 70 C | 2:10 | 1.350 | 15.2 |
-| Favourite (factory: pre-rinse) | all tableware | cold rinsing | 0:15 | 0.050 | 4.0 |
+| Eco 50 | mixed tableware and cutlery; ordinary residues, lightly dried on | pre-rinse; cleaning 50 C; intermediate rinse; final rinse 61 C; drying | 4:55 | 0.836 | 9.5 |
 
 Printed notes, summarised [VERIFIED] [B1 p. 15-18, 24, 30-31]:
 
-- The running time depends on four things: the option selected, how much tableware is loaded, how soiled it is, and the temperature of the water. Running time and energy consumption both rise when the rinse-aid system is switched off or needs refilling.
+- The running time depends on how much tableware is loaded, how soiled it is, and the temperature of the water. Running time and energy consumption both rise when the rinse-aid system is switched off or needs refilling.
 - Consumption values are stated for what the manual calls normal conditions, with water of 16 - 20 E hardness.
-- Extra Dry raises the final-rinse temperature and extends the drying phase. Half Load shortens the running time and lowers water and energy consumption. SpeedPerfect+ shortens the run time "by 15% to 75%" and raises energy and water consumption. All three can be combined with Auto (interactive manual [B3]). No document gives the size of any option's effect on Auto.
+- The length of Eco 50 comes from "longer soaking and drying times" [B1].
 - The display shows the remaining running time as soon as a programme is selected; the appliance switches off 1 minute after the end; a cancelled programme "ends after approx. 1 minute" of pumping.
 - Softener regeneration: section 2.9.
 
-### 4.2 What is known about Auto 45-65
+### 4.2 Sister measurements, and the water arithmetic
 
 | Evidence | Content | Tag | Source |
 |---|---|---|---|
-| This model | envelope 1:40 to 2:45, 0.900 to 1.500 kWh, 7.0 to 15.5 L; no phase list; no figure tied to a soil level | [VERIFIED] (re-checked) | [B1], [B2] |
-| This model | With heavy soiling the rinsing water is drained and replaced by fresh water; with lighter soiling it is kept for the next wash phase, which saves 3 to 6 litres. Then, in the manual's words: "In the automatic programmes the temperature and run time are additionally adjusted to the level of soiling." | [VERIFIED] (re-checked) | interactive manual [B3]; absent from the PDF manual |
-| This model | Of tableware pre-cleaned too thoroughly the manual says "The sensors chose a weaker programme", and that stubborn soiling then cannot be removed entirely | [VERIFIED] | [B1 p. 44] |
-| The owner's machine | Auto shows 2:25 | owner's statement | 145 min is 45 min above the printed minimum and 20 min below the maximum |
-| Platform, 2008 ("Auto 55/65") | "Im Automatikprogramm entscheidet der Aquasensor nicht nur ueber einen Wasserwechsel nach dem Vorspuelen, sondern er bestimmt auch die Reinigungstemperatur und die Anzahl der Zwischenspuelgaenge." Structures named: cleaning 50, one intermediate rinse, final rinse 65, drying; cleaning 65, two intermediate rinses, final rinse 65, drying; pre-rinse, cleaning 55, one intermediate rinse, final rinse 65, drying | [VERIFIED] sister (re-checked) | [K1 p. 9] |
-| Platform, 2008 (variant with a 45 C minimum) | 1. in the pre-rinse: water exchanged (much soil) or kept. 2. in cleaning: end temperature 45 C (little soil) or 50 / 55 C; a water change after the pre-rinse raises it from 50 to 55 C; cleaning at 50 or 55 C is followed by a filter flush. 3. in the first intermediate rinse: a further intermediate rinse (much soil) or only a filter flush. "Im Automatik-Programm sind 48 Programmstrukturen moeglich." | [VERIFIED] sister (re-checked) | [K1 p. 19] |
-| Platform, 2010 | sensor "im Vorspuelen, im Reinigen und am Ende des Reinigens aktiv"; values "in der Elektronik hinterlegt" | [VERIFIED] sister (re-checked) | [K2 p. 82] |
-| Platform, start display | "Beim Programmstart wird die Restlaufzeit, die dieses Programm das letzte Mal benoetigt hat, angezeigt"; the time is recalculated at the end of the heating steps, with jumps of up to 50 to 60 minutes | [VERIFIED] sister (re-checked) | [K1 p. 46, 49] |
-| Same generation, US manual | "The displayed cycle time indicates an average value." | [VERIFIED] sister | Bosch SHP78CM5N manual [B12] |
-| Laboratory, two sisters of the same generation and label class (Constructa CG5VX00HCD and Siemens SN65EX57CE, both 14 place settings, class D), Auto at normal soiling | 1.06 and 1.11 kWh; 11.2 and 11.9 L; 2:13 and 2:14 | [VERIFIED] sister (re-checked in the saved table) | KONSUMENT 10/2021 [T1]. Difference likely: 14 place settings means a cutlery drawer, so a different top spray level and a load about 8 % heavier |
-| Same test, their Eco and 1 h programmes | Eco 0.81 and 0.74 kWh, 9.3 and 9.4 L, 4:50 and 4:31; 1 h programme 1.11 and 1.19 kWh, 10.0 and 10.1 L | [VERIFIED] sister | [T1]. This model prints 1.300 kWh for Express 65: its printed non-Eco figures may be upper values |
-| Same test, two zeolite sisters (Bosch SMV6ZCX49E, Siemens SN87YX01CE), Auto at normal soiling | 0.88 and 0.87 kWh; 10.7 and 11.6 L; 2:11 and 2:14 | [VERIFIED] sister (re-checked in the saved table) | [T1]. Zeolite machines dry by other means and are a different energy level (label classes C and B against D here); they serve only to place "normal soiling" inside a printed range (below) |
-| A same-generation Siemens SN63EX14VE, figures read by its owner from the Home Connect app | Auto with the intensive-zone option 2:40, 11.5 L, 0.95 kWh; Auto with the speed option 1:52, 14 L, 1.15 kWh; Eco 4:55, 9.5 L, 0.75 kWh. The table has no row for plain Auto. Its display shows 2:30 for plain Auto | [VERIFIED] sister (re-checked: table image and post) | forum [F5]. A forecast, not a measurement, for a programme with an option, on a machine whose Eco uses 0.75 kWh against 0.836 here. Not evidence for plain Auto on this machine |
-| Forum, a close observer of current BSH machines, speaking of a zeolite model | maximum: "warm prewash (Zeolite regeneration)", main wash 65 C at full duration, two unheated interim rinses, heated final rinse: "2:40h, 1.3kWh, 15.5l"; minimum: wash, rinse, heated rinse, dry: "1:40h, 0.68kWh, 7l". "The second interim rinse is barely ever triggered in my experience. The pre-wash can either be done or not." He has seen "partial drains ... between pre-rinse and main wash". The timer is updated at each stage transition | [VERIFIED] sister (re-checked) as a quotation; unverified as fact | [F1]. The same water and nearly the same times as this machine's printed range, but 0.22 and 0.20 kWh less energy; the warm pre-wash belongs to the zeolite, which this machine lacks |
-| Forum, the owner of a 2010 Bosch with heat exchanger and no zeolite, writing in 2014 | The heat exchanger does its work in what he calls "the post-wash phase, when dishwashers typically continue to wash without reheating the water": about a quarter of an hour before the main wash is drained, cold water is let into the exchanger, and tub and exchanger come to the same temperature, at no cost in extra energy or time. Separately, on heating in stages: "I can hear the heater click on and off throughout the main wash" | [VERIFIED] sister (re-checked) as a summary with two quotations | [F2], posts 101 and 93. The second quotation is about a staged heat-up, not about holding a temperature |
+| Laboratory, two sisters of the same generation and label class (Constructa CG5VX00HCD and Siemens SN65EX57CE, both 14 place settings, class D), Eco | 0.81 and 0.74 kWh; 9.3 and 9.4 L; 4:50 and 4:31 | [VERIFIED] sister (re-checked in the saved table) | KONSUMENT 10/2021 [T1]. Difference likely: 14 place settings means a cutlery drawer, so a different top spray level and a load about 8 % heavier |
+| A same-generation Siemens SN63EX14VE, figures read by its owner from the Home Connect app | Eco 4:55, 9.5 L, 0.75 kWh | [VERIFIED] sister (re-checked: table image and post) | forum [F5]. A forecast, not a measurement |
 | BSH patent on the tank | tank full from the previous cycle is emptied into the tub as the first liquor; in cleaning the heater is switched off at the target and the pump runs on ("Nachwaschphase"); final rinse heated to "between 60 C and 80 C"; in drying the tank is filled with cold water in at least three stages | [VERIFIED] sister (BSH patent) (re-checked) | [PA7] |
+| Forum, the owner of a 2010 Bosch with heat exchanger and no zeolite, writing in 2014 | The heat exchanger does its work in what he calls "the post-wash phase, when dishwashers typically continue to wash without reheating the water": about a quarter of an hour before the main wash is drained, cold water is let into the exchanger, and tub and exchanger come to the same temperature, at no cost in extra energy or time | [VERIFIED] sister (re-checked) as a summary with a quotation | [F2], post 101 |
 
-Reading: 2:25 is the controller's forecast for a middling path, shown before any sensing (the last run's time or a stored average; which, is unresolved). The only measurements of a normal-soil Auto run on this generation without zeolite are the two laboratory sisters: 11.2 to 11.9 L and 1.06 to 1.11 kWh in 2:13. A second line of reasoning lands in the same place: the two zeolite sisters measured 0.87 and 0.88 kWh, a third of the way up the 0.68 to 1.3 kWh that the forum observer gives for a zeolite machine, and a third of the way up this machine's printed 0.900 to 1.500 kWh is 1.09 kWh [ESTIMATED]. The documents researcher's linear interpolation of the printed range by duration (1.3 kWh, 13 L) is not supported by any measurement and I do not use it.
+Water arithmetic [ESTIMATED]. Take a first bath of 4.0 L (one cold bath is printed at 4.0 L [B2]: this figure is the input, not a result), later baths of 2.5 L and a filter flush of 0.5 L. Eco then comes to 4.0 + 0.5 + 2.5 + 2.5 = 9.5 L, the printed figure. This is arithmetic that fits, not a measurement, and it is not unique: the BSH patent example of section 2.9 (3.9 / 2.9 / 2.5 L, no flush) gives Eco 9.3 L, exactly what one of the two sisters measured, so 2.5 L for an intermediate rinse is not established.
 
-Water arithmetic [ESTIMATED]. Take a first bath of 4.0 L (the printed pre-rinse programme: this figure is the input, not a result), later baths of 2.5 L, a full replacement of the first bath of 4.0 L and a filter flush of 0.5 L. Of the other eight printed totals this reproduces five: Eco 4.0 + 0.5 + 2.5 + 2.5 = 9.5; Auto minimum 4.0 + 0.5 + 2.5 = 7.0; Auto maximum 4.0 + 4.0 + 3 x 2.5 = 15.5; Intensive 4.0 + 2 or 3 x 2.5 + 2.5 = 11.5 or 14.0. Express (10.5 L) fits only with a separate assumption, a 5.5 L first bath for both levels at once: 5.5 + 2.5 + 2.5. Silence 50 (11.0 L; the scheme gives Eco's 9.5) and Machine Care (15.2 L) are not reproduced. The normal branch of Auto is 4.0 + 3 x 2.5 = 11.5, inside the laboratory's 11.2 to 11.9 L. This is arithmetic that fits, not a measurement, and it is not unique: the BSH patent example of section 2.9 (3.9 / 2.9 / 2.5 L, no flush) gives Eco 9.3 L, exactly what one of the two sisters measured, so 2.5 L for an intermediate rinse is not established.
+### 4.3 Sensors
 
-### 4.3 Sensor logic, as far as known
+Eco 50 makes no decision by its sensors: on the 2008 platform the Aquasensor is inactive in the Eco programme [K1 p. 8], and a label programme is a fixed course. What the machine senses in every programme:
 
-| # | When | What is sensed | Decision | Evidence |
+| # | When | What is sensed | What follows | Evidence |
 |---|---|---|---|---|
-| D0 | first fill, clean water | reference transmission of the turbidity sensor (needs about 0.4 L) | calibration fails: assume "turbid" and run the longest sequence | [K1 p. 19], [K2 p. 82] |
-| D1 | end of the cold pre-rinse, about 12 min after the start | turbidity of the pre-rinse liquor | keep the water for the main wash, or replace it; the manual describes a full replacement, BSH marketing says the sensor "steuert Menge und Zeitpunkt der Frischwasserzugabe" | [B3], [K1 p. 19]; timing [ESTIMATED] |
-| D2 | during the main wash | turbidity of the wash liquor | wash temperature within 45 to 65 C and the length of the wash; a water change at D1 pushes the temperature up | [B3], [K1 p. 19], [K2 p. 82] |
-| D3 | end of the main wash and first intermediate rinse | turbidity | a second intermediate rinse, or only a filter flush | [K1 p. 19], [K2 p. 82] |
+| D0 | first fill, clean water | reference transmission of the turbidity sensor (needs about 0.4 L) | none in Eco 50 | [K1 p. 19], [K2 p. 82] |
+| D1 to D3 | end of the pre-rinse, the main wash, end of the main wash | turbidity of the liquor | none in Eco 50: the pre-rinse water is kept, the target and the rinses are fixed | [K1 p. 8, 19], [K2 p. 82] |
 | D4 | pre-rinse and main wash | pump running smoothly or not (motor current) | top up water; a larger load holds more water in flight and on surfaces, which is the only "load sensing" documented | [K2 p. 91] |
 | D5 | whole run | rinse-aid tank empty or system switched off | hotter final rinse and changed drying; "running time and energy consumption will increase" | [B1 p. 15]; sister platform [K1 p. 10]: final rinse +3 K |
 | D6 | every 6th cycle at setting H04 | water counted against the hardness setting | regeneration in the main wash: +7 min, +5 L, +0.05 kWh | [B1 p. 24] |
 
-Thresholds are not public. Recommendation for the simulator [ESTIMATED]: model the sensor as optical transmission across a 10 mm gap in the sump, tau = exp(-sum_k eps_k c_k L), with a separate eps for coloured dissolved soils (the 2008 sensor added a green LED for "Tee oder Spinat" [K1 p. 19]); two thresholds at D1, a monotone map from tau at D2 to a temperature step in {45, 50, 55, 60, 65} and a hold length, one threshold at D3. Calibrate so that the EN 60436 reference soil on a full load lands on the normal branch (11.5 L, as tabulated in 4.4), a pre-rinsed load on the light branch (7.0 L) and a heavily soiled load on the heavy branch (15.5 L). Report which branch a load triggered.
+### 4.4 Eco 50, reconstructed row by row
 
-### 4.4 AUTO 45-65 as a 2 h 25 min run ("AUTO 2:25", normal branch)
+Outline, all [ESTIMATED] from the printed sequence and the blocks below: 4.0 L first fill; cold pre-rinse of about 15 min; the same water kept; heat to 50 C; a long soak with intermittent spraying ("longer soaking and drying times" [B1]); filter flush; one 2.5 L intermediate rinse; final rinse 2.5 L to 61 C; drying of the order of 90 min. The soak's length is set by the printed 4:55.
 
-Conventions as machine.md 7.3. Conditions: inlet 15 C, room 23 C, 230 V, full 13 place-setting load (23 kJ/K), heater 2100 W at full duty, carry-over 0.4 L. N is the nominal pump speed of section 3.3; "L/UR a/b" is the water-switch pattern in seconds, lower arm then upper arm plus roof spinner. Clock times are from the start.
+Conventions as machine.md 7.3. Conditions: inlet 15 C, room 23 C, 230 V, full 13 place-setting load (23 kJ/K), heater 2100 W at full duty, carry-over 0.4 L. N is the nominal pump speed of section 3.3; "L/UR a/b" is the water-switch pattern in seconds, lower arm then upper arm plus roof spinner. A heat-up lasts as long as the thermal model takes to reach its target.
 
-What is anchored: the total duration (owner's statement); the total water and the energy level (two laboratory-measured sisters; the water arithmetic agrees); the first-bath volume (printed for the pre-rinse programme); the final-rinse volume, the heating rate and the tank mechanism (2010 platform manual); closed-door drying; the release of the tablet into the upper-rack tray. What is [ESTIMATED]: every step duration, both temperature targets, the partial exchange in A3, the pump speeds and the diverter pattern. The two targets were chosen together: with the documented pattern of no reheating after the target, the model comes within 2 to 6 % of the sisters' energy only at the top of the wash range and with the 69 C final rinse that this model prints for Intensive 70 and Express 65 (section 4.5). Liquor temperatures in the action column are outputs of the thermal model.
+| Step | Action | Water in from the mains (L) | Target (C) | N (rpm), diverter | Duration (min) |
+|---|---|---|---|---|---|
+| E0 | pre-drain; inlet valve driven for 5 s and flow pulses checked [K2 p. 90] | | | | 0.5 |
+| E1 | fill 1: the heat exchanger's 3.1 L left from the previous run plus 0.9 L of mains water; 4.0 L in the tub | 0.9 | | | 1 |
+| E2 | cold pre-rinse: no detergent, no heating; level check by pump current, top-up if needed | | none | 2800; L/UR 60/60 | 15 |
+| E4 | main wash, heat-up: dispenser lid released about 60 s after circulation resumes, tablet drops into the upper-rack tray and is sprayed from below by the upper arm; heater on continuously | | 50 | 3000; L/UR 60/60 | to the target |
+| E5 | main wash, the long soak: heater off, pump on; 15 min before the end the heat exchanger takes 2.5 L of cold mains water | 2.5 (into the heat exchanger) | | 3000; L/UR 60/60 | 149 |
+| E6 | drain, with short circulate / drain alternation to flush the filter | | | | 1.5 |
+| E6b | filter flush: 0.5 L let in and pumped out | 0.5 | | | 2 |
+| E7 | intermediate rinse: 2.5 L from the heat exchanger, unheated; the heat exchanger is refilled at once with 2.5 L of mains water for the final rinse | 2.5 (into the heat exchanger) | none | 2800; L/UR 45/45 | 7.5 |
+| E8 | drain | | | | 1.5 |
+| E9 | final-rinse fill: 2.5 L from the heat exchanger; circulation; rinse aid 5 pulses of 1 mL | | | 2800; L/UR 45/45 | 2 |
+| E10 | final rinse, heat-up | | 61 | 2800; L/UR 45/45 | to the target |
+| E11 | final rinse, hold | | | 2800; L/UR 45/45 | 3 |
+| E12 | drain | | | | 1.5 |
+| E13 | drying: door closed, no fan; brief drain pulses for dripping liquor; the heat exchanger is filled with 3.1 L of cold mains water in three portions (at about 5, 30 and 55 % of the step) and stays full for the next run; moisture condenses on the cooled left wall; condensate pumped out at the end | 3.1 (into the heat exchanger) | | | 90 |
 
-| Step | Clock (h:mm) | Action | Water in from the mains (L) | Target (C) | N (rpm), diverter | Duration (min) |
-|---|---|---|---|---|---|---|
-| A0 | 0:00 | pre-drain; inlet valve driven for 5 s and flow pulses checked [K2 p. 90] | | | | 0.5 |
-| A1 | 0:00.5 | fill 1: the heat exchanger's 3.1 L left from the previous run plus 0.9 L of mains water; 4.0 L in the tub at about 21 C | 0.9 | | | 1 |
-| A2 | 0:01.5 | cold pre-rinse: no detergent, no heating; turbidity sensor calibrated at the start and read near the end (D1); level check by pump current, top-up if needed | | none | 2800; L/UR 60/60 | 11.5 |
-| A3 | 0:13 | D1 = "soiled": 2.5 L pumped out and replaced with 2.5 L of mains water; liquor about 18.5 C | 2.5 | | | 2 |
-| A4 | 0:15 | main wash, heat-up: dispenser lid released about 60 s after circulation resumes, tablet drops into the upper-rack tray and is sprayed from below by the upper arm; heater on continuously, about 2.6 K/min; turbidity read on the way up, from 45 C (D2); target taken at the top of the range for this branch | | 65 (45 to 65 by soil) | 3000; L/UR 60/60 | 18 |
-| A5 | 0:33 | main wash, post-wash phase: heater off, pump on; liquor drifts from 65 to 62 C; at 1:04 the heat exchanger takes 2.5 L of cold mains water and the liquor falls to about 55 C by the end; turbidity read at the end (D3) | 2.5 (into the heat exchanger) | | 3000; L/UR 60/60 | 46 |
-| A6 | 1:19 | drain, with short circulate / drain alternation to flush the filter | | | | 1.5 |
-| A7 | 1:20.5 | intermediate rinse: 2.5 L from the heat exchanger at about 48 C, unheated; the heat exchanger is refilled at once with 2.5 L of mains water for the final rinse; liquor about 49 C | 2.5 (into the heat exchanger) | none | 2800; L/UR 45/45 | 7.5 |
-| A8 | 1:28 | drain | | | | 1.5 |
-| A9 | 1:29.5 | final-rinse fill: 2.5 L from the heat exchanger at about 36 C; circulation; rinse aid 5 pulses of 1 mL at about 1:30.5; liquor about 45 C | | | 2800; L/UR 45/45 | 2 |
-| A10 | 1:31.5 | final rinse, heat-up | | 69 (61 to 72) | 2800; L/UR 45/45 | 9 |
-| A11 | 1:40.5 | final rinse, hold | | | 2800; L/UR 45/45 | 3 |
-| A12 | 1:43.5 | drain; load at about 67 C | | | | 1.5 |
-| A13 | 1:45 | drying: door closed, no fan; brief drain pulses for dripping liquor; the heat exchanger is filled with 3.1 L of cold mains water in three portions (at about 5, 30 and 55 % of the step) and stays full for the next run; moisture condenses on the cooled left wall; condensate pumped out at the end | 3.1 (into the heat exchanger) | | | 40 |
-| end | 2:25 | "0:00" on the display; the machine switches itself off after 1 min | | | | |
-
-Totals: 145 min; mains water 0.9 + 2.5 + 2.5 + 2.5 + 3.1 = 11.5 L; energy 1.04 kWh in the thermal model at the conditions above (0.96 to 1.15 over the sensitivity range of section 4.5). Baths seen by the load: 4.0 L pre-rinse; 4.0 L wash (1.5 L of pre-rinse liquor kept, 2.5 L fresh); 2.9 L intermediate rinse; 2.9 L final rinse. The liquor is above 55 C for 48 min and above 60 C for 35 min.
+Totals: 4:55 (the soak takes up what the rows and heat-ups leave); mains water 0.9 + 2.5 + 0.5 + 2.5 + 3.1 = 9.5 L.
 
 Evidence for each step:
 
 | Step | Evidence | Tag |
 |---|---|---|
-| A1 | tank holds 3.1 L and must be full after a long standstill [K2 p. 115, 120]; tank content is the first liquor [PA7]; one stand-alone bath is 4.0 L [B2]; first fill larger "to wet the dry load" on the sister platform [K1 p. 22] | mechanism [VERIFIED] sister; 4.0 L [ESTIMATED] |
-| A2 | pre-rinse cold and without detergent [B1 p. 16-17]; sensor active in the pre-rinse, level check there [K2 p. 82, 91]; the stand-alone pre-rinse takes 15 min in all [B2] | [VERIFIED], the sensing from the 2010 platform manual; 11.5 min [ESTIMATED] |
-| A3 | water exchange after the pre-rinse is the first sensor decision [B3], [K1 p. 9]; a 2.5 L partial exchange is my choice to reach 11.5 L with one rinse (section 4.6) | decision [VERIFIED]; amount [ESTIMATED] |
-| A4 | dispenser opens "at the optimum time"; a pre-rinse precedes it, since powder for the pre-rinse goes on the door [B1 p. 28]; tablet path [B1 p. 28], [K2 p. 82]; 2.5 K/min design rate [K2 p. 67]; a water change after the pre-rinse raises the cleaning temperature in one 2008 variant [K1 p. 19], while in the other the structure with a pre-rinse has the lower of two temperatures [K1 p. 9] | path [VERIFIED]; rate and the 2008 rules [VERIFIED] sister; 60 s and 65 C [ESTIMATED], the 65 C chosen for the energy level (section 4.5) |
-| A5 | heater off after the target, pump on ("Nachwaschphase") [PA7]; "the post-wash phase, when dishwashers typically continue to wash without reheating the water" [F2]; tank filled during cleaning to pre-warm the next bath [K2 p. 92]; "roughly 15 minutes before the main wash drains" [F2] | mechanism [VERIFIED] sister; 46 min set by the 145 min total [ESTIMATED] |
-| A6 | filter flush by alternating pumps on the sister platform [K1 p. 26] | [VERIFIED] sister |
-| A7 | intermediate rinse unheated [PA7], [PA8]; "Die Fuellmenge fuer das Klarspuelen wird im Zwischenspuelen gefuellt und im Waermetauscher bevorratet" [K2 p. 91] | [VERIFIED] sister; 2.5 L and 7.5 min [ESTIMATED] |
-| A9 | 2.5 L of the 3.1 L tank for the final rinse [K2 p. 92]; 1 mL per pulse, setting r05 [K2 p. 80], [B1 p. 32]; rinse aid foams below about 35 C [PA6] | quantity [VERIFIED] sister; dose and time [ESTIMATED] |
-| A10 | Auto's final-rinse temperature is not printed. This model's fixed programmes print 61 C (Eco), 63 C (Silence), 69 C (Intensive 70) and 69 C (Express 65) [B1]; the 2008 Auto used 65 C in every structure [K1 p. 9]. 69 C is taken because this model prints it for both of its programmes that, like Auto, are neither label-optimised nor given a long drying time, and because the model needs it to come near the sisters' measured energy; with 65 C it gives 0.98 kWh | 69 C [ESTIMATED], weakly supported |
-| A13 | heat exchanger only, no door opening [B4], [B8]; tank filled in at least three stages [PA7]; condensate "is pumped out" [B3] | mechanism [VERIFIED]; 40 min [ESTIMATED], range 30 to 50 |
+| E1 | tank holds 3.1 L and must be full after a long standstill [K2 p. 115, 120]; tank content is the first liquor [PA7]; one stand-alone bath is 4.0 L [B2]; first fill larger "to wet the dry load" on the sister platform [K1 p. 22] | mechanism [VERIFIED] sister; 4.0 L [ESTIMATED] |
+| E2 | pre-rinse cold and without detergent [B1 p. 16-17]; level check in the pre-rinse [K2 p. 91]; a stand-alone cold rinse takes 15 min in all [B2] | [VERIFIED], the level check from the 2010 platform manual; 15 min [ESTIMATED] |
+| E4 | dispenser opens "at the optimum time"; a pre-rinse precedes it, since powder for the pre-rinse goes on the door [B1 p. 28]; tablet path [B1 p. 28], [K2 p. 82]; 2.5 K/min design rate [K2 p. 67]; target printed [B1] | path and target [VERIFIED]; rate [VERIFIED] sister; 60 s [ESTIMATED] |
+| E5 | heater off after the target, pump on ("Nachwaschphase") [PA7]; "the post-wash phase, when dishwashers typically continue to wash without reheating the water" [F2]; tank filled during cleaning to pre-warm the next bath [K2 p. 92]; "roughly 15 minutes before the main wash drains" [F2]; the length from "longer soaking and drying times" [B1] | mechanism [VERIFIED] sister; 149 min set by the 4:55 total [ESTIMATED]; the spraying pattern of the soak is not documented |
+| E6 | filter flush by alternating pumps on the sister platform [K1 p. 26] | [VERIFIED] sister |
+| E6b | the 0.5 L flush of the water arithmetic (section 4.2) | [ESTIMATED] |
+| E7 | intermediate rinse unheated [PA7], [PA8]; "Die Fuellmenge fuer das Klarspuelen wird im Zwischenspuelen gefuellt und im Waermetauscher bevorratet" [K2 p. 91] | [VERIFIED] sister; 2.5 L and 7.5 min [ESTIMATED] |
+| E9 | 2.5 L of the 3.1 L tank for the final rinse [K2 p. 92]; 1 mL per pulse, setting r05 [K2 p. 80], [B1 p. 32]; rinse aid foams below about 35 C [PA6] | quantity [VERIFIED] sister; dose and time [ESTIMATED] |
+| E10 | 61 C printed for Eco 50 [B1] | [VERIFIED] |
+| E13 | heat exchanger only, no door opening [B4], [B8]; tank filled in at least three stages [PA7]; condensate "is pumped out" [B3]; the length from "longer soaking and drying times" [B1] | mechanism [VERIFIED]; 90 min [ESTIMATED] |
 
 ### 4.5 Energy and water balance
 
-Model: the three nodes of machine.md 6.2 (water, load, machine) plus a heat-exchanger water node on the left wall, 1 s steps, parameters of section 3.1 (C_load 23 kJ/K, C_machine 14 kJ/K, G_wl 600 W/K, G_wm 250 W/K, UA 3.0 W/K, tank coupling 25 W/K, heater 2100 W). Pump power from section 3.3: 57 W at 3000 rpm, 47 W at 2800 rpm. The script is a working file, not in the repository; a second analyst's independent implementation gives 1.035 kWh for this table and agrees to 0.01 kWh on every variant below. The programme researcher's script uses a 2150 W heater, a 70 W pump and a 4 W/K loss and comes out 0.04 kWh higher. All [ESTIMATED].
+Model: the three nodes of machine.md 6.2 (water, load, machine) plus a heat-exchanger water node on the left wall, 1 s steps, parameters of section 3.1 (C_load 23 kJ/K, C_machine 14 kJ/K, G_wl 600 W/K, G_wm 250 W/K, UA 3.0 W/K, tank coupling 25 W/K, heater 2100 W). Pump power from section 3.3: 57 W at 3000 rpm, 47 W at 2800 rpm. The script is a working file, not in the repository. All [ESTIMATED].
 
-| Item | Value |
-|---|---|
-| Heater, main wash: 18.5 to 65 C in 18.0 min (2.6 K/min) | 0.631 kWh |
-| Heater, final rinse: 45 to 69 C in 8.9 min | 0.310 kWh |
-| Circulation pump, 97 min | 0.087 kWh |
-| Drain pump and electronics | 0.010 kWh |
-| Total | 1.04 kWh (heating 91 %) |
-| Heater on-time | 26.9 min in two blocks |
-| Liquor temperature | 23 (pre-rinse) / 18.5 (after exchange) / 65 at 0:33 / 62 at 1:04 / 55 at 1:19 / 49 (intermediate rinse) / 45 to 69 (final rinse) / 67 at the last drain |
-| Load temperature | 64 at the end of the heat-up; 55 at the wash drain; 67 after the final rinse; 59 after 40 min of drying |
-| Mains water | 11.5 L, of which 3.1 L is in the tank at the end |
+Against the evidence: the programme researcher's implementation of this model, with slightly different constants (a 2150 W heater, a 70 W pump and a 4 W/K loss), gives 0.88 kWh for Eco 50 against the label's 0.836, 5 % high; the sisters' Eco was measured at 0.74 to 0.81 kWh [T1]. The difference is not resolved.
 
-Hand check: (4.0 x 4.186 + 23 + 14) kJ/K x 42 K = 2.26 MJ = 0.63 kWh for the wash and (2.9 x 4.186 + 23 + 14) x 22 K = 1.08 MJ = 0.30 kWh for the final rinse.
-
-Sensitivity (total held at 145 min by adjusting the hold): wash target 55 / 60 C: 0.96 / 1.00 kWh; final rinse 65 / 72 C: 0.98 / 1.08; British winter (inlet 8 C, room 19 C, 240 V): 1.15; half load: 0.87; cabinet loss 2.6 / 4.0 W/K: 1.03 / 1.07; machine heat capacity 10 / 18 kJ/K: 0.99 / 1.09. So 1.04 kWh, 0.96 to 1.15.
-
-Against the evidence:
-
-- Inside the printed 0.900 to 1.500 kWh and 7.0 to 15.5 L.
-- The two class-D sisters: run for their conditions (14 place settings, 2:13) the model gives 1.04 kWh against the measured 1.06 and 1.11, 2 and 6 % low. That gap is inside what the machine's heat capacity alone leaves open (+-0.05 kWh for 10 to 18 kJ/K). With a 60 C wash and a 65 C final rinse the same model gives 0.94 kWh, 11 to 15 % below the sisters, which is why the table has neither.
-- The printed extremes of Auto are not reached: 0.76 kWh against 0.900 on the light branch and 1.15 against 1.500 on the heavy branch, 15 and 23 % low. The programme researcher's model, which is this one with slightly different constants, gives 1.06 to 1.10 kWh for Express 65 against the printed 1.300 (15 to 18 % low), 1.16 to 1.27 for Intensive 70 against 1.300, and 0.88 for Eco 50 against the label's 0.836. The laboratory measured the sisters' one-hour programme at 1.11 and 1.19 kWh. So this model's printed figures for everything but Eco sit above the laboratory's (by 9 to 17 % for the one-hour programme) and further above the reconstruction. Whether that is margin in the printed figures or heat the reconstruction lacks (a wash held at temperature, a warmed pre-rinse, more thermal mass) is open.
-- A wash held at 65 C by the heater would add 0.08 kWh (1.11). Nothing documents it for this platform, and the two descriptions there are say the opposite (section 4.2), so it is an alternative, not the table.
-
-One power log decides all of this (section 6, item 7).
-
-### 4.6 Alternatives the evidence allows
-
-| Name | Change from the table | Water (L) | Model energy (kWh) | When to prefer |
-|---|---|---|---|---|
-| N-keep | A3 removed (pre-rinse water kept); a second intermediate rinse (7.5 min plus 1.5 min drain); hold shortened to about 38 min | 11.5 | 1.09 | the only 11.5 L structure that is documented for the platform (2008: "Reinigen mit 65, zweimal Zwischenspuelen") and the one that fits the manual's all-or-nothing wording about the water exchange. Choose it if a logged run shows no drain before the first heating and two unheated rinses |
-| N-full | A3 is a full drain and a 4.0 L refill | 13.0 | 1.05 | if the second fill measures about 4 L |
-| Wash target 60 C | A4 stops at 60 C after 15.8 min; the liquor then drifts to 57 C and falls to 51 C after the heat exchanger fills | 11.5 | 1.00 (0.94 with a 65 C final rinse as well) | if the first heating block in the power log is about 2 min shorter than the table's. The middle of the 45 to 65 C range, but 6 to 10 % (11 to 15 %) below the sisters |
-| Held wash | in A5 the heater comes back on whenever the liquor falls 1.5 K below the target: about 5 min of extra heating in short bursts, most of it after the heat exchanger fills | 11.5 | 1.11 (1.06 with a 60 C target) | if the power log shows heater bursts throughout the hold. Not documented for the platform: the patent and the one owner's description both have no reheating [PA7], [F2] |
-| Staged heat-up | A4 pauses once or twice on the way up, for the sensor reading at 45 C or for the enzymes, before continuing to the target | 11.5 | 1.04 | if the power log shows several heating blocks in the wash; consistent with [K1 p. 19] and with the 2010 Bosch whose owner hears the heater "click on and off throughout the main wash" [F2]. Same energy, but more minutes between 45 and 55 C, which matters to enzymes |
-| Lower-only heat-up | during A4 only the lower arm is fed | 11.5 | 1.04 | the 2008 manual says this of its fixed programmes ("bis zum Erreichen der Temperatur nur im unteren Korb gespuelt") [K1 p. 8]; unknown for Auto |
-| L, light (1:40) | no A3; wash 45 C (8.7 min heat-up); hold about 17 min; A7 replaced by a 0.5 L flush | 7.0 | 0.76 (0.71 with a 65 C final rinse; 0.78 with the wash held or at 50 C; printed 0.900) | pre-rinsed or nearly clean load |
-| H, heavy (2:45) | A3 a full exchange; wash 65 C; hold about 54 min; two intermediate rinses | 15.5 | 1.15 (1.10 with a 65 C final rinse; 1.25 with the wash held; 1.34 with a pre-rinse warmed to 40 C as well; printed 1.500) | heavily soiled load, or failed sensor calibration |
-| + regeneration | about 7 min and 5 L added in the main wash | +5 | +0.05 | every sixth run at hardness H04 |
-
-Why the table has a partial exchange and one rinse rather than N-keep: the forum observer of current machines reports partial drains between pre-rinse and main wash and a second rinse that "is barely ever triggered" [F1]. Why it might be wrong: the manual describes the exchange as all or nothing, and N-keep's 1.09 kWh is as close to the sisters' 1.06 and 1.11 as the table's 1.04. Both give the load the same total water and nearly the same thermal history; they differ in how much pre-rinse soil reaches the wash and in the dilution before the final rinse. The simulator should carry both as selectable branches.
-
-### 4.7 The other programmes, in outline
-
-Reconstructions from the same building blocks, all [ESTIMATED]; printed data in 4.1.
-
-| Programme | Reconstruction |
-|---|---|
-| Eco 50 | 4.0 L first fill; cold pre-rinse about 15 min; same water kept; heat to 50 C; long soak with intermittent spraying ("longer soaking and drying times" [B1]); filter flush; one 2.5 L intermediate rinse; final rinse 2.5 L to 61 C; drying of the order of 90 min. Sensors not used |
-| Intensive 70 | 4.0 L; pre-rinse about 10 min; heat to 70 C at "increased spray pressure" [B14] (about 3400 rpm assumed) and hold 30 to 40 min; two or three 2.5 L intermediate rinses (the third adds exactly the printed 10 min and 2.5 L); final rinse 69 C; drying about 35 min |
-| Express 65 | no pre-rinse; about 5.5 L with lower and upper arm together (state LU, if the production water switch has it); heat to 65 C in about 20 min; short hold; one rinse; final rinse 69 C; about 5 min drying. The 5.5 L is an assumption made to reach the printed 10.5 L. "Tabs ... Dissolving time of the tab is not attained" in short programmes [B3] |
-| Silence 50 | as Eco at "reduced spray pressure" [B8] (about 2400 rpm assumed) with a 63 C final rinse. Its extra 1.5 L and 0.21 kWh over Eco are not explained by the printed sequence, and the 4.0 / 2.5 / 0.5 L arithmetic gives it Eco's 9.5 L, not the printed 11.0. A 5.5 L first bath as assumed for Express would give exactly 11.0 L (both levels fed at once at low pressure), which is a conjecture |
-| Machine Care | not reconstructed: the printed 15.2 L does not follow from the arithmetic |
-| Pre-rinse | one 4.0 L cold fill, about 11 min of spraying, drain |
+One power log decides this (section 6, item 7).
 
 ## 5. Loading facts specific to this machine
 
@@ -1042,16 +962,16 @@ Machine frame, z above the filter plate; [ESTIMATED] from sections 2 and 3, +-12
 
 ## 6. Measurement checklist for the owner
 
-About 35 minutes with a tape measure, a ruler or straightedge, a phone, kitchen scales, a set of drill bits (2 to 5 mm in 0.5 mm steps; their shanks serve as pin gauges), a few cocktail sticks, the largest plate in the house, and calipers if available. Then one unattended Auto run with a plug-in power meter. In order of effect on the cleaning prediction. Each item says what it replaces.
+About 35 minutes with a tape measure, a ruler or straightedge, a phone, kitchen scales, a set of drill bits (2 to 5 mm in 0.5 mm steps; their shanks serve as pin gauges), a few cocktail sticks, the largest plate in the house, and calipers if available. Then one unattended Eco 50 run with a plug-in power meter. In order of effect on the cleaning prediction. Each item says what it replaces.
 
 1. Lower spray arm, 5 minutes. Pull it straight up off its stem. Lay it on a sheet of paper beside a ruler and photograph it square-on from above, then from below. Push a cocktail stick into each of the 11 openings and photograph from the side and from the tip end, so each jet direction shows. For each opening note the largest drill shank that enters (for the slots, the two that fit across and along). Note which blade carries the underside outlet and which way it and the three hooded outlets point. Weigh the arm. Replaces: the whole of the lower nozzle table in section 3.2 (radii to 1 mm, bores, all angles), the rotation sense, C_d A and therefore flow.
 2. Upper spray arm, 4 minutes. Pull out the top basket, unscrew the arm downward. Same photographs, cocktail sticks and drill shanks for its 7 openings. Above all: are the four slots cut square through the arm or at a slant, and to which side; and how steeply do the two tip outlets point. Photograph the underside and the docking plate at the back of the feed tube. Replaces: the upper nozzle table, the assumed 16 deg slant of the slots that drives the arm in the model, its rotation sense.
 3. Heights and tub, 8 minutes with the tape. First note which of its three positions the top basket is in (top, middle or bottom). Then, baskets pushed in: (a) filter plate to the top face of the lower arm; (b) top face of the lower arm to the underside of the lower-basket floor wires, once with the basket pushed in and once with it pulled out onto the door; (c) lower-basket floor wires to the underside of the upper arm; (d) top-basket floor wires to the roof, and to the white roof spinner; (e) filter plate to roof; (f) width between the side walls at basket height; (g) back wall to the front edge of the tub, and how deep the door's inner panel is recessed (straightedge across the open door); (h) centre of the lower-arm hub to the back wall, and centre of the upper-arm hub to the back wall; (i) how far the pipe on the back wall stands proud of it, and the gap between the lower basket's rear rim and the back wall with the basket pushed home; (j) with a straightedge laid on the filter plate, the height of the filter's crown and of the salt cap, and the gap from each up to the underside of the lower arm; (k) the plate test: with the top basket in its top position, stand the largest plate in the house (or 30 cm and 31 cm discs cut from stiff card) first in the rear rows, then astride the left middle row and the second rear row; push both baskets in, turn the upper arm by hand and measure the gap between plate and arm. Replaces: the whole of section 2.2 and the tub box, including my inference about the Rackmatic level in the photograph, the 30 mm offset between the arm axes, the depth budget of section 2.1, and the assumption that the basket sits at the same height on the door as in the tub. (k) tests directly whether the printed 30 and 31 cm limits are met where the model says they are.
 4. Baskets, 7 minutes. Lay a tape measure across each basket left to right and another front to back and photograph each basket from directly above with the whole rim in frame (for the top basket include the back rim and fold the cup shelves down). Calipers over the coating on a rim wire, a floor wire and a tine in each basket. Stand a ruler behind one rear tine, one side tine, one tall and one short tine of the top basket and photograph from the side. Count the tines of the two right-hand side rows of the bottom basket with the cutlery basket lifted out. Fold both rear rows of the bottom basket down and photograph from the side (fold direction, folded height). In the top basket measure the tablet tray (inside width, depth, height), the height of its rim above the basket floor and the height of the basket's front wall. Cutlery basket: count the compartments; measure the length, the width and height of the body, and the two tunnels underneath (width, height, distance apart and from each end); note over which rows it will stand. Replaces: the 2 % scale uncertainty on every basket dimension, all wire diameters, tine heights and leans, the mirrored right-hand rows, the folded state, the tray, the cutlery basket's shape.
 5. Roof and door, 3 minutes. Photograph the roof spinner from below with a ruler; unclip its cage and try drill shanks in the outlet above it. On the open door measure from the top edge of the inner panel down to the lower lip of the detergent chamber, and from the left edge to its centre; measure the chamber opening. Replaces: the assumed 6 mm roof outlet (a third of the upper-level flow), the dispenser position, the tablet drop.
-6. Display, 2 minutes, nothing started. Switch on, press each programme in turn and note the time shown; then Auto with Extra Dry, with Half Load, with SpeedPerfect+. Hold Setup for 3 s and note the settings H, r and d. Replaces: whether 2:25 is fixed or drifts, the option effects no document prints, the rinse-aid dose (r setting).
-7. One logged Auto run, 5 minutes to set up. Plug-in power meter or smart plug logging every 10 s or faster, rated for 13 A. Leave a phone recording sound on the worktop above the machine. Note the display at the start and whenever you pass. Replaces: almost every [ESTIMATED] duration in section 4.4: the heater blocks give the wash and final-rinse targets, whether the heat-up is staged and whether the heater comes back on during the hold; 30 W blips are drains, so their count before the first heating settles the exchange question and their count afterwards the number of rinses; the last heater-off to the end is the drying time; heater watts and total kWh calibrate the thermal model. The sound gives the water-switch period (the pitch changes when the level changes), how many distinct states it cycles through, and the arm speeds (the rhythm of jets on the door); a waterproof action camera on the lower basket would show which levels spray together. If the machine is paired with Home Connect, screenshots of the remaining time through the run give the jumps.
-8. If there is more time: a dishwasher-safe temperature logger in the cutlery basket for the same run; the drain hose into a bucket on the scales, weighing each discharge (bath volumes and carry-over); the weight of each empty basket; a macro photograph of the filter plate and of the micro filter against a ruler; a second Auto run with a heavily soiled load, and a third with clean dishes, to bracket the sensor.
+6. Display, 2 minutes, nothing started. Switch on, select Eco 50 and note the time shown. Hold Setup for 3 s and note the settings H, r and d. Replaces: the rinse-aid dose (r setting).
+7. One logged Eco 50 run, 5 minutes to set up. Plug-in power meter or smart plug logging every 10 s or faster, rated for 13 A. Leave a phone recording sound on the worktop above the machine. Note the display at the start and whenever you pass. Replaces: almost every [ESTIMATED] duration in section 4.4: the heater blocks give the wash and final-rinse heat-ups and whether the heater comes back on during the soak; the pump's power through the soak shows how much of it is spent spraying; 30 W blips are drains, so their count gives the number of rinses; the last heater-off to the end is the drying time; heater watts and total kWh calibrate the thermal model. The sound gives the water-switch period (the pitch changes when the level changes), how many distinct states it cycles through, and the arm speeds (the rhythm of jets on the door); a waterproof action camera on the lower basket would show which levels spray together. If the machine is paired with Home Connect, screenshots of the remaining time through the run give the phase boundaries.
+8. If there is more time: a dishwasher-safe temperature logger in the cutlery basket for the same run; the drain hose into a bucket on the scales, weighing each discharge (bath volumes and carry-over); the weight of each empty basket; a macro photograph of the filter plate and of the micro filter against a ruler.
 9. One e-mail: to dishwasher@test-appliances.com with E-Nr. SMV4HAX40G/13 and FD 0106, asking for the EN 60436 comparability-test conditions and the loading plan for 13 place settings.
 
 ## 7. Calibration parameters
@@ -1094,18 +1014,10 @@ Value adopted, expected range, and the test that fixes it. Checklist item number
 | Filter open areas and split | 88 + 26 cm2 plate and cover, 85 cm2 micro; 57 / 43 % | split 40 to 75 % through plate and cover | macro photographs (item 8) |
 | Heater power; heating rate | 2100 W at 230 V; 2.6 K/min full load | 2000 to 2350 W; 2.2 to 3.0 | item 7 |
 | C_machine, UA, G_wl, tank coupling | 14 kJ/K, 3.0 W/K, 600 W/K, 25 W/K | 10 to 18; 2 to 5; 300 to 1200; 10 to 50 | items 7 and 8 (temperature logger) |
-| Auto: exchange after pre-rinse | 2.5 L | 0, 2.5 or 4.0 L | item 7 (drain count) |
-| Auto: wash target; heat-up; hold | 65 C; one block of 18 min; 46 min with the heater off | 55 to 65; one block or staged; 34 to 55 min, heater off or holding | item 7 |
-| Auto: number of intermediate rinses | 1 | flush only, 1 or 2 | item 7 |
-| Auto: final-rinse target and hold | 69 C; 3 min | 61 to 72; 1 to 6 | item 7 |
-| Auto: drying length | 40 min | 30 to 50 | item 7 |
-| Auto: energy at laboratory conditions | 1.04 kWh | 0.96 to 1.15; two measured sisters 1.06 and 1.11 | item 7 |
 | Detergent release time | 60 s into the main-wash circulation | 0 to 5 min | open the door briefly at 14, 16 and 18 min (water may be warm) |
-| Rinse-aid dose and time | 5 mL at about 1:30.5 | 3 to 6 mL | item 6 (setting r) |
-| Turbidity thresholds D1, D2, D3 | not set | | item 8 (clean and heavily soiled runs) |
-| Start display: fixed or adaptive | unresolved | | item 6, repeated after differently soiled runs |
+| Rinse-aid dose and time | 5 mL early in the final rinse | 3 to 6 mL | item 6 (setting r) |
 
-Priority: (1) nozzle tables and jet angles, including what drives the upper arm, (2) one logged Auto run, (3) the vertical stack with the plate test, the basket scale and the tub's depth, (4) arm speeds and the water switch's states and pattern, (5) bath volumes, (6) thermal constants, (7) dispenser timing and sensor thresholds.
+Priority: (1) nozzle tables and jet angles, including what drives the upper arm, (2) one logged Eco 50 run, (3) the vertical stack with the plate test, the basket scale and the tub's depth, (4) arm speeds and the water switch's states and pattern, (5) bath volumes, (6) thermal constants, (7) dispenser timing.
 
 ## 8. Not found
 
@@ -1125,12 +1037,9 @@ Each with the fallback used.
 - Sump working volume, pipe volumes, minimum level (generic).
 - Drain rate of this drain pump (generic 16 L/min; sister 10 L/min).
 - The micro filter's mesh and the coarse filter's slot width (BSH patent ranges; generic 5 mm).
-- Turbidity thresholds and the map from reading to temperature and time ("in der Elektronik hinterlegt").
-- A step-by-step sequence, a temperature trace or a power trace of Auto 45-65 on this platform; its wash temperature at normal soiling; whether its heat-up is staged or its wash held at temperature; its final-rinse temperature; its drying time; the dispenser release time; the rinse-aid dose per setting on the 2021 software.
-- A measurement of plain Auto on this model. The two laboratory figures are for 14-place-setting sisters; the one app figure on file is for Auto with an option.
-- The intermediate-rinse volume (2.5 L adopted; 2.9 L in a BSH patent example), and what makes Silence 50 use 11.0 L and Machine Care 15.2 L.
-- What the start display's 2:25 assumes, and whether it adapts.
-- The effect sizes of Extra Dry, Half Load and SpeedPerfect+ on Auto; how "AquaMix" glass protection works on this model.
+- A temperature trace or a power trace of Eco 50 on this platform; how much of its soak is spent spraying; its drying time; the dispenser release time; the rinse-aid dose per setting on the 2021 software.
+- The intermediate-rinse volume (2.5 L adopted; 2.9 L in a BSH patent example).
+- How "AquaMix" glass protection works on this model.
 - The official loading plan for 13 place settings (by e-mail from BSH only).
 - The BSH document "GV640A dishwasher platform training" (69 pages), listed on a manuals site behind a captcha: the most likely home of the fill volumes and programme charts.
 
@@ -1161,7 +1070,6 @@ Bosch documents for SMV4HAX40G:
 - [B11] Official product photographs. https://media3.bsh-group.com/Product_Shots/16580356_SMV4HAX40G_STP_def.webp and 17757775, 17757776, 17757779 under the same path (re-opened)
 - [B12] Sister and range documents: SMS4HAI48E manual https://media3.bsh-group.com/Documents/9001453806_C.pdf ; generic manual for the generation https://media3.bosch-home.com/Documents/9001442770_A.pdf (p. 27, basket-height tables for all variants) ; SMV4HAX48E spec sheet https://media3.bsh-group.com/Documents/specsheet/de-DE/SMV4HAX48E.pdf ; US manual SHP78CM5N https://media3.bosch-home.com/Documents/9001641455_C.pdf (p. 15)
 - [B13] Bosch Australia dishwashing catalogue 2017 https://media3.bosch-home.com/Documents/MCDOC02269689_BH_3207_B_-_Dishwashing_Catalogue_Ed_1_2017_FA.pdf (p. 2, 8) ; Bosch New Zealand brochure 2021 https://media3.bosch-home.com/Documents/MCDOC02344627_Bosch_NZ_Dishwashing_Brochure.pdf (p. 2)
-- [B14] Bosch Ireland, "Dishwasher symbols guide" (generic for the range, not for this model). https://www.bosch-home.ie/experience-bosch/using-your-appliance/dishwasher-symbols-guide-old ("Intensive 70": "This heavy-duty programme uses high temperatures and increased spray pressure"; fetched 2026-10-09)
 - [B15] EU declaration of conformity for SD6PW1B. https://media3.bsh-group.com/Documents/18273715_EU%20DoC_Bosch_SD6PW1B_SI6PW1B_SL6PW1B.pdf
 
 BSH part pages and part photographs (part photographs are under https://media3.bsh-group.com/Product_Shots/ with the file numbers given):
@@ -1208,9 +1116,8 @@ BSH patents:
 Tests, forums, other:
 
 - [T1] Verein fuer Konsumenteninformation, KONSUMENT dishwasher test 10/2021. https://www.konsument.at/test-geschirrspueler-102021 ; table https://archiv.vki.at/konsument/tabellen/318926318976_4.html (re-opened as the saved table: rows "Automatikprogramm" for energy, water and duration, seven machines)
-- [F1] automaticwasher.org, "does Auto 45-65 on BSH dishwashers choose between two fixed degrees, or is it variable?", 2025. https://automaticwasher.org/threads/does-auto-45-65-on-bsh-dishwashers-choose-between-two-fixed-degrees-or-is-it-variable.97583/ (post 4, about a zeolite model; re-opened)
 - [F2] automaticwasher.org, thread 52765, posts 93 and 101, 2014, by the owner of a 2010 Bosch with heat exchanger and no zeolite. https://automaticwasher.org/threads/europe-phosphate-regulations-all-stpp-out-within-2016-in-dw-products.52765/latest (re-opened)
-- [F5] Kuechen-Forum, "Verbrauchsangaben Geschirrspueler Eco vs. Auto", 2024. https://www.kuechen-forum.de/forum/themen/verbrauchsangaben-geschirrspueler-eco-vs-auto.48928/ (re-opened: post and attached table; the table's Auto rows carry the options "I" IntensivZone and "V" VarioSpeedPlus, none is plain Auto)
+- [F5] Kuechen-Forum, "Verbrauchsangaben Geschirrspueler Eco vs. Auto", 2024. https://www.kuechen-forum.de/forum/themen/verbrauchsangaben-geschirrspueler-eco-vs-auto.48928/ (re-opened: post and attached table)
 - [M] `docs/research/machine.md` (sections 2, 3, 4, 6, 7, 12); `docs/research/standards.md` (section 5.1)
 
-Researchers' notes merged here (`docs/research/machine-bosch-notes/`): `documents.md`, `hardware.md`, `programme.md`, `photos.md`. They hold further detail not repeated in this dossier: the control panel and basic settings, the installation data, the full error-code list, the softener table, the published masses of parts, the photo researcher's camera fits, and outlines of every forum thread.
+Researchers' notes merged here (`docs/research/machine-bosch-notes/`): `documents.md`, `hardware.md`, `photos.md`. They hold further detail not repeated in this dossier: the control panel and basic settings, the installation data, the full error-code list, the softener table, the published masses of parts, the photo researcher's camera fits, and outlines of every forum thread.

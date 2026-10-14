@@ -220,7 +220,7 @@ export function stdEu13LiteratureRecord(): LiteratureRecord {
         : SD_BASIS,
     method: 'round_robin',
     // Melamine is reported and not fitted: the record holds two plates of it, and what real
-    // melamine loses its points to (redeposited specks) is not modelled.
+    // melamine loses its points to (redeposited specks) is out of scope.
     fitted: cls !== 'melamine',
   }));
   // Every item but the pots, which the record does not hold: (4.14 x 146 - 3.62 x 8) / 138.

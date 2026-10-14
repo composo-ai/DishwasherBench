@@ -1,6 +1,8 @@
 /**
  * The phenomena suite: the checklist of docs/research/standards.md section 9 (48 real-world
- * loading phenomena, P01 to P48) as executable A/B washes of the owner's Bosch SMV4HAX40G.
+ * loading phenomena, P01 to P48) as executable A/B washes of the owner's Bosch SMV4HAX40G on
+ * Eco 50: 46 of them, without P27 and P32, which compare programmes (out of scope,
+ * docs/design/scope.md).
  *
  *  - `types.ts`: scenarios, washes, checks, bands, diagnostics, reports;
  *  - `bands.ts`: the checklist's tolerance as bands, and the verdict of a value against one;
@@ -8,11 +10,11 @@
  *  - `clearance.ts`: whether a set pose cuts into the baskets, and the nearest pose that is clear;
  *  - `pair-gap.ts`: how close a region of one item lies to another item, by area (the check of
  *    a load that stands for a gap: the crowded plates of P03, the nested spoons of P15);
- *  - `programmes.ts`: the machine's programmes and one-change variants of them;
+ *  - `programmes.ts`: Eco 50 and one-change variants of it;
  *  - `harness.ts`: one wash with the shared exposure cache and its diagnostics;
  *  - `diagnostics.ts`: what the water did to each surface, the pools, the liquor;
- *  - `measures.ts`: the quantities checks compare; the probes for missing mechanisms;
- *  - `scenarios-a.ts`, `scenarios-b.ts`, `scenarios-c.ts`: the 48 scenarios;
+ *  - `measures.ts`: the quantities checks compare; the probes for out-of-scope mechanisms;
+ *  - `scenarios-a.ts`, `scenarios-b.ts`, `scenarios-c.ts`: the 46 scenarios;
  *  - `runner.ts`: `runPhenomena` (any subset, a tier, a parameter set) and `PHENOMENA`;
  *  - `report.ts`: Markdown and JSON reports and the comparison of runs;
  *  - `cli.ts`: the command.

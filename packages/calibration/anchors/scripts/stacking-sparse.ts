@@ -6,7 +6,7 @@
  * dessert plates on edge in the lower basket, leaning 20 degrees.
  *
  *   pnpm --filter @spotless/calibration exec tsx anchors/scripts/stacking-sparse.ts
- *        [--params anchors/anchored-v1.json] [--programme eco_50] [--cache <dir>]
+ *        [--params anchors/anchored-v1.json] [--cache <dir>]
  *
  * Wash A: both plates facing the spray, the third plate under the pan.
  * Wash B: both plates turned away, the third plate without the pan.
@@ -47,7 +47,8 @@ if (paramFile !== undefined) {
   if (!read.ok) throw new RangeError(read.error.map((i) => `${i.key} ${i.message}`).join('; '));
   Object.assign(params, read.value.overrides);
 }
-const programme = option('--programme') ?? 'eco_50';
+/** Eco 50, the only programme the simulation washes on. */
+const programme = 'eco_50';
 const cache = createDiskExposureCache(
   option('--cache') === undefined ? anchorCacheDir() : fromOrigin(option('--cache') as string),
 );

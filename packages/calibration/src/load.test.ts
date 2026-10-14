@@ -120,7 +120,7 @@ describe('a load placed in the game becomes the load of a record, and back', () 
     expect(checked.ok ? [] : checked.error).toEqual([]);
     expect(record.kind).toBe('planned');
     expect(record.machine).toEqual({ id: manifest.machine_id, config: manifest.machine_config });
-    expect(record.programme.id).toBe('auto_145');
+    expect(record.programme.id).toBe('eco_50');
     expect(record.sim?.level_seed).toBe(4242);
     expect(record.load.items.map((i) => [i.id, i.type])).toEqual([
       ['fork_01', 'dinner_fork_185'],
@@ -214,7 +214,7 @@ describe('washLoadOfRecord and washManifestFromRecord', () => {
     kind: 'planned',
     provenance: { methods: { scale: { description: 'balance' } } },
     machine: { id: 'bosch_smv4hax40g' },
-    programme: { id: 'auto_145' },
+    programme: { id: 'eco_50' },
     load: {
       dispenser_blocked: true,
       stalled_arms_deg: { lower: 90 },

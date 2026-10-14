@@ -1,7 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { getSprayArm } from './config.ts';
 import { BOSCH_SMV4HAX40G_DEF } from './data/bosch-smv4hax40g.ts';
-import { SPOT60_DEF } from './data/spot60.ts';
 import type { BasketDef, MachineDef, ProgrammeDef } from './def.ts';
 import {
   DEFAULT_HEAT_TIMEOUT_MIN,
@@ -11,7 +10,7 @@ import {
   loadProgrammeSpec,
   nozzleArea,
 } from './load.ts';
-import { BOSCH_SMV4HAX40G, MACHINES, SPOT_60 } from './machines.ts';
+import { BOSCH_SMV4HAX40G, MACHINES } from './machines.ts';
 import { floorReliefMax, floorRiseAt } from './outline.ts';
 import { expectNear, expectWithin, must, mutableCopy } from './test-util.ts';
 
@@ -41,7 +40,7 @@ describe('nozzleArea', () => {
 
 /** A small basket definition in a frame of its own, to check the move into the rack frame. */
 function sampleBasket(): BasketDef {
-  const lower = must(SPOT60_DEF.baskets.find((b) => b.id === 'lower'));
+  const lower = must(BOSCH_SMV4HAX40G_DEF.baskets.find((b) => b.id === 'lower'));
   return {
     ...lower,
     // Authoring frame: origin 100 mm right of and 40 mm behind the lower-arm axis; the basket's
@@ -103,10 +102,10 @@ function sampleBasket(): BasketDef {
 
 describe('loadMachineSpec: frames', () => {
   const def: MachineDef = {
-    ...SPOT60_DEF,
+    ...BOSCH_SMV4HAX40G_DEF,
     baskets: [sampleBasket()],
     cutleryBasket: null,
-    sprayLevels: SPOT60_DEF.sprayLevels.filter((l) => l.mount.kind === 'tub'),
+    sprayLevels: BOSCH_SMV4HAX40G_DEF.sprayLevels.filter((l) => l.mount.kind === 'tub'),
   };
   const basket = must(loadMachineSpec(def).baskets[0]);
 
@@ -158,8 +157,10 @@ describe('loadMachineSpec: frames', () => {
     expect(floorRiseAt(basket.floor, 0.1, 0)).toBe(0);
     expect(floorRiseAt(basket.floor, 0.39, 0)).toBe(0);
     expectNear(floorReliefMax(basket.floor), 0.03, 1e-12);
-    // SPOT-60's own baskets have flat floors.
-    for (const flat of loadMachineSpec(SPOT60_DEF).baskets) {
+    // A floor without a relief is flat.
+    const { relief: _relief, ...flatFloor } = sampleBasket().floor;
+    const flatDef: MachineDef = { ...def, baskets: [{ ...sampleBasket(), floor: flatFloor }] };
+    for (const flat of loadMachineSpec(flatDef).baskets) {
       expect(flat.floor.relief).toBeNull();
       expect(floorRiseAt(flat.floor, 0.1, 0.1)).toBe(0);
       expect(floorReliefMax(flat.floor)).toBe(0);
@@ -185,10 +186,10 @@ describe('loadMachineSpec: frames', () => {
     expect(() => loadMachineSpec({ ...def, baskets: [bad] })).toThrow(RangeError);
     // A cutlery basket placed in a basket the machine does not have cannot be placed.
     expect(() =>
-      loadMachineSpec({ ...def, cutleryBasket: must(SPOT60_DEF.cutleryBasket) }),
+      loadMachineSpec({ ...def, cutleryBasket: must(BOSCH_SMV4HAX40G_DEF.cutleryBasket) }),
     ).not.toThrow();
     const stray = {
-      ...must(SPOT60_DEF.cutleryBasket),
+      ...must(BOSCH_SMV4HAX40G_DEF.cutleryBasket),
       defaultPlacement: { basketId: 'nowhere', centreMm: [0, 0] as const, longAxis: 'y' as const },
     };
     expect(() => loadMachineSpec({ ...def, cutleryBasket: stray })).toThrow(RangeError);
@@ -228,7 +229,7 @@ describe('loadMachineSpec: units', () => {
     expectWithin(must(spec.softener).extraEnergy, 0.05 * JOULES_PER_KWH, 1e-15);
     expect(JOULES_PER_KWH).toBe(3.6e6);
     // rpm to rad/s for the design speed; pump speeds stay in rpm.
-    expectNear(must(getSprayArm(SPOT_60, 'lower').designSpeed), (35 * Math.PI) / 30, 1e-12);
+    expectNear(must(getSprayArm(spec, 'lower').designSpeed), (42 * Math.PI) / 30, 1e-12);
     expect(spec.hydraulics.pump.ratedSpeedRpm).toBe(3000);
     // The feed duct's heights above the stub ends become tub heights.
     const duct = must(spec.feedDuct);
@@ -237,7 +238,7 @@ describe('loadMachineSpec: units', () => {
   });
 
   it("gives every nozzle the machine's velocity coefficient unless it has its own", () => {
-    const def = mutableCopy(SPOT60_DEF);
+    const def = mutableCopy(BOSCH_SMV4HAX40G_DEF);
     def.hydraulics.nozzleVelocityCoefficient = 0.97;
     const first = must(must(def.sprayLevels[0]).nozzles[0]);
     first.cv = 0.9;
@@ -267,7 +268,7 @@ describe('loadMachineSpec: units', () => {
     expect(upperAxis('U3')).toBe('radial');
     expect(upperAxis('U6')).toBeNull();
     // A round bore never has one, whatever the definition says.
-    const def = mutableCopy(SPOT60_DEF);
+    const def = mutableCopy(BOSCH_SMV4HAX40G_DEF);
     const first = must(must(def.sprayLevels[0]).nozzles.find((n) => n.shape === 'round'));
     first.slotAxis = 'radial';
     const loaded = must(loadMachineSpec(def).sprayLevels[0]);
@@ -285,7 +286,6 @@ describe('loadMachineSpec: units', () => {
       ],
       cutleryBasket: must(BOSCH_SMV4HAX40G.cutleryBasket).defaultPlacement,
     });
-    expect(SPOT_60.defaultConfig.basketHeights).toEqual({ upper: 'mid' });
     // A row that is folded by default appears in the default configuration.
     const def = mutableCopy(BOSCH_SMV4HAX40G_DEF);
     const r2 = must(must(def.baskets[0]).tineRows.find((r) => r.id === 'r2'));
@@ -462,10 +462,7 @@ describe('specifications are plain serialisable data', () => {
   });
 
   it('a definition that has been through JSON loads to the same specification', () => {
-    for (const [def, spec] of [
-      [BOSCH_SMV4HAX40G_DEF, BOSCH_SMV4HAX40G],
-      [SPOT60_DEF, SPOT_60],
-    ] as const) {
+    for (const [def, spec] of [[BOSCH_SMV4HAX40G_DEF, BOSCH_SMV4HAX40G]] as const) {
       const revived = JSON.parse(JSON.stringify(def)) as MachineDef;
       expect(loadMachineSpec(revived)).toEqual(spec);
     }
@@ -487,6 +484,8 @@ describe('specifications are plain serialisable data', () => {
 
   it('loading is deterministic', () => {
     expect(loadMachineSpec(BOSCH_SMV4HAX40G_DEF)).toEqual(BOSCH_SMV4HAX40G);
-    expect(JSON.stringify(loadMachineSpec(SPOT60_DEF))).toBe(JSON.stringify(SPOT_60));
+    expect(JSON.stringify(loadMachineSpec(BOSCH_SMV4HAX40G_DEF))).toBe(
+      JSON.stringify(BOSCH_SMV4HAX40G),
+    );
   });
 });

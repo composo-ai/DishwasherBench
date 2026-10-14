@@ -26,8 +26,6 @@ export interface RunBatchOptions {
   readonly transport?: McpTransportKind;
   readonly verify?: VerifyMode;
   readonly washTimeoutS?: number;
-  /** The programme the harness starts cycles on; default the one each level is scored on. */
-  readonly programme?: string;
   readonly saveImages?: boolean;
   readonly log?: (line: string) => void;
 }
@@ -85,7 +83,6 @@ export async function runBatch(options: RunBatchOptions): Promise<BatchResult> {
             ...(options.transport === undefined ? {} : { transport: options.transport }),
             ...(options.verify === undefined ? {} : { verify: options.verify }),
             ...(options.washTimeoutS === undefined ? {} : { washTimeoutS: options.washTimeoutS }),
-            ...(options.programme === undefined ? {} : { programme: options.programme }),
             ...(options.saveImages === undefined ? {} : { saveImages: options.saveImages }),
             log,
           });

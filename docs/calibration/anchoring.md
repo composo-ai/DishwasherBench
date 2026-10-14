@@ -70,13 +70,6 @@ How to read it:
   reads tea at all (section 4.1). The published mean does imply that real tea items average at
   least 2.2 on this machine, so the model's 0 is wrong in a known direction.
 - **Nothing in the model lies between "gone" and "patch"**: of 97 items about 70 are at 5.
-  Redeposited specks, which is what real melamine and unsoiled cutlery lose their points to, are not
-  modelled.
-
-On the owner's **Auto programme** every egg and milk item comes out dirty under every detergent
-assumption tried, including a heat-stable protease at the top of its range (section 5.4). **Do not
-use Auto verdicts for egg and milk; run the reference level on Eco 50 until an egg-yolk wash on Auto
-on the owner's machine exists.**
 
 ## 2. Scenario STD-EU-13 on the owner's machine
 
@@ -152,8 +145,7 @@ translucent threshold would make them cleaner.
 
 ### 2.3 Programme, detergent and dose
 
-- Reported numbers: the owner's **Eco 50** (`eco_50`) and **Auto 45-65** (`auto_145`, 2 h 25 min),
-  as written in `@spotless/machine`.
+- Reported numbers: the owner's **Eco 50** (`eco_50`), as written in `@spotless/machine`.
 - The fit used the literature record's course: Eco 50 with the main wash limited to 54 C and the
   final rinse to 48 C, the temperatures measured on the round robin's machine (standards 3.2). The
   step lengths are the owner's; the round robin's eco took 270 min.
@@ -262,7 +254,7 @@ wash record of the calibration tool with the class means in a field of its own (
 uncertainty of each class mean is, in quadrature: the published spread over runs and laboratories;
 0.3 for the other Bosch; 0.3 for the reconstructed load; 1.5 / sqrt(n) for the few items; for
 crockery the tea term. The record carries the tool's weight for a literature record, 0.25.
-Melamine is reported and not fitted (two plates, and no redeposition in the model); the ranking term
+Melamine is reported and not fitted (two plates); the ranking term
 is cutlery above crockery and glass.
 
 ### 4.2 The scan, under both readings of the milk
@@ -314,7 +306,7 @@ removes far more of the starch, 79 %, which is not pursued here).
 
 ## 5. Results under the anchored set
 
-### 5.1 Eco 50 and Auto 45-65, as written
+### 5.1 Eco 50, as written
 
 Mean of four washes (two for the rows with another dose, which compute their own exposure). Class
 means with the standard weights; `anchors/scripts/tables.ts`, output in
@@ -328,10 +320,6 @@ means with the standard weights; `anchors/scripts/tables.ts`, output in
 | Eco 50, anchored, all milk solids | 2.56 | 4.59 | 1.75 | 5.00 | 3.60 (0.04) | 69 % | 74.5 | 45.5 | 4.0 % |
 | Eco 50, anchored, tile heat-aged | 2.56 | 4.68 | 3.96 | 5.00 | 3.97 (0.06) | 76 % | 80.0 | 51.0 | 1.4 % |
 | Eco 50, anchored, 14.5 g of detergent | 2.44 | 4.24 | 2.72 | 5.00 | 3.53 (0.05) | 62 % | 66.0 | 37.0 | 1.7 % |
-| **Auto, defaults** (detergent D, 20 g) | 0.80 | 3.68 | 1.57 | 2.25 | 2.46 (0.03) | 49 % | 54.3 | 25.3 | 63.8 % |
-| **Auto, anchored** (detergent D, 20 g) | 0.69 | 3.52 | 1.40 | 2.50 | 2.33 (0.02) | 43 % | 46.5 | 17.5 | 40.5 % |
-| Auto, owner's tablet, 12.9 g, heat-stable protease ASSUMED | 1.39 | 3.80 | 1.75 | 4.75 | 2.84 (0.06) | 55 % | 59.0 | 30.0 | 5.5 % |
-| Auto, owner's tablet, 12.9 g, protease as stable as detergent D's | 1.16 | 3.80 | 1.75 | 2.50 | 2.67 (0.04) | 51 % | 56.5 | 27.5 | 36.4 % |
 
 ### 5.2 The same by what the class means hide
 
@@ -341,10 +329,6 @@ means with the standard weights; `anchors/scripts/tables.ts`, output in
 | Eco 50, anchored | 2.56 | 4.28 | 3.49 | 3.53 | 2.68 | 0.00 | 5.00 | 4.47 | 4.21 |
 | Eco 50, anchored, all milk solids | 2.56 | 4.28 | 1.75 | 3.19 | 0.00 | 0.00 | 5.00 | 4.17 | 4.02 |
 | Eco 50, anchored, 14.5 g | 2.44 | 3.66 | 2.72 | 3.10 | 1.50 | 0.00 | 4.76 | 4.09 | 3.88 |
-| Auto, defaults | 0.80 | 2.66 | 1.57 | 1.73 | 0.00 | 0.00 | 1.56 | 2.85 | 2.86 |
-| Auto, anchored | 0.69 | 2.37 | 1.40 | 1.56 | 0.00 | 0.00 | 1.36 | 2.71 | 2.72 |
-| Auto, owner's tablet, heat-stable ASSUMED | 1.39 | 2.88 | 1.75 | 2.21 | 0.00 | 0.07 | 2.63 | 3.28 | 3.19 |
-| Auto, owner's tablet, stability of D | 1.16 | 2.88 | 1.75 | 1.99 | 0.00 | 0.14 | 2.11 | 3.07 | 3.07 |
 
 By soil (share of the dry mass left; mean score of the items that carry it; items clean):
 
@@ -353,17 +337,12 @@ By soil (share of the dry mass left; mean score of the items that carry it; item
 | Eco 50, defaults | 1.3 %; 0.0; 0 | 0.1 %; 4.4; 9.5 | 16.5 %; 0.0; 0 | 0.0 %; 4.0; 2.0 | 0.0 %; 4.7; 16.8 | 0.0 %; 5.0; 3 | 11.4 %; 0.0; 0 |
 | Eco 50, anchored | 0.0 %; 4.3; 13.3 | 0.1 %; 4.4; 9.5 | 8.2 %; 2.7; 2.5 | 0.0 %; 5.0; 3 | 0.0 %; 4.7; 16.8 | 0.0 %; 5.0; 3 | 11.7 %; 0.0; 0 |
 | Eco 50, anchored, 14.5 g | 0.1 %; 3.1; 6.5 | 0.1 %; 4.3; 8.5 | 9.3 %; 1.5; 0 | 0.0 %; 5.0; 3 | 0.0 %; 4.6; 16.0 | 0.0 %; 5.0; 3 | 26.3 %; 0.0; 0 |
-| Auto, defaults | 90.1 %; 0.0; 0 | 0.1 %; 4.4; 9.5 | 95.1 %; 0.0; 0 | 73.8 %; 0.0; 0 | 0.1 %; 3.6; 12.8 | 0.0 %; 4.3; 3 | 10.6 %; 0.0; 0 |
-| Auto, anchored | 57.2 %; 0.0; 0 | 0.1 %; 4.4; 9.5 | 78.0 %; 0.0; 0 | 11.2 %; 0.0; 0 | 0.1 %; 2.8; 5.5 | 0.0 %; 4.3; 2.5 | 10.7 %; 0.0; 0 |
-| Auto, owner's tablet, heat-stable ASSUMED | 3.0 %; 0.0; 0 | 0.1 %; 4.3; 8.5 | 23.3 %; 0.0; 0 | 0.0 %; 4.0; 2.5 | 0.0 %; 4.5; 16.0 | 0.0 %; 5.0; 3 | 6.4 %; 0.1; 0 |
-| Auto, owner's tablet, stability of D | 50.6 %; 0.0; 0 | 0.1 %; 4.3; 8.5 | 74.0 %; 0.0; 0 | 6.8 %; 0.0; 0 | 0.0 %; 4.5; 16.0 | 0.0 %; 5.0; 3 | 6.3 %; 0.1; 0 |
 
 **The agreement of the class means is partly by composition, and the pattern of residues is not
 that of the standards dossier.** Standards 7.1 and 7.3 name plates with oven-dried egg, meat,
 spinach and porridge as where points are lost; here every one of the 17 plates and bowls is bare
 and tea alone loses crockery its points. The cutlery mean agrees with the published one, but 28
-unsoiled pieces at exactly 5.00 carry it. Do not tune further toward the class means until
-redeposition exists. The quantity to anchor is the share of soiled items clean (48 of 68, 71 %,
+unsoiled pieces at exactly 5.00 carry it. Do not tune further toward the class means. The quantity to anchor is the share of soiled items clean (48 of 68, 71 %,
 on Eco 50), for which nothing is published; the owner's washes will give it.
 
 ### 5.3 Where the residues sit (Eco 50, anchored, level seed 1, simulation seed 1)
@@ -381,42 +360,6 @@ is left:
 - Two knives (4 and 10 mm2 of margarine) and three soup spoons (8 to 19 mm2 of porridge).
 
 Which forks, knives, spoons and glasses these are changes with the simulation seed (section 7).
-
-### 5.4 The Auto programme and the owner's tablet
-
-Auto as written heats to 64 C within 18 minutes of the tablet's release and holds 62 to 64 C for
-half an hour; the main wash ends 57 minutes after the release. With reference detergent D the
-protease falls from 98 to 25 mg/L in that time (half-life 30 min at 60 C, a "placeholder" of
-chemistry 10.5) and its activity factor is 0.5 to 0.7 there. **All 17 egg items and all 7 milk
-glasses score 0, with a film over the whole soiled area (57 % of the egg yolk left), whatever the
-stacking.** The anchored set is slightly worse on Auto than the defaults (2.33 against 2.46): the
-soils now start dry and pay their lag, and the inspector sees the specks of porridge on the
-thickest places of a deposit that the lumped model thinned away (5.5 of 19 porridge items clean in
-place of 13).
-
-The review asked for a second named set for a commercial tablet. Since then a dossier of the
-owner's own detergent has been written by another engineer
-(`docs/research/detergent-finish-ultimate.md`, desk research, nothing measured: Finish Powerball
-Ultimate, **12.9 g**, no silicate, twice the bleach activator, lower pH, more protease by a guess).
-Two sets lay it over the anchored one (`anchors/scripts/make-owner-set.ts`):
-
-| File | What it assumes |
-|---|---|
-| `anchored-v2.owner-tablet.json` | The composition of `packages/calibration/detergents/finish-powerball-ultimate.json`; its protease level scaled as that dossier asks (0.020 x 2.5 = 0.05 kg/kg, the registry maximum); **and an ASSUMED heat-stable protease**: half-life 2 h at 60 C (the upper end of that dossier's range, in place of 30 min) and an activity mid-point of 75 C (in place of 63 C). No source gives either number |
-| `anchored-v2.owner-tablet.savinase.json` | The same without the assumption: the protease as stable as detergent D's |
-
-Both must be washed with a dose of 12.9 g, which is a value of the machine and not in the files
-(`run.ts --dose-g 12.9`).
-
-**The second set does not unblock Auto.** With the heat-stable protease 3.0 % of the egg yolk is
-left instead of 57 %, the minced meat and the porridge come clean, the load mean rises from 2.33 to
-2.84, and still every egg item and every milk glass scores 0: the 57 minutes are just too short for
-the thickest places of a 5.6 mg/cm2 layer, which take about four times as long as its mean
-thickness. A margin of that size is inside what the unfitted constants can move either way (the
-spread of the loading, the reading of the tile, the enzyme level, its stability, the dose). The
-model's statement about egg and milk on Auto is therefore neither trustworthy nor a function of the
-stacking. **An egg-yolk wash on Auto on the owner's machine with his tablet is the first thing to
-run; until then the reference level should run on Eco 50.**
 
 ## 6. Stacking under the anchored set
 
@@ -437,15 +380,9 @@ weighted.
 | Lower arm stalled at 62 degrees | Eco 50 | 97 | 3.61 | 62 | 33 | 3.00 | 4.00 | 1.75 | 5.00 | 2.1 % |
 | Forks turned end for end | Eco 50 | 97 | 4.26 | 78 | 49 | 3.41 | 4.68 | 3.00 | 5.00 | 1.8 % |
 | Half load | Eco 50 | 54 | 4.11 | 44 (81 %) | 30 of 40 | 2.81 | 4.75 | 4.00 | 5.00 | 0.0 % |
-| Careful | Auto, detergent D | 97 | 2.74 | 48 (49 %) | 19 of 68 | 1.05 | 3.60 | 0.50 | 2.50 | 40.4 % |
-| Careless | Auto, detergent D | 92 | 1.76 | 29 (32 %) | 1 of 64 | 0.24 | 2.79 | 0.13 | 3.00 | 62.5 % |
-| Lower arm stalled | Auto, detergent D | 97 | 2.38 | 37 | 8 | 0.64 | 3.25 | 0.13 | 2.50 | 44.3 % |
-| Dispenser shut (5.6 g dissolves) | Auto, detergent D | 97 | 2.03 | 39 | 10 | 0.00 | 3.03 | 0.00 | 0.00 | 74.5 % |
 
-Stacking decides outcomes on both programmes: 1.3 score points and 30 clean items between a careful
-and a careless load on Eco 50, one point and 19 items on Auto. On Auto the difference is carried by
-the soils that are not enzyme-limited there and by held water; the egg and milk items are dirty
-either way.
+Stacking decides outcomes: 1.3 score points and 30 clean items between a careful and a careless
+load on Eco 50.
 
 ### 6.2 A/B pairs from the checklist (Eco 50; B minus A on the affected items)
 
@@ -464,11 +401,6 @@ either way.
 | P16, control | Forks turned end for end in the basket | 11 | 3.73 | 4.64 | +0.91 | at most 0.3 | **Fails** (10 of 11 clean in place of 6); the turned poses are rule-made and overlap (20 placement warnings); at simulation seed 2 the same pair gives +0.45 (10 of 11 clean in place of 9), so half of it is sampling |
 | P28, control | Tea by position: cups and mugs | 5 | 0, 0, 0, 0, 0 | | range 0 | at most 0.5 | Holds trivially |
 | P19 | Half load against full, by item type | | 4.03 | 3.83 | -0.20 | -0.5 to -1 at 30 % over rated | Sign right, small: glasses -1.2, forks -0.4, knives -0.4; plates unchanged |
-| P27 | The same load on Eco 50 and on Auto | 97 | 4.19 | 2.74 | -1.45 | more time at 45 to 60 C cleans protein | Right in sign for detergent D; see section 5.4 |
-
-On Auto the same pairs give: nested -2.5, dispenser shut -1.0, stalled arm -0.5 on the lower rack
-and -0.2 on the upper, -1.0 on the turned meat and spinach plates, and 0 against 0 for everything
-that carries egg yolk or milk.
 
 **Of six negative controls, two hold, two hold only because every tea item is at 0, and two fail**
 (the upper rack under a stalled lower arm; forks turned end for end). One positive is too weak (the
@@ -586,9 +518,7 @@ not as the right numbers.
 | Eco 50, load level: gross faults (nesting, contact, a shut dispenser, held water, a stalled arm, an overfull rack) cost points | In sign | Section 6; the load mean is within 0.3 of the published one, 0.3 above it without tea |
 | Eco 50, a plate or bowl: clean or not | Yes for contact and nesting; **no for facing** | Section 6.3 |
 | Eco 50, a single fork, spoon, knife or glass | **No**: 2 to 9 verdicts flip with the sampling | Section 7 |
-| Tea, any programme | **No** | Always 0; four unidentified estimates; wrong in a known direction (the published mean needs tea at 2.2 or more) |
-| Auto, egg and milk | **Do not use** | Section 5.4 |
-| Auto, other soils | In sign | Porridge, margarine, meat with a heat-stable protease, held water |
+| Tea | **No** | Always 0; four unidentified estimates; wrong in a known direction (the published mean needs tea at 2.2 or more) |
 | Fast tier against official tier | **Not comparable** | Section 7 |
 | Any number, on a water side other than the one named at the top | **No** | Section 9.4 |
 
@@ -596,7 +526,6 @@ What would settle each open point, in the order of what it unblocks:
 
 | What | A wash on the owner's machine that settles it |
 |---|---|
-| Egg and milk on Auto; the stability and level of the owner's protease | **Egg-yolk plates (or tiles) on Auto with the owner's tablet.** First |
 | Whether facing matters for protein; how dry a turned or close-pitched face is | The same wash with two of the plates turned and two at half pitch |
 | The corner glass; the milk reading | Milk glasses in the corner and the middle of the upper basket |
 | The tile reading (dried or heat-aged) and the spread of the loading | Egg-yolk tiles air-dried and oven-dried, photographed through an interrupted cycle |
@@ -610,9 +539,7 @@ What would settle each open point, in the order of what it unblocks:
 ```
 cd packages/calibration
 # a wash of the settled standard load with the anchored set (official tier)
-pnpm exec tsx anchors/scripts/run.ts --params anchors/anchored-v2.json --programme eco_50 --items
-# Auto with the owner's tablet (ASSUMED heat-stable protease) and its dose
-pnpm exec tsx anchors/scripts/run.ts --params anchors/anchored-v2.owner-tablet.json --dose-g 12.9 --programme auto_145 --liquor
+pnpm exec tsx anchors/scripts/run.ts --params anchors/anchored-v2.json --items
 ```
 
 In code: `readParamSet(washRegistry(), JSON.parse(readFileSync(file, 'utf8')))` checks the hashes;
@@ -622,7 +549,7 @@ cached exposure is reused.
 **The level data must be right for the anchored set to mean anything.** With the stain judged
 against a level, a level that puts 0.01 g of `iec_tea` on a cup has a cup that was never visibly
 soiled: in the demonstration washes with the load file's soils every tea item scores 5 for that
-reason (`packages/sim-verify/demos/SUMMARY.anchored-v2.md`).
+reason (`packages/sim-verify/demos/v2/SUMMARY.anchored-v2.md`, in the repository's history).
 
 **The anchoring keeps its own exposure cache**, `anchors/out/exposure-cache/<first 12 digits of the
 water hash>` (git-ignored). The cache of the demonstration washes is keyed by the version string
@@ -639,7 +566,7 @@ pnpm exec tsx anchors/scripts/make-owner-set.ts        # the two sets for the ow
 pnpm exec tsx anchors/scripts/check.ts                 # version, water hash, ranges, bench anchors, record
 pnpm exec tsx anchors/scripts/tables.ts                # section 5
 pnpm exec tsx anchors/scripts/seeds.ts --params anchors/anchored-v2.json --fast   # section 7
-pnpm exec tsx anchors/scripts/stacking.ts --params anchors/anchored-v2.json --programme eco_50 --level-seed 1 --sim-seed 1
+pnpm exec tsx anchors/scripts/stacking.ts --params anchors/anchored-v2.json --level-seed 1 --sim-seed 1
 pnpm exec tsx anchors/scripts/stacking-sparse.ts --params anchors/anchored-v2.json
 pnpm exec tsx anchors/scripts/demo-anchored.ts         # the demonstration washes with the set
 pnpm exec tsc --noEmit -p anchors/tsconfig.json
@@ -664,11 +591,11 @@ never broken into specks, the same residue on 1 mm2 and 4 mm2 elements).
 | Water side | The sources changed several times under one version string, and the exposure cache is keyed by that string: a stale cache is replayed silently. Wanted: `SIM_VERSION` raised on every change of water code, or a hash of the water sources in the exposure key |
 | Water side | One corner glass keeps 65 % of its milk (inside hardly wetted; 298 of 460 mg). A stalled lower arm costs the lower rack 0.5 points (expected 1.5 or more) and the upper rack as much. Contacts are all or nothing: a 2 mm overlap takes a plate from 5 to 0 while a turned face 2 mm clear is spotless |
 | `sim-core` | The scene key hashes the whole machine specification, so a wash with another detergent dose computes the exposure of an unchanged geometry again. An option to score the expected residue over K simulation seeds |
-| Server, game runner | Local play (fast tier) and the benchmark (official tier) do not give the same verdicts; gate the fast tier on agreement or score both on one tier. An option to wash with a named parameter-set file and a dose. The reference level on Eco 50 until an Auto wash exists; no tea items |
+| Server, game runner | Local play (fast tier) and the benchmark (official tier) do not give the same verdicts; gate the fast tier on agreement or score both on one tier. An option to wash with a named parameter-set file and a dose. No tea items |
 | Catalogue | `iec_milk`, `iec_spinach`, `iec_tea` have no solids fraction. A catalogue soil should carry its own appearance class or visibility threshold (standards 10.3) instead of inheriting its kinetic class's |
 | Levels and loader | The IEC level soil records: tea 0.01 g per item, milk 10 g "baked", plate soils on 60 % of the well. The settled careful load holds 97 of 140 items |
 | Calibration tool | An observation kind for the mean score of a group of items. The evaluator's own visibility index ignores `rules.visibleShare` and `rules.filmClass`. `anchors/` in the package's type check and test run. `detergents/finish-powerball-ultimate.json` was written before `soil.loadScale` and `soil.heldFilmCapacity` were registered, so its stored soil hash no longer matches (the anchoring reads it leniently); it needs writing again |
-| Chemistry defaults | Protease half-life and activity mid-point are placeholders and decide Auto |
+| Chemistry defaults | Protease half-life and activity mid-point are placeholders |
 
 ### 9.4 How stale this already is
 
@@ -700,7 +627,7 @@ side makes it stale. What that has cost on this day:
 
 | Finding | Reproduced? | Action |
 |---|---|---|
-| 1. On Auto, 24 of 68 soiled items score 0 whatever the stacking | Yes: all 17 egg items and 7 milk glasses at 0 on the new water side too | Two named sets for the owner's tablet (section 5.4). They do not unblock Auto, and the note now says so and recommends Eco 50 for the reference level |
+| 1. Withdrawn: it was about a programme that is out of scope | | |
 | 2. Per-item verdicts of cutlery and glasses are sampling noise; fast and official tiers disagree | Yes: 2 to 9 verdicts flip with the simulation seed, 13 to 20 between the tiers | Flip rates reported (section 7); fit and tables are means over seeds; the soil-side mesh dependence removed (loading on a lattice, inspector). The remaining cause is the water side's sampling and its fast tier: reported, not tuned around |
 | 3. The anchoring was stale | Yes: on the sources of 09:36 `anchored-v1` gave 4.44 to 4.46 with glass 4.26 to 4.35 against a published 3.43, and its file no longer read against the registry | Refitted on a frozen water side; version and source hash recorded and checked; own exposure cache per water hash |
 | 4. The tea result was an artefact; crockery is not a fit | Yes | A thinned film is no longer broken into specks; loading on a lattice; `soil.bleachRate` returned to its default; the fit does not read tea; the threshold's citation corrected and its position against standards 10.3 recorded; crockery not presented as agreement |

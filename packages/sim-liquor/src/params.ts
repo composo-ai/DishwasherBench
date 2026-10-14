@@ -355,7 +355,7 @@ export const LIQUOR_PARAM_DEFS: readonly AnyParamDef[] = [
     180,
     14400,
     'ESTIMATED',
-    `${CH} 10.5, 11 row 3; docs/research/enzymes-at-temperature.md sections 1.1, 6.1 and 9, auto-recommendation.md section 2 (fact-checked 10 October 2026): thermal half-life of protease at 60 C and liq.proteaseRefPH. Savinase, the protease of reference detergent D, alone in buffer at pH 10 and 60 C: 2.8 to 3.1 min desalted without calcium, one to four hours with 50 mM calcium (US 5,677,163, verified). A citrate-built liquor in softened water is calcium-poor but not the bare buffer; nothing measured in a liquor was found, and the default is unchanged. The lower bound is the calcium-free buffer value. For a current premium capsule no value is supported either (the bracket is 1800 to 14400 s): a logged Auto run and egg-yolk plates on Auto and on Eco 50 with the owner's capsule decide it`,
+    `${CH} 10.5, 11 row 3; docs/research/enzymes-at-temperature.md sections 1.1, 6.1 and 9, auto-recommendation.md section 2 (fact-checked 10 October 2026): thermal half-life of protease at 60 C and liq.proteaseRefPH. Savinase, the protease of reference detergent D, alone in buffer at pH 10 and 60 C: 2.8 to 3.1 min desalted without calcium, one to four hours with 50 mM calcium (US 5,677,163, verified). A citrate-built liquor in softened water is calcium-poor but not the bare buffer; nothing measured in a liquor was found, and the default is unchanged. The lower bound is the calcium-free buffer value. For a current premium capsule no value is supported either (the bracket is 1800 to 14400 s): egg-yolk plates on Eco 50 with the owner's capsule decide it`,
     'enzymes',
   ),
   def(

@@ -1,9 +1,8 @@
 import { describe, expect, it } from 'vitest';
-import { BOSCH_SMV4HAX40G, SPOT_60 } from './machines.ts';
+import { BOSCH_SMV4HAX40G } from './machines.ts';
 import { expectNear, expectWithin } from './test-util.ts';
 import type { ThermalInputs, ThermalModel, ThermalState } from './thermal.ts';
 import {
-  coupledHeatingRate,
   mixTemperature,
   stepThermal,
   thermalEnergy,
@@ -36,7 +35,7 @@ describe('the thermal constants of the two machines', () => {
     expect(WATER_VOLUMETRIC_HEAT_CAPACITY).toBe(4.186e6);
   });
 
-  it('builds the Bosch model with its tank node and SPOT-60 without one', () => {
+  it('builds the Bosch model with its tank node', () => {
     const bosch = thermalModelOf(BOSCH_SMV4HAX40G);
     expect(bosch.loadHeatCapacity).toBe(23000);
     expect(bosch.machineHeatCapacity).toBe(14000);
@@ -46,38 +45,12 @@ describe('the thermal constants of the two machines', () => {
     expect(bosch.prestoreConductance).toBe(25);
     expectNear(bosch.prestoreCapacity, 3.1 * LITRE, 1e-12);
     expect(bosch.ambientTemperature).toBe(23);
-    const spot = thermalModelOf(SPOT_60);
-    expect(spot.cabinetConductance).toBe(2.6);
-    expect(spot.prestoreCapacity).toBe(0);
-    expect(spot.prestoreConductance).toBe(0);
-    expect(thermalModelOf(SPOT_60, 0, 19).loadHeatCapacity).toBe(0);
-    expect(thermalModelOf(SPOT_60, 0, 19).ambientTemperature).toBe(19);
+    expect(thermalModelOf(BOSCH_SMV4HAX40G, 0, 19).loadHeatCapacity).toBe(0);
+    expect(thermalModelOf(BOSCH_SMV4HAX40G, 0, 19).ambientTemperature).toBe(19);
   });
 });
 
 describe('heating rates (machine.md section 6.2)', () => {
-  it('SPOT-60 well coupled: 2.3 K/min for a full load, 4.0 K/min empty, 1.6 K/min at 0.7 duty', () => {
-    // "dT/dt = (P_h - UA (T - T_amb)) / (C_w + C_l + C_m) = 2000 / 52 900 = 0.038 K/s
-    //  = 2.3 K/min for a full load and 4.0 K/min for an empty machine (C = 30 kJ/K)".
-    const full = thermalModelOf(SPOT_60);
-    expectNear(coupledHeatingRate(full, 3.8 * LITRE, 2000, 23), 0.038, 0.0005);
-    expectNear(coupledHeatingRate(full, 3.8 * LITRE, 2000, 23) * 60, 2.3, 0.05);
-    const empty = thermalModelOf(SPOT_60, 0);
-    expectNear(coupledHeatingRate(empty, 3.8 * LITRE, 2000, 23) * 60, 4.0, 0.05);
-    // "Baseline: heater duty 0.7 during heat-up, giving 1.6 K/min full load."
-    expectNear(
-      coupledHeatingRate(full, 3.8 * LITRE, 2000 * SPOT_60.thermal.heaterDuty, 23) * 60,
-      1.6,
-      0.05,
-    );
-    // The cabinet loss slows it: at 55 C, 2.6 W/K x 32 K = 83 W less.
-    expectWithin(
-      coupledHeatingRate(full, 3.8 * LITRE, 2000, 55),
-      (2000 - 2.6 * 32) / (3.8 * 4186 + 23000 + 14000),
-      1e-12,
-    );
-  });
-
   it('Bosch: the wash heat-up of the dossier takes 18.0 min at about 2.6 K/min', () => {
     // Section 4.5: "Heater, main wash: 18.5 to 65 C in 18.0 min (2.6 K/min)", from a 4.0 L
     // liquor at 18.5 C with the load at 23 C and the machine at 22.5 C; heater 2100 W and

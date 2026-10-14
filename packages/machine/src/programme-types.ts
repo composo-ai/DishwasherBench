@@ -265,11 +265,11 @@ export interface ProgrammeDeclared {
 
 /** One wash programme of a machine. */
 export interface ProgrammeSpec {
-  /** Catalogue id, a valid lower-case identifier (`auto_145`). */
+  /** Catalogue id, a valid lower-case identifier (`eco_50`). */
   readonly id: string;
   /** Name for display. */
   readonly name: string;
-  /** What the programme is, which branch of a sensor-controlled programme, and its evidence. */
+  /** What the programme is and its evidence. */
   readonly description: string;
   readonly steps: readonly ProgrammeStep[];
   readonly conditions: ProgrammeConditions;

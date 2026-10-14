@@ -7,7 +7,7 @@
 
 import { describe, expect, it, vi } from 'vitest';
 import { getBasket } from '../config.ts';
-import { BOSCH_SMV4HAX40G as B, SPOT_60 } from '../machines.ts';
+import { BOSCH_SMV4HAX40G as B } from '../machines.ts';
 import { expectNear, must } from '../test-util.ts';
 import type { MachineConfig } from '../types.ts';
 import { buildMachineGeometry, getMachinePart } from './build.ts';
@@ -437,17 +437,5 @@ describe('openings of the base grids', () => {
     console.log(
       `upper basket: largest ball through the base grid ${mm(openings.largestBallDiameter).toFixed(0)} mm, largest clear rectangle ${openings.largestRectangle.size.map((v) => mm(v).toFixed(0)).join(' x ')} mm`,
     );
-  });
-
-  it('reproduces the clear openings stated for the SPOT-60 racks', () => {
-    // docs/research/machine.md gives these as clear openings between the wires.
-    const g = buildMachineGeometry(SPOT_60);
-    for (const basket of SPOT_60.baskets) {
-      const openings = baseGridOpenings(basket, getMachinePart(g, basket.frame).shape);
-      const stated = basket.floor.largestOpening.map(mm).sort((a, b) => a - b);
-      const found = openings.largestRectangle.size.map(mm).sort((a, b) => a - b);
-      expectNear(must(found[0]), must(stated[0]), 1.5, `${basket.id}: narrow side`);
-      expectNear(must(found[1]), must(stated[1]), 1.5, `${basket.id}: long side`);
-    }
   });
 });

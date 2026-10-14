@@ -98,15 +98,14 @@ refused.
 
 | Field | Type | Meaning |
 |---|---|---|
-| `id` | string | Programme id of the machine: `auto_145` |
+| `id` | string | Programme id of the machine: `eco_50` |
 | `options` | list of strings | Options selected, in the words of the control panel |
 | `course` | object | The measured course of the run. It **replaces the nominal timeline** |
 
-Auto 45-65 adapts to the load: it chooses the main-wash temperature and the length of the hold
-from its turbidity readings. Without a measured course the simulator runs the programme as written
-(the 2 h 25 min normal branch) and the fit has to carry the difference as nuisance parameters
-(`prog.mainWashTargetShift`, `prog.mainWashHoldScale`, `prog.finalRinseTargetShift`). With one, the
-programme is adapted to it and those stay at zero.
+Without a measured course the simulator runs Eco 50 as written, and the fit can carry a
+difference in temperature or hold as nuisance parameters (`prog.mainWashTargetShift`,
+`prog.mainWashHoldScale`, `prog.finalRinseTargetShift`). With one, the programme is adapted to it
+and those stay at zero.
 
 `course`:
 
@@ -116,7 +115,7 @@ programme is adapted to it and those stay at zero.
 | `power_log` | log | Mains power in watts: `{ "t_s": [...], "values": [...], "method": "plug" }` |
 | `temperature_log` | log | Temperature in degrees Celsius, with `where` the probe was. Only a probe in the liquor (`where` contains `liquor`, `sump` or `water`) sets targets; any other is compared and reported |
 | `events` | list | `{ "kind": "fill" \| "drain" \| "heater_on" \| "heater_off" \| "door_open" \| "door_closed", "t_s", "volume_l"? }`, read from the logs or noted by hand |
-| `steps` | list | Direct statements about steps of the programme: `{ "step": "a4_heat", "duration_s"?, "target_c"?, "mains_volume_l"? }` |
+| `steps` | list | Direct statements about steps of the programme: `{ "step": "e4_heat", "duration_s"?, "target_c"?, "mains_volume_l"? }` |
 | `notes` | string | |
 
 How the nominal programme is adapted (`programmeOfRecord`), in this order:

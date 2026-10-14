@@ -2,8 +2,8 @@
  "suite": "spotless-level-contrast",
  "simVersion": "spotless-sim 0.5.0 water-7",
  "tier": "fast",
- "exposureSource": "325c9602e38528c76d71eaf5fd2d7f1d187015b9b6ea948d2426c97bf07ed0e0",
- "sourceFingerprint": "f58d4ed8ab930946e89883b641dc26ac622ef1fc9d3ce1be9b372df174fdbae4",
+ "exposureSource": "03658efea6fc6c36791ade515888db1860eda2018a7f70301026f8d6334db49c",
+ "sourceFingerprint": "c18bdfaa9c56809baa396a2f61f962308d09f761f0a4cec88b35e8d91ee46f56",
  "paramSets": [
   "anchored-v7.owner-capsule"
  ],

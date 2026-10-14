@@ -213,16 +213,6 @@ const candidates: Candidate[] = [
       'how much cleaning Eco 50 delivers (the soak) without the amount in the way; with it what two hours at 80 C cost and what turning a plate costs',
   },
   {
-    id: 'egg-plates-weighed-auto',
-    title: 'The same four weighed yolk plates on Auto 45-65',
-    programme: 'auto_145',
-    items: plates,
-    observations: plateAreas,
-    layouts: true,
-    settles:
-      'whether Auto cleans protein as well as Eco: how long the protease lives at the temperature Auto chooses',
-  },
-  {
     id: 'egg-plates-arm-blocked-eco50',
     title:
       'The four weighed yolk plates on Eco 50 with the lower spray arm held still by a tall piece',

@@ -2647,15 +2647,8 @@ class SessionImpl implements GameSession {
         const asked: unknown = request.programme;
         if (asked !== undefined && typeof asked !== 'string') return reject('invalid_argument');
         const programme: string = asked ?? this.level.programmeId;
-        const secondary = this.level.secondaryProgrammes ?? [];
-        if (programme !== this.level.programmeId && !secondary.includes(programme)) {
-          return reject(
-            'unknown_programme',
-            `this level is scored on '${this.level.programmeId}'` +
-              (secondary.length === 0
-                ? ''
-                : `; ${secondary.map((id) => `'${id}'`).join(', ')} can be chosen instead and ${secondary.length === 1 ? 'is' : 'are'} not calibrated`),
-          );
+        if (programme !== this.level.programmeId) {
+          return reject('unknown_programme', `this level is scored on '${this.level.programmeId}'`);
         }
         if (this.washesUsed >= this.level.rules.washesMax) return reject('no_washes_left');
         const prechecks = this.mechanicalCheck();

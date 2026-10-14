@@ -745,7 +745,7 @@ Shares for the largest load: film and parcels 72 %, soil 14 %, set-up and I/O 6 
 
 Whatever is chosen becomes part of the tier definition and is fixed before any scored run.
 
-Longer programmes do not cost more film time (the number of solve points is set by liquor classes, not duration); they cost soil time: INTENSIVE 70 adds one pre-wash point (about +150 s on the largest load) and about 30 % more soil steps; it still fits under the cap with about 20 % margin.
+Longer programmes do not cost more film time (the number of solve points is set by liquor classes, not duration); they cost soil time.
 
 ### 11.3 Tiers
 

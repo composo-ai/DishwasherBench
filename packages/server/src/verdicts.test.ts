@@ -11,7 +11,6 @@ import {
   EDGE_NOTE_PHRASE,
   PREVIEW_REPORT_NOTE,
   STALE_NOTE_PHRASE,
-  UNCALIBRATED_REPORT_NOTE,
   flaggedByNotes,
   verdictSummary,
   withVerdicts,
@@ -79,12 +78,8 @@ describe('the notes of the wash runner', () => {
     expect(runner).toContain(`${EDGE_NOTE_PHRASE}: what is left on`);
     expect(runner).toContain("${edge.join(', ')} ${edge.length === 1 ? 'is' : 'are'} at the edge");
     expect(runner).toContain(STALE_NOTE_PHRASE);
+    // A caveat's note is the parameter set's own words (none on the owner's machine).
     expect(runner).toContain("notes.push(`${concerned.join(', ')} ${caveat.note}`)");
-    const defaults = readFileSync(
-      fileURLToPath(new URL('../../wash-runner/src/defaults.ts', import.meta.url)),
-      'utf8',
-    );
-    expect(defaults).toMatch(/note: '[^']*they are provisional\.'/);
   });
 
   it('name the items at the edge of clean and the items with a provisional verdict', () => {
@@ -153,7 +148,7 @@ describe('the verdict summary of a report', () => {
     });
   });
 
-  it('is added to a delivered report once, with a note for a preview and for another programme', () => {
+  it('is added to a delivered report once, with a note for a preview', () => {
     const fast = withVerdicts(report([EDGE], 'fast'), manifest());
     expect(fast.verdicts?.preview).toBe(true);
     expect(fast.job.notes).toEqual([EDGE, PREVIEW_REPORT_NOTE]);
@@ -167,15 +162,6 @@ describe('the verdict summary of a report', () => {
     const told = withVerdicts(report([TIER, EDGE], 'fast'), manifest());
     expect(told.verdicts?.preview).toBe(true);
     expect(told.job.notes).toEqual([TIER, EDGE]);
-
-    const auto = withVerdicts(report([]), manifest('auto_145'));
-    expect(auto.verdicts).toMatchObject({
-      programme_id: 'auto_145',
-      programme_status: 'uncalibrated',
-      all_provisional: true,
-      preview: false,
-    });
-    expect(auto.job.notes).toEqual([UNCALIBRATED_REPORT_NOTE]);
 
     const official = withVerdicts(report([]), manifest());
     expect(official.job.notes ?? []).toEqual([]);
@@ -215,11 +201,6 @@ describe('the score of an episode', () => {
       programme_id: 'eco_50',
       programme_status: 'scored',
     });
-    // On an uncalibrated programme everything that was washed is provisional.
-    const auto = scoreOf(withVerdicts(report([]), manifest('auto_145')));
-    expect(auto.provisional_items).toBe(auto.items_loaded);
-    expect(auto.provisional_points).toBe(62);
-    expect(auto.programme_status).toBe('uncalibrated');
     // A report without a summary gives the score it always gave.
     expect(Object.keys(scoreOf(report([]))).sort()).toEqual([
       'graded_points',

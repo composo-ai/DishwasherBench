@@ -7,7 +7,6 @@
  *                      [--seeds 1,2,3] [--tier official|fast] [--out bench-results/<time>]
  *                      [--wash-params <set.json>]... [--detergent <set.json> --dose-g <grams>
  *                      [--detergent-name <name>]] [--registry-defaults] [--accept-stale-params]
- *                      [--programme <id>]
  *                      [--data <dir>] [--transport memory|stdio|http]
  *                      [--verify auto|replay|policy_session|none] [--no-render] [--no-images]
  *                      [--effort low|medium|high|xhigh|max] [--max-tokens 64000]
@@ -27,10 +26,8 @@
  * `--out`. The parameters of the washes are the machine's own unless the options of the game
  * server's command line name others (`--wash-params`, `--detergent` with `--dose-g`,
  * `--registry-defaults`; `--accept-stale-params` washes with a parameter set made for another
- * state of the simulator, and every report then says so). `--programme` starts the cycles the
- * harness starts on a secondary programme of the level, where a level offers one (no level of
- * the game does: they are washed on Eco 50 only): an uncalibrated result. A programme a level
- * does not offer is refused before the first episode.
+ * state of the simulator, and every report then says so). Every cycle is washed on Eco 50, the
+ * programme the levels are scored on.
  * The command exits with 1 when an episode could not be run, was not verified, or has no
  * result because its wash failed: a failed wash is never a score. A policy `anthropic:<model>` is
  * a model of Anthropic's played by the standard harness; its API key is read from the
@@ -84,7 +81,7 @@ export interface BenchIo {
 
 const USAGE = [
   'usage:',
-  `  spotless-bench run --levels <id,...> --policies <name,...> [--seeds 1] [--tier official|fast] ${WASH_OPTIONS_USAGE} [--programme <id>] [--out <dir>] [--data <dir>] [--transport memory|stdio|http] [--verify auto|replay|policy_session|none] [--no-render] [--no-images] [--effort <level>] [--max-tokens n] [--max-turns n] [--keep-images n] [--image-slack n] [--fold-above n] [--keep-recent n] [--max-input-tokens n] [--api responses|chat] [--base-url <url>] [--api-key-env <NAME>] [--request-timeout-s n] [--server <url> --admin-token <token>]`,
+  `  spotless-bench run --levels <id,...> --policies <name,...> [--seeds 1] [--tier official|fast] ${WASH_OPTIONS_USAGE} [--out <dir>] [--data <dir>] [--transport memory|stdio|http] [--verify auto|replay|policy_session|none] [--no-render] [--no-images] [--effort <level>] [--max-tokens n] [--max-turns n] [--keep-images n] [--image-slack n] [--fold-above n] [--keep-recent n] [--max-input-tokens n] [--api responses|chat] [--base-url <url>] [--api-key-env <NAME>] [--request-timeout-s n] [--server <url> --admin-token <token>]`,
   '  spotless-bench table <dir> [--json <file>] [--md <file>]',
   '  spotless-bench verify <record.json> [--rewash [--cache <dir>]]',
   '  spotless-bench link --level <id> --player <name> [--agent] [--server <url>] [--admin-token <token>]',
@@ -321,7 +318,6 @@ export async function main(
         policies: { type: 'string' },
         seeds: { type: 'string', default: '1' },
         tier: { type: 'string' },
-        programme: { type: 'string' },
         ...WASH_OPTION_FLAGS,
         out: { type: 'string' },
         data: { type: 'string' },
@@ -479,31 +475,9 @@ export async function main(
         return 2;
       }
     }
-    // A programme the level card does not offer is refused by start_cycle, at the end of an
-    // episode that has by then been played (and, for a model, paid for): refuse it here.
-    if (values.programme !== undefined) {
-      for (const id of levels) {
-        const level = game.levels.get(id);
-        if (level === undefined) continue;
-        const offered = [level.programmeId, ...(level.secondaryProgrammes ?? [])];
-        if (offered.includes(values.programme)) continue;
-        io.err(
-          `run: level '${id}' is washed on ${offered.join(' or ')}; it does not offer ` +
-            `--programme ${values.programme}, and an episode played for it would end with no ` +
-            `cycle to score. Nothing was played.`,
-        );
-        await game.close();
-        return 2;
-      }
-    }
     io.out(
       `game server: ${game.url}${values.server === undefined ? ` (started here, ${tier} tier${tier === 'fast' ? ': a preview, not a result' : ''}${wash.washParams === undefined ? '' : ', parameters as named'}${wash.acceptStaleParams === true ? ', stale parameter sets accepted' : ''})` : ''}`,
     );
-    if (values.programme !== undefined) {
-      io.out(
-        `programme: ${values.programme} (where it is not the one a level is scored on, the result is uncalibrated)`,
-      );
-    }
     io.out(`output: ${outDir}`);
     try {
       const started = performance.now();
@@ -516,7 +490,6 @@ export async function main(
         transport: values.transport as McpTransportKind,
         verify: values.verify as VerifyMode,
         saveImages: values['no-images'] !== true,
-        ...(values.programme === undefined ? {} : { programme: values.programme }),
         log: (line) => io.out(`  ${line}`),
       });
       io.out('');

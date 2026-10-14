@@ -36,11 +36,7 @@ import type {
   Vec3Mm,
 } from './card-types.ts';
 import { rackOptions } from './options.ts';
-import {
-  GAME_DETERGENTS,
-  SCORED_PROGRAMME_NOTE,
-  UNCALIBRATED_PROGRAMME_NOTE,
-} from './programmes.ts';
+import { GAME_DETERGENTS, SCORED_PROGRAMME_NOTE } from './programmes.ts';
 import type { Level, LevelItem, LevelSoil } from './types.ts';
 
 /**
@@ -204,30 +200,13 @@ export function machineCard(spec: MachineSpec, geometry: MachineGeometry): Machi
 
 const programmeCards = new Map<string, ProgrammeCard>();
 
-/** The programmes a level offers beside its own. Throws a RangeError for an unknown one. */
-export function levelSecondaryProgrammes(level: Level): ProgrammeSpec[] {
-  const { spec } = levelMachine(level);
-  return (level.secondaryProgrammes ?? []).map((id) => {
-    const programme = findProgramme(spec, id);
-    if (programme === undefined) {
-      throw new RangeError(`levels: machine '${spec.id}' has no programme '${id}'`);
-    }
-    return programme;
-  });
-}
-
 /**
  * The programme as a manual prints it: phases with nominal temperature and duration, what is
  * put in the dispenser (the detergent the game washes this machine with, `programmes.ts`; the
- * machine's own generic tablet where it has none), and whether it is the scored programme or
- * one the wash simulation is not calibrated for.
+ * machine's own generic tablet where it has none), and that it is the scored programme.
  */
-export function programmeCard(
-  spec: MachineSpec,
-  programme: ProgrammeSpec,
-  status: ProgrammeCard['status'] = 'scored',
-): ProgrammeCard {
-  const key = `${spec.id}/${programme.id}/${status}`;
+export function programmeCard(spec: MachineSpec, programme: ProgrammeSpec): ProgrammeCard {
+  const key = `${spec.id}/${programme.id}`;
   const cached = programmeCards.get(key);
   if (cached !== undefined) return cached;
   const timeline = expandProgramme(spec, programme);
@@ -254,8 +233,8 @@ export function programmeCard(
         : spec.dosing.detergentMass > 0
           ? { type: GENERIC_TABLET.id, dose_g: roundToGrid(spec.dosing.detergentMass * 1000, 10) }
           : null,
-    status,
-    note: status === 'scored' ? SCORED_PROGRAMME_NOTE : UNCALIBRATED_PROGRAMME_NOTE,
+    status: 'scored',
+    note: SCORED_PROGRAMME_NOTE,
   };
   programmeCards.set(key, card);
   return card;
@@ -348,9 +327,7 @@ export function levelCard(level: Level, geometry?: MachineGeometry): LevelCard {
     summary: level.summary,
     machine: machineCard(spec, geometry ?? buildMachineGeometry(spec, config)),
     programme: programmeCard(spec, programme),
-    secondary_programmes: levelSecondaryProgrammes(level).map((secondary) =>
-      programmeCard(spec, secondary, 'uncalibrated'),
-    ),
+    secondary_programmes: [],
     items: [...level.items].sort((a, b) => compareIds(a.id, b.id)).map(itemRecord),
     rules: rulesCard(level),
     manual: level.manual,

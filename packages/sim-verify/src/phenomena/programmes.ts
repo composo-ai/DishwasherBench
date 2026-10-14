@@ -1,8 +1,8 @@
 /**
- * The programmes the scenarios wash with: those of the owner's machine, and variants of them
- * where a checklist entry changes one thing about the programme (the temperature of the main
- * wash, the speed of the pump). A variant is the programme's own step list with that one
- * change; nothing else is touched, so the comparison isolates it.
+ * The programme the scenarios wash with: Eco 50 of the owner's machine, and variants of it
+ * where a checklist entry changes one thing about it (the temperature of the main wash, the
+ * speed of the pump). A variant is the programme's own step list with that one change;
+ * nothing else is touched, so the comparison isolates it.
  */
 
 import {
@@ -13,18 +13,12 @@ import {
 } from '@spotless/machine';
 import type { ProgrammeEdit } from './types.ts';
 
-/** The owner's Auto 45-65, 2 h 25 min: the secondary programme (its verdicts on protein soils and stains are provisional). */
-export const OWNER_PROGRAMME = 'auto_145';
-
-/** The eco programme of the owner's machine, for entries the checklist states as eco-like. */
-export const ECO_PROGRAMME = 'eco_50';
-
 /**
- * The programme the game is scored on and the suite runs on unless told otherwise: Eco 50
- * (decision of 10 October 2026, docs/reference/owner-measurements.md: fixed and printed, no
- * sensor decisions, the one regime with a published anchor on a sister machine).
+ * The programme the game is scored on and the suite runs on: Eco 50 (decision of 10 October
+ * 2026, docs/reference/owner-measurements.md: fixed and printed, no sensor decisions, the one
+ * regime with a published anchor on a sister machine), the only programme simulated.
  */
-export const SCORED_PROGRAMME = ECO_PROGRAMME;
+export const SCORED_PROGRAMME = 'eco_50';
 
 /**
  * The programme with the given id on the owner's machine, with an edit applied to the steps

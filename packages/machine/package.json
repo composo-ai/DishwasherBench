@@ -2,7 +2,7 @@
   "name": "@spotless/machine",
   "version": "0.1.0",
   "private": true,
-  "description": "Machine specification types, the owner's Bosch SMV4HAX40G with its programmes and the SPOT-60 baseline with one, machine geometry, slot affordances, spray-arm and nozzle kinematics, programme expansion",
+  "description": "Machine specification types, the owner's Bosch SMV4HAX40G with its Eco 50 programme, machine geometry, slot affordances, spray-arm and nozzle kinematics, programme expansion",
   "type": "module",
   "sideEffects": false,
   "main": "./src/index.ts",

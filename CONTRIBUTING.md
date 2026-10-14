@@ -168,7 +168,7 @@ for another state of the simulator and that the result is provisional.
   ([docs/validation/README.md](docs/validation/README.md) section 8), and a concrete load that
   shows one is valuable. The issue form asks for the load and the report.
 - **Test washes of a real machine.** If you have a Bosch SMV4HAX40G,
-  [docs/calibration/protocol.md](docs/calibration/protocol.md) has four washes that can be done
+  [docs/calibration/protocol.md](docs/calibration/protocol.md) has three washes that can be done
   at home, the measurements of the machine that are still open, and how to send a result in. A
   result is a _wash record_ ([docs/calibration/wash-record.md](docs/calibration/wash-record.md)),
   checked with `pnpm --filter @spotless/calibration spotless-fit validate <record>.json`.

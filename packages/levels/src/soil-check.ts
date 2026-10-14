@@ -139,8 +139,8 @@ export function levelSoilFindings(level: Level): LevelProblem[] {
 }
 
 /**
- * The soils whose verdict the wash simulation does not yet settle on any programme: the
- * bleachable stains. Their removal turns on one rate (`soil.bleachRate`) that the anchoring
+ * The soils whose verdict the wash simulation does not yet settle on Eco 50: the bleachable
+ * stains. Their removal turns on one rate (`soil.bleachRate`) that the anchoring
  * could not identify: at the default every tea item of the standard load reads dirty on Eco
  * 50, a quarter more reproduces the published mean (docs/calibration/anchoring-v4.md). A
  * level of the game carries none of them until a test wash has fixed that rate.

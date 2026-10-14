@@ -181,7 +181,6 @@ takes to vary by 30 % from patch to patch.
 
 - Which of rate, enzyme level and enzyme survival is wrong. They trade against each other, and
   end states only bound a rate.
-- Anything about Auto 45-65.
 - Whether facing matters, cleanly. The turned plates also stand at the ends of the row and lean 20
   to 33 degrees where their partners stand upright, and the air-dried turned plate is the small
   one with an unknown amount on it.

@@ -1,5 +1,5 @@
 /**
- * The runner of the phenomena suite: any subset of the 48 scenarios, at one tier, with one
+ * The runner of the phenomena suite: any subset of the 46 scenarios, at one tier, with one
  * parameter set and one shared exposure cache, to a {@link SuiteReport}.
  *
  * Washes are collected over the chosen scenarios, deduplicated (scenarios share washes) and
@@ -41,7 +41,7 @@ import type {
   Verdict,
 } from './types.ts';
 
-/** The 48 phenomena of the checklist, P01 to P48. */
+/** The phenomena of the checklist, P01 to P48 without P27 and P32 (they compare programmes). */
 export const PHENOMENA: readonly Scenario[] = [...GROUP_A, ...GROUPS_BCD, ...GROUPS_EFG];
 
 /** Default directory of the exposure cache of the suite (ignored by the repository). */
@@ -121,8 +121,6 @@ export interface RunOptions {
   readonly paramSet?: ParamSetChoice;
   /** Default {@link DEFAULT_CACHE_DIR}. */
   readonly cacheDir?: string;
-  /** Programme id of the washes whose case names none; default the scored programme (Eco 50). */
-  readonly programme?: string;
   /** Seeds for washes that do not state their own; default 1. */
   readonly seed?: number;
   readonly log?: (line: string) => void;
@@ -190,7 +188,7 @@ function evaluate(
         b: null,
         value: null,
         verdict: 'not covered' as const,
-        note: `needs ${lacking.map((capability) => CAPABILITY_NAMES[capability]).join('; ')}`,
+        note: `out of scope: ${lacking.map((capability) => CAPABILITY_NAMES[capability]).join('; ')}`,
       };
     }
     if (errors.length > 0) {
@@ -229,7 +227,9 @@ function evaluate(
   if (errors.length > 0) verdict = 'error';
   else if (missing.length > 0) {
     verdict = 'not covered';
-    notes.push(`needs ${missing.map((capability) => CAPABILITY_NAMES[capability]).join('; ')}`);
+    notes.push(
+      `out of scope: ${missing.map((capability) => CAPABILITY_NAMES[capability]).join('; ')}`,
+    );
   } else {
     for (const c of checks) if (c.decides) verdict = worse(verdict, c.verdict);
   }
@@ -341,7 +341,6 @@ export async function runPhenomena(options: RunOptions): Promise<SuiteReport> {
     tier: options.tier,
     cacheDir: options.cacheDir ?? DEFAULT_CACHE_DIR,
     params: paramSet.overrides,
-    ...(options.programme === undefined ? {} : { programme: options.programme }),
     ...(paramSet.records === undefined ? {} : { paramSets: paramSet.records }),
     ...(paramSet.detergent === undefined ? {} : { detergent: paramSet.detergent }),
     ...(options.log === undefined ? {} : { log: options.log }),
@@ -366,7 +365,6 @@ export async function runPhenomena(options: RunOptions): Promise<SuiteReport> {
     paramSetsStale: (paramSet.records ?? []).filter((r) => r.stale).map((r) => r.name),
     ...(paramSet.detergent === undefined ? {} : { detergent: paramSet.detergent }),
     sourceFingerprint: simulationFingerprint(),
-    ...(options.programme === undefined ? {} : { programme: options.programme }),
     hydroHash: params.hydroHash,
     soilHash: params.soilHash,
     exposureBackend: [

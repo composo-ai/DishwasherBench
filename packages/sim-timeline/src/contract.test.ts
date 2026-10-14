@@ -1,5 +1,5 @@
 // Contract tests of module M10: the tick constants against the tick counts the contract quotes
-// for AUTO-145, the records the timeline owns, and the shapes of its results.
+// for the sizing programme of the contract, the records the timeline owns, and the shapes of its results.
 import { describe, expect, it } from 'vitest';
 import {
   CHECKPOINT_TICKS,
@@ -19,7 +19,7 @@ import {
 } from './index.ts';
 
 describe('ticks of the replay (sections 0, 5.5 and M4)', () => {
-  it('reproduces the tick budget of AUTO-145 from the tick lengths', () => {
+  it('reproduces the tick budget of the sizing programme from the tick lengths', () => {
     // M4: "Ticks: about 2,880 circulating, 270 with the pump off, 280 in drying; 3,430 in all",
     // for a programme of 145 minutes whose drying step P6 lasts 47 minutes.
     expect(2880 + 270 + 280).toBe(3430);

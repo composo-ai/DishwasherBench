@@ -8,9 +8,9 @@
  *              jets or of the film that enters an exposure table linearly need not be fitted by
  *              recomputing the water (`evaluator.ts` says how each is applied and how a fitted
  *              value is folded back into the registry key it stands for);
- *  - `prog.*`  what the Auto programme decides for itself and a record without a measured
- *              course does not know: the temperature the main wash reaches, the length of its
- *              hold, the temperature of the final rinse. (The wash simulation has `prog.*`
+ *  - `prog.*`  what a run may do differently from the programme as written and a record
+ *              without a measured course does not know: the temperature the main wash
+ *              reaches, the length of its hold, the temperature of the final rinse. (The wash simulation has `prog.*`
  *              keys of its own, the soak of Eco 50: those are keys of `wash()` like any other
  *              and are not listed here; `isCalibrationKey` tells the two apart.)
  *
@@ -161,7 +161,7 @@ export const CALIBRATION_PARAM_DEFS: readonly AnyParamDef[] = [
     max: 2,
     tag: 'SYN',
     source:
-      'calibration: specks an observer finds on an item the model leaves spotless (redeposited particles, which the first build does not simulate)',
+      'calibration: specks an observer finds on an item the model leaves spotless (redeposited particles, which are out of scope and not simulated)',
     group: 'soil',
   },
   {
@@ -276,7 +276,7 @@ export const CALIBRATION_PARAM_DEFS: readonly AnyParamDef[] = [
     max: 8,
     tag: 'ESTIMATED',
     source:
-      'machine-bosch-smv4hax40g.md 4.4, 4.6: difference between the liquor temperature the main wash of this run reached and the target of the programme as written (Auto 45-65 chooses it from the turbidity readings); 0 with a measured course',
+      'machine-bosch-smv4hax40g.md 4.4, 4.7: difference between the liquor temperature the main wash of this run reached and the target of the programme as written; 0 with a measured course',
     group: 'soil',
     calibration: 'programme',
   },
@@ -288,7 +288,7 @@ export const CALIBRATION_PARAM_DEFS: readonly AnyParamDef[] = [
     max: 2,
     tag: 'ESTIMATED',
     source:
-      'machine-bosch-smv4hax40g.md 4.4, 4.6: length of the main-wash hold of this run over that of the programme as written; 1 with a measured course',
+      'machine-bosch-smv4hax40g.md 4.4, 4.7: length of the main-wash hold of this run over that of the programme as written; 1 with a measured course',
     group: 'soil',
     calibration: 'programme',
   },

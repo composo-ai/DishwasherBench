@@ -8,7 +8,7 @@ import {
   primedOperatingPoint,
   waterInventory,
 } from './inventory.ts';
-import { BOSCH_SMV4HAX40G, SPOT_60 } from './machines.ts';
+import { BOSCH_SMV4HAX40G } from './machines.ts';
 import { expectNear, expectWithin, toLitres, toLPerMin } from './test-util.ts';
 
 const L = 1e-3;
@@ -98,7 +98,7 @@ describe('loss of prime (machine.md section 4.5)', () => {
   });
 
   it('reports a dry sump as zero volume with no head left', () => {
-    const inventory = waterInventory(SPOT_60, 0.5 * L, 30 / 60000, ['lower']);
+    const inventory = waterInventory(BOSCH_SMV4HAX40G, 0.5 * L, 30 / 60000, ['lower']);
     expect(inventory.sump).toBe(0);
     expect(inventory.airFraction).toBe(0.6);
     expect(inventory.headFactor).toBe(0);
@@ -106,12 +106,16 @@ describe('loss of prime (machine.md section 4.5)', () => {
   });
 
   it('finds the self-consistent operating point when the sump runs low', () => {
-    // SPOT-60, lower arm at 3000 rpm with only 1.6 L in the machine: at full prime the pump
-    // would circulate 30.7 L/min and hold 1.02 L in the air and on the load, leaving
+    // The Bosch, lower arm at 3000 rpm with only 1.6 L in the machine: at full prime the pump
+    // would circulate 30.5 L/min and hold 1.02 L in the air and on the load, leaving
     // 1.6 - 0.25 - 1.02 = 0.33 L in the sump, below the 0.5 L it needs.
-    const full = hydraulicOperatingPoint(SPOT_60, 'l', 3000);
-    expectNear(toLitres(waterInventory(SPOT_60, 1.6 * L, full.flow, ['lower']).sump), 0.33, 0.01);
-    const { point, inventory } = primedOperatingPoint(SPOT_60, 'l', 3000, 1.6 * L);
+    const full = hydraulicOperatingPoint(BOSCH_SMV4HAX40G, 'l', 3000);
+    expectNear(
+      toLitres(waterInventory(BOSCH_SMV4HAX40G, 1.6 * L, full.flow, ['lower']).sump),
+      0.33,
+      0.01,
+    );
+    const { point, inventory } = primedOperatingPoint(BOSCH_SMV4HAX40G, 'l', 3000, 1.6 * L);
     // The head factor used in the solve is the one the resulting sump volume gives.
     expectNear(point.headFactor, inventory.headFactor, 1e-9);
     expect(point.headFactor).toBeLessThan(1);
@@ -133,7 +137,7 @@ describe('loss of prime (machine.md section 4.5)', () => {
   });
 
   it('with almost no water the pump moves almost nothing', () => {
-    const { point, inventory } = primedOperatingPoint(SPOT_60, 'l', 3000, 0.45 * L);
+    const { point, inventory } = primedOperatingPoint(BOSCH_SMV4HAX40G, 'l', 3000, 0.45 * L);
     // Even at rest the sump would hold 0.45 - 0.25 = 0.2 L: alpha 0.6, no head at all.
     expect(inventory.headFactor).toBe(0);
     expect(point.flow).toBe(0);
@@ -169,14 +173,6 @@ describe('carry-over and filters', () => {
     const point = hydraulicOperatingPoint(BOSCH_SMV4HAX40G, 'l', 3000);
     expectNear(toLPerMin(point.flow) / 4.4, 30.5 / 4.4, 0.02);
     expectNear(toLPerMin(point.flow) / 4.4, 6.9, 0.05);
-  });
-
-  it('splits the SPOT-60 return flow 51 % / 49 % (machine.md 5.2)', () => {
-    const split = filterFlowSplit(SPOT_60.filter);
-    expectNear(split.directOpenArea * 1e4, 80, 1e-9);
-    expectNear(split.microOpenArea * 1e4, 76, 1e-9);
-    expectNear(split.direct, 0.51, 0.005);
-    expectNear(split.micro, 0.49, 0.005);
   });
 
   it('the Bosch flat filter has the open fraction of its hole pattern', () => {

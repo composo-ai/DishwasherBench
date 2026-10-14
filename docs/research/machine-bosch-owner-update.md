@@ -604,7 +604,7 @@ The three observations that would matter most:
 
 1. **The drill bit on the tape** (or 3.0 and 3.5 mm bits tried in a hole), in one photograph. It
    decides the jet speed between 6.65 and 5.06 m/s and whether the pump curve can stay.
-2. **A power log of one Auto 45-65 cycle with a sound recording through the door.** The pump-only
+2. **A power log of one Eco 50 cycle with a sound recording through the door.** The pump-only
    plateaus give the hydraulic power and so the jet speed; the recording gives both arm speeds, and
    the alternation between them gives the water switch's sequence and dwell times.
 3. **One tape reading from the filter plate to the top face of the lower arm**, and a note of which

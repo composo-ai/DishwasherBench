@@ -422,10 +422,7 @@ export type SetRackResult =
 /** `start_cycle`: push the racks in, close the door, run the pre-checks, freeze the load. */
 export interface StartCycleRequest {
   /**
-   * Programme id; default is the programme the level is scored on. One of the level's
-   * secondary programmes may be named instead (`LevelCard.secondary_programmes`): the wash is
-   * then run and reported on that programme, labelled uncalibrated, and is not a result on the
-   * scored one.
+   * Programme id; default, and the only one accepted, is the programme the level is scored on.
    */
   readonly programme?: string;
 }
@@ -1074,12 +1071,8 @@ export interface WashVerdictSummary {
   readonly counting: 'binary_on_verdict';
   /** The programme the load was washed on. */
   readonly programme_id: string;
-  /**
-   * `scored`: the programme the level is scored on. `uncalibrated`: one of the level's
-   * secondary programmes: every verdict of the report is provisional, and the report is not a
-   * result on the scored programme.
-   */
-  readonly programme_status: 'scored' | 'uncalibrated';
+  /** Always `scored`: the wash ran on the programme the level is scored on. */
+  readonly programme_status: 'scored';
   /** True for a wash at the fast tier: a preview, whose verdicts differ from the official tier's on some items. */
   readonly preview: boolean;
   /**
@@ -1093,8 +1086,8 @@ export interface WashVerdictSummary {
    */
   readonly provisional: readonly FlaggedItem[];
   /**
-   * True when the whole report is provisional: an uncalibrated programme, or parameters made
-   * for another state of the simulator.
+   * True when the whole report is provisional: parameters made for another state of the
+   * simulator.
    */
   readonly all_provisional: boolean;
   /** The points if every item at the edge of clean is read not clean, and if every one is read clean. */

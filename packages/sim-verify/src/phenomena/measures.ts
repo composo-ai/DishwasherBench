@@ -2,18 +2,16 @@
  * The quantities the checks compare, read from a wash as run, and the ways two washes are
  * compared. Everything here reads results; nothing computes physics.
  *
- * Also {@link hasCapability}: whether a wash result carries what a mechanism the simulation
- * does not have yet would report. The field names are this suite's assumption of how each
- * mechanism will show in `WashResult` (the result contract of docs/design/sim-core.md section
- * 5.6 names them); when a mechanism is built under another name, this is the one place to
- * change.
+ * Also {@link hasCapability}: whether a wash result carries what a mechanism that is out of
+ * scope (docs/design/scope.md) would report; no wash result does. The field names are those of
+ * the result contract of docs/design/sim-core.md section 5.6.
  */
 
 import { poseTransformPoint, type Vec3 } from '@spotless/core';
 import type { ItemWashResult, WashResult } from '@spotless/sim-core';
 import type { Capability, CaseRun, Check, Expected, Measured, Runs } from './types.ts';
 
-/** Where each missing mechanism is expected to report, as a probe of a wash result. */
+/** Where each out-of-scope mechanism would report, as a probe of a wash result. */
 const CAPABILITY_PROBES: Readonly<Record<Capability, (result: WashResult) => boolean>> = {
   // `ItemWashResult.drying`: the drying score of the item (0, 1 or 2) and its wet marks.
   drying: (result) => result.items.some((item) => 'drying' in item),
@@ -34,7 +32,7 @@ export function hasCapability(result: WashResult, capability: Capability): boole
   return CAPABILITY_PROBES[capability](result);
 }
 
-/** What each missing mechanism is, in words, for a report. */
+/** What each out-of-scope mechanism is, in words, for a report. */
 export const CAPABILITY_NAMES: Readonly<Record<Capability, string>> = {
   drying: 'drying (evaporation of the retained film, the drying score, drips after the last drain)',
   redeposition:
@@ -47,8 +45,8 @@ export const CAPABILITY_NAMES: Readonly<Record<Capability, string>> = {
     'where the tablet lands and how it dissolves there (the wash only knows whether the dispenser is blocked)',
 };
 
-/** A field of an item the result contract does not have yet, read without a type. */
-export function futureField(item: ItemWashResult, field: string, member: string): number {
+/** An out-of-scope field the result contract does not have, read without a type: NaN. */
+export function absentField(item: ItemWashResult, field: string, member: string): number {
   const record = (item as unknown as Record<string, unknown>)[field];
   if (typeof record === 'number') return record;
   if (typeof record === 'object' && record !== null) {

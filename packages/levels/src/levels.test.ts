@@ -15,12 +15,9 @@ import {
   COURSE_LEVEL_IDS,
   DIFFICULTY_WEIGHTS,
   INTERFACE_MANUAL,
-  RESEARCH_PROGRAMME_IDS,
   SCORED_PROGRAMME_NOTE,
-  SECONDARY_PROGRAMME_IDS,
   SOAK_SENSITIVE_TABLE_SHARE_MAX,
   STARTER_LEVEL_IDS,
-  UNCALIBRATED_PROGRAMME_NOTE,
   allLevels,
   applyRackOption,
   capacityEstimate,
@@ -62,13 +59,9 @@ describe('the starter levels', () => {
     for (const level of levels) {
       expect(validateLevel(level), level.id).toEqual([]);
       expect(level.machineId).toBe('bosch_smv4hax40g');
-      // The decision of 10 October 2026: the game is scored on Eco 50. Since 11 October no
-      // level offers another programme (nothing of Auto is put in front of a player).
+      // The decision of 10 October 2026: the game is scored on Eco 50, the only programme.
       expect(level.programmeId).toBe(GAME_PROGRAMME_ID);
       expect(level.programmeId).toBe('eco_50');
-      expect(level.secondaryProgrammes).toBeUndefined();
-      expect(SECONDARY_PROGRAMME_IDS).toEqual([]);
-      expect(RESEARCH_PROGRAMME_IDS).toEqual(['auto_145']);
       expect(level.rules).toMatchObject({
         track: 'one_shot',
         washesMax: 1,
@@ -487,7 +480,7 @@ describe('the level generator', () => {
     expect(findLevel('roast-lunch-2')).toBeUndefined();
     for (const level of generated) {
       expect(validateLevel(level), level.id).toEqual([]);
-      expect(level.secondaryProgrammes, level.id).toBeUndefined();
+      expect(level.programmeId, level.id).toBe('eco_50');
       expect(level.number, level.id).toBeUndefined();
     }
     expect(familyOf(generated[0] as Level)).toBe(PASTA_SUPPER);
@@ -623,7 +616,7 @@ describe('the course', () => {
   });
 
   it('names Eco 50 and no other programme in every text a player reads', () => {
-    expect(INTERFACE_MANUAL).not.toMatch(/secondary|auto|uncalibrated/i);
+    expect(INTERFACE_MANUAL).not.toMatch(/secondary|uncalibrated/i);
     expect(INTERFACE_MANUAL).toMatch(/Washing\. start_cycle pushes the baskets in/);
     for (const level of course) {
       expect(level.manual, level.id).toBe(INTERFACE_MANUAL);
@@ -633,7 +626,7 @@ describe('the course', () => {
       const read = [card.title, card.summary, card.manual, card.programme.note, card.rules.scoring]
         .concat(card.items.flatMap((item) => item.soils.map((soil) => soil.description)))
         .join('\n');
-      expect(read, level.id).not.toMatch(/\bauto\b|auto_145|45-65|secondary programme/i);
+      expect(read, level.id).not.toMatch(/secondary programme|uncalibrated/i);
     }
   });
 });
@@ -692,20 +685,12 @@ describe('levelCard', () => {
       dose_g: 12.9,
       name: 'Finish Powerball Ultimate',
     });
-    // No other programme is offered: the card lists none, and no text on it names one.
+    // No other programme is offered: the card lists none, and no text on it speaks of one.
     expect(card.secondary_programmes).toEqual([]);
+    expect(card.programme.status).toBe('scored');
+    expect(card.programme.note).toBe(SCORED_PROGRAMME_NOTE);
     const words = JSON.stringify(card);
-    expect(words).not.toMatch(/auto_145|Auto 45|secondary programme|uncalibrated/i);
-    // A research level may still name one, and its card then says what that means.
-    const research = levelCard({ ...level, secondaryProgrammes: ['auto_145'] });
-    expect(research.secondary_programmes).toHaveLength(1);
-    const auto = research.secondary_programmes[0];
-    expect(auto?.programme_id).toBe('auto_145');
-    expect(auto?.status).toBe('uncalibrated');
-    expect(auto?.note).toBe(UNCALIBRATED_PROGRAMME_NOTE);
-    expect(auto?.note).toMatch(/provisional/);
-    expect(auto?.phases.find((p) => p.name === 'main_wash')?.temperature_c).toBe(65);
-    expect(auto?.detergent).toEqual(card.programme.detergent);
+    expect(words).not.toMatch(/secondary programme|uncalibrated/i);
 
     // The tray that catches the tablet is on the card of the basket that carries it, in that
     // basket's frame: the guidance tells every player to keep it free, and an open door shows

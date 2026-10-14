@@ -1,7 +1,7 @@
 # Spotless research notes: measuring the owner's Bosch SMV4HAX40G/13 from his photographs ("photos")
 
 Author: photo-metrology specialist (one of four parallel researchers). Date: 2026-10-08.
-Machine: Bosch Serie 4 SMV4HAX40G/13 (Type SD6PW1B, FD 0106), 60 cm fully integrated, 81.5 cm class. Programme of interest: Auto 45-65 (2:25).
+Machine: Bosch Serie 4 SMV4HAX40G/13 (Type SD6PW1B, FD 0106), 60 cm fully integrated, 81.5 cm class.
 Scope: a counted, measured, parametric reconstruction of the baskets, spray arms and tub floor of this exact appliance from the owner's five photographs, with uncertainties. Hydraulics, programme and thermal data are other researchers' angles; cross-links are in section 13.
 
 ## 0. How to read this file

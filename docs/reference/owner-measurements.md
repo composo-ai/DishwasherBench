@@ -106,20 +106,19 @@ the rinse-aid dispenser.
 ## Answers of the evening of 2026-10-10
 
 The owner said that he would do the egg-yolk test that night, and asked whether the yolk needs
-cooking or is only smeared on and left; that he could not easily do the logged Auto run, having no
+cooking or is only smeared on and left; that he could not easily log a run's power, having no
 metering plug; and that the capsule is Ultimate, not Ultimate Plus.
 
 So: the capsule is Finish Powerball Ultimate (not Ultimate Plus); no metering plug is available, so a
-logged Auto run is not possible for now (the display time at the start and the clock times of start and
+logged run is not possible for now (the display time at the start and the clock times of start and
 finish stand in for it); the first test wash, egg yolk on plates, is planned for tonight (see
 `docs/calibration/owner-wash-01-egg-yolk.md`).
 
-## The scored programme changes to Eco 50 (2026-10-10, evening)
+## The programme: Eco 50 (2026-10-10, evening)
 
-Decided that evening: Eco 50 is the programme the game scores on. It is a fixed course, which
-removes the temperature and duration uncertainty of the model, and it makes the game a little
-harder. Auto 45-65 remains as a secondary programme marked uncalibrated. The first test wash (egg
-yolk on plates) was run on Eco 50.
+Decided that evening: Eco 50 is the programme the game is washed on. It is a fixed course, which
+removes the temperature and duration uncertainty of the model. The first test wash (egg yolk on
+plates) was run on Eco 50.
 
 ## The upper basket out of the machine, seen end-on at floor height (2026-10-11)
 

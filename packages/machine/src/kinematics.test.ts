@@ -2,12 +2,11 @@ import { degToRad, rpmToRadPerS, v3Dot, v3Length } from '@spotless/core';
 import { describe, expect, it } from 'vitest';
 import { getNozzle, getSprayLevel } from './config.ts';
 import { nozzleDirection, nozzleExitZ, nozzleState } from './kinematics.ts';
-import { BOSCH_SMV4HAX40G, SPOT_60 } from './machines.ts';
+import { BOSCH_SMV4HAX40G } from './machines.ts';
 import { expectNear, mutableCopy } from './test-util.ts';
 import type { MachineConfig } from './types.ts';
 
 const cos = (deg: number) => Math.cos(degToRad(deg));
-const sin = (deg: number) => Math.sin(degToRad(deg));
 
 /** The Bosch default configuration with the upper basket at a given Rackmatic level. */
 function boschAtLevel(level: string): MachineConfig {
@@ -162,40 +161,11 @@ describe('nozzleState: hand calculations (machine.md section 12.2 item 3)', () =
       expectNear(s.velocity[2], -6.35, 1e-12);
     }
   });
-
-  it('a vertical jet at the tip is deflected by up to 6 deg at 35 rpm (machine.md 12.2)', () => {
-    // "omega R_i e_lead (the nozzle's own motion; up to 0.9 m/s, a deflection of up to 6 deg
-    // for a vertical jet)": SPOT-60 L9, R = 223 mm, rho 89, at 35 rpm and 8.36 m/s.
-    const omega = rpmToRadPerS(35);
-    const s = nozzleState(SPOT_60, 'lower', 'l9', 0.7, omega, 8.36);
-    expectNear(v3Length(s.nozzleVelocity), omega * 0.223, 1e-12);
-    expectNear(v3Length(s.nozzleVelocity), 0.82, 0.01);
-    expect(v3Length(s.nozzleVelocity)).toBeLessThan(0.9);
-    const horizontal = Math.hypot(s.velocity[0], s.velocity[1]);
-    const deflectionDeg = (Math.atan2(horizontal, s.velocity[2]) * 180) / Math.PI;
-    expect(deflectionDeg).toBeGreaterThan(4);
-    expect(deflectionDeg).toBeLessThan(6.5);
-    // SPOT-60's lower arm turns counter-clockwise: at angle 0.7 the "+" blade's velocity is
-    // omega R (-sin 0.7, cos 0.7, 0).
-    expectNear(s.nozzleVelocity[0], -omega * 0.223 * Math.sin(0.7), 1e-12);
-    expectNear(s.nozzleVelocity[1], omega * 0.223 * Math.cos(0.7), 1e-12);
-  });
-
-  it('SPOT-60 mid arm (clockwise, under the upper rack): M9 sprays down from below the rack', () => {
-    // M9: "+" blade, R = 190 mm, theta 0, rho -75, underside: nozzle plane 33 mm below the
-    // grid top, which is at 375 mm in the default (middle) position: z = 342 mm.
-    const s = nozzleState(SPOT_60, 'mid', 'm9', Math.PI, 0, 8.2);
-    expectNear(s.position[0], -0.19, 1e-12);
-    expectNear(s.position[2], 0.342, 1e-12);
-    // d = cos(-75) e_r + sin(-75) e_z with e_r = (-1, 0, 0).
-    expectNear(s.direction[0], -cos(75), 1e-12);
-    expectNear(s.direction[2], -sin(75), 1e-12);
-  });
 });
 
 describe('nozzleState: invariants', () => {
   it('directions are unit vectors and the nozzle stays at its radius and height', () => {
-    for (const spec of [BOSCH_SMV4HAX40G, SPOT_60]) {
+    for (const spec of [BOSCH_SMV4HAX40G]) {
       for (const level of spec.sprayLevels) {
         for (const nozzle of level.nozzles) {
           for (const angle of [0, 0.4, 2, 3.5, 5.9]) {
@@ -258,12 +228,13 @@ describe('nozzleState: invariants', () => {
     expect(() => nozzleState(BOSCH_SMV4HAX40G, 'mid', 'm1', 0, 0, 1)).toThrow(RangeError);
     expect(() => nozzleState(BOSCH_SMV4HAX40G, 'lower', 'l99', 0, 0, 1)).toThrow(RangeError);
     // An upward nozzle on an arm without an upward nozzle plane is a data error.
-    const broken = mutableCopy(SPOT_60);
-    const top = broken.sprayLevels.find((l) => l.id === 'top');
-    if (top === undefined || top.kind !== 'arm') throw new Error('no top arm');
-    const first = top.nozzles[0];
+    const broken = mutableCopy(BOSCH_SMV4HAX40G);
+    const lower = broken.sprayLevels.find((l) => l.id === 'lower');
+    if (lower === undefined || lower.kind !== 'arm') throw new Error('no lower arm');
+    lower.nozzleUpZ = null;
+    const first = lower.nozzles[0];
     if (first === undefined) throw new Error('no nozzle');
     first.face = 'top';
-    expect(() => nozzleState(broken, 'top', first.id, 0, 0, 1)).toThrow(RangeError);
+    expect(() => nozzleState(broken, 'lower', first.id, 0, 0, 1)).toThrow(RangeError);
   });
 });

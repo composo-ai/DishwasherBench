@@ -606,8 +606,8 @@ export function placementProblems(
  * takes it (`ExpandOptions.heldWater`): `trapped` (m3) in every step up to the first drain
  * after the pump has run, nothing after it. Upright vessels fill in the first bath and stay
  * full through every drain (a drain pump cannot empty them), so only the first bath is short
- * of the water they took: in the owner's Auto programme the pre-rinse, where the machine checks
- * the level by the pump current and tops up (machine dossier, row D4).
+ * of the water they took: in Eco 50 the pre-rinse and the main wash, which share it, where the
+ * machine checks the level by the pump current and tops up (machine dossier, row D4).
  */
 export function trappedWaterByStep(
   programme: WashInput['programme'],

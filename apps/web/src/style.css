@@ -836,8 +836,7 @@ button.inspect {
   background: #fff4d6;
   border-color: #e0b84a;
 }
-.badge.provisional,
-.badge.uncalibrated {
+.badge.provisional {
   background: #ececf4;
   border-color: #8a8aa8;
 }

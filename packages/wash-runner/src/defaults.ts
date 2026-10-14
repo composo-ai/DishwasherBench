@@ -38,7 +38,7 @@ export interface WashDetergentChoice {
 
 /**
  * A part of the verdicts of a parameter set that no measurement or published result stands
- * behind: on one programme, the soils of some model classes. A wash that judges such a soil
+ * behind: on a programme, the soils of some model classes. The owner's machine has none. A wash that judges such a soil
  * says so in its report (a note of the job), so that a player, a benchmark and whoever reads
  * a score can tell a verdict the calibration vouches for from one it does not.
  */
@@ -103,19 +103,6 @@ export const MACHINE_WASH_DEFAULTS: Readonly<Record<string, WashParamFilesChoice
       // weights), where the reference detergent the machine data assume is dosed at 20 g.
       dose_g: 12.9,
     },
-    caveats: [
-      {
-        // docs/calibration/anchoring-v5.md, owner-wash-01-calibration.md: the set is anchored
-        // to published results of an eco programme with the reference detergent and to one
-        // wash of the owner's on Eco 50. On his Auto programme with his capsule nearly every
-        // egg-yolk item and every glass of heated milk reads dirty however it is loaded, and
-        // a tea stain turns on a tenth of one rate; the test institutes grade Auto as high
-        // as Eco. No document decides it, and his first wash was on Eco: a wash on Auto does.
-        programmeId: 'auto_145',
-        soilClasses: ['egg_yolk', 'milk', 'tea'],
-        note: 'carry a protein soil (egg, meat, cheese, heated milk, yoghurt) or a stain (tea, coffee, wine). On this programme the verdicts on these soils are not yet backed by a measurement on this machine: they are provisional.',
-      },
-    ],
   },
 };
 

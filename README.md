@@ -60,7 +60,7 @@ pose a program would send._
 - **Three ways to play.** The page (`apps/web`), an MCP server for agents (`packages/mcp`), and a
   harness that runs scripted players and models and writes verified episode records
   (`packages/bench`).
-- **Checks.** 48 loading phenomena from the literature as executable pairs of washes
+- **Checks.** 46 loading phenomena from the literature as executable pairs of washes
   ([docs/research/standards.md](docs/research/standards.md) section 9), and a calibration tool
   that scores the simulation against a record of a real wash, fits parameters and ranks candidate
   test washes.
@@ -309,7 +309,7 @@ temperature and the chemistry of the wash water (detergent, enzymes, bleach), ov
 programme. Where the water goes is cached apart from the soil and the chemistry, so a wash with
 other soil parameters replays in seconds to about a minute. The official tier works on blocks
 of 2 mm, the fast tier on 4 mm. See [docs/design/scope.md](docs/design/scope.md) for what is
-built and what is left out, and [docs/design/sim-core.md](docs/design/sim-core.md) for the
+built and what is out of scope, and [docs/design/sim-core.md](docs/design/sim-core.md) for the
 design of the physics.
 
 **The scoring.** After the wash an inspector looks at every item. An item is clean when it
@@ -333,8 +333,8 @@ with, [docs/calibration/anchoring-v7.md](docs/calibration/anchoring-v7.md).
 
 ### Check the simulation yourself
 
-The phenomena suite (48 phenomena, 82 washes; about 15 minutes at the fast tier when nothing is
-cached, two and a half when everything is). Run these from the root of the repository, in a
+The phenomena suite (46 phenomena, 76 washes; about two minutes at the fast tier when the water
+of every wash is cached, half an hour or more when it is not). Run these from the root of the repository, in a
 POSIX shell:
 
 ```sh
@@ -346,7 +346,7 @@ INIT_CWD=. pnpm exec tsx packages/sim-verify/src/phenomena/cli.ts P36 --tier fas
   --out .spotless/phenomena
 ```
 
-With no ids it runs all 48. Without `--params` it washes with the registry defaults and the
+With no ids it runs all 46. Without `--params` it washes with the registry defaults and the
 reference detergent; the third form washes as the game does, with the calibrated set and the
 capsule. The commands above send their reports to the git-ignored `.spotless/phenomena`. The
 default is `packages/sim-verify/phenomena/reports/`, which holds the stored reports of the
@@ -376,9 +376,12 @@ pnpm --filter @spotless/loader check-loads --jobs 3      # all 25 of them: about
 
 ## Scope and limitations
 
-DishwasherBench models one machine and scores one programme, Eco 50, with one detergent. The
-wash is calibrated on a test wash of that machine (four egg-yolk plates) and on the published
-class means of a sister machine, the Bosch SMV6ECX51E.
+DishwasherBench models one machine with one detergent. Programmes other than Eco 50, drying,
+spots and film on glass, items moved by the jets, soil settling on clean items, flaking of thick
+layers and where a tablet lands outside its tray are out of scope
+([docs/design/scope.md](docs/design/scope.md#out-of-scope)). The wash is calibrated on a test
+wash of that machine (four egg-yolk plates) and on the published class means of a sister
+machine, the Bosch SMV6ECX51E.
 [docs/validation/README.md](docs/validation/README.md) has the full account, with every number
 and where it comes from.
 
@@ -394,10 +397,8 @@ Three things decide most of a score:
 The wash does not respond to how plates and cutlery are stacked: plates that lean on each other
 and cutlery crowded into one cell come out clean, where a real machine would be expected to
 leave soil. A score therefore does not show how well plates and cutlery were stacked
-([issue 1](https://github.com/composo-ai/DishwasherBench/issues/1)). Of the 48 loading
-phenomena in the suite, 17 pass. Drying, spots and film on glass, items moved by the jets and
-soil settling on clean pieces are outside the model
-([issue 7](https://github.com/composo-ai/DishwasherBench/issues/7)). The adapter for
+([issue 1](https://github.com/composo-ai/DishwasherBench/issues/1)). Of the 46 loading
+phenomena in the suite, 9 are out of scope, and 17 of the other 37 pass. The adapter for
 Anthropic's API is tested against a local stand-in only
 ([issue 13](https://github.com/composo-ai/DishwasherBench/issues/13)).
 
@@ -410,7 +411,7 @@ map of them.
 | Path                                                   | What                                                                                                                      |
 | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
 | [docs/README.md](docs/README.md)                       | The index of the documents, with a reading order and a label for each: current, record of the build, or superseded        |
-| [docs/design/scope.md](docs/design/scope.md)           | The aim of the project, what was built first, what is left out, the status                                                |
+| [docs/design/scope.md](docs/design/scope.md)           | The aim of the project, what was built first, what is out of scope, the status                                            |
 | [docs/validation/README.md](docs/validation/README.md) | What the simulation was checked against and what a verdict can be trusted for                                             |
 | [docs/benchmark/](docs/benchmark/README.md)            | Running the benchmark, the course of levels, the first runs with models                                                   |
 | [docs/calibration/](docs/calibration/protocol.md)      | The protocol of test washes for calibrating the simulation, the wash-record format, the fitting tool, the first test wash |

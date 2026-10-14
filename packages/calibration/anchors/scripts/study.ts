@@ -6,14 +6,12 @@
  *   cd packages/calibration
  *   pnpm exec tsx anchors/scripts/study.ts <cases.json> <out.json> [cacheDir]
  *
- * cases.json: [{ name, load?, programme?, course?, tier?, levelSeed?, simSeed?, set?, extra?,
+ * cases.json: [{ name, load?, programme?, tier?, levelSeed?, simSeed?, set?, extra?,
  *                dose_g?, milk?, liquorOut? }]
  *   load       a load of `anchors/loads` (default `iec-13-careful`)
- *   programme  a programme id of the machine (default `eco_50`), or `eco_record` for Eco 50
- *              on the course of the literature record (main wash 54 C, final rinse 48 C, as
- *              measured on the round robin's machine); with `course`, Auto 45-65 on
- *              that course of `src/courses.ts` (`as_written`, `staged_55`, `single_55`,
- *              `staged_65`)
+ *   programme  `eco_50` (the default), or `eco_record` for Eco 50 on the course of the
+ *              literature record (main wash 54 C, final rinse 48 C, as measured on the round
+ *              robin's machine)
  *   set        a parameter-set file of `anchors/` or `detergents/` by name, or a list of them
  *              laid over one another in order; `defaults` or absent: the registry defaults
  *   extra      overrides laid on top
@@ -22,7 +20,6 @@
 
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { loadProgrammeSpec } from '@spotless/machine';
 import {
   composeParamLayers,
   washInputFromDescription,
@@ -36,7 +33,6 @@ import {
   washWithSource,
 } from '@spotless/sim-core/node';
 import { programmeOfRecord, type WashRecord } from '../../src/index.ts';
-import { AUTO_COURSES } from '../src/courses.ts';
 import { STANDARD_COMPOSITION } from '../src/literature.ts';
 import { classMeans } from '../src/objective.ts';
 import { ANCHORS_DIR, stdEu13Description, type MilkCase } from '../src/scenario.ts';
@@ -47,7 +43,6 @@ interface Case {
   readonly name: string;
   readonly load?: string;
   readonly programme?: string;
-  readonly course?: string;
   readonly tier?: 'official' | 'fast';
   readonly levelSeed?: number;
   readonly simSeed?: number;
@@ -102,15 +97,9 @@ const literature = JSON.parse(
 const rows: unknown[] = [];
 for (const c of cases) {
   const { params, records } = setsOf(c);
-  const course = c.course === undefined ? null : (AUTO_COURSES[c.course]?.() ?? null);
   const description = stdEu13Description({
     load: c.load ?? 'iec-13-careful',
-    programme:
-      c.course !== undefined
-        ? 'auto_145'
-        : c.programme === 'eco_record'
-          ? 'eco_50'
-          : (c.programme ?? 'eco_50'),
+    programme: c.programme === 'eco_record' ? 'eco_50' : (c.programme ?? 'eco_50'),
     tier: c.tier ?? 'official',
     params,
     workingSoils: true,
@@ -119,8 +108,7 @@ for (const c of cases) {
     ...(c.simSeed === undefined ? {} : { simSeed: c.simSeed }),
   });
   let input = washInputFromDescription(description);
-  if (course !== null) input = { ...input, programme: loadProgrammeSpec(course) };
-  if (c.course === undefined && c.programme === 'eco_record') {
+  if (c.programme === 'eco_record') {
     input = {
       ...input,
       programme: programmeOfRecord(
@@ -168,7 +156,7 @@ for (const c of cases) {
   const row = {
     name: c.name,
     load: c.load ?? 'iec-13-careful',
-    programme: c.course ?? c.programme ?? 'eco_50',
+    programme: c.programme ?? 'eco_50',
     tier: c.tier ?? 'official',
     seeds: [description.levelSeed, description.simSeed],
     dose_g: dose,

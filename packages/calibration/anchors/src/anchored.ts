@@ -2,8 +2,8 @@
  * What the anchored parameter set is made of: the corrections of mechanism and data that were
  * taken from the dossiers (each a registered parameter whose default is the first build), the
  * parameters the anchoring fit moves, those it took back or returned to their defaults after
- * the review of 10 October 2026, the assumption a wash on the owner's Auto programme needs
- * about his detergent, and the wash input of a literature record.
+ * the review of 10 October 2026, an assumption about the heat stability of the protease of the
+ * owner's detergent (a bracket of two values), and the wash input of a literature record.
  */
 
 import type { ParamValue, WashInput } from '@spotless/sim-core';

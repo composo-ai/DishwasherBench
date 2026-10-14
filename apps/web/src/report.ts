@@ -191,11 +191,10 @@ export interface ReportView {
   readonly notes: readonly string[];
   /** True for a wash at the fast tier: a preview, not a result. */
   readonly preview: boolean;
-  /** The label the page puts on the total of a preview or of an uncalibrated programme, or null. */
+  /** The label the page puts on the total of a preview, or null. */
   readonly label: string | null;
-  /** The programme the load was washed on, and whether it is the one the level is scored on. */
+  /** The programme the load was washed on. */
   readonly programme: string;
-  readonly uncalibrated: boolean;
   /**
    * How the points were counted, in a sentence: binary on the verdict, with how many items
    * were at the edge of clean or provisional and what the points would be with the edge items
@@ -351,26 +350,18 @@ export function reportView(card: LevelCard, report: WashReport): ReportView {
     preview: report.job.fidelity === 'fast',
     label: totalLabel(report),
     programme: programmeName(card, verdicts?.programme_id ?? card.programme.programme_id),
-    uncalibrated: verdicts?.programme_status === 'uncalibrated',
     counting: verdicts === undefined ? null : countingText(verdicts),
   };
 }
 
-/** The display name of a programme of the level card, or its id. */
+/** The display name of the programme of the level card, or the id washed on. */
 function programmeName(card: LevelCard, id: string): string {
-  return (
-    [card.programme, ...card.secondary_programmes].find((p) => p.programme_id === id)
-      ?.display_name ?? id
-  );
+  return card.programme.programme_id === id ? card.programme.display_name : id;
 }
 
-/** What the total of a report is labelled with: a preview, an uncalibrated programme, or both. */
+/** What the total of a report is labelled with: a preview, or nothing. */
 function totalLabel(report: WashReport): string | null {
-  const parts = [
-    ...(report.job.fidelity === 'fast' ? ['Quick preview'] : []),
-    ...(report.verdicts?.programme_status === 'uncalibrated' ? ['uncalibrated programme'] : []),
-  ];
-  return parts.length === 0 ? null : parts.join(', ');
+  return report.job.fidelity === 'fast' ? 'Quick preview' : null;
 }
 
 function itemsWorth(items: readonly { readonly points: number }[]): string {

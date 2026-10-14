@@ -1,5 +1,5 @@
 /**
- * `buildMachineGeometry` on the owner's Bosch and on SPOT-60: every shape goes through the
+ * `buildMachineGeometry` on the owner's Bosch: every shape goes through the
  * geometry kernel, the parts are where the dossier and the owner's tape put them, nothing leaves
  * the tub, the nozzles sit where the nozzle kinematics say, and the arms clear everything
  * through a full turn at every position of the upper basket.
@@ -19,7 +19,7 @@ import {
 import { describe, expect, it, vi } from 'vitest';
 import { getSprayArm } from '../config.ts';
 import { nozzleState } from '../kinematics.ts';
-import { BOSCH_SMV4HAX40G as B, SPOT_60 } from '../machines.ts';
+import { BOSCH_SMV4HAX40G as B } from '../machines.ts';
 import { expectNear, must } from '../test-util.ts';
 import type { MachineConfig, MachineSpec } from '../types.ts';
 import { buildMachineGeometry, getMachinePart, machinePartPose } from './build.ts';
@@ -180,97 +180,97 @@ describe('buildMachineGeometry: parts and frames', () => {
   });
 });
 
-describe.each([
-  ['Bosch SMV4HAX40G', B],
-  ['SPOT-60', SPOT_60],
-] as const)('%s: every shape is valid input to the geometry kernel', (_name, spec: MachineSpec) => {
-  const built = buildMachineGeometry(spec);
+describe.each([['Bosch SMV4HAX40G', B]] as const)(
+  '%s: every shape is valid input to the geometry kernel',
+  (_name, spec: MachineSpec) => {
+    const built = buildMachineGeometry(spec);
 
-  it('has no degenerate primitive', () => {
-    for (const part of built.parts) {
-      for (const p of part.shape.parts) {
-        const where = `${part.id}/${p.id}`;
-        const prim = p.prim;
-        if (prim.kind === 'capsule') {
-          expect(prim.radius, where).toBeGreaterThan(0.0005);
-          const length = Math.hypot(
-            prim.b[0] - prim.a[0],
-            prim.b[1] - prim.a[1],
-            prim.b[2] - prim.a[2],
-          );
-          // A capsule of no length is a ball: only the ball ends of tines are meant to be.
-          if (length === 0) expect(p.id, where).toMatch(/\.tip\./);
-          else expect(length, where).toBeGreaterThan(1e-5);
-        } else if (prim.kind === 'rbox') {
-          for (const k of [0, 1, 2] as const) {
-            expect(prim.halfExtents[k] + prim.radius, where).toBeGreaterThan(0.0002);
+    it('has no degenerate primitive', () => {
+      for (const part of built.parts) {
+        for (const p of part.shape.parts) {
+          const where = `${part.id}/${p.id}`;
+          const prim = p.prim;
+          if (prim.kind === 'capsule') {
+            expect(prim.radius, where).toBeGreaterThan(0.0005);
+            const length = Math.hypot(
+              prim.b[0] - prim.a[0],
+              prim.b[1] - prim.a[1],
+              prim.b[2] - prim.a[2],
+            );
+            // A capsule of no length is a ball: only the ball ends of tines are meant to be.
+            if (length === 0) expect(p.id, where).toMatch(/\.tip\./);
+            else expect(length, where).toBeGreaterThan(1e-5);
+          } else if (prim.kind === 'rbox') {
+            for (const k of [0, 1, 2] as const) {
+              expect(prim.halfExtents[k] + prim.radius, where).toBeGreaterThan(0.0002);
+            }
+          } else if (prim.kind === 'hull') {
+            expect(prim.points.length, where).toBeGreaterThanOrEqual(4);
+          } else {
+            expect(prim.profile.length, where).toBeGreaterThanOrEqual(2);
+            for (const v of prim.profile) expect(v.t, where).toBeGreaterThan(0);
           }
-        } else if (prim.kind === 'hull') {
-          expect(prim.points.length, where).toBeGreaterThanOrEqual(4);
-        } else {
-          expect(prim.profile.length, where).toBeGreaterThanOrEqual(2);
-          for (const v of prim.profile) expect(v.t, where).toBeGreaterThan(0);
+          if (p.porosity !== undefined) {
+            expect(p.porosity, where).toBeGreaterThan(0);
+            expect(p.porosity, where).toBeLessThan(1);
+          }
         }
-        if (p.porosity !== undefined) {
-          expect(p.porosity, where).toBeGreaterThan(0);
-          expect(p.porosity, where).toBeLessThan(1);
+        // Part ids are unique within a shape.
+        expect(new Set(part.shape.parts.map((p) => p.id)).size, part.id).toBe(
+          part.shape.parts.length,
+        );
+      }
+    });
+
+    it('gives a finite bounding box, collision pieces, a closed render mesh and a signed distance', () => {
+      for (const part of built.parts) {
+        const box = boxOf(part);
+        for (const k of [0, 1, 2] as const) {
+          expect(Number.isFinite(box.min[k]) && Number.isFinite(box.max[k]), part.id).toBe(true);
+          expect(box.max[k], part.id).toBeGreaterThan(box.min[k]);
         }
+        const pieces = buildCollisionPieces(part.shape, { chordError: COLLISION_CHORD_ERROR });
+        expect(pieces.length, part.id).toBeGreaterThanOrEqual(part.shape.parts.length);
+        const mesh = buildRenderMesh(part.shape, { chordError: COLLISION_CHORD_ERROR });
+        expect(mesh.indices.length, part.id).toBeGreaterThan(0);
+        // Each part's triangles form a closed surface: every part that is not a capsule, and
+        // every 20th capsule (the check walks the whole mesh once per part).
+        for (let p = 0; p < part.shape.parts.length; p++) {
+          if (must(part.shape.parts[p]).prim.kind === 'capsule' && p % 20 !== 0) continue;
+          const topology = meshTopology(mesh, p);
+          expect(topology.closed, `${part.id}/${must(part.shape.parts[p]).id}`).toBe(true);
+        }
+        // The signed distance is negative at the centre of a part and positive far away.
+        const first = must(part.shape.parts[0]);
+        const inside: Vec3 =
+          first.prim.kind === 'capsule'
+            ? poseTransformPoint(first.pose, first.prim.a)
+            : first.prim.kind === 'rbox'
+              ? first.pose.p
+              : first.prim.kind === 'hull'
+                ? poseTransformPoint(first.pose, centroid(first.prim.points))
+                : poseTransformPoint(first.pose, [
+                    must(first.prim.profile[1]).r,
+                    0,
+                    must(first.prim.profile[1]).z,
+                  ]);
+        expect(signedDistance(part.shape, inside), part.id).toBeLessThan(0);
+        const far = signedDistance(part.shape, [5, 5, 5]);
+        expect(far, part.id).toBeGreaterThan(4);
+        expect(Number.isFinite(far)).toBe(true);
       }
-      // Part ids are unique within a shape.
-      expect(new Set(part.shape.parts.map((p) => p.id)).size, part.id).toBe(
-        part.shape.parts.length,
-      );
-    }
-  });
+    }, 60_000);
 
-  it('gives a finite bounding box, collision pieces, a closed render mesh and a signed distance', () => {
-    for (const part of built.parts) {
-      const box = boxOf(part);
-      for (const k of [0, 1, 2] as const) {
-        expect(Number.isFinite(box.min[k]) && Number.isFinite(box.max[k]), part.id).toBe(true);
-        expect(box.max[k], part.id).toBeGreaterThan(box.min[k]);
+    it('turns each wire capsule into exactly one collision capsule', () => {
+      for (const part of built.parts) {
+        if (part.component !== 'basket_wires') continue;
+        const pieces = buildCollisionPieces(part.shape, { chordError: COLLISION_CHORD_ERROR });
+        expect(pieces).toHaveLength(part.shape.parts.length);
+        expect(pieces.every((piece) => piece.kind === 'capsule')).toBe(true);
       }
-      const pieces = buildCollisionPieces(part.shape, { chordError: COLLISION_CHORD_ERROR });
-      expect(pieces.length, part.id).toBeGreaterThanOrEqual(part.shape.parts.length);
-      const mesh = buildRenderMesh(part.shape, { chordError: COLLISION_CHORD_ERROR });
-      expect(mesh.indices.length, part.id).toBeGreaterThan(0);
-      // Each part's triangles form a closed surface: every part that is not a capsule, and
-      // every 20th capsule (the check walks the whole mesh once per part).
-      for (let p = 0; p < part.shape.parts.length; p++) {
-        if (must(part.shape.parts[p]).prim.kind === 'capsule' && p % 20 !== 0) continue;
-        const topology = meshTopology(mesh, p);
-        expect(topology.closed, `${part.id}/${must(part.shape.parts[p]).id}`).toBe(true);
-      }
-      // The signed distance is negative at the centre of a part and positive far away.
-      const first = must(part.shape.parts[0]);
-      const inside: Vec3 =
-        first.prim.kind === 'capsule'
-          ? poseTransformPoint(first.pose, first.prim.a)
-          : first.prim.kind === 'rbox'
-            ? first.pose.p
-            : first.prim.kind === 'hull'
-              ? poseTransformPoint(first.pose, centroid(first.prim.points))
-              : poseTransformPoint(first.pose, [
-                  must(first.prim.profile[1]).r,
-                  0,
-                  must(first.prim.profile[1]).z,
-                ]);
-      expect(signedDistance(part.shape, inside), part.id).toBeLessThan(0);
-      const far = signedDistance(part.shape, [5, 5, 5]);
-      expect(far, part.id).toBeGreaterThan(4);
-      expect(Number.isFinite(far)).toBe(true);
-    }
-  }, 60_000);
-
-  it('turns each wire capsule into exactly one collision capsule', () => {
-    for (const part of built.parts) {
-      if (part.component !== 'basket_wires') continue;
-      const pieces = buildCollisionPieces(part.shape, { chordError: COLLISION_CHORD_ERROR });
-      expect(pieces).toHaveLength(part.shape.parts.length);
-      expect(pieces.every((piece) => piece.kind === 'capsule')).toBe(true);
-    }
-  });
-});
+    });
+  },
+);
 
 function centroid(points: readonly Vec3[]): Vec3 {
   const sum = points.reduce<[number, number, number]>(
@@ -287,8 +287,6 @@ describe('Bosch: collision cost', () => {
     console.log(
       `collision capsules per basket (Bosch SMV4HAX40G, default configuration): lower ${counts.lower}, upper ${counts.upper}`,
     );
-    const spot = buildMachineGeometry(SPOT_60).properties.capsulesByBasket;
-    console.log(`collision capsules per basket (SPOT-60): ${JSON.stringify(spot)}`);
     expect(counts.lower).toBe(getMachinePart(geometry, 'lower_rack').shape.parts.length);
     expect(counts.upper).toBe(getMachinePart(geometry, 'upper_rack').shape.parts.length);
     // A budget, so that a change that doubles the cost is noticed. The upper basket's 14 cross
@@ -676,9 +674,6 @@ describe('the guide rails of the upper basket on the tub walls', () => {
       'guide_rail',
     ]);
     expect(tub.shape.parts.filter((p) => p.id.startsWith('feature.'))).toHaveLength(2);
-    // SPOT-60 records no wall feature positions: its tub has none.
-    const spot = getMachinePart(buildMachineGeometry(SPOT_60), 'tub');
-    expect(spot.shape.parts.some((p) => p.id.startsWith('feature.'))).toBe(false);
   });
 });
 

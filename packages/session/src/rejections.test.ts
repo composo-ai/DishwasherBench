@@ -347,22 +347,19 @@ describe('budgets', () => {
 });
 
 describe('start_cycle', () => {
-  it('takes a secondary programme of the level, and no other, and washes on the one named', async () => {
-    const level = { ...testLevel({ washesMax: 2 }), secondaryProgrammes: ['eco_50'] };
-    const s = await session(level);
+  it('takes the programme of the level, and no other, and washes on it', async () => {
+    const s = await session(testLevel({ washesMax: 2 }));
     s.getState();
-    // The card names the scored programme and what can be chosen beside it, labelled.
+    // The card names the scored programme and nothing beside it.
     const card = s.getLevel();
-    expect(card.programme.programme_id).toBe('auto_145');
+    expect(card.programme.programme_id).toBe('eco_50');
     expect(card.programme.status).toBe('scored');
-    expect(card.secondary_programmes.map((p) => [p.programme_id, p.status])).toEqual([
-      ['eco_50', 'uncalibrated'],
-    ]);
-    const refused = s.startCycle({ programme: 'intensive_70' });
+    expect(card.secondary_programmes).toEqual([]);
+    const refused = s.startCycle({ programme: 'no_such_programme' });
     expect(refused.accepted).toBe(false);
     if (!refused.accepted) {
       expect(refused.reason).toBe('unknown_programme');
-      expect(refused.detail).toContain("'eco_50' can be chosen instead and is not calibrated");
+      expect(refused.detail).toBe("this level is scored on 'eco_50'");
     }
     rejected(s, 'invalid_argument', () => s.startCycle({ programme: 7 } as never));
     const started = s.startCycle({ programme: 'eco_50' });
@@ -376,9 +373,9 @@ describe('start_cycle', () => {
   it('rejects unknown_programme, then no_washes_left and episode_over', async () => {
     const s = await session(testLevel({ washesMax: 2 }));
     s.getState();
-    rejected(s, 'unknown_programme', () => s.startCycle({ programme: 'eco_50' }));
+    rejected(s, 'unknown_programme', () => s.startCycle({ programme: 'no_such_programme' }));
     rejected(s, 'invalid_argument', () => s.startCycle(null as never));
-    expect(s.startCycle({ programme: 'auto_145' }).accepted).toBe(true);
+    expect(s.startCycle({ programme: 'eco_50' }).accepted).toBe(true);
     // While the wash runs the load is frozen.
     rejected(s, 'episode_over', () => s.startCycle());
     rejected(s, 'episode_over', () => s.place(BOWL));

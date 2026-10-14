@@ -29,13 +29,24 @@ const registry = createRegistry({ contributions: [SHARED_PARAM_DEFS, HYDRAULICS_
 const params = createParamSet(registry);
 const hydraulics = buildWashHydraulics({ spec, programme, params });
 
+/** Seconds of the schedule in which the long soak of the main wash rests the pump. */
+function soakRest(h: ReturnType<typeof buildWashHydraulics>): number {
+  let rest = 0;
+  for (const span of h.schedule.spans) {
+    if (span.kind === 'hold' && span.phase === 'main_wash' && span.state < 0) {
+      rest += span.end - span.start;
+    }
+  }
+  return rest;
+}
+
 function stateOf(id: string): SprayState {
   const state = hydraulics.states.find((s) => s.id === id);
   if (state === undefined) throw new Error(`no state ${id}`);
   return state;
 }
 
-describe("spray states of the owner's Auto programme", () => {
+describe("spray states of Eco 50, the owner's programme", () => {
   it('are the distinct diverter positions and pump speeds, sorted', () => {
     // The Bosch alternates the lower arm (l) with the upper arm and roof spinner (ur), at 2800
     // rev/min in the rinses and 3000 in the main wash.
@@ -43,9 +54,13 @@ describe("spray states of the owner's Auto programme", () => {
     hydraulics.states.forEach((s, i) => expect(s.index).toBe(i));
   });
 
-  it('last as long together as the pump runs', () => {
+  it('last as long together as the pump runs, less the rests of the soak', () => {
     const total = hydraulics.states.reduce((sum, s) => sum + s.duration, 0);
-    expect(total).toBeCloseTo(hydraulics.schedule.timeline.totals.pumpOnTime, 6);
+    expect(soakRest(hydraulics)).toBeGreaterThan(0);
+    expect(total + soakRest(hydraulics)).toBeCloseTo(
+      hydraulics.schedule.timeline.totals.pumpOnTime,
+      6,
+    );
   });
 
   it('split the flow of the operating point over jets and showers exactly', () => {
@@ -144,9 +159,9 @@ describe('jetLaunch', () => {
 describe('schedule', () => {
   const { schedule } = hydraulics;
 
-  it('covers the programme without gaps: 2 h 25 min', () => {
+  it('covers the programme without gaps: 4 h 55 min', () => {
     expect(schedule.duration).toBe(schedule.timeline.totals.duration);
-    expect(schedule.duration / 60).toBeCloseTo(145, 0);
+    expect(schedule.duration / 60).toBeCloseTo(295, 0);
     expect(schedule.spans[0]?.start).toBe(0);
     for (let i = 1; i < schedule.spans.length; i++) {
       expect(schedule.spans[i]?.start).toBe(schedule.spans[i - 1]?.end);
@@ -160,8 +175,11 @@ describe('schedule', () => {
         expect(span.state).toBe(-1);
       }
     }
-    const fed = schedule.timeline.segments.flatMap((s) => s.diverter);
-    const sprayed = schedule.spans.filter((s) => s.state >= 0);
+    // Outside the soak, whose rests split the fed intervals, one span per fed interval.
+    const soak = (s: { kind: string; phase: string }) =>
+      s.kind === 'hold' && s.phase === 'main_wash';
+    const fed = schedule.timeline.segments.filter((s) => !soak(s)).flatMap((s) => s.diverter);
+    const sprayed = schedule.spans.filter((s) => s.state >= 0 && !soak(s));
     expect(sprayed.length).toBe(fed.length);
     expect(spanAt(schedule, fed[0]?.start ?? 0).state).toBeGreaterThanOrEqual(0);
   });
@@ -189,9 +207,9 @@ describe('what the load changes', () => {
   });
 
   it('gives a pump that runs short of water spray states of its own, at the flow of the timeline', () => {
-    // 2.5 L trapped in upright vessels through the first bath (pre-rinse and main wash of the
-    // Auto programme share their water): the sump is short, the pump draws air.
-    const firstBath = new Set(['a1_fill', 'a2_pre_rinse', 'a3_drain', 'a3_fill', 'a4_dose']);
+    // 3.3 L trapped in upright vessels through the pre-rinse: the sump is short, the pump draws
+    // air.
+    const firstBath = new Set(['e1_fill', 'e2_pre_rinse', 'e4_dose']);
     const starved = buildWashHydraulics({
       spec,
       programme,
@@ -254,11 +272,11 @@ describe('what the load changes', () => {
     expect(rinse.length).toBeGreaterThan(0);
     for (const span of rinse) expect(starved.states[span.state]?.headFactor).toBe(1);
     const total = starved.states.reduce((sum, s) => sum + s.duration, 0);
-    expect(total).toBeCloseTo(starved.schedule.timeline.totals.pumpOnTime, 6);
+    expect(total + soakRest(starved)).toBeCloseTo(starved.schedule.timeline.totals.pumpOnTime, 6);
   });
 
   it('delivers the flow of the timeline through a starved stretch, continuously in the trapped water', () => {
-    const firstBath = new Set(['a1_fill', 'a2_pre_rinse', 'a3_drain', 'a3_fill', 'a4_dose']);
+    const firstBath = new Set(['e1_fill', 'e2_pre_rinse', 'e4_dose']);
     // Water sprayed in the pre-rinse, m3, against the water the load traps, from 0.3 to 3.3 L.
     const sprayed: number[] = [];
     for (let trapped = 0.3e-3; trapped < 3.35e-3; trapped += 0.1e-3) {
@@ -382,13 +400,9 @@ describe('the long soak of Eco 50', () => {
     expect(() => build({ 'prog.soakDuty': 0.5 })).toThrow();
   });
 
-  it('leaves the 46 min post-wash of Auto 45-65 circulating', () => {
-    let rest = 0;
-    for (const span of hydraulics.schedule.spans) {
-      if (span.kind === 'hold' && span.phase === 'main_wash' && span.state < 0) {
-        rest += span.end - span.start;
-      }
-    }
-    expect(rest).toBeLessThan(1);
+  it('leaves a hold of the main wash shorter than prog.soakFrom circulating', () => {
+    // The 149 min soak under a threshold of 150 min.
+    expect(soakRest(build({ 'prog.soakFrom': 150 * 60 }))).toBeLessThan(1);
+    expect(soakRest(build())).toBeGreaterThan(0);
   });
 });

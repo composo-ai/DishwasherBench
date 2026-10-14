@@ -176,7 +176,7 @@ export function fullLoadRecord(options: {
         'Items stand on a regular lattice without the loading physics (packages/sim-scene/src/testing/full-load.ts): good for cost and sensitivity, not a valid placement.',
     },
     machine: { id: 'bosch_smv4hax40g' },
-    programme: { id: 'auto_145' },
+    programme: { id: 'eco_50' },
     load: { items },
     observations,
     sim: { tier: options.tier ?? 'fast', level_seed: 1, sim_seed: 1 },

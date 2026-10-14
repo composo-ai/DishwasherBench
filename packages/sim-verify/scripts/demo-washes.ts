@@ -5,11 +5,7 @@
  *
  *   pnpm --filter @spotless/sim-verify exec tsx scripts/demo-washes.ts [name ...] [--tier fast]
  *        [--params <set.json>]... [--detergent <set.json>] [--dose-g <grams>]
- *        [--accept-stale-params] [--out <dir>] [--describe-only] [--programme <id>|level]
- *
- * `--programme` names another programme of the machine (`auto_145`: the owner's Auto 45-65,
- * whose verdicts on protein soils and stains are provisional), or `level` for the programme
- * the load's own level names; without it every load is washed on Eco 50.
+ *        [--accept-stale-params] [--out <dir>] [--describe-only]
  *
  * `--params` names a parameter-set file laid over the registry defaults (several: later over
  * earlier), `--detergent` the parameter-set file of the detergent's composition and `--dose-g`
@@ -111,7 +107,7 @@ const here = dirname(fileURLToPath(import.meta.url));
 const loads = join(here, '..', '..', 'loader', 'loads');
 const args = process.argv.slice(2);
 /** Options that take a value, and the indices of the arguments they consume. */
-const VALUE_OPTIONS = ['--tier', '--params', '--detergent', '--dose-g', '--out', '--programme'];
+const VALUE_OPTIONS = ['--tier', '--params', '--detergent', '--dose-g', '--out'];
 /** The programme the game is scored on (decision of 10 October 2026). */
 const SCORED_PROGRAMME = 'eco_50';
 const taken = new Set<number>();
@@ -134,7 +130,6 @@ const out =
   valuesOf('--out')[0] === undefined
     ? join(here, '..', 'demos')
     : fromOrigin(valuesOf('--out')[0] as string);
-const programmeChoice = valuesOf('--programme')[0] ?? SCORED_PROGRAMME;
 const detergentFile = valuesOf('--detergent')[0];
 const doseG = valuesOf('--dose-g')[0] === undefined ? undefined : Number(valuesOf('--dose-g')[0]);
 // The parameters of every wash: the registry defaults, the named sets, the detergent. A stale
@@ -155,7 +150,7 @@ const TIER_NOTE: string | null =
         lastSet === undefined
           ? null
           : readTierAgreement(tierAgreementFileOf(fromOrigin(lastSet))),
-        programmeChoice === 'level' ? SCORED_PROGRAMME : programmeChoice,
+        SCORED_PROGRAMME,
       )
     : null;
 /** With `--describe-only`: write the wash descriptions and wash nothing. */
@@ -192,7 +187,7 @@ function descriptionOf(load: LoadFile): WashDescription {
   }));
   return {
     machine: m.machine_id,
-    programme: programmeChoice === 'level' ? m.programme_id : programmeChoice,
+    programme: SCORED_PROGRAMME,
     basketHeights: m.machine_config.basketHeights,
     // Shelves, folded rows and the cutlery basket's position as the load was made: without
     // them mugs on a folded-down cup shelf stand inside the shelf folded up.
@@ -549,7 +544,7 @@ const summary: string[] = [];
 summary.push('# Demonstration washes');
 summary.push('');
 summary.push(
-  `Settled standard loads of the owner's Bosch SMV4HAX40G, programme ${programmeChoice === 'level' ? "of each load's level" : programmeChoice}, tier ${tier}. Written by \`scripts/demo-washes.ts\`; per-item tables in \`<name>.table.md\`, inputs in \`<name>.wash.json\`, results in \`<name>.result.json\`.`,
+  `Settled standard loads of the owner's Bosch SMV4HAX40G, programme ${SCORED_PROGRAMME}, tier ${tier}. Written by \`scripts/demo-washes.ts\`; per-item tables in \`<name>.table.md\`, inputs in \`<name>.wash.json\`, results in \`<name>.result.json\`.`,
 );
 if (TIER_NOTE !== null) {
   summary.push('');

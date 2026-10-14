@@ -358,8 +358,8 @@ Slot openings about 5 x 1.5 to 2 mm [ESTIMATED from the owner's photo, +/- 0.5 m
 | Start check | Aquastop driven for 5 s at programme start; flow pulses expected | [VERIFIED] Küppersbusch manual p. 90 |
 | Metering | by the impeller pulses only; the quantity for the final rinse is filled during the intermediate rinse and held in the heat exchanger; no running check in intermediate and final rinse | [VERIFIED] Küppersbusch manual p. 91 |
 | Fill per bath | 3.1 L (heat exchanger content, the stated "Füllmenge") | [VERIFIED] Küppersbusch manual p. 92, 120 |
-| Cross-checks on this model | Favourite (pre-rinse only): 4.0 L in 0:15; Eco 50: 9.5 L; Auto 45-65: 7.0 to 15.5 L; Intensive 70: 11.5 to 14.0 L; Express 65: 10.5 L; Silence: 11.0 L; Machine Care 15.2 L | [VERIFIED] quick reference guide 9001643502 for SMV4HAX40G |
-| Reading | Eco = three baths of about 3.2 L; one stand-alone bath is 4.0 L; so baths lie between 3.1 and 4.0 L, and the Auto range of 7.0 to 15.5 L is two to four or five baths | [ESTIMATED] |
+| Cross-checks on this model | Eco 50: 9.5 L; one cold bath 4.0 L in 0:15 | [VERIFIED] quick reference guide 9001643502 for SMV4HAX40G |
+| Reading | Eco = three baths of about 3.2 L; one stand-alone bath is 4.0 L; so baths lie between 3.1 and 4.0 L | [ESTIMATED] |
 | Softener regeneration | every 6 programmes at the factory setting H04: +5 L, +7 min, +0.05 kWh | [VERIFIED] user manual p. 24 |
 
 ### 6.4 Drain
@@ -558,7 +558,7 @@ drying: {method: side_heat_exchanger_condensation, auto_open: none}             
 - Dimensions of the exact baskets 20001979 / 20007406 and 20001986 / 20001992; wire diameters, grid pitch, tine pitch, height and lean; coating material.
 - Nozzle bore sizes and jet angles of both arms; rotation speed and sense of either arm; orifice and flow of the roof spinner.
 - Pump curve, speed schedule, electrical power and measured flow of the circulation pump (only typical ranges from a BSH patent: 2000 to 3500 rpm, 200 to 400 mbar); drain pump flow.
-- Water switch dwell times and sequence in the Auto programme; gear ratio of the disc.
+- Water switch dwell times and sequence in Eco 50; gear ratio of the disc.
 - Sump working volume, pipe volumes, minimum level, carry-over.
 - Flow sensor pulses per litre; AquaSensor thresholds; softener resin volume.
 - Actual mesh of the micro filter part (only patent ranges) and the slot size of the coarse filter.
@@ -570,13 +570,13 @@ drying: {method: side_heat_exchanger_condensation, auto_open: none}             
 2. Upper spray arm (unscrew it from under the top basket): the same measurements, plus the bore of the docking inlet and the diameter of the feed tube.
 3. Tub interior with a tape: width between side walls at mid height; depth from rear wall to the front flange and to the deepest part of the door liner; height from the floor beside the filter to the roof and from the door sill to the roof; distance from the centre of the lower arm hub to the rear wall and to each side wall; height above the floor of the lower arm's top face, the lower basket's wire floor, the upper arm and the upper basket floor at each of the three Rackmatic settings, and the roof spinner.
 4. Baskets with calipers and a ruler: outer length, width, height; wire diameter of rim, floor grid and tines; grid pitch in both directions; for every tine row its position, pitch, height and lean, and which rows fold; wheel count and diameter; cutlery basket outer size, number of compartments, slot sizes in its floor and lid.
-5. One logged Auto 45-65 cycle with a plug-in power meter that records at 1 s to 10 s intervals (the machine draws up to about 10 A). This gives heater power at the owner's mains voltage, heater on-times (hence heating rates and temperatures reached), pump power, drain pump events and the time of every fill and drain.
-6. Water per bath: put the drain hose into a bucket on a scale for one Auto cycle and weigh each discharge; note the times. Gives fill volumes, the number of baths and carry-over. If the hose cannot be reached, read the household water meter before and after each fill with no other tap in use.
+5. One logged Eco 50 cycle with a plug-in power meter that records at 1 s to 10 s intervals (the machine draws up to about 10 A). This gives heater power at the owner's mains voltage, heater on-times (hence heating rates and temperatures reached), pump power, drain pump events and the time of every fill and drain.
+6. Water per bath: put the drain hose into a bucket on a scale for one Eco 50 cycle and weigh each discharge; note the times. Gives fill volumes, the number of baths and carry-over. If the hose cannot be reached, read the household water meter before and after each fill with no other tap in use.
 7. Sound or vibration recording with a phone resting on the door during a cycle: the alternation between lower arm, upper arm and roof spinner (dwell times of the water switch), the duration of each switch-over, and arm rotation rates from the rhythm of jets hitting the door.
 8. Filters: macro photo of the micro mesh against a ruler or a fine comb; pin-gauge the flat filter holes (0.7 to 1.0 mm) and count holes per 10 mm; coarse filter slot widths; cylinder diameter and height; flat filter and cover outlines.
 9. Roof spinner: diameter, number of vanes, and the bore of the outlet that feeds it (pull the spinner cage off its clips).
 10. Door: position of the dispenser on the inner door (from the top edge and from each side), size of the detergent chamber, and the position and inside size of the handle tray of the upper basket relative to the dispenser with the door closed, at each Rackmatic setting.
-11. A logging thermometer (or a maximum thermometer in a cup) in each basket for one Auto cycle: water and load temperatures to calibrate the thermal model.
+11. A logging thermometer (or a maximum thermometer in a cup) in each basket for one Eco 50 cycle: water and load temperatures to calibrate the thermal model.
 12. Floor shape: depth of the floor below a straightedge laid side to side and front to back; position of the salt cap and the filter relative to the walls.
 13. Salt cap, wheels and handle sizes with calipers, to confirm the scale references in section 2.1.
 

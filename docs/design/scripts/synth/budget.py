@@ -1,4 +1,4 @@
-# Throwaway budget arithmetic for docs/design/sim-core.md (official tier, AUTO-145 sizing programme).
+# Throwaway budget arithmetic for docs/design/sim-core.md (official tier, 145-minute sizing programme).
 # Two loads: typical 6.1 m2 (IEC 13 place settings) and design 8.5 m2. All rates are planning rates (unmeasured kernels).
 import json
 def run(scale, variant, rateS=1.0e9, label=""):

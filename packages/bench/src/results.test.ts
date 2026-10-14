@@ -298,7 +298,7 @@ describe('resultsTable', () => {
     expect(markdown).toContain('A line marked "preview" was washed at the fast tier');
   });
 
-  it('shows the items at the edge of clean and the provisional ones beside the points, and keeps programmes apart', () => {
+  it('shows the items at the edge of clean and the provisional ones beside the points', () => {
     const player = { kind: 'human', name: 'P09', interface: 'web' } as const;
     const flagged = [
       record({
@@ -319,32 +319,10 @@ describe('resultsTable', () => {
           provisional_points: 0,
         },
       }),
-      record({
-        id: 'auto',
-        player,
-        points: 20,
-        fidelity: 'official',
-        verdicts: {
-          counting: 'binary_on_verdict',
-          programme_id: 'auto_145',
-          programme_status: 'uncalibrated',
-          preview: false,
-          points_strict: 20,
-          points_lenient: 20,
-          edge_items: 0,
-          edge_points: 0,
-          provisional_items: 6,
-          provisional_points: 40,
-        },
-      }),
     ];
     const table = resultsTable(flagged);
-    // One player, one level, two programmes: two lines, never a mean over both.
-    expect(table.rows.map((row) => [row.programme, row.programme_status, row.episodes])).toEqual([
-      ['auto_145', 'uncalibrated', 1],
-      ['eco_50', 'scored', 1],
-    ]);
-    const eco = table.rows[1];
+    expect(table.rows.map((row) => [row.programme, row.episodes])).toEqual([['eco_50', 1]]);
+    const eco = table.rows[0];
     // The points are the verdicts as given; the band is beside them.
     expect(eco).toMatchObject({
       points: 30,
@@ -357,9 +335,6 @@ describe('resultsTable', () => {
     });
     const lines = resultsMarkdown(table).trimEnd().split('\n');
     expect(lines[2]).toContain(
-      '| official | auto_145 (uncalibrated) | 1 | 20 of 44 | 45.5% | 20 to 20 | 0 (0 pt) | 6 (40 pt) |',
-    );
-    expect(lines[3]).toContain(
       '| official | eco_50 | 1 | 30 of 44 | 68.2% | 24 to 38 | 2 (14 pt) | 0 (0 pt) |',
     );
   });

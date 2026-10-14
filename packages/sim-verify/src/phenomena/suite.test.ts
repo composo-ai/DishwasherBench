@@ -26,9 +26,11 @@ import { pairsAtHalfPitch, rearRowsFolded } from './scenarios-a.ts';
 import { spoonNested } from './scenarios-b.ts';
 
 describe('the checklist as scenarios', () => {
-  it('has one scenario per phenomenon, P01 to P48, in order', () => {
+  it('has one scenario per phenomenon, P01 to P48 less P27 and P32 (they compare programmes), in order', () => {
     expect(PHENOMENA.map((s) => s.id)).toEqual(
-      Array.from({ length: 48 }, (_unused, i) => `P${String(i + 1).padStart(2, '0')}`),
+      Array.from({ length: 48 }, (_unused, i) => `P${String(i + 1).padStart(2, '0')}`).filter(
+        (id) => id !== 'P27' && id !== 'P32',
+      ),
     );
   });
 
@@ -51,7 +53,7 @@ describe('the checklist as scenarios', () => {
     }
   });
 
-  it('marks as not covered exactly the phenomena that need a mechanism the scope note defers', () => {
+  it('marks as not covered exactly the phenomena that need a mechanism out of scope', () => {
     const notCovered = PHENOMENA.filter((s) => s.requires !== undefined).map((s) => s.id);
     expect(notCovered).toEqual(['P21', 'P23', 'P26', 'P34', 'P38', 'P39', 'P41', 'P42', 'P43']);
   });
@@ -279,10 +281,10 @@ describe('loads that stand for a gap', () => {
 
 describe('programme variants', () => {
   it('change the main wash and nothing else', () => {
-    const base = programmeOf('auto_145');
-    const cool = programmeOf('auto_145', { washTarget_C: 45 });
-    const slow = programmeOf('auto_145', { pumpScale: 0.7 });
-    expect(cool.id).toBe('auto_145+wash45C');
+    const base = programmeOf('eco_50');
+    const cool = programmeOf('eco_50', { washTarget_C: 45 });
+    const slow = programmeOf('eco_50', { pumpScale: 0.7 });
+    expect(cool.id).toBe('eco_50+wash45C');
     expect(cool.steps).toHaveLength(base.steps.length);
     base.steps.forEach((step, i) => {
       const changed = cool.steps[i];

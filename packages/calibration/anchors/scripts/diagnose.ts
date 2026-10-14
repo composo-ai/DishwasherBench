@@ -4,7 +4,7 @@
  * (the inverse of its age) and the supply factor the exchange gives, the film shear, the time a film outlasts the spray, and the jets.
  *
  *   pnpm --filter @spotless/calibration exec tsx anchors/scripts/diagnose.ts
- *        [--load iec-13-careful] [--programme eco_50] [--tier official|fast] [--cache <dir>]
+ *        [--load iec-13-careful] [--tier official|fast] [--cache <dir>]
  *
  * The wash is run once for the keys of its exposure sets (read back from the cache), and the
  * scene is built again here as `wash()` builds it, so that every deposit can be looked up in the
@@ -47,7 +47,8 @@ const option = (name: string): string | undefined => {
 };
 
 const load = option('--load') ?? 'iec-13-careful';
-const programme = option('--programme') ?? 'eco_50';
+/** Eco 50, the only programme the simulation washes on. */
+const programme = 'eco_50';
 const tier = option('--tier') === 'fast' ? 'fast' : 'official';
 const disk = createDiskExposureCache(
   option('--cache') === undefined ? anchorCacheDir() : fromOrigin(option('--cache') as string),

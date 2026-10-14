@@ -244,8 +244,8 @@ exposure for each value. Three things keep that affordable:
 
 The programme parameters (`prog.mainWashTargetShift`, `prog.mainWashHoldScale`,
 `prog.finalRinseTargetShift`) rebuild the schedule, not the exposure, as long as the spray states
-(pump speeds and water-switch positions) stay the same. They exist because Auto chooses its
-temperature and hold from the load: a record without a measured course carries them as nuisance.
+(pump speeds and water-switch positions) stay the same. They let a record without a measured
+course carry a difference in temperature or hold as nuisance.
 
 The soak of Eco 50 (`prog.soakDuty`, `prog.soakCycle`, `prog.soakFrom`) is of the same kind and belongs to
 another package: these are keys of the wash simulation itself (`@spotless/sim-hydraulics`), which
@@ -419,11 +419,10 @@ table of observations gives that probability for each.
   load with its soils, the overrides).
 - `fit.json`: every number of the report. `report.txt`: the report as printed.
 
-**`params.json` alone is not the fit when a `prog.*` or `cal.*` key was fitted.** The main-wash
-temperature Auto chose is fitted as `prog.mainWashTargetShift`, which lives in the programme, not
-in the parameter registry: `wash()` with the overrides of `params.json` and the programme as
-written left 0.60 to 0.63 of the egg yolk where the fit predicted 0.01. So that this cannot
-happen silently:
+**`params.json` alone is not the fit when a `prog.*` or `cal.*` key was fitted.** A fitted
+main-wash temperature (`prog.mainWashTargetShift`) lives in the programme, not in the parameter
+registry: `wash()` with the overrides of `params.json` and the programme as written does not
+reproduce the fit. So that this cannot happen silently:
 
 - the fit report, the provenance note inside `params.json`, and the command's last line say so;
 - `--params fitted/params.json` reads `calibration.json` beside it (or `--calibration file`), and
@@ -1034,8 +1033,7 @@ Two things it taught about the method:
   were independent, and the derivatives behind the normal intervals are those of the nominal
   scenario: for a record with scenarios, rely on the profiles.
 - A door opening is read as a snapshot; its pause and cooling are not simulated.
-- Retained water is what stands in pools at the end of the last rinse; drying does not remove it
-  in the first build.
+- Retained water is what stands in pools at the end of the last rinse; drying is out of scope.
 - Identifiability verdicts, the uncertainty of a fit and the gain of an experiment at one
   parameter set are local linear approximations. The fit guards the verdict with the fall of the
   log posterior at the prior centre (section 5.3), and the ranking averages over drawn parameter

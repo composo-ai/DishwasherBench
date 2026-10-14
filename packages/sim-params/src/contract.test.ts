@@ -129,7 +129,7 @@ describe('records shared across modules', () => {
     expect(PHASE_EVENT_KINDS.slice(7)).toEqual(machine.split(', ').map(camelSnake));
   });
 
-  it('keeps the six time-marched combos of AUTO-145 and their arm states apart as keys', () => {
+  it('keeps the six time-marched combos of the sizing programme and their arm states apart as keys', () => {
     // Section M4: "(L, 2700, W), (U, 2700, W), (L, 3000, D), (U, 3000, D), (L, 2700, R),
     // (U, 2700, R)", with free arms. The arm state is part of ComboId and of every cache key.
     const free: ArmState = { kind: 'free' };

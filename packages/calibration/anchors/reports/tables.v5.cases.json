@@ -234,23 +234,6 @@
   }
  },
  {
-  "name": "auto capsule careful L1S1",
-  "course": "as_written",
-  "levelSeed": 1,
-  "simSeed": 1,
-  "set": "anchored-v5.owner-capsule",
-  "dose_g": 12.9
- },
- {
-  "name": "auto capsule careless L1S1",
-  "course": "as_written",
-  "load": "iec-13-careless",
-  "levelSeed": 1,
-  "simSeed": 1,
-  "set": "anchored-v5.owner-capsule",
-  "dose_g": 12.9
- },
- {
   "name": "eco capsule careful fast L1S1",
   "programme": "eco_50",
   "tier": "fast",

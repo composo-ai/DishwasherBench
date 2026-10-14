@@ -41,8 +41,6 @@ export interface WashSummaryOptions {
   readonly cacheDir: string;
   readonly params: WashParamChoice;
   readonly acceptStaleParams: boolean;
-  /** The programme; default the one the level is scored on. */
-  readonly programme?: string;
   /** Notes put before those of the wash report. */
   readonly notes?: readonly string[];
   /**
@@ -62,7 +60,7 @@ export async function washSummary(
   options: WashSummaryOptions,
 ): Promise<ReferenceWash> {
   const items = new Map(level.items.map((item) => [item.id, item]));
-  const programme = options.programme ?? level.programmeId;
+  const programme = level.programmeId;
   const manifest: WashManifest = {
     ...load.wash_manifest,
     level,
@@ -89,8 +87,6 @@ export async function washSummary(
   });
   const caveats = washCaveatsFor(manifest.machine_id, programme, options.params);
   const unvouched = new Set(caveats.flatMap((caveat) => caveat.soilClasses));
-  // A programme the level is not scored on is uncalibrated: every verdict is provisional.
-  const uncalibrated = programme !== level.programmeId;
   const results = new Map((outcome.result?.items ?? []).map((item) => [item.itemId, item]));
   const reported = new Map(outcome.report.items.map((item) => [item.item_id, item]));
   return {
@@ -116,8 +112,7 @@ export async function washSummary(
         clean: report.clean,
         score: report.score_iec ?? 0,
         ...(result?.band === undefined ? {} : soilBand(result.band, report.clean)),
-        ...(uncalibrated ||
-        (result !== undefined && result.soils.some((soil) => unvouched.has(soil.modelClass)))
+        ...(result !== undefined && result.soils.some((soil) => unvouched.has(soil.modelClass))
           ? { provisional: true }
           : {}),
         soils: (result?.soils ?? []).map((soil) => ({

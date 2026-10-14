@@ -70,7 +70,7 @@ Exceptions are for programmer errors and infrastructure failures.
 packages/
   core/        math, units, counter-based RNG (TS + WGSL source), sha256, canonical JSON, quantisation
   geometry/    primitives, parametric item expansion, render mesh, collision pieces, SDF, mass properties
-  machine/     machine specification types, the SPOT-60 baseline and its programmes, rack/arm/tub/door
+  machine/     machine specification types, the owner's Bosch and its Eco 50 programme, rack/arm/tub/door
                geometry generation, slot affordances, spray-arm and nozzle kinematics
   catalogue/   data: materials, friction pairs, item types, soil ids and descriptions, detergents
   physics/     Jolt world wrapper: deterministic stepping, settle, queries, snapshots, rack/arm/door mechanics
@@ -920,14 +920,13 @@ Defaults for the decisions of policy, which are the project's to take and not en
 configurable per level set):
 - Headline score is binary per item (points if clean), with a graded score reported beside it.
 - "Clean" means the virtual inspector's residue score meets the threshold (IEC-style score of 4 or
-  better: at most 4 specks and 4 mm2 of visible soil), counting original soil, redeposited soil and
-  residue left by pooled liquor. Dryness is reported but does not decide "clean". As built: the
+  better: at most 4 specks and 4 mm2 of visible soil), counting original soil and residue left by
+  pooled liquor. Dryness is reported but does not decide "clean". As built: the
   report (`cleanBySoil` in `packages/wash-runner/src/report.ts`) decides clean from specks and
   visible area alone, which is what the level card tells every player and what the benchmark
   dossier recommends (section 9, item 2). Since 11 October the visible area counts the residue
   left by pooled liquor as the sentence above asks: what the wash water held is left where water
-  stands on an item at the end, so a glass or mug left mouth up is not clean; soil redeposited on
-  open faces is still not modelled. The simulation's inspector also fails an item that holds
+  stands on an item at the end, so a glass or mug left mouth up is not clean. The simulation's inspector also fails an item that holds
   more than `inspect.maxWaterMl` (1 mL) of standing water; the report does not take that part of
   its verdict over, and states the water as `holds_water` and `retained_water_ml`. [OPEN QUESTION:
   if water is to count, change the card's `clean_definition` and `cleanBySoil` together.]
@@ -1289,7 +1288,7 @@ the time remaining. The simulation reports its long stages rarely, so the page c
 estimate down from its value and age at the last report, and when a stage runs past it the page
 says "this step is taking ... longer than estimated" instead of inventing a new figure. The bar
 is the share of the estimated time that has passed, never below what the server reported and
-never full before the report is there. The programme's 2:25 is not shown as a clock: the wait is
+never full before the report is there. The programme's printed duration is not shown as a clock: the wait is
 the computation.
 
 The report shows the points, how many loaded items are clean, the points that were in the
@@ -1365,7 +1364,7 @@ area over the item's whole surface; per region that still shows soil its share o
 surface (catalogue `regionAreas`), area, specks and, per soil of the item on that region, the
 share of its dry mass that is left; pooled water as `retained_water_ml`, with `holds_water` when
 it is more than a clean item may hold; the film left on the surface as `surface_film_g` (drying
-is not simulated). The reason of an item that is not clean names the regions with visible soil,
+is out of scope). The reason of an item that is not clean names the regions with visible soil,
 largest first, with the catalogue's name of the soil. Clean is decided from the simulation's speck
 count and visible area against the rule's two soil numbers, read from the simulation's registry;
 water held does not decide (section 6, the defaults). `moved_during_wash` is always false: the load is static in
@@ -1515,7 +1514,7 @@ the state of the game side against this document; the wash simulation's state is
 - Everything in sections 2 to 7: the geometry kernel, deterministic loading physics, the session
   with its actions, queries and budgets, the levels, the game server with its wash queue and
   render service, the page, the MCP server and the benchmark harness.
-- **The machine is the owner's Bosch**, not the SPOT-60 baseline this document started from. Its
+- **The machine is the owner's Bosch**, not the generic baseline this document started from. Its
   upper basket was corrected on 11 October from his floor-level photograph: `list_slots` offers
   two side rests (`rest_left`, `rest_right`, kind `cup_rest`) on which cups, mugs and glasses
   lean, saucers and dessert plates seat in rows A, A' and C, and a lowered cup shelf offers a
@@ -1523,14 +1522,12 @@ the state of the game side against this document; the wash simulation's state is
   descriptions of the MCP server say all of this.
 - **A course of seven levels** in order of difficulty (`docs/benchmark/levels.md`): every level
   carries `number`, `difficulty` and `newHere`, the server's list passes them through and the
-  page shows them. No level offers a programme other than Eco 50, and nothing a player or an
-  agent reads names another. The six generated levels are out of the list; the generator is
+  page shows them. Every level is washed on Eco 50. The six generated levels are out of the list; the generator is
   kept.
 - **Twenty-five saved loads**: careful, careless and random on each of the seven levels, and four
   standard loads (`iec-13-careful`, `iec-13-careless`, `half-careful`, `owner-2026-10-10`). All
-  replay to their hashes on the final code (`check-loads` on 12 October: 25 of 25 give the same hashes, their baskets travel and every recorded mistake holds). The four standard loads still
-  name Auto 45-65 as their level's programme, because the machine data's `primaryProgramme` does
-  and changing it makes the parameter set stale; the wash command washes them on Eco 50.
+  replay to their hashes on the final code (`check-loads` on 12 October: 25 of 25 give the same hashes, their baskets travel and every recorded mistake holds). The four standard loads are
+  washed on Eco 50.
 - **A model can play a full level** (11 October). An action answers with what it changed and not
   with the whole scene; slot advice is a ranked list a screenful at a time; the harness folds a
   long conversation. Two models played three levels of the course at the official tier, in 105
@@ -1539,8 +1536,7 @@ the state of the game side against this document; the wash simulation's state is
 - **The page after the first play test** (11 October): a piece is drawn where it would be
   let go, coloured by what it would land on; turning by keys or the wheel; a choice between a
   quick preview and the full wash when the cycle is started; the cutlery basket and the shelves
-  drawn as lattices; music; the levels numbered with their difficulty. No programme but Eco 50
-  is named on the page.
+  drawn as lattices; music; the levels numbered with their difficulty.
 - **The tub's side walls push a leaning piece in** while a basket travels, once it leans out
   further than the gap to the wall (9.5 mm on the left, 10.5 mm on the right of the lower
   basket). `check_load` says which wall pushed which piece (`shifted[].pushed_by`) and, for a

@@ -9,19 +9,15 @@
 Run on the evening of 2026-10-10. This is the plan as given to the owner; the results go into a wash
 record (`docs/calibration/wash-record.md`) when they arrive.
 
-Programme: first planned for Auto 45-65; changed to Eco 50 the same evening, when it was decided to
-score the game on Eco (fixed course, printed 4:55, 9.5 L, 0.836 kWh, no sensor decisions). Auto
-stays a secondary, uncalibrated programme, so the question below about Auto is left
-for a later wash; on Eco the model predicts well-placed oven-dried egg plates come out clean, and this
-wash tests that with the owner's capsule.
+Programme: Eco 50 (a fixed course, printed 4:55, 9.5 L, 0.836 kWh, no sensor decisions). The model
+predicts that well-placed oven-dried egg plates come out clean on it, and this wash tests that with
+the owner's capsule.
 
 ## Why this wash first
 
-On the Auto programme the simulation leaves every item soiled with oven-dried egg yolk dirty however it
-is loaded, while test institutes rate Auto as high as Eco on sister machines. Desk research could not
-decide which of reaction rate, enzyme survival, the oven-drying penalty, the amount per plate or the
-wash length is wrong (`docs/research/auto-recommendation.md`). Oven-dried against air-dried plates in
-one wash separate the ageing penalty from the rest; a turned plate of each kind tests whether facing
+No wash had tested the simulation's verdict on oven-dried egg yolk. Desk research could not decide
+which of reaction rate, enzyme survival, the oven-drying penalty or the amount per plate is least
+certain. Oven-dried against air-dried plates in one wash separate the ageing penalty from the rest; a turned plate of each kind tests whether facing
 matters for a chemistry-limited soil, on which the research disagrees with itself.
 
 ## The plan
@@ -47,8 +43,7 @@ matters for a chemistry-limited soil, on which the research disagrees with itsel
 ## What to record
 
 - Before: a photograph of each plate face-on; a photograph of the loaded basket; which slots.
-- The time the display shows at the start, and the clock times of start and finish (which branch of
-  the sensor-controlled programme ran).
+- The time the display shows at the start, and the clock times of start and finish.
 - After, before wiping: a photograph of each plate face-on in good light, flash off; per plate whether
   it is clean, has a faint film, or has specks or patches, and where. Dried yolk feels matt and rough
   under a fingertip.

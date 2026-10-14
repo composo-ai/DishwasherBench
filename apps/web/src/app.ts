@@ -4216,18 +4216,9 @@ export class App {
               'p',
               { id: 'report-label', class: 'notice preview' },
               h('strong', null, `${view.label}. `),
-              [
-                view.preview
-                  ? 'This wash was a quick preview: coarser than the full wash, and a few verdicts may differ. It is not the scored result.'
-                  : '',
-                // Only a wash started through the programming interface on another programme
-                // than the level's gets here; the page starts none.
-                view.uncalibrated
-                  ? `It ran on ${view.programme}, not on the programme this level is scored on: every verdict is provisional.`
-                  : '',
-              ]
-                .filter((part) => part !== '')
-                .join(' '),
+              view.preview
+                ? 'This wash was a quick preview: coarser than the full wash, and a few verdicts may differ. It is not the scored result.'
+                : '',
               view.preview && this.canChooseWash
                 ? h(
                     'div',

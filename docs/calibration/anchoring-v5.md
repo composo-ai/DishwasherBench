@@ -1,4 +1,4 @@
-# The fifth anchoring: `anchored-v5` on water-6, Eco 50 as the scored programme
+# The fifth anchoring: `anchored-v5` on water-6, on Eco 50
 
 > **Superseded as the game's default on 11 October 2026.** The owner's first test wash
 > contradicts the soak duty of 0.5 that this anchoring kept: under `anchored-v5.owner-capsule`
@@ -130,8 +130,6 @@ spinach 5.0, 7 of 7; tea 10.3 %, 1.8 to 2.0, 4 of 10.
 | **careful** (4 washes) | 3.73 to 3.86 | 4.57 to 4.62 / 3.0 to 3.2 | 4.22 to 4.25 | 1.80 | 0.08 | 5.00 | 3.75 to 3.80 | 85 to 88 of 118 | **57 to 60 of 90** |
 | **careless** (tablet tray blocked; 2 washes) | 0.15 | 0.24 / 0.00 | 2.94 to 3.01 | 0.00 to 0.17 | 0.00 | 0.00 to 0.17 | 1.63 to 1.65 | 38 to 40 of 118 | **10 to 12 of 90** |
 | careless with the tablet freed (2 washes) | 3.00 to 3.12 | 3.71 to 3.81 / 2.4 to 2.6 | 4.18 to 4.21 | 1.85 | 1.23 | 5.00 | 3.54 to 3.59 | 74 to 77 of 118 | 46 to 49 of 90 |
-| Auto 45-65 as written, careful (secondary) | 2.50 | 2.81 / 2.60 | 3.94 | 1.75 | 0.00 | 4.33 | 3.23 | 73 of 118 | 45 of 90 |
-| Auto 45-65, careless | 0.15 | 0.24 / 0.00 | 3.00 | 0.00 | 0.00 | 0.00 | 1.63 | 40 of 118 | 12 of 90 |
 
 By soil, careful / careless / careless with the tablet freed (items clean): egg yolk 6 or 7 of
 20 / 0 / 3 or 4; milk 0 of 13 / 0 / 0; tea 6 of 10 / 0 / 4 or 5; margarine 12 to 14 of 14 / 10
@@ -155,26 +153,26 @@ stacking differs; score careful against careless, official tier, fast tier in br
 A turned plate and a bowl laid flat now lose their verdict; a spoon lying in another and a
 plate over another still come out clean (their porridge and spinach go wherever a film runs).
 An upright cup does better than the same cup mouth down, because it fills with liquor and its
-milk or tea soaks in it all through the wash: the model has no penalty for standing dirty
-water (redeposition and drying are not built).
+milk or tea soaks in it all through the wash: the model then had no penalty for standing dirty
+water.
 
 ## 6. Seeds, tiers, untouched items (owner's capsule, careful load, 8 washes per tier)
 
-| | Eco 50, official | Eco 50, fast | Auto, official | Auto, fast |
-|---|---|---|---|---|
-| Load mean, standard weights (sd over 8) | 3.81 (0.022) | 3.75 (0.012) | 3.24 (0.014) | 3.22 (0.013) |
-| Soiled items clean, of 90 | 56 to 60 | 53 to 55 | 44 or 45 | 42 to 45 |
-| Verdicts that differ between two simulation seeds (12 pairs) | **0.6, 0 or 1** | 1.2, 0 to 4 | 0.9, 0 to 2 | 0.2, 0 or 1 |
-| Distinct items that ever flip | 1 (a knife) | 4 | 2 | 1 |
-| Verdicts that differ between two level seeds | 3.2 | 4.2 | 7.8 | 5.8 |
-| Largest spread of residue over seeds | 1.7 % (a glass) | | | |
-
-| Fast against official, same seeds | Eco 50 | Auto |
+| | Eco 50, official | Eco 50, fast |
 |---|---|---|
-| Verdicts that agree, of 90 | 83 to 86: **92 to 96 %, mean 94 %** (was 88 %) | 93 to 97 %, mean 95 % |
-| By class: crockery / cutlery / glass / melamine | 92 % / 93 % / 100 % / 100 % | 95 % / 93 % / 100 % / 88 % |
-| Largest class-mean difference | 0.05 to 0.19 | |
-| What flips | dessert plates 2 or 3, knives 2 or 3, a dinner plate, a soup spoon | |
+| Load mean, standard weights (sd over 8) | 3.81 (0.022) | 3.75 (0.012) |
+| Soiled items clean, of 90 | 56 to 60 | 53 to 55 |
+| Verdicts that differ between two simulation seeds (12 pairs) | **0.6, 0 or 1** | 1.2, 0 to 4 |
+| Distinct items that ever flip | 1 (a knife) | 4 |
+| Verdicts that differ between two level seeds | 3.2 | 4.2 |
+| Largest spread of residue over seeds | 1.7 % (a glass) | |
+
+| Fast against official, same seeds | Eco 50 |
+|---|---|
+| Verdicts that agree, of 90 | 83 to 86: **92 to 96 %, mean 94 %** (was 88 %) |
+| By class: crockery / cutlery / glass / melamine | 92 % / 93 % / 100 % / 100 % |
+| Largest class-mean difference | 0.05 to 0.19 |
+| What flips | dessert plates 2 or 3, knives 2 or 3, a dinner plate, a soup spoon |
 
 The glass class agrees because every milk glass reads dirty at both tiers. The file
 `anchors/tiers.anchored-v5.owner-capsule.json` holds these counts; the report of every fast
@@ -188,8 +186,7 @@ neighbours changes with it; before, no untouched verdict changed.
 
 ## 7. Stacking mistakes: the phenomena suite
 
-The suite runs on Eco 50 unless a run names another programme (`--programme auto_145` for the
-secondary report). Its loads were built again on the present machine (36 by the loading
+The suite runs on Eco 50. Its loads were built again on the present machine (36 by the loading
 physics). Four recipes of the first build no longer seat on the present basket and are gone:
 a reversed plate and a reversed platter in a rear slot (P02's supporting pair is dropped; P14
 stands the platter upright between the last tine and the side wall, both ways round), the
@@ -197,12 +194,11 @@ platter inboard of two plates (P05, a set pose that cuts 2 mm into a plate: an e
 scenario), and the ladle hanging through the basket floor (P06 holds the lower arm itself at
 the angle the first build found, 148 degrees).
 
-| Run (owner's capsule, 12.9 g) | Pass | Too small | Too large | Wrong sign | Not covered | Error |
+| Run (owner's capsule, 12.9 g) | Pass | Too small | Too large | Wrong sign | Out of scope | Error |
 |---|---|---|---|---|---|---|
 | Fast, anchored-v4, Eco 50, detergent D (last round) | 14 | 16 | 8 | 1 | 9 | |
 | **Fast, anchored-v5.owner-capsule, Eco 50** (84 washes) | 15 | 17 | 4 | 2 | 9 | 1 |
 | Fast, the same with `prog.soakDuty` 0.75 | 16 | 15 | 6 | 1 | 9 | 1 |
-| Fast, anchored-v5.owner-capsule, Auto 45-65 (secondary) | 12 | 18 | 5 | 3 | 9 | 1 |
 | Official, anchored-v5.owner-capsule, Eco 50: P01 to P09, P13 to P15, P40 (27 washes) | 5 | 5 | 2 | 0 | | 1 |
 
 The official tier gives the fast tier's verdict on every one of these but P13 (pass at the
@@ -224,23 +220,20 @@ Who is at fault where the fast run on Eco 50 fails:
 
 | Phenomena | Fault | Why |
 |---|---|---|
-| P02, P03, P06, P07, P09, P12, P27, P44 | soil side, with the soak | the egg-yolk plate of the suite (2 g on a dessert plate, oven-dried 2 h at 80 C) and the egg forks read dirty with the capsule on Eco 50 at a duty of 0.5 on both sides of the pair; the water side sees every one (direct-jet time, dwell, coverage pass). At a duty of 0.75 the same plates score 2 against 2, P03 5 against 0 and P06 4.6 against 3.4 |
+| P02, P03, P06, P07, P09, P12, P44 | soil side, with the soak | the egg-yolk plate of the suite (2 g on a dessert plate, oven-dried 2 h at 80 C) and the egg forks read dirty with the capsule on Eco 50 at a duty of 0.5 on both sides of the pair; the water side sees every one (direct-jet time, dwell, coverage pass). At a duty of 0.75 the same plates score 2 against 2, P03 5 against 0 and P06 4.6 against 3.4 |
 | P04 | expectation | the nested bowl reads dirty as expected; 9 to 12 % of its porridge is left where the checklist's estimate asks for 50 % |
 | P15 | water side or expectation, not settled | 0.3 g of porridge on the shielded spoon goes wherever a film runs, and a film runs through the gap from the handle above; the owner's test of nested spoons decides |
 | P05 | scenario | no clear place for a 32 cm platter inboard of the plates on the present basket |
 | P13 | water side (resolution) | passes at the official tier |
-| P17, P20, P25, P29, P31, P32, P33 | soil side | crowding, total soil load, ageing, starch, milk and fat laws as the last round left them |
+| P17, P20, P25, P29, P31, P33 | soil side | crowding, total soil load, ageing, starch, milk and fat laws as the last round left them |
 | P35, P37 | water side | a pot on its side; a recess tilted 15 and 30 degrees still holds water |
 | P10, P19, P46 | expectation | differences of 0.0001 to 0.004 against a tolerance; the model repeats better than a machine |
 
 ## 8. What the game does with it
 
 - `packages/wash-runner/src/defaults.ts` points the owner's machine at
-  `anchored-v5.owner-capsule.json` with 12.9 g and names Eco 50 as the scored programme
-  (`scoredProgrammeOf`). The set is current: **the default wash runs** (since 02:02 on 11
+  `anchored-v5.owner-capsule.json` with 12.9 g on Eco 50. The set is current: **the default wash runs** (since 02:02 on 11
   October).
-- Verdicts on protein soils and stains on Auto 45-65 stay flagged provisional; Eco 50 carries
-  no flag.
 - The report of every fast wash begins with what the fast tier costs, per class of item.
 
 ## 9. Commands
@@ -288,8 +281,6 @@ left). With a second official wash running beside it, an official wash took 320 
 | Mean score | 3.42 | 1.19 | 3.40 | 1.72 |
 | Dry soil left | 1.6 % | 78 % | 1.2 % | 61 % |
 
-The washes of the fourth anchoring (Auto 45-65) are kept in `demos/v4-auto/`.
-
 ## 12. The planned record of the owner's wash 01 under this set (for information)
 
 The prediction of that wash is `owner-wash-01-prediction.md`, made on water-5 with
@@ -320,4 +311,3 @@ Cannot:
 - A spoon lying in another and a plate lying over another: still clean.
 - An upright cup: it scores better than the same cup mouth down.
 - Tea: the verdict turns on 12 % of the bleach rate; the record bounds it from below only.
-- Auto 45-65 for protein soils and stains (flagged in every report).

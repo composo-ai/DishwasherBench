@@ -110,9 +110,9 @@ async function main(): Promise<number> {
   page.on('pageerror', (error) => consoleErrors.push(String(error)));
   /** Everything a player can read on the page right now. */
   const pageText = (): Promise<string> => page.evaluate(() => document.body.innerText);
-  const noAuto = async (where: string): Promise<void> => {
+  const noOtherProgramme = async (where: string): Promise<void> => {
     const text = await pageText();
-    expect(!/\bAuto\b|45-65|uncalibrated/i.test(text), `${where} names no other programme`);
+    expect(!/uncalibrated|secondary programme/i.test(text), `${where} offers no other programme`);
   };
   const started = async (): Promise<void> => {
     await page.waitForFunction(
@@ -136,7 +136,7 @@ async function main(): Promise<number> {
       numbers[0] === '1:tutorial' && numbers.every((n, i) => n.startsWith(`${i + 1}:`)),
       `the levels are numbered in the order the server gives them, the tutorial first (${numbers.slice(0, 3).join(', ')})`,
     );
-    await noAuto('the list of levels');
+    await noOtherProgramme('the list of levels');
     await screenshot(
       page,
       'level-picker',
@@ -145,7 +145,7 @@ async function main(): Promise<number> {
 
     await page.click('.modal .buttons button');
     await page.waitForSelector('.how-to');
-    await noAuto('How to play');
+    await noOtherProgramme('How to play');
     await screenshot(
       page,
       'how-to-play',
@@ -783,7 +783,7 @@ async function main(): Promise<number> {
     const title = await page.$eval('.modal h1', (el) => el.textContent ?? '');
     expect(title.includes('Eco 50'), `the wash is Eco 50 (${title})`);
     expect((await page.$('#programme-choice')) === null, 'no list of programmes is offered');
-    await noAuto('the start of the wash');
+    await noOtherProgramme('the start of the wash');
     const washes = await page.$$eval('#wash-choice label.wash-option', (els) =>
       els.map((el) => ({
         tier: el.getAttribute('data-tier'),
@@ -822,7 +822,7 @@ async function main(): Promise<number> {
       /simulating for \d+:\d\d/.test(times),
       `the wash shows the time it has taken (${times})`,
     );
-    await noAuto('the wash in progress');
+    await noOtherProgramme('the wash in progress');
     await screenshot(
       page,
       'washing',
@@ -843,7 +843,7 @@ async function main(): Promise<number> {
       (await page.$('#run-full-wash')) === null,
       'after the full wash no further wash is offered',
     );
-    await noAuto('the report');
+    await noOtherProgramme('the report');
     console.log(`report total: ${total}${notice === null ? '' : ' [marked as not simulated]'}`);
     await screenshot(
       page,

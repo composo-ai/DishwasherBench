@@ -22,8 +22,7 @@ As in `[-> chemistry]` section 0.2: [VERIFIED] means read in the opened source t
 1. One unit weighs 12.9 g [VERIFIED, S3], not the 20 g the machine definition assumes. It is a polyvinyl alcohol capsule with powder, gel and liquid compartments, not a pressed tablet [VERIFIED, S1, S4].
 2. No source gives a full quantitative formulation. What is verified: the complete UK ingredient list in descending order [S1], and the bands of three safety data sheets, none of them for the United Kingdom, which do not agree with one another (section 1.2): the Swiss sheet of "Finish Powerball Ultimate All in 1" of 2022 [S14] and the Australian sheet of 2024 [S5] give sodium carbonate at most 25 to 30 %, sodium percarbonate 10 to under 25 % and pH 9.4 to 10.4 at 10 %; the Australian sheet of 2025 [S4] gives sodium carbonate 30 to 60 %, percarbonate up to 10 % and pH 10.4 to 11. All three give the low-foam nonionic as 10 to 25 %. The percentages in section 2 are a reconstruction from the order, the bands and the mass balance; carbonate 30 % and percarbonate 10 % sit where the bands meet.
 3. Against type D the product has no silicate, about twice the bleach activator per kg, about 7 times the surfactant, a manganese bleach catalyst on top of TAED, and (by my estimate, the least certain number here) more protease per wash.
-4. In the main wash of Auto 45-65 the liquor model predicts pH 10.4 at 47 °C against 10.8 for 20 g of type D, peak protease 80 mg/L against 49 (range 40 to 160), and peak peracid 0.45 mmol/L against 0.32 (range 0.21 to 0.84). The pH may be lower than that, about 10.0 to 10.1, if the UK product follows the two older sheets. If the model simply dosed 12.9 g of type D instead, it would predict 32 mg/L of protease and 0.17 mmol/L of peracid: changing the dose without the composition would be wrong in the other direction.
-5. The two numbers that decide protein and tea removal, enzyme level and effective bleach, cannot be established from public sources. They need the calibration washes.
+4. The two numbers that decide protein and tea removal, enzyme level and effective bleach, cannot be established from public sources. They need the calibration washes.
 
 ---
 
@@ -78,7 +77,7 @@ No source says what each compartment holds or when it opens. What can be said:
 | A pouch film of this kind dissolves in 1 to 2 min at 30 to 40 °C and several times slower at 20 °C | [RECALLED, `[-> chemistry]` 1.4] |
 | No compartment is known to be designed to release late. The gel and the loose powder are both quick once the film is gone | [ESTIMATED] |
 
-In Auto 45-65 the dispenser opens into liquor at about 20 °C that then heats at 2.3 K/min `[-> machine]`, so the film meets cold water first. This is the one place where the pouch could be slower than a tablet, and nothing I opened measures it.
+The dispenser opens into cold liquor that then heats `[-> machine]`, so the film meets cold water first. This is the one place where the pouch could be slower than a tablet, and nothing I opened measures it.
 
 ---
 
@@ -143,30 +142,6 @@ Units as in `packages/sim-liquor/src/params.ts`. "Material" means the change mov
 
 Protease and amylase are in the registry's unit, kilograms of the type D granulate per kilogram of product. A parameter set that has fitted `liq.xProtease` for type D (anchored-v1 holds 0.0257) should be scaled by 2.5 (1.25 to 5) for this product, not replaced by 0.025; 2.5 times 0.0257 is above the registry maximum of 0.05, which the maximum will then need raising for.
 
-### 3.1 What moves in the main wash
-
-Computed with `packages/sim-liquor` (the script is not kept in the repository; the numbers are also in the sidecar). Conditions: first bath of Auto 45-65 on the owner's machine, 4.0 L, lid opening 60 s after circulation starts, the temperature trace of `packages/calibration/anchors/reports/first-build-demonstration.auto_145.md` (19 °C rising to 64 °C in 19 min, then held), 62.5 min, no soil in the liquor. All [ESTIMATED].
-
-| Quantity | Type D, 20 g | Type D, 12.9 g | This product, 12.9 g | Range for this product |
-|---|---|---|---|---|
-| Detergent in the liquor | 5.0 g/L | 3.2 g/L | 3.2 g/L | |
-| pH at 47 °C, 8.5 min after release | 10.77 | 10.63 | 10.40 | 10.27 to 10.54 |
-| pH, mean of the main wash | 10.54 | 10.40 | 10.22 | 10.08 to 10.34 |
-| Protease, peak | 49 mg/L | 32 | 80 | 40 to 160 |
-| Protease, mean | 25 mg/L | 16 | 41 | 20 to 81 |
-| Amylase, mean | 14 mg/L | 10 | 26 | 11 to 53 |
-| Peracid, peak | 0.32 mmol/L | 0.17 | 0.45 | 0.21 to 0.84 |
-| Peracid, mean | 0.100 mmol/L | 0.051 | 0.139 | 0.064 to 0.26 |
-| Hydrogen peroxide after release | 3.0 mmol/L | 2.0 | 2.6 | 1.6 to 4.1 |
-| Time to 90 % released | 326 s | 326 s | 222 s | 122 to 390 s |
-
-Reading it:
-
-- pH falls by about 0.35. The soil model's alkaline route for protein starts above pH 10.5 (`packages/sim-soil/src/params.ts`), so with this product protein is removed by enzyme almost alone. The real liquor is a further 0.12 lower once TAED has given up its acetyl groups, which the model omits for every detergent. The lower end of the pH range is the registry minimum of `liq.xCarbonate`, not the lowest plausible pH: a product with the pH band of the older sheets (9.4 to 10.4 at 10 %) would be at about 10.0 to 10.1 at 47 °C, which the parameter cannot express. The conclusion that the alkaline route is off holds either way.
-- Peracid rises although less percarbonate is dosed per wash, because the model's peracid is limited by TAED and there is twice as much TAED per kg. This rests on the 4 % estimate.
-- Protease is whatever `liq.xProtease` says; the range of a factor of 4 is the honest statement.
-- Release timing does not matter in a 63 min main wash: the whole range moves mean protease by 6 % and mean peracid by 25 %.
-
 ---
 
 ## 4. What the model cannot express
@@ -205,7 +180,7 @@ It is the same architecture as the IEC reference rinse aid of `[-> chemistry]` 8
 | File | Holds |
 |---|---|
 | `packages/calibration/detergents/finish-powerball-ultimate.json` | parameter set in the `spotless.params` format, written by `createParamSet(washRegistry(), ...).toJSON()` and read back with `readParamSet`: the ten `liq.*` keys that differ from the defaults, origin `manual`, provenance note |
-| `packages/calibration/detergents/finish-powerball-ultimate.notes.json` | sidecar: the dose (0.0129 kg), range and tag per key, the surfactant value above the registry maximum, keys deliberately left alone, the table of section 3.1, the rinse aid |
+| `packages/calibration/detergents/finish-powerball-ultimate.notes.json` | sidecar: the dose (0.0129 kg), range and tag per key, the surfactant value above the registry maximum, keys deliberately left alone, the rinse aid |
 
 The parameter-file format has no place for the dose (it is `dosing.detergentMassG` of the machine definition, 20 in `packages/machine/src/data/bosch-smv4hax40g.ts`) or for ranges, hence the sidecar. Nothing reads either file yet.
 
@@ -220,7 +195,7 @@ The parameter-file format has no place for the dose (it is `dosing.detergentMass
 | 3 | Which of the three sheets the UK formulation of 2026 follows (carbonate 10 to 25 % with percarbonate 10 to under 25 % and pH 9.4 to 10.4, or carbonate 30 to 60 % with percarbonate up to 10 % and pH 10.4 to 11) | A current UK sheet from Reckitt; the pack's own ingredient bands; or the pH of one capsule dissolved in 116 mL of water (a 10 % solution), which separates the two groups |
 | 4 | Ultimate or Ultimate Plus, and which year's formulation | A photograph of the owner's pack, front and back, with the batch code |
 | 5 | What each compartment holds and the mass of each | Cutting one capsule open and weighing the three parts and the film |
-| 6 | When the capsule releases in Auto 45-65 | Stopping a wash 2, 4 and 8 min after the dispenser opens and looking; or a conductivity trace of the liquor |
+| 6 | When the capsule releases | Stopping a wash 2, 4 and 8 min after the dispenser opens and looking; or a conductivity trace of the liquor |
 | 7 | Main-wash pH | A pH strip or meter on liquor taken mid-wash; one reading checks `liq.xCarbonate` and `liq.dpHni` together |
 | 8 | Size of the catalyst's contribution to tea removal | Tea-stained cups washed with this product against a catalyst-free TAED product in the same programme |
 
@@ -265,7 +240,7 @@ The parameter-file format has no place for the dose (it is `dosing.detergentMass
 
 What was done: every source of section 8 that could be reached was opened again and compared with what the dossier takes from it; one further primary source of the composition was searched for and found; every derived number of sections 2 and 3 was recomputed with a separate script against `packages/sim-liquor`; the parameter file was loaded with `readParamSet` against the current registry.
 
-Confirmed as written: the UK ingredient list of sku 000011654, all 44 entries in order, and the lists of 000011138 and 000008742 [S1]; the rinse-aid list [S12]; the Ocado pack text [S2]; the Sainsbury's prices, which give 12.90 g for each of the three packs [S3]; the bands, pH, form and classification of the two Australian sheets [S4, S5] and of the Ultimate Plus sheet [S6]; the rinse-aid sheet [S11]; the patent examples [S9] and the film definition [S7, S8]; the US list [S10]; the values taken from `[-> chemistry]` 10.3 and 10.5; the unit conversions (percarbonate 314.02 g/mol, 0.955 mol/kg of peroxide at 10 %, TAED 0.175 mol/kg at 4 %, carbonate 3.77 mol/kg, alkalinity 7.23 eq/kg); the pH of a 10 % solution by the model's solver (11.06, 10.70 after TAED, 12.45 for type D); every figure of the table in section 3.1 for the parameter ranges as they then stood.
+Confirmed as written: the UK ingredient list of sku 000011654, all 44 entries in order, and the lists of 000011138 and 000008742 [S1]; the rinse-aid list [S12]; the Ocado pack text [S2]; the Sainsbury's prices, which give 12.90 g for each of the three packs [S3]; the bands, pH, form and classification of the two Australian sheets [S4, S5] and of the Ultimate Plus sheet [S6]; the rinse-aid sheet [S11]; the patent examples [S9] and the film definition [S7, S8]; the US list [S10]; the values taken from `[-> chemistry]` 10.3 and 10.5; the unit conversions (percarbonate 314.02 g/mol, 0.955 mol/kg of peroxide at 10 %, TAED 0.175 mol/kg at 4 %, carbonate 3.77 mol/kg, alkalinity 7.23 eq/kg); the pH of a 10 % solution by the model's solver (11.06, 10.70 after TAED, 12.45 for type D).
 
 Corrected:
 

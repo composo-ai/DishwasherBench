@@ -59,15 +59,6 @@ export function validateLevel(level: Level): LevelProblem[] {
     if (findProgramme(spec, level.programmeId) === undefined) {
       add('programmeId', `machine '${spec.id}' has no programme '${level.programmeId}'`);
     }
-    (level.secondaryProgrammes ?? []).forEach((id, i) => {
-      if (findProgramme(spec, id) === undefined) {
-        add(`secondaryProgrammes.${i}`, `machine '${spec.id}' has no programme '${id}'`);
-      } else if (id === level.programmeId) {
-        add(`secondaryProgrammes.${i}`, `'${id}' is the programme the level is scored on`);
-      } else if (level.secondaryProgrammes?.indexOf(id) !== i) {
-        add(`secondaryProgrammes.${i}`, `'${id}' is listed twice`);
-      }
-    });
     if (level.config === null || errorsOf(validateMachineConfig(spec, level.config)).length === 0) {
       const geometry = buildMachineGeometry(spec, level.config ?? spec.defaultConfig);
       for (const part of geometry.parts) reserved.add(part.id);

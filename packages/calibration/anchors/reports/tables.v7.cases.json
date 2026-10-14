@@ -15,7 +15,5 @@
  {"name": "eco capsule careless fast L1S1", "programme": "eco_50", "tier": "fast", "load": "iec-13-careless", "levelSeed": 1, "simSeed": 1, "set": "anchored-v7.owner-capsule", "dose_g": 12.9},
  {"name": "eco capsule careless tablet blocked fast L1S1", "programme": "eco_50", "tier": "fast", "load": "iec-13-careless-tablet-blocked", "levelSeed": 1, "simSeed": 1, "set": "anchored-v7.owner-capsule", "dose_g": 12.9},
  {"name": "eco as written v7 D careful L1S1", "programme": "eco_50", "set": "anchored-v7", "levelSeed": 1, "simSeed": 1},
- {"name": "eco capsule stable careful L1S1", "programme": "eco_50", "levelSeed": 1, "simSeed": 1, "set": "anchored-v7.owner-capsule.stable", "dose_g": 12.9},
- {"name": "auto capsule careful L1S1", "course": "as_written", "levelSeed": 1, "simSeed": 1, "set": "anchored-v7.owner-capsule", "dose_g": 12.9},
- {"name": "auto capsule careless L1S1", "course": "as_written", "load": "iec-13-careless", "levelSeed": 1, "simSeed": 1, "set": "anchored-v7.owner-capsule", "dose_g": 12.9}
+ {"name": "eco capsule stable careful L1S1", "programme": "eco_50", "levelSeed": 1, "simSeed": 1, "set": "anchored-v7.owner-capsule.stable", "dose_g": 12.9}
 ]

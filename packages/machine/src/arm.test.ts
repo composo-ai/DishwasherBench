@@ -14,7 +14,7 @@ import {
 import { getSprayArm } from './config.ts';
 import { branchOperatingPoint, hydraulicOperatingPoint } from './hydraulics.ts';
 import { nozzleArea } from './load.ts';
-import { BOSCH_SMV4HAX40G, SPOT_60 } from './machines.ts';
+import { BOSCH_SMV4HAX40G } from './machines.ts';
 import { expectNear, expectWithin, must, toRpm } from './test-util.ts';
 import type { MachineSpec, NozzleSpec, SprayArmSpec } from './types.ts';
 import { WATER_DENSITY } from './water.ts';
@@ -348,97 +348,8 @@ describe('arm rotation of the Bosch with the measured drive nozzles (machine-bos
   });
 });
 
-describe('arm rotation of SPOT-60 (machine.md section 3.3)', () => {
-  const lower = getSprayArm(SPOT_60, 'lower');
-  const mid = getSprayArm(SPOT_60, 'mid');
-  const top = getSprayArm(SPOT_60, 'top');
-
-  // [pump rpm, drive N m, dry friction k_f |F_ax| N m, speed rpm]. In this table T_f is the dry
-  // friction alone: 0.137 - 0.068 = (35 rpm) x (sum(m r^2) + c_v).
-  const lowerTable = [
-    [3400, 0.177, 0.092, 38],
-    [3000, 0.137, 0.068, 35],
-    [2600, 0.102, 0.046, 32],
-    [2200, 0.072, 0.028, 30],
-    [1800, 0.047, 0.012, 28],
-    [1400, 0.027, 0.0, 27],
-  ] as const;
-  const midTable = [
-    [3400, 0.102, 0.057, 36],
-    [3000, 0.078, 0.045, 30],
-    [2600, 0.057, 0.034, 23],
-    [2200, 0.038, 0.025, 16],
-    [1800, 0.023, 0.017, 8],
-    [1400, 0.011, 0.011, 0],
-  ] as const;
-
-  it.each(lowerTable)('lower arm at %i rpm', (rpm, drive, dryFriction, speed) => {
-    const state = armSteadyState(lower, armPressure(SPOT_60, 'l', rpm, 'lower'));
-    expectNear(state.drive, drive, 0.0011, 'drive');
-    expectNear(state.staticFriction, dryFriction, 0.0011, 'dry friction');
-    expectNear(state.rpm, speed, 0.7, 'speed');
-  });
-
-  it.each(midTable)('mid arm at %i rpm', (rpm, drive, dryFriction, speed) => {
-    const state = armSteadyState(mid, armPressure(SPOT_60, 'u', rpm, 'mid'));
-    expectNear(state.drive, drive, 0.0011, 'drive');
-    expectNear(state.staticFriction, dryFriction, 0.0011, 'dry friction');
-    expectNear(state.rpm, speed, 0.7, 'speed');
-  });
-
-  it('turns at its design speeds at 3000 rpm: 35 and 30 rpm, which k_f was tuned for', () => {
-    expectWithin(
-      armSteadyState(lower, armPressure(SPOT_60, 'l', 3000, 'lower')).omega,
-      must(lower.designSpeed),
-      0.02,
-    );
-    expectWithin(
-      armSteadyState(mid, armPressure(SPOT_60, 'u', 3000, 'mid')).omega,
-      must(mid.designSpeed),
-      0.02,
-    );
-  });
-
-  it('the mid arm stalls near 1400 rpm pump speed and the lower arm does not', () => {
-    expect(armSteadyState(mid, armPressure(SPOT_60, 'u', 1400, 'mid')).stalled).toBe(true);
-    expect(armSteadyState(mid, armPressure(SPOT_60, 'u', 1800, 'mid')).stalled).toBe(false);
-    expect(armSteadyState(lower, armPressure(SPOT_60, 'l', 1400, 'lower')).stalled).toBe(false);
-  });
-
-  it('the lower arm stalls at a contact torque of about 0.07 N m: 0.3 N at the tip', () => {
-    const p = armPressure(SPOT_60, 'l', 3000, 'lower');
-    const margin = armTorqueTerms(lower, p).stallMargin;
-    expectNear(margin, 0.07, 0.003);
-    expectNear(margin / lower.tipRadius, 0.3, 0.03);
-    expect(armStalls(lower, p, 0.075)).toBe(true);
-    expect(armStalls(lower, p, 0.065)).toBe(false);
-  });
-
-  it('spins up with a time constant of about 0.3 s (I = 6.3e-3 kg m2)', () => {
-    expectNear(armTimeConstant(lower, armPressure(SPOT_60, 'l', 3000, 'lower')), 0.3, 0.05);
-  });
-
-  it('reproduces the top-arm check as far as it can be: drive and brake, not the 60 rpm', () => {
-    // "drive 0.020 N m, sum(m_dot r^2) = 6.2e-4 kg m2/s ... axial load about 2.5 N ... about
-    // 60 rpm at 3000 rpm pump speed."
-    const p = armPressure(SPOT_60, 'u', 3000, 'top');
-    const terms = armTorqueTerms(top, p);
-    expectNear(terms.drive, 0.02, 0.0005);
-    expectNear(terms.brake, 6.2e-4, 0.06e-4);
-    // With the dossier's stated axial load its own balance does give about 60 rpm ...
-    const omegaStated =
-      (terms.drive - top.bearing.frictionRadius * 2.5) / (terms.brake + top.bearing.viscous);
-    expectNear(toRpm(omegaStated), 60, 3);
-    // ... but the friction law of section 3.3 with the values of section 12.1 gives a larger
-    // axial load: the pressure on the 12 mm hub alone is 2.8 N, and with thrust_sign -1 the
-    // upward jet reaction (0.70 N) more than cancels the 0.6 N weight.
-    expectNear(p * armHubArea(top), 2.82, 0.02);
-    expectNear(terms.verticalReaction, -0.7, 0.01);
-    expectNear(terms.axialLoad, 2.9, 0.05);
-    // So this package turns the top arm at 44 rpm, not 60 (a known inconsistency of machine.md).
-    expect(armSteadyState(top, p).rpm).toBeLessThan(50);
-    expect(armSteadyState(top, p).rpm).toBeGreaterThan(40);
-  });
+describe('the torque balance of a published arm (machine.md section 3.3)', () => {
+  const lower = getSprayArm(BOSCH_SMV4HAX40G, 'lower');
 
   it('reproduces the DU750 check: ten 2 mm nozzles at 9 m/s give 0.083 N m and 8.97e-3 kg m2/s', () => {
     // Whirlpool DU750 lower arm, S1 Table 5.7: R (mm), theta, rho; C_d 0.9, all 2 mm round.
@@ -486,7 +397,7 @@ describe('the torque balance on a one-nozzle arm (hand calculation)', () => {
   //   drive = 2 p A r = 2 x 20000 x 1e-5 x 0.2 = 0.08 N m,
   //   m = rho A sqrt(2 p / rho) = sqrt(2 p rho) A = sqrt(2 x 20000 x 998) x 1e-5 = 0.063182 kg/s,
   //   brake = m r^2 = 0.0025273 kg m2/s.
-  const base = getSprayArm(SPOT_60, 'lower');
+  const base = getSprayArm(BOSCH_SMV4HAX40G, 'lower');
   const arm: SprayArmSpec = {
     ...base,
     weight: 1,

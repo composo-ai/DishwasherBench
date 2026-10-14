@@ -422,47 +422,6 @@ export const RECIPES: readonly Recipe[] = [
     ],
   },
   {
-    name: 'glasses-milk',
-    description: 'P32: four 250 mL test glasses mouth down in the upper basket',
-    items: plates('glass', GLASS, 4),
-    steps: [
-      {
-        op: 'drop',
-        item: 'glass_1',
-        rack: 'upper_rack',
-        at: UPPER_SPOT_A,
-        orientation: { preset: 'inverted' },
-      },
-      {
-        op: 'drop',
-        item: 'glass_2',
-        rack: 'upper_rack',
-        at: UPPER_SPOT_B,
-        orientation: { preset: 'inverted' },
-      },
-      {
-        op: 'drop',
-        item: 'glass_3',
-        rack: 'upper_rack',
-        at: [
-          [420, 380],
-          [426, 390],
-        ],
-        orientation: { preset: 'inverted' },
-      },
-      {
-        op: 'drop',
-        item: 'glass_4',
-        rack: 'upper_rack',
-        at: [
-          [240, 330],
-          [246, 340],
-        ],
-        orientation: { preset: 'inverted' },
-      },
-    ],
-  },
-  {
     name: 'glasses-touching',
     description:
       'P40 B: two test glasses mouth down in the upper basket, let down against each other',

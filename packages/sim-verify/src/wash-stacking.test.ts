@@ -1,6 +1,6 @@
 // End-to-end: how items are stacked decides how well they are cleaned (docs/design/scope.md,
-// "What links stacking to cleaning"). One wash of the owner's machine (Bosch SMV4HAX40G, Auto
-// 45-65) at the fast tier with the real exposure, holding two comparisons:
+// "What links stacking to cleaning"). One wash of the owner's machine (Bosch SMV4HAX40G, Eco
+// 50) at the fast tier with the real exposure, holding two comparisons:
 //
 //  - two plates in adjacent slots facing the same way, against two facing each other. The two
 //    pairs stand at positions that a half turn about the axis of the lower arm maps on to each
@@ -66,7 +66,7 @@ const TURNED_HALF_TURN: [number, number, number, number] = [0, 0, -0.5736, 0.819
 
 const description: WashDescription = {
   machine: 'bosch_smv4hax40g',
-  programme: 'auto_145',
+  programme: 'eco_50',
   tier: 'fast',
   levelSeed: 7,
   simSeed: 3,
@@ -225,15 +225,12 @@ describe('a bowl nested in another bowl against the same bowl alone', () => {
       const sauce = soilOf(id, 'tomato_sauce');
       expect(sauce.residual, id).toBeLessThan(0.1 * sauce.initial);
     }
-    // The bowl under another is as open to the upper arm as the bowl alone.
-    expect(
-      soilOf('bowl_under', 'egg_yolk_dried').residual /
-        soilOf('bowl_alone', 'egg_yolk_dried').residual,
-    ).toBeGreaterThan(0.8);
-    expect(
-      soilOf('bowl_under', 'egg_yolk_dried').residual /
-        soilOf('bowl_alone', 'egg_yolk_dried').residual,
-    ).toBeLessThan(1.25);
+    // The bowl under another is as open to the upper arm as the bowl alone: on Eco 50 both
+    // lose all but a trace of their egg yolk.
+    for (const id of ['bowl_alone', 'bowl_under']) {
+      const egg = soilOf(id, 'egg_yolk_dried');
+      expect(egg.residual, id).toBeLessThan(0.001 * egg.initial);
+    }
   });
 
   it('leaves the sauce in the bowl whose inside another bowl covers', () => {

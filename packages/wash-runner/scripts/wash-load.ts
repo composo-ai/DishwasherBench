@@ -4,17 +4,12 @@
  *
  *   pnpm --filter @spotless/wash-runner run wash-load <name | path/to/load.json>
  *        [--tier fast|official] [--cache <dir> | --no-cache] [--timings <file>]
- *        [--out <report.json>] [--residue <dir>] [--json] [--programme <id>]
- *        [--accept-stale-params]
+ *        [--out <report.json>] [--residue <dir>] [--json] [--accept-stale-params]
  *
  * Where the water goes is kept between washes in `.spotless/exposure-cache` at the root of the
  * repository (`--cache` names another directory, `--no-cache` none), so that a second wash of
- * a load takes seconds. The load is washed on the programme its level names; `--programme`
- * names another of its machine. The four standard loads that are not levels of the game
- * (`iec-13-careful`, `iec-13-careless`, `half-careful`, `owner-2026-10-10`) still name Auto
- * 45-65, which is not calibrated: they are washed on Eco 50, the programme the game is scored
- * on, unless `--programme` says otherwise, and the first line printed says which programme it
- * is. `--accept-stale-params` washes with a parameter set made for another state of the
+ * a load takes seconds. The load is washed on the programme its level names, Eco 50, and the
+ * first line printed says so. `--accept-stale-params` washes with a parameter set made for another state of the
  * simulator (the report then says so).
  *
  * `<name>` is a file of `packages/loader/loads` without `.json` (for example
@@ -34,9 +29,6 @@ import { runWash } from '../src/runner.ts';
 const LOADS_DIR = fileURLToPath(new URL('../../loader/loads', import.meta.url));
 /** Where the exposure of washed loads is kept unless the caller says otherwise. */
 const DEFAULT_CACHE = fileURLToPath(new URL('../../../.spotless/exposure-cache', import.meta.url));
-/** The programme the game is scored on, and the one a load is moved to it from. */
-const SCORED_PROGRAMME = 'eco_50';
-const UNCALIBRATED_PROGRAMME = 'auto_145';
 // pnpm runs a package script in the package directory and keeps the caller's in INIT_CWD.
 const origin = process.env['INIT_CWD'] ?? process.cwd();
 const fromOrigin = (path: string): string => (isAbsolute(path) ? path : join(origin, path));
@@ -52,14 +44,13 @@ const { values, positionals } = parseArgs({
     out: { type: 'string' },
     residue: { type: 'string' },
     json: { type: 'boolean' },
-    programme: { type: 'string' },
   },
   allowPositionals: true,
 });
 const name = positionals[0];
 if (name === undefined || (values.tier !== 'fast' && values.tier !== 'official')) {
   console.error(
-    'usage: wash-load <name | load.json> [--tier fast|official] [--cache <dir> | --no-cache] [--timings <file>] [--out <report.json>] [--residue <dir>] [--json] [--programme <id>] [--accept-stale-params]',
+    'usage: wash-load <name | load.json> [--tier fast|official] [--cache <dir> | --no-cache] [--timings <file>] [--out <report.json>] [--residue <dir>] [--json] [--accept-stale-params]',
   );
   process.exit(2);
 }
@@ -67,19 +58,12 @@ const tier: WashTier = values.tier;
 const named = join(LOADS_DIR, `${name}.json`);
 const file = existsSync(named) ? named : fromOrigin(name);
 const load = JSON.parse(readFileSync(file, 'utf8')) as StandardLoad;
-// A load that still names the uncalibrated programme is washed on the scored one unless the
-// caller names a programme.
-const programme =
-  values.programme ??
-  (load.wash_manifest.programme_id === UNCALIBRATED_PROGRAMME
-    ? SCORED_PROGRAMME
-    : load.wash_manifest.programme_id);
+const programme = load.wash_manifest.programme_id;
 // A saved load keeps the mechanical check beside its manifest; the session now puts it inside.
 const manifest: WashManifest = {
   ...load.wash_manifest,
   level: load.level,
   prechecks: load.wash_manifest.prechecks ?? load.check,
-  programme_id: programme,
 };
 const cacheDir =
   values['no-cache'] === true
@@ -89,9 +73,6 @@ const cacheDir =
       : fromOrigin(values.cache);
 console.error(
   `washing ${load.name} on ${programme}` +
-    (programme === load.wash_manifest.programme_id
-      ? ''
-      : ` (the load names ${load.wash_manifest.programme_id})`) +
     ` at the ${tier} tier; exposure ${cacheDir === undefined ? 'not kept' : `kept in ${cacheDir}`}`,
 );
 

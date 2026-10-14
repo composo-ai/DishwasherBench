@@ -77,14 +77,14 @@ const literature: WashRecord = {
     },
     notes:
       'A weak observation. The original was a Whirlpool DU750 held at 55 C with a model detergent; here it is laid on ' +
-      "the owner's Bosch with the main wash limited to 55 C, the tile standing in the lower basket facing the middle. " +
-      'Times are counted from the release of the detergent (960 s into Auto 2:25). The removed share is read as ' +
+      "the owner's Bosch on Eco 50 with the main wash heated to 55 C, the tile standing in the lower basket facing the middle. " +
+      'Times are counted from the release of the detergent (1050 s into Eco 50). The removed share is read as ' +
       '(time - 5 min lag) x 1.75 %/min in the constant-rate stage, complete at about 65 min; the residual mass ' +
       'fraction is one minus that. The stated uncertainties cover the scatter of the triplicates (0.29 %/min) and ' +
       'the difference of machine, temperature course and detergent.',
   },
   machine: { id: 'bosch_smv4hax40g' },
-  programme: { id: 'auto_145', course: { steps: [{ step: 'a4_heat', target_c: 55 }] } },
+  programme: { id: 'eco_50', course: { steps: [{ step: 'e4_heat', target_c: 55 }] } },
   consumables: {
     detergent: {
       product: 'model detergent with 0.06 g/L protease granulate at pH 10.5',
@@ -121,7 +121,7 @@ const literature: WashRecord = {
       id: 'sri_20min',
       item: 'tile',
       target: { soil: 'yolk' },
-      at_s: 2160,
+      at_s: 2250,
       kind: 'mass_fraction',
       value: 0.74,
       sd: 0.15,
@@ -131,7 +131,7 @@ const literature: WashRecord = {
       id: 'sri_40min',
       item: 'tile',
       target: { soil: 'yolk' },
-      at_s: 3360,
+      at_s: 3450,
       kind: 'mass_fraction',
       value: 0.39,
       sd: 0.18,
@@ -141,7 +141,7 @@ const literature: WashRecord = {
       id: 'sri_62min',
       item: 'tile',
       target: { soil: 'yolk' },
-      at_s: 4680,
+      at_s: 4770,
       kind: 'mass_fraction',
       value: 0.05,
       sd: 0.2,
@@ -158,18 +158,18 @@ writeJsonFile(
 // ---- 3. the template of a measured record of a small mixed load
 const spec = PRIMARY_MACHINE;
 const nominal = primaryProgramme(spec);
-// The course of a run in which Auto chose 58 C and a shorter hold.
+// The course of a run whose main wash reached 58 C and was held for two hours.
 const chosen = {
   ...nominal,
   steps: nominal.steps.map((step) =>
-    step.id === 'a4_heat'
+    step.id === 'e4_heat'
       ? { ...step, target: 58 }
-      : step.id === 'a5_hold' && step.kind === 'hold'
+      : step.id === 'e5_hold' && step.kind === 'hold'
         ? {
             ...step,
             target: 58,
-            duration: 2100,
-            prestoreFills: step.prestoreFills.map((f) => ({ ...f, at: 1200 })),
+            duration: 7200,
+            prestoreFills: step.prestoreFills.map((f) => ({ ...f, at: 6300 })),
           }
         : step,
   ),

@@ -17,9 +17,9 @@ def release(profile, w, t_open=60.0, dt=1.0):
             t+=dt
         out.append((t/60.0,1-x**3))
     return out
-auto145=[(24*60,20,55),(30*60,55,55)]       # P2 heat-up, P3 hold (design section M4 table)
+sizing145=[(24*60,20,55),(30*60,55,55)]       # P2 heat-up, P3 hold (design section M4 table)
 eco50=[(20*60,17,50),(70*60,50,50)]          # chemistry 10.12: heat 17->50 in ~20 min, hold, 90 min total
-for name,prof in (("AUTO-145 main wash (P2+P3, 54 min)",auto145),("ECO-50 main wash (90 min)",eco50)):
+for name,prof in (("SIZING-145 main wash (P2+P3, 54 min)",sizing145),("ECO-50 main wash (90 min)",eco50)):
     for w in (1.0,0.3,0.05,0.01,0.006,0.004):
         r=release(prof,w)
         print(f"{name:38s} w_tab={w:5.3f}: released "+", ".join(f"{f*100:5.1f}% @ {t:4.0f} min" for t,f in r))
@@ -31,14 +31,14 @@ def w_for(prof,target):
         if release(prof,mid)[-1][1]<target: lo=mid
         else: hi=mid
     return hi
-for name,prof in (("AUTO-145",auto145),("ECO-50",eco50)):
+for name,prof in (("SIZING-145",sizing145),("ECO-50",eco50)):
     print(f"{name}: w_tab giving 5/15/30 % released over the main wash: {w_for(prof,0.05):.4f} / {w_for(prof,0.15):.4f} / {w_for(prof,0.30):.4f}")
 # Hill response to the delayed dose (soils set n=3, K=0.82 ref; design default), dose 20 g type D in 4.0 L => c/c_ref = 0.05/0.06
 def hill(c,n=3,K=0.82): return (c**n/(K**n+c**n))/(1.0/(K**n+1.0))
-r=release(auto145,0.05,dt=1.0)
+r=release(sizing145,0.05,dt=1.0)
 # time-average of Hill factor during the hold (24..54 min), ignoring deactivation
 x=1.0;t=0.0;acc=0;accn=0;cnt=0
-for dur,T0,T1 in auto145:
+for dur,T0,T1 in sizing145:
     n=int(dur)
     for i in range(n):
         TC=T0+(T1-T0)*(i+0.5)/n
@@ -47,4 +47,4 @@ for dur,T0,T1 in auto145:
         if t>=24*60:
             acc+=hill((1-x**3)*0.05/0.06); accn+=hill(0.05/0.06); cnt+=1
         t+=1
-print(f"AUTO-145 hold: mean Hill factor blocked {acc/cnt:.3f} vs unblocked {accn/cnt:.3f} -> ratio {acc/accn:.2f}")
+print(f"SIZING-145 hold: mean Hill factor blocked {acc/cnt:.3f} vs unblocked {accn/cnt:.3f} -> ratio {acc/accn:.2f}")

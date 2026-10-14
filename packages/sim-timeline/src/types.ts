@@ -3,7 +3,9 @@
  * sections 5.1 and 5.5): the replay loop over the whole programme and every state with memory
  * longer than one revolution. Effective exposure per tick, block energy balance, wetting-onset
  * gate, film composition, local stores, pools and gaps, tablet supply, redeposition,
- * carry-over and drying.
+ * carry-over and drying. Soil settling from the wash water onto clean items (redeposition) and
+ * the movement of items and of the tablet are out of scope (docs/design/scope.md): their
+ * fields are declared and never filled.
  *
  * Types only. The layouts of `TimelineBlock`, `EffectiveExposure` and `ReservoirLiquor` belong
  * to this module by the contract and are declared in `@spotless/sim-soil`
@@ -149,8 +151,8 @@ export interface TimelineFlags {
   /** Ticks flagged for loss of prime (f_H below 0.85; section M4). */
   readonly primeLossTicks: number;
   /**
-   * Ticks replayed against a set of another liquor class or beyond the class half-width (the
-   * first minutes of the main-wash fill and the intermediate rinse in AUTO-145).
+   * Ticks replayed against a set of another liquor class or beyond the class half-width (for
+   * example the first minutes of a heat-up, while the liquor is still cold).
    */
   readonly classApproximationTicks: number;
 }

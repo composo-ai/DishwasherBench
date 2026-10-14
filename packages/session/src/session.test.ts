@@ -584,7 +584,7 @@ describe('start_cycle', () => {
     const started = s.startCycle();
     expect(started.accepted).toBe(true);
     if (!started.accepted) return;
-    expect(started.programme).toBe('auto_145');
+    expect(started.programme).toBe('eco_50');
     expect(started.state.racks).toEqual({ lower_rack: 'in', upper_rack: 'in' });
     expect(started.state.phase).toBe('washing');
     expect(started.prechecks.door_closes).toBe(true);

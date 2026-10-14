@@ -1,5 +1,5 @@
 /**
- * Benchmark: the exposure of a full load on the owner's machine (Bosch SMV4HAX40G, Auto 45-65),
+ * Benchmark: the exposure of a full load on the owner's machine (Bosch SMV4HAX40G, Eco 50),
  * state by state and stage by stage, at the official (2 mm) and fast (4 mm) block sizes.
  *
  *   pnpm --filter @spotless/sim-film exec tsx bench/full-load-exposure.ts [fast|official] [gpu|cpu] [key=value ...]

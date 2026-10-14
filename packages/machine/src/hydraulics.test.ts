@@ -7,13 +7,12 @@ import {
   branchOperatingPoint,
   headFactorFromAirFraction,
   hydraulicOperatingPoint,
-  pumpElectricalPower,
   pumpFlowAt,
   pumpHeadAt,
   solveNetwork,
   sprayLevelCdA,
 } from './hydraulics.ts';
-import { BOSCH_SMV4HAX40G, BOSCH_SMV4HAX40G_DRILL_BORE, SPOT_60 } from './machines.ts';
+import { BOSCH_SMV4HAX40G, BOSCH_SMV4HAX40G_DRILL_BORE } from './machines.ts';
 import { expectNear, expectWithin, must, toKPa, toLPerMin } from './test-util.ts';
 import type { MachineSpec } from './types.ts';
 import { WATER_DENSITY } from './water.ts';
@@ -308,92 +307,7 @@ describe('the unresolved bore: the Bosch with the 4.5 mm of the drill test (mach
   });
 });
 
-describe('hydraulic operating points of SPOT-60 (machine.md section 4.3)', () => {
-  const table: readonly TableRow[] = [
-    ['l', 3400, 53.3, 34.9, { lower: [34.9, 45.1, 9.5] }, 31.0, null],
-    ['l', 3000, 41.6, 30.7, { lower: [30.7, 34.9, 8.36] }, 21.3, 82],
-    ['l', 2600, 31.3, 26.5, { lower: [26.5, 25.9, 7.21] }, 13.8, null],
-    ['l', 2200, 22.5, 22.2, { lower: [22.2, 18.3, 6.06] }, 8.3, null],
-    ['l', 1800, 15.2, 17.9, { lower: [17.9, 11.9, 4.89] }, 4.5, null],
-    ['u', 3400, 57.3, 30.2, { mid: [22.8, 44.1, 9.4], top: [7.4, 33.3, 8.17] }, 28.8, null],
-    ['u', 3000, 44.8, 26.3, { mid: [19.9, 33.6, 8.2], top: [6.4, 24.9, 7.07] }, 19.6, null],
-    ['u', 2600, 34.0, 22.3, { mid: [16.9, 24.4, 6.99], top: [5.4, 17.6, 5.94] }, 12.6, null],
-    ['u', 2200, 24.6, 18.2, { mid: [13.9, 16.5, 5.75], top: [4.3, 11.3, 4.76] }, 7.5, null],
-    ['u', 1800, 16.8, 14.0, { mid: [10.8, 9.9, 4.46], top: [3.2, 6.1, 3.49] }, 3.9, null],
-    [
-      'a',
-      3000,
-      27.9,
-      44.6,
-      { lower: [24.9, 22.9, 6.78], mid: [15.0, 19.2, 6.21], top: [4.7, 13.5, 5.2] },
-      20.7,
-      null,
-    ],
-    [
-      'a',
-      3400,
-      35.3,
-      51.0,
-      { lower: [28.2, 29.4, 7.67], mid: [17.3, 25.5, 7.15], top: [5.5, 18.5, 6.08] },
-      30.0,
-      null,
-    ],
-  ];
-
-  // The generic table is printed to the same digits but was rounded from a solve whose last
-  // digit is occasionally one unit off this one (5.5 against 5.47 L/min); allow 0.6 % more.
-  it.each(table)('reproduces the row %s at %i rpm', (...row) => {
-    const [state, rpm, pumpKPa, total, branches] = row;
-    const point = hydraulicOperatingPoint(SPOT_60, state, rpm);
-    expectWithin(toKPa(point.pumpPressure), pumpKPa, 0.006, 'pump pressure');
-    expectWithin(toLPerMin(point.flow), total, 0.006, 'total flow');
-    for (const [id, [flow, armKPa, jet]] of Object.entries(branches)) {
-      const branch = must(branchOperatingPoint(point, id));
-      expectNear(toLPerMin(branch.flow), flow, 0.06 + 0.006 * flow, `${id} flow`);
-      expectNear(toKPa(branch.armPressure), armKPa, 0.06 + 0.006 * armKPa, `${id} arm pressure`);
-      expectNear(branch.idealJetSpeed, jet, 0.006 + 0.006 * jet, `${id} jet speed`);
-    }
-  });
-
-  it('draws 82 W in state L at 3000 rpm: 21.3 W hydraulic (section 4.2)', () => {
-    const point = hydraulicOperatingPoint(SPOT_60, 'l', 3000);
-    expectNear(point.hydraulicPower, 21.3, 0.15);
-    expectNear(point.electricalPower, 82, 0.6);
-    expectNear(pumpElectricalPower(SPOT_60.hydraulics.pump, 21.3), 21.3 / (0.4 * 0.72) + 8, 1e-9);
-  });
-
-  it('feeding all arms drops the lower jets from 8.4 to 6.8 m/s and needs 45 L/min (section 4.3)', () => {
-    const one = must(hydraulicOperatingPoint(SPOT_60, 'l', 3000).branches[0]);
-    const all = hydraulicOperatingPoint(SPOT_60, 'a', 3000);
-    expectNear(one.idealJetSpeed, 8.4, 0.05);
-    expectNear(must(branchOperatingPoint(all, 'lower')).idealJetSpeed, 6.8, 0.05);
-    expectNear(toLPerMin(all.flow), 45, 0.5);
-  });
-});
-
 describe('the pump curve (machine.md section 4.2)', () => {
-  it('follows the generic curve table: head in m at flow and speed', () => {
-    // [Q L/min, head at 1800, 2200, 2600, 3000, 3400 rpm]; zero where the table prints 0.
-    const rows: readonly (readonly number[])[] = [
-      [0, 1.98, 2.96, 4.13, 5.5, 7.06],
-      [10, 1.85, 2.82, 4.0, 5.37, 6.93],
-      [20, 1.45, 2.42, 3.6, 4.97, 6.53],
-      [30, 0.78, 1.76, 2.93, 4.3, 5.86],
-      [40, 0, 0.82, 2.0, 3.37, 4.93],
-      [50, 0, 0, 0.8, 2.17, 3.73],
-      [60, 0, 0, 0, 0.7, 2.27],
-    ];
-    const speeds = [1800, 2200, 2600, 3000, 3400];
-    const pump = SPOT_60.hydraulics.pump;
-    for (const row of rows) {
-      const flow = must(row[0]) / 60000;
-      speeds.forEach((rpm, i) => {
-        const head = Math.max(pumpHeadAt(pump, flow, rpm), 0);
-        expectNear(head, must(row[i + 1]), 0.011, `head at ${must(row[0])} L/min, ${rpm} rpm`);
-      });
-    }
-  });
-
   it('keeps the Bosch pump curve (owner update 5.4): 3.1 m at 27.5 L/min, 58 L/min free delivery; 385 mbar at 3500 rpm on the measured lower arm', () => {
     const pump = BOSCH_SMV4HAX40G.hydraulics.pump;
     expectNear(pump.shutOffHead, 4.0, 1e-12);
@@ -421,10 +335,7 @@ describe('the pump curve (machine.md section 4.2)', () => {
     expectNear(ur.pumpHead, 3.04, 0.006);
   });
 
-  it('converts b from m per (L/min)^2 to m per (m^3/s)^2: 1.333e-3 is 4.80e6 (machine.md 12.2)', () => {
-    // "b = 1.333e-3 m per (L/min)^2 = 4.80e6 m per (m3/s)^2": the second figure to three digits.
-    expectWithin(SPOT_60.hydraulics.pump.curveCoefficient, 4.8e6, 1e-3);
-    expectWithin(SPOT_60.hydraulics.pump.curveCoefficient, 1.333e-3 * 60000 * 60000, 1e-12);
+  it('converts b from m per (L/min)^2 to m per (m^3/s)^2 (machine.md 12.2)', () => {
     expectWithin(BOSCH_SMV4HAX40G.hydraulics.pump.curveCoefficient, 1.19e-3 * 3.6e9, 1e-12);
   });
 
@@ -446,7 +357,7 @@ describe('the pump curve (machine.md section 4.2)', () => {
 describe('the network solve', () => {
   it('agrees with the closed form for a single branch to 1e-10', () => {
     // One branch: rho g (H0 r^2 - b Q^2) = rho g z + K Q^2 + rho Q^2 / (2 (CdA)^2).
-    for (const spec of [BOSCH_SMV4HAX40G, SPOT_60]) {
+    for (const spec of [BOSCH_SMV4HAX40G]) {
       const pump = spec.hydraulics.pump;
       const branch = getBranch(spec, 'lower');
       const cdA = sprayLevelCdA(getSprayLevel(spec, 'lower'));
@@ -471,7 +382,7 @@ describe('the network solve', () => {
   });
 
   it('conserves flow: nozzles add up to their branch and branches to the pump', () => {
-    for (const spec of [BOSCH_SMV4HAX40G, SPOT_60]) {
+    for (const spec of [BOSCH_SMV4HAX40G]) {
       for (const position of spec.hydraulics.diverter.positions) {
         for (const rpm of [2000, 2800, 3400]) {
           const point = hydraulicOperatingPoint(spec, position.id, rpm);
@@ -546,7 +457,7 @@ describe('the network solve', () => {
   });
 
   it('is deterministic and independent of the order the branches are named in', () => {
-    const pump = SPOT_60.hydraulics.pump;
+    const pump = BOSCH_SMV4HAX40G.hydraulics.pump;
     const a = { id: 'a', staticLift: 0.15, lossCoefficient: 2e10, cdA: 61.2e-6 };
     const b = { id: 'b', staticLift: 0.52, lossCoefficient: 5.6e10, cdA: 40.4e-6 };
     const ab = solveNetwork(pump, [a, b], 3000);
@@ -599,17 +510,17 @@ describe('nozzle blockage, opening fraction and air ingestion (machine.md sectio
 
   it('an air fraction acts exactly like a lower shut-off head', () => {
     // f_H = 0.75 at 3000 rpm is the pump at 3000 x sqrt(0.75) rpm, as far as the head term goes.
-    const airy = hydraulicOperatingPoint(SPOT_60, 'l', 3000, { airFraction: 0.1 });
-    const slower = hydraulicOperatingPoint(SPOT_60, 'l', 3000 * Math.sqrt(0.75));
+    const airy = hydraulicOperatingPoint(BOSCH_SMV4HAX40G, 'l', 3000, { airFraction: 0.1 });
+    const slower = hydraulicOperatingPoint(BOSCH_SMV4HAX40G, 'l', 3000 * Math.sqrt(0.75));
     expect(airy.headFactor).toBe(0.75);
     expectWithin(airy.flow, slower.flow, 1e-10);
     expectWithin(airy.pumpPressure, slower.pumpPressure, 1e-10);
-    expect(hydraulicOperatingPoint(SPOT_60, 'l', 3000, { airFraction: 0.5 }).flow).toBe(0);
+    expect(hydraulicOperatingPoint(BOSCH_SMV4HAX40G, 'l', 3000, { airFraction: 0.5 }).flow).toBe(0);
   });
 
   it('uses the density and gravity it is given', () => {
     // With no static lift and no feed loss the flow does not depend on the density at all.
-    const pump = SPOT_60.hydraulics.pump;
+    const pump = BOSCH_SMV4HAX40G.hydraulics.pump;
     const branch = { id: 'b', staticLift: 0, lossCoefficient: 0, cdA: 50e-6 };
     const water = solveNetwork(pump, [branch], 3000, 1, 998, STANDARD_GRAVITY);
     const hot = solveNetwork(pump, [branch], 3000, 1, 983, STANDARD_GRAVITY);

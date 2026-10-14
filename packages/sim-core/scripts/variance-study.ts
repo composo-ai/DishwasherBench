@@ -13,7 +13,7 @@
  *
  *   pnpm --filter @spotless/sim-core exec tsx scripts/variance-study.ts --out <file.jsonl>
  *        [--cache <dir>] [--tiers official,fast] [--level-seeds 1,2,3,4] [--sim-seeds 1,2,3,4]
- *        [--programme eco_50] [--params <set.json>] [--accept-stale-params] [--dose-g <grams>]
+ *        [--params <set.json>] [--accept-stale-params] [--dose-g <grams>]
  *        [--set key=value,...] [--load <name>]
  *        [--flip-z id,id] [--stall lower=62] [--summary] [--tag name] [--repo <root>]
  *
@@ -112,7 +112,8 @@ const cacheDir = option('--cache');
 const tiers = (option('--tiers') ?? 'official').split(',');
 const levelSeeds = (option('--level-seeds') ?? '1,2,3,4').split(',').map(Number);
 const simSeeds = (option('--sim-seeds') ?? '1,2,3,4').split(',').map(Number);
-const programme = option('--programme') ?? 'eco_50';
+/** Eco 50, the only programme the simulation washes on. */
+const programme = 'eco_50';
 const tag = option('--tag') ?? 'study';
 const flipped = new Set((option('--flip-z') ?? '').split(',').filter((s) => s !== ''));
 const stall = option('--stall')?.split('=');

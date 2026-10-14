@@ -11,8 +11,8 @@
  *  - `levelCard(level)`: the level card of the session contract (`card-types.ts`), which the
  *    session re-exports. It carries what a user manual, an open door and the cook would know,
  *    and nothing about the soil model or the outcome.
- *  - `GAME_PROGRAMME_ID`, `GAME_DETERGENTS` (`programmes.ts`): the game is scored on Eco 50
- *    with the owner's capsule, and no level offers another programme.
+ *  - `GAME_PROGRAMME_ID`, `GAME_DETERGENTS` (`programmes.ts`): the game is scored on Eco 50,
+ *    the only programme simulated, with the owner's capsule.
  *  - `levelDifficulty(level)`, `COURSE_LEVEL_IDS` (`course.ts`, `starter/index.ts`): the
  *    course. The levels are listed in the order they are meant to be played; each carries its
  *    `number`, its `difficulty` on a scale of 1 to 10 worked out from its own pieces, soils

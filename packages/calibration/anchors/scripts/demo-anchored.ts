@@ -6,7 +6,7 @@
  *        [name ...] [--params anchors/<current set>.json] [--demos <dir>] [--out <dir>]
  *
  * Each `<name>.wash.json` of the demonstrations (the description the default wash was run
- * from: the owner's machine, Auto 45-65, official tier, the soils of the load file, 20 g of
+ * from: the owner's machine, Eco 50, official tier, the soils of the load file, 20 g of
  * reference detergent) is washed three times on the water side that is on disk:
  *
  *   defaults        the registry defaults (what `<name>.result.json` holds, on today's water
@@ -158,7 +158,7 @@ const lines: string[] = [];
 lines.push(`# The demonstration washes with the parameter set ${setName}`);
 lines.push('');
 lines.push(
-  `Settled standard loads of the owner's Bosch SMV4HAX40G, Auto 45-65, official tier, 20 g of reference detergent D, from the saved \`<name>.wash.json\`. Written by \`packages/calibration/anchors/scripts/demo-anchored.ts\` on the water side ${water.simVersion} (sources ${water.sourceHash.slice(0, 19)}...). "Defaults" is the registry defaults on that same water side; the default files beside this one (\`<name>.result.json\`, \`SUMMARY.md\`) were written on an earlier water side and are not touched. "Working soils" replaces the soil quantities of the load file by those of \`docs/calibration/anchoring.md\` section 2.2 (the load file carries 5 g of dry milk per glass and 0.1 mg of tea per cup).`,
+  `Settled standard loads of the owner's Bosch SMV4HAX40G, Eco 50, official tier, 20 g of reference detergent D, from the saved \`<name>.wash.json\`. Written by \`packages/calibration/anchors/scripts/demo-anchored.ts\` on the water side ${water.simVersion} (sources ${water.sourceHash.slice(0, 19)}...). "Defaults" is the registry defaults on that same water side; the default files beside this one (\`<name>.result.json\`, \`SUMMARY.md\`) were written on an earlier water side and are not touched. "Working soils" replaces the soil quantities of the load file by those of \`docs/calibration/anchoring.md\` section 2.2 (the load file carries 5 g of dry milk per glass and 0.1 mg of tea per cup).`,
 );
 lines.push('');
 lines.push(
