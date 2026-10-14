@@ -161,24 +161,28 @@ reviews on the evening of 11 October washed loads built to test that, and found:
   the gap between a careful and a careless load on every level of the course.
 - **It holds when the detergent never arrives** (a blocked tablet tray) for protein soils, and
   for a bowl or a spoon that truly lies in another.
-- **It does not hold for plates and cutlery.** With the soak spraying 0.8 of the time, every
+- **It holds little for plates and cutlery.** With the soak spraying 0.8 of the time, every
   open face is wet throughout and its water is renewed, so the chemistry cleans it whether or
   not a jet reaches it. A lower basket loaded with plates fallen over and the upper arm held
   still came out with every piece clean, at both tiers. Turning a plate to the wall, crowding
-  cutlery into one cell and stalling an arm cost little or nothing. The owner's own wash showed
-  a turned plate keeping four times the residue of its partner, so the real effect is not zero.
-- **Fat comes clean with no detergent at all**, which the soil dossier says is wrong.
+  cutlery into one cell and stalling an arm cost little or nothing. Whether the real machine
+  is as forgiving on Eco 50 is not measured: the loading advice and the effect sizes of the
+  phenomena checklist that say otherwise are estimates (`docs/research/standards.md` section
+  0.2). The owner's one wash showed an oven-dried plate turned to the wall keeping more egg
+  than its partner (about 100 mm² against 25, one pair, the turned one nearer the wall) and
+  the air-dried pair coming clean either way.
 
 The calibration that moved the soak from 0.5 to 0.8 is what made open faces insensitive: at
 0.5 a careless standard load came out with about 11 fewer clean items than a careful one, at
 0.8 with 5 or 6 fewer (on the loads of each day, which differ).
-The owner's plates say the soak does spray that much, so the fix is not to move the soak back.
-It needs a mechanism for covered and nearly covered faces (the closure that was built and not
-merged) and test washes that measure one: washes 2 and 3 of `docs/calibration/protocol.md`.
+The owner's plates say the soak does spray that much. Washes 2 and 3 of
+`docs/calibration/protocol.md` measure whether nested and crowded pieces come out dirty on the
+real machine; until one shows that they do, no mechanism for covered faces is planned.
 
 ### What the next test washes are for
 
 None has been run; anyone with this machine can run one. In the order of
 `docs/calibration/protocol.md`: hollow pieces the right and the wrong way up,
 with tea in mugs (the soil class every level's margin rests on, and the bleach rate); porridge
-bowls nested and free (water in a gap); nested and crowded cutlery (the closure above).
+bowls nested and free (water in a gap); nested and crowded cutlery (whether stacking matters
+for them).

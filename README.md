@@ -394,11 +394,13 @@ Three things decide most of a score:
 - **Detergent and nesting.** A blocked detergent tray leaves protein soils (egg, yoghurt,
   mince, milk) on the load, and a bowl or spoon that lies fully in another comes out not clean.
 
-The wash does not respond to how plates and cutlery are stacked: plates that lean on each other
-and cutlery crowded into one cell come out clean, where a real machine would be expected to
-leave soil. A score therefore does not show how well plates and cutlery were stacked
-([issue 1](https://github.com/composo-ai/DishwasherBench/issues/1)). Of the 46 loading
-phenomena in the suite, 9 are out of scope, and 17 of the other 37 pass. The adapter for
+The wash responds little to how plates and cutlery are stacked: plates that lean on each other
+and cutlery crowded into one cell come out clean, so a score shows little of how well they were
+stacked. Whether the real machine is as forgiving on Eco 50 has not been measured; the test
+washes of [docs/calibration/protocol.md](docs/calibration/protocol.md) would show it. Of the 46
+loading phenomena in the suite, 9 are out of scope, and 17 of the other 37 pass; most of the
+sizes they expect are estimates, not measurements
+([docs/research/standards.md](docs/research/standards.md) section 0.2). The adapter for
 Anthropic's API is tested against a local stand-in only
 ([issue 13](https://github.com/composo-ai/DishwasherBench/issues/13)).
 
