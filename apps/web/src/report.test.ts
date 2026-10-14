@@ -89,9 +89,7 @@ describe('the report', () => {
       { item_id: 'plate_01', display_name: 'Dinner plate', points: 10, soils: [] },
     ],
     programme: { programme_id: 'eco_50', display_name: 'Eco 50', status: 'scored' },
-    secondary_programmes: [
-      { programme_id: 'auto_145', display_name: 'Auto 45-65', status: 'uncalibrated' },
-    ],
+    secondary_programmes: [],
   } as unknown as LevelCard;
   const loaded = {
     loaded: true as const,
@@ -274,13 +272,13 @@ describe('the report', () => {
     );
   });
 
-  it('labels a wash on a programme the level is not scored on, and every verdict of it', () => {
-    const auto: WashReport = {
+  it('labels a preview whose every verdict is provisional (parameters made for another state)', () => {
+    const stale: WashReport = {
       ...report,
       verdicts: {
         counting: 'binary_on_verdict',
-        programme_id: 'auto_145',
-        programme_status: 'uncalibrated',
+        programme_id: 'eco_50',
+        programme_status: 'scored',
         preview: true,
         edge: [],
         provisional: [],
@@ -289,10 +287,9 @@ describe('the report', () => {
         points_lenient: report.score.points,
       },
     };
-    const view = reportView(card, auto);
-    expect(view.uncalibrated).toBe(true);
-    expect(view.programme).toBe('Auto 45-65');
-    expect(view.label).toBe('Quick preview, uncalibrated programme');
+    const view = reportView(card, stale);
+    expect(view.programme).toBe('Eco 50');
+    expect(view.label).toBe('Quick preview');
     expect(view.counting).toBe(
       'Every item counts by the verdict given. Every verdict of this wash is provisional.',
     );

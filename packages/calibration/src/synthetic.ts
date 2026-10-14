@@ -222,7 +222,7 @@ export function tileRecord(options: TileRecordOptions): WashRecord {
       },
     },
     machine: { id: options.machine ?? 'bosch_smv4hax40g' },
-    programme: { id: options.programme ?? 'auto_145' },
+    programme: { id: options.programme ?? 'eco_50' },
     load: { items },
     observations,
     interruptions: (options.at_s ?? []).map((t) => ({ t_s: t })),

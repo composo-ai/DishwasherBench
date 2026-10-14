@@ -6,7 +6,7 @@ Specialist: detergent enzymology. Date: 2026-10-10. Status: desk research from p
 
 ### 0.1 Scope
 
-`docs/calibration/anchoring.md` section 5.4 finds that on Auto 45-65 every egg-yolk and milk item stays dirty, and that the verdict rests on two placeholders: the protease half-life law of `[-> chemistry]` 10.5 (`liq.proteaseHalfLife` 1800 s at 60 °C, `liq.proteaseEd` 200 kJ/mol) and the activity mid-point of `[-> chemistry]` 10.6 (`enzymeTm` 63 °C, `enzymeDH` 300 kJ/mol in `packages/sim-soil`). This dossier collects what is published on both, on whole-machine protein cleaning above 55 °C, and on the enzymes of current premium unit doses, and recommends defaults and ranges. It does not cover what the Auto programme does (step times and targets); that is the machine dossier's question.
+The protease's survival in the wash rests on two placeholders: the protease half-life law of `[-> chemistry]` 10.5 (`liq.proteaseHalfLife` 1800 s at 60 °C, `liq.proteaseEd` 200 kJ/mol) and the activity mid-point of `[-> chemistry]` 10.6 (`enzymeTm` 63 °C, `enzymeDH` 300 kJ/mol in `packages/sim-soil`). This dossier collects what is published on both, on whole-machine protein cleaning above 55 °C, and on the enzymes of current premium unit doses, and recommends defaults and ranges. It does not cover the programme's step times and targets; that is the machine dossier's question.
 
 Cross-links: `[-> chemistry]` is `docs/research/chemistry.md`, `[-> soils]` is `docs/research/soils.md`, `[-> finish]` is `docs/research/detergent-finish-ultimate.md`, `[-> anchoring]` is `docs/calibration/anchoring.md`.
 
@@ -22,7 +22,7 @@ Cross-links: `[-> chemistry]` is `docs/research/chemistry.md`, `[-> soils]` is `
 4. **Whole machines with premium capsules do not show a collapse at 58 to 64 °C.** Four household machines, four market products, CFT protein tiles and IKW crème brûlée: in the "1 h" programmes (main wash 13 to 32 min reaching 50.6, 58.0, 59.0 and 63.9 °C) the two high-tier capsules gave almost complete crème brûlée removal at 59.0 and 63.9 °C and high scores on the protein tiles; the low-tier tablet was poor on protein in every programme, eco included, and on one machine did better in the hot 1 h programme than in its 51 °C eco programme [VERIFIED, S6].
 5. **Nothing published was found for reference detergent D, or any Savinase-only product, in a main wash above 52 °C with absolute protein-soil results.** The one patent family that washed at 45, 55 and 65 °C reports only indices relative to a commercial protease [VERIFIED, S2]. Whether detergent D's protein cleaning collapses at 65 °C is open; for a current premium capsule the evidence is against it.
 6. **Dose matters more than stability for the capsule.** P&G's own machine examples dose 32 to 43 mg of active protease per wash in a 16 g unit dose [VERIFIED, S4]; detergent D carries 0.2 g of Savinase 6 T, of the order of 5 mg of active enzyme [ESTIMATED]. With the same machine, soils and temperature, detergent D scores at most 1.7 of 10 on crème brûlée in 40 min at 50 °C where a market capsule scores about 9 to 10 [VERIFIED, S7].
-7. **On the model's own rate law the recommended changes roughly double the enzyme work of a 65 °C main wash** (section 5): from 31 to 48 reference-minutes for detergent D at the anchored level, against 124 or more needed for the thickest places of the egg layer in `[-> anchoring]` 5.4. [fact-check] The stand-alone figures are optimistic and the capsule rows used half the protease level of the owner sets; whole washes with the repository's code (section 9.3) leave 25 % of the egg yolk on Auto as written with detergent D after the mid-point change (57 % before), 3 to 18 % with the capsule, and no egg item or milk glass clean in any case. The sentence "the mean layer then clears" does not hold in the whole wash. What stands: whether an item reads clean is decided by the length of the wash and the spread of the layer, not by enzyme survival.
+7. **On the model's own rate law the recommended changes barely move the enzyme work of Eco 50** (section 5): from 166 to 155 reference-minutes for detergent D at the anchored level, against about 124 needed for the thickest places of the egg layer of `[-> anchoring]`. Whether an item reads clean is decided by the length of the wash and the spread of the layer, not by enzyme survival.
 
 ---
 
@@ -217,33 +217,32 @@ Consequence for the model's units, which needs checking by whoever owns the soil
 
 ---
 
-## 5. What the recommended values do to a 65 °C main wash
+## 5. What the recommended values do to the enzyme work of a main wash
 
-Script: `calc.py` (a working file, not in the repository), a stand-alone integration of the rate law of `[-> chemistry]` 10.5 and 10.6 as implemented in `packages/sim-liquor/src/liquor.ts` (`enzymeDecayRate`) and `packages/sim-soil/src/kinetics.ts` (f_T and the Hill response, n = 3, K = 0.82 of the reference dose). It does not call the packages. Profile of `[-> anchoring]` 5.4: release at 23 °C, 64 °C after 18 min, 62 °C at 57 min. Oxidative loss fixed at 4.7e-5 1/s (0.3 mol/m³ peracid, 3.3 mol/m³ peroxide at the default constants). "Reference-minutes" is the integral of f_T times the enzyme response: minutes of work at 50 °C and the reference dose, before the pH factor and the lag. For scale: the egg layer of `[-> anchoring]` (56 g/m² at 3e-5 kg/(m² s)) needs 31 reference-minutes at its mean thickness and about 124 at its thickest places; the pH factor is about 1.3 for detergent D and about 0.9 for the capsule.
+Script: `calc.py` (a working file, not in the repository), a stand-alone integration of the rate law of `[-> chemistry]` 10.5 and 10.6 as implemented in `packages/sim-liquor/src/liquor.ts` (`enzymeDecayRate`) and `packages/sim-soil/src/kinetics.ts` (f_T and the Hill response, n = 3, K = 0.82 of the reference dose). It does not call the packages. Profile: the main wash of Eco 50 as written (161 min). Oxidative loss fixed at 4.7e-5 1/s (0.3 mol/m³ peracid, 3.3 mol/m³ peroxide at the default constants). "Reference-minutes" is the integral of f_T times the enzyme response: minutes of work at 50 °C and the reference dose, before the pH factor and the lag. For scale: the egg layer of `[-> anchoring]` (56 g/m² at 3e-5 kg/(m² s)) needs 31 reference-minutes at its mean thickness and about 124 at its thickest places; the pH factor is about 1.3 for detergent D and about 0.9 for the capsule.
 
-All [ESTIMATED]. [fact-check] Recomputed: the arithmetic of this table reproduces. Two reservations: (a) the capsule rows at 80 mg/L are not "as now in the owner sets": those sets carry `liq.xProtease` 0.05, which a wash gives as 160 mg/L at its peak (12.9 g in 4.0 L), so the rows at 160 mg/L are the ones that describe them; (b) reference-minutes leave out the lag of a dried soil, the water side and the reading of residues, and the whole washes of section 9.3 are less favourable. Use section 9.3 for removal, this table only for the direction of each change.
+All [ESTIMATED]. [fact-check] Recomputed: the arithmetic of this table reproduces. Two reservations: (a) the capsule rows at 80 mg/L are not "as now in the owner sets": those sets carry `liq.xProtease` 0.05, which a wash gives as 160 mg/L at its peak (12.9 g in 4.0 L), so the rows at 160 mg/L are the ones that describe them; (b) reference-minutes leave out the lag of a dried soil, the water side and the reading of residues. Use this table only for the direction of each change.
 
-| Case (peak protease, half-life at 60 °C, E_d, mid-point) | Protease left at 57 min | Reference-minutes, Auto 65 °C | Same, a 60 °C wash | Same, Eco 50 (161 min) |
-|---|---|---|---|---|
-| D, registry defaults (49 mg/L, 30 min, 200, 63 °C) | 14 % | 13 | 21 | 62 |
-| D, anchored level (98 mg/L, 30 min, 200, 63 °C) | 14 % | 31 | 55 | 166 |
-| D, anchored level, mid-point 75 °C only | 14 % | 46 | 65 | 165 |
-| D, anchored level, recommended (30 min, 170, 75 °C) | 16 % | 48 | 64 | 155 |
-| D, anchored level, half-life 3 min | 0 % | 19 | 19 | 39 |
-| D, anchored level, half-life 10 min | 1 % | 27 | 34 | 97 |
-| D, anchored level, half-life 120 min | 56 % | 83 | 83 | 178 |
-| Capsule as now in the "savinase" set (80 mg/L, 30 min, 200, 63 °C) | 14 % | 26 | 45 | 136 |
-| Capsule, recommended (80 mg/L, 90 min, 170, 75 °C) | 49 % | 65 | 70 | 147 |
-| Capsule, recommended stability, 160 mg/L | 49 % | 99 | 96 | 217 |
-| Capsule, recommended stability, 300 mg/L | 49 % | 107 | 101 | 231 |
-| The "heat-stable ASSUMED" set of `[-> anchoring]` (100 mg/L, 120 min, 200, 75 °C) | 54 % | 83 | 84 | 183 |
+| Case (peak protease, half-life at 60 °C, E_d, mid-point) | Reference-minutes, Eco 50 (161 min) |
+|---|---|
+| D, registry defaults (49 mg/L, 30 min, 200, 63 °C) | 62 |
+| D, anchored level (98 mg/L, 30 min, 200, 63 °C) | 166 |
+| D, anchored level, mid-point 75 °C only | 165 |
+| D, anchored level, recommended (30 min, 170, 75 °C) | 155 |
+| D, anchored level, half-life 3 min | 39 |
+| D, anchored level, half-life 10 min | 97 |
+| D, anchored level, half-life 120 min | 178 |
+| Capsule as now in the "savinase" set (80 mg/L, 30 min, 200, 63 °C) | 136 |
+| Capsule, recommended (80 mg/L, 90 min, 170, 75 °C) | 147 |
+| Capsule, recommended stability, 160 mg/L | 217 |
+| Capsule, recommended stability, 300 mg/L | 231 |
+| The "heat-stable ASSUMED" set of `[-> anchoring]` (100 mg/L, 120 min, 200, 75 °C) | 183 |
 
 Reading:
 
-1. For detergent D the recommended values raise the enzyme work of the 65 °C wash by about half (31 to 48 reference-minutes), nearly all of it from the mid-point. The mean egg layer then clears (48 x 1.3 against 31 plus the lag); the thickest places do not.
-2. The uncertainty in the half-life alone moves the result from 19 to 83: a factor of four. No desk value can decide Auto for detergent D.
-3. For the capsule, stability and mid-point together take it from 26 to 65, and the dose from 65 to about 100. The ceiling is near 110: with no loss at all, 57 minutes at f_T 1.4 and a saturated response of 1.55 cannot exceed about 120. The model's "four times the mean thickness" requirement (124) is therefore out of reach of any enzyme on this programme. If S6 is right that such programmes clean baked protein almost completely, the remaining error is in the spread of the layer, the reading of residues, the rate constant or the programme's length, not in enzyme survival.
-4. A 60 °C main wash is nearly as productive as a 65 °C one under every assumption, and more productive under the pessimistic ones.
+1. For detergent D the recommended values move the enzyme work of Eco 50 from 166 to 155 reference-minutes: at 50 °C the mid-point hardly acts, and the lower activation energy takes a little off.
+2. The uncertainty in the half-life alone moves the result from 39 to 178 reference-minutes: a factor of four and a half.
+3. For the capsule, stability and mid-point together take it from 136 to 147, and the dose to 217 at 160 mg/L and 231 at 300 mg/L.
 
 ---
 
@@ -263,16 +262,14 @@ Reading:
 | `liq.xProtease` | 0.01 (D); capsule 0.02 to 0.05 in the owner sets | unchanged pending 6.2 | at least the top of the dossier's range; the registry maximum of 0.05 may be too low | Section 4: 32 to 43 mg active per premium dose [S4] against about 5 mg in D | [ESTIMATED] |
 | `liq.amylaseHalfLife`, `liq.amylaseEd`, `starch.enzymeTm` | 3600 s, 220 kJ/mol, 70 °C | unchanged | unchanged; `liq.amylaseKox` at the low end (6e-5) for an oxidation-stable grade | Nothing opened contradicts or supports the dossier's amylase values; the capsule's amylase is of the oxidation-stable kind in the makers' examples [S4] | [ESTIMATED] |
 
-The two named owner sets of `[-> anchoring]` 5.4 bracket this recommendation: the "heat-stable ASSUMED" set (2 h, 75 °C) is at the optimistic end of (b) and now has a basis for its mid-point but still none for its half-life; the "savinase" set keeps the double count and should be retired.
+The two named owner sets bracket this recommendation: the "heat-stable ASSUMED" set (2 h, 75 °C) is at the optimistic end of (b) and now has a basis for its mid-point but still none for its half-life; the "savinase" set keeps the double count and should be retired.
 
 ### 6.2 Programme settings and structure
 
 | Setting | Current | Recommendation | Basis | Tag |
 |---|---|---|---|---|
-| Use of Auto verdicts for egg and milk | "Do not use" [`[-> anchoring]`] | Keep. The half-life range alone moves the enzyme work by a factor of four | Section 5 | [ESTIMATED] |
 | Half-life as a function of free calcium | none | Consider scaling the half-life between the two measured limits with the liquor's free calcium (the solver already has `Ca_free`), since water hardness, builder and soil load then act on protein cleaning the way the makers describe | [S1, S3] | [ESTIMATED]; a structural suggestion, not a fitted law |
 | Unit of the protease level | granulate mass, two different granulates treated as one | Carry active enzyme, or a per-grade activity factor, before fitting the level again | Section 4 | [ESTIMATED] |
-| First calibration wash | egg-yolk plates on Auto with the owner's capsule | Unchanged, and add the same plates on Eco 50: the ratio of the two separates stability from dose | Section 5 | [ESTIMATED] |
 
 ---
 
@@ -316,7 +313,7 @@ The two named owner sets of `[-> anchoring]` 5.4 bracket this recommendation: th
 | S15 | Rahman et al. (2017), Molecules 22, 1577, via PubMed Central | https://pmc.ncbi.nlm.nih.gov/articles/PMC6151835/ | Opened; a three-minute bench test on peanut butter, not relevant. No value used |
 | S16 | Unpaywall and Crossref records for N1, N2, N3, N6, S6, S7 | https://api.unpaywall.org ; https://api.crossref.org | Bibliographic data, abstracts of S6 and S7, access status |
 
-Project documents read: `[-> chemistry]` sections 1.1, 2, 10.5, 10.6, 12; `[-> soils]` section 6; `[-> finish]` sections 0 to 2; `[-> anchoring]` summary and 5.4; `packages/sim-liquor/src/params.ts`; `packages/sim-soil/src/params.ts`; `packages/machine/src/data/bosch-programmes.ts`.
+Project documents read: `[-> chemistry]` sections 1.1, 2, 10.5, 10.6, 12; `[-> soils]` section 6; `[-> finish]` sections 0 to 2; `[-> anchoring]` summary; `packages/sim-liquor/src/params.ts`; `packages/sim-soil/src/params.ts`; `packages/machine/src/data/bosch-programmes.ts`.
 
 ### Identified but not opened
 
@@ -361,25 +358,7 @@ Scripts and outputs: `rec/derive.py` (every derived figure), `rec/auto.ts` with 
 - S6 cannot support a longer half-life for capsules. On the model's law a 28-minute wash peaking at 63.9 °C leaves 40 to 53 % of a protease with a 30-minute half-life and 74 to 81 % of one with 90 minutes: no collapse either way.
 - Searched and not found: any residual activity or half-life of a protease in a dishwashing liquor at 60 to 70 °C (web search, patent full-text search, Europe PMC). Finding 5 stands.
 
-### 9.3 Whole washes with the repository's code
-
-Settled standard load, official tier, level seed 1, simulation seed 1, the exposure of the anchoring's frozen water side (`97aa4d392843`, unchanged on disk). D: `anchored-v2.json`, 20 g. Capsule: `anchored-v2.owner-tablet.savinase.json`, 12.9 g (160 mg/L of protease at the peak).
-
-| Auto as written (65 °C, 46 min) | Protease, peak to end of wash (mg/L) | Egg yolk left | Milk left | Egg items / milk glasses clean |
-|---|---|---|---|---|
-| D, registry values (30 min, 63 °C) | 99 to 18 | 56.6 % | 77.9 % | 0 of 17 / 0 of 7 |
-| D, mid-point 75 °C | 99 to 18 | 24.6 % | 56.2 % | 0 / 0 |
-| D, mid-point 75 °C, half-life 10 min (the registry minimum) | 98 to 1 | 76.3 % | 88.6 % | 0 / 0 |
-| D, mid-point 75 °C, half-life 2 h | 99 to 61 | 1.6 % | 18.4 % | 0 / 0 |
-| D, mid-point 75 °C, 170 kJ/mol | 99 to 20 | 20.3 % | 52.2 % | 0 / 0 |
-| Capsule, registry values | 160 to 29 | 49.8 % | 73.9 % | 0 / 0 |
-| Capsule, mid-point 75 °C | 160 to 29 | 17.8 % | 49.5 % | 0 / 0 |
-| Capsule, mid-point 75 °C, half-life 90 min | 160 to 86 | 3.0 % | 23.9 % | 0 / 0 |
-| Capsule, mid-point 75 °C, half-life 2 h | 160 to 98 | 2.7 % | 22.8 % | 0 / 0 |
-
-The mid-point change more than halves the egg yolk left; the half-life range moves it between 2 and 76 %; no value of either makes one egg item or milk glass clean. `docs/research/auto-recommendation.md` has the same washes on the other candidate courses of the programme.
-
-### 9.4 Tags changed
+### 9.3 Tags changed
 
 | Item | Was | Now |
 |---|---|---|

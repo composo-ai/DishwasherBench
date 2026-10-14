@@ -1,7 +1,7 @@
 # Test washes that would calibrate the simulation, and the measurements of the machine still open
 
 This is a protocol for anyone who has a **Bosch SMV4HAX40G**, the one machine the simulation
-models, and would like to help calibrate it. It lists four test washes, in the order that tells
+models, and would like to help calibrate it. It lists three test washes, in the order that tells
 the simulation most about the game as it is scored, and the measurements of the machine that are
 still inferred. Each wash is written so that it can be done at home with what is in a kitchen, a
 kitchen scale and a phone. The last sections say how to send a result in and what the project
@@ -14,20 +14,19 @@ It was written on 11 October 2026, after the first test wash (four egg-yolk plat
 run by the machine's owner) was read and the simulation calibrated on it
 (`owner-wash-01-calibration.md`), and put in a new order on 12 October, after loads built to
 find where a verdict cannot be trusted had been washed (`docs/validation/README.md` section 8).
-None of the four washes below has been run.
+None of the three washes below has been run.
 
-**Three runs of the machine, four washes.**
+**Two runs of the machine, three washes.**
 
 | Run | Wash | Programme | Hands-on time | What it settles |
 |---|---|---|---|---|
 | A | 1. Glasses and mugs the right and the wrong way up, and tea in four mugs | Eco 50 | 30 minutes over two days | Whether a smoothie glass or a soup mug comes clean mouth down and stays dirty mouth up or on its side: about three quarters of what separates a careful from a careless load on every level rests on this, and no wash has tested it. And whether the capsule bleaches a tea stain |
 | B | 2. Three porridge bowls, two nested | Eco 50 | 20 minutes the evening before | Whether a covered bowl stays dirty, and how dirty |
 | B | 3. Spoons nested and apart, forks crowded and apart, two plates in one gap | Eco 50, the same run as wash 2 | 30 minutes | Whether pieces lying close come out dirty. Today the model says nearly all of them come clean, and that is the largest known gap between the game and a kitchen |
-| C | 4. The four yolk plates again, weighed | Auto 45-65 | as the first test wash, plus the weighing | The capsule's enzyme apart from the soak, which the first test wash could not separate |
 
-**Why this order.** The calibration tool ranked tea in mugs, the yolk plates on Auto and the
-nested bowls first, second and third on 11 October
-(`packages/calibration/anchors/reports/owner-wash-01/rank.txt`). That ranking was made with an
+**Why this order.** The calibration tool's ranking of candidate washes (`spotless-fit rank`,
+`docs/calibration/fitting.md` section 7) put tea in mugs first and the nested bowls third on
+11 October. That ranking was made with an
 earlier parameter set on the upper basket as it was then drawn, for the parameters the tool can
 fit. It has **not been run again** on the current set, and it cannot see what the washes of
 `docs/validation/README.md` section 8 found later that day: that the levels' margins rest on
@@ -332,64 +331,9 @@ mechanism at the values it was built with (it is not in this repository): the ne
 clean at the full wash, the crowded forks at score 1 to 2. (The wash: twelve catalogue pieces
 placed as above, with the bowls of wash 2; 12 October, the current set.)
 
-## Wash 4 (run C). The four yolk plates again, weighed, on Auto 45-65
-
-**Why.** The first test wash could not separate three things that move all four plates
-together: how much of the long soak of Eco 50 is spent spraying, how much enzyme the capsule
-carries, and how fast the enzyme works. Auto has no long soak. The same plates on Auto
-therefore answer to the enzyme and its life at 55 to 65 C and not to the soak, and the two
-washes together split what one could not.
-It is also the wash that would let Auto be calibrated: today every verdict on Auto is provisional
-(the game no longer uses Auto, so that matters only if it should come back).
-The tool ranked it first to third whatever parameters it assumed, the most stable of its
-candidates. It is last here because the two runs before it test what the game's score rests
-on, and this one sharpens a number the game already has.
-
-**The soil.** As in the first test wash (`owner-wash-01-egg-yolk.md`), weighed.
-
-- Raw egg yolk, no white, whisked with a fork.
-- **3.0 g** on each of the three large plates and **1.5 g** on the small one, weighed on the
-  plate. Spread with the fork over about two thirds of the flat centre; keep the rim clean.
-  (1.5 g on the small plate gives it a film as thick as on the others; in the model 3 g on it is
-  twice as thick and decides its verdict by itself.)
-- Two large plates: oven, 2 hours at 80 C, then 15 minutes on the counter.
-- One large plate and the small plate: on the counter for 2 hours 15 minutes.
-
-**Where.** Lower basket, rear rows, exactly as in the first test wash, with the cutlery basket
-at the front right. Count the gaps between tines from the left.
-
-| Plate | Drying | Place | In the game |
-|---|---|---|---|
-| 1, large | oven | seventh gap from the left, eating face to the middle | `dinner_plate_porcelain_270`: slot `tine_row_r1.slot_06` at its suggested drop, which is position `[172, 368, 143]`, orientation `{"preset": "on_edge", "roll_deg": 5, "yaw_deg": 90}` |
-| 2, large | air | eighteenth gap from the left (fifth from the right), eating face to the middle | slot `tine_row_r1.slot_17`: position `[375, 368, 143]`, orientation `{"preset": "on_edge", "roll_deg": 5, "yaw_deg": -90}` |
-| 3, large | oven | at the far left, eating face to the left wall, leaning on the side of the basket | position `[54, 368, 200]`, orientation `{"preset": "on_edge", "roll_deg": -8, "yaw_deg": -90}` |
-| 4, small | air | at the far right, eating face to the right wall, leaning on the side of the basket | `dessert_plate_porcelain_190`: position `[470, 368, 200]`, orientation `{"preset": "on_edge", "roll_deg": 0, "yaw_deg": 90}` |
-
-In the game the plates came to rest at `[170.6, 373.5, 139.5]`, `[376.8, 373.5, 139.5]`,
-`[25.0, 368.2, 153.4]` (leaning on the wall and the rim of the basket) and
-`[481.6, 373.5, 92.2]` (leaning 21 degrees on the rim). `list_slots` offers no place for a plate
-turned round, so plates 3 and 4 are held over the row and let down. In the model plate 3 stays
-leaning out over the side of the basket when the basket goes in. In your machine the tub may push
-it more upright: say in your notes how it stood when you opened the door.
-
-**Programme.** Auto 45-65, no options. **Note the time on the display at the start**: Auto
-chooses its course from what its sensor sees, and the display and the two clock times are the
-only record of which course it ran.
-
-**Photograph** each plate face on, a coin on the rim, before and after.
-
-**What it will settle.** The capsule's protease level (the tool expects its uncertainty to fall
-to about 0.6 of what it is) and, through it, the soak duty of Eco 50 (to about 0.67). Whether the
-model's Auto, which leaves protein dirtier than Eco, is right. With the yolk weighed, the amount
-no longer stands in the way as it did in the first test wash.
-
-**What the model says beforehand.** Not washed for this document. To be written from the
-current set, from `packages/calibration/records/owner/candidates/egg-plates-weighed-auto.planned.json`,
-before the wash is run.
-
 ## What comes after
 
-Ranked fourth to sixth by the tool on 11 October, and worth doing only after the four above:
+Ranked fourth to sixth by the tool on 11 October, and worth doing only after the three above:
 
 - Not one of the washes asked for, because the manual forbids it: the weighed yolk plates on
   Eco 50 with the lower arm held still by a tall piece, to see what a held arm costs plates in
@@ -400,7 +344,7 @@ Ranked fourth to sixth by the tool on 11 October, and worth doing only after the
   cloth and let it cool), Eco 50: the milk rate, which no measurement stands behind. Its place
   in the ranking is unstable.
 - A plain repeat of the first test wash with the yolk weighed. The tool ranks it last: it says
-  again what that wash said. If wash 4 is done, the weighing comes with it.
+  again what that wash said.
 - A frying pan with a fried egg stuck to it, left five hours (the top prize of the breakfast
   level, 18 points), face down in the lower basket on Eco 50. In the model it did not come
   clean in any placement tried by hand or by the two models, on a heat-ageing constant no wash
@@ -421,15 +365,13 @@ assumptions of the model:
   moved (0.5 to 0.8, anywhere from 0.59 to 1). The washes above narrow it only indirectly,
   through how clean things come out.
 - **The temperature course**: when the machine heats, to what, and how long it holds.
-- **Which course Auto 45-65 chose** on a given evening. The display time and the two clock times
-  narrow it; they do not settle it.
 - **The energy and the water** of a run, which the model reports (0.90 kWh on Eco 50 against the
   label's 0.836) and nothing checks.
 
 **A power log is the most useful single contribution after the washes.** A metering plug that
 logs power against time (one reading a minute or better, rated for the full load on the
 machine's rating plate, which the machine dossier reads as 2000 to 2400 W and 10 to 16 A) on
-one Eco 50 run and one Auto run settles most of this:
+one Eco 50 run settles most of this:
 
 - The heater is about two kilowatts and the pump a small fraction of that, so the log shows
   directly when the heater is on and, between heatings, when the pump runs. The soak duty would
@@ -437,7 +379,6 @@ one Eco 50 run and one Auto run settles most of this:
   calibration (duty against enzyme level against reaction rate).
 - The heating phases and their lengths give the temperature course to within the model's own heat
   balance, and the total gives the energy.
-- On Auto it shows which course ran.
 
 It is an integrated machine, so its plug may be behind a cabinet; that is the difficulty. Use
 only a plug-in meter between the machine's own plug and the socket. If the machine is wired to
@@ -551,5 +492,3 @@ contributor (the issues that `docs/ROADMAP.md` lists under "Calibration data").
 - **Two plates in one gap** (wash 3) cannot be placed through the game: the session refuses a
   second plate in an occupied gap. What the model says of it comes from the phenomena suite's
   hand-set row (P03).
-- Figures quoted from the tool for wash 4 (the uncertainty of the capsule's protease falling to
-  about 0.6 and of the soak duty to about 0.67) are of an earlier set, `anchored-v6`.

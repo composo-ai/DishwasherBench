@@ -22,9 +22,8 @@ export type Tier = 'fast' | 'official';
 export type Verdict = 'pass' | 'wrong sign' | 'too small' | 'too large' | 'not covered' | 'error';
 
 /**
- * Mechanisms the checklist needs and the simulation does not have (docs/design/scope.md):
- * a scenario that names one is reported as not covered until a wash result carries what
- * `capabilities.ts` looks for.
+ * Mechanisms the checklist needs that are out of scope (docs/design/scope.md): a scenario
+ * that names one is reported as not covered, and says which it needs.
  */
 export type Capability =
   'drying' | 'redeposition' | 'item_motion' | 'flaking' | 'spotting' | 'tablet_transport';
@@ -132,8 +131,7 @@ export interface CaseSpec {
    * empty list makes the item clean.
    */
   readonly soils?: (item: LoadItem, index: number) => readonly SoilSpec[] | undefined;
-  /** Programme id of the machine; default the scored programme (`eco_50`), or the one the run names. */
-  readonly programme?: string;
+  /** A change to Eco 50, the programme every wash runs on. */
   readonly programmeEdit?: ProgrammeEdit;
   /** Parameter overrides on top of the chosen parameter set. */
   readonly params?: Readonly<Record<string, ParamValue>>;
@@ -381,8 +379,6 @@ export interface SuiteReport {
   readonly paramSetsStale?: readonly string[];
   /** The detergent dosed, when not the machine's own dose of the reference detergent. */
   readonly detergent?: { readonly name: string; readonly dose_g: number };
-  /** Programme of the washes whose case names none, when not the owner's. */
-  readonly programme?: string;
   /** Fingerprint of the simulation's source the washes ran on (`simulationFingerprint`). */
   readonly sourceFingerprint?: string;
   readonly hydroHash: string;

@@ -35,9 +35,6 @@ problem is filed, add its row.
 | [#53](https://github.com/composo-ai/DishwasherBench/issues/53) | Phenomena reports record the parameter set by an absolute path                       | small  |                   |
 | [#45](https://github.com/composo-ai/DishwasherBench/issues/45) | There are no saved loads that show the stacking mistakes behind the open blocker     | medium |                   |
 | [#46](https://github.com/composo-ai/DishwasherBench/issues/46) | The fast tier gets the same forks and knife wrong in every wash of the standard load | medium |                   |
-| [#7](https://github.com/composo-ai/DishwasherBench/issues/7)   | Not modelled at all: drying, spots on glass, items moved by jets, redeposition       | large  |                   |
-| [#8](https://github.com/composo-ai/DishwasherBench/issues/8)   | Programmes other than Eco 50 are uncalibrated                                        | large  | needs the machine |
-| [#42](https://github.com/composo-ai/DishwasherBench/issues/42) | The machine data still names Auto 45-65 as the machine's primary programme           | medium |                   |
 
 ## Calibration data
 

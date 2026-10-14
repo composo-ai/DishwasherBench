@@ -1,36 +1,19 @@
 import { describe, expect, it } from 'vitest';
 import { getBasket } from './config.ts';
-import { BOSCH_SMV4HAX40G, SPOT_60 } from './machines.ts';
+import { BOSCH_SMV4HAX40G } from './machines.ts';
 import {
-  basketRimInset,
   basketRimPath,
   basketSideRecess,
   basketSideRecessOver,
   directionVector,
   polygonArea,
 } from './outline.ts';
-import { expectNear, expectWithin, must, toMm } from './test-util.ts';
+import { expectNear, must, toMm } from './test-util.ts';
 
 const lower = getBasket(BOSCH_SMV4HAX40G, 'lower');
 const upper = getBasket(BOSCH_SMV4HAX40G, 'upper');
 
 describe('the rim path of a basket', () => {
-  it('a plain basket is the rectangle of its rim centre lines', () => {
-    const rack = getBasket(SPOT_60, 'lower');
-    const path = basketRimPath(rack);
-    // 525 x 495 mm outside, 5.8 mm rim wire: centre lines 2.9 mm in.
-    expect(basketRimInset(rack).map((v) => Math.round(toMm(v) * 1e6) / 1e6)).toEqual([2.9, 2.9]);
-    expect(
-      path.map(([x, y]) => [Math.round(toMm(x) * 1e6) / 1e6, Math.round(toMm(y) * 1e6) / 1e6]),
-    ).toEqual([
-      [2.9, 2.9],
-      [522.1, 2.9],
-      [522.1, 492.1],
-      [2.9, 492.1],
-    ]);
-    expectWithin(polygonArea(path), 0.5192 * 0.4892, 1e-12);
-  });
-
   it('the Bosch lower basket has chamfered front corners and a rear recess for the riser', () => {
     const path = basketRimPath(lower, 4);
     const mm = path.map(([x, y]) => [toMm(x), toMm(y)] as const);
@@ -61,7 +44,7 @@ describe('the rim path of a basket', () => {
   });
 
   it('stays inside the outer plan rectangle', () => {
-    for (const basket of [...BOSCH_SMV4HAX40G.baskets, ...SPOT_60.baskets]) {
+    for (const basket of BOSCH_SMV4HAX40G.baskets) {
       for (const [x, y] of basketRimPath(basket)) {
         expect(x).toBeGreaterThanOrEqual(0);
         expect(x).toBeLessThanOrEqual(basket.outline.size[0]);

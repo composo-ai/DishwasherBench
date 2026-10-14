@@ -110,8 +110,7 @@ describe('malformed requests', () => {
         { rack: 'lower_rack', option: { name: 'height', value: '9' } },
         'unknown_option',
       ],
-      // (Eco 50 is the programme of the level and Auto 45-65 its secondary one: neither is unknown.)
-      ['start_cycle', { programme: 'intensive_70' }, 'unknown_programme'],
+      ['start_cycle', { programme: 'no_such_programme' }, 'unknown_programme'],
       ['list_slots', { rack: 'third_rack' }, 'unknown_rack'],
       ['get_item', { item_id: 'teapot_09' }, 'unknown_item'],
       ['get_report', undefined, 'no_cycle_started'],

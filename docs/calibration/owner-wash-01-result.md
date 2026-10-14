@@ -83,6 +83,5 @@ What the result says about choices made after the prediction:
 What it cannot tell:
 - Rate, enzyme level and soak duty apart from one another: all three move the four plates together.
 - Whether the small plate would have been dirty with more yolk on it.
-- Anything about Auto.
 
 The calibration that follows from this wash is recorded separately.

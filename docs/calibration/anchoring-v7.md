@@ -22,11 +22,12 @@ method (`anchoring.md`, `fitting.md`) stand as written; this one says what chang
 > glass 2.73 to 2.97 (was 3.54 to 3.78), milk glasses 1.50 to 1.88 (2.75 to 3.13) and a load
 > mean of 4.06 to 4.09 (4.22 to 4.25); with the tablet blocked the load mean is 2.74 to 2.77
 > (2.78 to 2.81); at the fast tier the careless load has glass 2.81 and a mean of 4.00 (3.62 and
-> 4.16). On Auto 45-65 the careful load reads crockery 2.68, tea items 2.9, 73 of 114 clean and
-> 45 of 86 soiled items clean (2.83, 3.2, 74 and 46). In section 6 read "score 5, full of
+> 4.16). In section 6 read "score 5, full of
 > water, not clean" for a glass standing mouth up as "not clean, with a low score". The tables of the phenomena
-> suite were run again on the final code with the same verdicts (17, 15, 4, 2, 9, 1;
-> `packages/sim-verify/phenomena/reports/phenomena-fast-anchored-v7.owner-capsule.md`). The old
+> suite were run again on the final code with the same verdicts (17, 15, 4, 2, 9, 1). P27 and
+> P32 have since been removed from the suite; the current report
+> (`packages/sim-verify/phenomena/reports/phenomena-fast-anchored-v7.owner-capsule.md`, 46
+> phenomena) reads 17, 15, 2, 2, 9, 1. The old
 > demonstration results this note compares with in section 2 are now under
 > `packages/sim-verify/demos/v5-old-basket/`.
 
@@ -215,8 +216,6 @@ loads, out of 90 soiled items.
 | Careless, fast tier (1) | 3.53 | 4.71 / 2.1 | 4.56 | 3.62 | 2.88 | 4.16 | 92 of 113 | 64 of 85 | |
 | Careless, tablet blocked, fast tier (1) | 1.21 | 1.95 / 0.0 | 3.79 | 1.75 | 0.00 | 2.73 | 60 of 113 | 32 of 85 | 32 of 90 |
 | Careful, the stable-protease layer (1) | 4.04 | 5.00 / 2.7 | 4.63 | 3.29 | 2.38 | 4.28 | 96 of 114 | 68 of 86 | 67 of 90 |
-| Auto 45-65, careful (secondary, provisional) | 2.83 | 2.81 / 3.2 | 3.88 | 1.75 | 0.00 | 3.29 | 74 of 114 | 46 of 86 | 47 of 90 |
-| Auto 45-65, careless, tablet free | 2.18 | 2.52 / 2.1 | 3.88 | 1.75 | 0.00 | 3.12 | 69 of 113 | 41 of 85 | |
 
 By soil, careful / careless as saved / careless with the tablet blocked (items clean):
 
@@ -273,14 +272,19 @@ The pairs of the phenomena suite with the capsule on Eco 50 (the suite's own loa
 
 ## 7. The phenomena suite at the fast tier
 
-48 phenomena, 82 washes, the capsule on Eco 50
-(`anchors/reports/v7/phenomena/phenomena-fast-anchored-v7.owner-capsule.md`; this morning's
-run is `anchors/reports/owner-wash-01/phenomena/`):
+48 phenomena, 82 washes, the capsule on Eco 50 (the reports of this run and of this morning's
+are in the repository's history):
 
-| | Pass | Too small | Too large | Wrong sign | Not covered | Error |
+| | Pass | Too small | Too large | Wrong sign | Out of scope | Error |
 |---|---|---|---|---|---|---|
 | This morning (`anchored-v6`, old basket) | 17 | 14 | 6 | 1 | 9 | 1 |
 | **Now (`anchored-v7`, corrected basket)** | **17** | **15** | **4** | **2** | 9 | 1 |
+
+Two of the "too large" were P27 and P32, which compared programmes; they have since been removed
+from the suite (`docs/design/scope.md`, "Out of scope"). The current report
+(`packages/sim-verify/phenomena/reports/phenomena-fast-anchored-v7.owner-capsule.md`, 46
+phenomena, 76 washes) reads 17 pass, 15 too small, 2 too large, 2 wrong sign, 9 out of scope and 1
+error; nothing else changed.
 
 Six verdicts changed. Two because the load is now what the phenomenon describes, four because
 the upper basket and the loads on it changed; none because the bleach rate moved.
@@ -319,29 +323,27 @@ Every verdict, with the deciding checks (the value this morning in brackets wher
 | P18 | Cutlery tray against basket | pass | pass | water 0 to 2.02 |
 | P19 | Loading beyond rated capacity | wrong sign | **pass** | mean 4.27 to 3.91 (was: mean 3.6 to 3.67) |
 | P20 | Total soil load | too small | too small | mean 4.05 to 4.05 (was: mean 3.43 to 3.43) |
-| P21 | Redeposition of particulates | not covered | not covered |  |
+| P21 | Redeposition of particulates | out of scope | out of scope |  |
 | P22 | Clean neighbours of soiled items | pass | pass | clean 0 |
-| P23 | End-of-cycle drips from the upper rack | not covered | not covered |  |
+| P23 | End-of-cycle drips from the upper rack | out of scope | out of scope |  |
 | P24 | Arrangement does not matter for easy soils (negative control) | pass | pass | range 0.0682 (was: range 0.174) |
 | P25 | Detergent dispenser blocked | too large | too large | protein 0.265; tea 0.402; score 3.67 to 0 (was: protein 0.265; tea 0.43; score 2.67 to 0) |
-| P26 | Tablet trapped or dissolving in a dead spot | not covered | not covered |  |
-| P27 | Time and temperature trade | too large | too large | score 0 to 3 |
+| P26 | Tablet trapped or dissolving in a dead spot | out of scope | out of scope |  |
 | P28 | Bleachable stains are position-insensitive (negative control) | pass | pass | position 0; bleach 6.66e-16 (was: position -1; bleach -8.88e-16) |
 | P29 | Ageing of the soil before the wash | pass | pass | fresh 0; dried 0; baked 3 to 2 |
 | P30 | Protein soil responds to hit frequency and chemistry, not to jet strength | pass | pass | pump 1 to 1; enzyme 0.0481 to 0.718 |
 | P31 | Starch is bimodal | too small | too small | clusters 1; both 0 |
-| P32 | Microwaved milk on glass is persistent | too large | too large | class -2.05; eco 0.25 to 5 |
 | P33 | Fat needs temperature and enough water | too small | too small | warm 0; temperature 5.69e-22 to 2.15e-13 (was: warm 0; temperature 6.97e-22 to 2.52e-13) |
-| P34 | Thick layers detach as flakes | not covered | not covered |  |
+| P34 | Thick layers detach as flakes | out of scope | out of scope |  |
 | P35 | Pot interiors | too small | too small | class 1; side 0 to 0 |
 | P36 | Water pools in the base recess of inverted cups and mugs | pass | pass | pool 5 |
 | P37 | Tilt drains the recess | too small | too small | tilt7 5 to 0.418; tilt15 5 to 0.111 |
-| P38 | Plastic stays wet | not covered | not covered |  |
-| P39 | Pots and large hollow ware stay wet | not covered | not covered |  |
+| P38 | Plastic stays wet | out of scope | out of scope |  |
+| P39 | Pots and large hollow ware stay wet | out of scope | out of scope |  |
 | P40 | Liquid held at contact points and in narrow gaps | pass | **wrong sign** | held 2.58 to 2.3 (was: held 2.27 to 2.75) |
-| P41 | Light plastic items are moved or flipped by jets | not covered | not covered |  |
-| P42 | Cutlery dries almost completely (negative control) | not covered | not covered |  |
-| P43 | Spots, film and tine marks on glass | not covered | not covered |  |
+| P41 | Light plastic items are moved or flipped by jets | out of scope | out of scope |  |
+| P42 | Cutlery dries almost completely (negative control) | out of scope | out of scope |  |
+| P43 | Spots, film and tine marks on glass | out of scope | out of scope |  |
 | P44 | Cutlery comes out clean although it is the most shadowed class | pass | **too small** | class -1.05 (was: class -0.916) |
 | P45 | Class ranking in the standard test | pass | **wrong sign** | overall 0; crockery 0.447; glass 0; ranking -0.594 (was: overall 0; crockery 0; glass 0.462; ranking 0.593) |
 | P46 | Run-to-run repeatability | too small | too small | spread 0.0342 (was: spread 0.0189) |
@@ -368,8 +370,7 @@ The official tier does not move with its own sampling at all. What moves a verdi
 of the soil (six of 86) and the tier: on cutlery the fast tier disagrees on nearly one verdict
 in four, and the disagreement is systematic, not noise: two forks and a knife are clean
 officially and dirty at the fast tier in all eight pairs, two forks the other way round. **A
-level tuned at the fast tier must not rest on a fork or a knife.** Auto 45-65 was not measured
-on this set; the fast-tier note of a wash on Auto quotes the Eco figures and says so.
+level tuned at the fast tier must not rest on a fork or a knife.**
 
 ## 9. What a wash costs
 
@@ -379,7 +380,7 @@ directory>`, under `/usr/bin/time -l`), M3 Pro, about 18:50. **The machine was n
 other official wash of this work ran beside each (load average 7), so the times are upper
 bounds; memory is not affected.
 
-| | Standard load, careful, Eco 50 (`iec-13-careful --programme eco_50`, 114 items) | Largest level, careful (`dinner-party-careful`, 49 items, Eco 50) |
+| | Standard load, careful, Eco 50 (`iec-13-careful`, 114 items) | Largest level, careful (`dinner-party-careful`, 49 items, Eco 50) |
 |---|---|---|
 | Whole wash | **390 s** | **328 s** |
 | Scene / exposure / soil / replay / inspection | 13.5 / 363.1 / 1.4 / 8.6 / 2.5 s | 9.4 / 312.0 / 1.4 / 3.0 / 1.2 s |
@@ -394,8 +395,8 @@ Nearly all of a cold wash is the exposure: four spray states, each a trace of ev
 and most of that is the machine itself (a load of one plate, or of two spoons, cost 170 to
 290 s cold at the official tier this evening). A wash that only changes a soil-side value, the detergent or
 the seed of the soil reuses it. Earlier in the evening, with the machine heavily loaded (three
-washes of this work and another engineer's load generation), the same two washes took 466 s
-(the standard load on Auto 45-65, which its saved level still names; 1.18 GB) and 368 s. A
+washes of this work and another engineer's load generation), the largest level took
+368 s. A
 process that washes eight standard loads in a row grows to 1.62 GB.
 
 ## 10. Faces lying against another body

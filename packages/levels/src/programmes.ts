@@ -1,19 +1,12 @@
 /**
- * Which programme the game is scored on, which others the wash can be run on for research, and
- * what is put in the dispenser.
+ * Which programme the game is scored on, and what is put in the dispenser.
  *
  * Decision of 10 October 2026 (docs/reference/owner-measurements.md, last sections): the game
  * is scored on Eco 50. It is a fixed, printed programme (4 h 55 min, 9.5 L, 0.836 kWh, a wash
  * at 50 degrees C, no sensor decisions), the only regime with a published quantitative result
  * on a sister machine for the wash simulation to be anchored to, and at 50 degrees C the
- * detergent's enzymes survive whatever their grade.
- *
- * Decision of 11 October 2026, after the first play test found remnants of the Auto cycle in
- * the interface: no level of the game offers another programme.
- * A level card lists no secondary programme, `start_cycle` accepts none, and no text a player
- * or an agent reads names one. Auto 45-65 stays a programme of the machine that the wash
- * command line runs for research (`wash-load.ts --programme auto_145`, `reference-table
- * --programme auto_145`); the wash simulation is not calibrated for it and says so there.
+ * detergent's enzymes survive whatever their grade. It is the only programme the simulation
+ * washes on; the others of the machine are out of scope (docs/design/scope.md).
  *
  * The detergent is the owner's: one capsule of Finish Powerball Ultimate, 12.9 g
  * (docs/research/detergent-finish-ultimate.md). The wash runner washes the owner's machine
@@ -24,22 +17,6 @@
 
 /** The programme every level of the game is scored on. */
 export const GAME_PROGRAMME_ID = 'eco_50';
-
-/**
- * Programmes a level of the game offers beside the scored one: none. (Until 11 October 2026:
- * Auto 45-65.) A research level may still name programmes in `Level.secondaryProgrammes`.
- */
-export const SECONDARY_PROGRAMME_IDS: readonly string[] = [];
-
-/**
- * Programmes of the owner's machine the wash can be run on from the command line for research,
- * beside the scored one. None of them is calibrated, and none is offered to a player.
- */
-export const RESEARCH_PROGRAMME_IDS: readonly string[] = ['auto_145'];
-
-/** What a report says about a programme the wash simulation is not calibrated for. */
-export const UNCALIBRATED_PROGRAMME_NOTE =
-  'Uncalibrated. The wash simulation is anchored to published results of an Eco programme and to nothing on this one: its verdicts here, above all on egg, meat, cheese, heated milk, tea, coffee and wine, are provisional. A wash on this programme is reported and labelled, and is not a benchmark result.';
 
 /** What a player is told about the scored programme. */
 export const SCORED_PROGRAMME_NOTE =

@@ -342,8 +342,8 @@ describe('patches, interrupted observations and what a replay costs', () => {
     const change = (a: Float64Array, b: Float64Array): number =>
       Math.max(...ends.map((i) => Math.abs((a[i] ?? 0) - (b[i] ?? 0))));
     // Which way each goes depends on how the enzyme fares in a cooler or shorter main wash, so
-    // only the change is asserted.
-    expect(change(cooler.eta, base.eta)).toBeGreaterThan(0.005);
+    // only the change is asserted (on Eco 50 a main wash 12 K cooler moves it by about 0.45 %).
+    expect(change(cooler.eta, base.eta)).toBeGreaterThan(0.002);
     expect(change(shorter.eta, base.eta)).toBeGreaterThan(0.005);
     const scaled = await prepared.evaluate(
       createCalibrationParams({ 'cal.holdTimeScale': 0.2, 'cal.jetShearScale': 3 }),

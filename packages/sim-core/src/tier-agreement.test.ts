@@ -36,7 +36,7 @@ describe('the note of a fast wash', () => {
   });
 
   it('says so when the programme of the wash was not the one measured, or nothing was', () => {
-    expect(fastTierNote(measured, 'auto_145')).toContain(
+    expect(fastTierNote(measured, 'not_measured')).toContain(
       'on eco_50 (this programme was not measured',
     );
     expect(fastTierNote(null, 'eco_50')).toContain('has not been measured');

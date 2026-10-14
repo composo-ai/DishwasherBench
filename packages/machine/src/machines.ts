@@ -7,12 +7,9 @@
  * - `BOSCH_SMV4HAX40G_DRILL_BORE`: the same machine with the one figure of the owner's that is
  *   not reconciled, the 4.5 mm bore of the lower arm's round holes by his drill test (3.3 mm on
  *   his photograph is the default). A named alternative, not a second machine.
- * - `SPOT_60`: the generic baseline of docs/research/machine.md section 12.1, a second machine
- *   for tests and comparisons.
  */
 
 import { BOSCH_SMV4HAX40G_DEF, BOSCH_SMV4HAX40G_DRILL_BORE_DEF } from './data/bosch-smv4hax40g.ts';
-import { SPOT60_DEF } from './data/spot60.ts';
 import { loadMachineSpec } from './load.ts';
 import type { ProgrammeSpec } from './programme-types.ts';
 import type { MachineSpec } from './types.ts';
@@ -29,11 +26,8 @@ export const BOSCH_SMV4HAX40G_DRILL_BORE: MachineSpec = loadMachineSpec(
   BOSCH_SMV4HAX40G_DRILL_BORE_DEF,
 );
 
-/** The generic SPOT-60 baseline machine. SI units, platform frames. */
-export const SPOT_60: MachineSpec = loadMachineSpec(SPOT60_DEF);
-
 /** Every machine of this package, the primary one first. */
-export const MACHINES: readonly MachineSpec[] = [BOSCH_SMV4HAX40G, SPOT_60];
+export const MACHINES: readonly MachineSpec[] = [BOSCH_SMV4HAX40G];
 
 /** The machine the simulation is based on. */
 export const PRIMARY_MACHINE: MachineSpec = BOSCH_SMV4HAX40G;

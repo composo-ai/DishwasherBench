@@ -33,12 +33,9 @@ export interface HarnessGame {
   summary(episodeId: string): Promise<SessionSummary>;
   /**
    * Starts the cycle of an episode on the harness's own account (logged like any call), on the
-   * programme the level is scored on unless one of its secondary programmes is named.
+   * programme the level is scored on.
    */
-  startCycle(
-    episodeId: string,
-    programme?: string,
-  ): Promise<{ accepted: boolean; reason?: string; detail?: string }>;
+  startCycle(episodeId: string): Promise<{ accepted: boolean; reason?: string; detail?: string }>;
   /** The episode record as the server holds it. */
   record(episodeId: string): Promise<EpisodeRecord>;
   /** Stops a server this process started; nothing for a server that was only reached. */
@@ -108,10 +105,8 @@ function gameAt(
     },
     summary: (episodeId) =>
       json<SessionSummary>('GET', `${url}/api/sessions/${episodeId}`, 'the summary'),
-    startCycle: (episodeId, programme) =>
-      json('POST', `${url}/api/sessions/${episodeId}/start_cycle`, 'start_cycle', {
-        body: programme === undefined ? {} : { programme },
-      }),
+    startCycle: (episodeId) =>
+      json('POST', `${url}/api/sessions/${episodeId}/start_cycle`, 'start_cycle', { body: {} }),
     record: (episodeId) =>
       json<EpisodeRecord>('GET', `${url}/api/sessions/${episodeId}/episode`, 'the episode record', {
         headers: admin,

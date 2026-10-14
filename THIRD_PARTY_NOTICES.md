@@ -33,8 +33,8 @@ All other sounds in the game are synthesised by the game's own code.
   that keeps a few of the manual's short phrases; it is not the manufacturer's instructions. The
   manual is copyright BSH Hausgeräte GmbH.
 - **Spray-arm nozzle layout of the generic baseline.** The radial positions and angles of ten
-  nozzles in `packages/machine/src/data/spot60.ts` are the published measurements of a Whirlpool
-  DU750 lower spray arm from R. Pérez-Mohedano, EngD thesis, University of Birmingham, 2016
+  nozzles in `docs/research/machine.md` are the published measurements of a Whirlpool DU750
+  lower spray arm from R. Pérez-Mohedano, EngD thesis, University of Birmingham, 2016
   (Table 5.7). They are used as cited facts.
 - **Reference detergent and scoring scales.** The composition of IEC reference detergent type D
   and the cleaning and drying score bands of IEC 60436 appear in the simulation's defaults and

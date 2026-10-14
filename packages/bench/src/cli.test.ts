@@ -65,35 +65,6 @@ describe('spotless-bench run: the options of the wash', () => {
   });
 });
 
-describe('spotless-bench run: the programme', () => {
-  it('refuses a programme the level does not offer before an episode is played', async () => {
-    // Review of the product, 2026-10-11: `--programme auto_145` played the whole episode and
-    // only then failed, because start_cycle refuses a programme the level card does not list.
-    const dir = mkdtempSync(join(tmpdir(), 'spotless-cli-programme-'));
-    dirs.push(dir);
-    const result = await run([
-      'run',
-      '--levels',
-      'tutorial',
-      '--policies',
-      'careful',
-      '--tier',
-      'fast',
-      '--no-render',
-      '--programme',
-      'auto_145',
-      '--out',
-      dir,
-    ]);
-    expect(result.status).toBe(2);
-    expect(result.err).toMatch(
-      /level 'tutorial' is washed on eco_50; it does not offer --programme auto_145/,
-    );
-    expect(result.err).toMatch(/Nothing was played/);
-    expect(result.out).not.toMatch(/careful/);
-  });
-});
-
 describe('spotless-bench: the environment file', () => {
   it('is read, and named, only when a run starts', async () => {
     const dir = mkdtempSync(join(tmpdir(), 'spotless-cli-env-'));

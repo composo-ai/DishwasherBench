@@ -21,7 +21,7 @@ describe('identifiers', () => {
       'lower_rack.tine_row_2',
       'handle.2',
       'fam07-seed3',
-      'spot60',
+      'bosch_smv4hax40g',
       '7up',
     ]) {
       expect(isValidId(id)).toBe(true);
@@ -52,7 +52,7 @@ describe('identifiers', () => {
     expect(typeof itemTypeId('dinner_plate_270')).toBe('string');
     expect(materialId('porcelain_glazed')).toBe('porcelain_glazed');
     expect(soilId('porridge_dried')).toBe('porridge_dried');
-    expect(machineId('spot60')).toBe('spot60');
+    expect(machineId('bosch_smv4hax40g')).toBe('bosch_smv4hax40g');
     expect(programmeId('eco_50')).toBe('eco_50');
     expect(levelId('fam07-seed3')).toBe('fam07-seed3');
   });

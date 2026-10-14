@@ -1,6 +1,6 @@
 {
   "machine": "bosch_smv4hax40g",
-  "programme": "auto_145",
+  "programme": "eco_50",
   "tier": "fast",
   "levelSeed": 7,
   "simSeed": 3,

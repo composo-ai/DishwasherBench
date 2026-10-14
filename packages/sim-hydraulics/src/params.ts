@@ -96,7 +96,7 @@ export const HYDRAULICS_PARAM_DEFS: readonly AnyParamDef[] = [
     max: 14400,
     tag: 'ESTIMATED',
     source:
-      'machine dossier 4.7 says "intermittent spraying" of the long soak of Eco 50 (149 min) only; the post-wash of Auto 45-65 (42 to 46 min) is written with the pump on, as the published trace of an automatic programme shows it (auto-programme evidence 2.3): a hold of the main wash is sprayed intermittently when it is at least this long',
+      'machine dossier 4.7 says "intermittent spraying" of the long soak of Eco 50 (149 min); the pattern is not given. A hold of the main wash is sprayed intermittently when it is at least this long',
     group: 'soil',
     calibration: 'programme',
   },

@@ -71,7 +71,7 @@ export interface ComboId {
   /** Diverter state: `L` lower, `U` upper, `A` all; machine data may define others. */
   readonly diverter: string;
   /**
-   * Pump class, named by its class-centre speed in rpm (2700 and 3000 in AUTO-145); speeds
+   * Pump class, named by its class-centre speed in rpm (2800 and 3000 in Eco 50); speeds
    * within the class half-width of the centre share one exposure set.
    */
   readonly pumpClass: number;

@@ -13,7 +13,6 @@ import {
   OWNER_CAPSULE_STABLE,
 } from './anchored.ts';
 import { eggYolkRates, ikwResidues } from './bench.ts';
-import { AUTO_COURSES } from './courses.ts';
 import { ROUND_ROBIN_TA, STANDARD_COMPOSITION } from './literature.ts';
 import { soilStandings } from './objective.ts';
 import {
@@ -197,17 +196,6 @@ describe('the scenario and the literature record', () => {
     expect(groupMeanLogLikelihood(3.68, 3.68, 1.11)).toBeGreaterThan(
       groupMeanLogLikelihood(3.68, 2.56, 1.11),
     );
-  });
-
-  it('builds the candidate courses of Auto with a staged heat-up where one is named', () => {
-    expect(AUTO_COURSES['as_written']?.()).toBeNull();
-    const staged = AUTO_COURSES['staged_55']?.();
-    const kinds = (staged?.steps ?? []).filter((s) => s.phase === 'main_wash').map((s) => s.kind);
-    expect(kinds.join(',')).toContain('heat,hold,heat,hold');
-    const single = AUTO_COURSES['single_55']?.();
-    expect(
-      (single?.steps ?? []).filter((s) => s.kind === 'heat' && s.phase === 'main_wash'),
-    ).toHaveLength(1);
   });
 });
 

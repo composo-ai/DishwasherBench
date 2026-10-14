@@ -11,13 +11,12 @@
 import { poseCompose, quatFromAxisAngle, quatRotate, type Vec3 } from '@spotless/core';
 import { control, direction, outside, quantity, scoreChange, within } from './bands.ts';
 import { band, byId, byPrefix, egg, oats, tea } from './kit.ts';
-import { ECO_PROGRAMME } from './programmes.ts';
 import {
   check,
   difference,
   fJet,
   film,
-  futureField,
+  absentField,
   meanOver,
   meanScore,
   pooled,
@@ -345,7 +344,7 @@ export const GROUPS_BCD: readonly Scenario[] = [
         false,
         control(0.25, 'drying score on face-up spoon bowls 0'),
         single('B', (run) =>
-          meanOver(run, ids('spoon', 6), (r, id) => futureField(r.item(id), 'drying', 'score')),
+          meanOver(run, ids('spoon', 6), (r, id) => absentField(r.item(id), 'drying', 'score')),
         ),
         ['drying'],
       ),
@@ -435,7 +434,7 @@ export const GROUPS_BCD: readonly Scenario[] = [
     test: 'Seven clean dinner plates (A) against the same with 20 g of minced spinach on one of them (B); specks on the plates that started clean',
     adapted: 'A row of plates in the lower basket instead of a whole load.',
     requires: ['redeposition'],
-    stages: 'soil: redeposition (not built)',
+    stages: 'soil: redeposition (out of scope)',
     resolutionSensitive: false,
     cases: [
       { label: 'A', what: 'no spinach', load: 'plates-18', soils: () => [], surfaces: [] },
@@ -477,7 +476,7 @@ export const GROUPS_BCD: readonly Scenario[] = [
     mechanism: 'Transfer by splash and by contaminated liquor only',
     test: 'Seven dinner plates in neighbouring slots, every second one with egg yolk; the clean ones are scored',
     adapted: 'A row of plates in the lower basket instead of a whole load.',
-    stages: 'soil: liquor, redeposition (not built: the clean plates cannot pick anything up)',
+    stages: 'soil: liquor, redeposition (out of scope: the clean plates cannot pick anything up)',
     resolutionSensitive: false,
     cases: [
       {
@@ -513,7 +512,7 @@ export const GROUPS_BCD: readonly Scenario[] = [
     test: 'Seven dinner plates in the lower basket with an empty upper basket (A) against three mugs mouth down in the upper basket (B)',
     adapted: 'Three mugs stand for the loaded upper basket.',
     requires: ['drying'],
-    stages: 'water: drain-down after the last rinse and drying (not built)',
+    stages: 'water: drain-down after the last rinse and drying (out of scope)',
     resolutionSensitive: false,
     cases: [
       {
@@ -546,7 +545,7 @@ export const GROUPS_BCD: readonly Scenario[] = [
           'A',
           'B',
           (run) =>
-            meanOver(run, ids('plate', 7), (r, id) => futureField(r.item(id), 'drying', 'score')) /
+            meanOver(run, ids('plate', 7), (r, id) => absentField(r.item(id), 'drying', 'score')) /
             2,
         ),
       ),
@@ -697,9 +696,9 @@ export const GROUPS_BCD: readonly Scenario[] = [
       'A tablet that lands in a cutlery basket, an upright bowl or a rack corner dissolves slowly and locally',
     test: 'A dessert plate with egg yolk washed with the tablet released into its tray (A) against a tablet that lands in an upright bowl (B)',
     adapted:
-      'The wash has no input for where the tablet lands; B is washed as A until it has one, and the scenario is reported as not covered.',
+      'Where the tablet lands is out of scope, and the wash has no input for it: B is washed as A, and the scenario is reported as not covered.',
     requires: ['tablet_transport'],
-    stages: 'soil: liquor (tablet transport and local dissolution, not built)',
+    stages: 'soil: liquor (tablet transport and local dissolution, out of scope)',
     resolutionSensitive: false,
     cases: [
       {
@@ -725,70 +724,6 @@ export const GROUPS_BCD: readonly Scenario[] = [
         true,
         direction(-1, 'similar to under-dosing; size unknown: calibration parameter'),
         difference('A', 'B', (run) => score(run, 'plate')),
-      ),
-    ],
-  },
-  {
-    id: 'P27',
-    title: 'Time and temperature trade',
-    group: 'D',
-    mechanism: 'Hydration, enzymatic and bleach reactions need time; fat needs temperature',
-    test: 'A dessert plate with egg yolk (well) and porridge (rim) in the lower basket on the short programme (A, Express 65, 1 h), the eco programme (B, Eco 50, 4 h 55 min) and the intensive programme (C, Intensive 70)',
-    adapted:
-      "The three programmes are those of the owner's machine as the machine package models them.",
-    stages:
-      'soil: liquor (temperature course, enzyme life), hydration, chemistry; machine: programme timeline',
-    resolutionSensitive: false,
-    cases: [
-      {
-        label: 'A',
-        what: 'Express 65',
-        load: 'plate-facing',
-        programme: 'express_65',
-        soils: byId({ plate: [egg('well'), oats('rim')] }),
-        surfaces: [{ item: 'plate', regions: ['well', 'rim'] }],
-      },
-      {
-        label: 'B',
-        what: 'Eco 50',
-        load: 'plate-facing',
-        programme: ECO_PROGRAMME,
-        soils: byId({ plate: [egg('well'), oats('rim')] }),
-        surfaces: [{ item: 'plate', regions: ['well', 'rim'] }],
-      },
-      {
-        label: 'C',
-        what: 'Intensive 70',
-        load: 'plate-facing',
-        programme: 'intensive_70',
-        soils: byId({ plate: [egg('well'), oats('rim')] }),
-        surfaces: [{ item: 'plate', regions: ['well', 'rim'] }],
-      },
-    ],
-    checks: [
-      check(
-        'score',
-        'IEC score of the plate, eco minus short',
-        'score',
-        true,
-        scoreChange(0.45, 0.65, '270 min at 54 C gave 4.15; 97 min at 50 C gave 3.5 to 3.7'),
-        difference('A', 'B', (run) => score(run, 'plate')),
-      ),
-      check(
-        'residue',
-        'share of the soil left on the plate, eco minus short',
-        '1',
-        false,
-        direction(-1, 'short programmes fail on starch and protein', 0.01),
-        difference('A', 'B', (run) => residualFraction(run, 'plate')),
-      ),
-      check(
-        'intensive',
-        'share of the soil left on the plate, intensive minus short',
-        '1',
-        false,
-        direction(-1, 'more time and temperature remove more', 0.01),
-        difference('A', 'C', (run) => residualFraction(run, 'plate')),
       ),
     ],
   },

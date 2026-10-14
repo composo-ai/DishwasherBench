@@ -1,6 +1,6 @@
 /**
  * Small levels for the tests of this package: a handful of clean items that fit easily, on the
- * owner's machine with its Auto programme.
+ * owner's machine with its Eco 50 programme.
  */
 
 import type { Level, LevelItem } from '@spotless/levels';

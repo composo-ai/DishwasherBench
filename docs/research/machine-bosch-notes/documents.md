@@ -14,18 +14,15 @@ Everything below was read this session from the files named in section 15 (most 
 
 Each number carries one tag. "Not found" means I looked in every official document listed in section 15 and it is not there.
 
-### 0.2 The ten things that matter most for the simulator
+### 0.2 The seven things that matter most for the simulator
 
 1. This machine has a **cutlery basket in the lower basket and no third rack**. The top spray level is **not an arm**: the official parts list for E-Nr SMV4HAX40G/13 has a "Shower, roof-spinning top" (00611388, German "Brause Dachkreisel") fed by a rear "feeding pipe with sprinkler disk" (11003118). SPOT-60's third rack and 135 mm top arm must both go. (sections 3.2, 8.3)
-2. **Auto 45-65 is printed only as a range**: duration 1:40 to 2:45, energy 0.900 to 1.500 kWh, water 7.0 to 15.5 litres. No official document prints 2:25 or ties any duration to a soil level or option. 2:25 lies inside the range, 20 min below its top. (section 5.4)
-3. The only printed description of the Auto sequence says that it is sensor-controlled and optimised according to how soiled the washing water is (the wording is quoted in section 5.4). The AquaSensor text says what the sensor changes: whether the rinsing water is drained or reused (3 to 6 litres), and in automatic programmes the temperature and the run time. (section 5.4)
-4. All options are available with Auto. Their printed effects: SpeedPerfect+ shortens by 15 % to 75 % and raises energy and water; Half Load shortens and lowers both; Extra Dry raises the final-rinse temperature and extends drying. (section 5.3)
-5. **Drying is condensation on the tub with a heat exchanger and a closed door**. There is no automatic door opening on this model. SPOT-60's "heat_exchanger_plus_auto_open" is wrong for it. (section 3.2)
-6. **Rackmatic has three positions 25 mm apart**. Maximum plate diameter: top basket 22 / 24.5 / 27 cm, bottom basket 30 (31 in one marked position) / 27.5 / 25 cm. Top plus bottom is 52 cm at every level. (section 6.1)
-7. **Two foldable tine rows per basket**, not four: in the lower basket the two rear rows, in the upper basket one line on the right split into a front and a rear segment. Official product data, the bill of materials and the owner's photographs agree. (section 6.2, 6.3)
-8. The tablet falls from the door dispenser into a **tablet collecting tray at the front centre of the upper basket**; nothing may sit in or in front of it. Dispenser marks: 15 / 25 / 50 ml; 20 to 25 ml is the manual's dose for normal soiling. (section 7.1)
-9. Filter: three parts. Official part dimensions: coarse filter 79 mm diameter by 131 mm, micro filter 71 mm diameter by 92 mm. The machine reports clogged filters itself (error E:92-40). (section 8.1)
-10. The official loading plan for 13 place settings is **not published**. BSH supplies it to test institutes by e-mail against the E-Nr and FD; the owner has both. (section 6.8)
+2. **Drying is condensation on the tub with a heat exchanger and a closed door**. There is no automatic door opening on this model. SPOT-60's "heat_exchanger_plus_auto_open" is wrong for it. (section 3.2)
+3. **Rackmatic has three positions 25 mm apart**. Maximum plate diameter: top basket 22 / 24.5 / 27 cm, bottom basket 30 (31 in one marked position) / 27.5 / 25 cm. Top plus bottom is 52 cm at every level. (section 6.1)
+4. **Two foldable tine rows per basket**, not four: in the lower basket the two rear rows, in the upper basket one line on the right split into a front and a rear segment. Official product data, the bill of materials and the owner's photographs agree. (section 6.2, 6.3)
+5. The tablet falls from the door dispenser into a **tablet collecting tray at the front centre of the upper basket**; nothing may sit in or in front of it. Dispenser marks: 15 / 25 / 50 ml; 20 to 25 ml is the manual's dose for normal soiling. (section 7.1)
+6. Filter: three parts. Official part dimensions: coarse filter 79 mm diameter by 131 mm, micro filter 71 mm diameter by 92 mm. The machine reports clogged filters itself (error E:92-40). (section 8.1)
+7. The official loading plan for 13 place settings is **not published**. BSH supplies it to test institutes by e-mail against the E-Nr and FD; the owner has both. (section 6.8)
 
 ## 1. Identity
 
@@ -44,7 +41,7 @@ Laser-etched on the top edge of the inner door, directly above the programme lab
 | Electrical | 220 - 240 V, 50 - 60 Hz, 2000 - 2400 W, 10 - 16 A | [VERIFIED] |
 | Marks | Made in Germany, VDE, CE, WEEE, www.bosch-home.com | [VERIFIED] |
 
-Programme labels on the panel, left to right: Eco 50°, Auto 45°-65°, Intensive 70°, Express 65°, Silence 50°, Favourite (star) [VERIFIED, same photograph]. Note the panel says "Express 65°" while the manual's table calls the same programme "Express 65° - 1h".
+The panel carries Eco 50° among its programme buttons [VERIFIED, same photograph].
 
 Production date: FD 0106 decodes as June 2021 (first two digits plus 20 give the year, last two the month) [RECALLED]. Consistent with EPREL: model placed on the Union market from 01/03/2021 to 31/12/2024 [VERIFIED, EPREL fiche p.2], and with "New for 2021" on the Irish spec sheet [VERIFIED].
 
@@ -90,7 +87,6 @@ Index /10 exists with fewer documents; index /01 returns an error page [VERIFIED
 | Cleaning performance index | 1.121 | EPREL fiche p.1 | [VERIFIED] |
 | Drying performance index | 1.061 | EPREL fiche p.1 | [VERIFIED] |
 | Noise | 46 dB(A) re 1 pW, class C | EPREL; spec sheet | [VERIFIED] |
-| Noise, Silence programme | 43 dB(A) re 1 pW | spec sheet p.2 | [VERIFIED] |
 | Standby / delay start / networked standby | 0.50 W / 4.00 W / 2.00 W | EPREL fiche p.1 | [VERIFIED] |
 | Appliance H x W x D | 815 x 598 x 550 mm | spec sheet p.1; installation sheet panel 1 | [VERIFIED] |
 | Height range on feet | 815 to 875 mm (feet 0 to 60 mm) | installation sheet panels 1 and 4; line drawing | [VERIFIED] |
@@ -125,7 +121,7 @@ Hinge constraint [ESTIMATED]: with the door open 90 degrees the top edge reaches
 
 ### 3.1 The official feature list
 
-Spec sheet en-GB p.2 [VERIFIED, all lines]: 6 programmes (Eco 50 °C, Auto 45-65 °C, Intensive 70 °C, Express 65°, Silence 50 °C, Favourite); default favourite programme Pre-Rinse; 4 special options (Remote Start, Extra Dry, Half Load, SpeedPerfect+); Machine Care; Silence on Demand (via app); Flex basket system; 3 stage Rackmatic height-adjustable top basket; low friction wheels on bottom basket; Rack Stopper; 2 foldable plate racks in top basket; 2 foldable plate racks in bottom basket; knife rack in top basket; moveable cutlery basket in lower rack; upper rack cup shelf; Home Connect ready on WLAN; heat exchanger; DosageAssist detergent dispenser; EcoSilence BLDC drive; automatic detergent detection; AquaMix glass protection system; AquaSensor III; push button top edge controls; InfoLight (red); acoustic end-of-cycle indicator, time remaining indicator (min), water inlet indicator; time delay; AquaStop; self-cleaning filter system with 3 piece corrugated filter; large item spray head, incl. steam protection for worktop; stainless steel interior.
+Spec sheet en-GB p.2 [VERIFIED, all lines]: Eco 50 °C among its programmes; Silence on Demand (via app); Flex basket system; 3 stage Rackmatic height-adjustable top basket; low friction wheels on bottom basket; Rack Stopper; 2 foldable plate racks in top basket; 2 foldable plate racks in bottom basket; knife rack in top basket; moveable cutlery basket in lower rack; upper rack cup shelf; Home Connect ready on WLAN; heat exchanger; DosageAssist detergent dispenser; EcoSilence BLDC drive; automatic detergent detection; AquaMix glass protection system; AquaSensor III; push button top edge controls; InfoLight (red); acoustic end-of-cycle indicator, time remaining indicator (min), water inlet indicator; time delay; AquaStop; self-cleaning filter system with 3 piece corrugated filter; large item spray head, incl. steam protection for worktop; stainless steel interior.
 
 Product page specification table (structured data in the page, extracted this session) [VERIFIED]:
 
@@ -148,8 +144,6 @@ Product page specification table (structured data in the page, extracted this se
 | Start delay time max | 24 h |
 | Program status indication | Program Status Light (InfoLight); end of program audible |
 | Home Connect | yes; Remote Monitoring and Control; add-on function Silence on Demand |
-| List of programmes (internal names) | Economy, Auto 45-65°C, Intensive, Quick L, Night program, Custom program |
-| Additional options (internal names) | Remote Start, Extra Dry, Half Load, varioSpeed Plus, Machine Care Programme |
 
 The German sister SMV4HAX48E carries the same basket data (cutlery basket, no third level, 2 + 2 flip tines, Rackmatic 3-stage) and its page adds two entries: two cup shelves in the upper basket, and no glass support bar in the lower basket [VERIFIED, bosch-home.com/de product page for SMV4HAX48E]. It differs in noise only: 44 dB, class B.
 
@@ -166,7 +160,7 @@ The German sister SMV4HAX48E carries the same basket data (cutlery basket, no th
 | Rackmatic (3-stage) | Top basket height set with side levers left and right, three levels; the product page gives the travel as up to 5 cm and says the basket can be tilted to one side; works fully loaded | Yes | [VERIFIED] manual p.18-19; product page |
 | Flex baskets | The product page presents the height-adjustable upper basket as the way to make room for larger items; this is the entry basket system (2 + 2 foldable rows) | Yes | [VERIFIED] product page |
 | DosageAssist | The tablet or powder leaves the door dispenser and lands in a tray on the top basket made for it, where it dissolves fully (product page). The 2017 catalogue adds that water jets are aimed at the tray | Yes | [VERIFIED] product page; AU catalogue 2017, PDF p.8 |
-| AquaSensor | An optical turbidity sensor: a light barrier that measures how cloudy the rinsing water is (section 5.4). Spec sheet calls it "AquaSensor III". Part 00611323 "Sensor Aquasensor" is in the /13 parts list | Yes | [VERIFIED] interactive manual 9001575819; spec sheet; parts list |
+| AquaSensor | An optical turbidity sensor: a light barrier that measures how cloudy the rinsing water is (interactive manual). Spec sheet calls it "AquaSensor III". Part 00611323 "Sensor Aquasensor" is in the /13 parts list | Yes | [VERIFIED] interactive manual 9001575819; spec sheet; parts list |
 | Load sensor | 2021 NZ brochure (PDF p.2), range-level text: the LoadSensor infers the weight of the load from a rotary speed sensor that responds to the water level. **Not listed** in this model's spec sheet or product page. The manual nevertheless lists the quantity of tableware among the things the running time depends on | Not claimed for this model | [VERIFIED] absence checked in spec sheet and product page |
 | Automatic detergent detection | With a combined detergent the washing programme adapts itself for the best washing and drying result (manual). 2017 catalogue (older name AutoBrilliance): the temperature is adapted for multi-function tablets so that their rinse aid is fully used | Yes | [VERIFIED] manual p.27; AU catalogue 2017, PDF p.8 |
 | Heat exchanger | Residual heat is used for rinsing and drying; the catalogue credits it with saving energy, reducing temperature shock and, because no outside air is drawn into the machine, hygienically clean results. Part 00770952, a complete heat exchanger with a 325 V DC valve, described as including the regeneration dosing | Yes | [VERIFIED] AU catalogue 2017, PDF p.8; part page (saved by earlier run) |
@@ -174,7 +168,6 @@ The German sister SMV4HAX48E carries the same basket data (cutlery basket, no th
 | Automatic door opening (EfficientDry and similar) | Not in the spec sheet; no such basic setting among H, r, d, A, I, b, Cn, rc, rE; "Door-opening sensor: no" | **No** | [VERIFIED] manual p.32-34; product page |
 | Zeolith drying | not listed | **No** | [VERIFIED] spec sheet |
 | EcoSilence / SilentPower drive | A brushless motor, presented as much lower in friction (product page); 2017 catalogue: both the wash pump and the drain pump are brushless | Yes | [VERIFIED] product page; AU catalogue 2017, PDF p.8 |
-| Variable spray pressure | Silence is described as an adapted Eco 50 °C programme with reduced spray pressure and a longer cleaning phase; Intensive 70° as using high temperatures and increased spray pressure | Yes (programme-dependent pump speed) | [VERIFIED] product page; Bosch UK symbols guide |
 | Self-cleaning filter | A three-piece corrugated filter (spec sheet). 2017 catalogue: an extra nozzle in the spray arm cleans the tub floor and breaks food down so that it passes the filter without blocking it | Yes | [VERIFIED] spec sheet; AU catalogue 2017, PDF p.8 |
 | Glass protection | Spec sheet: "AquaMix - Glass protection system". Product page: "Precise Glass Protection: no" (no raw-water valve). Mechanism not explained in any document for this model | Basic form only | [VERIFIED] the two listings; mechanism not found |
 | AquaStop | When its sensor finds a leak the machine stops, pumps the water out and closes the separate valve next to the tap (product page). The valve is in the plastic housing on the supply hose; it only works with power connected | Yes | [VERIFIED] product page; manual p.5, p.11 |
@@ -182,12 +175,12 @@ The German sister SMV4HAX48E carries the same basket data (cutlery basket, no th
 | Home Connect | WLAN 2.4 GHz and 5 GHz; Remote Start; Smart Start; Silence on Demand; favourites; filter-cleaning notice from the app | Yes | [VERIFIED] manual p.34-35, p.38, p.49 |
 | Silence on Demand | Lowers the noise as far as it can for a period of up to 30 minutes, whenever it is asked for; app only | Yes | [VERIFIED] product page |
 | InfoLight | red spot projected on the floor while a programme runs; flashes if the door is not fully closed | Yes | [VERIFIED] manual p.32-33 |
-| HygienePlus, IntensiveZone, Glass 40° programme, TimeLight, child lock, water storage tank | none of these appears in the manual's programme or option tables or the spec sheet | **No** | [VERIFIED] absence |
+| HygienePlus, IntensiveZone, TimeLight, child lock, water storage tank | none of these appears in the manual's programme or option tables or the spec sheet | **No** | [VERIFIED] absence |
 | Sensor-sensitivity setting | A same-generation generic BSH manual (9001442770_A) has a basic setting "Sensor setting SE:00 - SE:02". This model's basic settings have no such entry | **No** (not user-adjustable at the panel) | [VERIFIED] manual p.32-34 |
 
 ### 3.3 Control panel
 
-Official product photograph (source 18, shot 16580356), left to right on the door's top edge [VERIFIED, read from the image]: BOSCH logo; on/off button with "Reset 4 sec." beneath; six programme buttons Eco 50°, Auto 45°-65°, Intensive 70°, Express 65°, Silence 50°, Favourite (star), with an indicator bar that is lit red on the selected one (Eco in the photograph); a seven-segment display in "h:mm" form with symbols for salt, rinse aid, Wi-Fi and water supply above it; then buttons "Start in", "Remote Start", "Extra Dry", "Half Load", "SpeedPerfect+", "Machine Care" (with "Setup 3 sec." printed below), and "Start"; a "Silence" badge at the far right. The time shown in that photograph ("0:40") is a mock-up, not a programme duration.
+Official product photograph (source 18, shot 16580356), left to right on the door's top edge [VERIFIED, read from the image]: BOSCH logo; on/off button with "Reset 4 sec." beneath; six programme buttons, Eco 50° first, with an indicator bar that is lit red on the selected one (Eco in the photograph); a seven-segment display in "h:mm" form with symbols for salt, rinse aid, Wi-Fi and water supply above it; then the option buttons (with "Setup 3 sec." printed below the last), and "Start"; a "Silence" badge at the far right. The time shown in that photograph ("0:40") is a mock-up, not a programme duration.
 
 The manual's control overview (p.14-15) lists 13 items: on/off and reset; programme buttons; salt refill indicator; rinse-aid refill indicator; WLAN display; water supply display; programme buttons and additional functions; Start; the Setup button (hold 3 s for basic settings); Remote Start; timer programming; door handle; display (remaining running time, or the basic settings) [VERIFIED].
 
@@ -217,45 +210,28 @@ Not relevant to the simulation but recorded: the appliance must not be installed
 
 ## 5. Programmes
 
-### 5.1 Programme table, summarised from the user manual (9001937295_B p.16) [VERIFIED]
+### 5.1 Eco 50, summarised from the user manual (9001937295_B p.16) [VERIFIED]
 
 | Programme | For which tableware | For which soiling | Sequence (temperatures as printed) |
 |---|---|---|---|
-| Intensive 70° | Pots, pans, robust tableware and cutlery | Stubborn, burnt-on or dried-on residues with starch and protein | Pre-rinse; cleaning at 70 °C; intermediate rinse; final rinse at 69 °C; drying |
-| Auto 45-65° | Mixed tableware and cutlery | Ordinary household residues, lightly dried on | Sensor-controlled; no phases and no temperatures are printed (wording in section 5.4) |
 | Eco 50° | Mixed tableware and cutlery | Ordinary household residues, lightly dried on | Presented as the most economical programme: pre-rinse; cleaning at 50 °C; intermediate rinse; final rinse at 61 °C; drying |
-| Silence 50° | Mixed tableware and cutlery | Ordinary household residues, lightly dried on | Presented as the reduced-noise programme: pre-rinse; cleaning at 50 °C; intermediate rinse; final rinse at 63 °C; drying |
-| Express 65° - 1h | Mixed tableware and cutlery | Ordinary household residues, lightly dried on | Presented as the time-optimised programme: cleaning at 65 °C; intermediate rinse; final rinse at 69 °C; drying |
-| Machine Care | Only with the appliance empty | | Machine Care at 70 °C |
-| Favourite | (see Favourite) | | (factory: pre-rinse) |
 
 Notes printed around the table (p.15-17), summarised [VERIFIED]:
 
-- The running time varies with the programme and depends on four things: the option selected, how much tableware is loaded, how soiled it is, and the temperature of the water. Running time and energy consumption both rise when the rinse-aid system is switched off or needs refilling.
+- The running time depends on how much tableware is loaded, how soiled it is, and the temperature of the water. Running time and energy consumption both rise when the rinse-aid system is switched off or needs refilling.
 - The consumption values are in the quick reference guide. They are stated for what the manual calls normal conditions, with water of 16 - 20 °E hardness; factors such as water temperature or pipe pressure can shift them.
 - The manual explains the long running time of Eco 50° by longer soaking and drying times.
-- Favourite: the button holds the pre-rinse programme from the factory. Pre-rinse suits every kind of tableware and is a cold rinse for intermediate cleaning.
 - Eco 50° is the default at switch-on and is the programme the manual names as showing conformity with the EU Ecodesign Directive (p.30).
 
-Which options each programme accepts is not in the 2025 PDF, but is in the interactive manual assigned to /13 (9001575819, programme table, fourth column) [VERIFIED]: Intensive 70° "All"; Auto 45-65° "All"; Eco 50° "All"; Silence 50° "All"; Express 65° "Extra Dry" only; Machine Care "None".
+### 5.2 Consumption, values from the quick reference guide (9001937296_A p.1, and identically short instructions 9001643502_B p.1) [VERIFIED]
 
-### 5.2 Consumption table, values from the quick reference guide (9001937296_A p.1, and identically short instructions 9001643502_B p.1) [VERIFIED]
-
-The guide's header says three things: the programme data were measured in the laboratory to EN 60436; the figures vary with the programme and with the option chosen; and the running time changes when the rinse-aid system is switched off or needs refilling.
+The guide's header says that the programme data were measured in the laboratory to EN 60436, and that the running time changes when the rinse-aid system is switched off or needs refilling.
 
 | Programme | Duration [h:min] | Energy consumption [kWh] | Water [l] |
 |---|---|---|---|
-| Intensive 70° | 2:05 - 2:15 | 1.300 - 1.400 | 11.5 - 14.0 |
-| **Auto 45-65°** | **1:40 - 2:45** | **0.900 - 1.500** | **7.0 - 15.5** |
 | Eco 50° | 4:55 | 0.836 | 9.5 |
-| Silence 50° (footnote 1) | 4:00 | 1.050 | 11.0 |
-| Express 65° - 1h | 1:00 | 1.300 | 10.5 |
-| Machine Care | 2:10 | 1.350 | 15.2 |
-| Favourite | 0:15 - 0:15 | 0.050 - 0.050 | 4.0 - 4.0 |
 
-Footnote 1 marks Silence 50° as the programme suited to running at night: it takes longer and is very quiet.
-
-The same Auto, Eco, Intensive, Silence and Express 65 figures appear in the 2020 generic quick guide of the free-standing sister SMS4HAI48E (9001462502_A, "650/642 V1"), which I decoded from its shifted font encoding: Auto 45/65 "1:40 - 2:45", "0,900 - 1,500", "7 - 15,5" [VERIFIED]. The table is therefore common to the 13-place heat-exchanger variants of the platform, not specific to the UK model.
+The same Eco figures appear in the 2020 generic quick guide of the free-standing sister SMS4HAI48E (9001462502_A, "650/642 V1"), which I decoded from its shifted font encoding [VERIFIED]. The table is therefore common to the 13-place heat-exchanger variants of the platform, not specific to the UK model.
 
 ### 5.3 Options and their printed effects
 
@@ -267,7 +243,7 @@ Manual p.17-18 [VERIFIED]:
 | Half Load | For small loads; the manual recommends less detergent than for a full load. The running time is shorter and both water and energy consumption fall. |
 | SpeedPerfect+ | The run time is shortened "by 15% to 75% depending on the rinse programme". It can be switched on before the start or at any time during the run. Energy and water consumption rise. |
 
-Other official statements about the same options: the official UK image tile for this model says SpeedPerfect+ cuts the wash and drying time by up to half, except on Pre-wash, Express 45° and Express 65° [VERIFIED, source 18, image 17757736]; the Home Connect API says VarioSpeedPlus reduces the run time "by up to 66%", describes HalfLoad as economical cleaning of smaller loads with less energy, water and time and with items allowed in both baskets, ExtraDry as better drying for glasses and plastic, and SilenceOnDemand as an extra-quiet mode for a chosen period [VERIFIED, api-docs.home-connect.com]. No document gives the size of any option's effect for Auto specifically.
+Other official statements about the same options: the official UK image tile for this model says SpeedPerfect+ cuts the wash and drying time by up to half [VERIFIED, source 18, image 17757736]; the Home Connect API says VarioSpeedPlus reduces the run time "by up to 66%", describes HalfLoad as economical cleaning of smaller loads with less energy, water and time and with items allowed in both baskets, ExtraDry as better drying for glasses and plastic, and SilenceOnDemand as an extra-quiet mode for a chosen period [VERIFIED, api-docs.home-connect.com].
 
 Other time-affecting facts [VERIFIED]:
 
@@ -278,45 +254,12 @@ Other time-affecting facts [VERIFIED]:
 - The appliance switches off 1 minute after the end; the end is shown as "0h:00m".
 - Interrupted and reopened hot: the door is to be left slightly ajar for a few minutes before it is closed, to avoid pressure build-up.
 
-### 5.4 Everything printed about Auto 45-65, and what 2:25 means
+### 5.4 What the printed totals imply about fills [ESTIMATED throughout; inputs are the VERIFIED figures of 5.1 and 5.2]
 
-What the official documents say:
-
-1. Sequence: "Sensor-controlled: Optimised by sensors depending on the soiling of the washing water." (manual p.16) [VERIFIED]. No phase list and no temperatures other than the name "45-65°".
-2. Figures: 1:40 - 2:45, 0.900 - 1.500 kWh, 7.0 - 15.5 l (section 5.2) [VERIFIED].
-3. AquaSensor (interactive manual 9001575819, "Environmental protection and saving energy"; same text in the newer interactive manual 9001937297 and in the sister PDF manual 9001453806_C p.11; **absent from the 2025 PDF manual of this model**) [VERIFIED], summarised: the AquaSensor is an optical device, a light barrier, that measures the turbidity of the rinsing water, and it is there to save water. Whether it is used depends on the programme. With heavy soiling the rinsing water is drained and replaced by fresh water; with lighter soiling it is kept for the next wash phase, which saves 3 to 6 litres. The last sentence is the one that bears on Auto: "In the automatic programmes the temperature and run time are additionally adjusted to the level of soiling."
-4. Marketing texts [VERIFIED], summarised: the UK page says the automatic programmes regulate water temperature and rinse time to suit the level of soiling and the load volume; the German sister page says water consumption, water temperature and rinse time are matched to how soiled the dishes are; the 2017 catalogue says the AquaSensor measures the soiling "at the end of the pre-rinse cycle" and reuses the water when it can, saving up to 20% over the whole wash; the 2021 brochure says the AquaSensor follows the wash and decides temperature, duration and amount of water from the soiling of the water.
-5. Troubleshooting (manual p.44) [VERIFIED]: for tableware that was pre-cleaned too thoroughly the manual says "The sensors chose a weaker programme", so that stubborn soiling cannot be removed entirely; its remedy is to remove only large food remnants and not to pre-rinse.
-6. Home Connect API programme list [VERIFIED]: the key "Dishcare.Dishwasher.Program.Auto2" is described as an automatically adjusted sequence that cleans and dries according to the degree of soiling ("sensor-optimized"), for normally soiled dishes at optimum consumption. That Auto 45-65 is the key "Auto2" is [RECALLED].
-7. BSH's own history wiki on the AquaSensor [VERIFIED, wiki.bsh-group.com, summary]: an infrared LED and a phototransistor facing each other on a U-shaped board behind translucent plastic, originally built into the instantaneous water heater; cloudy water lowers the signal; the decision it was introduced for (1996, GV630) is whether the pre-rinse water is reused or drained.
-
-What they do not say: the number and order of phases in Auto; the thresholds; the final-rinse temperature; the drying time; any single "nominal" duration.
-
-**Does 2:25 correspond to a soil level or option combination?** Not according to any official document. What can be said:
-
-- The display shows the remaining running time of the programme as soon as a programme button is pressed (manual p.30) [VERIFIED]. At that moment no sensor has measured anything, so the figure is the controller's forecast.
-- 2:25 (145 min) sits inside the printed 100 to 165 minute range, at 45/65 = 69 % of the way from the bottom to the top [ESTIMATED: (145 - 100) / (165 - 100)].
-- The manual lists what then moves the time: water temperature, quantity of tableware, level of soiling, the selected option, an empty or disabled rinse-aid system, and (up to 7 min) softener regeneration [VERIFIED].
-- With SpeedPerfect+ the forecast would be shorter, with Extra Dry longer, with Half Load shorter [VERIFIED as directions; sizes not printed].
-- So the most defensible reading is: 2:25 is the pre-sensing forecast for Auto with no option selected on this machine, and the real cycle will end earlier or later once the turbidity reading is in. Whether the forecast is a fixed table value or adapts to recent runs is **not stated anywhere official**. The owner can settle this in two minutes (section 13, item 1).
-
-Reasonable planning targets for a simulated 2:25 run [ESTIMATED: linear interpolation in the printed ranges at 69 %; the three quantities need not move together]: energy 0.9 + 0.69 x 0.6 = about 1.3 kWh; water 7.0 + 0.69 x 8.5 = about 13 litres. A simulated 2:25 Auto run that lands outside 0.9 to 1.5 kWh or 7.0 to 15.5 litres contradicts the manufacturer's own laboratory figures.
-
-Cross-link (programme angle): a forum thread on automaticwasher.org (thread 97583, fetched this session; user observations, not official) describes the BSH Auto 45-65 extremes as a maximum of about 2:40, 1.3 kWh, 15.5 L (warm pre-wash, 65 °C wash, two interim rinses, heated final rinse) and a minimum of about 1:40, 0.68 kWh, 7 L (wash, rinse, heated rinse, dry), and says the timer is updated at each stage transition. The water and time extremes match the printed range; treat the rest as anecdote.
-
-### 5.5 What the printed totals imply about fills [ESTIMATED throughout; inputs are the VERIFIED figures of 5.1 and 5.2]
-
-- Favourite (pre-rinse, one cold bath): 4.0 l in 15 min. One fill is therefore about 4.0 l. Its 0.050 kWh over 0.25 h is an average of 200 W with no heating, an upper bound on pump plus electronics.
-- Express 65° prints three water phases (cleaning, intermediate rinse, final rinse) and 10.5 l: 3.5 l per bath.
-- Eco 50° prints four water phases and 9.5 l. Four fresh baths would be 2.4 l each, far below the others; three fresh baths give 3.2 l each. This fits the AquaSensor text: pre-rinse water kept for the cleaning phase.
-- Auto 45-65°: 15.5 l is four fresh baths of 3.9 l; 7.0 l is two fresh baths of 3.5 l. The printed span of 8.5 l equals two baths, a little above the "3-6 litres" the AquaSensor text gives for water reuse.
-- Intensive 70°: 11.5 to 14.0 l is three baths of 3.8 l to four of 3.5 l. Silence: 11.0 l, three baths of 3.7 l. Machine Care: 15.2 l, four baths of 3.8 l.
-- So: about 3.5 to 4.0 l per fresh fill, with two to four fresh fills depending on programme and sensor result. This replaces nothing in machine.md by itself, but it bounds the water inventory: SPOT-60's 3.8 / 2.9 / 2.8 l is the right order.
+- The manual prints one cold bath at 4.0 l in 15 min; one fill is therefore about 4.0 l. Its 0.050 kWh over 0.25 h is an average of 200 W with no heating, an upper bound on pump plus electronics.
+- Eco 50° prints four water phases and 9.5 l. Four fresh baths would be 2.4 l each; three fresh baths give 3.2 l each. This fits the AquaSensor text: pre-rinse water kept for the cleaning phase.
+- So: about 3.2 to 4.0 l per fresh fill. This replaces nothing in machine.md by itself, but it bounds the water inventory: SPOT-60's 3.8 / 2.9 / 2.8 l is the right order.
 - Drain: a full bath leaves in about one minute (5.3), so at least 3.5 to 4 l/min averaged; compatible with SPOT-60's 55 s pattern.
-
-### 5.6 Machine Care (manual p.36-37) [VERIFIED]
-
-One cycle, two phases dosed independently: phase 1 removes grease and limescale with a liquid care product or powder descaler placed in the interior (for example a bottle hung in the cutlery basket); phase 2 removes food remnants and deposits with machine cleaner from the detergent dispenser. Run without tableware. If no reminder is available: every 2 months. The reminder lamp goes out by itself after 3 washing cycles.
 
 ## 6. Loading
 
@@ -418,7 +361,7 @@ Failure causes the manual itself names (troubleshooting p.43-45, plus the intera
 | Remnants of food | A programme too weak for the load; or the sensors chose a weaker programme after pre-rinsing by hand |
 | Detergent residue in the final rinse | The dispenser lid is blocked by tableware and cannot open fully: the top basket is to be loaded so that the tablet collecting tray stays clear, and neither tableware nor a fragrance dispenser may be put in the tray |
 | Detergent residue in dispenser or tray | Tableware stopped the spray arms, so the detergent stayed where it was; or the dispenser was damp when it was filled |
-| Detergent residue (interactive manual) | The lid is blocked by the tablet itself: the tablet is to lie crosswise, not upright. Tablets used in the quick or short programme: "Dissolving time of the tab is not attained." |
+| Detergent residue (interactive manual) | The lid is blocked by the tablet itself: the tablet is to lie crosswise, not upright. |
 | Not dry (interactive manual) | Water standing in hollows of tableware or cutlery; plastic, which stores less heat and so dries less well; cutlery touching, where droplets form at the points of contact; unloading sooner than 30 minutes after the end of the programme |
 | Knocking or rattling (interactive manual) | A spray arm striking tableware; with a small load, jets hitting the tub directly; light items moving about during the wash |
 | Door will not close or opens (interactive manual) | The top basket pressing against the inner door; items projecting beyond the basket |
@@ -451,9 +394,9 @@ Operation (manual p.27-28) [VERIFIED], summarised:
 - Adding dishes mid-cycle: the tablet collecting tray is not to be used as a handle for the top basket, because the hand may touch the partly dissolved tablet (p.31).
 - Safety: children can catch their fingers in the slots of the tablet collecting tray (p.8). The tray is slotted.
 
-Detergent types (p.26-27) [VERIFIED], summarised: tabs may not dissolve completely in shorter programmes; powder is recommended for shorter programmes; liquid acts faster, is recommended for shorter programmes without pre-rinse, and may leak out of the closed dispenser, so with liquid choose a programme without pre-rinse and no timer. Modern detergents are described as low-alkaline with enzymes; oxygen bleach is for coloured marks. Combined products work up to a water hardness of 26 °E; salt and rinse aid are recommended from 17 °E. Hand washing-up liquid causes frothing; chlorine detergents are not to be used.
+Detergent types (p.26-27) [VERIFIED], summarised: liquid acts faster and may leak out of the closed dispenser. Modern detergents are described as low-alkaline with enzymes; oxygen bleach is for coloured marks. Combined products work up to a water hardness of 26 °E; salt and rinse aid are recommended from 17 °E. Hand washing-up liquid causes frothing; chlorine detergents are not to be used.
 
-Dosing in Auto specifically: nothing printed beyond the general text. When the lid opens is not stated for any programme.
+When the lid opens is not stated.
 
 ### 7.2 Rinse aid (manual p.24-26) [VERIFIED]
 
@@ -534,8 +477,8 @@ E:20-60 calcified heating element detected (the heater is in the water path); E:
 | stack-up, max item heights | section 2.6 baseline | top basket 220 / 245 / 270 mm; bottom basket 300 (310 in the marked position) / 275 / 250 mm | [VERIFIED] |
 | arms.mid.tip_radius | 232 | 230 (width 460) | [VERIFIED] |
 | arms.top | arm, tip radius 135 | not an arm: roof sprinkler ("Dachkreisel") on the feed pipe | [VERIFIED] |
-| hydraulics.pump speed | range 1400 to 3400 rpm | qualitative only: reduced spray pressure in Silence, increased in Intensive, brushless drive | [VERIFIED] |
-| hydraulics.inventory, fills | 3.8 / 2.9 / 2.8 l (Eco) | about 3.5 to 4.0 l per fresh fill; pre-rinse programme 4.0 l | [ESTIMATED] section 5.5 |
+| hydraulics.pump speed | range 1400 to 3400 rpm | brushless drive | [VERIFIED] |
+| hydraulics.inventory, fills | 3.8 / 2.9 / 2.8 l (Eco) | about 3.2 to 4.0 l per fresh fill; one cold bath 4.0 l | [ESTIMATED] section 5.4 |
 | hydraulics.drain | 16 l/min, 55 s pattern | about one minute for a bath | [VERIFIED] statement |
 | thermal.heater_W | 2000 | rating 2000 - 2400 W at 220 - 240 V behaves as about 24.1 ohm: 220^2 / 2000 = 24.2, 240^2 / 2400 = 24.0; at 230 V about 2195 W for the whole appliance, so roughly 2100 W of heater | [ESTIMATED] |
 | thermal.T_inlet_C | 15 | cold fill is the factory setting (A00); hot fill 40 to 60 °C possible | [VERIFIED] |
@@ -544,8 +487,8 @@ E:20-60 calcified heating element detected (the heater is in the water path); E:
 | dosing.rinse_aid | 3 ml at 40 °C | setting r05 of r00 - r06; volume and timing not stated | [VERIFIED] setting only |
 | softener | not modelled in 12.1 | H04 factory; regeneration every 6 cycles, at most +5 l, +7 min, +0.05 kWh | [VERIFIED] |
 | drying.method | heat_exchanger_plus_auto_open, 25 min, 100 mm gap | heat exchanger, condensation on tub walls, **door stays closed** | [VERIFIED] |
-| programmes | ECO 50, AUTO 45-65, INTENSIVE 70, QUICK 60, GLASS 40, PRE-RINSE | Eco 50°, Auto 45-65°, Intensive 70°, Express 65° (1 h), Silence 50°, Favourite (pre-rinse by default), Machine Care | [VERIFIED] |
-| programme temperatures | section 7.3 | cleaning / final rinse: Intensive 70 / 69 °C; Eco 50 / 61; Silence 50 / 63; Express 65 / 69; Auto 45 to 65 / not stated | [VERIFIED] |
+| programme | section 7.3 | Eco 50° | [VERIFIED] |
+| programme temperatures | section 7.3 | cleaning / final rinse: Eco 50 / 61 °C | [VERIFIED] |
 | programme totals | section 8 | table in 5.2 | [VERIFIED] |
 
 ### 9.1 The same, as an overlay on the 12.1 data block
@@ -586,9 +529,8 @@ arms:
   top: {type: roof_sprinkler, part: "00611388"}               # V replaces the SPOT-60 top arm
   accessory: {baking_sheet_spray_head: {port: middle, max_sheets: 2, max_grilles: 2}}                 # V
 hydraulics:
-  pump: {drive: brushless, speed: "lower in Silence, higher in Intensive"}   # V qualitative only
-  fresh_fill_L: [3.5, 4.0]                                    # E from printed programme totals
-  fresh_fills_per_cycle: [2, 4]                               # E
+  pump: {drive: brushless}                                    # V
+  fresh_fill_L: [3.2, 4.0]                                    # E from the printed totals
   drain_time_s: 60                                            # V a cancelled programme ends after about 1 minute
   tap_requirement: {min_L_per_min: 10, pressure_bar: [0.5, 10]}   # V
 thermal:
@@ -600,31 +542,22 @@ dosing:
   rinse_aid: {setting: r05, range: [r00, r06], dose_ml: keep}                  # V
   softener: {setting: H04, regeneration_every_cycles: 6, extra_L_max: 5, extra_min_max: 7, extra_kWh_max: 0.05}   # V
 drying: {method: heat_exchanger_condensation, auto_open: false}                # V
-programmes:                                                   # V; duration h:min, energy kWh, water L
+programme:                                                    # V; duration h:min, energy kWh, water L
   eco_50:        {phases: [pre_rinse, clean_50, intermediate_rinse, final_rinse_61, dry], t: "4:55", e: 0.836, w: 9.5}
-  auto_45_65:    {phases: sensor_controlled, t: ["1:40", "2:45"], e: [0.900, 1.500], w: [7.0, 15.5], options: all}
-  intensive_70:  {phases: [pre_rinse, clean_70, intermediate_rinse, final_rinse_69, dry], t: ["2:05", "2:15"], e: [1.300, 1.400], w: [11.5, 14.0]}
-  express_65:    {phases: [clean_65, intermediate_rinse, final_rinse_69, dry], t: "1:00", e: 1.300, w: 10.5, options: [extra_dry]}
-  silence_50:    {phases: [pre_rinse, clean_50, intermediate_rinse, final_rinse_63, dry], t: "4:00", e: 1.050, w: 11.0}
-  machine_care:  {phases: [machine_care_70], t: "2:10", e: 1.350, w: 15.2, options: none}
-  favourite:     {default: pre_rinse_cold, t: "0:15", e: 0.050, w: 4.0}
-owner_target_run: {programme: auto_45_65, displayed_duration: "2:25", energy_kWh: 1.3, water_L: 13}   # E interpolation, section 5.4
 ```
 
 ## 10. Conflicts between sources
 
 1. **Net weight**: 33.9 kg (spec sheet en-GB and en-IE PDFs) against 33.6 kg (bosch-home.co.uk and bosch-home.ie product pages). German sister: 34.4 against 34.2 kg in the same way. Use 33.9; the difference is immaterial.
 2. **Fuse and connected load**: spec sheet "Fuse protection: 10 A", "Connection rating: 2400 W"; rating plate and manual "10 - 16 A", "2000 - 2400 W".
-3. **SpeedPerfect+**: "15% to 75%" (manual p.18); "up to half the time", not on Pre-wash or Express (official image tile for this model); "by 50%" (Bosch UK loading page); "up to 75%" (Bosch UK symbols guide); "up to 66%" (Home Connect API, VarioSpeedPlus).
-4. **Basket name**: "Flex basket system" (spec sheet, product page) against "VarioFlex Basket (13 place settings)" on an official image tile for the same model. The tile is generic artwork; the data say Flex.
-5. **Foldable rows**: product data say 2 upper, 2 lower. The replacement baskets now supplied as spare parts are described as "Oberkorb ... 4 Klappstacheln" (20001992, successor of 20001986) and "Unterkorb ... 6 Klappstacheln" (20007406, successor of 20001979), and the loading leaflet draws four or more foldable rows in the bottom basket. The owner's photographs show 2 and 2. The owner's basket is the truth for this machine; the successor parts are a richer variant.
-6. **Timer**: spec sheet p.2 "Time delay (3, 6 or 24 hours)"; manual p.31 and product page: any delay up to 24 hours.
-7. **Hose length**: inlet hose 165 cm (spec sheet), AquaStop hose "1,68 m" to the fixing plate (part page 00668113, saved by the earlier run), reach 1500 mm (line drawing).
-8. **Height**: 815 mm (spec sheet), 813.5 mm (planning model), "82 cm" (EPREL, rounded).
-9. **AquaSensor text**: present in both interactive manuals and in the sister PDF manual, absent from this model's 2025 PDF manual. The sensor itself is confirmed by the spec sheet, the product page and the parts list.
-10. **Programme name**: panel "Express 65°"; manual and quick guide "Express 65° - 1h"; internal names "Quick L" and for Silence "Night program".
-11. **Against machine.md's SPOT-60** (not errors, but replacements): third rack and top arm, automatic door opening, programme list, coarse filter size, cup-shelf count, foldable-row count, cutlery-basket cells. All listed in section 9.
-12. **Bosch UK loading page** contradicts itself on knife orientation; the manual is unambiguous: points and sharp edges down.
+3. **Basket name**: "Flex basket system" (spec sheet, product page) against "VarioFlex Basket (13 place settings)" on an official image tile for the same model. The tile is generic artwork; the data say Flex.
+4. **Foldable rows**: product data say 2 upper, 2 lower. The replacement baskets now supplied as spare parts are described as "Oberkorb ... 4 Klappstacheln" (20001992, successor of 20001986) and "Unterkorb ... 6 Klappstacheln" (20007406, successor of 20001979), and the loading leaflet draws four or more foldable rows in the bottom basket. The owner's photographs show 2 and 2. The owner's basket is the truth for this machine; the successor parts are a richer variant.
+5. **Timer**: spec sheet p.2 "Time delay (3, 6 or 24 hours)"; manual p.31 and product page: any delay up to 24 hours.
+6. **Hose length**: inlet hose 165 cm (spec sheet), AquaStop hose "1,68 m" to the fixing plate (part page 00668113, saved by the earlier run), reach 1500 mm (line drawing).
+7. **Height**: 815 mm (spec sheet), 813.5 mm (planning model), "82 cm" (EPREL, rounded).
+8. **AquaSensor text**: present in both interactive manuals and in the sister PDF manual, absent from this model's 2025 PDF manual. The sensor itself is confirmed by the spec sheet, the product page and the parts list.
+9. **Against machine.md's SPOT-60** (not errors, but replacements): third rack and top arm, automatic door opening, coarse filter size, cup-shelf count, foldable-row count, cutlery-basket cells. All listed in section 9.
+10. **Bosch UK loading page** contradicts itself on knife orientation; the manual is unambiguous: points and sharp edges down.
 
 ## 11. Not found in any official document
 
@@ -637,8 +570,6 @@ owner_target_run: {programme: auto_45_65, displayed_duration: "2:25", energy_kWh
 | Lower spray arm length; all nozzle positions, shapes and sizes; roof sprinkler size | section 3.2 tables |
 | Pump curve, pump speeds, arm pressures, flow rates, arm rotation speed, diverter pattern | section 12.1 hydraulics block |
 | Fill volume per phase (only programme totals are printed) | 3.8 / 2.9 / 2.8 l |
-| The Auto 45-65 phase list, durations, temperature chosen, decision thresholds, final-rinse temperature, drying time | section 7.3 baseline AUTO |
-| What the initial 2:25 forecast assumes | none |
 | Time at which the dispenser lid opens | 60 s after circulation starts |
 | Rinse-aid dose per setting and release point; reservoir capacity | 3 ml at 40 °C |
 | Heater rating separate from the appliance rating; pump electrical power | 2000 W |
@@ -646,7 +577,6 @@ owner_target_run: {programme: auto_45_65, displayed_duration: "2:25", energy_kWh
 | Softener resin capacity, salt container volume, water used per regeneration (only "at most 5 l") | none |
 | Filter mesh sizes and open areas; flat plate dimensions | 0.8 mm holes, 0.20 mm mesh |
 | Official loading plan for 13 place settings | EN 60436 standard load |
-| Effect sizes of Extra Dry, Half Load and SpeedPerfect+ on Auto | none |
 | How the glass-protection ("AquaMix") function works on this model | none |
 | Whether this model senses load, and how | generic model has no load sensing |
 
@@ -654,23 +584,22 @@ owner_target_run: {programme: auto_45_65, displayed_duration: "2:25", energy_kWh
 
 - Hardware: the official part pages give more than the manuals do. Already read here: 11010054 (upper arm 460 mm, pipe 270 mm), 00645038 (filter dimensions), 00755073 (dispenser envelope), 11057829 (six-compartment cutlery basket), 00611388 and 11003118 (roof sprinkler and feed pipe with three docking ports). Saved by the earlier run and worth mining: 00611317 "Durchfluss-Sensor, Reedschalter für Flügelradzähler" (the fill is metered by an impeller flow meter), 00644996 "Wasserweiche für Heizpumpe" (water diverter on the heating pump), 12014980 "Heizpumpe" (circulation pump with integrated heater), 12026873 softener "mit Schwimmer", 00631200 drain pump.
 - Hardware and programme: a 69-page BSH service document "GV640A dishwasher platform training" is listed on elektrotanya.com (only its preview pages were seen, by the earlier run). It was not obtained. It is the most likely place for fill volumes, the programme charts and sensor logic.
-- Programme: the printed ranges in 5.2 and the option directions in 5.3 are the constraints any reconstructed Auto timeline must meet; the forum description in 5.4 is the only phase-level account I met.
 - Photographs: reference dimensions that are official and visible in the owner's photographs, usable for scaling: upper spray arm 460 mm tip to tip (IMG_9083), coarse filter 79 mm (IMG_9082), appliance width 598 mm (IMG_9080), dispenser unit 120 x 105 mm.
-- Consumer tests: Forbrugerrådet Tænk tested the built-under sisters SMU4HAW48S (January 2023) and SMU4HAI48S, 13 place settings with cutlery basket, and reports separate time, energy and water for the Auto programme; the values are behind a membership wall. Which? and Stiftung Warentest results for this exact model were not found.
+- Consumer tests: Forbrugerrådet Tænk tested the built-under sisters SMU4HAW48S (January 2023) and SMU4HAI48S, 13 place settings with cutlery basket, and reports time, energy and water; the values are behind a membership wall. Which? and Stiftung Warentest results for this exact model were not found.
 
 ## 13. What the owner could measure or do, most valuable first
 
-1. **Read the display for every programme and option, without starting.** Switch on, press each programme in turn, then Auto with Extra Dry, with Half Load, with SpeedPerfect+, and note or photograph the time shown each time. Two minutes. Tells us whether the display shows the quick guide's figures (Eco 4:55, Silence 4:00, Express 1:00), therefore whether Auto's 2:25 is a fixed forecast, and gives the option deltas that no document prints. Also note the basic settings H, r, d and A (hold Setup 3 s) and whether rinse aid and salt are filled, since all four change the running time.
-2. **Log one complete Auto run.** Plug-in power meter with logging at 10 s or better (heater on-times give the phases, heater power and total kWh), a stopwatch note of every fill, drain and the dispenser click, the display time at start and at each jump, and the actual end time. If the machine is paired, the Home Connect app's remaining time and progress during the run. A phone left recording sound captures fills, drains and pump-speed changes.
-3. **Water per run and per fill.** Read the house water meter before and after with nothing else running, or drain into a marked bucket. Compare with 7.0 to 15.5 litres.
+1. **Read the display for Eco 50 without starting.** Switch on, select Eco 50 and note or photograph the time shown. Also note the basic settings H, r, d and A (hold Setup 3 s) and whether rinse aid and salt are filled, since all four change the running time.
+2. **Log one complete Eco 50 run.** Plug-in power meter with logging at 10 s or better (heater on-times give the phases, heater power and total kWh), a stopwatch note of every fill, drain and the dispenser click, the display time at start and at each jump, and the actual end time. If the machine is paired, the Home Connect app's remaining time and progress during the run. A phone left recording sound captures fills, drains and pump-speed changes.
+3. **Water per run and per fill.** Read the house water meter before and after with nothing else running, or drain into a marked bucket. Compare with 9.5 litres.
 4. **Ask BSH for the test-institute information.** E-mail dishwasher@test-appliances.com with E-Nr SMV4HAX40G/13 and FD 0106 and request the EN 60436 comparability-test conditions, in particular the loading plan for 13 place settings. The manual invites exactly this.
 5. **Vertical stack-up with a tape measure**, at each of the three Rackmatic levels: tub floor to the lower basket's plate support; plate support to the underside of the upper spray arm (expect a little over 300 / 275 / 250 mm); upper basket plate support to the ceiling and to the roof sprinkler (expect a little over 220 / 245 / 270 mm); height of the roof sprinkler below the ceiling.
 6. **Tub interior** width, depth (back wall to door liner with the door shut, by measuring to the front flange and adding the liner offset) and height; position of the lower-arm axis from the back wall and side walls.
 7. **Spray arms.** Lower arm tip-to-tip length; confirm the upper arm's 460 mm; for each arm a ruler-in-frame photograph of both faces, with nozzle positions from the hub, shapes and sizes (calipers, or drill shanks as pin gauges). Diameter and hole pattern of the roof sprinkler and of the baking sheet spray head.
 8. **Baskets.** Outer length, width and height; wire diameters (calipers); grid pitch; tine pitch, height and lean for each row; exact position of the foldable rows; cutlery basket outer size and cell sizes; tablet tray size and its position relative to the door dispenser; knife shelf and cup shelf sizes and heights. Weigh each basket empty on a kitchen scale (thermal mass).
-9. **Dispenser.** Distance of the detergent lid from the door's top edge and left edge; lid size; which way it moves; and, with a small action camera or an old phone in the upper basket, the minute at which it opens in Auto and where the tablet lands.
+9. **Dispenser.** Distance of the detergent lid from the door's top edge and left edge; lid size; which way it moves; and, with a small action camera or an old phone in the upper basket, the minute at which it opens.
 10. **Filter.** Width and depth of the flat plate; hole size (macro photograph with a ruler); pleat count and mesh of the micro filter; slot size of the coarse filter; depth of the sump with the filter out; water left in the sump after a finished cycle (sponge it out and weigh it).
-11. **Temperatures.** A logging thermometer or thermocouple in the upper basket through an Auto run: peak wash temperature (shows where in 45 to 65 °C the run went) and final-rinse temperature. Cold-tap temperature and mains voltage on the day.
+11. **Temperatures.** A logging thermometer or thermocouple in the upper basket through an Eco 50 run: peak wash temperature and final-rinse temperature. Cold-tap temperature and mains voltage on the day.
 12. **Door geometry.** Hinge axis height above the floor and the length of the open door from hinge to top edge (checks the 1150 mm figure), and the gap between the closed door liner and the front of each basket.
 
 ## 14. Method notes
@@ -728,7 +657,6 @@ Other official pages
 
 Not official, cited once
 
-31. automaticwasher.org thread 97583, "does Auto 45-65 on BSH dishwashers choose between two fixed degrees, or is it variable?" https://automaticwasher.org/threads/does-auto-45-65-on-bsh-dishwashers-choose-between-two-fixed-degrees-or-is-it-variable.97583
 32. Forbrugerrådet Tænk test pages for sisters (values behind a membership wall). https://taenk.dk/test/opvaskemaskiner/bosch-smu4haw48s , https://taenk.dk/test/opvaskemaskiner/bosch-smu4hai48s
 
 Owner's photographs

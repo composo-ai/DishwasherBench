@@ -3,9 +3,8 @@
 Brought up to date on 12 October 2026 (the upper basket corrected from the owner's photograph,
 the course of seven levels, 25 saved loads).
 
-Settled loads of the owner's machine (Bosch SMV4HAX40G; washed on Eco 50, the programme the
-game is scored on) that were put together by
-real loading physics, not drawn on a lattice. Each was played through the session layer by a
+Settled loads of the owner's machine (Bosch SMV4HAX40G; washed on Eco 50) that were put
+together by real loading physics, not drawn on a lattice. Each was played through the session layer by a
 scripted policy (`@spotless/loader`), the baskets were pushed in and the door closed on the
 load by `start_cycle`, and what is saved is exactly what the session hands the wash: every item
 with its settled pose in the tub frame and its soils.
@@ -24,10 +23,6 @@ from above, upper basket from above, front, side) and a table of all of them in 
 | `half-careful` | Six place settings of that load, well spaced |
 | `owner-2026-10-10` | The owner's own load of his first test wash, placed by a fixed list of moves |
 | `<level>-careful`, `<level>-careless`, `<level>-random` | Each of the seven levels of the course of `@spotless/levels` (`tutorial`, `lunch-for-four`, `weeknight-dinner`, `breakfast`, `mixed-family`, `baking-day`, `dinner-party`) by each policy |
-
-The four loads that are not levels still name Auto 45-65 as their level's programme in the file
-(the machine data's `primaryProgramme`); the wash commands wash them on Eco 50 unless told
-otherwise.
 
 The careful loads follow the manufacturer's scheme: plates on edge in the tine rows, let down
 where `list_slots` suggests, the eating face to the centre; boards and platters at the side

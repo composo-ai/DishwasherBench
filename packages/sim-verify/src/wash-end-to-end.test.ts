@@ -1,5 +1,5 @@
-// End-to-end washes of the first build on the owner's machine (Bosch SMV4HAX40G, Auto 45-65,
-// 2 h 25 min) with catalogue items placed by hand, at the fast tier, with the real exposure
+// End-to-end washes of the first build on the owner's machine (Bosch SMV4HAX40G, Eco 50,
+// 4 h 55 min) with catalogue items placed by hand, at the fast tier, with the real exposure
 // (the jet trace and gather, the droplets and the kinematic cascade of sim-jets, sim-spray and
 // sim-film). They check directions and orders of magnitude, not calibrated values
 // (docs/design/scope.md):
@@ -77,7 +77,7 @@ const COLD_BOND = { 'soil.adhesionHotFactor': 1 } as const;
 function description(withPan: boolean, params?: WashDescription['params']): WashDescription {
   return {
     machine: 'bosch_smv4hax40g',
-    programme: 'auto_145',
+    programme: 'eco_50',
     tier: 'fast',
     levelSeed: 7,
     simSeed: 3,
@@ -208,11 +208,11 @@ function soilOf(
 }
 
 describe('the wash as a whole', () => {
-  it('replays the 2 h 25 min programme in about 4,000 ticks over four spray states', () => {
+  it('replays the 4 h 55 min programme in about 7,800 ticks over four spray states', () => {
     expect(withPan.machine.machineId).toBe('bosch_smv4hax40g');
-    expect(withPan.machine.duration_s / 60).toBeCloseTo(145, 0);
-    expect(withPan.machine.ticks).toBeGreaterThan(3500);
-    expect(withPan.machine.ticks).toBeLessThan(4500);
+    expect(withPan.machine.duration_s / 60).toBeCloseTo(295, 0);
+    expect(withPan.machine.ticks).toBeGreaterThan(7000);
+    expect(withPan.machine.ticks).toBeLessThan(8500);
     expect(withPan.machine.states.map((s) => s.id)).toEqual([
       'l@2800',
       'l@3000',
@@ -489,11 +489,12 @@ describe('determinism and the exposure cache', () => {
 
 describe('a dispenser the load keeps shut', () => {
   it('releases a fraction of the dose, and the enzyme-dependent soil stays', () => {
-    // chemistry 1.7: 5 to 30 % of the dose is released over a main wash through the gap.
+    // chemistry 1.7: 5 to 30 % of the dose is released over a main wash through the gap; the
+    // two and a half hours of the main wash of Eco 50 release a little more (36 %).
     const share = blocked.machine.detergent.dissolved_g / blocked.machine.detergent.dosed_g;
     expect(blocked.machine.dispenser).toBe('blocked');
     expect(share).toBeGreaterThan(0.05);
-    expect(share).toBeLessThan(0.35);
+    expect(share).toBeLessThan(0.45);
     const pH = blocked.machine.liquor.fields.indexOf('pH');
     const width = blocked.machine.liquor.fields.length;
     let highest = 0;
@@ -503,9 +504,10 @@ describe('a dispenser the load keeps shut', () => {
       normal = Math.max(normal, withPan.machine.liquor.values[width * i + pH] as number);
     }
     expect(highest).toBeLessThan(normal - 0.4);
-    // Almost no protease: the egg yolk stays. The sauce the jets strip mechanically does not care.
+    // Little protease: nearly all the egg yolk stays (95 % on Eco 50, whose long main wash lets
+    // a third of the dose out). The sauce the jets strip mechanically does not care.
     const egg = soilOf(blocked, 'plate_facing', 'egg_yolk_dried');
-    expect(egg.residual).toBeGreaterThan(0.98 * egg.initial);
+    expect(egg.residual).toBeGreaterThan(0.9 * egg.initial);
     expect(egg.residual).toBeGreaterThan(
       soilOf(withPan, 'plate_facing', 'egg_yolk_dried').residual,
     );
@@ -541,9 +543,9 @@ describe('the spotless-wash command', () => {
     expect(facing?.cells.residual_mg_cm2).toHaveLength(
       (facing?.cells.count ?? 0) * result.soilClasses.length,
     );
-    // The liquor trace is thinned to about a row a minute: 145 minutes.
-    expect(written.machine.liquor.values.length).toBeGreaterThan(120);
-    expect(written.machine.liquor.values.length).toBeLessThan(200);
+    // The liquor trace is thinned to about a row a minute: 295 minutes.
+    expect(written.machine.liquor.values.length).toBeGreaterThan(240);
+    expect(written.machine.liquor.values.length).toBeLessThan(400);
     expect(written.machine.liquor.values[0]).toHaveLength(written.machine.liquor.fields.length);
   });
 });

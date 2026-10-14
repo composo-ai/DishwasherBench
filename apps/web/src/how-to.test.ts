@@ -1,17 +1,9 @@
 import { describe, expect, it } from 'vitest';
-import { DISCLAIMER, KEYS, manualForPage } from './how-to.ts';
+import { DISCLAIMER, KEYS } from './how-to.ts';
 
-describe('the manual as the page shows it', () => {
-  it('leaves out the sentence on secondary programmes and nothing else', () => {
-    const manual =
-      'Baskets. A basket can be loaded only while it is pulled out.\n\nThe wash. start_cycle washes the load on the programme the level is scored on. The card may list secondary programmes; one of them can be named in start_cycle instead, and the wash is then reported as uncalibrated and is not a result on the scored programme. Rejected calls cost nothing.';
-    expect(manualForPage(manual)).toBe(
-      'Baskets. A basket can be loaded only while it is pulled out.\n\nThe wash. start_cycle washes the load on the programme the level is scored on. Rejected calls cost nothing.',
-    );
-  });
-
+describe('the how-to panel', () => {
   it('names no programme in the keys', () => {
-    for (const [key, what] of KEYS) expect(`${key} ${what}`).not.toMatch(/Auto|45-65|2:25/);
+    for (const [key, what] of KEYS) expect(`${key} ${what}`).not.toMatch(/programme/i);
   });
 
   it('says in one line what the game is and what it is not', () => {

@@ -88,14 +88,6 @@ export interface Level {
   readonly racks: { readonly [rack in RackId]?: RackPosition };
   /** Id of the programme the level is scored on (`eco_50` on the owner's machine). */
   readonly programmeId: string;
-  /**
-   * Programmes of the machine a player may choose instead when starting the cycle. A wash on
-   * one of them is reported and labelled; it is not a result on the scored programme. Absent:
-   * none. No level of the game names one since 11 October 2026 (the game is scored on
-   * Eco 50 and nothing else is put in front of a player); the field stays for
-   * research levels, and another programme stays runnable from the wash command line.
-   */
-  readonly secondaryProgrammes?: readonly string[];
   /** The items, in any order. */
   readonly items: readonly LevelItem[];
   readonly rules: LevelRules;

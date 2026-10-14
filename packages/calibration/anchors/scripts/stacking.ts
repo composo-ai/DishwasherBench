@@ -4,7 +4,7 @@
  * the careless load.
  *
  *   pnpm --filter @spotless/calibration exec tsx anchors/scripts/stacking.ts
- *        [--params anchors/anchored-v1.json] [--set key=value,...] [--programme eco_50]
+ *        [--params anchors/anchored-v1.json] [--set key=value,...]
  *        [--only name,name] [--out anchors/out/stacking] [--exposure-only]
  *        [--level-seed n] [--sim-seed n]
  *
@@ -61,7 +61,8 @@ for (const part of (option('--set') ?? '').split(',').filter((s) => s !== '')) {
   const at = part.indexOf('=');
   params[part.slice(0, at)] = Number(part.slice(at + 1));
 }
-const programme = option('--programme') ?? 'eco_50';
+/** Eco 50, the only programme the simulation washes on. */
+const programme = 'eco_50';
 const only = option('--only')?.split(',');
 const exposureOnly = args.includes('--exposure-only');
 const outDir = fromOrigin(option('--out') ?? 'anchors/out/stacking');

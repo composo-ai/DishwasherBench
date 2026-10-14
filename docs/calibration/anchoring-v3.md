@@ -33,7 +33,6 @@ are being regenerated: every table here must be run again on the new water side 
 | all but the pots | 4.17 | 3.86 | **4.05** |
 | soiled items clean, of 68 | | 48.0 | **54.8** |
 | The in-machine egg-yolk tile is 98 % gone at (55 C, 0.06 g/L; from the spread and the fitted rate) | about 65 min | about 110 min | **about 67 min** |
-| Auto, owner's capsule, careful: egg yolk left / egg items clean | | 3.0 % / 0 of 17 (heat-stable assumed) | **10.4 % / 0 of 17; 0.8 % / 0 of 17 with the heat-stable bracket** |
 
 1. **The tail was wrong and is corrected from evidence.** The spread of a deposit's loading is
    now the measured one (0.1 inside a deposit; between patches 0.1 for a sprayed layer, 0.15 for
@@ -44,21 +43,14 @@ are being regenerated: every table here must be run again on the new water side 
    not: every plate and bowl is clean and every tea item dirty. The bleach rate that reproduces
    the crockery mean (0.0009, tea at 2.9) is 12 % above the default and the tool's rule does not
    accept so small a gain; tea flips from 0 to 5 within plus or minus 15 % of that rate.
-3. **Auto does not come out as clean as Eco, and the evidence does not carry it there.** With
-   the owner's capsule a well-loaded Auto run removes 90 to 99 % of the egg yolk (57 % under
-   anchored-v2 with detergent D) and all of the meat, porridge, spinach and fat, and bleaches 5
-   of 7 tea items; every egg item and milk glass still reads dirty, because a 63 min wash takes
-   1.3 to 1.45 times the mean depth of an egg plate and clean needs 1.9. Section 5 says exactly
-   what is missing. **Run the reference level on Eco 50; do not use Auto verdicts for egg and
-   milk.**
-4. **Stacking decides outcomes on both programmes**: careful against careless is 84 against 54
-   clean items on Eco 50 (detergent D) and 67 against 44 on Auto with the capsule.
+3. **Stacking decides outcomes**: careful against careless is 84 against 54 clean items on
+   Eco 50 (detergent D).
 
 ## 2. What changed in the model (each a registered parameter with range, tag and source)
 
 | Mechanism | Before | Now | Evidence |
 |---|---|---|---|
-| End of a deposit: spread inside a deposit, `soil.subCellCv` | 0.3 (set) | **0.1** (set; registry default stays 0, see section 8) | Go23, verified: sd 5 g/m2 at 50 g/m2 on sprayed soil (soils 3.2, 7.7). The in-machine tile is complete at 1.05 to 1.15 times the time of its constant rate (soils 6.1), which bounds its whole spread at 0.10 to 0.15 |
+| End of a deposit: spread inside a deposit, `soil.subCellCv` | 0.3 (set) | **0.1** (set; registry default stays 0, see section 7) | Go23, verified: sd 5 g/m2 at 50 g/m2 on sprayed soil (soils 3.2, 7.7). The in-machine tile is complete at 1.05 to 1.15 times the time of its constant rate (soils 6.1), which bounds its whole spread at 0.10 to 0.15 |
 | Spread between 2 mm patches, by how the soil was laid on: `soil.applicationCv` | 0.3 for every soil | **sprayed 0.1, brushed 0.15, spread 0.3, film 0.2** | sprayed verified; brushed estimated (a brushed liquid levels below about 5 mm; range 0.1 to 0.3); spread and film the dossier's estimate for smears |
 | Protease activity mid-point `soil.enzymeTm` | 63 C | **75 C** (63 to 85) | enzymes-at-temperature.md, fact-checked: the half-life law already removes the enzyme above 60 C |
 | Protease half-life `liq.proteaseHalfLife` | 1800 s (600 to 14400) | 1800 s, **range 180 to 14400** | calcium-free buffer value as lower bound; the default is not decided by any document |
@@ -72,12 +64,11 @@ are being regenerated: every table here must be run again on the new water side 
 | Tea: visibility and film | 10 % of a nominal 0.5 g/m2 | **7.5 % of the IKW-level film (0.5 g/m2); the IEC tea has half that film** | chemistry 8.6 (5 to 10 % of an IKW-level stain); the IEC cup is half-filled once, the IKW cup filled twice with hard water and iron and stored 3 days (ratio estimated, 0.2 to 2) |
 | Detergent D protease level | 0.020 (top of the bench range) | **0.013** | fitted, section 3 |
 | Capsule protease level | 2.5 x the level fitted for D (0.05) | **0.03** | 32 to 43 mg active per premium unit dose is 0.33 to 0.44 g of the 9.71 % granulate the rate law is written in (US 11,492,571, verified); another maker's product, range 0.0125 to 0.05 |
-| Auto programme | one ramp to 65 C | unchanged; **`heatPlateau` option and the named alternative `BOSCH_AUTO_145_STAGED_55_OPTIONS`**; ranges in `BOSCH_AUTO_145_UNCERTAIN`; no branch rule | auto-recommendation.md: target undetermined between 50 and 65 C; every sensor threshold is invented |
 
 Not built, with the reason: a "last layer" that sloughs off whole (the dossier proposes it, soils
 7.9; no number exists for when); a rim of 3 to 10 times the loading at the edge of a dried pool
 (soils 7.7, an estimate; for a stain it only moves the effective threshold); a manganese
-catalyst as a species (section 6); a stronger jet term for chemistry-limited soils (no new
+catalyst as a species (section 5); a stronger jet term for chemistry-limited soils (no new
 evidence); a shear condition on the starch law (the in-machine starch study found amylase,
 time, bleach and hardness significant and tested no mechanical factor; the law reads the same
 supply factor as protein, and a porridge film of 1 mg/cm2 needs 8 minutes of supplied liquor).
@@ -130,78 +121,9 @@ robin's machine washed at 54 C) the load mean is 0.12 below the published one, c
 above, glass 0.64 above (the protease lasts longer at 50 C than at the record's 54 C). Plates
 lose points only where exposure is poor (careless: plates 2.88, 3 of 6 dinner plates clean), as
 the brief asks; **in the careful load no plate loses a point, and the published crockery
-deficit is carried by tea alone**. Redeposited specks, which is what real melamine and unsoiled
-cutlery lose their points to, are not modelled.
+deficit is carried by tea alone**.
 
-## 5. The owner's Auto 45-65 with his capsule (12.9 g)
-
-Two layers over anchored-v3: `anchored-v3.owner-capsule.json` (composition of
-`detergents/finish-powerball-ultimate.json`, protease 0.03, stability as registered) and
-`anchored-v3.owner-capsule.stable.json` (half-life 2 h at 60 C, an ASSUMPTION: the upper end of
-the bracket). Main wash as written: 63 min, peak 65 C, 35 min above 60 C, pH 10.1 to 10.25,
-peracid peak 0.45 mmol/L; protease 96 to 32 mg/L (96 to 68 with the stable bracket).
-
-| Case | Crockery | Plates / tea | Cutlery | Glass | All | Items clean | Soiled items clean | Dry soil left |
-|---|---|---|---|---|---|---|---|---|
-| Auto as written, capsule, **careful** (2 washes) | 3.29 | 2.48 / 4.14 | 4.00 | 1.75 | 3.47 | 67 of 97 | 38 of 68 | 11.5 % |
-| the same, **careless** | 1.86 | 1.48 / 1.80 | 3.32 | 1.75 | 2.67 | 44 of 92 | 16 of 64 | 30.9 % |
-| Auto as written, stable bracket, careful | 3.80 | 3.46 / 4.14 | 4.05 | 1.75 | 3.67 | 70 of 97 | 41 of 68 | 2.7 % |
-| the same, careless | 2.07 | 1.88 / 1.80 | 3.33 | 1.75 | 2.75 | 45 of 92 | 17 of 64 | 18.3 % |
-| Auto staged to 55 C, capsule, careful | 2.32 | 3.39 / 1.14 | 4.03 | 1.75 | 3.23 | 65 of 97 | 36 of 68 | 3.0 % |
-| the same, careless | 1.40 | 1.88 / 0.70 | 3.35 | 1.75 | 2.54 | 43 of 92 | 15 of 64 | 19.0 % |
-| Eco 50, capsule, careful (2 washes) | 4.03 | 5.00 / 3.00 | 4.84 | 4.35 | 4.54 | 86.5 of 97 | 57.5 of 68 | 0.2 % |
-| the same, careless | 2.37 | 2.88 / 1.50 | 4.37 | 2.21 | 3.40 | 58 of 92 | 30 of 64 | 9.4 % |
-| Auto as written, detergent D (v3), careful | 1.14 | 2.08 / 0.14 | 3.91 | 1.75 | 2.72 | 59 of 97 | 30 of 68 | 30.0 % |
-| the same, careless | 0.56 | 1.05 / 0.10 | 2.99 | 1.75 | 2.08 | 35 of 92 | 7 of 64 | 48.7 % |
-
-By soil, Auto as written with the capsule (share left; mean score; items clean):
-
-| Soil | Careful | Careless | Careful, stable bracket |
-|---|---|---|---|
-| Egg yolk | 10.4 %; 0.0; 0 of 17 | 34.5 %; 0.0; 0 of 20 | 0.8 %; 0.6; 0 of 17 |
-| Milk, microwaved | 38.6 %; 0.0; 0 of 7 | 54.3 %; 0.0; 0 of 7 | 13.4 %; 0.0; 0 of 7 |
-| Minced meat | 0.0 %; 2.5; 0.5 of 3 | 0.4 %; 1.3; 0 of 3 | 0.0 %; 5.0; 3 of 3 |
-| Porridge | 0.0 %; 4.9; 18.5 of 19 | 9.1 %; 2.7; 9 of 18 | 0.0 %; 4.9; 19 of 19 |
-| Spinach | 0.0 %; 5.0; 3 of 3 | 0.5 %; 4.2; 4 of 6 | 5.0; 3 of 3 |
-| Margarine | 0.0 %; 4.8; 11 of 12 | (none in that load) | 4.8; 11 of 12 |
-| Tea | 6.8 %; 4.1; 5 of 7 | 11.1 %; 1.8; 3 of 10 | 6.8 %; 4.1; 5 of 7 |
-
-**Every soil of the standard load and of the five starter levels, well and badly placed**, on
-the liquor of the careful Auto wash with the capsule (`anchors/scripts/auto-soils.ts`: each soil
-at its working loading and usual ageing on a bench tile; "well" is the median open plate face of
-the careful load, "badly" a face wet a quarter of the time by water half a minute old; the full
-tables with the stable bracket and Eco 50 are `anchors/reports/auto-soils.*.md`). Share of dry
-mass left / share of the soiled area still visibly soiled, in per cent:
-
-| Group | Soils | Well placed | Badly placed |
-|---|---|---|---|
-| Gone wherever water reaches | butter, margarine, cream, oil, chocolate, curry, tallow drippings, lipstick, jam, syrup, milk film | 0 / 0 | 0 / 0 |
-| Clean if well placed | IEC minced meat, porridge (IEC), spinach (IEC), gravy, seeds, burnt milk film (1.4 mg/cm2), milk skin, yoghurt, egg white, pasta film, tomato sauce | 0 / 0 (pasta 0.2 / 1.2) | 41 to 100 / 82 to 100 (spinach particles 5 / 16) |
-| Stains: tea (IEC, home), coffee, red wine | | 7.5 / 0 | 72 to 74 / 100 |
-| Nearly: IEC egg yolk | 5.7 mg/cm2 | 4.1 / 28 (stable bracket 0 / 0.1) | 93 / 100 |
-| Not clean in this wash | dried egg yolk and minced meat at the levels' loadings (7.5, 4.8 mg/cm2) 10 / 35 and 6 / 21; cooked egg 26 / 74; IEC milk 36 / 97; porridge at 9.7 mg/cm2 17 / 55; dough 44; wheat-biscuit cereal 52; mashed potato 74; cheese 87 to 92; burnt sugar, polymerised fat, char 77 to 83 | | 86 to 100 / 100 |
-
-**What the evidence carries, exactly.** The test institutes grade Auto as high as Eco on the
-sister machines. In the model a well-wetted IEC egg plate on Auto is 90 % gone (99 % with the
-stable bracket or with a 55 C wash); this morning it was 43 % gone with detergent D and 50 %
-with the capsule at the registry's stability. It reads dirty because the remaining 1 to 10 %
-lies as a thin film on a few per cent of its area. Clean needs the wash to
-take 1.9 times the mean depth of the layer (1.55 to 1.67 if a brushed layer were as even as a
-sprayed tile); 63 minutes with the capsule take 1.3 (1.45 with the stable bracket). The gap is a
-factor of 1.3 to 1.45 in rate times time at the favourable end. Each of these would close it and
-none is decided by a document: a rate 30 % above the tile's (its tolerance is 20 %); no penalty
-for oven drying (rate x 0.84 and lag x 1.25 are placeholders); less than 3 g of yolk per plate
-(the standard's Annex C was not readable); a main wash 20 minutes longer; a layer as even as a
-sprayed tile together with the stable enzyme. Forks (8.2 mg/cm2) and the milk glasses (9.5
-mg/cm2 on a quarter of the interior) are further off: 1.5 and 1.7 times the plate.
-
-What decides it, in this order: (1) egg-yolk plates and forks on Auto and on Eco 50 with the
-owner's capsule, photographed (if the Auto plates are clean, the first suspects are the amount
-per plate and the oven-drying penalties, not the enzyme); (2) one logged Auto run; (3) an
-interrupted egg-yolk wash, which measures the brushed spread (the time from 70 % removed to
-bare).
-
-## 6. Tea, and the manganese catalyst
+## 5. Tea, and the manganese catalyst
 
 - A stain is judged against one level, 7.5 % of the film of an IKW-level stain (chemistry 8.6);
   the IEC tea is laid down with half that film, so it is seen above 15 % of its own.
@@ -211,8 +133,8 @@ bare).
   programme, which is what a mean of 2 to 3 over many cups looks like; in the model every cup of
   a wash flips together, because nothing but the film's own scatter differs from cup to cup.
   A tea verdict is not reliable within 15 % of the bleach rate.
-- The owner's capsule makes 0.45 mmol/L of peracid against 0.32 for detergent D and bleaches 5
-  of 7 tea items on Auto as written (0 of 7 on the 55 C course, 1 of 7 on Eco 50).
+- The owner's capsule makes 0.45 mmol/L of peracid against 0.32 for detergent D and bleaches 1
+  of 7 tea items on Eco 50.
 - **The catalyst need not be a species.** MnTACN acts on the peroxide path, which the model has
   (`soil.bleachPeroxideRatio`, the rate constant of the perhydroxyl anion over that of peracid;
   its range is widened to 20 for a catalysed product). No source gives the size of the
@@ -220,7 +142,7 @@ bare).
   only with its peracid. Tea cups washed with the capsule and with a catalyst-free product
   measure the ratio.
 
-## 7. Stacking, seeds and tiers under anchored-v3 (Eco 50, detergent D)
+## 6. Stacking, seeds and tiers under anchored-v3 (Eco 50, detergent D)
 
 Loads (`anchors/reports/stacking.eco_50.v3.md`; level seed 1, simulation seed 1; unweighted):
 
@@ -235,7 +157,7 @@ Loads (`anchors/reports/stacking.eco_50.v3.md`; level seed 1, simulation seed 1;
 | Forks turned end for end | 97 | 4.49 | 87 | 58 | 0.2 % |
 | Half load | 54 | 4.31 | 46 | 32 of 40 | 0.0 % |
 
-The twelve pairs of the anchoring note (B minus A on the affected items):
+The pairs of the anchoring note (B minus A on the affected items):
 
 | Checklist | Pair | n | A | B | Δs | v2 | Verdict |
 |---|---|---|---|---|---|---|---|
@@ -251,7 +173,6 @@ The twelve pairs of the anchoring note (B minus A on the affected items):
 | P06, control | The same wash, soiled items of the upper rack | 15 | 2.73 | 1.73 | -1.00 | -0.60 | **Fails**: the upper rack loses where little is expected |
 | P16, control | Forks turned end for end | 11 | 4.27 | 4.82 | +0.55 | +0.91 | **Fails** (at most 0.3 expected); rule-made overlapping poses, and half of it was sampling in v2 |
 | P19 | Half load against full (standard weights) | | 4.25 | 4.07 | -0.18 | -0.20 | Sign right, small |
-| P27 | Eco 50 against Auto, detergent D, careful (mean over items) | 97 | 4.43 | 3.13 | -1.30 | -1.45 | Sign as the model has it; against the test institutes for a commercial tablet (section 5) |
 
 Seeds and tiers (`anchors/reports/seeds.eco_50.v3.md`; careful load, 16 washes): load mean with
 standard weights 4.07 (sd 0.03; published repeatability 0.09), cutlery 4.82 (0.04), glass 4.15
@@ -266,16 +187,15 @@ standard weights 4.07 (sd 0.03; published repeatability 0.09), cutlery 4.82 (0.0
 The flips halved because fewer items sit at the edge of clean; the fast tier still is not the
 official tier (forks and soup spoons: the water side's).
 
-## 8. Using it
+## 7. Using it
 
 ```
 cd packages/calibration
 pnpm exec tsx anchors/scripts/check.ts                       # version, water hash, ranges, bench anchors
 pnpm exec tsx anchors/scripts/fit.ts --name anchored-v3      # the fit (about 15 min with cached exposure)
 pnpm exec tsx anchors/scripts/make-owner-set.ts              # the two owner-capsule layers
-pnpm exec tsx anchors/scripts/study.ts anchors/reports/tables.v3.cases.json out.json   # sections 4 and 5
-pnpm exec tsx anchors/scripts/auto-soils.ts <liquor.json> --params anchors/anchored-v3.owner-capsule.json
-pnpm exec tsx anchors/scripts/stacking.ts --params anchors/anchored-v3.json --programme eco_50 --level-seed 1 --sim-seed 1
+pnpm exec tsx anchors/scripts/study.ts anchors/reports/tables.v3.cases.json out.json   # section 4
+pnpm exec tsx anchors/scripts/stacking.ts --params anchors/anchored-v3.json --level-seed 1 --sim-seed 1
 pnpm exec tsx anchors/scripts/seeds.ts --params anchors/anchored-v3.json --fast
 pnpm exec tsx scripts/soil-quantities.ts                     # docs/calibration/soil-quantities.md
 ```
@@ -290,5 +210,5 @@ pnpm exec tsx scripts/soil-quantities.ts                     # docs/calibration/
   now reads as dry film: 2 to 11 times the working film (`soil-quantities.md`).
 - Trust: Eco 50 at load level and for contact, nesting, a shut dispenser, held water: in sign.
   Facing for protein: not modelled (a wetted face cleans). A stalled lower arm: no effect on
-  plates. Tea: at the threshold. Auto for egg and milk: do not use. Fast tier against official:
+  plates. Tea: at the threshold. Fast tier against official:
   not comparable.

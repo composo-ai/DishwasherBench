@@ -14,8 +14,6 @@ import {
   isUnsettledSoil,
   levelCard,
   levelSoilFindings,
-  RESEARCH_PROGRAMME_IDS,
-  SECONDARY_PROGRAMME_IDS,
   SOAK_SENSITIVE_SOILS,
   soilRecordQuantities,
   unsettledItems,
@@ -160,13 +158,8 @@ describe('the soil records of every level against the soil table', () => {
 describe('the programme and the detergent of the game', () => {
   it('is Eco 50 on every level, and no level offers another programme', () => {
     expect(GAME_PROGRAMME_ID).toBe('eco_50');
-    // Since 11 October 2026 nothing of Auto 45-65 is put in front of a player or an agent:
-    // it stays a programme the wash command line runs for research.
-    expect(SECONDARY_PROGRAMME_IDS).toEqual([]);
-    expect(RESEARCH_PROGRAMME_IDS).toEqual(['auto_145']);
     for (const level of allLevels()) {
       expect(level.programmeId, level.id).toBe('eco_50');
-      expect(level.secondaryProgrammes, level.id).toBeUndefined();
       const card = levelCard(level);
       expect(card.programme.programme_id).toBe('eco_50');
       expect(card.programme.status).toBe('scored');
@@ -178,10 +171,6 @@ describe('the programme and the detergent of the game', () => {
     for (const level of allLevels()) {
       // No caveat on the scored programme: no verdict of a level is provisional by the set.
       expect(washCaveatsFor(level.machineId, level.programmeId), level.id).toEqual([]);
-      // The research programme is the one the set has caveats on.
-      for (const id of RESEARCH_PROGRAMME_IDS) {
-        expect(washCaveatsFor(level.machineId, id).length, `${level.id} ${id}`).toBeGreaterThan(0);
-      }
     }
   });
 

@@ -5,7 +5,7 @@
  * of the exposure), and, with `--fast`, at the fast tier against the official one.
  *
  *   pnpm --filter @spotless/calibration exec tsx anchors/scripts/seeds.ts
- *        [--params anchors/<current set>.json] [--set key=value,...] [--programme eco_50]
+ *        [--params anchors/<current set>.json] [--set key=value,...]
  *        [--level-seeds 1,2,3,4] [--sim-seeds 1,2,3,4] [--fast] [--out anchors/out/seeds]
  *
  * A verdict "flips" between two washes when the item is clean in one and not in the other. A
@@ -37,7 +37,8 @@ for (const part of (option('--set') ?? '').split(',').filter((s) => s !== '')) {
   const at = part.indexOf('=');
   params[part.slice(0, at)] = Number(part.slice(at + 1));
 }
-const programme = option('--programme') ?? 'eco_50';
+/** Eco 50, the only programme the simulation washes on. */
+const programme = 'eco_50';
 const levelSeeds = (option('--level-seeds') ?? '1,2,3,4').split(',').map(Number);
 const simSeeds = (option('--sim-seeds') ?? '1,2,3,4').split(',').map(Number);
 const withFast = args.includes('--fast');

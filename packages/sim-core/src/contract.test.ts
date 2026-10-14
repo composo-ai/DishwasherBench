@@ -276,7 +276,7 @@ describe('result contract (section 5.6)', () => {
         detergentReleased: 1,
       },
     };
-    // AUTO-145 takes in 3.4 + 3.6 + 3.0 + 3.0 = 13 L in four fills (M4) and has about 3,430
+    // The sizing programme of the contract takes in 3.4 + 3.6 + 3.0 + 3.0 = 13 L in four fills (M4) and has about 3,430
     // ticks; carry-over per drain is 0.3 to 0.5 L (section 8.1).
     expect(result.machine.water_L).toBeCloseTo(3.4 + 3.6 + 3.0 + 3.0, 10);
     expect(result.machine.temperatures).toHaveLength(3430);

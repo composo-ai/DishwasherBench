@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { BOSCH_SMV4HAX40G, MACHINE_VARIANTS, MACHINES, SPOT_60 } from './machines.ts';
+import { BOSCH_SMV4HAX40G, MACHINE_VARIANTS, MACHINES } from './machines.ts';
 import { errorsOf } from './problems.ts';
 import type { Mutable } from './test-util.ts';
 import { must, mutableCopy } from './test-util.ts';
@@ -38,31 +38,10 @@ function codesAfter(base: MachineSpec, damage: (spec: Spec) => void): string[] {
   return validateMachineSpec(copy).map((p) => p.code);
 }
 
-/**
- * What the validator has to say about SPOT-60: three warnings, each a disagreement of the
- * generic dossier with itself that this package carries rather than hides (machine.md 3.3:
- * the top arm at "about 60 rpm", where its own parameters give 44; 12.1 against 7.3: baths of
- * 3.8 and 2.9 L in the specification block, 3.4 and 3.0 L in the programme table).
- */
-const SPOT_60_WARNINGS: readonly (readonly [string, string])[] = [
-  ['arm_speed_off_design', 'sprayLevels.top.designSpeed'],
-  ['bath_volume_differs', 'hydraulics.fill.firstBathVolume'],
-  ['bath_volume_differs', 'hydraulics.fill.laterBathVolume'],
-];
-
 describe('validateMachineSpec on the shipped machines', () => {
   it("the owner's Bosch has no problems at all", () => {
     expect(validateMachineSpec(BOSCH_SMV4HAX40G)).toEqual([]);
-  });
-
-  it('SPOT-60 has no errors, and three warnings where the generic dossier disagrees with itself', () => {
-    const problems = validateMachineSpec(SPOT_60);
-    expect(errorsOf(problems)).toEqual([]);
-    expect(problems.map((p) => [p.code, p.path])).toEqual(SPOT_60_WARNINGS);
-    expect(problems.every((p) => p.severity === 'warning')).toBe(true);
-    // The top arm: 44 rpm by the torque balance against a design speed of 60 rpm.
-    expect(must(problems[0]).message).toMatch(/44\.0 rpm .* 60\.0 rpm/);
-    expect(MACHINES).toHaveLength(2);
+    expect(MACHINES).toHaveLength(1);
   });
 
   it('the named alternative of the Bosch (4.5 mm lower-arm bores) has no problems either', () => {
@@ -370,32 +349,6 @@ describe('validateMachineSpec finds geometry that cannot be', () => {
     expect(must(deepProblems[0]).message).toContain('the cutlery basket');
     expect(must(deepProblems[0]).message).toContain('at position "3"');
   });
-
-  it('checks SPOT-60 the same way', () => {
-    expect(
-      codesAfter(SPOT_60, (s) => {
-        // The mid arm's nozzle plane inside the upper rack's base grid.
-        arm(s, 'mid').nozzleUpZ = -0.004;
-        arm(s, 'mid').topFaceZ = -0.004;
-      }),
-    ).toContain('arm_hits_basket');
-    expect(
-      codesAfter(SPOT_60, (s) => {
-        // The cutlery tray 100 mm higher: through the roof.
-        must(basket(s, 'third').pose.heightPositions[0]).originZ += 0.1;
-      }),
-    ).toContain('basket_outside_tub');
-    expect(
-      codesAfter(SPOT_60, (s) => {
-        // The top arm lowered into the tray's floor.
-        const top = arm(s, 'top');
-        top.nozzleDownZ = 0.59;
-        top.bladeUndersideZ = 0.59;
-        top.hubUndersideZ = 0.59;
-        top.topFaceZ = 0.6;
-      }),
-    ).toContain('arm_hits_basket');
-  });
 });
 
 describe('validateMachineSpec finds hydraulics and thermal data that cannot be', () => {
@@ -512,18 +465,18 @@ describe('validateMachineSpec finds hydraulics and thermal data that cannot be',
 
 describe('validateMachineSpec finds programmes that do not add up', () => {
   const hold = (s: Spec) => {
-    const step = must(programme(s, 'auto_145').steps.find((x) => x.id === 'a5_hold'));
+    const step = must(programme(s, 'eco_50').steps.find((x) => x.id === 'e5_hold'));
     if (step.kind !== 'hold') throw new Error('not a hold');
     return step;
   };
   /** The first phase of the pattern of the intermediate rinse, a step that fixes its own. */
   const rinsePhase = (s: Spec) => {
-    const step = must(programme(s, 'auto_145').steps.find((x) => x.id === 'a7_rinse'));
+    const step = must(programme(s, 'eco_50').steps.find((x) => x.id === 'e7_rinse'));
     if (step.kind !== 'circulate' || step.diverter === null) throw new Error('no pattern');
     return must(step.diverter.phases[0]);
   };
   const moveStep = (s: Spec, id: string, afterId: string, phase?: 'final_rinse') => {
-    const p = programme(s, 'auto_145');
+    const p = programme(s, 'eco_50');
     const step = must(p.steps.find((x) => x.id === id));
     if (phase !== undefined) step.phase = phase;
     p.steps = p.steps.filter((x) => x !== step);
@@ -538,7 +491,7 @@ describe('validateMachineSpec finds programmes that do not add up', () => {
     [
       'the tank not refilled for the final rinse: nothing to fill it from',
       (s) => {
-        const rinse = must(programme(s, 'auto_145').steps.find((x) => x.id === 'a7_rinse'));
+        const rinse = must(programme(s, 'eco_50').steps.find((x) => x.id === 'e7_rinse'));
         if (rinse.kind !== 'circulate') throw new Error('not a circulation');
         rinse.prestoreFills = [];
       },
@@ -547,7 +500,7 @@ describe('validateMachineSpec finds programmes that do not add up', () => {
     [
       'the same, seen in the water total',
       (s) => {
-        const rinse = must(programme(s, 'auto_145').steps.find((x) => x.id === 'a7_rinse'));
+        const rinse = must(programme(s, 'eco_50').steps.find((x) => x.id === 'e7_rinse'));
         if (rinse.kind !== 'circulate') throw new Error('not a circulation');
         rinse.prestoreFills = [];
       },
@@ -559,24 +512,24 @@ describe('validateMachineSpec finds programmes that do not add up', () => {
       'programme_prestore_overflow',
     ],
     [
-      'a declared water total of 13 L for an 11.5 L programme',
-      (s) => void (programme(s, 'auto_145').declared.mainsWater = 13e-3),
+      'a declared water total of 11 L for a 9.5 L programme',
+      (s) => void (programme(s, 'eco_50').declared.mainsWater = 11e-3),
       'programme_water_mismatch',
     ],
     [
       'a declared energy 20 % above the model',
-      (s) => void (programme(s, 'auto_145').declared.energy = 1.25 * 3.6e6),
+      (s) => void (programme(s, 'eco_50').declared.energy = 1.25 * 3.6e6),
       'programme_energy_mismatch',
     ],
     [
-      'a heater too weak to reach 65 C in two hours',
+      'a heater too weak to reach 50 C in two hours',
       (s) => void (s.thermal.heaterPower = 150),
       'programme_heat_timeout',
     ],
     [
       'a first bath of 0.6 L: the pump runs dry',
       (s) => {
-        const fill = must(programme(s, 'auto_145').steps.find((x) => x.id === 'a1_fill'));
+        const fill = must(programme(s, 'eco_50').steps.find((x) => x.id === 'e1_fill'));
         if (fill.kind !== 'fill') throw new Error('not a fill');
         must(fill.sources[0]).volume = 0.3e-3;
         must(fill.sources[1]).volume = 0.3e-3;
@@ -586,7 +539,7 @@ describe('validateMachineSpec finds programmes that do not add up', () => {
     [
       'a wash without detergent',
       (s) => {
-        const p = programme(s, 'auto_145');
+        const p = programme(s, 'eco_50');
         p.steps = p.steps.filter((x) => x.kind !== 'dose_detergent');
       },
       'programme_detergent_count',
@@ -594,8 +547,8 @@ describe('validateMachineSpec finds programmes that do not add up', () => {
     [
       'a programme that ends with the last bath still in the tub',
       (s) => {
-        const p = programme(s, 'auto_145');
-        p.steps = p.steps.filter((x) => x.id !== 'a12_drain');
+        const p = programme(s, 'eco_50');
+        p.steps = p.steps.filter((x) => x.id !== 'e12_drain');
       },
       'programme_ends_with_water',
     ],
@@ -620,23 +573,23 @@ describe('validateMachineSpec finds programmes that do not add up', () => {
       'diverter_transition_too_long',
     ],
     [
-      'a wash target of 70 C on a machine whose heater goes off at 60 C',
+      'a final-rinse target of 61 C on a machine whose heater goes off at 60 C',
       (s) => void (s.thermal.heaterCutOut = 60),
       'programme_target_above_cut_out',
     ],
     [
       'the detergent dosed in the final rinse (the step moved, its phase left as it was)',
-      (s) => moveStep(s, 'a4_dose', 'a9_fill'),
+      (s) => moveStep(s, 'e4_dose', 'e9_fill'),
       'step_phase_out_of_order',
     ],
     [
       'the detergent step given the phase of the final rinse',
-      (s) => moveStep(s, 'a4_dose', 'a9_fill', 'final_rinse'),
+      (s) => moveStep(s, 'e4_dose', 'e9_fill', 'final_rinse'),
       'dose_in_wrong_phase',
     ],
     [
       'the detergent armed after the last circulation of the wash: the bath is drained first',
-      (s) => moveStep(s, 'a4_dose', 'a5_hold'),
+      (s) => moveStep(s, 'e4_dose', 'e5_hold'),
       'programme_dose_not_released',
     ],
     [
@@ -648,7 +601,7 @@ describe('validateMachineSpec finds programmes that do not add up', () => {
     [
       'a heating target of 95 C',
       (s) => {
-        const heat = must(programme(s, 'auto_145').steps.find((x) => x.id === 'a10_heat'));
+        const heat = must(programme(s, 'eco_50').steps.find((x) => x.id === 'e10_heat'));
         if (heat.kind !== 'heat') throw new Error('not a heat step');
         heat.target = 95;
       },
@@ -656,17 +609,17 @@ describe('validateMachineSpec finds programmes that do not add up', () => {
     ],
     [
       'a tank fill after the end of its step',
-      (s) => void (must(hold(s).prestoreFills[0]).at = 5000),
+      (s) => void (must(hold(s).prestoreFills[0]).at = 9000),
       'step_bad_fill_time',
     ],
     [
       'two steps with one id',
-      (s) => void (must(programme(s, 'auto_145').steps[3]).id = 'a2_pre_rinse'),
+      (s) => void (must(programme(s, 'eco_50').steps[3]).id = 'e2_pre_rinse'),
       'duplicate_id',
     ],
     [
       'a primary programme the machine has not',
-      (s) => void (s.primaryProgramme = 'auto_200'),
+      (s) => void (s.primaryProgramme = 'nope'),
       'primary_programme_missing',
     ],
     [
@@ -686,19 +639,19 @@ describe('validateMachineSpec finds programmes that do not add up', () => {
     const problems = validateMachineSpec(copy);
     expect(problems).toHaveLength(1);
     const problem = must(problems[0]);
-    expect(problem.path).toBe('programmes.auto_145.declared.duration');
-    // Ten minutes more than the 144.9 min the programme takes, against the declared 145.0 min.
-    expect(problem.message).toContain('154.9 min');
-    expect(problem.message).toContain('145.0 min');
+    expect(problem.path).toBe('programmes.eco_50.declared.duration');
+    // Ten minutes more than the 294.8 min the programme takes, against the declared 295.0 min.
+    expect(problem.message).toContain('304.8 min');
+    expect(problem.message).toContain('295.0 min');
   });
 
   it('warns, without failing, when a programme leaves the tank emptier than it found it', () => {
     const copy = mutableCopy(BOSCH_SMV4HAX40G);
-    const p = programme(copy, 'pre_rinse');
+    const p = programme(copy, 'eco_50');
     const dry = must(p.steps.find((x) => x.kind === 'dry'));
     if (dry.kind !== 'dry') throw new Error('not a dry step');
     dry.prestoreFills = [];
-    p.declared.mainsWater = 0.9e-3;
+    p.declared.mainsWater = 6.4e-3;
     const problems = validateMachineSpec(copy);
     expect(problems.map((x) => [x.severity, x.code])).toEqual([
       ['warning', 'programme_prestore_not_restored'],
@@ -807,11 +760,11 @@ describe('validateMachineSpec finds missing provenance, bad ids and bad defaults
   });
 
   it('reports the path of a missing provenance record', () => {
-    const copy = mutableCopy(SPOT_60);
+    const copy = mutableCopy(BOSCH_SMV4HAX40G);
     Reflect.deleteProperty(must(copy.hydraulics.branches[1]), 'provenance');
     const problems = validateMachineSpec(copy);
     expect(errorsOf(problems).map((p) => [p.code, p.path])).toEqual([
-      ['missing_provenance', 'hydraulics.branches.mid.provenance'],
+      ['missing_provenance', 'hydraulics.branches.upper.provenance'],
     ]);
   });
 });
@@ -832,12 +785,13 @@ describe('validateMachineSpec never throws', () => {
   });
 
   it('tells a part the machine may lack from a part that is missing', () => {
-    // SPOT-60 has no softener and no feed duct on the rear wall: null, and no problem.
-    expect(SPOT_60.softener).toBeNull();
-    expect(SPOT_60.feedDuct).toBeNull();
-    expect(errorsOf(validateMachineSpec(SPOT_60))).toEqual([]);
+    // A machine without a softener and without a feed duct on the rear wall: null, and no problem.
+    const plain = mutableCopy(BOSCH_SMV4HAX40G);
+    Reflect.set(plain, 'softener', null);
+    Reflect.set(plain, 'feedDuct', null);
+    expect(errorsOf(validateMachineSpec(plain))).toEqual([]);
     // No machine is without sensors or a thermal description.
-    const withoutSensors = mutableCopy(SPOT_60);
+    const withoutSensors = mutableCopy(BOSCH_SMV4HAX40G);
     Reflect.set(withoutSensors, 'sensors', null);
     expect(errorsOf(validateMachineSpec(withoutSensors)).map((p) => [p.code, p.path])).toEqual([
       ['missing_group', 'sensors'],
@@ -861,7 +815,7 @@ describe('validateMachineSpec never throws', () => {
       ).length,
     ).toBeGreaterThan(0);
     expect(
-      codesAfter(SPOT_60, (s) => void (arm(s, 'mid').tipRadius = Number.NaN)).length,
+      codesAfter(BOSCH_SMV4HAX40G, (s) => void (arm(s, 'lower').tipRadius = Number.NaN)).length,
     ).toBeGreaterThan(0);
   });
 });
@@ -1077,25 +1031,22 @@ describe('validateMachineSpec holds an arm to its design speed and a programme t
     ]);
   });
 
-  it('warns when a fill takes longer than its row allows, and the totals no longer add up', () => {
-    // 1 L/min: row A3's 2.5 L take 150 s where 90 s are allowed, and the first fill's 0.9 L of
-    // mains water 54 s (inside its minute).
+  it('warns when a fill takes longer than its row allows', () => {
+    // 0.75 L/min: the filter flush's 0.5 L take 40 s where its row allows 30 s, and the first
+    // fill's 0.9 L of mains water 72 s where it allows a minute.
     const copy = mutableCopy(BOSCH_SMV4HAX40G);
-    copy.hydraulics.fill.inletFlow = 1 / 60000;
+    copy.hydraulics.fill.inletFlow = 0.75 / 60000;
     const problems = validateMachineSpec(copy).filter((p) =>
-      p.path.startsWith('programmes.auto_145.'),
+      p.path.startsWith('programmes.eco_50.'),
     );
     expect(problems.map((p) => `${p.severity} ${p.code} ${p.path}`)).toContain(
-      'warning programme_fill_exceeds_row programmes.auto_145.steps.a3_fill',
+      'warning programme_fill_exceeds_row programmes.eco_50.steps.e7_flush_fill',
     );
-    expect(must(problems.find((p) => p.code === 'programme_fill_exceeds_row')).message).toMatch(
-      /150 s .* 90 s/,
-    );
-    // One minute over: at the edge of AUTO's tolerance, so the slower valve of 0.5 L/min is
-    // what trips the duration check.
     expect(
-      codesAfter(BOSCH_SMV4HAX40G, (s) => void (s.hydraulics.fill.inletFlow = 0.5 / 60000)),
-    ).toContain('programme_duration_mismatch');
+      must(problems.find((p) => p.path === 'programmes.eco_50.steps.e7_flush_fill')).message,
+    ).toMatch(/40 s .* 30 s/);
+    // Half a minute over in all: inside the declared tolerance of two minutes.
+    expect(problems.map((p) => p.code)).not.toContain('programme_duration_mismatch');
   });
 });
 

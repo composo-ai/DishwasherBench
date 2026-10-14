@@ -31,7 +31,7 @@ function record(machine: Partial<RecordMachine> = {}, extra: Partial<WashRecord>
     kind: 'synthetic',
     provenance: { methods: { m: { description: 'test' } } },
     machine: { id: 'bosch_smv4hax40g', ...machine },
-    programme: { id: 'auto_145' },
+    programme: { id: 'eco_50' },
     load: { items: [] },
     observations: [],
     ...extra,
@@ -244,14 +244,14 @@ describe('programmeOfRecord', () => {
   const spec = PRIMARY_MACHINE;
   const nominal = primaryProgramme(spec);
 
-  /** The Auto programme as it would run with another main-wash target and hold. */
+  /** Eco 50 as it would run with another main-wash target and hold. */
   function variant(target: number, hold: number): ProgrammeSpec {
     return {
       ...nominal,
       steps: nominal.steps.map((step) =>
-        step.id === 'a4_heat'
+        step.id === 'e4_heat'
           ? { ...step, target }
-          : step.id === 'a5_hold' && step.kind === 'hold'
+          : step.id === 'e5_hold' && step.kind === 'hold'
             ? {
                 ...step,
                 target,
@@ -272,44 +272,44 @@ describe('programmeOfRecord', () => {
   it('applies direct statements about steps', () => {
     const course: RecordCourse = {
       steps: [
-        { step: 'a4_heat', target_c: 52 },
-        { step: 'a5_hold', duration_s: 1500 },
-        { step: 'a1_fill', mains_volume_l: 1.4 },
+        { step: 'e4_heat', target_c: 52 },
+        { step: 'e5_hold', duration_s: 1500 },
+        { step: 'e1_fill', mains_volume_l: 1.4 },
       ],
     };
     const setup = programmeOfRecord(
-      record({}, { programme: { id: 'auto_145', course } }),
+      record({}, { programme: { id: 'eco_50', course } }),
       spec,
       spec.defaultConfig,
     );
     const step = (id: string) => setup.programme.steps.find((s) => s.id === id);
-    expect(step('a4_heat')).toMatchObject({ target: 52 });
+    expect(step('e4_heat')).toMatchObject({ target: 52 });
     // The hold after a heat-up follows its target.
-    expect(step('a5_hold')).toMatchObject({ target: 52, duration: 1500 });
-    const fill = step('a1_fill');
+    expect(step('e5_hold')).toMatchObject({ target: 52, duration: 1500 });
+    const fill = step('e1_fill');
     expect(
       fill?.kind === 'fill' ? fill.sources.find((s) => s.from === 'mains')?.volume : 0,
     ).toBeCloseTo(0.0014, 12);
     expect(setup.changes.every((c) => c.source === 'stated')).toBe(true);
     const timeline = expandProgramme(spec, setup.programme, {});
-    const heat = timeline.segments.find((s) => s.stepId === 'a4_heat');
+    const heat = timeline.segments.find((s) => s.stepId === 'e4_heat');
     expect(heat?.temperature.liquor.at(-1)).toBeCloseTo(52, 0);
   });
 
   it('recovers the course of a run from its events and a liquor temperature log', () => {
-    // A run in which Auto chose 55 C and a 30 min hold, as a plug and a probe would record it.
+    // A run whose main wash reached 55 C and was held for 30 min, as a plug and a probe would record it.
     const truth = expandProgramme(spec, variant(55, 1800), {});
     const course = courseOfTimeline(truth, { interval: 30, method: 'm' });
     delete (course as { power_log?: unknown }).power_log;
     const setup = programmeOfRecord(
-      record({}, { programme: { id: 'auto_145', course } }),
+      record({}, { programme: { id: 'eco_50', course } }),
       spec,
       spec.defaultConfig,
     );
     expect(setup.adapted).toBe(true);
     const adapted = expandProgramme(spec, setup.programme, {});
     // The main wash reaches the logged temperature to half a kelvin ...
-    const heat = adapted.segments.find((s) => s.stepId === 'a4_heat');
+    const heat = adapted.segments.find((s) => s.stepId === 'e4_heat');
     expect(Math.abs((heat?.temperature.liquor.at(-1) ?? 0) - 55)).toBeLessThan(0.5);
     // ... every fill and drain is where it was measured, to 2 s, and the run is as long.
     for (const anchor of setup.check.anchors) {
@@ -334,8 +334,8 @@ describe('programmeOfRecord', () => {
       n++;
     });
     expect(Math.sqrt(square / n)).toBeGreaterThan(3 * (setup.check.temperature?.rms_K ?? 99));
-    expect(setup.changes.map((c) => `${c.step}.${c.field}`)).toContain('a4_heat.target');
-    expect(setup.changes.map((c) => `${c.step}.${c.field}`)).toContain('a5_hold.duration');
+    expect(setup.changes.map((c) => `${c.step}.${c.field}`)).toContain('e4_heat.target');
+    expect(setup.changes.map((c) => `${c.step}.${c.field}`)).toContain('e5_hold.duration');
   });
 
   it('turns heater-on time into temperature when there is only a power log', () => {
@@ -347,12 +347,12 @@ describe('programmeOfRecord', () => {
       events: (full.events ?? []).filter((e) => e.kind === 'fill' || e.kind === 'drain'),
     };
     const setup = programmeOfRecord(
-      record({}, { programme: { id: 'auto_145', course } }),
+      record({}, { programme: { id: 'eco_50', course } }),
       spec,
       spec.defaultConfig,
     );
     const heat = expandProgramme(spec, setup.programme, {}).segments.find(
-      (s) => s.stepId === 'a4_heat',
+      (s) => s.stepId === 'e4_heat',
     );
     // The heater went off after the time 52 C takes; the thermal model gives the target back to 1.5 K.
     expect(Math.abs((heat?.temperature.liquor.at(-1) ?? 0) - 52)).toBeLessThan(1.5);
@@ -369,14 +369,12 @@ describe('programmeOfRecord', () => {
   it('does not use events whose number does not fit the programme, and says so', () => {
     const course: RecordCourse = { events: [{ kind: 'drain', t_s: 4000 }] };
     const setup = programmeOfRecord(
-      record({}, { programme: { id: 'auto_145', course } }),
+      record({}, { programme: { id: 'eco_50', course } }),
       spec,
       spec.defaultConfig,
     );
     expect(setup.adapted).toBe(false);
-    expect(setup.notes.join('\n')).toMatch(
-      /1 measured drain events against 5 in programme auto_145/,
-    );
+    expect(setup.notes.join('\n')).toMatch(/1 measured drain events against 5 in programme eco_50/);
   });
 
   it('compares a probe that is not in the liquor without letting it set targets', () => {
@@ -389,7 +387,7 @@ describe('programmeOfRecord', () => {
       },
     };
     const setup = programmeOfRecord(
-      record({}, { programme: { id: 'auto_145', course } }),
+      record({}, { programme: { id: 'eco_50', course } }),
       spec,
       spec.defaultConfig,
     );

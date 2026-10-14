@@ -309,10 +309,10 @@ describe('a wash as a JSON description', () => {
     expect(washInputFromDescription(minimal).config).toEqual(spec.defaultConfig);
   });
 
-  it("defaults to the owner's machine, its Auto programme and the fast tier", () => {
+  it("defaults to the owner's machine, Eco 50 and the fast tier", () => {
     const input = washInputFromDescription(minimal);
     expect(input.machine.id).toBe('bosch_smv4hax40g');
-    expect(input.programme.id).toBe('auto_145');
+    expect(input.programme.id).toBe('eco_50');
     expect(input.tier).toBe('fast');
     expect(input.items[0]?.pose).toEqual({ p: [0.01, 0.02, 0.43], q: [0, 0, 0, 1] });
     expect(input.items[0]?.soils).toEqual([]);
@@ -535,34 +535,43 @@ describe('water the load traps in upright vessels', () => {
   const params = createWashParams();
 
   it('is held back from the sump in the first bath only', () => {
-    // The Auto programme: pre-drain, fill, cold pre-rinse; then 2.5 L are pumped out and
-    // replaced for the main wash. The vessels fill in the pre-rinse and stay full.
+    // Eco 50: pre-drain, fill, cold pre-rinse, and the main wash in the same water, which is
+    // drained only at its end. The vessels fill in the pre-rinse and stay full.
     const held = trappedWaterByStep(programme, 0.003);
     const firstBath = programme.steps.filter((step) => held({ stepId: step.id }).trapped === 0.003);
-    expect(firstBath.map((step) => step.id)).toEqual(['a0_pre_drain', 'a1_fill', 'a2_pre_rinse']);
+    expect(firstBath.map((step) => step.id)).toEqual([
+      'e0_pre_drain',
+      'e1_fill',
+      'e2_pre_rinse',
+      'e4_dose',
+      'e4_heat',
+      'e5_hold',
+    ]);
     for (const step of programme.steps) {
-      if (step.phase === 'main_wash' || step.phase === 'final_rinse') {
+      if (step.phase === 'intermediate_rinse' || step.phase === 'final_rinse') {
         expect(held({ stepId: step.id }).trapped).toBeUndefined();
       }
     }
   });
 
   it('starves the pump in that bath, where the machine tops up, and nowhere after it', () => {
-    // 3.5 L in upright vessels: of the 4.0 L of the first fill and the 0.5 L the level check
-    // adds, 1 L is left for pipes, air, films and sump.
+    // 2.9 L in upright vessels: of the 4.0 L of the first fill and the 0.5 L the level check
+    // adds in the pre-rinse, 1.6 L is left for pipes, air, films and sump, too little; the
+    // second 0.5 L the level check adds when the main wash starts is enough for the wash.
     const dry = buildWashHydraulics({ spec, programme, params });
     const loaded = buildWashHydraulics({
       spec,
       programme,
       params,
-      heldWater: trappedWaterByStep(programme, 0.0035),
+      heldWater: trappedWaterByStep(programme, 0.0029),
     });
     const timeline = loaded.schedule.timeline;
     const starved = timeline.problems.filter((p) => p.code === 'pump_starved');
     expect(starved.length).toBeGreaterThan(0);
-    for (const problem of starved) expect(problem.stepId).toBe('a2_pre_rinse');
+    for (const problem of starved) expect(problem.stepId).toBe('e2_pre_rinse');
     expect(timeline.events.filter((e) => e.kind === 'top_up').map((e) => e.stepId)).toEqual([
-      'a2_pre_rinse',
+      'e2_pre_rinse',
+      'e4_heat',
     ]);
     // The pre-rinse runs on spray states of its own, at a fraction of the flow ...
     const short = loaded.states.filter((state) => state.headFactor < 1);
@@ -570,14 +579,14 @@ describe('water the load traps in upright vessels', () => {
     for (const state of short) {
       expect(state.pumpRpm).toBe(2800);
       const full = dry.states.find((s) => s.id === `${state.position}@${state.pumpRpm}`);
-      expect(state.flow).toBeLessThan(0.7 * (full?.flow ?? 0));
+      expect(state.flow).toBeLessThan(0.9 * (full?.flow ?? 0));
     }
     for (const span of loaded.schedule.spans) {
       if (span.state < 0) continue;
       const state = loaded.states[span.state];
-      expect(state?.headFactor === 1, `${span.stepId} ${state?.id}`).toBe(
-        span.phase !== 'pre_rinse',
-      );
+      // Short in the pre-rinse only.
+      if (span.phase !== 'pre_rinse')
+        expect(state?.headFactor, `${span.stepId} ${state?.id}`).toBe(1);
     }
     // ... and the main wash reaches its temperature as in the unloaded machine: the programme
     // is not a quarter of an hour longer and does not run cold.
@@ -588,7 +597,7 @@ describe('water the load traps in upright vessels', () => {
           .flatMap((segment) => [...segment.temperature.liquor]),
       );
     expect(hottest(loaded)).toBeCloseTo(hottest(dry), 0);
-    expect(hottest(loaded)).toBeGreaterThan(60);
+    expect(hottest(loaded)).toBeGreaterThan(49);
     expect(Math.abs(loaded.schedule.duration - dry.schedule.duration)).toBeLessThan(120);
     // The states of the unloaded machine are all still there, under the same keys.
     for (const state of dry.states) {

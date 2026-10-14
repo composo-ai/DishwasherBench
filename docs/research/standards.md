@@ -629,6 +629,7 @@ Conventions.
 - f_jet: fraction of circulation time a surface point is under direct jet impingement. Published values are 1.6 % for a favourably placed spot and "less than 10 % in most cases" [VERIFIED] S16.
 - Every effect size is [ESTIMATED] unless tagged otherwise. The derivation is given in the "size" column. Until real tests exist, the pass criterion is: correct sign, and magnitude within a factor of two (or within ± 1 score point).
 - "Negative controls" are phenomena where the correct answer is "little or no effect". They matter as much as the positive ones: a model that predicts dirt wherever there is no line of sight is wrong.
+- In the simulation P21, P23, P26, P34, P38, P39, P41, P42 and P43 are out of scope, and P27 and P32, which compare programmes, are not in the suite (`docs/design/scope.md`, "Out of scope").
 
 ### 9.2 Group A: spray access and shadowing
 

@@ -234,12 +234,13 @@ const liquorAt = (time: number, name: (typeof LIQUOR_FIELDS)[number]): number =>
 
 describe('ticks', () => {
   it('asks for each exposure once, in the order the programme first needs it', () => {
-    // The pre-rinse alternates l and ur at 2800 rev/min; the main wash at 3000.
+    // The pre-rinse alternates l and ur at 2800 rev/min; the main wash goes on alternating,
+    // from ur, at 3000.
     expect(first.requested.map((index) => states[index]?.id)).toEqual([
       'l@2800',
       'ur@2800',
-      'l@3000',
       'ur@3000',
+      'l@3000',
     ]);
   });
 
@@ -251,9 +252,9 @@ describe('ticks', () => {
       want += Math.max(1, Math.ceil((span.end - span.start - 1e-6) / tick));
     }
     expect(result.ticks).toBe(want);
-    // About 4,000 ticks for the 2 h 25 min programme.
-    expect(result.ticks).toBeGreaterThan(3500);
-    expect(result.ticks).toBeLessThan(4500);
+    // About 7,800 ticks for the 4 h 55 min programme.
+    expect(result.ticks).toBeGreaterThan(7000);
+    expect(result.ticks).toBeLessThan(8500);
     let total = 0;
     for (let i = 0; i < result.ticks; i++) {
       total += result.tickLength[i] as number;
@@ -274,7 +275,7 @@ describe('ticks', () => {
 describe('liquor through the programme', () => {
   const release = schedule.timeline.events.find((e) => e.kind === 'detergent_release');
   const drains = schedule.timeline.events.filter((e) => e.kind === 'drain');
-  const mainDrain = drains.find((e) => e.kind === 'drain' && e.stepId === 'a6_drain');
+  const mainDrain = drains.find((e) => e.kind === 'drain' && e.stepId === 'e6_drain');
   if (release === undefined || release.kind !== 'detergent_release') throw new Error('no release');
   if (mainDrain === undefined || mainDrain.kind !== 'drain') throw new Error('no main-wash drain');
 
@@ -303,12 +304,13 @@ describe('liquor through the programme', () => {
     const carried = result.carryOver.find((c) => c.time === mainDrain.time);
     if (carried === undefined) throw new Error('no carry-over');
     expect(carried.sump).toBe(mainDrain.remaining);
-    // The film: the residual film on every block either main-wash state wets.
+    // The film: the residual film on every block a state of the first bath wets (the pre-rinse
+    // and the main wash share their water).
     const rho = bindSharedClosures(params).water(params.get('jets.solveTemperature')).rho;
     let film = 0;
     for (let b = 0; b < scene.blocks.count; b++) {
       let kept = 0;
-      for (const set of [first.sets[1], first.sets[3]]) {
+      for (const set of first.sets) {
         const o = WATER_FIELD_COUNT * b;
         if (set !== undefined && (set.water.values[o + WATER_FIELD.wetFraction] as number) > 0) {
           kept = Math.max(kept, set.water.values[o + WATER_FIELD.retained] as number);
@@ -320,14 +322,19 @@ describe('liquor through the programme', () => {
     expect(carried.film).toBeCloseTo(film, 9);
     const before = mainDrain.volume + mainDrain.remaining;
     expect(carried.fraction).toBeCloseTo((mainDrain.remaining + film) / before, 12);
-    // The intermediate rinse starts with that share of the detergent in its own volume.
+    // The filter flush takes that share of the detergent, and the intermediate rinse starts
+    // with the share of it that the flush's drain leaves, in its own volume.
+    const flushDrain = drains.find((e) => e.kind === 'drain' && e.stepId === 'e7_flush_drain');
+    if (flushDrain === undefined || flushDrain.kind !== 'drain') throw new Error('no flush drain');
+    const flushCarried = result.carryOver.find((c) => c.time === flushDrain.time);
+    if (flushCarried === undefined) throw new Error('no carry-over of the flush');
     const rinse = schedule.timeline.segments.find(
       (s) => s.phase === 'intermediate_rinse' && s.kind === 'circulate',
     );
     if (rinse === undefined) throw new Error('no rinse');
     const main = liquorAt(mainDrain.time - 10, 'detergent');
     expect(liquorAt(rinse.start + 20, 'detergent')).toBeCloseTo(
-      (main * before * carried.fraction) / rinse.liquorVolume.start,
+      (main * before * carried.fraction * flushCarried.fraction) / rinse.liquorVolume.start,
       6,
     );
     expect(result.carryOver).toHaveLength(drains.length);
@@ -360,7 +367,7 @@ describe('soil and pools', () => {
     expect(pool?.dry).toBeCloseTo(0, 6);
   });
 
-  // The same replay with the water that falls into the cup scaled: at a hundredth the cup
+  // The same replay with the water that falls into the cup scaled: at a two-hundredth the cup
   // never fills, at three hundredths it fills late and little runs over.
   const inflowScaled = (factor: number): Promise<Run> =>
     run(params, (set) => ({ ...set, poolInflow: set.poolInflow.map((rate) => rate * factor) }));
@@ -374,7 +381,7 @@ describe('soil and pools', () => {
   };
 
   it('lets the soil that dissolved under a pool leave with the water that spills, as its detergent does', async () => {
-    const dripped = await inflowScaled(0.01);
+    const dripped = await inflowScaled(0.005);
     const trickled = await inflowScaled(0.03);
     const tenth = await inflowScaled(0.1);
     // The ledger closes however much runs through the cup, and what it counts as in pools is
@@ -400,12 +407,12 @@ describe('soil and pools', () => {
 
   it('brings the soil of the liquor into a pool with the water, and leaves it there as the detergent is left', async () => {
     // Under the roof spinner the cup is rinsed through many times: at the end its water is
-    // the liquor of the last rinse, with the soil that liquor carries.
+    // the liquor of the last rinse, with the soil that liquor carries (within a tenth).
     const last = result.ticks - 1;
     const soilThen = result.liquor[LIQUOR_FIELD_COUNT * last + column('suspendedSoil')] as number;
     const flushed = cupPool(first);
     expect(soilThen).toBeGreaterThan(0);
-    expect(flushed.carriedSoil / flushed.volume / soilThen).toBeCloseTo(1, 1);
+    expect(Math.abs(flushed.carriedSoil / flushed.volume / soilThen - 1)).toBeLessThan(0.1);
     // A cup that little runs through still holds liquor of the main wash: several times the
     // soil in the same water, as it holds several times the detergent.
     const trickled = cupPool(await inflowScaled(0.03));

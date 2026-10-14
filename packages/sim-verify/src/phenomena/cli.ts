@@ -3,20 +3,19 @@
  *
  *   pnpm --filter @spotless/sim-verify exec tsx src/phenomena/cli.ts [P02 P25 ...]
  *        [--tier fast|official] [--params <parameter-set.json>] [--accept-stale-params]
- *        [--dose-g <grams>] [--detergent-name <name>] [--programme <id>] [--seed <n>]
+ *        [--dose-g <grams>] [--detergent-name <name>] [--seed <n>]
  *        [--resolution] [--quick] [--cache <dir>] [--out <dir>] [--name <name>] [--list]
  *
  *   pnpm --filter @spotless/sim-verify exec tsx src/phenomena/cli.ts
  *        --compare <title> <label>=<report.json> <label>=<report.json> ... [--out <dir>] [--name <name>]
  *
- * Runs the named phenomena (all 48 without names; `--resolution` those whose result could
+ * Runs the named phenomena (all 46 without names; `--resolution` those whose result could
  * depend on the block size; `--quick` the six of the unit test) at a tier with a parameter
  * set (the registry defaults, or a file: `ParamSet.toJSON` or a plain map of key to value)
  * with the machine's own dose of the reference detergent or `--dose-g` grams of the product
  * the set describes (the owner's capsule: 12.9), and writes `<name>.md` and `<name>.json`
- * under `phenomena/reports/`. Every wash whose case names no programme runs on the scored
- * programme, Eco 50; `--programme` puts another programme of the machine in its place
- * (`auto_145`: the owner's Auto 45-65, the secondary report). A `spotless.params` file that is stale (written against another
+ * under `phenomena/reports/`. Every wash runs on Eco 50, the programme the game is scored on.
+ * A `spotless.params` file that is stale (written against another
  * registry or calibrated on another water side) stops the command with what to do, unless
  * `--accept-stale-params` is given; the head of the report then says so (default name
  * `phenomena-<tier>-<defaults or the file's base name>`). `--compare` reads reports and
@@ -60,7 +59,6 @@ let seed: number | undefined;
 let acceptStale = false;
 let dose: number | undefined;
 let detergentName: string | undefined;
-let programme: string | undefined;
 let compare: string | undefined;
 const compared: string[] = [];
 for (let i = 0; i < args.length; i++) {
@@ -73,7 +71,6 @@ for (let i = 0; i < args.length; i++) {
   else if (arg === '--seed') seed = Number(args[++i]);
   else if (arg === '--accept-stale-params') acceptStale = true;
   else if (arg === '--dose-g') dose = Number(args[++i]);
-  else if (arg === '--programme') programme = args[++i];
   else if (arg === '--detergent-name') detergentName = args[++i];
   else if (arg === '--resolution')
     ids.push(...PHENOMENA.filter((s) => s.resolutionSensitive).map((s) => s.id));
@@ -137,7 +134,6 @@ const run = await runPhenomena({
   paramSet,
   ...(cacheDir === undefined ? {} : { cacheDir }),
   ...(seed === undefined ? {} : { seed }),
-  ...(programme === undefined ? {} : { programme }),
   log: (line) => console.error(line),
 });
 // A fast run says what the fast tier costs, as measured for the set it ran with.
@@ -149,7 +145,7 @@ const report: SuiteReport =
           paramsFile === undefined
             ? null
             : readTierAgreement(tierAgreementFileOf(fromOrigin(paramsFile))),
-          programme ?? SCORED_PROGRAMME,
+          SCORED_PROGRAMME,
         ),
       }
     : run;

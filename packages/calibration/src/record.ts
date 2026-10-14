@@ -187,7 +187,7 @@ export interface RecordCourse {
 
 /** The programme of a record. */
 export interface RecordProgramme {
-  /** Programme id of the machine (`auto_145`). */
+  /** Programme id of the machine (`eco_50`). */
   readonly id: string;
   /** Options selected with it, in the words of the control panel. */
   readonly options?: readonly string[];

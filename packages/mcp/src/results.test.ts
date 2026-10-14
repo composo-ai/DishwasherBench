@@ -516,7 +516,7 @@ describe('what the descriptions say against what the game answers', () => {
       ...Object.values(INPUT_SCHEMAS).map((schema) => JSON.stringify(z.toJSONSchema(schema))),
       ...Object.values(OUTPUT_SCHEMAS).map((schema) => JSON.stringify(z.toJSONSchema(schema))),
     ].join('\n');
-    expect(all).not.toMatch(/uncalibrated|auto_145|Auto 45/i);
+    expect(all).not.toMatch(/uncalibrated/i);
     expect(all).not.toMatch(/secondary programmes of the level card/);
   });
 });

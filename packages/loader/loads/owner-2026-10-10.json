@@ -9,7 +9,7 @@
   "machineId": "bosch_smv4hax40g",
   "config": null,
   "racks": {},
-  "programmeId": "auto_145",
+  "programmeId": "eco_50",
   "items": [
    {
     "id": "plate_01",
@@ -869,7 +869,7 @@
   "benchmark_version": "spotless-0.2.0/levels-starter",
   "level_id": "owner-2026-10-10",
   "machine_id": "bosch_smv4hax40g",
-  "programme_id": "auto_145",
+  "programme_id": "eco_50",
   "rack_options": {
    "lower_rack.tine_row_r1": "up",
    "lower_rack.tine_row_r2": "up",
@@ -1370,7 +1370,7 @@
    "benchmark_version": "spotless-0.2.0/levels-starter",
    "level_id": "owner-2026-10-10",
    "machine_id": "bosch_smv4hax40g",
-   "programme_id": "auto_145",
+   "programme_id": "eco_50",
    "rack_options": {
     "lower_rack.tine_row_r1": "up",
     "lower_rack.tine_row_r2": "up",
@@ -1898,7 +1898,7 @@
     "longAxis": "y"
    }
   },
-  "programme_id": "auto_145",
+  "programme_id": "eco_50",
   "items": [
    {
     "item_id": "board_brown_01",

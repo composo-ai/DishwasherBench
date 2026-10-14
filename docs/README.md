@@ -51,12 +51,12 @@ client), 5 to 7 (what is recorded, how an episode is verified, what each kind of
 episodes played so far, and its section 4 for what they do not show. For a human baseline:
 benchmark/README.md section 4.
 
-**To work on the simulation.** [design/scope.md](design/scope.md) (the aim, what is built, where
-the wash falls short), then [validation/README.md](validation/README.md) sections 5 and 9 (the
-failing phenomena, what is not modelled) and [ROADMAP.md](ROADMAP.md). The physics as designed
+**To work on the simulation.** [design/scope.md](design/scope.md) (the aim, what is built, what
+is out of scope, where the wash falls short), then [validation/README.md](validation/README.md)
+sections 5 and 9 (the failing phenomena, the known gaps) and [ROADMAP.md](ROADMAP.md). The physics as designed
 is [design/sim-core.md](design/sim-core.md), a record of before the build: where it and
 `scope.md` differ, `scope.md` wins. The parameter set the game washes with is described in
-[calibration/anchoring-v7.md](calibration/anchoring-v7.md). The 48 phenomena are defined in
+[calibration/anchoring-v7.md](calibration/anchoring-v7.md). The loading phenomena are defined in
 [research/standards.md](research/standards.md) section 9. Before you change any source file of
 the simulation, read the fingerprint rule in [CONTRIBUTING.md](../CONTRIBUTING.md).
 
@@ -66,7 +66,7 @@ the sections on the session and its actions, and the status at its end ("Built",
 open", "Open design questions").
 
 **To bring calibration data: a test wash or a measurement of the machine.**
-[calibration/protocol.md](calibration/protocol.md) (four washes anyone with this machine can
+[calibration/protocol.md](calibration/protocol.md) (three washes anyone with this machine can
 run, the measurements still open, and how to send a result in), and
 [calibration/wash-record.md](calibration/wash-record.md) (the format of a record). The one wash
 run so far is the worked example:
@@ -80,7 +80,7 @@ run so far is the worked example:
 | What | Value | Where it is set |
 |---|---|---|
 | The machine | Bosch SMV4HAX40G, one privately owned machine | `packages/machine` |
-| The scored programme and detergent | Eco 50; one capsule of Finish Powerball Ultimate, 12.9 g | `packages/wash-runner/src/defaults.ts` |
+| The programme and detergent | Eco 50; one capsule of Finish Powerball Ultimate, 12.9 g | `packages/wash-runner/src/defaults.ts` |
 | The parameter set | `anchored-v7.owner-capsule` | `packages/calibration/anchors/`, named in `packages/wash-runner/src/defaults.ts` |
 | The simulation | `spotless-sim 0.5.0 water-7` | `packages/sim-core/src/wash.ts` |
 | The harness | `spotless-bench/0.2.0`, prompt version 3, context policy `standard-2` | `packages/bench/src` |
@@ -93,7 +93,7 @@ run so far is the worked example:
 | Document | Label | What it is |
 |---|---|---|
 | [ROADMAP.md](ROADMAP.md) | Current | The map of the open problems, each of which is an issue a contributor could pick up |
-| [validation/README.md](validation/README.md) | Current | What the simulation has been checked against, how it did, what a verdict can be trusted for, what is not modelled. Written on 12 October 2026 and the reference for every claim the README makes |
+| [validation/README.md](validation/README.md) | Current | What the simulation has been checked against, how it did, what a verdict can be trusted for, and its known gaps. Written on 12 October 2026 and the reference for every claim the README makes |
 
 ### `docs/benchmark/`
 
@@ -127,7 +127,7 @@ In the calibration notes, paths written as `anchors/...`, `scripts/...`, `src/..
 
 | Document | Label | What it is |
 |---|---|---|
-| [scope.md](design/scope.md) | Current | The aim of the project, what links stacking to cleaning, what was built first and what is left out, the status, where the wash falls short |
+| [scope.md](design/scope.md) | Current | The aim of the project, what links stacking to cleaning, what was built first, what is out of scope, the status, where the wash falls short |
 | [platform.md](design/platform.md) | Current | The game side: conventions, repository layout, geometry, loading physics, the session and its actions, server, page and agent interface. The design as amended, with a status and the open design questions at its end |
 | [sim-core.md](design/sim-core.md) | Record | The design contract of the wash simulation, from before it was built. `scope.md` overrides it. Tests still check the code against its tables and interfaces |
 | [contract-issues.md](design/contract-issues.md) | Record | Defects found in `sim-core.md` and the first skeletons on 9 October 2026 |
@@ -153,13 +153,13 @@ revised when the code changes.
 
 | Document | Label | What it is |
 |---|---|---|
-| [standards.md](research/standards.md) | Reference | Test standards, scoring, loading guidance. Section 9 defines the 48 loading phenomena the simulation is checked against |
+| [standards.md](research/standards.md) | Reference | Test standards, scoring, loading guidance. Section 9 defines the 48 loading phenomena of the checklist; the suite checks 46 of them, 37 within scope |
 | [jets.md](research/jets.md), [films.md](research/films.md), [soils.md](research/soils.md), [chemistry.md](research/chemistry.md), [enzymes-at-temperature.md](research/enzymes-at-temperature.md), [numerics.md](research/numerics.md), [items.md](research/items.md) | Reference | The physics and chemistry by topic, the numerical methods, and the tableware |
 | [detergent-finish-ultimate.md](research/detergent-finish-ultimate.md) | Reference | The detergent the game is scored with |
 | [benchmark.md](research/benchmark.md) | Reference | The design reasoning of the benchmark. Its section 9 lists the decisions that `benchmark/README.md` section 10 answers |
-| [machine-bosch-smv4hax40g.md](research/machine-bosch-smv4hax40g.md), [machine-bosch-owner-update.md](research/machine-bosch-owner-update.md), `machine-bosch-notes/` | Reference, overridden in places | The dossier of the simulated machine, the update from first-hand measurements, and the four sets of research notes behind the dossier. They cite the manufacturer's documents by public address and page |
+| [machine-bosch-smv4hax40g.md](research/machine-bosch-smv4hax40g.md), [machine-bosch-owner-update.md](research/machine-bosch-owner-update.md), `machine-bosch-notes/` | Reference, overridden in places | The dossier of the simulated machine, the update from first-hand measurements, and the three sets of research notes behind the dossier. They cite the manufacturer's documents by public address and page |
 | [machine.md](research/machine.md) | Superseded as the machine model | A generic dishwasher, the baseline the project started from |
-| [auto-programme-evidence.md](research/auto-programme-evidence.md), [auto-recommendation.md](research/auto-recommendation.md) | Record | Research on the Auto 45-65 programme, which the game no longer scores |
+| [auto-recommendation.md](research/auto-recommendation.md) | Record | The fact-checked recommendation on the protease parameters (`soil.enzymeTm`, `liq.proteaseHalfLife`) |
 | [spike-gpu-compute.md](research/spike-gpu-compute.md), [spike-gpu-compute-macos27-recheck.md](research/spike-gpu-compute-macos27-recheck.md), [spike-rigid-body.md](research/spike-rigid-body.md) | Record | The two hardware trials that chose WebGPU through Dawn and the Jolt physics engine. Their code is under `spikes/` |
 
 ## Generated reports elsewhere in the repository

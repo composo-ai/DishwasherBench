@@ -39,7 +39,7 @@ function baseRecord(): Record<string, unknown> {
       ],
     },
     programme: {
-      id: 'auto_145',
+      id: 'eco_50',
       course: {
         duration_s: 8700,
         temperature_log: {
@@ -49,7 +49,7 @@ function baseRecord(): Record<string, unknown> {
           where: 'liquor',
         },
         events: [{ kind: 'drain', t_s: 4700 }],
-        steps: [{ step: 'a4_heat', target_c: 60 }],
+        steps: [{ step: 'e4_heat', target_c: 60 }],
       },
     },
     consumables: {

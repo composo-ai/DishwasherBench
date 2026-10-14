@@ -1,10 +1,10 @@
 # Phenomena suite: fast tier, packages/calibration/anchors/anchored-v7.owner-capsule.json
 
-Checklist: docs/research/standards.md section 9 (P01 to P48). Machine `bosch_smv4hax40g`. Simulation `spotless-sim 0.5.0 water-7`; parameters packages/calibration/anchors/anchored-v7.owner-capsule.json (hydro `sha256:7c3bd46790e7`, soil `sha256:befdea03d920`, 18 overrides). Detergent: Finish Powerball Ultimate, 12.9 g. Source `f58d4ed8ab930946`. Exposure traced on: gpu. 48 phenomena, 82 washes (82 with cached exposure), 142.4 s.
+Checklist: docs/research/standards.md section 9 (P01 to P48). Machine `bosch_smv4hax40g`. Simulation `spotless-sim 0.5.0 water-7`; parameters packages/calibration/anchors/anchored-v7.owner-capsule.json (hydro `sha256:7c3bd46790e7`, soil `sha256:befdea03d920`, 18 overrides). Detergent: Finish Powerball Ultimate, 12.9 g. Source `34253e6d015d0c28`. Exposure traced on: gpu. 46 phenomena, 76 washes (76 with cached exposure), 119 s.
 
 **Tier.** This is a fast wash, a preview of the official one (coarser surfaces, fewer droplets). Measured on this programme with anchored-v7.owner-capsule (the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4), its verdict on a soiled item differs from the official wash in 11 of 100 cases: 0 in 100 for crockery, 23 in 100 for cutlery, 5 in 100 for glass, 0 in 100 for melamine. Scores are counted on the official wash.
 
-Verdicts: 17 pass, 2 wrong sign, 15 too small, 4 too large, 9 not covered, 1 error.
+Verdicts: 17 pass, 2 wrong sign, 15 too small, 2 too large, 9 not covered, 1 error.
 
 A verdict is that of the deciding checks: the worst of them. Supporting checks are evidence and decide nothing. "Accepted" is the checklist's range with its tolerance (a factor of two, or one score point; a negative control may reach twice its limit).
 
@@ -30,29 +30,27 @@ A verdict is that of the deciding checks: the worst of them. Supporting checks a
 | P18 | Cutlery tray against basket | pass | water: 0 -> 2.02: 2.02 mL | spoon bowls facing up hold water | + (any size) |
 | P19 | Loading beyond rated capacity | pass | mean: 4.27 -> 3.91: -0.36 score | load mean -0.5 to -1 when 30 % more items are forced in | -0 to -2 |
 | P20 | Total soil load | too small | mean: 4.05 -> 4.05: 0 score | US index 95 to 98 at light soil, 25 to 85 with everything soiled: a drop of 10 to 50 points of 100 | -0.25 to -5 |
-| P21 | Redeposition of particulates | not covered | specks: needs redeposition of particles (soil carried by the liquor and settled on other surfaces) | more than half of otherwise clean items carry 1 to 4 specks | +0.25 to +1 |
+| P21 | Redeposition of particulates | not covered | specks: out of scope: redeposition of particles (soil carried by the liquor and settled on other surfaces) | more than half of otherwise clean items carry 1 to 4 specks | +0.25 to +1 |
 | P22 | Clean neighbours of soiled items | pass | clean: 0 score | small: the index stays 95 to 98 at lighter soil | |x| <= 0.5 |
-| P23 | End-of-cycle drips from the upper rack | not covered | drying: needs drying (evaporation of the retained film, the drying score, drips after the last drain) | lowers the drying score of upper faces in the lower rack by about 0.1 to 0.2 | -0.05 to -0.4 |
+| P23 | End-of-cycle drips from the upper rack | not covered | drying: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain) | lowers the drying score of upper faces in the lower rack by about 0.1 to 0.2 | -0.05 to -0.4 |
 | P24 | Arrangement does not matter for easy soils (negative control) | pass | range: 0.0682 score | changes the load index by less than run-to-run noise (0.08 to 0.10) | |x| <= 0.2 |
 | P25 | Detergent dispenser blocked | too large | protein: 0.265 1 | protein soils: removal near zero unless the enzyme is present | |x| <= 0.2 |
-| P26 | Tablet trapped or dissolving in a dead spot | not covered | score: needs where the tablet lands and how it dissolves there (the wash only knows whether the dispenser is blocked) | similar to under-dosing; size unknown: calibration parameter | - (any size) |
-| P27 | Time and temperature trade | too large | score: 0 -> 3: 3 score | 270 min at 54 C gave 4.15; 97 min at 50 C gave 3.5 to 3.7 | +0 to +1.65 |
+| P26 | Tablet trapped or dissolving in a dead spot | not covered | score: out of scope: where the tablet lands and how it dissolves there (the wash only knows whether the dispenser is blocked) | similar to under-dosing; size unknown: calibration parameter | - (any size) |
 | P28 | Bleachable stains are position-insensitive (negative control) | pass | position: 0 score | tea cups in the best and worst spray positions differ by at most 0.5 | |x| <= 1 |
 | P29 | Ageing of the soil before the wash | pass | fresh: 0 score | crockery mean at least 4.5 fresh | within 1 of the range |
 | P30 | Protein soil responds to hit frequency and chemistry, not to jet strength | pass | pump: 1 -> 1: 1.1e-5 1 | doubling pump pressure changes egg-yolk removal little | |x| <= 0.2 |
 | P31 | Starch is bimodal | too small | both: 0 1 | both clusters occur: some plates come clean, some keep a sheet | +0.01 or more |
-| P32 | Microwaved milk on glass is persistent | too large | eco: 0.25 -> 5: 4.75 score | 2.8 to 4.0 with detergent E or a long eco programme | +0 to +3.4 |
 | P33 | Fat needs temperature and enough water | too small | temperature: 5.7e-22 -> 2.2e-13: 2.2e-13 1 | fat needs temperature: below its melting range solid fat is only smeared | +0.05 or more |
-| P34 | Thick layers detach as flakes | not covered | flakes: needs detachment of thick layers as flakes | thick egg yolk partly tended to flake off | + (any size) |
+| P34 | Thick layers detach as flakes | not covered | flakes: out of scope: detachment of thick layers as flakes | thick egg yolk partly tended to flake off | + (any size) |
 | P35 | Pot interiors | too small | side: 0 -> 0: 0 1 | on its side, half the wall is shadowed | +0.01 or more |
 | P36 | Water pools in the base recess of inverted cups and mugs | pass | pool: 5 mL | pi R^2 h: 5.9 mL for a recess of 25 mm radius and 3 mm depth; 6.2 mL for the recess of this mug (28 mm, 2.5 mm) | +3.08 to +12.3 |
 | P37 | Tilt drains the recess | too small | tilt15: 5 -> 0.111: 0.0223 1 | the wedge formula: 0.42 of 5.9 mL at 15 degrees for the checklist's recess; 0.28 of 6.2 mL for this mug's | +0.0231 to +0.0924 |
-| P38 | Plastic stays wet | not covered | drying: needs drying (evaporation of the retained film, the drying score, drips after the last drain) | melamine dries to 0.47 to 0.76 against crockery 0.67 to 0.83 | -0.035 to -0.4 |
-| P39 | Pots and large hollow ware stay wet | not covered | drying: needs drying (evaporation of the retained film, the drying score, drips after the last drain) | pots dry to 0.45 to 0.79 against crockery 0.67 to 0.83 | -0.025 to -0.6 |
+| P38 | Plastic stays wet | not covered | drying: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain) | melamine dries to 0.47 to 0.76 against crockery 0.67 to 0.83 | -0.035 to -0.4 |
+| P39 | Pots and large hollow ware stay wet | not covered | drying: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain) | pots dry to 0.45 to 0.79 against crockery 0.67 to 0.83 | -0.025 to -0.6 |
 | P40 | Liquid held at contact points and in narrow gaps | wrong sign | held: 2.58 -> 2.3: -0.277 g | a wet mark at every touching pair | + (any size) |
-| P41 | Light plastic items are moved or flipped by jets | not covered | moved: needs items moved by the jets (the load is washed where it was placed; only a lift ratio is reported) | unrestrained items lighter than about 30 to 50 g can lift, turn over and then fill | + (any size) |
-| P42 | Cutlery dries almost completely (negative control) | not covered | drying: needs drying (evaporation of the retained film, the drying score, drips after the last drain) | drying 0.99 | |x| <= 0.04 |
-| P43 | Spots, film and tine marks on glass | not covered | spots: needs spots and film from evaporated water, and marks at contacts | AHAM adds 1 point per small spot or streak, 3 per large one | + (any size) |
+| P41 | Light plastic items are moved or flipped by jets | not covered | moved: out of scope: items moved by the jets (the load is washed where it was placed; only a lift ratio is reported) | unrestrained items lighter than about 30 to 50 g can lift, turn over and then fill | + (any size) |
+| P42 | Cutlery dries almost completely (negative control) | not covered | drying: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain) | drying 0.99 | |x| <= 0.04 |
+| P43 | Spots, film and tine marks on glass | not covered | spots: out of scope: spots and film from evaporated water, and marks at contacts | AHAM adds 1 point per small spot or streak, 3 per large one | + (any size) |
 | P44 | Cutlery comes out clean although it is the most shadowed class | too small | class: -1.05 score | class mean 4.6 to 4.8 | within 1 of the range |
 | P45 | Class ranking in the standard test | wrong sign | ranking: -0.594 score | cutlery > melamine > (pots, glass, crockery) | + (any size) |
 | P46 | Run-to-run repeatability | too small | spread: 0.0342 score | about 0.08 to 0.10; not zero, not 0.5 | +0.04 to +0.2 |
@@ -74,10 +72,10 @@ Stages: water: scene (basins), jets, pools; soil: replay under a pool.
 | retained | water the mug holds at the end, B - A | 0.0446 | 279 | 279 mL | retained liquid equals the brim volume, about 0.25 to 0.3 L for a mug | +125 to +600 | pass |
 | f_jet | fraction of time the inside of the upright mug is under a direct jet from below (B) |  |  | 0 1 | f_jet inside = 0 | |x| <= 0.002 | pass |
 | bowl (supporting) | water the bowl holds at the end, B - A | 0 | 180 | 180 mL | the bowl fills too | + (any size) | pass |
-| drying (supporting) | drying score of the upright mug (B) |  |  |  | drying score 0 | |x| <= 0.5 | not covered: needs drying (evaporation of the retained film, the drying score, drips after the last drain) |
+| drying (supporting) | drying score of the upright mug (B) |  |  |  | drying score 0 | |x| <= 0.5 | not covered: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain) |
 
-- **A**: mouth down. Load `hollow-inverted`, programme `eco_50`, 2 items (1 clean, mean score of the soiled 4), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0958 mmol/L (peak 0.446). Result `sha256:23c9dab7979a`, 2 s (exposure cached).
-- **B**: mouth up. Load `hollow-upright`, programme `eco_50`, 2 items (0 clean, mean score of the soiled 2.5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0958 mmol/L (peak 0.446). Result `sha256:a24e6e55314f`, 2 s (exposure cached).
+- **A**: mouth down. Load `hollow-inverted`, programme `eco_50`, 2 items (1 clean, mean score of the soiled 4), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0958 mmol/L (peak 0.446). Result `sha256:af16ffbf500a`, 1.7 s (exposure cached).
+- **B**: mouth up. Load `hollow-upright`, programme `eco_50`, 2 items (0 clean, mean score of the soiled 2.5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0958 mmol/L (peak 0.446). Result `sha256:29d7ac4044da`, 1.7 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -100,8 +98,8 @@ Stages: water: jets (line of sight), droplets, run-off; soil: removal laws; load
 | score | change of the IEC score of the plate, B - A | 2 | 2 | 0 score | for oven-dried protein and starch, -1 to -2 | -0 to -4 | too small |
 | residue (supporting) | share of the egg yolk left on the face, B - A | 8.5e-5 | 1.6e-4 | 8.0e-5 1 | removal depends on how often the spot is hit | +0.01 or more | too small |
 
-- **A**: upright, face to the arm axis (set pose). Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:639cd9eb7899`, 1.6 s (exposure cached).
-- **B**: upright, face away from the arm axis (set pose). Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:1372721e8c02`, 2.8 s (exposure cached).
+- **A**: upright, face to the arm axis (set pose). Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:8a9e296ddbc9`, 1.6 s (exposure cached).
+- **B**: upright, face away from the arm axis (set pose). Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:097d2fee7dae`, 2.9 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -122,9 +120,9 @@ Stages: water: jets (gap geometry), run-off; soil: removal laws.
 | plateau | IEC score of the upper half of the plate at slot 6, 36 mm against 18 mm | 5 | 5 | 0 score | above about 20 mm, more gap gains little | |x| <= 1 | pass |
 | dwell (supporting) | fraction of time the face is under a direct jet, 9 mm over 18 mm, minus one | 0.00309 | 1.4e-6 | -1 1 | halving the gap halves the dwell | -0.25 to -1 | pass |
 
-- **A**: one per slot, 18.25 mm. Load `plates-18`, programme `eco_50`, 7 items (7 clean, mean score of the soiled 4.71), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0727 g/L (peak 0.111), peracid mean 0.0928 mmol/L (peak 0.446). Result `sha256:f647553a968b`, 3.2 s (exposure cached).
-- **B**: two to a slot, about 9 mm. Load `plates-9`, programme `eco_50`, 8 items (8 clean, mean score of the soiled 4.5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0727 g/L (peak 0.112), peracid mean 0.0924 mmol/L (peak 0.446). Result `sha256:e72a5994a701`, 3.6 s (exposure cached).
-- **C**: every second slot, 36.5 mm. Load `plates-36`, programme `eco_50`, 7 items (7 clean, mean score of the soiled 4.71), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0727 g/L (peak 0.111), peracid mean 0.0927 mmol/L (peak 0.446). Result `sha256:c9d2cc1850ec`, 1.5 s (exposure cached).
+- **A**: one per slot, 18.25 mm. Load `plates-18`, programme `eco_50`, 7 items (7 clean, mean score of the soiled 4.71), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0727 g/L (peak 0.111), peracid mean 0.0928 mmol/L (peak 0.446). Result `sha256:048cb00697e7`, 2.7 s (exposure cached).
+- **B**: two to a slot, about 9 mm. Load `plates-9`, programme `eco_50`, 8 items (8 clean, mean score of the soiled 4.5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0727 g/L (peak 0.112), peracid mean 0.0924 mmol/L (peak 0.446). Result `sha256:02c55b1478b0`, 3.7 s (exposure cached).
+- **C**: every second slot, 36.5 mm. Load `plates-36`, programme `eco_50`, 7 items (7 clean, mean score of the soiled 4.71), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0727 g/L (peak 0.111), peracid mean 0.0927 mmol/L (peak 0.446). Result `sha256:52d78c0f6008`, 1.2 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -147,8 +145,8 @@ Stages: water: scene (contacts, gap field), jets, run-off; soil: supply factor.
 | against (supporting) | share of the porridge left inside that bowl, B - A | 0 | 0.176 | 0.176 1 | nesting leaves more | +0.01 or more | pass |
 | f_jet (supporting) | fraction of time its inside is under a direct jet, B over A | 0.0795 | 0 | 0 1 | overlapped surfaces have no line of sight | |x| <= 0.5 | pass |
 
-- **A**: side by side. Load `bowls-apart`, programme `eco_50`, 2 items (2 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0957 mmol/L (peak 0.446). Result `sha256:d9bbb0b9fb06`, 1.9 s (exposure cached).
-- **B**: nested. Load `bowls-nested`, programme `eco_50`, 2 items (1 clean, mean score of the soiled 2.5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0957 mmol/L (peak 0.446). Result `sha256:07ffca913566`, 2.5 s (exposure cached).
+- **A**: side by side. Load `bowls-apart`, programme `eco_50`, 2 items (2 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0957 mmol/L (peak 0.446). Result `sha256:1743e03a1e51`, 1.5 s (exposure cached).
+- **B**: nested. Load `bowls-nested`, programme `eco_50`, 2 items (1 clean, mean score of the soiled 2.5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0957 mmol/L (peak 0.446). Result `sha256:3113ae704b56`, 1.6 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -168,8 +166,8 @@ Stages: water: jets (line of sight), droplets; soil: removal laws. Note: wash B:
 | score | mean IEC score of the two plates, B - A | 3.5 | 3 | -0.5 score | -1 to -3 for tenacious soils on faces served only by that arm | -0 to -6 | pass |
 | f_jet | fraction of time their faces are under a direct jet, B over A, minus one | 7.4e-5 | 4.6e-5 | -0.378 1 | items inside the shadow lose direct impingement from that arm | -0.05 or more | pass |
 
-- **A**: platter at the side wall. Load `board-side`, programme `eco_50`, 3 items (2 clean, mean score of the soiled 3.5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.109), peracid mean 0.0953 mmol/L (peak 0.446). Result `sha256:51373b9200ab`, 1.9 s (exposure cached).
-- **B**: platter upright between the plates and the arm axis (set pose). Load `board-side`, programme `eco_50`, 3 items (1 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.109), peracid mean 0.0953 mmol/L (peak 0.446). Result `sha256:7540f2b51536`, 2 s (exposure cached).
+- **A**: platter at the side wall. Load `board-side`, programme `eco_50`, 3 items (2 clean, mean score of the soiled 3.5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.109), peracid mean 0.0953 mmol/L (peak 0.446). Result `sha256:e178085c0e80`, 1.8 s (exposure cached).
+- **B**: platter upright between the plates and the arm axis (set pose). Load `board-side`, programme `eco_50`, 3 items (1 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.109), peracid mean 0.0953 mmol/L (peak 0.446). Result `sha256:e2e7ea97bc96`, 1.7 s (exposure cached).
   - set pose: deepest overlap 2.04 mm (board into plate_2)
   - wash: placement: board stands in the path of the upper spray arm, which is simulated turning through it; give stalledArms for this level to hold the arm
   - wash: placement: board cuts 2.0 mm into plate_2; both are simulated where they were placed
@@ -194,8 +192,8 @@ Stages: load: session (mechanical check); water: hydraulics (stalled arm), jets.
 | coverage | share of the plates' faces ever under a direct jet, B over A | 0.408 | 0 | 0 1 | direct coverage falls from the swept circle (about 70 % of the rack) to the jet footprints (about 1 %) | |x| <= 0.2 | pass |
 | score | mean IEC score of the plates of that rack, B - A | 4.71 | 4 | -0.714 score | mean score of that rack -1.5 or more | -0.5 to -5 | pass |
 
-- **A**: arm free. Load `plates-36`, programme `eco_50`, 7 items (7 clean, mean score of the soiled 4.71), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0727 g/L (peak 0.111), peracid mean 0.0927 mmol/L (peak 0.446). Result `sha256:c9d2cc1850ec`, 1.4 s (exposure cached).
-- **B**: lower arm held 148 degrees round (set: where the hanging ladle of the first build stopped it). Load `plates-36`, programme `eco_50`, 7 items (5 clean, mean score of the soiled 4), seeds 1/1, lower arm stopped. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0929 mmol/L (peak 0.446). Result `sha256:6d3d32b1d519`, 3.1 s (exposure cached).
+- **A**: arm free. Load `plates-36`, programme `eco_50`, 7 items (7 clean, mean score of the soiled 4.71), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0727 g/L (peak 0.111), peracid mean 0.0927 mmol/L (peak 0.446). Result `sha256:52d78c0f6008`, 2.7 s (exposure cached).
+- **B**: lower arm held 148 degrees round (set: where the hanging ladle of the first build stopped it). Load `plates-36`, programme `eco_50`, 7 items (5 clean, mean score of the soiled 4), seeds 1/1, lower arm stopped. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0929 mmol/L (peak 0.446). Result `sha256:a201f64bc3ef`, 1.1 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -215,7 +213,7 @@ Stages: water: hydraulics (nozzle positions), jets; soil: removal laws.
 | score | IEC score of the plate at the corner against the one at mid-radius | 3 | 3 | 0 score | -0.5 to -1 for tenacious soil in a corner against mid-radius | -0 to -2 | too small |
 | dwell (supporting) | fraction of time the face is under a direct jet, corner over mid-radius, minus one | 0.0138 | 0.00977 | -0.292 1 | low radial locations are impacted for longer | -0.05 or more | pass |
 
-- **A**: four soup plates. Load `soup-radial`, programme `eco_50`, 4 items (1 clean, mean score of the soiled 3.5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.109), peracid mean 0.0942 mmol/L (peak 0.446). Result `sha256:56b4844698b6`, 2.4 s (exposure cached).
+- **A**: four soup plates. Load `soup-radial`, programme `eco_50`, 4 items (1 clean, mean score of the soiled 3.5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.109), peracid mean 0.0942 mmol/L (peak 0.446). Result `sha256:a6f093eb9aa3`, 2.2 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -236,7 +234,7 @@ Stages: water: hydraulics (nozzle directions, sense of rotation), jets.
 | score | IEC score of the right-hand plate minus the left-hand one | 3 | 5 | 2 score | expect a change of up to 1 between mirrored positions | |x| <= 2 | pass |
 | jets (supporting) | fraction of time the face is under a direct jet, right over left, minus one | 0.00977 | 0.016 | 0.642 1 | in one real arm a right-hand plate received five jets and its mirror image two | |x| <= 3 | pass |
 
-- **A**: mirrored plates. Load `soup-radial`, programme `eco_50`, 4 items (1 clean, mean score of the soiled 3.5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.109), peracid mean 0.0942 mmol/L (peak 0.446). Result `sha256:56b4844698b6`, 2.4 s (exposure cached).
+- **A**: mirrored plates. Load `soup-radial`, programme `eco_50`, 4 items (1 clean, mean score of the soiled 3.5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.109), peracid mean 0.0942 mmol/L (peak 0.446). Result `sha256:a6f093eb9aa3`, 2.2 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -256,8 +254,8 @@ Stages: water: jets (incidence), run-off; soil: removal laws.
 | score | change of the IEC score of the plate, B - A | 2 | 2 | 0 score | same sign as P02 at smaller size: about 0.5 for a 10 degree lean | -0 to -1.5 | too small |
 | f_jet (supporting) | fraction of time the soiled face is under a direct jet, B over A, minus one | 0.00959 | 1.8e-4 | -0.981 1 | leaning away presents the back | -0.05 or more | pass |
 
-- **A**: leaning toward the arm axis. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:cfa3845a08a6`, 1.8 s (exposure cached).
-- **B**: leaning away from the arm axis. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:9d5252e8058a`, 1.7 s (exposure cached).
+- **A**: leaning toward the arm axis. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:51c7e93c441d`, 1.5 s (exposure cached).
+- **B**: leaning away from the arm axis. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:aedcca80d187`, 1.6 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -278,8 +276,8 @@ Stages: water: jets (entry into a cavity), run-off; soil: removal laws, chemistr
 | residue | share of the milk left, glass minus bowl | 1.9e-11 | 0 | -1.9e-11 1 | the interior of the tall vessel is the last place to clean | +0.01 or more | too small |
 | f_jet (supporting) | fraction of time the inside is under a direct jet, glass over bowl, minus one | 0.144 | 0.0128 | -0.911 1 | a 60 mm opening is under a nozzle for about 6 % of a revolution | -0.05 or more | pass |
 
-- **A**: shallow bowl. Load `bowl-same-spot`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:4f78985d94ac`, 1.6 s (exposure cached).
-- **B**: tall glass. Load `glass-between`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:7d2995d45351`, 1.9 s (exposure cached).
+- **A**: shallow bowl. Load `bowl-same-spot`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:4cf13c5c9759`, 1.4 s (exposure cached).
+- **B**: tall glass. Load `glass-between`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:6912b34c7df9`, 1.5 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -299,8 +297,8 @@ Stages: water: hydraulics (flow per level), jets; soil: removal laws.
 | score | change of the IEC score of the plate, B - A | 3 | 2 | -1 score | in a three-level machine expect an absolute change of at most 0.5 | |x| <= 1 | pass |
 | residue (supporting) | share of the egg yolk left, B - A | 3.6e-5 | 6.8e-5 | 3.2e-5 1 | little difference between the baskets | |x| <= 0.4 | pass |
 
-- **A**: lower basket. Load `dplate-lower`, programme `eco_50`, 2 items (1 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:1f6b0df85afe`, 0.4 s (exposure cached).
-- **B**: upper basket. Load `dplate-upper`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:377e34f83021`, 1.7 s (exposure cached).
+- **A**: lower basket. Load `dplate-lower`, programme `eco_50`, 2 items (1 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:cdb0d5f9bea0`, 0.3 s (exposure cached).
+- **B**: upper basket. Load `dplate-upper`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:081379ed53fd`, 1.6 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -320,8 +318,8 @@ Stages: water: jets (gap geometry); soil: removal laws.
 | score | IEC score of the upper half of the large plate at slot 5, B - A | 5 | 5 | 0 score | +0.3 to +0.5 on the upper zone of the large plates | +0 to +1.5 | too small |
 | residue (supporting) | share of the egg yolk left on the upper half of that plate, B - A | 2.8e-9 | 2.6e-8 | 2.3e-8 1 | the wider gap above the small plates lets more through | -0.01 or more | wrong sign |
 
-- **A**: large plates only. Load `plates-18`, programme `eco_50`, 7 items (7 clean, mean score of the soiled 4.71), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0727 g/L (peak 0.111), peracid mean 0.0928 mmol/L (peak 0.446). Result `sha256:f647553a968b`, 3.2 s (exposure cached).
-- **B**: large and small alternating. Load `plates-alt-18`, programme `eco_50`, 7 items (7 clean, mean score of the soiled 4.57), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0933 mmol/L (peak 0.446). Result `sha256:221e14123820`, 2.9 s (exposure cached).
+- **A**: large plates only. Load `plates-18`, programme `eco_50`, 7 items (7 clean, mean score of the soiled 4.71), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0727 g/L (peak 0.111), peracid mean 0.0928 mmol/L (peak 0.446). Result `sha256:048cb00697e7`, 2.7 s (exposure cached).
+- **B**: large and small alternating. Load `plates-alt-18`, programme `eco_50`, 7 items (7 clean, mean score of the soiled 4.57), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0933 mmol/L (peak 0.446). Result `sha256:d3fe0ef71568`, 2.5 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -339,11 +337,11 @@ Stages: water: jets (tine in the path), droplets (fans off the tine), scene (con
 | Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
 |---|---|---|---|---|---|---|---|
 | f_jet | fraction of time the inside is under a direct jet, B over A, minus one | 0.0123 | 0.0119 | -0.0399 1 | interior f_jet reduced | -0.05 or more | too small |
-| marks (supporting) | contact marks on the glass over the tine (B) |  |  |  | AHAM adds 1 to 3 grade points per marked glass | +0.5 to +6 | not covered: needs spots and film from evaporated water, and marks at contacts |
-| drying (supporting) | change of the drying score, B - A |  |  |  | drying score -1 | -0.5 to -2 | not covered: needs drying (evaporation of the retained film, the drying score, drips after the last drain) |
+| marks (supporting) | contact marks on the glass over the tine (B) |  |  |  | AHAM adds 1 to 3 grade points per marked glass | +0.5 to +6 | not covered: out of scope: spots and film from evaporated water, and marks at contacts |
+| drying (supporting) | change of the drying score, B - A |  |  |  | drying score -1 | -0.5 to -2 | not covered: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain) |
 
-- **A**: row folded down: no tine in the glass. Load `glass-free`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:e4061a3a49bf`, 2.6 s (exposure cached).
-- **B**: over a tine. Load `glass-free`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:52cc17782e33`, 1.8 s (exposure cached).
+- **A**: row folded down: no tine in the glass. Load `glass-free`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:2fa6414d4caa`, 2.1 s (exposure cached).
+- **B**: over a tine. Load `glass-free`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:7695a6a8d2cb`, 1.5 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -365,8 +363,8 @@ Stages: water: jets (line of sight), run-off (renewal); soil: removal laws.
 | renewal (supporting) | rate the water on the soiled face is replaced, B over A, minus one | 33 | 1.98 | -0.94 1 | slow exchange near the wall | -0.05 or more | pass |
 | residue (supporting) | share of the egg yolk left on the well, B - A | 2.8e-12 | 8.9e-8 | 8.9e-8 1 | the face to the wall keeps more | +0.01 or more | too small |
 
-- **A**: face inward: upright between the last tine and the side wall (set pose). Load `platter-inward`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0955 mmol/L (peak 0.446). Result `sha256:25e4837f56ce`, 1.7 s (exposure cached).
-- **B**: face to the wall: upright between the last tine and the side wall (set pose). Load `platter-inward`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0955 mmol/L (peak 0.446). Result `sha256:2b549b071c89`, 2 s (exposure cached).
+- **A**: face inward: upright between the last tine and the side wall (set pose). Load `platter-inward`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0955 mmol/L (peak 0.446). Result `sha256:1992250a4f25`, 1.5 s (exposure cached).
+- **B**: face to the wall: upright between the last tine and the side wall (set pose). Load `platter-inward`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0955 mmol/L (peak 0.446). Result `sha256:b099bbc1e459`, 1.6 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -387,8 +385,8 @@ Stages: water: scene (contacts, gap field), jets, run-off; soil: supply factor.
 | partner | IEC score of the other spoon, nested minus opposed | 5 | 5 | 0 score | partner unaffected | |x| <= 1 | pass |
 | residue (supporting) | largest share of porridge left on a spoon, nested minus opposed | 0 | 0.0835 | 0.0835 1 | when spoons spoon, they trap food | +0.01 or more | pass |
 
-- **A**: opposed. Load `spoons-opposed`, programme `eco_50`, 2 items (2 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0958 mmol/L (peak 0.446). Result `sha256:69692fc664a5`, 1.9 s (exposure cached).
-- **B**: nested. Load `spoons-nested`, programme `eco_50`, 2 items (1 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0958 mmol/L (peak 0.446). Result `sha256:8ca8c1c64542`, 1.8 s (exposure cached).
+- **A**: opposed. Load `spoons-opposed`, programme `eco_50`, 2 items (2 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0958 mmol/L (peak 0.446). Result `sha256:6e68c7004e5c`, 1.4 s (exposure cached).
+- **B**: nested. Load `spoons-nested`, programme `eco_50`, 2 items (1 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0958 mmol/L (peak 0.446). Result `sha256:a5ddc04333df`, 1.5 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -410,8 +408,8 @@ Stages: water: jets (basket walls), run-off; soil: removal laws.
 | score | mean IEC score of the forks, B - A | 2 | 2 | 0 score | negative control: absolute change at most 0.3 | |x| <= 0.6 | pass |
 | residue (supporting) | mean share of the egg yolk left on the forks, B - A | 0.00265 | 0.00105 | -0.0016 1 | an informal test found no difference | |x| <= 0.2 | pass |
 
-- **A**: heads up. Load `forks-heads-up`, programme `eco_50`, 6 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:9d62715a1077`, 2.1 s (exposure cached).
-- **B**: heads down. Load `forks-heads-down`, programme `eco_50`, 6 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:a0b65f65e32f`, 1.8 s (exposure cached).
+- **A**: heads up. Load `forks-heads-up`, programme `eco_50`, 6 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:62019193bb7a`, 1.5 s (exposure cached).
+- **B**: heads down. Load `forks-heads-down`, programme `eco_50`, 6 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:2cd7a8601345`, 1.6 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -432,9 +430,9 @@ Stages: load: physics (contacts); water: scene (contacts), jets; soil: removal l
 | single (supporting) | share of spoons not scoring 5 at one per cell, as a distance from 10 to 40 % |  |  | -0.1 1 | about 20 % of cutlery not scoring 5 in the standard load | within 0.1 of the range | pass |
 | residue (supporting) | mean share of porridge left, four per cell minus one per cell | 0 | 6.9e-6 | 6.9e-6 1 | crowding leaves more | +0.05 or more | too small |
 
-- **A**: one per cell. Load `spoons-1`, programme `eco_50`, 6 items (6 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0958 mmol/L (peak 0.446). Result `sha256:ec574493240e`, 1.5 s (exposure cached).
-- **B**: two per cell. Load `spoons-2`, programme `eco_50`, 12 items (12 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0957 mmol/L (peak 0.446). Result `sha256:91578ad051f4`, 2 s (exposure cached).
-- **C**: four per cell. Load `spoons-4`, programme `eco_50`, 24 items (24 clean, mean score of the soiled 4.96), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:e4215dbf4821`, 2 s (exposure cached).
+- **A**: one per cell. Load `spoons-1`, programme `eco_50`, 6 items (6 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0958 mmol/L (peak 0.446). Result `sha256:f4f60262e740`, 1.5 s (exposure cached).
+- **B**: two per cell. Load `spoons-2`, programme `eco_50`, 12 items (12 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0957 mmol/L (peak 0.446). Result `sha256:14afb8fb969a`, 1.6 s (exposure cached).
+- **C**: four per cell. Load `spoons-4`, programme `eco_50`, 24 items (24 clean, mean score of the soiled 4.96), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:db591a77b07f`, 1.8 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -453,10 +451,10 @@ Stages: water: scene (basins of small hollows), pools; soil: replay under a pool
 | Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
 |---|---|---|---|---|---|---|---|
 | water | water standing in a spoon at the end, mean, B - A | 0 | 2.02 | 2.02 mL | spoon bowls facing up hold water | + (any size) | pass |
-| drying (supporting) | drying score of the spoons lying bowl up (B) |  |  |  | drying score on face-up spoon bowls 0 | |x| <= 0.5 | not covered: needs drying (evaporation of the retained film, the drying score, drips after the last drain) |
+| drying (supporting) | drying score of the spoons lying bowl up (B) |  |  |  | drying score on face-up spoon bowls 0 | |x| <= 0.5 | not covered: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain) |
 
-- **A**: standing in the basket. Load `spoons-1`, programme `eco_50`, 6 items (6 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0958 mmol/L (peak 0.446). Result `sha256:ec574493240e`, 1.5 s (exposure cached).
-- **B**: lying on the knife shelf. Load `spoons-shelf`, programme `eco_50`, 6 items (0 clean, mean score of the soiled 4.17), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.111), peracid mean 0.0958 mmol/L (peak 0.446). Result `sha256:4d8ecb8c1395`, 2.1 s (exposure cached).
+- **A**: standing in the basket. Load `spoons-1`, programme `eco_50`, 6 items (6 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0958 mmol/L (peak 0.446). Result `sha256:f4f60262e740`, 1.5 s (exposure cached).
+- **B**: lying on the knife shelf. Load `spoons-shelf`, programme `eco_50`, 6 items (0 clean, mean score of the soiled 4.17), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.111), peracid mean 0.0958 mmol/L (peak 0.446). Result `sha256:f95ad6dce0c7`, 1.6 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -475,8 +473,8 @@ Stages: load: loader; water: jets (shadowing), run-off; soil: liquor (soil load)
 |---|---|---|---|---|---|---|---|
 | mean | mean IEC score of the soiled pieces, B - A | 4.27 | 3.91 | -0.36 score | load mean -0.5 to -1 when 30 % more items are forced in | -0 to -2 | pass |
 
-- **A**: half load, well spaced. Load `loader:half-careful`, programme `eco_50`, 59 items (50 clean, mean score of the soiled 4.27), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0729 g/L (peak 0.113), peracid mean 0.0874 mmol/L (peak 0.444). Result `sha256:41f33f69c4fe`, 5.7 s (exposure cached).
-- **B**: full load, one piece to a slot. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.91), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0839 mmol/L (peak 0.444). Result `sha256:a3a155d938cc`, 8.5 s (exposure cached).
+- **A**: half load, well spaced. Load `loader:half-careful`, programme `eco_50`, 59 items (50 clean, mean score of the soiled 4.27), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0729 g/L (peak 0.113), peracid mean 0.0874 mmol/L (peak 0.444). Result `sha256:14710228f8df`, 4.7 s (exposure cached).
+- **B**: full load, one piece to a slot. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.91), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0839 mmol/L (peak 0.444). Result `sha256:65fec505514d`, 4 s (exposure cached).
 
 ### P20 Total soil load: too small
 
@@ -490,9 +488,9 @@ Stages: soil: liquor (consumption of oxidant and enzyme by soil), chemistry.
 |---|---|---|---|---|---|---|---|
 | mean | mean IEC score of the always-soiled quarter, all soiled minus a quarter soiled | 4.05 | 4.05 | 0 score | US index 95 to 98 at light soil, 25 to 85 with everything soiled: a drop of 10 to 50 points of 100 | -0.25 to -5 | too small |
 
-- **A**: a quarter of the pieces soiled. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (108 clean, mean score of the soiled 4.05), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0728 g/L (peak 0.117), peracid mean 0.0902 mmol/L (peak 0.445). Result `sha256:f4c3f7fb5b80`, 1.6 s (exposure cached).
-- **B**: half of the pieces soiled. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (103 clean, mean score of the soiled 4.09), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0729 g/L (peak 0.117), peracid mean 0.088 mmol/L (peak 0.445). Result `sha256:2b4b1b2fa74b`, 2.5 s (exposure cached).
-- **C**: all pieces soiled. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.91), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0839 mmol/L (peak 0.444). Result `sha256:a3a155d938cc`, 8.5 s (exposure cached).
+- **A**: a quarter of the pieces soiled. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (108 clean, mean score of the soiled 4.05), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0728 g/L (peak 0.117), peracid mean 0.0902 mmol/L (peak 0.445). Result `sha256:0e6c12ae87d0`, 1.6 s (exposure cached).
+- **B**: half of the pieces soiled. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (103 clean, mean score of the soiled 4.09), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0729 g/L (peak 0.117), peracid mean 0.088 mmol/L (peak 0.445). Result `sha256:009bba0cef9d`, 6.7 s (exposure cached).
+- **C**: all pieces soiled. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.91), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0839 mmol/L (peak 0.444). Result `sha256:65fec505514d`, 4 s (exposure cached).
 
 ### P21 Redeposition of particulates: not covered
 
@@ -500,14 +498,14 @@ Test: Seven clean dinner plates (A) against the same with 20 g of minced spinach
 
 Adapted: A row of plates in the lower basket instead of a whole load.
 
-Stages: soil: redeposition (not built). Note: needs redeposition of particles (soil carried by the liquor and settled on other surfaces).
+Stages: soil: redeposition (out of scope). Note: out of scope: redeposition of particles (soil carried by the liquor and settled on other surfaces).
 
 | Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
 |---|---|---|---|---|---|---|---|
-| specks | share of the plates that started clean and carry 1 to 4 specks, B - A |  |  |  | more than half of otherwise clean items carry 1 to 4 specks | +0.25 to +1 | not covered: needs redeposition of particles (soil carried by the liquor and settled on other surfaces) |
+| specks | share of the plates that started clean and carry 1 to 4 specks, B - A |  |  |  | more than half of otherwise clean items carry 1 to 4 specks | +0.25 to +1 | not covered: out of scope: redeposition of particles (soil carried by the liquor and settled on other surfaces) |
 
-- **A**: no spinach. Load `plates-18`, programme `eco_50`, 7 items (7 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:aa888fe7a5fa`, 0.4 s (exposure cached).
-- **B**: 20 g of spinach on one plate. Load `plates-18`, programme `eco_50`, 7 items (6 clean, mean score of the soiled 0), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0955 mmol/L (peak 0.446). Result `sha256:9883b08a6e64`, 0.6 s (exposure cached).
+- **A**: no spinach. Load `plates-18`, programme `eco_50`, 7 items (7 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:e6ca0c73207a`, 0.3 s (exposure cached).
+- **B**: 20 g of spinach on one plate. Load `plates-18`, programme `eco_50`, 7 items (6 clean, mean score of the soiled 0), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0955 mmol/L (peak 0.446). Result `sha256:c24fcdc46fb7`, 0.5 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -519,13 +517,13 @@ Test: Seven dinner plates in neighbouring slots, every second one with egg yolk;
 
 Adapted: A row of plates in the lower basket instead of a whole load.
 
-Stages: soil: liquor, redeposition (not built: the clean plates cannot pick anything up).
+Stages: soil: liquor, redeposition (out of scope: the clean plates cannot pick anything up).
 
 | Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
 |---|---|---|---|---|---|---|---|
 | clean | points the clean plates lose (5 minus their mean IEC score) |  |  | 0 score | small: the index stays 95 to 98 at lighter soil | |x| <= 0.5 | pass |
 
-- **A**: clean and soiled alternating. Load `plates-18`, programme `eco_50`, 7 items (7 clean, mean score of the soiled 4.75), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0941 mmol/L (peak 0.446). Result `sha256:e9a07630f73d`, 1 s (exposure cached).
+- **A**: clean and soiled alternating. Load `plates-18`, programme `eco_50`, 7 items (7 clean, mean score of the soiled 4.75), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0941 mmol/L (peak 0.446). Result `sha256:5ea902d0db0d`, 0.9 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -537,15 +535,15 @@ Test: Seven dinner plates in the lower basket with an empty upper basket (A) aga
 
 Adapted: Three mugs stand for the loaded upper basket.
 
-Stages: water: drain-down after the last rinse and drying (not built). Note: needs drying (evaporation of the retained film, the drying score, drips after the last drain).
+Stages: water: drain-down after the last rinse and drying (out of scope). Note: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain).
 
 | Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
 |---|---|---|---|---|---|---|---|
-| drying | drying score (0 to 1 scale) of the lower plates, B - A |  |  |  | lowers the drying score of upper faces in the lower rack by about 0.1 to 0.2 | -0.05 to -0.4 | not covered: needs drying (evaporation of the retained film, the drying score, drips after the last drain) |
+| drying | drying score (0 to 1 scale) of the lower plates, B - A |  |  |  | lowers the drying score of upper faces in the lower rack by about 0.1 to 0.2 | -0.05 to -0.4 | not covered: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain) |
 | film (supporting) | water left as film on the lower plates at the end of the last rinse, mean, B - A | 1.66 | 1.68 | 0.0242 g | drips from above add water | + (any size) | pass |
 
-- **A**: upper basket empty. Load `plates-18`, programme `eco_50`, 7 items (7 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:aa888fe7a5fa`, 0.4 s (exposure cached).
-- **B**: upper basket loaded. Load `plates-18-upper`, programme `eco_50`, 10 items (10 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.111), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:42dd62e6fdb1`, 2.2 s (exposure cached).
+- **A**: upper basket empty. Load `plates-18`, programme `eco_50`, 7 items (7 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:e6ca0c73207a`, 0.3 s (exposure cached).
+- **B**: upper basket loaded. Load `plates-18-upper`, programme `eco_50`, 10 items (10 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.111), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:aa0ede4de5d8`, 1.9 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -564,9 +562,9 @@ Stages: soil: removal laws (dissolve), hydration.
 |---|---|---|---|---|---|---|---|
 | range | largest minus smallest load mean IEC score of the three orders |  |  | 0.0682 score | changes the load index by less than run-to-run noise (0.08 to 0.10) | |x| <= 0.2 | pass |
 
-- **A**: first order. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (113 clean, mean score of the soiled 4.93), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0733 g/L (peak 0.118), peracid mean 0.0801 mmol/L (peak 0.437). Result `sha256:d7be6bb5654c`, 1.2 s (exposure cached).
-- **B**: second order. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (114 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0732 g/L (peak 0.118), peracid mean 0.0816 mmol/L (peak 0.438). Result `sha256:87e8bcbbf740`, 1.1 s (exposure cached).
-- **C**: third order. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (114 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0732 g/L (peak 0.118), peracid mean 0.0814 mmol/L (peak 0.438). Result `sha256:3cf7373ba901`, 1.2 s (exposure cached).
+- **A**: first order. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (113 clean, mean score of the soiled 4.93), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0733 g/L (peak 0.118), peracid mean 0.0801 mmol/L (peak 0.437). Result `sha256:6369581d49cd`, 1.1 s (exposure cached).
+- **B**: second order. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (114 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0732 g/L (peak 0.118), peracid mean 0.0816 mmol/L (peak 0.438). Result `sha256:eab825d330e0`, 1.1 s (exposure cached).
+- **C**: third order. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (114 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0732 g/L (peak 0.118), peracid mean 0.0814 mmol/L (peak 0.438). Result `sha256:370d4dcebde4`, 1.1 s (exposure cached).
 
 ### P25 Detergent dispenser blocked: too large
 
@@ -582,10 +580,10 @@ Stages: load: session (mechanical check); soil: liquor (dosing), chemistry.
 | tea | share of the tea film removed without detergent (D) |  |  | 0.402 1 | tea stays | |x| <= 0.2 | too large |
 | score | mean IEC score of the three pieces, blocked minus free | 3.67 | 0 | -3.67 score | load mean -1.5 or more | -0.5 to -5 | pass |
 
-- **A**: plate, dispenser free. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:ceb0affcfde1`, 0.4 s (exposure cached).
-- **B**: plate, dispenser blocked. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 0), seeds 1/1, dispenser blocked. Liquor of the main wash: 258 min with detergent, mean 45.7 C (max 61 C), pH 9.88 (max 10.5), protease mean 0.0191 g/L (peak 0.0685), peracid mean 0.0106 mmol/L (peak 0.045). Result `sha256:c0da6cf8df0f`, 0.5 s (exposure cached).
-- **C**: tea cups, dispenser free. Load `cups-centre-corner`, programme `eco_50`, 2 items (2 clean, mean score of the soiled 4), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:da1024e5b7a4`, 0.4 s (exposure cached).
-- **D**: tea cups, dispenser blocked. Load `cups-centre-corner`, programme `eco_50`, 2 items (0 clean, mean score of the soiled 0), seeds 1/1, dispenser blocked. Liquor of the main wash: 258 min with detergent, mean 45.7 C (max 61 C), pH 9.88 (max 10.5), protease mean 0.0191 g/L (peak 0.0687), peracid mean 0.0106 mmol/L (peak 0.0452). Result `sha256:c685b279f448`, 2.1 s (exposure cached).
+- **A**: plate, dispenser free. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:e1bf05b0b685`, 1.5 s (exposure cached).
+- **B**: plate, dispenser blocked. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 0), seeds 1/1, dispenser blocked. Liquor of the main wash: 258 min with detergent, mean 45.7 C (max 61 C), pH 9.88 (max 10.5), protease mean 0.0191 g/L (peak 0.0685), peracid mean 0.0106 mmol/L (peak 0.045). Result `sha256:57e58112e57a`, 0.4 s (exposure cached).
+- **C**: tea cups, dispenser free. Load `cups-centre-corner`, programme `eco_50`, 2 items (2 clean, mean score of the soiled 4), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:a1649005e83f`, 0.3 s (exposure cached).
+- **D**: tea cups, dispenser blocked. Load `cups-centre-corner`, programme `eco_50`, 2 items (0 clean, mean score of the soiled 0), seeds 1/1, dispenser blocked. Liquor of the main wash: 258 min with detergent, mean 45.7 C (max 61 C), pH 9.88 (max 10.5), protease mean 0.0191 g/L (peak 0.0687), peracid mean 0.0106 mmol/L (peak 0.0452). Result `sha256:9cd645a69a7c`, 1.6 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -598,45 +596,21 @@ Stages: load: session (mechanical check); soil: liquor (dosing), chemistry.
 
 Test: A dessert plate with egg yolk washed with the tablet released into its tray (A) against a tablet that lands in an upright bowl (B).
 
-Adapted: The wash has no input for where the tablet lands; B is washed as A until it has one, and the scenario is reported as not covered.
+Adapted: Where the tablet lands is out of scope, and the wash has no input for it: B is washed as A, and the scenario is reported as not covered.
 
-Stages: soil: liquor (tablet transport and local dissolution, not built). Note: needs where the tablet lands and how it dissolves there (the wash only knows whether the dispenser is blocked).
+Stages: soil: liquor (tablet transport and local dissolution, out of scope). Note: out of scope: where the tablet lands and how it dissolves there (the wash only knows whether the dispenser is blocked).
 
 | Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
 |---|---|---|---|---|---|---|---|
-| score | change of the IEC score of the plate, B - A |  |  |  | similar to under-dosing; size unknown: calibration parameter | - (any size) | not covered: needs where the tablet lands and how it dissolves there (the wash only knows whether the dispenser is blocked) |
+| score | change of the IEC score of the plate, B - A |  |  |  | similar to under-dosing; size unknown: calibration parameter | - (any size) | not covered: out of scope: where the tablet lands and how it dissolves there (the wash only knows whether the dispenser is blocked) |
 
-- **A**: tablet in its tray. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:ceb0affcfde1`, 0.4 s (exposure cached).
-- **B**: tablet in an upright bowl. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:ceb0affcfde1`, 0.4 s (exposure cached).
+- **A**: tablet in its tray. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:e1bf05b0b685`, 1.5 s (exposure cached).
+- **B**: tablet in an upright bowl. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:e1bf05b0b685`, 1.5 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | A | plate (well) | 0.00608 | 0.595 | 195 | 24.4 | 1 | 1 | 4.58 | 29.9 | 1.21 | 0 |  | 3 | 2.91 | 0 | 1.01 | iec_egg_yolk (reaction) 0.0452/1063 mg |
 | B | plate (well) | 0.00608 | 0.595 | 195 | 24.4 | 1 | 1 | 4.58 | 29.9 | 1.21 | 0 |  | 3 | 2.91 | 0 | 1.01 | iec_egg_yolk (reaction) 0.0452/1063 mg |
-
-### P27 Time and temperature trade: too large
-
-Test: A dessert plate with egg yolk (well) and porridge (rim) in the lower basket on the short programme (A, Express 65, 1 h), the eco programme (B, Eco 50, 4 h 55 min) and the intensive programme (C, Intensive 70).
-
-Adapted: The three programmes are those of the owner's machine as the machine package models them.
-
-Stages: soil: liquor (temperature course, enzyme life), hydration, chemistry; machine: programme timeline.
-
-| Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
-|---|---|---|---|---|---|---|---|
-| score | IEC score of the plate, eco minus short | 0 | 3 | 3 score | 270 min at 54 C gave 4.15; 97 min at 50 C gave 3.5 to 3.7 | +0 to +1.65 | too large |
-| residue (supporting) | share of the soil left on the plate, eco minus short | 0.655 | 3.7e-5 | -0.655 1 | short programmes fail on starch and protein | -0.01 or more | pass |
-| intensive (supporting) | share of the soil left on the plate, intensive minus short | 0.655 | 0.634 | -0.0205 1 | more time and temperature remove more | -0.01 or more | pass |
-
-- **A**: Express 65. Load `plate-facing`, programme `express_65`, 1 items (0 clean, mean score of the soiled 0), seeds 1/1. Liquor of the main wash: 43.5 min with detergent, mean 52.9 C (max 66.9 C), pH 10 (max 10.5), protease mean 0.0454 g/L (peak 0.076), peracid mean 0.118 mmol/L (peak 0.276). Result `sha256:5bc891760ff9`, 0.2 s (exposure cached).
-- **B**: Eco 50. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0955 mmol/L (peak 0.446). Result `sha256:ed2714ba244e`, 0.5 s (exposure cached).
-- **C**: Intensive 70. Load `plate-facing`, programme `intensive_70`, 1 items (0 clean, mean score of the soiled 0), seeds 1/1. Liquor of the main wash: 58.6 min with detergent, mean 58.5 C (max 70 C), pH 10.1 (max 10.6), protease mean 0.0423 g/L (peak 0.0959), peracid mean 0.13 mmol/L (peak 0.446). Result `sha256:af3a3ffe6a26`, 0.3 s (exposure cached).
-
-| Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| A | plate (well, rim) | 0.0126 | 0.492 | 249 | 19.3 | 1 | 1 | 7.91 | 46.9 | 1.34 | 0 |  | 0 | 9342 | 0 | 1.01 | iec_egg_yolk (reaction) 802/1063 mg; iec_oat_flakes (reaction) 2.91/167 mg |
-| B | plate (well, rim) | 0.00729 | 0.626 | 229 | 24.4 | 1 | 1 | 5.55 | 33.3 | 1.2 | 0 |  | 3 | 2.91 | 0 | 1.01 | iec_egg_yolk (reaction) 0.0451/1063 mg; iec_oat_flakes (reaction) 0/167 mg |
-| C | plate (well, rim) | 0.00756 | 0.632 | 342 | 26.9 | 1 | 1 | 5.89 | 34.6 | 1.23 | 0 |  | 0 | 9235 | 0 | 1.01 | iec_egg_yolk (reaction) 778/1063 mg; iec_oat_flakes (reaction) 2.34/167 mg |
 
 ### P28 Bleachable stains are position-insensitive (negative control): pass
 
@@ -653,8 +627,8 @@ Stages: water: droplets, run-off (wetting); soil: chemistry (bleach), supply fac
 | with (supporting) | share of the tea film removed with bleach, mean of the two cups (A) |  |  | 0.961 1 | with oxidant, temperature and time the film goes | +0.5 to +1 | pass |
 | f_jet (supporting) | fraction of time the inside is under a direct jet, corner over centre, minus one (A) |  |  | -0.679 1 | the corner is the worst spray position | -0.05 or more | pass |
 
-- **A**: with bleach. Load `cups-centre-corner`, programme `eco_50`, 2 items (2 clean, mean score of the soiled 4), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:da1024e5b7a4`, 0.4 s (exposure cached).
-- **B**: bleach-free detergent. Load `cups-centre-corner`, programme `eco_50`, 2 items (0 clean, mean score of the soiled 0), seeds 1/1, parameters {"liq.xPeroxide":0,"liq.xTaed":0}. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0828 g/L (peak 0.135), peracid mean 0 mmol/L (peak 0). Result `sha256:a4f2a0fc1f89`, 0.3 s (exposure cached).
+- **A**: with bleach. Load `cups-centre-corner`, programme `eco_50`, 2 items (2 clean, mean score of the soiled 4), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:a1649005e83f`, 0.3 s (exposure cached).
+- **B**: bleach-free detergent. Load `cups-centre-corner`, programme `eco_50`, 2 items (0 clean, mean score of the soiled 0), seeds 1/1, parameters {"liq.xPeroxide":0,"liq.xTaed":0}. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0828 g/L (peak 0.135), peracid mean 0 mmol/L (peak 0). Result `sha256:a0b53f73deb6`, 0.3 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -678,9 +652,9 @@ Stages: soil: hydration (lag), bake index, removal laws.
 | baked | IEC score, baked minus oven-dried | 3 | 2 | -1 score | at least 1 point lower again for 130 to 140 C baking | -0 to -5 | pass |
 | order (supporting) | share of the egg yolk left, baked minus fresh | 1.8e-8 | 1.4e-4 | 1.4e-4 1 | ageing leaves more | +0.01 or more | too small |
 
-- **A**: fresh. Load `plate-facing`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0954 mmol/L (peak 0.446). Result `sha256:849d5ef0ea14`, 0.4 s (exposure cached).
-- **B**: oven-dried 2 h at 80 C. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:ceb0affcfde1`, 0.4 s (exposure cached).
-- **C**: baked on at 125 C. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:22e35f7c8db8`, 0.4 s (exposure cached).
+- **A**: fresh. Load `plate-facing`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0954 mmol/L (peak 0.446). Result `sha256:0aba66263253`, 0.3 s (exposure cached).
+- **B**: oven-dried 2 h at 80 C. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:e1bf05b0b685`, 1.5 s (exposure cached).
+- **C**: baked on at 125 C. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:c800e94272bc`, 0.3 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -701,10 +675,10 @@ Stages: soil: removal laws (reaction, jet assist), chemistry; water: hydraulics,
 | pump | share of the egg yolk removed, pump +30 % minus pump -30 % | 1 | 1 | 1.1e-5 1 | doubling pump pressure changes egg-yolk removal little | |x| <= 0.2 | pass |
 | enzyme | share of the egg yolk removed, protease +50 % minus protease -50 % | 0.0481 | 0.718 | 0.669 1 | doubling enzyme level changes it clearly | +0.05 to +1 | pass |
 
-- **A**: pump -30 %. Load `plate-facing`, programme `eco_50+pump70pct`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 43.8 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0739 g/L (peak 0.114), peracid mean 0.101 mmol/L (peak 0.446). Result `sha256:94a1a02239f0`, 0.4 s (exposure cached).
-- **B**: pump +30 %. Load `plate-facing`, programme `eco_50+pump130pct`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 50.1 C (max 53.6 C), pH 10.3 (max 10.7), protease mean 0.0677 g/L (peak 0.0959), peracid mean 0.087 mmol/L (peak 0.446). Result `sha256:5e08876df46f`, 0.5 s (exposure cached).
-- **C**: protease -50 %. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 0), seeds 1/1, parameters {"liq.xProtease":0.005}. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0121 g/L (peak 0.0181), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:0b571fc9584d`, 1.9 s (exposure cached).
-- **D**: protease +50 %. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 0), seeds 1/1, parameters {"liq.xProtease":0.015}. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0363 g/L (peak 0.0542), peracid mean 0.0957 mmol/L (peak 0.446). Result `sha256:95309bb6f4e4`, 0.4 s (exposure cached).
+- **A**: pump -30 %. Load `plate-facing`, programme `eco_50+pump70pct`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 43.8 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0739 g/L (peak 0.114), peracid mean 0.101 mmol/L (peak 0.446). Result `sha256:b9a963e7f5fc`, 0.3 s (exposure cached).
+- **B**: pump +30 %. Load `plate-facing`, programme `eco_50+pump130pct`, 1 items (0 clean, mean score of the soiled 2), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 50.1 C (max 53.6 C), pH 10.3 (max 10.7), protease mean 0.0677 g/L (peak 0.0959), peracid mean 0.087 mmol/L (peak 0.446). Result `sha256:d2febdd19193`, 0.4 s (exposure cached).
+- **C**: protease -50 %. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 0), seeds 1/1, parameters {"liq.xProtease":0.005}. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0121 g/L (peak 0.0181), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:c52384fe4fd6`, 0.4 s (exposure cached).
+- **D**: protease +50 %. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 0), seeds 1/1, parameters {"liq.xProtease":0.015}. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0363 g/L (peak 0.0542), peracid mean 0.0957 mmol/L (peak 0.446). Result `sha256:2241b1abd04c`, 0.3 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -726,35 +700,11 @@ Stages: soil: hydration, removal laws (starch), inspection.
 | clusters | share of the plates scoring 5 or 0 to 1 |  |  | 1 1 | porridge-plate scores cluster at 5 and at 0 to 1 | +0.6 to +1 | pass |
 | both | share of the plates in the smaller of the two clusters |  |  | 0 1 | both clusters occur: some plates come clean, some keep a sheet | +0.01 or more | too small |
 
-- **A**: twelve porridge plates. Load `soup-12`, programme `eco_50`, 12 items (12 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.111), peracid mean 0.0943 mmol/L (peak 0.446). Result `sha256:da425266992d`, 3.3 s (exposure cached).
+- **A**: twelve porridge plates. Load `soup-12`, programme `eco_50`, 12 items (12 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.111), peracid mean 0.0943 mmol/L (peak 0.446). Result `sha256:11a19af2b591`, 2.6 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | A | soup_6 (well) | 0.00163 | 0.332 | 204 | 21.9 | 1 | 1 | 1.45 | 12.9 | 0.779 | 0 |  | 5 | 0 | 0 | 1.59 | iec_oat_flakes (reaction) 0/232 mg |
-
-### P32 Microwaved milk on glass is persistent: too large
-
-Test: Four test glasses with microwaved milk in the upper basket with detergent D on the Auto programme (A), on the long eco programme (B), and with a detergent of twice the enzyme and half the silicate (C).
-
-Adapted: The registry defaults are IEC detergent D. The ingredient table of detergent E is not in the dossiers ("upgraded enzymes, less silicate"), so C is an assumed composition and decides nothing; the eco programme, which the entry names beside E, is the deciding comparison.
-
-Stages: soil: chemistry (alkalinity, enzyme), removal laws; water: jets into the glass.
-
-| Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
-|---|---|---|---|---|---|---|---|
-| class | mean IEC score of the glasses with detergent D, as a distance from 2.3 to 2.4 (A) |  |  | -2.05 score | glass class 2.3 to 2.4 with detergent D on the reference machines | within 1 of the range | too small |
-| eco | mean IEC score of the glasses, eco minus Auto | 0.25 | 5 | 4.75 score | 2.8 to 4.0 with detergent E or a long eco programme | +0 to +3.4 | too large |
-| e_like (supporting) | mean share of the milk left, E-like minus D | 0.0199 | 0.282 | 0.263 1 | upgraded enzymes remove more | -0.01 or more | wrong sign |
-
-- **A**: detergent D, Auto. Load `glasses-milk`, programme `auto_145`, 4 items (0 clean, mean score of the soiled 0.25), seeds 1/1. Liquor of the main wash: 113 min with detergent, mean 54.3 C (max 66.8 C), pH 9.95 (max 10.6), protease mean 0.0337 g/L (peak 0.0958), peracid mean 0.0772 mmol/L (peak 0.449). Result `sha256:98a6a90cd92b`, 0.6 s (exposure cached).
-- **B**: detergent D, Eco 50. Load `glasses-milk`, programme `eco_50`, 4 items (4 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.109), peracid mean 0.095 mmol/L (peak 0.446). Result `sha256:a8bea6f78dc0`, 0.5 s (exposure cached).
-- **C**: assumed E-like detergent, Auto. Load `glasses-milk`, programme `auto_145`, 4 items (0 clean, mean score of the soiled 0), seeds 1/1, parameters {"liq.xProtease":0.02,"liq.xAmylase":0.01,"liq.xSilicate":0.275}. Liquor of the main wash: 113 min with detergent, mean 54.3 C (max 66.8 C), pH 10 (max 10.7), protease mean 0.0217 g/L (peak 0.0639), peracid mean 0.0766 mmol/L (peak 0.444). Result `sha256:ae8e87761fe2`, 1.9 s (exposure cached).
-
-| Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| A | glass_1 (interior) | 0.0127 | 0.458 | 435 | 26.1 | 1 | 1 | 5.54 | 37.1 | 1.09 | 0 |  | 0 | 824 | 0 | 0.951 | ikw_milk_microwaved (reaction) 8.05/527 mg |
-| B | glass_1 (interior) | 0.0128 | 0.458 | 435 | 26.4 | 1 | 1 | 5.58 | 37.2 | 1.09 | 0 |  | 5 | 0 | 0 | 0.951 | ikw_milk_microwaved (reaction) 0/527 mg |
-| C | glass_1 (interior) | 0.0127 | 0.458 | 435 | 26.1 | 1 | 1 | 5.54 | 37.1 | 1.09 | 0 |  | 0 | 9151 | 0 | 0.951 | ikw_milk_microwaved (reaction) 147/527 mg |
 
 ### P33 Fat needs temperature and enough water: too small
 
@@ -770,9 +720,9 @@ Stages: soil: removal laws (melt, roll-up by substrate), liquor (temperature cou
 | temperature | share of the margarine left on the two plates, 35 C minus 55 C | 5.7e-22 | 2.2e-13 | 2.2e-13 1 | fat needs temperature: below its melting range solid fat is only smeared | +0.05 or more | too small |
 | plastic (supporting) | share of the margarine left at 45 C, melamine minus porcelain (B) |  |  | 7.4e-17 1 | greasy residue most visibly on plastic | +0.01 or more | too small |
 
-- **A**: main wash at 35 C. Load `dplate-lower`, programme `eco_50+wash35C`, 2 items (2 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 164 min with detergent, mean 35 C (max 36.8 C), pH 10.6 (max 10.8), protease mean 0.0755 g/L (peak 0.117), peracid mean 0.197 mmol/L (peak 0.447). Result `sha256:619f4bac3212`, 1.7 s (exposure cached).
-- **B**: main wash at 45 C. Load `dplate-lower`, programme `eco_50+wash45C`, 2 items (2 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 168 min with detergent, mean 42.4 C (max 45 C), pH 10.4 (max 10.8), protease mean 0.0756 g/L (peak 0.117), peracid mean 0.122 mmol/L (peak 0.445). Result `sha256:b81b3b3e39f2`, 0.4 s (exposure cached).
-- **C**: main wash at 55 C. Load `dplate-lower`, programme `eco_50+wash55C`, 2 items (2 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 172 min with detergent, mean 49.6 C (max 55 C), pH 10.3 (max 10.8), protease mean 0.0646 g/L (peak 0.0959), peracid mean 0.0718 mmol/L (peak 0.445). Result `sha256:08a19a66bf24`, 0.4 s (exposure cached).
+- **A**: main wash at 35 C. Load `dplate-lower`, programme `eco_50+wash35C`, 2 items (2 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 164 min with detergent, mean 35 C (max 36.8 C), pH 10.6 (max 10.8), protease mean 0.0755 g/L (peak 0.117), peracid mean 0.197 mmol/L (peak 0.447). Result `sha256:5039923042d2`, 0.3 s (exposure cached).
+- **B**: main wash at 45 C. Load `dplate-lower`, programme `eco_50+wash45C`, 2 items (2 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 168 min with detergent, mean 42.4 C (max 45 C), pH 10.4 (max 10.8), protease mean 0.0756 g/L (peak 0.117), peracid mean 0.122 mmol/L (peak 0.445). Result `sha256:0535aad6d37c`, 0.3 s (exposure cached).
+- **C**: main wash at 55 C. Load `dplate-lower`, programme `eco_50+wash55C`, 2 items (2 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 172 min with detergent, mean 49.6 C (max 55 C), pH 10.3 (max 10.8), protease mean 0.0646 g/L (peak 0.0959), peracid mean 0.0718 mmol/L (peak 0.445). Result `sha256:1b544792cb11`, 1.6 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -789,15 +739,15 @@ Test: A dessert plate with egg yolk at 5 (A) and 10 mg/cm2 dry (B).
 
 Adapted: One plate; 5 and 10 mg/cm2 dry on 60 % of the well are 0.93 g and 1.85 g of yolk as applied.
 
-Stages: soil: removal laws (cohesive failure and flakes, not built). Note: needs detachment of thick layers as flakes.
+Stages: soil: removal laws (cohesive failure and flakes, out of scope). Note: out of scope: detachment of thick layers as flakes.
 
 | Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
 |---|---|---|---|---|---|---|---|
-| flakes | soil that left as flakes, thick minus thin |  |  |  | thick egg yolk partly tended to flake off | + (any size) | not covered: needs detachment of thick layers as flakes |
+| flakes | soil that left as flakes, thick minus thin |  |  |  | thick egg yolk partly tended to flake off | + (any size) | not covered: out of scope: detachment of thick layers as flakes |
 | residue (supporting) | share of the egg yolk left, thick minus thin | 0 | 5.8e-6 | 5.8e-6 1 | the thicker layer takes longer | +0.01 or more | too small |
 
-- **A**: 5 mg/cm2 dry. Load `plate-facing`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0957 mmol/L (peak 0.446). Result `sha256:5cea35a64dbc`, 0.3 s (exposure cached).
-- **B**: 10 mg/cm2 dry. Load `plate-facing`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 4), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:309798c0e5b0`, 0.4 s (exposure cached).
+- **A**: 5 mg/cm2 dry. Load `plate-facing`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0957 mmol/L (peak 0.446). Result `sha256:4508ed7ae287`, 0.3 s (exposure cached).
+- **B**: 10 mg/cm2 dry. Load `plate-facing`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 4), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:ebf7137eaee7`, 0.3 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -818,8 +768,8 @@ Stages: water: jets (entry into a cavity), run-off; soil: removal laws.
 | side | share of the soil left in the pot, on its side minus mouth down | 0 | 0 | 0 1 | on its side, half the wall is shadowed | +0.01 or more | too small |
 | ranking (supporting) | share left on the inner wall minus on the inner bottom, mouth down (A) |  |  | 0 1 | inverted, the bottom is hit directly (the ranking is a calibration target) | +0.01 or more | too small |
 
-- **A**: mouth down. Load `pot-inverted`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:9191e8fa96c4`, 1.9 s (exposure cached).
-- **B**: on its side. Load `pot-on-side`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:1300a309ea77`, 1.9 s (exposure cached).
+- **A**: mouth down. Load `pot-inverted`, programme `eco_50`, 1 items (1 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:74f4411492cb`, 0.4 s (exposure cached).
+- **B**: on its side. Load `pot-on-side`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 5), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:8c256bd328be`, 2 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -839,9 +789,9 @@ Stages: water: scene (basins), run-off, pools.
 | Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
 |---|---|---|---|---|---|---|---|
 | pool | water standing in the base recess at the end |  |  | 5 mL | pi R^2 h: 5.9 mL for a recess of 25 mm radius and 3 mm depth; 6.2 mL for the recess of this mug (28 mm, 2.5 mm) | +3.08 to +12.3 | pass |
-| drying (supporting) | drying score of the mug |  |  |  | drying score 0 | |x| <= 0.5 | not covered: needs drying (evaporation of the retained film, the drying score, drips after the last drain) |
+| drying (supporting) | drying score of the mug |  |  |  | drying score 0 | |x| <= 0.5 | not covered: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain) |
 
-- **A**: level, as it settled on the shelf. Load `mug-on-shelf`, programme `eco_50`, 1 items (0 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.112), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:7c33efa7899b`, 2.9 s (exposure cached).
+- **A**: level, as it settled on the shelf. Load `mug-on-shelf`, programme `eco_50`, 1 items (0 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.112), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:8f173781511d`, 2 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -861,11 +811,11 @@ Stages: water: scene (basins, minimum basin volume), pools.
 | tilt15 | water in the recess at 15 degrees over level | 5 | 0.111 | 0.0223 1 | the wedge formula: 0.42 of 5.9 mL at 15 degrees for the checklist's recess; 0.28 of 6.2 mL for this mug's | +0.0231 to +0.0924 | too small |
 | tilt30 (supporting) | water in the recess at 30 degrees over level | 5 | 0 | 0 1 | the wedge formula: 0.13 of 5.9 mL at 30 degrees for the checklist's recess; 0.09 of 6.2 mL for this mug's | +0.0073 to +0.0292 | too small |
 
-- **A**: level, as it settled on the shelf. Load `mug-on-shelf`, programme `eco_50`, 1 items (0 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.112), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:7c33efa7899b`, 2.9 s (exposure cached).
-- **B**: tilted 7 degrees. Load `mug-on-shelf`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.112), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:8feffc755bf6`, 1.8 s (exposure cached).
+- **A**: level, as it settled on the shelf. Load `mug-on-shelf`, programme `eco_50`, 1 items (0 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.112), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:8f173781511d`, 2 s (exposure cached).
+- **B**: tilted 7 degrees. Load `mug-on-shelf`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.112), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:5b6d5905eb21`, 1.4 s (exposure cached).
   - set pose: deepest overlap 0.01 mm (mug into upper_rack_fittings)
-- **C**: tilted 15 degrees. Load `mug-on-shelf`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.112), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:75293e259dff`, 1.9 s (exposure cached).
-- **D**: tilted 30 degrees. Load `mug-on-shelf`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.112), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:e72ff25f7e5d`, 1.7 s (exposure cached).
+- **C**: tilted 15 degrees. Load `mug-on-shelf`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.112), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:3e16020d84da`, 1.5 s (exposure cached).
+- **D**: tilted 30 degrees. Load `mug-on-shelf`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.112), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:f00bb9331a67`, 1.4 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -880,14 +830,14 @@ Test: A melamine and a porcelain dessert plate of the same shape side by side in
 
 Adapted: None.
 
-Stages: drying (not built); water: run-off (beads on plastic) gives the film it would start from. Note: needs drying (evaporation of the retained film, the drying score, drips after the last drain).
+Stages: drying (out of scope); water: run-off (beads on plastic) gives the film it would start from. Note: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain).
 
 | Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
 |---|---|---|---|---|---|---|---|
-| drying | drying score (0 to 1 scale), melamine minus porcelain |  |  |  | melamine dries to 0.47 to 0.76 against crockery 0.67 to 0.83 | -0.035 to -0.4 | not covered: needs drying (evaporation of the retained film, the drying score, drips after the last drain) |
+| drying | drying score (0 to 1 scale), melamine minus porcelain |  |  |  | melamine dries to 0.47 to 0.76 against crockery 0.67 to 0.83 | -0.035 to -0.4 | not covered: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain) |
 | film (supporting) | water left as film per area at the end of the last rinse, melamine over porcelain, minus one |  |  | -0.334 1 | water beads on plastic and stays | +0.05 or more | wrong sign |
 
-- **A**: side by side. Load `dplate-lower`, programme `eco_50`, 2 items (2 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:6a9e564bb050`, 0.3 s (exposure cached).
+- **A**: side by side. Load `dplate-lower`, programme `eco_50`, 2 items (2 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:f570476b7fd4`, 0.2 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -900,15 +850,15 @@ Test: A saucepan mouth down in the lower basket (A) against a dessert plate on e
 
 Adapted: None.
 
-Stages: drying (not built). Note: needs drying (evaporation of the retained film, the drying score, drips after the last drain).
+Stages: drying (out of scope). Note: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain).
 
 | Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
 |---|---|---|---|---|---|---|---|
-| drying | drying score (0 to 1 scale), pot minus plate |  |  |  | pots dry to 0.45 to 0.79 against crockery 0.67 to 0.83 | -0.025 to -0.6 | not covered: needs drying (evaporation of the retained film, the drying score, drips after the last drain) |
+| drying | drying score (0 to 1 scale), pot minus plate |  |  |  | pots dry to 0.45 to 0.79 against crockery 0.67 to 0.83 | -0.025 to -0.6 | not covered: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain) |
 | water (supporting) | water the pot keeps at the end (pools and film) against the plate | 12.5 | 1.01 | 11.5 g | rims that hold water, large wetted area | + (any size) | pass |
 
-- **A**: saucepan. Load `pot-inverted`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:f4a181ccf963`, 0.3 s (exposure cached).
-- **B**: plate. Load `dplate-lower`, programme `eco_50`, 2 items (2 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:6a9e564bb050`, 0.3 s (exposure cached).
+- **A**: saucepan. Load `pot-inverted`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0726 g/L (peak 0.11), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:f34704f2a9a6`, 1.4 s (exposure cached).
+- **B**: plate. Load `dplate-lower`, programme `eco_50`, 2 items (2 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:f570476b7fd4`, 0.2 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -926,10 +876,10 @@ Stages: water: scene (contacts), run-off (bridges, retained water).
 | Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
 |---|---|---|---|---|---|---|---|
 | held | water left on the two glasses at the end of the last rinse (film and pools), B - A | 2.58 | 2.3 | -0.277 g | a wet mark at every touching pair | + (any size) | wrong sign |
-| marks (supporting) | residue marks at the contact (B) |  |  |  | a residue line at every touching pair | + (any size) | not covered: needs spots and film from evaporated water, and marks at contacts |
+| marks (supporting) | residue marks at the contact (B) |  |  |  | a residue line at every touching pair | + (any size) | not covered: out of scope: spots and film from evaporated water, and marks at contacts |
 
-- **A**: apart. Load `glasses-apart`, programme `eco_50`, 2 items (2 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:18a6780c3af6`, 1.8 s (exposure cached).
-- **B**: touching. Load `glasses-touching`, programme `eco_50`, 2 items (2 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:81e8a7a9d1fe`, 1.6 s (exposure cached).
+- **A**: apart. Load `glasses-apart`, programme `eco_50`, 2 items (2 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:4a5f9d1c28b6`, 1.4 s (exposure cached).
+- **B**: touching. Load `glasses-touching`, programme `eco_50`, 2 items (2 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:ebc8d8341170`, 1.5 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -944,17 +894,17 @@ Test: A 20 g polypropylene container lid lying hollow side down in the lower bas
 
 Adapted: The lightest lid of the catalogue weighs 20 g, not 15 g. In the lower basket it comes to rest on the cutlery basket and the left front tines.
 
-Stages: rigid-body coupling during the wash (not built); water: jets (the lift ratio is reported). Note: needs items moved by the jets (the load is washed where it was placed; only a lift ratio is reported).
+Stages: rigid-body coupling during the wash (out of scope); water: jets (the lift ratio is reported). Note: out of scope: items moved by the jets (the load is washed where it was placed; only a lift ratio is reported).
 
 | Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
 |---|---|---|---|---|---|---|---|
-| moved | distance the jets move the lid in the lower basket |  |  |  | unrestrained items lighter than about 30 to 50 g can lift, turn over and then fill | + (any size) | not covered: needs items moved by the jets (the load is washed where it was placed; only a lift ratio is reported) |
+| moved | distance the jets move the lid in the lower basket |  |  |  | unrestrained items lighter than about 30 to 50 g can lift, turn over and then fill | + (any size) | not covered: out of scope: items moved by the jets (the load is washed where it was placed; only a lift ratio is reported) |
 | lift (supporting) | peak upward jet force on the lid over its weight, lower basket (A) |  |  | 3.53 1 | 0.08 to 0.30 N per jet against the weight of a 20 g lid | +0.2 to +3 | too large |
 | upper (supporting) | that ratio, upper basket minus lower basket | 3.53 | 2.81 | -0.717 1 | the advice is to put light plastics in the top rack | -0.01 or more | pass |
 
-- **A**: lower basket. Load `lid-lower`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.11), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:8ee5257e070a`, 2.3 s (exposure cached).
+- **A**: lower basket. Load `lid-lower`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.11), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:acd8578a5447`, 1.4 s (exposure cached).
   - wash: placement: lid is likely to be moved by the jets (peak upward jet force 3.53 of its weight); it is simulated where it was placed
-- **B**: upper basket. Load `lid-upper`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:5fc0c62ce335`, 1.8 s (exposure cached).
+- **B**: upper basket. Load `lid-upper`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:0444d15bc441`, 1.4 s (exposure cached).
   - wash: placement: lid is likely to be moved by the jets (peak upward jet force 2.81 of its weight); it is simulated where it was placed
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
@@ -968,29 +918,29 @@ Test: The cutlery of the IEC load.
 
 Adapted: None.
 
-Stages: drying (not built). Note: needs drying (evaporation of the retained film, the drying score, drips after the last drain).
+Stages: drying (out of scope). Note: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain).
 
 | Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
 |---|---|---|---|---|---|---|---|
-| drying | points of the 0 to 1 drying scale the cutlery loses |  |  |  | drying 0.99 | |x| <= 0.04 | not covered: needs drying (evaporation of the retained film, the drying score, drips after the last drain) |
+| drying | points of the 0 to 1 drying scale the cutlery loses |  |  |  | drying 0.99 | |x| <= 0.04 | not covered: out of scope: drying (evaporation of the retained film, the drying score, drips after the last drain) |
 | water (supporting) | water standing in a piece of cutlery at the end, mean |  |  | 0 mL | it drains along its length | |x| <= 0.1 | pass |
 
-- **A**: IEC load. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.91), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0839 mmol/L (peak 0.444). Result `sha256:a3a155d938cc`, 8.5 s (exposure cached).
+- **A**: IEC load. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.91), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0839 mmol/L (peak 0.444). Result `sha256:65fec505514d`, 4 s (exposure cached).
 
 ### P43 Spots, film and tine marks on glass: not covered
 
 Test: A test glass in the upper basket with rinse aid (A) and without (B).
 
-Adapted: The wash has no input for water hardness or for running without rinse aid; B is washed as A until it has, and the scenario is reported as not covered.
+Adapted: Spots and film on glass are out of scope, and the wash has no input for water hardness or for running without rinse aid: B is washed as A, and the scenario is reported as not covered.
 
-Stages: drying and spotting (not built). Note: needs spots and film from evaporated water, and marks at contacts.
+Stages: drying and spotting (out of scope). Note: out of scope: spots and film from evaporated water, and marks at contacts.
 
 | Check | Quantity | A | B | Measured | Expected (checklist) | Accepted | Verdict |
 |---|---|---|---|---|---|---|---|
-| spots | spots on the glass, without rinse aid minus with |  |  |  | AHAM adds 1 point per small spot or streak, 3 per large one | + (any size) | not covered: needs spots and film from evaporated water, and marks at contacts |
+| spots | spots on the glass, without rinse aid minus with |  |  |  | AHAM adds 1 point per small spot or streak, 3 per large one | + (any size) | not covered: out of scope: spots and film from evaporated water, and marks at contacts |
 
-- **A**: with rinse aid. Load `glass-free`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:d5fc2d7e119f`, 1.7 s (exposure cached).
-- **B**: without rinse aid. Load `glass-free`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:d5fc2d7e119f`, 1.7 s (exposure cached).
+- **A**: with rinse aid. Load `glass-free`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:6523430b2ddb`, 1.4 s (exposure cached).
+- **B**: without rinse aid. Load `glass-free`, programme `eco_50`, 1 items (1 clean), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.109), peracid mean 0.0959 mmol/L (peak 0.446). Result `sha256:6523430b2ddb`, 1.4 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -1009,7 +959,7 @@ Stages: water: droplets, run-off in the cutlery basket; soil: removal laws.
 |---|---|---|---|---|---|---|---|
 | class | mean IEC score of the soiled cutlery, as a distance from 4.6 to 4.8 |  |  | -1.05 score | class mean 4.6 to 4.8 | within 1 of the range | too small |
 
-- **A**: IEC load. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.91), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0839 mmol/L (peak 0.444). Result `sha256:a3a155d938cc`, 8.5 s (exposure cached).
+- **A**: IEC load. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.91), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0839 mmol/L (peak 0.444). Result `sha256:65fec505514d`, 4 s (exposure cached).
 
 ### P45 Class ranking in the standard test: wrong sign
 
@@ -1027,7 +977,7 @@ Stages: the whole wash.
 | ranking | cutlery mean minus crockery mean |  |  | -0.594 score | cutlery > melamine > (pots, glass, crockery) | + (any size) | wrong sign |
 | melamine (supporting) | melamine mean minus crockery mean |  |  | 0.853 score | melamine above crockery | + (any size) | pass |
 
-- **A**: IEC load. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.91), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0839 mmol/L (peak 0.444). Result `sha256:a3a155d938cc`, 8.5 s (exposure cached).
+- **A**: IEC load. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.91), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0839 mmol/L (peak 0.444). Result `sha256:65fec505514d`, 4 s (exposure cached).
 
 ### P46 Run-to-run repeatability: too small
 
@@ -1041,9 +991,9 @@ Stages: the whole wash (seeded sampling).
 |---|---|---|---|---|---|---|---|
 | spread | standard deviation of the load mean IEC score over the three seeds |  |  | 0.0342 score | about 0.08 to 0.10; not zero, not 0.5 | +0.04 to +0.2 | too small |
 
-- **A**: seeds 1. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.91), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0839 mmol/L (peak 0.444). Result `sha256:a3a155d938cc`, 8.5 s (exposure cached).
-- **B**: seeds 2. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.99), seeds 2/2. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0837 mmol/L (peak 0.444). Result `sha256:65e9830603e8`, 4.4 s (exposure cached).
-- **C**: seeds 3. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (91 clean, mean score of the soiled 3.93), seeds 3/3. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0838 mmol/L (peak 0.444). Result `sha256:42dd4402a219`, 4.1 s (exposure cached).
+- **A**: seeds 1. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.91), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0839 mmol/L (peak 0.444). Result `sha256:65fec505514d`, 4 s (exposure cached).
+- **B**: seeds 2. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.99), seeds 2/2. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0837 mmol/L (peak 0.444). Result `sha256:480cc0baf0f2`, 4 s (exposure cached).
+- **C**: seeds 3. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (91 clean, mean score of the soiled 3.93), seeds 3/3. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0838 mmol/L (peak 0.444). Result `sha256:d4be9cd174b6`, 4 s (exposure cached).
 
 ### P47 Everything is wetted within seconds; jets are rare events: pass
 
@@ -1059,7 +1009,7 @@ Stages: water: jets, droplets, run-off.
 | wetted | share of the surface of the load that no spray state wets |  |  | 6.7e-5 1 | everything is wetted | |x| <= 0.2 | pass |
 | circuit (supporting) | share of the nozzle outflow not back in the sump within one revolution of the arm (largest of the spray states) |  |  | 0.001 1 | water circuit under 3 s (a revolution takes 1.4 to 2.2 s) | |x| <= 0.5 | pass |
 
-- **A**: IEC load. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.91), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0839 mmol/L (peak 0.444). Result `sha256:a3a155d938cc`, 8.5 s (exposure cached).
+- **A**: IEC load. Load `loader:iec-13-careful`, programme `eco_50`, 114 items (87 clean, mean score of the soiled 3.91), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0731 g/L (peak 0.118), peracid mean 0.0839 mmol/L (peak 0.444). Result `sha256:65fec505514d`, 4 s (exposure cached).
 
 ### P48 Detergent does not change where water goes: pass
 
@@ -1073,8 +1023,8 @@ Stages: water: jets (the exposure key excludes the liquor).
 |---|---|---|---|---|---|---|---|
 | jets | spray states whose exposure differs between the two washes |  |  | 0 states | jet trajectories and velocity fields the same with and without detergent | |x| <= 0 | pass |
 
-- **A**: with detergent. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:ceb0affcfde1`, 0.4 s (exposure cached).
-- **B**: without detergent. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 0), seeds 1/1, dispenser blocked. Liquor of the main wash: 258 min with detergent, mean 45.7 C (max 61 C), pH 9.88 (max 10.5), protease mean 0.0191 g/L (peak 0.0685), peracid mean 0.0106 mmol/L (peak 0.045). Result `sha256:c0da6cf8df0f`, 0.5 s (exposure cached).
+- **A**: with detergent. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 3), seeds 1/1. Liquor of the main wash: 170 min with detergent, mean 46 C (max 50 C), pH 10.4 (max 10.8), protease mean 0.0725 g/L (peak 0.108), peracid mean 0.0956 mmol/L (peak 0.446). Result `sha256:e1bf05b0b685`, 1.5 s (exposure cached).
+- **B**: without detergent. Load `plate-facing`, programme `eco_50`, 1 items (0 clean, mean score of the soiled 0), seeds 1/1, dispenser blocked. Liquor of the main wash: 258 min with detergent, mean 45.7 C (max 61 C), pH 9.88 (max 10.5), protease mean 0.0191 g/L (peak 0.0685), peracid mean 0.0106 mmol/L (peak 0.045). Result `sha256:57e58112e57a`, 0.4 s (exposure cached).
 
 | Wash | Surface | f_jet | jet area | peak shear Pa | mean shear Pa | wet time | wetted area | flux kg/m2/s | renewal 1/s | film shear Pa | pooled area | pools | score | visible mm2 | pooled mL | film g | soils left |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|

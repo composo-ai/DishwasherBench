@@ -18,7 +18,7 @@ import {
   withCutleryBasketAt,
 } from '../config.ts';
 import { cutleryBasketFootprint, cutleryTunnelStretches } from '../cutlery-placement.ts';
-import { BOSCH_SMV4HAX40G as B, SPOT_60 } from '../machines.ts';
+import { BOSCH_SMV4HAX40G as B } from '../machines.ts';
 import type { ReleasedItem } from '../test-physics.ts';
 import { machineWorld, releaseItem } from '../test-physics.ts';
 import { expectNear, must } from '../test-util.ts';
@@ -72,7 +72,6 @@ describe('where the cutlery basket can stand', () => {
       'front_right',
       'front_left',
     ]);
-    expect(cutleryBasketPositions(SPOT_60).map((p) => p.id)).toEqual(['default']);
   });
 
   it('lets it slide along the side rows from wall to wall, and nowhere its feet would stand on a rail', () => {

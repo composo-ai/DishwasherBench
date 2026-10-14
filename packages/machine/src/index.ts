@@ -12,19 +12,14 @@
  *  - `MachineDef` (`def.ts`): the same description in authoring units (millimetres, degrees,
  *    litres, minutes); `loadMachineSpec` converts it, in one place.
  *  - `ProgrammeSpec`, the step types and the timeline types (`programme-types.ts`).
- *  - `BOSCH_SMV4HAX40G` (the owner's machine with his own measurements, primary) with its nine
- *    programmes, its named alternative `BOSCH_SMV4HAX40G_DRILL_BORE`, and `SPOT_60` (the generic
- *    baseline). SPOT-60 CARRIES ONE PROGRAMME, AUTO 45-65: the five others that machine.md
- *    section 7.3 tabulates (ECO 50, INTENSIVE 70, QUICK 60, GLASS 40, PRE-RINSE) are not
- *    transcribed. They need what the step types do not have (a pump speed per diverter
- *    position, a heater duty and a ramp limit per step), and SPOT-60 is only the fallback
- *    behind the owner's machine.
+ *  - `BOSCH_SMV4HAX40G` (the owner's machine with his own measurements) with its one simulated
+ *    programme, Eco 50, and its named alternative `BOSCH_SMV4HAX40G_DRILL_BORE`.
  *
- * The machine is the single source of what every programme shares: dosing delays and amounts,
- * inlet, tank and drain flows, the default diverter pattern and its transition time, the
- * heater's cut-out, the default drying time and the level check with its top-up. Change one of
- * them in a `MachineSpec` and every expanded programme follows; `validateMachineSpec` reports
- * what a change breaks.
+ * The machine is the single source of what does not belong to the programme: dosing delays and
+ * amounts, inlet, tank and drain flows, the default diverter pattern and its transition time,
+ * the heater's cut-out, the default drying time and the level check with its top-up. Change
+ * one of them in a `MachineSpec` and the expanded programme follows; `validateMachineSpec`
+ * reports what a change breaks.
  *
  * Lumped physics, all pure functions
  *  - `hydraulicOperatingPoint`: pump against the open branches by bisection;
@@ -76,13 +71,9 @@ export {
   boschWithLowerArmBore,
 } from './data/bosch-smv4hax40g.ts';
 export {
-  BOSCH_AUTO_145_OPTIONS,
+  BOSCH_ECO_50_OPTIONS,
   BOSCH_PATTERN_45,
-  BOSCH_PATTERN_60,
-  BOSCH_PATTERN_BOTH,
   BOSCH_PROGRAMMES,
   boschProgramme,
   type BoschProgrammeOptions,
 } from './data/bosch-programmes.ts';
-export { SPOT60_DEF } from './data/spot60.ts';
-export { SPOT60_AUTO_135, SPOT60_PATTERN_60, SPOT60_PROGRAMMES } from './data/spot60-programmes.ts';

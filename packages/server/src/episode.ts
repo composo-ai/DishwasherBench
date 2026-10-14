@@ -91,8 +91,8 @@ export interface EpisodeScore {
    *  - `provisional_items`, `provisional_points`: loaded items whose verdict the parameters of
    *    the wash do not vouch for, and what they are worth;
    *  - `preview`: the wash ran at the fast tier;
-   *  - `programme_id`, `programme_status`: the programme washed on, and whether it is the one
-   *    the level is scored on (`uncalibrated`: every verdict is provisional).
+   *  - `programme_id`, `programme_status`: the programme washed on, always the one the level
+   *    is scored on (`scored`).
    */
   readonly counting?: 'binary_on_verdict';
   readonly points_strict?: number;
@@ -103,7 +103,7 @@ export interface EpisodeScore {
   readonly provisional_points?: number;
   readonly preview?: boolean;
   readonly programme_id?: string;
-  readonly programme_status?: 'scored' | 'uncalibrated';
+  readonly programme_status?: 'scored';
 }
 
 /** One tool call as the agent made it (harness records). */

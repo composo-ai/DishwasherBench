@@ -57,12 +57,6 @@ export interface RunEpisodeOptions {
   readonly verify?: VerifyMode;
   /** Give up waiting for the wash after this many seconds; default 2 hours. */
   readonly washTimeoutS?: number;
-  /**
-   * The programme the harness starts the cycle on when the policy has not started it itself:
-   * default the one the level is scored on. A secondary programme of the level gives an
-   * uncalibrated result, labelled so in the record and the table.
-   */
-  readonly programme?: string;
   /** Save the pictures the tools return; default true. */
   readonly saveImages?: boolean;
   /** Receives progress lines; default none. */
@@ -235,7 +229,7 @@ export async function runEpisode(options: RunEpisodeOptions): Promise<EpisodeRes
       const summary = await game.summary(episodeId);
       if (summary.phase !== 'loading' || summary.budget.washes_used >= summary.budget.washes_max)
         return;
-      const started = await game.startCycle(episodeId, options.programme);
+      const started = await game.startCycle(episodeId);
       if (started.accepted) startedByHarness = true;
       else
         notes.push(

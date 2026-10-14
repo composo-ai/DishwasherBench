@@ -24,10 +24,9 @@ conversation short (sections 2, 3 and 7). Records and transcripts older than tha
 
 Since 2026-10-11 the game is scored on **Eco 50** with one capsule of the owner's detergent
 (Finish Powerball Ultimate, 12.9 g): every level names it, the level card and the loading
-guidance say so, and the results table has a column for it. Eco 50 is the only programme of
-the game: no level card lists another, the page offers none, `start_cycle` refuses any other
-(`unknown_programme`), and the harness refuses `--programme` with a programme a level does not
-offer before it plays anything. The levels (a course of seven, each harder than the last by a
+guidance say so, and the results table has a column for it. Eco 50 is the only programme
+(`docs/design/scope.md`, "Out of scope"); `start_cycle` refuses any other programme id
+(`unknown_programme`). The levels (a course of seven, each harder than the last by a
 stated measure), their soils and the reference policies are described in
 `docs/benchmark/levels.md`.
 
@@ -107,8 +106,6 @@ command line, which are passed through to the server the command starts:
 --detergent-name <name>
 --registry-defaults                   # the registry defaults and the machine's own dose
 --accept-stale-params                 # wash with a set made for another state of the simulator
---programme <id>                      # another programme than the level's own. No level of the game offers one,
-                                      # so this is refused before the first episode (exit 2, nothing played)
 ```
 
 A wash with a stale parameter set fails unless `--accept-stale-params` is given (every report
@@ -592,7 +589,7 @@ corrections that followed it; the words of the page itself are under "How to pla
   the same moves replayed. **In benchmark mode none of this is offered**: the wash is the
   server's (the official tier unless it was started with `--wash-tier fast`),
   `start_cycle?wash_tier=` is ignored and `rewash` is refused.
-- *Programme*: the page starts the programme the level is scored on and names no other.
+- *Programme*: the page washes on Eco 50.
 - *Sound*: music (five CC0 pieces, `apps/web/public/audio/LICENSES.md`) and, off by default,
   a clink and a door thud made by the page. Nothing in it carries information about the game:
   the music sinks while the wash runs and comes back when the report arrives, which the
@@ -624,7 +621,7 @@ every kind of player:
 | `counts`, `budget` | Accepted and refused actions and queries, by name; the budget counters at the end |
 | `opened_at`, `cycle_started_at`, `time` | When the player arrived (first socket or first call), when the cycle started, the seconds between (the loading time), the wash's wall and computing time |
 | `load`, `prechecks` | The frozen load (rounded poses) and what closing up found |
-| `wash`, `washes`, `report`, `score` | The last wash job with the tier it was asked for; every wash of the episode in order, failed ones included, each with the hash of the load it was started on (more than one entry: a wash was started again, flagged in the table); the whole report as it was delivered, with its verdict summary (`report.verdicts`: the programme washed on and whether it is the scored one, whether the wash was a preview, the loaded items at the edge of clean and those with a provisional verdict with what each is worth, and the points with the edge items read either way); points, share, clean and loaded items, and the same summary in numbers (`score.counting`, `points_strict`, `points_lenient`, `edge_items`, `edge_points`, `provisional_items`, `provisional_points`, `preview`, `programme_id`, `programme_status`) |
+| `wash`, `washes`, `report`, `score` | The last wash job with the tier it was asked for; every wash of the episode in order, failed ones included, each with the hash of the load it was started on (more than one entry: a wash was started again, flagged in the table); the whole report as it was delivered, with its verdict summary (`report.verdicts`: the programme washed on, with `programme_status` always `scored`, whether the wash was a preview, the loaded items at the edge of clean and those with a provisional verdict with what each is worth, and the points with the edge items read either way); points, share, clean and loaded items, and the same summary in numbers (`score.counting`, `points_strict`, `points_lenient`, `edge_items`, `edge_points`, `provisional_items`, `provisional_points`, `preview`, `programme_id`, `programme_status`) |
 | `policy` (harness) | The policy and what it was run with: seed, model, request settings, the turn limit and its rule, the context policy with its version and numbers (`context.version`: `standard-2`), prompt version |
 | `agent` (harness) | Every tool call as the agent made it (arguments, error or not, result digest, picture files, start and duration), model turns and tokens (`usage`: input neither read from the cache nor written to it, input read from it, input written to it, output, and where the provider states it the share of the output that was reasoning), why the policy stopped, whether the harness had to start the cycle |
 | `replay` (harness) | The verification |
@@ -694,7 +691,7 @@ same for both.
 | What blocks the way down to a free pose | The tint of the piece in hand and the status line of the preview (parts of the machine are named in words, items by their ids) | `preview`: `blocked_by`, `blocked_above_mm` | Free for both |
 | How an item came to rest: on the base or held up, wedged or not | The animation and the view (the "Last action" panel prints where it came to rest, how far it went and what it touches; it does not print `resting`) | `place`: `resting` | Free (part of the action) |
 | Mechanical check | "Run the check": whether each basket slides in, the arms turn, the door closes and the tablet can fall; which pieces lean out over a side and what they touch; which pieces the wall of the tub or the door pushed as the baskets went in | `check_load`: the same facts (`shifted[].pushed_by`, `protruding[].over` and `.touching`) | 1 query for both |
-| Which programme the wash runs on | Eco 50 only: the page offers and names no other | Eco 50 only: the card lists no other programme and `start_cycle` refuses one (`unknown_programme`) | Free, and the same for both |
+| Which programme the wash runs on | Eco 50 | Eco 50 (on the level card) | Free, and the same for both |
 | Which wash: quick preview or full | Open mode only: a choice in the start dialog, and "Run the full wash on this load" after a preview. Benchmark mode: none | Open mode only: `POST .../start_cycle?wash_tier=fast\|official`, `POST .../rewash` (HTTP; not MCP tools). Benchmark mode: ignored and refused | Not part of the benchmark: in benchmark mode every wash is the server's tier for both |
 | Wash progress | Progress panel | `get_report` (with `wait_s`) | Free |
 | Report: per item clean or not, reason, residue by region, water | Report panel | `get_report` | Free |
@@ -785,9 +782,7 @@ Known differences, the ones that could bias a comparison first:
   with the free geometry; an agent has `lowered_pose` free and the basket's envelope on the
   card, and sees the rim in a picture. An agent is not stopped from making such a drop.
   Putting `rim_top_mm` and the cutlery basket's box on the rack card would close it.
-- **The programme.** Closed on 11 October: no level card lists a programme other than Eco 50,
-  the manual and the tool descriptions name none, `start_cycle` refuses another, and the page
-  offers none. A person and an agent wash on the same programme.
+- **The programme.** Both wash on Eco 50.
 - **Drop suggestions** are the same list in the same order for both and cost both one query:
   an agent calls `list_slots` with an item and reads the list a screenful at a time, a person
   presses "Suggest spots" in the "In hand" panel and sees the list as numbered marks in the
@@ -942,7 +937,7 @@ that argues one of them is welcome (`docs/ROADMAP.md`).
 | # | Decision | Taken |
 |---|---|---|
 | 1 | Binary or graded headline | Binary on the verdict: the table's points are the report's `points`, and an item counts by the verdict the standard inspector gives it whatever is flagged beside it. The band is reported beside the headline: every report, record and table line says how many loaded items were at the edge of clean (seen by the strictest eye the inspection standard allows and not by the most lenient) or carried a provisional verdict, what they are worth, and what the load would score with the edge items read either way (`Strict to lenient`). The graded points are in every record. |
-| - | The programme | Eco 50 (decided on 2026-10-10), and no other: no level card lists another programme and `start_cycle` refuses one (11 October, after the first play test). |
+| - | The programme | Eco 50 (decided on 2026-10-10). |
 | - | A fast wash | A preview: labelled on the page, in the report, in the record and in the table; never grouped with official washes. |
 | 3 | One wash, no practice washes | One-shot: the harness ends an episode at the first accepted `start_cycle`. |
 | 4 | Preview wash | None. |

@@ -3,7 +3,8 @@
 Written at the close of the build, on 12 October 2026, for anyone
 who wants to know how far to trust a verdict, and for an engineer new to the repository. It
 collects the checks made so far, says plainly what a clean or not-clean verdict can be trusted
-for today, and lists what is not modelled. The open problems it names are tracked as issues that a
+for today, and says where it falls short. What is out of scope is in
+`docs/design/scope.md`. The open problems it names are tracked as issues that a
 contributor could pick up; `docs/ROADMAP.md` is the map of them.
 
 The reviewers and engineers named below are roles in the build (see `docs/README.md`).
@@ -26,8 +27,8 @@ water (a glass or mug mouth up or on its side), not a careful load.
 - **Published class means of a sister machine** (Bosch SMV6ECX51E, Eco, reference detergent D):
   cutlery within 0.1, crockery 0.2 low, glass 0.1 to 0.5 low. This is a fit, not a prediction:
   the soil and chemistry defaults were anchored to these numbers.
-- **48 loading phenomena** with evidence in the literature: 17 pass, 21 fail in size or sign, 1 is
-  a faulty scenario, 9 need mechanisms that are not built.
+- **46 loading phenomena** with evidence in the literature, 9 of them out of scope. Of the 37
+  within scope 17 pass, 19 fail in size or sign and 1 is a faulty scenario.
 - **Water is conserved exactly**; the same input gives the same result; the fast tier agrees
   with the official on 89 % of verdicts of the standard load and 97 % on the levels; a cold
   official wash of the largest level costs 4.9 minutes of the 30 (best of three), and 5 to 8.5
@@ -116,8 +117,8 @@ unless it carried 1.6 g or less; its amount is unknown.
 
 **How much this is worth.** It is one wash of four plates, judged from photographs, with the yolk
 not weighed. It fixes one number to within a factor that still spans "sprays most of the time" to
-"sprays all the time". It says nothing about tea, milk, starch, fat, the upper basket, cutlery,
-hollow pieces or Auto 45-65.
+"sprays all the time". It says nothing about tea, milk, starch, fat, the upper basket, cutlery
+or hollow pieces.
 
 ## 3. Published class means of a sister machine
 
@@ -148,22 +149,23 @@ simulation's bench tile (% of the tile per minute, simulated / published;
 reference rate of egg yolk was set on these six and on nothing else. They show that one rate
 reproduces all six conditions, on a tile that is not heat-aged.
 
-The IKW test programme under the same set leaves 72 % of the egg yolk, 92 % of the starch mix,
-88 % of the minced meat and 66 % of the tea. No published figure was compared.
-
-## 5. The 48 loading phenomena
+## 5. The loading phenomena
 
 `docs/research/standards.md` section 9 lists 48 statements about how loading affects cleaning,
-each with its evidence and an expected size. Each is an executable pair of washes
+each with its evidence and an expected size. The suite holds 46 of them: P27 and P32 compared
+programmes and were removed, and nine turn on mechanisms that are out of scope
+(`docs/design/scope.md`) and are reported as out of scope. Each is an executable pair of washes
 (`packages/sim-verify/src/phenomena/`). A verdict is that of the deciding check; "accepted" is the
 checklist's range with a tolerance of a factor of two or one score point.
 
-The table is the whole suite at the **fast tier** with the owner's capsule on Eco 50, run on the
-final code on 12 October
+The table is the whole suite at the **fast tier** with the owner's capsule on Eco 50 (46
+phenomena, 76 washes), run again on 14 October after P27 and P32 were removed; no verdict or
+number of the 46 changed from the run on the final code of 12 October
 (`packages/sim-verify/phenomena/reports/phenomena-fast-anchored-v7.owner-capsule.md`):
-**17 pass, 15 too small, 4 too large, 2 wrong sign, 1 error, 9 not covered.** At the official
-tier only P03, P15 and P25 were washed on this set (before the residue of standing water;
-`packages/calibration/anchors/reports/v7/phenomena/`); where it differs the table says so.
+**of the 37 within scope, 17 pass, 15 are too small, 2 too large, 2 of the wrong sign and 1 is
+an error; 9 are out of scope.** At the official tier only P03, P15 and P25 were washed on this
+set (before the residue of standing water; `packages/calibration/anchors/reports/v7/phenomena/`);
+where it differs the table says so.
 
 "At fault" is a reading, not a measurement: it starts from the attribution the anchoring engineer
 made for an earlier set (`docs/calibration/anchoring-v5.md` section 7) and is brought up to date
@@ -193,27 +195,25 @@ machine; **expectation** is the checklist's figure.
 | P18 | Spoons lying flat hold water | pass | 2 mL | |
 | P19 | Loading beyond rated capacity | pass | load mean 4.27 to 3.91 | the loader refuses what does not hold, so this compares half a load with a full one, not a full one with an overfull one |
 | P20 | Total soil load | too small | no change, expected a clear drop when everything is soiled | soil: the soil in the liquor does not use up enough of the chemistry to matter |
-| P21 | Redeposition of particles | not covered | | not modelled |
+| P21 | Redeposition of particles | out of scope | | |
 | P22 | Clean neighbours of soiled items | pass | 0 | passes because nothing is carried to an open face |
-| P23 | End-of-cycle drips | not covered | | drying not modelled |
+| P23 | End-of-cycle drips | out of scope | | |
 | P24 | Arrangement does not matter for easy soils | pass | range 0.07, limit 0.2 | |
 | P25 | Detergent tray blocked | too large | the score falls as it should (three pieces 3.67 to 0); but 27 % of the yolk and 40 % of the tea still go without detergent, limit 20 % | soil: too much removal in water alone |
-| P26 | Tablet in a dead spot | not covered | | not modelled |
-| P27 | Time against temperature | too large | Eco beats a short programme by 3 points, expected up to 1.65 | soil and chemistry on programmes other than Eco 50, which are uncalibrated |
+| P26 | Tablet in a dead spot | out of scope | | |
 | P28 | Bleachable stains do not depend on position | pass | 0, limit 1 | |
 | P29 | Ageing of the soil | pass | | |
 | P30 | Protein answers to chemistry, not jet strength | pass | | |
 | P31 | Starch comes out clean or keeps a sheet | too small | every plate comes clean; none keeps a sheet | soil: the starch law has no second mode |
-| P32 | Microwaved milk on glass | too large | Eco beats Auto by 4.75, expected up to 3.4; the class mean with detergent D is 2 low | soil: the milk rate has no measurement behind it |
 | P33 | Fat needs temperature | too small | margarine leaves completely at 35 C as at 55 C | soil: the melt law |
-| P34 | Thick layers flake off | not covered | | not modelled |
+| P34 | Thick layers flake off | out of scope | | |
 | P35 | Pot on its side | too small | no difference from mouth down | water (the attribution of an earlier set; not looked at again) |
 | P36 | Water pools in the recess of an inverted mug | pass | 5.0 mL against 6.2 | |
 | P37 | Tilt drains the recess | too small | 0.022 of the level volume left at 15 degrees, accepted from 0.023 | water: a miss by a hair |
-| P38, P39, P42 | Plastic and pots stay wet; cutlery dries | not covered | | drying not modelled |
+| P38, P39, P42 | Plastic and pots stay wet; cutlery dries | out of scope | | |
 | P40 | Liquid held at contact points | wrong sign | two glasses touching hold 2.3 g, apart 2.6 g | scenario on the corrected basket: the glasses lean on the rest now, and touching they hold a little less than apart |
-| P41 | Light plastic moved by jets | not covered | | not modelled: only a lift ratio is reported |
-| P43 | Spots and film on glass | not covered | | not modelled |
+| P41 | Light plastic moved by jets | out of scope | | |
+| P43 | Spots and film on glass | out of scope | | |
 | P44 | Cutlery comes out clean | too small | cutlery mean 3.55 with the loader's own soils, 1.05 under 4.6; the band ends at 1 under | the loader's soils on the new load; with the record's soils the class mean is 4.58 to 4.70 (section 3) |
 | P45 | Class ranking of the standard test | wrong sign | cutlery 0.59 below crockery, expected above | the same: with the loader's soils crockery rose to 4.15 (the mugs on the rest) and cutlery fell to 3.55 |
 | P46 | Run-to-run repeatability | too small | spread of the load mean over three seeds 0.034, real machines 0.08 to 0.10 | expectation: the model repeats better than a machine, which has variation the seeds do not carry |
@@ -350,25 +350,22 @@ the corrections made since. The two review reports and their loads are not in th
   and boards the scripted hand never tries. Their scores differ by what they fitted in.
 - So a score reads as "packed well and made no gross mistake with a hollow piece".
 
-### Auto 45-65
+## 9. Known gaps
 
-Not calibrated, and not in the game: no level offers it. The command line can still wash on it
-for research, and says that every verdict is provisional.
+What is out of scope by decision is in
+[docs/design/scope.md](../design/scope.md#out-of-scope). What the wash does at its end:
 
-## 9. What is not modelled
-
-- **Drying.** No evaporation, no drying score, no drips after the last drain (P23, P38, P39, P42).
-  Water left standing in an item is reported in millilitres and does not by itself decide
+- **Water left standing** in an item is reported in millilitres and does not by itself decide
   "clean" (whether it should is an open question: `docs/benchmark/README.md` section 10); what
-  that water held does.
-- **Redeposition onto open surfaces.** Soil that leaves an item goes into the wash water. It
-  comes back only where water stands on an item at the end; nothing settles on a clean neighbour
-  (P21, P22). The residue of standing water is split among soil classes as the whole load gave
-  them up, detergent salts are not counted, and it is not painted on the page's residue picture.
-- **Items moved by the jets.** The load is washed where it was placed. A lift ratio flags items
-  the jets would probably move (P41).
-- **Spots, film and marks on glass** (P43); **flaking of thick layers** (P34); **where the tablet
-  lands** if it does not dissolve in the tray (P26: the wash knows only whether the tray opens).
+  that water held does. Soil that leaves an item goes into the wash water and comes back only
+  where water stands on an item at the end. That residue is split among soil classes as the
+  whole load gave them up, detergent salts are not counted, and it is not painted on the page's
+  residue picture.
+- **The load is washed where it was placed.** A lift ratio flags items the jets would probably
+  lift.
+
+The gaps within scope:
+
 - **Faces lying within a millimetre or two of another body.** The water side works on blocks of
   2 mm (official) or 4 mm (fast) and treats such a face as open wherever water can reach it: its
   film is renewed and its soil goes. A closure for these gaps was built on 11 October in the soil
@@ -417,7 +414,7 @@ Known limits of the machine model:
 | The default set and its tables (sections 2 to 4, 6) | `docs/calibration/anchoring-v7.md`; `packages/calibration/anchors/reports/` |
 | The owner's plates on the final code (section 2) | `pnpm --filter @spotless/calibration spotless-fit predict packages/calibration/records/owner/owner-wash-01-egg-yolk-eco50.measured.json --params packages/calibration/anchors/anchored-v7.owner-capsule.json` |
 | The bench rates (section 4) | `packages/calibration/anchors/scripts/check.ts` |
-| The phenomena (section 5) | From the root of the repository: `INIT_CWD=. pnpm exec tsx packages/sim-verify/src/phenomena/cli.ts --tier fast --params packages/calibration/anchors/anchored-v7.owner-capsule.json --dose-g 12.9 --out .spotless/phenomena`. Without `--out` the command overwrites the stored report under `packages/sim-verify/phenomena/reports/`; with an absolute `--params` it writes that path into the report |
+| The phenomena (section 5) | From the root of the repository: `INIT_CWD=. pnpm exec tsx packages/sim-verify/src/phenomena/cli.ts --tier fast --params packages/calibration/anchors/anchored-v7.owner-capsule.json --dose-g 12.9 --detergent-name "Finish Powerball Ultimate" --out .spotless/phenomena`. Without `--out` the command overwrites the stored report under `packages/sim-verify/phenomena/reports/`; with an absolute `--params` it writes that path into the report |
 | The levels (sections 6 and 8) | `docs/benchmark/levels.md`, `course-table.md`, `course-robustness.md` |
 | The models' episodes (section 8) | `docs/benchmark/first-runs/course/` |
 | The two reviews (section 8) | two internal review reports of 11 October; the reports, their loads and their wash summaries are not in the repository, so the loads of section 8 cannot be reproduced from it |

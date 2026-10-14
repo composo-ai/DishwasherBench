@@ -53,24 +53,6 @@ export const KEYS: readonly (readonly [string, string])[] = [
   ],
 ];
 
-/**
- * The manual of the interface as this page shows it: word for word, less the sentences about
- * secondary programmes, which the page does not offer (it starts the programme the level is
- * scored on and nothing else).
- */
-export function manualForPage(manual: string): string {
-  return manual
-    .split(/\n\s*\n/)
-    .map((paragraph) =>
-      paragraph
-        .split(/(?<=[.!?])\s+/)
-        .filter((sentence) => !/secondary programme/i.test(sentence))
-        .join(' '),
-    )
-    .filter((paragraph) => paragraph.trim() !== '')
-    .join('\n\n');
-}
-
 /** Paragraphs of a text whose paragraphs are separated by blank lines. */
 function paragraphs(text: string): HTMLElement[] {
   return text
@@ -196,7 +178,7 @@ export function howToPlay(
             { class: 'muted' },
             'This is the text a player who plays through the programming interface is given. The names in it (place, set_rack, list_slots, preview, check_load, start_cycle) are the calls behind the buttons of this page.',
           ),
-          paragraphs(manualForPage(card.manual)),
+          paragraphs(card.manual),
         ),
     guidance === null
       ? null

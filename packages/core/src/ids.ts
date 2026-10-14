@@ -18,7 +18,7 @@ export type ItemTypeId = Brand<string, 'ItemTypeId'>;
 export type MaterialId = Brand<string, 'MaterialId'>;
 /** Catalogue soil id, for example `porridge_dried`. */
 export type SoilId = Brand<string, 'SoilId'>;
-/** Machine id, for example `spot60`. */
+/** Machine id, for example `bosch_smv4hax40g`. */
 export type MachineId = Brand<string, 'MachineId'>;
 /** Wash programme id, for example `eco_50`. */
 export type ProgrammeId = Brand<string, 'ProgrammeId'>;

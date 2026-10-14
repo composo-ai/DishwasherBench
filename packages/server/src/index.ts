@@ -72,7 +72,6 @@ export {
   PREVIEW_REPORT_NOTE,
   PREVIEW_TIER,
   STALE_NOTE_PHRASE,
-  UNCALIBRATED_REPORT_NOTE,
   flaggedByNotes,
   verdictSummary,
   withVerdicts,

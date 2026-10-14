@@ -29,32 +29,6 @@
      "of": 48
     }
    }
-  },
-  "auto_145": {
-   "basis": "the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4",
-   "washes": 8,
-   "all": {
-    "agree": 682,
-    "of": 720
-   },
-   "byClass": {
-    "crockery": {
-     "agree": 236,
-     "of": 248
-    },
-    "cutlery": {
-     "agree": 284,
-     "of": 304
-    },
-    "glass": {
-     "agree": 120,
-     "of": 120
-    },
-    "melamine": {
-     "agree": 42,
-     "of": 48
-    }
-   }
   }
  }
 }

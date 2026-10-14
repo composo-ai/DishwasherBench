@@ -63,12 +63,6 @@ export interface HarnessOptions {
   readonly params: Readonly<Record<string, ParamValue>>;
   /** The named sets `params` was composed from, for the provenance of every result. */
   readonly paramSets?: readonly ParamSetRecord[];
-  /**
-   * The programme of every wash whose case names none; default the scored programme
-   * (`SCORED_PROGRAMME`, Eco 50). A case that edits the steps of the owner's programme may not run on
-   * another: it then reports an error.
-   */
-  readonly programme?: string;
   /** The detergent dosed in every wash, in place of the machine's own dose. */
   readonly detergent?: { readonly name: string; readonly dose_g: number };
   /** Receives one line per wash. */
@@ -107,10 +101,7 @@ function resolve(spec: CaseSpec, options: HarnessOptions): Resolved {
       specs === undefined ? item.soils : specs.map((s) => soilRecord(s, item.typeId));
     return { itemId: item.itemId, typeId: item.typeId, pose: item.pose, soils };
   });
-  const programme = programmeOf(
-    spec.programme ?? options.programme ?? SCORED_PROGRAMME,
-    spec.programmeEdit,
-  );
+  const programme = programmeOf(SCORED_PROGRAMME, spec.programmeEdit);
   const params = { ...options.params, ...(spec.params ?? {}) };
   const stalledArms = spec.stall ?? (spec.honourStall === false ? {} : load.stalledArms);
   const dispenserBlocked = spec.dispenserBlocked ?? load.dispenserBlocked;

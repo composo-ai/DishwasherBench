@@ -1,6 +1,6 @@
 # Scope and build order for the wash simulation
 
-This note records what is built first and what is deliberately left out. It follows the aim of
+This note records what is built first and what is out of scope. It follows the aim of
 the project, set on 2026-10-09 and referred to below as "the direction":
 
 1. The simulation must be **accurate where it matters: how items are stacked must determine how well
@@ -40,14 +40,30 @@ In order of effect on the result. Every item here is in the first build.
 | Jets | Phase-domain trace and closed-form gather as in `sim-core.md` M5 | Offline closure campaigns; the retarded ring emitter may be simplified to a direct deposit at the fan limit |
 | Secondary water | Monte Carlo droplets into deposition tables as in M6 | Pilot-guided importance sampling (uniform allocation first) |
 | Whole cycle | Replay every arm revolution against cached exposure, as in section 5.5 | The transient (post-switch) exposure records, if the steady records plus drain-down merge prove sufficient |
-| Soil | The soil model of M8 with the classes that have data first (dried egg yolk, starch, dried ketchup-type adhesive soil, fats, a soluble soil, a bleachable stain) | Further classes; particles as counted specks come with redeposition |
-| Item motion during the wash | The load is static; items that the screening marks as likely to be moved by jets are reported | Rigid-body coupling during the wash (M11) |
+| Soil | The soil model of M8 with the classes that have data first (dried egg yolk, starch, dried ketchup-type adhesive soil, fats, a soluble soil, a bleachable stain) | Further classes |
+| Item motion during the wash | The load is static; items the jets would probably lift are flagged in the report | Out of scope |
 | Tiers | One official tier and one fast tier | Reference tier, browser build |
 | Process | Each kernel is benchmarked when it is written and the budget table is updated from those numbers | A separate measurement milestone; the 30-minute soak happens on the first end-to-end run |
 
 Simplifications inside a module are welcome when they keep the seven dependencies above and the
 calibration hooks. Every simplification is listed by the engineer who makes it, with what it
 ignores, so that calibration can tell whether it matters.
+
+## Out of scope
+
+The wash ends at the last drain, with the load where it was placed. Drying and the drips that
+fall after the last drain, spots and film on glass, items moved by the jets, soil from the wash
+water settling on clean items, thick layers flaking off, and where a tablet lands when it falls
+outside its tray are out of scope and will not be modelled. The report still flags an item the
+jets would probably lift, and what the wash water held is left as residue only where water
+stands on an item at the end. The nine phenomena of the suite that turn on these (P21, P23,
+P26, P34, P38, P39, P41, P42 and P43 of `docs/research/standards.md` section 9) stay in the
+suite and are reported as out of scope.
+
+The simulation washes on one programme of the machine, Eco 50. Other programmes are out of
+scope: the machine data, the game, the benchmark, the calibration and the test washes of
+`docs/calibration/protocol.md` know only Eco 50. P27 and P32, the two phenomena the suite tested
+by comparing programmes, were removed from it.
 
 ## Calibration is a first-class feature
 
@@ -74,7 +90,6 @@ ignores, so that calibration can tell whether it matters.
 6. Soil, liquor and the whole-cycle replay; result per item.
 7. Inspector (clean or not per item) and the report.
 8. Wash records and the fitting tool.
-9. Motion of light items, redeposition, drying.
 
 The game platform (session, levels, 3D client, agent interface) is built alongside, because placing
 a real test load in the simulator needs it. (The list is the plan as it was made; the status
@@ -87,7 +102,7 @@ Written at the close of the build, on 12 October.
 
 ### Built
 
-Steps 1 to 8 of the build order exist and run end to end.
+Every step of the build order exists and runs end to end.
 
 - The seven dependencies of "what links stacking to cleaning" are all in the wash as mechanisms:
   jet access on exact geometry, what a jet does where it lands, splash and run-off, drainage and
@@ -106,29 +121,20 @@ Steps 1 to 8 of the build order exist and run end to end.
 - The game platform alongside: session, a course of seven levels in order of difficulty,
   server, page, agent interface, benchmark harness, scripted reference players. Two models
   have played three levels of the course at the official tier (six episodes).
-- Of step 9, one piece: what the wash water held is left as residue where water stands on an
-  item at the end (11 October, late). A glass or mug left mouth up therefore comes out not
-  clean. Nothing else is redeposited.
+- Since 11 October (late), what the wash water held is left as residue where water stands on
+  an item at the end. A glass or mug left mouth up therefore comes out not clean.
 
-### Deferred, and still deferred
+### Deferred
 
-- The rest of step 9: motion of light items in the wash, redeposition from the liquor onto
-  open surfaces, drying. Not started. The load is static; items the jets would probably move
-  are flagged.
 - The right-hand column of the decisions table. No report of the build records any of it as
   built: the inertial film solver, the analytic two-level tracer, finer film cells on plastics,
   offline closure campaigns for the jets, importance sampling of droplets, the transient exposure
-  records, soil particles as counted specks, the reference tier and a browser build of the wash.
-- Spots and film on glass, flaking of thick layers, and where a tablet lands outside its tray:
-  not planned in this note, listed as not covered by the phenomena suite.
+  records, the reference tier and a browser build of the wash.
 
 ### What changed in direction
 
-- **The game is scored on Eco 50** (decided on the evening of 10 October), not on Auto 45-65. Eco is a
-  fixed course: it removes the sensor's decisions and most of the uncertainty about temperature
-  and duration. Since 11 October nothing of Auto is in front of a player or an agent: no level
-  offers it and `start_cycle` refuses it. Auto remains a programme of the machine that the
-  command line can wash for research, uncalibrated and labelled so.
+- **The game is scored on Eco 50** (decided on the evening of 10 October). Eco 50 is a fixed
+  course with no decisions by the machine's sensors, so its temperatures and durations are known.
 - **The first calibration on the owner's machine** (wash 01: four egg-yolk plates on Eco 50, run
   on 10 October, read on 11 October). The prediction written beforehand had the order of the
   plates right and the amounts too optimistic. The wash rejected the default of that night and
@@ -175,5 +181,4 @@ merged) and test washes that measure one: washes 2 and 3 of `docs/calibration/pr
 None has been run; anyone with this machine can run one. In the order of
 `docs/calibration/protocol.md`: hollow pieces the right and the wrong way up,
 with tea in mugs (the soil class every level's margin rests on, and the bleach rate); porridge
-bowls nested and free (water in a gap); nested and crowded cutlery (the closure above); the
-weighed yolk plates on Auto 45-65 (the capsule's enzyme apart from the soak).
+bowls nested and free (water in a gap); nested and crowded cutlery (the closure above).

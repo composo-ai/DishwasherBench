@@ -1455,32 +1455,16 @@ describe('hydraulics, thermal, dosing (section 3.1)', () => {
     expect(B.sensors.waterQuantity).toBe('impeller_pulses');
   });
 
-  it('lists the programmes of the control panel that the dossier reconstructs', () => {
-    expect(B.programmes.map((p) => p.id)).toEqual([
-      'auto_145',
-      'auto_145_keep',
-      'auto_100_light',
-      'auto_165_heavy',
-      'eco_50',
-      'intensive_70',
-      'express_65',
-      'silence_50',
-      'pre_rinse',
-    ]);
+  it('carries Eco 50, the one programme simulated, with its printed figures', () => {
+    expect(B.programmes.map((p) => p.id)).toEqual(['eco_50']);
+    expect(B.primaryProgramme).toBe('eco_50');
     // The printed table of section 4.1: duration (min), energy (kWh), water (L).
     const printed: readonly (readonly [
       string,
       readonly [number, number],
       readonly [number, number],
       readonly [number, number],
-    ])[] = [
-      ['auto_145', [100, 165], [0.9, 1.5], [7.0, 15.5]],
-      ['eco_50', [295, 295], [0.836, 0.836], [9.5, 9.5]],
-      ['intensive_70', [125, 135], [1.3, 1.4], [11.5, 14.0]],
-      ['express_65', [60, 60], [1.3, 1.3], [10.5, 10.5]],
-      ['silence_50', [240, 240], [1.05, 1.05], [11.0, 11.0]],
-      ['pre_rinse', [15, 15], [0.05, 0.05], [4.0, 4.0]],
-    ];
+    ])[] = [['eco_50', [295, 295], [0.836, 0.836], [9.5, 9.5]]];
     for (const [id, duration, energy, water] of printed) {
       const p = must(must(B.programmes.find((x) => x.id === id)).declared.printed, id);
       expectList(

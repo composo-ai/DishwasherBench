@@ -4,15 +4,14 @@
  * system-level consistency checks (P44 to P48), on the owner's Bosch SMV4HAX40G.
  */
 
-import { control, direction, outside, quantity, scoreChange, within } from './bands.ts';
-import { band, byId, byPrefix, egg, margarine, milk, oats } from './kit.ts';
+import { control, direction, outside, quantity, within } from './bands.ts';
+import { band, byId, byPrefix, egg, margarine, oats } from './kit.ts';
 import { tilted } from './loads.ts';
-import { ECO_PROGRAMME, OWNER_PROGRAMME } from './programmes.ts';
 import {
   check,
   difference,
   film,
-  futureField,
+  absentField,
   meanOver,
   meanScore,
   pooled,
@@ -78,12 +77,6 @@ const wedgeShare = (degrees: number): number => recessWedge_mL(degrees) / recess
 const filmPerArea = (run: CaseRun, itemId: string): number => {
   const area = run.exposure(itemId).area_cm2 / 1e4;
   return area > 0 ? film(run, itemId) / area : Number.NaN;
-};
-
-const MILK_GLASSES: Pick<CaseSpec, 'load' | 'soils' | 'surfaces'> = {
-  load: 'glasses-milk',
-  soils: byPrefix('glass', [{ ...milk('interior'), type: 'ikw_milk_microwaved' }]),
-  surfaces: [{ item: 'glass_1', regions: ['interior'] }],
 };
 
 const FAT_PLATES = (label: string, target: number): CaseSpec => ({
@@ -201,54 +194,6 @@ export const GROUPS_EFG: readonly Scenario[] = [
     ],
   },
   {
-    id: 'P32',
-    title: 'Microwaved milk on glass is persistent',
-    group: 'E',
-    mechanism: 'Heat-denatured protein and mineral film on a smooth substrate; alkalinity-limited',
-    test: 'Four test glasses with microwaved milk in the upper basket with detergent D on the Auto programme (A), on the long eco programme (B), and with a detergent of twice the enzyme and half the silicate (C)',
-    adapted:
-      'The registry defaults are IEC detergent D. The ingredient table of detergent E is not in the dossiers ("upgraded enzymes, less silicate"), so C is an assumed composition and decides nothing; the eco programme, which the entry names beside E, is the deciding comparison.',
-    stages: 'soil: chemistry (alkalinity, enzyme), removal laws; water: jets into the glass',
-    resolutionSensitive: false,
-    cases: [
-      { ...MILK_GLASSES, label: 'A', what: 'detergent D, Auto', programme: OWNER_PROGRAMME },
-      { ...MILK_GLASSES, label: 'B', what: 'detergent D, Eco 50', programme: ECO_PROGRAMME },
-      {
-        ...MILK_GLASSES,
-        label: 'C',
-        what: 'assumed E-like detergent, Auto',
-        programme: OWNER_PROGRAMME,
-        params: { 'liq.xProtease': 0.02, 'liq.xAmylase': 0.01, 'liq.xSilicate': 0.275 },
-      },
-    ],
-    checks: [
-      check(
-        'class',
-        'mean IEC score of the glasses with detergent D, as a distance from 2.3 to 2.4 (A)',
-        'score',
-        true,
-        within(1, 'glass class 2.3 to 2.4 with detergent D on the reference machines'),
-        single('A', (run) => outside(meanOver(run, ids('glass', 4), score), 2.3, 2.4)),
-      ),
-      check(
-        'eco',
-        'mean IEC score of the glasses, eco minus Auto',
-        'score',
-        true,
-        scoreChange(0.4, 1.7, '2.8 to 4.0 with detergent E or a long eco programme'),
-        difference('A', 'B', (run) => meanOver(run, ids('glass', 4), score)),
-      ),
-      check(
-        'e_like',
-        'mean share of the milk left, E-like minus D',
-        '1',
-        false,
-        direction(-1, 'upgraded enzymes remove more', 0.01),
-        difference('A', 'C', (run) => meanOver(run, ids('glass', 4), residualFraction)),
-      ),
-    ],
-  },
-  {
     id: 'P33',
     title: 'Fat needs temperature and enough water',
     group: 'E',
@@ -300,7 +245,7 @@ export const GROUPS_EFG: readonly Scenario[] = [
     adapted:
       'One plate; 5 and 10 mg/cm2 dry on 60 % of the well are 0.93 g and 1.85 g of yolk as applied.',
     requires: ['flaking'],
-    stages: 'soil: removal laws (cohesive failure and flakes, not built)',
+    stages: 'soil: removal laws (cohesive failure and flakes, out of scope)',
     resolutionSensitive: false,
     cases: [
       {
@@ -436,7 +381,7 @@ export const GROUPS_EFG: readonly Scenario[] = [
         'score',
         false,
         control(0.25, 'drying score 0'),
-        single('A', (run) => futureField(run.item('mug'), 'drying', 'score')),
+        single('A', (run) => absentField(run.item('mug'), 'drying', 'score')),
         ['drying'],
       ),
     ],
@@ -500,7 +445,7 @@ export const GROUPS_EFG: readonly Scenario[] = [
     adapted: 'None.',
     requires: ['drying'],
     stages:
-      'drying (not built); water: run-off (beads on plastic) gives the film it would start from',
+      'drying (out of scope); water: run-off (beads on plastic) gives the film it would start from',
     resolutionSensitive: false,
     cases: [
       {
@@ -521,8 +466,8 @@ export const GROUPS_EFG: readonly Scenario[] = [
         single(
           'A',
           (run) =>
-            (futureField(run.item('melamine'), 'drying', 'score') -
-              futureField(run.item('plate'), 'drying', 'score')) /
+            (absentField(run.item('melamine'), 'drying', 'score') -
+              absentField(run.item('plate'), 'drying', 'score')) /
             2,
         ),
       ),
@@ -544,7 +489,7 @@ export const GROUPS_EFG: readonly Scenario[] = [
     test: 'A saucepan mouth down in the lower basket (A) against a dessert plate on edge (B)',
     adapted: 'None.',
     requires: ['drying'],
-    stages: 'drying (not built)',
+    stages: 'drying (out of scope)',
     resolutionSensitive: false,
     cases: [
       {
@@ -570,8 +515,8 @@ export const GROUPS_EFG: readonly Scenario[] = [
         true,
         quantity(-0.05, -0.3, 'pots dry to 0.45 to 0.79 against crockery 0.67 to 0.83'),
         (runs) => {
-          const a = futureField((runs['A'] as CaseRun).item('pot'), 'drying', 'score') / 2;
-          const b = futureField((runs['B'] as CaseRun).item('plate'), 'drying', 'score') / 2;
+          const a = absentField((runs['A'] as CaseRun).item('pot'), 'drying', 'score') / 2;
+          const b = absentField((runs['B'] as CaseRun).item('plate'), 'drying', 'score') / 2;
           return { a, b, value: a - b };
         },
       ),
@@ -646,7 +591,7 @@ export const GROUPS_EFG: readonly Scenario[] = [
         'marks',
         false,
         direction(1, 'a residue line at every touching pair'),
-        single('B', (run) => futureField(run.item('glass_1'), 'spots', 'count')),
+        single('B', (run) => absentField(run.item('glass_1'), 'spots', 'count')),
         ['spotting'],
       ),
     ],
@@ -661,7 +606,7 @@ export const GROUPS_EFG: readonly Scenario[] = [
       'The lightest lid of the catalogue weighs 20 g, not 15 g. In the lower basket it comes to rest on the cutlery basket and the left front tines.',
     requires: ['item_motion'],
     stages:
-      'rigid-body coupling during the wash (not built); water: jets (the lift ratio is reported)',
+      'rigid-body coupling during the wash (out of scope); water: jets (the lift ratio is reported)',
     resolutionSensitive: false,
     cases: [
       {
@@ -689,7 +634,7 @@ export const GROUPS_EFG: readonly Scenario[] = [
           1,
           'unrestrained items lighter than about 30 to 50 g can lift, turn over and then fill',
         ),
-        single('A', (run) => futureField(run.item('lid'), 'moved', 'distance_mm')),
+        single('A', (run) => absentField(run.item('lid'), 'moved', 'distance_mm')),
       ),
       check(
         'lift',
@@ -717,7 +662,7 @@ export const GROUPS_EFG: readonly Scenario[] = [
     test: 'The cutlery of the IEC load',
     adapted: 'None.',
     requires: ['drying'],
-    stages: 'drying (not built)',
+    stages: 'drying (out of scope)',
     resolutionSensitive: false,
     cases: [{ label: 'A', what: 'IEC load', load: IEC, surfaces: [] }],
     checks: [
@@ -731,7 +676,7 @@ export const GROUPS_EFG: readonly Scenario[] = [
           const cutlery = run.result.items.filter((item) => isCutlery(item.typeId));
           return (
             1 -
-            cutlery.reduce((sum, item) => sum + futureField(item, 'drying', 'score') / 2, 0) /
+            cutlery.reduce((sum, item) => sum + absentField(item, 'drying', 'score') / 2, 0) /
               cutlery.length
           );
         }),
@@ -756,9 +701,9 @@ export const GROUPS_EFG: readonly Scenario[] = [
     mechanism: 'Evaporation of hard or poorly rinsed water leaves solids; contacts hold drops',
     test: 'A test glass in the upper basket with rinse aid (A) and without (B)',
     adapted:
-      'The wash has no input for water hardness or for running without rinse aid; B is washed as A until it has, and the scenario is reported as not covered.',
+      'Spots and film on glass are out of scope, and the wash has no input for water hardness or for running without rinse aid: B is washed as A, and the scenario is reported as not covered.',
     requires: ['spotting'],
-    stages: 'drying and spotting (not built)',
+    stages: 'drying and spotting (out of scope)',
     resolutionSensitive: false,
     cases: [
       {
@@ -783,7 +728,7 @@ export const GROUPS_EFG: readonly Scenario[] = [
         'spots',
         true,
         direction(1, 'AHAM adds 1 point per small spot or streak, 3 per large one'),
-        difference('A', 'B', (run) => futureField(run.item('glass'), 'spots', 'count')),
+        difference('A', 'B', (run) => absentField(run.item('glass'), 'spots', 'count')),
       ),
     ],
   },

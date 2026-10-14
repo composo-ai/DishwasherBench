@@ -7,8 +7,7 @@
  * headline (docs/research/benchmark.md section 9, item 1; taken so here).
  * Beside it the report says which loaded items are at the edge of clean, which carry a verdict
  * the parameters of the wash do not vouch for, what the points would be if every item at the
- * edge were read the other way, whether the wash was on the programme the level is scored on,
- * and whether it was a preview (the fast tier).
+ * edge were read the other way, and whether it was a preview (the fast tier).
  *
  * Where the facts come from. The wash runner knows the verdict of every item at both ends of
  * the band in which a residue becomes visible, and which soils its parameters do not vouch
@@ -93,15 +92,15 @@ export function verdictSummary(
       clean: verdict.get(id) ?? false,
     }));
   const edge = flagged(flags.edge);
-  const status = programmeId === level.programmeId ? 'scored' : 'uncalibrated';
   return {
     counting: 'binary_on_verdict',
     programme_id: programmeId,
-    programme_status: status,
+    // The session starts a wash on the programme the level is scored on and on no other.
+    programme_status: 'scored',
     preview: report.job.fidelity === PREVIEW_TIER,
     edge,
     provisional: flagged(flags.provisional),
-    all_provisional: status === 'uncalibrated' || flags.stale,
+    all_provisional: flags.stale,
     points_strict:
       report.score.points -
       edge.filter((item) => item.clean).reduce((sum, item) => sum + item.points, 0),
@@ -111,17 +110,13 @@ export function verdictSummary(
   };
 }
 
-/** What a player is told about a report on a programme the level is not scored on. */
-export const UNCALIBRATED_REPORT_NOTE =
-  'This wash ran on a programme the wash simulation is not calibrated for: every verdict is provisional, and the result is not one on the programme the level is scored on.';
-
 /** What a player is told about a report of the fast tier. */
 export const PREVIEW_REPORT_NOTE =
   'This is a preview: the wash was simulated at the fast tier, whose verdicts differ from those of the official tier on some items of a full load. Scores are published at the official tier.';
 
 /**
  * The report as the game server delivers it: with its verdict summary, and with a note for a
- * preview and for an uncalibrated programme. A report of a wash that simulated nothing (an
+ * preview. A report of a wash that simulated nothing (an
  * empty machine, the placeholder runner) is returned as it is. Idempotent.
  *
  * The wash runner says of a fast wash itself that it is a preview, with the measured agreement
@@ -135,11 +130,8 @@ export function withVerdicts(report: WashReport, manifest: WashManifest): WashRe
   const summary = verdictSummary(report, manifest.level, manifest.programme_id);
   const notes = [...(report.job.notes ?? [])];
   const saysPreview = notes.some((note) => /\bpreview\b/i.test(note));
-  for (const [wanted, text] of [
-    [summary.programme_status === 'uncalibrated', UNCALIBRATED_REPORT_NOTE],
-    [summary.preview && !saysPreview, PREVIEW_REPORT_NOTE],
-  ] as const) {
-    if (wanted && !notes.includes(text)) notes.push(text);
+  if (summary.preview && !saysPreview && !notes.includes(PREVIEW_REPORT_NOTE)) {
+    notes.push(PREVIEW_REPORT_NOTE);
   }
   return {
     ...report,

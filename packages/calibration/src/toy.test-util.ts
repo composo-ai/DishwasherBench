@@ -89,7 +89,7 @@ export function toyRecord(
     kind: values === undefined ? 'planned' : 'synthetic',
     provenance: { methods: { scale: { description: 'toy' } } },
     machine: { id: 'bosch_smv4hax40g' },
-    programme: { id: 'auto_145' },
+    programme: { id: 'eco_50' },
     load: {
       items: [
         {

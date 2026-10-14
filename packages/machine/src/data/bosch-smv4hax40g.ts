@@ -2121,7 +2121,7 @@ export const BOSCH_SMV4HAX40G_DEF: MachineDef = {
       provenance: prov(
         'sister',
         `${B} 2.9, 3.1 (hydraulics.fill)`,
-        "Fill rate 2.5 L/min from two platform figures. First bath 4.0 L is the printed pre-rinse programme; later baths 2.5 L (final rinse from the 2010 platform; an intermediate rinse may be 2.9 L); flush 0.5 L estimated. The next bath is pre-stored in the 3.1 L heat exchanger. The discharge rate of the tank is this engineer's estimate.",
+        "Fill rate 2.5 L/min from two platform figures. First bath 4.0 L from the water arithmetic of the printed figures (section 4.2); later baths 2.5 L (final rinse from the 2010 platform; an intermediate rinse may be 2.9 L); flush 0.5 L estimated. The next bath is pre-stored in the 3.1 L heat exchanger. The discharge rate of the tank is this engineer's estimate.",
         {
           firstBathVolume: 'estimated',
           laterBathVolume: 'estimated',
@@ -2200,7 +2200,7 @@ export const BOSCH_SMV4HAX40G_DEF: MachineDef = {
       part: '00611323',
       activeIn: ['pre_rinse', 'main_wash', 'end_of_main_wash'],
       decides:
-        'in Auto: whether the pre-rinse water is replaced (D1), the wash temperature within 45 to 65 C and the length of the wash (D2), and whether a second intermediate rinse follows (D3); thresholds are not public',
+        'nothing in Eco 50, which runs the same course whatever the load; thresholds are not public',
     },
     waterLevel: 'pump_motor_current',
     waterQuantity: 'impeller_pulses',
@@ -2213,7 +2213,7 @@ export const BOSCH_SMV4HAX40G_DEF: MachineDef = {
     ),
   },
   programmes: BOSCH_PROGRAMMES,
-  primaryProgramme: 'auto_145',
+  primaryProgramme: 'eco_50',
   // The owner's photographs and his tape measurements show the upper basket at level 1, its
   // highest position (dossier section 2.2 item 7; owner update 4.3); that is the default.
   defaultBasketHeights: { upper: '1' },

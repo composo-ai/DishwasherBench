@@ -133,50 +133,6 @@
     "Staged release: powder, gel and liquid compartments dissolve at their own rates; the model releases every species in proportion to one dissolved mass.",
     "Citrate, etidronate and polymers (hardness control), benzotriazole and the glass-care polymer."
   ],
-  "predictedMainWash": {
-    "conditions": "First bath of auto_145 on the Bosch SMV4HAX40G: 4.0 L, dose released 60 s after circulation starts, heated from 19 to 64 C in about 19 min and held (temperature trace of packages/calibration/anchors/reports/first-build-demonstration.auto_145.md), 62.5 min. Computed with packages/sim-liquor on 2026-10-10; no soil in the liquor.",
-    "typeD_20g": {
-      "pH_at47C": 10.77,
-      "pH_mean": 10.54,
-      "protease_peak_mgL": 49.3,
-      "protease_mean_mgL": 24.7,
-      "amylase_mean_mgL": 13.8,
-      "peracid_peak_mM": 0.323,
-      "peracid_mean_mM": 0.1,
-      "time_to_90pct_released_s": 326
-    },
-    "typeD_12.9g": {
-      "pH_at47C": 10.63,
-      "pH_mean": 10.4,
-      "protease_peak_mgL": 32,
-      "protease_mean_mgL": 16.2,
-      "amylase_mean_mgL": 9.7,
-      "peracid_peak_mM": 0.166,
-      "peracid_mean_mM": 0.051,
-      "time_to_90pct_released_s": 326
-    },
-    "finish_12.9g": {
-      "pH_at47C": 10.4,
-      "pH_mean": 10.22,
-      "protease_peak_mgL": 79.9,
-      "protease_mean_mgL": 40.7,
-      "amylase_mean_mgL": 25.5,
-      "peracid_peak_mM": 0.447,
-      "peracid_mean_mM": 0.139,
-      "time_to_90pct_released_s": 222
-    },
-    "finish_ranges": {
-      "pH_at47C": [10.27, 10.54],
-      "pH_mean": [10.08, 10.34],
-      "protease_peak_mgL": [39.9, 159.8],
-      "protease_mean_mgL": [20.3, 81.4],
-      "peracid_peak_mM": [0.208, 0.835],
-      "peracid_mean_mM": [0.064, 0.259],
-      "time_to_90pct_released_s": [121, 389],
-      "amylase_mean_mgL": [10.6, 53.1],
-      "note": "Ranges of the model output over the parameter ranges above. The lower pH bound is the registry minimum of liq.xCarbonate; the older sheets suggest the real pH may be lower still (about 10.0 to 10.1 at 47 C)."
-    }
-  },
   "rinseAid": {
     "name": "Finish Rinse & Shine Aid (UK)",
     "recordedOnly": true,
@@ -201,6 +157,6 @@
     "date": "2026-10-10",
     "by": "second pass, sources re-opened",
     "see": "docs/research/detergent-finish-ultimate.md section 9",
-    "recomputedWith": "own script against packages/sim-liquor; every figure of predictedMainWash reproduced"
+    "recomputedWith": "own script against packages/sim-liquor"
   }
 }

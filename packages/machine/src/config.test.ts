@@ -24,20 +24,19 @@ import {
   MACHINES,
   PRIMARY_MACHINE,
   primaryProgramme,
-  SPOT_60,
 } from './machines.ts';
 import { errorsOf } from './problems.ts';
 import { expectNear, must, toMm } from './test-util.ts';
 import type { MachineConfig } from './types.ts';
 
 describe('the machine registry', () => {
-  it('carries the Bosch as the primary machine and SPOT-60 as the second', () => {
-    expect(MACHINES.map((m) => m.id)).toEqual(['bosch_smv4hax40g', 'spot60']);
+  it('carries the Bosch as the one machine, with Eco 50 as its one programme', () => {
+    expect(MACHINES.map((m) => m.id)).toEqual(['bosch_smv4hax40g']);
     expect(PRIMARY_MACHINE).toBe(B);
-    expect(findMachine('spot60')).toBe(SPOT_60);
+    expect(findMachine('bosch_smv4hax40g')).toBe(B);
     expect(findMachine('nope')).toBeUndefined();
-    expect(primaryProgramme(B).id).toBe('auto_145');
-    expect(primaryProgramme(SPOT_60).id).toBe('auto_135');
+    expect(primaryProgramme(B).id).toBe('eco_50');
+    expect(B.programmes.map((p) => p.id)).toEqual(['eco_50']);
     expect(findProgramme(B, 'eco_50')?.name).toBe('Eco 50');
     expect(findProgramme(B, 'nope')).toBeUndefined();
     expect(() => primaryProgramme({ ...B, primaryProgramme: 'nope' })).toThrow(RangeError);
@@ -93,7 +92,6 @@ describe('applying a configuration', () => {
     expect(basketHeightPosition(B, 'upper', {}).id).toBe('1');
     expect(basketHeightPosition(B, 'lower', {}).id).toBe('fixed');
     expect(() => basketHeightPosition(B, 'upper', { upper: '4' })).toThrow(RangeError);
-    expect(basketHeightPosition(SPOT_60, 'upper').id).toBe('mid');
   });
 
   it('moves a carried spray level and its static lift with the basket', () => {
@@ -108,12 +106,6 @@ describe('applying a configuration', () => {
     expectNear(branchStaticLift(B, branch), 0.455, 1e-12);
     // The roof branch does not move with the basket: 0.69 m under the measured roof.
     expect(branchStaticLift(B, getBranch(B, 'roof'), { upper: '3' })).toBe(0.69);
-    // SPOT-60's mid arm: 0.52 m at the default (middle) position, 25 mm per step.
-    expectNear(
-      branchStaticLift(SPOT_60, getBranch(SPOT_60, 'mid'), { upper: 'low' }),
-      0.495,
-      1e-12,
-    );
   });
 
   it('reads rows and shelves from the configuration, defaults otherwise', () => {
@@ -257,8 +249,8 @@ describe('validateMachineConfig', () => {
   });
 
   it('rejects a cutlery basket on a machine that has none', () => {
-    const none = { ...SPOT_60, cutleryBasket: null };
-    const problems = validateMachineConfig(none, SPOT_60.defaultConfig);
+    const none = { ...B, cutleryBasket: null };
+    const problems = validateMachineConfig(none, B.defaultConfig);
     expect(problems.map((p) => p.code)).toEqual(['config_no_cutlery_basket']);
   });
 });

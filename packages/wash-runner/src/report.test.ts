@@ -351,24 +351,19 @@ describe('simulation result to wash report', () => {
     expect(soiled).toBeDefined();
     const cls = soiled?.soils[0]?.modelClass ?? '';
     const caveats = [
-      { programmeId: 'auto_145', soilClasses: [cls], note: 'carry a soil that is not anchored.' },
+      { programmeId: 'eco_50', soilClasses: [cls], note: 'carry a soil that is not anchored.' },
     ];
     const notes = washReportOf(manifest, result, { ...OPTIONS, caveats }).report.job.notes ?? [];
     expect(notes.join(' ')).toContain(`${soiled?.itemId ?? ''}`);
     expect(notes.join(' ')).toContain('carry a soil that is not anchored.');
     // A caveat on a class no item carries says nothing.
-    const other = [{ programmeId: 'auto_145', soilClasses: ['no_such_class'], note: 'x' }];
+    const other = [{ programmeId: 'eco_50', soilClasses: ['no_such_class'], note: 'x' }];
     expect(
       washReportOf(manifest, result, { ...OPTIONS, caveats: other }).report.job.notes,
     ).toBeUndefined();
-    // The owner's machine: egg, milk and tea on Auto, nothing on Eco 50 or with other parameters.
-    expect(washCaveatsFor('bosch_smv4hax40g', 'auto_145')[0]?.soilClasses).toEqual([
-      'egg_yolk',
-      'milk',
-      'tea',
-    ]);
+    // The owner's machine: no caveat on Eco 50, with its parameters or the registry defaults.
     expect(washCaveatsFor('bosch_smv4hax40g', 'eco_50')).toEqual([]);
-    expect(washCaveatsFor('bosch_smv4hax40g', 'auto_145', 'registry-defaults')).toEqual([]);
+    expect(washCaveatsFor('bosch_smv4hax40g', 'eco_50', 'registry-defaults')).toEqual([]);
   });
 
   it('says what a fast wash is worth before anything else, and nothing of the tier for an official one', () => {

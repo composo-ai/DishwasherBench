@@ -3,7 +3,7 @@
 Written on 11 October 2026 and brought up to date on
 12 October, after the wash began to count what standing water leaves in an item (section 4).
 It follows the first play test of the page, after which the levels were put in order of
-difficulty and the remnants of the Auto cycle were taken out of the interface, and after the
+difficulty, and after the
 wash simulation had been calibrated on the owner's test wash and made current on the corrected
 upper basket (`spotless-sim 0.5.0 water-7`, parameter set `anchored-v7.owner-capsule`). It
 replaces an earlier note, which described twelve levels in no order of difficulty
@@ -93,28 +93,15 @@ them (section 4): the measure follows the soil data, not the wash.
 ## 3. The programme and the detergent
 
 Every level is scored on **Eco 50** with one capsule of the owner's detergent, Finish Powerball
-Ultimate, 12.9 g. Since 11 October nothing else is put in front of a player or an agent:
-
-- no level names a secondary programme, the level card's `secondary_programmes` is empty, and
-  `start_cycle` with another programme is refused (`unknown_programme`);
-- the interface manual says "start_cycle pushes the baskets in and washes what is loaded on the
-  programme the level card names" and no longer speaks of secondary programmes; a test holds
-  the manual, the summaries, the soil descriptions and the programme note of every level free
-  of the words;
-- Auto 45-65 stays a programme of the machine that the wash command line runs for research
-  (`wash-load.ts --programme auto_145`, `reference-table --programme auto_145`;
-  `RESEARCH_PROGRAMME_IDS`). The wash simulation is not calibrated for it and says so there.
+Ultimate, 12.9 g.
 
 The manual's paragraph on looking was reworded for what `list_slots` returns now: with an item,
 the places suggested for it, most useful first and a screenful at a time, each with the
 position and orientation in which a hand seats the item and whether it is free; without, the
 basket as geometry.
 
-The tool descriptions of `packages/mcp` and `docs/benchmark/README.md` name no other programme
-either (a test of the MCP server holds its texts to that). Four saved loads that are not levels
-(`iec-13-careful`, `iec-13-careless`, `half-careful`, `owner-2026-10-10`) still name `auto_145`
-in their file, because the machine data's `primaryProgramme` does; `wash-load` washes them on
-Eco 50 unless told otherwise.
+The four saved loads that are not levels (`iec-13-careful`, `iec-13-careless`, `half-careful`,
+`owner-2026-10-10`) are washed on Eco 50 too.
 
 ## 4. Soils on the calibrated wash: what a mistake costs
 

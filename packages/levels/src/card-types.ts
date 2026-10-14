@@ -128,11 +128,8 @@ export interface ProgrammePhaseCard {
   readonly duration_s: number;
 }
 
-/**
- * Whether a programme is the one the level is scored on, or one a player may choose instead
- * although the wash simulation is not calibrated for it.
- */
-export type ProgrammeStatus = 'scored' | 'uncalibrated';
+/** The programme is the one the level is scored on (Eco 50, the only one). */
+export type ProgrammeStatus = 'scored';
 
 /** Player-visible description of the wash programme. */
 export interface ProgrammeCard {
@@ -148,7 +145,7 @@ export interface ProgrammeCard {
     readonly dose_g: number;
     readonly name?: string;
   } | null;
-  /** `scored` for the level's own programme, `uncalibrated` for one offered beside it. */
+  /** Always `scored`: the level's own programme. */
   readonly status: ProgrammeStatus;
   /** What the status means for a player, in words. */
   readonly note: string;
@@ -263,10 +260,7 @@ export interface LevelCard {
   readonly machine: MachineCard;
   /** The programme the level is scored on, and the default of `start_cycle`. */
   readonly programme: ProgrammeCard;
-  /**
-   * Other programmes of the machine that `start_cycle` accepts by id. Each is labelled
-   * uncalibrated: a wash on one of them is reported and is not a benchmark result.
-   */
+  /** Always empty: no other programme is offered (the field is kept in the card's format). */
   readonly secondary_programmes: readonly ProgrammeCard[];
   /** Sorted by `item_id`. */
   readonly items: readonly ItemRecord[];

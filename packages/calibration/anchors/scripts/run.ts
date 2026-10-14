@@ -3,7 +3,7 @@
  * class means, overall mean, share clean, residue per soil and per item type.
  *
  *   pnpm --filter @spotless/calibration exec tsx anchors/scripts/run.ts
- *        [--load iec-13-careful] [--programme eco_50] [--tier official|fast] [--raw]
+ *        [--load iec-13-careful] [--tier official|fast] [--raw]
  *        [--params <params.json>] [--set key=value[,key=value...]]
  *        [--variants <file.json>] [--level-seed n] [--sim-seed n]
  *        [--milk film|full] [--detergent <params.json>] [--dose-g 12.9]
@@ -80,7 +80,8 @@ const variants: Record<string, Record<string, ParamValue>> = variantFile === und
     >);
 
 const load = option('--load') ?? 'iec-13-careful';
-const programme = option('--programme') ?? 'eco_50';
+/** Eco 50, the only programme the simulation washes on. */
+const programme = 'eco_50';
 const tier = option('--tier') === 'fast' ? 'fast' : 'official';
 const cache = createDiskExposureCache(
   option('--cache') === undefined ? anchorCacheDir() : fromOrigin(option('--cache') as string),

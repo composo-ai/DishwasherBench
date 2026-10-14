@@ -7,7 +7,6 @@
  *   ... reference-table --tier official --jobs 1 --out .spotless/reference/official
  *   ... reference-table --table-only --out <dir>                       the table of washes already made
  *   ... reference-table --by-soil                                      and the verdicts soil by soil
- *   ... reference-table --programme auto_145                           on another programme of the machine
  *   ... reference-table --params registry-defaults | --accept-stale-params
  *
  * For every level it washes the saved reference loads of `@spotless/loader`
@@ -72,7 +71,6 @@ const { values, positionals } = parseArgs({
     out: { type: 'string' },
     cache: { type: 'string' },
     jobs: { type: 'string', default: '2' },
-    programme: { type: 'string' },
     params: { type: 'string', default: 'machine-default' },
     'accept-stale-params': { type: 'boolean' },
     'saved-level': { type: 'boolean' },
@@ -144,7 +142,6 @@ async function washOne(name: string): Promise<void> {
     cacheDir,
     params,
     acceptStaleParams: values['accept-stale-params'] === true,
-    ...(values.programme === undefined ? {} : { programme: values.programme }),
     notes: chosen.changed
       ? ['washed with the level as it is defined now, not as the load was saved with']
       : [],
