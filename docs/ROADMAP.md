@@ -25,15 +25,9 @@ problem is filed, add its row.
 
 | Issue                                                          | Open problem                                                                         | Size   | Notes             |
 | -------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------ | ----------------- |
-| [#1](https://github.com/composo-ai/DishwasherBench/issues/1)   | Plates and cutlery do not answer to stacking (the open blocker)                      | large  |                   |
-| [#2](https://github.com/composo-ai/DishwasherBench/issues/2)   | Faces lying within a millimetre or two of another body come out too clean            | large  |                   |
-| [#3](https://github.com/composo-ai/DishwasherBench/issues/3)   | Fat comes clean with no detergent, and at 35 °C                                      | medium |                   |
-| [#4](https://github.com/composo-ai/DishwasherBench/issues/4)   | Starch always comes clean, and too much goes in water alone                          | medium |                   |
-| [#44](https://github.com/composo-ai/DishwasherBench/issues/44) | The total amount of soil in a load does not change how well it washes                | medium |                   |
 | [#5](https://github.com/composo-ai/DishwasherBench/issues/5)   | Repair the faulty phenomenon scenarios (P05, P35, P40)                               | small  | good first issue  |
 | [#6](https://github.com/composo-ai/DishwasherBench/issues/6)   | Run the whole phenomena suite at the official tier                                   | small  |                   |
 | [#53](https://github.com/composo-ai/DishwasherBench/issues/53) | Phenomena reports record the parameter set by an absolute path                       | small  |                   |
-| [#45](https://github.com/composo-ai/DishwasherBench/issues/45) | There are no saved loads that show the stacking mistakes behind the open blocker     | medium |                   |
 | [#46](https://github.com/composo-ai/DishwasherBench/issues/46) | The fast tier gets the same forks and knife wrong in every wash of the standard load | medium |                   |
 
 ## Calibration data

@@ -22,7 +22,7 @@ None of the three washes below has been run.
 |---|---|---|---|---|
 | A | 1. Glasses and mugs the right and the wrong way up, and tea in four mugs | Eco 50 | 30 minutes over two days | Whether a smoothie glass or a soup mug comes clean mouth down and stays dirty mouth up or on its side: about three quarters of what separates a careful from a careless load on every level rests on this, and no wash has tested it. And whether the capsule bleaches a tea stain |
 | B | 2. Three porridge bowls, two nested | Eco 50 | 20 minutes the evening before | Whether a covered bowl stays dirty, and how dirty |
-| B | 3. Spoons nested and apart, forks crowded and apart, two plates in one gap | Eco 50, the same run as wash 2 | 30 minutes | Whether pieces lying close come out dirty. Today the model says nearly all of them come clean, and that is the largest known gap between the game and a kitchen |
+| B | 3. Spoons nested and apart, forks crowded and apart, two plates in one gap | Eco 50, the same run as wash 2 | 30 minutes | Whether pieces lying close come out dirty. Today the model says nearly all of them come clean, and nothing has measured whether the real machine agrees |
 
 **Why this order.** The calibration tool's ranking of candidate washes (`spotless-fit rank`,
 `docs/calibration/fitting.md` section 7) put tea in mugs first and the nested bowls third on
@@ -247,9 +247,10 @@ each, together with the cutlery of wash 3; 12 October, the current set.)
 **Why.** In the model a spoon lying in the bowl of another comes out clean, forks packed four
 to a compartment come out no worse than forks standing alone, and plates that have fallen
 against each other come out clean. A lower basket loaded that way on 11 October scored every
-piece. This is the largest known gap between the game and a kitchen: for plates and cutlery the
-score does not yet show whether they were stacked well. The checklist of loading phenomena
-expects the opposite: a spoon shielded by another should score 0 to 1
+piece. If the real machine is less forgiving, this is the largest gap between the game and a
+kitchen: for plates and cutlery the score does not show whether they were stacked well. The
+checklist of loading phenomena estimates the opposite: a spoon shielded by another should score
+0 to 1
 (`docs/research/standards.md` section 9, P15 and P17). A mechanism for faces that lie within a
 millimetre or two of another body was built on 11 October and is not in this repository: with
 it on, crowded forks come out dirty (score 1 to 2), which contradicts the published cutlery
