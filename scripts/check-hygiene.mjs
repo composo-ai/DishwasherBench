@@ -57,6 +57,8 @@ export const WARN_BYTES = 20 * 1024 * 1024;
  */
 export const ALLOWED_UNINSPECTED = new Map([
   // ['docs/example.pdf', '0000000000000000000000000000000000000000000000000000000000000000'],
+  // The demo video: its only tags are the container's brand and the encoder's name.
+  ['docs/media/linkedin-demo/dishwasherbench-linkedin.mp4', '71b197d33b241b174e6570fdc44627958dec9aedfa77e04a343b622cfc2ab731'],
 ]);
 
 /**

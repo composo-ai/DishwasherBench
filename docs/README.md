@@ -134,6 +134,12 @@ In the calibration notes, paths written as `anchors/...`, `scripts/...`, `src/..
 | `proposals/` | Superseded by `sim-core.md` | The three competing designs and the panel's verdicts |
 | [scripts/](design/scripts/README.md) | Record | Throwaway arithmetic behind `sim-core.md`. Not maintained code, and not run since |
 
+### `docs/media/`
+
+| Document | Label | What it is |
+|---|---|---|
+| [linkedin-demo/](media/linkedin-demo/README.md) | Record | A demo video of 2 minutes 11 seconds for social media, the source of everything on screen, and the scripts that filmed the game and built the video. Made on 13 October 2026 |
+
 ### `docs/reference/`
 
 | Document | Label | What it is |
