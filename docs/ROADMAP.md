@@ -41,6 +41,7 @@ Most of these need the machine itself.
 | [#11](https://github.com/composo-ai/DishwasherBench/issues/11) | Take the four open tape measurements of the machine                           | small  | needs the machine |
 | [#43](https://github.com/composo-ai/DishwasherBench/issues/43) | The bore of the lower arm's holes and the speed of both arms are not measured | small  | needs the machine |
 | [#12](https://github.com/composo-ai/DishwasherBench/issues/12) | The tub's right wall sometimes stops the basket                               | medium | needs the machine |
+| [#65](https://github.com/composo-ai/DishwasherBench/issues/65) | Make the simulation fit both of the owner's test washes                       | medium |                   |
 
 ## The benchmark
 

@@ -1,0 +1,32 @@
+PREDICTION MADE AFTER THE RESULT. Owner wash 02 was run on the night of 14 to 15 October 2026
+with no plan registered and no prediction frozen beforehand; this was run on 16 October 2026,
+after the owner had reported (docs/calibration/owner-wash-02-result.md).
+Command, from the root of the repository:
+pnpm --filter @spotless/calibration spotless-fit predict \
+  packages/calibration/records/owner/owner-wash-02-stacked-plates-eco50.measured.json \
+  --params packages/calibration/anchors/anchored-v7.owner-capsule.json
+(the capsule's 12.9 g is the dose of the record, as in wash 01)
+
+spotless-fit: parameters: packages/calibration/anchors/anchored-v7.owner-capsule.json
+spotless-fit: WARNING: no calibration.json beside packages/calibration/anchors/anchored-v7.owner-capsule.json: the calibration's own keys (obs.*, cal.*, prog.*) are at their defaults
+  exposure of owner-wash-02-stacked-plates-eco50
+  scene of owner-wash-02-stacked-plates-eco50
+  first replay of owner-wash-02-stacked-plates-eco50
+4 items, 320355 blocks, 499264 soil cells, 84217 deposits replayed (84217 in the load), 7752 ticks, tier official; exposure 0 cached / 4 computed; prepared in 322.0 s
+  every soil of the load is replayed
+  note: machine: dosing.detergentMass = 0.0129 (dose of Finish Powerball Ultimate)
+observation               observed  predicted     sd  residual  log lik  residue mg       visible mm2  specks  score  clean
+------------------------  --------  ---------  -----  --------  -------  ---------------  -----------  ------  -----  -----
+plate_single.clean            true      0.974  0.159      0.16    -0.20  3.31e-8 / 1260   0 / 21100         0      5  true
+plate_pair_covered.clean      true      0.974  0.159      0.16    -0.20  6.50e-5 / 1270   0 / 21100         0      5  true
+plate_pair_open.clean         true      0.974  0.159      0.16    -0.20  2.46e-10 / 1240  0 / 21100         0      5  true
+plate_flat.score                 5       4.79  0.421      0.49    -0.41  1.85e-9 / 1340   0 / 21100         0      5  false
+reported and not fitted (their log likelihood is not in the sum): plate_flat.score
+
+3 input scenarios (sim.scenarios; the first is the record as written, shown above). Visible area mm2 / specks / clean per scenario; "log lik" above integrates them out:
+item                s0 (0.67)    s1 (0.17)    s2 (0.17)       median  range
+------------------  -----------  -----------  --------------  ------  --------
+plate_single        0 / 0 / yes  0 / 0 / yes  146 / 129 / no  0       0 .. 146
+plate_pair_covered  0 / 0 / yes  0 / 0 / yes  174 / 132 / no  0       0 .. 174
+plate_pair_open     0 / 0 / yes  0 / 0 / yes  94 / 90 / no    0       0 .. 94
+log likelihood -0.614 (weight 1)

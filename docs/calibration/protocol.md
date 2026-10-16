@@ -14,7 +14,9 @@ It was written on 11 October 2026, after the first test wash (four egg-yolk plat
 run by the machine's owner) was read and the simulation calibrated on it
 (`owner-wash-01-calibration.md`), and put in a new order on 12 October, after loads built to
 find where a verdict cannot be trusted had been washed (`docs/validation/README.md` section 8).
-None of the three washes below has been run.
+None of the three washes below has been run as written. The owner's second test wash
+(taken as 14 October, `owner-wash-02-result.md`) stood two yolk plates in one slot, as wash 3
+asks, without weighing the yolk.
 
 **Two runs of the machine, three washes.**
 
@@ -22,7 +24,7 @@ None of the three washes below has been run.
 |---|---|---|---|---|
 | A | 1. Glasses and mugs the right and the wrong way up, and tea in four mugs | Eco 50 | 30 minutes over two days | Whether a smoothie glass or a soup mug comes clean mouth down and stays dirty mouth up or on its side: about three quarters of what separates a careful from a careless load on every level rests on this, and no wash has tested it. And whether the capsule bleaches a tea stain |
 | B | 2. Three porridge bowls, two nested | Eco 50 | 20 minutes the evening before | Whether a covered bowl stays dirty, and how dirty |
-| B | 3. Spoons nested and apart, forks crowded and apart, two plates in one gap | Eco 50, the same run as wash 2 | 30 minutes | Whether pieces lying close come out dirty. Today the model says nearly all of them come clean, and nothing has measured whether the real machine agrees |
+| B | 3. Spoons nested and apart, forks crowded and apart, two plates in one gap | Eco 50, the same run as wash 2 | 30 minutes | Whether pieces lying close come out dirty. Today the model says nearly all of them come clean. For cutlery nothing has measured whether the real machine agrees; for two plates in one slot the owner's second test wash is one reading (`owner-wash-02-result.md`) |
 
 **Why this order.** The calibration tool's ranking of candidate washes (`spotless-fit rank`,
 `docs/calibration/fitting.md` section 7) put tea in mugs first and the nested bowls third on
@@ -315,7 +317,11 @@ mechanism is needed and this fixes its main parameter. If the crowded forks are 
 single ones, the mechanism as built is too harsh on forks and must change before it is used.
 If everything is clean, the model as it stands is right about cutlery and the mechanism is not
 needed. The pair of plates says whether a face a few millimetres from another keeps its soil, which
-is what plates fallen against each other come down to.
+is what plates fallen against each other come down to. The owner's second test wash has given one
+answer for air-dried yolk: the covered plate of a pair came out clean, as the model says it does
+at about 2.5 g (`owner-wash-02-result.md`). Its yolk was not weighed and there are no
+photographs of the plates before or after, so the weighed and photographed pair of this wash is
+still wanted.
 
 **What the model says beforehand.**
 
@@ -469,11 +475,15 @@ of the repository explains the fingerprint.
    you saw. If writing the record is more than you want to do, attach the photographs, weights
    and times to the issue and say so; that is still useful.
 
-The one wash run so far is the worked example: the plan (`owner-wash-01-egg-yolk.md`), the
+The first test wash is the worked example: the plan (`owner-wash-01-egg-yolk.md`), the
 prediction written before the result (`owner-wash-01-prediction.md`), the result
 (`owner-wash-01-result.md`), the calibration on it (`owner-wash-01-calibration.md`), its two
 records under `packages/calibration/records/owner/` and its photographs under
-`docs/reference/calibration_runs/2026-10-10_egg_plates/`.
+`docs/reference/calibration_runs/2026-10-10_egg_plates/`. The second was recorded after the
+fact, with no prediction made beforehand: its record was made from one photograph of the loaded
+basket and the owner's words (`owner-wash-02-result.md`, the record
+`owner-wash-02-stacked-plates-eco50.measured.json`, the photograph under
+`docs/reference/calibration_runs/2026-10-14_stacked_plates/`).
 
 ## What is missing before these washes are run
 
@@ -492,4 +502,5 @@ contributor (the issues that `docs/ROADMAP.md` lists under "Calibration data").
   run on the current set and the corrected basket.
 - **Two plates in one gap** (wash 3) cannot be placed through the game: the session refuses a
   second plate in an occupied gap. What the model says of it comes from the phenomena suite's
-  hand-set row (P03).
+  hand-set row (P03), and from the record of the owner's second test wash, whose second plate
+  of the gap is set by hand (`packages/calibration/scripts/make-owner-wash-02-measured.ts`).
