@@ -23,7 +23,9 @@ water (a glass or mug mouth up or on its side), not a careful load.
   before the result got the order of the plates and the form of the residue right and was ten to
   thirty times too optimistic on the amount left on the two oven-dried plates. The parameter set
   that was the game's default that night was rejected by the wash. The calibration moved one
-  number, the share of the long soak during which the pump runs, from 0.5 to 0.8.
+  number, the share of the long soak during which the pump runs, from 0.5 to 0.8. A second test
+  wash (four stacked plates, 14 October) is recorded and not yet fitted; what the set says for
+  it, predicted after the result, is in `docs/calibration/owner-wash-02-result.md`.
 - **Published class means of a sister machine** (Bosch SMV6ECX51E, Eco, reference detergent D):
   cutlery within 0.1, crockery 0.2 low, glass 0.1 to 0.5 low. This is a fit, not a prediction:
   the soil and chemistry defaults were anchored to these numbers.

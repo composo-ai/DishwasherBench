@@ -12,6 +12,12 @@
   phenomena that turn on those mechanisms as out of scope.
 - The parameter set `anchored-v7.owner-capsule` was re-stamped for the changed machine data; no
   result changed.
+- The owner's second test wash is recorded: four air-dried egg-yolk plates, two in one slot,
+  one a slot behind them and one lying flat, all with no egg seen afterwards (the flat one after
+  a light rinse). Its record, its photograph and what the current set says for it, predicted
+  after the result, are in
+  [docs/calibration/owner-wash-02-result.md](docs/calibration/owner-wash-02-result.md); fitting
+  it is [issue 65](https://github.com/composo-ai/DishwasherBench/issues/65).
 
 ## 0.1.0 (12 October 2026): first public release
 

@@ -381,7 +381,8 @@ spots and film on glass, items moved by the jets, soil settling on clean items, 
 layers and where a tablet lands outside its tray are out of scope
 ([docs/design/scope.md](docs/design/scope.md#out-of-scope)). The wash is calibrated on a test
 wash of that machine (four egg-yolk plates) and on the published class means of a sister
-machine, the Bosch SMV6ECX51E.
+machine, the Bosch SMV6ECX51E. A second test wash (four egg-yolk plates, stacked) is recorded
+and not yet fitted ([issue 65](https://github.com/composo-ai/DishwasherBench/issues/65)).
 [docs/validation/README.md](docs/validation/README.md) has the full account, with every number
 and where it comes from.
 
@@ -396,8 +397,12 @@ Three things decide most of a score:
 
 The wash responds little to how plates and cutlery are stacked: plates that lean on each other
 and cutlery crowded into one cell come out clean, so a score shows little of how well they were
-stacked. Whether the real machine is as forgiving on Eco 50 has not been measured; the test
-washes of [docs/calibration/protocol.md](docs/calibration/protocol.md) would show it. Of the 46
+stacked. Whether the real machine is as forgiving on Eco 50 has one reading so far: in the
+owner's second test wash, two air-dried egg-yolk plates in one slot, one a slot behind them and
+one lying flat all came out with no egg seen, the flat one after a light rinse
+([docs/calibration/owner-wash-02-result.md](docs/calibration/owner-wash-02-result.md)). That is
+one wash, judged by eye; the test washes of
+[docs/calibration/protocol.md](docs/calibration/protocol.md) would show more. Of the 46
 loading phenomena in the suite, 9 are out of scope, and 17 of the other 37 pass; most of the
 sizes they expect are estimates, not measurements
 ([docs/research/standards.md](docs/research/standards.md) section 0.2). The adapter for
@@ -416,9 +421,9 @@ map of them.
 | [docs/design/scope.md](docs/design/scope.md)           | The aim of the project, what was built first, what is out of scope, the status                                            |
 | [docs/validation/README.md](docs/validation/README.md) | What the simulation was checked against and what a verdict can be trusted for                                             |
 | [docs/benchmark/](docs/benchmark/README.md)            | Running the benchmark, the course of levels, the first runs with models                                                   |
-| [docs/calibration/](docs/calibration/protocol.md)      | The protocol of test washes for calibrating the simulation, the wash-record format, the fitting tool, the first test wash |
+| [docs/calibration/](docs/calibration/protocol.md)      | The protocol of test washes for calibrating the simulation, the wash-record format, the fitting tool, the two test washes |
 | `docs/research/`                                       | Sourced dossiers: the machine, jets, films, soils, chemistry, standards, the benchmark's design                           |
-| [docs/reference/](docs/reference/REDACTIONS.md)        | Photographs and measurements of the machine, the machine drawings, the photographs of the test wash                       |
+| [docs/reference/](docs/reference/REDACTIONS.md)        | Photographs and measurements of the machine, the machine drawings, the photographs of the test washes                     |
 | `packages/machine`, `catalogue`, `geometry`, `physics` | The machine, the items and soils, shapes, loading physics                                                                 |
 | `packages/session`, `levels`, `loader`                 | The game's actions and queries, the levels, the scripted players and their saved loads                                    |
 | `packages/sim-*`, `inspector`                          | The wash: scene, hydraulics, jets, spray, film, liquor, soil, timeline, the inspection of the result                      |

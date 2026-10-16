@@ -1,0 +1,314 @@
+{
+ "format": "spotless.wash-record",
+ "version": 1,
+ "id": "owner-wash-02-stacked-plates-eco50",
+ "kind": "measured",
+ "title": "Owner wash 02, as run and as seen: four air-dried egg-yolk dinner plates, two in one slot, one a slot behind them, one lying flat face up; Eco 50, one Finish Powerball Ultimate capsule",
+ "provenance": {
+  "date": "2026-10-14",
+  "by": "The machine's owner ran the wash and looked at the plates by eye after it; there are no photographs of the plates before or after. The load is a reconstruction from the owner's one photograph of the loaded basket and the owner's words (notes)",
+  "methods": {
+   "eye": {
+    "description": "the owner's verdict by eye on the plate after the wash, in the owner's words (README.md of the run); no photograph"
+   },
+   "eye_rinsed": {
+    "description": "the owner's look at the flat plate after a light rinse, in the owner's words; how it was rinsed is not stated; no photograph"
+   },
+   "teaspoon": {
+    "description": "no weighing: \"each plate had half a teaspoon\" of yolk, in the owner's words, measured with a teaspoon. Half a teaspoon is about 2.5 mL, about 2.5 g of yolk; how full the spoon was is not known. The amount is an uncertain input (amount_sd_g) carried by the input scenarios of the record, not a measurement"
+   },
+   "owner_stated": {
+    "description": "stated by the owner when asked after the wash: \"yep eco50 and finish powerball ultimate\""
+   }
+  },
+  "notes": "Measured record of owner wash 02, written by scripts/make-owner-wash-02-measured.ts. The owner's note and photograph: docs/reference/calibration_runs/2026-10-14_stacked_plates/ (README.md, IMG_9141.JPG). There was no planned record and no prediction before the wash; the prediction made after the result is anchors/reports/v7/owner-wash-02.predict.txt. STATED BY THE OWNER when asked after the wash (\"yep eco50 and finish powerball ultimate\"): the programme, Eco 50, and the detergent, Finish Powerball Ultimate. TAKEN, NOT STATED: the machine (the owner's Bosch SMV4HAX40G of wash 01); no programme options; one capsule in the dispenser at 12.9 g, as wash 01 took it; the date of the run (2026-10-14: the photograph was taken on the morning of 15 October, after the run of the night before); that the upper basket was empty (it is not in the photograph); how the yolk was spread (taken as on wash 01). NOT MEASURED, and carried as input scenarios (sim.scenarios), not as fact: the amount of yolk per plate (half a teaspoon, not weighed). NOT REPORTED: the clock times and the display time of the run. THE LOAD, from the photograph, which was taken after the wash (there is no yolk on the flat plate) and is taken to show the plates as they stood during it: the lower basket holds the four plates and nothing else, and no cutlery basket (taken out in the game). The three standing plates stand in the left middle and front rows; the photograph was matched by a pinhole camera fitted to ten points of the basket (rms 8 px), and the stand-ins' rims project onto the plates' rims to about 5 mm. Which way they face is read from the photograph: on the plate a slot behind and on the first plate of the pair the back of the well (base and foot ring) shows beyond the rim on the side of the left wall, and nothing shows beyond the second plate of the pair on the side of the middle, so all three have their backs to the left wall and their eating faces to the middle, as wash 3 of docs/calibration/protocol.md asks for its pair. The black lettering on the rims cannot be told from reflections in the glaze at that angle. The real plates lean back further than the stand-ins (the single plate about 15 degrees from upright, the stand-in 7). The size of the gap between the two plates of the slot is not known (about 3 mm taken). One wash, judged by eye."
+ },
+ "machine": {
+  "id": "bosch_smv4hax40g",
+  "config": {
+   "basketHeights": {
+    "upper": "1"
+   },
+   "foldedTineRows": [],
+   "shelves": [
+    {
+     "basketId": "upper",
+     "shelfId": "cup_front",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "cup_rear",
+     "state": "up"
+    },
+    {
+     "basketId": "upper",
+     "shelfId": "knife_shelf",
+     "state": "down"
+    }
+   ],
+   "cutleryBasket": null
+  },
+  "notes": "Taken: the owner's Bosch SMV4HAX40G, the machine of wash 01. The configuration is the game's default with the cutlery basket out, as in the photograph"
+ },
+ "programme": {
+  "id": "eco_50",
+  "options": [],
+  "notes": "Eco 50, as the owner stated when asked after the wash (\"yep eco50 and finish powerball ultimate\"). No options: taken"
+ },
+ "load": {
+  "items": [
+   {
+    "id": "plate_flat",
+    "type": "dinner_plate_porcelain_270",
+    "frame": "tub",
+    "position_mm": [
+     115.00669033625736,
+     108.25670196048777,
+     148.6972272396099
+    ],
+    "quat_wxyz": [
+     0.9999998807907104,
+     -2.01918055608985e-8,
+     -2.2317311731967493e-7,
+     -0.0005962260765954852
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "egg_yolk_dried",
+      "recipe": "raw egg yolk, no white",
+      "preparation": "half a teaspoon per plate, in the owner's words; how it was spread is not stated: taken as on wash 01 (about two thirds of the well covered, rim clean)",
+      "amount_g": 2.5,
+      "amount_method": "teaspoon",
+      "amount_sd_g": 1.1,
+      "where": {
+       "regions": [
+        {
+         "region": "well",
+         "coverage": 0.67
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 2,
+       "conditions": "\"Egg yolk air dried for 2 hours\", in the owner's words: taken as 2 hours in the open air of the room, from the yolk going on to the start of the wash"
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "The plate \"facing up\": lying flat on the tips of the two rear rows (R1, R2), right of the middle, eating face up. Pose: the loading physics, from the request in the script. In the photograph it lies about 5 mm further back than the stand-in; the game cannot let a plate down from above any further back with the upper basket in. Stand-in for the owner's wide-rimmed earthenware dinner plate, the catalogue plate of wash 01's large plates (the flat plate measures about 27 cm in the photograph)"
+   },
+   {
+    "id": "plate_pair_covered",
+    "type": "dinner_plate_porcelain_270",
+    "frame": "tub",
+    "position_mm": [
+     -124.69475743921261,
+     -107.31570561551521,
+     215.0556016732941
+    ],
+    "quat_wxyz": [
+     0.5847154259681702,
+     0.4546815752983093,
+     0.4882553517818451,
+     0.4614968001842499
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "egg_yolk_dried",
+      "recipe": "raw egg yolk, no white",
+      "preparation": "half a teaspoon per plate, in the owner's words; how it was spread is not stated: taken as on wash 01 (about two thirds of the well covered, rim clean)",
+      "amount_g": 2.5,
+      "amount_method": "teaspoon",
+      "amount_sd_g": 1.1,
+      "where": {
+       "regions": [
+        {
+         "region": "well",
+         "coverage": 0.67
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 2,
+       "conditions": "\"Egg yolk air dried for 2 hours\", in the owner's words: taken as 2 hours in the open air of the room, from the yolk going on to the start of the wash"
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "The first of the \"two plates in the same slot\", nearer the left wall: left middle and front rows, the fifth gap from the left wall (the game's slot 4), eating face to the middle, covered by the back of plate_pair_open. Pose: the loading physics, from the request in the script; the photograph has its rim where the stand-in's is to about 5 mm. Stand-in for the owner's wide-rimmed earthenware dinner plate, the catalogue plate of wash 01's large plates (the flat plate measures about 27 cm in the photograph)"
+   },
+   {
+    "id": "plate_pair_open",
+    "type": "dinner_plate_porcelain_270",
+    "frame": "tub",
+    "position_mm": [
+     -115.13499451915644,
+     -108.09795481215161,
+     216.11461966496412
+    ],
+    "quat_wxyz": [
+     0.5847154259681702,
+     0.4546815752983093,
+     0.4882553517818451,
+     0.4614968001842499
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "egg_yolk_dried",
+      "recipe": "raw egg yolk, no white",
+      "preparation": "half a teaspoon per plate, in the owner's words; how it was spread is not stated: taken as on wash 01 (about two thirds of the well covered, rim clean)",
+      "amount_g": 2.5,
+      "amount_method": "teaspoon",
+      "amount_sd_g": 1.1,
+      "where": {
+       "regions": [
+        {
+         "region": "well",
+         "coverage": 0.67
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 2,
+       "conditions": "\"Egg yolk air dried for 2 hours\", in the owner's words: taken as 2 hours in the open air of the room, from the yolk going on to the start of the wash"
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "The second of the \"two plates in the same slot\", nearer the middle, eating face to the middle and open; its back over the eating face of plate_pair_covered. Pose SET BY HAND (the game refuses a second plate in an occupied slot): the pose of plate_pair_covered moved 9.65 mm along that plate's axis towards its eating face, which puts the back of this plate about 3 mm from the other's eating face: 3.4 mm from its rim, 4.6 mm from the flat of its well, 3.2 mm at the nearest (the foot ring). The owner presumes \"a small gap\"; its size is not known, and about 3 mm is taken. The photograph has the rims of the two about 13 mm apart at mid-height, where the stand-ins' are 9.7 mm: the real plates may nest otherwise than the catalogue plate, or the gap was wider than taken. The pose cuts about 2.7 mm into a plastic fitting of the lower basket (machineGap of the phenomena suite); no pose within 8 mm along the row or across it is clear. Stand-in for the owner's wide-rimmed earthenware dinner plate, the catalogue plate of wash 01's large plates (the flat plate measures about 27 cm in the photograph)"
+   },
+   {
+    "id": "plate_single",
+    "type": "dinner_plate_porcelain_270",
+    "frame": "tub",
+    "position_mm": [
+     -149.9674426220062,
+     -121.41742443906529,
+     212.19832345954003
+    ],
+    "quat_wxyz": [
+     0.5227765440940857,
+     0.4782477915287018,
+     0.4602844715118408,
+     0.5349037647247314
+    ],
+    "soils": [
+     {
+      "id": "soil_1",
+      "type": "egg_yolk_dried",
+      "recipe": "raw egg yolk, no white",
+      "preparation": "half a teaspoon per plate, in the owner's words; how it was spread is not stated: taken as on wash 01 (about two thirds of the well covered, rim clean)",
+      "amount_g": 2.5,
+      "amount_method": "teaspoon",
+      "amount_sd_g": 1.1,
+      "where": {
+       "regions": [
+        {
+         "region": "well",
+         "coverage": 0.67
+        }
+       ]
+      },
+      "drying": {
+       "time_h": 2,
+       "conditions": "\"Egg yolk air dried for 2 hours\", in the owner's words: taken as 2 hours in the open air of the room, from the yolk going on to the start of the wash"
+      },
+      "heat": {
+       "history": "none"
+      }
+     }
+    ],
+    "notes": "The plate \"a slot behind\" the pair: left middle and front rows (ML, FL), the fourth gap from the left wall (the game's slot 3), standing across both rows, eating face to the middle of the basket. Pose: the loading physics, from the request in the script. The photograph has its rim where the stand-in's is to about 5 mm, leaning back towards the left wall by about 15 degrees from upright where the stand-in leans 7, and its middle about 10 mm further back. Stand-in for the owner's wide-rimmed earthenware dinner plate, the catalogue plate of wash 01's large plates (the flat plate measures about 27 cm in the photograph)"
+   }
+  ]
+ },
+ "observations": [
+  {
+   "id": "plate_single.clean",
+   "item": "plate_single",
+   "kind": "clean",
+   "value": true,
+   "method": "eye",
+   "notes": "The owner's words: \"Unbelievably every one came out clean.\" No egg seen; nothing was said of water on the standing plates. Fitted: the only reading of this plate"
+  },
+  {
+   "id": "plate_pair_covered.clean",
+   "item": "plate_pair_covered",
+   "kind": "clean",
+   "value": true,
+   "method": "eye",
+   "notes": "The owner's words: \"Unbelievably every one came out clean.\" No egg seen; nothing was said of water on the standing plates. Fitted: the only reading of this plate"
+  },
+  {
+   "id": "plate_pair_open.clean",
+   "item": "plate_pair_open",
+   "kind": "clean",
+   "value": true,
+   "method": "eye",
+   "notes": "The owner's words: \"Unbelievably every one came out clean.\" No egg seen; nothing was said of water on the standing plates. Fitted: the only reading of this plate"
+  },
+  {
+   "id": "plate_flat.score",
+   "item": "plate_flat",
+   "target": {
+    "soil": "soil_1"
+   },
+   "kind": "score",
+   "value": 5,
+   "fitted": false,
+   "method": "eye_rinsed",
+   "notes": "The owner's words: \"The one facing up had dirty water on it, but once lightly rinsed there was no egg.\" Score 5 (no soil) of the yolk, read after a light rinse. NOT a clean verdict: the game's clean verdict also asks for no standing water, and the plate had dirty water standing on it at the end of the wash; how much was not measured, so there is no retained_water observation. Not fitted: the rinse came between the end of the wash and the look, and the simulation has no rinse, so yolk the wash loosened and left would have gone with the rinse and the reading bounds the wash from one side only"
+  }
+ ],
+ "sim": {
+  "tier": "official",
+  "level_seed": 20261014,
+  "sim_seed": 1,
+  "scenarios": [
+   {
+    "weight": 0.66667,
+    "notes": "nominal: the record as written (2.5 g of yolk on every plate)"
+   },
+   {
+    "weight": 0.16667,
+    "amount_factors": {
+     "plate_flat": 0.4826,
+     "plate_pair_covered": 0.4826,
+     "plate_pair_open": 0.4826,
+     "plate_single": 0.4826
+    },
+    "notes": "every amount -1.73 standard deviations of its logarithm from the amount taken (1.21 g per plate)"
+   },
+   {
+    "weight": 0.16667,
+    "amount_factors": {
+     "plate_flat": 2.0723,
+     "plate_pair_covered": 2.0723,
+     "plate_pair_open": 2.0723,
+     "plate_single": 2.0723
+    },
+    "notes": "every amount +1.73 standard deviations of its logarithm from the amount taken (5.18 g per plate)"
+   }
+  ]
+ },
+ "consumables": {
+  "detergent": {
+   "product": "Finish Powerball Ultimate",
+   "form": "pouch",
+   "dose_g": 12.9,
+   "placement": "dispenser",
+   "method": "owner_stated",
+   "notes": "Finish Powerball Ultimate, as the owner stated when asked after the wash. One capsule in the dispenser, at wash 01's 12.9 g: taken"
+  }
+ }
+}

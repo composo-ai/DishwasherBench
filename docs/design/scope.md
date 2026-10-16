@@ -166,11 +166,13 @@ reviews on the evening of 11 October washed loads built to test that, and found:
   not a jet reaches it. A lower basket loaded with plates fallen over and the upper arm held
   still came out with every piece clean, at both tiers. Turning a plate to the wall, crowding
   cutlery into one cell and stalling an arm cost little or nothing. Whether the real machine
-  is as forgiving on Eco 50 is not measured: the loading advice and the effect sizes of the
-  phenomena checklist that say otherwise are estimates (`docs/research/standards.md` section
-  0.2). The owner's one wash showed an oven-dried plate turned to the wall keeping more egg
-  than its partner (about 100 mm² against 25, one pair, the turned one nearer the wall) and
-  the air-dried pair coming clean either way.
+  is as forgiving on Eco 50 has one reading: in the owner's second test wash two air-dried yolk plates in one slot, one a slot behind them and
+  one lying flat came out with no egg seen, the flat one after a light rinse
+  (`docs/calibration/owner-wash-02-result.md`; one wash, judged by eye, not yet fitted). The
+  loading advice and the effect sizes of the phenomena checklist that say otherwise are
+  estimates (`docs/research/standards.md` section 0.2). The owner's first wash showed an
+  oven-dried plate turned to the wall keeping more egg than its partner (about 100 mm² against
+  25, one pair, the turned one nearer the wall) and the air-dried pair coming clean either way.
 
 The calibration that moved the soak from 0.5 to 0.8 is what made open faces insensitive: at
 0.5 a careless standard load came out with about 11 fewer clean items than a careful one, at
@@ -181,8 +183,9 @@ real machine; until one shows that they do, no mechanism for covered faces is pl
 
 ### What the next test washes are for
 
-None has been run; anyone with this machine can run one. In the order of
+None has been run as written; anyone with this machine can run one. In the order of
 `docs/calibration/protocol.md`: hollow pieces the right and the wrong way up,
 with tea in mugs (the soil class every level's margin rests on, and the bleach rate); porridge
 bowls nested and free (water in a gap); nested and crowded cutlery (whether stacking matters
-for them).
+for them). The owner's second test wash put two plates in one slot, as the third also asks,
+with the yolk not weighed (`docs/calibration/owner-wash-02-result.md`).

@@ -68,12 +68,14 @@ open", "Open design questions").
 **To bring calibration data: a test wash or a measurement of the machine.**
 [calibration/protocol.md](calibration/protocol.md) (three washes anyone with this machine can
 run, the measurements still open, and how to send a result in), and
-[calibration/wash-record.md](calibration/wash-record.md) (the format of a record). The one wash
-run so far is the worked example:
+[calibration/wash-record.md](calibration/wash-record.md) (the format of a record). The first
+test wash is the worked example:
 [the plan](calibration/owner-wash-01-egg-yolk.md),
 [the prediction](calibration/owner-wash-01-prediction.md),
 [the result](calibration/owner-wash-01-result.md) and
-[the calibration](calibration/owner-wash-01-calibration.md).
+[the calibration](calibration/owner-wash-01-calibration.md). The second, recorded from one
+photograph and the owner's words with no prediction beforehand, is
+[its result](calibration/owner-wash-02-result.md).
 
 ## What is current
 
@@ -114,10 +116,11 @@ run so far is the worked example:
 | [fitting.md](calibration/fitting.md) | Current | The fitting tool: observation models, fitting, sensitivity, which wash to run next, the command line |
 | [anchoring-v7.md](calibration/anchoring-v7.md) | Record | The parameter set the game washes with, which is still the current one, and its tables. Written on 11 October 2026 |
 | [soil-quantities.md](calibration/soil-quantities.md) | Current, generated | The soil side's data for each soil. Written by a script; do not edit by hand |
-| [owner-wash-01-egg-yolk.md](calibration/owner-wash-01-egg-yolk.md) | Record | The plan of the one test wash run so far |
+| [owner-wash-01-egg-yolk.md](calibration/owner-wash-01-egg-yolk.md) | Record | The plan of the first test wash |
 | [owner-wash-01-prediction.md](calibration/owner-wash-01-prediction.md) | Record, frozen | What the simulation predicted, written before the result. Not to be edited. The proof of the order lies in the private development history, which is not published |
 | [owner-wash-01-result.md](calibration/owner-wash-01-result.md) | Record | The result against the prediction |
 | [owner-wash-01-calibration.md](calibration/owner-wash-01-calibration.md) | Superseded by `anchoring-v7.md` as the description of the set | The calibration on that wash. What it found about the wash stands |
+| [owner-wash-02-result.md](calibration/owner-wash-02-result.md) | Current | The second test wash (four stacked egg-yolk plates, 14 October 2026): what was run, what the owner found, and what the current set says for it, predicted after the result. Not yet fitted |
 | [anchoring.md](calibration/anchoring.md), [anchoring-v3.md](calibration/anchoring-v3.md), [anchoring-v4.md](calibration/anchoring-v4.md), [anchoring-v5.md](calibration/anchoring-v5.md) | Superseded by `anchoring-v7.md` | The earlier parameter sets, in order. `anchoring.md` is also where the method is described |
 
 In the calibration notes, paths written as `anchors/...`, `scripts/...`, `src/...` and
@@ -141,7 +144,8 @@ In the calibration notes, paths written as `anchors/...`, `scripts/...`, `src/..
 | [owner-measurements.md](reference/owner-measurements.md) | Current source record | First-hand tape readings and descriptions of the machine. Takes precedence over anything estimated |
 | [REDACTIONS.md](reference/REDACTIONS.md) | Current | What was removed from or covered in the photographs before publication, and why |
 | `owner-photos/` | Source record | Photographs of the machine and its parts. The rating-plate photograph is withheld |
-| `calibration_runs/2026-10-10_egg_plates/` | Source record | Photographs of the test wash, with the owner's note |
+| `calibration_runs/2026-10-10_egg_plates/` | Source record | Photographs of the first test wash, with the owner's note |
+| `calibration_runs/2026-10-14_stacked_plates/` | Source record | The photograph of the loaded basket of the second test wash, with the owner's note |
 | `machine-drawings/` | Current, generated | The machine model as drawn by scripts of `packages/machine`, and overlays of the model on a photograph |
 
 ### `docs/research/`
