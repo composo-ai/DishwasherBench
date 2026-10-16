@@ -169,8 +169,8 @@ export interface AccessOptions {
   readonly allowedHosts?: readonly string[];
   /**
    * The address the server is going to listen on, as it is given to `app.listen`; default
-   * `127.0.0.1`. It is asked only while the server is not listening (requests injected by a
-   * test): once the server listens, the addresses it listens on are what count.
+   * `127.0.0.1`. It stays among the answered names after listening (see {@link answeredHosts});
+   * the addresses actually listened on are added beside it.
    */
   readonly host?: string;
 }

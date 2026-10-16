@@ -2,6 +2,7 @@
 // listens on, and no web page.
 import type { IncomingMessage } from 'node:http';
 import { request as httpRequest } from 'node:http';
+import { networkInterfaces } from 'node:os';
 import { afterEach, describe, expect, it } from 'vitest';
 import { main } from './cli.ts';
 import { GameClient } from './game-client.ts';
@@ -173,6 +174,30 @@ describe('the MCP endpoint over HTTP', () => {
       for (const host of hosts)
         expect(host, every).toMatch(/^(\[[0-9a-f:.%a-z]+\]|[0-9.]+|localhost)$/);
     }
+    // The machine's own addresses, whatever they are on this host.
+    const addresses = new Set<string>();
+    for (const list of Object.values(networkInterfaces())) {
+      for (const one of list ?? []) addresses.add(one.address.toLowerCase());
+    }
+    expect(addresses.size).toBeGreaterThan(0);
+    const wide = acceptedHosts('0.0.0.0', '0.0.0.0');
+    for (const address of addresses) {
+      const written = address.includes(':') ? `[${address}]` : address;
+      expect(wide, address).toContain(written);
+    }
+  });
+
+  it('answers a real connection under a machine address when wide open', async () => {
+    const { served, port } = await endpoint({ host: '0.0.0.0' });
+    void served;
+    const machine = Object.values(networkInterfaces())
+      .flatMap((list) => list ?? [])
+      .find((one) => one.family === 'IPv4' && !one.internal)?.address;
+    if (machine !== undefined) {
+      // No session exists, so 400 — but not 403: the Host was answered.
+      expect((await ask(port, { host: `${machine}:${port}` })).status).toBe(400);
+    }
+    expect((await ask(port, { host: `evil.example:${port}` })).status).toBe(403);
   });
 
   it('judges a request by its Host and Origin headers alone', () => {

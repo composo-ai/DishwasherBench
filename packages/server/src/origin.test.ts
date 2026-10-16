@@ -2,6 +2,7 @@
 // no other; and under which host names it answers.
 import { request as httpRequest } from 'node:http';
 import type { AddressInfo } from 'node:net';
+import { networkInterfaces } from 'node:os';
 import { describe, expect, it } from 'vitest';
 import type { AccessOptions, SpotlessServer } from './app.ts';
 import { answeredHosts, isLoopbackAddress, parseAllowedHosts, parseAllowedOrigins } from './app.ts';
@@ -208,6 +209,10 @@ describe('the host a request names', () => {
       expect(String(read.body['detail']), host).toContain('Host header');
       // The page's files and unknown paths are refused the same way.
       expect((await send(server, 'GET', '/', { host })).status, host).toBe(403);
+      // A second path, with a body: refusal happens before the path or body is looked at.
+      const posted = await send(server, 'POST', '/api/levels', { host }, { level_id: 'tutorial' });
+      expect(posted.status, host).toBe(403);
+      expect(String(posted.body['detail']), host).toContain('Host header');
       // A page that reached this machine under its own name is its own origin to the browser
       // (DNS rebinding): the name gives it away.
       const rebound = await send(
@@ -390,11 +395,19 @@ function overTheWire(
 
 describe('a server that listens', () => {
   it('judges by the address it listens on, over real connections', async () => {
-    // The option says elsewhere; the server listens on this machine only, and that counts.
-    const server = await open({ host: '0.0.0.0' });
-    await server.app.listen({ port: 0, host: '127.0.0.1' });
+    // The option says loopback; the server listens on every address, and that counts:
+    // a Host naming this machine is answered. If the implementation judged by the
+    // option alone, the machine address below would be refused.
+    const server = await open();
+    await server.app.listen({ port: 0, host: '0.0.0.0' });
     const port = (server.app.server.address() as AddressInfo).port;
     const host = `127.0.0.1:${port}`;
+    const machine = Object.values(networkInterfaces())
+      .flatMap((list) => list ?? [])
+      .find((one) => one.family === 'IPv4' && !one.internal)?.address;
+    if (machine !== undefined) {
+      expect(await overTheWire(port, '/api/health', { host: `${machine}:${port}` })).toBe(200);
+    }
     expect(await overTheWire(port, '/api/health', {})).toBe(200);
     expect(await overTheWire(port, '/api/health', { origin: `http://${host}` })).toBe(200);
     expect(await overTheWire(port, '/api/health', { origin: `http://localhost:${port}` })).toBe(
@@ -418,5 +431,20 @@ describe('a server that listens', () => {
     expect(await overTheWire(port, path, upgrade)).toBe(101);
     expect(await overTheWire(port, path, { ...upgrade, origin: FOREIGN })).toBe(403);
     expect(await overTheWire(port, path, { ...upgrade, host: `evil.example:${port}` })).toBe(403);
+  });
+});
+
+describe('the addresses of this machine', () => {
+  it('every networkInterfaces() address is answered for 0.0.0.0', async () => {
+    const addresses = new Set<string>();
+    for (const list of Object.values(networkInterfaces())) {
+      for (const one of list ?? []) addresses.add(one.address.toLowerCase());
+    }
+    expect(addresses.size).toBeGreaterThan(0);
+    const names = answeredHosts(['0.0.0.0'], '0.0.0.0');
+    for (const address of addresses) {
+      const written = address.includes(':') ? `[${address}]` : address;
+      expect(names, address).toContain(written);
+    }
   });
 });
