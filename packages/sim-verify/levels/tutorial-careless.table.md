@@ -2,7 +2,7 @@
 
 Level 'First load', loaded by the careless policy.
 
-**Tier.** This is a fast wash, a preview of the official one (coarser surfaces, fewer droplets). Measured on this programme with anchored-v7.owner-capsule (the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4), its verdict on a soiled item differs from the official wash in 11 of 100 cases: 0 in 100 for crockery, 23 in 100 for cutlery, 5 in 100 for glass, 0 in 100 for melamine. Scores are counted on the official wash.
+**Tier.** This is a fast wash, a preview of the official one (coarser surfaces, fewer droplets). Measured on this programme with anchored-v8.owner-capsule (the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4), its verdict on a soiled item differs from the official wash in 9 of 100 cases: 0 in 100 for crockery, 21 in 100 for cutlery, 0 in 100 for glass, 0 in 100 for melamine. Scores are counted on the official wash.
 
 Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 11 items (1 of the offer left on the counter by the loading physics), simulator spotless-sim 0.5.0 water-7, exposure on the gpu.
 
@@ -12,17 +12,17 @@ Mistakes in this load: spoons_nested x 1, cutlery_bunched x 1, bowl_face_down_fl
 
 | Quantity | Value |
 |---|---|
-| Time, scene | 1.6 s |
+| Time, scene | 2.0 s |
 | Time, hydraulics | 0.0 s |
-| Time, exposure | 41.5 s |
+| Time, exposure | 0.1 s |
 | Time, soil | 0.1 s |
 | Time, replay | 0.3 s |
 | Time, result | 0.1 s |
-| Time, total | 43.7 s (0.7 min) |
-| Exposure sets | 4 computed, 0 from the cache |
+| Time, total | 2.7 s (0.0 min) |
+| Exposure sets | 0 computed, 4 from the cache |
 | Scene | 96631 blocks, 137364 soil cells, 19031 deposits |
-| GPU memory | scene 102.1 MB, peak of all buffers 108.5 MB |
-| Process memory (RSS) | 0.89 GB |
+| GPU memory | scene 0.0 MB, peak of all buffers 0.0 MB |
+| Process memory (RSS) | 0.54 GB |
 | Mains water, energy | 9.5 L, 0.90 kWh |
 | Water held in vessels | 0 mL |
 | Detergent | 12.9 of 12.9 g dissolved (dispenser free) |

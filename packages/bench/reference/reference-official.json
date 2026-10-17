@@ -71,17 +71,17 @@
    "policy": "random",
    "tier": "official",
    "programme": "eco_50",
-   "points": 20,
+   "points": 40,
    "points_available": 64,
-   "share": 0.3125,
-   "points_strict": 20,
-   "points_lenient": 20,
-   "clean": 4,
+   "share": 0.625,
+   "points_strict": 32,
+   "points_lenient": 40,
+   "clean": 8,
    "loaded": 10,
    "offered": 12,
    "points_loaded": 52,
-   "edge": 0,
-   "edge_points": 0,
+   "edge": 1,
+   "edge_points": 8,
    "provisional": 0,
    "provisional_points": 0
   },
@@ -375,17 +375,17 @@
    "policy": "random",
    "tier": "official",
    "programme": "eco_50",
-   "points": 60,
+   "points": 71,
    "points_available": 266,
-   "share": 0.22556390977443608,
-   "points_strict": 45,
-   "points_lenient": 60,
-   "clean": 11,
+   "share": 0.2669172932330827,
+   "points_strict": 63,
+   "points_lenient": 71,
+   "clean": 14,
    "loaded": 24,
    "offered": 45,
    "points_loaded": 131,
-   "edge": 2,
-   "edge_points": 15,
+   "edge": 1,
+   "edge_points": 8,
    "provisional": 0,
    "provisional_points": 0
   },
@@ -432,12 +432,12 @@
    "policy": "careless",
    "tier": "official",
    "programme": "eco_50",
-   "points": 124,
+   "points": 135,
    "points_available": 272,
-   "share": 0.45588235294117646,
-   "points_strict": 124,
-   "points_lenient": 124,
-   "clean": 27,
+   "share": 0.4963235294117647,
+   "points_strict": 135,
+   "points_lenient": 135,
+   "clean": 29,
    "loaded": 40,
    "offered": 46,
    "points_loaded": 216,
@@ -451,12 +451,12 @@
    "policy": "random",
    "tier": "official",
    "programme": "eco_50",
-   "points": 59,
+   "points": 64,
    "points_available": 272,
-   "share": 0.21691176470588236,
-   "points_strict": 55,
-   "points_lenient": 61,
-   "clean": 12,
+   "share": 0.23529411764705882,
+   "points_strict": 60,
+   "points_lenient": 66,
+   "clean": 13,
    "loaded": 24,
    "offered": 46,
    "points_loaded": 135,
@@ -527,11 +527,11 @@
    "policy": "random",
    "tier": "official",
    "programme": "eco_50",
-   "points": 88,
+   "points": 85,
    "points_available": 367,
-   "share": 0.23978201634877383,
-   "points_strict": 84,
-   "points_lenient": 88,
+   "share": 0.23160762942779292,
+   "points_strict": 81,
+   "points_lenient": 85,
    "clean": 18,
    "loaded": 32,
    "offered": 62,
@@ -553,9 +553,9 @@
     "of_level": 0.09375
    },
    "careless_over_random": {
-    "points": 38,
-    "of_careful": 0.59375,
-    "of_level": 0.59375
+    "points": 18,
+    "of_careful": 0.28125,
+    "of_level": 0.28125
    },
    "careless_to_random_loaded": 1.1153846153846154
   },
@@ -617,9 +617,9 @@
     "of_level": 0.2631578947368421
    },
    "careless_over_random": {
-    "points": 88,
-    "of_careful": 0.4036697247706422,
-    "of_level": 0.3308270676691729
+    "points": 77,
+    "of_careful": 0.3532110091743119,
+    "of_level": 0.2894736842105263
    },
    "careless_to_random_loaded": 1.633587786259542
   },
@@ -628,14 +628,14 @@
    "careful_yield": 0.9408866995073891,
    "left_on_counter": 0.2536764705882353,
    "careful_over_careless": {
-    "points": 67,
-    "of_careful": 0.3507853403141361,
-    "of_level": 0.24632352941176472
+    "points": 56,
+    "of_careful": 0.2931937172774869,
+    "of_level": 0.20588235294117646
    },
    "careless_over_random": {
-    "points": 63,
-    "of_careful": 0.3298429319371728,
-    "of_level": 0.23161764705882354
+    "points": 69,
+    "of_careful": 0.3612565445026178,
+    "of_level": 0.2536764705882353
    },
    "careless_to_random_loaded": 1.6
   },
@@ -649,14 +649,19 @@
     "of_level": 0.4087193460490463
    },
    "careless_over_random": {
-    "points": 12,
-    "of_careful": 0.048,
-    "of_level": 0.0326975476839237
+    "points": 15,
+    "of_careful": 0.06,
+    "of_level": 0.04087193460490463
    },
    "careless_to_random_loaded": 1.5271739130434783
   }
  ],
  "findings": [
+  {
+   "level": "tutorial",
+   "gate": "edge",
+   "message": "random: 1 items worth 8 points (12.5 %) are at the edge of clean"
+  },
   {
    "level": "tutorial",
    "gate": "careful_over_careless",
@@ -1090,10 +1095,8 @@
       "cake_plate_06",
       "cake_plate_04"
      ],
-     "lost_items": [
-      "cake_plate_06"
-     ],
-     "points_lost": 5,
+     "lost_items": [],
+     "points_lost": 0,
      "points_gained": 0
     },
     {
@@ -1155,10 +1158,8 @@
      "items": [
       "curd_pot_02"
      ],
-     "lost_items": [
-      "curd_pot_02"
-     ],
-     "points_lost": 6,
+     "lost_items": [],
+     "points_lost": 0,
      "points_gained": 0
     },
     {
@@ -1304,149 +1305,149 @@
   {
    "load": "tutorial-careful",
    "load_state": "sha256:6611e8871f273a843e03a6287ed0b7fb068f3a305a3a540da27fef5c5727d8c2",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:83536c464fae22061c71954b67e71bbdf675cafd79b9282a3d15bb5031f5deaf",
-   "seconds": 22
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:3a66a5a18e1e7418fc9f433d41223c2018bcc568642bc5e55fc5bdd4d0677d68",
+   "seconds": 8.4
   },
   {
    "load": "tutorial-careless",
    "load_state": "sha256:e706ae661e8b1faa3a7ea8c5e80221a07f4f535485c5a425e2d1dbb8bc19e4f4",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:b20e5011ed8b0e91799ef603b387281fafe26196d14ed01593dee0ea8693322f",
-   "seconds": 21.6
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:3d212be47fffdd5c23e4f52c883e18947b5ef945f861b3278327c0a6f1d293c9",
+   "seconds": 8.1
   },
   {
    "load": "tutorial-random",
    "load_state": "sha256:d48a36df0dd24cad984c4f5ce264a44dcf174a47235dbe5d2064512fa1d62693",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:693ddcebdd477d50e910a2333991441563d935618b4e4719fcad716f0c0b0f52",
-   "seconds": 33
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:178f42ff60a82366cce773322fbcec6c4d434382242610d196a65dbd5d5ed170",
+   "seconds": 8.8
   },
   {
    "load": "lunch-for-four-careful",
    "load_state": "sha256:313420b440971fd4ed5c28cab005ed15c061b9c62b7095beb796544e8c9aaf55",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:20aa1adfd2ae00f11338da44705fbed87e22b9bf869fba0a3e0324e675e9ea9e",
-   "seconds": 47.3
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:e97492da40c5956c164f7219e2b4e2e3391ea74da9e3add4df40c3a89adaeaa3",
+   "seconds": 12.2
   },
   {
    "load": "lunch-for-four-careless",
    "load_state": "sha256:3de012e0162b51331f383576e9e4883d74c79d0b4ef5bd069da4e64728b2d4cd",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:141bda1f6adb707bde358b346fab5480f198d3ff95296ecfd936a14aa7c07ae1",
-   "seconds": 46
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:24536e837c057f5439328601cfa5935713374a9ba9a5d7530d386ca1a1abfafe",
+   "seconds": 14.2
   },
   {
    "load": "lunch-for-four-random",
    "load_state": "sha256:cbbf7e233de096c621508bdad10c89d12d5115340b8805abca8125f97eff6589",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:6f02a3f32d586b8588fac3eb294e3ec86d0b80771ea1b582df2a3462223d3ee1",
-   "seconds": 34.1
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:0cae4c2523a68a027d599e1ccc006c30a29974759b369c732a13f64aef2d89ee",
+   "seconds": 12.3
   },
   {
    "load": "weeknight-dinner-careful",
    "load_state": "sha256:f85651170c8655282eb486f913586484fe91707e9a81652dd9d0f2d962da9438",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:597be945fcbeb961f1e657f6ec35b223f30a9b46905bc378b1fc8075c603ed08",
-   "seconds": 41.2
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:157fdf7b346c38c6cc695fe61a79e3e355a51e6e03812f5b130f7f3538427bca",
+   "seconds": 12.7
   },
   {
    "load": "weeknight-dinner-careless",
    "load_state": "sha256:3f1e2c98a5bace3bf9e55c0d371689f04882ba388e3d35893721ef5e6f7a045a",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:bb42318526e81d35b53d8ebec1b11769aa0a7e9d9b41b6745c1c6e99c2d18d4c",
-   "seconds": 38.4
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:a8f802a1b4fd812d4ddf8461cae1dc6ef5978c2cdc529a5bd2b50ca9e83dcede",
+   "seconds": 14.2
   },
   {
    "load": "weeknight-dinner-random",
    "load_state": "sha256:5984a5b2b8664291a90105ff2bbd9246ad633f606481a15a21ab430d42474a11",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:c2ebde82f11382825f8eedfdc497a63f4ee1e6ad96e27cf8509e3b138f540964",
-   "seconds": 30.1
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:772c8db0edad82dcb5025ab38f3dc4f73d3f32c6fb51de2c49c7aa769c8578d4",
+   "seconds": 12.2
   },
   {
    "load": "breakfast-careful",
    "load_state": "sha256:5495dfcee7768ee8859f02f7e1bced3f29ff2a1247c7c61a26423442dc504029",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:947ca0d877749cdfc7ecb5dfdd514d79073bad1c5707f47001d166a9071e32b2",
-   "seconds": 28.1
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:20a4f13a060f852d48201ba60cb60cdfcd629be31a148fb0faae3a2612ceda69",
+   "seconds": 11
   },
   {
    "load": "breakfast-careless",
    "load_state": "sha256:3324d8158d6605f4a0567de774c0daa4ff96d1baae88aca954264e6ee4305d07",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:c037de5da5bf3b60961b3915aaba8a7b933bd6f6293069a6ed69acd7bbb8b780",
-   "seconds": 23.4
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:d7ce261640f0f7b80ee46efa6618c678d72c2b98ced1127412c52cfb9d329669",
+   "seconds": 12.8
   },
   {
    "load": "breakfast-random",
    "load_state": "sha256:33080c4cf9e0aa82ec5715d2f3cd8eb6521452ed130fc1d988cd4a5f5e260bcb",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:617b95fbf020e805c1df0f3d4107b36fb06db0cfc60f5d0eb1acbe0c4e74ae20",
-   "seconds": 22.2
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:245dbbdc13d002ab358d2861059595ac97f52046dd7419c94f9e312936619c0a",
+   "seconds": 11.5
   },
   {
    "load": "mixed-family-careful",
    "load_state": "sha256:18dee0c639058f4c362ad4106562348026f94db61bf027c11cf0d8677e124e79",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:a8cf3f03d35741566b16a874b05f49bc427de8e21656be38faa904fbdd1dbbd7",
-   "seconds": 27.5
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:c3639b3db7ad0a5eb258d5b3a26eec1d2740a3f77c180231bb720dd7c6ccbb99",
+   "seconds": 12.2
   },
   {
    "load": "mixed-family-careless",
    "load_state": "sha256:bc1c43dce9920c8952153a73cc2f771d3cd12f6d9eb2cebe01e089104a727045",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:5f45da6fae32725f64554e322dff9567917357595d8a1d5e5361432fd971a8af",
-   "seconds": 29.7
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:6baccd3088f1bd95e3f5394d381b8202280d0e901f3f92c9b790acb16ace2e6d",
+   "seconds": 13.9
   },
   {
    "load": "mixed-family-random",
    "load_state": "sha256:b85022438fb30a386bcbfd39fe6cb6843d73adaa1aef2af2586312edde3075d5",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:75984f89487701250789b0b9898101debc70d900fc289bb143947ba90763c38c",
-   "seconds": 25
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:53aa34ec12a5f6641a3e2715ec1e895b324b142b14865fffb1733c93fa00dedd",
+   "seconds": 11.8
   },
   {
    "load": "baking-day-careful",
    "load_state": "sha256:a019e24f88078e2b215a2b37a6243fbc7f07da07db81e7e3b1856016d86561cd",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:50a9b1d2eba22628485df7edcc8506c8ae7c812476a7778de917bed843112293",
-   "seconds": 26
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:e6bb5b8e709ca4cb23427f005c5bde6517d3cfc175b5390954325a20c3c860e2",
+   "seconds": 11.6
   },
   {
    "load": "baking-day-careless",
    "load_state": "sha256:9cb477cc4574693c6a938ac564d591845df6426d44612aee1c861508d02650fd",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:9116ffaf9e096876223847155fd0454a61a689bfa5bcfbb2293b5542d9e92e1d",
-   "seconds": 27.1
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:32877827f757e4af7a8a808c715a2a7039e00386c24ec2f4903ecfb2c2a4e5e6",
+   "seconds": 15.9
   },
   {
    "load": "baking-day-random",
    "load_state": "sha256:e05121111a6ebfc549c70c39c849d473939ea6a3b276a3210015e70041814c40",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:6d6865a3b0eadefaaa376e0d88309d9a15abbd36547cbe336b345732c8205d60",
-   "seconds": 20.4
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:4233144687d4a01e6a74ed0fe80d40f7e77093b763bb5ed8d89bb8b088d1733b",
+   "seconds": 12.7
   },
   {
    "load": "dinner-party-careful",
    "load_state": "sha256:a326f1b45e47d56d91d015951f651076e7695086bb31957eae585c608727f4d2",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:27e29648e4e75d6ebd4158f1a3b5fd3f420a3c6e2b4a65faa37f925c5174a6d0",
-   "seconds": 33.2
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:d0f446d94dd2a87f33f7dcc7b1d459e1ea7877a4940065f78056b4df294b8e94",
+   "seconds": 14.8
   },
   {
    "load": "dinner-party-careless",
    "load_state": "sha256:9986b83358359b05e4c7e2a0f8c673cc94d19e18b3a28ff2fe9e22516d74bbba",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:6ffadd536d471370c305f4b832712c7a49cd40bf3e36edb1cd7b58e1772b9818",
-   "seconds": 62.3
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:eb6c86f9bcda60b4a76dab779a0b91179ead44d7a1a86de2dd95decf05e7294b",
+   "seconds": 21.9
   },
   {
    "load": "dinner-party-random",
    "load_state": "sha256:15003188f51df749f8f3e603fa7544e755e737fbe041670dd5dcda255760223c",
-   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v7.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source f58d4ed8ab930946",
-   "result_hash": "sha256:d27995432eee3dc0e64e1c486d6b3a131dddef80a7b411503f52403fc61a4026",
-   "seconds": 44
+   "sim_version": "spotless-sim 0.5.0 water-7; parameters anchored-v8.owner-capsule; detergent Finish Powerball Ultimate 12.9 g; source bf06e0043dfb4f63",
+   "result_hash": "sha256:489e3fc25217bf02cac9294814af0594ddd6a651830eb49cd947b58a60951ff3",
+   "seconds": 14.2
   }
  ]
 }

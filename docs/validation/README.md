@@ -10,29 +10,33 @@ contributor could pick up; `docs/ROADMAP.md` is the map of them.
 The reviewers and engineers named below are roles in the build (see `docs/README.md`).
 
 **Which state the numbers describe.** The simulation as it is in this checkout:
-`spotless-sim 0.5.0 water-7`, parameter set `anchored-v7.owner-capsule` (the owner's capsule,
-12.9 g; the long soak of Eco 50 spraying 0.8 of the time), on the machine with its upper basket
-corrected from the owner's photograph and the loads settled again on it. Late on 11 October one
+`spotless-sim 0.5.0 water-7`, parameter set `anchored-v8.owner-capsule` (the owner's capsule,
+12.9 g; the long soak of Eco 50 spraying 0.8 of the time; fitted on both of the owner's test
+washes on 17 October), on the machine with its upper basket corrected from the owner's
+photograph and the loads settled again on it. Late on 11 October one
 more thing went into the wash: what the wash water held is left as residue where water stands on
 an item at the end. Numbers measured before that change say so; it moves only items that hold
 water (a glass or mug mouth up or on its side), not a careful load.
 
 ## 1. The short version
 
-- **One test wash on the owner's machine.** Four egg-yolk plates on Eco 50. The prediction written
-  before the result got the order of the plates and the form of the residue right and was ten to
-  thirty times too optimistic on the amount left on the two oven-dried plates. The parameter set
-  that was the game's default that night was rejected by the wash. The calibration moved one
-  number, the share of the long soak during which the pump runs, from 0.5 to 0.8. A second test
-  wash (four stacked plates, 14 October) is recorded and not yet fitted; what the set says for
-  it, predicted after the result, is in `docs/calibration/owner-wash-02-result.md`.
+- **Two test washes on the owner's machine.** Eight egg-yolk plates on Eco 50. In the first,
+  the prediction written before the result got the order of the plates and the form of the
+  residue right and was ten to thirty times too optimistic on the amount left on the two
+  oven-dried plates; the set that was the game's default that night was rejected, and the
+  calibration moved the share of the long soak during which the pump runs from 0.5 to 0.8. The
+  second (four stacked plates, 14 October) came out clean. Fitted together (17 October), the
+  two moved two more numbers, the capsule's protease level and how fast protein soils set when
+  heated, and the set now gives every verdict the owner saw; one small plate is on the edge of
+  clean.
 - **Published class means of a sister machine** (Bosch SMV6ECX51E, Eco, reference detergent D):
-  cutlery within 0.1, crockery 0.2 low, glass 0.1 to 0.5 low. This is a fit, not a prediction:
-  the soil and chemistry defaults were anchored to these numbers.
+  cutlery within 0.15, crockery 0.2 low, glass 0.35 to 0.45 high, the whole load on it or 0.1
+  high. This is a fit, not a prediction: the soil and chemistry defaults were anchored to these
+  numbers.
 - **46 loading phenomena** with evidence in the literature, 9 of them out of scope. Of the 37
   within scope 17 pass, 19 fail in size or sign and 1 is a faulty scenario.
 - **Water is conserved exactly**; the same input gives the same result; the fast tier agrees
-  with the official on 89 % of verdicts of the standard load and 97 % on the levels; a cold
+  with the official on 91 % of verdicts of the standard load and 97 % on the levels; a cold
   official wash of the largest level costs 4.9 minutes of the 30 (best of three), and 5 to 8.5
   minutes with another job beside it.
 - **A verdict can be trusted for a hollow piece put in the wrong way up, for a blocked detergent
@@ -44,11 +48,12 @@ water (a glass or mug mouth up or on its side), not a careful load.
 - **What a score means today**: "packed well and made no gross mistake with a hollow piece".
   Not yet "stacked so that it washes clean".
 
-## 2. The owner's test wash
+## 2. The owner's test washes
 
 Sources: `docs/calibration/owner-wash-01-prediction.md` (written before the result; no number
-in it edited since), `owner-wash-01-result.md`, `owner-wash-01-calibration.md`, `anchoring-v7.md`
-section 3; his photographs are in `docs/reference/calibration_runs/2026-10-10_egg_plates/`.
+in it edited since), `owner-wash-01-result.md`, `owner-wash-01-calibration.md`,
+`owner-wash-02-result.md`, `anchoring-v8.md` sections 2 to 4; the photographs are in
+`docs/reference/calibration_runs/`.
 
 **The wash.** Eco 50, one Finish Powerball Ultimate capsule, his evening load, four plates with
 fork-spread raw egg yolk in the rear rows of the lower basket: two oven-dried for 2 hours at 80 C,
@@ -98,47 +103,77 @@ set calibrated that morning and -5.55 under the regime of the prediction. So the
 soak that sprays half the time; it does not tell 0.8 from continuous circulation. The label's
 energy decides between those two, weakly.
 
-**The four plates under the current set** (3 g on every large plate, 2.1 g on the small one;
-`spotless-fit predict` on the final code, 12 October):
+**The second wash** (14 October; `owner-wash-02-result.md`): four plates with half a teaspoon
+of air-dried yolk each, two in one slot about 3 mm apart, one a slot behind them and one lying
+flat face up. No egg was seen on any of them; the flat one held dirty water and was looked at
+after a light rinse. No prediction was registered before it.
 
-| Plate | Seen | Model, `anchored-v7.owner-capsule` |
-|---|---|---|
-| 9121, oven-dried, turned | about 100 mm2 (50 to 200), not clean | 59 mm2, 64 specks, score 1, not clean |
-| 9122, oven-dried, facing | about 25 mm2 (10 to 60), not clean | 10.7 mm2, 9 specks, score 3, not clean; at the low edge of the range |
-| 9123, air-dried, facing | nothing, clean | 0.2 mm2, 1 speck, score 4, clean |
-| 9124, small, air-dried, turned | nothing, clean | 13 mm2, 13 specks, score 2, not clean |
+**Both washes fitted together** (17 October; `anchoring-v8.md`). Under `anchored-v7` every
+verdict but one came out: the small air-dried plate of wash 01 read 13 mm2, not clean. Its
+specks lay on the thickest patches of the thickest layer of the four (2.1 g taken on half the
+area of a large plate), not on a part the water did not reach. Two values moved:
 
-Log likelihood of the measured record: -5.94. On the morning's set and the old upper basket
-plate 9121 read 101 mm2; why it moved was not traced (the upper basket above it is lower along
-the walls than it was drawn). It is inside its observed range either way.
+| Parameter | Before | After | Moved by | How well it is known |
+|---|---|---|---|---|
+| Protease level of the owner's capsule (`liq.xProtease` of its layer) | 0.03 | 0.05 | both washes: every air-dried plate clean | the small plate is clean from 0.045 and not at 0.04; 0.05 is the top of the range the detergent dossier gives. One combination with the duty of the soak, as before |
+| How fast protein soils set when heated (`soil.egg_yolk.bakeRate`, the model's protein class) | 3e-5 (the global rate) | 7.5e-5 | both washes: the oven-dried plates soiled while the air-dried ones are clean | one pair of oven-dried plates; 2 h at 80 C now slow yolk by a third (16 % before). Only the protein class moves |
 
-Still wrong after calibration: the model leaves many specks of about 1 mm2 where the photographs
-show seven patches of some 15 mm2 at the edge of the well, where the yolk had pooled. The area is
-fitted; the form is not. And the small air-dried plate reads not clean where he saw it spotless,
-unless it carried 1.6 g or less; its amount is unknown.
+The duty of the soak and the global bake rate would each have fitted the plates as well; the
+first moves every soil of the game and the second every heat-aged one, and on the course the
+global rate turns porridge bowls of the careful breakfast load dirty. The protease of reference
+detergent D was fitted again with them in place (0.016 to 0.02).
 
-**How much this is worth.** It is one wash of four plates, judged from photographs, with the yolk
-not weighed. It fixes one number to within a factor that still spans "sprays most of the time" to
-"sprays all the time". It says nothing about tea, milk, starch, fat, the upper basket, cutlery
-or hollow pieces.
+**The plates under the current set** (`spotless-fit predict`, official tier, 17 October; the
+amounts as taken):
+
+| Plate | Seen | `anchored-v7.owner-capsule` | Model, `anchored-v8.owner-capsule` |
+|---|---|---|---|
+| 9121, oven-dried, turned | about 100 mm2 (50 to 200), not clean | 59 mm2, not clean | 116 mm2, 103 specks, score 1, not clean |
+| 9122, oven-dried, facing | about 25 mm2 (10 to 60), not clean | 10.7 mm2, not clean | 21.9 mm2, 24 specks, score 2, not clean |
+| 9123, air-dried, facing | nothing, clean | 0.2 mm2, clean | nothing, score 5, clean |
+| 9124, small, air-dried, turned | nothing, clean | 13 mm2, **not clean** | 2.75 mm2, 3 specks, score 4, clean |
+| Wash 02, the three standing plates | clean | clean | clean |
+| Wash 02, the plate lying flat | dirty water; no egg after a rinse | water standing: not clean | water standing: not clean |
+
+Log likelihood of wash 01: -5.94 under `anchored-v7`, -5.07 under `anchored-v8`; wash 02: -0.61
+under both.
+
+Still wrong or open:
+
+- **The small plate is on the edge of clean.** Under seven other random layouts of its yolk it
+  comes out clean in three and keeps 4.4 to 8.2 mm2 in four. At 1.7 g in place of 2.1 g it is clean
+  under all eight. Its amount was not weighed.
+- **The form of the residue**: the model leaves many specks of about 1 mm2 where the photographs
+  show seven patches of some 15 mm2 at the edge of the well, where the yolk had pooled. The area
+  is fitted; the form is not.
+- **A heaped spoon in wash 02** (about 5 g a plate) would still leave the standing plates not
+  clean in the model (13 to 34 mm2).
+
+**How much this is worth.** Two washes of eight plates in all, judged by eye and from photographs,
+with the yolk not weighed. They fix how much cleaning reaches air-dried egg yolk with the owner's
+capsule on Eco 50, and that 2 h at 80 C make yolk markedly harder to remove. They say nothing about
+tea, milk, starch, fat, the upper basket, cutlery or hollow pieces, and they do not separate the
+capsule's protease from the duty of the soak.
 
 ## 3. Published class means of a sister machine
 
 The record: a round robin on a Bosch SMV6ECX51E (a different model), eco programme, standard
 13-place load, reference detergent D (`docs/research/standards.md` section 7.1). The simulation
 washes the same standard load, loaded by the careful scripted player, on Eco 50 with detergent D;
-official tier, four washes (`docs/calibration/anchoring-v7.md` section 4; washed before the
-residue of standing water was added, which the careful load, holding 0.4 mL, does not feel).
+official tier, four washes (`docs/calibration/anchoring-v8.md` section 5).
 
 | | Crockery | Cutlery | Glass | All | Items clean |
 |---|---|---|---|---|---|
 | Published | 3.68 | 4.67 | 3.43 | 4.17 | about 70 % (an estimate) |
-| Simulation, `anchored-v7` | 3.43 to 3.49 | 4.58 to 4.70 | 2.97 to 3.29 | 4.10 to 4.12 | 91 or 92 of 114 (80 %) |
+| Simulation, `anchored-v8` | 3.49 to 3.51 | 4.53 to 4.70 | 3.78 to 3.86 | 4.17 to 4.26 | 91 to 94 of 114 (80 to 82 %) |
 
 Read this as a fit. The reaction rate of egg yolk, the bleach rate and the enzyme level of
-detergent D were set so that these means come out. Crockery is 0.2 low because no tea item comes
-clean at a bleach rate of 0.0009 (at 0.001 half do and crockery is 0.36 high). Glass is low
-because milk glasses along the left wall of the upper basket stay dirty (2 to 4 of 8 clean). The
+detergent D were set so that these means come out, with what the owner's washes fixed in place.
+Crockery is 0.2 low because no tea item comes clean at a bleach rate of 0.0009 (at 0.001 half do
+and crockery is 0.4 high). Glass is high because the protease of detergent D went to the top of
+its search (0.02, from 0.016) to hold the cutlery mean, whose egg forks now set harder when dried,
+and milk on glass answers to it (4 or 5 of 8 milk glasses clean; at 0.016 glass was 0.1 to 0.5
+low, the glasses along the left wall of the upper basket staying dirty). The
 published record gives class means only, so it cannot say which items the simulation gets wrong.
 The model's load holds 114 of the rated 140 pieces, so it is also not the same load.
 
@@ -146,7 +181,7 @@ The model's load holds 114 of the rated 140 pieces, so it is also not the same l
 
 Six published removal rates of egg yolk from tiles inside a running machine against the
 simulation's bench tile (% of the tile per minute, simulated / published;
-`packages/calibration/anchors/scripts/check.ts`, run on 12 October): 0.84 / 0.85, 1.79 / 1.75,
+`packages/calibration/anchors/scripts/check.ts`, run on 17 October): 0.84 / 0.85, 1.79 / 1.75,
 0.17 / 0.17, 2.47 / 2.59, 0.68 / 0.69, 4.77 / 4.66. All within tolerance. Again a fit: the
 reference rate of egg yolk was set on these six and on nothing else. They show that one rate
 reproduces all six conditions, on a tile that is not heat-aged.
@@ -161,12 +196,13 @@ programmes and were removed, and nine turn on mechanisms that are out of scope
 checklist's range with a tolerance of a factor of two or one score point.
 
 The table is the whole suite at the **fast tier** with the owner's capsule on Eco 50 (46
-phenomena, 76 washes), run again on 14 October after P27 and P32 were removed; no verdict or
-number of the 46 changed from the run on the final code of 12 October
-(`packages/sim-verify/phenomena/reports/phenomena-fast-anchored-v7.owner-capsule.md`):
+phenomena, 76 washes), run again on 17 October with the set fitted on both of the owner's
+washes; no verdict changed from the run on `anchored-v7`, and the measured sizes moved only where
+the test soil is heated protein (`docs/calibration/anchoring-v8.md` section 9;
+`packages/sim-verify/phenomena/reports/phenomena-fast-anchored-v8.owner-capsule.md`):
 **of the 37 within scope, 17 pass, 15 are too small, 2 too large, 2 of the wrong sign and 1 is
-an error; 9 are out of scope.** At the official tier only P03, P15 and P25 were washed on this
-set (before the residue of standing water; `packages/calibration/anchors/reports/v7/phenomena/`);
+an error; 9 are out of scope.** At the official tier only P03, P15 and P25 were washed, on
+`anchored-v7` (before the residue of standing water; `packages/calibration/anchors/reports/v7/phenomena/`);
 where it differs the table says so.
 
 "At fault" is a reading, not a measurement: it starts from the attribution the anchoring engineer
@@ -179,29 +215,29 @@ machine; **expectation** is the checklist's figure.
 |---|---|---|---|---|
 | P01 | Hollow item open side up holds water | pass | a mug holds 279 mL (125 to 600) | |
 | P02 | Soiled face turned away from the spray | too large | direct-jet time falls to 0.38 of the facing plate's, expected under 0.1; the score does not change (2 against 2; the turned face keeps twice the residue) | water and scenario: the pair is two set poses of an upright plate in a wide gap, and the jets still reach part of the face turned away. Soil: both residues are far below a score step. The owner's turned plate kept about four times its partner's area |
-| P03 | Plate pitch halved | pass | upper half of the covered plate 5 to 3 (5 to 2 at the official tier, where the plate is not clean; at the fast tier it is) | the row is set by hand with the tines folded down: two plates will not stand at half the pitch between the tines of this basket |
+| P03 | Plate pitch halved | pass | upper half of the covered plate 5 to 2 (on `anchored-v7` 5 to 3 at the fast tier and 5 to 2 at the official) | the row is set by hand with the tines folded down: two plates will not stand at half the pitch between the tines of this basket |
 | P04 | Bowl nested in another | too small | the covered bowl scores 0, as expected; 18 % of its porridge is left, expected at least 50 % | expectation: the verdict is right, the checklist's amount is an estimate |
 | P05 | Large flat item shadows what is behind it | error | -0.5 | scenario: the set pose cuts 2 mm into a plate. There is no clear place for a 32 cm platter inboard of the plates |
 | P06 | Spray arm held by an item | pass | jet coverage of the plates 0.41 to 0; plates 4.71 to 4.00 | passes on coverage; the score moves little (section 8) |
-| P07 | Corner against mid-radius | too small | 3 against 3, expected -0.5 to -1 | soil: the water differs and the egg yolk does not answer to it |
-| P08 | Left against right | pass | 3 against 5, limit 2 | |
+| P07 | Corner against mid-radius | too small | 2 against 2, expected -0.5 to -1 | soil: the water differs and the egg yolk does not answer to it |
+| P08 | Left against right | pass | 2 against 3, limit 2 | |
 | P09 | Plate leaning away | too small | 2 against 2, expected about -0.5 | soil: jet time falls, the score does not move |
 | P10 | Tall narrow vessel | too small | glass and bowl both come clean of milk; the glass was expected to keep more | expectation, as built: both residues are zero on Eco 50 |
-| P11 | Upper against lower basket | pass | 3 against 2, limit 1 | |
+| P11 | Upper against lower basket | pass | 2 against 2, limit 1 | |
 | P12 | Alternating large and small plates | too small | 5 against 5, expected +0.3 to +0.5 | soil: nothing to gain, both clean |
 | P13 | Glass over a tine | too small | jet time inside -4 %, floor -5 % | water, resolution: a miss by a hair at the fast tier |
 | P14 | Soiled face against the tub wall | too small | 5 against 5, expected -1 to -2; jets fall to zero and renewal from 33 to 2 a second | soil, with the soak: at a duty of 0.8 the face cleans on old water alone. It read 2 against 1 at a duty of 0.5. Not known which is right |
 | P15 | Spoon lying in another | pass | the shielded spoon scores 0, its partner 5 | passes on a pose set by hand (10 cm2 of the hollow within 1 mm). The spoons the loading physics lays into each other do not lie that close and come out clean |
-| P16 | Heads up against heads down | pass | 2 against 2 | |
+| P16 | Heads up against heads down | pass | 1.5 against 1.67 | |
 | P17 | Crowded cutlery cells | too small | spoons not scoring 5 rise by 4 points of 100 from one to four per cell, expected 15 or more | water in narrow gaps (section 9) |
 | P18 | Spoons lying flat hold water | pass | 2 mL | |
-| P19 | Loading beyond rated capacity | pass | load mean 4.27 to 3.91 | the loader refuses what does not hold, so this compares half a load with a full one, not a full one with an overfull one |
+| P19 | Loading beyond rated capacity | pass | load mean 4.13 to 3.80 | the loader refuses what does not hold, so this compares half a load with a full one, not a full one with an overfull one |
 | P20 | Total soil load | too small | no change, expected a clear drop when everything is soiled | soil: the soil in the liquor does not use up enough of the chemistry to matter |
 | P21 | Redeposition of particles | out of scope | | |
 | P22 | Clean neighbours of soiled items | pass | 0 | passes because nothing is carried to an open face |
 | P23 | End-of-cycle drips | out of scope | | |
 | P24 | Arrangement does not matter for easy soils | pass | range 0.07, limit 0.2 | |
-| P25 | Detergent tray blocked | too large | the score falls as it should (three pieces 3.67 to 0); but 27 % of the yolk and 40 % of the tea still go without detergent, limit 20 % | soil: too much removal in water alone |
+| P25 | Detergent tray blocked | too large | the score falls as it should (three pieces 3.33 to 0); but 50 % of the yolk and 40 % of the tea still go without detergent, limit 20 % (the yolk 27 % on `anchored-v7`: the blocked wash still takes up some of the capsule's protease late, and the capsule now carries more) | soil: too much removal in water alone |
 | P26 | Tablet in a dead spot | out of scope | | |
 | P28 | Bleachable stains do not depend on position | pass | 0, limit 1 | |
 | P29 | Ageing of the soil | pass | | |
@@ -216,9 +252,9 @@ machine; **expectation** is the checklist's figure.
 | P40 | Liquid held at contact points | wrong sign | two glasses touching hold 2.3 g, apart 2.6 g | scenario on the corrected basket: the glasses lean on the rest now, and touching they hold a little less than apart |
 | P41 | Light plastic moved by jets | out of scope | | |
 | P43 | Spots and film on glass | out of scope | | |
-| P44 | Cutlery comes out clean | too small | cutlery mean 3.55 with the loader's own soils, 1.05 under 4.6; the band ends at 1 under | the loader's soils on the new load; with the record's soils the class mean is 4.58 to 4.70 (section 3) |
-| P45 | Class ranking of the standard test | wrong sign | cutlery 0.59 below crockery, expected above | the same: with the loader's soils crockery rose to 4.15 (the mugs on the rest) and cutlery fell to 3.55 |
-| P46 | Run-to-run repeatability | too small | spread of the load mean over three seeds 0.034, real machines 0.08 to 0.10 | expectation: the model repeats better than a machine, which has variation the seeds do not carry |
+| P44 | Cutlery comes out clean | too small | cutlery mean 3.47 with the loader's own soils, 1.13 under 4.6; the band ends at 1 under | the loader's soils on the new load; with the record's soils the class mean is 4.53 to 4.70 (section 3) |
+| P45 | Class ranking of the standard test | wrong sign | cutlery 0.47 below crockery, expected above | the same: with the loader's soils crockery is 3.94 (the mugs on the rest) and cutlery 3.47 |
+| P46 | Run-to-run repeatability | too small | spread of the load mean over three seeds 0.020, real machines 0.08 to 0.10 | expectation: the model repeats better than a machine, which has variation the seeds do not carry |
 | P47 | Everything wetted, jets rare | pass | largest item-mean jet time 2 % | |
 | P48 | Detergent does not move the water | pass | holds by construction | |
 
@@ -255,22 +291,23 @@ wash with one, because the hash named the cache key only when a cache was config
 corrected, and a different hash under the same wash code now fails verification.
 
 Between seeds, on the careful standard load with the capsule, official tier
-(`docs/calibration/anchoring-v7.md` section 8):
+(`docs/calibration/anchoring-v8.md` section 9):
 
 | | Verdicts of 86 soiled items that differ |
 |---|---|
-| Two simulation seeds (arm phase, droplets), official tier | 0 in twelve pairs of washes |
-| Two simulation seeds, fast tier | 1.4 on average (two knives and a fork) |
-| Two level seeds (another draw of where the soil lies) | 6 (two glasses, a knife, a saucer, two soup spoons) |
+| Two simulation seeds (arm phase, droplets), official tier | 0.5 on average in twelve pairs of washes (0 or 1: one fork) |
+| Two simulation seeds, fast tier | 2.4 on average (1 to 4: two knives, three forks, a saucer) |
+| Two level seeds (another draw of where the soil lies) | 5.5 |
 
 On the course, three simulation seeds at the official tier moved no verdict on the breakfast
 (the measurement review), and three at the fast tier moved at most one verdict a load
 (`docs/benchmark/course-robustness.md`).
 
-**Fast against official**, the standard load, eight pairs of washes on Eco 50: 615 of 688
-verdicts agree, 89 %. Crockery 100 %, melamine 100 %, glass 95 %, cutlery 77 %. The cutlery
-disagreement is systematic: two forks and a knife are clean officially and dirty at the fast
-tier in every pair, two forks the other way round. On the reference loads of the seven levels
+**Fast against official**, the standard load, eight pairs of washes on Eco 50: 623 of 688
+verdicts agree, 91 % (89 % on `anchored-v7`). Crockery 100 %, melamine 100 %, glass 100 %,
+cutlery 79 %. The cutlery disagreement is systematic, as it was: a fork and a knife are clean
+officially and dirty at the fast tier in all eight pairs, a fork the other way round, and eight
+more pieces of cutlery differ in four or five pairs. On the reference loads of the seven levels
 the fast tier gives the same verdict on 486 of 499 pieces of the careful and careless loads
 (97 %) and the same pass or fail on every gate; a load's points differ by at most 10 (16 on one
 random load). Every fast report states its error; a fast wash is a preview and is never a score.
@@ -413,10 +450,10 @@ Known limits of the machine model:
 
 | What | From |
 |---|---|
-| The default set and its tables (sections 2 to 4, 6) | `docs/calibration/anchoring-v7.md`; `packages/calibration/anchors/reports/` |
-| The owner's plates on the final code (section 2) | `pnpm --filter @spotless/calibration spotless-fit predict packages/calibration/records/owner/owner-wash-01-egg-yolk-eco50.measured.json --params packages/calibration/anchors/anchored-v7.owner-capsule.json` |
+| The default set and its tables (sections 2 to 4, 6) | `docs/calibration/anchoring-v8.md`; `packages/calibration/anchors/reports/` |
+| The owner's plates on the final code (section 2) | `pnpm --filter @spotless/calibration spotless-fit predict packages/calibration/records/owner/owner-wash-01-egg-yolk-eco50.measured.json --params packages/calibration/anchors/anchored-v8.owner-capsule.json` (and `owner-wash-02-stacked-plates-eco50`) |
 | The bench rates (section 4) | `packages/calibration/anchors/scripts/check.ts` |
-| The phenomena (section 5) | From the root of the repository: `INIT_CWD=. pnpm exec tsx packages/sim-verify/src/phenomena/cli.ts --tier fast --params packages/calibration/anchors/anchored-v7.owner-capsule.json --dose-g 12.9 --detergent-name "Finish Powerball Ultimate" --out .spotless/phenomena`. Without `--out` the command overwrites the stored report under `packages/sim-verify/phenomena/reports/`; with an absolute `--params` it writes that path into the report |
+| The phenomena (section 5) | From the root of the repository: `INIT_CWD=. pnpm exec tsx packages/sim-verify/src/phenomena/cli.ts --tier fast --params packages/calibration/anchors/anchored-v8.owner-capsule.json --dose-g 12.9 --detergent-name "Finish Powerball Ultimate" --out .spotless/phenomena`. Without `--out` the command overwrites the stored report under `packages/sim-verify/phenomena/reports/`; with an absolute `--params` it writes that path into the report |
 | The levels (sections 6 and 8) | `docs/benchmark/levels.md`, `course-table.md`, `course-robustness.md` |
 | The models' episodes (section 8) | `docs/benchmark/first-runs/course/` |
 | The two reviews (section 8) | two internal review reports of 11 October; the reports, their loads and their wash summaries are not in the repository, so the loads of section 8 cannot be reproduced from it |

@@ -20,7 +20,7 @@ const GAME_SET = join(
   'packages',
   'calibration',
   'anchors',
-  'anchored-v7.owner-capsule.json',
+  'anchored-v8.owner-capsule.json',
 );
 
 /**

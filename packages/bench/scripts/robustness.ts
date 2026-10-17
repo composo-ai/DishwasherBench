@@ -23,7 +23,12 @@
  *  - `soil.supplyExchange`, what a film left standing on a soil can take up before it is
  *    spent, which is what turning a plate to the wall costs: 0.02 in the set, not identified
  *    by the wash (0.005 to 0.08 lie within 0.63 log units).
- * The bleach rate, the third open value, moves tea, coffee and wine only, which no level
+ * Since the eighth anchoring (docs/calibration/anchoring-v8.md, both of the owner's washes) also
+ *  - `liq.xProtease` of the capsule at the lower end of its interval (0.023; the set has 0.05,
+ *    the top of its range, where the fit put it), and
+ *  - `soil.egg_yolk.bakeRate`, how fast the protein class sets when heated, at both ends of its
+ *    range (the fit leaves the whole of it open).
+ * The bleach rate, the other open value, moves tea, coffee and wine only, which no level
  * carries. Another list of cases is given with `--cases`.
  *
  * Printed per level: every case with the two scores, the margin, and against `base` how many
@@ -88,6 +93,21 @@ const DEFAULT_CASES: readonly ParamCase[] = [
     name: 'exchange-0.08',
     what: 'supply exchange 0.08 (upper end of what the wash allows)',
     overrides: { 'soil.supplyExchange': 0.08 },
+  },
+  {
+    name: 'protease-0.023',
+    what: "the capsule's protease 0.023 (lower end of the interval the fit on both of the owner's washes gives; the set has 0.05, the top of its range)",
+    overrides: { 'liq.xProtease': 0.023 },
+  },
+  {
+    name: 'protein-bake-1e-5',
+    what: 'the protein class sets on heating at 1e-5 (lower end of its range; the set has 7.5e-5, the fit on both washes leaves the whole range open)',
+    overrides: { 'soil.egg_yolk.bakeRate': 1e-5 },
+  },
+  {
+    name: 'protein-bake-1e-4',
+    what: 'the protein class sets on heating at 1e-4 (upper end of its range)',
+    overrides: { 'soil.egg_yolk.bakeRate': 1e-4 },
   },
 ];
 

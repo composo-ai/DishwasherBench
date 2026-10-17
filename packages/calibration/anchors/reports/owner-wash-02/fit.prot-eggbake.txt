@@ -1,0 +1,173 @@
+log posterior -6.477 at the start, -6.468 at the estimate (log likelihood -6.240 -> -6.239, log prior -0.237 -> -0.230)
+157 evaluations of the objective, 124 computed, 4181.2 s; 2 minimisations
+WARNING: liq.xProtease sits on the upper bound of its registered range (0.05). The records pull beyond the range: the model, or a parameter that was held fixed, is probably wrong. The interval given is one-sided.
+
+parameter               unit   default  range               tag        estimate  95 % interval           moved (prior sd)  of range  post/prior sd  step  verdict
+----------------------  -----  -------  ------------------  ---------  --------  ----------------------  ----------------  --------  -------------  ----  -------------------------------
+liq.xProtease           kg/kg     0.01  0.001 .. 0.05       ESTIMATED      0.05  0.0231 .. 0.05 (p)                 +0.47      41 %           0.29   0.1  at the upper bound of its range
+soil.egg_yolk.bakeRate  1/s    3.00e-5  1.00e-5 .. 1.00e-4  ESTIMATED  7.294e-5  1.00e-5 .. 1.00e-4 (p)             +0.49      39 %           0.59   0.1  weak
+interval: (p) from the profile of the parameter (the others re-fitted along it), else the normal approximation at the estimate; step: of the derivatives behind the deviations, as a share of the prior deviation, chosen in 1 rounds
+
+prior against records:
+  liq.xProtease: the log posterior falls by 28.4 with it at its prior centre 0.01
+  the records alone could gain about 0.1 of log likelihood over the estimate (linearised)
+
+confounded (posterior correlation beyond 0.8):
+  liq.xProtease with soil.egg_yolk.bakeRate (0.92)
+  soil.egg_yolk.bakeRate with liq.xProtease (0.92)
+
+no other local optimum was found near the estimate in log posterior (from the starts and the scans of each parameter)
+
+profiles (the other parameters re-fitted at every value):
+  liq.xProtease: 95 % interval 0.0231 .. up to the bound (normal approximation 0.00711 .. 0.05)  DISAGREES by over 30 %: the posterior is not normal here, trust the profile
+    0.0124: -34.71  0.0224: -8.57  0.0249: -7.98  0.05: -6.47
+  soil.egg_yolk.bakeRate: 95 % interval down to the bound .. up to the bound (normal approximation 1.00e-5 .. 1.00e-4)
+    1.00e-5: -7.24  1.66e-5: -6.98  3.48e-5: -6.64  7.29e-5: -6.47  1.00e-4: -7.08
+
+restricted replay against the replay of every soil, at the estimate (largest difference of a prediction):
+  owner-wash-01-egg-yolk-eco50: 0.000 deviations of its observation (plate_9122.clean); visible_area 0.00215, clean 6.35e-5, specks 0; background computed again 1 times, the last moving the log posterior by 0.000
+
+local identifiability at the estimate (from the derivatives there):
+parameter               sensitivity  information  post/prior sd  if others known  contraction  verdict                          confounded with
+----------------------  -----------  -----------  -------------  ---------------  -----------  -------------------------------  -----------------------------
+liq.xProtease                  2.16           75          0.288            0.115         0.92  at the upper bound of its range  soil.egg_yolk.bakeRate (0.92)
+soil.egg_yolk.bakeRate         1.04         17.4          0.586            0.233         0.66  weak                             liq.xProtease (0.92)
+
+sensitivity: rms over the observations of the move of a prediction, in noise deviations, per prior deviation of the parameter
+information: Fisher information of the records about the parameter alone, in units of its prior precision
+
+information  combination (loadings in prior deviations)        reading
+-----------  ------------------------------------------------  --------------------
+       90.9  +0.91 liq.xProtease -0.42 soil.egg_yolk.bakeRate  fixed by the records
+        1.4  +0.91 soil.egg_yolk.bakeRate +0.42 liq.xProtease  constrained
+
+fit to each observation (predicted: the mean of the predicted observation; residual in its deviations):
+record                              observation               observed  predicted     sd  residual  log lik  P(gross error)
+----------------------------------  ------------------------  --------  ---------  -----  --------  -------  --------------
+owner-wash-01-egg-yolk-eco50        plate_9121.visible_area        100        132   97.3     -0.33    -1.85            0.01
+owner-wash-01-egg-yolk-eco50        plate_9121.clean             false       0.02   0.14     -0.14    -0.19            0.00
+owner-wash-01-egg-yolk-eco50        plate_9121.specks                7        104   74.4     -1.31    -4.33            0.00
+owner-wash-01-egg-yolk-eco50        plate_9122.visible_area         25       26.4   23.6     -0.06    -1.82            0.01
+owner-wash-01-egg-yolk-eco50        plate_9122.clean             false       0.02   0.14     -0.14    -0.36            0.00
+owner-wash-01-egg-yolk-eco50        plate_9122.specks                5       22.2   16.4     -1.05    -3.68            0.00
+owner-wash-01-egg-yolk-eco50        plate_9123.visible_area          0      0.793   3.39     -0.23    -0.48            0.01
+owner-wash-01-egg-yolk-eco50        plate_9123.clean              true      0.974  0.159      0.16    -0.23            0.00
+owner-wash-01-egg-yolk-eco50        plate_9123.specks                0        0.2  0.469     -0.43    -0.51            0.00
+owner-wash-01-egg-yolk-eco50        plate_9124.visible_area          0       4.01   5.27     -0.76    -0.92            0.01
+owner-wash-01-egg-yolk-eco50        plate_9124.clean              true      0.725  0.447      0.62    -0.59            0.00
+owner-wash-01-egg-yolk-eco50        plate_9124.specks                0        3.2   2.88     -1.11    -1.04            0.00
+owner-wash-02-stacked-plates-eco50  plate_single.clean            true      0.974  0.159      0.16    -0.20            0.00
+owner-wash-02-stacked-plates-eco50  plate_pair_covered.clean      true      0.974  0.159      0.16    -0.20            0.00
+owner-wash-02-stacked-plates-eco50  plate_pair_open.clean         true      0.974  0.159      0.16    -0.20            0.00
+owner-wash-02-stacked-plates-eco50  plate_flat.score                 5       4.79  0.421      0.49    -0.41            0.00
+
+the six in-machine egg-yolk rates at the fitted set: all within tolerance
+  30 C, pH 10.5, 60 g/m3: 0.84 against 0.85 +- 0.17 % per minute
+  55 C, pH 10.5, 60 g/m3: 1.79 against 1.75 +- 0.35 % per minute
+  55 C, pH 10.5, 20 g/m3: 0.17 against 0.17 +- 0.05 % per minute
+  55 C, pH 10.5, 100 g/m3: 2.47 against 2.59 +- 0.52 % per minute
+  55 C, pH 9.5, 60 g/m3: 0.68 against 0.69 +- 0.16 % per minute
+  55 C, pH 11.5, 60 g/m3: 4.77 against 4.66 +- 0.93 % per minute
+
+at the estimate: {
+ "z": [
+  -2.995732273553991,
+  -9.52589609764701
+ ],
+ "values": {
+  "liq.xProtease": 0.05,
+  "soil.egg_yolk.bakeRate": 0.0000729383424527191
+ },
+ "logPosterior": -6.468237755609259,
+ "ownerLogLikelihood": -5.685633745169116,
+ "ownerByRecord": {
+  "owner-wash-01-egg-yolk-eco50": -5.072045169835049,
+  "owner-wash-02-stacked-plates-eco50": -0.6135885753340667
+ },
+ "literatureLogLikelihood": -0.5530346158729451,
+ "logPrior": -0.22956939456719838,
+ "plates": {
+  "w01:plate_9121": {
+   "nominal": 106.3378074880042,
+   "median": 106.3378074880042,
+   "low": 0,
+   "high": 9147.197321155629,
+   "cleanShare": 0.17841,
+   "nominalSpecks": 104,
+   "nominalClean": false
+  },
+  "w01:plate_9122": {
+   "nominal": 20.094385660498485,
+   "median": 20.094385660498485,
+   "low": 0,
+   "high": 5711.275527770108,
+   "cleanShare": 0.37958,
+   "nominalSpecks": 22,
+   "nominalClean": false
+  },
+  "w01:plate_9123": {
+   "nominal": 0,
+   "median": 0,
+   "low": 0,
+   "high": 395.89165897236734,
+   "cleanShare": 0.82159,
+   "nominalSpecks": 0,
+   "nominalClean": true
+  },
+  "w01:plate_9124": {
+   "nominal": 2.7805808270686647,
+   "median": 2.7805808270686647,
+   "low": 0,
+   "high": 3615.8381133123694,
+   "cleanShare": 0.62042,
+   "nominalSpecks": 3,
+   "nominalClean": true
+  },
+  "w02:plate_single": {
+   "nominal": 0,
+   "median": 0,
+   "low": 0,
+   "high": 29.176171937235768,
+   "cleanShare": 0.8333316666833331,
+   "nominalSpecks": 0,
+   "nominalClean": true
+  },
+  "w02:plate_pair_covered": {
+   "nominal": 0,
+   "median": 0,
+   "low": 0,
+   "high": 34.02072288849625,
+   "cleanShare": 0.8333316666833331,
+   "nominalSpecks": 0,
+   "nominalClean": true
+  },
+  "w02:plate_pair_open": {
+   "nominal": 0,
+   "median": 0,
+   "low": 0,
+   "high": 13.0935984097712,
+   "cleanShare": 0.8333316666833331,
+   "nominalSpecks": 0,
+   "nominalClean": true
+  },
+  "w02:plate_flat": {
+   "nominal": 0,
+   "median": 0,
+   "low": 0,
+   "high": 5.145900123043723,
+   "cleanShare": 0,
+   "nominalSpecks": 0,
+   "nominalClean": false
+  }
+ },
+ "literature": {
+  "protease": 0.02,
+  "crockery": 3.5,
+  "cutlery": 4.650956072072875,
+  "glass": 3.78125,
+  "all": 4.225703225788715,
+  "milkGlasses": 3.125,
+  "teaItems": 1.25,
+  "clamped": false
+ }
+}

@@ -2,7 +2,7 @@
 
 Level 'Everyday family load', loaded by the careful policy.
 
-**Tier.** This is a fast wash, a preview of the official one (coarser surfaces, fewer droplets). Measured on this programme with anchored-v7.owner-capsule (the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4), its verdict on a soiled item differs from the official wash in 11 of 100 cases: 0 in 100 for crockery, 23 in 100 for cutlery, 5 in 100 for glass, 0 in 100 for melamine. Scores are counted on the official wash.
+**Tier.** This is a fast wash, a preview of the official one (coarser surfaces, fewer droplets). Measured on this programme with anchored-v8.owner-capsule (the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4), its verdict on a soiled item differs from the official wash in 9 of 100 cases: 0 in 100 for crockery, 21 in 100 for cutlery, 0 in 100 for glass, 0 in 100 for melamine. Scores are counted on the official wash.
 
 Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 40 items (5 of the offer left on the counter by the loading physics), simulator spotless-sim 0.5.0 water-7, exposure on the gpu.
 
@@ -10,17 +10,17 @@ Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 40 
 
 | Quantity | Value |
 |---|---|
-| Time, scene | 2.3 s |
+| Time, scene | 2.8 s |
 | Time, hydraulics | 0.0 s |
-| Time, exposure | 42.6 s |
-| Time, soil | 0.2 s |
+| Time, exposure | 0.2 s |
+| Time, soil | 0.3 s |
 | Time, replay | 0.8 s |
 | Time, result | 0.2 s |
-| Time, total | 46.1 s (0.8 min) |
-| Exposure sets | 4 computed, 0 from the cache |
+| Time, total | 4.4 s (0.1 min) |
+| Exposure sets | 0 computed, 4 from the cache |
 | Scene | 177053 blocks, 459052 soil cells, 70398 deposits |
-| GPU memory | scene 126.9 MB, peak of all buffers 129.7 MB |
-| Process memory (RSS) | 1.08 GB |
+| GPU memory | scene 0.0 MB, peak of all buffers 0.0 MB |
+| Process memory (RSS) | 0.73 GB |
 | Mains water, energy | 9.5 L, 0.90 kWh |
 | Water held in vessels | 0 mL |
 | Detergent | 12.9 of 12.9 g dissolved (dispenser free) |
@@ -73,9 +73,9 @@ Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 40 
 | plate_03 | dinner_plate_vitrelle_260 | lower | -139, 112, 202 | tomato_sauce 0.00 of 713.45 | 0.00 | 0 of 15633 | 5 | 0.0, 1.58 | yes |
 | plate_04 | dinner_plate_vitrelle_260 | lower | -121, 111, 202 | tomato_sauce 0.00 of 729.83 | 0.00 | 0 of 15634 | 5 | 0.0, 1.60 | yes |
 | serving_bowl_01 | serving_bowl_vitrelle_216 | lower | 219, 111, 195 | vegetable_oil 0.00 of 339.09 | 0.00 | 0 of 21923 | 5 | 0.0, 2.17 | yes |
-| side_plate_01 | bread_plate_vitrelle_170 | lower | -223, 111, 151 | egg_yolk_dried 0.01 of 284.45 | 0.01 | 0 of 3883 | 4 | 0.0, 0.61 | yes |
-| side_plate_02 | bread_plate_vitrelle_170 | lower | -219, -141, 145 | egg_yolk_dried 0.04 of 315.68 | 0.04 | 2 of 3882 | 4 | 0.0, 0.59 | yes |
-| side_plate_03 | bread_plate_vitrelle_170 | lower | -166, -140, 145 | egg_yolk_dried 0.00 of 299.21 | 0.00 | 0 of 3885 | 4 | 0.0, 0.61 | yes |
+| side_plate_01 | bread_plate_vitrelle_170 | lower | -223, 111, 151 | egg_yolk_dried 0.00 of 284.45 | 0.00 | 0 of 3883 | 5 | 0.0, 0.61 | yes |
+| side_plate_02 | bread_plate_vitrelle_170 | lower | -219, -141, 145 | egg_yolk_dried 0.01 of 315.68 | 0.01 | 0 of 3882 | 4 | 0.0, 0.59 | yes |
+| side_plate_03 | bread_plate_vitrelle_170 | lower | -166, -140, 145 | egg_yolk_dried 0.00 of 299.21 | 0.00 | 0 of 3885 | 5 | 0.0, 0.61 | yes |
 | side_plate_04 | bread_plate_vitrelle_170 | lower | -140, -140, 144 | egg_yolk_dried 0.00 of 311.60 | 0.00 | 0 of 3885 | 5 | 0.0, 0.66 | yes |
 | sippy_cup_01 | sippy_cup_240 | upper | -219, -198, 514 | avocado 0.00 of 230.21 | 0.00 | 0 of 5567 | 5 | 0.0, 1.56 | yes |
 | sippy_cup_02 | sippy_cup_240 | upper | 101, -29, 523 | avocado 0.00 of 231.05 | 0.00 | 0 of 5568 | 5 | 0.0, 2.48 | yes |

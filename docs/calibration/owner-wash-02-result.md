@@ -9,6 +9,10 @@ labelled so. The owner's note and photograph are in
 `packages/calibration/records/owner/owner-wash-02-stacked-plates-eco50.measured.json`, written by
 `packages/calibration/scripts/make-owner-wash-02-measured.ts`.
 
+> **Fitted on 17 October 2026** together with wash 01: `anchoring-v8.md`. "The current set" and
+> "the current model" below are `anchored-v7`, the set of 16 October; the last section says what
+> the new set gives.
+
 ## What was run
 
 Four dinner plates of the wide-rimmed lettered earthenware of wash 01, each with egg yolk
@@ -163,5 +167,8 @@ nearly all of it from the heaped-spoon scenario.
 
 ## What follows
 
-The record is not fitted. Making the simulation fit both test washes is tracked in
-[issue 65](https://github.com/composo-ai/DishwasherBench/issues/65).
+The record was fitted together with wash 01 on 17 October 2026: `anchoring-v8.md`
+([issue 65](https://github.com/composo-ai/DishwasherBench/issues/65)). On the set of that note,
+`anchored-v8.owner-capsule`, the three standing plates are clean at 2.5 g as before, and at a
+heaped half teaspoon (5.2 g) they keep 28, 34 and 13 mm2 where this note's set kept 146, 174
+and 94 (`packages/calibration/anchors/reports/v8/owner-wash-02.predict.txt`).

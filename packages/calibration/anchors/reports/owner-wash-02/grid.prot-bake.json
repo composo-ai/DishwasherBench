@@ -1,0 +1,125 @@
+{
+ "name": "prot-bake",
+ "records": [
+  "owner-wash-01-egg-yolk-eco50",
+  "owner-wash-02-stacked-plates-eco50",
+  "std-eu-13.round-robin-ta.detergent-d"
+ ],
+ "keys": [
+  "liq.xProtease",
+  "soil.bakeRate"
+ ],
+ "fixed": {},
+ "axes": {
+  "liq.xProtease": [
+   0.05
+  ],
+  "soil.bakeRate": [
+   0.000075
+  ]
+ },
+ "points": [
+  {
+   "z": [
+    -2.995732273553991,
+    -9.498022444427964
+   ],
+   "values": {
+    "liq.xProtease": 0.05,
+    "soil.bakeRate": 0.00007500000000000001
+   },
+   "logPosterior": -6.508617659038159,
+   "ownerLogLikelihood": -5.686934549839602,
+   "ownerByRecord": {
+    "owner-wash-01-egg-yolk-eco50": -5.073345974505536,
+    "owner-wash-02-stacked-plates-eco50": -0.6135885753340667
+   },
+   "literatureLogLikelihood": -0.5844019294642485,
+   "logPrior": -0.2372811797343085,
+   "plates": {
+    "w01:plate_9121": {
+     "nominal": 117.96527490902747,
+     "median": 117.96527490902747,
+     "low": 0,
+     "high": 9429.379461156313,
+     "cleanShare": 0.17841,
+     "nominalSpecks": 103,
+     "nominalClean": false
+    },
+    "w01:plate_9122": {
+     "nominal": 22.548919640617488,
+     "median": 22.548919640617488,
+     "low": 0,
+     "high": 5959.081353537421,
+     "cleanShare": 0.37958,
+     "nominalSpecks": 24,
+     "nominalClean": false
+    },
+    "w01:plate_9123": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 398.4458205908186,
+     "cleanShare": 0.82159,
+     "nominalSpecks": 0,
+     "nominalClean": true
+    },
+    "w01:plate_9124": {
+     "nominal": 2.7995348698390385,
+     "median": 2.7995348698390385,
+     "low": 0,
+     "high": 3624.9283274294335,
+     "cleanShare": 0.62042,
+     "nominalSpecks": 3,
+     "nominalClean": true
+    },
+    "w02:plate_single": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 29.39108642713786,
+     "cleanShare": 0.8333316666833331,
+     "nominalSpecks": 0,
+     "nominalClean": true
+    },
+    "w02:plate_pair_covered": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 34.25941401556435,
+     "cleanShare": 0.8333316666833331,
+     "nominalSpecks": 0,
+     "nominalClean": true
+    },
+    "w02:plate_pair_open": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 13.217378562959599,
+     "cleanShare": 0.8333316666833331,
+     "nominalSpecks": 0,
+     "nominalClean": true
+    },
+    "w02:plate_flat": {
+     "nominal": 0,
+     "median": 0,
+     "low": 0,
+     "high": 5.186453071217849,
+     "cleanShare": 0,
+     "nominalSpecks": 0,
+     "nominalClean": false
+    }
+   },
+   "literature": {
+    "protease": 0.02,
+    "crockery": 3.4448529411764706,
+    "cutlery": 4.605187908496732,
+    "glass": 2.837847222222222,
+    "all": 4.039333767361111,
+    "milkGlasses": 1.6736111111111112,
+    "teaItems": 1.1,
+    "clamped": false
+   }
+  }
+ ]
+}

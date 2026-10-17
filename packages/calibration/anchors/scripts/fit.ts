@@ -59,6 +59,7 @@ import {
   mechanismOverrides,
   OWNER_CALIBRATED,
   ownerCalibratedOverrides,
+  ownerRecordsOf,
   X_PROTEASE_SEARCH_MAX,
 } from '../src/anchored.ts';
 import { eggYolkRates, ikwResidues, type EggYolkResult } from '../src/bench.ts';
@@ -114,10 +115,7 @@ console.log(`water side: ${water.simVersion}, sources ${water.sourceHash} (${wat
  * given here (`--set key=value`, with where it comes from in `--from`).
  */
 const carried: Record<string, ParamValue> = { ...ownerCalibratedOverrides() };
-const carriedFrom: string[] =
-  OWNER_CALIBRATED.length > 0
-    ? [`owner-wash-01-egg-yolk-eco50: ${OWNER_CALIBRATED.map((o) => o.key).join(', ')}`]
-    : [];
+const carriedFrom: string[] = ownerRecordsOf(OWNER_CALIBRATED);
 args.forEach((arg, i) => {
   const value = args[i + 1];
   if (value === undefined) return;
@@ -427,7 +425,7 @@ const set = createWashParams(anchoredOverrides, {
   origin: 'calibration',
   note: `${Object.keys(carried).length > 0 ? "Anchoring to the published results of another machine with what the first washes on the owner's machine fixed held in place" : 'Provisional anchoring to the published results of another machine'} (round robin 2022/2023, Bosch SMV6ECX51E, eco programme, detergent D; docs/research/standards.md section 7.1), to be replaced by ${Object.keys(carried).length > 0 ? 'more' : ''} washes on the owner's machine. Made on the water side "${water.simVersion}", sources ${water.sourceHash}; valid for that water side only (anchors/scripts/check.ts). Reference detergent D at 20 g. soil.egg_yolk.rateRef (and soil.milk.rateRef with it) fitted to the six in-machine egg-yolk rates; the lags read off the same bench data; liq.xProtease fitted to the cutlery and glass class means and soil.bleachRate to the crockery class mean of the record, each through the calibration tool's likelihood of a group mean score. ${
     Object.keys(carried).length > 0
-      ? `Held at values a wash of the owner's machine fixed (${carriedFrom.join('; ')}): ${Object.entries(
+      ? `Held at values the owner's washes fixed (${carriedFrom.join('; ')}): ${Object.entries(
           carried,
         )
           .map(([key, value]) => `${key} = ${String(value)}`)

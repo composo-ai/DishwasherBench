@@ -2,7 +2,7 @@
 
 Level 'Baking day', loaded by the careful policy.
 
-**Tier.** This is a fast wash, a preview of the official one (coarser surfaces, fewer droplets). Measured on this programme with anchored-v7.owner-capsule (the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4), its verdict on a soiled item differs from the official wash in 11 of 100 cases: 0 in 100 for crockery, 23 in 100 for cutlery, 5 in 100 for glass, 0 in 100 for melamine. Scores are counted on the official wash.
+**Tier.** This is a fast wash, a preview of the official one (coarser surfaces, fewer droplets). Measured on this programme with anchored-v8.owner-capsule (the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4), its verdict on a soiled item differs from the official wash in 9 of 100 cases: 0 in 100 for crockery, 21 in 100 for cutlery, 0 in 100 for glass, 0 in 100 for melamine. Scores are counted on the official wash.
 
 Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 38 items (8 of the offer left on the counter by the loading physics), simulator spotless-sim 0.5.0 water-7, exposure on the gpu.
 
@@ -10,21 +10,21 @@ Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 38 
 
 | Quantity | Value |
 |---|---|
-| Time, scene | 2.2 s |
-| Time, hydraulics | 0.0 s |
-| Time, exposure | 45.7 s |
-| Time, soil | 0.2 s |
-| Time, replay | 2.7 s |
-| Time, result | 0.7 s |
-| Time, total | 51.6 s (0.9 min) |
-| Exposure sets | 4 computed, 0 from the cache |
+| Time, scene | 2.7 s |
+| Time, hydraulics | 0.1 s |
+| Time, exposure | 0.1 s |
+| Time, soil | 0.3 s |
+| Time, replay | 1.0 s |
+| Time, result | 0.3 s |
+| Time, total | 4.4 s (0.1 min) |
+| Exposure sets | 0 computed, 4 from the cache |
 | Scene | 155754 blocks, 373856 soil cells, 50127 deposits |
-| GPU memory | scene 130.1 MB, peak of all buffers 130.1 MB |
-| Process memory (RSS) | 1.06 GB |
+| GPU memory | scene 0.0 MB, peak of all buffers 0.0 MB |
+| Process memory (RSS) | 0.70 GB |
 | Mains water, energy | 9.5 L, 0.90 kWh |
 | Water held in vessels | 0 mL |
 | Detergent | 12.9 of 12.9 g dissolved (dispenser free) |
-| Soil | 9.97 g dry at the start, 0.04 g left (0 %) |
+| Soil | 9.97 g dry at the start, 0.09 g left (1 %) |
 | Items clean | 37 of 38 |
 
 ## Water balance per spray state (kg per revolution of the master arm)
@@ -46,15 +46,15 @@ Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 38 
 | cake_fork_04 | salad_fork_156 | lower | -12, -220, 80 | jam 0.00 of 45.92 | 0.00 | 0 of 684 | 5 | 0.0, 0.09 | yes |
 | cake_fork_05 | salad_fork_156 | lower | -43, -115, 79 | jam 0.00 of 42.52 | 0.00 | 0 of 686 | 5 | 0.0, 0.16 | yes |
 | cake_fork_06 | salad_fork_156 | lower | -6, -26, 80 | jam 0.00 of 45.92 | 0.00 | 0 of 688 | 5 | 0.0, 0.07 | yes |
-| cake_plate_01 | dessert_plate_porcelain_190 | lower | -170, 112, 163 | egg_yolk_dried 0.06 of 357.00; jam 0.00 of 192.94 | 0.06 | 3 of 6268 | 4 | 0.0, 1.10 | yes |
+| cake_plate_01 | dessert_plate_porcelain_190 | lower | -170, 112, 163 | egg_yolk_dried 0.01 of 357.00; jam 0.00 of 192.94 | 0.01 | 1 of 6268 | 4 | 0.0, 1.10 | yes |
 | cake_plate_02 | dessert_plate_porcelain_190 | lower | -145, -140, 156 | egg_yolk_dried 0.00 of 342.71; jam 0.00 of 201.36 | 0.00 | 0 of 6619 | 5 | 0.0, 1.02 | yes |
 | cake_plate_03 | dessert_plate_porcelain_190 | lower | -119, -140, 157 | egg_yolk_dried 0.00 of 333.54; jam 0.00 of 189.06 | 0.00 | 0 of 6267 | 5 | 0.0, 1.04 | yes |
 | cake_plate_04 | dessert_plate_porcelain_190 | lower | 221, 112, 158 | egg_yolk_dried 0.00 of 353.63; jam 0.00 of 191.66 | 0.00 | 0 of 6544 | 5 | 0.0, 1.15 | yes |
 | cake_plate_05 | dessert_plate_porcelain_190 | lower | 170, -140, 157 | egg_yolk_dried 0.00 of 341.07; jam 0.00 of 194.89 | 0.00 | 0 of 6519 | 5 | 0.0, 1.05 | yes |
-| cake_plate_06 | dessert_plate_porcelain_190 | lower | 145, -140, 156 | egg_yolk_dried 0.01 of 320.11; jam 0.00 of 209.86 | 0.01 | 0 of 6271 | 4 | 0.0, 1.23 | yes |
+| cake_plate_06 | dessert_plate_porcelain_190 | lower | 145, -140, 156 | egg_yolk_dried 0.00 of 320.11; jam 0.00 of 209.86 | 0.00 | 0 of 6271 | 5 | 0.0, 1.23 | yes |
 | curd_pot_01 | ramekin_porcelain_89 | upper | -74, -121, 504 | egg_yolk_dried 0.00 of 245.53 | 0.00 | 0 of 3331 | 5 | 0.0, 1.35 | yes |
-| curd_pot_02 | ramekin_porcelain_89 | upper | -204, -203, 473 | egg_yolk_dried 0.00 of 243.92 | 0.00 | 0 of 3332 | 4 | 0.0, 1.49 | yes |
-| custard_pan_01 | saucepan_clad_2qt | lower | -64, 138, 251 | egg_cooked 37.30 of 1961.10 | 37.30 | 2005 of 25238 | 0 | 0.0, 13.77 | no |
+| curd_pot_02 | ramekin_porcelain_89 | upper | -204, -203, 473 | egg_yolk_dried 0.00 of 243.92 | 0.00 | 0 of 3332 | 5 | 0.0, 1.49 | yes |
+| custard_pan_01 | saucepan_clad_2qt | lower | -64, 138, 251 | egg_cooked 90.19 of 1961.10 | 90.19 | 4394 of 25238 | 0 | 0.0, 13.77 | no |
 | dessert_spoon_01 | dessert_spoon_160 | lower | -25, -160, 79 | cream 0.00 of 18.37 | 0.00 | 0 of 898 | 5 | 0.0, 0.45 | yes |
 | dessert_spoon_02 | dessert_spoon_160 | lower | 51, -220, 80 | cream 0.00 of 17.18 | 0.00 | 0 of 896 | 5 | 0.0, 0.09 | yes |
 | dessert_spoon_03 | dessert_spoon_160 | lower | 52, -26, 81 | cream 0.00 of 16.54 | 0.00 | 0 of 897 | 5 | 0.0, 0.19 | yes |

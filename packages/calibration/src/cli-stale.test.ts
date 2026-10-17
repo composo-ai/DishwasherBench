@@ -34,13 +34,13 @@ describe('spotless-fit and a parameter set that another has replaced', () => {
       'predict',
       RECORD,
       '--params',
-      'anchors/anchored-v7.owner-capsule.json',
+      'anchors/anchored-v8.owner-capsule.json',
       '--set',
       'no.such.key=1',
     ]);
     expect(current.status).not.toBe(0);
     expect(current.err).not.toMatch(/is stale|STALE/);
-    expect(current.err).toMatch(/parameters: .*anchored-v7\.owner-capsule\.json/);
+    expect(current.err).toMatch(/parameters: .*anchored-v8\.owner-capsule\.json/);
     // Accepted knowingly, the stale set is read and marked.
     const accepted = fit([
       'predict',

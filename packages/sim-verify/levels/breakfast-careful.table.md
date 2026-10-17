@@ -2,7 +2,7 @@
 
 Level 'Breakfast, found at noon', loaded by the careful policy.
 
-**Tier.** This is a fast wash, a preview of the official one (coarser surfaces, fewer droplets). Measured on this programme with anchored-v7.owner-capsule (the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4), its verdict on a soiled item differs from the official wash in 11 of 100 cases: 0 in 100 for crockery, 23 in 100 for cutlery, 5 in 100 for glass, 0 in 100 for melamine. Scores are counted on the official wash.
+**Tier.** This is a fast wash, a preview of the official one (coarser surfaces, fewer droplets). Measured on this programme with anchored-v8.owner-capsule (the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4), its verdict on a soiled item differs from the official wash in 9 of 100 cases: 0 in 100 for crockery, 21 in 100 for cutlery, 0 in 100 for glass, 0 in 100 for melamine. Scores are counted on the official wash.
 
 Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 34 items (3 of the offer left on the counter by the loading physics), simulator spotless-sim 0.5.0 water-7, exposure on the gpu.
 
@@ -10,17 +10,17 @@ Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 34 
 
 | Quantity | Value |
 |---|---|
-| Time, scene | 1.9 s |
+| Time, scene | 2.4 s |
 | Time, hydraulics | 0.0 s |
-| Time, exposure | 41.8 s |
-| Time, soil | 0.1 s |
+| Time, exposure | 0.1 s |
+| Time, soil | 0.2 s |
 | Time, replay | 0.8 s |
-| Time, result | 0.1 s |
-| Time, total | 44.8 s (0.7 min) |
-| Exposure sets | 4 computed, 0 from the cache |
+| Time, result | 0.2 s |
+| Time, total | 3.8 s (0.1 min) |
+| Exposure sets | 0 computed, 4 from the cache |
 | Scene | 141918 blocks, 318512 soil cells, 43637 deposits |
-| GPU memory | scene 124.9 MB, peak of all buffers 129.7 MB |
-| Process memory (RSS) | 1.04 GB |
+| GPU memory | scene 0.0 MB, peak of all buffers 0.0 MB |
+| Process memory (RSS) | 0.70 GB |
 | Mains water, energy | 9.5 L, 0.90 kWh |
 | Water held in vessels | 0 mL |
 | Detergent | 12.9 of 12.9 g dissolved (dispenser free) |
@@ -42,11 +42,11 @@ Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 34 
 |---|---|---|---|---|---|---|---|---|---|
 | egg_plate_01 | dessert_plate_porcelain_190 | lower | -225, 112, 163 | egg_yolk_dried 0.00 of 447.09 | 0.00 | 0 of 5877 | 5 | 0.0, 1.02 | yes |
 | egg_plate_02 | dessert_plate_porcelain_190 | lower | -223, -141, 157 | egg_yolk_dried 0.00 of 449.60 | 0.00 | 0 of 5877 | 5 | 0.0, 1.04 | yes |
-| egg_plate_03 | dessert_plate_porcelain_190 | lower | -207, 112, 163 | egg_yolk_dried 0.01 of 449.74 | 0.01 | 1 of 5874 | 4 | 0.0, 1.03 | yes |
+| egg_plate_03 | dessert_plate_porcelain_190 | lower | -207, 112, 163 | egg_yolk_dried 0.00 of 449.74 | 0.00 | 0 of 5874 | 5 | 0.0, 1.03 | yes |
 | egg_plate_04 | dessert_plate_porcelain_190 | lower | -197, -140, 156 | egg_yolk_dried 0.00 of 455.57 | 0.00 | 0 of 5874 | 5 | 0.0, 1.19 | yes |
 | fork_01 | dinner_fork_185 | lower | -29, -161, 79 | egg_yolk_dried 0.00 of 66.02 | 0.00 | 0 of 913 | 5 | 0.0, 0.15 | yes |
 | fork_02 | dinner_fork_185 | lower | 53, -219, 80 | egg_yolk_dried 0.00 of 70.78 | 0.00 | 0 of 918 | 5 | 0.0, 0.09 | yes |
-| fork_03 | dinner_fork_185 | lower | 46, -63, 79 | egg_yolk_dried 0.04 of 72.25 | 0.04 | 3 of 917 | 4 | 0.0, 0.14 | yes |
+| fork_03 | dinner_fork_185 | lower | 46, -63, 79 | egg_yolk_dried 0.00 of 72.25 | 0.00 | 0 of 917 | 4 | 0.0, 0.14 | yes |
 | fork_04 | dinner_fork_185 | lower | -21, -102, 80 | egg_yolk_dried 0.00 of 69.34 | 0.00 | 0 of 917 | 5 | 0.0, 0.12 | yes |
 | juice_glass_01 | tumbler_250 | upper | -221, -13, 513 | tomato_sauce 0.00 of 244.72 | 0.00 | 0 of 5338 | 5 | 0.0, 1.05 | yes |
 | juice_glass_02 | tumbler_250 | upper | -215, -106, 517 | tomato_sauce 0.00 of 222.69 | 0.00 | 0 of 5336 | 5 | 0.0, 0.90 | yes |

@@ -1,0 +1,7 @@
+{
+ "axes": {
+  "soil.egg_yolk.bakeRate": [0.000075, 0.00003, 0.000055, 0.0001],
+  "liq.xProtease": [0.016, 0.02]
+ },
+ "first": { "soil.egg_yolk.bakeRate": 0.000075 }
+}

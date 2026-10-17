@@ -3,11 +3,11 @@
  "simVersion": "spotless-sim 0.5.0 water-7",
  "tier": "fast",
  "exposureSource": "03658efea6fc6c36791ade515888db1860eda2018a7f70301026f8d6334db49c",
- "sourceFingerprint": "c18bdfaa9c56809baa396a2f61f962308d09f761f0a4cec88b35e8d91ee46f56",
+ "sourceFingerprint": "bf06e0043dfb4f63a2af418c0b6a7e5204c0c26bcbb768c8166aac085f72cd32",
  "paramSets": [
-  "anchored-v7.owner-capsule"
+  "anchored-v8.owner-capsule"
  ],
- "paramSetsHash": "6232540bc607dbf7f3f72dd75bfe86272cc7fb0a174b3342aab47b8475492359",
+ "paramSetsHash": "eafecb7073e949fc19cd872f8222253f3e75d3029c57aa9875a6aaa3459d1a41",
  "detergent": {
   "name": "unnamed detergent",
   "dose_g": 12.9
@@ -31,14 +31,13 @@
     "programme": "eco_50"
    },
    "careless": {
-    "points": 114,
-    "pointsStrict": 114,
-    "pointsLenient": 114,
+    "points": 119,
+    "pointsStrict": 119,
+    "pointsLenient": 119,
     "offered": 272,
     "placed": 40,
     "items": 46,
     "dirty": [
-     "cake_plate_01",
      "cake_plate_05",
      "cake_plate_06",
      "curd_pot_01",

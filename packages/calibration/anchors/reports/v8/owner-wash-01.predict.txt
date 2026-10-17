@@ -1,0 +1,27 @@
+Command (packages/calibration): pnpm exec tsx scripts/spotless-fit.ts predict records/owner/owner-wash-01-egg-yolk-eco50.measured.json --params anchors/anchored-v8.owner-capsule.json --cache <scratch cache>
+Run 17 October 2026 on this branch (spotless-sim 0.5.0 water-7), exposure cached.
+
+observation              observed  predicted     sd  residual  log lik  residue mg      visible mm2   specks  score  clean
+-----------------------  --------  ---------  -----  --------  -------  --------------  ------------  ------  -----  -----
+plate_9121.visible_area       100        146    107     -0.43    -1.87  2.17 / 1540     116 / 21100      103      1  false
+plate_9121.clean            false       0.02   0.14     -0.14    -0.19  2.17 / 1540     116 / 21100      103      1  false
+plate_9121.specks               7        103   73.7     -1.31    -4.41  2.17 / 1540     116 / 21100      103      1  false
+plate_9122.visible_area        25       29.5   25.9     -0.17    -1.80  0.458 / 1560    21.9 / 21100      24      2  false
+plate_9122.clean            false       0.02   0.14     -0.14    -0.36  0.458 / 1560    21.9 / 21100      24      2  false
+plate_9122.specks               5       24.2   17.8     -1.08    -3.71  0.458 / 1560    21.9 / 21100      24      2  false
+plate_9123.visible_area         0      0.793   3.39     -0.23    -0.48  1.04e-5 / 1470  0 / 21100          0      5  true
+plate_9123.clean             true      0.974  0.159      0.16    -0.23  1.04e-5 / 1470  0 / 21100          0      5  true
+plate_9123.specks               0        0.2  0.469     -0.43    -0.51  1.04e-5 / 1470  0 / 21100          0      5  true
+plate_9124.visible_area         0       4.04   5.29     -0.76    -0.92  0.0761 / 1070   2.75 / 10200       3      4  true
+plate_9124.clean             true      0.725  0.447      0.62    -0.59  0.0761 / 1070   2.75 / 10200       3      4  true
+plate_9124.specks               0        3.2   2.88     -1.11    -1.03  0.0761 / 1070   2.75 / 10200       3      4  true
+reported and not fitted (their log likelihood is not in the sum): plate_9121.clean, plate_9121.specks, plate_9122.clean, plate_9122.specks, plate_9123.clean, plate_9123.specks, plate_9124.clean, plate_9124.specks
+
+9 input scenarios (sim.scenarios; the first is the record as written, shown above). Visible area mm2 / specks / clean per scenario; "log lik" above integrates them out:
+item        s0 (0.24)       s1 (0.20)       s2 (0.20)        s3 (0.12)       s4 (0.12)         s5 (0.05)        s6 (0.05)        s7 (0.01)    s8 (0.01)       median  range
+----------  --------------  --------------  ---------------  --------------  ----------------  ---------------  ---------------  -----------  --------------  ------  ---------
+plate_9121  116 / 103 / no  16.3 / 17 / no  579 / 389 / no   3.57 / 2 / yes  1920 / 1164 / no  0.365 / 1 / yes  4870 / 408 / no  0 / 0 / yes  9450 / 8 / no   116     0 .. 9450
+plate_9122  21.9 / 24 / no  2.86 / 4 / yes  150 / 123 / no   0 / 0 / yes     717 / 454 / no    0 / 0 / yes      2430 / 897 / no  0 / 0 / yes  5970 / 13 / no  21.9    0 .. 5970
+plate_9123  0 / 0 / yes     0 / 0 / yes     0.339 / 1 / yes  0 / 0 / yes     5.51 / 6 / no     0 / 0 / yes      64.5 / 67 / no   0 / 0 / yes  395 / 352 / no  0       0 .. 395
+plate_9124  2.75 / 3 / yes  0 / 0 / yes     25.4 / 30 / no   0 / 0 / yes     250 / 207 / no    0 / 0 / yes      1290 / 834 / no  0 / 0 / yes  3630 / 1 / no   2.75    0 .. 3630
+log likelihood -5.073 (weight 1)

@@ -56,7 +56,7 @@ is out of scope, where the wash falls short), then [validation/README.md](valida
 sections 5 and 9 (the failing phenomena, the known gaps) and [ROADMAP.md](ROADMAP.md). The physics as designed
 is [design/sim-core.md](design/sim-core.md), a record of before the build: where it and
 `scope.md` differ, `scope.md` wins. The parameter set the game washes with is described in
-[calibration/anchoring-v7.md](calibration/anchoring-v7.md). The loading phenomena are defined in
+[calibration/anchoring-v8.md](calibration/anchoring-v8.md). The loading phenomena are defined in
 [research/standards.md](research/standards.md) section 9. Before you change any source file of
 the simulation, read the fingerprint rule in [CONTRIBUTING.md](../CONTRIBUTING.md).
 
@@ -83,7 +83,7 @@ photograph and the owner's words with no prediction beforehand, is
 |---|---|---|
 | The machine | Bosch SMV4HAX40G, one privately owned machine | `packages/machine` |
 | The programme and detergent | Eco 50; one capsule of Finish Powerball Ultimate, 12.9 g | `packages/wash-runner/src/defaults.ts` |
-| The parameter set | `anchored-v7.owner-capsule` | `packages/calibration/anchors/`, named in `packages/wash-runner/src/defaults.ts` |
+| The parameter set | `anchored-v8.owner-capsule` | `packages/calibration/anchors/`, named in `packages/wash-runner/src/defaults.ts` |
 | The simulation | `spotless-sim 0.5.0 water-7` | `packages/sim-core/src/wash.ts` |
 | The harness | `spotless-bench/0.2.0`, prompt version 3, context policy `standard-2` | `packages/bench/src` |
 | The course | Seven levels | `packages/levels`, [benchmark/levels.md](benchmark/levels.md) |
@@ -114,14 +114,15 @@ photograph and the owner's words with no prediction beforehand, is
 | [protocol.md](calibration/protocol.md) | Current | Test washes that would calibrate the simulation, the measurements of the machine still open, and how to send a result in |
 | [wash-record.md](calibration/wash-record.md) | Current | The format of a wash record |
 | [fitting.md](calibration/fitting.md) | Current | The fitting tool: observation models, fitting, sensitivity, which wash to run next, the command line |
-| [anchoring-v7.md](calibration/anchoring-v7.md) | Record | The parameter set the game washes with, which is still the current one, and its tables. Written on 11 October 2026 |
+| [anchoring-v8.md](calibration/anchoring-v8.md) | Record | The parameter set the game washes with, which is the current one, fitted on both of the owner's test washes, and its tables. Written on 17 October 2026 |
+| [anchoring-v7.md](calibration/anchoring-v7.md) | Superseded by `anchoring-v8.md` as the description of the set | The set on the machine with its corrected upper basket, and its tables. Written on 11 October 2026 |
 | [soil-quantities.md](calibration/soil-quantities.md) | Current, generated | The soil side's data for each soil. Written by a script; do not edit by hand |
 | [owner-wash-01-egg-yolk.md](calibration/owner-wash-01-egg-yolk.md) | Record | The plan of the first test wash |
 | [owner-wash-01-prediction.md](calibration/owner-wash-01-prediction.md) | Record, frozen | What the simulation predicted, written before the result. Not to be edited. The proof of the order lies in the private development history, which is not published |
 | [owner-wash-01-result.md](calibration/owner-wash-01-result.md) | Record | The result against the prediction |
-| [owner-wash-01-calibration.md](calibration/owner-wash-01-calibration.md) | Superseded by `anchoring-v7.md` as the description of the set | The calibration on that wash. What it found about the wash stands |
-| [owner-wash-02-result.md](calibration/owner-wash-02-result.md) | Current | The second test wash (four stacked egg-yolk plates, 14 October 2026): what was run, what the owner found, and what the current set says for it, predicted after the result. Not yet fitted |
-| [anchoring.md](calibration/anchoring.md), [anchoring-v3.md](calibration/anchoring-v3.md), [anchoring-v4.md](calibration/anchoring-v4.md), [anchoring-v5.md](calibration/anchoring-v5.md) | Superseded by `anchoring-v7.md` | The earlier parameter sets, in order. `anchoring.md` is also where the method is described |
+| [owner-wash-01-calibration.md](calibration/owner-wash-01-calibration.md) | Superseded by `anchoring-v7.md` and `anchoring-v8.md` as the description of the set | The calibration on that wash. What it found about the wash stands |
+| [owner-wash-02-result.md](calibration/owner-wash-02-result.md) | Record | The second test wash (four stacked egg-yolk plates, 14 October 2026): what was run, what the owner found, and what `anchored-v7` said for it, predicted after the result. Fitted with wash 01 in `anchoring-v8.md` |
+| [anchoring.md](calibration/anchoring.md), [anchoring-v3.md](calibration/anchoring-v3.md), [anchoring-v4.md](calibration/anchoring-v4.md), [anchoring-v5.md](calibration/anchoring-v5.md) | Superseded by `anchoring-v8.md` | The earlier parameter sets, in order. `anchoring.md` is also where the method is described |
 
 In the calibration notes, paths written as `anchors/...`, `scripts/...`, `src/...` and
 `records/...` are relative to `packages/calibration`.
@@ -171,9 +172,9 @@ revised when the code changes.
 Documents cite stored reports that live beside the code that wrote them:
 
 - `packages/calibration/anchors/reports/`: fits, tables and checks of each parameter set. Those
-  of `v7` are current; the others belong to superseded sets.
+  of `v8` (and `owner-wash-02/`, the fit on both washes) are current; the others belong to superseded sets.
 - `packages/sim-verify/phenomena/reports/`: the phenomena suite on each parameter set.
-  `phenomena-fast-anchored-v7.owner-capsule.md` is the current one.
+  `phenomena-fast-anchored-v8.owner-capsule.md` is the current one.
 - `packages/sim-verify/demos/` and `packages/sim-verify/levels/`: demonstration washes of the
   standard loads and the careful-against-careless contrast on the levels.
 - `packages/bench/reference/`: the stored tables of the reference players that the tests read.

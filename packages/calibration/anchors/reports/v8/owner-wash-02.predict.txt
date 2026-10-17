@@ -1,0 +1,18 @@
+Command (packages/calibration): pnpm exec tsx scripts/spotless-fit.ts predict records/owner/owner-wash-02-stacked-plates-eco50.measured.json --params anchors/anchored-v8.owner-capsule.json --cache <scratch cache>
+Run 17 October 2026 on this branch (spotless-sim 0.5.0 water-7), exposure cached.
+
+observation               observed  predicted     sd  residual  log lik  residue mg      visible mm2  specks  score  clean
+------------------------  --------  ---------  -----  --------  -------  --------------  -----------  ------  -----  -----
+plate_single.clean            true      0.974  0.159      0.16    -0.20  0 / 1260        0 / 21100         0      5  true
+plate_pair_covered.clean      true      0.974  0.159      0.16    -0.20  5.28e-8 / 1270  0 / 21100         0      5  true
+plate_pair_open.clean         true      0.974  0.159      0.16    -0.20  0 / 1240        0 / 21100         0      5  true
+plate_flat.score                 5       4.79  0.421      0.49    -0.41  0 / 1340        0 / 21100         0      5  false
+reported and not fitted (their log likelihood is not in the sum): plate_flat.score
+
+3 input scenarios (sim.scenarios; the first is the record as written, shown above). Visible area mm2 / specks / clean per scenario; "log lik" above integrates them out:
+item                s0 (0.67)    s1 (0.17)    s2 (0.17)       median  range
+------------------  -----------  -----------  --------------  ------  ---------
+plate_single        0 / 0 / yes  0 / 0 / yes  28.4 / 32 / no  0       0 .. 28.4
+plate_pair_covered  0 / 0 / yes  0 / 0 / yes  33.7 / 42 / no  0       0 .. 33.7
+plate_pair_open     0 / 0 / yes  0 / 0 / yes  12.6 / 19 / no  0       0 .. 12.6
+log likelihood -0.614 (weight 1)

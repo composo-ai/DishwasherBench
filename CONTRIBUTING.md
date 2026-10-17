@@ -62,7 +62,7 @@ until the parameter set has been checked against your change.**
 
 ### What it protects
 
-The game washes with a calibrated parameter set (`anchored-v7.owner-capsule`, in
+The game washes with a calibrated parameter set (`anchored-v8.owner-capsule`, in
 `packages/calibration/anchors/`). Its numbers were fitted against what the simulation's code
 computed on the day. If the code that decides where the water goes changes afterwards, those
 numbers may no longer mean what they meant, and a score would silently stop being comparable
@@ -126,8 +126,8 @@ cd packages/calibration && pnpm exec tsx anchors/scripts/revalidate.ts
 
 This washes one reference load again at the fast tier (about a minute) and compares the result
 with the one the set recorded, item by item, to a nanogram of residue. If it is the same, it
-re-stamps three files, `anchored-v7.json`, `anchored-v7.owner-capsule.json` and
-`anchored-v7.owner-capsule.stable.json`, with the fingerprints of the code on disk. Commit those
+re-stamps three files, `anchored-v8.json`, `anchored-v8.owner-capsule.json` and
+`anchored-v8.owner-capsule.stable.json`, with the fingerprints of the code on disk. Commit those
 three files with your change, and say in the pull request that you did. Then
 
 ```sh
@@ -143,8 +143,9 @@ it differs: your change alters the wash, and the next paragraph applies.
 **If your change alters what a wash computes** (a fix to the physics, a new mechanism, a
 corrected dimension of the machine), the parameter set has to be fitted again under a new name
 and the stored results made again. That is the work
-[docs/calibration/anchoring-v7.md](docs/calibration/anchoring-v7.md) records for the last such
-change, with its commands in section 12: the fit (`anchors/scripts/fit.ts`, then
+[docs/calibration/anchoring-v8.md](docs/calibration/anchoring-v8.md) records for the last such
+change, with its commands in section 12 (and [anchoring-v7.md](docs/calibration/anchoring-v7.md)
+for a change of the machine): the fit (`anchors/scripts/fit.ts`, then
 `make-owner-set.ts`), the old set marked as replaced (`supersede.ts`), the saved loads settled
 again if the machine changed, and the reference tables, the course table and the phenomena
 report washed again ([docs/benchmark/levels.md](docs/benchmark/levels.md) section 9 has those

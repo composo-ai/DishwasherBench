@@ -77,5 +77,10 @@
    "digest": "0019a42ff39b1b791fd701b03922c7c3290780d463d107bf7db99aeed52cd02e",
    "digestNote": "Digest recorded again on 2026-10-11 without a fit: since that day a wash lays what the water left standing in an item held onto the surface under it (residue left where dirty water stood), and the digest covers the residue of every item. In this reference wash four mugs hold 0.08 to 0.09 mL in a base recess and carry 0.017 to 0.020 mg of it, none of it visible; with that taken out again the digest is the one recorded at the fit (bf2fe323c9f02639a27b3fda5f84cb8cbc6ff6bd7eaef10b150e9049c1a09f78): every verdict, score, own residue and pooled volume is unchanged."
   }
+ },
+ "supersededBy": {
+  "set": "anchored-v8",
+  "why": "Fitted on the owner's wash 01 alone; with wash 02 the two washes ask for more cleaning of air-dried yolk with the owner's capsule and a larger cost of 2 h at 80 C for yolk than it gives (its small air-dried plate of wash 01 reads 13 mm2, not clean); fitted again on both washes as anchored-v8 (docs/calibration/anchoring-v8.md).",
+  "on": "2026-10-17"
  }
 }

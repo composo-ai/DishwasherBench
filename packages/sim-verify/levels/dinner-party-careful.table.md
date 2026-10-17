@@ -2,7 +2,7 @@
 
 Level 'Dinner party', loaded by the careful policy.
 
-**Tier.** This is a fast wash, a preview of the official one (coarser surfaces, fewer droplets). Measured on this programme with anchored-v7.owner-capsule (the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4), its verdict on a soiled item differs from the official wash in 11 of 100 cases: 0 in 100 for crockery, 23 in 100 for cutlery, 5 in 100 for glass, 0 in 100 for melamine. Scores are counted on the official wash.
+**Tier.** This is a fast wash, a preview of the official one (coarser surfaces, fewer droplets). Measured on this programme with anchored-v8.owner-capsule (the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4), its verdict on a soiled item differs from the official wash in 9 of 100 cases: 0 in 100 for crockery, 21 in 100 for cutlery, 0 in 100 for glass, 0 in 100 for melamine. Scores are counted on the official wash.
 
 Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 49 items (13 of the offer left on the counter by the loading physics), simulator spotless-sim 0.5.0 water-7, exposure on the gpu.
 
@@ -10,17 +10,17 @@ Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 49 
 
 | Quantity | Value |
 |---|---|
-| Time, scene | 2.7 s |
+| Time, scene | 2.9 s |
 | Time, hydraulics | 0.0 s |
-| Time, exposure | 44.5 s |
-| Time, soil | 0.3 s |
+| Time, exposure | 0.2 s |
+| Time, soil | 0.4 s |
 | Time, replay | 1.1 s |
-| Time, result | 0.2 s |
-| Time, total | 48.8 s (0.8 min) |
-| Exposure sets | 4 computed, 0 from the cache |
+| Time, result | 0.3 s |
+| Time, total | 4.9 s (0.1 min) |
+| Exposure sets | 0 computed, 4 from the cache |
 | Scene | 200497 blocks, 552828 soil cells, 78346 deposits |
-| GPU memory | scene 131.6 MB, peak of all buffers 132.5 MB |
-| Process memory (RSS) | 0.95 GB |
+| GPU memory | scene 0.0 MB, peak of all buffers 0.0 MB |
+| Process memory (RSS) | 0.61 GB |
 | Mains water, energy | 9.5 L, 0.90 kWh |
 | Water held in vessels | 0 mL |
 | Detergent | 12.9 of 12.9 g dissolved (dispenser free) |
@@ -42,7 +42,7 @@ Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 49 
 |---|---|---|---|---|---|---|---|---|---|
 | cheese_board_01 | chopping_board_pe_340 | lower | 209, -13, 198 | butter_margarine 0.00 of 141.22 | 0.00 | 0 of 16169 | 5 | 0.0, 4.23 | yes |
 | cheese_platter_01 | oval_platter_vitrelle_241 | lower | -185, 112, 171 | butter_margarine 0.00 of 53.03 | 0.00 | 0 of 6425 | 5 | 0.0, 1.00 | yes |
-| dessert_plate_01 | dessert_plate_porcelain_190 | lower | -170, 112, 163 | egg_yolk_dried 0.00 of 352.40 | 0.00 | 0 of 4408 | 4 | 0.0, 1.00 | yes |
+| dessert_plate_01 | dessert_plate_porcelain_190 | lower | -170, 112, 163 | egg_yolk_dried 0.00 of 352.40 | 0.00 | 0 of 4408 | 5 | 0.0, 1.00 | yes |
 | dessert_plate_02 | dessert_plate_porcelain_190 | lower | -119, -140, 157 | egg_yolk_dried 0.00 of 342.46 | 0.00 | 0 of 4406 | 5 | 0.0, 1.21 | yes |
 | dessert_plate_04 | dessert_plate_porcelain_190 | lower | -61, 112, 163 | egg_yolk_dried 0.00 of 304.45 | 0.00 | 0 of 4407 | 5 | 0.0, 1.00 | yes |
 | dessert_plate_05 | dessert_plate_porcelain_190 | lower | -43, 112, 163 | egg_yolk_dried 0.00 of 359.77 | 0.00 | 0 of 4407 | 5 | 0.0, 1.02 | yes |
@@ -54,7 +54,7 @@ Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 49 
 | dessert_spoon_05 | dessert_spoon_160 | lower | -51, -223, 79 | cream 0.00 of 16.29 | 0.00 | 0 of 896 | 5 | 0.0, 0.26 | yes |
 | dessert_spoon_06 | dessert_spoon_160 | lower | -41, -71, 79 | cream 0.00 of 17.33 | 0.00 | 0 of 897 | 5 | 0.0, 0.15 | yes |
 | dinner_plate_01 | dinner_plate_porcelain_270 | lower | -174, -121, 213 | gravy 0.00 of 307.67; minced_meat 0.00 of 147.12 | 0.00 | 0 of 20295 | 5 | 0.0, 2.01 | yes |
-| dinner_plate_02 | dinner_plate_porcelain_270 | lower | -150, -121, 212 | gravy 0.00 of 260.15; minced_meat 0.00 of 161.42 | 0.00 | 0 of 20304 | 5 | 0.0, 2.01 | yes |
+| dinner_plate_02 | dinner_plate_porcelain_270 | lower | -150, -121, 212 | gravy 0.00 of 260.15; minced_meat 0.01 of 161.42 | 0.01 | 1 of 20304 | 4 | 0.0, 2.01 | yes |
 | dinner_plate_03 | dinner_plate_porcelain_270 | lower | 175, -121, 213 | gravy 0.00 of 262.07; minced_meat 0.00 of 152.60 | 0.00 | 0 of 20026 | 5 | 0.0, 1.99 | yes |
 | dinner_plate_04 | dinner_plate_porcelain_270 | lower | 150, -121, 212 | gravy 0.00 of 267.23; minced_meat 0.00 of 145.20 | 0.00 | 0 of 19930 | 5 | 0.0, 2.18 | yes |
 | fork_01 | dinner_fork_185 | lower | -13, -159, 80 | gravy 0.16 of 13.27 | 0.16 | 33 of 921 | 2 | 0.0, 0.27 | no |

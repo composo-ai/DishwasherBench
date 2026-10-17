@@ -8,11 +8,12 @@ and which design decisions were taken how and which are still open. The design b
 Everything below was run on the reference machine, a MacBook Pro (Apple M3 Pro, 18 GB), between
 10 and 12 October 2026.
 
-**The game washes with `anchored-v7.owner-capsule` on `spotless-sim 0.5.0 water-7`** (since
-17:36 on 11 October): the machine with its upper basket corrected from the owner's floor-level
-photograph, and the reference loads settled again on it (`docs/calibration/anchoring-v7.md`).
-The scores of section 9 are of that set at the official tier. Older sets (`anchored-v4` to
-`-v6`) are superseded: their files say so, and a wash refuses them unless stale sets are
+**The game washes with `anchored-v8.owner-capsule` on `spotless-sim 0.5.0 water-7`** (since
+17 October): the set fitted on both of the owner's test washes
+(`docs/calibration/anchoring-v8.md`), on the machine with its upper basket corrected from the
+owner's floor-level photograph and the reference loads settled on it (`anchoring-v7.md`). The
+reference scores of section 9 are of that set at the official tier. Older sets (`anchored-v4`
+to `-v7`) are superseded: their files say so, and a wash refuses them unless stale sets are
 accepted knowingly, in which case the report marks the set stale. What a score can be trusted
 for is in `docs/validation/README.md` section 8; read it before reading a table.
 
@@ -871,15 +872,18 @@ and nothing here ranks the two models. Records, transcripts, pictures and the fu
 in `docs/benchmark/first-runs/course/`.
 
 Points, with the share of the level's points. The reference columns are the stored table of the
-saved reference loads on the code as it is (`docs/benchmark/course-table.md`); the models'
-episodes were washed a few hours earlier and washed again on the code as it is, with the same
-points and every verdict the same.
+saved reference loads on the code and the set as they are (`docs/benchmark/course-table.md`).
+The models' episodes were washed on 11 October with `anchored-v7`; washed again from their own
+loads on `anchored-v8` (17 October), the five that still verify give the same points and every
+verdict the same. The record of `gpt-6-astra` on breakfast no longer passes the load check of
+its replay, on the code before that set too
+([issue 67](https://github.com/composo-ai/DishwasherBench/issues/67)); its 175 is as recorded.
 
 | # | Level | Difficulty | Points | Empty | Random | Careless | Careful | `gpt-6.1-sol` | `gpt-6-astra` |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | tutorial (12 pieces) | 2.3 | 64 | 0 | 20 (31.3 %) | 58 (90.6 %) | 64 (100 %) | 64 (100 %) | not run |
+| 1 | tutorial (12 pieces) | 2.3 | 64 | 0 | 40 (62.5 %) | 58 (90.6 %) | 64 (100 %) | 64 (100 %) | not run |
 | 4 | breakfast (37) | 6.3 | 220 | 0 | 36 (16.4 %) | 112 (50.9 %) | 174 (79.1 %) | 190 (86.4 %); a second episode 188 (85.5 %) | 175 (79.5 %) |
-| 7 | dinner-party (62) | 7.2 | 367 | 0 | 88 (24.0 %) | 100 (27.2 %) | 250 (68.1 %) | 260 (70.8 %) | 274 (74.7 %) |
+| 7 | dinner-party (62) | 7.2 | 367 | 0 | 85 (23.2 %) | 100 (27.2 %) | 250 (68.1 %) | 260 (70.8 %) | 274 (74.7 %) |
 
 Every model episode ended in a wash the model started and was verified three ways: the log
 replayed, the load checked against it, and the load washed a second time with the same verdicts
