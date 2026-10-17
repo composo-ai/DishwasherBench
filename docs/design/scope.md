@@ -117,7 +117,7 @@ Every step of the build order exists and runs end to end.
   chemistry; the wash-record format; the fitting tool with sensitivity and experiment ranking.
   A parameter set records the state of the water side and of the machine data it was made for;
   the default wash refuses to run on a stale one, and a superseded set says in its own file
-  what replaced it. The one current set is `anchored-v7.owner-capsule`.
+  what replaced it. The one current set is `anchored-v8.owner-capsule`.
 - The game platform alongside: session, a course of seven levels in order of difficulty,
   server, page, agent interface, benchmark harness, scripted reference players. Two models
   have played three levels of the course at the official tier (six episodes).
@@ -146,6 +146,13 @@ Every step of the build order exists and runs end to end.
   corrected machine (`anchored-v7`: one value moved, the bleach rate, 0.001 to 0.0009). Two
   heights are still inferred and have not been measured by tape (a lowered cup shelf; the hub of
   the upper arm): `docs/calibration/protocol.md`, "Measurements of the machine still open".
+- **Both test washes fitted together** on 17 October (`docs/calibration/anchoring-v8.md`):
+  every air-dried plate of the two washes came out clean, the oven-dried ones did not, and the
+  set now gives every one of those verdicts. Two values moved: the protease level of the
+  owner's capsule (0.03 to 0.05) and how fast the protein class of soils sets when heated
+  (the egg-yolk class's bake rate, 3e-5 to 7.5e-5), with one change of code for the second
+  (a class may have a bake rate of its own). The small air-dried plate of wash 01 stays at the
+  edge of clean: under other random layouts of its yolk it comes out clean in half of them.
 - **A closure for faces lying within a millimetre or two of another body** (dependency 5,
   "contacts and nesting", below the size of a block) was built and reviewed twice on 11 October
   and is **not merged** (it is not in this repository). Switched on it breaks the cutlery control
@@ -168,7 +175,8 @@ reviews on the evening of 11 October washed loads built to test that, and found:
   cutlery into one cell and stalling an arm cost little or nothing. Whether the real machine
   is as forgiving on Eco 50 has one reading: in the owner's second test wash two air-dried yolk plates in one slot, one a slot behind them and
   one lying flat came out with no egg seen, the flat one after a light rinse
-  (`docs/calibration/owner-wash-02-result.md`; one wash, judged by eye, not yet fitted). The
+  (`docs/calibration/owner-wash-02-result.md`; one wash, judged by eye; fitted with the
+  first in `docs/calibration/anchoring-v8.md`). The
   loading advice and the effect sizes of the phenomena checklist that say otherwise are
   estimates (`docs/research/standards.md` section 0.2). The owner's first wash showed an
   oven-dried plate turned to the wall keeping more egg than its partner (about 100 mm² against

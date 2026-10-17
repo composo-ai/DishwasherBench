@@ -30,7 +30,9 @@
  *                    times that flux, is the share of the lag it need not pay:
  *                    hyd(0) = 1.5 w(t) / w(0)
  *   bake index       B = 1 - exp(-sum k_B(T_i) t_i),  k_B(T) = k_B,ref exp[-(E_B / R)(1/T - 1/T_ref)],
- *                    over the time at room temperature and the heat step of the heat history
+ *                    over the time at room temperature and the heat step of the heat history;
+ *                    k_B,ref of the soil's class (`soil.<class>.bakeRate`, which a set may give
+ *                    a class of its own; else `soil.bakeRate`)
  *
  * **One step** ({@link WashSoil.step}), per deposit, with the class rates of its liquor
  * (`kinetics.ts`), its wet share f_w, the supply factor s of the liquor on it, the film shear
@@ -244,10 +246,15 @@ function smoothField(
 
 /**
  * The bake index of a soil record: B = 1 - exp(-sum k_B(T_i) t_i) over its time at room
- * temperature and the heat step of its heat history (soils 7.4, 8.3).
+ * temperature and the heat step of its heat history (soils 7.4, 8.3). With `soilClass`, k_B is
+ * that class's (`soil.<class>.bakeRate`, the global value unless a set gives the class its own);
+ * without it, the global `soil.bakeRate`.
  */
-export function bakeIndex(params: ParamSet, record: ItemSoilRecord): number {
-  const rate = params.get('soil.bakeRate');
+export function bakeIndex(params: ParamSet, record: ItemSoilRecord, soilClass?: string): number {
+  const rate =
+    soilClass === undefined
+      ? params.get('soil.bakeRate')
+      : params.soilClass(soilClass, 'bakeRate');
   const ea = params.get('soil.bakeEa');
   const r = params.get('soil.gasConstant');
   const ref = params.get('soil.bakeRefTemperature');
@@ -473,7 +480,7 @@ export function initSoil(
         recordIndex,
         soilType: record.type,
         classCode,
-        bake: bakeIndex(params, record),
+        bake: bakeIndex(params, record, classes[classCode]),
         firstDeposit,
         depositCount: chosen.length,
         dryMass,

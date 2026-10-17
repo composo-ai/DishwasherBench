@@ -467,6 +467,29 @@ describe('initial state', () => {
     expect(histories[3]).toBeGreaterThan(0.7);
   });
 
+  it('takes the bake rate of the soil class where a set gives the class its own', () => {
+    const warm = record('x', { age_h: 0, heat_history: 'warm' });
+    // Without one of its own every class reads the global rate.
+    expect(bakeIndex(defaults, warm, 'egg_yolk')).toBe(bakeIndex(defaults, warm));
+    const setting = createParamSet(registry, { ...PLAIN, 'soil.egg_yolk.bakeRate': 7.5e-5 });
+    // 2 h at 80 C at the reference temperature: B = 1 - exp(-k t).
+    expect(bakeIndex(setting, warm, 'egg_yolk')).toBeCloseTo(1 - Math.exp(-7.5e-5 * 7200), 6);
+    expect(bakeIndex(setting, warm, 'starch')).toBe(bakeIndex(defaults, warm, 'starch'));
+    // The soil state carries the class's bake index.
+    const lookup = (type: string): { modelClass: SoilModelClass; solidsFraction: number } => ({
+      modelClass: type === 'egg' ? 'egg_yolk' : 'starch',
+      solidsFraction: 0.5,
+    });
+    const state = initSoil(
+      scene,
+      [{ itemId: 'tile', soils: [record('egg', { heat_history: 'warm', age_h: 0 })] }],
+      lookup,
+      setting,
+      9,
+    );
+    expect(state.records[0]?.bake).toBeCloseTo(1 - Math.exp(-7.5e-5 * 7200), 6);
+  });
+
   it('reports a soil on a region the item does not have', () => {
     const state = initSoil(
       scene,

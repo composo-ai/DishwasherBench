@@ -3,7 +3,7 @@
  * the anchoring (docs/calibration/owner-wash-01-calibration.md).
  *
  *   cd packages/calibration
- *   pnpm exec tsx anchors/scripts/fit-owner.ts [--record records/owner/<measured>.json]
+ *   pnpm exec tsx anchors/scripts/fit-owner.ts [--record records/owner/<measured>.json]...
  *        [--started-from anchored-v5] [--base anchors/<started from>.owner-capsule.json]
  *        [--fit prog.soakDuty,soil.bakeRate]
  *        [--surface a.jsonl,b.jsonl] [--grid "prog.soakDuty=0.6,0.7,...;soil.bakeRate=..."]
@@ -13,9 +13,10 @@
  * Two records of different kinds, each through the calibration tool's own likelihood and
  * weighted by what it states:
  *
- *  - the measured record of the owner's wash (weight 1): its fitted observations, the inputs
- *    that were not measured integrated out over its scenarios (`sim.scenarios`), replayed by
- *    the tool's evaluator on the capsule's composition (`--base`);
+ *  - the measured record of the owner's wash (weight 1; with `--record` repeated, every one of
+ *    the owner's measured washes, each with weight 1): its fitted observations, the inputs that
+ *    were not measured integrated out over its scenarios (`sim.scenarios`), replayed by the
+ *    tool's evaluator on the capsule's composition (`--base`);
  *  - the literature record (weight 0.25, its own): its three fitted class means as group mean
  *    scores. Its predictions are read from the table of `scripts/literature-surface.ts`
  *    (whole washes at the official tier, reference detergent D): a fitted key that is an axis
@@ -104,9 +105,15 @@ export const LABEL_DUTY: PriorOverride = { centre: 0.53, sd: 0.49 };
  */
 const STARTED_FROM = option('--started-from') ?? 'anchored-v5';
 
-const recordFile = fromOrigin(
-  option('--record') ?? 'records/owner/owner-wash-01-egg-yolk-eco50.measured.json',
-);
+// `--record` may be given more than once: every measured record is fitted with its own weight
+// (1 unless the record states another), beside the literature record (the eighth anchoring,
+// docs/calibration/anchoring-v8.md, fits both of the owner's washes so). One record, the
+// default, is the calibration on wash 01 as it was.
+const recordFiles = (
+  options('--record').length > 0
+    ? options('--record')
+    : ['records/owner/owner-wash-01-egg-yolk-eco50.measured.json']
+).map(fromOrigin);
 const baseFile = fromOrigin(
   option('--base') ?? join(ANCHORS_DIR, `${STARTED_FROM}.owner-capsule.json`),
 );
@@ -117,7 +124,7 @@ const name = option('--name') ?? 'joint';
 const say = (message: string): void => console.error(message);
 
 // ---- the records
-const owner = readWashRecordFile(recordFile);
+const owners = recordFiles.map((file) => readWashRecordFile(file));
 const literatureFile = join(
   ANCHORS_DIR,
   'records',
@@ -126,7 +133,15 @@ const literatureFile = join(
 const literatureRecord = JSON.parse(readFileSync(literatureFile, 'utf8')) as LiteratureRecord;
 const literature = literatureAsGroupRecord(literatureRecord);
 const withLiterature = !flag('--no-literature');
-const records: WashRecord[] = withLiterature ? [owner, literature] : [owner];
+const records: WashRecord[] = withLiterature ? [...owners, literature] : [...owners];
+/**
+ * A plate's name in the tables: its item id, with the record's number when there are several,
+ * and the `-seed<n>` of a copy of a record laid out under another level seed (`sim.level_seed`).
+ */
+const plateName = (recordIndex: number, item: string): string =>
+  owners.length === 1
+    ? item
+    : `${(owners[recordIndex] as WashRecord).id.replace(/^owner-wash-(\d+)-.*?(-seed\d+)?$/, 'w$1$2')}:${item}`;
 
 // ---- the base: the capsule's set, with what is set on the command line
 let base: ParamSet = readFittedParams(baseFile).params;
@@ -232,11 +247,26 @@ interface PointSummary {
   readonly values: Record<string, number>;
   readonly logPosterior: number;
   readonly ownerLogLikelihood: number;
+  /** The weighted log likelihood of each measured record, by record id. */
+  readonly ownerByRecord: Record<string, number>;
   readonly literatureLogLikelihood: number;
   readonly logPrior: number;
+  /**
+   * Per plate: the visible area at the record as written (`nominal`, the first scenario), its
+   * median and range over the scenarios, the share of them by weight in which it reads clean,
+   * and at the record as written the specks and the inspector's verdict.
+   */
   readonly plates: Record<
     string,
-    { nominal: number; median: number; low: number; high: number; cleanShare: number }
+    {
+      nominal: number;
+      median: number;
+      low: number;
+      high: number;
+      cleanShare: number;
+      nominalSpecks: number;
+      nominalClean: boolean;
+    }
   >;
   readonly literature: null | {
     protease: number;
@@ -251,19 +281,23 @@ interface PointSummary {
 }
 const summarise = (value: ObjectiveValue): PointSummary => {
   const params = objective.paramsAt(value.z);
-  const first = value.records[0];
   const plates: PointSummary['plates'] = {};
-  if (first !== undefined) {
-    const prediction = first.prediction;
+  const ownerByRecord: Record<string, number> = {};
+  owners.forEach((record, r) => {
+    const part = value.records[r];
+    if (part === undefined) return;
+    ownerByRecord[record.id] = part.weight * part.logLikelihood;
+    const prediction = part.prediction;
     const seen = new Set<string>();
-    owner.observations.forEach((observation, i) => {
+    record.observations.forEach((observation, i) => {
       if (seen.has(observation.item)) return;
       seen.add(observation.item);
       const states = prediction.scenarios?.states.map((each) => each[i]) ?? [prediction.states[i]];
       const weights = prediction.scenarios?.weights ?? [1];
       const areas = states.map((s) => s?.softVisibleAreaMm2 ?? Number.NaN);
       const sorted = [...areas].sort((a, b) => a - b);
-      plates[observation.item] = {
+      const nominal = states[0] ?? prediction.states[i];
+      plates[plateName(r, observation.item)] = {
         nominal: areas[0] as number,
         median: sorted[Math.floor(sorted.length / 2)] as number,
         low: sorted[0] as number,
@@ -272,17 +306,21 @@ const summarise = (value: ObjectiveValue): PointSummary => {
           (sum, s, k) => sum + (s?.clean === true ? (weights[k] as number) : 0),
           0,
         ),
+        nominalSpecks: nominal?.specks ?? Number.NaN,
+        nominalClean: nominal?.clean === true,
       };
     });
-  }
+  });
   const lit = surface === undefined ? null : surface.at(surfaceValues(params));
+  const literaturePart = withLiterature ? value.records[owners.length] : undefined;
   return {
     z: [...value.z],
     values: Object.fromEntries(parameters.map((p, j) => [p.id, fromZ(p, value.z[j] as number)])),
     logPosterior: value.logPosterior,
-    ownerLogLikelihood: (first?.weight ?? 0) * (first?.logLikelihood ?? 0),
+    ownerLogLikelihood: Object.values(ownerByRecord).reduce((a, b) => a + b, 0),
+    ownerByRecord,
     literatureLogLikelihood:
-      value.records[1] === undefined ? 0 : value.records[1].weight * value.records[1].logLikelihood,
+      literaturePart === undefined ? 0 : literaturePart.weight * literaturePart.logLikelihood,
     logPrior: value.logPrior,
     plates,
     literature:
@@ -315,7 +353,9 @@ if (gridSpec !== undefined) {
 }
 const gridPoints: PointSummary[] = [];
 const lines: string[] = [];
-const plateIds = [...new Set(owner.observations.map((o) => o.item))];
+const plateIds = [
+  ...new Set(owners.flatMap((record, r) => record.observations.map((o) => plateName(r, o.item)))),
+];
 if (gridSpec !== undefined) {
   let points: number[][] = [[]];
   for (const parameter of parameters) {
@@ -329,7 +369,7 @@ if (gridSpec !== undefined) {
     const summary = summarise(value);
     gridPoints.push(summary);
     say(
-      `${parameters.map((p) => `${p.id}=${fmt(summary.values[p.id] as number, 4)}`).join(' ')}: log posterior ${summary.logPosterior.toFixed(3)} (owner ${summary.ownerLogLikelihood.toFixed(3)}, literature ${summary.literatureLogLikelihood.toFixed(3)}, prior ${summary.logPrior.toFixed(3)}) | ${plateIds.map((id) => `${id.replace('plate_', '')} ${fmt(summary.plates[id]?.median ?? Number.NaN, 3)}`).join(' ')} | ${((performance.now() - t0) / 1000).toFixed(0)} s`,
+      `${parameters.map((p) => `${p.id}=${fmt(summary.values[p.id] as number, 4)}`).join(' ')}: log posterior ${summary.logPosterior.toFixed(3)} (owner ${summary.ownerLogLikelihood.toFixed(3)}${owners.length > 1 ? ` = ${Object.values(summary.ownerByRecord).map((v) => v.toFixed(3)).join(' + ')}` : ''}, literature ${summary.literatureLogLikelihood.toFixed(3)}, prior ${summary.logPrior.toFixed(3)}) | ${plateIds.map((id) => `${id.replace('plate_', '')} ${fmt(summary.plates[id]?.median ?? Number.NaN, 3)}${owners.length > 1 ? ` [as written ${fmt(summary.plates[id]?.nominal ?? Number.NaN, 3)} mm2, ${summary.plates[id]?.nominalSpecks ?? '-'} specks, ${summary.plates[id]?.nominalClean === true ? 'clean' : 'NOT clean'}]` : ''}`).join(' ')} | ${((performance.now() - t0) / 1000).toFixed(0)} s`,
     );
   }
   const best = gridPoints.reduce((a, b) => (b.logPosterior > a.logPosterior ? b : a));
@@ -351,7 +391,7 @@ if (gridSpec !== undefined) {
           const plate = point.plates[id];
           return plate === undefined
             ? '-'
-            : `${fmt(plate.nominal, 3)}, ${fmt(plate.median, 3)} (${fmt(plate.low, 3)} to ${fmt(plate.high, 3)}), ${(100 * plate.cleanShare).toFixed(0)} %`;
+            : `${fmt(plate.nominal, 3)}, ${fmt(plate.median, 3)} (${fmt(plate.low, 3)} to ${fmt(plate.high, 3)}), ${(100 * plate.cleanShare).toFixed(0)} %${owners.length > 1 ? `; as written ${plate.nominalSpecks} specks, ${plate.nominalClean ? 'clean' : 'NOT clean'}` : ''}`;
         })
         .join(
           ' | ',
@@ -416,7 +456,7 @@ if (!flag('--no-fit')) {
     predictiveDraws: number('--draws') ?? 0,
     refineBackground: number('--refine') ?? 1,
     restarts: number('--restarts') ?? 1,
-    name: `owner-wash-01.${name}`,
+    name: owners.length === 1 ? `owner-wash-01.${name}` : `owner-washes.${name}`,
     createdAt: new Date().toISOString(),
     onProgress: (message) => say(`  ${message}`),
   });

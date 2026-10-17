@@ -2,7 +2,7 @@
 
 Level 'Everyday family load', loaded by the careless policy.
 
-**Tier.** This is a fast wash, a preview of the official one (coarser surfaces, fewer droplets). Measured on this programme with anchored-v7.owner-capsule (the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4), its verdict on a soiled item differs from the official wash in 11 of 100 cases: 0 in 100 for crockery, 23 in 100 for cutlery, 5 in 100 for glass, 0 in 100 for melamine. Scores are counted on the official wash.
+**Tier.** This is a fast wash, a preview of the official one (coarser surfaces, fewer droplets). Measured on this programme with anchored-v8.owner-capsule (the careful standard load, level seeds 1 and 2, simulation seeds 1 to 4), its verdict on a soiled item differs from the official wash in 9 of 100 cases: 0 in 100 for crockery, 21 in 100 for cutlery, 0 in 100 for glass, 0 in 100 for melamine. Scores are counted on the official wash.
 
 Machine bosch_smv4hax40g, programme eco_50 (295 min, 7752 ticks), tier fast, 39 items (6 of the offer left on the counter by the loading physics), simulator spotless-sim 0.5.0 water-7, exposure on the gpu.
 
@@ -12,17 +12,17 @@ Mistakes in this load: plate_facing_away x 1, spoons_nested x 1, cutlery_bunched
 
 | Quantity | Value |
 |---|---|
-| Time, scene | 2.2 s |
+| Time, scene | 2.6 s |
 | Time, hydraulics | 0.0 s |
-| Time, exposure | 44.7 s |
-| Time, soil | 0.2 s |
+| Time, exposure | 0.1 s |
+| Time, soil | 0.3 s |
 | Time, replay | 1.5 s |
-| Time, result | 0.2 s |
-| Time, total | 48.9 s (0.8 min) |
-| Exposure sets | 4 computed, 0 from the cache |
+| Time, result | 0.3 s |
+| Time, total | 4.8 s (0.1 min) |
+| Exposure sets | 0 computed, 4 from the cache |
 | Scene | 173243 blocks, 443812 soil cells, 67936 deposits |
-| GPU memory | scene 126.5 MB, peak of all buffers 129.7 MB |
-| Process memory (RSS) | 1.09 GB |
+| GPU memory | scene 0.0 MB, peak of all buffers 0.0 MB |
+| Process memory (RSS) | 0.73 GB |
 | Mains water, energy | 9.5 L, 0.90 kWh |
 | Water held in vessels | 888 mL |
 | Detergent | 12.9 of 12.9 g dissolved (dispenser free) |
@@ -58,7 +58,7 @@ Mistakes in this load: plate_facing_away x 1, spoons_nested x 1, cutlery_bunched
 | fork_03 | dinner_fork_185 | lower | 57, -122, 80 | spinach_particles 0.00 of 7.93 | 0.00 | 0 of 915 | 5 | 0.0, 0.10 | yes |
 | fork_04 | dinner_fork_185 | lower | -26, -211, 80 | spinach_particles 0.00 of 7.70 | 0.00 | 0 of 917 | 5 | 0.0, 0.15 | yes |
 | glass_01 | tumbler_250 | upper | 195, -96, 457 | avocado 30.91 of 195.83 | 32.73 | 2691 of 5337 | 0 | 28.4, 1.26 | no |
-| glass_02 | tumbler_250 | upper | 181, -160, 444 | avocado 187.97 of 198.77 | 415.71 | 23818 of 5336 | 0 | 312.4, 2.86 | no |
+| glass_02 | tumbler_250 | upper | 181, -160, 444 | avocado 187.97 of 198.77 | 415.76 | 23818 of 5336 | 0 | 312.4, 2.86 | no |
 | glass_03 | tumbler_250 | upper | 30, -119, 449 | avocado 218.15 of 218.15 | 241.29 | 17219 of 5336 | 0 | 302.3, 1.81 | no |
 | glass_04 | tumbler_250 | upper | 9, -28, 448 | avocado 198.93 of 204.41 | 214.53 | 13109 of 5336 | 0 | 244.1, 1.20 | no |
 | knife_01 | dinner_knife_210 | lower | -31, -161, 78 | butter_margarine 0.00 of 13.25 | 0.00 | 0 of 1562 | 5 | 0.0, 0.15 | yes |
@@ -74,10 +74,10 @@ Mistakes in this load: plate_facing_away x 1, spoons_nested x 1, cutlery_bunched
 | plate_03 | dinner_plate_vitrelle_260 | lower | -139, 112, 202 | tomato_sauce 0.00 of 713.45 | 0.00 | 0 of 15633 | 5 | 0.0, 1.60 | yes |
 | plate_04 | dinner_plate_vitrelle_260 | lower | -121, 112, 202 | tomato_sauce 0.00 of 729.83 | 0.00 | 0 of 15634 | 5 | 0.0, 1.63 | yes |
 | serving_bowl_01 | serving_bowl_vitrelle_216 | lower | 219, 111, 195 | vegetable_oil 0.00 of 339.09 | 0.00 | 0 of 21923 | 5 | 0.0, 1.99 | yes |
-| side_plate_01 | bread_plate_vitrelle_170 | lower | -223, 111, 151 | egg_yolk_dried 0.01 of 284.45 | 0.01 | 0 of 3883 | 4 | 0.0, 0.65 | yes |
-| side_plate_02 | bread_plate_vitrelle_170 | lower | -219, -141, 145 | egg_yolk_dried 0.14 of 315.68 | 0.14 | 4 of 3882 | 4 | 0.0, 0.60 | yes |
-| side_plate_03 | bread_plate_vitrelle_170 | lower | -95, 111, 151 | egg_yolk_dried 0.01 of 299.21 | 0.01 | 1 of 3885 | 4 | 0.0, 0.70 | yes |
-| side_plate_04 | bread_plate_vitrelle_170 | lower | -132, -139, 149 | egg_yolk_dried 0.16 of 311.60 | 0.16 | 12 of 3885 | 2 | 0.0, 0.93 | no |
+| side_plate_01 | bread_plate_vitrelle_170 | lower | -223, 111, 151 | egg_yolk_dried 0.00 of 284.45 | 0.00 | 0 of 3883 | 5 | 0.0, 0.65 | yes |
+| side_plate_02 | bread_plate_vitrelle_170 | lower | -219, -141, 145 | egg_yolk_dried 0.05 of 315.68 | 0.05 | 2 of 3882 | 4 | 0.0, 0.60 | yes |
+| side_plate_03 | bread_plate_vitrelle_170 | lower | -95, 111, 151 | egg_yolk_dried 0.00 of 299.21 | 0.00 | 0 of 3885 | 5 | 0.0, 0.70 | yes |
+| side_plate_04 | bread_plate_vitrelle_170 | lower | -132, -139, 149 | egg_yolk_dried 0.01 of 311.60 | 0.01 | 1 of 3885 | 3 | 0.0, 0.93 | no |
 | sippy_cup_01 | sippy_cup_240 | upper | -219, -198, 514 | avocado 0.00 of 230.21 | 0.00 | 0 of 5567 | 5 | 0.0, 1.58 | yes |
 | sippy_cup_02 | sippy_cup_240 | upper | 110, -56, 455 | avocado 13.41 of 231.05 | 13.44 | 323 of 5568 | 0 | 0.5, 3.25 | no |
 | spatula_01 | spatula_silicone_280 | upper | -42, -5, 607 | butter_margarine 0.00 of 69.28 | 0.00 | 0 of 7010 | 5 | 0.0, 0.20 | yes |

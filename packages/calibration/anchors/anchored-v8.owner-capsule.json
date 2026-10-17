@@ -1,0 +1,131 @@
+{
+ "format": "spotless.params",
+ "version": 1,
+ "provenance": {
+  "name": "anchored-v8.owner-capsule",
+  "origin": "calibration",
+  "note": "The anchored set anchored-v8 (docs/calibration/anchoring.md) with the owner's capsule laid over it: the composition of detergents/finish-powerball-ultimate.json (Finish Powerball Ultimate, desk research, nothing measured: docs/research/detergent-finish-ultimate.md) and the capsule's protease level (liq.xProtease = 0.05; fitted on the owner's washes (owner-wash-01-egg-yolk-eco50: liq.xProtease; owner-wash-02-stacked-plates-eco50: liq.xProtease), at the top of the range the detergent dossier gives). Wash with a dose of 12.9 g (dosing.detergentMass, a machine value). Calibrated on the owner's own machine (docs/calibration/owner-wash-01-calibration.md and docs/calibration/anchoring-v8.md; owner-wash-01-egg-yolk-eco50: prog.soakDuty, soil.egg_yolk.bakeRate; owner-wash-02-stacked-plates-eco50: soil.egg_yolk.bakeRate): prog.soakDuty = 0.8, soil.egg_yolk.bakeRate = 0.000075, held in the anchored set this layer is laid over. The protease is as stable as the registry says (liq.proteaseHalfLife 30 min at 60 C and pH 10.5, 1.7 times as long at the capsule's pH 10.1). No measurement of how long the capsule's protease lasts exists: this is the lower end of a bracket whose upper end is the set with the suffix \"stable\".",
+  "washRecords": [
+   "std-eu-13.round-robin-ta.detergent-d",
+   "owner-wash-01-egg-yolk-eco50",
+   "owner-wash-02-stacked-plates-eco50"
+  ],
+  "createdAt": "2026-10-16T23:54:36.203Z"
+ },
+ "overrides": {
+  "liq.amylaseKox": 0.00006,
+  "liq.amylaseKoxHP": 0.000002,
+  "liq.tabletTau": 300,
+  "liq.xAmylase": 0.012,
+  "liq.xCarbonate": 3.3,
+  "liq.xPeroxide": 0.955,
+  "liq.xProtease": 0.05,
+  "liq.xSilicate": 0,
+  "liq.xSurfactant": 0.1,
+  "liq.xTaed": 0.175,
+  "prog.soakDuty": 0.8,
+  "soil.amountCv": 0.05,
+  "soil.bleachRate": 0.0009,
+  "soil.egg_yolk.bakeRate": 0.000075,
+  "soil.egg_yolk.rateRef": 0.000034,
+  "soil.egg_yolk.tLag": 300,
+  "soil.milk.rateRef": 0.000034,
+  "soil.milk.tLag": 300,
+  "soil.subCellCv": 0.1
+ },
+ "definitions": {
+  "liq.amylaseKox": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "liq.amylaseKoxHP": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "liq.tabletTau": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "liq.xAmylase": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xCarbonate": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "liq.xPeroxide": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "liq.xProtease": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xSilicate": {
+   "kind": "scalar",
+   "unit": "eq/kg"
+  },
+  "liq.xSurfactant": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xTaed": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "prog.soakDuty": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.amountCv": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.bleachRate": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "soil.egg_yolk.bakeRate": {
+   "kind": "scalar",
+   "unit": "1/s"
+  },
+  "soil.egg_yolk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.egg_yolk.tLag": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "soil.milk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.milk.tLag": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "soil.subCellCv": {
+   "kind": "scalar",
+   "unit": "1"
+  }
+ },
+ "registryHash": "sha256:9d65ad28f694bbe3c9160a8d13c0ef82d9a23e9dd189c769ccb65cd81c0a18d7",
+ "hydroHash": "sha256:7c3bd46790e76f4c422bd688a3cb34e400390bb00705cbbf3ada21f9f3fe13cb",
+ "soilHash": "sha256:4efd74efe4a0c16ce49923e5d14f5aec205ab8befd6be3b25fba56fa65855539",
+ "anchoredOn": {
+  "simVersion": "spotless-sim 0.5.0 water-7",
+  "exposureSource": "03658efea6fc6c36791ade515888db1860eda2018a7f70301026f8d6334db49c",
+  "machineSource": "4279468abf2ffba74c3ebea95f788a79fc720a0bd90198245d1fd491400ea242",
+  "files": 136,
+  "reference": {
+   "load": "iec-13-careful",
+   "programme": "eco_50",
+   "tier": "fast",
+   "levelSeed": 1,
+   "simSeed": 1,
+   "digest": "118637812a255308c3456fe40d7d7b6e47d98f00cd6dc10ce6bde05032944548"
+  }
+ }
+}

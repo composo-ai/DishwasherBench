@@ -30,13 +30,13 @@ export const ANCHORS_DIR = join(dirname(fileURLToPath(import.meta.url)), '..');
 
 /**
  * Name of the current anchored set (`anchors/<name>.json`, with its layers
- * `<name>.owner-capsule.json` and `<name>.owner-capsule.stable.json`). The seventh anchoring:
- * the sixth fitted again on the corrected machine (the upper basket as the owner's floor-level
- * photograph shows it, merged on 11 October 2026) and on the standard loads as the loader
- * settles them on it (`anchors/loads`, regenerated the same day), with what the owner's first
- * test wash fixed held in place (`OWNER_CALIBRATED` of `anchored.ts`), on the water side
- * `spotless-sim 0.5.0 water-7`, where that duty of the soak of Eco 50 is the registered
- * default (docs/calibration/anchoring-v7.md).
+ * `<name>.owner-capsule.json` and `<name>.owner-capsule.stable.json`). The eighth anchoring:
+ * the seventh fitted again with both of the owner's test washes (wash 01, 10 October 2026, and
+ * wash 02, 14 October) held in place (`OWNER_CALIBRATED` of `anchored.ts`): the bake rate of the
+ * egg-yolk class beside the duty of the soak, and in the capsule's layer its protease level
+ * (`OWNER_CAPSULE`), on the water side `spotless-sim 0.5.0 water-7`
+ * (docs/calibration/anchoring-v8.md). The seventh was the sixth fitted again on the corrected
+ * machine (docs/calibration/anchoring-v7.md).
  *
  * Superseded sets stay beside it and are not to be washed with: each says so in its own file
  * (`supersededBy`, written by `scripts/supersede.ts`), which makes every wash refuse it
@@ -44,10 +44,12 @@ export const ANCHORS_DIR = join(dirname(fileURLToPath(import.meta.url)), '..');
  * SUPERSEDED_ANCHORED} lists them with the reason. Earlier sets are kept under
  * `anchors/reports/v1` to `v3`.
  */
-export const CURRENT_ANCHORED = 'anchored-v7';
+export const CURRENT_ANCHORED = 'anchored-v8';
 
 /** The anchored sets that `CURRENT_ANCHORED` replaced and that are kept, with why each was replaced. */
 export const SUPERSEDED_ANCHORED: Readonly<Record<string, string>> = {
+  'anchored-v7':
+    "fitted on the owner's wash 01 alone; with wash 02 the two washes ask for more cleaning of air-dried yolk with the owner's capsule and a larger cost of 2 h at 80 C for yolk than it gives (its small air-dried plate reads 13 mm2, not clean); fitted again on both washes as anchored-v8 (docs/calibration/anchoring-v8.md)",
   'anchored-v6':
     'fitted on the machine as it was drawn before the upper basket was corrected (11 October 2026) and on the standard loads settled on that basket; fitted again on the corrected machine as anchored-v7 (docs/calibration/anchoring-v7.md)',
   'anchored-v5':

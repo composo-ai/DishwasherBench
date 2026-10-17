@@ -16,8 +16,16 @@
   one a slot behind them and one lying flat, all with no egg seen afterwards (the flat one after
   a light rinse). Its record, its photograph and what the current set says for it, predicted
   after the result, are in
-  [docs/calibration/owner-wash-02-result.md](docs/calibration/owner-wash-02-result.md); fitting
-  it is [issue 65](https://github.com/composo-ai/DishwasherBench/issues/65).
+  [docs/calibration/owner-wash-02-result.md](docs/calibration/owner-wash-02-result.md).
+- The parameter set is `anchored-v8.owner-capsule`, fitted on both of the owner's test washes
+  ([issue 65](https://github.com/composo-ai/DishwasherBench/issues/65),
+  [docs/calibration/anchoring-v8.md](docs/calibration/anchoring-v8.md)). The protease level of the
+  capsule goes from 0.03 to 0.05 and the protein class of soils sets faster when heated
+  (`soil.egg_yolk.bakeRate` 7.5e-5 where the global 3e-5 applied); the reference detergent's
+  protease is refitted, 0.016 to 0.02. Every verdict of the two washes now comes out at the
+  amounts taken; the small air-dried plate of wash 01 is clean, on the edge. The bake index of a
+  soil is computed with its class's bake rate where a set gives one (`packages/sim-soil`); with
+  none given, every wash is as before. `anchored-v7` is superseded.
 
 ## 0.1.0 (12 October 2026): first public release
 

@@ -496,7 +496,7 @@ contributor (the issues that `docs/ROADMAP.md` lists under "Calibration data").
   glasses and soup mugs, for the cutlery or for two plates in a gap. They have to be made again
   with the places of this document (`packages/calibration/scripts/make-owner-candidates.ts`),
   and a prediction written for each wash from `spotless-fit predict <record> --params
-  packages/calibration/anchors/anchored-v7.owner-capsule.json`, in a file of its own that is not
+  packages/calibration/anchors/anchored-v8.owner-capsule.json`, in a file of its own that is not
   edited afterwards.
 - **The ranking** (`spotless-fit rank`, `docs/calibration/fitting.md` section 7) has not been
   run on the current set and the corrected basket.

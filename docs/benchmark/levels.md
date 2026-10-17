@@ -5,7 +5,9 @@ Written on 11 October 2026 and brought up to date on
 It follows the first play test of the page, after which the levels were put in order of
 difficulty, and after the
 wash simulation had been calibrated on the owner's test wash and made current on the corrected
-upper basket (`spotless-sim 0.5.0 water-7`, parameter set `anchored-v7.owner-capsule`). It
+upper basket (`spotless-sim 0.5.0 water-7`, parameter set `anchored-v7.owner-capsule`); the
+tables of section 7 were washed again on 17 October with the set fitted on both of the owner's
+test washes, `anchored-v8.owner-capsule`. It
 replaces an earlier note, which described twelve levels in no order of difficulty
 (six hand-written, six drawn by the generator) and is not in this repository.
 
@@ -221,32 +223,37 @@ and the course as a whole when the difficulty rises from each level to the next.
 
 ## 7. What the reference washes show
 
-Official tier, Eco 50, the default set (`anchored-v7.owner-capsule`), the saved reference loads
+Official tier, Eco 50, the default set (`anchored-v8.owner-capsule`), the saved reference loads
 as they are. The full tables are in `docs/benchmark/course-table.md`; the stored ones the tests
 read are `packages/bench/reference/reference-official.json` and `reference-fast.json`.
 
 | # | Level | Difficulty | Random | Careless | Careful | Careful less careless | Careful cleans of what it loads | Left on the counter | At the edge, most | Gates |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | tutorial | 2.3 | 20 (31.3 %) | 58 (90.6 %) | 64 (100.0 %) | 6 (9.4 %) | 64 of 64 points, 12 of 12 pieces | 0.0 % | 0 points | careful_over_careless |
+| 1 | tutorial | 2.3 | 40 (62.5 %) | 58 (90.6 %) | 64 (100.0 %) | 6 (9.4 %) | 64 of 64 points, 12 of 12 pieces | 0.0 % | 8 points (random) | edge, careful_over_careless |
 | 2 | lunch-for-four | 3.7 | 56 (24.1 %) | 134 (57.8 %) | 187 (80.6 %) | 53 (22.8 %) | 187 of 187 points, 36 of 36 pieces | 19.4 % | 10 points (random) | passes |
 | 3 | weeknight-dinner | 5.5 | 75 (27.9 %) | 117 (43.5 %) | 200 (74.3 %) | 83 (30.9 %) | 200 of 206 points, 38 of 40 pieces | 23.4 % | 0 points | passes |
 | 4 | breakfast | 6.3 | 36 (16.4 %) | 112 (50.9 %) | 174 (79.1 %) | 62 (28.2 %) | 174 of 174 points, 34 of 34 pieces | 20.9 % | 5 points (careless) | passes |
-| 5 | mixed-family | 6.9 | 60 (22.6 %) | 148 (55.6 %) | 218 (82.0 %) | 70 (26.3 %) | 218 of 221 points, 39 of 40 pieces | 16.9 % | 15 points (random) | passes |
-| 6 | baking-day | 7.1 | 59 (21.7 %) | 124 (45.6 %) | 191 (70.2 %) | 67 (24.6 %) | 191 of 203 points, 37 of 38 pieces | 25.4 % | 6 points (random) | passes |
-| 7 | dinner-party | 7.2 | 88 (24.0 %) | 100 (27.2 %) | 250 (68.1 %) | 150 (40.9 %) | 250 of 263 points, 46 of 49 pieces | 28.3 % | 4 points (random) | passes |
+| 5 | mixed-family | 6.9 | 71 (26.7 %) | 148 (55.6 %) | 218 (82.0 %) | 70 (26.3 %) | 218 of 221 points, 39 of 40 pieces | 16.9 % | 8 points (random) | passes |
+| 6 | baking-day | 7.1 | 64 (23.5 %) | 135 (49.6 %) | 191 (70.2 %) | 56 (20.6 %) | 191 of 203 points, 37 of 38 pieces | 25.4 % | 6 points (random) | passes |
+| 7 | dinner-party | 7.2 | 85 (23.2 %) | 100 (27.2 %) | 250 (68.1 %) | 150 (40.9 %) | 250 of 263 points, 46 of 49 pieces | 28.3 % | 4 points (random) | passes |
 
-These are the washes of the final code (source `f58d4ed8ab930946`). Against the table of the
-evening before, the careful scores did not move; the careless loads lost 5 or 6 points at the
-weeknight dinner, the breakfast and on baking day, and the random loads of levels 2 to 7 lost
-5 to 25 points, each for vessels left standing full that used to read clean.
+These are the washes on `anchored-v8` (17 October). Against the same loads on `anchored-v7`
+the careful scores did not move at either tier. The capsule's stronger protease cleans a little
+more of what the careless and random hands leave exposed: the baking day's careless load gains
+11 points (124 to 135: a turned cake plate and a cup on its side now come clean), and the random loads of the tutorial, the family load and baking day 20, 11 and 5 (the
+dinner party's loses 3). Before that, on 12 October, the washes of the final code (source
+`f58d4ed8ab930946`) had cost the careless loads 5 or 6 points and the random loads 5 to 25,
+each for vessels left standing full that used to read clean.
 
 What the table says, level by level:
 
-- **Six of the seven levels pass every gate.** Careful beats careless by 22.8 to 40.9 % of
-  the points on offer; a careful load cleans 94 to 100 % of the points it loads; no verdict of
+- **Six of the seven levels pass every gate.** Careful beats careless by 20.6 to 40.9 % of
+  the points on offer (baking day nearest its gate of 20 %); a careful load cleans 94 to 100 % of the points it loads; no verdict of
   a careful load sits at the edge of clean, and one of a careless load does (a mug at the
   breakfast with a few millilitres left in it, 5 points).
-- **The tutorial does not pass**: careful 64, careless 58 (9.4 %). Its three cups all lean on
+- **The tutorial does not pass**: careful 64, careless 58 (9.4 %). Since `anchored-v8` its
+  random load also has one verdict worth 8 points at the edge of clean (12.5 %, over the
+  edge gate's tenth). Its three cups all lean on
   the rest under the folded-down knife shelf, where the scripted careless hand cannot turn
   them (section 5), so its careless load has spoons in each other, forks together and a bowl
   face down flat, none of which costs anything, and loses only a mug that the last check takes
@@ -258,14 +265,15 @@ What the table says, level by level:
   the interface: an open question (`docs/benchmark/README.md` section 10), not taken here.
 - **What decides is the hollow pieces.** Cups, glasses, mugs and little pots mouth up or on
   their side cost the careless loads 56 points at the lunch, 60 at the weeknight dinner, 56
-  at the breakfast, 61 in the family load, 66 on baking day and 70 at the dinner party: 369 of
-  the 485 points between the careful and the careless loads of levels 2 to 7, about three
+  at the breakfast, 61 in the family load, 60 on baking day and 70 at the dinner party: 363 of
+  the 474 points between the careful and the careless loads of levels 2 to 7, about three
   quarters (the table "What decides" of `course-table.md`). The rest:
   a bowl or two the scripted hand took out for a nest that did not hold and could not put
   back (6, 14 and 7 points at the lunch, the weeknight dinner and in the family load, listed
   as `left_out`), a glass no mistake was made with (9, weeknight dinner), and the plates and
-  the cutlery. Of nine plates turned to the wall three lost their verdict, all three with
-  dried egg yolk (four such plates were turned). Spoons in each other and cutlery of a kind
+  the cutlery. Of nine plates turned to the wall two lost their verdict, both with dried egg
+  yolk (four such plates were turned; the third, on baking day, comes clean since
+  `anchored-v8`). Spoons in each other and cutlery of a kind
   together cost nothing where the cutlery carries yoghurt, cream, butter or leaf, 6 points at
   the breakfast, where it carries dried egg and a film of porridge, and 4 on baking day. No
   bowl lies in another and no two plates share a slot in any load (section 5).
@@ -278,9 +286,9 @@ What the table says, level by level:
   fell shut.
 - **Careless against random**: the careless load holds 1.36 to 1.63 times the points of the
   random load on levels 2 to 7 (1.12 times in the tutorial) and scores more than it on every
-  level: tutorial 58 against 20, lunch-for-four 134 against 56, weeknight-dinner 117 against 75,
-  breakfast 112 against 36, mixed-family 148 against 60, baking-day 124 against 59, dinner-party
-  100 against 88. (Fast tier on the random loads: the same verdict on 151 of 156 pieces.)
+  level: tutorial 58 against 40, lunch-for-four 134 against 56, weeknight-dinner 117 against 75,
+  breakfast 112 against 36, mixed-family 148 against 71, baking-day 135 against 64, dinner-party
+  100 against 85. (Fast tier on the random loads: the same verdict on 151 of 156 pieces.)
 - **The careful share does not fall along the course** (100, 81, 74, 79, 82, 70, 68 %): the
   difficulty of section 2 is a property of what is on the counter, and the scripted careful
   hand is not a player. What a level asks of a player (more pieces, more of them awkward,
@@ -295,29 +303,34 @@ What the table says, level by level:
 Robustness (`docs/benchmark/course-robustness.md`), levels 2, 4 and 7, the careful and the
 careless load:
 
-- **Both ends of the two least certain parameters, official tier** (soak duty 0.59 and 1,
-  where the set has 0.8; supply exchange 0.005 and 0.08, where it has 0.02; each a replay on
-  the exposure of the reference wash): the ranking of careful over careless holds in all
-  twelve cases, and the margin hardly moves: 53 to 53 points at the lunch, 58 to 62 at the
-  breakfast, 148 to 155 at the dinner party.
-- **The breakfast's own score is not robust, its margin is.** At a soak duty of 0.59 its
-  careful load falls from 174 to 115 points (12 verdicts: the egg plates, porridge bowls,
-  forks and spoons) and its careless load from 112 to 55; at a supply exchange of 0.08 to 144
-  and 84. At the low end of the soak the careful load cleans 66 % of what it loads, a hair
-  under the gate. A score on that level is good to about a third until the soak is measured
-  better. The lunch does not move by one verdict in any case, the dinner party by 1 to 8
-  (2 to 26 points).
+- **Both ends of the least certain parameters, official tier** (on `anchored-v8`: soak duty
+  0.59 and 1, where the set has 0.8; supply exchange 0.005 and 0.08, where it has 0.02; the
+  capsule's protease at 0.023, the lower end of the interval the owner's washes give, where the
+  set has 0.05; the protein class's bake rate at 1e-5 and 1e-4, where it has 7.5e-5; each a
+  replay on the exposure of the reference wash): the ranking of careful over careless holds in
+  all 21 cases. The margin: 53 to 53 points at the lunch, 53 to 62 at the breakfast, 96 to 153
+  at the dinner party.
+- **The scores of the breakfast and the dinner party are not robust, their margins are.** At
+  a soak duty of 0.59 the breakfast's careful load falls from 174 to 145 points (on
+  `anchored-v7` it fell to 115) and its careless load from 112 to 87; with the capsule's
+  protease at 0.023, to 151 and 91. The dinner party's careful load falls from 250 to 196 with
+  that protease (7 verdicts, 54 points) and to 219 at the low end of the soak; its careless
+  load holds, so its margin narrows to 96 (26 % of the level). The soak and the capsule's
+  protease are one combination for the owner's washes (`docs/calibration/anchoring-v8.md`
+  section 10). A score on those levels is good to about a quarter until the soak or the
+  capsule is measured.
+  The lunch does not move by one verdict in any case; the protein class's bake rate moves
+  one verdict at most.
 - **Three seeds of the wash, fast tier** (at the official tier the twelve extra cold washes
   were not run; a reviewer washed the breakfast's careful load at three seeds at the official
-  tier and no verdict moved): no verdict moves at the lunch, one at the
-  breakfast (2 points, careless load) and one at the dinner party (2 points, careful load).
-  The margins: 53 to 53, 58 to 60 and 149 to 151 points.
-- **No level's ranking of careful against careless flips** in any of the 12 parameter cases or
+  tier and no verdict moved): no verdict moves at the lunch or the breakfast and one at the
+  dinner party (2 points, careful load). The margins: 53 to 53, 58 to 58 and 149 to 151 points.
+- **No level's ranking of careful against careless flips** in any of the 21 parameter cases or
   the 6 seed cases, and none comes near it: none is dropped for that.
 
 The fast tier against the official one, the same loads: the same verdict on 486 of
 499 washed pieces of the careful and careless loads (97.4 %); the points of a load differ
-by at most 10 points (baking-day careless, 114 against 124), and by 16 on one random load. The
+by at most 16 points (baking-day careless, 119 against 135), and by 9 on two random loads. The
 fast tier's table is `packages/bench/reference/reference-fast.json`.
 
 ## 8. What this rests on, and what is not solved

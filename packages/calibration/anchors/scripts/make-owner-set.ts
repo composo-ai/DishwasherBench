@@ -8,8 +8,8 @@
  *
  * `<name>.owner-capsule.json` holds the overrides of the anchored set without the protease
  * level fitted for reference detergent D, the composition of the detergent file (desk research,
- * `docs/research/detergent-finish-ultimate.md`) and the protease level of a premium unit dose
- * (`OWNER_CAPSULE` of `src/anchored.ts`). Its protease is as stable as the registry says
+ * `docs/research/detergent-finish-ultimate.md`) and the capsule's protease level, fitted on the
+ * owner's washes (`OWNER_CAPSULE` of `src/anchored.ts`). Its protease is as stable as the registry says
  * (30 min at 60 C and pH 10.5, longer in the capsule's milder liquor).
  * `<name>.owner-capsule.stable.json` adds the upper end of the bracket for the half-life, an
  * ASSUMPTION (`OWNER_CAPSULE_STABLE`). The dose of the capsule (12.9 g) is a value of the
@@ -23,6 +23,7 @@ import { readParamSet } from '@spotless/sim-params';
 import {
   OWNER_CALIBRATED,
   OWNER_CAPSULE,
+  ownerRecordsOf,
   OWNER_CAPSULE_STABLE,
   OWNER_TABLET_DOSE,
 } from '../src/anchored.ts';
@@ -66,7 +67,13 @@ function write(suffix: string, overrides: Record<string, ParamValue>, note: stri
     name,
     origin: 'calibration',
     note,
-    washRecords: anchoredDocument.provenance.washRecords ?? [],
+    // The anchored set's records, and those the capsule's own values were fitted on.
+    washRecords: [
+      ...new Set([
+        ...(anchoredDocument.provenance.washRecords ?? []),
+        ...OWNER_CAPSULE.flatMap((o) => o.records ?? []),
+      ]),
+    ],
     createdAt: new Date().toISOString(),
   });
   const document = { ...set.toJSON(), anchoredOn: anchoredDocument.anchoredOn };
@@ -76,15 +83,19 @@ function write(suffix: string, overrides: Record<string, ParamValue>, note: stri
   console.log(`wrote ${name}.json (${Object.keys(overrides).length} overrides)`);
 }
 
-const basis = `The anchored set ${anchoredDocument.provenance.name} (docs/calibration/anchoring.md) with the owner's capsule laid over it: the composition of detergents/finish-powerball-ultimate.json (Finish Powerball Ultimate, desk research, nothing measured: docs/research/detergent-finish-ultimate.md) and the protease level of a premium unit dose (${OWNER_CAPSULE.map((o) => `${o.key} = ${String(o.value)}`).join(', ')}; estimated from the active protease of a premium unit dose in its maker's patents, not this product's). Wash with a dose of ${OWNER_TABLET_DOSE * 1000} g (dosing.detergentMass, a machine value).${
+const basis = `The anchored set ${anchoredDocument.provenance.name} (docs/calibration/anchoring.md) with the owner's capsule laid over it: the composition of detergents/finish-powerball-ultimate.json (Finish Powerball Ultimate, desk research, nothing measured: docs/research/detergent-finish-ultimate.md) and the capsule's protease level (${OWNER_CAPSULE.map((o) => `${o.key} = ${String(o.value)}`).join(', ')}; ${
+  OWNER_CAPSULE.some((o) => (o.records ?? []).length > 0)
+    ? `fitted on the owner's washes (${ownerRecordsOf(OWNER_CAPSULE).join('; ')}), at the top of the range the detergent dossier gives`
+    : "estimated from the active protease of a premium unit dose in its maker's patents, not this product's"
+}). Wash with a dose of ${OWNER_TABLET_DOSE * 1000} g (dosing.detergentMass, a machine value).${
   OWNER_CALIBRATED.length > 0
-    ? ` Calibrated on the owner's own machine (docs/calibration/owner-wash-01-calibration.md; wash record owner-wash-01-egg-yolk-eco50, one wash of four plates): ${OWNER_CALIBRATED.map((o) => `${o.key} = ${String(o.value)}`).join(', ')}, held in the anchored set this layer is laid over.`
+    ? ` Calibrated on the owner's own machine (docs/calibration/owner-wash-01-calibration.md and docs/calibration/anchoring-v8.md; ${ownerRecordsOf(OWNER_CALIBRATED).join('; ')}): ${OWNER_CALIBRATED.map((o) => `${o.key} = ${String(o.value)}`).join(', ')}, held in the anchored set this layer is laid over.`
     : ''
 }`;
 write(
   'owner-capsule',
   composition,
-  `${basis} The protease is as stable as the registry says (liq.proteaseHalfLife 30 min at 60 C and pH 10.5, 1.7 times as long at the capsule's pH 10.1). No measurement of the capsule's protease exists: this is the lower end of a bracket whose upper end is the set with the suffix "stable".`,
+  `${basis} The protease is as stable as the registry says (liq.proteaseHalfLife 30 min at 60 C and pH 10.5, 1.7 times as long at the capsule's pH 10.1). No measurement of how long the capsule's protease lasts exists: this is the lower end of a bracket whose upper end is the set with the suffix "stable".`,
 );
 write(
   'owner-capsule.stable',

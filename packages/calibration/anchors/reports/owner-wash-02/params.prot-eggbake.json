@@ -1,0 +1,117 @@
+{
+ "format": "spotless.params",
+ "version": 1,
+ "provenance": {
+  "name": "owner-washes.prot-eggbake",
+  "origin": "calibration",
+  "note": "spotless-fit: maximum a posteriori of liq.xProtease, soil.egg_yolk.bakeRate by Nelder-Mead with restarts; log posterior -6.468",
+  "washRecords": [
+   "owner-wash-01-egg-yolk-eco50",
+   "owner-wash-02-stacked-plates-eco50",
+   "std-eu-13.round-robin-ta.detergent-d"
+  ],
+  "createdAt": "2026-10-16T23:15:27.759Z"
+ },
+ "overrides": {
+  "liq.amylaseKox": 0.00006,
+  "liq.amylaseKoxHP": 0.000002,
+  "liq.tabletTau": 300,
+  "liq.xAmylase": 0.012,
+  "liq.xCarbonate": 3.3,
+  "liq.xPeroxide": 0.955,
+  "liq.xProtease": 0.05,
+  "liq.xSilicate": 0,
+  "liq.xSurfactant": 0.1,
+  "liq.xTaed": 0.175,
+  "prog.soakDuty": 0.8,
+  "soil.amountCv": 0.05,
+  "soil.bleachRate": 0.0009,
+  "soil.egg_yolk.bakeRate": 0.0000729383424527191,
+  "soil.egg_yolk.rateRef": 0.000034,
+  "soil.egg_yolk.tLag": 300,
+  "soil.milk.rateRef": 0.000034,
+  "soil.milk.tLag": 300,
+  "soil.subCellCv": 0.1
+ },
+ "definitions": {
+  "liq.amylaseKox": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "liq.amylaseKoxHP": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "liq.tabletTau": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "liq.xAmylase": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xCarbonate": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "liq.xPeroxide": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "liq.xProtease": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xSilicate": {
+   "kind": "scalar",
+   "unit": "eq/kg"
+  },
+  "liq.xSurfactant": {
+   "kind": "scalar",
+   "unit": "kg/kg"
+  },
+  "liq.xTaed": {
+   "kind": "scalar",
+   "unit": "mol/kg"
+  },
+  "prog.soakDuty": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.amountCv": {
+   "kind": "scalar",
+   "unit": "1"
+  },
+  "soil.bleachRate": {
+   "kind": "scalar",
+   "unit": "m3/(mol s)"
+  },
+  "soil.egg_yolk.bakeRate": {
+   "kind": "scalar",
+   "unit": "1/s"
+  },
+  "soil.egg_yolk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.egg_yolk.tLag": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "soil.milk.rateRef": {
+   "kind": "scalar",
+   "unit": "kg/(m2 s)"
+  },
+  "soil.milk.tLag": {
+   "kind": "scalar",
+   "unit": "s"
+  },
+  "soil.subCellCv": {
+   "kind": "scalar",
+   "unit": "1"
+  }
+ },
+ "registryHash": "sha256:9d65ad28f694bbe3c9160a8d13c0ef82d9a23e9dd189c769ccb65cd81c0a18d7",
+ "hydroHash": "sha256:7c3bd46790e76f4c422bd688a3cb34e400390bb00705cbbf3ada21f9f3fe13cb",
+ "soilHash": "sha256:39c2017d32f5ae53767104c4cc40991e3761c589cbf2b3a33f67c69ed0a27b5b"
+}

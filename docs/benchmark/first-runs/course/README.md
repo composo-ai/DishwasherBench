@@ -33,6 +33,18 @@ item at the end, so a glass or mug left standing full is not clean whatever it c
 - The list of tools has changed again since (`check_load` now reports which wall pushed a piece
   and over which side a piece leans out).
 
+**And the parameter set has changed once** (17 October, `anchored-v8.owner-capsule`, fitted on
+both of the owner's test washes: `docs/calibration/anchoring-v8.md`).
+
+- Washed again from their own loads on that set (`bench verify --rewash`), five of the six model
+  episodes give the same points (64, 190, 188, 260, 274) and every verdict the same. The record
+  of `gpt-6-astra` on breakfast no longer passes the load check of its replay, on the code
+  before the new set too, so it could not be washed again; nor could the three random reference
+  records ([issue 67](https://github.com/composo-ai/DishwasherBench/issues/67)).
+- On that set the saved reference loads score: tutorial 0 / 40 / 58 / 64 (random was 20),
+  breakfast 0 / 36 / 112 / 174 (unchanged), dinner-party 0 / 85 / 100 / 250 (random was 88).
+  The careful scores again did not move.
+
 ## 1. The table
 
 `results.md` and `results.json` are the harness's own table (`bench table`); `episodes.md`

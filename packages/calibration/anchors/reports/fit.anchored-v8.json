@@ -1,0 +1,1739 @@
+{
+ "name": "anchored-v8",
+ "water": {
+  "simVersion": "spotless-sim 0.5.0 water-7",
+  "exposureSource": "03658efea6fc6c36791ade515888db1860eda2018a7f70301026f8d6334db49c",
+  "sourceHash": "sha256:03658efea6fc6c36791ade515888db1860eda2018a7f70301026f8d6334db49c",
+  "files": 136,
+  "machineSource": "4279468abf2ffba74c3ebea95f788a79fc720a0bd90198245d1fd491400ea242"
+ },
+ "waterAfter": {
+  "simVersion": "spotless-sim 0.5.0 water-7",
+  "exposureSource": "03658efea6fc6c36791ade515888db1860eda2018a7f70301026f8d6334db49c",
+  "sourceHash": "sha256:03658efea6fc6c36791ade515888db1860eda2018a7f70301026f8d6334db49c",
+  "files": 136,
+  "machineSource": "4279468abf2ffba74c3ebea95f788a79fc720a0bd90198245d1fd491400ea242"
+ },
+ "levelSeeds": [
+  1,
+  2
+ ],
+ "simSeeds": [
+  1,
+  2
+ ],
+ "rateRef": 0.000034,
+ "bench": {
+  "atDefault": {
+   "miss": 7.528153362318288,
+   "cases": [
+    {
+     "temperature": 30,
+     "pH": 10.5,
+     "protease": 0.06,
+     "rate": 0.85,
+     "sd": 0.12,
+     "simulated": 0.7410289186535347,
+     "tolerance": 0.17,
+     "within": true,
+     "z": -1.2820127217231208
+    },
+    {
+     "temperature": 55,
+     "pH": 10.5,
+     "protease": 0.06,
+     "rate": 1.75,
+     "sd": 0.29,
+     "simulated": 1.5734403272755548,
+     "tolerance": 0.35000000000000003,
+     "within": true,
+     "z": -1.008912415568258
+    },
+    {
+     "temperature": 55,
+     "pH": 10.5,
+     "protease": 0.02,
+     "rate": 0.17,
+     "sd": 0.05,
+     "simulated": 0.1538260381335118,
+     "tolerance": 0.05,
+     "within": true,
+     "z": -0.646958474659528
+    },
+    {
+     "temperature": 55,
+     "pH": 10.5,
+     "protease": 0.1,
+     "rate": 2.59,
+     "sd": 0.22,
+     "simulated": 2.179361447095955,
+     "tolerance": 0.518,
+     "within": true,
+     "z": -1.5854770382395553
+    },
+    {
+     "temperature": 55,
+     "pH": 9.5,
+     "protease": 0.06,
+     "rate": 0.69,
+     "sd": 0.16,
+     "simulated": 0.6034001599010296,
+     "tolerance": 0.16,
+     "within": true,
+     "z": -1.0824980012371297
+    },
+    {
+     "temperature": 55,
+     "pH": 11.5,
+     "protease": 0.06,
+     "rate": 4.66,
+     "sd": 0.38,
+     "simulated": 4.253056884635826,
+     "tolerance": 0.932,
+     "within": true,
+     "z": -0.8732684879059534
+    }
+   ]
+  },
+  "atFit": {
+   "miss": 0.3623196589519076,
+   "cases": [
+    {
+     "temperature": 30,
+     "pH": 10.5,
+     "protease": 0.06,
+     "rate": 0.85,
+     "sd": 0.12,
+     "simulated": 0.8404244143292184,
+     "tolerance": 0.17,
+     "within": true,
+     "z": -0.1126539490680181
+    },
+    {
+     "temperature": 55,
+     "pH": 10.5,
+     "protease": 0.06,
+     "rate": 1.75,
+     "sd": 0.29,
+     "simulated": 1.7856345698852354,
+     "tolerance": 0.35000000000000003,
+     "within": true,
+     "z": 0.2036261136299165
+    },
+    {
+     "temperature": 55,
+     "pH": 10.5,
+     "protease": 0.02,
+     "rate": 0.17,
+     "sd": 0.05,
+     "simulated": 0.17434891576770947,
+     "tolerance": 0.05,
+     "within": true,
+     "z": 0.1739566307083784
+    },
+    {
+     "temperature": 55,
+     "pH": 10.5,
+     "protease": 0.1,
+     "rate": 2.59,
+     "sd": 0.22,
+     "simulated": 2.4709661477637237,
+     "tolerance": 0.518,
+     "within": true,
+     "z": -0.4595901630744253
+    },
+    {
+     "temperature": 55,
+     "pH": 9.5,
+     "protease": 0.06,
+     "rate": 0.69,
+     "sd": 0.16,
+     "simulated": 0.6833051469960052,
+     "tolerance": 0.16,
+     "within": true,
+     "z": -0.08368566254993437
+    },
+    {
+     "temperature": 55,
+     "pH": 11.5,
+     "protease": 0.06,
+     "rate": 4.66,
+     "sd": 0.38,
+     "simulated": 4.773839360305541,
+     "tolerance": 0.932,
+     "within": true,
+     "z": 0.24429047275867066
+    }
+   ]
+  }
+ },
+ "protease": {
+  "points": [
+   {
+    "value": 0.01,
+    "logLikelihood": -0.9653053801639148,
+    "logPrior": 0,
+    "objective": 0.9653053801639148,
+    "continuous": {
+     "crockery": 1.8640884628666945,
+     "cutlery": 3.9606217623786293,
+     "glass": 1.75,
+     "melamine": 4.589206924071842,
+     "all": 3.0877853837784803
+    },
+    "score": {
+     "crockery": 1.8308823529411764,
+     "cutlery": 3.9669117647058822,
+     "glass": 1.75,
+     "melamine": 4.583333333333334,
+     "all": 3.08203125
+    },
+    "milkGlasses": 0,
+    "teaItems": 0.175,
+    "crockeryWithoutTea": 2.8809523809523814,
+    "cleanShare": 0.6015625,
+    "soiledCleanShare": 0.48484848484848486,
+    "washes": 4,
+    "soils": {
+     "iec_egg_yolk": {
+      "mean": 0,
+      "ceiling": {
+       "crockery": 3.823529411764706,
+       "all": 4.1796875,
+       "cutlery": 4.044117647058823
+      }
+     },
+     "iec_margarine": {
+      "mean": 4.839285714285714,
+      "ceiling": {
+       "cutlery": 4.966911764705882,
+       "all": 4.982421875,
+       "crockery": 5
+      }
+     },
+     "iec_milk": {
+      "mean": 0,
+      "ceiling": {
+       "glass": 1.75,
+       "all": 4.4921875
+      }
+     },
+     "iec_minced_meat": {
+      "mean": 3.8333333333333335,
+      "ceiling": {
+       "crockery": 4.86764705882353,
+       "all": 4.9453125,
+       "melamine": 4.583333333333334
+      }
+     },
+     "iec_oat_flakes": {
+      "mean": 4.85,
+      "ceiling": {
+       "glass": 5,
+       "all": 4.9765625,
+       "crockery": 5,
+       "cutlery": 4.955882352941177
+      }
+     },
+     "iec_spinach": {
+      "mean": 5,
+      "ceiling": {
+       "glass": 5,
+       "all": 5,
+       "crockery": 5,
+       "melamine": 5
+      }
+     },
+     "iec_tea": {
+      "mean": 0.175,
+      "ceiling": {
+       "crockery": 3.139705882352941,
+       "all": 4.505859375
+      }
+     }
+    }
+   },
+   {
+    "value": 0.012,
+    "logLikelihood": -0.6917981833036004,
+    "logPrior": -0.0013932599390343242,
+    "objective": 0.6931914432426347,
+    "continuous": {
+     "crockery": 2.3588810253175625,
+     "cutlery": 4.017013211663691,
+     "glass": 1.926563589991933,
+     "melamine": 5,
+     "all": 3.2960166019825534
+    },
+    "score": {
+     "crockery": 2.3308823529411766,
+     "cutlery": 3.9908088235294117,
+     "glass": 1.9124999999999999,
+     "melamine": 5,
+     "all": 3.2724609375
+    },
+    "milkGlasses": 0.25,
+    "teaItems": 0.125,
+    "crockeryWithoutTea": 3.714285714285714,
+    "cleanShare": 0.62109375,
+    "soiledCleanShare": 0.5101010101010102,
+    "washes": 4,
+    "soils": {
+     "iec_egg_yolk": {
+      "mean": 0.725,
+      "ceiling": {
+       "crockery": 4.205882352941177,
+       "all": 4.2939453125,
+       "cutlery": 4.068014705882352
+      }
+     },
+     "iec_margarine": {
+      "mean": 4.839285714285714,
+      "ceiling": {
+       "cutlery": 4.966911764705882,
+       "all": 4.982421875,
+       "crockery": 5
+      }
+     },
+     "iec_milk": {
+      "mean": 0.25,
+      "ceiling": {
+       "glass": 1.9124999999999999,
+       "all": 4.517578125
+      }
+     },
+     "iec_minced_meat": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5,
+       "melamine": 5
+      }
+     },
+     "iec_oat_flakes": {
+      "mean": 4.85,
+      "ceiling": {
+       "glass": 5,
+       "all": 4.9765625,
+       "crockery": 5,
+       "cutlery": 4.955882352941177
+      }
+     },
+     "iec_spinach": {
+      "mean": 5,
+      "ceiling": {
+       "glass": 5,
+       "all": 5,
+       "crockery": 5,
+       "melamine": 5
+      }
+     },
+     "iec_tea": {
+      "mean": 0.125,
+      "ceiling": {
+       "crockery": 3.125,
+       "all": 4.501953125
+      }
+     }
+    }
+   },
+   {
+    "value": 0.013,
+    "logLikelihood": -0.44186994406299884,
+    "logPrior": -0.002885130563315524,
+    "objective": 0.44475507462631436,
+    "continuous": {
+     "crockery": 2.7201547884426276,
+     "cutlery": 4.11607572407069,
+     "glass": 2.21800903006522,
+     "melamine": 5,
+     "all": 3.490145255040318
+    },
+    "score": {
+     "crockery": 2.691176470588235,
+     "cutlery": 4.1182598039215685,
+     "glass": 2.2375,
+     "melamine": 5,
+     "all": 3.486653645833334
+    },
+    "milkGlasses": 0.75,
+    "teaItems": 0.1,
+    "crockeryWithoutTea": 4.309523809523809,
+    "cleanShare": 0.65234375,
+    "soiledCleanShare": 0.5505050505050505,
+    "washes": 4,
+    "soils": {
+     "iec_egg_yolk": {
+      "mean": 1.75,
+      "ceiling": {
+       "crockery": 4.573529411764706,
+       "all": 4.459309895833334,
+       "cutlery": 4.19546568627451
+      }
+     },
+     "iec_margarine": {
+      "mean": 4.839285714285714,
+      "ceiling": {
+       "cutlery": 4.966911764705882,
+       "all": 4.982421875,
+       "crockery": 5
+      }
+     },
+     "iec_milk": {
+      "mean": 0.75,
+      "ceiling": {
+       "glass": 2.2375,
+       "all": 4.568359375
+      }
+     },
+     "iec_minced_meat": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5,
+       "melamine": 5
+      }
+     },
+     "iec_oat_flakes": {
+      "mean": 4.85,
+      "ceiling": {
+       "glass": 5,
+       "all": 4.9765625,
+       "crockery": 5,
+       "cutlery": 4.955882352941177
+      }
+     },
+     "iec_spinach": {
+      "mean": 5,
+      "ceiling": {
+       "glass": 5,
+       "all": 5,
+       "crockery": 5,
+       "melamine": 5
+      }
+     },
+     "iec_tea": {
+      "mean": 0.1,
+      "ceiling": {
+       "crockery": 3.1176470588235294,
+       "all": 4.5
+      }
+     }
+    }
+   },
+   {
+    "value": 0.014,
+    "logLikelihood": -0.25897622024400263,
+    "logPrior": -0.004745200624706731,
+    "objective": 0.26372142086870937,
+    "continuous": {
+     "crockery": 3.015677761822741,
+     "cutlery": 4.2285299504172515,
+     "glass": 2.490489977583082,
+     "melamine": 5,
+     "all": 3.6709600006406875
+    },
+    "score": {
+     "crockery": 2.9705882352941178,
+     "cutlery": 4.221813725490196,
+     "glass": 2.48125,
+     "melamine": 5,
+     "all": 3.6539713541666665
+    },
+    "milkGlasses": 1.125,
+    "teaItems": 0.1,
+    "crockeryWithoutTea": 4.761904761904762,
+    "cleanShare": 0.68359375,
+    "soiledCleanShare": 0.5909090909090909,
+    "washes": 4,
+    "soils": {
+     "iec_egg_yolk": {
+      "mean": 2.55,
+      "ceiling": {
+       "crockery": 4.852941176470589,
+       "all": 4.588541666666666,
+       "cutlery": 4.299019607843137
+      }
+     },
+     "iec_margarine": {
+      "mean": 4.839285714285714,
+      "ceiling": {
+       "cutlery": 4.966911764705882,
+       "all": 4.982421875,
+       "crockery": 5
+      }
+     },
+     "iec_milk": {
+      "mean": 1.125,
+      "ceiling": {
+       "glass": 2.48125,
+       "all": 4.6064453125
+      }
+     },
+     "iec_minced_meat": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5,
+       "melamine": 5
+      }
+     },
+     "iec_oat_flakes": {
+      "mean": 4.85,
+      "ceiling": {
+       "glass": 5,
+       "all": 4.9765625,
+       "crockery": 5,
+       "cutlery": 4.955882352941177
+      }
+     },
+     "iec_spinach": {
+      "mean": 5,
+      "ceiling": {
+       "glass": 5,
+       "all": 5,
+       "crockery": 5,
+       "melamine": 5
+      }
+     },
+     "iec_tea": {
+      "mean": 0.1,
+      "ceiling": {
+       "crockery": 3.1176470588235294,
+       "all": 4.5
+      }
+     }
+    }
+   },
+   {
+    "value": 0.016,
+    "logLikelihood": -0.06472117457737045,
+    "logPrior": -0.00925888162654553,
+    "objective": 0.07398005620391598,
+    "continuous": {
+     "crockery": 3.1505979859063973,
+     "cutlery": 4.437487221893756,
+     "glass": 3.1613841234016853,
+     "melamine": 5,
+     "all": 3.9226339459189576
+    },
+    "score": {
+     "crockery": 3.1176470588235294,
+     "cutlery": 4.452818627450981,
+     "glass": 3.13125,
+     "melamine": 5,
+     "all": 3.9173177083333335
+    },
+    "milkGlasses": 2.125,
+    "teaItems": 0.1,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.7470703125,
+    "soiledCleanShare": 0.672979797979798,
+    "washes": 4,
+    "soils": {
+     "iec_egg_yolk": {
+      "mean": 3.5250000000000004,
+      "ceiling": {
+       "crockery": 5,
+       "all": 4.750325520833334,
+       "cutlery": 4.530024509803923
+      }
+     },
+     "iec_margarine": {
+      "mean": 4.839285714285714,
+      "ceiling": {
+       "cutlery": 4.966911764705882,
+       "all": 4.982421875,
+       "crockery": 5
+      }
+     },
+     "iec_milk": {
+      "mean": 2.125,
+      "ceiling": {
+       "glass": 3.13125,
+       "all": 4.7080078125
+      }
+     },
+     "iec_minced_meat": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5,
+       "melamine": 5
+      }
+     },
+     "iec_oat_flakes": {
+      "mean": 4.85,
+      "ceiling": {
+       "glass": 5,
+       "all": 4.9765625,
+       "crockery": 5,
+       "cutlery": 4.955882352941177
+      }
+     },
+     "iec_spinach": {
+      "mean": 5,
+      "ceiling": {
+       "glass": 5,
+       "all": 5,
+       "crockery": 5,
+       "melamine": 5
+      }
+     },
+     "iec_tea": {
+      "mean": 0.1,
+      "ceiling": {
+       "crockery": 3.1176470588235294,
+       "all": 4.5
+      }
+     }
+    }
+   },
+   {
+    "value": 0.02,
+    "logLikelihood": -0.0483017679409503,
+    "logPrior": -0.020137568508768095,
+    "objective": 0.06843933644971839,
+    "continuous": {
+     "crockery": 3.1470922013012825,
+     "cutlery": 4.623422932175269,
+     "glass": 3.7934970499441323,
+     "melamine": 5,
+     "all": 4.119248712742536
+    },
+    "score": {
+     "crockery": 3.1176470588235294,
+     "cutlery": 4.620098039215686,
+     "glass": 3.8015625,
+     "melamine": 5,
+     "all": 4.110921223958333
+    },
+    "milkGlasses": 3.15625,
+    "teaItems": 0.1,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.7862141927083333,
+    "soiledCleanShare": 0.7235900673400674,
+    "washes": 4,
+    "soils": {
+     "iec_egg_yolk": {
+      "mean": 4.05,
+      "ceiling": {
+       "crockery": 5,
+       "all": 4.839192708333333,
+       "cutlery": 4.6973039215686265
+      }
+     },
+     "iec_margarine": {
+      "mean": 4.839285714285714,
+      "ceiling": {
+       "cutlery": 4.966911764705882,
+       "all": 4.982421875,
+       "crockery": 5
+      }
+     },
+     "iec_milk": {
+      "mean": 3.15625,
+      "ceiling": {
+       "glass": 3.8015625,
+       "all": 4.812744140625
+      }
+     },
+     "iec_minced_meat": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5,
+       "melamine": 5
+      }
+     },
+     "iec_oat_flakes": {
+      "mean": 4.85,
+      "ceiling": {
+       "glass": 5,
+       "all": 4.9765625,
+       "crockery": 5,
+       "cutlery": 4.955882352941177
+      }
+     },
+     "iec_spinach": {
+      "mean": 5,
+      "ceiling": {
+       "glass": 5,
+       "all": 5,
+       "crockery": 5,
+       "melamine": 5
+      }
+     },
+     "iec_tea": {
+      "mean": 0.1,
+      "ceiling": {
+       "crockery": 3.1176470588235294,
+       "all": 4.5
+      }
+     }
+    }
+   }
+  ],
+  "best": {
+   "value": 0.02,
+   "logLikelihood": -0.0483017679409503,
+   "logPrior": -0.020137568508768095,
+   "objective": 0.06843933644971839,
+   "continuous": {
+    "crockery": 3.1470922013012825,
+    "cutlery": 4.623422932175269,
+    "glass": 3.7934970499441323,
+    "melamine": 5,
+    "all": 4.119248712742536
+   },
+   "score": {
+    "crockery": 3.1176470588235294,
+    "cutlery": 4.620098039215686,
+    "glass": 3.8015625,
+    "melamine": 5,
+    "all": 4.110921223958333
+   },
+   "milkGlasses": 3.15625,
+   "teaItems": 0.1,
+   "crockeryWithoutTea": 5,
+   "cleanShare": 0.7862141927083333,
+   "soiledCleanShare": 0.7235900673400674,
+   "washes": 4,
+   "soils": {
+    "iec_egg_yolk": {
+     "mean": 4.05,
+     "ceiling": {
+      "crockery": 5,
+      "all": 4.839192708333333,
+      "cutlery": 4.6973039215686265
+     }
+    },
+    "iec_margarine": {
+     "mean": 4.839285714285714,
+     "ceiling": {
+      "cutlery": 4.966911764705882,
+      "all": 4.982421875,
+      "crockery": 5
+     }
+    },
+    "iec_milk": {
+     "mean": 3.15625,
+     "ceiling": {
+      "glass": 3.8015625,
+      "all": 4.812744140625
+     }
+    },
+    "iec_minced_meat": {
+     "mean": 5,
+     "ceiling": {
+      "crockery": 5,
+      "all": 5,
+      "melamine": 5
+     }
+    },
+    "iec_oat_flakes": {
+     "mean": 4.85,
+     "ceiling": {
+      "glass": 5,
+      "all": 4.9765625,
+      "crockery": 5,
+      "cutlery": 4.955882352941177
+     }
+    },
+    "iec_spinach": {
+     "mean": 5,
+     "ceiling": {
+      "glass": 5,
+      "all": 5,
+      "crockery": 5,
+      "melamine": 5
+     }
+    },
+    "iec_tea": {
+     "mean": 0.1,
+     "ceiling": {
+      "crockery": 3.1176470588235294,
+      "all": 4.5
+     }
+    }
+   }
+  },
+  "atDefault": {
+   "value": 0.01,
+   "logLikelihood": -0.9653053801639148,
+   "logPrior": 0,
+   "objective": 0.9653053801639148,
+   "continuous": {
+    "crockery": 1.8640884628666945,
+    "cutlery": 3.9606217623786293,
+    "glass": 1.75,
+    "melamine": 4.589206924071842,
+    "all": 3.0877853837784803
+   },
+   "score": {
+    "crockery": 1.8308823529411764,
+    "cutlery": 3.9669117647058822,
+    "glass": 1.75,
+    "melamine": 4.583333333333334,
+    "all": 3.08203125
+   },
+   "milkGlasses": 0,
+   "teaItems": 0.175,
+   "crockeryWithoutTea": 2.8809523809523814,
+   "cleanShare": 0.6015625,
+   "soiledCleanShare": 0.48484848484848486,
+   "washes": 4,
+   "soils": {
+    "iec_egg_yolk": {
+     "mean": 0,
+     "ceiling": {
+      "crockery": 3.823529411764706,
+      "all": 4.1796875,
+      "cutlery": 4.044117647058823
+     }
+    },
+    "iec_margarine": {
+     "mean": 4.839285714285714,
+     "ceiling": {
+      "cutlery": 4.966911764705882,
+      "all": 4.982421875,
+      "crockery": 5
+     }
+    },
+    "iec_milk": {
+     "mean": 0,
+     "ceiling": {
+      "glass": 1.75,
+      "all": 4.4921875
+     }
+    },
+    "iec_minced_meat": {
+     "mean": 3.8333333333333335,
+     "ceiling": {
+      "crockery": 4.86764705882353,
+      "all": 4.9453125,
+      "melamine": 4.583333333333334
+     }
+    },
+    "iec_oat_flakes": {
+     "mean": 4.85,
+     "ceiling": {
+      "glass": 5,
+      "all": 4.9765625,
+      "crockery": 5,
+      "cutlery": 4.955882352941177
+     }
+    },
+    "iec_spinach": {
+     "mean": 5,
+     "ceiling": {
+      "glass": 5,
+      "all": 5,
+      "crockery": 5,
+      "melamine": 5
+     }
+    },
+    "iec_tea": {
+     "mean": 0.175,
+     "ceiling": {
+      "crockery": 3.139705882352941,
+      "all": 4.505859375
+     }
+    }
+   }
+  },
+  "chosen": 0.02,
+  "returned": false,
+  "floor": {
+   "soil": "iec_egg_yolk",
+   "cls": "cutlery",
+   "published": 4.67,
+   "ceiling": 4.044117647058823,
+   "meanAtDefault": 0,
+   "meanAtBest": 4.05,
+   "offFloorFrom": 0.012,
+   "indifferent": [
+    0.013,
+    0.014,
+    0.016,
+    0.02
+   ]
+  }
+ },
+ "bleach": {
+  "points": [
+   {
+    "value": 0.0008,
+    "logLikelihood": -0.0483017679409503,
+    "logPrior": 0,
+    "objective": 0.0483017679409503,
+    "continuous": {
+     "crockery": 3.1470922013012825,
+     "cutlery": 4.623422932175269,
+     "glass": 3.7934970499441323,
+     "melamine": 5,
+     "all": 4.119248712742536
+    },
+    "score": {
+     "crockery": 3.1176470588235294,
+     "cutlery": 4.620098039215686,
+     "glass": 3.8015625,
+     "melamine": 5,
+     "all": 4.110921223958333
+    },
+    "milkGlasses": 3.15625,
+    "teaItems": 0.1,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.7862141927083333,
+    "soiledCleanShare": 0.7235900673400674,
+    "washes": 4,
+    "soils": {
+     "iec_egg_yolk": {
+      "mean": 4.05,
+      "ceiling": {
+       "crockery": 5,
+       "all": 4.839192708333333,
+       "cutlery": 4.6973039215686265
+      }
+     },
+     "iec_margarine": {
+      "mean": 4.839285714285714,
+      "ceiling": {
+       "cutlery": 4.966911764705882,
+       "all": 4.982421875,
+       "crockery": 5
+      }
+     },
+     "iec_milk": {
+      "mean": 3.15625,
+      "ceiling": {
+       "glass": 3.8015625,
+       "all": 4.812744140625
+      }
+     },
+     "iec_minced_meat": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5,
+       "melamine": 5
+      }
+     },
+     "iec_oat_flakes": {
+      "mean": 4.85,
+      "ceiling": {
+       "glass": 5,
+       "all": 4.9765625,
+       "crockery": 5,
+       "cutlery": 4.955882352941177
+      }
+     },
+     "iec_spinach": {
+      "mean": 5,
+      "ceiling": {
+       "glass": 5,
+       "all": 5,
+       "crockery": 5,
+       "melamine": 5
+      }
+     },
+     "iec_tea": {
+      "mean": 0.1,
+      "ceiling": {
+       "crockery": 3.1176470588235294,
+       "all": 4.5
+      }
+     }
+    }
+   },
+   {
+    "value": 0.0009,
+    "logLikelihood": -0.020662691030650555,
+    "logPrior": -0.0017646171550369486,
+    "objective": 0.022427308185687504,
+    "continuous": {
+     "crockery": 3.5517644854138735,
+     "cutlery": 4.623422958111561,
+     "glass": 3.7934971771953903,
+     "melamine": 5,
+     "all": 4.2267398218716075
+    },
+    "score": {
+     "crockery": 3.5,
+     "cutlery": 4.620098039215686,
+     "glass": 3.8015625,
+     "melamine": 5,
+     "all": 4.212483723958333
+    },
+    "milkGlasses": 3.15625,
+    "teaItems": 1.25,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.7862141927083333,
+    "soiledCleanShare": 0.7235900673400674,
+    "washes": 4,
+    "soils": {
+     "iec_egg_yolk": {
+      "mean": 4.05,
+      "ceiling": {
+       "crockery": 5,
+       "all": 4.839192708333333,
+       "cutlery": 4.6973039215686265
+      }
+     },
+     "iec_margarine": {
+      "mean": 4.839285714285714,
+      "ceiling": {
+       "cutlery": 4.966911764705882,
+       "all": 4.982421875,
+       "crockery": 5
+      }
+     },
+     "iec_milk": {
+      "mean": 3.15625,
+      "ceiling": {
+       "glass": 3.8015625,
+       "all": 4.812744140625
+      }
+     },
+     "iec_minced_meat": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5,
+       "melamine": 5
+      }
+     },
+     "iec_oat_flakes": {
+      "mean": 4.85,
+      "ceiling": {
+       "glass": 5,
+       "all": 4.9765625,
+       "crockery": 5,
+       "cutlery": 4.955882352941177
+      }
+     },
+     "iec_spinach": {
+      "mean": 5,
+      "ceiling": {
+       "glass": 5,
+       "all": 5,
+       "crockery": 5,
+       "melamine": 5
+      }
+     },
+     "iec_tea": {
+      "mean": 1.25,
+      "ceiling": {
+       "crockery": 3.5,
+       "all": 4.6015625
+      }
+     }
+    }
+   },
+   {
+    "value": 0.001,
+    "logLikelihood": -0.03354792673807783,
+    "logPrior": -0.0063336446192401455,
+    "objective": 0.03988157135731797,
+    "continuous": {
+     "crockery": 4.055730396721604,
+     "cutlery": 4.623422981300857,
+     "glass": 3.7934972902160666,
+     "melamine": 5,
+     "all": 4.360605797041517
+    },
+    "score": {
+     "crockery": 4.080882352941177,
+     "cutlery": 4.620098039215686,
+     "glass": 3.8015625,
+     "melamine": 5,
+     "all": 4.366780598958333
+    },
+    "milkGlasses": 3.15625,
+    "teaItems": 2.85,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.8350423177083333,
+    "soiledCleanShare": 0.7867213804713804,
+    "washes": 4,
+    "soils": {
+     "iec_egg_yolk": {
+      "mean": 4.05,
+      "ceiling": {
+       "crockery": 5,
+       "all": 4.839192708333333,
+       "cutlery": 4.6973039215686265
+      }
+     },
+     "iec_margarine": {
+      "mean": 4.839285714285714,
+      "ceiling": {
+       "cutlery": 4.966911764705882,
+       "all": 4.982421875,
+       "crockery": 5
+      }
+     },
+     "iec_milk": {
+      "mean": 3.15625,
+      "ceiling": {
+       "glass": 3.8015625,
+       "all": 4.812744140625
+      }
+     },
+     "iec_minced_meat": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5,
+       "melamine": 5
+      }
+     },
+     "iec_oat_flakes": {
+      "mean": 4.85,
+      "ceiling": {
+       "glass": 5,
+       "all": 4.9765625,
+       "crockery": 5,
+       "cutlery": 4.955882352941177
+      }
+     },
+     "iec_spinach": {
+      "mean": 5,
+      "ceiling": {
+       "glass": 5,
+       "all": 5,
+       "crockery": 5,
+       "melamine": 5
+      }
+     },
+     "iec_tea": {
+      "mean": 2.85,
+      "ceiling": {
+       "crockery": 4.080882352941177,
+       "all": 4.755859375
+      }
+     }
+    }
+   },
+   {
+    "value": 0.0011,
+    "logLikelihood": -0.07654214584001248,
+    "logPrior": -0.01289964306678647,
+    "objective": 0.08944178890679895,
+    "continuous": {
+     "crockery": 4.426563650450006,
+     "cutlery": 4.623423002024321,
+     "glass": 3.793497391562465,
+     "melamine": 5,
+     "all": 4.459108406907838
+    },
+    "score": {
+     "crockery": 4.444852941176471,
+     "cutlery": 4.620098039215686,
+     "glass": 3.8015625,
+     "melamine": 5,
+     "all": 4.463460286458333
+    },
+    "milkGlasses": 3.15625,
+    "teaItems": 3.825,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.8443196614583333,
+    "soiledCleanShare": 0.79871632996633,
+    "washes": 4,
+    "soils": {
+     "iec_egg_yolk": {
+      "mean": 4.05,
+      "ceiling": {
+       "crockery": 5,
+       "all": 4.839192708333333,
+       "cutlery": 4.6973039215686265
+      }
+     },
+     "iec_margarine": {
+      "mean": 4.839285714285714,
+      "ceiling": {
+       "cutlery": 4.966911764705882,
+       "all": 4.982421875,
+       "crockery": 5
+      }
+     },
+     "iec_milk": {
+      "mean": 3.15625,
+      "ceiling": {
+       "glass": 3.8015625,
+       "all": 4.812744140625
+      }
+     },
+     "iec_minced_meat": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5,
+       "melamine": 5
+      }
+     },
+     "iec_oat_flakes": {
+      "mean": 4.85,
+      "ceiling": {
+       "glass": 5,
+       "all": 4.9765625,
+       "crockery": 5,
+       "cutlery": 4.955882352941177
+      }
+     },
+     "iec_spinach": {
+      "mean": 5,
+      "ceiling": {
+       "glass": 5,
+       "all": 5,
+       "crockery": 5,
+       "melamine": 5
+      }
+     },
+     "iec_tea": {
+      "mean": 3.825,
+      "ceiling": {
+       "crockery": 4.444852941176471,
+       "all": 4.8525390625
+      }
+     }
+    }
+   },
+   {
+    "value": 0.0012,
+    "logLikelihood": -0.1268402545546049,
+    "logPrior": -0.020911827370024328,
+    "objective": 0.14775208192462924,
+    "continuous": {
+     "crockery": 4.701882036647906,
+     "cutlery": 4.6234230210635054,
+     "glass": 3.7934974837132613,
+     "melamine": 5,
+     "all": 4.532239877754784
+    },
+    "score": {
+     "crockery": 4.6911764705882355,
+     "cutlery": 4.620098039215686,
+     "glass": 3.8015625,
+     "melamine": 5,
+     "all": 4.528889973958333
+    },
+    "milkGlasses": 3.15625,
+    "teaItems": 4.4,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.8535970052083333,
+    "soiledCleanShare": 0.8107112794612795,
+    "washes": 4,
+    "soils": {
+     "iec_egg_yolk": {
+      "mean": 4.05,
+      "ceiling": {
+       "crockery": 5,
+       "all": 4.839192708333333,
+       "cutlery": 4.6973039215686265
+      }
+     },
+     "iec_margarine": {
+      "mean": 4.839285714285714,
+      "ceiling": {
+       "cutlery": 4.966911764705882,
+       "all": 4.982421875,
+       "crockery": 5
+      }
+     },
+     "iec_milk": {
+      "mean": 3.15625,
+      "ceiling": {
+       "glass": 3.8015625,
+       "all": 4.812744140625
+      }
+     },
+     "iec_minced_meat": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5,
+       "melamine": 5
+      }
+     },
+     "iec_oat_flakes": {
+      "mean": 4.85,
+      "ceiling": {
+       "glass": 5,
+       "all": 4.9765625,
+       "crockery": 5,
+       "cutlery": 4.955882352941177
+      }
+     },
+     "iec_spinach": {
+      "mean": 5,
+      "ceiling": {
+       "glass": 5,
+       "all": 5,
+       "crockery": 5,
+       "melamine": 5
+      }
+     },
+     "iec_tea": {
+      "mean": 4.4,
+      "ceiling": {
+       "crockery": 4.6911764705882355,
+       "all": 4.91796875
+      }
+     }
+    }
+   },
+   {
+    "value": 0.0014,
+    "logLikelihood": -0.18573763217369613,
+    "logPrior": -0.039835009679656905,
+    "objective": 0.22557264185335302,
+    "continuous": {
+     "crockery": 4.950578362747185,
+     "cutlery": 4.623423052989006,
+     "glass": 3.793497641000677,
+     "melamine": 5,
+     "all": 4.598299880911487
+    },
+    "score": {
+     "crockery": 4.948529411764706,
+     "cutlery": 4.620098039215686,
+     "glass": 3.8015625,
+     "melamine": 5,
+     "all": 4.597249348958333
+    },
+    "milkGlasses": 3.15625,
+    "teaItems": 4.9,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.8877766927083333,
+    "soiledCleanShare": 0.8549031986531985,
+    "washes": 4,
+    "soils": {
+     "iec_egg_yolk": {
+      "mean": 4.05,
+      "ceiling": {
+       "crockery": 5,
+       "all": 4.839192708333333,
+       "cutlery": 4.6973039215686265
+      }
+     },
+     "iec_margarine": {
+      "mean": 4.839285714285714,
+      "ceiling": {
+       "cutlery": 4.966911764705882,
+       "all": 4.982421875,
+       "crockery": 5
+      }
+     },
+     "iec_milk": {
+      "mean": 3.15625,
+      "ceiling": {
+       "glass": 3.8015625,
+       "all": 4.812744140625
+      }
+     },
+     "iec_minced_meat": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5,
+       "melamine": 5
+      }
+     },
+     "iec_oat_flakes": {
+      "mean": 4.85,
+      "ceiling": {
+       "glass": 5,
+       "all": 4.9765625,
+       "crockery": 5,
+       "cutlery": 4.955882352941177
+      }
+     },
+     "iec_spinach": {
+      "mean": 5,
+      "ceiling": {
+       "glass": 5,
+       "all": 5,
+       "crockery": 5,
+       "melamine": 5
+      }
+     },
+     "iec_tea": {
+      "mean": 4.9,
+      "ceiling": {
+       "crockery": 4.948529411764706,
+       "all": 4.986328125
+      }
+     }
+    }
+   },
+   {
+    "value": 0.0016,
+    "logLikelihood": -0.1989639479723703,
+    "logPrior": -0.061113327722335804,
+    "objective": 0.2600772756947061,
+    "continuous": {
+     "crockery": 5,
+     "cutlery": 4.623423079577949,
+     "glass": 3.793497771262993,
+     "melamine": 5,
+     "all": 4.611427537785628
+    },
+    "score": {
+     "crockery": 5,
+     "cutlery": 4.620098039215686,
+     "glass": 3.8015625,
+     "melamine": 5,
+     "all": 4.610921223958333
+    },
+    "milkGlasses": 3.15625,
+    "teaItems": 5,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.8877766927083333,
+    "soiledCleanShare": 0.8549031986531985,
+    "washes": 4,
+    "soils": {
+     "iec_egg_yolk": {
+      "mean": 4.05,
+      "ceiling": {
+       "crockery": 5,
+       "all": 4.839192708333333,
+       "cutlery": 4.6973039215686265
+      }
+     },
+     "iec_margarine": {
+      "mean": 4.839285714285714,
+      "ceiling": {
+       "cutlery": 4.966911764705882,
+       "all": 4.982421875,
+       "crockery": 5
+      }
+     },
+     "iec_milk": {
+      "mean": 3.15625,
+      "ceiling": {
+       "glass": 3.8015625,
+       "all": 4.812744140625
+      }
+     },
+     "iec_minced_meat": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5,
+       "melamine": 5
+      }
+     },
+     "iec_oat_flakes": {
+      "mean": 4.85,
+      "ceiling": {
+       "glass": 5,
+       "all": 4.9765625,
+       "crockery": 5,
+       "cutlery": 4.955882352941177
+      }
+     },
+     "iec_spinach": {
+      "mean": 5,
+      "ceiling": {
+       "glass": 5,
+       "all": 5,
+       "crockery": 5,
+       "melamine": 5
+      }
+     },
+     "iec_tea": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5
+      }
+     }
+    }
+   },
+   {
+    "value": 0.002,
+    "logLikelihood": -0.19896396597087848,
+    "logPrior": -0.10679516667333314,
+    "objective": 0.3057591326442116,
+    "continuous": {
+     "crockery": 5,
+     "cutlery": 4.623423120450871,
+     "glass": 3.793497972351133,
+     "melamine": 5,
+     "all": 4.611427590919391
+    },
+    "score": {
+     "crockery": 5,
+     "cutlery": 4.620098039215686,
+     "glass": 3.8015625,
+     "melamine": 5,
+     "all": 4.610921223958333
+    },
+    "milkGlasses": 3.15625,
+    "teaItems": 5,
+    "crockeryWithoutTea": 5,
+    "cleanShare": 0.8877766927083333,
+    "soiledCleanShare": 0.8549031986531985,
+    "washes": 4,
+    "soils": {
+     "iec_egg_yolk": {
+      "mean": 4.05,
+      "ceiling": {
+       "crockery": 5,
+       "all": 4.839192708333333,
+       "cutlery": 4.6973039215686265
+      }
+     },
+     "iec_margarine": {
+      "mean": 4.839285714285714,
+      "ceiling": {
+       "cutlery": 4.966911764705882,
+       "all": 4.982421875,
+       "crockery": 5
+      }
+     },
+     "iec_milk": {
+      "mean": 3.15625,
+      "ceiling": {
+       "glass": 3.8015625,
+       "all": 4.812744140625
+      }
+     },
+     "iec_minced_meat": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5,
+       "melamine": 5
+      }
+     },
+     "iec_oat_flakes": {
+      "mean": 4.85,
+      "ceiling": {
+       "glass": 5,
+       "all": 4.9765625,
+       "crockery": 5,
+       "cutlery": 4.955882352941177
+      }
+     },
+     "iec_spinach": {
+      "mean": 5,
+      "ceiling": {
+       "glass": 5,
+       "all": 5,
+       "crockery": 5,
+       "melamine": 5
+      }
+     },
+     "iec_tea": {
+      "mean": 5,
+      "ceiling": {
+       "crockery": 5,
+       "all": 5
+      }
+     }
+    }
+   }
+  ],
+  "best": {
+   "value": 0.0009,
+   "logLikelihood": -0.020662691030650555,
+   "logPrior": -0.0017646171550369486,
+   "objective": 0.022427308185687504,
+   "continuous": {
+    "crockery": 3.5517644854138735,
+    "cutlery": 4.623422958111561,
+    "glass": 3.7934971771953903,
+    "melamine": 5,
+    "all": 4.2267398218716075
+   },
+   "score": {
+    "crockery": 3.5,
+    "cutlery": 4.620098039215686,
+    "glass": 3.8015625,
+    "melamine": 5,
+    "all": 4.212483723958333
+   },
+   "milkGlasses": 3.15625,
+   "teaItems": 1.25,
+   "crockeryWithoutTea": 5,
+   "cleanShare": 0.7862141927083333,
+   "soiledCleanShare": 0.7235900673400674,
+   "washes": 4,
+   "soils": {
+    "iec_egg_yolk": {
+     "mean": 4.05,
+     "ceiling": {
+      "crockery": 5,
+      "all": 4.839192708333333,
+      "cutlery": 4.6973039215686265
+     }
+    },
+    "iec_margarine": {
+     "mean": 4.839285714285714,
+     "ceiling": {
+      "cutlery": 4.966911764705882,
+      "all": 4.982421875,
+      "crockery": 5
+     }
+    },
+    "iec_milk": {
+     "mean": 3.15625,
+     "ceiling": {
+      "glass": 3.8015625,
+      "all": 4.812744140625
+     }
+    },
+    "iec_minced_meat": {
+     "mean": 5,
+     "ceiling": {
+      "crockery": 5,
+      "all": 5,
+      "melamine": 5
+     }
+    },
+    "iec_oat_flakes": {
+     "mean": 4.85,
+     "ceiling": {
+      "glass": 5,
+      "all": 4.9765625,
+      "crockery": 5,
+      "cutlery": 4.955882352941177
+     }
+    },
+    "iec_spinach": {
+     "mean": 5,
+     "ceiling": {
+      "glass": 5,
+      "all": 5,
+      "crockery": 5,
+      "melamine": 5
+     }
+    },
+    "iec_tea": {
+     "mean": 1.25,
+     "ceiling": {
+      "crockery": 3.5,
+      "all": 4.6015625
+     }
+    }
+   }
+  },
+  "atDefault": {
+   "value": 0.0008,
+   "logLikelihood": -0.0483017679409503,
+   "logPrior": 0,
+   "objective": 0.0483017679409503,
+   "continuous": {
+    "crockery": 3.1470922013012825,
+    "cutlery": 4.623422932175269,
+    "glass": 3.7934970499441323,
+    "melamine": 5,
+    "all": 4.119248712742536
+   },
+   "score": {
+    "crockery": 3.1176470588235294,
+    "cutlery": 4.620098039215686,
+    "glass": 3.8015625,
+    "melamine": 5,
+    "all": 4.110921223958333
+   },
+   "milkGlasses": 3.15625,
+   "teaItems": 0.1,
+   "crockeryWithoutTea": 5,
+   "cleanShare": 0.7862141927083333,
+   "soiledCleanShare": 0.7235900673400674,
+   "washes": 4,
+   "soils": {
+    "iec_egg_yolk": {
+     "mean": 4.05,
+     "ceiling": {
+      "crockery": 5,
+      "all": 4.839192708333333,
+      "cutlery": 4.6973039215686265
+     }
+    },
+    "iec_margarine": {
+     "mean": 4.839285714285714,
+     "ceiling": {
+      "cutlery": 4.966911764705882,
+      "all": 4.982421875,
+      "crockery": 5
+     }
+    },
+    "iec_milk": {
+     "mean": 3.15625,
+     "ceiling": {
+      "glass": 3.8015625,
+      "all": 4.812744140625
+     }
+    },
+    "iec_minced_meat": {
+     "mean": 5,
+     "ceiling": {
+      "crockery": 5,
+      "all": 5,
+      "melamine": 5
+     }
+    },
+    "iec_oat_flakes": {
+     "mean": 4.85,
+     "ceiling": {
+      "glass": 5,
+      "all": 4.9765625,
+      "crockery": 5,
+      "cutlery": 4.955882352941177
+     }
+    },
+    "iec_spinach": {
+     "mean": 5,
+     "ceiling": {
+      "glass": 5,
+      "all": 5,
+      "crockery": 5,
+      "melamine": 5
+     }
+    },
+    "iec_tea": {
+     "mean": 0.1,
+     "ceiling": {
+      "crockery": 3.1176470588235294,
+      "all": 4.5
+     }
+    }
+   }
+  },
+  "chosen": 0.0009,
+  "returned": false,
+  "floor": {
+   "soil": "iec_tea",
+   "cls": "crockery",
+   "published": 3.68,
+   "ceiling": 3.1176470588235294,
+   "meanAtDefault": 0.1,
+   "meanAtBest": 1.25,
+   "offFloorFrom": 0.0009,
+   "indifferent": [
+    0.0009,
+    0.001,
+    0.0011,
+    0.0012,
+    0.0014,
+    0.0016,
+    0.002
+   ]
+  }
+ },
+ "overrides": {
+  "soil.subCellCv": 0.1,
+  "soil.amountCv": 0.05,
+  "soil.egg_yolk.tLag": 300,
+  "soil.milk.tLag": 300,
+  "prog.soakDuty": 0.8,
+  "soil.egg_yolk.bakeRate": 0.000075,
+  "soil.egg_yolk.rateRef": 0.000034,
+  "soil.milk.rateRef": 0.000034,
+  "liq.xProtease": 0.02,
+  "soil.bleachRate": 0.0009
+ }
+}

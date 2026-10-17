@@ -10,21 +10,21 @@ Mistakes in this load: plate_facing_away x 13, bowls_nested x 3, cup_upright x 1
 
 | Quantity | Value |
 |---|---|
-| Time, scene | 11.7 s |
-| Time, hydraulics | 0.2 s |
-| Time, exposure | 951.6 s |
-| Time, soil | 1.4 s |
-| Time, replay | 91.5 s |
-| Time, result | 10.9 s |
-| Time, total | 1067.3 s (17.8 min) |
-| Exposure sets | 12 computed, 0 from the cache |
+| Time, scene | 10.3 s |
+| Time, hydraulics | 0.1 s |
+| Time, exposure | 74.8 s |
+| Time, soil | 1.5 s |
+| Time, replay | 86.2 s |
+| Time, result | 8.4 s |
+| Time, total | 181.4 s (3.0 min) |
+| Exposure sets | 1 computed, 11 from the cache |
 | Scene | 1115120 blocks, 3550840 soil cells, 592485 deposits |
-| GPU memory | scene 167.3 MB, peak of all buffers 167.4 MB |
-| Process memory (RSS) | 0.85 GB |
+| GPU memory | scene 167.3 MB, peak of all buffers 167.3 MB |
+| Process memory (RSS) | 1.10 GB |
 | Mains water, energy | 10.5 L, 0.62 kWh |
 | Water held in vessels | 3671 mL |
 | Detergent | 6.4 of 12.9 g dissolved (dispenser blocked) |
-| Soil | 29.26 g dry at the start, 15.05 g left (51 %) |
+| Soil | 29.26 g dry at the start, 9.71 g left (33 %) |
 | Items clean | 35 of 114 |
 
 ## Water balance per spray state (kg per revolution of the master arm)
@@ -65,16 +65,16 @@ Mistakes in this load: plate_facing_away x 13, bowls_nested x 3, cup_upright x 1
 
 | Item | Type | Basket | Position (mm) | Soil: left of initial (mg) | Residual soil (mg) | Visibly soiled area (mm2) | Score | Water: pooled (mL), film (g) | Clean |
 |---|---|---|---|---|---|---|---|---|---|
-| dessert_bowl_02 | dessert_bowl_vitrelle_130 | upper | -80, 117, 492 | iec_spinach 15.83 of 162.62 | 15.83 | 3116 of 10011 | 0 | 0.0, 1.04 | no |
-| dessert_bowl_03 | dessert_bowl_vitrelle_130 | upper | -83, 77, 489 | iec_oat_flakes 16.11 of 147.76 | 16.11 | 3046 of 10011 | 0 | 0.0, 0.97 | no |
-| dessert_bowl_04 | dessert_bowl_vitrelle_130 | upper | -79, 7, 490 | iec_spinach 6.66 of 167.88 | 6.66 | 1365 of 10011 | 0 | 0.0, 1.05 | no |
-| dessert_plate_01 | dessert_plate_porcelain_190 | lower | -119, -140, 157 | iec_egg_yolk 810.86 of 981.77 | 810.86 | 9149 of 9149 | 0 | 0.0, 1.07 | no |
+| dessert_bowl_02 | dessert_bowl_vitrelle_130 | upper | -80, 117, 492 | iec_spinach 15.82 of 162.62 | 15.82 | 3115 of 10011 | 0 | 0.0, 1.04 | no |
+| dessert_bowl_03 | dessert_bowl_vitrelle_130 | upper | -83, 77, 489 | iec_oat_flakes 16.10 of 147.76 | 16.10 | 3045 of 10011 | 0 | 0.0, 0.97 | no |
+| dessert_bowl_04 | dessert_bowl_vitrelle_130 | upper | -79, 7, 490 | iec_spinach 6.65 of 167.88 | 6.65 | 1364 of 10011 | 0 | 0.0, 1.05 | no |
+| dessert_plate_01 | dessert_plate_porcelain_190 | lower | -119, -140, 157 | iec_egg_yolk 597.66 of 981.77 | 597.66 | 9149 of 9149 | 0 | 0.0, 1.07 | no |
 | dessert_plate_02 | dessert_plate_porcelain_190 | lower | 203, 111, 164 | iec_spinach 5.40 of 156.30 | 5.40 | 1114 of 9148 | 0 | 0.0, 1.17 | no |
-| dessert_plate_03 | dessert_plate_porcelain_190 | lower | 192, 112, 163 | iec_egg_yolk 782.05 of 946.62 | 782.05 | 9149 of 9149 | 0 | 0.0, 1.51 | no |
-| dessert_plate_04 | dessert_plate_porcelain_190 | lower | 156, 112, 167 | iec_spinach 8.68 of 157.45 | 8.68 | 1748 of 9149 | 0 | 0.0, 1.79 | no |
-| dessert_plate_05 | dessert_plate_porcelain_190 | lower | 156, 112, 163 | iec_egg_yolk 816.42 of 937.66 | 816.42 | 9149 of 9149 | 0 | 0.0, 1.81 | no |
-| dessert_plate_06 | dessert_plate_porcelain_190 | lower | 120, 112, 167 | iec_spinach 38.33 of 156.82 | 38.33 | 4437 of 9149 | 0 | 0.0, 1.79 | no |
-| dessert_plate_07 | dessert_plate_porcelain_190 | lower | 119, 112, 163 | iec_egg_yolk 780.75 of 961.98 | 780.75 | 9148 of 9148 | 0 | 0.0, 1.41 | no |
+| dessert_plate_03 | dessert_plate_porcelain_190 | lower | 192, 112, 163 | iec_egg_yolk 575.04 of 946.62 | 575.04 | 9149 of 9149 | 0 | 0.0, 1.51 | no |
+| dessert_plate_04 | dessert_plate_porcelain_190 | lower | 156, 112, 167 | iec_spinach 8.67 of 157.45 | 8.67 | 1747 of 9149 | 0 | 0.0, 1.79 | no |
+| dessert_plate_05 | dessert_plate_porcelain_190 | lower | 156, 112, 163 | iec_egg_yolk 663.38 of 937.66 | 663.38 | 9149 of 9149 | 0 | 0.0, 1.81 | no |
+| dessert_plate_06 | dessert_plate_porcelain_190 | lower | 120, 112, 167 | iec_spinach 38.32 of 156.82 | 38.32 | 4436 of 9149 | 0 | 0.0, 1.79 | no |
+| dessert_plate_07 | dessert_plate_porcelain_190 | lower | 119, 112, 163 | iec_egg_yolk 553.06 of 961.98 | 553.06 | 9148 of 9148 | 0 | 0.0, 1.41 | no |
 | dessert_spoon_01 | dessert_spoon_160 | lower | -25, -43, 79 | none | 0.00 | 0 of 0 | 5 | 0.0, 0.25 | yes |
 | dessert_spoon_02 | dessert_spoon_160 | lower | -5, -119, 80 | none | 0.00 | 0 of 0 | 5 | 0.0, 0.26 | yes |
 | dessert_spoon_03 | dessert_spoon_160 | lower | -7, -177, 80 | none | 0.00 | 0 of 0 | 5 | 0.0, 0.18 | yes |
@@ -87,33 +87,33 @@ Mistakes in this load: plate_facing_away x 13, bowls_nested x 3, cup_upright x 1
 | dessert_spoon_11 | dessert_spoon_160 | lower | 31, -159, 79 | none | 0.00 | 0 of 0 | 5 | 0.0, 0.23 | yes |
 | dessert_spoon_12 | dessert_spoon_160 | lower | -9, -30, 80 | none | 0.00 | 0 of 0 | 5 | 0.0, 0.18 | yes |
 | dessert_spoon_13 | dessert_spoon_160 | lower | 15, -100, 79 | none | 0.00 | 0 of 0 | 5 | 0.0, 0.23 | yes |
-| dinner_plate_01 | dinner_plate_porcelain_iec | lower | -165, 112, 201 | iec_egg_yolk 1245.20 of 1397.95 | 1245.20 | 15968 of 15968 | 0 | 0.0, 2.63 | no |
-| dinner_plate_02 | dinner_plate_porcelain_iec | lower | -171, 112, 199 | iec_minced_meat 368.44 of 620.48 | 368.44 | 15897 of 15968 | 0 | 0.0, 2.92 | no |
-| dinner_plate_03 | dinner_plate_porcelain_iec | lower | -129, 112, 201 | iec_egg_yolk 1275.55 of 1498.61 | 1275.55 | 15968 of 15968 | 0 | 0.0, 2.77 | no |
-| dinner_plate_04 | dinner_plate_porcelain_iec | lower | -134, 112, 199 | iec_minced_meat 382.73 of 595.63 | 382.73 | 15940 of 15968 | 0 | 0.0, 2.81 | no |
-| dinner_plate_05 | dinner_plate_porcelain_iec | lower | -92, 112, 201 | iec_egg_yolk 1413.04 of 1599.23 | 1413.04 | 15968 of 15968 | 0 | 0.0, 2.85 | no |
-| dinner_plate_06 | dinner_plate_porcelain_iec | lower | -98, 112, 199 | iec_minced_meat 362.36 of 657.36 | 362.36 | 15755 of 15968 | 0 | 0.0, 3.08 | no |
-| dinner_plate_07 | dinner_plate_porcelain_iec | lower | -56, 112, 201 | iec_egg_yolk 1316.78 of 1508.95 | 1316.78 | 15968 of 15968 | 0 | 0.0, 2.61 | no |
-| fork_01 | dinner_fork_185 | lower | -23, -220, 79 | iec_egg_yolk 145.86 of 161.31 | 145.86 | 1095 of 1095 | 0 | 0.0, 0.37 | no |
-| fork_02 | dinner_fork_185 | lower | 64, -31, 81 | iec_egg_yolk 123.92 of 142.54 | 123.92 | 1093 of 1093 | 0 | 0.0, 0.18 | no |
-| fork_03 | dinner_fork_185 | lower | 16, -183, 80 | iec_egg_yolk 120.87 of 138.79 | 120.87 | 1095 of 1095 | 0 | 0.0, 0.28 | no |
-| fork_04 | dinner_fork_185 | lower | 5, -47, 80 | iec_egg_yolk 121.85 of 140.56 | 121.85 | 1093 of 1093 | 0 | 0.0, 0.17 | no |
-| fork_05 | dinner_fork_185 | lower | 3, -176, 80 | iec_egg_yolk 131.78 of 147.97 | 131.78 | 1094 of 1094 | 0 | 0.0, 0.27 | no |
-| fork_06 | dinner_fork_185 | lower | 3, -34, 80 | iec_egg_yolk 130.87 of 150.22 | 130.87 | 1093 of 1093 | 0 | 0.0, 0.25 | no |
-| fork_07 | dinner_fork_185 | lower | -17, -218, 79 | iec_egg_yolk 136.78 of 151.39 | 136.78 | 1094 of 1094 | 0 | 0.0, 0.50 | no |
-| fork_08 | dinner_fork_185 | lower | -23, -160, 79 | iec_egg_yolk 139.89 of 153.77 | 139.89 | 1094 of 1094 | 0 | 0.0, 0.39 | no |
-| fork_09 | dinner_fork_185 | lower | 2, -242, 80 | iec_egg_yolk 134.43 of 151.19 | 134.43 | 1095 of 1095 | 0 | 0.0, 0.35 | no |
-| fork_11 | dinner_fork_185 | lower | 7, -231, 80 | iec_egg_yolk 141.33 of 156.66 | 141.33 | 1095 of 1095 | 0 | 0.0, 0.35 | no |
-| fork_12 | dinner_fork_185 | lower | 7, -209, 80 | iec_egg_yolk 126.40 of 143.69 | 126.40 | 1095 of 1095 | 0 | 0.0, 0.17 | no |
-| fork_13 | dinner_fork_185 | lower | 3, -245, 80 | iec_egg_yolk 133.19 of 149.55 | 133.19 | 1094 of 1094 | 0 | 0.0, 0.20 | no |
-| glass_01 | test_glass_borosilicate_250 | upper | 96, 140, 425 | iec_milk 328.54 of 518.45 | 422.66 | 13074 of 10611 | 0 | 293.5, 2.79 | no |
-| glass_02 | test_glass_borosilicate_250 | upper | 88, 9, 424 | iec_milk 265.62 of 492.68 | 320.20 | 13064 of 10611 | 0 | 293.5, 2.91 | no |
-| glass_03 | test_glass_borosilicate_250 | upper | 89, -65, 426 | iec_milk 293.29 of 504.83 | 350.21 | 13069 of 10611 | 0 | 293.5, 2.82 | no |
-| glass_04 | test_glass_borosilicate_250 | upper | 88, -139, 425 | iec_milk 333.71 of 497.75 | 492.82 | 13075 of 10611 | 0 | 293.5, 2.78 | no |
-| glass_05 | test_glass_borosilicate_250 | upper | -191, 83, 430 | iec_milk 308.21 of 482.09 | 491.11 | 13075 of 10611 | 0 | 293.5, 2.58 | no |
-| glass_06 | test_glass_borosilicate_250 | upper | -192, 196, 433 | iec_milk 453.13 of 521.99 | 804.27 | 13075 of 10611 | 0 | 293.5, 2.55 | no |
-| glass_07 | test_glass_borosilicate_250 | upper | -209, -158, 421 | iec_milk 436.50 of 503.45 | 720.01 | 13075 of 10611 | 0 | 293.5, 4.03 | no |
-| glass_08 | test_glass_borosilicate_250 | upper | -194, -215, 431 | iec_milk 476.07 of 511.88 | 703.45 | 13075 of 10611 | 0 | 293.5, 2.80 | no |
+| dinner_plate_01 | dinner_plate_porcelain_iec | lower | -165, 112, 201 | iec_egg_yolk 1058.18 of 1397.95 | 1058.18 | 15968 of 15968 | 0 | 0.0, 2.63 | no |
+| dinner_plate_02 | dinner_plate_porcelain_iec | lower | -171, 112, 199 | iec_minced_meat 108.54 of 620.48 | 108.54 | 8521 of 15968 | 0 | 0.0, 2.92 | no |
+| dinner_plate_03 | dinner_plate_porcelain_iec | lower | -129, 112, 201 | iec_egg_yolk 1000.85 of 1498.61 | 1000.85 | 15968 of 15968 | 0 | 0.0, 2.77 | no |
+| dinner_plate_04 | dinner_plate_porcelain_iec | lower | -134, 112, 199 | iec_minced_meat 149.79 of 595.63 | 149.79 | 11236 of 15968 | 0 | 0.0, 2.81 | no |
+| dinner_plate_05 | dinner_plate_porcelain_iec | lower | -92, 112, 201 | iec_egg_yolk 1186.13 of 1599.23 | 1186.13 | 15968 of 15968 | 0 | 0.0, 2.85 | no |
+| dinner_plate_06 | dinner_plate_porcelain_iec | lower | -98, 112, 199 | iec_minced_meat 88.42 of 657.36 | 88.42 | 6704 of 15968 | 0 | 0.0, 3.08 | no |
+| dinner_plate_07 | dinner_plate_porcelain_iec | lower | -56, 112, 201 | iec_egg_yolk 1084.43 of 1508.95 | 1084.43 | 15968 of 15968 | 0 | 0.0, 2.61 | no |
+| fork_01 | dinner_fork_185 | lower | -23, -220, 79 | iec_egg_yolk 124.16 of 161.31 | 124.16 | 1095 of 1095 | 0 | 0.0, 0.37 | no |
+| fork_02 | dinner_fork_185 | lower | 64, -31, 81 | iec_egg_yolk 97.43 of 142.54 | 97.43 | 1093 of 1093 | 0 | 0.0, 0.18 | no |
+| fork_03 | dinner_fork_185 | lower | 16, -183, 80 | iec_egg_yolk 95.57 of 138.79 | 95.57 | 1095 of 1095 | 0 | 0.0, 0.28 | no |
+| fork_04 | dinner_fork_185 | lower | 5, -47, 80 | iec_egg_yolk 95.30 of 140.56 | 95.30 | 1093 of 1093 | 0 | 0.0, 0.17 | no |
+| fork_05 | dinner_fork_185 | lower | 3, -176, 80 | iec_egg_yolk 109.04 of 147.97 | 109.04 | 1094 of 1094 | 0 | 0.0, 0.27 | no |
+| fork_06 | dinner_fork_185 | lower | 3, -34, 80 | iec_egg_yolk 103.41 of 150.22 | 103.41 | 1093 of 1093 | 0 | 0.0, 0.25 | no |
+| fork_07 | dinner_fork_185 | lower | -17, -218, 79 | iec_egg_yolk 117.09 of 151.39 | 117.09 | 1094 of 1094 | 0 | 0.0, 0.50 | no |
+| fork_08 | dinner_fork_185 | lower | -23, -160, 79 | iec_egg_yolk 120.29 of 153.77 | 120.29 | 1094 of 1094 | 0 | 0.0, 0.39 | no |
+| fork_09 | dinner_fork_185 | lower | 2, -242, 80 | iec_egg_yolk 111.10 of 151.19 | 111.10 | 1095 of 1095 | 0 | 0.0, 0.35 | no |
+| fork_11 | dinner_fork_185 | lower | 7, -231, 80 | iec_egg_yolk 120.20 of 156.66 | 120.20 | 1095 of 1095 | 0 | 0.0, 0.35 | no |
+| fork_12 | dinner_fork_185 | lower | 7, -209, 80 | iec_egg_yolk 101.97 of 143.69 | 101.97 | 1095 of 1095 | 0 | 0.0, 0.17 | no |
+| fork_13 | dinner_fork_185 | lower | 3, -245, 80 | iec_egg_yolk 110.15 of 149.55 | 110.15 | 1094 of 1094 | 0 | 0.0, 0.20 | no |
+| glass_01 | test_glass_borosilicate_250 | upper | 96, 140, 425 | iec_milk 14.70 of 518.45 | 147.32 | 3975 of 10611 | 0 | 293.5, 2.79 | no |
+| glass_02 | test_glass_borosilicate_250 | upper | 88, 9, 424 | iec_milk 2.67 of 492.68 | 84.93 | 2754 of 10611 | 0 | 293.5, 2.91 | no |
+| glass_03 | test_glass_borosilicate_250 | upper | 89, -65, 426 | iec_milk 5.06 of 504.83 | 89.26 | 3034 of 10611 | 0 | 293.5, 2.82 | no |
+| glass_04 | test_glass_borosilicate_250 | upper | 88, -139, 425 | iec_milk 22.71 of 497.75 | 247.07 | 4722 of 10611 | 0 | 293.5, 2.78 | no |
+| glass_05 | test_glass_borosilicate_250 | upper | -191, 83, 430 | iec_milk 12.39 of 482.09 | 263.42 | 3797 of 10611 | 0 | 293.5, 2.58 | no |
+| glass_06 | test_glass_borosilicate_250 | upper | -192, 196, 433 | iec_milk 237.96 of 521.99 | 811.16 | 12956 of 10611 | 0 | 293.5, 2.55 | no |
+| glass_07 | test_glass_borosilicate_250 | upper | -209, -158, 421 | iec_milk 231.42 of 503.45 | 683.27 | 12972 of 10611 | 0 | 293.5, 4.03 | no |
+| glass_08 | test_glass_borosilicate_250 | upper | -194, -215, 431 | iec_milk 355.70 of 511.88 | 709.17 | 13075 of 10611 | 0 | 293.5, 2.80 | no |
 | knife_01 | dinner_knife_210 | lower | -16, -163, 79 | iec_margarine 1.15 of 235.35 | 1.15 | 26 of 2335 | 2 | 0.0, 0.37 | no |
 | knife_02 | dinner_knife_210 | lower | -10, -214, 80 | iec_margarine 0.39 of 252.15 | 0.39 | 47 of 2335 | 2 | 0.0, 0.42 | no |
 | knife_03 | dinner_knife_210 | lower | 51, -116, 79 | iec_margarine 0.02 of 245.78 | 0.02 | 0 of 2335 | 5 | 0.0, 0.24 | yes |
@@ -128,31 +128,31 @@ Mistakes in this load: plate_facing_away x 13, bowls_nested x 3, cup_upright x 1
 | knife_12 | dinner_knife_210 | lower | -33, -146, 79 | iec_margarine 1.04 of 223.39 | 1.04 | 18 of 2334 | 3 | 0.0, 0.50 | no |
 | knife_13 | dinner_knife_210 | lower | -47, -149, 79 | iec_margarine 1.83 of 256.88 | 1.83 | 191 of 2335 | 1 | 0.0, 0.22 | no |
 | melamine_plate_01 | melamine_dessert_plate_iec_195 | upper | -85, -40, 516 | iec_spinach 0.60 of 143.79 | 0.60 | 174 of 10935 | 1 | 0.0, 0.87 | no |
-| melamine_plate_02 | melamine_dessert_plate_iec_195 | upper | -81, -43, 513 | iec_minced_meat 245.69 of 421.65 | 245.69 | 10876 of 10935 | 0 | 0.0, 1.27 | no |
+| melamine_plate_02 | melamine_dessert_plate_iec_195 | upper | -81, -43, 513 | iec_minced_meat 50.16 of 421.65 | 50.16 | 4565 of 10935 | 0 | 0.0, 1.27 | no |
 | melamine_plate_03 | melamine_dessert_plate_iec_195 | upper | -84, -76, 516 | iec_spinach 2.06 of 153.58 | 2.06 | 534 of 10935 | 0 | 0.0, 0.84 | no |
-| melamine_plate_04 | melamine_dessert_plate_iec_195 | upper | -82, -79, 513 | iec_minced_meat 247.39 of 403.84 | 247.39 | 10898 of 10935 | 0 | 0.0, 1.40 | no |
-| melamine_plate_05 | melamine_dessert_plate_iec_195 | upper | -81, -112, 518 | iec_spinach 4.75 of 148.67 | 4.75 | 1157 of 10935 | 0 | 0.0, 2.67 | no |
-| melamine_plate_06 | melamine_dessert_plate_iec_195 | upper | -86, -113, 516 | iec_minced_meat 278.06 of 420.20 | 278.06 | 10931 of 10935 | 0 | 0.0, 3.08 | no |
-| mug_01 | mug_ceramic_300 | upper | 161, 172, 433 | iec_tea 2.44 of 2.76 | 255.62 | 25397 of 12104 | 0 | 330.8, 3.48 | no |
-| mug_02 | mug_ceramic_300 | upper | 160, 61, 432 | iec_tea 2.51 of 2.92 | 101.46 | 15740 of 12104 | 0 | 330.8, 3.50 | no |
-| mug_03 | mug_ceramic_300 | upper | 161, -60, 432 | iec_tea 2.61 of 3.03 | 151.08 | 19068 of 12105 | 0 | 330.8, 3.48 | no |
-| mug_04 | mug_ceramic_300 | upper | 161, -176, 433 | iec_tea 2.81 of 3.17 | 273.05 | 26249 of 12104 | 0 | 330.8, 3.45 | no |
+| melamine_plate_04 | melamine_dessert_plate_iec_195 | upper | -82, -79, 513 | iec_minced_meat 65.30 of 403.84 | 65.30 | 5574 of 10935 | 0 | 0.0, 1.40 | no |
+| melamine_plate_05 | melamine_dessert_plate_iec_195 | upper | -81, -112, 518 | iec_spinach 4.75 of 148.67 | 4.75 | 1156 of 10935 | 0 | 0.0, 2.67 | no |
+| melamine_plate_06 | melamine_dessert_plate_iec_195 | upper | -86, -113, 516 | iec_minced_meat 97.68 of 420.20 | 97.68 | 7374 of 10935 | 0 | 0.0, 3.08 | no |
+| mug_01 | mug_ceramic_300 | upper | 161, 172, 433 | iec_tea 2.45 of 2.76 | 332.33 | 28835 of 12104 | 0 | 330.8, 3.48 | no |
+| mug_02 | mug_ceramic_300 | upper | 160, 61, 432 | iec_tea 2.52 of 2.92 | 142.71 | 19486 of 12104 | 0 | 330.8, 3.50 | no |
+| mug_03 | mug_ceramic_300 | upper | 161, -60, 432 | iec_tea 2.62 of 3.03 | 206.36 | 24122 of 12105 | 0 | 330.8, 3.48 | no |
+| mug_04 | mug_ceramic_300 | upper | 161, -176, 433 | iec_tea 2.82 of 3.17 | 352.41 | 29264 of 12104 | 0 | 330.8, 3.45 | no |
 | oval_platter_01 | oval_platter_porcelain_320 | lower | -228, -92, 196 | iec_margarine 3.63 of 4098.75 | 3.63 | 183 of 20245 | 1 | 0.0, 2.60 | no |
 | saucer_01 | saucer_porcelain_140 | lower | -225, 112, 129 | iec_tea 0.62 of 0.75 | 0.62 | 3002 of 3002 | 0 | 0.0, 0.71 | no |
-| saucer_02 | saucer_porcelain_140 | lower | 127, -139, 130 | iec_tea 0.57 of 0.69 | 0.57 | 3002 of 3002 | 0 | 0.0, 1.12 | no |
-| saucer_03 | saucer_porcelain_140 | lower | 101, 111, 129 | iec_tea 0.59 of 0.72 | 0.59 | 3002 of 3002 | 0 | 0.0, 0.74 | no |
+| saucer_02 | saucer_porcelain_140 | lower | 127, -139, 130 | iec_tea 0.58 of 0.69 | 0.58 | 3002 of 3002 | 0 | 0.0, 1.12 | no |
+| saucer_03 | saucer_porcelain_140 | lower | 101, 111, 129 | iec_tea 0.60 of 0.72 | 0.60 | 3002 of 3002 | 0 | 0.0, 0.74 | no |
 | saucer_04 | saucer_porcelain_140 | lower | 29, 112, 135 | iec_tea 0.61 of 0.72 | 0.61 | 3002 of 3002 | 0 | 0.0, 0.72 | no |
 | saucer_05 | saucer_porcelain_140 | upper | -82, -160, 487 | iec_tea 0.64 of 0.73 | 0.64 | 3002 of 3002 | 0 | 0.0, 0.67 | no |
 | saucer_06 | saucer_porcelain_140 | upper | -81, -164, 481 | iec_tea 0.62 of 0.72 | 0.62 | 3001 of 3001 | 0 | 0.0, 0.97 | no |
 | serving_fork_01 | serving_fork_210 | lower | 22, -121, 79 | none | 0.00 | 0 of 0 | 5 | 0.0, 0.27 | yes |
 | serving_spoon_01 | serving_spoon_216 | lower | 15, -170, 80 | none | 0.00 | 0 of 0 | 5 | 0.0, 0.19 | yes |
 | serving_spoon_02 | serving_spoon_216 | lower | 46, -220, 80 | none | 0.00 | 0 of 0 | 5 | 0.0, 0.24 | yes |
-| soup_plate_01 | soup_plate_porcelain_230 | lower | -199, -140, 187 | iec_oat_flakes 6.20 of 241.14 | 6.20 | 1158 of 14751 | 0 | 0.0, 4.64 | no |
-| soup_plate_02 | soup_plate_porcelain_230 | lower | -205, -140, 187 | iec_oat_flakes 34.21 of 253.28 | 34.21 | 5285 of 14750 | 0 | 0.0, 4.49 | no |
-| soup_plate_03 | soup_plate_porcelain_230 | lower | 222, -140, 189 | iec_oat_flakes 6.83 of 256.97 | 6.83 | 1223 of 14751 | 0 | 0.0, 4.75 | no |
-| soup_plate_04 | soup_plate_porcelain_230 | lower | 228, -140, 189 | iec_oat_flakes 33.78 of 256.30 | 33.78 | 5292 of 14751 | 0 | 0.0, 4.55 | no |
+| soup_plate_01 | soup_plate_porcelain_230 | lower | -199, -140, 187 | iec_oat_flakes 6.19 of 241.14 | 6.19 | 1158 of 14751 | 0 | 0.0, 4.64 | no |
+| soup_plate_02 | soup_plate_porcelain_230 | lower | -205, -140, 187 | iec_oat_flakes 34.20 of 253.28 | 34.20 | 5284 of 14750 | 0 | 0.0, 4.49 | no |
+| soup_plate_03 | soup_plate_porcelain_230 | lower | 222, -140, 189 | iec_oat_flakes 6.83 of 256.97 | 6.83 | 1222 of 14751 | 0 | 0.0, 4.75 | no |
+| soup_plate_04 | soup_plate_porcelain_230 | lower | 228, -140, 189 | iec_oat_flakes 33.77 of 256.30 | 33.77 | 5291 of 14751 | 0 | 0.0, 4.55 | no |
 | soup_plate_05 | soup_plate_porcelain_230 | lower | 171, -140, 188 | iec_oat_flakes 2.85 of 222.11 | 2.85 | 605 of 14751 | 0 | 0.0, 4.98 | no |
-| soup_plate_06 | soup_plate_porcelain_230 | lower | 177, -140, 188 | iec_oat_flakes 15.24 of 236.57 | 15.24 | 2634 of 14750 | 0 | 0.0, 4.72 | no |
+| soup_plate_06 | soup_plate_porcelain_230 | lower | 177, -140, 188 | iec_oat_flakes 15.23 of 236.57 | 15.23 | 2633 of 14750 | 0 | 0.0, 4.72 | no |
 | soup_spoon_01 | soup_spoon_190 | lower | -9, -122, 79 | iec_oat_flakes 0.50 of 22.40 | 0.50 | 102 of 1450 | 1 | 0.0, 0.35 | no |
 | soup_spoon_02 | soup_spoon_190 | lower | -40, -156, 80 | iec_oat_flakes 0.89 of 22.59 | 0.89 | 183 of 1450 | 1 | 0.0, 0.42 | no |
 | soup_spoon_03 | soup_spoon_190 | lower | 46, -42, 79 | iec_oat_flakes 1.01 of 25.65 | 1.01 | 187 of 1450 | 1 | 0.0, 0.19 | no |
@@ -163,7 +163,7 @@ Mistakes in this load: plate_facing_away x 13, bowls_nested x 3, cup_upright x 1
 | soup_spoon_08 | soup_spoon_190 | lower | 40, -130, 79 | iec_oat_flakes 3.08 of 25.54 | 3.08 | 418 of 1450 | 0 | 0.0, 0.38 | no |
 | soup_spoon_09 | soup_spoon_190 | lower | -36, -121, 80 | iec_oat_flakes 0.58 of 23.02 | 0.58 | 109 of 1450 | 1 | 0.0, 0.28 | no |
 | soup_spoon_10 | soup_spoon_190 | lower | 39, -173, 79 | iec_oat_flakes 1.02 of 25.96 | 1.02 | 208 of 1450 | 0 | 0.0, 0.35 | no |
-| soup_spoon_11 | soup_spoon_190 | lower | -10, -35, 80 | iec_oat_flakes 0.85 of 24.52 | 0.85 | 172 of 1451 | 1 | 0.0, 0.29 | no |
+| soup_spoon_11 | soup_spoon_190 | lower | -10, -35, 80 | iec_oat_flakes 0.85 of 24.52 | 0.85 | 171 of 1451 | 1 | 0.0, 0.29 | no |
 | soup_spoon_12 | soup_spoon_190 | lower | 25, -175, 80 | iec_oat_flakes 0.32 of 21.81 | 0.32 | 59 of 1450 | 1 | 0.0, 0.29 | no |
 | soup_spoon_13 | soup_spoon_190 | lower | 44, -179, 79 | iec_oat_flakes 0.73 of 22.84 | 0.73 | 173 of 1450 | 1 | 0.0, 0.32 | no |
 | teaspoon_01 | teaspoon_130 | lower | 36, -218, 79 | none | 0.00 | 0 of 0 | 5 | 0.0, 0.15 | yes |

@@ -41,7 +41,6 @@ Most of these need the machine itself.
 | [#11](https://github.com/composo-ai/DishwasherBench/issues/11) | Take the four open tape measurements of the machine                           | small  | needs the machine |
 | [#43](https://github.com/composo-ai/DishwasherBench/issues/43) | The bore of the lower arm's holes and the speed of both arms are not measured | small  | needs the machine |
 | [#12](https://github.com/composo-ai/DishwasherBench/issues/12) | The tub's right wall sometimes stops the basket                               | medium | needs the machine |
-| [#65](https://github.com/composo-ai/DishwasherBench/issues/65) | Make the simulation fit both of the owner's test washes                       | medium |                   |
 
 ## The benchmark
 
@@ -55,6 +54,7 @@ Most of these need the machine itself.
 | [#18](https://github.com/composo-ai/DishwasherBench/issues/18) | The course gets fuller, not harder to wash                          | large  |                  |
 | [#49](https://github.com/composo-ai/DishwasherBench/issues/49) | The soil lab's table is of an earlier wash and cannot be made again | small  |                  |
 | [#50](https://github.com/composo-ai/DishwasherBench/issues/50) | Wash the robustness seeds at the official tier                      | small  |                  |
+| [#67](https://github.com/composo-ai/DishwasherBench/issues/67) | Four first-run episode records no longer verify                     | small  |                  |
 | [#25](https://github.com/composo-ai/DishwasherBench/issues/25) | Open design questions: the rules of an episode and the harness      | small  | needs a decision |
 | [#26](https://github.com/composo-ai/DishwasherBench/issues/26) | Open design questions: the course and its gates                     | small  | needs a decision |
 

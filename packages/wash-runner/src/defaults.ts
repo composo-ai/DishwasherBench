@@ -8,9 +8,10 @@
  * The owner's machine washes, by default, with the current anchored set with the owner's
  * capsule laid over it (`packages/calibration/anchors/`, `CURRENT_ANCHORED` of its
  * `src/scenario.ts`; a test of this package checks that the file named below is there and
- * current; docs/calibration/anchoring-v7.md for the set, on the machine with its corrected
- * upper basket; docs/calibration/owner-wash-01-calibration.md for what the owner's first test
- * wash fixed in it, docs/calibration/anchoring-v5.md for the anchoring it rests on;
+ * current; docs/calibration/anchoring-v8.md for the set, fitted on both of the owner's test
+ * washes; docs/calibration/anchoring-v7.md for the machine with its corrected upper basket;
+ * docs/calibration/owner-wash-01-calibration.md for what the owner's first test wash fixed in
+ * it, docs/calibration/anchoring-v5.md for the anchoring it rests on;
  * docs/research/detergent-finish-ultimate.md: Finish Powerball Ultimate, 12.9 g). The rinse
  * aid the owner uses is recorded there and not modelled. The file belongs to the calibration
  * side; this is only where the game is told which one is current. When a new anchoring is
@@ -86,14 +87,14 @@ export const MACHINE_WASH_DEFAULTS: Readonly<Record<string, WashParamFilesChoice
   bosch_smv4hax40g: {
     // The anchored set with the owner's capsule laid over it by the calibration side (the
     // composition of `detergents/finish-powerball-ultimate.json` and its protease level): one
-    // file, so no separate composition layer for the detergent here. Since the evening of
-    // 11 October 2026 the seventh anchoring: the sixth (the duty of the soak of Eco 50 as the
-    // owner's first test wash fixed it, 0.8) fitted again on the machine with its corrected
-    // upper basket and the standard loads settled on it. The sixth and the fifth (duty 0.5,
-    // contradicted by his wash) are superseded: each says so in its file and no wash reads
-    // them as current.
-    paramSets: ['calibration/anchors/anchored-v7.owner-capsule.json'],
-    tierAgreement: 'calibration/anchors/tiers.anchored-v7.owner-capsule.json',
+    // file, so no separate composition layer for the detergent here. Since 17 October 2026 the
+    // eighth anchoring: the seventh (the machine with its corrected upper basket, the duty of
+    // the soak of Eco 50 as the owner's first test wash fixed it, 0.8) fitted again on both of
+    // the owner's test washes, which set the protease level of the capsule and how fast egg
+    // yolk and the other protein soils set when heated. The seventh, sixth and fifth are
+    // superseded: each says so in its file and no wash reads them as current.
+    paramSets: ['calibration/anchors/anchored-v8.owner-capsule.json'],
+    tierAgreement: 'calibration/anchors/tiers.anchored-v8.owner-capsule.json',
     // Decision of 10 October 2026 (docs/reference/owner-measurements.md): the game is scored
     // on Eco 50, the programme the set is anchored on. Its verdicts carry no caveat.
     scoredProgramme: 'eco_50',
