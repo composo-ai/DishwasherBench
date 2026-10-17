@@ -72,7 +72,6 @@ Most of these need the machine itself.
 | [#48](https://github.com/composo-ai/DishwasherBench/issues/48) | What standing water leaves behind is not shown on the residue picture                 | medium |                  |
 | [#30](https://github.com/composo-ai/DishwasherBench/issues/30) | The title of the in-game loading advice reads as the manufacturer's own words         | small  | needs a decision |
 | [#34](https://github.com/composo-ai/DishwasherBench/issues/34) | "It is never possible to fit everything" is untrue of the first load                  | small  | needs a decision |
-| [#55](https://github.com/composo-ai/DishwasherBench/issues/55) | Host-check tests do not cover a server that listens on every address                  | small  | good first issue |
 | [#56](https://github.com/composo-ai/DishwasherBench/issues/56) | Small hardening of the servers: framing header, token comparison, start-up line       | small  | good first issue |
 | [#27](https://github.com/composo-ai/DishwasherBench/issues/27) | Open design questions: the page                                                       | small  | needs a decision |
 
